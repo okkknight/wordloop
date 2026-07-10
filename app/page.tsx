@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
-const PASS_SCORE = 86;
+const PASS_SCORE = 22;
 const AUTO_ADVANCE_MS = 700;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
@@ -111,7 +111,7 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
 
   if (passed) {
     return {
-      feedback: exact ? "发音命中，自动进入下一个单词。" : "很接近了，算你通过。",
+      feedback: "PASS",
       matched,
       passed: true,
       score,
@@ -120,7 +120,7 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
 
   if (!matched) {
     return {
-      feedback: "没有清晰识别到英文单词，再读一次试试。",
+      feedback: "TRY AGAIN",
       matched,
       passed: false,
       score: 0,
@@ -128,7 +128,7 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
   }
 
   return {
-    feedback: `识别成 ${matched || "别的词"}，再读得更清楚一点。`,
+    feedback: "TRY AGAIN",
     matched,
     passed: false,
     score,
@@ -146,7 +146,7 @@ export default function Home() {
   const [panelOpen, setPanelOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
-  const [repeatMessage, setRepeatMessage] = useState("Play the word, then say it aloud.");
+  const [repeatMessage, setRepeatMessage] = useState("READY");
   const [repeatTranscript, setRepeatTranscript] = useState("");
   const [repeatScore, setRepeatScore] = useState<number | null>(null);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -301,7 +301,7 @@ export default function Home() {
     }
 
     setRepeatState("connecting");
-    setRepeatMessage("Connecting live pronunciation scoring…");
+    setRepeatMessage("CONNECTING");
 
     const stream = repeatStreamRef.current ?? await navigator.mediaDevices.getUserMedia({
       audio: {
@@ -330,7 +330,7 @@ export default function Home() {
       };
 
       if (payload.type === "input_audio_buffer.speech_started") {
-        setRepeatMessage("Listening… say the word once.");
+        setRepeatMessage("LISTENING");
         setRepeatState("listening");
         return;
       }
@@ -339,7 +339,7 @@ export default function Home() {
         payload.type === "input_audio_buffer.speech_stopped" ||
         payload.type === "input_audio_buffer.committed"
       ) {
-        setRepeatMessage("Scoring…");
+        setRepeatMessage("SCORING");
         setRepeatState("scoring");
         return;
       }
@@ -369,12 +369,12 @@ export default function Home() {
                 await ensurePronunciationSession();
                 setRepeatTranscript("");
                 setRepeatScore(null);
-                setRepeatMessage("Listening… say the word once.");
+                setRepeatMessage("LISTENING");
                 setRepeatState("listening");
                 if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
               } catch (error) {
                 setRepeatState("error");
-                setRepeatMessage(error instanceof Error ? error.message : "Realtime scoring failed.");
+                setRepeatMessage("MIC ERROR");
               }
             });
           }, AUTO_ADVANCE_MS);
@@ -387,7 +387,7 @@ export default function Home() {
       if (payload.type === "conversation.item.input_audio_transcription.failed") {
         stopListening();
         setRepeatState("error");
-        setRepeatMessage("Realtime transcription failed. Tap to try again.");
+        setRepeatMessage("MIC ERROR");
       }
     });
 
@@ -419,7 +419,7 @@ export default function Home() {
     });
     await openPromise;
     setRepeatState("ready");
-    setRepeatMessage("Ready. Listen first, then repeat.");
+    setRepeatMessage("READY");
   }, [clearRepeatAdvanceTimer, nextWordIndex, playWord, recordStudy, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
@@ -429,20 +429,20 @@ export default function Home() {
     setRepeatTranscript("");
     setRepeatScore(null);
     setRepeatState("playing");
-    setRepeatMessage("Listen first, then repeat the word.");
+    setRepeatMessage("PLAYING");
     void ensurePronunciationSession().catch((error) => {
       setRepeatState("error");
-      setRepeatMessage(error instanceof Error ? error.message : "Realtime scoring failed.");
+      setRepeatMessage("MIC ERROR");
     });
     playWord(WORDS[targetIndex][0], async () => {
       try {
         await ensurePronunciationSession();
         setRepeatState("listening");
-        setRepeatMessage("Listening… say the word once.");
+        setRepeatMessage("LISTENING");
         if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
       } catch (error) {
         setRepeatState("error");
-        setRepeatMessage(error instanceof Error ? error.message : "Realtime scoring failed.");
+        setRepeatMessage("MIC ERROR");
       }
     });
   }, [clearRepeatAdvanceTimer, ensurePronunciationSession, playWord, stopListening]);
@@ -488,13 +488,13 @@ export default function Home() {
 
     if (!activated) {
       setRepeatState("idle");
-      setRepeatMessage("Play the word, then say it aloud.");
+      setRepeatMessage("READY");
       return;
     }
 
     if (nextMode === "listen") {
       setRepeatState("idle");
-      setRepeatMessage("Press space or click for the next word.");
+      setRepeatMessage("READY");
       playWord(word);
       return;
     }
@@ -534,9 +534,9 @@ export default function Home() {
         return;
       }
 
-        if (event.key.toLowerCase() === "r" && activated) {
-          event.preventDefault();
-        if (studyMode === "repeat") beginRepeatTurn(wordIndexRef.current);
+      if (event.key.toLowerCase() === "r" && activated && studyMode === "repeat") {
+        event.preventDefault();
+        beginRepeatTurn(wordIndexRef.current);
       }
     };
     window.addEventListener("keydown", onKeyDown);
@@ -606,9 +606,9 @@ export default function Home() {
         <div className="start-overlay" role="dialog" aria-label="Start study mode">
           <button onClick={(event) => { event.stopPropagation(); activate(); }}>
             <span className="start-icon" aria-hidden="true">▶</span>
-            {studyMode === "repeat" ? "START REPEAT MODE" : "START LEARNING"}
+            {studyMode === "repeat" ? "START REPEAT" : "START LEARNING"}
           </button>
-          <p>{studyMode === "repeat" ? "Live pronunciation scoring · low latency flow" : "British pronunciation · 570 academic words"}</p>
+          <p>{studyMode === "repeat" ? "Repeat mode" : "British pronunciation · 570 academic words"}</p>
         </div>
       )}
 
@@ -618,14 +618,18 @@ export default function Home() {
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
         {studyMode === "repeat" && (
           <div className={`repeat-card ${repeatState}`}>
-            <div className="repeat-eyebrow">
-              <span>REPEAT MODE</span>
-              {repeatScore !== null && <strong>{repeatScore}</strong>}
+            <div className="repeat-top">
+              <span className="repeat-badge">REPEAT</span>
+              {repeatScore !== null
+                ? <strong className="repeat-score">{repeatScore}</strong>
+                : <span className={`repeat-live ${repeatState}`} aria-hidden="true"><i /><i /><i /></span>}
             </div>
-            <p>{repeatMessage}</p>
+            <div className="repeat-status">
+              <span className={`repeat-dot ${repeatState}`} aria-hidden="true" />
+              <span>{repeatMessage}</span>
+            </div>
             {repeatTranscript && (
               <div className="repeat-transcript">
-                <span>Heard</span>
                 <strong>{repeatTranscript}</strong>
               </div>
             )}
@@ -693,13 +697,13 @@ export default function Home() {
           <span className={spoken ? "dot active" : "dot"} />
           {studyMode === "repeat"
             ? repeatState === "connecting"
-              ? "CONNECTING LIVE SCORING"
+              ? "CONNECTING"
               : repeatState === "listening"
-                ? "MIC OPEN"
+                ? "LISTENING"
                 : repeatState === "scoring"
                   ? "SCORING"
                   : activated
-                    ? "READY TO REPEAT"
+                    ? "READY"
                     : "CLICK TO START"
             : spoken
               ? "PLAYING BRITISH AUDIO"
