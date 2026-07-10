@@ -19,6 +19,7 @@ type RepeatState =
   | "listening"
   | "scoring"
   | "passed"
+  | "paused"
   | "retry"
   | "error";
 
@@ -147,8 +148,6 @@ export default function Home() {
   const [search, setSearch] = useState("");
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
   const [repeatMessage, setRepeatMessage] = useState("READY");
-  const [repeatTranscript, setRepeatTranscript] = useState("");
-  const [repeatScore, setRepeatScore] = useState<number | null>(null);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
@@ -353,13 +352,11 @@ export default function Home() {
         return;
       }
 
-      if (payload.type === "conversation.item.input_audio_transcription.completed") {
-        stopListening();
-        const transcript = (payload.transcript ?? "").trim();
-        const result = scoreTranscript(repeatWordRef.current, transcript);
-        setRepeatTranscript(transcript);
-        setRepeatScore(result.score);
-        setRepeatMessage(result.feedback);
+        if (payload.type === "conversation.item.input_audio_transcription.completed") {
+          stopListening();
+          const transcript = (payload.transcript ?? "").trim();
+          const result = scoreTranscript(repeatWordRef.current, transcript);
+          setRepeatMessage(result.feedback);
 
         if (result.passed) {
           setRepeatState("passed");
@@ -371,14 +368,10 @@ export default function Home() {
             const upcomingIndex = nextWordIndexRef.current;
             setWordIndex(upcomingIndex);
             setPaletteIndex((current) => randomIndex(PALETTES.length, current));
-            setRepeatTranscript("");
-            setRepeatScore(null);
             repeatWordRef.current = WORDS[upcomingIndex][0];
             playWord(WORDS[upcomingIndex][0], async () => {
               try {
                 await ensurePronunciationSession();
-                setRepeatTranscript("");
-                setRepeatScore(null);
                 setRepeatMessage("LISTENING");
                 setRepeatState("listening");
                 if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
@@ -450,8 +443,6 @@ export default function Home() {
     clearRepeatRetryTimer();
     stopListening();
     repeatWordRef.current = WORDS[targetIndex][0];
-    setRepeatTranscript("");
-    setRepeatScore(null);
     setRepeatState("playing");
     setRepeatMessage("PLAYING");
     void ensurePronunciationSession().catch((error) => {
@@ -478,6 +469,25 @@ export default function Home() {
       }
     });
   }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, ensurePronunciationSession, playWord, stopListening]);
+
+  const pauseRepeat = useCallback(() => {
+    if (studyMode !== "repeat") return;
+    clearRepeatAdvanceTimer();
+    clearRepeatRetryTimer();
+    currentAudioRef.current?.pause();
+    setSpoken(false);
+    stopListening();
+    setRepeatState("paused");
+    setRepeatMessage("PAUSED");
+  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, stopListening, studyMode]);
+
+  const toggleRepeatPause = useCallback(() => {
+    if (repeatState === "paused") {
+      beginRepeatTurn(wordIndexRef.current);
+      return;
+    }
+    pauseRepeat();
+  }, [beginRepeatTurn, pauseRepeat, repeatState]);
 
   const speak = useCallback(() => {
     if (studyMode === "repeat") beginRepeatTurn(wordIndexRef.current);
@@ -516,8 +526,6 @@ export default function Home() {
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
     setStudyMode(nextMode);
-    setRepeatTranscript("");
-    setRepeatScore(null);
 
     if (!activated) {
       setRepeatState("idle");
@@ -561,7 +569,13 @@ export default function Home() {
           next();
           return;
         }
-        if (repeatState === "retry" || repeatState === "error" || repeatState === "ready" || repeatState === "idle") {
+        if (
+          repeatState === "retry" ||
+          repeatState === "error" ||
+          repeatState === "ready" ||
+          repeatState === "idle" ||
+          repeatState === "paused"
+        ) {
           beginRepeatTurn(wordIndexRef.current);
         }
         return;
@@ -651,21 +665,20 @@ export default function Home() {
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
         {studyMode === "repeat" && (
           <div className={`repeat-card ${repeatState}`}>
-            <div className="repeat-top">
-              <span className="repeat-badge">REPEAT</span>
-              {repeatScore !== null
-                ? <strong className="repeat-score">{repeatScore}</strong>
-                : <span className={`repeat-live ${repeatState}`} aria-hidden="true"><i /><i /><i /></span>}
+            <div className={`repeat-siri ${repeatState}`} aria-label={`Repeat mode ${repeatMessage.toLowerCase()}`}>
+              <span className="repeat-siri-orb" aria-hidden="true">
+                <i /><i /><i /><i />
+              </span>
+              <span className="sr-only">{repeatMessage}</span>
             </div>
-            <div className="repeat-status">
-              <span className={`repeat-dot ${repeatState}`} aria-hidden="true" />
-              <span>{repeatMessage}</span>
-            </div>
-            {repeatTranscript && (
-              <div className="repeat-transcript">
-                <strong>{repeatTranscript}</strong>
-              </div>
-            )}
+            <button
+              className="repeat-toggle"
+              onClick={(event) => { event.stopPropagation(); toggleRepeatPause(); }}
+              aria-label={repeatState === "paused" ? "Resume repeat" : "Pause repeat"}
+              aria-pressed={repeatState === "paused"}
+            >
+              <span aria-hidden="true" className={repeatState === "paused" ? "repeat-toggle-play" : "repeat-toggle-pause"} />
+            </button>
           </div>
         )}
       </section>
