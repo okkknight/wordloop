@@ -25,48 +25,52 @@ export default function Home() {
   const [paletteIndex, setPaletteIndex] = useState(() => randomIndex(PALETTES.length));
   const [spoken, setSpoken] = useState(false);
   const [activated, setActivated] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const skipNextAutoPlay = useRef(false);
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
+  const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
   const [word, meaning, sublist] = WORDS[wordIndex];
   const [background, ink, accent] = PALETTES[paletteIndex];
 
-  const speak = useCallback(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.pause();
-    audio.src = `/audio/${word}.m4a`;
+  const playWord = useCallback((targetWord: string) => {
+    const source = new URL(`/audio/${targetWord}.m4a`, window.location.href).href;
+    const preloaded = preloadedAudioRef.current;
+    const audio = preloaded?.src === source ? preloaded : new Audio(source);
+
+    currentAudioRef.current?.pause();
+    currentAudioRef.current = audio;
+    if (audio === preloaded) preloadedAudioRef.current = null;
     audio.currentTime = 0;
+    audio.onended = () => setSpoken(false);
     setSpoken(false);
     void audio.play().then(() => setSpoken(true)).catch(() => setSpoken(false));
-  }, [word]);
+  }, []);
+
+  const speak = useCallback(() => {
+    playWord(word);
+  }, [playWord, word]);
 
   const next = useCallback(() => {
+    playWord(WORDS[nextWordIndex][0]);
     setWordIndex(nextWordIndex);
     setNextWordIndex(randomIndex(WORDS.length, nextWordIndex));
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
-  }, [nextWordIndex]);
+  }, [nextWordIndex, playWord]);
 
   const activate = useCallback(() => {
-    skipNextAutoPlay.current = true;
     setActivated(true);
     speak();
   }, [speak]);
 
   useEffect(() => {
-    if (!activated) return;
-    if (skipNextAutoPlay.current) {
-      skipNextAutoPlay.current = false;
-      return;
-    }
-    const timer = window.setTimeout(speak, 120);
-    return () => window.clearTimeout(timer);
-  }, [activated, speak]);
-
-  useEffect(() => {
     const preload = new Audio(`/audio/${WORDS[nextWordIndex][0]}.m4a`);
     preload.preload = "auto";
     preload.load();
-    return () => { preload.src = ""; };
+    preloadedAudioRef.current = preload;
+    return () => {
+      if (preloadedAudioRef.current === preload) {
+        preloadedAudioRef.current = null;
+        preload.src = "";
+      }
+    };
   }, [nextWordIndex]);
 
   useEffect(() => {
@@ -99,8 +103,6 @@ export default function Home() {
           PLAY SOUND
         </button>
       </header>
-
-      <audio ref={audioRef} preload="auto" onEnded={() => setSpoken(false)} />
 
       {!activated && (
         <div className="start-overlay" role="dialog" aria-label="Start listening mode">
