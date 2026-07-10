@@ -206,6 +206,7 @@ export default function Home() {
   const [search, setSearch] = useState("");
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
   const [repeatMessage, setRepeatMessage] = useState("READY");
+  const [repeatTranscript, setRepeatTranscript] = useState("");
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
