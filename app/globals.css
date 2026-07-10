@@ -99,12 +99,19 @@ h1 {
 }
 h1.long { font-size: clamp(52px, 9.5vw, 164px); }
 h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
+.phonetic {
+  margin-top: clamp(20px, 3vh, 34px);
+  color: var(--accent);
+  font: 600 clamp(17px, 2vw, 25px)/1.2 var(--font-geist-mono);
+  letter-spacing: .03em;
+  animation: enter 520ms 60ms cubic-bezier(.2,.8,.2,1) both;
+}
 .meaning {
   max-width: 510px;
-  margin: clamp(28px, 5vh, 60px) 0 0 auto;
+  margin: clamp(20px, 3.5vh, 42px) 0 0 auto;
   padding-left: 30px;
   border-left: 3px solid var(--accent);
-  font: 500 clamp(15px, 1.8vw, 22px)/1.45 var(--font-geist-sans);
+  font: 500 clamp(15px, 1.8vw, 22px)/1.55 var(--font-geist-sans), "PingFang SC", "Microsoft YaHei", sans-serif;
   animation: enter 520ms 100ms cubic-bezier(.2,.8,.2,1) both;
 }
 @keyframes enter { from { opacity: 0; transform: translateY(28px); filter: blur(7px); } }

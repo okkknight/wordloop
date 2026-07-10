@@ -27,7 +27,7 @@ export default function Home() {
   const [activated, setActivated] = useState(false);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
-  const [word, meaning, sublist] = WORDS[wordIndex];
+  const [word, meaning, sublist, phonetic] = WORDS[wordIndex];
   const [background, ink, accent] = PALETTES[paletteIndex];
 
   const playWord = useCallback((targetWord: string) => {
@@ -119,6 +119,7 @@ export default function Home() {
           AWL · SUBLIST {sublist} · WORD {String(wordIndex + 1).padStart(3, "0")} / {WORDS.length}
         </div>
         <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
+        <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
       </section>
 
