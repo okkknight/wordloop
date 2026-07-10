@@ -7,7 +7,7 @@ function jsonError(message: string, status: number) {
 }
 
 export async function POST(request: Request) {
-  const apiKey = env.OPENAI_API_KEY ?? process.env.OPENAI_API_KEY;
+  const apiKey = env.OPENAI_API_KEY;
   if (!apiKey) {
     return jsonError("Realtime pronunciation is not configured yet.", 503);
   }
@@ -21,6 +21,10 @@ export async function POST(request: Request) {
     type: "transcription",
     audio: {
       input: {
+        format: {
+          type: "audio/pcm",
+          rate: 24000,
+        },
         transcription: {
           model: "gpt-4o-mini-transcribe",
           language: "en",
@@ -29,8 +33,8 @@ export async function POST(request: Request) {
         turn_detection: {
           type: "server_vad",
           threshold: 0.45,
-          prefix_padding_ms: 240,
-          silence_duration_ms: 420,
+          prefix_padding_ms: 200,
+          silence_duration_ms: 250,
         },
         noise_reduction: {
           type: "near_field",
