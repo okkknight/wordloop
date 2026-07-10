@@ -57,6 +57,64 @@ function normalizeSpeech(value: string) {
   return value.toLowerCase().replace(/[^a-z]/g, "");
 }
 
+function repeatStatusLabel(state: RepeatState) {
+  switch (state) {
+    case "connecting":
+      return "Connecting";
+    case "ready":
+      return "Ready";
+    case "playing":
+      return "Playing";
+    case "listening":
+      return "Listening";
+    case "scoring":
+      return "Checking";
+    case "passed":
+      return "Good";
+    case "paused":
+      return "Paused";
+    case "retry":
+      return "Retrying";
+    case "error":
+      return "Mic retry";
+    default:
+      return "Stand by";
+  }
+}
+
+function repeatStatusHint(state: RepeatState) {
+  switch (state) {
+    case "connecting":
+      return "Setting up voice session";
+    case "ready":
+      return "Tap or press space to repeat";
+    case "playing":
+      return "Listen to the model pronunciation";
+    case "listening":
+      return "Speak now";
+    case "scoring":
+      return "Matching your pronunciation";
+    case "passed":
+      return "Moving to the next word";
+    case "paused":
+      return "Resume when you are ready";
+    case "retry":
+      return "Trying this word again";
+    case "error":
+      return "Recovering microphone input";
+    default:
+      return "Repeat mode is ready";
+  }
+}
+
+function repeatFeedbackLabel(message: string, state: RepeatState) {
+  if (message === "PASS" || state === "passed") return "Good";
+  if (message === "TRY AGAIN" || state === "retry") return "Almost";
+  if (state === "error") return "Retrying";
+  if (state === "scoring") return "Checking";
+  return "";
+}
+
 function levenshtein(a: string, b: string) {
   if (!a.length) return b.length;
   if (!b.length) return a.length;
@@ -168,6 +226,10 @@ export default function Home() {
   const filteredWords = WORDS.filter(([entry, entryMeaning]) =>
     `${entry} ${entryMeaning}`.toLowerCase().includes(search.trim().toLowerCase()),
   );
+  const repeatLabel = repeatStatusLabel(repeatState);
+  const repeatHint = repeatStatusHint(repeatState);
+  const repeatFeedback = repeatFeedbackLabel(repeatMessage, repeatState);
+  const showRepeatTranscript = Boolean(repeatTranscript) && (repeatState === "retry" || repeatState === "error");
 
   const stopListening = useCallback(() => {
     if (repeatTrackRef.current) repeatTrackRef.current.enabled = false;
@@ -665,11 +727,36 @@ export default function Home() {
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
         {studyMode === "repeat" && (
           <div className={`repeat-card ${repeatState}`}>
-            <div className={`repeat-siri ${repeatState}`} aria-label={`Repeat mode ${repeatMessage.toLowerCase()}`}>
-              <span className="repeat-siri-orb" aria-hidden="true">
-                <i /><i /><i /><i />
-              </span>
-              <span className="sr-only">{repeatMessage}</span>
+            <div className="repeat-copy">
+              <div className="repeat-head">
+                <span className="repeat-mode-badge">Repeat mode</span>
+                <span className={`repeat-state-chip ${repeatState}`}>
+                  <i aria-hidden="true" />
+                  {repeatLabel}
+                </span>
+              </div>
+              <div className={`repeat-siri ${repeatState}`} aria-label={`Repeat mode ${repeatMessage.toLowerCase()}`}>
+                <span className="repeat-siri-orb" aria-hidden="true">
+                  <i /><i /><i /><i />
+                </span>
+                <div className="repeat-body">
+                  <strong>{repeatLabel}</strong>
+                  <span>{repeatHint}</span>
+                </div>
+                <span className="sr-only">{repeatMessage}</span>
+              </div>
+              {repeatFeedback && (
+                <div className={`repeat-feedback ${repeatState}`}>
+                  <strong>{repeatFeedback}</strong>
+                  <span>{repeatState === "passed" ? "Pronunciation accepted" : repeatState === "retry" ? "One more clean read" : repeatState === "error" ? "Recovering and restarting" : "Matching your voice"}</span>
+                </div>
+              )}
+              {showRepeatTranscript && (
+                <div className="repeat-transcript">
+                  <span>You said</span>
+                  <strong>{repeatTranscript}</strong>
+                </div>
+              )}
             </div>
             <button
               className="repeat-toggle"
