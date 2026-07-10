@@ -230,6 +230,7 @@ export default function Home() {
   const repeatLabel = repeatStatusLabel(repeatState);
   const repeatHint = repeatStatusHint(repeatState);
   const repeatFeedback = repeatFeedbackLabel(repeatMessage, repeatState);
+  const showRepeatFeedback = repeatState === "retry" || repeatState === "error";
   const showRepeatTranscript = Boolean(repeatTranscript) && (repeatState === "retry" || repeatState === "error");
 
   const stopListening = useCallback(() => {
@@ -746,10 +747,10 @@ export default function Home() {
                 </div>
                 <span className="sr-only">{repeatMessage}</span>
               </div>
-              {repeatFeedback && (
+              {showRepeatFeedback && repeatFeedback && (
                 <div className={`repeat-feedback ${repeatState}`}>
                   <strong>{repeatFeedback}</strong>
-                  <span>{repeatState === "passed" ? "Pronunciation accepted" : repeatState === "retry" ? "One more clean read" : repeatState === "error" ? "Recovering and restarting" : "Matching your voice"}</span>
+                  <span>{repeatState === "retry" ? "One more clean read" : "Recovering and restarting"}</span>
                 </div>
               )}
               {showRepeatTranscript && (
