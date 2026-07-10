@@ -59,6 +59,35 @@ button { font: inherit; }
 @keyframes pulse { to { transform: scaleY(.45); } }
 
 .word-stage { align-self: center; width: 100%; padding: 6vh 0; }
+.start-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--bg), transparent 8%);
+  backdrop-filter: blur(12px);
+}
+.start-overlay button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 17px 24px;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  color: inherit;
+  background: transparent;
+  font: 750 13px/1 var(--font-geist-mono);
+  letter-spacing: .08em;
+  cursor: pointer;
+}
+.start-overlay button:hover { color: var(--bg); background: var(--ink); }
+.start-overlay p { margin: 0; opacity: .65; font: 550 11px/1.4 var(--font-geist-mono); letter-spacing: .04em; }
+.start-icon { color: var(--accent); font-size: 12px; }
 .eyebrow { margin-left: .5vw; color: var(--accent); font: 700 11px/1 var(--font-geist-mono); letter-spacing: .14em; }
 h1 {
   margin: clamp(15px, 2.2vw, 28px) 0 0;

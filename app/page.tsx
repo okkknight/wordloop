@@ -21,63 +21,96 @@ function randomIndex(length: number, except = -1) {
 
 export default function Home() {
   const [wordIndex, setWordIndex] = useState(() => randomIndex(WORDS.length));
+  const [nextWordIndex, setNextWordIndex] = useState(() => randomIndex(WORDS.length));
   const [paletteIndex, setPaletteIndex] = useState(() => randomIndex(PALETTES.length));
   const [spoken, setSpoken] = useState(false);
-  const firstRender = useRef(true);
+  const [activated, setActivated] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const skipNextAutoPlay = useRef(false);
   const [word, meaning, sublist] = WORDS[wordIndex];
   const [background, ink, accent] = PALETTES[paletteIndex];
 
   const speak = useCallback(() => {
-    if (!("speechSynthesis" in window)) return;
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = "en-US";
-    utterance.rate = 0.82;
-    utterance.pitch = 1;
-    utterance.onstart = () => setSpoken(true);
-    window.speechSynthesis.speak(utterance);
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.pause();
+    audio.src = `/audio/${word}.m4a`;
+    audio.currentTime = 0;
+    setSpoken(false);
+    void audio.play().then(() => setSpoken(true)).catch(() => setSpoken(false));
   }, [word]);
 
   const next = useCallback(() => {
-    setWordIndex((current) => randomIndex(WORDS.length, current));
+    setWordIndex(nextWordIndex);
+    setNextWordIndex(randomIndex(WORDS.length, nextWordIndex));
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
-  }, []);
+  }, [nextWordIndex]);
+
+  const activate = useCallback(() => {
+    skipNextAutoPlay.current = true;
+    setActivated(true);
+    speak();
+  }, [speak]);
 
   useEffect(() => {
-    const timer = window.setTimeout(speak, firstRender.current ? 380 : 120);
-    firstRender.current = false;
+    if (!activated) return;
+    if (skipNextAutoPlay.current) {
+      skipNextAutoPlay.current = false;
+      return;
+    }
+    const timer = window.setTimeout(speak, 120);
     return () => window.clearTimeout(timer);
-  }, [speak]);
+  }, [activated, speak]);
+
+  useEffect(() => {
+    const preload = new Audio(`/audio/${WORDS[nextWordIndex][0]}.m4a`);
+    preload.preload = "auto";
+    preload.load();
+    return () => { preload.src = ""; };
+  }, [nextWordIndex]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.code === "Space") {
         event.preventDefault();
-        next();
+        if (activated) next();
+        else activate();
       }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [next]);
+  }, [activate, activated, next]);
 
   return (
     <main
       className="poster"
       style={{ "--bg": background, "--ink": ink, "--accent": accent } as React.CSSProperties}
-      onClick={next}
+      onClick={activated ? next : activate}
       aria-live="polite"
     >
       <header className="topbar">
         <div className="brand"><span>WORD</span><span>LOOP</span></div>
         <button
           className="sound"
-          onClick={(event) => { event.stopPropagation(); speak(); }}
+          onClick={(event) => { event.stopPropagation(); activated ? speak() : activate(); }}
           aria-label={`Play pronunciation of ${word}`}
         >
           <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
           PLAY SOUND
         </button>
       </header>
+
+      <audio ref={audioRef} preload="auto" onEnded={() => setSpoken(false)} />
+
+      {!activated && (
+        <div className="start-overlay" role="dialog" aria-label="Start listening mode">
+          <button onClick={(event) => { event.stopPropagation(); activate(); }}>
+            <span className="start-icon" aria-hidden="true">▶</span>
+            START LEARNING
+          </button>
+          <p>British pronunciation · 570 academic words</p>
+        </div>
+      )}
 
       <section className="word-stage">
         <div className="eyebrow">
@@ -94,7 +127,7 @@ export default function Home() {
         </div>
         <div className="status">
           <span className={spoken ? "dot active" : "dot"} />
-          {spoken ? "LISTENING MODE" : "CLICK TO START SOUND"}
+          {spoken ? "PLAYING BRITISH AUDIO" : activated ? "AUDIO READY" : "CLICK TO START"}
         </div>
       </footer>
     </main>
