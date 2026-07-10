@@ -41,7 +41,6 @@ export async function POST(request: Request) {
         },
       },
     },
-    modalities: ["text"],
   };
 
   const formData = new FormData();
