@@ -154,6 +154,7 @@ export default function Home() {
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
   const repeatAdvanceTimerRef = useRef<number | null>(null);
+  const repeatRetryTimerRef = useRef<number | null>(null);
   const repeatTrackRef = useRef<MediaStreamTrack | null>(null);
   const repeatWordRef = useRef("");
   const repeatStreamRef = useRef<MediaStream | null>(null);
@@ -177,6 +178,13 @@ export default function Home() {
     if (repeatAdvanceTimerRef.current !== null) {
       window.clearTimeout(repeatAdvanceTimerRef.current);
       repeatAdvanceTimerRef.current = null;
+    }
+  }, []);
+
+  const clearRepeatRetryTimer = useCallback(() => {
+    if (repeatRetryTimerRef.current !== null) {
+      window.clearTimeout(repeatRetryTimerRef.current);
+      repeatRetryTimerRef.current = null;
     }
   }, []);
 
@@ -235,13 +243,14 @@ export default function Home() {
 
   useEffect(() => () => {
     clearRepeatAdvanceTimer();
+    clearRepeatRetryTimer();
     currentAudioRef.current?.pause();
     preloadedAudioRef.current?.pause();
     stopListening();
     peerConnectionRef.current?.close();
     dataChannelRef.current?.close();
     repeatStreamRef.current?.getTracks().forEach((track) => track.stop());
-  }, [clearRepeatAdvanceTimer, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
     const studiedWord = WORDS[index][0];
@@ -356,6 +365,7 @@ export default function Home() {
           setRepeatState("passed");
           recordStudy(wordIndexRef.current);
           clearRepeatAdvanceTimer();
+          clearRepeatRetryTimer();
           repeatAdvanceTimerRef.current = window.setTimeout(() => {
             if (nextWordIndexRef.current < 0) return;
             const upcomingIndex = nextWordIndexRef.current;
@@ -374,12 +384,21 @@ export default function Home() {
                 if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
               } catch (error) {
                 setRepeatState("error");
-                setRepeatMessage("MIC ERROR");
+                setRepeatMessage("RETRYING");
+                clearRepeatRetryTimer();
+                repeatRetryTimerRef.current = window.setTimeout(() => {
+                  beginRepeatTurn(wordIndexRef.current);
+                }, 1200);
               }
             });
           }, AUTO_ADVANCE_MS);
         } else {
           setRepeatState("retry");
+          setRepeatMessage("RETRYING");
+          clearRepeatRetryTimer();
+          repeatRetryTimerRef.current = window.setTimeout(() => {
+            beginRepeatTurn(wordIndexRef.current);
+          }, 850);
         }
         return;
       }
@@ -387,7 +406,11 @@ export default function Home() {
       if (payload.type === "conversation.item.input_audio_transcription.failed") {
         stopListening();
         setRepeatState("error");
-        setRepeatMessage("MIC ERROR");
+        setRepeatMessage("RETRYING");
+        clearRepeatRetryTimer();
+        repeatRetryTimerRef.current = window.setTimeout(() => {
+          beginRepeatTurn(wordIndexRef.current);
+        }, 1200);
       }
     });
 
@@ -424,6 +447,7 @@ export default function Home() {
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
     clearRepeatAdvanceTimer();
+    clearRepeatRetryTimer();
     stopListening();
     repeatWordRef.current = WORDS[targetIndex][0];
     setRepeatTranscript("");
@@ -432,7 +456,11 @@ export default function Home() {
     setRepeatMessage("PLAYING");
     void ensurePronunciationSession().catch((error) => {
       setRepeatState("error");
-      setRepeatMessage("MIC ERROR");
+      setRepeatMessage("RETRYING");
+      clearRepeatRetryTimer();
+      repeatRetryTimerRef.current = window.setTimeout(() => {
+        beginRepeatTurn(wordIndexRef.current);
+      }, 1200);
     });
     playWord(WORDS[targetIndex][0], async () => {
       try {
@@ -442,10 +470,14 @@ export default function Home() {
         if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
       } catch (error) {
         setRepeatState("error");
-        setRepeatMessage("MIC ERROR");
+        setRepeatMessage("RETRYING");
+        clearRepeatRetryTimer();
+        repeatRetryTimerRef.current = window.setTimeout(() => {
+          beginRepeatTurn(wordIndexRef.current);
+        }, 1200);
       }
     });
-  }, [clearRepeatAdvanceTimer, ensurePronunciationSession, playWord, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, ensurePronunciationSession, playWord, stopListening]);
 
   const speak = useCallback(() => {
     if (studyMode === "repeat") beginRepeatTurn(wordIndexRef.current);
@@ -482,6 +514,7 @@ export default function Home() {
     if (nextMode === studyMode) return;
     stopListening();
     clearRepeatAdvanceTimer();
+    clearRepeatRetryTimer();
     setStudyMode(nextMode);
     setRepeatTranscript("");
     setRepeatScore(null);
@@ -500,7 +533,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(wordIndexRef.current);
-  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, playWord, stopListening, studyMode, word]);
+  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode, word]);
 
   useEffect(() => {
     if (nextWordIndex < 0) return;
