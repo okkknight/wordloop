@@ -198,43 +198,13 @@ h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .repeat-mode-badge {
   color: color-mix(in srgb, var(--accent), var(--ink) 28%);
   font: 700 9px/1 var(--font-geist-mono);
   letter-spacing: .18em;
   text-transform: uppercase;
-}
-.repeat-state-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0;
-  color: color-mix(in srgb, var(--ink), transparent 24%);
-  font: 700 11px/1 var(--font-geist-mono);
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-.repeat-state-chip i {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: .82;
-  box-shadow: 0 0 0 6px color-mix(in srgb, currentColor, transparent 88%);
-}
-.repeat-state-chip.connecting,
-.repeat-state-chip.listening,
-.repeat-state-chip.scoring {
-  color: color-mix(in srgb, var(--accent), var(--ink) 14%);
-}
-.repeat-state-chip.passed {
-  color: #0f8b67;
-}
-.repeat-state-chip.retry,
-.repeat-state-chip.error {
-  color: #d4562b;
 }
 .repeat-siri {
   display: flex;

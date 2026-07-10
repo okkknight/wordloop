@@ -317,13 +317,15 @@ export default function Home() {
 
   const recordStudy = useCallback((index: number) => {
     const studiedWord = WORDS[index][0];
+    let nextEligibleIndex = -1;
     setProgress((current) => {
       const next = {
         ...current,
         [studiedWord]: Math.min(MAX_STUDY_COUNT, (current[studiedWord] ?? 0) + 1),
       };
       localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
-      setNextWordIndex(eligibleIndex(next, index));
+      nextEligibleIndex = eligibleIndex(next, index);
+      setNextWordIndex(nextEligibleIndex);
       return next;
     });
 
@@ -341,7 +343,8 @@ export default function Home() {
         localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
         return next;
       });
-    }).catch(() => undefined);
+      }).catch(() => undefined);
+    return nextEligibleIndex;
   }, []);
 
   const playWord = useCallback((targetWord: string, onEnded?: () => void) => {
@@ -424,30 +427,14 @@ export default function Home() {
 
         if (result.passed) {
           setRepeatState("passed");
-          recordStudy(wordIndexRef.current);
+          const upcomingIndex = recordStudy(wordIndexRef.current);
           clearRepeatAdvanceTimer();
           clearRepeatRetryTimer();
           repeatAdvanceTimerRef.current = window.setTimeout(() => {
-            if (nextWordIndexRef.current < 0) return;
-            const upcomingIndex = nextWordIndexRef.current;
+            if (upcomingIndex < 0) return;
             setWordIndex(upcomingIndex);
             setPaletteIndex((current) => randomIndex(PALETTES.length, current));
-            repeatWordRef.current = WORDS[upcomingIndex][0];
-            playWord(WORDS[upcomingIndex][0], async () => {
-              try {
-                await ensurePronunciationSession();
-                setRepeatMessage("LISTENING");
-                setRepeatState("listening");
-                if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
-              } catch (error) {
-                setRepeatState("error");
-                setRepeatMessage("RETRYING");
-                clearRepeatRetryTimer();
-                repeatRetryTimerRef.current = window.setTimeout(() => {
-                  beginRepeatTurn(wordIndexRef.current);
-                }, 1200);
-              }
-            });
+            beginRepeatTurn(upcomingIndex);
           }, AUTO_ADVANCE_MS);
         } else {
           setRepeatState("retry");
@@ -500,7 +487,7 @@ export default function Home() {
     await openPromise;
     setRepeatState("ready");
     setRepeatMessage("READY");
-  }, [clearRepeatAdvanceTimer, nextWordIndex, playWord, recordStudy, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, recordStudy, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
     clearRepeatAdvanceTimer();
@@ -732,10 +719,6 @@ export default function Home() {
             <div className="repeat-copy">
               <div className="repeat-head">
                 <span className="repeat-mode-badge">Repeat mode</span>
-                <span className={`repeat-state-chip ${repeatState}`}>
-                  <i aria-hidden="true" />
-                  {repeatLabel}
-                </span>
               </div>
               <div className={`repeat-siri ${repeatState}`} aria-label={`Repeat mode ${repeatMessage.toLowerCase()}`}>
                 <span className="repeat-siri-orb" aria-hidden="true">
