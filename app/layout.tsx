@@ -7,7 +7,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   title: "Word Loop — Learn English One Word at a Time",
-  description: "A beautifully simple English vocabulary loop. Press space, learn a word, and keep going.",
+  description: "Learn 570 high-frequency academic English word families for IELTS. Press space, listen, and keep going.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

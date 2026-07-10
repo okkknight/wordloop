@@ -1,33 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-
-const WORDS = [
-  ["serendipity", "a happy discovery made by chance"],
-  ["resilient", "able to recover and grow after difficulty"],
-  ["wanderlust", "a strong desire to travel"],
-  ["eloquent", "fluent, graceful, and persuasive"],
-  ["tranquil", "calm, quiet, and peaceful"],
-  ["curiosity", "a strong wish to know or learn"],
-  ["radiant", "shining brightly with joy or light"],
-  ["meticulous", "very careful about small details"],
-  ["ephemeral", "lasting for only a short time"],
-  ["audacious", "bold and willing to take risks"],
-  ["mellifluous", "pleasantly smooth and musical to hear"],
-  ["nostalgia", "affection for a remembered time"],
-  ["luminous", "softly bright or full of light"],
-  ["tenacious", "determined and unwilling to give up"],
-  ["whimsical", "playfully unusual and imaginative"],
-  ["solitude", "the peaceful state of being alone"],
-  ["flourish", "to grow or develop successfully"],
-  ["harmony", "a pleasing balance of different parts"],
-  ["vivid", "producing clear, powerful images"],
-  ["sincere", "honest, genuine, and heartfelt"],
-  ["embrace", "to accept something with enthusiasm"],
-  ["momentum", "the force that keeps progress moving"],
-  ["perspective", "a particular way of seeing something"],
-  ["ineffable", "too extraordinary to describe in words"],
-] as const;
+import { WORDS } from "./words";
 
 const PALETTES = [
   ["#f3f0e8", "#1e3a34", "#d4562b"],
@@ -50,7 +24,7 @@ export default function Home() {
   const [paletteIndex, setPaletteIndex] = useState(() => randomIndex(PALETTES.length));
   const [spoken, setSpoken] = useState(false);
   const firstRender = useRef(true);
-  const [word, meaning] = WORDS[wordIndex];
+  const [word, meaning, sublist] = WORDS[wordIndex];
   const [background, ink, accent] = PALETTES[paletteIndex];
 
   const speak = useCallback(() => {
@@ -106,8 +80,10 @@ export default function Home() {
       </header>
 
       <section className="word-stage">
-        <div className="eyebrow">WORD #{String(wordIndex + 1).padStart(2, "0")}</div>
-        <h1 key={word}>{word}</h1>
+        <div className="eyebrow">
+          AWL · SUBLIST {sublist} · WORD {String(wordIndex + 1).padStart(3, "0")} / {WORDS.length}
+        </div>
+        <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
       </section>
 
