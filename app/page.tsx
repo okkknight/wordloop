@@ -224,10 +224,7 @@ export default function Home() {
 
       <section className="word-stage">
         <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
-        <div className="word-meta">
-          <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
-          <div className="study-count">已学习 {currentStudyCount} / {MAX_STUDY_COUNT}</div>
-        </div>
+        <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
       </section>
 
@@ -280,6 +277,10 @@ export default function Home() {
           ) : (
             <span>ALL 570 WORDS MASTERED</span>
           )}
+        </div>
+        <div className="current-progress">
+          <span>THIS WORD</span>
+          <strong>{currentStudyCount} / {MAX_STUDY_COUNT}</strong>
         </div>
         <div className="status">
           <span className={spoken ? "dot active" : "dot"} />
