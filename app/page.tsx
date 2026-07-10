@@ -43,7 +43,7 @@ export default function Home() {
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
   const userIdRef = useRef("");
-  const [word, meaning, sublist, phonetic] = WORDS[wordIndex];
+  const [word, meaning, , phonetic] = WORDS[wordIndex];
   const [background, ink, accent] = PALETTES[paletteIndex];
   const currentStudyCount = progress[word] ?? 0;
   const totalStudies = Object.values(progress).reduce((sum, count) => sum + count, 0);
@@ -223,9 +223,6 @@ export default function Home() {
       )}
 
       <section className="word-stage">
-        <div className="eyebrow">
-          AWL · SUBLIST {sublist} · WORD {String(wordIndex + 1).padStart(3, "0")} / {WORDS.length}
-        </div>
         <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
         <div className="word-meta">
           <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
