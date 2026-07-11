@@ -123,9 +123,16 @@ function hasEnoughSpeechEvidence(target: string, transcript: string) {
   return spokenWords.length >= minimumWords;
 }
 
+function normalizeCoverageWord(value: string) {
+  const word = value.toLowerCase().replace(/’/g, "'").replace(/^[^a-z']+|[^a-z']+$/g, "");
+  if (word === "'em" || word === "em") return "them";
+  const contraction = word.match(/^([a-z]+)'(?:d|ll|re|ve|m|s)$/);
+  return contraction?.[1] ?? normalizeSpeech(word);
+}
+
 function sentenceWordCoverage(target: string, transcript: string) {
-  const targetWords = target.split(/\s+/).map(normalizeSpeech).filter(Boolean);
-  const spokenWords = new Set(transcript.split(/\s+/).map(normalizeSpeech).filter(Boolean));
+  const targetWords = target.split(/\s+/).map(normalizeCoverageWord).filter(Boolean);
+  const spokenWords = new Set(transcript.split(/\s+/).map(normalizeCoverageWord).filter(Boolean));
   if (targetWords.length === 0) return 0;
   return targetWords.filter((word) => spokenWords.has(word)).length / targetWords.length;
 }
