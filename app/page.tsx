@@ -116,7 +116,7 @@ function repeatStatusLabel(state: RepeatState) {
     case "playing":
       return "LISTEN";
     case "speak":
-      return "SPEAK";
+      return "SPEAKING";
     case "speaking":
       return "SPEAKING";
     case "scoring":
