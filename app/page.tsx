@@ -787,8 +787,9 @@ export default function Home() {
       )}
 
       <section className="word-stage">
-        <div className="word-heading">
-          <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
+        <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
+        <div className="phonetic-row">
+          <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
           <button
             className="word-play"
             onClick={(event) => { event.stopPropagation(); activated ? speak() : activate(); }}
@@ -797,7 +798,6 @@ export default function Home() {
             <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
           </button>
         </div>
-        <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
         {studyMode === "repeat" && (
           <div className={`repeat-card ${repeatState}`}>
@@ -828,14 +828,24 @@ export default function Home() {
       </section>
 
       {studyMode === "repeat" && activated && (
-        <button
-          className="repeat-toggle"
-          onClick={(event) => { event.stopPropagation(); toggleRepeatPause(); }}
-          aria-label={repeatState === "paused" ? "Resume repeat" : "Pause repeat"}
-          aria-pressed={repeatState === "paused"}
-        >
-          <span aria-hidden="true" className={repeatState === "paused" ? "repeat-toggle-play" : "repeat-toggle-pause"} />
-        </button>
+        <div className="repeat-controls">
+          <button
+            className="manual-next repeat-control"
+            onClick={(event) => { event.stopPropagation(); next(); }}
+            disabled={nextWordIndex < 0}
+          >
+            NEXT WORD <span aria-hidden="true">→</span>
+          </button>
+          <button
+            className="repeat-toggle repeat-control"
+            onClick={(event) => { event.stopPropagation(); toggleRepeatPause(); }}
+            aria-label={repeatState === "paused" ? "Resume repeat" : "Pause repeat"}
+            aria-pressed={repeatState === "paused"}
+          >
+            <span aria-hidden="true" className={repeatState === "paused" ? "repeat-toggle-play" : "repeat-toggle-pause"} />
+            <span>{repeatState === "paused" ? "RESUME" : "PAUSE"}</span>
+          </button>
+        </div>
       )}
 
       {panelOpen && (
@@ -882,15 +892,7 @@ export default function Home() {
 
       <footer>
         <div className="prompt">
-          {studyMode === "repeat" ? (
-            <button
-              className="manual-next"
-              onClick={(event) => { event.stopPropagation(); next(); }}
-              disabled={nextWordIndex < 0}
-            >
-              NEXT WORD <span aria-hidden="true">→</span>
-            </button>
-          ) : nextWordIndex >= 0 ? (
+          {studyMode === "repeat" ? null : nextWordIndex >= 0 ? (
             <><span className="space-key">SPACE</span><span>next word</span></>
           ) : (
             <span>ALL 570 WORDS MASTERED</span>
