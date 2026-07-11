@@ -217,6 +217,7 @@ export default function Home() {
   const repeatWordRef = useRef("");
   const repeatStreamRef = useRef<MediaStream | null>(null);
   const userIdRef = useRef("");
+  const progressRef = useRef<ProgressMap>({});
   const nextWordIndexRef = useRef(nextWordIndex);
   const wordIndexRef = useRef(wordIndex);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
@@ -304,6 +305,10 @@ export default function Home() {
     nextWordIndexRef.current = nextWordIndex;
   }, [nextWordIndex]);
 
+  useEffect(() => {
+    progressRef.current = progress;
+  }, [progress]);
+
   useEffect(() => () => {
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
@@ -317,17 +322,16 @@ export default function Home() {
 
   const recordStudy = useCallback((index: number) => {
     const studiedWord = WORDS[index][0];
-    let nextEligibleIndex = -1;
-    setProgress((current) => {
-      const next = {
-        ...current,
-        [studiedWord]: Math.min(MAX_STUDY_COUNT, (current[studiedWord] ?? 0) + 1),
-      };
-      localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
-      nextEligibleIndex = eligibleIndex(next, index);
-      setNextWordIndex(nextEligibleIndex);
-      return next;
-    });
+    const next = {
+      ...progressRef.current,
+      [studiedWord]: Math.min(MAX_STUDY_COUNT, (progressRef.current[studiedWord] ?? 0) + 1),
+    };
+    const nextEligibleIndex = eligibleIndex(next, index);
+
+    progressRef.current = next;
+    setProgress(next);
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
+    setNextWordIndex(nextEligibleIndex);
 
     const userId = userIdRef.current;
     if (!userId) return;
@@ -340,6 +344,7 @@ export default function Home() {
       const data = await response.json() as { studyCount: number };
       setProgress((current) => {
         const next = { ...current, [studiedWord]: Math.max(current[studiedWord] ?? 0, data.studyCount) };
+        progressRef.current = next;
         localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
         return next;
       });
