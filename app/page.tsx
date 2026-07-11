@@ -911,24 +911,6 @@ export default function Home() {
           <span>THIS WORD</span>
           <strong>{currentStudyCount} / {MAX_STUDY_COUNT}</strong>
         </div>
-        <div className="status">
-          <span className={spoken ? "dot active" : "dot"} />
-          {studyMode === "repeat"
-            ? repeatState === "connecting"
-              ? "CONNECTING"
-              : repeatState === "listening"
-                ? "LISTENING"
-                : repeatState === "scoring"
-                  ? "SCORING"
-                  : activated
-                    ? "READY"
-                    : "CLICK TO START"
-            : spoken
-              ? "PLAYING BRITISH AUDIO"
-              : activated
-                ? "AUDIO READY"
-                : "CLICK TO START"}
-        </div>
       </footer>
     </main>
   );
