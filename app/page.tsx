@@ -17,6 +17,7 @@ const SPEAK_TIMEOUT_MS = 6_000;
 const SPEAKING_TIMEOUT_MS = 6_000;
 const SCORING_TIMEOUT_MS = 6_000;
 const MIN_SPEECH_MS = 350;
+const MIN_SENTENCE_WORD_COVERAGE = 0.6;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
 const SENTENCE_PROGRESS_KEY = "word-loop-sentence-progress";
@@ -120,6 +121,13 @@ function hasEnoughSpeechEvidence(target: string, transcript: string) {
   const targetWords = target.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
   const minimumWords = targetWords.length > 1 ? 2 : 1;
   return spokenWords.length >= minimumWords;
+}
+
+function sentenceWordCoverage(target: string, transcript: string) {
+  const targetWords = target.split(/\s+/).map(normalizeSpeech).filter(Boolean);
+  const spokenWords = new Set(transcript.split(/\s+/).map(normalizeSpeech).filter(Boolean));
+  if (targetWords.length === 0) return 0;
+  return targetWords.filter((word) => spokenWords.has(word)).length / targetWords.length;
 }
 
 function playFeedbackTone(context: AudioContext, passed: boolean) {
@@ -763,8 +771,11 @@ export default function Home() {
         clearRepeatPhaseTimers();
         setRepeatTranscript(transcript);
         const result = scoreTranscript(repeatWordRef.current, transcript);
-        playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, result.passed));
-        if (!result.passed) {
+        const meetsSentenceCoverage = activeCourseKindRef.current !== "sentence"
+          || sentenceWordCoverage(repeatWordRef.current, transcript) >= MIN_SENTENCE_WORD_COVERAGE;
+        const passed = result.passed && meetsSentenceCoverage;
+        playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, passed));
+        if (!passed) {
           scheduleRepeatRetry(turnId, 850);
           return;
         }

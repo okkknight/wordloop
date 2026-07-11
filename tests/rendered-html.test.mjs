@@ -75,7 +75,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /storedSentenceProgress, -1, "random"/);
   assert.match(page, /study-text-placeholder">✦ ✦ ✦/);
   assert.match(page, /const MIN_SPEECH_MS = 350/);
+  assert.match(page, /const MIN_SENTENCE_WORD_COVERAGE = 0\.6/);
   assert.match(page, /hasEnoughSpeechEvidence\(repeatWordRef\.current, transcript\)/);
+  assert.match(page, /sentenceWordCoverage\(repeatWordRef\.current, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
   assert.match(page, /scheduleRepeatRetry\(turnId, 1_000, true\)/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);
