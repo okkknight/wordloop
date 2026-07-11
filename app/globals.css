@@ -42,27 +42,26 @@ button { font: inherit; }
 .course-button {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--ink), transparent 68%);
-  border-radius: 999px;
-  padding: 7px 10px;
-  color: inherit;
-  background: color-mix(in srgb, var(--bg), white 32%);
-  font: 650 10px/1.2 var(--font-geist-mono);
-  letter-spacing: .08em;
+  border: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink), transparent 86%);
+  border-radius: 0;
+  padding: 5px 1px 6px;
+  color: color-mix(in srgb, var(--ink), transparent 45%);
+  background: transparent;
+  font: 600 9px/1.2 var(--font-geist-mono);
+  letter-spacing: .1em;
   text-align: left;
   cursor: pointer;
-  box-shadow: 0 4px 12px color-mix(in srgb, var(--ink), transparent 92%);
-  transition: color 180ms ease, border-color 180ms ease, background 180ms ease, transform 180ms ease;
+  transition: color 180ms ease, border-color 180ms ease;
 }
 .course-button span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.course-button::after { content: "↗"; color: var(--accent); font-size: 12px; line-height: .7; opacity: .65; }
 .course-button:hover, .course-button:focus-visible {
-  color: var(--accent);
-  border-color: var(--accent);
-  background: color-mix(in srgb, var(--bg), white 45%);
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--accent), transparent 42%);
   outline: 0;
-  transform: translateY(-1px);
 }
 .mode-switch {
   display: flex;
