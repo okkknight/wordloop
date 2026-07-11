@@ -790,7 +790,6 @@ export default function Home() {
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
         {studyMode === "repeat" && (
           <div className={`repeat-card ${repeatState}`}>
-            <span className="repeat-mode-badge">Repeat mode</span>
             <div className="repeat-visual" aria-hidden="true">
               {repeatState === "passed" ? (
                 <span className="repeat-result-icon success">✓</span>

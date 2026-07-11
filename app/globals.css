@@ -155,35 +155,9 @@ h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
   align-items: center;
   width: min(520px, 94%);
   max-width: 100%;
-  margin: clamp(72px, 10vh, 116px) auto 0;
-  padding-top: 20px;
+  margin: clamp(42px, 6vh, 72px) auto 0;
   text-align: center;
   animation: enter 420ms 120ms cubic-bezier(.2,.8,.2,1) both;
-}
-.repeat-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 1px;
-  background:
-    linear-gradient(90deg, color-mix(in srgb, var(--accent), transparent 18%), color-mix(in srgb, var(--ink), transparent 88%));
-  transform-origin: left center;
-}
-.repeat-card.retry::before,
-.repeat-card.error::before {
-  background: linear-gradient(90deg, rgba(212, 86, 43, .72), color-mix(in srgb, var(--ink), transparent 88%));
-}
-.repeat-card.passed::before {
-  background: linear-gradient(90deg, rgba(15, 139, 103, .64), color-mix(in srgb, var(--ink), transparent 88%));
-}
-.repeat-mode-badge {
-  align-self: flex-start;
-  color: color-mix(in srgb, var(--accent), var(--ink) 28%);
-  font: 700 9px/1 var(--font-geist-mono);
-  letter-spacing: .18em;
-  text-transform: uppercase;
 }
 .repeat-visual {
   display: grid;
@@ -421,8 +395,7 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   .meaning { margin-top: 34px; margin-left: 0; max-width: 82%; }
   .repeat-card {
     width: 100%;
-    margin-top: 58px;
-    padding-top: 18px;
+    margin-top: 44px;
   }
   .repeat-visual { height: 72px; }
   .repeat-waveform { transform: scale(.82); }
