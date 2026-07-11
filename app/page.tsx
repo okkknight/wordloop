@@ -107,7 +107,7 @@ function speechCandidates(transcript: string) {
 }
 
 function playFeedbackTone(context: AudioContext, passed: boolean) {
-  const notes = passed ? [660, 880] : [420, 300, 210];
+  const notes = passed ? [660, 880] : [420, 260];
   const startedAt = context.currentTime;
 
   for (const [index, frequency] of notes.entries()) {
