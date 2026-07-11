@@ -114,7 +114,7 @@ function repeatStatusLabel(state: RepeatState) {
     case "ready":
       return "READY";
     case "playing":
-      return "LISTEN";
+      return "LISTENING";
     case "speak":
       return "SPEAKING";
     case "speaking":
