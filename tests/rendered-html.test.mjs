@@ -45,9 +45,11 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /localStorage/);
   assert.match(page, /\/api\/progress/);
   assert.match(page, /RTCPeerConnection/);
-  assert.match(page, /studyContent/);
-  assert.match(page, /SENTENCES/);
+  assert.match(page, /activeCourseId/);
+  assert.match(page, /coursePickerOpen/);
+  assert.match(page, /COURSE_PACKAGES/);
   assert.match(courses, /modern-family-s01e01/);
+  assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);

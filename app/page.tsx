@@ -1,7 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { DEFAULT_COURSE, type SentenceEntry } from "./courses";
+import {
+  COURSE_PACKAGES,
+  DEFAULT_COURSE,
+  MODERN_FAMILY_S01E01_COURSE,
+  type CourseEntry,
+} from "./courses";
 import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
@@ -18,7 +23,6 @@ const SENTENCE_PROGRESS_KEY = "word-loop-sentence-progress";
 
 type ProgressMap = Record<string, number>;
 type StudyMode = "listen" | "repeat";
-type StudyContent = "words" | "sentences";
 type RepeatState =
   | "idle"
   | "connecting"
@@ -62,7 +66,7 @@ function eligibleIndex(progress: ProgressMap, except = -1) {
   return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
 }
 
-function eligibleSentenceIndex(entries: readonly SentenceEntry[], progress: ProgressMap, except = -1) {
+function eligibleSentenceIndex(entries: readonly CourseEntry[], progress: ProgressMap, except = -1) {
   const available = entries.flatMap((entry, index) =>
     index !== except && (progress[entry.id] ?? 0) < MAX_STUDY_COUNT ? [index] : [],
   );
@@ -251,10 +255,10 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
 export default function Home() {
   const [wordIndex, setWordIndex] = useState(() => randomIndex(WORDS.length));
   const [nextWordIndex, setNextWordIndex] = useState(() => randomIndex(WORDS.length));
-  const [sentenceIndex, setSentenceIndex] = useState(() => randomIndex(DEFAULT_COURSE.entries.length));
-  const [nextSentenceIndex, setNextSentenceIndex] = useState(() => randomIndex(DEFAULT_COURSE.entries.length));
+  const [sentenceIndex, setSentenceIndex] = useState(() => randomIndex(MODERN_FAMILY_S01E01_COURSE.entries.length));
+  const [nextSentenceIndex, setNextSentenceIndex] = useState(() => randomIndex(MODERN_FAMILY_S01E01_COURSE.entries.length));
   const [paletteIndex, setPaletteIndex] = useState(() => randomIndex(PALETTES.length));
-  const [studyContent, setStudyContent] = useState<StudyContent>("words");
+  const [activeCourseId, setActiveCourseId] = useState(DEFAULT_COURSE.id);
   const [studyMode, setStudyMode] = useState<StudyMode>("listen");
   const [activated, setActivated] = useState(false);
   const [progress, setProgress] = useState<ProgressMap>(() => {
@@ -274,11 +278,13 @@ export default function Home() {
     }
   });
   const [panelOpen, setPanelOpen] = useState(false);
+  const [coursePickerOpen, setCoursePickerOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
   const [repeatMessage, setRepeatMessage] = useState("READY");
   const [repeatTranscript, setRepeatTranscript] = useState("");
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
+  const studyAudioSourceRef = useRef("");
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
@@ -306,33 +312,40 @@ export default function Home() {
   const wordIndexRef = useRef(wordIndex);
   const nextSentenceIndexRef = useRef(nextSentenceIndex);
   const sentenceIndexRef = useRef(sentenceIndex);
+  const sentenceEntriesRef = useRef<readonly CourseEntry[]>(MODERN_FAMILY_S01E01_COURSE.entries);
   const currentIndexRef = useRef(wordIndex);
   const nextIndexRef = useRef(nextWordIndex);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
-  const sentence = DEFAULT_COURSE.entries[sentenceIndex];
-  const sentenceMode = studyContent === "sentences";
+  const activeCourse = COURSE_PACKAGES.find((course) => course.id === activeCourseId) ?? DEFAULT_COURSE;
+  const sentenceMode = activeCourse.kind === "sentence";
+  const sentenceCourse = sentenceMode ? activeCourse : MODERN_FAMILY_S01E01_COURSE;
+  const sentence = sentenceCourse.entries[sentenceIndex];
   const currentItem = sentenceMode
     ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio }
     : { id: word, text: word, meaning, phonetic, audio: `/audio/${word}.m4a` };
+  const currentAudio = sentenceMode ? sentence.audio : `/audio/${word}.m4a`;
   const currentIndex = sentenceMode ? sentenceIndex : wordIndex;
   const nextIndex = sentenceMode ? nextSentenceIndex : nextWordIndex;
+  const nextAudio = nextIndex < 0
+    ? null
+    : sentenceMode ? sentenceCourse.entries[nextIndex].audio : `/audio/${WORDS[nextIndex][0]}.m4a`;
   const activeProgress = sentenceMode ? sentenceProgress : progress;
-  const activeEntriesCount = sentenceMode ? DEFAULT_COURSE.entries.length : WORDS.length;
+  const activeEntriesCount = activeCourse.entries.length;
   const [background, ink, accent] = PALETTES[paletteIndex];
   const currentStudyCount = activeProgress[currentItem.id] ?? 0;
   const manualNextIndex = nextIndex >= 0
     ? nextIndex
     : sentenceMode
-      ? eligibleSentenceIndex(DEFAULT_COURSE.entries, sentenceProgress, sentenceIndex)
+      ? eligibleSentenceIndex(sentenceCourse.entries, sentenceProgress, sentenceIndex)
       : eligibleIndex(progress, wordIndex);
   const totalStudies = Object.values(activeProgress).reduce((sum, count) => sum + count, 0);
   const completedWords = sentenceMode
-    ? DEFAULT_COURSE.entries.filter((entry) => (sentenceProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT).length
+    ? sentenceCourse.entries.filter((entry) => (sentenceProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT).length
     : WORDS.filter(([entry]) => (progress[entry] ?? 0) >= MAX_STUDY_COUNT).length;
   const filteredWords = WORDS.filter(([entry, entryMeaning]) =>
     `${entry} ${entryMeaning}`.toLowerCase().includes(search.trim().toLowerCase()),
   );
-  const filteredSentences = DEFAULT_COURSE.entries.filter((entry) =>
+  const filteredSentences = sentenceCourse.entries.filter((entry) =>
     `${entry.text} ${entry.translation}`.toLowerCase().includes(search.trim().toLowerCase()),
   );
   const repeatLabel = repeatStatusLabel(repeatState);
@@ -452,6 +465,10 @@ export default function Home() {
   }, [sentenceIndex]);
 
   useEffect(() => {
+    sentenceEntriesRef.current = sentenceCourse.entries;
+  }, [sentenceCourse]);
+
+  useEffect(() => {
     nextSentenceIndexRef.current = nextSentenceIndex;
   }, [nextSentenceIndex]);
 
@@ -459,6 +476,10 @@ export default function Home() {
     currentIndexRef.current = currentIndex;
     nextIndexRef.current = nextIndex;
   }, [currentIndex, nextIndex]);
+
+  useEffect(() => {
+    studyAudioSourceRef.current = currentAudio;
+  }, [currentAudio]);
 
   useEffect(() => {
     progressRef.current = progress;
@@ -484,12 +505,12 @@ export default function Home() {
 
   const recordStudy = useCallback((index: number) => {
     if (sentenceMode) {
-      const entry = DEFAULT_COURSE.entries[index];
+      const entry = sentenceEntriesRef.current[index];
       const next = {
         ...sentenceProgressRef.current,
         [entry.id]: Math.min(MAX_STUDY_COUNT, (sentenceProgressRef.current[entry.id] ?? 0) + 1),
       };
-      const nextEligibleIndex = eligibleSentenceIndex(DEFAULT_COURSE.entries, next, index);
+      const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, next, index);
       sentenceProgressRef.current = next;
       setSentenceProgress(next);
       localStorage.setItem(SENTENCE_PROGRESS_KEY, JSON.stringify(next));
@@ -682,7 +703,7 @@ export default function Home() {
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
     const target = sentenceMode
-      ? DEFAULT_COURSE.entries[targetIndex]
+      ? sentenceEntriesRef.current[targetIndex]
       : { text: WORDS[targetIndex][0], audio: `/audio/${WORDS[targetIndex][0]}.m4a` };
     const turnId = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = turnId;
@@ -751,20 +772,20 @@ export default function Home() {
 
   const speak = useCallback(() => {
     if (studyMode === "repeat") beginRepeatTurn(currentIndexRef.current);
-    else playWord(currentItem.audio);
-  }, [beginRepeatTurn, currentItem.audio, playWord, studyMode]);
+    else playWord(studyAudioSourceRef.current);
+  }, [beginRepeatTurn, playWord, studyMode]);
 
   const next = useCallback(() => {
     const targetIndex = nextIndexRef.current >= 0
       ? nextIndexRef.current
       : sentenceMode
-        ? eligibleSentenceIndex(DEFAULT_COURSE.entries, sentenceProgressRef.current, currentIndexRef.current)
+        ? eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current)
         : eligibleIndex(progressRef.current, currentIndexRef.current);
     if (targetIndex < 0) return;
     stopListening();
     clearRepeatAdvanceTimer();
     if (sentenceMode) {
-      setNextSentenceIndex(eligibleSentenceIndex(DEFAULT_COURSE.entries, sentenceProgressRef.current, targetIndex));
+      setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex));
       setSentenceIndex(targetIndex);
     } else {
       setNextWordIndex(eligibleIndex(progressRef.current, targetIndex));
@@ -773,7 +794,7 @@ export default function Home() {
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
 
     if (studyMode === "listen") {
-      playWord(sentenceMode ? DEFAULT_COURSE.entries[targetIndex].audio : WORDS[targetIndex][0]);
+      playWord(sentenceMode ? sentenceEntriesRef.current[targetIndex].audio : WORDS[targetIndex][0]);
       recordStudy(targetIndex);
       return;
     }
@@ -784,12 +805,12 @@ export default function Home() {
   const activate = useCallback(() => {
     setActivated(true);
     if (studyMode === "listen") {
-      playWord(currentItem.audio);
-      recordStudy(currentIndex);
+      playWord(studyAudioSourceRef.current);
+      recordStudy(currentIndexRef.current);
       return;
     }
-    beginRepeatTurn(currentIndex);
-  }, [beginRepeatTurn, currentIndex, currentItem.audio, playWord, recordStudy, studyMode]);
+    beginRepeatTurn(currentIndexRef.current);
+  }, [beginRepeatTurn, playWord, recordStudy, studyMode]);
 
   const handleModeChange = useCallback((nextMode: StudyMode) => {
     if (nextMode === studyMode) return;
@@ -812,18 +833,16 @@ export default function Home() {
       clearRepeatPhaseTimers();
       setRepeatState("idle");
       setRepeatMessage("READY");
-      playWord(currentItem.audio);
+      playWord(studyAudioSourceRef.current);
       return;
     }
 
     beginRepeatTurn(currentIndexRef.current);
-  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, currentItem.audio, playWord, stopListening, studyMode]);
+  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode]);
 
   useEffect(() => {
-    if (nextIndex < 0) return;
-    const preload = new Audio(sentenceMode
-      ? DEFAULT_COURSE.entries[nextIndex].audio
-      : `/audio/${WORDS[nextIndex][0]}.m4a`);
+    if (!nextAudio) return;
+    const preload = new Audio(nextAudio);
     preload.preload = "auto";
     preload.load();
     preloadedAudioRef.current = preload;
@@ -833,7 +852,7 @@ export default function Home() {
         preload.src = "";
       }
     };
-  }, [nextIndex, sentenceMode]);
+  }, [nextAudio]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -884,8 +903,11 @@ export default function Home() {
     beginRepeatTurn(currentIndexRef.current);
   }, [activate, activated, beginRepeatTurn, next, repeatState, studyMode]);
 
-  const handleContentChange = useCallback((nextContent: StudyContent) => {
-    if (nextContent === studyContent) return;
+  const handleCourseChange = useCallback((courseId: string) => {
+    if (courseId === activeCourseId) {
+      setCoursePickerOpen(false);
+      return;
+    }
     activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = activeRepeatTurnRef.current;
     repeatListeningTurnRef.current = null;
@@ -895,11 +917,12 @@ export default function Home() {
     clearRepeatPhaseTimers();
     currentAudioRef.current?.pause();
     stopListening();
-    setStudyContent(nextContent);
+    setActiveCourseId(courseId);
+    setCoursePickerOpen(false);
     setActivated(false);
     setRepeatState("idle");
     setRepeatMessage("READY");
-  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyContent]);
+  }, [activeCourseId, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
 
   return (
     <main
@@ -909,20 +932,17 @@ export default function Home() {
       aria-live="polite"
     >
       <header className="topbar">
-        <div className="brand"><span>WORD</span><span>LOOP</span></div>
+        <div className="brand-area">
+          <div className="brand"><span>WORD</span><span>LOOP</span></div>
+          <button
+            className="course-button"
+            onClick={(event) => { event.stopPropagation(); setCoursePickerOpen(true); }}
+            aria-label="Choose course package"
+          >
+            {activeCourse.title}
+          </button>
+        </div>
         <div className="header-actions">
-          <div className="mode-switch" role="tablist" aria-label="Course type">
-            <button
-              className={studyContent === "words" ? "active" : undefined}
-              onClick={(event) => { event.stopPropagation(); handleContentChange("words"); }}
-              aria-pressed={studyContent === "words"}
-            >WORDS</button>
-            <button
-              className={studyContent === "sentences" ? "active" : undefined}
-              onClick={(event) => { event.stopPropagation(); handleContentChange("sentences"); }}
-              aria-pressed={studyContent === "sentences"}
-            >SENTENCES</button>
-          </div>
           <div className="mode-switch" role="tablist" aria-label="Study mode">
             <button
               className={studyMode === "listen" ? "active" : undefined}
@@ -955,12 +975,12 @@ export default function Home() {
             <span className="start-icon" aria-hidden="true">▶</span>
             {studyMode === "repeat" ? "START REPEAT" : "START LEARNING"}
           </button>
-          <p>{studyMode === "repeat" ? "Repeat mode" : sentenceMode ? DEFAULT_COURSE.title : "British pronunciation · 570 academic words"}</p>
+          <p>{studyMode === "repeat" ? "Repeat mode" : activeCourse.description}</p>
         </div>
       )}
 
       <section className="word-stage">
-        <div className="course-kicker">{sentenceMode ? `${DEFAULT_COURSE.title} · ${sentenceIndex + 1}/${DEFAULT_COURSE.entries.length}` : "ACADEMIC WORD LIST"}</div>
+        <div className="course-kicker">{activeCourse.title} · {currentIndex + 1}/{activeEntriesCount}</div>
         <h1 key={currentItem.id} className={sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : undefined}>{currentItem.text}</h1>
         <div className="phonetic-row">
           {sentenceMode ? <div className="phonetic sentence-translation">{currentItem.meaning}</div> : <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>}
@@ -1021,6 +1041,37 @@ export default function Home() {
           >
             NEXT {sentenceMode ? "SENTENCE" : "WORD"} <span aria-hidden="true">→</span>
           </button>
+        </div>
+      )}
+
+      {coursePickerOpen && (
+        <div
+          className="panel-backdrop"
+          onClick={(event) => {
+            event.stopPropagation();
+            if (event.target === event.currentTarget) setCoursePickerOpen(false);
+          }}
+        >
+          <aside className="course-panel" aria-label="Course packages">
+            <div className="panel-header">
+              <div><span>COURSE PACKAGES</span><h2>选择课程</h2></div>
+              <button onClick={() => setCoursePickerOpen(false)} aria-label="Close course selector">×</button>
+            </div>
+            <div className="course-list">
+              {COURSE_PACKAGES.map((course) => (
+                <button
+                  className={course.id === activeCourse.id ? "course-card active" : "course-card"}
+                  key={course.id}
+                  onClick={() => handleCourseChange(course.id)}
+                >
+                  <span>{course.kind === "word" ? "WORD COURSE" : "DIALOGUE COURSE"}</span>
+                  <strong>{course.title}</strong>
+                  <small>{course.subtitle}</small>
+                  <p>{course.description}</p>
+                </button>
+              ))}
+            </div>
+          </aside>
         </div>
       )}
 
