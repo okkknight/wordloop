@@ -6,6 +6,7 @@ import { WORDS } from "./words";
 const MAX_STUDY_COUNT = 50;
 const PASS_SCORE = 65;
 const AUTO_ADVANCE_MS = 700;
+const PLAYBACK_TIMEOUT_MS = 8_000;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
 
@@ -246,6 +247,7 @@ export default function Home() {
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
   const repeatAdvanceTimerRef = useRef<number | null>(null);
   const repeatRetryTimerRef = useRef<number | null>(null);
+  const repeatPlaybackTimerRef = useRef<number | null>(null);
   const repeatTrackRef = useRef<MediaStreamTrack | null>(null);
   const feedbackAudioContextRef = useRef<AudioContext | null>(null);
   const repeatListeningArmedRef = useRef(false);
@@ -292,6 +294,13 @@ export default function Home() {
     if (repeatRetryTimerRef.current !== null) {
       window.clearTimeout(repeatRetryTimerRef.current);
       repeatRetryTimerRef.current = null;
+    }
+  }, []);
+
+  const clearRepeatPlaybackTimer = useCallback(() => {
+    if (repeatPlaybackTimerRef.current !== null) {
+      window.clearTimeout(repeatPlaybackTimerRef.current);
+      repeatPlaybackTimerRef.current = null;
     }
   }, []);
 
@@ -355,6 +364,7 @@ export default function Home() {
   useEffect(() => () => {
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
+    clearRepeatPlaybackTimer();
     currentAudioRef.current?.pause();
     preloadedAudioRef.current?.pause();
     stopListening();
@@ -362,7 +372,7 @@ export default function Home() {
     dataChannelRef.current?.close();
     repeatStreamRef.current?.getTracks().forEach((track) => track.stop());
     void feedbackAudioContextRef.current?.close();
-  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
     const studiedWord = WORDS[index][0];
@@ -396,7 +406,7 @@ export default function Home() {
     return nextEligibleIndex;
   }, []);
 
-  const playWord = useCallback((targetWord: string, onEnded?: () => void) => {
+  const playWord = useCallback((targetWord: string, onEnded?: () => void, onError?: () => void) => {
     const source = new URL(`/audio/${targetWord}.m4a`, window.location.href).href;
     const preloaded = preloadedAudioRef.current;
     const audio = preloaded?.src === source ? preloaded : new Audio(source);
@@ -405,12 +415,23 @@ export default function Home() {
     currentAudioRef.current = audio;
     if (audio === preloaded) preloadedAudioRef.current = null;
     audio.currentTime = 0;
-    audio.onended = () => {
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
       setSpoken(false);
       onEnded?.();
     };
+    const fail = () => {
+      if (settled) return;
+      settled = true;
+      setSpoken(false);
+      onError?.();
+    };
+    audio.onended = finish;
+    audio.onerror = fail;
     setSpoken(false);
-    void audio.play().then(() => setSpoken(true)).catch(() => setSpoken(false));
+    void audio.play().then(() => setSpoken(true)).catch(fail);
   }, []);
 
   const ensurePronunciationSession = useCallback(async () => {
@@ -559,11 +580,23 @@ export default function Home() {
     prepareFeedbackAudio();
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
+    clearRepeatPlaybackTimer();
     stopListening();
     repeatWordRef.current = WORDS[targetIndex][0];
     setRepeatState("playing");
     setRepeatMessage("PLAYING");
-    void ensurePronunciationSession().catch((error) => {
+    const retryAfterPlaybackFailure = () => {
+      clearRepeatPlaybackTimer();
+      setRepeatState("error");
+      setRepeatMessage("RETRYING");
+      clearRepeatRetryTimer();
+      repeatRetryTimerRef.current = window.setTimeout(() => {
+        beginRepeatTurn(wordIndexRef.current);
+      }, 1200);
+    };
+    repeatPlaybackTimerRef.current = window.setTimeout(retryAfterPlaybackFailure, PLAYBACK_TIMEOUT_MS);
+    void ensurePronunciationSession().catch(() => {
+      clearRepeatPlaybackTimer();
       setRepeatState("error");
       setRepeatMessage("RETRYING");
       clearRepeatRetryTimer();
@@ -574,32 +607,29 @@ export default function Home() {
     playWord(WORDS[targetIndex][0], async () => {
       try {
         await ensurePronunciationSession();
+        clearRepeatPlaybackTimer();
         repeatSpeechItemIdRef.current = null;
         repeatListeningArmedRef.current = true;
         setRepeatState("listening");
         setRepeatMessage("LISTENING");
         if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
-      } catch (error) {
-        setRepeatState("error");
-        setRepeatMessage("RETRYING");
-        clearRepeatRetryTimer();
-        repeatRetryTimerRef.current = window.setTimeout(() => {
-          beginRepeatTurn(wordIndexRef.current);
-        }, 1200);
+      } catch {
+        retryAfterPlaybackFailure();
       }
-    });
-  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, ensurePronunciationSession, playWord, prepareFeedbackAudio, stopListening]);
+    }, retryAfterPlaybackFailure);
+  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, playWord, prepareFeedbackAudio, stopListening]);
 
   const pauseRepeat = useCallback(() => {
     if (studyMode !== "repeat") return;
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
+    clearRepeatPlaybackTimer();
     currentAudioRef.current?.pause();
     setSpoken(false);
     stopListening();
     setRepeatState("paused");
     setRepeatMessage("PAUSED");
-  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, stopListening, studyMode]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyMode]);
 
   const toggleRepeatPause = useCallback(() => {
     if (repeatState === "paused") {
