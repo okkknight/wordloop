@@ -56,6 +56,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.doesNotMatch(page, /THIS \{sentenceMode \? "SENTENCE" : "WORD"\}/);
   assert.match(page, /const \[wordIndex, setWordIndex\] = useState\(0\)/);
   assert.match(page, /document\.addEventListener\("visibilitychange", pauseWhenHidden\)/);
+  assert.match(page, /function playRecordingCue/);
+  assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, \(audio\) => playFeedbackTone\(audio, false\)\)/);
+  assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, playRecordingCue\)/);
   assert.match(courses, /modern-family-s01e01/);
   assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);

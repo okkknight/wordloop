@@ -122,6 +122,35 @@ function playFeedbackTone(context: AudioContext, passed: boolean) {
   }
 }
 
+function playRecordingCue(context: AudioContext) {
+  const startedAt = context.currentTime;
+  for (const [index, frequency] of [520, 700].entries()) {
+    const oscillator = context.createOscillator();
+    const gain = context.createGain();
+    const offset = index * 0.07;
+    oscillator.type = "sine";
+    oscillator.frequency.setValueAtTime(frequency, startedAt + offset);
+    gain.gain.setValueAtTime(0.0001, startedAt + offset);
+    gain.gain.exponentialRampToValueAtTime(0.045, startedAt + offset + 0.012);
+    gain.gain.exponentialRampToValueAtTime(0.0001, startedAt + offset + 0.1);
+    oscillator.connect(gain).connect(context.destination);
+    oscillator.start(startedAt + offset);
+    oscillator.stop(startedAt + offset + 0.1);
+  }
+}
+
+function playToneWhenReady(context: AudioContext | null, play: (audio: AudioContext) => void) {
+  if (!context || context.state === "closed") return;
+  const start = () => {
+    if (context.state === "running") play(context);
+  };
+  if (context.state === "suspended") {
+    void context.resume().then(start).catch(() => undefined);
+    return;
+  }
+  start();
+}
+
 function repeatStatusLabel(state: RepeatState) {
   switch (state) {
     case "connecting":
@@ -669,6 +698,7 @@ export default function Home() {
         repeatListeningTurnRef.current = null;
         clearRepeatPhaseTimers();
         if (payload.type === "conversation.item.input_audio_transcription.failed") {
+          playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, false));
           scheduleRepeatRetry(turnId, 1_200);
           return;
         }
@@ -676,8 +706,7 @@ export default function Home() {
         const transcript = (payload.transcript ?? "").trim();
         setRepeatTranscript(transcript);
         const result = scoreTranscript(repeatWordRef.current, transcript);
-        const feedbackAudio = feedbackAudioContextRef.current;
-        if (feedbackAudio?.state === "running") playFeedbackTone(feedbackAudio, result.passed);
+        playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, result.passed));
         if (!result.passed) {
           scheduleRepeatRetry(turnId, 850);
           return;
@@ -759,6 +788,7 @@ export default function Home() {
         setRepeatState("speak");
         setRepeatMessage("SPEAK");
         if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
+        playToneWhenReady(feedbackAudioContextRef.current, playRecordingCue);
         repeatSpeakTimerRef.current = window.setTimeout(() => {
           if (isActiveRepeatTurn(turnId) && repeatListeningTurnRef.current === turnId) {
             scheduleRepeatRetry(turnId);
