@@ -268,11 +268,6 @@ export default function Home() {
   const repeatHint = repeatStatusHint(repeatState);
   const showRepeatFeedback = repeatState === "retry" || repeatState === "error";
   const showRepeatTranscript = Boolean(repeatTranscript) && (repeatState === "retry" || repeatState === "error");
-  const repeatFailureReason = repeatState === "error"
-    ? "Microphone input was interrupted. Reconnecting now."
-    : repeatTranscript
-      ? `We heard “${repeatTranscript}”, but it was not close enough to “${word}”.`
-      : "We could not hear a clear pronunciation. Try once more.";
 
   const stopListening = useCallback(() => {
     if (repeatTrackRef.current) repeatTrackRef.current.enabled = false;
@@ -804,7 +799,7 @@ export default function Home() {
             </div>
             <div className="repeat-body" aria-live="polite">
               <strong>{repeatLabel}</strong>
-              <span>{showRepeatFeedback ? repeatFailureReason : repeatHint}</span>
+              {!showRepeatFeedback && <span>{repeatHint}</span>}
               <span className="sr-only">{repeatMessage}</span>
             </div>
             {showRepeatTranscript && (
