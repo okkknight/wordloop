@@ -32,7 +32,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   {
     id: "modern-family-s01e01",
     title: "Modern Family · S01E01",
-    subtitle: "Pilot · 481 learning sentences",
+    subtitle: "Pilot · 222 learning sentences",
     description: "用真实对白练习听力、表达和跟读。",
     entries: modernFamilyEntries,
   },

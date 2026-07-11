@@ -20,6 +20,23 @@ TAG = re.compile(r"\{[^}]*\}")
 STAGE_DIRECTION = re.compile(r"^\s*\[[^]]+\]\s*$")
 SPEAKER_SEPARATOR = re.compile(r"(^|\s)-\s")
 LOW_VALUE = {"uh", "um", "hmm", "hm", "oh", "ah", "wow", "yeah", "yes", "no", "okay", "ok"}
+CHARACTER_NAMES = {
+    "alex", "brenda", "cam", "cameron", "claire", "dylan", "feldman", "gloria",
+    "haley", "jay", "joe", "josh", "lily", "luke", "manny", "mitch", "mitchell",
+    "pepper", "phil", "pritchett", "ryan",
+}
+SHORT_KEEP = {
+    "come on", "excuse me", "who's that", "what's wrong with it", "not really",
+    "oh god", "hang on one second", "what's the word", "you two broke up",
+    "we adopted a baby", "of course it is", "it's supposed to hurt",
+}
+LOW_VALUE_EXACT = {
+    "kids breakfast", "yes the murders", "there be free", "and do what",
+    "yes you are", "no you're not", "i've done my job", "i've done our job",
+    "we're very different", "that's cool", "i know", "that's not",
+    "phil dunphy yo", "one hat", "my dad", "i mean seriously",
+}
+NON_ENGLISH_PHRASES = ("vamos", "a la derecha", "mentira", "ay miren")
 
 
 def timestamp(value: str) -> float:
@@ -30,35 +47,65 @@ def timestamp(value: str) -> float:
     return hours * 3600 + minutes * 60 + seconds + centiseconds / 100
 
 
-def clean_bilingual_text(raw: str) -> tuple[str, str]:
+def clean_bilingual_text(raw: str) -> tuple[str, str, bool]:
     pieces = []
     translations = []
+    mixed_caption = False
     for piece in raw.split(r"\N"):
         piece = TAG.sub("", piece).strip()
         if re.search(r"[A-Za-z]", piece):
+            if re.search(r"[\u3400-\u9fff]", piece):
+                mixed_caption = True
             pieces.append(piece)
         elif piece:
             translations.append(piece)
     return (
         re.sub(r"\s+", " ", " ".join(pieces)).strip(),
         re.sub(r"\s+", " ", " ".join(translations)).strip(),
+        mixed_caption,
     )
 
 
-def classify(text: str) -> tuple[bool, list[str]]:
+def classify(text: str, mixed_caption: bool) -> tuple[bool, list[str]]:
     reasons: list[str] = []
     words = re.findall(r"[A-Za-z]+(?:'[A-Za-z]+)?", text.lower())
+    normalized = " ".join(words)
     if not words:
         reasons.append("no-english-text")
     if STAGE_DIRECTION.fullmatch(text):
         reasons.append("stage-direction")
+    if mixed_caption:
+        reasons.append("mixed-language-caption")
     if len(words) <= 1:
         reasons.append("too-short")
+    if len(words) < 4 and normalized not in SHORT_KEEP:
+        reasons.append("short-low-context")
+    if normalized in LOW_VALUE_EXACT:
+        reasons.append("low-value-utterance")
     if len(words) <= 2 and all(word in LOW_VALUE for word in words):
         reasons.append("low-value-utterance")
     if SPEAKER_SEPARATOR.search(text):
-        reasons.append("multiple-speakers-review")
-    return not any(reason in reasons for reason in ("no-english-text", "stage-direction", "too-short", "low-value-utterance")), reasons
+        reasons.append("multiple-speakers")
+    if words and all(word in CHARACTER_NAMES for word in words):
+        reasons.append("name-only")
+    if any(phrase in text.lower() for phrase in NON_ENGLISH_PHRASES):
+        reasons.append("non-english-utterance")
+    terminal = text.rstrip().rstrip('"\'”')
+    if (
+        terminal.endswith("...")
+        or not terminal.endswith((".", "!", "?"))
+        or re.search(r"[A-Za-z]-\s", text)
+        or text.lower().startswith(("and ", "but ", "or ", "to ", "with ", "which ", "if "))
+    ):
+        reasons.append("sentence-fragment")
+    if len(set(words)) == 1 and len(words) > 1:
+        reasons.append("repetitive-utterance")
+    blocking = {
+        "no-english-text", "stage-direction", "mixed-language-caption", "too-short",
+        "short-low-context", "low-value-utterance", "multiple-speakers", "name-only",
+        "non-english-utterance", "sentence-fragment", "repetitive-utterance",
+    }
+    return not any(reason in blocking for reason in reasons), reasons
 
 
 def parse_ass(path: Path) -> list[dict[str, object]]:
@@ -72,10 +119,10 @@ def parse_ass(path: Path) -> list[dict[str, object]]:
             continue
         start = timestamp(fields[1])
         end = timestamp(fields[2])
-        sentence, translation = clean_bilingual_text(fields[9])
+        sentence, translation, mixed_caption = clean_bilingual_text(fields[9])
         if not sentence:
             continue
-        learnable, reasons = classify(sentence)
+        learnable, reasons = classify(sentence, mixed_caption)
         entries.append({
             "id": f"s01e01-{len(entries) + 1:04d}",
             "episode": "S01E01",
