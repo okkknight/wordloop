@@ -325,6 +325,21 @@ h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
 footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-transform: uppercase; }
 .prompt { display: flex; gap: 12px; align-items: center; }
 .space-key { border: 1px solid currentColor; border-bottom-width: 3px; border-radius: 5px; padding: 8px 18px 7px; }
+.manual-next {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  padding: 8px 0;
+  color: inherit;
+  background: transparent;
+  font: 700 10px/1 var(--font-geist-mono);
+  letter-spacing: .11em;
+  cursor: pointer;
+}
+.manual-next span { color: var(--accent); font-size: 15px; line-height: .6; transition: transform 180ms ease; }
+.manual-next:hover span { transform: translateX(3px); }
+.manual-next:disabled { cursor: default; opacity: .42; }
 .current-progress {
   display: flex;
   gap: 10px;

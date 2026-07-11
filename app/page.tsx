@@ -883,7 +883,13 @@ export default function Home() {
       <footer>
         <div className="prompt">
           {studyMode === "repeat" ? (
-            <><span className="space-key">SPACE</span><span>retry current word</span></>
+            <button
+              className="manual-next"
+              onClick={(event) => { event.stopPropagation(); next(); }}
+              disabled={nextWordIndex < 0}
+            >
+              NEXT WORD <span aria-hidden="true">→</span>
+            </button>
           ) : nextWordIndex >= 0 ? (
             <><span className="space-key">SPACE</span><span>next word</span></>
           ) : (
