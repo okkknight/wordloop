@@ -49,13 +49,16 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /coursePickerOpen/);
   assert.match(page, /COURSE_PACKAGES/);
   assert.match(page, /const PASS_SCORE = 20/);
-  assert.match(page, /sentenceIndexRef\.current = upcomingIndex/);
-  assert.match(page, /wordIndexRef\.current = upcomingIndex/);
+  assert.match(page, /sentenceIndexRef\.current = target\.index/);
+  assert.match(page, /wordIndexRef\.current = target\.index/);
   assert.match(page, /<span>SWITCH COURSE<\/span>/);
   assert.doesNotMatch(page, /<span>\{activeCourse\.title\}<\/span>/);
   assert.doesNotMatch(page, /THIS \{sentenceMode \? "SENTENCE" : "WORD"\}/);
   assert.match(page, /const \[wordIndex, setWordIndex\] = useState\(0\)/);
+  assert.match(page, /repeatAdvanceTargetRef\.current = \{ index: upcomingIndex, sentenceMode, turnId \}/);
+  assert.match(page, /if \(repeatState !== "passed"\) return/);
   assert.match(page, /document\.addEventListener\("visibilitychange", pauseWhenHidden\)/);
+  assert.match(page, /\}, 1_500\);/);
   assert.match(page, /function playRecordingCue/);
   assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, \(audio\) => playFeedbackTone\(audio, false\)\)/);
   assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, playRecordingCue\)/);

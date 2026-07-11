@@ -305,6 +305,8 @@ export default function Home() {
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
   const repeatAdvanceTimerRef = useRef<number | null>(null);
+  const hiddenPauseTimerRef = useRef<number | null>(null);
+  const repeatAdvanceTargetRef = useRef<{ index: number; sentenceMode: boolean; turnId: number } | null>(null);
   const repeatRetryTimerRef = useRef<number | null>(null);
   const repeatPlaybackTimerRef = useRef<number | null>(null);
   const repeatSpeakTimerRef = useRef<number | null>(null);
@@ -387,6 +389,13 @@ export default function Home() {
     }
   }, []);
 
+  const clearHiddenPauseTimer = useCallback(() => {
+    if (hiddenPauseTimerRef.current !== null) {
+      window.clearTimeout(hiddenPauseTimerRef.current);
+      hiddenPauseTimerRef.current = null;
+    }
+  }, []);
+
   const clearRepeatRetryTimer = useCallback(() => {
     if (repeatRetryTimerRef.current !== null) {
       window.clearTimeout(repeatRetryTimerRef.current);
@@ -416,6 +425,7 @@ export default function Home() {
 
   const scheduleRepeatRetry = useCallback((turnId: number, delay = 1_000) => {
     if (!isActiveRepeatTurn(turnId)) return;
+    repeatAdvanceTargetRef.current = null;
     clearRepeatAdvanceTimer();
     clearRepeatPlaybackTimer();
     clearRepeatRetryTimer();
@@ -712,24 +722,9 @@ export default function Home() {
           return;
         }
 
-        setRepeatState("passed");
         const upcomingIndex = recordStudy(currentIndexRef.current);
-        clearRepeatAdvanceTimer();
-        repeatAdvanceTimerRef.current = window.setTimeout(() => {
-          if (isActiveRepeatTurn(turnId) && upcomingIndex >= 0) {
-            if (sentenceMode) {
-              sentenceIndexRef.current = upcomingIndex;
-              currentIndexRef.current = upcomingIndex;
-              setSentenceIndex(upcomingIndex);
-            } else {
-              wordIndexRef.current = upcomingIndex;
-              currentIndexRef.current = upcomingIndex;
-              setWordIndex(upcomingIndex);
-            }
-            setPaletteIndex((current) => randomIndex(PALETTES.length, current));
-            beginRepeatTurnRef.current(upcomingIndex);
-          }
-        }, AUTO_ADVANCE_MS);
+        repeatAdvanceTargetRef.current = { index: upcomingIndex, sentenceMode, turnId };
+        setRepeatState("passed");
       });
 
       const openPromise = new Promise<void>((resolve, reject) => {
@@ -752,7 +747,7 @@ export default function Home() {
       if (sessionPromiseRef.current === sessionPromise) sessionPromiseRef.current = null;
     });
     return sessionPromise;
-  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
+  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
     const target = sentenceMode
@@ -761,6 +756,7 @@ export default function Home() {
     const turnId = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = turnId;
     activeRepeatTurnRef.current = turnId;
+    repeatAdvanceTargetRef.current = null;
     prepareFeedbackAudio();
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
@@ -801,8 +797,32 @@ export default function Home() {
     beginRepeatTurnRef.current = beginRepeatTurn;
   }, [beginRepeatTurn]);
 
+  useEffect(() => {
+    if (repeatState !== "passed") return;
+    const target = repeatAdvanceTargetRef.current;
+    if (!target || target.index < 0 || !isActiveRepeatTurn(target.turnId)) return;
+    clearRepeatAdvanceTimer();
+    repeatAdvanceTimerRef.current = window.setTimeout(() => {
+      if (!isActiveRepeatTurn(target.turnId)) return;
+      repeatAdvanceTargetRef.current = null;
+      if (target.sentenceMode) {
+        sentenceIndexRef.current = target.index;
+        currentIndexRef.current = target.index;
+        setSentenceIndex(target.index);
+      } else {
+        wordIndexRef.current = target.index;
+        currentIndexRef.current = target.index;
+        setWordIndex(target.index);
+      }
+      setPaletteIndex((current) => randomIndex(PALETTES.length, current));
+      beginRepeatTurnRef.current(target.index);
+    }, AUTO_ADVANCE_MS);
+    return clearRepeatAdvanceTimer;
+  }, [clearRepeatAdvanceTimer, isActiveRepeatTurn, repeatState]);
+
   const pauseRepeat = useCallback(() => {
     if (studyMode !== "repeat") return;
+    repeatAdvanceTargetRef.current = null;
     activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = activeRepeatTurnRef.current;
     repeatListeningTurnRef.current = null;
@@ -818,17 +838,27 @@ export default function Home() {
 
   useEffect(() => {
     const pauseWhenHidden = () => {
+      clearHiddenPauseTimer();
       if (!document.hidden) return;
+      hiddenPauseTimerRef.current = window.setTimeout(() => {
+        if (!document.hidden) return;
+        currentAudioRef.current?.pause();
+        if (studyMode === "repeat" && activated) pauseRepeat();
+      }, 1_500);
+    };
+    const pauseOnPageHide = () => {
+      clearHiddenPauseTimer();
       currentAudioRef.current?.pause();
       if (studyMode === "repeat" && activated) pauseRepeat();
     };
     document.addEventListener("visibilitychange", pauseWhenHidden);
-    window.addEventListener("pagehide", pauseWhenHidden);
+    window.addEventListener("pagehide", pauseOnPageHide);
     return () => {
+      clearHiddenPauseTimer();
       document.removeEventListener("visibilitychange", pauseWhenHidden);
-      window.removeEventListener("pagehide", pauseWhenHidden);
+      window.removeEventListener("pagehide", pauseOnPageHide);
     };
-  }, [activated, pauseRepeat, studyMode]);
+  }, [activated, clearHiddenPauseTimer, pauseRepeat, studyMode]);
 
   const toggleRepeatPause = useCallback(() => {
     if (repeatState === "paused") {
@@ -850,6 +880,7 @@ export default function Home() {
         ? eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current)
         : eligibleIndex(progressRef.current, currentIndexRef.current);
     if (targetIndex < 0) return;
+    repeatAdvanceTargetRef.current = null;
     stopListening();
     clearRepeatAdvanceTimer();
     if (sentenceMode) {
@@ -982,6 +1013,7 @@ export default function Home() {
     }
     activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = activeRepeatTurnRef.current;
+    repeatAdvanceTargetRef.current = null;
     repeatListeningTurnRef.current = null;
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
