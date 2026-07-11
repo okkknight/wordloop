@@ -273,6 +273,7 @@ export default function Home() {
   const [word, meaning, , phonetic] = WORDS[wordIndex];
   const [background, ink, accent] = PALETTES[paletteIndex];
   const currentStudyCount = progress[word] ?? 0;
+  const manualNextIndex = nextWordIndex >= 0 ? nextWordIndex : eligibleIndex(progress, wordIndex);
   const totalStudies = Object.values(progress).reduce((sum, count) => sum + count, 0);
   const completedWords = WORDS.filter(([entry]) => (progress[entry] ?? 0) >= MAX_STUDY_COUNT).length;
   const filteredWords = WORDS.filter(([entry, entryMeaning]) =>
@@ -628,20 +629,24 @@ export default function Home() {
   }, [beginRepeatTurn, playWord, studyMode, word]);
 
   const next = useCallback(() => {
-    if (nextWordIndex < 0) return;
+    const targetIndex = nextWordIndexRef.current >= 0
+      ? nextWordIndexRef.current
+      : eligibleIndex(progressRef.current, wordIndexRef.current);
+    if (targetIndex < 0) return;
     stopListening();
     clearRepeatAdvanceTimer();
-    setWordIndex(nextWordIndex);
+    setNextWordIndex(eligibleIndex(progressRef.current, targetIndex));
+    setWordIndex(targetIndex);
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
 
     if (studyMode === "listen") {
-      playWord(WORDS[nextWordIndex][0]);
-      recordStudy(nextWordIndex);
+      playWord(WORDS[targetIndex][0]);
+      recordStudy(targetIndex);
       return;
     }
 
-    beginRepeatTurn(nextWordIndex);
-  }, [beginRepeatTurn, clearRepeatAdvanceTimer, nextWordIndex, playWord, recordStudy, stopListening, studyMode]);
+    beginRepeatTurn(targetIndex);
+  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playWord, recordStudy, stopListening, studyMode]);
 
   const activate = useCallback(() => {
     setActivated(true);
@@ -847,7 +852,7 @@ export default function Home() {
           <button
             className="manual-next repeat-control"
             onClick={(event) => { event.stopPropagation(); next(); }}
-            disabled={nextWordIndex < 0}
+            disabled={manualNextIndex < 0}
           >
             NEXT WORD <span aria-hidden="true">→</span>
           </button>
