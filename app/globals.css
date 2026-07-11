@@ -418,7 +418,8 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
 .current-progress {
   position: fixed;
   left: clamp(24px, 4vw, 56px);
-  bottom: clamp(24px, 4vh, 46px);
+  /* Align the text's visual center with the 42px repeat controls on the right. */
+  bottom: calc(clamp(24px, 4vh, 46px) + 15px);
   z-index: 8;
   display: block;
   justify-self: center;
@@ -536,7 +537,7 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
     gap: 14px;
     justify-items: start;
   }
-  .current-progress { left: 20px; bottom: 20px; }
+  .current-progress { left: 20px; bottom: 35px; }
   .progress-button { font-size: 0; }
   .progress-button::after { content: "PROGRESS"; font-size: 9px; }
   .prompt { right: 20px; bottom: 20px; }
