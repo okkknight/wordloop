@@ -830,13 +830,6 @@ export default function Home() {
       {studyMode === "repeat" && activated && (
         <div className="repeat-controls">
           <button
-            className="manual-next repeat-control"
-            onClick={(event) => { event.stopPropagation(); next(); }}
-            disabled={nextWordIndex < 0}
-          >
-            NEXT WORD <span aria-hidden="true">→</span>
-          </button>
-          <button
             className="repeat-toggle repeat-control"
             onClick={(event) => { event.stopPropagation(); toggleRepeatPause(); }}
             aria-label={repeatState === "paused" ? "Resume repeat" : "Pause repeat"}
@@ -844,6 +837,13 @@ export default function Home() {
           >
             <span aria-hidden="true" className={repeatState === "paused" ? "repeat-toggle-play" : "repeat-toggle-pause"} />
             <span>{repeatState === "paused" ? "RESUME" : "PAUSE"}</span>
+          </button>
+          <button
+            className="manual-next repeat-control"
+            onClick={(event) => { event.stopPropagation(); next(); }}
+            disabled={nextWordIndex < 0}
+          >
+            NEXT WORD <span aria-hidden="true">→</span>
           </button>
         </div>
       )}
