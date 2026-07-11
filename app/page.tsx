@@ -107,19 +107,19 @@ function speechCandidates(transcript: string) {
 }
 
 function playFeedbackTone(context: AudioContext, passed: boolean) {
-  const notes = passed ? [660, 880] : [220, 165];
+  const notes = passed ? [660, 880] : [420, 300, 210];
   const startedAt = context.currentTime;
 
   for (const [index, frequency] of notes.entries()) {
     const oscillator = context.createOscillator();
     const gain = context.createGain();
-    const offset = index * 0.09;
-    const duration = 0.12;
+    const offset = index * (passed ? 0.09 : 0.12);
+    const duration = passed ? 0.12 : 0.16;
 
     oscillator.type = passed ? "sine" : "triangle";
     oscillator.frequency.setValueAtTime(frequency, startedAt + offset);
     gain.gain.setValueAtTime(0.0001, startedAt + offset);
-    gain.gain.exponentialRampToValueAtTime(passed ? 0.07 : 0.055, startedAt + offset + 0.015);
+    gain.gain.exponentialRampToValueAtTime(passed ? 0.07 : 0.12, startedAt + offset + 0.015);
     gain.gain.exponentialRampToValueAtTime(0.0001, startedAt + offset + duration);
     oscillator.connect(gain).connect(context.destination);
     oscillator.start(startedAt + offset);
@@ -294,7 +294,7 @@ export default function Home() {
   const [nextSentenceIndex, setNextSentenceIndex] = useState(1);
   const [paletteIndex, setPaletteIndex] = useState(0);
   const [activeCourseId, setActiveCourseId] = useState(DEFAULT_COURSE.id);
-  const [studyMode, setStudyMode] = useState<StudyMode>("listen");
+  const [studyMode, setStudyMode] = useState<StudyMode>("repeat");
   const [activated, setActivated] = useState(false);
   const [progress, setProgress] = useState<ProgressMap>({});
   const [sentenceProgress, setSentenceProgress] = useState<ProgressMap>({});

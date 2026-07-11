@@ -40,7 +40,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   const progressRoute = await read("app/api/progress/route.ts");
   const pronunciationRoute = await read("app/api/pronunciation-session/route.ts");
 
-  assert.match(page, /studyMode.*listen/);
+  assert.match(page, /const \[studyMode, setStudyMode\] = useState<StudyMode>\("repeat"\)/);
   assert.match(page, /studyMode.*repeat/);
   assert.match(page, /localStorage/);
   assert.match(page, /\/api\/progress/);
@@ -67,6 +67,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /modern-family-s01e01/);
   assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);
+  assert.match(courses, /DEFAULT_COURSE = MODERN_FAMILY_S01E01_COURSE/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);
   assert.match(pronunciationRoute, /OPENAI_REALTIME_URL/);
