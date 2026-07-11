@@ -70,10 +70,18 @@ function eligibleIndex(progress: ProgressMap, except = -1) {
   return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
 }
 
-function eligibleSentenceIndex(entries: readonly CourseEntry[], progress: ProgressMap, except = -1) {
+function eligibleSentenceIndex(
+  entries: readonly CourseEntry[],
+  progress: ProgressMap,
+  except = -1,
+  practiceOrder: "random" | "sequential" = "random",
+) {
   const available = entries.flatMap((entry, index) =>
     index !== except && (progress[entry.id] ?? 0) < MAX_STUDY_COUNT ? [index] : [],
   );
+  if (practiceOrder === "sequential") {
+    return available.find((index) => index > except) ?? available[0] ?? -1;
+  }
   return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
 }
 
@@ -343,6 +351,7 @@ export default function Home() {
   const activeCourse = COURSE_PACKAGES.find((course) => course.id === activeCourseId) ?? DEFAULT_COURSE;
   const sentenceMode = activeCourse.kind === "sentence";
   const sentenceCourse = sentenceMode ? activeCourse : MODERN_FAMILY_S01E01_COURSE;
+  const sentencePracticeOrder = sentenceCourse.practiceOrder;
   const sentence = sentenceCourse.entries[sentenceIndex];
   const currentItem = sentenceMode
     ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio }
@@ -360,7 +369,7 @@ export default function Home() {
   const manualNextIndex = nextIndex >= 0
     ? nextIndex
     : sentenceMode
-      ? eligibleSentenceIndex(sentenceCourse.entries, sentenceProgress, sentenceIndex)
+      ? eligibleSentenceIndex(sentenceCourse.entries, sentenceProgress, sentenceIndex, sentencePracticeOrder)
       : eligibleIndex(progress, wordIndex);
   const totalStudies = Object.values(activeProgress).reduce((sum, count) => sum + count, 0);
   const completedWords = sentenceMode
@@ -475,11 +484,11 @@ export default function Home() {
       setProgress(storedWordProgress);
       setSentenceProgress(storedSentenceProgress);
       const initialWord = randomIndex(WORDS.length);
-      const initialSentence = randomIndex(MODERN_FAMILY_S01E01_COURSE.entries.length);
+      const initialSentence = eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, storedSentenceProgress, -1, MODERN_FAMILY_S01E01_COURSE.practiceOrder);
       setWordIndex(initialWord);
       setNextWordIndex(eligibleIndex(storedWordProgress, initialWord));
       setSentenceIndex(initialSentence);
-      setNextSentenceIndex(eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, storedSentenceProgress, initialSentence));
+      setNextSentenceIndex(eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, storedSentenceProgress, initialSentence, MODERN_FAMILY_S01E01_COURSE.practiceOrder));
       setPaletteIndex(randomIndex(PALETTES.length));
     }, 0);
     return () => window.clearTimeout(hydrateTimer);
@@ -574,7 +583,7 @@ export default function Home() {
         ...sentenceProgressRef.current,
         [entry.id]: Math.min(MAX_STUDY_COUNT, (sentenceProgressRef.current[entry.id] ?? 0) + 1),
       };
-      const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, next, index);
+      const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, next, index, sentencePracticeOrder);
       sentenceProgressRef.current = next;
       setSentenceProgress(next);
       localStorage.setItem(SENTENCE_PROGRESS_KEY, JSON.stringify(next));
@@ -611,7 +620,7 @@ export default function Home() {
       });
       }).catch(() => undefined);
     return nextEligibleIndex;
-  }, [sentenceMode]);
+  }, [sentenceMode, sentencePracticeOrder]);
 
   const playWord = useCallback((targetWord: string, onEnded?: () => void, onError?: () => void) => {
     const source = new URL(targetWord.startsWith("/") ? targetWord : appPath(`/audio/${targetWord}.m4a`), window.location.href).href;
@@ -902,7 +911,7 @@ export default function Home() {
     const targetIndex = nextIndexRef.current >= 0
       ? nextIndexRef.current
       : sentenceMode
-        ? eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current)
+        ? eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrder)
         : eligibleIndex(progressRef.current, currentIndexRef.current);
     if (targetIndex < 0) return;
     repeatAdvanceTargetRef.current = null;
@@ -911,7 +920,7 @@ export default function Home() {
     if (sentenceMode) {
       sentenceIndexRef.current = targetIndex;
       currentIndexRef.current = targetIndex;
-      setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex));
+      setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex, sentencePracticeOrder));
       setSentenceIndex(targetIndex);
     } else {
       wordIndexRef.current = targetIndex;
@@ -928,7 +937,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(targetIndex);
-  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playWord, recordStudy, sentenceMode, stopListening, studyMode]);
+  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playWord, recordStudy, sentenceMode, sentencePracticeOrder, stopListening, studyMode]);
 
   const activate = useCallback(() => {
     setActivated(true);
@@ -1042,12 +1051,12 @@ export default function Home() {
 
     // Update refs synchronously so beginRepeatTurn doesn't see a mismatch
     if (isSentence) {
-      const initialSentence = randomIndex(targetCourse.entries.length);
+      const initialSentence = eligibleSentenceIndex(targetCourse.entries, sentenceProgressRef.current, -1, targetCourse.practiceOrder);
       sentenceEntriesRef.current = targetCourse.entries;
       sentenceIndexRef.current = initialSentence;
       currentIndexRef.current = initialSentence;
       setSentenceIndex(initialSentence);
-      setNextSentenceIndex(eligibleSentenceIndex(targetCourse.entries, sentenceProgressRef.current, initialSentence));
+      setNextSentenceIndex(eligibleSentenceIndex(targetCourse.entries, sentenceProgressRef.current, initialSentence, targetCourse.practiceOrder));
     } else {
       currentIndexRef.current = wordIndexRef.current;
     }

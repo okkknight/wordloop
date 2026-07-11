@@ -68,6 +68,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);
   assert.match(courses, /DEFAULT_COURSE = MODERN_FAMILY_S01E01_COURSE/);
+  assert.match(courses, /practiceOrder: "sequential"/);
+  assert.match(page, /available\.find\(\(index\) => index > except\) \?\? available\[0\] \?\? -1/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);
   assert.match(pronunciationRoute, /OPENAI_REALTIME_URL/);

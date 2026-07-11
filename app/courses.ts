@@ -23,6 +23,7 @@ export type CoursePackage = {
   subtitle: string;
   description: string;
   kind: "word" | "sentence";
+  practiceOrder: "random" | "sequential";
   entries: readonly CourseEntry[];
 };
 
@@ -49,6 +50,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     subtitle: "Academic Word List · 570 words",
     description: "从 570 个高频学术词汇开始，逐词建立听辨和发音记忆。",
     kind: "word",
+    practiceOrder: "random",
     entries: ieltsEntries,
   },
   {
@@ -57,6 +59,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     subtitle: "Pilot · 221 learning sentences",
     description: "用真实对白练习听力、表达和跟读。",
     kind: "sentence",
+    practiceOrder: "sequential",
     entries: modernFamilyEntries,
   },
 ];
