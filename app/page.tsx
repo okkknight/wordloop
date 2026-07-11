@@ -252,30 +252,18 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
 }
 
 export default function Home() {
-  const [wordIndex, setWordIndex] = useState(() => randomIndex(WORDS.length));
-  const [nextWordIndex, setNextWordIndex] = useState(() => randomIndex(WORDS.length));
-  const [sentenceIndex, setSentenceIndex] = useState(() => randomIndex(MODERN_FAMILY_S01E01_COURSE.entries.length));
-  const [nextSentenceIndex, setNextSentenceIndex] = useState(() => randomIndex(MODERN_FAMILY_S01E01_COURSE.entries.length));
-  const [paletteIndex, setPaletteIndex] = useState(() => randomIndex(PALETTES.length));
+  // Keep the first server and client render identical. Randomizing here caused
+  // hydration to rebuild the page differently across browsers.
+  const [wordIndex, setWordIndex] = useState(0);
+  const [nextWordIndex, setNextWordIndex] = useState(1);
+  const [sentenceIndex, setSentenceIndex] = useState(0);
+  const [nextSentenceIndex, setNextSentenceIndex] = useState(1);
+  const [paletteIndex, setPaletteIndex] = useState(0);
   const [activeCourseId, setActiveCourseId] = useState(DEFAULT_COURSE.id);
   const [studyMode, setStudyMode] = useState<StudyMode>("listen");
   const [activated, setActivated] = useState(false);
-  const [progress, setProgress] = useState<ProgressMap>(() => {
-    if (typeof window === "undefined") return {};
-    try {
-      return JSON.parse(localStorage.getItem(PROGRESS_KEY) ?? "{}") as ProgressMap;
-    } catch {
-      return {};
-    }
-  });
-  const [sentenceProgress, setSentenceProgress] = useState<ProgressMap>(() => {
-    if (typeof window === "undefined") return {};
-    try {
-      return JSON.parse(localStorage.getItem(SENTENCE_PROGRESS_KEY) ?? "{}") as ProgressMap;
-    } catch {
-      return {};
-    }
-  });
+  const [progress, setProgress] = useState<ProgressMap>({});
+  const [sentenceProgress, setSentenceProgress] = useState<ProgressMap>({});
   const [panelOpen, setPanelOpen] = useState(false);
   const [coursePickerOpen, setCoursePickerOpen] = useState(false);
   const [search, setSearch] = useState("");
@@ -427,9 +415,37 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const readStoredProgress = (key: string) => {
+      try {
+        return JSON.parse(localStorage.getItem(key) ?? "{}") as ProgressMap;
+      } catch {
+        return {};
+      }
+    };
+    const storedWordProgress = readStoredProgress(PROGRESS_KEY);
+    const storedSentenceProgress = readStoredProgress(SENTENCE_PROGRESS_KEY);
+    progressRef.current = storedWordProgress;
+    sentenceProgressRef.current = storedSentenceProgress;
+    const hydrateTimer = window.setTimeout(() => {
+      setProgress(storedWordProgress);
+      setSentenceProgress(storedSentenceProgress);
+      const initialWord = randomIndex(WORDS.length);
+      const initialSentence = randomIndex(MODERN_FAMILY_S01E01_COURSE.entries.length);
+      setWordIndex(initialWord);
+      setNextWordIndex(eligibleIndex(storedWordProgress, initialWord));
+      setSentenceIndex(initialSentence);
+      setNextSentenceIndex(eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, storedSentenceProgress, initialSentence));
+      setPaletteIndex(randomIndex(PALETTES.length));
+    }, 0);
+    return () => window.clearTimeout(hydrateTimer);
+  }, []);
+
+  useEffect(() => {
     let userId = localStorage.getItem(USER_ID_KEY);
     if (!userId) {
-      userId = crypto.randomUUID();
+      userId = typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+        ? crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
       localStorage.setItem(USER_ID_KEY, userId);
     }
     userIdRef.current = userId;
@@ -556,6 +572,8 @@ export default function Home() {
       ? preloaded.cloneNode(true) as HTMLAudioElement
       : new Audio(source);
 
+    audio.preload = "auto";
+    audio.playsInline = true;
     currentAudioRef.current?.pause();
     currentAudioRef.current = audio;
     if (usePreloaded) preloadedAudioRef.current = null;
@@ -767,6 +785,20 @@ export default function Home() {
     setRepeatState("paused");
     setRepeatMessage("PAUSED");
   }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyMode]);
+
+  useEffect(() => {
+    const pauseWhenHidden = () => {
+      if (!document.hidden) return;
+      currentAudioRef.current?.pause();
+      if (studyMode === "repeat" && activated) pauseRepeat();
+    };
+    document.addEventListener("visibilitychange", pauseWhenHidden);
+    window.addEventListener("pagehide", pauseWhenHidden);
+    return () => {
+      document.removeEventListener("visibilitychange", pauseWhenHidden);
+      window.removeEventListener("pagehide", pauseWhenHidden);
+    };
+  }, [activated, pauseRepeat, studyMode]);
 
   const toggleRepeatPause = useCallback(() => {
     if (repeatState === "paused") {
