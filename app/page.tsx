@@ -485,7 +485,7 @@ export default function Home() {
       setProgress(storedWordProgress);
       setSentenceProgress(storedSentenceProgress);
       const initialWord = randomIndex(WORDS.length);
-      const initialSentence = eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, storedSentenceProgress, -1, MODERN_FAMILY_S01E01_COURSE.practiceOrder);
+      const initialSentence = eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, storedSentenceProgress, -1, "random");
       setWordIndex(initialWord);
       setNextWordIndex(eligibleIndex(storedWordProgress, initialWord));
       setSentenceIndex(initialSentence);
@@ -1139,10 +1139,10 @@ export default function Home() {
         <div className="course-kicker">{activeCourse.title} · {currentIndex + 1}/{activeEntriesCount}</div>
         <h1
           key={currentItem.id}
-          className={`${sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : ""}${!studyTextVisible ? " sentence-hidden" : ""}`}
+          className={sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : undefined}
           aria-hidden={!studyTextVisible}
         >
-          {currentItem.text}
+          {studyTextVisible ? currentItem.text : <span className="study-text-placeholder">✦ ✦ ✦</span>}
         </h1>
         <div className="phonetic-row">
           {sentenceMode ? <div className="phonetic sentence-translation">{currentItem.meaning}</div> : <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>}
