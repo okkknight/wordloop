@@ -448,7 +448,7 @@ export default function Home() {
     activeRepeatTurnRef.current === turnId
   ), []);
 
-  const scheduleRepeatRetry = useCallback((turnId: number, delay = 1_000) => {
+  const scheduleRepeatRetry = useCallback((turnId: number, delay = 1_000, withFailureTone = false) => {
     if (!isActiveRepeatTurn(turnId)) return;
     repeatAdvanceTargetRef.current = null;
     clearRepeatAdvanceTimer();
@@ -457,6 +457,9 @@ export default function Home() {
     clearRepeatPhaseTimers();
     stopListening();
     repeatListeningTurnRef.current = null;
+    if (withFailureTone) {
+      playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, false));
+    }
     setRepeatState("error");
     setRepeatMessage("RETRYING");
     repeatRetryTimerRef.current = window.setTimeout(() => {
@@ -712,7 +715,7 @@ export default function Home() {
           setRepeatState("speaking");
           repeatSpeakingTimerRef.current = window.setTimeout(() => {
             if (isActiveRepeatTurn(turnId) && repeatListeningTurnRef.current === turnId) {
-              scheduleRepeatRetry(turnId);
+              scheduleRepeatRetry(turnId, 1_000, true);
             }
           }, SPEAKING_TIMEOUT_MS);
           return;
@@ -729,7 +732,7 @@ export default function Home() {
           setRepeatState("scoring");
           repeatScoringTimerRef.current = window.setTimeout(() => {
             if (isActiveRepeatTurn(turnId) && repeatListeningTurnRef.current === turnId) {
-              scheduleRepeatRetry(turnId);
+              scheduleRepeatRetry(turnId, 1_000, true);
             }
           }, SCORING_TIMEOUT_MS);
           return;
@@ -845,7 +848,7 @@ export default function Home() {
         playToneWhenReady(feedbackAudioContextRef.current, playRecordingCue);
         repeatSpeakTimerRef.current = window.setTimeout(() => {
           if (isActiveRepeatTurn(turnId) && repeatListeningTurnRef.current === turnId) {
-            scheduleRepeatRetry(turnId);
+            scheduleRepeatRetry(turnId, 1_000, true);
           }
         }, SPEAK_TIMEOUT_MS);
       } catch { retry(); }
