@@ -7,6 +7,9 @@ const MAX_STUDY_COUNT = 50;
 const PASS_SCORE = 30;
 const AUTO_ADVANCE_MS = 700;
 const PLAYBACK_TIMEOUT_MS = 8_000;
+const SPEAK_TIMEOUT_MS = 6_000;
+const SPEAKING_TIMEOUT_MS = 6_000;
+const SCORING_TIMEOUT_MS = 6_000;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
 
@@ -17,7 +20,8 @@ type RepeatState =
   | "connecting"
   | "ready"
   | "playing"
-  | "listening"
+  | "speak"
+  | "speaking"
   | "scoring"
   | "passed"
   | "paused"
@@ -111,8 +115,10 @@ function repeatStatusLabel(state: RepeatState) {
       return "READY";
     case "playing":
       return "LISTEN";
-    case "listening":
+    case "speak":
       return "SPEAK";
+    case "speaking":
+      return "SPEAKING";
     case "scoring":
       return "CHECKING";
     case "passed":
@@ -136,8 +142,10 @@ function repeatStatusHint(state: RepeatState) {
       return "听完示范后开始跟读";
     case "playing":
       return "先听一遍标准发音";
-    case "listening":
+    case "speak":
       return "请清晰地读出这个单词";
+    case "speaking":
+      return "正在听你发音";
     case "scoring":
       return "正在分析这次发音";
     case "passed":
@@ -233,7 +241,6 @@ export default function Home() {
   const [nextWordIndex, setNextWordIndex] = useState(() => randomIndex(WORDS.length));
   const [paletteIndex, setPaletteIndex] = useState(() => randomIndex(PALETTES.length));
   const [studyMode, setStudyMode] = useState<StudyMode>("listen");
-  const [spoken, setSpoken] = useState(false);
   const [activated, setActivated] = useState(false);
   const [progress, setProgress] = useState<ProgressMap>(() => {
     if (typeof window === "undefined") return {};
@@ -255,6 +262,9 @@ export default function Home() {
   const repeatAdvanceTimerRef = useRef<number | null>(null);
   const repeatRetryTimerRef = useRef<number | null>(null);
   const repeatPlaybackTimerRef = useRef<number | null>(null);
+  const repeatSpeakTimerRef = useRef<number | null>(null);
+  const repeatSpeakingTimerRef = useRef<number | null>(null);
+  const repeatScoringTimerRef = useRef<number | null>(null);
   const sessionPromiseRef = useRef<Promise<void> | null>(null);
   const repeatTurnIdRef = useRef(0);
   const activeRepeatTurnRef = useRef(0);
@@ -316,6 +326,15 @@ export default function Home() {
     }
   }, []);
 
+  const clearRepeatPhaseTimers = useCallback(() => {
+    for (const timerRef of [repeatSpeakTimerRef, repeatSpeakingTimerRef, repeatScoringTimerRef]) {
+      if (timerRef.current !== null) {
+        window.clearTimeout(timerRef.current);
+        timerRef.current = null;
+      }
+    }
+  }, []);
+
   const isActiveRepeatTurn = useCallback((turnId: number) => (
     activeRepeatTurnRef.current === turnId
   ), []);
@@ -325,13 +344,15 @@ export default function Home() {
     clearRepeatAdvanceTimer();
     clearRepeatPlaybackTimer();
     clearRepeatRetryTimer();
+    clearRepeatPhaseTimers();
     stopListening();
+    repeatListeningTurnRef.current = null;
     setRepeatState("error");
     setRepeatMessage("RETRYING");
     repeatRetryTimerRef.current = window.setTimeout(() => {
       if (isActiveRepeatTurn(turnId)) beginRepeatTurnRef.current(wordIndexRef.current);
     }, delay);
-  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, isActiveRepeatTurn, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, isActiveRepeatTurn, stopListening]);
 
   const applyProgress = useCallback((nextProgress: ProgressMap) => {
     setProgress(nextProgress);
@@ -388,6 +409,7 @@ export default function Home() {
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
+    clearRepeatPhaseTimers();
     currentAudioRef.current?.pause();
     preloadedAudioRef.current?.pause();
     stopListening();
@@ -395,7 +417,7 @@ export default function Home() {
     dataChannelRef.current?.close();
     repeatStreamRef.current?.getTracks().forEach((track) => track.stop());
     void feedbackAudioContextRef.current?.close();
-  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
     const studiedWord = WORDS[index][0];
@@ -444,19 +466,16 @@ export default function Home() {
     const finish = () => {
       if (settled) return;
       settled = true;
-      setSpoken(false);
       onEnded?.();
     };
     const fail = () => {
       if (settled) return;
       settled = true;
-      setSpoken(false);
       onError?.();
     };
     audio.onended = finish;
     audio.onerror = fail;
-    setSpoken(false);
-    void audio.play().then(() => setSpoken(true)).catch(fail);
+    void audio.play().catch(fail);
   }, []);
 
   const ensurePronunciationSession = useCallback(() => {
@@ -499,21 +518,41 @@ export default function Home() {
         if (turnId === null || !isActiveRepeatTurn(turnId)) return;
 
         if (payload.type === "input_audio_buffer.speech_started") {
-          repeatSpeechItemIdRef.current = payload.item_id ?? null;
-          setRepeatMessage("LISTENING");
-          setRepeatState("listening");
+          if (!repeatListeningArmedRef.current) return;
+          if (repeatSpeakTimerRef.current !== null) {
+            window.clearTimeout(repeatSpeakTimerRef.current);
+            repeatSpeakTimerRef.current = null;
+          }
+          repeatSpeechItemIdRef.current = payload.item_id ?? "";
+          setRepeatMessage("SPEAKING");
+          setRepeatState("speaking");
+          repeatSpeakingTimerRef.current = window.setTimeout(() => {
+            if (isActiveRepeatTurn(turnId) && repeatListeningTurnRef.current === turnId) {
+              scheduleRepeatRetry(turnId);
+            }
+          }, SPEAKING_TIMEOUT_MS);
           return;
         }
         if (payload.type === "input_audio_buffer.speech_stopped" || payload.type === "input_audio_buffer.committed") {
-          if (!repeatSpeechItemIdRef.current) return;
+          if (!repeatListeningArmedRef.current) return;
+          if (repeatSpeakingTimerRef.current !== null) {
+            window.clearTimeout(repeatSpeakingTimerRef.current);
+            repeatSpeakingTimerRef.current = null;
+          }
           setRepeatMessage("SCORING");
           setRepeatState("scoring");
+          repeatScoringTimerRef.current = window.setTimeout(() => {
+            if (isActiveRepeatTurn(turnId) && repeatListeningTurnRef.current === turnId) {
+              scheduleRepeatRetry(turnId);
+            }
+          }, SCORING_TIMEOUT_MS);
           return;
         }
         if (payload.type !== "conversation.item.input_audio_transcription.completed" && payload.type !== "conversation.item.input_audio_transcription.failed") return;
-        if (!repeatSpeechItemIdRef.current || (payload.item_id && payload.item_id !== repeatSpeechItemIdRef.current)) return;
+        if (!repeatListeningArmedRef.current || (payload.item_id && repeatSpeechItemIdRef.current && payload.item_id !== repeatSpeechItemIdRef.current)) return;
         stopListening();
         repeatListeningTurnRef.current = null;
+        clearRepeatPhaseTimers();
         if (payload.type === "conversation.item.input_audio_transcription.failed") {
           scheduleRepeatRetry(turnId, 1_200);
           return;
@@ -561,7 +600,7 @@ export default function Home() {
       if (sessionPromiseRef.current === sessionPromise) sessionPromiseRef.current = null;
     });
     return sessionPromise;
-  }, [clearRepeatAdvanceTimer, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
     const turnId = repeatTurnIdRef.current + 1;
@@ -571,6 +610,7 @@ export default function Home() {
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
+    clearRepeatPhaseTimers();
     currentAudioRef.current?.pause();
     stopListening();
     repeatListeningTurnRef.current = null;
@@ -590,12 +630,17 @@ export default function Home() {
         repeatSpeechItemIdRef.current = null;
         repeatListeningTurnRef.current = turnId;
         repeatListeningArmedRef.current = true;
-        setRepeatState("listening");
-        setRepeatMessage("LISTENING");
+        setRepeatState("speak");
+        setRepeatMessage("SPEAK");
         if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
+        repeatSpeakTimerRef.current = window.setTimeout(() => {
+          if (isActiveRepeatTurn(turnId) && repeatListeningTurnRef.current === turnId) {
+            scheduleRepeatRetry(turnId);
+          }
+        }, SPEAK_TIMEOUT_MS);
       } catch { retry(); }
     }, retry);
-  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, isActiveRepeatTurn, playWord, prepareFeedbackAudio, repeatTranscript, scheduleRepeatRetry, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, isActiveRepeatTurn, playWord, prepareFeedbackAudio, repeatTranscript, scheduleRepeatRetry, stopListening]);
   useEffect(() => {
     beginRepeatTurnRef.current = beginRepeatTurn;
   }, [beginRepeatTurn]);
@@ -608,12 +653,12 @@ export default function Home() {
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
+    clearRepeatPhaseTimers();
     currentAudioRef.current?.pause();
-    setSpoken(false);
     stopListening();
     setRepeatState("paused");
     setRepeatMessage("PAUSED");
-  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyMode]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyMode]);
 
   const toggleRepeatPause = useCallback(() => {
     if (repeatState === "paused") {
@@ -676,6 +721,7 @@ export default function Home() {
       repeatTurnIdRef.current = activeRepeatTurnRef.current;
       repeatListeningTurnRef.current = null;
       clearRepeatPlaybackTimer();
+      clearRepeatPhaseTimers();
       setRepeatState("idle");
       setRepeatMessage("READY");
       playWord(word);
@@ -683,7 +729,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(wordIndexRef.current);
-  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode, word]);
+  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode, word]);
 
   useEffect(() => {
     if (nextWordIndex < 0) return;
@@ -712,7 +758,8 @@ export default function Home() {
           return;
         }
         if (
-          repeatState === "listening" ||
+          repeatState === "speak" ||
+          repeatState === "speaking" ||
           repeatState === "scoring" ||
           repeatState === "playing"
         ) {
@@ -743,7 +790,7 @@ export default function Home() {
       return;
     }
 
-    if (repeatState === "listening" || repeatState === "scoring" || repeatState === "playing") return;
+    if (repeatState === "speak" || repeatState === "speaking" || repeatState === "scoring" || repeatState === "playing") return;
     beginRepeatTurn(wordIndexRef.current);
   }, [activate, activated, beginRepeatTurn, next, repeatState, studyMode]);
 

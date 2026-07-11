@@ -202,7 +202,8 @@ h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
 .repeat-waveform i:nth-child(5) { height: 64px; }
 .repeat-card.connecting .repeat-waveform i,
 .repeat-card.playing .repeat-waveform i,
-.repeat-card.listening .repeat-waveform i,
+.repeat-card.speak .repeat-waveform i,
+.repeat-card.speaking .repeat-waveform i,
 .repeat-card.scoring .repeat-waveform i {
   animation: repeat-wave 880ms ease-in-out infinite;
 }
