@@ -30,13 +30,19 @@ def timestamp(value: str) -> float:
     return hours * 3600 + minutes * 60 + seconds + centiseconds / 100
 
 
-def clean_text(raw: str) -> str:
+def clean_bilingual_text(raw: str) -> tuple[str, str]:
     pieces = []
+    translations = []
     for piece in raw.split(r"\N"):
         piece = TAG.sub("", piece).strip()
         if re.search(r"[A-Za-z]", piece):
             pieces.append(piece)
-    return re.sub(r"\s+", " ", " ".join(pieces)).strip()
+        elif piece:
+            translations.append(piece)
+    return (
+        re.sub(r"\s+", " ", " ".join(pieces)).strip(),
+        re.sub(r"\s+", " ", " ".join(translations)).strip(),
+    )
 
 
 def classify(text: str) -> tuple[bool, list[str]]:
@@ -66,7 +72,7 @@ def parse_ass(path: Path) -> list[dict[str, object]]:
             continue
         start = timestamp(fields[1])
         end = timestamp(fields[2])
-        sentence = clean_text(fields[9])
+        sentence, translation = clean_bilingual_text(fields[9])
         if not sentence:
             continue
         learnable, reasons = classify(sentence)
@@ -77,6 +83,7 @@ def parse_ass(path: Path) -> list[dict[str, object]]:
             "end": end,
             "duration": round(end - start, 2),
             "text": sentence,
+            "translation": translation,
             "learnable": learnable,
             "reviewReasons": reasons,
         })

@@ -22,8 +22,21 @@ test("ships the complete vocabulary and audio set", async () => {
   assert.equal(audioFiles.length, 570);
 });
 
+test("ships the first sentence course package and its clips", async () => {
+  const course = JSON.parse(await read("app/data/modern-family-s01e01.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e01/audio", root)))
+    .filter((file) => file.endsWith(".mp3"));
+
+  assert.equal(course.episode, "S01E01");
+  assert.equal(course.entries.length, 499);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 481);
+  assert.equal(sentenceAudio.length, 481);
+  assert.match(course.entries[0].text, /Kids, breakfast/);
+});
+
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
+  const courses = await read("app/courses.ts");
   const progressRoute = await read("app/api/progress/route.ts");
   const pronunciationRoute = await read("app/api/pronunciation-session/route.ts");
 
@@ -32,6 +45,10 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /localStorage/);
   assert.match(page, /\/api\/progress/);
   assert.match(page, /RTCPeerConnection/);
+  assert.match(page, /studyContent/);
+  assert.match(page, /SENTENCES/);
+  assert.match(courses, /modern-family-s01e01/);
+  assert.match(courses, /COURSE_PACKAGES/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);
   assert.match(pronunciationRoute, /OPENAI_REALTIME_URL/);

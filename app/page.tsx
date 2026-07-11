@@ -1,10 +1,12 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { DEFAULT_COURSE, type SentenceEntry } from "./courses";
 import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
 const PASS_SCORE = 30;
+const SENTENCE_PASS_SCORE = 62;
 const AUTO_ADVANCE_MS = 700;
 const PLAYBACK_TIMEOUT_MS = 8_000;
 const SPEAK_TIMEOUT_MS = 6_000;
@@ -12,9 +14,11 @@ const SPEAKING_TIMEOUT_MS = 6_000;
 const SCORING_TIMEOUT_MS = 6_000;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
+const SENTENCE_PROGRESS_KEY = "word-loop-sentence-progress";
 
 type ProgressMap = Record<string, number>;
 type StudyMode = "listen" | "repeat";
+type StudyContent = "words" | "sentences";
 type RepeatState =
   | "idle"
   | "connecting"
@@ -58,6 +62,13 @@ function eligibleIndex(progress: ProgressMap, except = -1) {
   return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
 }
 
+function eligibleSentenceIndex(entries: readonly SentenceEntry[], progress: ProgressMap, except = -1) {
+  const available = entries.flatMap((entry, index) =>
+    index !== except && (progress[entry.id] ?? 0) < MAX_STUDY_COUNT ? [index] : [],
+  );
+  return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
+}
+
 function normalizeSpeech(value: string) {
   return value.toLowerCase().replace(/[^a-z]/g, "");
 }
@@ -73,11 +84,12 @@ function speechCandidates(transcript: string) {
     .filter(Boolean);
   const candidates = new Set(words);
 
-  // Transcription can split one spoken word into several pieces. Include short
-  // adjacent windows, while still ignoring unrelated words during scoring.
+  // Transcription can split a spoken phrase into several pieces. Include
+  // adjacent windows long enough to cover a complete learning sentence, while
+  // still ignoring unrelated words during scoring.
   for (let start = 0; start < words.length; start += 1) {
     let combined = words[start];
-    for (let end = start + 1; end < Math.min(words.length, start + 3); end += 1) {
+    for (let end = start + 1; end < Math.min(words.length, start + 12); end += 1) {
       combined += words[end];
       candidates.add(combined);
     }
@@ -208,7 +220,7 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
   const score = exact
     ? 100
     : Math.round(bestSimilarity * 100);
-  const passed = exact || score >= PASS_SCORE;
+  const passed = exact || score >= (targetWord.trim().split(/\s+/).length > 1 ? SENTENCE_PASS_SCORE : PASS_SCORE);
 
   if (passed) {
     return {
@@ -239,13 +251,24 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
 export default function Home() {
   const [wordIndex, setWordIndex] = useState(() => randomIndex(WORDS.length));
   const [nextWordIndex, setNextWordIndex] = useState(() => randomIndex(WORDS.length));
+  const [sentenceIndex, setSentenceIndex] = useState(() => randomIndex(DEFAULT_COURSE.entries.length));
+  const [nextSentenceIndex, setNextSentenceIndex] = useState(() => randomIndex(DEFAULT_COURSE.entries.length));
   const [paletteIndex, setPaletteIndex] = useState(() => randomIndex(PALETTES.length));
+  const [studyContent, setStudyContent] = useState<StudyContent>("words");
   const [studyMode, setStudyMode] = useState<StudyMode>("listen");
   const [activated, setActivated] = useState(false);
   const [progress, setProgress] = useState<ProgressMap>(() => {
     if (typeof window === "undefined") return {};
     try {
       return JSON.parse(localStorage.getItem(PROGRESS_KEY) ?? "{}") as ProgressMap;
+    } catch {
+      return {};
+    }
+  });
+  const [sentenceProgress, setSentenceProgress] = useState<ProgressMap>(() => {
+    if (typeof window === "undefined") return {};
+    try {
+      return JSON.parse(localStorage.getItem(SENTENCE_PROGRESS_KEY) ?? "{}") as ProgressMap;
     } catch {
       return {};
     }
@@ -278,16 +301,39 @@ export default function Home() {
   const repeatStreamRef = useRef<MediaStream | null>(null);
   const userIdRef = useRef("");
   const progressRef = useRef<ProgressMap>({});
+  const sentenceProgressRef = useRef<ProgressMap>({});
   const nextWordIndexRef = useRef(nextWordIndex);
   const wordIndexRef = useRef(wordIndex);
+  const nextSentenceIndexRef = useRef(nextSentenceIndex);
+  const sentenceIndexRef = useRef(sentenceIndex);
+  const currentIndexRef = useRef(wordIndex);
+  const nextIndexRef = useRef(nextWordIndex);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
+  const sentence = DEFAULT_COURSE.entries[sentenceIndex];
+  const sentenceMode = studyContent === "sentences";
+  const currentItem = sentenceMode
+    ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio }
+    : { id: word, text: word, meaning, phonetic, audio: `/audio/${word}.m4a` };
+  const currentIndex = sentenceMode ? sentenceIndex : wordIndex;
+  const nextIndex = sentenceMode ? nextSentenceIndex : nextWordIndex;
+  const activeProgress = sentenceMode ? sentenceProgress : progress;
+  const activeEntriesCount = sentenceMode ? DEFAULT_COURSE.entries.length : WORDS.length;
   const [background, ink, accent] = PALETTES[paletteIndex];
-  const currentStudyCount = progress[word] ?? 0;
-  const manualNextIndex = nextWordIndex >= 0 ? nextWordIndex : eligibleIndex(progress, wordIndex);
-  const totalStudies = Object.values(progress).reduce((sum, count) => sum + count, 0);
-  const completedWords = WORDS.filter(([entry]) => (progress[entry] ?? 0) >= MAX_STUDY_COUNT).length;
+  const currentStudyCount = activeProgress[currentItem.id] ?? 0;
+  const manualNextIndex = nextIndex >= 0
+    ? nextIndex
+    : sentenceMode
+      ? eligibleSentenceIndex(DEFAULT_COURSE.entries, sentenceProgress, sentenceIndex)
+      : eligibleIndex(progress, wordIndex);
+  const totalStudies = Object.values(activeProgress).reduce((sum, count) => sum + count, 0);
+  const completedWords = sentenceMode
+    ? DEFAULT_COURSE.entries.filter((entry) => (sentenceProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT).length
+    : WORDS.filter(([entry]) => (progress[entry] ?? 0) >= MAX_STUDY_COUNT).length;
   const filteredWords = WORDS.filter(([entry, entryMeaning]) =>
     `${entry} ${entryMeaning}`.toLowerCase().includes(search.trim().toLowerCase()),
+  );
+  const filteredSentences = DEFAULT_COURSE.entries.filter((entry) =>
+    `${entry.text} ${entry.translation}`.toLowerCase().includes(search.trim().toLowerCase()),
   );
   const repeatLabel = repeatStatusLabel(repeatState);
   const repeatHint = repeatStatusHint(repeatState);
@@ -350,7 +396,7 @@ export default function Home() {
     setRepeatState("error");
     setRepeatMessage("RETRYING");
     repeatRetryTimerRef.current = window.setTimeout(() => {
-      if (isActiveRepeatTurn(turnId)) beginRepeatTurnRef.current(wordIndexRef.current);
+      if (isActiveRepeatTurn(turnId)) beginRepeatTurnRef.current(currentIndexRef.current);
     }, delay);
   }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, isActiveRepeatTurn, stopListening]);
 
@@ -402,8 +448,25 @@ export default function Home() {
   }, [nextWordIndex]);
 
   useEffect(() => {
+    sentenceIndexRef.current = sentenceIndex;
+  }, [sentenceIndex]);
+
+  useEffect(() => {
+    nextSentenceIndexRef.current = nextSentenceIndex;
+  }, [nextSentenceIndex]);
+
+  useEffect(() => {
+    currentIndexRef.current = currentIndex;
+    nextIndexRef.current = nextIndex;
+  }, [currentIndex, nextIndex]);
+
+  useEffect(() => {
     progressRef.current = progress;
   }, [progress]);
+
+  useEffect(() => {
+    sentenceProgressRef.current = sentenceProgress;
+  }, [sentenceProgress]);
 
   useEffect(() => () => {
     clearRepeatAdvanceTimer();
@@ -420,6 +483,20 @@ export default function Home() {
   }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
+    if (sentenceMode) {
+      const entry = DEFAULT_COURSE.entries[index];
+      const next = {
+        ...sentenceProgressRef.current,
+        [entry.id]: Math.min(MAX_STUDY_COUNT, (sentenceProgressRef.current[entry.id] ?? 0) + 1),
+      };
+      const nextEligibleIndex = eligibleSentenceIndex(DEFAULT_COURSE.entries, next, index);
+      sentenceProgressRef.current = next;
+      setSentenceProgress(next);
+      localStorage.setItem(SENTENCE_PROGRESS_KEY, JSON.stringify(next));
+      setNextSentenceIndex(nextEligibleIndex);
+      return nextEligibleIndex;
+    }
+
     const studiedWord = WORDS[index][0];
     const next = {
       ...progressRef.current,
@@ -449,10 +526,10 @@ export default function Home() {
       });
       }).catch(() => undefined);
     return nextEligibleIndex;
-  }, []);
+  }, [sentenceMode]);
 
   const playWord = useCallback((targetWord: string, onEnded?: () => void, onError?: () => void) => {
-    const source = new URL(`/audio/${targetWord}.m4a`, window.location.href).href;
+    const source = new URL(targetWord.startsWith("/") ? targetWord : `/audio/${targetWord}.m4a`, window.location.href).href;
     const preloaded = preloadedAudioRef.current;
     const usePreloaded = preloaded?.src === source;
     const audio = usePreloaded
@@ -569,11 +646,12 @@ export default function Home() {
         }
 
         setRepeatState("passed");
-        const upcomingIndex = recordStudy(wordIndexRef.current);
+        const upcomingIndex = recordStudy(currentIndexRef.current);
         clearRepeatAdvanceTimer();
         repeatAdvanceTimerRef.current = window.setTimeout(() => {
           if (isActiveRepeatTurn(turnId) && upcomingIndex >= 0) {
-            setWordIndex(upcomingIndex);
+            if (sentenceMode) setSentenceIndex(upcomingIndex);
+            else setWordIndex(upcomingIndex);
             setPaletteIndex((current) => randomIndex(PALETTES.length, current));
             beginRepeatTurnRef.current(upcomingIndex);
           }
@@ -600,9 +678,12 @@ export default function Home() {
       if (sessionPromiseRef.current === sessionPromise) sessionPromiseRef.current = null;
     });
     return sessionPromise;
-  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
+    const target = sentenceMode
+      ? DEFAULT_COURSE.entries[targetIndex]
+      : { text: WORDS[targetIndex][0], audio: `/audio/${WORDS[targetIndex][0]}.m4a` };
     const turnId = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = turnId;
     activeRepeatTurnRef.current = turnId;
@@ -615,14 +696,14 @@ export default function Home() {
     stopListening();
     repeatListeningTurnRef.current = null;
     if (repeatTranscript) setRepeatTranscript("");
-    repeatWordRef.current = WORDS[targetIndex][0];
+    repeatWordRef.current = target.text;
     setRepeatState("playing");
     setRepeatMessage("PLAYING");
     const session = ensurePronunciationSession();
     const retry = () => scheduleRepeatRetry(turnId, 1_200);
     void session.catch(retry);
     repeatPlaybackTimerRef.current = window.setTimeout(retry, PLAYBACK_TIMEOUT_MS);
-    playWord(WORDS[targetIndex][0], async () => {
+    playWord(target.audio, async () => {
       try {
         await ensurePronunciationSession();
         if (!isActiveRepeatTurn(turnId)) return;
@@ -640,7 +721,7 @@ export default function Home() {
         }, SPEAK_TIMEOUT_MS);
       } catch { retry(); }
     }, retry);
-  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, isActiveRepeatTurn, playWord, prepareFeedbackAudio, repeatTranscript, scheduleRepeatRetry, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, isActiveRepeatTurn, playWord, prepareFeedbackAudio, repeatTranscript, scheduleRepeatRetry, sentenceMode, stopListening]);
   useEffect(() => {
     beginRepeatTurnRef.current = beginRepeatTurn;
   }, [beginRepeatTurn]);
@@ -662,46 +743,53 @@ export default function Home() {
 
   const toggleRepeatPause = useCallback(() => {
     if (repeatState === "paused") {
-      beginRepeatTurn(wordIndexRef.current);
+      beginRepeatTurn(currentIndexRef.current);
       return;
     }
     pauseRepeat();
   }, [beginRepeatTurn, pauseRepeat, repeatState]);
 
   const speak = useCallback(() => {
-    if (studyMode === "repeat") beginRepeatTurn(wordIndexRef.current);
-    else playWord(word);
-  }, [beginRepeatTurn, playWord, studyMode, word]);
+    if (studyMode === "repeat") beginRepeatTurn(currentIndexRef.current);
+    else playWord(currentItem.audio);
+  }, [beginRepeatTurn, currentItem.audio, playWord, studyMode]);
 
   const next = useCallback(() => {
-    const targetIndex = nextWordIndexRef.current >= 0
-      ? nextWordIndexRef.current
-      : eligibleIndex(progressRef.current, wordIndexRef.current);
+    const targetIndex = nextIndexRef.current >= 0
+      ? nextIndexRef.current
+      : sentenceMode
+        ? eligibleSentenceIndex(DEFAULT_COURSE.entries, sentenceProgressRef.current, currentIndexRef.current)
+        : eligibleIndex(progressRef.current, currentIndexRef.current);
     if (targetIndex < 0) return;
     stopListening();
     clearRepeatAdvanceTimer();
-    setNextWordIndex(eligibleIndex(progressRef.current, targetIndex));
-    setWordIndex(targetIndex);
+    if (sentenceMode) {
+      setNextSentenceIndex(eligibleSentenceIndex(DEFAULT_COURSE.entries, sentenceProgressRef.current, targetIndex));
+      setSentenceIndex(targetIndex);
+    } else {
+      setNextWordIndex(eligibleIndex(progressRef.current, targetIndex));
+      setWordIndex(targetIndex);
+    }
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
 
     if (studyMode === "listen") {
-      playWord(WORDS[targetIndex][0]);
+      playWord(sentenceMode ? DEFAULT_COURSE.entries[targetIndex].audio : WORDS[targetIndex][0]);
       recordStudy(targetIndex);
       return;
     }
 
     beginRepeatTurn(targetIndex);
-  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playWord, recordStudy, stopListening, studyMode]);
+  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playWord, recordStudy, sentenceMode, stopListening, studyMode]);
 
   const activate = useCallback(() => {
     setActivated(true);
     if (studyMode === "listen") {
-      playWord(word);
-      recordStudy(wordIndex);
+      playWord(currentItem.audio);
+      recordStudy(currentIndex);
       return;
     }
-    beginRepeatTurn(wordIndex);
-  }, [beginRepeatTurn, playWord, recordStudy, studyMode, word, wordIndex]);
+    beginRepeatTurn(currentIndex);
+  }, [beginRepeatTurn, currentIndex, currentItem.audio, playWord, recordStudy, studyMode]);
 
   const handleModeChange = useCallback((nextMode: StudyMode) => {
     if (nextMode === studyMode) return;
@@ -724,16 +812,18 @@ export default function Home() {
       clearRepeatPhaseTimers();
       setRepeatState("idle");
       setRepeatMessage("READY");
-      playWord(word);
+      playWord(currentItem.audio);
       return;
     }
 
-    beginRepeatTurn(wordIndexRef.current);
-  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode, word]);
+    beginRepeatTurn(currentIndexRef.current);
+  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, currentItem.audio, playWord, stopListening, studyMode]);
 
   useEffect(() => {
-    if (nextWordIndex < 0) return;
-    const preload = new Audio(`/audio/${WORDS[nextWordIndex][0]}.m4a`);
+    if (nextIndex < 0) return;
+    const preload = new Audio(sentenceMode
+      ? DEFAULT_COURSE.entries[nextIndex].audio
+      : `/audio/${WORDS[nextIndex][0]}.m4a`);
     preload.preload = "auto";
     preload.load();
     preloadedAudioRef.current = preload;
@@ -743,7 +833,7 @@ export default function Home() {
         preload.src = "";
       }
     };
-  }, [nextWordIndex]);
+  }, [nextIndex, sentenceMode]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -766,13 +856,13 @@ export default function Home() {
           pauseRepeat();
           return;
         }
-        beginRepeatTurn(wordIndexRef.current);
+        beginRepeatTurn(currentIndexRef.current);
         return;
       }
 
       if (event.key.toLowerCase() === "r" && activated && studyMode === "repeat") {
         event.preventDefault();
-        beginRepeatTurn(wordIndexRef.current);
+        beginRepeatTurn(currentIndexRef.current);
       }
     };
     window.addEventListener("keydown", onKeyDown);
@@ -791,8 +881,25 @@ export default function Home() {
     }
 
     if (repeatState === "speak" || repeatState === "speaking" || repeatState === "scoring" || repeatState === "playing") return;
-    beginRepeatTurn(wordIndexRef.current);
+    beginRepeatTurn(currentIndexRef.current);
   }, [activate, activated, beginRepeatTurn, next, repeatState, studyMode]);
+
+  const handleContentChange = useCallback((nextContent: StudyContent) => {
+    if (nextContent === studyContent) return;
+    activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
+    repeatTurnIdRef.current = activeRepeatTurnRef.current;
+    repeatListeningTurnRef.current = null;
+    clearRepeatAdvanceTimer();
+    clearRepeatRetryTimer();
+    clearRepeatPlaybackTimer();
+    clearRepeatPhaseTimers();
+    currentAudioRef.current?.pause();
+    stopListening();
+    setStudyContent(nextContent);
+    setActivated(false);
+    setRepeatState("idle");
+    setRepeatMessage("READY");
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyContent]);
 
   return (
     <main
@@ -804,6 +911,18 @@ export default function Home() {
       <header className="topbar">
         <div className="brand"><span>WORD</span><span>LOOP</span></div>
         <div className="header-actions">
+          <div className="mode-switch" role="tablist" aria-label="Course type">
+            <button
+              className={studyContent === "words" ? "active" : undefined}
+              onClick={(event) => { event.stopPropagation(); handleContentChange("words"); }}
+              aria-pressed={studyContent === "words"}
+            >WORDS</button>
+            <button
+              className={studyContent === "sentences" ? "active" : undefined}
+              onClick={(event) => { event.stopPropagation(); handleContentChange("sentences"); }}
+              aria-pressed={studyContent === "sentences"}
+            >SENTENCES</button>
+          </div>
           <div className="mode-switch" role="tablist" aria-label="Study mode">
             <button
               className={studyMode === "listen" ? "active" : undefined}
@@ -825,7 +944,7 @@ export default function Home() {
             onClick={(event) => { event.stopPropagation(); setPanelOpen(true); }}
             aria-label="Open learning progress"
           >
-            PROGRESS · {completedWords}/{WORDS.length}
+            PROGRESS · {completedWords}/{activeEntriesCount}
           </button>
         </div>
       </header>
@@ -836,14 +955,15 @@ export default function Home() {
             <span className="start-icon" aria-hidden="true">▶</span>
             {studyMode === "repeat" ? "START REPEAT" : "START LEARNING"}
           </button>
-          <p>{studyMode === "repeat" ? "Repeat mode" : "British pronunciation · 570 academic words"}</p>
+          <p>{studyMode === "repeat" ? "Repeat mode" : sentenceMode ? DEFAULT_COURSE.title : "British pronunciation · 570 academic words"}</p>
         </div>
       )}
 
       <section className="word-stage">
-        <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
+        <div className="course-kicker">{sentenceMode ? `${DEFAULT_COURSE.title} · ${sentenceIndex + 1}/${DEFAULT_COURSE.entries.length}` : "ACADEMIC WORD LIST"}</div>
+        <h1 key={currentItem.id} className={sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : undefined}>{currentItem.text}</h1>
         <div className="phonetic-row">
-          <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
+          {sentenceMode ? <div className="phonetic sentence-translation">{currentItem.meaning}</div> : <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>}
           <button
             className="word-play"
             onClick={(event) => {
@@ -851,12 +971,12 @@ export default function Home() {
               if (activated) speak();
               else activate();
             }}
-            aria-label={studyMode === "repeat" ? `Replay and repeat ${word}` : `Play pronunciation of ${word}`}
+            aria-label={studyMode === "repeat" ? `Replay and repeat ${currentItem.text}` : `Play pronunciation of ${currentItem.text}`}
           >
             <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
           </button>
         </div>
-        <p key={`${word}-meaning`} className="meaning">{meaning}</p>
+        {!sentenceMode && <p key={`${word}-meaning`} className="meaning">{meaning}</p>}
         {studyMode === "repeat" && (
           <div className={`repeat-card ${repeatState}`}>
             <div className="repeat-visual" aria-hidden="true">
@@ -901,7 +1021,7 @@ export default function Home() {
             onClick={(event) => { event.stopPropagation(); next(); }}
             disabled={manualNextIndex < 0}
           >
-            NEXT WORD <span aria-hidden="true">→</span>
+            NEXT {sentenceMode ? "SENTENCE" : "WORD"} <span aria-hidden="true">→</span>
           </button>
         </div>
       )}
@@ -918,23 +1038,26 @@ export default function Home() {
             <div className="panel-header">
               <div>
                 <span>YOUR PROGRESS</span>
-                <h2>{totalStudies.toLocaleString()} / {(WORDS.length * MAX_STUDY_COUNT).toLocaleString()}</h2>
+                <h2>{totalStudies.toLocaleString()} / {(activeEntriesCount * MAX_STUDY_COUNT).toLocaleString()}</h2>
               </div>
               <button onClick={() => setPanelOpen(false)} aria-label="Close progress panel">×</button>
             </div>
-            <div className="progress-track"><i style={{ width: `${totalStudies / (WORDS.length * MAX_STUDY_COUNT) * 100}%` }} /></div>
+            <div className="progress-track"><i style={{ width: `${totalStudies / (activeEntriesCount * MAX_STUDY_COUNT) * 100}%` }} /></div>
             <div className="panel-stats">
               <span><b>{completedWords}</b> 已掌握</span>
-              <span><b>{WORDS.length - completedWords}</b> 学习中</span>
+              <span><b>{activeEntriesCount - completedWords}</b> 学习中</span>
             </div>
             <input
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="搜索单词或中文释义"
-              aria-label="Search vocabulary progress"
+              placeholder={sentenceMode ? "搜索句子或中文翻译" : "搜索单词或中文释义"}
+              aria-label={sentenceMode ? "Search sentence progress" : "Search vocabulary progress"}
             />
             <div className="word-list">
-              {filteredWords.map(([entry, entryMeaning, , entryPhonetic]) => {
+              {sentenceMode ? filteredSentences.map((entry) => {
+                const count = sentenceProgress[entry.id] ?? 0;
+                return <div className="word-row" key={entry.id}><div><strong>{entry.text}</strong><small>{entry.translation}</small></div><span className={count >= MAX_STUDY_COUNT ? "complete" : undefined}>{count} / {MAX_STUDY_COUNT}</span></div>;
+              }) : filteredWords.map(([entry, entryMeaning, , entryPhonetic]) => {
                 const count = progress[entry] ?? 0;
                 return (
                   <div className="word-row" key={entry}>
@@ -951,15 +1074,15 @@ export default function Home() {
       <footer>
         {studyMode !== "repeat" && (
           <div className="prompt">
-            {nextWordIndex >= 0 ? (
-              <><span className="space-key">SPACE</span><span>next word</span></>
+            {nextIndex >= 0 ? (
+              <><span className="space-key">SPACE</span><span>next {sentenceMode ? "sentence" : "word"}</span></>
             ) : (
-              <span>ALL 570 WORDS MASTERED</span>
+              <span>{sentenceMode ? "COURSE COMPLETE" : "ALL 570 WORDS MASTERED"}</span>
             )}
           </div>
         )}
         <div className="current-progress">
-          <span>THIS WORD</span>
+          <span>THIS {sentenceMode ? "SENTENCE" : "WORD"}</span>
           <strong>{currentStudyCount} / {MAX_STUDY_COUNT}</strong>
         </div>
       </footer>
