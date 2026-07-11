@@ -106,25 +106,25 @@ function playFeedbackTone(context: AudioContext, passed: boolean) {
 function repeatStatusLabel(state: RepeatState) {
   switch (state) {
     case "connecting":
-      return "Connecting";
+      return "正在连接语音服务";
     case "ready":
-      return "Ready";
+      return "准备好了，点击或按空格开始";
     case "playing":
-      return "Playing";
+      return "请先听清标准发音";
     case "listening":
-      return "Listening";
+      return "请现在跟读";
     case "scoring":
-      return "Checking";
+      return "正在识别你的发音";
     case "passed":
-      return "Good";
+      return "发音不错，马上进入下一个单词";
     case "paused":
-      return "Paused";
+      return "已暂停，准备好后继续";
     case "retry":
-      return "Retrying";
+      return "再读一次，尽量清晰";
     case "error":
-      return "Mic retry";
+      return "麦克风正在重新连接";
     default:
-      return "Stand by";
+      return "跟读模式已准备好";
   }
 }
 
@@ -898,13 +898,15 @@ export default function Home() {
       )}
 
       <footer>
-        <div className="prompt">
-          {studyMode === "repeat" ? null : nextWordIndex >= 0 ? (
-            <><span className="space-key">SPACE</span><span>next word</span></>
-          ) : (
-            <span>ALL 570 WORDS MASTERED</span>
-          )}
-        </div>
+        {studyMode !== "repeat" && (
+          <div className="prompt">
+            {nextWordIndex >= 0 ? (
+              <><span className="space-key">SPACE</span><span>next word</span></>
+            ) : (
+              <span>ALL 570 WORDS MASTERED</span>
+            )}
+          </div>
+        )}
         <div className="current-progress">
           <span>THIS WORD</span>
           <strong>{currentStudyCount} / {MAX_STUDY_COUNT}</strong>
