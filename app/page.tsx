@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
-const PASS_SCORE = 22;
+const PASS_SCORE = 65;
 const AUTO_ADVANCE_MS = 700;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
@@ -57,6 +57,51 @@ function normalizeSpeech(value: string) {
   return value.toLowerCase().replace(/[^a-z]/g, "");
 }
 
+function speechCandidates(transcript: string) {
+  const withoutNoiseLabels = transcript.replace(
+    /[\[(](?:background noise|noise|music|laughter|silence|inaudible)[\])]/gi,
+    " ",
+  );
+  const words = withoutNoiseLabels
+    .split(/\s+/)
+    .map(normalizeSpeech)
+    .filter(Boolean);
+  const candidates = new Set(words);
+
+  // Transcription can split one spoken word into several pieces. Include short
+  // adjacent windows, while still ignoring unrelated words during scoring.
+  for (let start = 0; start < words.length; start += 1) {
+    let combined = words[start];
+    for (let end = start + 1; end < Math.min(words.length, start + 3); end += 1) {
+      combined += words[end];
+      candidates.add(combined);
+    }
+  }
+
+  return [...candidates];
+}
+
+function playFeedbackTone(context: AudioContext, passed: boolean) {
+  const notes = passed ? [660, 880] : [220, 165];
+  const startedAt = context.currentTime;
+
+  for (const [index, frequency] of notes.entries()) {
+    const oscillator = context.createOscillator();
+    const gain = context.createGain();
+    const offset = index * 0.09;
+    const duration = 0.12;
+
+    oscillator.type = passed ? "sine" : "triangle";
+    oscillator.frequency.setValueAtTime(frequency, startedAt + offset);
+    gain.gain.setValueAtTime(0.0001, startedAt + offset);
+    gain.gain.exponentialRampToValueAtTime(passed ? 0.07 : 0.055, startedAt + offset + 0.015);
+    gain.gain.exponentialRampToValueAtTime(0.0001, startedAt + offset + duration);
+    oscillator.connect(gain).connect(context.destination);
+    oscillator.start(startedAt + offset);
+    oscillator.stop(startedAt + offset + duration);
+  }
+}
+
 function repeatStatusLabel(state: RepeatState) {
   switch (state) {
     case "connecting":
@@ -107,14 +152,6 @@ function repeatStatusHint(state: RepeatState) {
   }
 }
 
-function repeatFeedbackLabel(message: string, state: RepeatState) {
-  if (message === "PASS" || state === "passed") return "Good";
-  if (message === "TRY AGAIN" || state === "retry") return "Almost";
-  if (state === "error") return "Retrying";
-  if (state === "scoring") return "Checking";
-  return "";
-}
-
 function levenshtein(a: string, b: string) {
   if (!a.length) return b.length;
   if (!b.length) return a.length;
@@ -141,16 +178,12 @@ function levenshtein(a: string, b: string) {
 
 function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
   const normalizedTarget = normalizeSpeech(targetWord);
-  const candidates = transcript
-    .split(/\s+/)
-    .map(normalizeSpeech)
-    .filter(Boolean);
-  const pool = candidates.length ? candidates : [normalizeSpeech(transcript)];
+  const candidates = speechCandidates(transcript);
 
   let matched = "";
   let bestSimilarity = 0;
 
-  for (const candidate of pool) {
+  for (const candidate of candidates) {
     const distance = levenshtein(normalizedTarget, candidate);
     const similarity = Math.max(
       0,
@@ -162,10 +195,10 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
     }
   }
 
-  const exact = pool.includes(normalizedTarget);
+  const exact = candidates.includes(normalizedTarget);
   const score = exact
     ? 100
-    : Math.max(8, Math.round(bestSimilarity * 100 - Math.max(0, pool.length - 1) * 4));
+    : Math.round(bestSimilarity * 100);
   const passed = exact || score >= PASS_SCORE;
 
   if (passed) {
@@ -214,6 +247,7 @@ export default function Home() {
   const repeatAdvanceTimerRef = useRef<number | null>(null);
   const repeatRetryTimerRef = useRef<number | null>(null);
   const repeatTrackRef = useRef<MediaStreamTrack | null>(null);
+  const feedbackAudioContextRef = useRef<AudioContext | null>(null);
   const repeatListeningArmedRef = useRef(false);
   const repeatSpeechItemIdRef = useRef<string | null>(null);
   const repeatWordRef = useRef("");
@@ -232,14 +266,24 @@ export default function Home() {
   );
   const repeatLabel = repeatStatusLabel(repeatState);
   const repeatHint = repeatStatusHint(repeatState);
-  const repeatFeedback = repeatFeedbackLabel(repeatMessage, repeatState);
   const showRepeatFeedback = repeatState === "retry" || repeatState === "error";
   const showRepeatTranscript = Boolean(repeatTranscript) && (repeatState === "retry" || repeatState === "error");
+  const repeatFailureReason = repeatState === "error"
+    ? "Microphone input was interrupted. Reconnecting now."
+    : repeatTranscript
+      ? `We heard “${repeatTranscript}”, but it was not close enough to “${word}”.`
+      : "We could not hear a clear pronunciation. Try once more.";
 
   const stopListening = useCallback(() => {
     if (repeatTrackRef.current) repeatTrackRef.current.enabled = false;
     repeatListeningArmedRef.current = false;
     repeatSpeechItemIdRef.current = null;
+  }, []);
+
+  const prepareFeedbackAudio = useCallback(() => {
+    const context = feedbackAudioContextRef.current ?? new AudioContext();
+    feedbackAudioContextRef.current = context;
+    if (context.state === "suspended") void context.resume();
   }, []);
 
   const clearRepeatAdvanceTimer = useCallback(() => {
@@ -322,6 +366,7 @@ export default function Home() {
     peerConnectionRef.current?.close();
     dataChannelRef.current?.close();
     repeatStreamRef.current?.getTracks().forEach((track) => track.stop());
+    void feedbackAudioContextRef.current?.close();
   }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
@@ -443,6 +488,8 @@ export default function Home() {
           setRepeatTranscript(transcript);
           const result = scoreTranscript(repeatWordRef.current, transcript);
           setRepeatMessage(result.feedback);
+          const feedbackAudio = feedbackAudioContextRef.current;
+          if (feedbackAudio?.state === "running") playFeedbackTone(feedbackAudio, result.passed);
 
         if (result.passed) {
           setRepeatState("passed");
@@ -514,6 +561,7 @@ export default function Home() {
   }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, recordStudy, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
+    prepareFeedbackAudio();
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
     stopListening();
@@ -545,7 +593,7 @@ export default function Home() {
         }, 1200);
       }
     });
-  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, ensurePronunciationSession, playWord, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, ensurePronunciationSession, playWord, prepareFeedbackAudio, stopListening]);
 
   const pauseRepeat = useCallback(() => {
     if (studyMode !== "repeat") return;
@@ -742,44 +790,43 @@ export default function Home() {
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
         {studyMode === "repeat" && (
           <div className={`repeat-card ${repeatState}`}>
-            <div className="repeat-copy">
-              <div className="repeat-head">
-                <span className="repeat-mode-badge">Repeat mode</span>
-              </div>
-              <div className={`repeat-siri ${repeatState}`} aria-label={`Repeat mode ${repeatMessage.toLowerCase()}`}>
-                <span className="repeat-siri-orb" aria-hidden="true">
-                  <i /><i /><i /><i />
+            <span className="repeat-mode-badge">Repeat mode</span>
+            <div className="repeat-visual" aria-hidden="true">
+              {repeatState === "passed" ? (
+                <span className="repeat-result-icon success">✓</span>
+              ) : repeatState === "retry" || repeatState === "error" ? (
+                <span className="repeat-result-icon failure">!</span>
+              ) : (
+                <span className="repeat-waveform">
+                  <i /><i /><i /><i /><i /><i /><i /><i /><i />
                 </span>
-                <div className="repeat-body">
-                  <strong>{repeatLabel}</strong>
-                  <span>{repeatHint}</span>
-                </div>
-                <span className="sr-only">{repeatMessage}</span>
-              </div>
-              {showRepeatFeedback && repeatFeedback && (
-                <div className={`repeat-feedback ${repeatState}`}>
-                  <strong>{repeatFeedback}</strong>
-                  <span>{repeatState === "retry" ? "One more clean read" : "Recovering and restarting"}</span>
-                </div>
-              )}
-              {showRepeatTranscript && (
-                <div className="repeat-transcript">
-                  <span>You said</span>
-                  <strong>{repeatTranscript}</strong>
-                </div>
               )}
             </div>
-            <button
-              className="repeat-toggle"
-              onClick={(event) => { event.stopPropagation(); toggleRepeatPause(); }}
-              aria-label={repeatState === "paused" ? "Resume repeat" : "Pause repeat"}
-              aria-pressed={repeatState === "paused"}
-            >
-              <span aria-hidden="true" className={repeatState === "paused" ? "repeat-toggle-play" : "repeat-toggle-pause"} />
-            </button>
+            <div className="repeat-body" aria-live="polite">
+              <strong>{repeatLabel}</strong>
+              <span>{showRepeatFeedback ? repeatFailureReason : repeatHint}</span>
+              <span className="sr-only">{repeatMessage}</span>
+            </div>
+            {showRepeatTranscript && (
+              <div className="repeat-transcript">
+                <span>You said</span>
+                <strong>{repeatTranscript}</strong>
+              </div>
+            )}
           </div>
         )}
       </section>
+
+      {studyMode === "repeat" && activated && (
+        <button
+          className="repeat-toggle"
+          onClick={(event) => { event.stopPropagation(); toggleRepeatPause(); }}
+          aria-label={repeatState === "paused" ? "Resume repeat" : "Pause repeat"}
+          aria-pressed={repeatState === "paused"}
+        >
+          <span aria-hidden="true" className={repeatState === "paused" ? "repeat-toggle-play" : "repeat-toggle-pause"} />
+        </button>
+      )}
 
       {panelOpen && (
         <div
