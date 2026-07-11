@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
-const PASS_SCORE = 65;
+const PASS_SCORE = 30;
 const AUTO_ADVANCE_MS = 700;
 const PLAYBACK_TIMEOUT_MS = 8_000;
 const USER_ID_KEY = "word-loop-user-id";
