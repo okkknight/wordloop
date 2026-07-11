@@ -336,6 +336,7 @@ export default function Home() {
   const nextSentenceIndexRef = useRef(nextSentenceIndex);
   const sentenceIndexRef = useRef(sentenceIndex);
   const sentenceEntriesRef = useRef<readonly CourseEntry[]>(MODERN_FAMILY_S01E01_COURSE.entries);
+  const activeCourseKindRef = useRef<"word" | "sentence">(DEFAULT_COURSE.kind);
   const currentIndexRef = useRef(wordIndex);
   const nextIndexRef = useRef(nextWordIndex);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
@@ -528,6 +529,10 @@ export default function Home() {
   }, [sentenceCourse]);
 
   useEffect(() => {
+    activeCourseKindRef.current = sentenceMode ? "sentence" : "word";
+  }, [sentenceMode]);
+
+  useEffect(() => {
     nextSentenceIndexRef.current = nextSentenceIndex;
   }, [nextSentenceIndex]);
 
@@ -694,6 +699,8 @@ export default function Home() {
         }
         if (payload.type === "input_audio_buffer.speech_stopped" || payload.type === "input_audio_buffer.committed") {
           if (!repeatListeningArmedRef.current) return;
+          // IMPORTANT: If we haven't seen a speech_started event yet (no item_id), this is a stale stop event.
+          if (!repeatSpeechItemIdRef.current) return;
           if (repeatSpeakingTimerRef.current !== null) {
             window.clearTimeout(repeatSpeakingTimerRef.current);
             repeatSpeakingTimerRef.current = null;
@@ -755,9 +762,22 @@ export default function Home() {
   }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
-    const target = sentenceMode
-      ? sentenceEntriesRef.current[targetIndex]
-      : { text: WORDS[targetIndex][0], audio: appPath(`/audio/${WORDS[targetIndex][0]}.m4a`) };
+    const isSentenceCourse = activeCourseKindRef.current === "sentence";
+    const sentenceTarget = isSentenceCourse ? sentenceEntriesRef.current[targetIndex] : undefined;
+    const wordTarget = !isSentenceCourse ? WORDS[targetIndex] : undefined;
+    const target = sentenceTarget
+      ? { text: sentenceTarget.text, audio: sentenceTarget.audio }
+      : wordTarget
+        ? { text: wordTarget[0], audio: appPath(`/audio/${wordTarget[0]}.m4a`) }
+        : undefined;
+    if (!target) {
+      repeatAdvanceTargetRef.current = null;
+      repeatListeningTurnRef.current = null;
+      stopListening();
+      setRepeatState("error");
+      setRepeatMessage("RETRYING");
+      return;
+    }
     const turnId = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = turnId;
     activeRepeatTurnRef.current = turnId;
@@ -797,7 +817,7 @@ export default function Home() {
         }, SPEAK_TIMEOUT_MS);
       } catch { retry(); }
     }, retry);
-  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, isActiveRepeatTurn, playWord, prepareFeedbackAudio, repeatTranscript, scheduleRepeatRetry, sentenceMode, stopListening]);
+  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, isActiveRepeatTurn, playWord, prepareFeedbackAudio, repeatTranscript, scheduleRepeatRetry, stopListening]);
   useEffect(() => {
     beginRepeatTurnRef.current = beginRepeatTurn;
   }, [beginRepeatTurn]);
@@ -1016,6 +1036,22 @@ export default function Home() {
       setCoursePickerOpen(false);
       return;
     }
+    const targetCourse = COURSE_PACKAGES.find((c) => c.id === courseId) ?? DEFAULT_COURSE;
+    const isSentence = targetCourse.kind === "sentence";
+    activeCourseKindRef.current = isSentence ? "sentence" : "word";
+
+    // Update refs synchronously so beginRepeatTurn doesn't see a mismatch
+    if (isSentence) {
+      const initialSentence = randomIndex(targetCourse.entries.length);
+      sentenceEntriesRef.current = targetCourse.entries;
+      sentenceIndexRef.current = initialSentence;
+      currentIndexRef.current = initialSentence;
+      setSentenceIndex(initialSentence);
+      setNextSentenceIndex(eligibleSentenceIndex(targetCourse.entries, sentenceProgressRef.current, initialSentence));
+    } else {
+      currentIndexRef.current = wordIndexRef.current;
+    }
+
     activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = activeRepeatTurnRef.current;
     repeatAdvanceTargetRef.current = null;

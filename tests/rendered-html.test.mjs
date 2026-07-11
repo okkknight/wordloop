@@ -57,6 +57,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /const \[wordIndex, setWordIndex\] = useState\(0\)/);
   assert.match(page, /repeatAdvanceTargetRef\.current = \{ index: upcomingIndex, sentenceMode, turnId \}/);
   assert.match(page, /if \(repeatState !== "passed"\) return/);
+  assert.match(page, /const isSentenceCourse = activeCourseKindRef\.current === "sentence"/);
+  assert.match(page, /if \(!target\) \{/);
   assert.match(page, /document\.addEventListener\("visibilitychange", pauseWhenHidden\)/);
   assert.match(page, /\}, 1_500\);/);
   assert.match(page, /function playRecordingCue/);
