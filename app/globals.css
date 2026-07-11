@@ -61,19 +61,6 @@ button { font: inherit; }
   opacity: 1;
 }
 
-.sound {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  border: 1.5px solid currentColor;
-  background: transparent;
-  color: inherit;
-  padding: 11px 16px;
-  border-radius: 999px;
-  font: 650 11px/1 var(--font-geist-mono);
-  letter-spacing: .08em;
-  cursor: pointer;
-}
 .progress-button {
   border: 0;
   border-bottom: 1px solid currentColor;
@@ -86,7 +73,6 @@ button { font: inherit; }
   opacity: .75;
 }
 .progress-button:hover { opacity: 1; color: var(--accent); }
-.sound:hover { background: var(--ink); color: var(--bg); }
 .sound-bars { display: flex; gap: 2px; align-items: center; height: 12px; }
 .sound-bars i { display: block; width: 2px; height: 6px; background: currentColor; border-radius: 2px; animation: pulse .8s ease-in-out infinite alternate; }
 .sound-bars i:nth-child(2) { height: 12px; animation-delay: .2s; }
@@ -94,6 +80,12 @@ button { font: inherit; }
 @keyframes pulse { to { transform: scaleY(.45); } }
 
 .word-stage { align-self: center; width: 100%; padding: 6vh 0; }
+.word-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(14px, 2vw, 28px);
+  width: 100%;
+}
 .start-overlay {
   position: fixed;
   inset: 0;
@@ -131,6 +123,23 @@ h1 {
   text-wrap: balance;
   animation: enter 520ms cubic-bezier(.2,.8,.2,1) both;
 }
+.word-heading h1 { flex: 1; min-width: 0; }
+.word-play {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: clamp(48px, 5vw, 64px);
+  height: clamp(48px, 5vw, 64px);
+  margin-top: clamp(18px, 2.2vw, 28px);
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--bg), transparent 15%);
+  cursor: pointer;
+  transition: transform 180ms ease, color 180ms ease, background 180ms ease;
+}
+.word-play:hover { color: var(--bg); background: var(--ink); transform: translateY(-2px); }
+.word-play:active { transform: translateY(0) scale(.96); }
 h1.long { font-size: clamp(52px, 9.5vw, 164px); }
 h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
 .phonetic {
@@ -423,7 +432,8 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   }
   .progress-button { font-size: 0; }
   .progress-button::after { content: "PROGRESS"; font-size: 9px; }
-  .sound { padding: 10px 12px; font-size: 0; }
+  .word-heading { gap: 12px; }
+  .word-play { width: 46px; height: 46px; margin-top: 16px; }
   .sound-bars { margin: 0 2px; }
 }
 

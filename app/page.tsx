@@ -695,14 +695,14 @@ export default function Home() {
           return;
         }
         if (
-          repeatState === "retry" ||
-          repeatState === "error" ||
-          repeatState === "ready" ||
-          repeatState === "idle" ||
-          repeatState === "paused"
+          repeatState === "listening" ||
+          repeatState === "scoring" ||
+          repeatState === "playing"
         ) {
-          beginRepeatTurn(wordIndexRef.current);
+          pauseRepeat();
+          return;
         }
+        beginRepeatTurn(wordIndexRef.current);
         return;
       }
 
@@ -713,7 +713,7 @@ export default function Home() {
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [activate, activated, beginRepeatTurn, next, repeatState, studyMode]);
+  }, [activate, activated, beginRepeatTurn, next, pauseRepeat, repeatState, studyMode]);
 
   const handlePosterClick = useCallback(() => {
     if (!activated) {
@@ -763,14 +763,6 @@ export default function Home() {
           >
             PROGRESS · {completedWords}/{WORDS.length}
           </button>
-          <button
-            className="sound"
-            onClick={(event) => { event.stopPropagation(); activated ? speak() : activate(); }}
-            aria-label={studyMode === "repeat" ? `Replay and repeat ${word}` : `Play pronunciation of ${word}`}
-          >
-            <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
-            {studyMode === "repeat" ? "REPEAT WORD" : "PLAY SOUND"}
-          </button>
         </div>
       </header>
 
@@ -785,7 +777,16 @@ export default function Home() {
       )}
 
       <section className="word-stage">
-        <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
+        <div className="word-heading">
+          <h1 key={word} className={word.length > 12 ? "very-long" : word.length > 9 ? "long" : undefined}>{word}</h1>
+          <button
+            className="word-play"
+            onClick={(event) => { event.stopPropagation(); activated ? speak() : activate(); }}
+            aria-label={studyMode === "repeat" ? `Replay and repeat ${word}` : `Play pronunciation of ${word}`}
+          >
+            <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
+          </button>
+        </div>
         <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
         <p key={`${word}-meaning`} className="meaning">{meaning}</p>
         {studyMode === "repeat" && (
