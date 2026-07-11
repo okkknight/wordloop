@@ -106,50 +106,50 @@ function playFeedbackTone(context: AudioContext, passed: boolean) {
 function repeatStatusLabel(state: RepeatState) {
   switch (state) {
     case "connecting":
-      return "正在连接语音服务";
+      return "CONNECTING";
     case "ready":
-      return "准备好了，点击或按空格开始";
+      return "READY";
     case "playing":
-      return "请先听清标准发音";
+      return "LISTEN";
     case "listening":
-      return "请现在跟读";
+      return "SPEAK";
     case "scoring":
-      return "正在识别你的发音";
+      return "CHECKING";
     case "passed":
-      return "发音不错，马上进入下一个单词";
+      return "GREAT";
     case "paused":
-      return "已暂停，准备好后继续";
+      return "PAUSED";
     case "retry":
-      return "再读一次，尽量清晰";
+      return "TRY AGAIN";
     case "error":
-      return "麦克风正在重新连接";
+      return "RECONNECT";
     default:
-      return "跟读模式已准备好";
+      return "STANDBY";
   }
 }
 
 function repeatStatusHint(state: RepeatState) {
   switch (state) {
     case "connecting":
-      return "Setting up voice session";
+      return "正在准备麦克风";
     case "ready":
-      return "Tap or press space to repeat";
+      return "听完示范后开始跟读";
     case "playing":
-      return "Listen to the model pronunciation";
+      return "先听一遍标准发音";
     case "listening":
-      return "Speak now";
+      return "请清晰地读出这个单词";
     case "scoring":
-      return "Matching your pronunciation";
+      return "正在分析这次发音";
     case "passed":
-      return "Moving to the next word";
+      return "这次发音通过了";
     case "paused":
-      return "Resume when you are ready";
+      return "准备好后继续练习";
     case "retry":
-      return "Trying this word again";
+      return "没有听清，再读一次即可";
     case "error":
-      return "Recovering microphone input";
+      return "麦克风连接遇到问题，正在恢复";
     default:
-      return "Repeat mode is ready";
+      return "跟读模式已准备好";
   }
 }
 
@@ -280,7 +280,6 @@ export default function Home() {
   );
   const repeatLabel = repeatStatusLabel(repeatState);
   const repeatHint = repeatStatusHint(repeatState);
-  const showRepeatFeedback = repeatState === "retry" || repeatState === "error";
   const showRepeatTranscript = Boolean(repeatTranscript) && (repeatState === "retry" || repeatState === "error");
 
   const stopListening = useCallback(() => {
@@ -812,7 +811,7 @@ export default function Home() {
               {repeatState === "passed" ? (
                 <span className="repeat-result-icon success">✓</span>
               ) : repeatState === "retry" || repeatState === "error" ? (
-                <span className="repeat-result-icon failure">!</span>
+                <span className="repeat-result-icon failure">↻</span>
               ) : (
                 <span className="repeat-waveform">
                   <i /><i /><i /><i /><i /><i /><i /><i /><i />
@@ -821,7 +820,7 @@ export default function Home() {
             </div>
             <div className="repeat-body" aria-live="polite">
               <strong>{repeatLabel}</strong>
-              {!showRepeatFeedback && <span>{repeatHint}</span>}
+              <span>{repeatHint}</span>
               <span className="sr-only">{repeatMessage}</span>
             </div>
             {showRepeatTranscript && (
