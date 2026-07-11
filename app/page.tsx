@@ -950,8 +950,7 @@ export default function Home() {
             aria-label="Choose course package"
             aria-expanded={coursePickerOpen}
           >
-            <span>{activeCourse.title}</span>
-            <b>COURSES</b>
+            <span>SWITCH COURSE</span>
           </button>
         </div>
         <div className="header-actions">
