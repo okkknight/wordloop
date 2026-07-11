@@ -1121,7 +1121,7 @@ export default function Home() {
             <span className="start-icon" aria-hidden="true">▶</span>
             {studyMode === "repeat" ? "START REPEAT" : "START LEARNING"}
           </button>
-          <p>{studyMode === "repeat" ? "Repeat mode" : activeCourse.description}</p>
+          {studyMode !== "repeat" && <p>{activeCourse.description}</p>}
         </div>
       )}
 
