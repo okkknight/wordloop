@@ -132,17 +132,20 @@ h1 {
   display: grid;
   place-items: center;
   flex: none;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   margin: 0;
-  border: 0;
-  border-radius: 8px;
-  color: color-mix(in srgb, var(--ink), transparent 38%);
-  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--ink), transparent 78%);
+  border-radius: 10px;
+  color: color-mix(in srgb, var(--ink), transparent 18%);
+  background: color-mix(in srgb, var(--ink), transparent 95%);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, white, transparent 65%);
   cursor: pointer;
   transition: transform 180ms ease, color 180ms ease, background 180ms ease;
 }
-.word-play:hover { color: var(--accent); background: color-mix(in srgb, var(--accent), transparent 90%); transform: translateY(-1px); }
+.word-play .sound-bars { height: 14px; gap: 3px; }
+.word-play .sound-bars i { width: 3px; }
+.word-play:hover { color: var(--accent); border-color: color-mix(in srgb, var(--accent), transparent 65%); background: color-mix(in srgb, var(--accent), transparent 91%); transform: translateY(-1px); }
 .word-play:active { transform: translateY(0) scale(.96); }
 h1.long { font-size: clamp(52px, 9.5vw, 164px); }
 h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
@@ -463,7 +466,7 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   .progress-button { font-size: 0; }
   .progress-button::after { content: "PROGRESS"; font-size: 9px; }
   .prompt { right: 20px; bottom: 20px; }
-  .word-play { width: 32px; height: 32px; }
+  .word-play { width: 36px; height: 36px; }
   .sound-bars { margin: 0 2px; }
 }
 
