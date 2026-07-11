@@ -16,6 +16,7 @@ const PLAYBACK_TIMEOUT_MS = 8_000;
 const SPEAK_TIMEOUT_MS = 6_000;
 const SPEAKING_TIMEOUT_MS = 6_000;
 const SCORING_TIMEOUT_MS = 6_000;
+const MIN_SPEECH_MS = 350;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
 const SENTENCE_PROGRESS_KEY = "word-loop-sentence-progress";
@@ -112,6 +113,13 @@ function speechCandidates(transcript: string) {
   }
 
   return [...candidates];
+}
+
+function hasEnoughSpeechEvidence(target: string, transcript: string) {
+  const spokenWords = transcript.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
+  const targetWords = target.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
+  const minimumWords = targetWords.length > 1 ? 2 : 1;
+  return spokenWords.length >= minimumWords;
 }
 
 function playFeedbackTone(context: AudioContext, passed: boolean) {
@@ -335,6 +343,7 @@ export default function Home() {
   const feedbackAudioContextRef = useRef<AudioContext | null>(null);
   const repeatListeningArmedRef = useRef(false);
   const repeatSpeechItemIdRef = useRef<string | null>(null);
+  const repeatSpeechStartedAtRef = useRef(0);
   const repeatWordRef = useRef("");
   const repeatStreamRef = useRef<MediaStream | null>(null);
   const userIdRef = useRef("");
@@ -698,6 +707,7 @@ export default function Home() {
             repeatSpeakTimerRef.current = null;
           }
           repeatSpeechItemIdRef.current = payload.item_id ?? "";
+          repeatSpeechStartedAtRef.current = performance.now();
           setRepeatMessage("SPEAKING");
           setRepeatState("speaking");
           repeatSpeakingTimerRef.current = window.setTimeout(() => {
@@ -726,16 +736,28 @@ export default function Home() {
         }
         if (payload.type !== "conversation.item.input_audio_transcription.completed" && payload.type !== "conversation.item.input_audio_transcription.failed") return;
         if (!repeatListeningArmedRef.current || (payload.item_id && repeatSpeechItemIdRef.current && payload.item_id !== repeatSpeechItemIdRef.current)) return;
-        stopListening();
-        repeatListeningTurnRef.current = null;
-        clearRepeatPhaseTimers();
         if (payload.type === "conversation.item.input_audio_transcription.failed") {
+          stopListening();
+          repeatListeningTurnRef.current = null;
+          clearRepeatPhaseTimers();
           playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, false));
           scheduleRepeatRetry(turnId, 1_200);
           return;
         }
 
         const transcript = (payload.transcript ?? "").trim();
+        const speechDuration = performance.now() - repeatSpeechStartedAtRef.current;
+        if (speechDuration < MIN_SPEECH_MS || !hasEnoughSpeechEvidence(repeatWordRef.current, transcript)) {
+          stopListening();
+          repeatListeningTurnRef.current = null;
+          clearRepeatPhaseTimers();
+          playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, false));
+          scheduleRepeatRetry(turnId, 850);
+          return;
+        }
+        stopListening();
+        repeatListeningTurnRef.current = null;
+        clearRepeatPhaseTimers();
         setRepeatTranscript(transcript);
         const result = scoreTranscript(repeatWordRef.current, transcript);
         playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, result.passed));
@@ -814,6 +836,7 @@ export default function Home() {
         if (!isActiveRepeatTurn(turnId)) return;
         clearRepeatPlaybackTimer();
         repeatSpeechItemIdRef.current = null;
+        repeatSpeechStartedAtRef.current = 0;
         repeatListeningTurnRef.current = turnId;
         repeatListeningArmedRef.current = true;
         setRepeatState("speak");

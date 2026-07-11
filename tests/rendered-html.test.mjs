@@ -74,6 +74,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /Hide \$\{sentenceMode \? "sentence" : "word"\}/);
   assert.match(page, /storedSentenceProgress, -1, "random"/);
   assert.match(page, /study-text-placeholder">✦ ✦ ✦/);
+  assert.match(page, /const MIN_SPEECH_MS = 350/);
+  assert.match(page, /hasEnoughSpeechEvidence\(repeatWordRef\.current, transcript\)/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);
   assert.match(pronunciationRoute, /OPENAI_REALTIME_URL/);

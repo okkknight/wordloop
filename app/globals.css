@@ -172,28 +172,29 @@ h1 {
 .study-actions {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 0;
   flex: none;
-  padding: 3px;
-  border: 1px solid color-mix(in srgb, var(--ink), transparent 80%);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--ink), transparent 96%);
-  box-shadow: inset 0 1px 0 color-mix(in srgb, white, transparent 68%);
+  border: 1px solid color-mix(in srgb, var(--ink), transparent 72%);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--bg), white 28%);
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--ink), transparent 93%);
 }
 .study-action {
   display: grid;
   place-items: center;
   flex: none;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   margin: 0;
   border: 0;
-  border-radius: 50%;
+  border-radius: 0;
   color: color-mix(in srgb, var(--ink), transparent 18%);
   background: transparent;
   cursor: pointer;
   transition: transform 180ms ease, color 180ms ease, background 180ms ease;
 }
+.study-action:first-child { border-radius: 7px 0 0 7px; }
+.study-action + .study-action { border-left: 1px solid color-mix(in srgb, var(--ink), transparent 82%); border-radius: 0 7px 7px 0; }
 .word-play .sound-bars { height: 14px; gap: 3px; }
 .word-play .sound-bars i { width: 3px; }
 .study-action:hover, .study-action:focus-visible { color: var(--accent); background: color-mix(in srgb, var(--accent), transparent 87%); outline: 0; transform: translateY(-1px); }
@@ -545,7 +546,7 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   .progress-button { font-size: 0; }
   .progress-button::after { content: "PROGRESS"; font-size: 9px; }
   .prompt { right: 20px; bottom: 20px; }
-  .study-action { width: 32px; height: 32px; }
+  .study-action { width: 34px; height: 34px; }
   .sound-bars { margin: 0 2px; }
 }
 
