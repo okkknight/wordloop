@@ -25,7 +25,7 @@ test("ships the complete vocabulary and audio set", async () => {
 test("ships the first sentence course package and its clips", async () => {
   const course = JSON.parse(await read("app/data/modern-family-s01e01.json"));
   const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e01/audio", root)))
-    .filter((file) => file.endsWith(".mp3"));
+    .filter((file) => file.endsWith(".m4a"));
 
   assert.equal(course.episode, "S01E01");
   assert.equal(course.entries.length, 499);

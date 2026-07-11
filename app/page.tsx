@@ -140,7 +140,7 @@ function repeatStatusLabel(state: RepeatState) {
     case "retry":
       return "TRY AGAIN";
     case "error":
-      return "RECONNECT";
+      return "TRY AGAIN";
     default:
       return "STANDBY";
   }
@@ -167,7 +167,7 @@ function repeatStatusHint(state: RepeatState) {
     case "retry":
       return "没有听清，再读一次即可";
     case "error":
-      return "麦克风连接遇到问题，正在恢复";
+      return "刚才没有识别清楚，请再读一次";
     default:
       return "跟读模式已准备好";
   }
@@ -982,10 +982,8 @@ export default function Home() {
             <div className="repeat-visual" aria-hidden="true">
               {repeatState === "passed" ? (
                 <span className="repeat-result-icon success">✓</span>
-              ) : repeatState === "retry" || repeatState === "error" ? (
-                <span className="repeat-result-icon failure">↻</span>
               ) : (
-                <span className="repeat-waveform">
+                <span className={`repeat-waveform ${repeatState === "retry" || repeatState === "error" ? "failure" : ""}`}>
                   <i /><i /><i /><i /><i /><i /><i /><i /><i />
                 </span>
               )}

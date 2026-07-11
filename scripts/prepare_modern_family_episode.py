@@ -95,11 +95,11 @@ def cut_audio(audio: Path, output_dir: Path, entries: list[dict[str, object]]) -
     for entry in entries:
         if not entry["learnable"]:
             continue
-        output = output_dir / f"{entry['id']}.mp3"
+        output = output_dir / f"{entry['id']}.m4a"
         subprocess.run([
             "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
             "-ss", str(entry["start"]), "-i", str(audio),
-            "-t", str(entry["duration"]), "-acodec", "copy", str(output),
+            "-t", str(entry["duration"]), "-vn", "-ac", "1", "-c:a", "aac", "-b:a", "48k", str(output),
         ], check=True)
         entry["audio"] = str(output.relative_to(output_dir.parent))
 
