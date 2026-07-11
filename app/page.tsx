@@ -10,8 +10,7 @@ import {
 import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
-const PASS_SCORE = 30;
-const SENTENCE_PASS_SCORE = 62;
+const PASS_SCORE = 20;
 const AUTO_ADVANCE_MS = 700;
 const PLAYBACK_TIMEOUT_MS = 8_000;
 const SPEAK_TIMEOUT_MS = 6_000;
@@ -159,7 +158,7 @@ function repeatStatusHint(state: RepeatState) {
     case "playing":
       return "先听一遍标准发音";
     case "speak":
-      return "请清晰地读出这个单词";
+      return "请清晰地跟读";
     case "speaking":
       return "正在听你发音";
     case "scoring":
@@ -169,9 +168,9 @@ function repeatStatusHint(state: RepeatState) {
     case "paused":
       return "准备好后继续练习";
     case "retry":
-      return "没有听清，再读一次即可";
+      return "请再读一次";
     case "error":
-      return "刚才没有识别清楚，请再读一次";
+      return "请再读一次";
     default:
       return "跟读模式已准备好";
   }
@@ -224,7 +223,7 @@ function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
   const score = exact
     ? 100
     : Math.round(bestSimilarity * 100);
-  const passed = exact || score >= (targetWord.trim().split(/\s+/).length > 1 ? SENTENCE_PASS_SCORE : PASS_SCORE);
+  const passed = exact || score >= PASS_SCORE;
 
   if (passed) {
     return {
@@ -671,8 +670,15 @@ export default function Home() {
         clearRepeatAdvanceTimer();
         repeatAdvanceTimerRef.current = window.setTimeout(() => {
           if (isActiveRepeatTurn(turnId) && upcomingIndex >= 0) {
-            if (sentenceMode) setSentenceIndex(upcomingIndex);
-            else setWordIndex(upcomingIndex);
+            if (sentenceMode) {
+              sentenceIndexRef.current = upcomingIndex;
+              currentIndexRef.current = upcomingIndex;
+              setSentenceIndex(upcomingIndex);
+            } else {
+              wordIndexRef.current = upcomingIndex;
+              currentIndexRef.current = upcomingIndex;
+              setWordIndex(upcomingIndex);
+            }
             setPaletteIndex((current) => randomIndex(PALETTES.length, current));
             beginRepeatTurnRef.current(upcomingIndex);
           }
@@ -785,9 +791,13 @@ export default function Home() {
     stopListening();
     clearRepeatAdvanceTimer();
     if (sentenceMode) {
+      sentenceIndexRef.current = targetIndex;
+      currentIndexRef.current = targetIndex;
       setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex));
       setSentenceIndex(targetIndex);
     } else {
+      wordIndexRef.current = targetIndex;
+      currentIndexRef.current = targetIndex;
       setNextWordIndex(eligibleIndex(progressRef.current, targetIndex));
       setWordIndex(targetIndex);
     }
@@ -938,8 +948,10 @@ export default function Home() {
             className="course-button"
             onClick={(event) => { event.stopPropagation(); setCoursePickerOpen(true); }}
             aria-label="Choose course package"
+            aria-expanded={coursePickerOpen}
           >
-            {activeCourse.title}
+            <span>{activeCourse.title}</span>
+            <b>COURSES</b>
           </button>
         </div>
         <div className="header-actions">
@@ -1130,8 +1142,7 @@ export default function Home() {
             )}
           </div>
         )}
-        <div className="current-progress">
-          <span>THIS {sentenceMode ? "SENTENCE" : "WORD"}</span>
+        <div className="current-progress" aria-label={`Current progress: ${currentStudyCount} of ${MAX_STUDY_COUNT}`}>
           <strong>{currentStudyCount} / {MAX_STUDY_COUNT}</strong>
         </div>
       </footer>

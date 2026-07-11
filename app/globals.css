@@ -41,20 +41,31 @@ button { font: inherit; }
 .brand span:last-child { color: var(--accent); }
 .course-button {
   max-width: min(34vw, 300px);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   overflow: hidden;
-  border: 0;
-  padding: 5px 0;
+  border: 1px solid color-mix(in srgb, var(--ink), transparent 68%);
+  border-radius: 999px;
+  padding: 7px 10px;
   color: inherit;
-  background: transparent;
+  background: color-mix(in srgb, var(--bg), white 32%);
   font: 650 10px/1.2 var(--font-geist-mono);
   letter-spacing: .08em;
   text-align: left;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   cursor: pointer;
-  opacity: .72;
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--ink), transparent 92%);
+  transition: color 180ms ease, border-color 180ms ease, background 180ms ease, transform 180ms ease;
 }
-.course-button:hover { color: var(--accent); opacity: 1; }
+.course-button span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.course-button b { color: var(--accent); font-size: 8px; letter-spacing: .12em; }
+.course-button:hover, .course-button:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--bg), white 45%);
+  outline: 0;
+  transform: translateY(-1px);
+}
 .mode-switch {
   display: flex;
   padding: 3px;
@@ -402,19 +413,13 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   left: clamp(24px, 4vw, 56px);
   bottom: clamp(24px, 4vh, 46px);
   z-index: 8;
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
+  display: block;
   justify-self: center;
   padding: 0;
   border-radius: 0;
   color: color-mix(in srgb, var(--ink), transparent 18%);
   background: transparent;
   box-shadow: none;
-}
-.current-progress span {
-  opacity: .7;
-  font-size: 10px;
 }
 .current-progress strong {
   font-size: 12px;

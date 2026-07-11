@@ -48,6 +48,11 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /activeCourseId/);
   assert.match(page, /coursePickerOpen/);
   assert.match(page, /COURSE_PACKAGES/);
+  assert.match(page, /const PASS_SCORE = 20/);
+  assert.match(page, /sentenceIndexRef\.current = upcomingIndex/);
+  assert.match(page, /wordIndexRef\.current = upcomingIndex/);
+  assert.match(page, /<b>COURSES<\/b>/);
+  assert.doesNotMatch(page, /THIS \{sentenceMode \? "SENTENCE" : "WORD"\}/);
   assert.match(courses, /modern-family-s01e01/);
   assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);
