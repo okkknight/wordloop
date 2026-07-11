@@ -214,6 +214,8 @@ export default function Home() {
   const repeatAdvanceTimerRef = useRef<number | null>(null);
   const repeatRetryTimerRef = useRef<number | null>(null);
   const repeatTrackRef = useRef<MediaStreamTrack | null>(null);
+  const repeatListeningArmedRef = useRef(false);
+  const repeatSpeechItemIdRef = useRef<string | null>(null);
   const repeatWordRef = useRef("");
   const repeatStreamRef = useRef<MediaStream | null>(null);
   const userIdRef = useRef("");
@@ -236,6 +238,8 @@ export default function Home() {
 
   const stopListening = useCallback(() => {
     if (repeatTrackRef.current) repeatTrackRef.current.enabled = false;
+    repeatListeningArmedRef.current = false;
+    repeatSpeechItemIdRef.current = null;
   }, []);
 
   const clearRepeatAdvanceTimer = useCallback(() => {
@@ -405,11 +409,14 @@ export default function Home() {
 
     channel.addEventListener("message", (event) => {
       const payload = JSON.parse(event.data) as {
+        item_id?: string;
         transcript?: string;
         type: string;
       };
 
       if (payload.type === "input_audio_buffer.speech_started") {
+        if (!repeatListeningArmedRef.current) return;
+        repeatSpeechItemIdRef.current = payload.item_id ?? null;
         setRepeatMessage("LISTENING");
         setRepeatState("listening");
         return;
@@ -419,14 +426,21 @@ export default function Home() {
         payload.type === "input_audio_buffer.speech_stopped" ||
         payload.type === "input_audio_buffer.committed"
       ) {
+        if (!repeatListeningArmedRef.current || !repeatSpeechItemIdRef.current) return;
         setRepeatMessage("SCORING");
         setRepeatState("scoring");
         return;
       }
 
         if (payload.type === "conversation.item.input_audio_transcription.completed") {
+          if (
+            !repeatListeningArmedRef.current ||
+            !repeatSpeechItemIdRef.current ||
+            (payload.item_id && payload.item_id !== repeatSpeechItemIdRef.current)
+          ) return;
           stopListening();
           const transcript = (payload.transcript ?? "").trim();
+          setRepeatTranscript(transcript);
           const result = scoreTranscript(repeatWordRef.current, transcript);
           setRepeatMessage(result.feedback);
 
@@ -453,6 +467,11 @@ export default function Home() {
       }
 
       if (payload.type === "conversation.item.input_audio_transcription.failed") {
+        if (
+          !repeatListeningArmedRef.current ||
+          !repeatSpeechItemIdRef.current ||
+          (payload.item_id && payload.item_id !== repeatSpeechItemIdRef.current)
+        ) return;
         stopListening();
         setRepeatState("error");
         setRepeatMessage("RETRYING");
@@ -512,6 +531,8 @@ export default function Home() {
     playWord(WORDS[targetIndex][0], async () => {
       try {
         await ensurePronunciationSession();
+        repeatSpeechItemIdRef.current = null;
+        repeatListeningArmedRef.current = true;
         setRepeatState("listening");
         setRepeatMessage("LISTENING");
         if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
