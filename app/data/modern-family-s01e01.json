@@ -5733,9 +5733,10 @@
       "duration": 1.62,
       "text": "Ay, miren a la princesita.",
       "translation": "看看这个小公主",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0452.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "non-english-utterance"
+      ]
     },
     {
       "id": "s01e01-0453",

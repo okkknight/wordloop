@@ -36,7 +36,12 @@ LOW_VALUE_EXACT = {
     "we're very different", "that's cool", "i know", "that's not",
     "phil dunphy yo", "one hat", "my dad", "i mean seriously",
 }
-NON_ENGLISH_PHRASES = ("vamos", "a la derecha", "mentira", "ay miren")
+NON_ENGLISH_PATTERNS = (
+    re.compile(r"\bvamos\b", re.IGNORECASE),
+    re.compile(r"\ba\s+la\s+derecha\b", re.IGNORECASE),
+    re.compile(r"\bmentira\b", re.IGNORECASE),
+    re.compile(r"\bay\W+miren\b", re.IGNORECASE),
+)
 
 
 def timestamp(value: str) -> float:
@@ -88,7 +93,7 @@ def classify(text: str, mixed_caption: bool) -> tuple[bool, list[str]]:
         reasons.append("multiple-speakers")
     if words and all(word in CHARACTER_NAMES for word in words):
         reasons.append("name-only")
-    if any(phrase in text.lower() for phrase in NON_ENGLISH_PHRASES):
+    if any(pattern.search(text) for pattern in NON_ENGLISH_PATTERNS):
         reasons.append("non-english-utterance")
     terminal = text.rstrip().rstrip('"\'”')
     if (
