@@ -235,7 +235,14 @@ export default function Home() {
   const [studyMode, setStudyMode] = useState<StudyMode>("listen");
   const [spoken, setSpoken] = useState(false);
   const [activated, setActivated] = useState(false);
-  const [progress, setProgress] = useState<ProgressMap>({});
+  const [progress, setProgress] = useState<ProgressMap>(() => {
+    if (typeof window === "undefined") return {};
+    try {
+      return JSON.parse(localStorage.getItem(PROGRESS_KEY) ?? "{}") as ProgressMap;
+    } catch {
+      return {};
+    }
+  });
   const [panelOpen, setPanelOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
@@ -348,13 +355,7 @@ export default function Home() {
     }
     userIdRef.current = userId;
 
-    let cachedProgress: ProgressMap = {};
-    try {
-      cachedProgress = JSON.parse(localStorage.getItem(PROGRESS_KEY) ?? "{}") as ProgressMap;
-      applyProgress(cachedProgress);
-    } catch {
-      localStorage.removeItem(PROGRESS_KEY);
-    }
+    const cachedProgress = progressRef.current;
 
     void fetch(`/api/progress?userId=${encodeURIComponent(userId)}`)
       .then((response) => response.ok ? response.json() : Promise.reject())
@@ -431,12 +432,14 @@ export default function Home() {
   const playWord = useCallback((targetWord: string, onEnded?: () => void, onError?: () => void) => {
     const source = new URL(`/audio/${targetWord}.m4a`, window.location.href).href;
     const preloaded = preloadedAudioRef.current;
-    const audio = preloaded?.src === source ? preloaded : new Audio(source);
+    const usePreloaded = preloaded?.src === source;
+    const audio = usePreloaded
+      ? preloaded.cloneNode(true) as HTMLAudioElement
+      : new Audio(source);
 
     currentAudioRef.current?.pause();
     currentAudioRef.current = audio;
-    if (audio === preloaded) preloadedAudioRef.current = null;
-    audio.currentTime = 0;
+    if (usePreloaded) preloadedAudioRef.current = null;
     let settled = false;
     const finish = () => {
       if (settled) return;
@@ -792,7 +795,11 @@ export default function Home() {
           <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>
           <button
             className="word-play"
-            onClick={(event) => { event.stopPropagation(); activated ? speak() : activate(); }}
+            onClick={(event) => {
+              event.stopPropagation();
+              if (activated) speak();
+              else activate();
+            }}
             aria-label={studyMode === "repeat" ? `Replay and repeat ${word}` : `Play pronunciation of ${word}`}
           >
             <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
