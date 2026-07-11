@@ -1,6 +1,8 @@
 import modernFamilyS01E01 from "./data/modern-family-s01e01.json";
 import { WORDS } from "./words";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export type CourseEntry = {
   id: string;
   text: string;
@@ -29,7 +31,7 @@ const modernFamilyEntries = modernFamilyS01E01.entries
   .map((entry) => ({
     ...entry,
     translation: entry.translation,
-    audio: `/courses/modern-family/s01e01/${entry.audio}`,
+    audio: `${basePath}/courses/modern-family/s01e01/${entry.audio}`,
   })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
@@ -37,7 +39,7 @@ const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) 
   text: word,
   translation,
   phonetic,
-  audio: `/audio/${word}.m4a`,
+  audio: `${basePath}/audio/${word}.m4a`,
 }));
 
 export const COURSE_PACKAGES: readonly CoursePackage[] = [

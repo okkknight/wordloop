@@ -19,6 +19,11 @@ const SCORING_TIMEOUT_MS = 6_000;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
 const SENTENCE_PROGRESS_KEY = "word-loop-sentence-progress";
+const APP_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function appPath(path: string) {
+  return `${APP_BASE_PATH}${path}`;
+}
 
 type ProgressMap = Record<string, number>;
 type StudyMode = "listen" | "repeat";
@@ -340,13 +345,13 @@ export default function Home() {
   const sentence = sentenceCourse.entries[sentenceIndex];
   const currentItem = sentenceMode
     ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio }
-    : { id: word, text: word, meaning, phonetic, audio: `/audio/${word}.m4a` };
-  const currentAudio = sentenceMode ? sentence.audio : `/audio/${word}.m4a`;
+    : { id: word, text: word, meaning, phonetic, audio: appPath(`/audio/${word}.m4a`) };
+  const currentAudio = sentenceMode ? sentence.audio : appPath(`/audio/${word}.m4a`);
   const currentIndex = sentenceMode ? sentenceIndex : wordIndex;
   const nextIndex = sentenceMode ? nextSentenceIndex : nextWordIndex;
   const nextAudio = nextIndex < 0
     ? null
-    : sentenceMode ? sentenceCourse.entries[nextIndex].audio : `/audio/${WORDS[nextIndex][0]}.m4a`;
+    : sentenceMode ? sentenceCourse.entries[nextIndex].audio : appPath(`/audio/${WORDS[nextIndex][0]}.m4a`);
   const activeProgress = sentenceMode ? sentenceProgress : progress;
   const activeEntriesCount = activeCourse.entries.length;
   const [background, ink, accent] = PALETTES[paletteIndex];
@@ -491,7 +496,7 @@ export default function Home() {
 
     const cachedProgress = progressRef.current;
 
-    void fetch(`/api/progress?userId=${encodeURIComponent(userId)}`)
+    void fetch(appPath(`/api/progress?userId=${encodeURIComponent(userId)}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((data: { progress: Array<{ word: string; studyCount: number }> }) => {
         const mergedProgress = { ...cachedProgress };
@@ -586,7 +591,7 @@ export default function Home() {
 
     const userId = userIdRef.current;
     if (!userId) return;
-    void fetch("/api/progress", {
+    void fetch(appPath("/api/progress"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userId, word: studiedWord }),
@@ -604,7 +609,7 @@ export default function Home() {
   }, [sentenceMode]);
 
   const playWord = useCallback((targetWord: string, onEnded?: () => void, onError?: () => void) => {
-    const source = new URL(targetWord.startsWith("/") ? targetWord : `/audio/${targetWord}.m4a`, window.location.href).href;
+    const source = new URL(targetWord.startsWith("/") ? targetWord : appPath(`/audio/${targetWord}.m4a`), window.location.href).href;
     const preloaded = preloadedAudioRef.current;
     const usePreloaded = preloaded?.src === source;
     const audio = usePreloaded
@@ -733,7 +738,7 @@ export default function Home() {
       });
       const offer = await peerConnection.createOffer();
       await peerConnection.setLocalDescription(offer);
-      const response = await fetch("/api/pronunciation-session", {
+      const response = await fetch(appPath("/api/pronunciation-session"), {
         method: "POST",
         headers: { "Content-Type": "application/sdp", ...(userIdRef.current ? { "x-user-id": userIdRef.current } : {}) },
         body: offer.sdp,
@@ -752,7 +757,7 @@ export default function Home() {
   const beginRepeatTurn = useCallback((targetIndex: number) => {
     const target = sentenceMode
       ? sentenceEntriesRef.current[targetIndex]
-      : { text: WORDS[targetIndex][0], audio: `/audio/${WORDS[targetIndex][0]}.m4a` };
+      : { text: WORDS[targetIndex][0], audio: appPath(`/audio/${WORDS[targetIndex][0]}.m4a`) };
     const turnId = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = turnId;
     activeRepeatTurnRef.current = turnId;
