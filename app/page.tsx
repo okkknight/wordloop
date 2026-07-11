@@ -312,6 +312,7 @@ export default function Home() {
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
   const [repeatMessage, setRepeatMessage] = useState("READY");
   const [repeatTranscript, setRepeatTranscript] = useState("");
+  const [studyTextVisible, setStudyTextVisible] = useState(true);
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const studyAudioSourceRef = useRef("");
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -1136,20 +1137,36 @@ export default function Home() {
 
       <section className="word-stage">
         <div className="course-kicker">{activeCourse.title} · {currentIndex + 1}/{activeEntriesCount}</div>
-        <h1 key={currentItem.id} className={sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : undefined}>{currentItem.text}</h1>
+        <h1
+          key={currentItem.id}
+          className={`${sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : ""}${!studyTextVisible ? " sentence-hidden" : ""}`}
+          aria-hidden={!studyTextVisible}
+        >
+          {currentItem.text}
+        </h1>
         <div className="phonetic-row">
           {sentenceMode ? <div className="phonetic sentence-translation">{currentItem.meaning}</div> : <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>}
-          <button
-            className="word-play"
-            onClick={(event) => {
-              event.stopPropagation();
-              if (activated) speak();
-              else activate();
-            }}
-            aria-label={studyMode === "repeat" ? `Replay and repeat ${currentItem.text}` : `Play pronunciation of ${currentItem.text}`}
-          >
-            <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
-          </button>
+          <div className="study-actions">
+            <button
+              className="study-action word-play"
+              onClick={(event) => {
+                event.stopPropagation();
+                if (activated) speak();
+                else activate();
+              }}
+              aria-label={studyMode === "repeat" ? `Replay and repeat ${currentItem.text}` : `Play pronunciation of ${currentItem.text}`}
+            >
+              <span className="sound-bars" aria-hidden="true"><i /><i /><i /></span>
+            </button>
+            <button
+              className="study-action sentence-visibility"
+              onClick={(event) => { event.stopPropagation(); setStudyTextVisible((visible) => !visible); }}
+              aria-label={studyTextVisible ? `Hide ${sentenceMode ? "sentence" : "word"}` : `Show ${sentenceMode ? "sentence" : "word"}`}
+              aria-pressed={studyTextVisible}
+            >
+              <span className={`eye-icon${studyTextVisible ? "" : " closed"}`} aria-hidden="true" />
+            </button>
+          </div>
         </div>
         {!sentenceMode && <p key={`${word}-meaning`} className="meaning">{meaning}</p>}
         {studyMode === "repeat" && (

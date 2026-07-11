@@ -169,7 +169,8 @@ h1 {
   gap: 12px;
   margin-top: clamp(20px, 3vh, 34px);
 }
-.word-play {
+.study-actions { display: flex; align-items: center; gap: 8px; flex: none; }
+.study-action {
   display: grid;
   place-items: center;
   flex: none;
@@ -186,8 +187,12 @@ h1 {
 }
 .word-play .sound-bars { height: 14px; gap: 3px; }
 .word-play .sound-bars i { width: 3px; }
-.word-play:hover { color: var(--accent); border-color: color-mix(in srgb, var(--accent), transparent 65%); background: color-mix(in srgb, var(--accent), transparent 91%); transform: translateY(-1px); }
-.word-play:active { transform: translateY(0) scale(.96); }
+.study-action:hover, .study-action:focus-visible { color: var(--accent); border-color: color-mix(in srgb, var(--accent), transparent 65%); background: color-mix(in srgb, var(--accent), transparent 91%); outline: 0; transform: translateY(-1px); }
+.study-action:active { transform: translateY(0) scale(.96); }
+.eye-icon { position: relative; display: block; width: 16px; height: 10px; border: 2px solid currentColor; border-radius: 50% / 65%; }
+.eye-icon::after { content: ""; position: absolute; top: 50%; left: 50%; width: 4px; height: 4px; border-radius: 50%; background: currentColor; transform: translate(-50%, -50%); }
+.eye-icon.closed::before { content: ""; position: absolute; z-index: 1; top: 3px; left: -3px; width: 18px; height: 2px; background: currentColor; transform: rotate(-32deg); }
+.sentence-hidden { color: transparent; user-select: none; text-shadow: none; }
 h1.long { font-size: clamp(52px, 9.5vw, 164px); }
 h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
 .phonetic {
@@ -531,7 +536,7 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   .progress-button { font-size: 0; }
   .progress-button::after { content: "PROGRESS"; font-size: 9px; }
   .prompt { right: 20px; bottom: 20px; }
-  .word-play { width: 36px; height: 36px; }
+  .study-action { width: 36px; height: 36px; }
   .sound-bars { margin: 0 2px; }
 }
 
