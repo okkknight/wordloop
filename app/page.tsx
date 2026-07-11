@@ -248,6 +248,11 @@ export default function Home() {
   const repeatAdvanceTimerRef = useRef<number | null>(null);
   const repeatRetryTimerRef = useRef<number | null>(null);
   const repeatPlaybackTimerRef = useRef<number | null>(null);
+  const sessionPromiseRef = useRef<Promise<void> | null>(null);
+  const repeatTurnIdRef = useRef(0);
+  const activeRepeatTurnRef = useRef(0);
+  const repeatListeningTurnRef = useRef<number | null>(null);
+  const beginRepeatTurnRef = useRef<(targetIndex: number) => void>(() => undefined);
   const repeatTrackRef = useRef<MediaStreamTrack | null>(null);
   const feedbackAudioContextRef = useRef<AudioContext | null>(null);
   const repeatListeningArmedRef = useRef(false);
@@ -303,6 +308,23 @@ export default function Home() {
       repeatPlaybackTimerRef.current = null;
     }
   }, []);
+
+  const isActiveRepeatTurn = useCallback((turnId: number) => (
+    activeRepeatTurnRef.current === turnId
+  ), []);
+
+  const scheduleRepeatRetry = useCallback((turnId: number, delay = 1_000) => {
+    if (!isActiveRepeatTurn(turnId)) return;
+    clearRepeatAdvanceTimer();
+    clearRepeatPlaybackTimer();
+    clearRepeatRetryTimer();
+    stopListening();
+    setRepeatState("error");
+    setRepeatMessage("RETRYING");
+    repeatRetryTimerRef.current = window.setTimeout(() => {
+      if (isActiveRepeatTurn(turnId)) beginRepeatTurnRef.current(wordIndexRef.current);
+    }, delay);
+  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, isActiveRepeatTurn, stopListening]);
 
   const applyProgress = useCallback((nextProgress: ProgressMap) => {
     setProgress(nextProgress);
@@ -434,193 +456,152 @@ export default function Home() {
     void audio.play().then(() => setSpoken(true)).catch(fail);
   }, []);
 
-  const ensurePronunciationSession = useCallback(async () => {
+  const ensurePronunciationSession = useCallback(() => {
     const dataChannel = dataChannelRef.current;
     const existingPeer = peerConnectionRef.current;
-    if (
-      existingPeer &&
-      dataChannel &&
-      (dataChannel.readyState === "open" || existingPeer.connectionState === "connected")
-    ) {
-      return;
+    if (existingPeer && dataChannel && dataChannel.readyState === "open" && existingPeer.connectionState === "connected") {
+      return Promise.resolve();
     }
+    if (sessionPromiseRef.current) return sessionPromiseRef.current;
 
-    setRepeatState("connecting");
-    setRepeatMessage("CONNECTING");
+    const sessionPromise = (async () => {
+      const stream = repeatStreamRef.current ?? await navigator.mediaDevices.getUserMedia({
+        audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true },
+      });
+      repeatStreamRef.current = stream;
+      const track = stream.getAudioTracks()[0];
+      track.enabled = false;
+      repeatTrackRef.current = track;
 
-    const stream = repeatStreamRef.current ?? await navigator.mediaDevices.getUserMedia({
-      audio: {
-        channelCount: 1,
-        echoCancellation: true,
-        noiseSuppression: true,
-        autoGainControl: true,
-      },
-    });
-    repeatStreamRef.current = stream;
+      const peerConnection = new RTCPeerConnection();
+      const channel = peerConnection.createDataChannel("oai-events");
+      peerConnectionRef.current = peerConnection;
+      dataChannelRef.current = channel;
+      peerConnection.addTrack(track, stream);
 
-    const track = stream.getAudioTracks()[0];
-    track.enabled = false;
-    repeatTrackRef.current = track;
-
-    const peerConnection = new RTCPeerConnection();
-    const channel = peerConnection.createDataChannel("oai-events");
-    peerConnectionRef.current = peerConnection;
-    dataChannelRef.current = channel;
-    peerConnection.addTrack(track, stream);
-
-    channel.addEventListener("message", (event) => {
-      const payload = JSON.parse(event.data) as {
-        item_id?: string;
-        transcript?: string;
-        type: string;
+      const recoverConnection = () => {
+        if (peerConnectionRef.current !== peerConnection) return;
+        sessionPromiseRef.current = null;
+        const turnId = activeRepeatTurnRef.current;
+        if (repeatListeningTurnRef.current === turnId) scheduleRepeatRetry(turnId, 500);
       };
+      channel.addEventListener("close", recoverConnection);
+      peerConnection.addEventListener("connectionstatechange", () => {
+        if (peerConnection.connectionState === "failed" || peerConnection.connectionState === "disconnected") recoverConnection();
+      });
+      channel.addEventListener("message", (event) => {
+        let payload: { item_id?: string; transcript?: string; type: string };
+        try { payload = JSON.parse(event.data) as typeof payload; } catch { return; }
+        const turnId = repeatListeningTurnRef.current;
+        if (turnId === null || !isActiveRepeatTurn(turnId)) return;
 
-      if (payload.type === "input_audio_buffer.speech_started") {
-        if (!repeatListeningArmedRef.current) return;
-        repeatSpeechItemIdRef.current = payload.item_id ?? null;
-        setRepeatMessage("LISTENING");
-        setRepeatState("listening");
-        return;
-      }
+        if (payload.type === "input_audio_buffer.speech_started") {
+          repeatSpeechItemIdRef.current = payload.item_id ?? null;
+          setRepeatMessage("LISTENING");
+          setRepeatState("listening");
+          return;
+        }
+        if (payload.type === "input_audio_buffer.speech_stopped" || payload.type === "input_audio_buffer.committed") {
+          if (!repeatSpeechItemIdRef.current) return;
+          setRepeatMessage("SCORING");
+          setRepeatState("scoring");
+          return;
+        }
+        if (payload.type !== "conversation.item.input_audio_transcription.completed" && payload.type !== "conversation.item.input_audio_transcription.failed") return;
+        if (!repeatSpeechItemIdRef.current || (payload.item_id && payload.item_id !== repeatSpeechItemIdRef.current)) return;
+        stopListening();
+        repeatListeningTurnRef.current = null;
+        if (payload.type === "conversation.item.input_audio_transcription.failed") {
+          scheduleRepeatRetry(turnId, 1_200);
+          return;
+        }
 
-      if (
-        payload.type === "input_audio_buffer.speech_stopped" ||
-        payload.type === "input_audio_buffer.committed"
-      ) {
-        if (!repeatListeningArmedRef.current || !repeatSpeechItemIdRef.current) return;
-        setRepeatMessage("SCORING");
-        setRepeatState("scoring");
-        return;
-      }
+        const transcript = (payload.transcript ?? "").trim();
+        setRepeatTranscript(transcript);
+        const result = scoreTranscript(repeatWordRef.current, transcript);
+        const feedbackAudio = feedbackAudioContextRef.current;
+        if (feedbackAudio?.state === "running") playFeedbackTone(feedbackAudio, result.passed);
+        if (!result.passed) {
+          scheduleRepeatRetry(turnId, 850);
+          return;
+        }
 
-        if (payload.type === "conversation.item.input_audio_transcription.completed") {
-          if (
-            !repeatListeningArmedRef.current ||
-            !repeatSpeechItemIdRef.current ||
-            (payload.item_id && payload.item_id !== repeatSpeechItemIdRef.current)
-          ) return;
-          stopListening();
-          const transcript = (payload.transcript ?? "").trim();
-          setRepeatTranscript(transcript);
-          const result = scoreTranscript(repeatWordRef.current, transcript);
-          setRepeatMessage(result.feedback);
-          const feedbackAudio = feedbackAudioContextRef.current;
-          if (feedbackAudio?.state === "running") playFeedbackTone(feedbackAudio, result.passed);
-
-        if (result.passed) {
-          setRepeatState("passed");
-          const upcomingIndex = recordStudy(wordIndexRef.current);
-          clearRepeatAdvanceTimer();
-          clearRepeatRetryTimer();
-          repeatAdvanceTimerRef.current = window.setTimeout(() => {
-            if (upcomingIndex < 0) return;
+        setRepeatState("passed");
+        const upcomingIndex = recordStudy(wordIndexRef.current);
+        clearRepeatAdvanceTimer();
+        repeatAdvanceTimerRef.current = window.setTimeout(() => {
+          if (isActiveRepeatTurn(turnId) && upcomingIndex >= 0) {
             setWordIndex(upcomingIndex);
             setPaletteIndex((current) => randomIndex(PALETTES.length, current));
-            beginRepeatTurn(upcomingIndex);
-          }, AUTO_ADVANCE_MS);
-        } else {
-          setRepeatState("retry");
-          setRepeatMessage("RETRYING");
-          clearRepeatRetryTimer();
-          repeatRetryTimerRef.current = window.setTimeout(() => {
-            beginRepeatTurn(wordIndexRef.current);
-          }, 850);
-        }
-        return;
-      }
+            beginRepeatTurnRef.current(upcomingIndex);
+          }
+        }, AUTO_ADVANCE_MS);
+      });
 
-      if (payload.type === "conversation.item.input_audio_transcription.failed") {
-        if (
-          !repeatListeningArmedRef.current ||
-          !repeatSpeechItemIdRef.current ||
-          (payload.item_id && payload.item_id !== repeatSpeechItemIdRef.current)
-        ) return;
-        stopListening();
-        setRepeatState("error");
-        setRepeatMessage("RETRYING");
-        clearRepeatRetryTimer();
-        repeatRetryTimerRef.current = window.setTimeout(() => {
-          beginRepeatTurn(wordIndexRef.current);
-        }, 1200);
-      }
+      const openPromise = new Promise<void>((resolve, reject) => {
+        channel.addEventListener("open", () => resolve(), { once: true });
+        channel.addEventListener("error", () => reject(new Error("Realtime channel failed.")), { once: true });
+      });
+      const offer = await peerConnection.createOffer();
+      await peerConnection.setLocalDescription(offer);
+      const response = await fetch("/api/pronunciation-session", {
+        method: "POST",
+        headers: { "Content-Type": "application/sdp", ...(userIdRef.current ? { "x-user-id": userIdRef.current } : {}) },
+        body: offer.sdp,
+      });
+      if (!response.ok) throw new Error("Unable to start realtime session.");
+      await peerConnection.setRemoteDescription({ type: "answer", sdp: await response.text() });
+      await openPromise;
+    })();
+    sessionPromiseRef.current = sessionPromise;
+    void sessionPromise.catch(() => {
+      if (sessionPromiseRef.current === sessionPromise) sessionPromiseRef.current = null;
     });
-
-    const openPromise = new Promise<void>((resolve, reject) => {
-      channel.addEventListener("open", () => resolve(), { once: true });
-      channel.addEventListener("error", () => reject(new Error("Realtime channel failed.")), { once: true });
-    });
-
-    const offer = await peerConnection.createOffer();
-    await peerConnection.setLocalDescription(offer);
-
-    const response = await fetch("/api/pronunciation-session", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/sdp",
-        ...(userIdRef.current ? { "x-user-id": userIdRef.current } : {}),
-      },
-      body: offer.sdp,
-    });
-
-    if (!response.ok) {
-      const payload = await response.json().catch(() => ({ error: "Unable to start realtime session." }));
-      throw new Error(payload.error || "Unable to start realtime session.");
-    }
-
-    await peerConnection.setRemoteDescription({
-      type: "answer",
-      sdp: await response.text(),
-    });
-    await openPromise;
-    setRepeatState("ready");
-    setRepeatMessage("READY");
-  }, [clearRepeatAdvanceTimer, clearRepeatRetryTimer, recordStudy, stopListening]);
+    return sessionPromise;
+  }, [clearRepeatAdvanceTimer, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
+    const turnId = repeatTurnIdRef.current + 1;
+    repeatTurnIdRef.current = turnId;
+    activeRepeatTurnRef.current = turnId;
     prepareFeedbackAudio();
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
+    currentAudioRef.current?.pause();
     stopListening();
+    repeatListeningTurnRef.current = null;
+    if (repeatTranscript) setRepeatTranscript("");
     repeatWordRef.current = WORDS[targetIndex][0];
     setRepeatState("playing");
     setRepeatMessage("PLAYING");
-    const retryAfterPlaybackFailure = () => {
-      clearRepeatPlaybackTimer();
-      setRepeatState("error");
-      setRepeatMessage("RETRYING");
-      clearRepeatRetryTimer();
-      repeatRetryTimerRef.current = window.setTimeout(() => {
-        beginRepeatTurn(wordIndexRef.current);
-      }, 1200);
-    };
-    repeatPlaybackTimerRef.current = window.setTimeout(retryAfterPlaybackFailure, PLAYBACK_TIMEOUT_MS);
-    void ensurePronunciationSession().catch(() => {
-      clearRepeatPlaybackTimer();
-      setRepeatState("error");
-      setRepeatMessage("RETRYING");
-      clearRepeatRetryTimer();
-      repeatRetryTimerRef.current = window.setTimeout(() => {
-        beginRepeatTurn(wordIndexRef.current);
-      }, 1200);
-    });
+    const session = ensurePronunciationSession();
+    const retry = () => scheduleRepeatRetry(turnId, 1_200);
+    void session.catch(retry);
+    repeatPlaybackTimerRef.current = window.setTimeout(retry, PLAYBACK_TIMEOUT_MS);
     playWord(WORDS[targetIndex][0], async () => {
       try {
         await ensurePronunciationSession();
+        if (!isActiveRepeatTurn(turnId)) return;
         clearRepeatPlaybackTimer();
         repeatSpeechItemIdRef.current = null;
+        repeatListeningTurnRef.current = turnId;
         repeatListeningArmedRef.current = true;
         setRepeatState("listening");
         setRepeatMessage("LISTENING");
         if (repeatTrackRef.current) repeatTrackRef.current.enabled = true;
-      } catch {
-        retryAfterPlaybackFailure();
-      }
-    }, retryAfterPlaybackFailure);
-  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, playWord, prepareFeedbackAudio, stopListening]);
+      } catch { retry(); }
+    }, retry);
+  }, [clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, ensurePronunciationSession, isActiveRepeatTurn, playWord, prepareFeedbackAudio, repeatTranscript, scheduleRepeatRetry, stopListening]);
+  useEffect(() => {
+    beginRepeatTurnRef.current = beginRepeatTurn;
+  }, [beginRepeatTurn]);
 
   const pauseRepeat = useCallback(() => {
     if (studyMode !== "repeat") return;
+    activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
+    repeatTurnIdRef.current = activeRepeatTurnRef.current;
+    repeatListeningTurnRef.current = null;
     clearRepeatAdvanceTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
@@ -684,6 +665,10 @@ export default function Home() {
     }
 
     if (nextMode === "listen") {
+      activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
+      repeatTurnIdRef.current = activeRepeatTurnRef.current;
+      repeatListeningTurnRef.current = null;
+      clearRepeatPlaybackTimer();
       setRepeatState("idle");
       setRepeatMessage("READY");
       playWord(word);
@@ -691,7 +676,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(wordIndexRef.current);
-  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode, word]);
+  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode, word]);
 
   useEffect(() => {
     if (nextWordIndex < 0) return;
