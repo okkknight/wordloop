@@ -313,7 +313,7 @@ h1 {
   background: currentColor;
   transform: rotate(-31deg);
 }
-.study-text-placeholder { color: var(--accent); font-size: .42em; letter-spacing: .24em; opacity: .72; user-select: none; }
+.study-text-placeholder { color: inherit; font-size: .42em; letter-spacing: .24em; opacity: .72; user-select: none; }
 h1.long { font-size: clamp(52px, 9.5vw, 164px); }
 h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
 .phonetic {
