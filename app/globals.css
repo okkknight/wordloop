@@ -301,6 +301,23 @@ h1 {
   background: currentColor;
   transform: translate(-50%, -50%);
 }
+.eye-icon.focus::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 1.4px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: .45;
+  transform: translate(-50%, -50%);
+}
+.eye-icon.focus::after {
+  width: 2.4px;
+  height: 6px;
+  border-radius: 999px;
+}
 .eye-icon.closed::before {
   content: "";
   position: absolute;
