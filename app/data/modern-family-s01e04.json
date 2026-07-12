@@ -1,0 +1,5947 @@
+{
+  "courseId": "modern-family-s01e04",
+  "episode": "S01E04",
+  "sourceAudio": "modernfamily/S01E04. .mp3",
+  "sourceSubtitle": "work/modern-family-s01e04/source/S01E04.ass",
+  "entries": [
+    {
+      "id": "s01e04-0001",
+      "episode": "S01E04",
+      "start": 2.25,
+      "end": 3.96,
+      "duration": 1.71,
+      "text": "Riley Morton coming up now.",
+      "translation": "赖利·莫顿上场",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0002",
+      "episode": "S01E04",
+      "start": 4.04,
+      "end": 6.88,
+      "duration": 2.84,
+      "text": "Kelly at second. Started the inning with a double.",
+      "translation": "之后是凯利 开局就是个漂亮的双杀",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0003",
+      "episode": "S01E04",
+      "start": 6.96,
+      "end": 8.62,
+      "duration": 1.66,
+      "text": "That seems like an hour ago.",
+      "translation": "局势看起来跟一小时前一样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0003.m4a"
+    },
+    {
+      "id": "s01e04-0004",
+      "episode": "S01E04",
+      "start": 9.16,
+      "end": 11.02,
+      "duration": 1.86,
+      "text": "- Honey, I thought you were gonna take out the garbage. - I am.",
+      "translation": "-亲爱的 你不是要倒垃圾嘛 -是的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0005",
+      "episode": "S01E04",
+      "start": 11.46,
+      "end": 15.36,
+      "duration": 3.9,
+      "text": "High fly to right. Hooking, hooking- Foul.",
+      "translation": "右侧高飞球 曲线飞出 界外球",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0006",
+      "episode": "S01E04",
+      "start": 16.21,
+      "end": 18.2,
+      "duration": 1.99,
+      "text": "- Phil. - Yes. Getting it.",
+      "translation": "-菲尔 -收到 马上去",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0007",
+      "episode": "S01E04",
+      "start": 22.6,
+      "end": 24.27,
+      "duration": 1.67,
+      "text": "I was- I was gonna get it.",
+      "translation": "我本来马上就要去倒的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0008",
+      "episode": "S01E04",
+      "start": 27.76,
+      "end": 29.33,
+      "duration": 1.57,
+      "text": "- Dylan. - Hey, Mrs. Dunphy.",
+      "translation": "-迪兰 -你好 邓菲太太",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0009",
+      "episode": "S01E04",
+      "start": 29.33,
+      "end": 31.07,
+      "duration": 1.74,
+      "text": "Um, I'm just waiting for Haley.",
+      "translation": "我在等海莉",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0009.m4a"
+    },
+    {
+      "id": "s01e04-0010",
+      "episode": "S01E04",
+      "start": 32.07,
+      "end": 34.15,
+      "duration": 2.08,
+      "text": "- Did you ring the bell? - I texted.",
+      "translation": "-你按门铃了吗 -我给她发短信了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0011",
+      "episode": "S01E04",
+      "start": 34.15,
+      "end": 36.08,
+      "duration": 1.93,
+      "text": "She said she'd be down in just a minute.",
+      "translation": "她说她马上就下来",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0011.m4a"
+    },
+    {
+      "id": "s01e04-0012",
+      "episode": "S01E04",
+      "start": 36.48,
+      "end": 39.12,
+      "duration": 2.64,
+      "text": "- Oh, great. Tell her I said \"Hi.\" - I will.",
+      "translation": "-那好 替我向她问好 -没问题",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0013",
+      "episode": "S01E04",
+      "start": 39.24,
+      "end": 41.42,
+      "duration": 2.18,
+      "text": "Dylan! D-Money!",
+      "translation": "迪兰 迪迪仔",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0014",
+      "episode": "S01E04",
+      "start": 41.78,
+      "end": 43.86,
+      "duration": 2.08,
+      "text": "Chillin' with Dylan the villain!",
+      "translation": "古惑小迪仔 快乐摇又摆",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0015",
+      "episode": "S01E04",
+      "start": 43.86,
+      "end": 45.99,
+      "duration": 2.13,
+      "text": "- \"D\" To the \"Y\" To the- - Hey, Mr. Dunphy.",
+      "translation": "-小迪的迪 迪兰的兰 -邓菲先生",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0016",
+      "episode": "S01E04",
+      "start": 45.99,
+      "end": 46.97,
+      "duration": 0.98,
+      "text": "Hey! Come on in.",
+      "translation": "快进来",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0016.m4a"
+    },
+    {
+      "id": "s01e04-0017",
+      "episode": "S01E04",
+      "start": 46.97,
+      "end": 48.65,
+      "duration": 1.68,
+      "text": "You're just in time to catch the end of the game.",
+      "translation": "你刚好赶上看比赛结果",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0017.m4a"
+    },
+    {
+      "id": "s01e04-0018",
+      "episode": "S01E04",
+      "start": 49.03,
+      "end": 51.08,
+      "duration": 2.05,
+      "text": "Oh, I'm not really a baseball guy.",
+      "translation": "我实在对棒球无爱",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0018.m4a"
+    },
+    {
+      "id": "s01e04-0019",
+      "episode": "S01E04",
+      "start": 51.65,
+      "end": 52.58,
+      "duration": 0.93,
+      "text": "Haley says \"Hi.\"",
+      "translation": "海莉也向你问好",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0020",
+      "episode": "S01E04",
+      "start": 52.58,
+      "end": 53.86,
+      "duration": 1.28,
+      "text": "I was just being facetious.",
+      "translation": "我刚刚是开玩笑的啦",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0020.m4a"
+    },
+    {
+      "id": "s01e04-0021",
+      "episode": "S01E04",
+      "start": 53.86,
+      "end": 55.01,
+      "duration": 1.15,
+      "text": "Come on. I'll catch you up.",
+      "translation": "来 叔跟你说说赛况",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0021.m4a"
+    },
+    {
+      "id": "s01e04-0022",
+      "episode": "S01E04",
+      "start": 56.05,
+      "end": 57.48,
+      "duration": 1.43,
+      "text": "Sit it. Park it.",
+      "translation": "坐下 速度点",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0022.m4a"
+    },
+    {
+      "id": "s01e04-0023",
+      "episode": "S01E04",
+      "start": 58.93,
+      "end": 60.21,
+      "duration": 1.28,
+      "text": "Come on. I don't bite.",
+      "translation": "放轻松 人家又不会吃了你",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0023.m4a"
+    },
+    {
+      "id": "s01e04-0024",
+      "episode": "S01E04",
+      "start": 62.88,
+      "end": 63.71,
+      "duration": 0.83,
+      "text": "Kidding.",
+      "translation": "逗你玩儿",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0025",
+      "episode": "S01E04",
+      "start": 64.21,
+      "end": 65.15,
+      "duration": 0.94,
+      "text": "I'm kidding.",
+      "translation": "逗你玩的啦",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0026",
+      "episode": "S01E04",
+      "start": 65.15,
+      "end": 67.23,
+      "duration": 2.08,
+      "text": "Okay. See that guy? He's the tying run.",
+      "translation": "看到那家伙了吗 就是他把比分拉平的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0026.m4a"
+    },
+    {
+      "id": "s01e04-0027",
+      "episode": "S01E04",
+      "start": 67.32,
+      "end": 68.75,
+      "duration": 1.43,
+      "text": "Interesting story about him.",
+      "translation": "特别有趣的是",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0027.m4a"
+    },
+    {
+      "id": "s01e04-0028",
+      "episode": "S01E04",
+      "start": 68.75,
+      "end": 70.74,
+      "duration": 1.99,
+      "text": "He's been stuck on second base forever,",
+      "translation": "他一直被困在\"二垒\"那一步",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0029",
+      "episode": "S01E04",
+      "start": 70.82,
+      "end": 72.91,
+      "duration": 2.09,
+      "text": "and I'm pretty sure he's gonna try and steal third,",
+      "translation": "我敢说他要试着偷上\"三垒\"了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0030",
+      "episode": "S01E04",
+      "start": 72.91,
+      "end": 75.94,
+      "duration": 3.03,
+      "text": "which is just a terrible, terrible idea.",
+      "translation": "我觉得这是个馊主意",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0031",
+      "episode": "S01E04",
+      "start": 76.31,
+      "end": 77.5,
+      "duration": 1.19,
+      "text": "How are you and Haley doing?",
+      "translation": "你跟海莉上到几垒了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0031.m4a"
+    },
+    {
+      "id": "s01e04-0032",
+      "episode": "S01E04",
+      "start": 84.51,
+      "end": 87.17,
+      "duration": 2.66,
+      "text": "I wish I could stay home with you and fly toy airplanes.",
+      "translation": "我真希望能跟你一起宅在家玩玩具飞机",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0032.m4a"
+    },
+    {
+      "id": "s01e04-0033",
+      "episode": "S01E04",
+      "start": 87.17,
+      "end": 88.74,
+      "duration": 1.57,
+      "text": "These aren't toy airplanes, Manny.",
+      "translation": "这可不是玩具飞机 曼尼",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0033.m4a"
+    },
+    {
+      "id": "s01e04-0034",
+      "episode": "S01E04",
+      "start": 88.74,
+      "end": 90.81,
+      "duration": 2.07,
+      "text": "These are models, and they're very complicated.",
+      "translation": "这叫模型 非常复杂的玩意儿",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0034.m4a"
+    },
+    {
+      "id": "s01e04-0035",
+      "episode": "S01E04",
+      "start": 90.81,
+      "end": 94.24,
+      "duration": 3.43,
+      "text": "You wanna fly one of these, you gotta be familiar with airfoil,",
+      "translation": "要想成功让它飞起来 就必须了解螺旋桨",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0036",
+      "episode": "S01E04",
+      "start": 94.24,
+      "end": 96.14,
+      "duration": 1.9,
+      "text": "drag, lift and thrust-",
+      "translation": "拉你 空气浮力和推力等等",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0037",
+      "episode": "S01E04",
+      "start": 96.14,
+      "end": 98.42,
+      "duration": 2.28,
+      "text": "and these are all principles of aerodynamics.",
+      "translation": "全都是航空动力学的基本原理",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0038",
+      "episode": "S01E04",
+      "start": 98.42,
+      "end": 100.17,
+      "duration": 1.75,
+      "text": "The box says \"12 and up.\"",
+      "translation": "可盒子上写着\"适宜12岁及以上人群\"",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0039",
+      "episode": "S01E04",
+      "start": 101.15,
+      "end": 102.05,
+      "duration": 0.9,
+      "text": "What?",
+      "translation": "什么",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0040",
+      "episode": "S01E04",
+      "start": 103.2,
+      "end": 105.25,
+      "duration": 2.05,
+      "text": "You can fly toy planes with Jay next time.",
+      "translation": "下次你再跟杰一起玩飞机",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0040.m4a"
+    },
+    {
+      "id": "s01e04-0041",
+      "episode": "S01E04",
+      "start": 105.25,
+      "end": 107.5,
+      "duration": 2.25,
+      "text": "- Today you have to spend time with Luke. - Why?",
+      "translation": "-今天你得跟卢克待在一起 -为啥啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0042",
+      "episode": "S01E04",
+      "start": 107.5,
+      "end": 109.84,
+      "duration": 2.34,
+      "text": "Because his mother invited you, so you go.",
+      "translation": "因为他妈邀请你去 所以你就得去",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0042.m4a"
+    },
+    {
+      "id": "s01e04-0043",
+      "episode": "S01E04",
+      "start": 109.84,
+      "end": 111.97,
+      "duration": 2.13,
+      "text": "Family needs to be close. Right, Jay?",
+      "translation": "家庭成员间需要亲密相处 对吧 杰",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0043.m4a"
+    },
+    {
+      "id": "s01e04-0044",
+      "episode": "S01E04",
+      "start": 111.97,
+      "end": 113.98,
+      "duration": 2.01,
+      "text": "I'm pretty sure this is a typo.",
+      "translation": "这肯定是印刷错误",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0044.m4a"
+    },
+    {
+      "id": "s01e04-0045",
+      "episode": "S01E04",
+      "start": 114.45,
+      "end": 117.77,
+      "duration": 3.32,
+      "text": "Men need their hobbies. Manny's father had many hobbies.",
+      "translation": "男人得有点爱好 曼尼他亲爹可有一大堆",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0045.m4a"
+    },
+    {
+      "id": "s01e04-0046",
+      "episode": "S01E04",
+      "start": 117.77,
+      "end": 119.63,
+      "duration": 1.86,
+      "text": "Like hiking in the desert,",
+      "translation": "比如沙漠徒步旅行",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0047",
+      "episode": "S01E04",
+      "start": 119.63,
+      "end": 122.04,
+      "duration": 2.41,
+      "text": "that kind of skiing that they drop you from the-",
+      "translation": "还有从那什么玩意儿上蹦下来滑雪的那个",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0048",
+      "episode": "S01E04",
+      "start": 122.46,
+      "end": 123.52,
+      "duration": 1.06,
+      "text": "How do you say in English?",
+      "translation": "那玩意儿用英语怎么说来着",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0049",
+      "episode": "S01E04",
+      "start": 124.28,
+      "end": 126.15,
+      "duration": 1.87,
+      "text": "- Helicopter. - Yes.",
+      "translation": "-直升机 -没错",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0050",
+      "episode": "S01E04",
+      "start": 126.42,
+      "end": 129.31,
+      "duration": 2.89,
+      "text": "Once, on a dare, he even boxed with an alligator.",
+      "translation": "有一次 他被人激将 竟然跟鳄鱼打拳击",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0051",
+      "episode": "S01E04",
+      "start": 129.31,
+      "end": 131.35,
+      "duration": 2.04,
+      "text": "\"Wrestle.\" You wrestle-",
+      "translation": "那叫格斗 格斗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0052",
+      "episode": "S01E04",
+      "start": 131.88,
+      "end": 133.63,
+      "duration": 1.75,
+      "text": "You can't box with alligators.",
+      "translation": "跟鳄鱼可打不了拳击",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0053",
+      "episode": "S01E04",
+      "start": 133.77,
+      "end": 134.48,
+      "duration": 0.71,
+      "text": "Are you sure?",
+      "translation": "你确定吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0054",
+      "episode": "S01E04",
+      "start": 134.87,
+      "end": 137.09,
+      "duration": 2.22,
+      "text": "How would they get the gloves on those little claws?",
+      "translation": "就它们那小爪子怎么戴得上拳击手套",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0055",
+      "episode": "S01E04",
+      "start": 137.62,
+      "end": 139.87,
+      "duration": 2.25,
+      "text": "- Aren't they like tiny little hands? - No!",
+      "translation": "-看起来不像小手手吗 -像个屁",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0056",
+      "episode": "S01E04",
+      "start": 141.22,
+      "end": 142.95,
+      "duration": 1.73,
+      "text": "Okay, now I forgot what we're talking about.",
+      "translation": "好吧 现在我都忘了我们刚刚在说什么了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0056.m4a"
+    },
+    {
+      "id": "s01e04-0057",
+      "episode": "S01E04",
+      "start": 142.95,
+      "end": 145.98,
+      "duration": 3.03,
+      "text": "Anyways, hobbies are important for the men,",
+      "translation": "不管怎样 对爷们儿来说 兴趣爱好很重要",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0058",
+      "episode": "S01E04",
+      "start": 145.98,
+      "end": 148.18,
+      "duration": 2.2,
+      "text": "whether you're risking your life...",
+      "translation": "无论是以命相赌的惊险爱好",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0059",
+      "episode": "S01E04",
+      "start": 148.18,
+      "end": 150.85,
+      "duration": 2.67,
+      "text": "or flying little planes from a safe distance.",
+      "translation": "或是离得远远地玩小飞机都一样",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0060",
+      "episode": "S01E04",
+      "start": 155.3,
+      "end": 156.59,
+      "duration": 1.29,
+      "text": "Wait, wait, wait. What are you doing?",
+      "translation": "等等 这是要去哪儿",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0060.m4a"
+    },
+    {
+      "id": "s01e04-0061",
+      "episode": "S01E04",
+      "start": 156.59,
+      "end": 159.26,
+      "duration": 2.67,
+      "text": "Uh, we're just gonna buy some diapers. It'll just take a second.",
+      "translation": "我们得去买点尿布 几分钟就好",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0061.m4a"
+    },
+    {
+      "id": "s01e04-0062",
+      "episode": "S01E04",
+      "start": 159.69,
+      "end": 163.04,
+      "duration": 3.35,
+      "text": "- This is Costco. - Yeah, which is where we buy diapers.",
+      "translation": "-是好市多超市哎 -没错 就是买尿布的地方啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0063",
+      "episode": "S01E04",
+      "start": 163.04,
+      "end": 164.09,
+      "duration": 1.05,
+      "text": "Since when?",
+      "translation": "什么时候开始的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0064",
+      "episode": "S01E04",
+      "start": 164.09,
+      "end": 167.24,
+      "duration": 3.15,
+      "text": "Do you remember when we adopted that baby a few months back?",
+      "translation": "你还记得几个月前我们收养了个孩子吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0064.m4a"
+    },
+    {
+      "id": "s01e04-0065",
+      "episode": "S01E04",
+      "start": 167.24,
+      "end": 168.22,
+      "duration": 0.98,
+      "text": "Since then.",
+      "translation": "就从那时起",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0066",
+      "episode": "S01E04",
+      "start": 171.08,
+      "end": 172.34,
+      "duration": 1.26,
+      "text": "Mitchell is a snob.",
+      "translation": "米奇尔是个势利小人",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0066.m4a"
+    },
+    {
+      "id": "s01e04-0067",
+      "episode": "S01E04",
+      "start": 172.42,
+      "end": 175.13,
+      "duration": 2.71,
+      "text": "No. N-No, I-I'm discerning.",
+      "translation": "才不是 人家那叫有见识",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0067.m4a"
+    },
+    {
+      "id": "s01e04-0068",
+      "episode": "S01E04",
+      "start": 175.22,
+      "end": 178.01,
+      "duration": 2.79,
+      "text": "Official slogan for snobs.",
+      "translation": "势利小人的常用借口",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0069",
+      "episode": "S01E04",
+      "start": 178.1,
+      "end": 179.88,
+      "duration": 1.78,
+      "text": "When we first met, he wouldn't even look at me...",
+      "translation": "我们第一次见面时 他都没正眼瞧过我",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0070",
+      "episode": "S01E04",
+      "start": 179.88,
+      "end": 182.6,
+      "duration": 2.72,
+      "text": "because I was a hick from the farm in Missouri,",
+      "translation": "因为我只是一个密苏里来的乡巴佬",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0071",
+      "episode": "S01E04",
+      "start": 182.6,
+      "end": 184.42,
+      "duration": 1.82,
+      "text": "and he's a big city mouse.",
+      "translation": "而他却是个城市佬",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0072",
+      "episode": "S01E04",
+      "start": 185.64,
+      "end": 187.26,
+      "duration": 1.62,
+      "text": "Who says \"City mouse\"?",
+      "translation": "谁会说\"城市佬\"这个词",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0073",
+      "episode": "S01E04",
+      "start": 187.26,
+      "end": 188.42,
+      "duration": 1.16,
+      "text": "Country mice.",
+      "translation": "与乡巴佬对应嘛",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0074",
+      "episode": "S01E04",
+      "start": 191.89,
+      "end": 194.44,
+      "duration": 2.55,
+      "text": "- I think I'm gonna go wait in the car. - Okay.",
+      "translation": "-我还是去车里等吧 -好的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0075",
+      "episode": "S01E04",
+      "start": 194.92,
+      "end": 197.05,
+      "duration": 2.13,
+      "text": "Hey, if you're on your way out, can you grab the garbage?",
+      "translation": "你出去时能顺手把垃圾给倒了吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0075.m4a"
+    },
+    {
+      "id": "s01e04-0076",
+      "episode": "S01E04",
+      "start": 197.05,
+      "end": 198.95,
+      "duration": 1.9,
+      "text": "- I got it. - Okay. We got it.",
+      "translation": "-我已经倒了 -那好 用不着你了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0077",
+      "episode": "S01E04",
+      "start": 200.31,
+      "end": 202.45,
+      "duration": 2.14,
+      "text": "- He's a little jumpy. - Oh, go figure-",
+      "translation": "-他有点坐不住啊 -你想想看",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0078",
+      "episode": "S01E04",
+      "start": 202.45,
+      "end": 205.44,
+      "duration": 2.99,
+      "text": "a teenage boy doesn't want to hang out with his girlfriend's dad.",
+      "translation": "哪个小男生想跟女朋友老爹一块玩儿",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0079",
+      "episode": "S01E04",
+      "start": 205.44,
+      "end": 206.9,
+      "duration": 1.46,
+      "text": "Thought we were past all that.",
+      "translation": "我以为我们的关系早超越那个了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0079.m4a"
+    },
+    {
+      "id": "s01e04-0080",
+      "episode": "S01E04",
+      "start": 207.11,
+      "end": 208.0,
+      "duration": 0.89,
+      "text": "I'm all about-",
+      "translation": "我还想",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0081",
+      "episode": "S01E04",
+      "start": 208.79,
+      "end": 211.63,
+      "duration": 2.84,
+      "text": "- I'm all about taking it to the next level. - Really?",
+      "translation": "-跟他培养超亲密关系呢 -是吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0082",
+      "episode": "S01E04",
+      "start": 212.03,
+      "end": 214.15,
+      "duration": 2.12,
+      "text": "- Thought you were all about keeping it real. - Yes.",
+      "translation": "-我还以为你会踏实点呢 -本来也是",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0083",
+      "episode": "S01E04",
+      "start": 214.52,
+      "end": 216.0,
+      "duration": 1.48,
+      "text": "But the whole point of keeping it real is",
+      "translation": "但是做得踏实一点",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0084",
+      "episode": "S01E04",
+      "start": 216.0,
+      "end": 217.37,
+      "duration": 1.37,
+      "text": "so you can take it to the next level.",
+      "translation": "也是为了能发展超亲密关系",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0085",
+      "episode": "S01E04",
+      "start": 217.37,
+      "end": 218.71,
+      "duration": 1.34,
+      "text": "Did you really not know that?",
+      "translation": "你是真不明白吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0085.m4a"
+    },
+    {
+      "id": "s01e04-0086",
+      "episode": "S01E04",
+      "start": 218.97,
+      "end": 221.46,
+      "duration": 2.49,
+      "text": "You haven't exactly taken it to the next level with my dad.",
+      "translation": "你跟我爸可没有发展超亲密关系呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0086.m4a"
+    },
+    {
+      "id": "s01e04-0087",
+      "episode": "S01E04",
+      "start": 221.56,
+      "end": 223.22,
+      "duration": 1.66,
+      "text": "What are you talking about?",
+      "translation": "你在瞎说什么啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0087.m4a"
+    },
+    {
+      "id": "s01e04-0088",
+      "episode": "S01E04",
+      "start": 223.35,
+      "end": 224.9,
+      "duration": 1.55,
+      "text": "We've been married for 16 years,",
+      "translation": "我们都结婚16年了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0089",
+      "episode": "S01E04",
+      "start": 224.9,
+      "end": 226.98,
+      "duration": 2.08,
+      "text": "and you still walk on eggshells around him.",
+      "translation": "你在我爸身边还畏畏缩缩的放不开",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0090",
+      "episode": "S01E04",
+      "start": 227.06,
+      "end": 229.27,
+      "duration": 2.21,
+      "text": "What? Are you kidding?",
+      "translation": "什么 开什么玩笑啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0090.m4a"
+    },
+    {
+      "id": "s01e04-0091",
+      "episode": "S01E04",
+      "start": 229.36,
+      "end": 232.15,
+      "duration": 2.79,
+      "text": "Jay and I are total buds.",
+      "translation": "我跟杰那可是铁哥们儿",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0091.m4a"
+    },
+    {
+      "id": "s01e04-0092",
+      "episode": "S01E04",
+      "start": 236.25,
+      "end": 237.79,
+      "duration": 1.54,
+      "text": "You-You want to just hang out?",
+      "translation": "你只是想找个伴出去玩玩吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0092.m4a"
+    },
+    {
+      "id": "s01e04-0093",
+      "episode": "S01E04",
+      "start": 238.71,
+      "end": 240.71,
+      "duration": 2.0,
+      "text": "Brought six friends, so that just-",
+      "translation": "我带上了6个好哥们儿[啤酒] 所以",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0094",
+      "episode": "S01E04",
+      "start": 242.42,
+      "end": 243.41,
+      "duration": 0.99,
+      "text": "That's-",
+      "translation": "就是...",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0095",
+      "episode": "S01E04",
+      "start": 261.08,
+      "end": 263.4,
+      "duration": 2.32,
+      "text": "Manny brought his favorite game to play with Luke.",
+      "translation": "曼尼把他最喜欢的桌游带来跟卢克一起玩",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0095.m4a"
+    },
+    {
+      "id": "s01e04-0096",
+      "episode": "S01E04",
+      "start": 263.5,
+      "end": 264.7,
+      "duration": 1.2,
+      "text": "It's called Empire.",
+      "translation": "叫帝国时代",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0097",
+      "episode": "S01E04",
+      "start": 264.7,
+      "end": 268.24,
+      "duration": 3.54,
+      "text": "You use strategy to expand territories and take over the world.",
+      "translation": "玩家要运用策略 攻城掠地 一统天下",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0097.m4a"
+    },
+    {
+      "id": "s01e04-0098",
+      "episode": "S01E04",
+      "start": 268.74,
+      "end": 271.12,
+      "duration": 2.38,
+      "text": "Luke is gonna love that. He's out back playing.",
+      "translation": "卢克会爱死这游戏的 他正在后院玩呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0098.m4a"
+    },
+    {
+      "id": "s01e04-0099",
+      "episode": "S01E04",
+      "start": 271.12,
+      "end": 273.49,
+      "duration": 2.37,
+      "text": "Do you need me to get you something while I'm out shopping?",
+      "translation": "我要出去买东西 需要给你带点什么回来吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0099.m4a"
+    },
+    {
+      "id": "s01e04-0100",
+      "episode": "S01E04",
+      "start": 273.49,
+      "end": 275.44,
+      "duration": 1.95,
+      "text": "That's such a nice offer, but I think we're good. Thanks.",
+      "translation": "多谢好意了 不过用不着 多谢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0100.m4a"
+    },
+    {
+      "id": "s01e04-0101",
+      "episode": "S01E04",
+      "start": 275.44,
+      "end": 277.82,
+      "duration": 2.38,
+      "text": "Okay. What about this?",
+      "translation": "你看 这样如何",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0101.m4a"
+    },
+    {
+      "id": "s01e04-0102",
+      "episode": "S01E04",
+      "start": 278.28,
+      "end": 280.43,
+      "duration": 2.15,
+      "text": "You don't even say \"Hello\" To Gloria and Manny?",
+      "translation": "你都不跟歌洛莉亚和曼尼打招呼的吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0102.m4a"
+    },
+    {
+      "id": "s01e04-0103",
+      "episode": "S01E04",
+      "start": 280.43,
+      "end": 283.77,
+      "duration": 3.34,
+      "text": "Hi, Gloria and Manny. Okay, Mom, what about this?",
+      "translation": "嗨 歌洛莉亚和曼尼 妈 到底怎么样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0103.m4a"
+    },
+    {
+      "id": "s01e04-0104",
+      "episode": "S01E04",
+      "start": 283.77,
+      "end": 286.85,
+      "duration": 3.08,
+      "text": "- No. You're wearing a dress. - Mom, come on.",
+      "translation": "-不行 必须穿裙子 -妈 拜托",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0105",
+      "episode": "S01E04",
+      "start": 286.95,
+      "end": 289.48,
+      "duration": 2.53,
+      "text": "What? It's gonna kill you to look like a girl for one afternoon?",
+      "translation": "怎么啦 今天一下午穿得像个女孩会死吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0105.m4a"
+    },
+    {
+      "id": "s01e04-0106",
+      "episode": "S01E04",
+      "start": 289.48,
+      "end": 292.51,
+      "duration": 3.03,
+      "text": "But it's a wedding for some friend of yours I never even heard of.",
+      "translation": "要结婚的可是你的朋友 虽然我完全没听说过",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0107",
+      "episode": "S01E04",
+      "start": 292.51,
+      "end": 295.33,
+      "duration": 2.82,
+      "text": "It's non-negotiable. You can borrow a dress of Haley's again.",
+      "translation": "没得商量 裙子你可以再去跟海莉借",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0107.m4a"
+    },
+    {
+      "id": "s01e04-0108",
+      "episode": "S01E04",
+      "start": 295.33,
+      "end": 296.14,
+      "duration": 0.81,
+      "text": "No.",
+      "translation": "才不要",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0109",
+      "episode": "S01E04",
+      "start": 296.14,
+      "end": 299.08,
+      "duration": 2.94,
+      "text": "That sends an ugly message- that I'm Haley.",
+      "translation": "那会让人错以为 我是不争气的海莉",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0110",
+      "episode": "S01E04",
+      "start": 299.73,
+      "end": 302.44,
+      "duration": 2.71,
+      "text": "You know, instead of trying to force me to wear a dress,",
+      "translation": "比起逼着我穿裙子",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0111",
+      "episode": "S01E04",
+      "start": 302.44,
+      "end": 305.62,
+      "duration": 3.18,
+      "text": "why don't you worry about getting Luke to wear some pants?",
+      "translation": "你是不是更该操心怎么让卢克穿裤子",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0112",
+      "episode": "S01E04",
+      "start": 306.29,
+      "end": 309.88,
+      "duration": 3.59,
+      "text": "What? Why does he do this?",
+      "translation": "什么 他这是要闹哪样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0112.m4a"
+    },
+    {
+      "id": "s01e04-0113",
+      "episode": "S01E04",
+      "start": 311.5,
+      "end": 312.59,
+      "duration": 1.09,
+      "text": "Luke!",
+      "translation": "卢克",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "name-only"
+      ]
+    },
+    {
+      "id": "s01e04-0114",
+      "episode": "S01E04",
+      "start": 312.59,
+      "end": 314.75,
+      "duration": 2.16,
+      "text": "Pants! Come on!",
+      "translation": "拜托 快穿裤子",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0115",
+      "episode": "S01E04",
+      "start": 319.43,
+      "end": 321.2,
+      "duration": 1.77,
+      "text": "Jay and I are buds, for sure-",
+      "translation": "我跟杰真是铁哥们儿 真的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0116",
+      "episode": "S01E04",
+      "start": 321.2,
+      "end": 324.46,
+      "duration": 3.26,
+      "text": "but with kind of, um, an invisible asterisk.",
+      "translation": "但我们的亲密关系外界看不出来",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0117",
+      "episode": "S01E04",
+      "start": 324.66,
+      "end": 327.91,
+      "duration": 3.25,
+      "text": "Um, he's not, uh- He's not a talker.",
+      "translation": "他嘛 不是很爱说话",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0118",
+      "episode": "S01E04",
+      "start": 328.0,
+      "end": 330.75,
+      "duration": 2.75,
+      "text": "Or-Or a hugger.",
+      "translation": "也不喜欢拥抱",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0118.m4a"
+    },
+    {
+      "id": "s01e04-0119",
+      "episode": "S01E04",
+      "start": 330.83,
+      "end": 333.58,
+      "duration": 2.75,
+      "text": "Once he ran over my foot with his car.",
+      "translation": "有一次他开车碾过我的脚",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0119.m4a"
+    },
+    {
+      "id": "s01e04-0120",
+      "episode": "S01E04",
+      "start": 333.67,
+      "end": 335.92,
+      "duration": 2.25,
+      "text": "To-To be fair, he had just given up smoking,",
+      "translation": "不过说实话 那时他刚戒烟很烦躁",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0121",
+      "episode": "S01E04",
+      "start": 336.0,
+      "end": 338.42,
+      "duration": 2.42,
+      "text": "but basically we're-we're buds.",
+      "translation": "但基本上我们绝对是铁哥们儿",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0122",
+      "episode": "S01E04",
+      "start": 340.22,
+      "end": 341.6,
+      "duration": 1.38,
+      "text": "Do you have to just stand there?",
+      "translation": "你非得在那傻站着吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0122.m4a"
+    },
+    {
+      "id": "s01e04-0123",
+      "episode": "S01E04",
+      "start": 342.29,
+      "end": 344.03,
+      "duration": 1.74,
+      "text": "You're making me feel uneasy.",
+      "translation": "你这样弄得我很不自在",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0123.m4a"
+    },
+    {
+      "id": "s01e04-0124",
+      "episode": "S01E04",
+      "start": 347.82,
+      "end": 349.89,
+      "duration": 2.07,
+      "text": "Oh, for God's sake. Sit here. Here.",
+      "translation": "老天啊 你就坐那吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0124.m4a"
+    },
+    {
+      "id": "s01e04-0125",
+      "episode": "S01E04",
+      "start": 349.89,
+      "end": 352.79,
+      "duration": 2.9,
+      "text": "Hold this wing like this while I adjust this.",
+      "translation": "像这样扶住机翼 我要调下这边",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0125.m4a"
+    },
+    {
+      "id": "s01e04-0126",
+      "episode": "S01E04",
+      "start": 352.79,
+      "end": 353.77,
+      "duration": 0.98,
+      "text": "Okay.",
+      "translation": "好的",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0127",
+      "episode": "S01E04",
+      "start": 354.47,
+      "end": 355.52,
+      "duration": 1.05,
+      "text": "Come on. Here.",
+      "translation": "过来 坐这儿",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0128",
+      "episode": "S01E04",
+      "start": 366.24,
+      "end": 367.37,
+      "duration": 1.13,
+      "text": "Not too hard.",
+      "translation": "不要太用力",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0129",
+      "episode": "S01E04",
+      "start": 370.45,
+      "end": 372.89,
+      "duration": 2.44,
+      "text": "Alex, why don't you come shopping with me?",
+      "translation": "艾丽克斯 何不跟我购物去呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0129.m4a"
+    },
+    {
+      "id": "s01e04-0130",
+      "episode": "S01E04",
+      "start": 372.89,
+      "end": 375.55,
+      "duration": 2.66,
+      "text": "Maybe I can help you find something that you like.",
+      "translation": "也许我能帮你找到些你喜欢的东西",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0130.m4a"
+    },
+    {
+      "id": "s01e04-0131",
+      "episode": "S01E04",
+      "start": 375.55,
+      "end": 378.76,
+      "duration": 3.21,
+      "text": "That's a really nice offer, but it's not really her thing.",
+      "translation": "多谢你的好意了 但她不怎么喜好逛街",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0131.m4a"
+    },
+    {
+      "id": "s01e04-0132",
+      "episode": "S01E04",
+      "start": 378.76,
+      "end": 380.94,
+      "duration": 2.18,
+      "text": "Actually, I'd love to go.",
+      "translation": "实际上 我挺想去的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0132.m4a"
+    },
+    {
+      "id": "s01e04-0133",
+      "episode": "S01E04",
+      "start": 380.94,
+      "end": 383.04,
+      "duration": 2.1,
+      "text": "See, you don't know what my thing is.",
+      "translation": "老实说 你完全不知道我的喜好是什么",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0133.m4a"
+    },
+    {
+      "id": "s01e04-0134",
+      "episode": "S01E04",
+      "start": 383.04,
+      "end": 384.5,
+      "duration": 1.46,
+      "text": "You have no idea what my thing is.",
+      "translation": "你对我的喜好一无所知",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0134.m4a"
+    },
+    {
+      "id": "s01e04-0135",
+      "episode": "S01E04",
+      "start": 385.18,
+      "end": 386.51,
+      "duration": 1.33,
+      "text": "I know what your thing is.",
+      "translation": "我知道得非常清楚",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0135.m4a"
+    },
+    {
+      "id": "s01e04-0136",
+      "episode": "S01E04",
+      "start": 386.56,
+      "end": 389.38,
+      "duration": 2.82,
+      "text": "Your thing is to provoke, just like your sister's thing...",
+      "translation": "你就爱激怒老娘发火 你姐呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0137",
+      "episode": "S01E04",
+      "start": 389.38,
+      "end": 390.83,
+      "duration": 1.45,
+      "text": "is to never come out of her room,",
+      "translation": "就是一天到晚宅在房里",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0138",
+      "episode": "S01E04",
+      "start": 390.83,
+      "end": 391.83,
+      "duration": 1.0,
+      "text": "and your brother's thing-",
+      "translation": "而你那个老弟呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0139",
+      "episode": "S01E04",
+      "start": 391.83,
+      "end": 393.44,
+      "duration": 1.61,
+      "text": "Well, there's your brother's thing.",
+      "translation": "就好这一口",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0139.m4a"
+    },
+    {
+      "id": "s01e04-0140",
+      "episode": "S01E04",
+      "start": 394.28,
+      "end": 398.61,
+      "duration": 4.33,
+      "text": "Luke! Put 'em on! Mm-hmm.",
+      "translation": "卢克 快穿上裤子",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0140.m4a"
+    },
+    {
+      "id": "s01e04-0141",
+      "episode": "S01E04",
+      "start": 398.95,
+      "end": 401.57,
+      "duration": 2.62,
+      "text": "The thing about me and Jay is our relationship's...",
+      "translation": "我跟杰的关系存在的问题就是...",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0142",
+      "episode": "S01E04",
+      "start": 401.57,
+      "end": 403.36,
+      "duration": 1.79,
+      "text": "always been stuck in that,",
+      "translation": "总是停滞不前",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0143",
+      "episode": "S01E04",
+      "start": 403.48,
+      "end": 406.1,
+      "duration": 2.62,
+      "text": "that primal place where it started.",
+      "translation": "总在原地踏步",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0144",
+      "episode": "S01E04",
+      "start": 406.1,
+      "end": 408.41,
+      "duration": 2.31,
+      "text": "You know, he's the old silverback protecting his females,",
+      "translation": "你懂的 他就像个护雌的银背大猩猩",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0145",
+      "episode": "S01E04",
+      "start": 408.49,
+      "end": 411.82,
+      "duration": 3.33,
+      "text": "then along comes this younger, stronger gorilla swinging in,",
+      "translation": "一旦有一只更年轻力壮的猩猩进入族群",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0146",
+      "episode": "S01E04",
+      "start": 411.82,
+      "end": 412.75,
+      "duration": 0.93,
+      "text": "beating his chest.",
+      "translation": "把老的那只打败了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0147",
+      "episode": "S01E04",
+      "start": 412.83,
+      "end": 415.58,
+      "duration": 2.75,
+      "text": "You know, naturally, the ape ladies come running,",
+      "translation": "你懂的 很自然的 那些雌猩猩就会",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0148",
+      "episode": "S01E04",
+      "start": 415.67,
+      "end": 417.92,
+      "duration": 2.25,
+      "text": "presenting their nice scarlet behinds.",
+      "translation": "投怀送抱 求勾搭求包养",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0149",
+      "episode": "S01E04",
+      "start": 418.0,
+      "end": 420.75,
+      "duration": 2.75,
+      "text": "Papa ape wants to stop all that, but he can't.",
+      "translation": "猩猩爸爸想要阻止 但办不到",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0150",
+      "episode": "S01E04",
+      "start": 420.84,
+      "end": 424.3,
+      "duration": 3.46,
+      "text": "You know? That's-That's life. I'm not the enemy.",
+      "translation": "你明白吗 生命规律就是那样的 我不是敌人",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0150.m4a"
+    },
+    {
+      "id": "s01e04-0151",
+      "episode": "S01E04",
+      "start": 425.47,
+      "end": 427.51,
+      "duration": 2.04,
+      "text": "The enemy is poachers.",
+      "translation": "偷猎者才是",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0152",
+      "episode": "S01E04",
+      "start": 432.14,
+      "end": 434.45,
+      "duration": 2.31,
+      "text": "That'll do it. Don't touch it.",
+      "translation": "好了 别碰",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0152.m4a"
+    },
+    {
+      "id": "s01e04-0153",
+      "episode": "S01E04",
+      "start": 439.41,
+      "end": 440.3,
+      "duration": 0.89,
+      "text": "All right.",
+      "translation": "好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0154",
+      "episode": "S01E04",
+      "start": 445.67,
+      "end": 447.63,
+      "duration": 1.96,
+      "text": "- You wanna go fly it? - Sure.",
+      "translation": "-一起玩飞机去吗 -好啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0155",
+      "episode": "S01E04",
+      "start": 450.76,
+      "end": 454.33,
+      "duration": 3.57,
+      "text": "Oh. Hey, I got the toothpaste and the soap.",
+      "translation": "我拿了牙膏和香皂",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0156",
+      "episode": "S01E04",
+      "start": 454.52,
+      "end": 456.62,
+      "duration": 2.1,
+      "text": "Good. Now we can open that general store.",
+      "translation": "真棒 现在我们都能开杂货店了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0157",
+      "episode": "S01E04",
+      "start": 457.45,
+      "end": 458.96,
+      "duration": 1.51,
+      "text": "I thought we were just here to get diapers.",
+      "translation": "我还以为我们只是来买尿布的呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0157.m4a"
+    },
+    {
+      "id": "s01e04-0158",
+      "episode": "S01E04",
+      "start": 458.96,
+      "end": 459.95,
+      "duration": 0.99,
+      "text": "We had a saying on the farm:",
+      "translation": "农场里有句俗话流传很广",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0159",
+      "episode": "S01E04",
+      "start": 459.95,
+      "end": 461.98,
+      "duration": 2.03,
+      "text": "as long as you're bringing the mule to the market, you-",
+      "translation": "既然已经把骡子拉到集市上...",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0160",
+      "episode": "S01E04",
+      "start": 461.98,
+      "end": 463.91,
+      "duration": 1.93,
+      "text": "I feel you rolling your eyes at me.",
+      "translation": "我感觉到你在对我翻白眼",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0160.m4a"
+    },
+    {
+      "id": "s01e04-0161",
+      "episode": "S01E04",
+      "start": 464.92,
+      "end": 467.4,
+      "duration": 2.48,
+      "text": "We met at one of Pepper's legendary game nights.",
+      "translation": "我们是在胡娇组织的一次传奇游戏夜上相识的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0162",
+      "episode": "S01E04",
+      "start": 467.4,
+      "end": 468.73,
+      "duration": 1.33,
+      "text": "I remember Mitchell because",
+      "translation": "我对米奇尔有印象是因为",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0163",
+      "episode": "S01E04",
+      "start": 468.73,
+      "end": 471.37,
+      "duration": 2.64,
+      "text": "he kept rolling his eyes every time I would get a little boisterous.",
+      "translation": "每当我兴奋地喊叫 他就冲我翻白眼",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0164",
+      "episode": "S01E04",
+      "start": 471.37,
+      "end": 472.58,
+      "duration": 1.21,
+      "text": "I did not.",
+      "translation": "我才没有",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0165",
+      "episode": "S01E04",
+      "start": 472.94,
+      "end": 473.93,
+      "duration": 0.99,
+      "text": "A little bit.",
+      "translation": "有一点儿哦",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0166",
+      "episode": "S01E04",
+      "start": 474.51,
+      "end": 476.03,
+      "duration": 1.52,
+      "text": "Yeah, maybe a little bit.",
+      "translation": "好吧 或许吧",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0167",
+      "episode": "S01E04",
+      "start": 476.43,
+      "end": 478.31,
+      "duration": 1.88,
+      "text": "Anyway, we were- we were playing charades,",
+      "translation": "总之 我们在玩字谜游戏时",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0168",
+      "episode": "S01E04",
+      "start": 478.31,
+      "end": 480.36,
+      "duration": 2.05,
+      "text": "and I had no idea how to act out my clue.",
+      "translation": "我不知道该怎么把线索用手势表演出来",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0169",
+      "episode": "S01E04",
+      "start": 480.36,
+      "end": 482.77,
+      "duration": 2.41,
+      "text": "And all I could think of to do was-",
+      "translation": "我只能想到这么来比划",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0170",
+      "episode": "S01E04",
+      "start": 483.78,
+      "end": 486.03,
+      "duration": 2.25,
+      "text": "And without missing a beat, Cam says-",
+      "translation": "而小卡立马就回答到",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0171",
+      "episode": "S01E04",
+      "start": 486.11,
+      "end": 487.99,
+      "duration": 1.88,
+      "text": "Casablanca.",
+      "translation": "卡萨布兰卡",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0172",
+      "episode": "S01E04",
+      "start": 488.11,
+      "end": 490.2,
+      "duration": 2.09,
+      "text": "- All I did was this- - Casablanca.",
+      "translation": "-我就这么比划了下 -卡萨布兰卡",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0173",
+      "episode": "S01E04",
+      "start": 491.2,
+      "end": 492.83,
+      "duration": 1.63,
+      "text": "Casablanca.",
+      "translation": "卡萨布兰卡",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0174",
+      "episode": "S01E04",
+      "start": 493.14,
+      "end": 495.04,
+      "duration": 1.9,
+      "text": "Can we just please get the diapers and get out of here?",
+      "translation": "我们能不能只拿尿布 买单闪人",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0174.m4a"
+    },
+    {
+      "id": "s01e04-0175",
+      "episode": "S01E04",
+      "start": 495.12,
+      "end": 497.27,
+      "duration": 2.15,
+      "text": "Fine, but I wanna stop by the wine section first.",
+      "translation": "没问题 不过我想先去瞧瞧酒水区",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0175.m4a"
+    },
+    {
+      "id": "s01e04-0176",
+      "episode": "S01E04",
+      "start": 497.27,
+      "end": 500.25,
+      "duration": 2.98,
+      "text": "Wait. There's a wine section?",
+      "translation": "等等 这儿居然有酒水区",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0177",
+      "episode": "S01E04",
+      "start": 500.25,
+      "end": 502.13,
+      "duration": 1.88,
+      "text": "Yeah, a really good one- just past the tires.",
+      "translation": "当然 挺棒的 就在轮胎区后面",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0178",
+      "episode": "S01E04",
+      "start": 502.13,
+      "end": 505.6,
+      "duration": 3.47,
+      "text": "No way. They do not have- Oh, my God.",
+      "translation": "不可能 他们才没有... 天呐",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0179",
+      "episode": "S01E04",
+      "start": 505.87,
+      "end": 509.27,
+      "duration": 3.4,
+      "text": "Oh, my- Cam. Cam. The paper shredder I wanted.",
+      "translation": "天啊 小卡 是我想要的那种碎纸机耶",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0180",
+      "episode": "S01E04",
+      "start": 509.27,
+      "end": 511.09,
+      "duration": 1.82,
+      "text": "Huh? Confetti and crosscut.",
+      "translation": "瞧瞧 五彩纸屑 还能横切",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0181",
+      "episode": "S01E04",
+      "start": 511.09,
+      "end": 512.01,
+      "duration": 0.92,
+      "text": "Yep.",
+      "translation": "棒",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0182",
+      "episode": "S01E04",
+      "start": 515.09,
+      "end": 516.72,
+      "duration": 1.63,
+      "text": "Oh, my God. Amazing.",
+      "translation": "老天啊 好满足呀",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0183",
+      "episode": "S01E04",
+      "start": 516.72,
+      "end": 517.81,
+      "duration": 1.09,
+      "text": "Yeah.",
+      "translation": "是啊",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0184",
+      "episode": "S01E04",
+      "start": 520.99,
+      "end": 524.58,
+      "duration": 3.59,
+      "text": "Cam, what is this place?",
+      "translation": "小卡 这地方叫什么",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0184.m4a"
+    },
+    {
+      "id": "s01e04-0185",
+      "episode": "S01E04",
+      "start": 527.82,
+      "end": 530.77,
+      "duration": 2.95,
+      "text": "Those cookies smell like heaven. Your own recipe?",
+      "translation": "此香只应天上有 是你的独家秘方吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0185.m4a"
+    },
+    {
+      "id": "s01e04-0186",
+      "episode": "S01E04",
+      "start": 531.01,
+      "end": 532.88,
+      "duration": 1.87,
+      "text": "No, I just throw 'em in the oven.",
+      "translation": "不 我只是随便丢进烤箱烤烤罢了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0186.m4a"
+    },
+    {
+      "id": "s01e04-0187",
+      "episode": "S01E04",
+      "start": 532.88,
+      "end": 535.39,
+      "duration": 2.51,
+      "text": "And added the secret ingredient of caring?",
+      "translation": "但加了爱心作为神秘配料对吧",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0188",
+      "episode": "S01E04",
+      "start": 536.16,
+      "end": 537.02,
+      "duration": 0.86,
+      "text": "Sure.",
+      "translation": "没错",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0189",
+      "episode": "S01E04",
+      "start": 537.78,
+      "end": 539.66,
+      "duration": 1.88,
+      "text": "So, you and Luke having a good time?",
+      "translation": "你跟卢克玩得开心吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0189.m4a"
+    },
+    {
+      "id": "s01e04-0190",
+      "episode": "S01E04",
+      "start": 539.66,
+      "end": 542.2,
+      "duration": 2.54,
+      "text": "I don't know. He won't come out of his box.",
+      "translation": "我也不知道 他不愿意把头上的盒子拿掉",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0190.m4a"
+    },
+    {
+      "id": "s01e04-0191",
+      "episode": "S01E04",
+      "start": 543.06,
+      "end": 545.94,
+      "duration": 2.88,
+      "text": "Maybe I'll just stay here and spend some time with my sister.",
+      "translation": "也许我可以待在这儿 跟姐姐聊会儿天",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0191.m4a"
+    },
+    {
+      "id": "s01e04-0192",
+      "episode": "S01E04",
+      "start": 546.4,
+      "end": 549.79,
+      "duration": 3.39,
+      "text": "Oh, right. I guess technically I would be your stepsister.",
+      "translation": "对噢 好像严格说来 我是你继姐哦",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0192.m4a"
+    },
+    {
+      "id": "s01e04-0193",
+      "episode": "S01E04",
+      "start": 550.08,
+      "end": 552.45,
+      "duration": 2.37,
+      "text": "My mother says we are never to use the word \"Step\"",
+      "translation": "我妈不让我们说\"继\"字儿",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0194",
+      "episode": "S01E04",
+      "start": 552.45,
+      "end": 553.8,
+      "duration": 1.35,
+      "text": "Because it means \"Not real.\"",
+      "translation": "因为那意味着不是真的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0194.m4a"
+    },
+    {
+      "id": "s01e04-0195",
+      "episode": "S01E04",
+      "start": 553.8,
+      "end": 555.82,
+      "duration": 2.02,
+      "text": "And we are a real family. Mmm.",
+      "translation": "而我们是个真正意义上的家庭",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0196",
+      "episode": "S01E04",
+      "start": 557.14,
+      "end": 559.14,
+      "duration": 2.0,
+      "text": "So what is the matter, Claire?",
+      "translation": "有什么问题吗 克莱尔",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0196.m4a"
+    },
+    {
+      "id": "s01e04-0197",
+      "episode": "S01E04",
+      "start": 561.07,
+      "end": 563.16,
+      "duration": 2.09,
+      "text": "- What? - You seem sad.",
+      "translation": "-什么 -你看起来不大高兴啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0198",
+      "episode": "S01E04",
+      "start": 565.25,
+      "end": 567.05,
+      "duration": 1.8,
+      "text": "It's just stuff with Alex.",
+      "translation": "让艾丽克斯给气饱了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0198.m4a"
+    },
+    {
+      "id": "s01e04-0199",
+      "episode": "S01E04",
+      "start": 567.05,
+      "end": 568.15,
+      "duration": 1.1,
+      "text": "You know, kid stuff.",
+      "translation": "小孩子的问题 你懂的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0199.m4a"
+    },
+    {
+      "id": "s01e04-0200",
+      "episode": "S01E04",
+      "start": 568.75,
+      "end": 569.51,
+      "duration": 0.76,
+      "text": "Kids.",
+      "translation": "小孩子",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0201",
+      "episode": "S01E04",
+      "start": 569.51,
+      "end": 571.97,
+      "duration": 2.46,
+      "text": "You don't have to tell me. My school is full of them.",
+      "translation": "别跟我提孩子 我学校里一堆小屁孩",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0201.m4a"
+    },
+    {
+      "id": "s01e04-0202",
+      "episode": "S01E04",
+      "start": 575.1,
+      "end": 578.03,
+      "duration": 2.93,
+      "text": "I was thinking after lunch we can go and do a little shopping.",
+      "translation": "我想 午饭后我们能一起去逛街",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0202.m4a"
+    },
+    {
+      "id": "s01e04-0203",
+      "episode": "S01E04",
+      "start": 578.41,
+      "end": 579.99,
+      "duration": 1.58,
+      "text": "I'm not getting a dress.",
+      "translation": "我可不会买裙子的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0203.m4a"
+    },
+    {
+      "id": "s01e04-0204",
+      "episode": "S01E04",
+      "start": 580.56,
+      "end": 582.03,
+      "duration": 1.47,
+      "text": "I don't care. I'm not your mother.",
+      "translation": "我才不管 我又不是你妈",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0204.m4a"
+    },
+    {
+      "id": "s01e04-0205",
+      "episode": "S01E04",
+      "start": 582.25,
+      "end": 584.15,
+      "duration": 1.9,
+      "text": "I know. You're my grandmother.",
+      "translation": "我知道 你是我外婆嘛",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0205.m4a"
+    },
+    {
+      "id": "s01e04-0206",
+      "episode": "S01E04",
+      "start": 584.15,
+      "end": 585.73,
+      "duration": 1.58,
+      "text": "Step-grandmother.",
+      "translation": "继--外婆",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0207",
+      "episode": "S01E04",
+      "start": 586.24,
+      "end": 589.3,
+      "duration": 3.06,
+      "text": "Anyways, today, think of me as a girlfriend.",
+      "translation": "不管怎么说 今天就把我当成你的闺蜜",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0207.m4a"
+    },
+    {
+      "id": "s01e04-0208",
+      "episode": "S01E04",
+      "start": 589.3,
+      "end": 592.49,
+      "duration": 3.19,
+      "text": "Two girls out for an afternoon of fun.",
+      "translation": "午后时光 两个小闺蜜一起找点乐子",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0208.m4a"
+    },
+    {
+      "id": "s01e04-0209",
+      "episode": "S01E04",
+      "start": 593.35,
+      "end": 596.27,
+      "duration": 2.92,
+      "text": "What do you usually do with your girlfriends?",
+      "translation": "你一般跟你的闺蜜们干什么呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0209.m4a"
+    },
+    {
+      "id": "s01e04-0210",
+      "episode": "S01E04",
+      "start": 596.55,
+      "end": 600.27,
+      "duration": 3.72,
+      "text": "I don't know. We go out. We talk, drink wine.",
+      "translation": "不一定 逛街啊八卦啊喝酒啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0210.m4a"
+    },
+    {
+      "id": "s01e04-0211",
+      "episode": "S01E04",
+      "start": 600.27,
+      "end": 601.98,
+      "duration": 1.71,
+      "text": "- Can I drink wine? - No.",
+      "translation": "-我能喝酒吗 -没门儿",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0212",
+      "episode": "S01E04",
+      "start": 602.95,
+      "end": 603.99,
+      "duration": 1.04,
+      "text": "Some friend.",
+      "translation": "真\"够朋友\"",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0213",
+      "episode": "S01E04",
+      "start": 603.99,
+      "end": 607.36,
+      "duration": 3.37,
+      "text": "Well, you can still talk to me about anything.",
+      "translation": "你可以跟我聊聊天啊 什么话题都行",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0213.m4a"
+    },
+    {
+      "id": "s01e04-0214",
+      "episode": "S01E04",
+      "start": 607.36,
+      "end": 610.17,
+      "duration": 2.81,
+      "text": "Yeah, adults always say that, but they don't mean it.",
+      "translation": "大人们都这么说 但都是口是心非",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0214.m4a"
+    },
+    {
+      "id": "s01e04-0215",
+      "episode": "S01E04",
+      "start": 610.48,
+      "end": 612.64,
+      "duration": 2.16,
+      "text": "When my mom says I can ask her anything,",
+      "translation": "每次我妈说我想问什么都行",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0216",
+      "episode": "S01E04",
+      "start": 612.64,
+      "end": 613.72,
+      "duration": 1.08,
+      "text": "I really can't.",
+      "translation": "其实根本不行",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0217",
+      "episode": "S01E04",
+      "start": 613.9,
+      "end": 615.3,
+      "duration": 1.4,
+      "text": "She just freaks out.",
+      "translation": "我的问题直接把她逼疯",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0217.m4a"
+    },
+    {
+      "id": "s01e04-0218",
+      "episode": "S01E04",
+      "start": 616.04,
+      "end": 618.63,
+      "duration": 2.59,
+      "text": "I won't freak out. Shoot.",
+      "translation": "我不会被逼疯的 放心说吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0218.m4a"
+    },
+    {
+      "id": "s01e04-0219",
+      "episode": "S01E04",
+      "start": 619.99,
+      "end": 620.92,
+      "duration": 0.93,
+      "text": "Okay.",
+      "translation": "那好",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0220",
+      "episode": "S01E04",
+      "start": 621.77,
+      "end": 623.12,
+      "duration": 1.35,
+      "text": "How many men have you slept with?",
+      "translation": "你跟几个男人上过床",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0220.m4a"
+    },
+    {
+      "id": "s01e04-0221",
+      "episode": "S01E04",
+      "start": 623.24,
+      "end": 624.76,
+      "duration": 1.52,
+      "text": "Eight. Next.",
+      "translation": "8个 下个问题",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0222",
+      "episode": "S01E04",
+      "start": 630.79,
+      "end": 633.01,
+      "duration": 2.22,
+      "text": "- Now can I try it? - No.",
+      "translation": "-我能试试吗 -不行",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0223",
+      "episode": "S01E04",
+      "start": 635.01,
+      "end": 637.37,
+      "duration": 2.36,
+      "text": "I should get one of those. I've always loved planes.",
+      "translation": "我也应该买一个 我爱死飞机了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0223.m4a"
+    },
+    {
+      "id": "s01e04-0224",
+      "episode": "S01E04",
+      "start": 637.9,
+      "end": 639.6,
+      "duration": 1.7,
+      "text": "If things had gone a little differently in my life,",
+      "translation": "如果上天能给我一次重来的机会",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0225",
+      "episode": "S01E04",
+      "start": 639.6,
+      "end": 640.94,
+      "duration": 1.34,
+      "text": "I think I would have been a pilot.",
+      "translation": "我可能是个飞行员",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0225.m4a"
+    },
+    {
+      "id": "s01e04-0226",
+      "episode": "S01E04",
+      "start": 642.48,
+      "end": 643.85,
+      "duration": 1.37,
+      "text": "Hey, what would happen if you turned the remote off",
+      "translation": "如果把遥控开关关了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0227",
+      "episode": "S01E04",
+      "start": 643.85,
+      "end": 645.31,
+      "duration": 1.46,
+      "text": "and then back on real fast?",
+      "translation": "然后又马上打开会发生什么事呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0228",
+      "episode": "S01E04",
+      "start": 645.4,
+      "end": 647.07,
+      "duration": 1.67,
+      "text": "Yeah, you'd have been a great pilot.",
+      "translation": "你还真是个当飞行员的\"好料子\"",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0228.m4a"
+    },
+    {
+      "id": "s01e04-0229",
+      "episode": "S01E04",
+      "start": 648.83,
+      "end": 650.77,
+      "duration": 1.94,
+      "text": "So, can you do a- Can you do a loop-de-loop?",
+      "translation": "那个 你能来个空中大回旋吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0230",
+      "episode": "S01E04",
+      "start": 650.77,
+      "end": 652.07,
+      "duration": 1.3,
+      "text": "If I wanted to.",
+      "translation": "只要我想就行",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0231",
+      "episode": "S01E04",
+      "start": 652.07,
+      "end": 654.1,
+      "duration": 2.03,
+      "text": "No way! Can I try it?",
+      "translation": "不是吧 能让我试试吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0231.m4a"
+    },
+    {
+      "id": "s01e04-0232",
+      "episode": "S01E04",
+      "start": 654.32,
+      "end": 655.46,
+      "duration": 1.14,
+      "text": "No.",
+      "translation": "不行",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0233",
+      "episode": "S01E04",
+      "start": 658.3,
+      "end": 660.89,
+      "duration": 2.59,
+      "text": "I can see why you like this. It's so peaceful.",
+      "translation": "我知道你为什么爱玩飞机了 能修身养性",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0233.m4a"
+    },
+    {
+      "id": "s01e04-0234",
+      "episode": "S01E04",
+      "start": 661.97,
+      "end": 665.85,
+      "duration": 3.88,
+      "text": "It's like the whole world just... disappears out here.",
+      "translation": "就像世界的纷纷扰扰 全不见了一样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0234.m4a"
+    },
+    {
+      "id": "s01e04-0235",
+      "episode": "S01E04",
+      "start": 668.82,
+      "end": 670.55,
+      "duration": 1.73,
+      "text": "- I remember this one summer- - I'll tell you what.",
+      "translation": "-我还记得有年夏天 -我跟你说",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0236",
+      "episode": "S01E04",
+      "start": 671.34,
+      "end": 673.24,
+      "duration": 1.9,
+      "text": "There's another trick called \"Threading the needle.\"",
+      "translation": "我还会个绝招 叫\"穿针引线\"",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0236.m4a"
+    },
+    {
+      "id": "s01e04-0237",
+      "episode": "S01E04",
+      "start": 673.24,
+      "end": 674.91,
+      "duration": 1.67,
+      "text": "I used to do it with Claire and Mitch when they were kids.",
+      "translation": "克莱尔和米奇还小的时候我常做给他们看",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0237.m4a"
+    },
+    {
+      "id": "s01e04-0238",
+      "episode": "S01E04",
+      "start": 674.91,
+      "end": 676.58,
+      "duration": 1.67,
+      "text": "- You wanna try it? - How's it go?",
+      "translation": "-想看看吗 -要怎么弄",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0239",
+      "episode": "S01E04",
+      "start": 676.58,
+      "end": 678.54,
+      "duration": 1.96,
+      "text": "You grab one of those hoops over there...",
+      "translation": "从那边拿个圈圈",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0240",
+      "episode": "S01E04",
+      "start": 678.99,
+      "end": 681.71,
+      "duration": 2.72,
+      "text": "and go to the far, far, far end of the field...",
+      "translation": "然后走到很远很远很远的地方",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0241",
+      "episode": "S01E04",
+      "start": 682.43,
+      "end": 685.16,
+      "duration": 2.73,
+      "text": "and stand there, and I fly the plane through it.",
+      "translation": "站着别动 我会让飞机从圈圈里钻过去",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0242",
+      "episode": "S01E04",
+      "start": 685.44,
+      "end": 687.96,
+      "duration": 2.52,
+      "text": "Um, that sounds awesome!",
+      "translation": "听起来真酷",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0242.m4a"
+    },
+    {
+      "id": "s01e04-0243",
+      "episode": "S01E04",
+      "start": 688.39,
+      "end": 690.37,
+      "duration": 1.98,
+      "text": "- And then I get a chance flying it? - No.",
+      "translation": "-然后我也能试下吗 -不行",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0244",
+      "episode": "S01E04",
+      "start": 690.37,
+      "end": 691.25,
+      "duration": 0.88,
+      "text": "Okay.",
+      "translation": "好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0245",
+      "episode": "S01E04",
+      "start": 703.87,
+      "end": 704.98,
+      "duration": 1.11,
+      "text": "How's this?",
+      "translation": "这儿行不",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0246",
+      "episode": "S01E04",
+      "start": 704.98,
+      "end": 706.77,
+      "duration": 1.79,
+      "text": "Not far enough. Go on.",
+      "translation": "不够远 再站远点",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0246.m4a"
+    },
+    {
+      "id": "s01e04-0247",
+      "episode": "S01E04",
+      "start": 706.77,
+      "end": 709.26,
+      "duration": 2.49,
+      "text": "- Okay. Further down. - You can't go too far.",
+      "translation": "-好的 -越远越好",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0248",
+      "episode": "S01E04",
+      "start": 709.26,
+      "end": 711.66,
+      "duration": 2.4,
+      "text": "Right. Okay, I get it. I get it.",
+      "translation": "好的 我懂的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0248.m4a"
+    },
+    {
+      "id": "s01e04-0249",
+      "episode": "S01E04",
+      "start": 717.2,
+      "end": 719.12,
+      "duration": 1.92,
+      "text": "- How's this? - Good.",
+      "translation": "-站这儿行不 -挺好",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0250",
+      "episode": "S01E04",
+      "start": 719.72,
+      "end": 722.31,
+      "duration": 2.59,
+      "text": "Now stand still. Don't move.",
+      "translation": "站好了 千万别动",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0250.m4a"
+    },
+    {
+      "id": "s01e04-0251",
+      "episode": "S01E04",
+      "start": 722.31,
+      "end": 725.74,
+      "duration": 3.43,
+      "text": "Okay, let's do it. Whoo!",
+      "translation": "好的 来吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0251.m4a"
+    },
+    {
+      "id": "s01e04-0252",
+      "episode": "S01E04",
+      "start": 726.61,
+      "end": 728.44,
+      "duration": 1.83,
+      "text": "Whoo! I love it!",
+      "translation": "太酷了 我喜欢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0252.m4a"
+    },
+    {
+      "id": "s01e04-0253",
+      "episode": "S01E04",
+      "start": 729.03,
+      "end": 731.19,
+      "duration": 2.16,
+      "text": "I love... it!",
+      "translation": "我就喜欢",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0254",
+      "episode": "S01E04",
+      "start": 742.88,
+      "end": 744.78,
+      "duration": 1.9,
+      "text": "You drove a plane into my face.",
+      "translation": "你拿飞机爆了我的头",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0254.m4a"
+    },
+    {
+      "id": "s01e04-0255",
+      "episode": "S01E04",
+      "start": 744.78,
+      "end": 746.98,
+      "duration": 2.2,
+      "text": "You must have moved. I told you to stay still.",
+      "translation": "肯定是你动了 我说了不许动的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0255.m4a"
+    },
+    {
+      "id": "s01e04-0256",
+      "episode": "S01E04",
+      "start": 746.98,
+      "end": 748.6,
+      "duration": 1.62,
+      "text": "- I didn't move. - Try not to talk.",
+      "translation": "-人家才没动 -闭嘴",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0257",
+      "episode": "S01E04",
+      "start": 748.6,
+      "end": 750.33,
+      "duration": 1.73,
+      "text": "I want to make sure nothing's broken.",
+      "translation": "我先检查一下飞机有没有坏",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0257.m4a"
+    },
+    {
+      "id": "s01e04-0258",
+      "episode": "S01E04",
+      "start": 752.18,
+      "end": 753.91,
+      "duration": 1.73,
+      "text": "Alex and I can't just disagree.",
+      "translation": "我跟艾丽克斯不止是意见不能统一",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0258.m4a"
+    },
+    {
+      "id": "s01e04-0259",
+      "episode": "S01E04",
+      "start": 753.91,
+      "end": 756.59,
+      "duration": 2.68,
+      "text": "I mean, she has to turn everything into a fight.",
+      "translation": "她还总能把事儿闹大",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0259.m4a"
+    },
+    {
+      "id": "s01e04-0260",
+      "episode": "S01E04",
+      "start": 756.59,
+      "end": 758.86,
+      "duration": 2.27,
+      "text": "Hmm. A strong, independent woman.",
+      "translation": "独立的女强人嘛",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0260.m4a"
+    },
+    {
+      "id": "s01e04-0261",
+      "episode": "S01E04",
+      "start": 758.86,
+      "end": 760.77,
+      "duration": 1.91,
+      "text": "Sounds like somebody else I know.",
+      "translation": "听上去跟我认识的另外一个人一样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0261.m4a"
+    },
+    {
+      "id": "s01e04-0262",
+      "episode": "S01E04",
+      "start": 761.29,
+      "end": 762.58,
+      "duration": 1.29,
+      "text": "I was never hostile though.",
+      "translation": "但我从来都没有恶意",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0262.m4a"
+    },
+    {
+      "id": "s01e04-0263",
+      "episode": "S01E04",
+      "start": 762.58,
+      "end": 764.7,
+      "duration": 2.12,
+      "text": "I mean, this whole thing with the dress-",
+      "translation": "我的意思是 关于穿裙子的问题",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0264",
+      "episode": "S01E04",
+      "start": 764.7,
+      "end": 766.4,
+      "duration": 1.7,
+      "text": "Never had this problem with Haley.",
+      "translation": "海莉可从来不这样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0264.m4a"
+    },
+    {
+      "id": "s01e04-0265",
+      "episode": "S01E04",
+      "start": 766.78,
+      "end": 769.43,
+      "duration": 2.65,
+      "text": "Maybe Alex doesn't want to compete with her big sister.",
+      "translation": "也许艾丽克斯只是不想被拿来跟她姐比",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0265.m4a"
+    },
+    {
+      "id": "s01e04-0266",
+      "episode": "S01E04",
+      "start": 769.71,
+      "end": 772.02,
+      "duration": 2.31,
+      "text": "Maybe she's trying to create her own identity.",
+      "translation": "或许她只是想做独一无二的自己",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0266.m4a"
+    },
+    {
+      "id": "s01e04-0267",
+      "episode": "S01E04",
+      "start": 772.15,
+      "end": 774.4,
+      "duration": 2.25,
+      "text": "Put her in a dress, and she disappears.",
+      "translation": "一旦她穿上裙子 她的独特之处就消失了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0267.m4a"
+    },
+    {
+      "id": "s01e04-0268",
+      "episode": "S01E04",
+      "start": 774.53,
+      "end": 775.87,
+      "duration": 1.34,
+      "text": "For one afternoon?",
+      "translation": "就一下午都不行吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0269",
+      "episode": "S01E04",
+      "start": 775.87,
+      "end": 778.48,
+      "duration": 2.61,
+      "text": "I wouldn't give up being myself for even one second.",
+      "translation": "要让我放弃做自己 哪怕一秒钟都不行",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0269.m4a"
+    },
+    {
+      "id": "s01e04-0270",
+      "episode": "S01E04",
+      "start": 780.43,
+      "end": 783.11,
+      "duration": 2.68,
+      "text": "Sometimes it's hard to remember you're only 10 years old.",
+      "translation": "有时候真不敢相信你才10岁",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0270.m4a"
+    },
+    {
+      "id": "s01e04-0271",
+      "episode": "S01E04",
+      "start": 783.36,
+      "end": 785.52,
+      "duration": 2.16,
+      "text": "- And three-quarters. - Yeah.",
+      "translation": "-10岁零9个月 -好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0272",
+      "episode": "S01E04",
+      "start": 788.93,
+      "end": 790.46,
+      "duration": 1.53,
+      "text": "Hey, it's Mitchell. Do you guys eat olives?",
+      "translation": "我是米奇尔 你们要吃橄榄吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0272.m4a"
+    },
+    {
+      "id": "s01e04-0273",
+      "episode": "S01E04",
+      "start": 790.46,
+      "end": 791.07,
+      "duration": 0.61,
+      "text": "Olives?",
+      "translation": "橄榄吗",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0274",
+      "episode": "S01E04",
+      "start": 791.07,
+      "end": 792.79,
+      "duration": 1.72,
+      "text": "- Really good olives? - Yeah.",
+      "translation": "-特棒的橄榄要吗 -好啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0275",
+      "episode": "S01E04",
+      "start": 792.79,
+      "end": 794.02,
+      "duration": 1.23,
+      "text": "You got it.",
+      "translation": "那我给你带了啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0276",
+      "episode": "S01E04",
+      "start": 794.65,
+      "end": 797.36,
+      "duration": 2.71,
+      "text": "Mitchell, I found the diapers. They're over here.",
+      "translation": "米奇尔 我找到尿布在哪了 就在那",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0276.m4a"
+    },
+    {
+      "id": "s01e04-0277",
+      "episode": "S01E04",
+      "start": 797.36,
+      "end": 799.38,
+      "duration": 2.02,
+      "text": "Cameron, guess what I found?",
+      "translation": "卡梅隆 你猜猜我发现到什么了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0277.m4a"
+    },
+    {
+      "id": "s01e04-0278",
+      "episode": "S01E04",
+      "start": 799.38,
+      "end": 800.61,
+      "duration": 1.23,
+      "text": "Coffins.",
+      "translation": "棺材",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0279",
+      "episode": "S01E04",
+      "start": 800.74,
+      "end": 802.69,
+      "duration": 1.95,
+      "text": "They sell baby formula and they sell coffins.",
+      "translation": "他们既卖婴幼儿奶粉 又卖棺材",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0279.m4a"
+    },
+    {
+      "id": "s01e04-0280",
+      "episode": "S01E04",
+      "start": 802.69,
+      "end": 803.53,
+      "duration": 0.84,
+      "text": "You can buy literally buy",
+      "translation": "你简直可以买到",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0281",
+      "episode": "S01E04",
+      "start": 803.53,
+      "end": 805.26,
+      "duration": 1.73,
+      "text": "everything you need from birth to death.",
+      "translation": "从你出生到去世需要用到的一切东西",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0282",
+      "episode": "S01E04",
+      "start": 805.26,
+      "end": 807.78,
+      "duration": 2.52,
+      "text": "Oh, my God. Look at these diapers.",
+      "translation": "苍天大地啊 看看这些尿布",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0282.m4a"
+    },
+    {
+      "id": "s01e04-0283",
+      "episode": "S01E04",
+      "start": 808.07,
+      "end": 809.47,
+      "duration": 1.4,
+      "text": "Look how cheap they are!",
+      "translation": "真便宜",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0284",
+      "episode": "S01E04",
+      "start": 809.57,
+      "end": 810.47,
+      "duration": 0.9,
+      "text": "Oh. You know what we should do?",
+      "translation": "你知道我们应该怎么做吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0284.m4a"
+    },
+    {
+      "id": "s01e04-0285",
+      "episode": "S01E04",
+      "start": 810.47,
+      "end": 812.41,
+      "duration": 1.94,
+      "text": "We should get enough for the next year or two, right?",
+      "translation": "我们应该买够一两年用的 对不",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0285.m4a"
+    },
+    {
+      "id": "s01e04-0286",
+      "episode": "S01E04",
+      "start": 812.54,
+      "end": 813.58,
+      "duration": 1.04,
+      "text": "Where would we keep them?",
+      "translation": "那我们把它放哪呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0286.m4a"
+    },
+    {
+      "id": "s01e04-0287",
+      "episode": "S01E04",
+      "start": 815.18,
+      "end": 817.15,
+      "duration": 1.97,
+      "text": "- They sell sheds. - Really?",
+      "translation": "-他们正好也卖棚子嘛 -真的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0288",
+      "episode": "S01E04",
+      "start": 817.15,
+      "end": 818.44,
+      "duration": 1.29,
+      "text": "You want to buy a diaper shed?",
+      "translation": "你真要买个堆放尿布的棚吗",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0289",
+      "episode": "S01E04",
+      "start": 818.44,
+      "end": 821.06,
+      "duration": 2.62,
+      "text": "We're those guys now? The guys with a diaper shed?",
+      "translation": "我们要变成家里盖有尿布棚的家伙了对吗",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0290",
+      "episode": "S01E04",
+      "start": 821.59,
+      "end": 822.58,
+      "duration": 0.99,
+      "text": "Just grab two more.",
+      "translation": "再拿两包",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0290.m4a"
+    },
+    {
+      "id": "s01e04-0291",
+      "episode": "S01E04",
+      "start": 822.83,
+      "end": 824.33,
+      "duration": 1.5,
+      "text": "I'm not grabbing two more, Mitchell.",
+      "translation": "我才不要 米奇尔",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0291.m4a"
+    },
+    {
+      "id": "s01e04-0292",
+      "episode": "S01E04",
+      "start": 824.33,
+      "end": 825.16,
+      "duration": 0.83,
+      "text": "It's time to go.",
+      "translation": "我们该走了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0292.m4a"
+    },
+    {
+      "id": "s01e04-0293",
+      "episode": "S01E04",
+      "start": 825.16,
+      "end": 828.16,
+      "duration": 3.0,
+      "text": "Come on, come on. We need, uh- Hey, excuse me.",
+      "translation": "淡定嘛 我们得...不好意思",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0294",
+      "episode": "S01E04",
+      "start": 828.16,
+      "end": 830.33,
+      "duration": 2.17,
+      "text": "- Where did you get that flatbed thing? - Over there.",
+      "translation": "-你从哪找的平板车 -就在那边",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0295",
+      "episode": "S01E04",
+      "start": 830.46,
+      "end": 832.65,
+      "duration": 2.19,
+      "text": "- Go grab one of those. - Really?",
+      "translation": "-我们也去弄一辆 -不是吧你",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0296",
+      "episode": "S01E04",
+      "start": 832.65,
+      "end": 833.91,
+      "duration": 1.26,
+      "text": "Yeah. Get two.",
+      "translation": "当然了 两辆才够",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0297",
+      "episode": "S01E04",
+      "start": 838.1,
+      "end": 839.61,
+      "duration": 1.51,
+      "text": "I'm in the applesauce aisle.",
+      "translation": "我在苹果酱那排等你",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0298",
+      "episode": "S01E04",
+      "start": 840.04,
+      "end": 841.0,
+      "duration": 0.96,
+      "text": "So, anyways,",
+      "translation": "不管怎么说",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0299",
+      "episode": "S01E04",
+      "start": 841.0,
+      "end": 842.49,
+      "duration": 1.49,
+      "text": "after charades, we went out for coffee.",
+      "translation": "猜字谜游戏之后我们一起去喝咖啡了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0300",
+      "episode": "S01E04",
+      "start": 842.49,
+      "end": 844.65,
+      "duration": 2.16,
+      "text": "And I learned that he loves art.",
+      "translation": "然后我了解到他喜欢艺术",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0301",
+      "episode": "S01E04",
+      "start": 844.65,
+      "end": 847.85,
+      "duration": 3.2,
+      "text": "He plays the piano. He speaks French.",
+      "translation": "他会弹钢琴 还会说法语",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0302",
+      "episode": "S01E04",
+      "start": 847.85,
+      "end": 849.44,
+      "duration": 1.59,
+      "text": "- Un peu. - You see?",
+      "translation": "-略懂 -听见没",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0303",
+      "episode": "S01E04",
+      "start": 849.44,
+      "end": 850.89,
+      "duration": 1.45,
+      "text": "I-I misjudged him.",
+      "translation": "我对他的第一印象完全不靠谱",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0303.m4a"
+    },
+    {
+      "id": "s01e04-0304",
+      "episode": "S01E04",
+      "start": 851.35,
+      "end": 852.99,
+      "duration": 1.64,
+      "text": "Yeah, I'm sort of like Costco.",
+      "translation": "没错 我就跟好市多卖场一样",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0305",
+      "episode": "S01E04",
+      "start": 853.27,
+      "end": 855.8,
+      "duration": 2.53,
+      "text": "I'm big, I'm not fancy, and I dare you to not like me.",
+      "translation": "我身躯庞大 土里土气 但引人迷恋",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0305.m4a"
+    },
+    {
+      "id": "s01e04-0306",
+      "episode": "S01E04",
+      "start": 855.98,
+      "end": 858.11,
+      "duration": 2.13,
+      "text": "Yeah, and I'm kinda more like that, um-",
+      "translation": "没错 而我就更像是那个...",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0307",
+      "episode": "S01E04",
+      "start": 859.93,
+      "end": 862.31,
+      "duration": 2.38,
+      "text": "What is the name of that little shop we went to in Paris?",
+      "translation": "我们在巴黎逛的那个小店叫什么来着",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0307.m4a"
+    },
+    {
+      "id": "s01e04-0308",
+      "episode": "S01E04",
+      "start": 862.8,
+      "end": 864.43,
+      "duration": 1.63,
+      "text": "You are such a snob.",
+      "translation": "你个势利小人",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0308.m4a"
+    },
+    {
+      "id": "s01e04-0309",
+      "episode": "S01E04",
+      "start": 867.45,
+      "end": 869.45,
+      "duration": 2.0,
+      "text": "Casablanca.",
+      "translation": "卡萨布兰卡",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0310",
+      "episode": "S01E04",
+      "start": 870.45,
+      "end": 872.41,
+      "duration": 1.96,
+      "text": "I have a small flower on my ankle...",
+      "translation": "我脚脖子上纹了朵小花",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0311",
+      "episode": "S01E04",
+      "start": 872.5,
+      "end": 876.83,
+      "duration": 4.33,
+      "text": "and a tiny little butterfly on my... thigh.",
+      "translation": "还纹了一只小蝴蝶在我的 大腿上",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0312",
+      "episode": "S01E04",
+      "start": 876.92,
+      "end": 878.21,
+      "duration": 1.29,
+      "text": "How high up?",
+      "translation": "大腿根部吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0313",
+      "episode": "S01E04",
+      "start": 878.34,
+      "end": 881.26,
+      "duration": 2.92,
+      "text": "- Pretty high. - Did you do it to look sexy?",
+      "translation": "-靠近\"中心地带\" -你是为了性感才纹的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0314",
+      "episode": "S01E04",
+      "start": 881.34,
+      "end": 884.51,
+      "duration": 3.17,
+      "text": "No- - Did you do it for a guy? Does Grandpa like it?",
+      "translation": "不 你是为男人纹的吗 我外公喜欢吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0315",
+      "episode": "S01E04",
+      "start": 884.59,
+      "end": 886.93,
+      "duration": 2.34,
+      "text": "No, no and yes.",
+      "translation": "否 否 是",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0316",
+      "episode": "S01E04",
+      "start": 887.01,
+      "end": 889.06,
+      "duration": 2.05,
+      "text": "That's gross",
+      "translation": "恶心",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0317",
+      "episode": "S01E04",
+      "start": 889.18,
+      "end": 891.6,
+      "duration": 2.42,
+      "text": "- Let's go back to your piercings. - No, no, no.",
+      "translation": "-继续说说你的耳洞吧 -才不要",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0318",
+      "episode": "S01E04",
+      "start": 891.68,
+      "end": 893.76,
+      "duration": 2.08,
+      "text": "I've answered enough of your questions.",
+      "translation": "我回答了这么多问题",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0318.m4a"
+    },
+    {
+      "id": "s01e04-0319",
+      "episode": "S01E04",
+      "start": 893.76,
+      "end": 895.52,
+      "duration": 1.76,
+      "text": "Now it's your turn to answer one.",
+      "translation": "现在轮到你来回答一个了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0319.m4a"
+    },
+    {
+      "id": "s01e04-0320",
+      "episode": "S01E04",
+      "start": 895.6,
+      "end": 897.31,
+      "duration": 1.71,
+      "text": "What is it?",
+      "translation": "什么问题",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0321",
+      "episode": "S01E04",
+      "start": 897.4,
+      "end": 899.32,
+      "duration": 1.92,
+      "text": "Why you don't want to wear a dress?",
+      "translation": "你为什么不想穿裙子",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0322",
+      "episode": "S01E04",
+      "start": 899.4,
+      "end": 902.65,
+      "duration": 3.25,
+      "text": "Because I don't want to look like Haley and her stupid friends.",
+      "translation": "因为我不想穿得像海莉和她那帮蠢伴一样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0322.m4a"
+    },
+    {
+      "id": "s01e04-0323",
+      "episode": "S01E04",
+      "start": 902.74,
+      "end": 905.24,
+      "duration": 2.5,
+      "text": "I wear dresses and I don't look like Haley.",
+      "translation": "我也穿裙子 我也不像海莉啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0323.m4a"
+    },
+    {
+      "id": "s01e04-0324",
+      "episode": "S01E04",
+      "start": 905.32,
+      "end": 908.62,
+      "duration": 3.3,
+      "text": "You are Haley, just 40 years older.",
+      "translation": "你就是海莉 40年后的版本",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0325",
+      "episode": "S01E04",
+      "start": 908.74,
+      "end": 910.03,
+      "duration": 1.29,
+      "text": "- Ten. - Twenty.",
+      "translation": "-10年后的 -20年后的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0326",
+      "episode": "S01E04",
+      "start": 910.12,
+      "end": 913.79,
+      "duration": 3.67,
+      "text": "Deal. Alex, why are you fighting me on this?",
+      "translation": "好吧 艾丽克斯 这你也要跟我吵吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0326.m4a"
+    },
+    {
+      "id": "s01e04-0327",
+      "episode": "S01E04",
+      "start": 913.87,
+      "end": 915.7,
+      "duration": 1.83,
+      "text": "Just- It doesn't matter if I dress up.",
+      "translation": "其实 穿裙子也没什么大不了的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0328",
+      "episode": "S01E04",
+      "start": 915.7,
+      "end": 917.33,
+      "duration": 1.63,
+      "text": "I'm not pretty like Haley and you.",
+      "translation": "只是我没有你跟海莉那么漂亮",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0328.m4a"
+    },
+    {
+      "id": "s01e04-0329",
+      "episode": "S01E04",
+      "start": 917.46,
+      "end": 920.42,
+      "duration": 2.96,
+      "text": "- That's ridiculous! You're beautiful. - I'm not.",
+      "translation": "-胡扯 你美翻了 -才不是",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0330",
+      "episode": "S01E04",
+      "start": 920.5,
+      "end": 923.34,
+      "duration": 2.84,
+      "text": "But that's okay. I'm the smart one.",
+      "translation": "不过没关系 我聪明过人",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0331",
+      "episode": "S01E04",
+      "start": 923.47,
+      "end": 926.99,
+      "duration": 3.52,
+      "text": "The cute busboy doesn't know that you're smart.",
+      "translation": "那个帅哥服务员可不知道你的智商多高",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0332",
+      "episode": "S01E04",
+      "start": 926.99,
+      "end": 927.7,
+      "duration": 0.71,
+      "text": "What?",
+      "translation": "什么",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0333",
+      "episode": "S01E04",
+      "start": 927.7,
+      "end": 930.2,
+      "duration": 2.5,
+      "text": "He's been smiling at you every time he comes to the table.",
+      "translation": "他每次过来续杯 都冲你微笑示意",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0333.m4a"
+    },
+    {
+      "id": "s01e04-0334",
+      "episode": "S01E04",
+      "start": 930.2,
+      "end": 931.47,
+      "duration": 1.27,
+      "text": "He does not!",
+      "translation": "才没有",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0335",
+      "episode": "S01E04",
+      "start": 931.47,
+      "end": 933.76,
+      "duration": 2.29,
+      "text": "Why do you think we are the only people with bread?",
+      "translation": "要不然你以为他为何就给我们上了面包呢",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0336",
+      "episode": "S01E04",
+      "start": 935.97,
+      "end": 940.66,
+      "duration": 4.69,
+      "text": "Look. One day you're going to want to date a cute guy like that.",
+      "translation": "听着 有一天你也会想跟那样的帅小伙约会",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0336.m4a"
+    },
+    {
+      "id": "s01e04-0337",
+      "episode": "S01E04",
+      "start": 940.97,
+      "end": 944.32,
+      "duration": 3.35,
+      "text": "And when that day comes, you're going to want to look beautiful,",
+      "translation": "等到那时候 你也会希望自己光彩动人",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0338",
+      "episode": "S01E04",
+      "start": 944.32,
+      "end": 946.0,
+      "duration": 1.68,
+      "text": "and then you'll wear a dress.",
+      "translation": "那时你就会穿裙子了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0339",
+      "episode": "S01E04",
+      "start": 948.59,
+      "end": 950.32,
+      "duration": 1.73,
+      "text": "So, you ever kiss another girl?",
+      "translation": "那你亲过女生吗",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0340",
+      "episode": "S01E04",
+      "start": 950.88,
+      "end": 953.16,
+      "duration": 2.28,
+      "text": "That's no way to talk to your grandmother.",
+      "translation": "跟外婆可不能这么说话",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0340.m4a"
+    },
+    {
+      "id": "s01e04-0341",
+      "episode": "S01E04",
+      "start": 953.5,
+      "end": 955.64,
+      "duration": 2.14,
+      "text": "Was my mom hard on me growing up?",
+      "translation": "我成长过程中 我妈对我严苛吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0341.m4a"
+    },
+    {
+      "id": "s01e04-0342",
+      "episode": "S01E04",
+      "start": 955.64,
+      "end": 956.96,
+      "duration": 1.32,
+      "text": "Yeah, she was.",
+      "translation": "是 绝对是",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0343",
+      "episode": "S01E04",
+      "start": 956.96,
+      "end": 958.53,
+      "duration": 1.57,
+      "text": "But you know what? Back then",
+      "translation": "但是你知道吗 当时",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0344",
+      "episode": "S01E04",
+      "start": 958.53,
+      "end": 961.86,
+      "duration": 3.33,
+      "text": "everything was Betty Friedan and Gloria Steinem.",
+      "translation": "贝蒂·弗莱顿和格洛莉亚·斯坦正火着呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0345",
+      "episode": "S01E04",
+      "start": 961.86,
+      "end": 963.01,
+      "duration": 1.15,
+      "text": "They didn't understand-",
+      "translation": "她们都不明白...",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0346",
+      "episode": "S01E04",
+      "start": 963.01,
+      "end": 964.87,
+      "duration": 1.86,
+      "text": "- Hola! We're back. - Hello.",
+      "translation": "-我们回来了哟 -好啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0347",
+      "episode": "S01E04",
+      "start": 964.87,
+      "end": 967.69,
+      "duration": 2.82,
+      "text": "- Hey, how'd it go? - It was great.",
+      "translation": "-逛得咋样啊 -非常棒",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0348",
+      "episode": "S01E04",
+      "start": 968.01,
+      "end": 969.83,
+      "duration": 1.82,
+      "text": "- Did you have fun with Luke? - Well, not-",
+      "translation": "-你跟卢克玩得开心吗 -这个嘛",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0349",
+      "episode": "S01E04",
+      "start": 969.83,
+      "end": 971.54,
+      "duration": 1.71,
+      "text": "We had a great time.",
+      "translation": "我们姐弟俩谈得很开心",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0349.m4a"
+    },
+    {
+      "id": "s01e04-0350",
+      "episode": "S01E04",
+      "start": 972.13,
+      "end": 975.1,
+      "duration": 2.97,
+      "text": "Alex, I've been thinking, and...",
+      "translation": "艾丽克斯 我想过了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0351",
+      "episode": "S01E04",
+      "start": 975.82,
+      "end": 977.76,
+      "duration": 1.94,
+      "text": "if you don't want to wear a dress to the wedding,",
+      "translation": "你不想穿裙子参加婚礼",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0352",
+      "episode": "S01E04",
+      "start": 977.95,
+      "end": 979.05,
+      "duration": 1.1,
+      "text": "it's not the end of the world.",
+      "translation": "也没什么大不了的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0353",
+      "episode": "S01E04",
+      "start": 979.57,
+      "end": 982.43,
+      "duration": 2.86,
+      "text": "It's all right. I bought one.",
+      "translation": "没关系 我买了一条",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0353.m4a"
+    },
+    {
+      "id": "s01e04-0354",
+      "episode": "S01E04",
+      "start": 984.16,
+      "end": 985.86,
+      "duration": 1.7,
+      "text": "Do you see how she has to provoke me?",
+      "translation": "现在你看到她是怎么气我的了吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0354.m4a"
+    },
+    {
+      "id": "s01e04-0355",
+      "episode": "S01E04",
+      "start": 986.3,
+      "end": 987.77,
+      "duration": 1.47,
+      "text": "We'll talk about it next week.",
+      "translation": "我们下周再聊这个话题",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0355.m4a"
+    },
+    {
+      "id": "s01e04-0356",
+      "episode": "S01E04",
+      "start": 987.77,
+      "end": 988.95,
+      "duration": 1.18,
+      "text": "Claire!",
+      "translation": "克莱尔",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "name-only"
+      ]
+    },
+    {
+      "id": "s01e04-0357",
+      "episode": "S01E04",
+      "start": 989.41,
+      "end": 991.28,
+      "duration": 1.87,
+      "text": "Clear the way. Coming through. Ow!",
+      "translation": "让开道 进来",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0358",
+      "episode": "S01E04",
+      "start": 991.41,
+      "end": 993.03,
+      "duration": 1.62,
+      "text": "Coming through. Easy. Easy, fella. Ow!",
+      "translation": "小心点 注意 伙计",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0359",
+      "episode": "S01E04",
+      "start": 993.16,
+      "end": 995.24,
+      "duration": 2.08,
+      "text": "- I need to rest my face. - You're fine.",
+      "translation": "-我的脸得好好歇歇了 -你没事的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0360",
+      "episode": "S01E04",
+      "start": 995.33,
+      "end": 996.58,
+      "duration": 1.25,
+      "text": "You'll be all right. Hang on.",
+      "translation": "你会没事的 坚持住",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0360.m4a"
+    },
+    {
+      "id": "s01e04-0361",
+      "episode": "S01E04",
+      "start": 996.66,
+      "end": 998.41,
+      "duration": 1.75,
+      "text": "- Oh, my God! - Get the door.",
+      "translation": "-老天啊 -进家门了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0362",
+      "episode": "S01E04",
+      "start": 998.5,
+      "end": 999.58,
+      "duration": 1.08,
+      "text": "Ah! Dad?",
+      "translation": "爸",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0363",
+      "episode": "S01E04",
+      "start": 999.67,
+      "end": 1001.04,
+      "duration": 1.37,
+      "text": "Little accident. Nothing big.",
+      "translation": "小事故 没啥大不了的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0364",
+      "episode": "S01E04",
+      "start": 1001.17,
+      "end": 1003.42,
+      "duration": 2.25,
+      "text": "- I was in a plane crash. - What happened?",
+      "translation": "-是飞机失事啦 -发生什么事了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0365",
+      "episode": "S01E04",
+      "start": 1003.5,
+      "end": 1005.63,
+      "duration": 2.13,
+      "text": "We were threading the needle, and somebody moved.",
+      "translation": "我们正在玩穿针引线那一招 有人动了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0365.m4a"
+    },
+    {
+      "id": "s01e04-0366",
+      "episode": "S01E04",
+      "start": 1005.71,
+      "end": 1008.57,
+      "duration": 2.86,
+      "text": "No, I didn't. You did it on purpose.",
+      "translation": "哪有 人家才没有 你是故意的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0366.m4a"
+    },
+    {
+      "id": "s01e04-0367",
+      "episode": "S01E04",
+      "start": 1008.81,
+      "end": 1010.59,
+      "duration": 1.78,
+      "text": "That's the painkiller talking.",
+      "translation": "他吃了止痛药 说胡话呢",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0368",
+      "episode": "S01E04",
+      "start": 1010.59,
+      "end": 1011.63,
+      "duration": 1.04,
+      "text": "He's a little loopy.",
+      "translation": "他有点晕乎乎的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0369",
+      "episode": "S01E04",
+      "start": 1011.95,
+      "end": 1013.98,
+      "duration": 2.03,
+      "text": "- How bad is it? - Well, the wing is cracked,",
+      "translation": "-到底有多严重 -机翼裂了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0370",
+      "episode": "S01E04",
+      "start": 1013.98,
+      "end": 1016.46,
+      "duration": 2.48,
+      "text": "- the propeller's bent, but I can- I can- - I mean Phil.",
+      "translation": "-螺旋桨也折了 但我 -我指菲尔",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0371",
+      "episode": "S01E04",
+      "start": 1016.46,
+      "end": 1019.13,
+      "duration": 2.67,
+      "text": "- I was in a plane crash. - Thanks, Dad.",
+      "translation": "-飞机失事了 -真\"谢谢\"你了 爸",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0372",
+      "episode": "S01E04",
+      "start": 1019.84,
+      "end": 1022.08,
+      "duration": 2.24,
+      "text": "I didn't ask him to be there. He insisted.",
+      "translation": "我又没让他站那 他非得去",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0372.m4a"
+    },
+    {
+      "id": "s01e04-0373",
+      "episode": "S01E04",
+      "start": 1022.32,
+      "end": 1023.91,
+      "duration": 1.59,
+      "text": "He took a chance. This is what happened.",
+      "translation": "他非要冒险 就这样而已",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0373.m4a"
+    },
+    {
+      "id": "s01e04-0374",
+      "episode": "S01E04",
+      "start": 1023.91,
+      "end": 1025.69,
+      "duration": 1.78,
+      "text": "Kind of like the time you ran over his foot.",
+      "translation": "就像你上次开车轧他脚一样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0374.m4a"
+    },
+    {
+      "id": "s01e04-0375",
+      "episode": "S01E04",
+      "start": 1025.69,
+      "end": 1026.68,
+      "duration": 0.99,
+      "text": "You ran over his foot?",
+      "translation": "你轧过他的脚吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0375.m4a"
+    },
+    {
+      "id": "s01e04-0376",
+      "episode": "S01E04",
+      "start": 1026.68,
+      "end": 1028.74,
+      "duration": 2.06,
+      "text": "- That was an accident. - You know, Dad, you did it on purpose.",
+      "translation": "-意外而已 -爸 你明明是故意的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0377",
+      "episode": "S01E04",
+      "start": 1028.74,
+      "end": 1030.6,
+      "duration": 1.86,
+      "text": "We all saw the tire marks on the lawn.",
+      "translation": "我们都看到草坪上的轮胎印了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0377.m4a"
+    },
+    {
+      "id": "s01e04-0378",
+      "episode": "S01E04",
+      "start": 1030.6,
+      "end": 1031.97,
+      "duration": 1.37,
+      "text": "I had just quit smoking.",
+      "translation": "我那会儿刚戒烟嘛",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0378.m4a"
+    },
+    {
+      "id": "s01e04-0379",
+      "episode": "S01E04",
+      "start": 1031.97,
+      "end": 1034.1,
+      "duration": 2.13,
+      "text": "See, you're upsetting your husband.",
+      "translation": "瞧 你说得你老公心烦意乱了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0379.m4a"
+    },
+    {
+      "id": "s01e04-0380",
+      "episode": "S01E04",
+      "start": 1034.1,
+      "end": 1035.57,
+      "duration": 1.47,
+      "text": "- Water. - I'll get it.",
+      "translation": "-水 -我去拿",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0381",
+      "episode": "S01E04",
+      "start": 1039.55,
+      "end": 1040.6,
+      "duration": 1.05,
+      "text": "Ay. You okay?",
+      "translation": "你还好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0382",
+      "episode": "S01E04",
+      "start": 1040.73,
+      "end": 1043.91,
+      "duration": 3.18,
+      "text": "Gloria! Thank God you're here.",
+      "translation": "歌洛莉亚 谢谢老天爷 你在这",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0382.m4a"
+    },
+    {
+      "id": "s01e04-0383",
+      "episode": "S01E04",
+      "start": 1044.04,
+      "end": 1045.45,
+      "duration": 1.41,
+      "text": "Don't worry. I'm here too.",
+      "translation": "别担心 我也在这儿",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0383.m4a"
+    },
+    {
+      "id": "s01e04-0384",
+      "episode": "S01E04",
+      "start": 1046.19,
+      "end": 1047.33,
+      "duration": 1.14,
+      "text": "Who's this?",
+      "translation": "你是谁啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0385",
+      "episode": "S01E04",
+      "start": 1048.69,
+      "end": 1049.96,
+      "duration": 1.27,
+      "text": "Wasn't my fault.",
+      "translation": "不是我的错",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0386",
+      "episode": "S01E04",
+      "start": 1049.96,
+      "end": 1052.48,
+      "duration": 2.52,
+      "text": "I have seen you thread the needle a million times.",
+      "translation": "我见你玩过无数次\"穿针引线\"那一招",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0387",
+      "episode": "S01E04",
+      "start": 1052.48,
+      "end": 1053.33,
+      "duration": 0.85,
+      "text": "You never miss.",
+      "translation": "你从来没失过手",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0388",
+      "episode": "S01E04",
+      "start": 1053.33,
+      "end": 1054.79,
+      "duration": 1.46,
+      "text": "Yeah. I must be getting old.",
+      "translation": "没错 我大概是宝刀已老",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0388.m4a"
+    },
+    {
+      "id": "s01e04-0389",
+      "episode": "S01E04",
+      "start": 1054.79,
+      "end": 1057.04,
+      "duration": 2.25,
+      "text": "Why don't you just admit it? You never liked Phil.",
+      "translation": "你为什么就不愿承认呢 你不喜欢菲尔",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0389.m4a"
+    },
+    {
+      "id": "s01e04-0390",
+      "episode": "S01E04",
+      "start": 1057.04,
+      "end": 1059.0,
+      "duration": 1.96,
+      "text": "Put that down. You do not get a cookie.",
+      "translation": "放下 才不给你吃曲奇饼呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0390.m4a"
+    },
+    {
+      "id": "s01e04-0391",
+      "episode": "S01E04",
+      "start": 1059.0,
+      "end": 1059.68,
+      "duration": 0.68,
+      "text": "I like Phil.",
+      "translation": "我喜欢菲尔",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0392",
+      "episode": "S01E04",
+      "start": 1059.68,
+      "end": 1062.88,
+      "duration": 3.2,
+      "text": "It's just that sometimes he tries too hard, you know?",
+      "translation": "只是有时他有点太刻意讨好我了 你懂吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0392.m4a"
+    },
+    {
+      "id": "s01e04-0393",
+      "episode": "S01E04",
+      "start": 1062.98,
+      "end": 1065.57,
+      "duration": 2.59,
+      "text": "And it's just kind of- irritating.",
+      "translation": "实在有点惹人生气",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0394",
+      "episode": "S01E04",
+      "start": 1065.65,
+      "end": 1067.07,
+      "duration": 1.42,
+      "text": "Okay, maybe he tries too hard",
+      "translation": "好吧 也许他过于刻意讨好",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0395",
+      "episode": "S01E04",
+      "start": 1067.07,
+      "end": 1069.27,
+      "duration": 2.2,
+      "text": "because you make zero effort with him.",
+      "translation": "因为你从来不主动和他亲近",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0396",
+      "episode": "S01E04",
+      "start": 1069.27,
+      "end": 1071.4,
+      "duration": 2.13,
+      "text": "You know what? In the 16 years that we've been married,",
+      "translation": "你知道吗 在我跟他结婚的16年里",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0397",
+      "episode": "S01E04",
+      "start": 1071.49,
+      "end": 1074.87,
+      "duration": 3.38,
+      "text": "have you one time told him that you liked him?",
+      "translation": "你有跟他说过一次你喜欢他吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0398",
+      "episode": "S01E04",
+      "start": 1074.99,
+      "end": 1077.24,
+      "duration": 2.25,
+      "text": "- Not in those exact words, no. - No.",
+      "translation": "-我只是没明确说\"喜欢\"二字嘛 -才不是",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0399",
+      "episode": "S01E04",
+      "start": 1077.33,
+      "end": 1079.25,
+      "duration": 1.92,
+      "text": "Not in any words, Dad.",
+      "translation": "你什么都没说过 爸",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0399.m4a"
+    },
+    {
+      "id": "s01e04-0400",
+      "episode": "S01E04",
+      "start": 1079.25,
+      "end": 1080.83,
+      "duration": 1.58,
+      "text": "How do you think that makes me feel?",
+      "translation": "你知道那让我心里多难过吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0400.m4a"
+    },
+    {
+      "id": "s01e04-0401",
+      "episode": "S01E04",
+      "start": 1083.03,
+      "end": 1084.86,
+      "duration": 1.83,
+      "text": "You've never told your son that you love him?",
+      "translation": "你从没告诉过你的孩子你爱他吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0401.m4a"
+    },
+    {
+      "id": "s01e04-0402",
+      "episode": "S01E04",
+      "start": 1084.86,
+      "end": 1086.88,
+      "duration": 2.02,
+      "text": "Whoa, whoa. When did we jump to love?",
+      "translation": "等等等等 什么时候上升到爱的高度了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0402.m4a"
+    },
+    {
+      "id": "s01e04-0403",
+      "episode": "S01E04",
+      "start": 1087.58,
+      "end": 1089.37,
+      "duration": 1.79,
+      "text": "And he's technically not my son.",
+      "translation": "而且准确地说 他又不是我的孩子",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0404",
+      "episode": "S01E04",
+      "start": 1089.58,
+      "end": 1092.68,
+      "duration": 3.1,
+      "text": "- Ah. So that means that you don't love Manny either? - Sure, I do.",
+      "translation": "-那就是说你也不爱曼尼吗 -当然爱",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0405",
+      "episode": "S01E04",
+      "start": 1093.02,
+      "end": 1094.6,
+      "duration": 1.58,
+      "text": "I mean, believe me, when I was in that park,",
+      "translation": "相信我 当我刚刚在公园玩飞机时",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0406",
+      "episode": "S01E04",
+      "start": 1094.6,
+      "end": 1096.27,
+      "duration": 1.67,
+      "text": "I really wished Manny was there.",
+      "translation": "我真希望曼尼跟我一起",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0406.m4a"
+    },
+    {
+      "id": "s01e04-0407",
+      "episode": "S01E04",
+      "start": 1096.43,
+      "end": 1097.38,
+      "duration": 0.95,
+      "text": "For what?",
+      "translation": "为什么",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0408",
+      "episode": "S01E04",
+      "start": 1097.38,
+      "end": 1100.45,
+      "duration": 3.07,
+      "text": "So that you could fly the plane into his head? Huh?",
+      "translation": "那样你就可以用飞机爆他头了是吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0408.m4a"
+    },
+    {
+      "id": "s01e04-0409",
+      "episode": "S01E04",
+      "start": 1101.66,
+      "end": 1104.34,
+      "duration": 2.68,
+      "text": "Dad, thanks so much for bringing Phil home.",
+      "translation": "爸 多谢你能把菲尔送回家",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0409.m4a"
+    },
+    {
+      "id": "s01e04-0410",
+      "episode": "S01E04",
+      "start": 1104.34,
+      "end": 1107.84,
+      "duration": 3.5,
+      "text": "I found one of your little flaps in his hair. So-",
+      "translation": "我在他头发里发现了你机翼的碎片",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0411",
+      "episode": "S01E04",
+      "start": 1110.86,
+      "end": 1112.52,
+      "duration": 1.66,
+      "text": "Actually, this is called an aileron.",
+      "translation": "实际上 这是副翼的碎片",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0412",
+      "episode": "S01E04",
+      "start": 1112.52,
+      "end": 1114.55,
+      "duration": 2.03,
+      "text": "- It controls... - because that's what matters right now.",
+      "translation": "-用来保持...-现在重要的是菲尔才对吧",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0413",
+      "episode": "S01E04",
+      "start": 1115.66,
+      "end": 1116.71,
+      "duration": 1.05,
+      "text": "Bye, Dad.",
+      "translation": "爸 请你离开",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0414",
+      "episode": "S01E04",
+      "start": 1127.04,
+      "end": 1129.12,
+      "duration": 2.08,
+      "text": "- Hey, Phil. - Jay.",
+      "translation": "-菲尔 -杰",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0415",
+      "episode": "S01E04",
+      "start": 1134.24,
+      "end": 1135.51,
+      "duration": 1.27,
+      "text": "What are you, made of china?",
+      "translation": "你是陶瓷做的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0416",
+      "episode": "S01E04",
+      "start": 1137.44,
+      "end": 1140.4,
+      "duration": 2.96,
+      "text": "Phil, I just want you to know I'm sorry.",
+      "translation": "菲尔 我只想让你明白我的歉意",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0416.m4a"
+    },
+    {
+      "id": "s01e04-0417",
+      "episode": "S01E04",
+      "start": 1141.75,
+      "end": 1144.44,
+      "duration": 2.69,
+      "text": "And whether I, uh, missed or you moved-",
+      "translation": "不管是因为我失手了 还是你动了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0418",
+      "episode": "S01E04",
+      "start": 1144.44,
+      "end": 1146.09,
+      "duration": 1.65,
+      "text": "- I didn't. - either way.",
+      "translation": "-我才没动 -都好",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0419",
+      "episode": "S01E04",
+      "start": 1147.27,
+      "end": 1149.66,
+      "duration": 2.39,
+      "text": "I just want to say that I like you.",
+      "translation": "我只想让你知道 我喜欢你",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0419.m4a"
+    },
+    {
+      "id": "s01e04-0420",
+      "episode": "S01E04",
+      "start": 1149.66,
+      "end": 1152.32,
+      "duration": 2.66,
+      "text": "- Really? - Yeah.",
+      "translation": "-真的吗 -必须的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0421",
+      "episode": "S01E04",
+      "start": 1152.42,
+      "end": 1153.87,
+      "duration": 1.45,
+      "text": "What do you like about me?",
+      "translation": "那你能说说喜欢人家什么地方吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0421.m4a"
+    },
+    {
+      "id": "s01e04-0422",
+      "episode": "S01E04",
+      "start": 1157.59,
+      "end": 1159.66,
+      "duration": 2.07,
+      "text": "You're a nice guy.",
+      "translation": "你是个好人",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0422.m4a"
+    },
+    {
+      "id": "s01e04-0423",
+      "episode": "S01E04",
+      "start": 1159.74,
+      "end": 1162.7,
+      "duration": 2.96,
+      "text": "Try real hard.",
+      "translation": "非常努力",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0424",
+      "episode": "S01E04",
+      "start": 1162.79,
+      "end": 1164.83,
+      "duration": 2.04,
+      "text": "I do.",
+      "translation": "没错",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0425",
+      "episode": "S01E04",
+      "start": 1164.96,
+      "end": 1166.41,
+      "duration": 1.45,
+      "text": "And you're a good dad.",
+      "translation": "你还是个好父亲",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0426",
+      "episode": "S01E04",
+      "start": 1166.41,
+      "end": 1168.39,
+      "duration": 1.98,
+      "text": "Hey, I'm a good dad. Come here.",
+      "translation": "我是个好父亲 快来",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0426.m4a"
+    },
+    {
+      "id": "s01e04-0427",
+      "episode": "S01E04",
+      "start": 1168.64,
+      "end": 1169.7,
+      "duration": 1.06,
+      "text": "Come here, you.",
+      "translation": "让我熊抱一个",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0428",
+      "episode": "S01E04",
+      "start": 1171.48,
+      "end": 1173.03,
+      "duration": 1.55,
+      "text": "This feels so right.",
+      "translation": "感觉真棒",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0428.m4a"
+    },
+    {
+      "id": "s01e04-0429",
+      "episode": "S01E04",
+      "start": 1175.86,
+      "end": 1176.87,
+      "duration": 1.01,
+      "text": "What's going on?",
+      "translation": "什么情况",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0430",
+      "episode": "S01E04",
+      "start": 1177.3,
+      "end": 1178.76,
+      "duration": 1.46,
+      "text": "There was a little accident,",
+      "translation": "发生了一点小意外",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0431",
+      "episode": "S01E04",
+      "start": 1178.76,
+      "end": 1181.82,
+      "duration": 3.06,
+      "text": "but Jay's telling Phil how much he loves him.",
+      "translation": "不过杰在对菲尔表明爱意",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0432",
+      "episode": "S01E04",
+      "start": 1181.82,
+      "end": 1183.51,
+      "duration": 1.69,
+      "text": "Oh. Well, that's nice for Phil.",
+      "translation": "好吧 菲尔走运了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0432.m4a"
+    },
+    {
+      "id": "s01e04-0433",
+      "episode": "S01E04",
+      "start": 1183.51,
+      "end": 1184.17,
+      "duration": 0.66,
+      "text": "That's great,",
+      "translation": "真好",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0434",
+      "episode": "S01E04",
+      "start": 1184.17,
+      "end": 1186.0,
+      "duration": 1.83,
+      "text": "since he's never said anything like that to my boyfriend.",
+      "translation": "他可从来没对我男人表现过爱意呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0435",
+      "episode": "S01E04",
+      "start": 1186.0,
+      "end": 1187.93,
+      "duration": 1.93,
+      "text": "- Let it go. - No, it's not okay.",
+      "translation": "-别提了 -不行 我气不过",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0436",
+      "episode": "S01E04",
+      "start": 1187.93,
+      "end": 1190.68,
+      "duration": 2.75,
+      "text": "No, Mitch is right. Go in there too, Cam. Come on.",
+      "translation": "不 米奇说的对 小卡 你也去抱抱",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0436.m4a"
+    },
+    {
+      "id": "s01e04-0437",
+      "episode": "S01E04",
+      "start": 1190.68,
+      "end": 1192.11,
+      "duration": 1.43,
+      "text": "You're kidding.",
+      "translation": "开什么玩笑",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0438",
+      "episode": "S01E04",
+      "start": 1192.19,
+      "end": 1193.82,
+      "duration": 1.63,
+      "text": "- Jay! - I'm gonna get this.",
+      "translation": "-杰 -我来吧",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0439",
+      "episode": "S01E04",
+      "start": 1193.94,
+      "end": 1195.57,
+      "duration": 1.63,
+      "text": "- Come on in, Cam. - Just a little hug.",
+      "translation": "-来吧 小卡 -就抱一小下",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0440",
+      "episode": "S01E04",
+      "start": 1195.65,
+      "end": 1197.07,
+      "duration": 1.42,
+      "text": "- Get in here. - Say it.",
+      "translation": "-过来吧 -快说",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0441",
+      "episode": "S01E04",
+      "start": 1197.16,
+      "end": 1199.41,
+      "duration": 2.25,
+      "text": "- Whoa! Hey, hey, hey! - Say it! Say it!",
+      "translation": "-我勒个去 -快说 快说",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0442",
+      "episode": "S01E04",
+      "start": 1199.49,
+      "end": 1201.2,
+      "duration": 1.71,
+      "text": "I like you too, Cam.",
+      "translation": "小卡 我也喜欢你",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0442.m4a"
+    },
+    {
+      "id": "s01e04-0443",
+      "episode": "S01E04",
+      "start": 1201.33,
+      "end": 1203.33,
+      "duration": 2.0,
+      "text": "- What do you like about him? - Oh, jez.",
+      "translation": "-那你喜欢他哪一点 -天呐",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0444",
+      "episode": "S01E04",
+      "start": 1203.41,
+      "end": 1204.95,
+      "duration": 1.54,
+      "text": "Where did you get that camera?",
+      "translation": "你从哪弄来的摄影机",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0444.m4a"
+    },
+    {
+      "id": "s01e04-0445",
+      "episode": "S01E04",
+      "start": 1205.08,
+      "end": 1207.71,
+      "duration": 2.63,
+      "text": "Only the greatest store on earth.",
+      "translation": "从世上最给力的商场里买来的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0446",
+      "episode": "S01E04",
+      "start": 1207.79,
+      "end": 1209.2,
+      "duration": 1.41,
+      "text": "Thanks, Dad.",
+      "translation": "谢谢你 爸",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0447",
+      "episode": "S01E04",
+      "start": 1209.78,
+      "end": 1212.07,
+      "duration": 2.29,
+      "text": "Manny, picture! Get in there too.",
+      "translation": "曼尼 照相啦 快来",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0447.m4a"
+    },
+    {
+      "id": "s01e04-0448",
+      "episode": "S01E04",
+      "start": 1212.26,
+      "end": 1214.38,
+      "duration": 2.12,
+      "text": "Get in here, mi amigo. Oh!",
+      "translation": "快来 我的好小伙",
+      "learnable": false,
+      "reviewReasons": [
+        "non-english-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0449",
+      "episode": "S01E04",
+      "start": 1214.38,
+      "end": 1216.22,
+      "duration": 1.84,
+      "text": "Stay still. Say \"Cheese.\"",
+      "translation": "别动 跟我说\"茄子\"",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0450",
+      "episode": "S01E04",
+      "start": 1216.22,
+      "end": 1218.23,
+      "duration": 2.01,
+      "text": "- Don't push it. - Cheese!",
+      "translation": "-别挤我 -茄子",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0451",
+      "episode": "S01E04",
+      "start": 1218.23,
+      "end": 1219.4,
+      "duration": 1.17,
+      "text": "Picture.",
+      "translation": "拍好了",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0452",
+      "episode": "S01E04",
+      "start": 1219.4,
+      "end": 1221.42,
+      "duration": 2.02,
+      "text": "- Cheese! - Cheese. Queso.",
+      "translation": "-茄子 -茄子",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e04-0453",
+      "episode": "S01E04",
+      "start": 1223.09,
+      "end": 1223.93,
+      "duration": 0.84,
+      "text": "Oh, boy!",
+      "translation": "天啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e04-0454",
+      "episode": "S01E04",
+      "start": 1224.91,
+      "end": 1227.77,
+      "duration": 2.86,
+      "text": "Doesn't it feel like these arms could go around the world?",
+      "translation": "不觉得好像伸出手臂就能拥抱全世界吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0454.m4a"
+    },
+    {
+      "id": "s01e04-0455",
+      "episode": "S01E04",
+      "start": 1228.51,
+      "end": 1229.89,
+      "duration": 1.38,
+      "text": "I think I strained something.",
+      "translation": "我想我背部好像扭伤了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0456",
+      "episode": "S01E04",
+      "start": 1233.29,
+      "end": 1235.05,
+      "duration": 1.76,
+      "text": "I always wanted a daughter-",
+      "translation": "我一直想要个女儿",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0457",
+      "episode": "S01E04",
+      "start": 1235.35,
+      "end": 1237.31,
+      "duration": 1.96,
+      "text": "to dress her up in pretty dresses,",
+      "translation": "给她穿漂亮的小裙子",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0458",
+      "episode": "S01E04",
+      "start": 1237.31,
+      "end": 1241.04,
+      "duration": 3.73,
+      "text": "do her hair, her nails, her makeup.",
+      "translation": "给她做头发 美甲 化妆",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0459",
+      "episode": "S01E04",
+      "start": 1243.2,
+      "end": 1246.68,
+      "duration": 3.48,
+      "text": "No one knows this, but for the first year of his life,",
+      "translation": "透露个小秘密 曼尼一岁的时候",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0460",
+      "episode": "S01E04",
+      "start": 1246.68,
+      "end": 1248.05,
+      "duration": 1.37,
+      "text": "I made up Manny like a girl",
+      "translation": "我把他打扮得跟个女孩似的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0461",
+      "episode": "S01E04",
+      "start": 1248.05,
+      "end": 1250.26,
+      "duration": 2.21,
+      "text": "and told everybody that he was my daughter.",
+      "translation": "逢人就说他是我女儿",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0462",
+      "episode": "S01E04",
+      "start": 1251.84,
+      "end": 1253.41,
+      "duration": 1.57,
+      "text": "Ay, but just for a few times.",
+      "translation": "不过也就那么几次",
+      "learnable": false,
+      "reviewReasons": [
+        "non-english-utterance"
+      ]
+    },
+    {
+      "id": "s01e04-0463",
+      "episode": "S01E04",
+      "start": 1253.86,
+      "end": 1255.47,
+      "duration": 1.61,
+      "text": "I didn't want to mess with his head.",
+      "translation": "我可不想让他对自己的性别产生困惑",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e04-0463.m4a"
+    },
+    {
+      "id": "s01e04-0464",
+      "episode": "S01E04",
+      "start": 1256.03,
+      "end": 1256.99,
+      "duration": 0.96,
+      "text": "When he found the pictures,",
+      "translation": "当他看到他小时候的照片",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e04-0465",
+      "episode": "S01E04",
+      "start": 1256.99,
+      "end": 1259.72,
+      "duration": 2.73,
+      "text": "I told him that it was his twin sister who died.",
+      "translation": "我告诉他那是他已经死了的双胞胎姐姐",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    }
+  ]
+}

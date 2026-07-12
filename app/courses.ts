@@ -1,9 +1,11 @@
 import modernFamilyS01E01 from "./data/modern-family-s01e01.json";
 import modernFamilyS01E02 from "./data/modern-family-s01e02.json";
 import modernFamilyS01E03 from "./data/modern-family-s01e03.json";
+import modernFamilyS01E04 from "./data/modern-family-s01e04.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
+import { MODERN_FAMILY_S01E04_HIGHLIGHTS } from "./data/modern-family-s01e04-highlights";
 import { WORDS } from "./words";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -60,6 +62,15 @@ const modernFamilyS01E03Entries = modernFamilyS01E03.entries
     audio: `${basePath}/courses/modern-family/s01e03/${entry.audio}`,
   })) as CourseEntry[];
 
+const modernFamilyS01E04Entries = modernFamilyS01E04.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({
+    ...entry,
+    translation: entry.translation,
+    highlights: MODERN_FAMILY_S01E04_HIGHLIGHTS[entry.id],
+    audio: `${basePath}/courses/modern-family/s01e04/${entry.audio}`,
+  })) as CourseEntry[];
+
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
   text: word,
@@ -105,10 +116,20 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     practiceOrder: "sequential",
     entries: modernFamilyS01E03Entries,
   },
+  {
+    id: "modern-family-s01e04",
+    title: "Modern Family · S01E04",
+    subtitle: `The Incident · ${modernFamilyS01E04Entries.length} learning sentences`,
+    description: "用真实对白练习听力、表达和跟读。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: modernFamilyS01E04Entries,
+  },
 ];
 
 export const IELTS_HIGH_FREQUENCY_COURSE = COURSE_PACKAGES[0];
 export const MODERN_FAMILY_S01E01_COURSE = COURSE_PACKAGES[1];
 export const MODERN_FAMILY_S01E02_COURSE = COURSE_PACKAGES[2];
 export const MODERN_FAMILY_S01E03_COURSE = COURSE_PACKAGES[3];
+export const MODERN_FAMILY_S01E04_COURSE = COURSE_PACKAGES[4];
 export const DEFAULT_COURSE = MODERN_FAMILY_S01E01_COURSE;

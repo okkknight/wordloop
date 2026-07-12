@@ -72,6 +72,26 @@ LOW_VALUE_EXACT = {
     "look at those queens i would have killed with this crowd",
     "okay its time for parents dance", "everybody dance for your baby",
     "make that horsey move go ahead", "i dont know i dont know",
+    "riley morton coming up now", "kelly at second started the inning with a double",
+    "chillin with dylan the villain", "the box says and up",
+    "how do you say in english", "once on a dare he even boxed with an alligator",
+    "you cant box with alligators", "how would they get the gloves on those little claws",
+    "official slogan for snobs", "who says city mouse", "yeah maybe a little bit",
+    "huh confetti and crosscut", "oh my god amazing", "papa ape wants to stop all that but he cant",
+    "the enemy is poachers", "oh hey i got the toothpaste and the soap",
+    "good now we can open that general store", "we met at one of peppers legendary game nights",
+    "wait theres a wine section", "look how cheap they are", "you want to buy a diaper shed",
+    "were those guys now the guys with a diaper shed", "im in the applesauce aisle",
+    "he plays the piano he speaks french", "yeah im sort of like costco",
+    "no no and yes", "why you dont want to wear a dress",
+    "you are haley just years older", "the cute busboy doesnt know that youre smart",
+    "why do you think we are the only people with bread", "so you ever kiss another girl",
+    "clear the way coming through ow", "coming through easy easy fella ow",
+    "little accident nothing big", "thats the painkiller talking", "hes a little loopy",
+    "i have seen you thread the needle a million times", "what are you made of china",
+    "actually this is called an aileron", "only the greatest store on earth",
+    "stay still say cheese", "i think i strained something",
+    "i told him that it was his twin sister who died",
 }
 NON_ENGLISH_PATTERNS = (
     re.compile(r"\bvamos\b", re.IGNORECASE),
@@ -81,6 +101,8 @@ NON_ENGLISH_PATTERNS = (
     re.compile(r"\bmi\s+ni(?:n|ñ)?o\s+peque(?:n|ñ)?o\b", re.IGNORECASE),
     re.compile(r"\blindo\b", re.IGNORECASE),
     re.compile(r"\bmiamor\b", re.IGNORECASE),
+    re.compile(r"\bmi\s+amigo\b", re.IGNORECASE),
+    re.compile(r"^\s*ay\W+but\b", re.IGNORECASE),
 )
 
 
