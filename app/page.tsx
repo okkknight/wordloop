@@ -1269,6 +1269,7 @@ export default function Home() {
         <div className="start-overlay" role="dialog" aria-label="Start study mode">
           <form
             className="start-form"
+            onClick={(event) => event.stopPropagation()}
             onSubmit={(event) => { event.preventDefault(); event.stopPropagation(); startWithIdentity(); }}
           >
             <input
