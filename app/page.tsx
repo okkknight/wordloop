@@ -20,12 +20,28 @@ const MIN_SPEECH_MS = 350;
 const MIN_SENTENCE_WORD_COVERAGE = 0.6;
 const SEGMENT_SETTLE_MS = 900;
 const USER_ID_KEY = "word-loop-user-id";
+const USERNAME_KEY = "word-loop-username";
 const PROGRESS_KEY = "word-loop-progress";
 const SENTENCE_PROGRESS_KEY = "word-loop-sentence-progress";
 const APP_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 function appPath(path: string) {
   return `${APP_BASE_PATH}${path}`;
+}
+
+function progressStorageKey(prefix: string, userId: string) {
+  return `${prefix}:${userId}`;
+}
+
+function anonymousUserId() {
+  let userId = localStorage.getItem(USER_ID_KEY);
+  if (!userId) {
+    userId = typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+      ? crypto.randomUUID()
+      : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    localStorage.setItem(USER_ID_KEY, userId);
+  }
+  return userId;
 }
 
 type ProgressMap = Record<string, number>;
@@ -352,6 +368,9 @@ export default function Home() {
   const [repeatMessage, setRepeatMessage] = useState("READY");
   const [repeatTranscript, setRepeatTranscript] = useState("");
   const [studyTextVisible, setStudyTextVisible] = useState(true);
+  const [activeUserId, setActiveUserId] = useState("");
+  const [usernameInput, setUsernameInput] = useState("");
+  const [usernameError, setUsernameError] = useState("");
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const studyAudioSourceRef = useRef("");
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -503,21 +522,21 @@ export default function Home() {
     }, delay);
   }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, isActiveRepeatTurn, stopListening]);
 
-  const applyProgress = useCallback((nextProgress: ProgressMap) => {
-    setProgress(nextProgress);
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(nextProgress));
-    setWordIndex((current) => {
-      if ((nextProgress[WORDS[current][0]] ?? 0) < MAX_STUDY_COUNT) return current;
-      const replacement = eligibleIndex(nextProgress);
-      return replacement >= 0 ? replacement : current;
-    });
-    setNextWordIndex((current) => {
-      if (current >= 0 && (nextProgress[WORDS[current][0]] ?? 0) < MAX_STUDY_COUNT) return current;
-      return eligibleIndex(nextProgress);
-    });
+  useEffect(() => {
+    const identityTimer = window.setTimeout(() => {
+      const storedUsername = localStorage.getItem(USERNAME_KEY)?.trim().toLowerCase() ?? "";
+      if (/^[a-z]+$/.test(storedUsername)) {
+        setUsernameInput(storedUsername);
+        setActiveUserId(`name:${storedUsername}`);
+        return;
+      }
+      setActiveUserId(anonymousUserId());
+    }, 0);
+    return () => window.clearTimeout(identityTimer);
   }, []);
 
   useEffect(() => {
+    if (!activeUserId) return;
     const readStoredProgress = (key: string) => {
       try {
         return JSON.parse(localStorage.getItem(key) ?? "{}") as ProgressMap;
@@ -525,11 +544,14 @@ export default function Home() {
         return {};
       }
     };
-    const storedWordProgress = readStoredProgress(PROGRESS_KEY);
-    const storedSentenceProgress = readStoredProgress(SENTENCE_PROGRESS_KEY);
-    progressRef.current = storedWordProgress;
-    sentenceProgressRef.current = storedSentenceProgress;
     const hydrateTimer = window.setTimeout(() => {
+      userIdRef.current = activeUserId;
+      const wordStorageKey = progressStorageKey(PROGRESS_KEY, activeUserId);
+      const sentenceStorageKey = progressStorageKey(SENTENCE_PROGRESS_KEY, activeUserId);
+      const storedWordProgress = readStoredProgress(wordStorageKey);
+      const storedSentenceProgress = readStoredProgress(sentenceStorageKey);
+      progressRef.current = storedWordProgress;
+      sentenceProgressRef.current = storedSentenceProgress;
       setProgress(storedWordProgress);
       setSentenceProgress(storedSentenceProgress);
       const initialWord = randomIndex(WORDS.length);
@@ -539,36 +561,34 @@ export default function Home() {
       setSentenceIndex(initialSentence);
       setNextSentenceIndex(eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, storedSentenceProgress, initialSentence, MODERN_FAMILY_S01E01_COURSE.practiceOrder));
       setPaletteIndex(randomIndex(PALETTES.length));
+
+      const mergeWordProgress = (remoteProgress: Array<{ word: string; studyCount: number }>) => {
+      if (userIdRef.current !== activeUserId) return;
+      const mergedProgress = { ...storedWordProgress };
+      for (const item of remoteProgress) mergedProgress[item.word] = Math.max(mergedProgress[item.word] ?? 0, Math.min(MAX_STUDY_COUNT, item.studyCount));
+      progressRef.current = mergedProgress;
+      localStorage.setItem(wordStorageKey, JSON.stringify(mergedProgress));
+      setProgress(mergedProgress);
+      };
+      const mergeSentenceProgress = (remoteProgress: Array<{ itemId: string; studyCount: number }>) => {
+      if (userIdRef.current !== activeUserId) return;
+      const mergedProgress = { ...storedSentenceProgress };
+      for (const item of remoteProgress) mergedProgress[item.itemId] = Math.max(mergedProgress[item.itemId] ?? 0, Math.min(MAX_STUDY_COUNT, item.studyCount));
+      sentenceProgressRef.current = mergedProgress;
+      localStorage.setItem(sentenceStorageKey, JSON.stringify(mergedProgress));
+      setSentenceProgress(mergedProgress);
+      };
+      void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}`))
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((data: { progress: Array<{ word: string; studyCount: number }> }) => mergeWordProgress(data.progress))
+        .catch(() => undefined);
+      void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&courseId=modern-family-s01e01`))
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((data: { progress: Array<{ itemId: string; studyCount: number }> }) => mergeSentenceProgress(data.progress))
+        .catch(() => undefined);
     }, 0);
     return () => window.clearTimeout(hydrateTimer);
-  }, []);
-
-  useEffect(() => {
-    let userId = localStorage.getItem(USER_ID_KEY);
-    if (!userId) {
-      userId = typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
-        ? crypto.randomUUID()
-        : `${Date.now()}-${Math.random().toString(16).slice(2)}`;
-      localStorage.setItem(USER_ID_KEY, userId);
-    }
-    userIdRef.current = userId;
-
-    const cachedProgress = progressRef.current;
-
-    void fetch(appPath(`/api/progress?userId=${encodeURIComponent(userId)}`))
-      .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data: { progress: Array<{ word: string; studyCount: number }> }) => {
-        const mergedProgress = { ...cachedProgress };
-        for (const item of data.progress) {
-          mergedProgress[item.word] = Math.max(
-            mergedProgress[item.word] ?? 0,
-            Math.min(MAX_STUDY_COUNT, item.studyCount),
-          );
-        }
-        applyProgress(mergedProgress);
-      })
-      .catch(() => undefined);
-  }, [applyProgress]);
+  }, [activeUserId]);
 
   useEffect(() => {
     wordIndexRef.current = wordIndex;
@@ -635,8 +655,16 @@ export default function Home() {
       const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, next, index, sentencePracticeOrder);
       sentenceProgressRef.current = next;
       setSentenceProgress(next);
-      localStorage.setItem(SENTENCE_PROGRESS_KEY, JSON.stringify(next));
+      const userId = userIdRef.current;
+      if (userId) localStorage.setItem(progressStorageKey(SENTENCE_PROGRESS_KEY, userId), JSON.stringify(next));
       setNextSentenceIndex(nextEligibleIndex);
+      if (userId) {
+        void fetch(appPath("/api/progress"), {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId, courseId: "modern-family-s01e01", itemId: entry.id }),
+        }).catch(() => undefined);
+      }
       return nextEligibleIndex;
     }
 
@@ -649,10 +677,10 @@ export default function Home() {
 
     progressRef.current = next;
     setProgress(next);
-    localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
+    const userId = userIdRef.current;
+    if (userId) localStorage.setItem(progressStorageKey(PROGRESS_KEY, userId), JSON.stringify(next));
     setNextWordIndex(nextEligibleIndex);
 
-    const userId = userIdRef.current;
     if (!userId) return;
     void fetch(appPath("/api/progress"), {
       method: "POST",
@@ -664,7 +692,7 @@ export default function Home() {
       setProgress((current) => {
         const next = { ...current, [studiedWord]: Math.max(current[studiedWord] ?? 0, data.studyCount) };
         progressRef.current = next;
-        localStorage.setItem(PROGRESS_KEY, JSON.stringify(next));
+        localStorage.setItem(progressStorageKey(PROGRESS_KEY, userId), JSON.stringify(next));
         return next;
       });
       }).catch(() => undefined);
@@ -1042,6 +1070,26 @@ export default function Home() {
     beginRepeatTurn(currentIndexRef.current);
   }, [beginRepeatTurn, playWord, recordStudy, studyMode]);
 
+  const startWithIdentity = useCallback(() => {
+    const username = usernameInput.trim();
+    if (username && !/^[A-Za-z]+$/.test(username)) {
+      setUsernameError("用户名只能使用英文字母");
+      return;
+    }
+    const normalizedUsername = username.toLowerCase();
+    const userId = normalizedUsername ? `name:${normalizedUsername}` : anonymousUserId();
+    if (normalizedUsername) localStorage.setItem(USERNAME_KEY, normalizedUsername);
+    else localStorage.removeItem(USERNAME_KEY);
+    userIdRef.current = userId;
+    progressRef.current = {};
+    sentenceProgressRef.current = {};
+    setProgress({});
+    setSentenceProgress({});
+    setUsernameError("");
+    setActiveUserId(userId);
+    activate();
+  }, [activate, usernameInput]);
+
   const handleModeChange = useCallback((nextMode: StudyMode) => {
     if (nextMode === studyMode) return;
     stopListening();
@@ -1219,10 +1267,29 @@ export default function Home() {
 
       {!activated && (
         <div className="start-overlay" role="dialog" aria-label="Start study mode">
-          <button onClick={(event) => { event.stopPropagation(); activate(); }}>
-            <span className="start-icon" aria-hidden="true">▶</span>
-            {studyMode === "repeat" ? "START REPEAT" : "START LEARNING"}
-          </button>
+          <form
+            className="start-form"
+            onSubmit={(event) => { event.preventDefault(); event.stopPropagation(); startWithIdentity(); }}
+          >
+            <label htmlFor="username">YOUR NAME <span>OPTIONAL</span></label>
+            <input
+              id="username"
+              value={usernameInput}
+              onChange={(event) => { setUsernameInput(event.target.value); setUsernameError(""); }}
+              placeholder="English letters only"
+              autoComplete="username"
+              autoCapitalize="none"
+              spellCheck={false}
+              maxLength={32}
+              aria-describedby={usernameError ? "username-error" : undefined}
+            />
+            {usernameError && <p id="username-error" className="username-error">{usernameError}</p>}
+            <button type="submit">
+              <span className="start-icon" aria-hidden="true">▶</span>
+              START
+            </button>
+            <p className="anonymous-note">留空即匿名学习</p>
+          </form>
           {studyMode !== "repeat" && <p>{activeCourse.description}</p>}
         </div>
       )}
@@ -1331,7 +1398,6 @@ export default function Home() {
                   <span>{course.kind === "word" ? "WORD COURSE" : "DIALOGUE COURSE"}</span>
                   <strong>{course.title}</strong>
                   <small>{course.subtitle}</small>
-                  <p>{course.description}</p>
                 </button>
               ))}
             </div>

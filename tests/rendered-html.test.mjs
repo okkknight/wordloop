@@ -39,6 +39,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   const courses = await read("app/courses.ts");
   const progressRoute = await read("app/api/progress/route.ts");
   const pronunciationRoute = await read("app/api/pronunciation-session/route.ts");
+  const server = await read("server/index.mjs");
 
   assert.match(page, /const \[studyMode, setStudyMode\] = useState<StudyMode>\("repeat"\)/);
   assert.match(page, /studyMode.*repeat/);
@@ -84,6 +85,10 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /renderStudyText\(currentItem\.text, currentItem\.highlights\)/);
   assert.match(page, /learning-highlight/);
   assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);
+  assert.match(page, /YOUR NAME <span>OPTIONAL<\/span>/);
+  assert.match(page, /用户名只能使用英文字母/);
+  assert.match(page, /留空即匿名学习/);
+  assert.match(page, /courseId: "modern-family-s01e01", itemId: entry\.id/);
   assert.match(page, /const SEGMENT_SETTLE_MS = 900/);
   assert.match(page, /repeatTranscriptPartsRef\.current\.set\(payload\.item_id, transcript\)/);
   assert.match(page, /scheduleRepeatTranscriptFinalization\(turnId\)/);
@@ -92,4 +97,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(progressRoute, /export async function POST/);
   assert.match(pronunciationRoute, /OPENAI_REALTIME_URL/);
   assert.match(pronunciationRoute, /gpt-4o-mini-transcribe/);
+  assert.match(server, /const namedUserIdPattern = \/\^name:\[a-z\]\+\$\//);
+  assert.match(server, /CREATE TABLE IF NOT EXISTS course_progress/);
+  assert.match(server, /CREATE TABLE IF NOT EXISTS study_users/);
 });
