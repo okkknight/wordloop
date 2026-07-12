@@ -164,7 +164,7 @@ h1 {
 }
 .learning-highlight {
   text-decoration-line: underline;
-  text-decoration-style: dashed;
+  text-decoration-style: dotted;
   text-decoration-color: color-mix(in srgb, var(--accent) 48%, var(--bg));
   text-decoration-thickness: 1px;
   text-underline-offset: .02em;
