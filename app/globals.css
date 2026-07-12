@@ -153,23 +153,41 @@ button { font: inherit; }
 }
 .start-overlay button:hover { color: var(--bg); background: var(--ink); }
 .start-overlay p { margin: 0; opacity: .65; font: 550 11px/1.4 var(--font-geist-mono); letter-spacing: .04em; }
-.start-form { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.start-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid color-mix(in srgb, var(--ink), transparent 68%);
+  padding: 0 2px 9px;
+}
 .start-form input {
-  width: min(250px, 72vw);
+  width: min(190px, 48vw);
   border: 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--ink), transparent 62%);
   border-radius: 0;
-  padding: 8px 2px;
+  padding: 5px 0;
   color: inherit;
   background: transparent;
-  font: 600 14px/1.2 var(--font-geist-mono);
-  letter-spacing: .06em;
-  text-align: center;
+  font: 600 12px/1.2 var(--font-geist-mono);
+  letter-spacing: .08em;
+  text-align: left;
   outline: 0;
 }
-.start-form input::placeholder { color: currentColor; opacity: .35; font-size: 10px; letter-spacing: .04em; }
-.start-form input:focus { border-color: var(--accent); }
-.start-form .username-error { color: var(--accent); opacity: 1; font-size: 9px; }
+.start-form input::placeholder { color: currentColor; opacity: .38; font-size: 10px; letter-spacing: .1em; }
+.start-form:focus-within { border-color: color-mix(in srgb, var(--accent), transparent 38%); }
+.start-form button {
+  gap: 7px;
+  padding: 5px 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  font-size: 11px;
+  letter-spacing: .12em;
+}
+.start-form button:hover { color: var(--accent); background: transparent; }
+.start-form button .start-icon { font-size: 10px; }
+.start-form .username-error { position: absolute; top: calc(100% + 7px); left: 0; color: var(--accent); opacity: 1; font-size: 9px; }
 .start-icon { color: var(--accent); font-size: 12px; }
 h1 {
   margin: clamp(15px, 2.2vw, 28px) 0 0;
