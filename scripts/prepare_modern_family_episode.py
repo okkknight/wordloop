@@ -35,12 +35,25 @@ LOW_VALUE_EXACT = {
     "yes you are", "no you're not", "i've done my job", "i've done our job",
     "we're very different", "that's cool", "i know", "that's not",
     "phil dunphy yo", "one hat", "my dad", "i mean seriously",
+    "yeah it was her head okay okay", "yes yes i know", "doggy doggy here doggy",
+    "okay there you go", "okay all right thank you thanks that helps okay okay",
+    "june found a stick", "girls who play in university orchestras",
+    "niagara falls and log rides", "who's a dancing queen huh", "where's where's doggy",
+    "i knew it we both knew it", "he got his jaunty butt kicked",
+    "it was a wig actually sort of a ghetto fabulous afro thing",
+    "you thought ghetto fabulous might be medically relevant",
+    "we don't have a lot of pho there", "that was a joke", "oh geez look at that",
+    "what's wrong with me", "hey uh alex you", "emergency assistance this is trina",
+    "daddy wins do you believe in miracles", "kind of the best job in the world",
+    "parking ticket from the mall",
 }
 NON_ENGLISH_PATTERNS = (
     re.compile(r"\bvamos\b", re.IGNORECASE),
     re.compile(r"\ba\s+la\s+derecha\b", re.IGNORECASE),
     re.compile(r"\bmentira\b", re.IGNORECASE),
     re.compile(r"\bay\W+miren\b", re.IGNORECASE),
+    re.compile(r"\bmi\s+ni(?:n|ñ)?o\s+peque(?:n|ñ)?o\b", re.IGNORECASE),
+    re.compile(r"\blindo\b", re.IGNORECASE),
 )
 
 
@@ -97,6 +110,9 @@ def classify(text: str, mixed_caption: bool) -> tuple[bool, list[str]]:
         reasons.append("name-only")
     if any(pattern.search(text) for pattern in NON_ENGLISH_PATTERNS):
         reasons.append("non-english-utterance")
+    first_letter = re.search(r"[A-Za-z]", text)
+    if first_letter and text[first_letter.start()].islower():
+        reasons.append("sentence-fragment")
     terminal = text.rstrip().rstrip('"\'”')
     if (
         terminal.endswith("...")
@@ -115,7 +131,7 @@ def classify(text: str, mixed_caption: bool) -> tuple[bool, list[str]]:
     return not any(reason in blocking for reason in reasons), reasons
 
 
-def parse_ass(path: Path) -> list[dict[str, object]]:
+def parse_ass(path: Path, episode: str) -> list[dict[str, object]]:
     text = path.read_text(encoding="utf-16")
     entries: list[dict[str, object]] = []
     for line in text.splitlines():
@@ -131,8 +147,8 @@ def parse_ass(path: Path) -> list[dict[str, object]]:
             continue
         learnable, reasons = classify(sentence, mixed_caption)
         entries.append({
-            "id": f"s01e01-{len(entries) + 1:04d}",
-            "episode": "S01E01",
+            "id": f"{episode.lower()}-{len(entries) + 1:04d}",
+            "episode": episode,
             "start": start,
             "end": end,
             "duration": round(end - start, 2),
@@ -163,16 +179,20 @@ def main() -> None:
     parser.add_argument("--subtitle", type=Path, required=True)
     parser.add_argument("--audio", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--episode", default="S01E01", help="Episode code, for example S01E02")
     parser.add_argument("--no-audio", action="store_true", help="Only write the manifest")
     args = parser.parse_args()
 
-    entries = parse_ass(args.subtitle)
+    episode = args.episode.upper()
+    if not re.fullmatch(r"S\d{2}E\d{2}", episode):
+        raise ValueError("Episode must use the format S01E02")
+    entries = parse_ass(args.subtitle, episode)
     args.output.mkdir(parents=True, exist_ok=True)
     if not args.no_audio:
         cut_audio(args.audio, args.output / "audio", entries)
     manifest = {
-        "courseId": "modern-family-s01",
-        "episode": "S01E01",
+        "courseId": f"modern-family-{episode.lower()}",
+        "episode": episode,
         "sourceAudio": str(args.audio),
         "sourceSubtitle": str(args.subtitle),
         "entries": entries,
