@@ -18,6 +18,7 @@ const SPEAKING_TIMEOUT_MS = 6_000;
 const SCORING_TIMEOUT_MS = 6_000;
 const MIN_SPEECH_MS = 350;
 const MIN_SENTENCE_WORD_COVERAGE = 0.6;
+const SEGMENT_SETTLE_MS = 900;
 const USER_ID_KEY = "word-loop-user-id";
 const PROGRESS_KEY = "word-loop-progress";
 const SENTENCE_PROGRESS_KEY = "word-loop-sentence-progress";
@@ -349,6 +350,7 @@ export default function Home() {
   const repeatSpeakTimerRef = useRef<number | null>(null);
   const repeatSpeakingTimerRef = useRef<number | null>(null);
   const repeatScoringTimerRef = useRef<number | null>(null);
+  const repeatSegmentSettleTimerRef = useRef<number | null>(null);
   const sessionPromiseRef = useRef<Promise<void> | null>(null);
   const repeatTurnIdRef = useRef(0);
   const activeRepeatTurnRef = useRef(0);
@@ -358,6 +360,9 @@ export default function Home() {
   const feedbackAudioContextRef = useRef<AudioContext | null>(null);
   const repeatListeningArmedRef = useRef(false);
   const repeatSpeechItemIdRef = useRef<string | null>(null);
+  const repeatSpeechItemIdsRef = useRef(new Set<string>());
+  const repeatTranscriptPartsRef = useRef(new Map<string, string>());
+  const repeatSpeechInProgressRef = useRef(false);
   const repeatSpeechStartedAtRef = useRef(0);
   const repeatWordRef = useRef("");
   const repeatStreamRef = useRef<MediaStream | null>(null);
@@ -414,6 +419,7 @@ export default function Home() {
     if (repeatTrackRef.current) repeatTrackRef.current.enabled = false;
     repeatListeningArmedRef.current = false;
     repeatSpeechItemIdRef.current = null;
+    repeatSpeechInProgressRef.current = false;
   }, []);
 
   const prepareFeedbackAudio = useCallback(() => {
@@ -451,7 +457,7 @@ export default function Home() {
   }, []);
 
   const clearRepeatPhaseTimers = useCallback(() => {
-    for (const timerRef of [repeatSpeakTimerRef, repeatSpeakingTimerRef, repeatScoringTimerRef]) {
+    for (const timerRef of [repeatSpeakTimerRef, repeatSpeakingTimerRef, repeatScoringTimerRef, repeatSegmentSettleTimerRef]) {
       if (timerRef.current !== null) {
         window.clearTimeout(timerRef.current);
         timerRef.current = null;
@@ -650,6 +656,41 @@ export default function Home() {
     return nextEligibleIndex;
   }, [sentenceMode, sentencePracticeOrder]);
 
+  const finalizeRepeatTranscript = useCallback((turnId: number) => {
+    if (!isActiveRepeatTurn(turnId) || repeatListeningTurnRef.current !== turnId || repeatSpeechInProgressRef.current) return;
+    const transcript = [...repeatTranscriptPartsRef.current.values()].join(" ").trim();
+    const speechDuration = performance.now() - repeatSpeechStartedAtRef.current;
+    if (speechDuration < MIN_SPEECH_MS || !hasEnoughSpeechEvidence(repeatWordRef.current, transcript)) {
+      playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, false));
+      scheduleRepeatRetry(turnId, 850);
+      return;
+    }
+
+    stopListening();
+    repeatListeningTurnRef.current = null;
+    clearRepeatPhaseTimers();
+    setRepeatTranscript(transcript);
+    const result = scoreTranscript(repeatWordRef.current, transcript);
+    const meetsSentenceCoverage = activeCourseKindRef.current !== "sentence"
+      || sentenceWordCoverage(repeatWordRef.current, transcript) >= MIN_SENTENCE_WORD_COVERAGE;
+    const passed = result.passed && meetsSentenceCoverage;
+    playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, passed));
+    if (!passed) {
+      scheduleRepeatRetry(turnId, 850);
+      return;
+    }
+
+    const upcomingIndex = recordStudy(currentIndexRef.current);
+    repeatAdvanceTargetRef.current = { index: upcomingIndex, sentenceMode, turnId };
+    setRepeatState("passed");
+  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
+
+  const scheduleRepeatTranscriptFinalization = useCallback((turnId: number) => {
+    if (repeatSpeechInProgressRef.current) return;
+    if (repeatSegmentSettleTimerRef.current !== null) window.clearTimeout(repeatSegmentSettleTimerRef.current);
+    repeatSegmentSettleTimerRef.current = window.setTimeout(() => finalizeRepeatTranscript(turnId), SEGMENT_SETTLE_MS);
+  }, [finalizeRepeatTranscript]);
+
   const playWord = useCallback((targetWord: string, onEnded?: () => void, onError?: () => void) => {
     const source = new URL(targetWord.startsWith("/") ? targetWord : appPath(`/audio/${targetWord}.m4a`), window.location.href).href;
     const preloaded = preloadedAudioRef.current;
@@ -724,8 +765,18 @@ export default function Home() {
             window.clearTimeout(repeatSpeakTimerRef.current);
             repeatSpeakTimerRef.current = null;
           }
+          if (repeatScoringTimerRef.current !== null) {
+            window.clearTimeout(repeatScoringTimerRef.current);
+            repeatScoringTimerRef.current = null;
+          }
+          if (repeatSegmentSettleTimerRef.current !== null) {
+            window.clearTimeout(repeatSegmentSettleTimerRef.current);
+            repeatSegmentSettleTimerRef.current = null;
+          }
           repeatSpeechItemIdRef.current = payload.item_id ?? "";
-          repeatSpeechStartedAtRef.current = performance.now();
+          if (payload.item_id) repeatSpeechItemIdsRef.current.add(payload.item_id);
+          if (repeatSpeechStartedAtRef.current === 0) repeatSpeechStartedAtRef.current = performance.now();
+          repeatSpeechInProgressRef.current = true;
           setRepeatMessage("SPEAKING");
           setRepeatState("speaking");
           repeatSpeakingTimerRef.current = window.setTimeout(() => {
@@ -743,6 +794,7 @@ export default function Home() {
             window.clearTimeout(repeatSpeakingTimerRef.current);
             repeatSpeakingTimerRef.current = null;
           }
+          repeatSpeechInProgressRef.current = false;
           setRepeatMessage("SCORING");
           setRepeatState("scoring");
           repeatScoringTimerRef.current = window.setTimeout(() => {
@@ -753,7 +805,7 @@ export default function Home() {
           return;
         }
         if (payload.type !== "conversation.item.input_audio_transcription.completed" && payload.type !== "conversation.item.input_audio_transcription.failed") return;
-        if (!repeatListeningArmedRef.current || (payload.item_id && repeatSpeechItemIdRef.current && payload.item_id !== repeatSpeechItemIdRef.current)) return;
+        if (!repeatListeningArmedRef.current || (payload.item_id && !repeatSpeechItemIdsRef.current.has(payload.item_id))) return;
         if (payload.type === "conversation.item.input_audio_transcription.failed") {
           stopListening();
           repeatListeningTurnRef.current = null;
@@ -764,32 +816,8 @@ export default function Home() {
         }
 
         const transcript = (payload.transcript ?? "").trim();
-        const speechDuration = performance.now() - repeatSpeechStartedAtRef.current;
-        if (speechDuration < MIN_SPEECH_MS || !hasEnoughSpeechEvidence(repeatWordRef.current, transcript)) {
-          stopListening();
-          repeatListeningTurnRef.current = null;
-          clearRepeatPhaseTimers();
-          playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, false));
-          scheduleRepeatRetry(turnId, 850);
-          return;
-        }
-        stopListening();
-        repeatListeningTurnRef.current = null;
-        clearRepeatPhaseTimers();
-        setRepeatTranscript(transcript);
-        const result = scoreTranscript(repeatWordRef.current, transcript);
-        const meetsSentenceCoverage = activeCourseKindRef.current !== "sentence"
-          || sentenceWordCoverage(repeatWordRef.current, transcript) >= MIN_SENTENCE_WORD_COVERAGE;
-        const passed = result.passed && meetsSentenceCoverage;
-        playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, passed));
-        if (!passed) {
-          scheduleRepeatRetry(turnId, 850);
-          return;
-        }
-
-        const upcomingIndex = recordStudy(currentIndexRef.current);
-        repeatAdvanceTargetRef.current = { index: upcomingIndex, sentenceMode, turnId };
-        setRepeatState("passed");
+        if (transcript && payload.item_id) repeatTranscriptPartsRef.current.set(payload.item_id, transcript);
+        scheduleRepeatTranscriptFinalization(turnId);
       });
 
       const openPromise = new Promise<void>((resolve, reject) => {
@@ -812,7 +840,7 @@ export default function Home() {
       if (sessionPromiseRef.current === sessionPromise) sessionPromiseRef.current = null;
     });
     return sessionPromise;
-  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
+  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, scheduleRepeatRetry, scheduleRepeatTranscriptFinalization, stopListening]);
 
   const beginRepeatTurn = useCallback((targetIndex: number) => {
     const isSentenceCourse = activeCourseKindRef.current === "sentence";
@@ -843,6 +871,9 @@ export default function Home() {
     currentAudioRef.current?.pause();
     stopListening();
     repeatListeningTurnRef.current = null;
+    repeatSpeechItemIdsRef.current.clear();
+    repeatTranscriptPartsRef.current.clear();
+    repeatSpeechInProgressRef.current = false;
     if (repeatTranscript) setRepeatTranscript("");
     repeatWordRef.current = target.text;
     setRepeatState("playing");
@@ -858,6 +889,8 @@ export default function Home() {
         clearRepeatPlaybackTimer();
         repeatSpeechItemIdRef.current = null;
         repeatSpeechStartedAtRef.current = 0;
+        repeatSpeechItemIdsRef.current.clear();
+        repeatTranscriptPartsRef.current.clear();
         repeatListeningTurnRef.current = turnId;
         repeatListeningArmedRef.current = true;
         setRepeatState("speak");

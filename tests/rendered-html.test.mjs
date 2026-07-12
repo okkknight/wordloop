@@ -80,6 +80,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /function normalizeCoverageWord/);
   assert.match(page, /word === "'em"/);
   assert.match(page, /sentenceWordCoverage\(repeatWordRef\.current, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
+  assert.match(page, /const SEGMENT_SETTLE_MS = 900/);
+  assert.match(page, /repeatTranscriptPartsRef\.current\.set\(payload\.item_id, transcript\)/);
+  assert.match(page, /scheduleRepeatTranscriptFinalization\(turnId\)/);
   assert.match(page, /scheduleRepeatRetry\(turnId, 1_000, true\)/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);

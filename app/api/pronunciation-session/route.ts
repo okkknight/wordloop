@@ -34,7 +34,7 @@ export async function POST(request: Request) {
           type: "server_vad",
           threshold: 0.45,
           prefix_padding_ms: 200,
-          silence_duration_ms: 250,
+          silence_duration_ms: 700,
         },
         noise_reduction: {
           type: "near_field",

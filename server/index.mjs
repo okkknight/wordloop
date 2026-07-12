@@ -90,7 +90,7 @@ async function handlePronunciationSession(request, response) {
           language: "en",
           prompt: "Expect one spoken English study word or sentence at a time from a vocabulary trainer.",
         },
-        turn_detection: { type: "server_vad", threshold: 0.45, prefix_padding_ms: 200, silence_duration_ms: 250 },
+        turn_detection: { type: "server_vad", threshold: 0.45, prefix_padding_ms: 200, silence_duration_ms: 700 },
         noise_reduction: { type: "near_field" },
       },
     },
