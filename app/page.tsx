@@ -11,14 +11,14 @@ import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
 const PASS_SCORE = 20;
-const AUTO_ADVANCE_MS = 700;
+const AUTO_ADVANCE_MS = 600;
 const PLAYBACK_TIMEOUT_MS = 8_000;
 const SPEAK_TIMEOUT_MS = 6_000;
 const SPEAKING_TIMEOUT_MS = 6_000;
 const SCORING_TIMEOUT_MS = 6_000;
 const MIN_SPEECH_MS = 350;
 const MIN_SENTENCE_WORD_COVERAGE = 0.6;
-const SEGMENT_SETTLE_MS = 900;
+const SEGMENT_SETTLE_MS = 700;
 const USER_ID_KEY = "word-loop-user-id";
 const USERNAME_KEY = "word-loop-username";
 const PROGRESS_KEY = "word-loop-progress";
