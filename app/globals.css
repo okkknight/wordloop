@@ -549,6 +549,45 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
 .manual-next span { color: var(--accent); font-size: 15px; line-height: .6; transition: transform 180ms ease; }
 .manual-next:hover span { transform: translateX(3px); }
 .manual-next:disabled { cursor: default; opacity: .42; }
+.listen-auto-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.listen-auto-toggle.active {
+  color: color-mix(in srgb, var(--accent), var(--ink) 22%);
+}
+.listen-auto-icon {
+  position: relative;
+  display: block;
+  width: 13px;
+  height: 11px;
+}
+.listen-auto-icon::before,
+.listen-auto-icon::after {
+  content: "";
+  position: absolute;
+  background: currentColor;
+}
+.listen-auto-icon::before {
+  left: 0;
+  top: 2px;
+  width: 5px;
+  height: 7px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.listen-auto-icon::after {
+  right: 0;
+  top: 1px;
+  width: 6px;
+  height: 9px;
+  border-radius: 999px;
+  opacity: .85;
+  clip-path: polygon(0 0, 100% 0, 58% 50%, 100% 100%, 0 100%, 42% 50%);
+}
+.listen-auto-toggle.active .listen-auto-icon::after {
+  opacity: 1;
+}
 .current-progress {
   position: fixed;
   left: clamp(24px, 4vw, 56px);

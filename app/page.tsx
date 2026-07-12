@@ -394,6 +394,7 @@ export default function Home() {
   const [repeatMessage, setRepeatMessage] = useState("READY");
   const [repeatTranscript, setRepeatTranscript] = useState("");
   const [textVisibilityMode, setTextVisibilityMode] = useState<TextVisibilityMode>("full");
+  const [listenAutoPlay, setListenAutoPlay] = useState(false);
   const [activeUserId, setActiveUserId] = useState("");
   const [usernameInput, setUsernameInput] = useState("");
   const [usernameError, setUsernameError] = useState("");
@@ -437,6 +438,8 @@ export default function Home() {
   const activeCourseKindRef = useRef<"word" | "sentence">(DEFAULT_COURSE.kind);
   const currentIndexRef = useRef(wordIndex);
   const nextIndexRef = useRef(nextWordIndex);
+  const nextRef = useRef<() => void>(() => undefined);
+  const listenAutoPlayRef = useRef(false);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
   const activeCourse = COURSE_PACKAGES.find((course) => course.id === activeCourseId) ?? DEFAULT_COURSE;
   const sentenceMode = activeCourse.kind === "sentence";
@@ -664,6 +667,10 @@ export default function Home() {
   }, [currentIndex, nextIndex]);
 
   useEffect(() => {
+    listenAutoPlayRef.current = listenAutoPlay;
+  }, [listenAutoPlay]);
+
+  useEffect(() => {
     studyAudioSourceRef.current = currentAudio;
   }, [currentAudio]);
 
@@ -805,6 +812,25 @@ export default function Home() {
     audio.onended = finish;
     audio.onerror = fail;
     void audio.play().catch(fail);
+  }, []);
+
+  const playListenItem = useCallback((targetWord: string) => {
+    playWord(targetWord, () => {
+      if (listenAutoPlayRef.current) nextRef.current();
+    });
+  }, [playWord]);
+
+  const toggleListenAutoPlay = useCallback(() => {
+    const nextEnabled = !listenAutoPlayRef.current;
+    listenAutoPlayRef.current = nextEnabled;
+    setListenAutoPlay(nextEnabled);
+
+    if (!nextEnabled) return;
+
+    const activeAudio = currentAudioRef.current;
+    if (!activeAudio || activeAudio.paused || activeAudio.ended) {
+      nextRef.current();
+    }
   }, []);
 
   const ensurePronunciationSession = useCallback(() => {
@@ -1096,23 +1122,27 @@ export default function Home() {
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
 
     if (studyMode === "listen") {
-      playWord(sentenceMode ? sentenceEntriesRef.current[targetIndex].audio : WORDS[targetIndex][0]);
+      playListenItem(sentenceMode ? sentenceEntriesRef.current[targetIndex].audio : WORDS[targetIndex][0]);
       recordStudy(targetIndex);
       return;
     }
 
     beginRepeatTurn(targetIndex);
-  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playWord, recordStudy, sentenceMode, sentencePracticeOrder, stopListening, studyMode]);
+  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playListenItem, recordStudy, sentenceMode, sentencePracticeOrder, stopListening, studyMode]);
+
+  useEffect(() => {
+    nextRef.current = next;
+  }, [next]);
 
   const activate = useCallback(() => {
     setActivated(true);
     if (studyMode === "listen") {
-      playWord(studyAudioSourceRef.current);
+      playListenItem(studyAudioSourceRef.current);
       recordStudy(currentIndexRef.current);
       return;
     }
     beginRepeatTurn(currentIndexRef.current);
-  }, [beginRepeatTurn, playWord, recordStudy, studyMode]);
+  }, [beginRepeatTurn, playListenItem, recordStudy, studyMode]);
 
   const startWithIdentity = useCallback(() => {
     const username = usernameInput.trim();
@@ -1155,12 +1185,12 @@ export default function Home() {
       clearRepeatPhaseTimers();
       setRepeatState("idle");
       setRepeatMessage("READY");
-      playWord(studyAudioSourceRef.current);
+      playListenItem(studyAudioSourceRef.current);
       return;
     }
 
     beginRepeatTurn(currentIndexRef.current);
-  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playWord, stopListening, studyMode]);
+  }, [activated, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playListenItem, stopListening, studyMode]);
 
   useEffect(() => {
     if (!nextAudio) return;
@@ -1419,6 +1449,27 @@ export default function Home() {
         </div>
       )}
 
+      {studyMode === "listen" && activated && (
+        <div className="repeat-controls listen-controls">
+          <button
+            className={`repeat-control listen-auto-toggle${listenAutoPlay ? " active" : ""}`}
+            onClick={(event) => { event.stopPropagation(); toggleListenAutoPlay(); }}
+            aria-pressed={listenAutoPlay}
+            aria-label={listenAutoPlay ? "Turn off autoplay" : "Turn on autoplay"}
+          >
+            <span aria-hidden="true" className="listen-auto-icon" />
+            <span>{listenAutoPlay ? "AUTOPLAY ON" : "AUTOPLAY"}</span>
+          </button>
+          <button
+            className="manual-next repeat-control"
+            onClick={(event) => { event.stopPropagation(); next(); }}
+            disabled={manualNextIndex < 0}
+          >
+            NEXT {sentenceMode ? "SENTENCE" : "WORD"} <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      )}
+
       {coursePickerOpen && (
         <div
           className="panel-backdrop"
@@ -1495,7 +1546,7 @@ export default function Home() {
       )}
 
       <footer>
-        {studyMode !== "repeat" && (
+        {studyMode !== "repeat" && !activated && (
           <div className="prompt">
             {nextIndex >= 0 ? (
               <><span className="space-key">SPACE</span><span>next {sentenceMode ? "sentence" : "word"}</span></>
