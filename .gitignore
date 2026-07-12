@@ -22,6 +22,13 @@
 .DS_Store
 *.pem
 
+# Local source media and duplicate editor copies. The generated course clips in
+# public/courses are the only media needed by the application.
+/modernfamily/
+/app/globals 2.css
+/app/layout 2.tsx
+/app/page 2.tsx
+
 # debug
 npm-debug.log*
 yarn-debug.log*
