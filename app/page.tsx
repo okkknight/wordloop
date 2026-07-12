@@ -11,7 +11,8 @@ import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 50;
 const PASS_SCORE = 20;
-const AUTO_ADVANCE_MS = 600;
+const AUTO_ADVANCE_MS = 700;
+const LISTEN_AUTOPLAY_DELAY_MS = 500;
 const PLAYBACK_TIMEOUT_MS = 8_000;
 const SPEAK_TIMEOUT_MS = 6_000;
 const SPEAKING_TIMEOUT_MS = 6_000;
@@ -404,6 +405,7 @@ export default function Home() {
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
   const repeatAdvanceTimerRef = useRef<number | null>(null);
+  const listenAutoPlayTimerRef = useRef<number | null>(null);
   const hiddenPauseTimerRef = useRef<number | null>(null);
   const repeatAdvanceTargetRef = useRef<{ index: number; sentenceMode: boolean; turnId: number } | null>(null);
   const repeatRetryTimerRef = useRef<number | null>(null);
@@ -506,6 +508,13 @@ export default function Home() {
     if (repeatAdvanceTimerRef.current !== null) {
       window.clearTimeout(repeatAdvanceTimerRef.current);
       repeatAdvanceTimerRef.current = null;
+    }
+  }, []);
+
+  const clearListenAutoPlayTimer = useCallback(() => {
+    if (listenAutoPlayTimerRef.current !== null) {
+      window.clearTimeout(listenAutoPlayTimerRef.current);
+      listenAutoPlayTimerRef.current = null;
     }
   }, []);
 
@@ -684,6 +693,7 @@ export default function Home() {
 
   useEffect(() => () => {
     clearRepeatAdvanceTimer();
+    clearListenAutoPlayTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
     clearRepeatPhaseTimers();
@@ -694,7 +704,7 @@ export default function Home() {
     dataChannelRef.current?.close();
     repeatStreamRef.current?.getTracks().forEach((track) => track.stop());
     void feedbackAudioContextRef.current?.close();
-  }, [clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
+  }, [clearListenAutoPlayTimer, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
     if (sentenceMode) {
@@ -815,23 +825,30 @@ export default function Home() {
   }, []);
 
   const playListenItem = useCallback((targetWord: string) => {
+    clearListenAutoPlayTimer();
     playWord(targetWord, () => {
-      if (listenAutoPlayRef.current) nextRef.current();
+      if (!listenAutoPlayRef.current) return;
+      listenAutoPlayTimerRef.current = window.setTimeout(() => {
+        if (listenAutoPlayRef.current) nextRef.current();
+      }, LISTEN_AUTOPLAY_DELAY_MS);
     });
-  }, [playWord]);
+  }, [clearListenAutoPlayTimer, playWord]);
 
   const toggleListenAutoPlay = useCallback(() => {
     const nextEnabled = !listenAutoPlayRef.current;
     listenAutoPlayRef.current = nextEnabled;
     setListenAutoPlay(nextEnabled);
 
-    if (!nextEnabled) return;
+    if (!nextEnabled) {
+      clearListenAutoPlayTimer();
+      return;
+    }
 
     const activeAudio = currentAudioRef.current;
     if (!activeAudio || activeAudio.paused || activeAudio.ended) {
       nextRef.current();
     }
-  }, []);
+  }, [clearListenAutoPlayTimer]);
 
   const ensurePronunciationSession = useCallback(() => {
     const dataChannel = dataChannelRef.current;
@@ -1064,17 +1081,18 @@ export default function Home() {
   useEffect(() => {
     const pauseWhenHidden = () => {
       clearHiddenPauseTimer();
-      if (!document.hidden) return;
+      if (!document.hidden || studyMode !== "repeat") return;
       hiddenPauseTimerRef.current = window.setTimeout(() => {
-        if (!document.hidden) return;
+        if (!document.hidden || studyMode !== "repeat") return;
         currentAudioRef.current?.pause();
-        if (studyMode === "repeat" && activated) pauseRepeat();
+        if (activated) pauseRepeat();
       }, 1_500);
     };
     const pauseOnPageHide = () => {
       clearHiddenPauseTimer();
+      if (studyMode !== "repeat") return;
       currentAudioRef.current?.pause();
-      if (studyMode === "repeat" && activated) pauseRepeat();
+      if (activated) pauseRepeat();
     };
     document.addEventListener("visibilitychange", pauseWhenHidden);
     window.addEventListener("pagehide", pauseOnPageHide);

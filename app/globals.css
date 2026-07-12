@@ -394,6 +394,9 @@ h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
 .repeat-card.scoring .repeat-waveform i {
   animation: repeat-wave 880ms ease-in-out infinite;
 }
+.repeat-card.speaking .repeat-waveform {
+  color: color-mix(in srgb, var(--accent) 72%, var(--ink));
+}
 .repeat-waveform i:nth-child(2n) { animation-delay: -220ms !important; }
 .repeat-waveform i:nth-child(3n) { animation-delay: -440ms !important; }
 .repeat-waveform.failure {
