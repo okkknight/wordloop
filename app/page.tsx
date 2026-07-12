@@ -1279,6 +1279,7 @@ export default function Home() {
               autoComplete="username"
               autoCapitalize="none"
               spellCheck={false}
+              autoFocus
               maxLength={32}
               aria-describedby={usernameError ? "username-error" : undefined}
             />
