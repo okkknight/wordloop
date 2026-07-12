@@ -162,6 +162,11 @@ h1 {
   text-wrap: balance;
   animation: enter 520ms cubic-bezier(.2,.8,.2,1) both;
 }
+.learning-highlight {
+  border-bottom: .065em dashed var(--accent);
+  padding-bottom: .035em;
+  text-decoration: none;
+}
 .phonetic-row {
   display: flex;
   align-items: center;

@@ -1,4 +1,5 @@
 import modernFamilyS01E01 from "./data/modern-family-s01e01.json";
+import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { WORDS } from "./words";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -15,6 +16,7 @@ export type CourseEntry = {
   duration?: number;
   learnable?: boolean;
   reviewReasons?: string[];
+  highlights?: readonly string[];
 };
 
 export type CoursePackage = {
@@ -32,6 +34,7 @@ const modernFamilyEntries = modernFamilyS01E01.entries
   .map((entry) => ({
     ...entry,
     translation: entry.translation,
+    highlights: MODERN_FAMILY_S01E01_HIGHLIGHTS[entry.id],
     audio: `${basePath}/courses/modern-family/s01e01/${entry.audio}`,
   })) as CourseEntry[];
 
@@ -56,7 +59,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   {
     id: "modern-family-s01e01",
     title: "Modern Family · S01E01",
-    subtitle: "Pilot · 221 learning sentences",
+    subtitle: `Pilot · ${modernFamilyEntries.length} learning sentences`,
     description: "用真实对白练习听力、表达和跟读。",
     kind: "sentence",
     practiceOrder: "sequential",

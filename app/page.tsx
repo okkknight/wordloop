@@ -138,6 +138,21 @@ function sentenceWordCoverage(target: string, transcript: string) {
   return targetWords.filter((word) => spokenWords.has(word)).length / targetWords.length;
 }
 
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function renderStudyText(text: string, highlights?: readonly string[]) {
+  if (!highlights?.length) return text;
+  const marked = new Set(highlights.map((highlight) => highlight.toLocaleLowerCase()));
+  const matcher = new RegExp(`(${highlights.map(escapeRegExp).join("|")})`, "gi");
+  return text.split(matcher).map((part, index) => (
+    marked.has(part.toLocaleLowerCase())
+      ? <span className="learning-highlight" key={`${part}-${index}`}>{part}</span>
+      : part
+  ));
+}
+
 function playFeedbackTone(context: AudioContext, passed: boolean) {
   const notes = passed ? [660, 880] : [420, 260];
   const startedAt = context.currentTime;
@@ -1219,7 +1234,7 @@ export default function Home() {
           className={sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : undefined}
           aria-hidden={!studyTextVisible}
         >
-          {studyTextVisible ? currentItem.text : <span className="study-text-placeholder">✦ ✦ ✦</span>}
+          {studyTextVisible ? renderStudyText(currentItem.text, currentItem.highlights) : <span className="study-text-placeholder">✦ ✦ ✦</span>}
         </h1>
         <div className="phonetic-row">
           {sentenceMode ? <div className="phonetic sentence-translation">{currentItem.meaning}</div> : <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>}

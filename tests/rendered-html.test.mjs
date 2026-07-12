@@ -65,6 +65,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, \(audio\) => playFeedbackTone\(audio, false\)\)/);
   assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, playRecordingCue\)/);
   assert.match(courses, /modern-family-s01e01/);
+  assert.match(courses, /MODERN_FAMILY_S01E01_HIGHLIGHTS/);
   assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);
   assert.match(courses, /DEFAULT_COURSE = MODERN_FAMILY_S01E01_COURSE/);
@@ -80,6 +81,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /function normalizeCoverageWord/);
   assert.match(page, /word === "'em"/);
   assert.match(page, /sentenceWordCoverage\(repeatWordRef\.current, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
+  assert.match(page, /renderStudyText\(currentItem\.text, currentItem\.highlights\)/);
+  assert.match(page, /learning-highlight/);
   assert.match(page, /const SEGMENT_SETTLE_MS = 900/);
   assert.match(page, /repeatTranscriptPartsRef\.current\.set\(payload\.item_id, transcript\)/);
   assert.match(page, /scheduleRepeatTranscriptFinalization\(turnId\)/);
