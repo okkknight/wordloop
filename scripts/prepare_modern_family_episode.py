@@ -87,7 +87,9 @@ def classify(text: str, mixed_caption: bool) -> tuple[bool, list[str]]:
         reasons.append("short-low-context")
     if normalized in LOW_VALUE_EXACT:
         reasons.append("low-value-utterance")
-    if len(words) <= 2 and all(word in LOW_VALUE for word in words):
+    # Repeated acknowledgements or emotional interjections do not form useful
+    # sentence practice, even when the cue contains several repeated words.
+    if len(words) > 0 and all(word in LOW_VALUE for word in words):
         reasons.append("low-value-utterance")
     if SPEAKER_SEPARATOR.search(text):
         reasons.append("multiple-speakers")

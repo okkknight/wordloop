@@ -3480,9 +3480,10 @@
       "duration": 2.6,
       "text": "No, no, no, no, no. Okay.",
       "translation": "不用不用 好了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0274.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
     },
     {
       "id": "s01e01-0275",
