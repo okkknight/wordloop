@@ -85,9 +85,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /renderStudyText\(currentItem\.text, currentItem\.highlights\)/);
   assert.match(page, /learning-highlight/);
   assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);
-  assert.match(page, /YOUR NAME <span>OPTIONAL<\/span>/);
   assert.match(page, /用户名只能使用英文字母/);
-  assert.match(page, /留空即匿名学习/);
+  assert.match(page, /placeholder="USERNAME"/);
   assert.match(page, /courseId: "modern-family-s01e01", itemId: entry\.id/);
   assert.match(page, /const SEGMENT_SETTLE_MS = 900/);
   assert.match(page, /repeatTranscriptPartsRef\.current\.set\(payload\.item_id, transcript\)/);

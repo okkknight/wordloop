@@ -1271,12 +1271,11 @@ export default function Home() {
             className="start-form"
             onSubmit={(event) => { event.preventDefault(); event.stopPropagation(); startWithIdentity(); }}
           >
-            <label htmlFor="username">YOUR NAME <span>OPTIONAL</span></label>
             <input
               id="username"
               value={usernameInput}
               onChange={(event) => { setUsernameInput(event.target.value); setUsernameError(""); }}
-              placeholder="English letters only"
+              placeholder="USERNAME"
               autoComplete="username"
               autoCapitalize="none"
               spellCheck={false}
@@ -1288,7 +1287,6 @@ export default function Home() {
               <span className="start-icon" aria-hidden="true">▶</span>
               START
             </button>
-            <p className="anonymous-note">留空即匿名学习</p>
           </form>
           {studyMode !== "repeat" && <p>{activeCourse.description}</p>}
         </div>
