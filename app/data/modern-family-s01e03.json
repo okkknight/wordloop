@@ -1,0 +1,5936 @@
+{
+  "courseId": "modern-family-s01e03",
+  "episode": "S01E03",
+  "sourceAudio": "modernfamily/S01E03. .mp3",
+  "sourceSubtitle": "work/modern-family-s01e03/source/S01E03.ass",
+  "entries": [
+    {
+      "id": "s01e03-0001",
+      "episode": "S01E03",
+      "start": 3.74,
+      "end": 6.37,
+      "duration": 2.63,
+      "text": "What's the key to being a great dad?",
+      "translation": "成为伟大父亲的秘诀是什么",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0001.m4a"
+    },
+    {
+      "id": "s01e03-0002",
+      "episode": "S01E03",
+      "start": 8.12,
+      "end": 9.76,
+      "duration": 1.64,
+      "text": "Ah, that's a tough one.",
+      "translation": "有点难回答啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0002.m4a"
+    },
+    {
+      "id": "s01e03-0003",
+      "episode": "S01E03",
+      "start": 10.88,
+      "end": 12.98,
+      "duration": 2.1,
+      "text": "Giving them the freedom to be whatever they want to be.",
+      "translation": "让孩子们自由成长",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0003.m4a"
+    },
+    {
+      "id": "s01e03-0004",
+      "episode": "S01E03",
+      "start": 12.98,
+      "end": 14.77,
+      "duration": 1.79,
+      "text": "- Right. Exactly. - Whether that's a painter,",
+      "translation": "-对 没错 -不管是画家",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0005",
+      "episode": "S01E03",
+      "start": 14.85,
+      "end": 17.35,
+      "duration": 2.5,
+      "text": "a poet, a pilot, a president-",
+      "translation": "诗人 飞行员 总统[董事长]",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0006",
+      "episode": "S01E03",
+      "start": 17.48,
+      "end": 18.79,
+      "duration": 1.31,
+      "text": "And for us, we're gonna",
+      "translation": "对于我们来说 那就",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0007",
+      "episode": "S01E03",
+      "start": 18.79,
+      "end": 21.28,
+      "duration": 2.49,
+      "text": "of a company or of a country.",
+      "translation": "企业领头人 或是一国之君",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0008",
+      "episode": "S01E03",
+      "start": 23.82,
+      "end": 25.74,
+      "duration": 1.92,
+      "text": "Patience.",
+      "translation": "耐心是关键",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0009",
+      "episode": "S01E03",
+      "start": 27.03,
+      "end": 29.53,
+      "duration": 2.5,
+      "text": "Well, be their buddy.",
+      "translation": "很简单 做他们的好朋友",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0009.m4a"
+    },
+    {
+      "id": "s01e03-0010",
+      "episode": "S01E03",
+      "start": 29.66,
+      "end": 32.15,
+      "duration": 2.49,
+      "text": "- That's your answer? - And stay in school.",
+      "translation": "-你的答案就是这个吗 -还有认真学习",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0011",
+      "episode": "S01E03",
+      "start": 32.15,
+      "end": 33.6,
+      "duration": 1.45,
+      "text": "- No. - And don't do drugs.",
+      "translation": "-不对 -还有别吸毒",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0012",
+      "episode": "S01E03",
+      "start": 33.6,
+      "end": 34.17,
+      "duration": 0.57,
+      "text": "No!",
+      "translation": "不对",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0013",
+      "episode": "S01E03",
+      "start": 34.17,
+      "end": 36.0,
+      "duration": 1.83,
+      "text": "- Just give me the answer. - 0h, God.",
+      "translation": "-快告诉我正确答案嘛 -我的天呐",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0014",
+      "episode": "S01E03",
+      "start": 40.66,
+      "end": 41.68,
+      "duration": 1.02,
+      "text": "Still thinking.",
+      "translation": "我再想想",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0015",
+      "episode": "S01E03",
+      "start": 60.21,
+      "end": 61.62,
+      "duration": 1.41,
+      "text": "- Hi, Claire. - Hey.",
+      "translation": "-嗨 克莱尔 -嘿",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0016",
+      "episode": "S01E03",
+      "start": 61.62,
+      "end": 63.42,
+      "duration": 1.8,
+      "text": "- Hey. - Oh, okay.",
+      "translation": "-嘿 -好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0017",
+      "episode": "S01E03",
+      "start": 63.42,
+      "end": 66.74,
+      "duration": 3.32,
+      "text": "Hi. Um, this is my husband, Phil.",
+      "translation": "嗨 这位是我老公 菲尔",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0017.m4a"
+    },
+    {
+      "id": "s01e03-0018",
+      "episode": "S01E03",
+      "start": 66.74,
+      "end": 69.75,
+      "duration": 3.01,
+      "text": "- Hi. - And, uh, that's my son, Luke, right there.",
+      "translation": "-嗨 -那是我儿子 卢克 就那个",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0019",
+      "episode": "S01E03",
+      "start": 69.75,
+      "end": 71.83,
+      "duration": 2.08,
+      "text": "- This is - Desiree.",
+      "translation": "-这位是 -德希蕾",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0020",
+      "episode": "S01E03",
+      "start": 71.83,
+      "end": 73.11,
+      "duration": 1.28,
+      "text": "- Desiree, right. Sorry. - Oh, hi.",
+      "translation": "-德希蕾 对 抱歉 -你好啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0021",
+      "episode": "S01E03",
+      "start": 73.11,
+      "end": 76.24,
+      "duration": 3.13,
+      "text": "- Desiree just moved in down the block. - Fun. Where?",
+      "translation": "-德希蕾刚搬过来 -赞啊 哪户",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0022",
+      "episode": "S01E03",
+      "start": 76.24,
+      "end": 77.41,
+      "duration": 1.17,
+      "text": "- 314. - Oh!",
+      "translation": "-314 -是嘛",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0023",
+      "episode": "S01E03",
+      "start": 77.41,
+      "end": 80.9,
+      "duration": 3.49,
+      "text": "The two-bedroom cottage with the indoor-outdoor family room.",
+      "translation": "就那栋双卧室别墅 室内外兼配家庭活动室",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0024",
+      "episode": "S01E03",
+      "start": 80.9,
+      "end": 82.14,
+      "duration": 1.24,
+      "text": "Very good. How did you-",
+      "translation": "真厉害 你怎么",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0025",
+      "episode": "S01E03",
+      "start": 82.14,
+      "end": 83.42,
+      "duration": 1.28,
+      "text": "Bet you're lovin' that steam shower.",
+      "translation": "你肯定很喜欢那个蒸气浴",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0026",
+      "episode": "S01E03",
+      "start": 83.42,
+      "end": 84.63,
+      "duration": 1.21,
+      "text": "Phil, that's creepy.",
+      "translation": "菲尔 别吓到人家",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0027",
+      "episode": "S01E03",
+      "start": 84.63,
+      "end": 87.72,
+      "duration": 3.09,
+      "text": "0h, sorry. I'm a- I'm a real estate mogul.",
+      "translation": "哦 抱歉 我是 我是个房产大亨",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0028",
+      "episode": "S01E03",
+      "start": 87.8,
+      "end": 90.43,
+      "duration": 2.63,
+      "text": "\"What?\" No, I'm a- I am a real estate agent.",
+      "translation": "什么! 不 我是个房产中介",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0029",
+      "episode": "S01E03",
+      "start": 90.51,
+      "end": 93.15,
+      "duration": 2.64,
+      "text": "We caravanned that house. Great, uh, deck.",
+      "translation": "我们展览过那个房子 装饰很好",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0030",
+      "episode": "S01E03",
+      "start": 93.64,
+      "end": 96.58,
+      "duration": 2.94,
+      "text": "Thanks. I'm just there till my divorce is final.",
+      "translation": "谢谢 我离婚手续办好就搬走了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0030.m4a"
+    },
+    {
+      "id": "s01e03-0031",
+      "episode": "S01E03",
+      "start": 96.58,
+      "end": 98.86,
+      "duration": 2.28,
+      "text": "No, who is coconuts enough to divorce you?",
+      "translation": "怎么会 谁傻到想要跟你离婚",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0032",
+      "episode": "S01E03",
+      "start": 98.86,
+      "end": 101.71,
+      "duration": 2.85,
+      "text": "We gotta go, but we'll see you around.",
+      "translation": "我们该走了 再见了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0032.m4a"
+    },
+    {
+      "id": "s01e03-0033",
+      "episode": "S01E03",
+      "start": 101.71,
+      "end": 103.63,
+      "duration": 1.92,
+      "text": "We'll have to have you over sometime.",
+      "translation": "有时间请你过来玩",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0033.m4a"
+    },
+    {
+      "id": "s01e03-0034",
+      "episode": "S01E03",
+      "start": 103.63,
+      "end": 105.01,
+      "duration": 1.38,
+      "text": "- I'd love it. - All right.",
+      "translation": "-我很愿意 -好啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0035",
+      "episode": "S01E03",
+      "start": 105.21,
+      "end": 106.49,
+      "duration": 1.28,
+      "text": "- Bye. - Bye.",
+      "translation": "-拜拜 -拜拜",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers",
+        "repetitive-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0036",
+      "episode": "S01E03",
+      "start": 107.83,
+      "end": 110.27,
+      "duration": 2.44,
+      "text": "- She's awesome. - No, we are never having her over.",
+      "translation": "-她真不错 -滚 我们不可能请她做客",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0037",
+      "episode": "S01E03",
+      "start": 110.51,
+      "end": 112.54,
+      "duration": 2.03,
+      "text": "Heard she already slept with two dads from the school.",
+      "translation": "听说她已经勾引过两个孩子的爸爸了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0038",
+      "episode": "S01E03",
+      "start": 112.87,
+      "end": 113.99,
+      "duration": 1.12,
+      "text": "- What? - Mm-hmm.",
+      "translation": "-什么 -就是",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0039",
+      "episode": "S01E03",
+      "start": 113.99,
+      "end": 116.05,
+      "duration": 2.06,
+      "text": "That's horrible.",
+      "translation": "品行不端啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0040",
+      "episode": "S01E03",
+      "start": 117.42,
+      "end": 119.47,
+      "duration": 2.05,
+      "text": "- Dad, watch out! - Whoa! Watch it, buddy!",
+      "translation": "-爸爸 小心 -小心点呀 伙计",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0041",
+      "episode": "S01E03",
+      "start": 119.59,
+      "end": 121.26,
+      "duration": 1.67,
+      "text": "- Grandma. - I'm sorry.",
+      "translation": "-老太太 -抱歉",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0042",
+      "episode": "S01E03",
+      "start": 121.34,
+      "end": 123.76,
+      "duration": 2.42,
+      "text": "That still looks like a girl's bike.",
+      "translation": "那车看起来还是像个女孩车",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0042.m4a"
+    },
+    {
+      "id": "s01e03-0043",
+      "episode": "S01E03",
+      "start": 123.85,
+      "end": 125.32,
+      "duration": 1.47,
+      "text": "We'll add more black tape.",
+      "translation": "我们再绑点黑胶带",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0043.m4a"
+    },
+    {
+      "id": "s01e03-0044",
+      "episode": "S01E03",
+      "start": 125.49,
+      "end": 128.6,
+      "duration": 3.11,
+      "text": "My son has been riding his sister's old bike.",
+      "translation": "我儿子一直在骑他姐姐的旧车",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0044.m4a"
+    },
+    {
+      "id": "s01e03-0045",
+      "episode": "S01E03",
+      "start": 128.6,
+      "end": 131.68,
+      "duration": 3.08,
+      "text": "Until he's responsible enough to take care of his own bike.",
+      "translation": "他现在还没能力照料好一辆新车",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0045.m4a"
+    },
+    {
+      "id": "s01e03-0046",
+      "episode": "S01E03",
+      "start": 131.68,
+      "end": 133.68,
+      "duration": 2.0,
+      "text": "Look, he spilled a soda on my computer,",
+      "translation": "他把一瓶苏打水倒在我的电脑上",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0047",
+      "episode": "S01E03",
+      "start": 133.68,
+      "end": 135.36,
+      "duration": 1.68,
+      "text": "he ruined our digital camera",
+      "translation": "他还把家里的数码相机弄坏了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0048",
+      "episode": "S01E03",
+      "start": 135.36,
+      "end": 137.17,
+      "duration": 1.81,
+      "text": "taking pictures of himself underwater.",
+      "translation": "就因为他要给自己拍水下相片",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0049",
+      "episode": "S01E03",
+      "start": 137.17,
+      "end": 139.6,
+      "duration": 2.43,
+      "text": "It's a girl's bike. I'm all for teaching him a lesson.",
+      "translation": "那是辆女车 我也想给他些教训",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0049.m4a"
+    },
+    {
+      "id": "s01e03-0050",
+      "episode": "S01E03",
+      "start": 139.6,
+      "end": 144.08,
+      "duration": 4.48,
+      "text": "But I worry about the ridicule he might get from some loudmouth bully.",
+      "translation": "可我担心大嘴巴的小混混们因此嘲笑他",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0051",
+      "episode": "S01E03",
+      "start": 145.17,
+      "end": 148.1,
+      "duration": 2.93,
+      "text": "Hey, hey, hey. Nice bike, Sally.",
+      "translation": "嘿嘿嘿 车很漂亮啊 小姑娘",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0052",
+      "episode": "S01E03",
+      "start": 148.1,
+      "end": 148.99,
+      "duration": 0.89,
+      "text": "Dad!",
+      "translation": "老爸",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0053",
+      "episode": "S01E03",
+      "start": 148.99,
+      "end": 151.19,
+      "duration": 2.2,
+      "text": "Come on. He looks like Little Bo Peep on that thing.",
+      "translation": "拜托 他骑女式车 像洋娃娃一样",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0054",
+      "episode": "S01E03",
+      "start": 151.19,
+      "end": 153.92,
+      "duration": 2.73,
+      "text": "Actually, not for long. He's getting a new bike this afternoon.",
+      "translation": "不会再这样了 他下午就会有辆新车",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0054.m4a"
+    },
+    {
+      "id": "s01e03-0055",
+      "episode": "S01E03",
+      "start": 153.92,
+      "end": 155.19,
+      "duration": 1.27,
+      "text": "- I am? - Mm-hmm.",
+      "translation": "-真的吗 -没错",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0056",
+      "episode": "S01E03",
+      "start": 155.19,
+      "end": 156.2,
+      "duration": 1.01,
+      "text": "He is?",
+      "translation": "是吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0057",
+      "episode": "S01E03",
+      "start": 157.07,
+      "end": 159.41,
+      "duration": 2.34,
+      "text": "Sometimes a man's gotta put his foot down",
+      "translation": "有时候做男人就应该一往无前",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0058",
+      "episode": "S01E03",
+      "start": 159.41,
+      "end": 161.12,
+      "duration": 1.71,
+      "text": "and do what a man's gotta do.",
+      "translation": "勇敢踏出自己的脚步",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0059",
+      "episode": "S01E03",
+      "start": 161.12,
+      "end": 162.94,
+      "duration": 1.82,
+      "text": "And if the old lady don't like it-",
+      "translation": "如果那个死老太婆不满意",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0060",
+      "episode": "S01E03",
+      "start": 163.29,
+      "end": 165.2,
+      "duration": 1.91,
+      "text": "Honey?",
+      "translation": "亲爱的",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0061",
+      "episode": "S01E03",
+      "start": 167.0,
+      "end": 169.12,
+      "duration": 2.12,
+      "text": "That's too damn bad.",
+      "translation": "让她自己气死算了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0062",
+      "episode": "S01E03",
+      "start": 169.98,
+      "end": 172.6,
+      "duration": 2.62,
+      "text": "Yes. Who's excited, huh?",
+      "translation": "没错 激不激动",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0063",
+      "episode": "S01E03",
+      "start": 172.6,
+      "end": 174.61,
+      "duration": 2.01,
+      "text": "Cam, come on. Hurry up. We're gonna be late.",
+      "translation": "小卡 快点 要迟到了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0063.m4a"
+    },
+    {
+      "id": "s01e03-0064",
+      "episode": "S01E03",
+      "start": 174.61,
+      "end": 177.51,
+      "duration": 2.9,
+      "text": "It's a toddler play class, not a flight to Cabo.",
+      "translation": "只是亲子课而已 又不是要飞到卡波去",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0064.m4a"
+    },
+    {
+      "id": "s01e03-0065",
+      "episode": "S01E03",
+      "start": 177.51,
+      "end": 179.62,
+      "duration": 2.11,
+      "text": "We're gonna be judged enough as the only gay parents there.",
+      "translation": "作为唯一的同性恋夫夫 我们已经赚够口水了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0065.m4a"
+    },
+    {
+      "id": "s01e03-0066",
+      "episode": "S01E03",
+      "start": 179.62,
+      "end": 181.32,
+      "duration": 1.7,
+      "text": "I don't wanna be the late ones too.",
+      "translation": "我不想再给人迟到的坏印象",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0066.m4a"
+    },
+    {
+      "id": "s01e03-0067",
+      "episode": "S01E03",
+      "start": 181.62,
+      "end": 183.82,
+      "duration": 2.2,
+      "text": "Wow! Paisley and pink.",
+      "translation": "天呐 又是旋花呢又是粉色",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0068",
+      "episode": "S01E03",
+      "start": 183.82,
+      "end": 185.96,
+      "duration": 2.14,
+      "text": "Was there something wrong with the fishnet tank top?",
+      "translation": "网眼套头衫为什么不穿了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0069",
+      "episode": "S01E03",
+      "start": 185.96,
+      "end": 187.91,
+      "duration": 1.95,
+      "text": "Obviously not. I'm wearing it underneath.",
+      "translation": "穿啊 穿在里面了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0070",
+      "episode": "S01E03",
+      "start": 188.23,
+      "end": 190.77,
+      "duration": 2.54,
+      "text": "Kidding. Just chill, please. Here.",
+      "translation": "开玩笑的 放松 给你",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0070.m4a"
+    },
+    {
+      "id": "s01e03-0071",
+      "episode": "S01E03",
+      "start": 190.86,
+      "end": 192.72,
+      "duration": 1.86,
+      "text": "I'm sorry. I just wanna make a good first impression.",
+      "translation": "抱歉 我只是想留下良好的第一印象",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0071.m4a"
+    },
+    {
+      "id": "s01e03-0072",
+      "episode": "S01E03",
+      "start": 192.72,
+      "end": 194.62,
+      "duration": 1.9,
+      "text": "You wanna fit in and not terrify the villagers?",
+      "translation": "你是想既融入大家又不吓到他们吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0072.m4a"
+    },
+    {
+      "id": "s01e03-0073",
+      "episode": "S01E03",
+      "start": 194.62,
+      "end": 195.36,
+      "duration": 0.74,
+      "text": "Hey, come on.",
+      "translation": "嘿 别闹了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0074",
+      "episode": "S01E03",
+      "start": 195.36,
+      "end": 197.22,
+      "duration": 1.86,
+      "text": "Today is about Lily, all right?",
+      "translation": "今天莉莉才是主角 好不好",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0074.m4a"
+    },
+    {
+      "id": "s01e03-0075",
+      "episode": "S01E03",
+      "start": 197.93,
+      "end": 199.87,
+      "duration": 1.94,
+      "text": "Her future best friend might be in that class,",
+      "translation": "那个班上可能就有她以后最要好的朋友",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0076",
+      "episode": "S01E03",
+      "start": 199.87,
+      "end": 202.15,
+      "duration": 2.28,
+      "text": "and I don't wanna rub anyone the wrong way.",
+      "translation": "我可不想一开始就惹谁不高兴",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0077",
+      "episode": "S01E03",
+      "start": 202.15,
+      "end": 205.26,
+      "duration": 3.11,
+      "text": "Can you please just change your shirt?",
+      "translation": "能换件衬衫吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0077.m4a"
+    },
+    {
+      "id": "s01e03-0078",
+      "episode": "S01E03",
+      "start": 205.45,
+      "end": 206.49,
+      "duration": 1.04,
+      "text": "Fine. You know what?",
+      "translation": "好吧 你猜怎么着",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0079",
+      "episode": "S01E03",
+      "start": 206.49,
+      "end": 207.88,
+      "duration": 1.39,
+      "text": "I'll just go put on a pair of khakis,",
+      "translation": "我这就去换上一条卡其布裤子",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0080",
+      "episode": "S01E03",
+      "start": 207.88,
+      "end": 209.45,
+      "duration": 1.57,
+      "text": "maybe a polo shirt, and everybody will think",
+      "translation": "高尔夫衬衫 让每个人都以为",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0081",
+      "episode": "S01E03",
+      "start": 209.45,
+      "end": 211.04,
+      "duration": 1.59,
+      "text": "we're a couple straight golfin' buddies...",
+      "translation": "我们只是一对直男高尔夫球友",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0082",
+      "episode": "S01E03",
+      "start": 211.04,
+      "end": 212.65,
+      "duration": 1.61,
+      "text": "who just decided to have a kid together.",
+      "translation": "碰巧决定一起养个娃",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0083",
+      "episode": "S01E03",
+      "start": 215.66,
+      "end": 217.28,
+      "duration": 1.62,
+      "text": "Hey, I called that place in Napa and",
+      "translation": "我给纳巴那边打电话了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0084",
+      "episode": "S01E03",
+      "start": 217.28,
+      "end": 219.54,
+      "duration": 2.26,
+      "text": "got us upgraded to a villa with a hot tub.",
+      "translation": "把房间升级成带温泉浴缸的套房",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0085",
+      "episode": "S01E03",
+      "start": 219.85,
+      "end": 222.23,
+      "duration": 2.38,
+      "text": "So pack whatever you wear in a hot tub.",
+      "translation": "所以准备点泡温泉的衣服吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0085.m4a"
+    },
+    {
+      "id": "s01e03-0086",
+      "episode": "S01E03",
+      "start": 223.28,
+      "end": 225.63,
+      "duration": 2.35,
+      "text": "I usually wear nothing when I'm in a hot tub.",
+      "translation": "我通常泡温泉都不穿衣服的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0087",
+      "episode": "S01E03",
+      "start": 226.6,
+      "end": 229.19,
+      "duration": 2.59,
+      "text": "And my college roommate's wife just had to get a new hip.",
+      "translation": "那我同事的老婆就得做个屁股整形了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0088",
+      "episode": "S01E03",
+      "start": 229.48,
+      "end": 230.59,
+      "duration": 1.11,
+      "text": "Sucker.",
+      "translation": "弱死了",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0089",
+      "episode": "S01E03",
+      "start": 231.1,
+      "end": 234.45,
+      "duration": 3.35,
+      "text": "Manny's father is taking him for a couple of days to Disneyland,",
+      "translation": "曼尼的爸爸带他去迪斯尼玩了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0090",
+      "episode": "S01E03",
+      "start": 234.45,
+      "end": 236.78,
+      "duration": 2.33,
+      "text": "so we're gonna go to the wine country.",
+      "translation": "所以我们就脱身去葡萄酒园",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0091",
+      "episode": "S01E03",
+      "start": 236.78,
+      "end": 239.51,
+      "duration": 2.73,
+      "text": "We're gonna drink some wine, eat some good food.",
+      "translation": "去喝点小酒 吃些美食",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0091.m4a"
+    },
+    {
+      "id": "s01e03-0092",
+      "episode": "S01E03",
+      "start": 239.51,
+      "end": 241.05,
+      "duration": 1.54,
+      "text": "You know, we would do something like this",
+      "translation": "原本我们可以经常组织此类小资活动",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0093",
+      "episode": "S01E03",
+      "start": 241.05,
+      "end": 243.99,
+      "duration": 2.94,
+      "text": "a lot more often if it wasn't for, you know, Manny.",
+      "translation": "但是 因为曼尼 就少了很多",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0094",
+      "episode": "S01E03",
+      "start": 244.12,
+      "end": 247.7,
+      "duration": 3.58,
+      "text": "- He's good. He keep us grounded. - Yeah.",
+      "translation": "-他很好 他让我们过着朴实的生活 -是啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0095",
+      "episode": "S01E03",
+      "start": 245.55,
+      "end": 250.22,
+      "duration": 4.67,
+      "text": "[Grounded：朴实的稳定的/搁浅停飞 ]",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "stage-direction",
+        "mixed-language-caption",
+        "too-short",
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0096",
+      "episode": "S01E03",
+      "start": 247.79,
+      "end": 250.0,
+      "duration": 2.21,
+      "text": "Like fog at an airport.",
+      "translation": "就像机场起雾 飞机停飞",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0097",
+      "episode": "S01E03",
+      "start": 250.08,
+      "end": 251.48,
+      "duration": 1.4,
+      "text": "Limo gets here at 4:00.",
+      "translation": "豪华轿车4点到",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0098",
+      "episode": "S01E03",
+      "start": 251.48,
+      "end": 253.33,
+      "duration": 1.85,
+      "text": "This morning, I thought I'd go to the club, hit a few balls.",
+      "translation": "早上嘛 我想去俱乐部打会球",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0098.m4a"
+    },
+    {
+      "id": "s01e03-0099",
+      "episode": "S01E03",
+      "start": 253.42,
+      "end": 256.21,
+      "duration": 2.79,
+      "text": "No! What about the fan in Manny's room?",
+      "translation": "不行 曼尼房间的风扇怎么办",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0099.m4a"
+    },
+    {
+      "id": "s01e03-0100",
+      "episode": "S01E03",
+      "start": 256.21,
+      "end": 258.23,
+      "duration": 2.02,
+      "text": "0h, yeah. Call a guy.",
+      "translation": "那个 叫个人修吧",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0101",
+      "episode": "S01E03",
+      "start": 258.52,
+      "end": 261.4,
+      "duration": 2.88,
+      "text": "No! You're supposed to do it with him.",
+      "translation": "不行 你该跟他一起修",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0101.m4a"
+    },
+    {
+      "id": "s01e03-0102",
+      "episode": "S01E03",
+      "start": 261.4,
+      "end": 264.39,
+      "duration": 2.99,
+      "text": "It's important that we teach him how to do things for himself.",
+      "translation": "我们得学着教他做些事情",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0102.m4a"
+    },
+    {
+      "id": "s01e03-0103",
+      "episode": "S01E03",
+      "start": 264.39,
+      "end": 267.28,
+      "duration": 2.89,
+      "text": "In my culture, men take great pride in doing physical labor.",
+      "translation": "在我的家乡 男人以干体力活为荣",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0104",
+      "episode": "S01E03",
+      "start": 267.28,
+      "end": 270.45,
+      "duration": 3.17,
+      "text": "I know. That's why I hire people from your culture.",
+      "translation": "我知道 所以我才雇你们那儿的人给我干活",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0105",
+      "episode": "S01E03",
+      "start": 272.41,
+      "end": 274.01,
+      "duration": 1.6,
+      "text": "You're too funny.",
+      "translation": "你真搞笑呀",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0106",
+      "episode": "S01E03",
+      "start": 274.01,
+      "end": 276.14,
+      "duration": 2.13,
+      "text": "I'm gonna share that one with my next husband",
+      "translation": "我跟我下个老公狂花你的钱的时候",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0107",
+      "episode": "S01E03",
+      "start": 276.14,
+      "end": 277.73,
+      "duration": 1.59,
+      "text": "when we're spending all your money.",
+      "translation": "我就给他讲这个笑话",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0108",
+      "episode": "S01E03",
+      "start": 279.96,
+      "end": 283.26,
+      "duration": 3.3,
+      "text": "- Dad, this is the coolest bike ever. - Awesome.",
+      "translation": "-爸爸 这是全世界最酷的车 -必须的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0109",
+      "episode": "S01E03",
+      "start": 283.99,
+      "end": 285.67,
+      "duration": 1.68,
+      "text": "So, listen, buddy.",
+      "translation": "听着 伙计",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0110",
+      "episode": "S01E03",
+      "start": 286.46,
+      "end": 287.73,
+      "duration": 1.27,
+      "text": "Certain members of this family",
+      "translation": "家里有些人",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0111",
+      "episode": "S01E03",
+      "start": 287.73,
+      "end": 290.01,
+      "duration": 2.28,
+      "text": "don't think you can take care of this bad boy.",
+      "translation": "认为你照料不好这辆车",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0112",
+      "episode": "S01E03",
+      "start": 290.01,
+      "end": 292.24,
+      "duration": 2.23,
+      "text": "- You mean Mom? - Your words, not mine.",
+      "translation": "-你是说妈妈吗 -你说的 我可没说",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0113",
+      "episode": "S01E03",
+      "start": 292.24,
+      "end": 295.46,
+      "duration": 3.22,
+      "text": "Look, uh, your mom and I are a team,",
+      "translation": "你妈妈和我是一个整体",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0114",
+      "episode": "S01E03",
+      "start": 295.82,
+      "end": 298.37,
+      "duration": 2.55,
+      "text": "and she- we feel like this is a chance",
+      "translation": "而她 我们 觉得这是个好机会",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0115",
+      "episode": "S01E03",
+      "start": 298.37,
+      "end": 300.96,
+      "duration": 2.59,
+      "text": "for you to show some responsibility.",
+      "translation": "让你学会负起责任",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0116",
+      "episode": "S01E03",
+      "start": 301.27,
+      "end": 303.15,
+      "duration": 1.88,
+      "text": "Don't make us look like jerks here.",
+      "translation": "别让我们失望",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0117",
+      "episode": "S01E03",
+      "start": 303.45,
+      "end": 305.48,
+      "duration": 2.03,
+      "text": "- I won't. - Okay.",
+      "translation": "-不会的 -很好",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0118",
+      "episode": "S01E03",
+      "start": 305.83,
+      "end": 307.42,
+      "duration": 1.59,
+      "text": "- One more rule. - What?",
+      "translation": "-最后一点要求 -什么",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0119",
+      "episode": "S01E03",
+      "start": 307.66,
+      "end": 310.34,
+      "duration": 2.68,
+      "text": "Have, like, three butt-loads of fun.",
+      "translation": "给我 玩得超级无敌开心",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0120",
+      "episode": "S01E03",
+      "start": 310.34,
+      "end": 311.38,
+      "duration": 1.04,
+      "text": "Thanks, Dad.",
+      "translation": "谢谢爸爸",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0121",
+      "episode": "S01E03",
+      "start": 320.82,
+      "end": 324.04,
+      "duration": 3.22,
+      "text": "- So let's do this. - 0kay, but I need to be done by 3:00.",
+      "translation": "-我们开始吧 -先说好3点前要弄完",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0122",
+      "episode": "S01E03",
+      "start": 324.04,
+      "end": 325.71,
+      "duration": 1.67,
+      "text": "That's when my dad's picking me up.",
+      "translation": "我爸爸3点来接我",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0123",
+      "episode": "S01E03",
+      "start": 326.15,
+      "end": 327.33,
+      "duration": 1.18,
+      "text": "Hey, if we're not done by 3:00,",
+      "translation": "如果3点还搞不定",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0124",
+      "episode": "S01E03",
+      "start": 327.33,
+      "end": 329.04,
+      "duration": 1.71,
+      "text": "I'm gonna tie a noose on this thing.",
+      "translation": "我就直接吊死",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0125",
+      "episode": "S01E03",
+      "start": 329.24,
+      "end": 331.03,
+      "duration": 1.79,
+      "text": "In Colombia there's a saying:",
+      "translation": "在哥伦比亚有句谚语",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0126",
+      "episode": "S01E03",
+      "start": 331.03,
+      "end": 334.53,
+      "duration": 3.5,
+      "text": "\"If you have two stubborn burros that don't like each other,",
+      "translation": "\"如果两头犟驴合不来",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0127",
+      "episode": "S01E03",
+      "start": 334.53,
+      "end": 336.87,
+      "duration": 2.34,
+      "text": "you tie them to the same cart.\"",
+      "translation": "就把它们绑在一辆车上\"",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0128",
+      "episode": "S01E03",
+      "start": 337.02,
+      "end": 339.43,
+      "duration": 2.41,
+      "text": "The ceiling fan is the cart.",
+      "translation": "吊扇就是那辆车",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0129",
+      "episode": "S01E03",
+      "start": 340.31,
+      "end": 342.26,
+      "duration": 1.95,
+      "text": "My dad's taking me on Space Mountain.",
+      "translation": "我爸爸要带我去玩太空过山车",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0130",
+      "episode": "S01E03",
+      "start": 342.26,
+      "end": 345.37,
+      "duration": 3.11,
+      "text": "It's supposed to be really fast, but he's not scared of anything.",
+      "translation": "那东西超快 不过我爸爸什么都不怕",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0130.m4a"
+    },
+    {
+      "id": "s01e03-0131",
+      "episode": "S01E03",
+      "start": 345.37,
+      "end": 347.32,
+      "duration": 1.95,
+      "text": "He doesn't even wear a seat belt when he drives.",
+      "translation": "他玩的时候甚至都不系安全带",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0131.m4a"
+    },
+    {
+      "id": "s01e03-0132",
+      "episode": "S01E03",
+      "start": 347.32,
+      "end": 348.92,
+      "duration": 1.6,
+      "text": "Wow. How 'bout that?",
+      "translation": "哇噢 也太厉害了吧",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0133",
+      "episode": "S01E03",
+      "start": 349.17,
+      "end": 350.51,
+      "duration": 1.34,
+      "text": "- Killed a bear once. - Really?",
+      "translation": "-他还杀过熊 -真的假的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0134",
+      "episode": "S01E03",
+      "start": 350.51,
+      "end": 352.43,
+      "duration": 1.92,
+      "text": "Was the bear sittin' in the passenger seat?",
+      "translation": "熊也坐在过山车上吗",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0135",
+      "episode": "S01E03",
+      "start": 353.89,
+      "end": 356.69,
+      "duration": 2.8,
+      "text": "Read me the instructions.",
+      "translation": "给我念下说明书",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0135.m4a"
+    },
+    {
+      "id": "s01e03-0136",
+      "episode": "S01E03",
+      "start": 356.77,
+      "end": 359.82,
+      "duration": 3.05,
+      "text": "\"Safety tips. Warning: To reduce the risk of electrical shock\"-",
+      "translation": "\"安全须知 警告:为避免遭受电击\"",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0137",
+      "episode": "S01E03",
+      "start": 359.9,
+      "end": 361.18,
+      "duration": 1.28,
+      "text": "We can skip that.",
+      "translation": "跳过那段废话吧",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0138",
+      "episode": "S01E03",
+      "start": 362.99,
+      "end": 364.99,
+      "duration": 2.0,
+      "text": "Uh, \"Failure to heed these warnings",
+      "translation": "\"若不听从警告",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0139",
+      "episode": "S01E03",
+      "start": 364.99,
+      "end": 366.87,
+      "duration": 1.88,
+      "text": "can lead to serious injury or death.\"",
+      "translation": "可导致重伤 甚至死亡\"",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0140",
+      "episode": "S01E03",
+      "start": 366.87,
+      "end": 368.54,
+      "duration": 1.67,
+      "text": "You know, you worry too much. You know that.",
+      "translation": "你总是瞎担心 你自己知道",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0140.m4a"
+    },
+    {
+      "id": "s01e03-0141",
+      "episode": "S01E03",
+      "start": 368.54,
+      "end": 370.16,
+      "duration": 1.62,
+      "text": "Nobody's gonna get shocked.",
+      "translation": "不会有人被电到的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0142",
+      "episode": "S01E03",
+      "start": 370.24,
+      "end": 372.49,
+      "duration": 2.25,
+      "text": "One time my dad was struck by lightning.",
+      "translation": "有一次我爸爸被雷劈了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0143",
+      "episode": "S01E03",
+      "start": 372.58,
+      "end": 375.16,
+      "duration": 2.58,
+      "text": "That's why he can drink as much as he wants.",
+      "translation": "所以他现在喝多少酒都不醉",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0144",
+      "episode": "S01E03",
+      "start": 375.25,
+      "end": 377.67,
+      "duration": 2.42,
+      "text": "Manny thinks his dad is like Superman.",
+      "translation": "曼尼觉得他爸爸是个超人",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0145",
+      "episode": "S01E03",
+      "start": 377.75,
+      "end": 380.34,
+      "duration": 2.59,
+      "text": "The truth? He's a total flake.",
+      "translation": "可真相呢 他根本不值一提",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0146",
+      "episode": "S01E03",
+      "start": 380.42,
+      "end": 382.63,
+      "duration": 2.21,
+      "text": "In fact, the only way he's like Superman...",
+      "translation": "事实上 他唯一像超人的方面",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0147",
+      "episode": "S01E03",
+      "start": 382.71,
+      "end": 385.3,
+      "duration": 2.59,
+      "text": "is that they both landed in this country illegally.",
+      "translation": "就是他们都是非法移民",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0148",
+      "episode": "S01E03",
+      "start": 388.49,
+      "end": 389.81,
+      "duration": 1.32,
+      "text": "I can't believe I'm so nervous.",
+      "translation": "我怎么这么紧张呀",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0148.m4a"
+    },
+    {
+      "id": "s01e03-0149",
+      "episode": "S01E03",
+      "start": 389.81,
+      "end": 391.97,
+      "duration": 2.16,
+      "text": "They're gonna love us. Let's just be ourselves.",
+      "translation": "他们会喜欢我们的 我们就表现真我就行了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0149.m4a"
+    },
+    {
+      "id": "s01e03-0150",
+      "episode": "S01E03",
+      "start": 391.97,
+      "end": 394.6,
+      "duration": 2.63,
+      "text": "0r a slightly toned-down version of ourselves.",
+      "translation": "或者稍微低调一些",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0151",
+      "episode": "S01E03",
+      "start": 394.6,
+      "end": 398.04,
+      "duration": 3.44,
+      "text": "I just don't want this to become an episode of \"The Cam Show.\"",
+      "translation": "我只是不想这又变成\"小卡秀\"",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0152",
+      "episode": "S01E03",
+      "start": 398.04,
+      "end": 399.83,
+      "duration": 1.79,
+      "text": "- 0h, my gosh. People love \"The Cam Show.\" - Yes, I know.",
+      "translation": "-天呐 大家都喜欢\"小卡秀\" -我知道",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0153",
+      "episode": "S01E03",
+      "start": 399.83,
+      "end": 401.19,
+      "duration": 1.36,
+      "text": "- You watch \"The Cam Show.\" - I do watch it.",
+      "translation": "-你也看\"小卡秀\" -我确实看",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0154",
+      "episode": "S01E03",
+      "start": 401.19,
+      "end": 402.86,
+      "duration": 1.67,
+      "text": "- It's appointment viewing. - Okay.",
+      "translation": "-是提前预约才能看到 -好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0155",
+      "episode": "S01E03",
+      "start": 402.98,
+      "end": 405.35,
+      "duration": 2.37,
+      "text": "- Hi! - Hi! Are you here for Toddler Time?",
+      "translation": "-你好 -你们好 是参加亲子课的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0156",
+      "episode": "S01E03",
+      "start": 405.35,
+      "end": 407.38,
+      "duration": 2.03,
+      "text": "Yes. I-I'm Mitchell. This is Cameron.",
+      "translation": "是的 我是米奇尔 这是卡梅隆",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0156.m4a"
+    },
+    {
+      "id": "s01e03-0157",
+      "episode": "S01E03",
+      "start": 407.38,
+      "end": 409.08,
+      "duration": 1.7,
+      "text": "- And this here is Lily. - Hello.",
+      "translation": "-还有我们的女儿莉莉 -你好",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0158",
+      "episode": "S01E03",
+      "start": 409.08,
+      "end": 411.47,
+      "duration": 2.39,
+      "text": "0h, well! Welcome.",
+      "translation": "真好 欢迎呀",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0159",
+      "episode": "S01E03",
+      "start": 411.82,
+      "end": 414.47,
+      "duration": 2.65,
+      "text": "We're all over here taking turns blowing bubbles.",
+      "translation": "我们在这儿轮流吹气球呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0159.m4a"
+    },
+    {
+      "id": "s01e03-0160",
+      "episode": "S01E03",
+      "start": 414.47,
+      "end": 418.63,
+      "duration": 4.16,
+      "text": "Well, how nice for... the babies.",
+      "translation": "多好玩啊 对小孩子而言",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0160.m4a"
+    },
+    {
+      "id": "s01e03-0161",
+      "episode": "S01E03",
+      "start": 419.0,
+      "end": 419.82,
+      "duration": 0.82,
+      "text": "Mm-hmm.",
+      "translation": "是啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0162",
+      "episode": "S01E03",
+      "start": 422.63,
+      "end": 424.59,
+      "duration": 1.96,
+      "text": "This is gonna be really difficult.",
+      "translation": "恐怕我会招架不住啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0162.m4a"
+    },
+    {
+      "id": "s01e03-0163",
+      "episode": "S01E03",
+      "start": 436.31,
+      "end": 438.62,
+      "duration": 2.31,
+      "text": "Ten minutes after making a promise to me,",
+      "translation": "才跟我保证 过了不到10分钟",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0164",
+      "episode": "S01E03",
+      "start": 438.62,
+      "end": 440.07,
+      "duration": 1.45,
+      "text": "he leaves his bike unlocked.",
+      "translation": "他就把车不上锁扔在这里",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0165",
+      "episode": "S01E03",
+      "start": 440.07,
+      "end": 442.39,
+      "duration": 2.32,
+      "text": "All I can hear is Claire's voice in my head-",
+      "translation": "我现在满脑子都是克莱尔的河东狮吼",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0166",
+      "episode": "S01E03",
+      "start": 442.88,
+      "end": 444.36,
+      "duration": 1.48,
+      "text": "\"He's not responsible.",
+      "translation": "\"他不知道负责任",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0167",
+      "episode": "S01E03",
+      "start": 444.36,
+      "end": 446.48,
+      "duration": 2.12,
+      "text": "You never should have given him a bike.\"",
+      "translation": "你根本不该给他买车\"",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0167.m4a"
+    },
+    {
+      "id": "s01e03-0168",
+      "episode": "S01E03",
+      "start": 447.45,
+      "end": 449.97,
+      "duration": 2.52,
+      "text": "I know. I do a pretty good Claire.",
+      "translation": "我知道 我模仿克莱尔超像的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0168.m4a"
+    },
+    {
+      "id": "s01e03-0169",
+      "episode": "S01E03",
+      "start": 450.58,
+      "end": 453.33,
+      "duration": 2.75,
+      "text": "So I decided to teach him a lesson...",
+      "translation": "所以我决定给他个教训",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0170",
+      "episode": "S01E03",
+      "start": 453.41,
+      "end": 456.45,
+      "duration": 3.04,
+      "text": "and let him think his bike was stolen.",
+      "translation": "让他以为自己的车被偷了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0171",
+      "episode": "S01E03",
+      "start": 456.54,
+      "end": 457.74,
+      "duration": 1.2,
+      "text": "And I know that sounds kind of rough,",
+      "translation": "我知道这手段有点恶劣",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0172",
+      "episode": "S01E03",
+      "start": 457.74,
+      "end": 460.92,
+      "duration": 3.18,
+      "text": "but sometimes it's a dad's job to be the tough guy.",
+      "translation": "但有时候做爹的就要狠一些",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0173",
+      "episode": "S01E03",
+      "start": 461.0,
+      "end": 462.67,
+      "duration": 1.67,
+      "text": "Excuse me! Thank you.",
+      "translation": "不好意思 谢谢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0173.m4a"
+    },
+    {
+      "id": "s01e03-0174",
+      "episode": "S01E03",
+      "start": 462.75,
+      "end": 464.67,
+      "duration": 1.92,
+      "text": "On your left! My left. Your right!",
+      "translation": "左边 我的左边 你右边",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0174.m4a"
+    },
+    {
+      "id": "s01e03-0175",
+      "episode": "S01E03",
+      "start": 467.23,
+      "end": 472.15,
+      "duration": 4.92,
+      "text": "Everyone, we have a new family joining us today.",
+      "translation": "大家好 今天有个新家庭加入我们",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0175.m4a"
+    },
+    {
+      "id": "s01e03-0176",
+      "episode": "S01E03",
+      "start": 472.24,
+      "end": 475.21,
+      "duration": 2.97,
+      "text": "Hi. I'm, uh, Mitchell, and I am a lawyer.",
+      "translation": "大家好 我是米奇尔 一名律师",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0176.m4a"
+    },
+    {
+      "id": "s01e03-0177",
+      "episode": "S01E03",
+      "start": 475.62,
+      "end": 478.93,
+      "duration": 3.31,
+      "text": "I- I'm Cameron, and I'm currently not working,",
+      "translation": "我是卡梅隆 暂时待业",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0178",
+      "episode": "S01E03",
+      "start": 479.37,
+      "end": 483.7,
+      "duration": 4.33,
+      "text": "which gives me more time to grill and shoot baskets and-",
+      "translation": "所以我有很多时间烹饪 打篮球 还有",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0179",
+      "episode": "S01E03",
+      "start": 483.7,
+      "end": 484.83,
+      "duration": 1.13,
+      "text": "And this is Lily.",
+      "translation": "还有这是莉莉",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0180",
+      "episode": "S01E03",
+      "start": 485.61,
+      "end": 487.74,
+      "duration": 2.13,
+      "text": "Okay, we're gonna start with the Hello Dance,",
+      "translation": "好 我们以问候舞作为开场舞",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0181",
+      "episode": "S01E03",
+      "start": 487.82,
+      "end": 490.37,
+      "duration": 2.55,
+      "text": "and then we're gonna move on to blocks, then finger painting,",
+      "translation": "然后玩积木 手指画",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0182",
+      "episode": "S01E03",
+      "start": 490.45,
+      "end": 492.87,
+      "duration": 2.42,
+      "text": "and then we're gonna do our Family Dance.",
+      "translation": "最后跳\"家庭之舞\"",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0183",
+      "episode": "S01E03",
+      "start": 492.95,
+      "end": 494.95,
+      "duration": 2.0,
+      "text": "All right. Who wants to start us off?",
+      "translation": "好了 谁想先开始",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0183.m4a"
+    },
+    {
+      "id": "s01e03-0184",
+      "episode": "S01E03",
+      "start": 495.04,
+      "end": 497.33,
+      "duration": 2.29,
+      "text": "P.J小朋友先来 Dance us in, P. J.!",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "mixed-language-caption"
+      ]
+    },
+    {
+      "id": "s01e03-0185",
+      "episode": "S01E03",
+      "start": 502.63,
+      "end": 505.17,
+      "duration": 2.54,
+      "text": "- She's adorable. - Oh, thank you.",
+      "translation": "-她真可爱 -谢谢夸奖",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0186",
+      "episode": "S01E03",
+      "start": 505.26,
+      "end": 507.17,
+      "duration": 1.91,
+      "text": "- Seven months? - Uh, eight.",
+      "translation": "-7个月大吗 -8个月",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0187",
+      "episode": "S01E03",
+      "start": 507.26,
+      "end": 510.3,
+      "duration": 3.04,
+      "text": "0h! Is she grabbing or scooting yet?",
+      "translation": "噢 会抓东西了吗 会走路了吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0188",
+      "episode": "S01E03",
+      "start": 510.39,
+      "end": 511.87,
+      "duration": 1.48,
+      "text": "Yes. Absolutely.",
+      "translation": "是的 都会呢",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0189",
+      "episode": "S01E03",
+      "start": 511.87,
+      "end": 514.81,
+      "duration": 2.94,
+      "text": "I mean, when she's not grabbin', she is- she is scootin'.",
+      "translation": "我是说 她不是手在乱抓 就是脚在乱走",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0190",
+      "episode": "S01E03",
+      "start": 515.67,
+      "end": 518.02,
+      "duration": 2.35,
+      "text": "Dance us in, Tyler!",
+      "translation": "泰勒 进来跳吧",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0191",
+      "episode": "S01E03",
+      "start": 518.58,
+      "end": 520.29,
+      "duration": 1.71,
+      "text": "Are you ready? Okay. Here we go.",
+      "translation": "准备好了吗 好的 来吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0191.m4a"
+    },
+    {
+      "id": "s01e03-0192",
+      "episode": "S01E03",
+      "start": 523.69,
+      "end": 526.65,
+      "duration": 2.96,
+      "text": "Cam, Lily is not grabbing or scooting yet.",
+      "translation": "小卡 莉莉还不会抓不会走呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0192.m4a"
+    },
+    {
+      "id": "s01e03-0193",
+      "episode": "S01E03",
+      "start": 526.74,
+      "end": 529.53,
+      "duration": 2.79,
+      "text": "Well, she's not doing it yet, but she will eventually.",
+      "translation": "现在还不会 以后会的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0193.m4a"
+    },
+    {
+      "id": "s01e03-0194",
+      "episode": "S01E03",
+      "start": 529.61,
+      "end": 531.01,
+      "duration": 1.4,
+      "text": "No, but, see, a lot of these other kids,",
+      "translation": "不 你看 那么多小孩",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0195",
+      "episode": "S01E03",
+      "start": 531.01,
+      "end": 532.71,
+      "duration": 1.7,
+      "text": "they're- they're grabbing.",
+      "translation": "他们都在抓东西",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0196",
+      "episode": "S01E03",
+      "start": 532.71,
+      "end": 534.83,
+      "duration": 2.12,
+      "text": "I-I just- Here. Come-",
+      "translation": "我只是 给 拿着",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0197",
+      "episode": "S01E03",
+      "start": 534.83,
+      "end": 537.0,
+      "duration": 2.17,
+      "text": "Lily. Look at the block, huh?",
+      "translation": "莉莉 你看积木",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0197.m4a"
+    },
+    {
+      "id": "s01e03-0198",
+      "episode": "S01E03",
+      "start": 537.0,
+      "end": 538.03,
+      "duration": 1.03,
+      "text": "Grab the block, Lily.",
+      "translation": "把积木拿起来 莉莉",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0198.m4a"
+    },
+    {
+      "id": "s01e03-0199",
+      "episode": "S01E03",
+      "start": 538.03,
+      "end": 540.61,
+      "duration": 2.58,
+      "text": "-抓着H -该你上场了莉莉 - Grab the \"H.\" - Dance us in, Lily!",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "mixed-language-caption",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0200",
+      "episode": "S01E03",
+      "start": 540.61,
+      "end": 541.75,
+      "duration": 1.14,
+      "text": "- Okay. I got this. - Cam, just-",
+      "translation": "-好的 我来搞定 -小卡",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0201",
+      "episode": "S01E03",
+      "start": 541.84,
+      "end": 543.83,
+      "duration": 1.99,
+      "text": "Yes, I know. Tamp down my natural gifts",
+      "translation": "我知道 要压抑我的天赋",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0202",
+      "episode": "S01E03",
+      "start": 543.83,
+      "end": 545.03,
+      "duration": 1.2,
+      "text": "and dance like a straight guy.",
+      "translation": "然后像个直男一样笨舞",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0203",
+      "episode": "S01E03",
+      "start": 545.03,
+      "end": 546.14,
+      "duration": 1.11,
+      "text": "No slapping your own butt.",
+      "translation": "不许拍屁屁",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0204",
+      "episode": "S01E03",
+      "start": 546.14,
+      "end": 547.8,
+      "duration": 1.66,
+      "text": "But that's how I make my horsey go.",
+      "translation": "可不拍屁屁我怎么舞得起来",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0205",
+      "episode": "S01E03",
+      "start": 560.33,
+      "end": 561.48,
+      "duration": 1.15,
+      "text": "Thank you.",
+      "translation": "谢谢大家",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0206",
+      "episode": "S01E03",
+      "start": 564.29,
+      "end": 565.41,
+      "duration": 1.12,
+      "text": "That was very good.",
+      "translation": "跳得很好",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0206.m4a"
+    },
+    {
+      "id": "s01e03-0207",
+      "episode": "S01E03",
+      "start": 565.9,
+      "end": 567.33,
+      "duration": 1.43,
+      "text": "I feel dirty.",
+      "translation": "感觉很卑鄙",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0208",
+      "episode": "S01E03",
+      "start": 571.07,
+      "end": 573.53,
+      "duration": 2.46,
+      "text": "- 0h, hey. - Hey! Hi.",
+      "translation": "-你好 -嘿 你好",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0209",
+      "episode": "S01E03",
+      "start": 573.53,
+      "end": 574.88,
+      "duration": 1.35,
+      "text": "- Hi. - Hi.",
+      "translation": "-嗨 -嗨",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers",
+        "repetitive-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0210",
+      "episode": "S01E03",
+      "start": 574.88,
+      "end": 577.04,
+      "duration": 2.16,
+      "text": "Uh, this is really embarrassing,",
+      "translation": "真令人难堪",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0211",
+      "episode": "S01E03",
+      "start": 577.04,
+      "end": 578.95,
+      "duration": 1.91,
+      "text": "but I locked myself out of my house.",
+      "translation": "我把自己锁在外面了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0212",
+      "episode": "S01E03",
+      "start": 578.95,
+      "end": 582.46,
+      "duration": 3.51,
+      "text": "0h! Pssh! I do that all the time. Don't be embarrassed.",
+      "translation": "噢 我总做这种傻事 别不好意思",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0213",
+      "episode": "S01E03",
+      "start": 583.31,
+      "end": 585.23,
+      "duration": 1.92,
+      "text": "I was- I was hoping you could help me.",
+      "translation": "我想 你能不能帮帮我",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0214",
+      "episode": "S01E03",
+      "start": 585.67,
+      "end": 587.93,
+      "duration": 2.26,
+      "text": "There's a window open, but I can't reach it.",
+      "translation": "有扇窗子开着 可我够不着",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0214.m4a"
+    },
+    {
+      "id": "s01e03-0215",
+      "episode": "S01E03",
+      "start": 587.93,
+      "end": 589.23,
+      "duration": 1.3,
+      "text": "Would you mind?",
+      "translation": "能帮我吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0216",
+      "episode": "S01E03",
+      "start": 592.87,
+      "end": 595.3,
+      "duration": 2.43,
+      "text": "- Yeah. Yeah. Sure. - Great.",
+      "translation": "-好的 没问题 -太好了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0217",
+      "episode": "S01E03",
+      "start": 595.3,
+      "end": 597.31,
+      "duration": 2.01,
+      "text": "0f course. You know what they say-",
+      "translation": "当然 你知道有句俗话说",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0218",
+      "episode": "S01E03",
+      "start": 597.31,
+      "end": 600.64,
+      "duration": 3.33,
+      "text": "\"Every time God closes a door, he opens a window.\"",
+      "translation": "\"每当上帝关上一扇门 他就打开一扇窗\"",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0218.m4a"
+    },
+    {
+      "id": "s01e03-0219",
+      "episode": "S01E03",
+      "start": 601.19,
+      "end": 603.82,
+      "duration": 2.63,
+      "text": "0r I guess in this case, every time he locks you out.",
+      "translation": "不过对你的话 是他每次都把你锁在外面",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0220",
+      "episode": "S01E03",
+      "start": 603.82,
+      "end": 605.04,
+      "duration": 1.22,
+      "text": "Okay, what do we got here?",
+      "translation": "好的 情况如何",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0220.m4a"
+    },
+    {
+      "id": "s01e03-0221",
+      "episode": "S01E03",
+      "start": 605.04,
+      "end": 607.82,
+      "duration": 2.78,
+      "text": "I mean, am I attracted to her? Yes.",
+      "translation": "我的魅力征服了她吗 是的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0222",
+      "episode": "S01E03",
+      "start": 607.82,
+      "end": 610.28,
+      "duration": 2.46,
+      "text": "Would I ever act on it? No. No way.",
+      "translation": "我会趁机发展一下吗 不 不可能",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0223",
+      "episode": "S01E03",
+      "start": 610.28,
+      "end": 613.41,
+      "duration": 3.13,
+      "text": "Not while my wife is still alive.",
+      "translation": "我老婆还健在呢",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0224",
+      "episode": "S01E03",
+      "start": 613.96,
+      "end": 615.74,
+      "duration": 1.78,
+      "text": "Are you sure I can't get you something to drink?",
+      "translation": "你真的不想喝点什么吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0224.m4a"
+    },
+    {
+      "id": "s01e03-0225",
+      "episode": "S01E03",
+      "start": 615.83,
+      "end": 617.87,
+      "duration": 2.04,
+      "text": "Yeah. No, I'm- I'm fine. Really.",
+      "translation": "是 不用了 我很好 真的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0226",
+      "episode": "S01E03",
+      "start": 618.24,
+      "end": 620.57,
+      "duration": 2.33,
+      "text": "If I knew a man was gonna climb into my bedroom window,",
+      "translation": "如果我知道会有帅哥爬我家卧室的窗户",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0227",
+      "episode": "S01E03",
+      "start": 620.57,
+      "end": 622.01,
+      "duration": 1.44,
+      "text": "I would have cleaned up a bit.",
+      "translation": "我肯定会\"清洗\"一下的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0227.m4a"
+    },
+    {
+      "id": "s01e03-0228",
+      "episode": "S01E03",
+      "start": 622.01,
+      "end": 623.58,
+      "duration": 1.57,
+      "text": "Are you kidding me? It smelled great in there.",
+      "translation": "开玩笑吗 房里幽香怡人呀",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0228.m4a"
+    },
+    {
+      "id": "s01e03-0229",
+      "episode": "S01E03",
+      "start": 623.58,
+      "end": 625.23,
+      "duration": 1.65,
+      "text": "Like lotions and oils...",
+      "translation": "好像有乳液精油",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0230",
+      "episode": "S01E03",
+      "start": 625.55,
+      "end": 629.1,
+      "duration": 3.55,
+      "text": "for... dry skin and, you know, calloused hands.",
+      "translation": "那个 保湿用的 预防干裂",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0231",
+      "episode": "S01E03",
+      "start": 629.1,
+      "end": 631.07,
+      "duration": 1.97,
+      "text": "Yeah, it's a candle.",
+      "translation": "其实 是香烛",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0232",
+      "episode": "S01E03",
+      "start": 631.07,
+      "end": 632.77,
+      "duration": 1.7,
+      "text": "- Uh-oh. - What's wrong?",
+      "translation": "-完了 -怎么了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0233",
+      "episode": "S01E03",
+      "start": 634.58,
+      "end": 637.06,
+      "duration": 2.48,
+      "text": "- The bike's gone. - Oh, no.",
+      "translation": "-自行车没了 -哦不",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0234",
+      "episode": "S01E03",
+      "start": 637.06,
+      "end": 639.34,
+      "duration": 2.28,
+      "text": "- Can I help you find it? - That's all right. Thank you.",
+      "translation": "-我帮你找找吧 -不用了谢谢",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0235",
+      "episode": "S01E03",
+      "start": 639.47,
+      "end": 641.59,
+      "duration": 2.12,
+      "text": "0kay. Thank you!",
+      "translation": "好吧 谢谢你哦",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0236",
+      "episode": "S01E03",
+      "start": 643.92,
+      "end": 645.81,
+      "duration": 1.89,
+      "text": "So, to teach him a lesson, I took his bike,",
+      "translation": "为了教育他 我藏起了他的车",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0237",
+      "episode": "S01E03",
+      "start": 645.81,
+      "end": 647.06,
+      "duration": 1.25,
+      "text": "and then- crazy thing-",
+      "translation": "之后 太离谱了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0238",
+      "episode": "S01E03",
+      "start": 647.06,
+      "end": 650.04,
+      "duration": 2.98,
+      "text": "I put it down for one minute, and someone swiped it from me.",
+      "translation": "我放下了两分钟 就被人卷走了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0238.m4a"
+    },
+    {
+      "id": "s01e03-0239",
+      "episode": "S01E03",
+      "start": 651.19,
+      "end": 653.05,
+      "duration": 1.86,
+      "text": "Maybe that was your dad teaching you a lesson.",
+      "translation": "或许也是你爸想教育教育你呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0239.m4a"
+    },
+    {
+      "id": "s01e03-0240",
+      "episode": "S01E03",
+      "start": 654.88,
+      "end": 655.85,
+      "duration": 0.97,
+      "text": "Zinger.",
+      "translation": "够狠",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0241",
+      "episode": "S01E03",
+      "start": 656.83,
+      "end": 661.04,
+      "duration": 4.21,
+      "text": "So, any chance I could, uh, get a break on this one?",
+      "translation": "那 这一辆能打个折吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0241.m4a"
+    },
+    {
+      "id": "s01e03-0242",
+      "episode": "S01E03",
+      "start": 661.68,
+      "end": 663.53,
+      "duration": 1.85,
+      "text": "- I can throw in a bell. - Deal.",
+      "translation": "-可以加个铃铛 -成交",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0243",
+      "episode": "S01E03",
+      "start": 663.53,
+      "end": 665.22,
+      "duration": 1.69,
+      "text": "- For five dollars. - No, sir.",
+      "translation": "-五块一个 -那不要了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0244",
+      "episode": "S01E03",
+      "start": 665.79,
+      "end": 667.48,
+      "duration": 1.69,
+      "text": "So, you wanna go for the insurance this time,",
+      "translation": "那这次要买保险吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0245",
+      "episode": "S01E03",
+      "start": 667.48,
+      "end": 668.78,
+      "duration": 1.3,
+      "text": "or is it still for suckers?",
+      "translation": "或是继续给小偷做好事",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0246",
+      "episode": "S01E03",
+      "start": 670.23,
+      "end": 671.51,
+      "duration": 1.28,
+      "text": "Got me again.",
+      "translation": "够狠",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0247",
+      "episode": "S01E03",
+      "start": 672.34,
+      "end": 674.92,
+      "duration": 2.58,
+      "text": "Well played, milord.",
+      "translation": "够狠啊大哥",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0248",
+      "episode": "S01E03",
+      "start": 675.14,
+      "end": 676.77,
+      "duration": 1.63,
+      "text": "I will take some insurance. Thank you.",
+      "translation": "这次买保险 谢谢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0248.m4a"
+    },
+    {
+      "id": "s01e03-0249",
+      "episode": "S01E03",
+      "start": 677.62,
+      "end": 679.87,
+      "duration": 2.25,
+      "text": "What's going on in there?",
+      "translation": "在搞什么啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0249.m4a"
+    },
+    {
+      "id": "s01e03-0250",
+      "episode": "S01E03",
+      "start": 680.28,
+      "end": 682.27,
+      "duration": 1.99,
+      "text": "- That's not step four. - Don't worry about it.",
+      "translation": "-第四步不是那样 -不管它",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0251",
+      "episode": "S01E03",
+      "start": 682.39,
+      "end": 684.98,
+      "duration": 2.59,
+      "text": "- It says right here that you should- - That's worrying about it.",
+      "translation": "-上面说你应该... -怎么还管",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0252",
+      "episode": "S01E03",
+      "start": 685.06,
+      "end": 687.27,
+      "duration": 2.21,
+      "text": "I thought you guys might need a drink.",
+      "translation": "要不要喝点东西",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0252.m4a"
+    },
+    {
+      "id": "s01e03-0253",
+      "episode": "S01E03",
+      "start": 687.36,
+      "end": 689.27,
+      "duration": 1.91,
+      "text": "0h, you have no idea.",
+      "translation": "太想太想了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0254",
+      "episode": "S01E03",
+      "start": 689.36,
+      "end": 692.53,
+      "duration": 3.17,
+      "text": "Manny, miamor, I have to go get some stuff for our trip.",
+      "translation": "曼尼宝贝 我得去买点旅途要带的东西",
+      "learnable": false,
+      "reviewReasons": [
+        "non-english-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0255",
+      "episode": "S01E03",
+      "start": 692.61,
+      "end": 695.04,
+      "duration": 2.43,
+      "text": "Ay! But have some fun with your father, okay?",
+      "translation": "你跟爸爸好好玩 好不好",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0256",
+      "episode": "S01E03",
+      "start": 695.04,
+      "end": 696.84,
+      "duration": 1.8,
+      "text": "And I'll see you Monday. Mwah!",
+      "translation": "周一见 亲亲",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0257",
+      "episode": "S01E03",
+      "start": 697.92,
+      "end": 701.11,
+      "duration": 3.19,
+      "text": "It makes me so happy to see my two boys working together.",
+      "translation": "看到我的两个宝贝一起合作 好开心哦",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0257.m4a"
+    },
+    {
+      "id": "s01e03-0258",
+      "episode": "S01E03",
+      "start": 701.11,
+      "end": 703.33,
+      "duration": 2.22,
+      "text": "- Jay shocked himself twice. - 0kay, Manny.",
+      "translation": "-杰电到自己两次了 -好了曼尼",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0259",
+      "episode": "S01E03",
+      "start": 703.45,
+      "end": 706.37,
+      "duration": 2.92,
+      "text": "- Well, I warned him. - Yep, he's been a big help.",
+      "translation": "-我警告过他了 -是啊 他真会帮忙",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0260",
+      "episode": "S01E03",
+      "start": 706.46,
+      "end": 709.46,
+      "duration": 3.0,
+      "text": "Look at you two with your private jokes already.",
+      "translation": "看你们都有自己的小笑话了",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0261",
+      "episode": "S01E03",
+      "start": 709.54,
+      "end": 712.5,
+      "duration": 2.96,
+      "text": "You're a regular Salazar and El Oso.",
+      "translation": "就像高个子版的萨拉查和埃尔奥索",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0262",
+      "episode": "S01E03",
+      "start": 713.17,
+      "end": 715.17,
+      "duration": 2.0,
+      "text": "It's a very big comedy team in Colombia.",
+      "translation": "那可是哥伦比亚超有名的笑星搭档",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0263",
+      "episode": "S01E03",
+      "start": 715.26,
+      "end": 717.42,
+      "duration": 2.16,
+      "text": "El Oso is always hitting Salazar in the head",
+      "translation": "埃尔奥索总打萨拉查的头",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0264",
+      "episode": "S01E03",
+      "start": 717.42,
+      "end": 718.94,
+      "duration": 1.52,
+      "text": "with the ladder and things.",
+      "translation": "用梯子啊等等",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0265",
+      "episode": "S01E03",
+      "start": 718.94,
+      "end": 721.31,
+      "duration": 2.37,
+      "text": "And sometimes they wear dresses. Hmm.",
+      "translation": "有时候他们还穿裙子",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0266",
+      "episode": "S01E03",
+      "start": 721.39,
+      "end": 725.02,
+      "duration": 3.63,
+      "text": "They make you laugh, but they also make you think.",
+      "translation": "他们不仅逗人笑 也让人深思",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0266.m4a"
+    },
+    {
+      "id": "s01e03-0267",
+      "episode": "S01E03",
+      "start": 726.94,
+      "end": 729.27,
+      "duration": 2.33,
+      "text": "You blew it. You made me look bad.",
+      "translation": "你搞砸了 让我很没面子",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0267.m4a"
+    },
+    {
+      "id": "s01e03-0268",
+      "episode": "S01E03",
+      "start": 729.36,
+      "end": 732.9,
+      "duration": 3.54,
+      "text": "No, you made your mother and I look bad. We are a team.",
+      "translation": "不 你让你妈和我都没面子 我们是个整体",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0268.m4a"
+    },
+    {
+      "id": "s01e03-0269",
+      "episode": "S01E03",
+      "start": 734.07,
+      "end": 735.99,
+      "duration": 1.92,
+      "text": "- Luke, you in there? - Hey, Dad.",
+      "translation": "-卢克你在吗 -爸爸",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0270",
+      "episode": "S01E03",
+      "start": 736.07,
+      "end": 738.32,
+      "duration": 2.25,
+      "text": "Hey. Hey, buddy.",
+      "translation": "嘿 小子",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0271",
+      "episode": "S01E03",
+      "start": 738.41,
+      "end": 741.62,
+      "duration": 3.21,
+      "text": "That was, uh- That was pretty fun today, huh? Getting a new bike.",
+      "translation": "今天很有意思吧 得到一辆新车",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0272",
+      "episode": "S01E03",
+      "start": 741.74,
+      "end": 745.29,
+      "duration": 3.55,
+      "text": "- Yeah, it was awesome. - So, uh, what happened after I took off?",
+      "translation": "-太赞了 -我走以后出什么事了吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0273",
+      "episode": "S01E03",
+      "start": 745.41,
+      "end": 748.04,
+      "duration": 2.63,
+      "text": "- Anything you want to share with me? - Not really.",
+      "translation": "-有事想跟我说吗 -没",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0274",
+      "episode": "S01E03",
+      "start": 748.12,
+      "end": 750.83,
+      "duration": 2.71,
+      "text": "So, if I, uh, went out to the garage,",
+      "translation": "那 我去车库",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0275",
+      "episode": "S01E03",
+      "start": 750.92,
+      "end": 753.71,
+      "duration": 2.79,
+      "text": "took a picture for a scrapbook, there'd be no surprises?",
+      "translation": "拍个照什么的 也不会有意外咯",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0276",
+      "episode": "S01E03",
+      "start": 755.05,
+      "end": 758.73,
+      "duration": 3.68,
+      "text": "I'm so sorry! I didn't mean it. I just made a mistake.",
+      "translation": "对不起 我不是故意的 我犯了个错",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0276.m4a"
+    },
+    {
+      "id": "s01e03-0277",
+      "episode": "S01E03",
+      "start": 758.73,
+      "end": 760.3,
+      "duration": 1.57,
+      "text": "Yeah, a big mistake!",
+      "translation": "是啊 大错误",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0277.m4a"
+    },
+    {
+      "id": "s01e03-0278",
+      "episode": "S01E03",
+      "start": 760.74,
+      "end": 761.89,
+      "duration": 1.15,
+      "text": "You're making me look really bad here.",
+      "translation": "你让我很没面子",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0278.m4a"
+    },
+    {
+      "id": "s01e03-0279",
+      "episode": "S01E03",
+      "start": 761.97,
+      "end": 764.01,
+      "duration": 2.04,
+      "text": "I told Mom you were ready for this.",
+      "translation": "我还告诉你妈说你已经懂得负责任了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0279.m4a"
+    },
+    {
+      "id": "s01e03-0280",
+      "episode": "S01E03",
+      "start": 764.1,
+      "end": 764.96,
+      "duration": 0.86,
+      "text": "It's just a scratch, Dad.",
+      "translation": "就刮花了一点点",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0280.m4a"
+    },
+    {
+      "id": "s01e03-0281",
+      "episode": "S01E03",
+      "start": 764.96,
+      "end": 766.85,
+      "duration": 1.89,
+      "text": "That's not the point, Luke! What?",
+      "translation": "那不是重点 卢克 什么",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0281.m4a"
+    },
+    {
+      "id": "s01e03-0282",
+      "episode": "S01E03",
+      "start": 766.93,
+      "end": 770.56,
+      "duration": 3.63,
+      "text": "I scratched it on my way into the driveway. I'm sorry.",
+      "translation": "我骑上路的时候刮花了 对不起",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0282.m4a"
+    },
+    {
+      "id": "s01e03-0283",
+      "episode": "S01E03",
+      "start": 770.65,
+      "end": 773.19,
+      "duration": 2.54,
+      "text": "So, it's not stolen?",
+      "translation": "那 没丢吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0283.m4a"
+    },
+    {
+      "id": "s01e03-0284",
+      "episode": "S01E03",
+      "start": 773.96,
+      "end": 775.6,
+      "duration": 1.64,
+      "text": "No. Why?",
+      "translation": "没啊 怎么",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0285",
+      "episode": "S01E03",
+      "start": 775.69,
+      "end": 777.65,
+      "duration": 1.96,
+      "text": "That's good,",
+      "translation": "那太好了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0286",
+      "episode": "S01E03",
+      "start": 777.74,
+      "end": 781.88,
+      "duration": 4.14,
+      "text": "'cause... there are bad people out there who would steal a bike.",
+      "translation": "因为 有很多坏人喜欢偷车",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0287",
+      "episode": "S01E03",
+      "start": 781.88,
+      "end": 782.93,
+      "duration": 1.05,
+      "text": "Those are thieves.",
+      "translation": "小偷什么的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0288",
+      "episode": "S01E03",
+      "start": 782.93,
+      "end": 784.78,
+      "duration": 1.85,
+      "text": "You sit there and think about the scratch part.",
+      "translation": "你坐那儿反思一下为什么会刮花",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0288.m4a"
+    },
+    {
+      "id": "s01e03-0289",
+      "episode": "S01E03",
+      "start": 784.78,
+      "end": 786.08,
+      "duration": 1.3,
+      "text": "That's not good either.",
+      "translation": "刮花也不行",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0289.m4a"
+    },
+    {
+      "id": "s01e03-0290",
+      "episode": "S01E03",
+      "start": 786.08,
+      "end": 787.24,
+      "duration": 1.16,
+      "text": "I gotta fix that step.",
+      "translation": "我得修好这楼梯",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0290.m4a"
+    },
+    {
+      "id": "s01e03-0291",
+      "episode": "S01E03",
+      "start": 787.24,
+      "end": 789.29,
+      "duration": 2.05,
+      "text": "So don't scratch anything while I'm gone,",
+      "translation": "我不在的时候别再刮花东西了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0292",
+      "episode": "S01E03",
+      "start": 787.76,
+      "end": 791.15,
+      "duration": 3.39,
+      "text": "[Scratch一词多意：刮花/挠痒]",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "stage-direction",
+        "mixed-language-caption",
+        "too-short",
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0293",
+      "episode": "S01E03",
+      "start": 789.29,
+      "end": 791.05,
+      "duration": 1.76,
+      "text": "unless it itches. That's different.",
+      "translation": "痒的话可以挠挠 那个不一样",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0294",
+      "episode": "S01E03",
+      "start": 791.58,
+      "end": 794.74,
+      "duration": 3.16,
+      "text": "The good news is, Luke has his bike.",
+      "translation": "好消息是 卢克的车还在",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0294.m4a"
+    },
+    {
+      "id": "s01e03-0295",
+      "episode": "S01E03",
+      "start": 795.39,
+      "end": 796.86,
+      "duration": 1.47,
+      "text": "More good news-",
+      "translation": "更好的消息是",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0296",
+      "episode": "S01E03",
+      "start": 797.09,
+      "end": 800.62,
+      "duration": 3.53,
+      "text": "I taught some random kid a valuable lesson by stealing his bike.",
+      "translation": "我偷了个野孩子的车 给他上了一课",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0296.m4a"
+    },
+    {
+      "id": "s01e03-0297",
+      "episode": "S01E03",
+      "start": 800.68,
+      "end": 803.23,
+      "duration": 2.55,
+      "text": "Best news- Claire knows nothing.",
+      "translation": "最好的消息是 克莱尔什么都不知情",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0298",
+      "episode": "S01E03",
+      "start": 803.55,
+      "end": 806.71,
+      "duration": 3.16,
+      "text": "So, I figure I'll just dump the new bike",
+      "translation": "那么 新车就丢在",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0299",
+      "episode": "S01E03",
+      "start": 806.71,
+      "end": 808.06,
+      "duration": 1.35,
+      "text": "where I stole the first bike.",
+      "translation": "我偷车的地方好了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0300",
+      "episode": "S01E03",
+      "start": 808.06,
+      "end": 810.06,
+      "duration": 2.0,
+      "text": "That way, random kid gets his back,",
+      "translation": "那样的话 丢车的孩子拿到车",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0301",
+      "episode": "S01E03",
+      "start": 810.06,
+      "end": 812.77,
+      "duration": 2.71,
+      "text": "and this new bike doesn't raise a lot of embarrassing questions...",
+      "translation": "新车也不会引发很多尴尬的问题",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0302",
+      "episode": "S01E03",
+      "start": 812.77,
+      "end": 814.25,
+      "duration": 1.48,
+      "text": "like why I had it",
+      "translation": "比如我为什么要多买一辆",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0303",
+      "episode": "S01E03",
+      "start": 814.25,
+      "end": 816.7,
+      "duration": 2.45,
+      "text": "or who boosted who through a bedroom window.",
+      "translation": "或谁爬进了谁的卧室窗户",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0304",
+      "episode": "S01E03",
+      "start": 817.39,
+      "end": 819.39,
+      "duration": 2.0,
+      "text": "So, everybody's happy.",
+      "translation": "就那样 皆大欢喜",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0305",
+      "episode": "S01E03",
+      "start": 823.27,
+      "end": 826.42,
+      "duration": 3.15,
+      "text": "Ah, son of a- You gave me the wrong screwdriver.",
+      "translation": "狗娘养...你给我的螺丝刀不对",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0306",
+      "episode": "S01E03",
+      "start": 826.42,
+      "end": 828.26,
+      "duration": 1.84,
+      "text": "Maybe you're just using it wrong.",
+      "translation": "也许是你使用方法不对",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0306.m4a"
+    },
+    {
+      "id": "s01e03-0307",
+      "episode": "S01E03",
+      "start": 828.37,
+      "end": 829.91,
+      "duration": 1.54,
+      "text": "My dad's great with tools.",
+      "translation": "我爸爸什么工具都搞得定",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0307.m4a"
+    },
+    {
+      "id": "s01e03-0308",
+      "episode": "S01E03",
+      "start": 829.91,
+      "end": 832.17,
+      "duration": 2.26,
+      "text": "He can get the wheels off a car in less than a minute.",
+      "translation": "他不用一分钟就能拆掉车轮子",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0308.m4a"
+    },
+    {
+      "id": "s01e03-0309",
+      "episode": "S01E03",
+      "start": 832.17,
+      "end": 834.81,
+      "duration": 2.64,
+      "text": "Just get me to wine country. Just get me to wine country.",
+      "translation": "去酒庄散散心 去酒庄散散心",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0309.m4a"
+    },
+    {
+      "id": "s01e03-0310",
+      "episode": "S01E03",
+      "start": 834.81,
+      "end": 836.61,
+      "duration": 1.8,
+      "text": "Sorry!",
+      "translation": "对不起",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0311",
+      "episode": "S01E03",
+      "start": 836.75,
+      "end": 839.34,
+      "duration": 2.59,
+      "text": "- I think my arm is broken. - Relax. It's not broken.",
+      "translation": "-我想我胳膊断了 -放松 没断",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0312",
+      "episode": "S01E03",
+      "start": 839.42,
+      "end": 841.47,
+      "duration": 2.05,
+      "text": "How do you know? You don't know anything.",
+      "translation": "你怎么知道 你什么都不知道",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0312.m4a"
+    },
+    {
+      "id": "s01e03-0313",
+      "episode": "S01E03",
+      "start": 841.55,
+      "end": 843.43,
+      "duration": 1.88,
+      "text": "You have no concern for safety.",
+      "translation": "一点安全意识都没有",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0313.m4a"
+    },
+    {
+      "id": "s01e03-0314",
+      "episode": "S01E03",
+      "start": 843.55,
+      "end": 846.14,
+      "duration": 2.59,
+      "text": "- Because it didn't hit you that hard. - Why don't you just say it?",
+      "translation": "-砸得又不重 -直接说不就得了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0315",
+      "episode": "S01E03",
+      "start": 846.26,
+      "end": 849.27,
+      "duration": 3.01,
+      "text": "- You don't want me around. - You know what? Right now, I don't!",
+      "translation": "-你不想我在身边 -你猜怎么 你说对了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0316",
+      "episode": "S01E03",
+      "start": 849.35,
+      "end": 852.15,
+      "duration": 2.8,
+      "text": "I don't wanna be with you either. I'm gonna go wait for my dad.",
+      "translation": "我也不想跟你在一起 我要我爸爸",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0316.m4a"
+    },
+    {
+      "id": "s01e03-0317",
+      "episode": "S01E03",
+      "start": 852.15,
+      "end": 855.9,
+      "duration": 3.75,
+      "text": "0h, but- but if you leave, how will I ever finish?",
+      "translation": "可你走了 我怎么能完成呀",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0318",
+      "episode": "S01E03",
+      "start": 856.23,
+      "end": 859.01,
+      "duration": 2.78,
+      "text": "You know what? I wish you never married my mom.",
+      "translation": "你知道吗 我真希望你没娶我妈",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0318.m4a"
+    },
+    {
+      "id": "s01e03-0319",
+      "episode": "S01E03",
+      "start": 859.31,
+      "end": 862.36,
+      "duration": 3.05,
+      "text": "- I hate living here. - You think I like this arrangement?",
+      "translation": "-我讨厌住在这里 -你以为我喜欢这样",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0320",
+      "episode": "S01E03",
+      "start": 862.36,
+      "end": 864.78,
+      "duration": 2.42,
+      "text": "I got a two-seater parked in the driveway!",
+      "translation": "我有两辆跑车闲置在车道上",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0320.m4a"
+    },
+    {
+      "id": "s01e03-0321",
+      "episode": "S01E03",
+      "start": 870.44,
+      "end": 872.51,
+      "duration": 2.07,
+      "text": "I mean, I don't understand.",
+      "translation": "我真不理解",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0321.m4a"
+    },
+    {
+      "id": "s01e03-0322",
+      "episode": "S01E03",
+      "start": 872.51,
+      "end": 874.64,
+      "duration": 2.13,
+      "text": "Why are you trying to sneak around and hide things from me?",
+      "translation": "为什么你要背着我做这做那",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0322.m4a"
+    },
+    {
+      "id": "s01e03-0323",
+      "episode": "S01E03",
+      "start": 874.64,
+      "end": 877.55,
+      "duration": 2.91,
+      "text": "- I actually think it's pretty funny. - You do?",
+      "translation": "-我觉得太搞了 -真的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0324",
+      "episode": "S01E03",
+      "start": 877.55,
+      "end": 878.69,
+      "duration": 1.14,
+      "text": "I do. Yes.",
+      "translation": "真的 是的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0325",
+      "episode": "S01E03",
+      "start": 878.69,
+      "end": 881.61,
+      "duration": 2.92,
+      "text": "I mean, you steal a bike from some poor kid,",
+      "translation": "你偷了一个倒霉孩子的车",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0326",
+      "episode": "S01E03",
+      "start": 881.61,
+      "end": 883.41,
+      "duration": 1.8,
+      "text": "and then the bike gets stolen from you.",
+      "translation": "然后你又把车丢了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0327",
+      "episode": "S01E03",
+      "start": 883.41,
+      "end": 884.4,
+      "duration": 0.99,
+      "text": "It's hilarious.",
+      "translation": "太搞笑了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0328",
+      "episode": "S01E03",
+      "start": 885.8,
+      "end": 887.76,
+      "duration": 1.96,
+      "text": "- Classic me, right? - Yeah!",
+      "translation": "-我的风格 是不是 -是啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0329",
+      "episode": "S01E03",
+      "start": 887.89,
+      "end": 889.91,
+      "duration": 2.02,
+      "text": "So, where were you when it got stolen?",
+      "translation": "那车丢的时候你在哪儿呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0329.m4a"
+    },
+    {
+      "id": "s01e03-0330",
+      "episode": "S01E03",
+      "start": 889.91,
+      "end": 891.84,
+      "duration": 1.93,
+      "text": "Oh, I was getting some gas.",
+      "translation": "我当时在加油呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0330.m4a"
+    },
+    {
+      "id": "s01e03-0331",
+      "episode": "S01E03",
+      "start": 891.84,
+      "end": 894.6,
+      "duration": 2.76,
+      "text": "Uh-huh. You don't stand near the car when you get gas?",
+      "translation": "是吗 你加油的时候竟然不在车旁边吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0331.m4a"
+    },
+    {
+      "id": "s01e03-0332",
+      "episode": "S01E03",
+      "start": 894.69,
+      "end": 897.85,
+      "duration": 3.16,
+      "text": "Yep, but, uh, I went inside to get a soda",
+      "translation": "在啊 可是 我进去拿了瓶汽水",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0333",
+      "episode": "S01E03",
+      "start": 897.85,
+      "end": 898.73,
+      "duration": 0.88,
+      "text": "because I was thirsty,",
+      "translation": "因为我渴了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0334",
+      "episode": "S01E03",
+      "start": 898.73,
+      "end": 900.23,
+      "duration": 1.5,
+      "text": "and if I had a soda, I wouldn't be thirsty anymore.",
+      "translation": "如果我有汽水 我就不会口渴了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0335",
+      "episode": "S01E03",
+      "start": 900.32,
+      "end": 902.34,
+      "duration": 2.02,
+      "text": "So I bought one, then I drank it all right there,",
+      "translation": "我买了一罐 就在那边喝完了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0336",
+      "episode": "S01E03",
+      "start": 902.34,
+      "end": 903.74,
+      "duration": 1.4,
+      "text": "which is why I don't have the can.",
+      "translation": "所以现在手中才没有空瓶",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0337",
+      "episode": "S01E03",
+      "start": 903.82,
+      "end": 905.79,
+      "duration": 1.97,
+      "text": "Well, honey, please, let's try to remember",
+      "translation": "亲爱的 请你 慢慢回忆",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0338",
+      "episode": "S01E03",
+      "start": 905.79,
+      "end": 907.86,
+      "duration": 2.07,
+      "text": "that I'm your wife, not your mom.",
+      "translation": "我是你妻子 不是你妈",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0339",
+      "episode": "S01E03",
+      "start": 907.86,
+      "end": 911.28,
+      "duration": 3.42,
+      "text": "So in the future, you don't need to hide things from me. Okay?",
+      "translation": "以后不用有事瞒着我 好吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0339.m4a"
+    },
+    {
+      "id": "s01e03-0340",
+      "episode": "S01E03",
+      "start": 911.28,
+      "end": 912.89,
+      "duration": 1.61,
+      "text": "- 0kay. - Okay.",
+      "translation": "-好的 -好的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0341",
+      "episode": "S01E03",
+      "start": 913.8,
+      "end": 916.15,
+      "duration": 2.35,
+      "text": "- 0kay. - Oh! Oh, yeah.",
+      "translation": "-好了 -噢 太好了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0342",
+      "episode": "S01E03",
+      "start": 916.15,
+      "end": 918.52,
+      "duration": 2.37,
+      "text": "- You get back here, you! - What are you doing, Phil?",
+      "translation": "-再继续抱抱 没够呢 -菲尔你做什么",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0343",
+      "episode": "S01E03",
+      "start": 919.09,
+      "end": 920.93,
+      "duration": 1.84,
+      "text": "I just love ya so darn much!",
+      "translation": "我就是太爱你了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0343.m4a"
+    },
+    {
+      "id": "s01e03-0344",
+      "episode": "S01E03",
+      "start": 920.93,
+      "end": 923.89,
+      "duration": 2.96,
+      "text": "- I know. I love you too, but that hurts. - Let's get you inside.",
+      "translation": "-我知道 我也爱你 你弄疼我了 -进去吧",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0345",
+      "episode": "S01E03",
+      "start": 923.89,
+      "end": 926.09,
+      "duration": 2.2,
+      "text": "- Hi. - I know. That's hurting a lot.",
+      "translation": "-嗨 -我知道 好疼啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0346",
+      "episode": "S01E03",
+      "start": 926.09,
+      "end": 927.77,
+      "duration": 1.68,
+      "text": "- This is a hot one. - Hello! Hi there!",
+      "translation": "-性感熊抱 -嗨 你们好啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0347",
+      "episode": "S01E03",
+      "start": 927.77,
+      "end": 929.4,
+      "duration": 1.63,
+      "text": "- Hi again. - Oh, hi.",
+      "translation": "-又见面了 -你好",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0348",
+      "episode": "S01E03",
+      "start": 929.4,
+      "end": 930.81,
+      "duration": 1.41,
+      "text": "I, uh, found your bike.",
+      "translation": "我找到你的车了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0348.m4a"
+    },
+    {
+      "id": "s01e03-0349",
+      "episode": "S01E03",
+      "start": 931.53,
+      "end": 933.77,
+      "duration": 2.24,
+      "text": "Oh, good! You-",
+      "translation": "太好了 你",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0350",
+      "episode": "S01E03",
+      "start": 934.22,
+      "end": 936.6,
+      "duration": 2.38,
+      "text": "- At the gas station? - No, at my house.",
+      "translation": "-是在加油站的吗 -不 在我家",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0351",
+      "episode": "S01E03",
+      "start": 936.6,
+      "end": 938.68,
+      "duration": 2.08,
+      "text": "One of my neighbors saw it and put it in my garage",
+      "translation": "我邻居看到车倒在我门口 帮我放到车库了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0352",
+      "episode": "S01E03",
+      "start": 938.68,
+      "end": 940.39,
+      "duration": 1.71,
+      "text": "when you were in my bedroom, so-",
+      "translation": "那会儿你正在我卧室里 所以...",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0353",
+      "episode": "S01E03",
+      "start": 944.57,
+      "end": 945.94,
+      "duration": 1.37,
+      "text": "Classic me?",
+      "translation": "我的典型风格?",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0354",
+      "episode": "S01E03",
+      "start": 947.4,
+      "end": 948.99,
+      "duration": 1.59,
+      "text": "Come on, honey. Grab the block.",
+      "translation": "快点宝贝 拿起积木",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0354.m4a"
+    },
+    {
+      "id": "s01e03-0355",
+      "episode": "S01E03",
+      "start": 949.74,
+      "end": 951.37,
+      "duration": 1.63,
+      "text": "See, like he did. You gotta do that.",
+      "translation": "看 就像他那样 加油啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0355.m4a"
+    },
+    {
+      "id": "s01e03-0356",
+      "episode": "S01E03",
+      "start": 951.37,
+      "end": 954.67,
+      "duration": 3.3,
+      "text": "- You gotta grab it like him. - So, seen any movies lately?",
+      "translation": "-像他那样拿起来 -最近看电影了吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0357",
+      "episode": "S01E03",
+      "start": 955.59,
+      "end": 956.5,
+      "duration": 0.91,
+      "text": "Uh, yeah.",
+      "translation": "有啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0358",
+      "episode": "S01E03",
+      "start": 956.5,
+      "end": 958.78,
+      "duration": 2.28,
+      "text": "You know, my husband and I just rented,",
+      "translation": "我丈夫和我租了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0359",
+      "episode": "S01E03",
+      "start": 958.78,
+      "end": 961.58,
+      "duration": 2.8,
+      "text": "uh, Mamma Mia! Which I liked,",
+      "translation": "《妈妈咪呀》 我很喜欢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0360",
+      "episode": "S01E03",
+      "start": 961.58,
+      "end": 964.94,
+      "duration": 3.36,
+      "text": "but I don't know that Meryl Streep was the right choice.",
+      "translation": "只是觉得选梅丽尔·斯特里普做女主角不合适",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0361",
+      "episode": "S01E03",
+      "start": 965.27,
+      "end": 966.51,
+      "duration": 1.24,
+      "text": "What did you think?",
+      "translation": "你觉得呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0361.m4a"
+    },
+    {
+      "id": "s01e03-0362",
+      "episode": "S01E03",
+      "start": 967.44,
+      "end": 969.02,
+      "duration": 1.58,
+      "text": "Excuse me.",
+      "translation": "有没有搞错啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0362.m4a"
+    },
+    {
+      "id": "s01e03-0363",
+      "episode": "S01E03",
+      "start": 969.02,
+      "end": 971.91,
+      "duration": 2.89,
+      "text": "Meryl Streep could play Batman and be the right choice.",
+      "translation": "让梅丽尔·斯特里普去演蝙蝠侠都可以",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0363.m4a"
+    },
+    {
+      "id": "s01e03-0364",
+      "episode": "S01E03",
+      "start": 971.91,
+      "end": 973.31,
+      "duration": 1.4,
+      "text": "She's perfection...",
+      "translation": "她是完美的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0365",
+      "episode": "S01E03",
+      "start": 973.31,
+      "end": 976.67,
+      "duration": 3.36,
+      "text": "whether she's divorcing Kramer, whether she's wearing Prada.",
+      "translation": "无论她有没有跟克莱默离婚 穿没穿普拉达",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0366",
+      "episode": "S01E03",
+      "start": 976.67,
+      "end": 979.28,
+      "duration": 2.61,
+      "text": "Don't even get me started on Sophie's Choice.",
+      "translation": "更不用说《苏菲的选择》了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0366.m4a"
+    },
+    {
+      "id": "s01e03-0367",
+      "episode": "S01E03",
+      "start": 979.74,
+      "end": 981.71,
+      "duration": 1.97,
+      "text": "I get emotional thinking about it.",
+      "translation": "想想我都动情",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0367.m4a"
+    },
+    {
+      "id": "s01e03-0368",
+      "episode": "S01E03",
+      "start": 984.08,
+      "end": 985.63,
+      "duration": 1.55,
+      "text": "She couldn't forgive herself.",
+      "translation": "她根本无法原谅自己",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0368.m4a"
+    },
+    {
+      "id": "s01e03-0369",
+      "episode": "S01E03",
+      "start": 991.06,
+      "end": 992.37,
+      "duration": 1.31,
+      "text": "I guess she was okay.",
+      "translation": "我觉得她还好",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0369.m4a"
+    },
+    {
+      "id": "s01e03-0370",
+      "episode": "S01E03",
+      "start": 992.94,
+      "end": 994.2,
+      "duration": 1.26,
+      "text": "Really? Ooh.",
+      "translation": "真的吗 不是吧",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0371",
+      "episode": "S01E03",
+      "start": 996.8,
+      "end": 998.21,
+      "duration": 1.41,
+      "text": "Grab the blocks, sweetheart.",
+      "translation": "拿起积木 亲爱的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0371.m4a"
+    },
+    {
+      "id": "s01e03-0372",
+      "episode": "S01E03",
+      "start": 998.21,
+      "end": 1001.4,
+      "duration": 3.19,
+      "text": "- You're not even interested in it. - Is Henry stacking?",
+      "translation": "-怎么都没兴趣 -亨利在堆积木吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0373",
+      "episode": "S01E03",
+      "start": 1001.9,
+      "end": 1003.54,
+      "duration": 1.64,
+      "text": "Good job, Henry!",
+      "translation": "做得好啊亨利",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0374",
+      "episode": "S01E03",
+      "start": 1003.54,
+      "end": 1005.03,
+      "duration": 1.49,
+      "text": "Good job!",
+      "translation": "做得好",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0375",
+      "episode": "S01E03",
+      "start": 1008.61,
+      "end": 1012.45,
+      "duration": 3.84,
+      "text": "Q R S T U V Q-R-S T-U-V",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0376",
+      "episode": "S01E03",
+      "start": 1012.76,
+      "end": 1016.12,
+      "duration": 3.36,
+      "text": "W X Y 还有Z W-X-Y and Z",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "mixed-language-caption",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0377",
+      "episode": "S01E03",
+      "start": 1016.59,
+      "end": 1018.81,
+      "duration": 2.22,
+      "text": "Now I know my-",
+      "translation": "我现在知道我的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0378",
+      "episode": "S01E03",
+      "start": 1018.81,
+      "end": 1021.07,
+      "duration": 2.26,
+      "text": "Whoa, Lily! Oh!",
+      "translation": "哇噢 莉莉",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0379",
+      "episode": "S01E03",
+      "start": 1021.07,
+      "end": 1023.73,
+      "duration": 2.66,
+      "text": "Not so high. Wow!",
+      "translation": "要不要这么高啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0379.m4a"
+    },
+    {
+      "id": "s01e03-0380",
+      "episode": "S01E03",
+      "start": 1023.73,
+      "end": 1026.69,
+      "duration": 2.96,
+      "text": "- That is a big moment for her. - Yeah.",
+      "translation": "-人生重要一刻啊 -是啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0381",
+      "episode": "S01E03",
+      "start": 1026.69,
+      "end": 1028.22,
+      "duration": 1.53,
+      "text": "Would you like a videotape?",
+      "translation": "你要份录像吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0381.m4a"
+    },
+    {
+      "id": "s01e03-0382",
+      "episode": "S01E03",
+      "start": 1028.65,
+      "end": 1029.94,
+      "duration": 1.29,
+      "text": "Uh, you know, I don't-",
+      "translation": "那个 不用",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0383",
+      "episode": "S01E03",
+      "start": 1029.94,
+      "end": 1031.93,
+      "duration": 1.99,
+      "text": "I don't know if I can actually get her to do it again, so-",
+      "translation": "我都不知道她还能不能再做一次",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0384",
+      "episode": "S01E03",
+      "start": 1031.93,
+      "end": 1034.2,
+      "duration": 2.27,
+      "text": "Well, we tape all of our classes.",
+      "translation": "我们的课都有录像的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0384.m4a"
+    },
+    {
+      "id": "s01e03-0385",
+      "episode": "S01E03",
+      "start": 1035.05,
+      "end": 1036.62,
+      "duration": 1.57,
+      "text": "We don't like parents bringing cameras in.",
+      "translation": "父母自己带相机不好",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0385.m4a"
+    },
+    {
+      "id": "s01e03-0386",
+      "episode": "S01E03",
+      "start": 1036.62,
+      "end": 1038.05,
+      "duration": 1.43,
+      "text": "It keeps them out of the moment.",
+      "translation": "那样他们就不能一起参与了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0386.m4a"
+    },
+    {
+      "id": "s01e03-0387",
+      "episode": "S01E03",
+      "start": 1038.05,
+      "end": 1039.12,
+      "duration": 1.07,
+      "text": "I'll get you a copy after class.",
+      "translation": "课后我给你一份录像",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0387.m4a"
+    },
+    {
+      "id": "s01e03-0388",
+      "episode": "S01E03",
+      "start": 1039.12,
+      "end": 1041.5,
+      "duration": 2.38,
+      "text": "That's super. Yeah. Great. Thank you.",
+      "translation": "太棒了 好的 谢谢你",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0388.m4a"
+    },
+    {
+      "id": "s01e03-0389",
+      "episode": "S01E03",
+      "start": 1043.62,
+      "end": 1044.94,
+      "duration": 1.32,
+      "text": "Cam. Cam, let's go.",
+      "translation": "小卡 小卡 快走",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0389.m4a"
+    },
+    {
+      "id": "s01e03-0390",
+      "episode": "S01E03",
+      "start": 1044.94,
+      "end": 1046.16,
+      "duration": 1.22,
+      "text": "I don't know what's happened to me,",
+      "translation": "我不知道我怎么了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0391",
+      "episode": "S01E03",
+      "start": 1046.16,
+      "end": 1048.25,
+      "duration": 2.09,
+      "text": "but I just stole a baby's intellectual property.",
+      "translation": "可我刚刚盗取了一个婴儿的知识产权",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0392",
+      "episode": "S01E03",
+      "start": 1048.25,
+      "end": 1050.29,
+      "duration": 2.04,
+      "text": "- What? - You'll see it tonight on the news.",
+      "translation": "-什么 -今晚的新闻会曝光我的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0393",
+      "episode": "S01E03",
+      "start": 1050.29,
+      "end": 1053.71,
+      "duration": 3.42,
+      "text": "- Come on. Let's just go. - Oh, look who's here!",
+      "translation": "-别说了快走吧 -快看谁来了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0394",
+      "episode": "S01E03",
+      "start": 1053.71,
+      "end": 1056.94,
+      "duration": 3.23,
+      "text": "- Anton and Scott! - Sorry we're late!",
+      "translation": "-安东和斯科特 -抱歉我们晚了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0395",
+      "episode": "S01E03",
+      "start": 1056.94,
+      "end": 1059.13,
+      "duration": 2.19,
+      "text": "Don't look at me. The eye candy here can't leave the house...",
+      "translation": "不是我的错 旁边这位爷",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0396",
+      "episode": "S01E03",
+      "start": 1059.13,
+      "end": 1061.04,
+      "duration": 1.91,
+      "text": "without spending 20 minutes in front of the mirror.",
+      "translation": "不在镜子前打扮个20分钟是不会出门的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0397",
+      "episode": "S01E03",
+      "start": 1062.58,
+      "end": 1063.83,
+      "duration": 1.25,
+      "text": "Are you kidding me?",
+      "translation": "开什么玩笑啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0397.m4a"
+    },
+    {
+      "id": "s01e03-0398",
+      "episode": "S01E03",
+      "start": 1064.13,
+      "end": 1065.77,
+      "duration": 1.64,
+      "text": "I am so sorry.",
+      "translation": "真的很抱歉",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0398.m4a"
+    },
+    {
+      "id": "s01e03-0399",
+      "episode": "S01E03",
+      "start": 1066.67,
+      "end": 1068.91,
+      "duration": 2.24,
+      "text": "Look at those queens. I would have killed with this crowd.",
+      "translation": "看那对基神 我本可以在这里大放光彩的",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0400",
+      "episode": "S01E03",
+      "start": 1068.91,
+      "end": 1070.34,
+      "duration": 1.43,
+      "text": "But you had to clip my wings-",
+      "translation": "是你剪断了我翱翔的\"基翅\"",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0401",
+      "episode": "S01E03",
+      "start": 1070.34,
+      "end": 1072.15,
+      "duration": 1.81,
+      "text": "which you used to be the wind beneath.",
+      "translation": "而你曾是那翅膀下助力的风",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0402",
+      "episode": "S01E03",
+      "start": 1072.15,
+      "end": 1072.83,
+      "duration": 0.68,
+      "text": "I know. I'm sor-",
+      "translation": "我知道 对不",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0403",
+      "episode": "S01E03",
+      "start": 1072.83,
+      "end": 1075.51,
+      "duration": 2.68,
+      "text": "This class has turned me into a complete monster.",
+      "translation": "这个班让我发疯了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0403.m4a"
+    },
+    {
+      "id": "s01e03-0404",
+      "episode": "S01E03",
+      "start": 1075.51,
+      "end": 1077.53,
+      "duration": 2.02,
+      "text": "I'm- I'm just- I'll make it up to you. Let's just go.",
+      "translation": "我 我只是 我会补偿你的 走吧好不",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0405",
+      "episode": "S01E03",
+      "start": 1077.66,
+      "end": 1080.37,
+      "duration": 2.71,
+      "text": "Okay, it's time for Parents Dance.",
+      "translation": "好了 亲子舞时间到",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0406",
+      "episode": "S01E03",
+      "start": 1080.37,
+      "end": 1083.31,
+      "duration": 2.94,
+      "text": "Everybody dance for your baby!",
+      "translation": "大家都为自己的孩子起舞",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0407",
+      "episode": "S01E03",
+      "start": 1087.24,
+      "end": 1088.51,
+      "duration": 1.27,
+      "text": "You wanna do it, don't you?",
+      "translation": "你想跳 是不是",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0407.m4a"
+    },
+    {
+      "id": "s01e03-0408",
+      "episode": "S01E03",
+      "start": 1089.78,
+      "end": 1090.7,
+      "duration": 0.92,
+      "text": "I do.",
+      "translation": "好想好想",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0409",
+      "episode": "S01E03",
+      "start": 1091.32,
+      "end": 1093.11,
+      "duration": 1.79,
+      "text": "I wanna dance for my baby.",
+      "translation": "我想为我的宝贝起舞",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0409.m4a"
+    },
+    {
+      "id": "s01e03-0410",
+      "episode": "S01E03",
+      "start": 1093.34,
+      "end": 1095.25,
+      "duration": 1.91,
+      "text": "- All right. Go on. Get in there. - You sure?",
+      "translation": "-好吧 上吧 去吧 -真的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0411",
+      "episode": "S01E03",
+      "start": 1095.25,
+      "end": 1096.97,
+      "duration": 1.72,
+      "text": "Make that horsey move. Go ahead.",
+      "translation": "开足马力跳起来吧 去吧",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0412",
+      "episode": "S01E03",
+      "start": 1105.69,
+      "end": 1108.69,
+      "duration": 3.0,
+      "text": "Go, go!",
+      "translation": "加油 加油",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "repetitive-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0413",
+      "episode": "S01E03",
+      "start": 1117.75,
+      "end": 1119.13,
+      "duration": 1.38,
+      "text": "0h, I think I hurt myself.",
+      "translation": "我想我受伤了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0414",
+      "episode": "S01E03",
+      "start": 1137.5,
+      "end": 1139.85,
+      "duration": 2.35,
+      "text": "Hello. Hey, Javier.",
+      "translation": "你好啊 哈维尔",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0415",
+      "episode": "S01E03",
+      "start": 1141.15,
+      "end": 1142.84,
+      "duration": 1.69,
+      "text": "Manny's waiting for you outside.",
+      "translation": "曼尼在外面等你呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0415.m4a"
+    },
+    {
+      "id": "s01e03-0416",
+      "episode": "S01E03",
+      "start": 1143.84,
+      "end": 1146.64,
+      "duration": 2.8,
+      "text": "What? Why not?",
+      "translation": "什么 为什么来不了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0417",
+      "episode": "S01E03",
+      "start": 1147.71,
+      "end": 1148.85,
+      "duration": 1.14,
+      "text": "Hold that thought.",
+      "translation": "等会儿",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0418",
+      "episode": "S01E03",
+      "start": 1151.35,
+      "end": 1154.41,
+      "duration": 3.06,
+      "text": "His son's sitting on a curb, waiting to go to Disneyland,",
+      "translation": "他儿子坐在路边 等着去迪斯尼乐园",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0419",
+      "episode": "S01E03",
+      "start": 1154.41,
+      "end": 1158.2,
+      "duration": 3.79,
+      "text": "and Superman can't drag himself away from a craps table,",
+      "translation": "可我们的超人爸爸沉浸于赌博不能自拔",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0420",
+      "episode": "S01E03",
+      "start": 1158.69,
+      "end": 1160.13,
+      "duration": 1.44,
+      "text": "and I'm the jerk.",
+      "translation": "却说我是混蛋",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0421",
+      "episode": "S01E03",
+      "start": 1163.12,
+      "end": 1164.15,
+      "duration": 1.03,
+      "text": "Say, listen.",
+      "translation": "听着",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0422",
+      "episode": "S01E03",
+      "start": 1165.5,
+      "end": 1166.4,
+      "duration": 0.9,
+      "text": "I, uh-",
+      "translation": "我",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0423",
+      "episode": "S01E03",
+      "start": 1168.31,
+      "end": 1170.88,
+      "duration": 2.57,
+      "text": "- Sorry, but I got some bad news. - What?",
+      "translation": "-很抱歉 我有坏消息 -什么",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0424",
+      "episode": "S01E03",
+      "start": 1171.28,
+      "end": 1172.57,
+      "duration": 1.29,
+      "text": "Your dad couldn't make it.",
+      "translation": "你爸爸来不了了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0424.m4a"
+    },
+    {
+      "id": "s01e03-0425",
+      "episode": "S01E03",
+      "start": 1173.69,
+      "end": 1174.67,
+      "duration": 0.98,
+      "text": "Why not?",
+      "translation": "为什么",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0426",
+      "episode": "S01E03",
+      "start": 1175.71,
+      "end": 1177.01,
+      "duration": 1.3,
+      "text": "The plane was full,",
+      "translation": "飞机票卖光了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0427",
+      "episode": "S01E03",
+      "start": 1177.01,
+      "end": 1180.7,
+      "duration": 3.69,
+      "text": "and this old lady needed to get home, so he gave up his seat.",
+      "translation": "有个老奶奶回不了家 他把票让给了她",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0428",
+      "episode": "S01E03",
+      "start": 1180.84,
+      "end": 1182.49,
+      "duration": 1.65,
+      "text": "- You're making that up, aren't you? - No.",
+      "translation": "-你瞎编的 是不是 -不是",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0429",
+      "episode": "S01E03",
+      "start": 1183.28,
+      "end": 1184.58,
+      "duration": 1.3,
+      "text": "He just didn't want to come.",
+      "translation": "他就是不愿意来",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0429.m4a"
+    },
+    {
+      "id": "s01e03-0430",
+      "episode": "S01E03",
+      "start": 1184.58,
+      "end": 1188.3,
+      "duration": 3.72,
+      "text": "Are you kidding me? He was very upset. He was dying to see you.",
+      "translation": "开什么玩笑 他很难过 他很想见你",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0430.m4a"
+    },
+    {
+      "id": "s01e03-0431",
+      "episode": "S01E03",
+      "start": 1190.32,
+      "end": 1191.9,
+      "duration": 1.58,
+      "text": "In fact, look what he sent.",
+      "translation": "你看他送什么来了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0431.m4a"
+    },
+    {
+      "id": "s01e03-0432",
+      "episode": "S01E03",
+      "start": 1193.7,
+      "end": 1195.05,
+      "duration": 1.35,
+      "text": "- A limo? - Yeah.",
+      "translation": "-豪华轿车吗 -是啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0433",
+      "episode": "S01E03",
+      "start": 1195.73,
+      "end": 1198.23,
+      "duration": 2.5,
+      "text": "He wanted me and your mom to take you to Disneyland.",
+      "translation": "他让我和你妈妈带你去迪斯尼乐园",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0433.m4a"
+    },
+    {
+      "id": "s01e03-0434",
+      "episode": "S01E03",
+      "start": 1198.23,
+      "end": 1201.69,
+      "duration": 3.46,
+      "text": "- I told you he was an awesome dad. - Yeah, he's a prince.",
+      "translation": "-我跟你说我爸爸超赞的 -是啊 他是个王子",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e03-0435",
+      "episode": "S01E03",
+      "start": 1203.31,
+      "end": 1205.84,
+      "duration": 2.53,
+      "text": "Okay. The key to being a good dad?",
+      "translation": "那么 成为好父亲的秘诀是什么",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0435.m4a"
+    },
+    {
+      "id": "s01e03-0436",
+      "episode": "S01E03",
+      "start": 1208.26,
+      "end": 1210.51,
+      "duration": 2.25,
+      "text": "Sometimes things work out just the way you want.",
+      "translation": "有时候事情会如你所愿",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0436.m4a"
+    },
+    {
+      "id": "s01e03-0437",
+      "episode": "S01E03",
+      "start": 1210.8,
+      "end": 1211.68,
+      "duration": 0.88,
+      "text": "Race you to the end.",
+      "translation": "比赛谁先到路口",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0437.m4a"
+    },
+    {
+      "id": "s01e03-0438",
+      "episode": "S01E03",
+      "start": 1211.68,
+      "end": 1214.38,
+      "duration": 2.7,
+      "text": "That is not a good idea... for you.",
+      "translation": "那主意可不妙 对你来说",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0438.m4a"
+    },
+    {
+      "id": "s01e03-0439",
+      "episode": "S01E03",
+      "start": 1216.77,
+      "end": 1218.67,
+      "duration": 1.9,
+      "text": "Sometimes they don't.",
+      "translation": "有时候则事与愿违",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0440",
+      "episode": "S01E03",
+      "start": 1218.67,
+      "end": 1219.73,
+      "duration": 1.06,
+      "text": "You gotta hang in there.",
+      "translation": "但你要坚持",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0440.m4a"
+    },
+    {
+      "id": "s01e03-0441",
+      "episode": "S01E03",
+      "start": 1221.7,
+      "end": 1223.45,
+      "duration": 1.75,
+      "text": "Because when all is said and done,",
+      "translation": "因为当一切尘埃落地",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0442",
+      "episode": "S01E03",
+      "start": 1226.08,
+      "end": 1228.2,
+      "duration": 2.12,
+      "text": "90% of being a dad...",
+      "translation": "一个好父亲的大部分特征",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0443",
+      "episode": "S01E03",
+      "start": 1229.42,
+      "end": 1230.78,
+      "duration": 1.36,
+      "text": "is just showin' up.",
+      "translation": "就会自然出现",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0444",
+      "episode": "S01E03",
+      "start": 1243.42,
+      "end": 1245.18,
+      "duration": 1.76,
+      "text": "Hey! That's my bike!",
+      "translation": "喂 那是我的车",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0444.m4a"
+    },
+    {
+      "id": "s01e03-0445",
+      "episode": "S01E03",
+      "start": 1245.18,
+      "end": 1247.38,
+      "duration": 2.2,
+      "text": "Oh, I don't, uh-",
+      "translation": "我 不是",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0446",
+      "episode": "S01E03",
+      "start": 1248.83,
+      "end": 1249.8,
+      "duration": 0.97,
+      "text": "Well-",
+      "translation": "那个",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0447",
+      "episode": "S01E03",
+      "start": 1251.63,
+      "end": 1253.83,
+      "duration": 2.2,
+      "text": "- You- - I was giving it back!",
+      "translation": "-你 -我是来还你的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0448",
+      "episode": "S01E03",
+      "start": 1258.03,
+      "end": 1259.86,
+      "duration": 1.83,
+      "text": "She couldn't forgive herself.",
+      "translation": "她无法原谅自己",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e03-0448.m4a"
+    },
+    {
+      "id": "s01e03-0449",
+      "episode": "S01E03",
+      "start": 1259.86,
+      "end": 1261.24,
+      "duration": 1.38,
+      "text": "And...",
+      "translation": "但是",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0450",
+      "episode": "S01E03",
+      "start": 1262.96,
+      "end": 1264.46,
+      "duration": 1.5,
+      "text": "she had to choose.",
+      "translation": "她又不得不做出选择",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0451",
+      "episode": "S01E03",
+      "start": 1264.46,
+      "end": 1266.63,
+      "duration": 2.17,
+      "text": "I think because now I have-",
+      "translation": "我想因为现在我有了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0452",
+      "episode": "S01E03",
+      "start": 1267.07,
+      "end": 1268.2,
+      "duration": 1.13,
+      "text": "we have- we have-",
+      "translation": "我们有了 我们有了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0453",
+      "episode": "S01E03",
+      "start": 1269.04,
+      "end": 1270.23,
+      "duration": 1.19,
+      "text": "we have Lily,",
+      "translation": "我们有了莉莉",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0454",
+      "episode": "S01E03",
+      "start": 1270.23,
+      "end": 1273.86,
+      "duration": 3.63,
+      "text": "it's so hard to imagine being put in that position.",
+      "translation": "很难想象那样的境地",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0455",
+      "episode": "S01E03",
+      "start": 1274.77,
+      "end": 1276.89,
+      "duration": 2.12,
+      "text": "If I had to choose Lily or Mitchell,",
+      "translation": "如果我要在莉莉和米奇尔中选一个",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0456",
+      "episode": "S01E03",
+      "start": 1276.89,
+      "end": 1278.61,
+      "duration": 1.72,
+      "text": "I mean, I would choose-",
+      "translation": "我想 我会选择",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e03-0457",
+      "episode": "S01E03",
+      "start": 1279.0,
+      "end": 1281.96,
+      "duration": 2.96,
+      "text": "I don't know! I don't know!",
+      "translation": "我不知道 我不知道",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e03-0458",
+      "episode": "S01E03",
+      "start": 1284.8,
+      "end": 1286.57,
+      "duration": 1.77,
+      "text": "I don't know!",
+      "translation": "我不知道",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e03-0459",
+      "episode": "S01E03",
+      "start": 1287.38,
+      "end": 1289.04,
+      "duration": 1.66,
+      "text": "I don't know!",
+      "translation": "我不知道",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    }
+  ]
+}

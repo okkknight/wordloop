@@ -46,6 +46,32 @@ LOW_VALUE_EXACT = {
     "what's wrong with me", "hey uh alex you", "emergency assistance this is trina",
     "daddy wins do you believe in miracles", "kind of the best job in the world",
     "parking ticket from the mall",
+    "the two bedroom cottage with the indoor outdoor family room",
+    "we caravanned that house great deck", "no who is coconuts enough to divorce you",
+    "heard she already slept with two dads from the school",
+    "hey hey hey nice bike sally", "come on he looks like little bo peep on that thing",
+    "thats too damn bad", "yes whos excited huh", "wow paisley and pink",
+    "was there something wrong with the fishnet tank top",
+    "obviously not im wearing it underneath", "fine you know what",
+    "i usually wear nothing when im in a hot tub", "like fog at an airport",
+    "limo gets here at", "in my culture men take great pride in doing physical labor",
+    "i know thats why i hire people from your culture", "dont make us look like jerks here",
+    "have like three butt loads of fun", "thats when my dads picking me up",
+    "im gonna tie a noose on this thing", "the ceiling fan is the cart",
+    "my dads taking me on space mountain", "wow how bout that",
+    "was the bear sittin in the passenger seat", "we can skip that",
+    "nobodys gonna get shocked", "one time my dad was struck by lightning",
+    "thats why he can drink as much as he wants", "manny thinks his dad is like superman",
+    "the truth hes a total flake", "i just dont want this to become an episode of the cam show",
+    "bet youre lovin that steam shower", "we caravanned that house great uh deck",
+    "dance us in tyler", "no slapping your own butt", "what do we got here",
+    "i mean am i attracted to her yes", "would i ever act on it no no way",
+    "not while my wife is still alive", "yeah its a candle",
+    "ay but have some fun with your father okay", "look at you two with your private jokes already",
+    "youre a regular salazar and el oso", "its a very big comedy team in colombia",
+    "look at those queens i would have killed with this crowd",
+    "okay its time for parents dance", "everybody dance for your baby",
+    "make that horsey move go ahead", "i dont know i dont know",
 }
 NON_ENGLISH_PATTERNS = (
     re.compile(r"\bvamos\b", re.IGNORECASE),
@@ -54,6 +80,7 @@ NON_ENGLISH_PATTERNS = (
     re.compile(r"\bay\W+miren\b", re.IGNORECASE),
     re.compile(r"\bmi\s+ni(?:n|ñ)?o\s+peque(?:n|ñ)?o\b", re.IGNORECASE),
     re.compile(r"\blindo\b", re.IGNORECASE),
+    re.compile(r"\bmiamor\b", re.IGNORECASE),
 )
 
 
@@ -88,6 +115,7 @@ def classify(text: str, mixed_caption: bool) -> tuple[bool, list[str]]:
     reasons: list[str] = []
     words = re.findall(r"[A-Za-z]+(?:'[A-Za-z]+)?", text.lower())
     normalized = " ".join(words)
+    normalized_without_apostrophes = normalized.replace("'", "")
     if not words:
         reasons.append("no-english-text")
     if STAGE_DIRECTION.fullmatch(text):
@@ -98,7 +126,7 @@ def classify(text: str, mixed_caption: bool) -> tuple[bool, list[str]]:
         reasons.append("too-short")
     if len(words) < 4 and normalized not in SHORT_KEEP:
         reasons.append("short-low-context")
-    if normalized in LOW_VALUE_EXACT:
+    if normalized in LOW_VALUE_EXACT or normalized_without_apostrophes in LOW_VALUE_EXACT:
         reasons.append("low-value-utterance")
     # Repeated acknowledgements or emotional interjections do not form useful
     # sentence practice, even when the cue contains several repeated words.
