@@ -92,6 +92,22 @@ LOW_VALUE_EXACT = {
     "actually this is called an aileron", "only the greatest store on earth",
     "stay still say cheese", "i think i strained something",
     "i told him that it was his twin sister who died",
+    "miss mary mack mack mack", "all down her back back back",
+    "you know honey theres a gun in the footlocker in the garage", "i want you to use it on me",
+    "nanna got totally wasted", "take your hands off me", "kiss me oh hey kiss me",
+    "his uncle is uncle toby", "oh uncle toby ill be sure to include that in my amber alert",
+    "your mom needs your help to make love to her new man chas",
+    "i just cant give myself to him sexually", "i cant be intimate with him",
+    "we do things to each other", "all like east coast west coast you feelin me",
+    "i call it peerenting", "hello i was a hall raiser",
+    "rich girl just spoke to me", "were just a couple of friends kickin it in a juice bar",
+    "whats a juice bar", "okay a malt shop whatever", "hey just in the hood",
+    "oh my little comet", "wow wow mom what were you and ricky doing",
+    "she set a kids bike on fire", "yes yes my mom dad", "my mom would be less scary",
+    "oh you were in a band", "he may burn your house down",
+    "so make a note bitches", "its not a good color on you",
+    "i got gloria", "dede and you know it", "this is actually a song i wrote for haley",
+    "its called in the moonlight", "never good at harmonizing",
 }
 NON_ENGLISH_PATTERNS = (
     re.compile(r"\bvamos\b", re.IGNORECASE),
@@ -103,6 +119,7 @@ NON_ENGLISH_PATTERNS = (
     re.compile(r"\bmiamor\b", re.IGNORECASE),
     re.compile(r"\bmi\s+amigo\b", re.IGNORECASE),
     re.compile(r"^\s*ay\W+but\b", re.IGNORECASE),
+    re.compile(r"^\s*ay\b", re.IGNORECASE),
 )
 
 

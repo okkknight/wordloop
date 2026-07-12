@@ -46,6 +46,7 @@ function anonymousUserId() {
 
 type ProgressMap = Record<string, number>;
 type StudyMode = "listen" | "repeat";
+type TextVisibilityMode = "full" | "focus" | "hidden";
 type RepeatState =
   | "idle"
   | "connecting"
@@ -158,14 +159,39 @@ function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function renderStudyText(text: string, highlights?: readonly string[]) {
-  if (!highlights?.length) return text;
+function maskWord(value: string) {
+  return "•".repeat(Array.from(value).length);
+}
+
+function renderMaskedText(text: string, keyPrefix: string) {
+  return text.split(/([A-Za-z]+(?:'[A-Za-z]+)?)/g).map((part, index) => (
+    /[A-Za-z]/.test(part)
+      ? <span className="study-text-placeholder" key={`${keyPrefix}-${index}`}>{maskWord(part)}</span>
+      : part
+  ));
+}
+
+function renderStudyText(
+  text: string,
+  visibilityMode: TextVisibilityMode,
+  highlights?: readonly string[],
+) {
+  if (visibilityMode === "hidden") {
+    return renderMaskedText(text, "hidden");
+  }
+
+  if (!highlights?.length) {
+    return visibilityMode === "focus" ? renderMaskedText(text, "focus") : text;
+  }
+
   const marked = new Set(highlights.map((highlight) => highlight.toLocaleLowerCase()));
   const matcher = new RegExp(`(${highlights.map(escapeRegExp).join("|")})`, "gi");
   return text.split(matcher).map((part, index) => (
     marked.has(part.toLocaleLowerCase())
       ? <span className="learning-highlight" key={`${part}-${index}`}>{part}</span>
-      : part
+      : visibilityMode === "focus"
+        ? renderMaskedText(part, `focus-${index}`)
+        : part
   ));
 }
 
@@ -367,7 +393,7 @@ export default function Home() {
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
   const [repeatMessage, setRepeatMessage] = useState("READY");
   const [repeatTranscript, setRepeatTranscript] = useState("");
-  const [studyTextVisible, setStudyTextVisible] = useState(true);
+  const [textVisibilityMode, setTextVisibilityMode] = useState<TextVisibilityMode>("full");
   const [activeUserId, setActiveUserId] = useState("");
   const [usernameInput, setUsernameInput] = useState("");
   const [usernameError, setUsernameError] = useState("");
@@ -448,6 +474,17 @@ export default function Home() {
   const repeatLabel = repeatStatusLabel(repeatState);
   const repeatHint = repeatStatusHint(repeatState);
   const showRepeatTranscript = Boolean(repeatTranscript) && (repeatState === "retry" || repeatState === "error");
+  const visibilityControlModes: readonly TextVisibilityMode[] = sentenceMode
+    ? ["full", "focus", "hidden"]
+    : ["full", "hidden"];
+  const nextTextVisibilityMode = visibilityControlModes[
+    (visibilityControlModes.indexOf(textVisibilityMode) + 1) % visibilityControlModes.length
+  ];
+  const visibilityAriaLabel = textVisibilityMode === "full"
+    ? `Hide ${sentenceMode ? "non-highlighted words" : "word"}`
+    : textVisibilityMode === "focus"
+      ? "Hide all words"
+      : `Show ${sentenceMode ? "sentence" : "word"}`;
 
   const stopListening = useCallback(() => {
     if (repeatTrackRef.current) repeatTrackRef.current.enabled = false;
@@ -609,6 +646,13 @@ export default function Home() {
   useEffect(() => {
     activeCourseKindRef.current = sentenceMode ? "sentence" : "word";
   }, [sentenceMode]);
+
+  useEffect(() => {
+    if (!sentenceMode && textVisibilityMode === "focus") {
+      const resetTextVisibility = window.setTimeout(() => setTextVisibilityMode("full"), 0);
+      return () => window.clearTimeout(resetTextVisibility);
+    }
+  }, [sentenceMode, textVisibilityMode]);
 
   useEffect(() => {
     nextSentenceIndexRef.current = nextSentenceIndex;
@@ -1299,9 +1343,9 @@ export default function Home() {
         <h1
           key={currentItem.id}
           className={sentenceMode ? "sentence-title" : currentItem.text.length > 12 ? "very-long" : currentItem.text.length > 9 ? "long" : undefined}
-          aria-hidden={!studyTextVisible}
+          aria-hidden={textVisibilityMode === "hidden"}
         >
-          {studyTextVisible ? renderStudyText(currentItem.text, currentItem.highlights) : <span className="study-text-placeholder">✦ ✦ ✦</span>}
+          {renderStudyText(currentItem.text, textVisibilityMode, currentItem.highlights)}
         </h1>
         <div className="phonetic-row">
           {sentenceMode ? <div className="phonetic sentence-translation">{currentItem.meaning}</div> : <div key={`${word}-phonetic`} className="phonetic">/{phonetic}/</div>}
@@ -1319,11 +1363,11 @@ export default function Home() {
             </button>
             <button
               className="study-action sentence-visibility"
-              onClick={(event) => { event.stopPropagation(); setStudyTextVisible((visible) => !visible); }}
-              aria-label={studyTextVisible ? `Hide ${sentenceMode ? "sentence" : "word"}` : `Show ${sentenceMode ? "sentence" : "word"}`}
-              aria-pressed={studyTextVisible}
+              onClick={(event) => { event.stopPropagation(); setTextVisibilityMode(nextTextVisibilityMode); }}
+              aria-label={visibilityAriaLabel}
+              aria-pressed={textVisibilityMode !== "full"}
             >
-              <span className={`eye-icon${studyTextVisible ? "" : " closed"}`} aria-hidden="true" />
+              <span className={`eye-icon${textVisibilityMode === "hidden" ? " closed" : textVisibilityMode === "focus" ? " focus" : ""}`} aria-hidden="true" />
             </button>
           </div>
         </div>

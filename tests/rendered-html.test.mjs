@@ -70,6 +70,18 @@ test("ships the fourth sentence course package and its clips", async () => {
   assert.match(course.entries[0].text, /Riley Morton/);
 });
 
+test("ships the fifth sentence course package and its clips", async () => {
+  const course = JSON.parse(await read("app/data/modern-family-s01e05.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e05/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.episode, "S01E05");
+  assert.equal(course.entries.length, 512);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 176);
+  assert.equal(sentenceAudio.length, 176);
+  assert.match(course.entries[2].text, /because he's fine/);
+});
+
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
   const courses = await read("app/courses.ts");
@@ -105,26 +117,29 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /modern-family-s01e02/);
   assert.match(courses, /modern-family-s01e03/);
   assert.match(courses, /modern-family-s01e04/);
+  assert.match(courses, /modern-family-s01e05/);
   assert.match(courses, /MODERN_FAMILY_S01E01_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E02_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E03_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E04_HIGHLIGHTS/);
+  assert.match(courses, /MODERN_FAMILY_S01E05_HIGHLIGHTS/);
   assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);
   assert.match(courses, /DEFAULT_COURSE = MODERN_FAMILY_S01E01_COURSE/);
   assert.match(courses, /practiceOrder: "sequential"/);
   assert.match(page, /available\.find\(\(index\) => index > except\) \?\? available\[0\] \?\? -1/);
-  assert.match(page, /const \[studyTextVisible, setStudyTextVisible\] = useState\(true\)/);
-  assert.match(page, /Hide \$\{sentenceMode \? "sentence" : "word"\}/);
+  assert.match(page, /const \[textVisibilityMode, setTextVisibilityMode\] = useState<TextVisibilityMode>\("full"\)/);
+  assert.match(page, /const visibilityControlModes: readonly TextVisibilityMode\[\]/);
+  assert.match(page, /aria-label=\{visibilityAriaLabel\}/);
   assert.match(page, /storedSentenceProgress, -1, "random"/);
-  assert.match(page, /study-text-placeholder">✦ ✦ ✦/);
+  assert.match(page, /function renderMaskedText/);
   assert.match(page, /const MIN_SPEECH_MS = 350/);
   assert.match(page, /const MIN_SENTENCE_WORD_COVERAGE = 0\.6/);
   assert.match(page, /hasEnoughSpeechEvidence\(repeatWordRef\.current, transcript\)/);
   assert.match(page, /function normalizeCoverageWord/);
   assert.match(page, /word === "'em"/);
   assert.match(page, /sentenceWordCoverage\(repeatWordRef\.current, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
-  assert.match(page, /renderStudyText\(currentItem\.text, currentItem\.highlights\)/);
+  assert.match(page, /renderStudyText\(currentItem\.text, textVisibilityMode, currentItem\.highlights\)/);
   assert.match(page, /learning-highlight/);
   assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);
   assert.match(page, /用户名只能使用英文字母/);
