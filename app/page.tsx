@@ -399,7 +399,7 @@ export default function Home() {
   const sentencePracticeOrder = sentenceCourse.practiceOrder;
   const sentence = sentenceCourse.entries[sentenceIndex];
   const currentItem = sentenceMode
-    ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio }
+    ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio, highlights: sentence.highlights }
     : { id: word, text: word, meaning, phonetic, audio: appPath(`/audio/${word}.m4a`) };
   const currentAudio = sentenceMode ? sentence.audio : appPath(`/audio/${word}.m4a`);
   const currentIndex = sentenceMode ? sentenceIndex : wordIndex;

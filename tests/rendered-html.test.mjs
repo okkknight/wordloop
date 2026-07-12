@@ -83,6 +83,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /sentenceWordCoverage\(repeatWordRef\.current, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
   assert.match(page, /renderStudyText\(currentItem\.text, currentItem\.highlights\)/);
   assert.match(page, /learning-highlight/);
+  assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);
   assert.match(page, /const SEGMENT_SETTLE_MS = 900/);
   assert.match(page, /repeatTranscriptPartsRef\.current\.set\(payload\.item_id, transcript\)/);
   assert.match(page, /scheduleRepeatTranscriptFinalization\(turnId\)/);
