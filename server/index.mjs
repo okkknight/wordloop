@@ -75,6 +75,11 @@ database.exec(`
     course_id TEXT NOT NULL,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
   );
+  CREATE TABLE IF NOT EXISTS course_preferences (
+    user_id TEXT PRIMARY KEY,
+    last_course_id TEXT NOT NULL,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+  );
 `);
 
 function sendJson(response, status, value) {
@@ -139,12 +144,30 @@ async function handleProgress(request, response, url) {
     const completions = database.prepare(
       "SELECT course_id AS courseId, completion_count AS completionCount FROM course_completion_counts WHERE user_id = ?",
     ).all(userId);
-    return sendJson(response, 200, { progress, completions });
+    const preference = database.prepare(
+      "SELECT last_course_id AS recentCourseId FROM course_preferences WHERE user_id = ?",
+    ).get(userId);
+    const recentProgress = preference ? undefined : database.prepare(
+      "SELECT course_id AS recentCourseId FROM course_mode_progress WHERE user_id = ? ORDER BY updated_at DESC LIMIT 1",
+    ).get(userId);
+    return sendJson(response, 200, { progress, completions, recentCourseId: preference?.recentCourseId ?? recentProgress?.recentCourseId });
   }
 
   if (request.method === "POST") {
     let payload;
     try { payload = JSON.parse((await readBody(request)).toString("utf8")); } catch { return sendJson(response, 400, { error: "invalid JSON" }); }
+    if (payload.selectCourse === true) {
+      if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId) {
+        return sendJson(response, 400, { error: "invalid course selection" });
+      }
+      registerUser(payload.userId);
+      database.prepare(
+        `INSERT INTO course_preferences (user_id, last_course_id, updated_at)
+         VALUES (?, ?, CURRENT_TIMESTAMP)
+         ON CONFLICT(user_id) DO UPDATE SET last_course_id = excluded.last_course_id, updated_at = CURRENT_TIMESTAMP`,
+      ).run(payload.userId, payload.courseId);
+      return sendJson(response, 200, { recentCourseId: payload.courseId });
+    }
     if (payload.resetCourse === true) {
       if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId) {
         return sendJson(response, 400, { error: "invalid course reset" });

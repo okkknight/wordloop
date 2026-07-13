@@ -57,8 +57,14 @@ export async function GET(request: Request) {
   const completionResult = await env.DB.prepare(
     "SELECT course_id AS courseId, completion_count AS completionCount FROM course_completion_counts WHERE user_id = ?",
   ).bind(userId).all<{ courseId: string; completionCount: number }>();
+  const preference = await env.DB.prepare(
+    "SELECT last_course_id AS recentCourseId FROM course_preferences WHERE user_id = ?",
+  ).bind(userId).first<{ recentCourseId: string }>();
+  const recentProgress = preference ? undefined : await env.DB.prepare(
+    "SELECT course_id AS recentCourseId FROM course_mode_progress WHERE user_id = ? ORDER BY updated_at DESC LIMIT 1",
+  ).bind(userId).first<{ recentCourseId: string }>();
 
-  return Response.json({ progress: result.results, completions: completionResult.results });
+  return Response.json({ progress: result.results, completions: completionResult.results, recentCourseId: preference?.recentCourseId ?? recentProgress?.recentCourseId });
 }
 
 export async function POST(request: Request) {
@@ -69,10 +75,22 @@ export async function POST(request: Request) {
     markMastered?: boolean;
     resetCourse?: boolean;
     completeCourse?: boolean;
+    selectCourse?: boolean;
     word?: string;
     courseId?: string;
     itemId?: string;
   };
+  if (payload.selectCourse === true) {
+    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !payload.courseId) {
+      return Response.json({ error: "invalid course selection" }, { status: 400 });
+    }
+    await env.DB.prepare(
+      `INSERT INTO course_preferences (user_id, last_course_id, updated_at)
+       VALUES (?, ?, CURRENT_TIMESTAMP)
+       ON CONFLICT(user_id) DO UPDATE SET last_course_id = excluded.last_course_id, updated_at = CURRENT_TIMESTAMP`,
+    ).bind(payload.userId, payload.courseId).run();
+    return Response.json({ recentCourseId: payload.courseId });
+  }
   if (payload.resetCourse === true) {
     if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !payload.courseId) {
       return Response.json({ error: "invalid course reset" }, { status: 400 });

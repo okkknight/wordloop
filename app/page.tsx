@@ -514,6 +514,7 @@ export default function Home() {
   const currentIndexRef = useRef(wordIndex);
   const nextIndexRef = useRef(nextWordIndex);
   const nextRef = useRef<() => void>(() => undefined);
+  const courseSwitchRequestRef = useRef(0);
   const listenAutoPlayRef = useRef(false);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
   const activeCourse = COURSE_PACKAGES.find((course) => course.id === activeCourseId) ?? DEFAULT_COURSE;
@@ -741,6 +742,10 @@ export default function Home() {
     if (!activeUserId) return;
     const hydrateTimer = window.setTimeout(() => {
       userIdRef.current = activeUserId;
+      const locallyRememberedCourseId = localStorage.getItem(`word-loop-last-course:${activeUserId}`);
+      if (locallyRememberedCourseId && COURSE_PACKAGES.some((course) => course.id === locallyRememberedCourseId) && locallyRememberedCourseId !== activeCourseIdRef.current) {
+        setActiveCourseId(locallyRememberedCourseId);
+      }
       pendingProgressRef.current = readPendingProgressEvents(activeUserId, studyMode);
       confirmedWordProgressRef.current = {};
       confirmedSentenceProgressRef.current = {};
@@ -782,9 +787,14 @@ export default function Home() {
       };
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data: { progress: Array<{ word: string; studyCount: number }>; completions?: Array<{ courseId: string; completionCount: number }> }) => {
+      .then((data: { progress: Array<{ word: string; studyCount: number }>; completions?: Array<{ courseId: string; completionCount: number }>; recentCourseId?: string }) => {
         mergeWordProgress(data.progress);
         setCourseCompletionCounts(Object.fromEntries((data.completions ?? []).map(({ courseId, completionCount }) => [courseId, completionCount])));
+        const recentCourseId = data.recentCourseId;
+        if (recentCourseId && COURSE_PACKAGES.some((course) => course.id === recentCourseId) && recentCourseId !== activeCourseIdRef.current) {
+          setActiveCourseId(recentCourseId);
+          localStorage.setItem(`word-loop-last-course:${activeUserId}`, recentCourseId);
+        }
       })
         .catch(() => undefined);
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}&courseId=${encodeURIComponent(activeCourseId)}`))
@@ -1481,13 +1491,17 @@ export default function Home() {
       setCoursePickerOpen(false);
       return;
     }
+    const requestId = courseSwitchRequestRef.current + 1;
+    courseSwitchRequestRef.current = requestId;
     const targetCourse = COURSE_PACKAGES.find((c) => c.id === courseId) ?? DEFAULT_COURSE;
     const isSentence = targetCourse.kind === "sentence";
+    const wasActivated = activated;
     let targetProgress: ProgressMap = forceRestart ? {} : sentenceProgressRef.current;
 
     if (isSentence && !forceRestart && userIdRef.current) {
       try {
         const response = await fetch(appPath(`/api/progress?userId=${encodeURIComponent(userIdRef.current)}&mode=${studyMode}&courseId=${encodeURIComponent(targetCourse.id)}`));
+        if (courseSwitchRequestRef.current !== requestId) return;
         if (response.ok) {
           const data = await response.json() as { progress: Array<{ itemId: string; studyCount: number }> };
           targetProgress = Object.fromEntries(data.progress.map(({ itemId, studyCount }) => [itemId, studyCount]));
@@ -1499,9 +1513,12 @@ export default function Home() {
           }
         }
       } catch {
+        if (courseSwitchRequestRef.current !== requestId) return;
         // Keep the current in-memory progress as a safe fallback while offline.
       }
     }
+
+    if (courseSwitchRequestRef.current !== requestId) return;
 
     activeCourseKindRef.current = isSentence ? "sentence" : "word";
 
@@ -1529,11 +1546,30 @@ export default function Home() {
     currentAudioRef.current?.pause();
     stopListening();
     setActiveCourseId(courseId);
+    localStorage.setItem(`word-loop-last-course:${userIdRef.current}`, courseId);
+    if (userIdRef.current) {
+      void fetch(appPath("/api/progress"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId: userIdRef.current, mode: studyMode, courseId, selectCourse: true }),
+      });
+    }
     setCoursePickerOpen(false);
-    setActivated(false);
     setRepeatState("idle");
     setRepeatMessage("READY");
-  }, [activeCourseId, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyMode]);
+    if (!wasActivated) return;
+
+    if (studyMode === "listen") {
+      const targetAudio = isSentence
+        ? targetCourse.entries[currentIndexRef.current]?.audio
+        : appPath(`/audio/${WORDS[currentIndexRef.current][0]}.m4a`);
+      if (targetAudio) playListenItem(targetAudio);
+      recordStudy(currentIndexRef.current);
+      return;
+    }
+
+    beginRepeatTurn(currentIndexRef.current);
+  }, [activated, activeCourseId, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playListenItem, recordStudy, stopListening, studyMode]);
 
   const restartCompletedCourse = useCallback(async () => {
     const courseId = restartPromptCourseId;
