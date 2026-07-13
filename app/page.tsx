@@ -1437,9 +1437,13 @@ export default function Home() {
     setProgress({});
     setSentenceProgress({});
     setUsernameError("");
+    if (activeUserId === userId) {
+      activate();
+      return;
+    }
     pendingActivationRef.current = true;
     setActiveUserId(userId);
-  }, [usernameInput]);
+  }, [activate, activeUserId, usernameInput]);
 
   const handleModeChange = useCallback((nextMode: StudyMode) => {
     if (nextMode === studyMode) return;
