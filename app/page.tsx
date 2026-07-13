@@ -516,6 +516,8 @@ export default function Home() {
   const nextRef = useRef<() => void>(() => undefined);
   const courseSwitchRequestRef = useRef(0);
   const activatedRef = useRef(activated);
+  const pendingActivationRef = useRef(false);
+  const activateRef = useRef<() => void>(() => undefined);
   const listenAutoPlayRef = useRef(false);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
   const activeCourse = COURSE_PACKAGES.find((course) => course.id === activeCourseId) ?? DEFAULT_COURSE;
@@ -767,10 +769,11 @@ export default function Home() {
 
   useEffect(() => {
     if (!activeUserId) return;
+    let activationTimeout: number | null = null;
     const hydrateTimer = window.setTimeout(() => {
       userIdRef.current = activeUserId;
       const locallyRememberedCourseId = localStorage.getItem(`word-loop-last-course:${activeUserId}`);
-      if (locallyRememberedCourseId && COURSE_PACKAGES.some((course) => course.id === locallyRememberedCourseId) && locallyRememberedCourseId !== activeCourseIdRef.current) {
+      if (!activatedRef.current && courseSwitchRequestRef.current === 0 && locallyRememberedCourseId && COURSE_PACKAGES.some((course) => course.id === locallyRememberedCourseId) && locallyRememberedCourseId !== activeCourseIdRef.current) {
         restoreRecentCourse(locallyRememberedCourseId);
         return;
       }
@@ -813,6 +816,14 @@ export default function Home() {
       }
       refreshSentenceProgress(activeCourseId);
       };
+      const activatePendingSession = () => {
+        if (!pendingActivationRef.current) return;
+        pendingActivationRef.current = false;
+        activateRef.current();
+      };
+      activationTimeout = pendingActivationRef.current
+        ? window.setTimeout(activatePendingSession, 1_200)
+        : null;
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((data: { progress: Array<{ word: string; studyCount: number }>; completions?: Array<{ courseId: string; completionCount: number }>; recentCourseId?: string }) => {
@@ -823,15 +834,19 @@ export default function Home() {
           restoreRecentCourse(recentCourseId);
           localStorage.setItem(`word-loop-last-course:${activeUserId}`, recentCourseId);
         }
+        activatePendingSession();
       })
-        .catch(() => undefined);
+        .catch(activatePendingSession);
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}&courseId=${encodeURIComponent(activeCourseId)}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((data: { progress: Array<{ itemId: string; studyCount: number }> }) => mergeSentenceProgress(data.progress))
         .catch(() => undefined);
       void flushPendingProgress(activeUserId, studyMode);
     }, 0);
-    return () => window.clearTimeout(hydrateTimer);
+    return () => {
+      window.clearTimeout(hydrateTimer);
+      if (activationTimeout !== null) window.clearTimeout(activationTimeout);
+    };
   }, [activeCourseId, activeUserId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, restoreRecentCourse, sentenceCourse, sentenceMode, sentencePracticeOrder, studyMode]);
 
   useEffect(() => {
@@ -1389,14 +1404,22 @@ export default function Home() {
   }, [next]);
 
   const activate = useCallback(() => {
+    activatedRef.current = true;
     setActivated(true);
     if (studyMode === "listen") {
-      playListenItem(studyAudioSourceRef.current);
+      const audio = activeCourseKindRef.current === "sentence"
+        ? sentenceEntriesRef.current[currentIndexRef.current]?.audio
+        : WORDS[currentIndexRef.current]?.[0];
+      if (audio) playListenItem(audio);
       recordStudy(currentIndexRef.current);
       return;
     }
     beginRepeatTurn(currentIndexRef.current);
   }, [beginRepeatTurn, playListenItem, recordStudy, studyMode]);
+
+  useEffect(() => {
+    activateRef.current = activate;
+  }, [activate]);
 
   const startWithIdentity = useCallback(() => {
     const username = usernameInput.trim();
@@ -1414,9 +1437,9 @@ export default function Home() {
     setProgress({});
     setSentenceProgress({});
     setUsernameError("");
+    pendingActivationRef.current = true;
     setActiveUserId(userId);
-    activate();
-  }, [activate, usernameInput]);
+  }, [usernameInput]);
 
   const handleModeChange = useCallback((nextMode: StudyMode) => {
     if (nextMode === studyMode) return;
