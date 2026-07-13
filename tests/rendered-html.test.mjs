@@ -82,10 +82,112 @@ test("ships the fifth sentence course package and its clips", async () => {
   assert.match(course.entries[2].text, /because he's fine/);
 });
 
+test("ships the B1 workplace dialogue course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-workplace-conversations-b1.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/voa/workplace-conversations-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 20);
+  assert.equal(sentenceAudio.length, 20);
+  assert.match(course.entries[15].text, /completely honest/i);
+});
+
+test("ships the B1 pets and responsibility course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-pets-responsibility-b1.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/voa/pets-responsibility-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 16);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 16);
+  assert.equal(sentenceAudio.length, 16);
+  assert.match(course.entries[12].text, /spend time with a dog/i);
+});
+
+test("ships the B1 visit to Peru course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-visit-peru-b1.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/voa/visit-peru-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 20);
+  assert.equal(sentenceAudio.length, 20);
+  assert.match(course.entries[16].text, /wish I could join you/i);
+});
+
+test("ships the B1 weather at work course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-weather-at-work-b1.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/voa/weather-at-work-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 21);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 21);
+  assert.equal(sentenceAudio.length, 21);
+  assert.match(course.entries[20].text, /team-building exercise/i);
+});
+
+test("ships the B1 stay calm course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-stay-calm-b1.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/voa/stay-calm-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 20);
+  assert.equal(sentenceAudio.length, 20);
+  assert.match(course.entries[2].text, /What makes you say that/i);
+});
+
+test("ships the B1 helping out course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-helping-out-b1.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/voa/helping-out-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 20);
+  assert.equal(sentenceAudio.length, 20);
+  assert.match(course.entries[12].text, /make a big difference/i);
+});
+test("ships the B1 in common course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-in-common-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/in-common-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[12].text, /seat taken/i);
+});
+test("ships the B1 keep moving course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-keep-moving-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/keep-moving-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 18); assert.equal(audio.length, 18); assert.match(course.entries[9].text, /As soon as/i);
+});
+
+test("ships the B1 find your way course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-find-your-way-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/find-your-way-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[13].text, /fill out a form/i);
+});
+
+test("ships the B1 speak for yourself course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-speak-for-yourself-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/speak-for-yourself-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[14].text, /Speak for yourself/i);
+});
+
+test("ships the B1 follow instructions course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-follow-instructions-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/follow-instructions-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[12].text, /followed instructions/i);
+});
+
+test("ships the B1 polite requests course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-polite-requests-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/polite-requests-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[9].text, /Would you mind not talking/i);
+});
+
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
   const courses = await read("app/courses.ts");
   const progressRoute = await read("app/api/progress/route.ts");
+  const schema = await read("db/schema.ts");
+  const completionMigration = await read("drizzle/0003_charming_ikaris.sql");
   const pronunciationRoute = await read("app/api/pronunciation-session/route.ts");
   const server = await read("server/index.mjs");
 
@@ -97,6 +199,16 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /activeCourseId/);
   assert.match(page, /coursePickerOpen/);
   assert.match(page, /COURSE_PACKAGES/);
+  assert.match(page, /const MAX_STUDY_COUNT = 3/);
+  assert.match(page, /restartPromptCourseId/);
+  assert.match(page, /resetCourse: true/);
+  assert.match(page, /completionCourseId/);
+  assert.match(page, /course-card-completion/);
+  assert.match(progressRoute, /const maxStudyCount = 3/);
+  assert.match(progressRoute, /payload\.resetCourse === true/);
+  assert.match(progressRoute, /payload\.completeCourse === true/);
+  assert.match(schema, /courseCompletionCounts/);
+  assert.match(completionMigration, /course_completion_events/);
   assert.match(page, /const PASS_SCORE = 20/);
   assert.match(page, /sentenceIndexRef\.current = target\.index/);
   assert.match(page, /wordIndexRef\.current = target\.index/);
@@ -118,6 +230,18 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /modern-family-s01e03/);
   assert.match(courses, /modern-family-s01e04/);
   assert.match(courses, /modern-family-s01e05/);
+  assert.match(courses, /voa-workplace-conversations-b1/);
+  assert.match(courses, /voa-pets-responsibility-b1/);
+  assert.match(courses, /voa-visit-peru-b1/);
+  assert.match(courses, /voa-weather-at-work-b1/);
+  assert.match(courses, /voa-stay-calm-b1/);
+  assert.match(courses, /voa-helping-out-b1/);
+  assert.match(courses, /voa-in-common-b1/);
+  assert.match(courses, /voa-keep-moving-b1/);
+  assert.match(courses, /voa-find-your-way-b1/);
+  assert.match(courses, /voa-speak-for-yourself-b1/);
+  assert.match(courses, /voa-follow-instructions-b1/);
+  assert.match(courses, /voa-polite-requests-b1/);
   assert.match(courses, /MODERN_FAMILY_S01E01_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E02_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E03_HIGHLIGHTS/);
@@ -125,9 +249,18 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /MODERN_FAMILY_S01E05_HIGHLIGHTS/);
   assert.match(courses, /ielts-high-frequency/);
   assert.match(courses, /COURSE_PACKAGES/);
+  assert.match(courses, /COURSE_COLLECTIONS/);
+  assert.match(courses, /modern-family-s01/);
+  assert.match(courses, /voa-level-2/);
+  assert.match(page, /filteredCourseCollections/);
+  assert.match(page, /course-collection-toggle/);
   assert.match(courses, /DEFAULT_COURSE = MODERN_FAMILY_S01E01_COURSE/);
   assert.match(courses, /practiceOrder: "sequential"/);
   assert.match(page, /available\.find\(\(index\) => index > except\) \?\? available\[0\] \?\? -1/);
+  assert.match(page, /const sentenceIndexInCourse = sentenceCourse\.entries\[sentenceIndex\] \? sentenceIndex : 0/);
+  assert.match(page, /function initialEligibleSentenceIndex\(/);
+  assert.match(page, /const firstEligibleSentence = initialEligibleSentenceIndex\(/);
+  assert.match(page, /sentenceCourse\.entries\[nextIndex\]\?\.audio \?\? null/);
   assert.match(page, /const \[textVisibilityMode, setTextVisibilityMode\] = useState<TextVisibilityMode>\("full"\)/);
   assert.match(page, /const visibilityControlModes: readonly TextVisibilityMode\[\]/);
   assert.match(page, /aria-label=\{visibilityAriaLabel\}/);

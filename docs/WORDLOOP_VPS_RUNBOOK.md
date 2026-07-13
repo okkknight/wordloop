@@ -92,6 +92,19 @@ ssh root@89.208.242.44
 - `OPENAI_API_KEY` 放在 `/etc/wordloop/wordloop.env`
 - 文档中只记录路径，不记录密钥正文
 
+### 3.4 前端运行时目录自愈
+
+`vinext dev` / Miniflare 会向 `/opt/boringmax/wordloop/tmp` 写入运行时文件。服务通过 `/etc/systemd/system/wordloop.service.d/runtime-directory.conf` 在每次启动前以系统权限创建该目录，并递归设为 `shipnow:shipnow`。
+
+该 drop-in 的仓库来源是 `ops/systemd/wordloop.service.d/runtime-directory.conf`。修改后部署并执行：
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl restart wordloop.service
+```
+
+不要删除这两个 `ExecStartPre`；它们用来防止 rsync、手工操作或异常中断留下 root 所有的 `tmp/`，从而导致前端 502。
+
 ### 3.3 Caddy
 
 当前与 `wordloop` 相关的核心规则是：
@@ -262,12 +275,16 @@ ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && ls -la'
 cd /Users/linpeiwen/knightspace/wordloop
 npm run build
 rsync -a --delete \
-  --exclude .git \
-  --exclude node_modules \
-  --exclude .wrangler \
-  --exclude .vinext \
-  --exclude work \
-  --exclude outputs \
+  --exclude '/.git' \
+  --exclude '/.dev.vars' \
+  --exclude '/data' \
+  --exclude '/tmp' \
+  --exclude '/node_modules' \
+  --exclude '/.wrangler' \
+  --exclude '/.vinext' \
+  --exclude '/dist' \
+  --exclude '/work' \
+  --exclude '/outputs' \
   ./ root@89.208.242.44:/opt/boringmax/wordloop/
 ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && npm install'
 ssh root@89.208.242.44 'systemctl restart wordloop.service wordloop-api.service caddy'
@@ -277,6 +294,8 @@ ssh root@89.208.242.44 'systemctl restart wordloop.service wordloop-api.service 
 
 - `npm run build` 用于先在本地做一次完整校验
 - `rsync` 同步的是源码，不是单独静态目录
+- 排除规则必须以 `/` 开头，使其只匹配仓库根目录；特别是不能写 `--exclude data`，否则会误排除 `app/data` 内的课程 manifest。
+- 需要保留 VPS 的 `data/` 学习进度库、`.dev.vars`、`tmp/` 和 `.wrangler/` 运行时目录；前端服务用户为 `shipnow`，若重建运行时目录需将其所有权设为 `shipnow:shipnow`。
 - 如果依赖未变，可按需跳过线上 `npm install`
 
 ## 8. 发布后验收

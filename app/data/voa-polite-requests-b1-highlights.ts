@@ -1,0 +1,16 @@
+export const VOA_POLITE_REQUESTS_B1_HIGHLIGHTS: Readonly<Record<string, readonly string[]>> = {
+  "voa-polite-001": ["can you tell me how to get to"],
+  "voa-polite-003": ["take movies very seriously"],
+  "voa-polite-004": ["one of those people"],
+  "voa-polite-007": ["are starting"],
+  "voa-polite-009": ["part of the movie experience"],
+  "voa-polite-010": ["Would you mind not"],
+  "voa-polite-011": ["I was wondering", "almost finished with"],
+  "voa-polite-013": ["Do you mind not"],
+  "voa-polite-014": ["I'll try"],
+  "voa-polite-015": ["a little bit more quietly"],
+  "voa-polite-016": ["being more quiet"],
+  "voa-polite-017": ["turning down"],
+  "voa-polite-018": ["forgot to"],
+  "voa-polite-020": ["lending me", "for a minute"],
+};

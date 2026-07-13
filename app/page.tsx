@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
+  COURSE_COLLECTIONS,
   COURSE_PACKAGES,
   DEFAULT_COURSE,
   MODERN_FAMILY_S01E01_COURSE,
@@ -9,7 +10,7 @@ import {
 } from "./courses";
 import { WORDS } from "./words";
 
-const MAX_STUDY_COUNT = 50;
+const MAX_STUDY_COUNT = 3;
 const PASS_SCORE = 20;
 const AUTO_ADVANCE_MS = 700;
 const LISTEN_AUTOPLAY_DELAY_MS = 500;
@@ -53,6 +54,7 @@ type PendingProgressEvent = {
   courseId?: string;
   itemId?: string;
   word?: string;
+  completionCourseId?: string;
   mastered?: boolean;
   // Retain already queued events from the short-lived numeric implementation.
   targetStudyCount?: number;
@@ -153,6 +155,17 @@ function eligibleSentenceIndex(
     return available.find((index) => index > except) ?? available[0] ?? -1;
   }
   return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
+}
+
+function initialEligibleSentenceIndex(entries: readonly CourseEntry[], progress: ProgressMap) {
+  const available = entries.flatMap((entry, index) =>
+    (progress[entry.id] ?? 0) < MAX_STUDY_COUNT ? [index] : [],
+  );
+  return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
+}
+
+function courseIsComplete(entries: readonly CourseEntry[], progress: ProgressMap) {
+  return entries.length > 0 && entries.every((entry) => (progress[entry.id] ?? 0) >= MAX_STUDY_COUNT);
 }
 
 function normalizeSpeech(value: string) {
@@ -437,8 +450,12 @@ export default function Home() {
   const [activated, setActivated] = useState(false);
   const [progress, setProgress] = useState<ProgressMap>({});
   const [sentenceProgress, setSentenceProgress] = useState<ProgressMap>({});
+  const [courseCompletionCounts, setCourseCompletionCounts] = useState<ProgressMap>({});
   const [panelOpen, setPanelOpen] = useState(false);
   const [coursePickerOpen, setCoursePickerOpen] = useState(false);
+  const [restartPromptCourseId, setRestartPromptCourseId] = useState<string | null>(null);
+  const [restartPromptError, setRestartPromptError] = useState("");
+  const [expandedCourseCollectionId, setExpandedCourseCollectionId] = useState(DEFAULT_COURSE.collectionId);
   const [search, setSearch] = useState("");
   const [courseSearch, setCourseSearch] = useState("");
   const [repeatState, setRepeatState] = useState<RepeatState>("idle");
@@ -503,16 +520,21 @@ export default function Home() {
   const sentenceMode = activeCourse.kind === "sentence";
   const sentenceCourse = sentenceMode ? activeCourse : MODERN_FAMILY_S01E01_COURSE;
   const sentencePracticeOrder = sentenceCourse.practiceOrder;
-  const sentence = sentenceCourse.entries[sentenceIndex];
+  // A course switch and its follow-up effects can briefly render with the
+  // previous course's index. Keep that transient state inside the new course
+  // instead of reading past its entries (for example, from a 220-sentence
+  // a long course into a much shorter one).
+  const sentenceIndexInCourse = sentenceCourse.entries[sentenceIndex] ? sentenceIndex : 0;
+  const sentence = sentenceCourse.entries[sentenceIndexInCourse];
   const currentItem = sentenceMode
     ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio, highlights: sentence.highlights }
     : { id: word, text: word, meaning, phonetic, audio: appPath(`/audio/${word}.m4a`) };
   const currentAudio = sentenceMode ? sentence.audio : appPath(`/audio/${word}.m4a`);
-  const currentIndex = sentenceMode ? sentenceIndex : wordIndex;
+  const currentIndex = sentenceMode ? sentenceIndexInCourse : wordIndex;
   const nextIndex = sentenceMode ? nextSentenceIndex : nextWordIndex;
   const nextAudio = nextIndex < 0
     ? null
-    : sentenceMode ? sentenceCourse.entries[nextIndex].audio : appPath(`/audio/${WORDS[nextIndex][0]}.m4a`);
+    : sentenceMode ? sentenceCourse.entries[nextIndex]?.audio ?? null : appPath(`/audio/${WORDS[nextIndex][0]}.m4a`);
   const activeProgress = sentenceMode ? sentenceProgress : progress;
   const activeEntriesCount = activeCourse.entries.length;
   const [background, ink, accent] = PALETTES[paletteIndex];
@@ -543,24 +565,28 @@ export default function Home() {
             userId: event.userId,
             mode: event.mode,
             clientEventId: event.id,
-            ...(event.mastered || event.targetStudyCount === MAX_STUDY_COUNT ? { markMastered: true } : {}),
-            ...(event.word ? { word: event.word } : { courseId: event.courseId, itemId: event.itemId }),
+            ...(event.completionCourseId ? { courseId: event.completionCourseId, completeCourse: true } : {
+              ...(event.mastered || event.targetStudyCount === MAX_STUDY_COUNT ? { markMastered: true } : {}),
+              ...(event.word ? { word: event.word } : { courseId: event.courseId, itemId: event.itemId }),
+            }),
           }),
         });
         if (!response.ok) return;
-        const result = await response.json() as { word?: string; itemId?: string; studyCount: number };
+        const result = await response.json() as { word?: string; itemId?: string; studyCount?: number; courseId?: string; completionCount?: number };
         const remaining = readPendingProgressEvents(userId, mode).filter((pending) => pending.id !== event.id);
         writePendingProgressEvents(userId, mode, remaining);
 
         if (userIdRef.current !== userId || studyModeRef.current !== mode) continue;
         pendingProgressRef.current = remaining;
-        if (event.word && result.word) {
+        if (event.completionCourseId && result.courseId && result.completionCount !== undefined) {
+          setCourseCompletionCounts((current) => ({ ...current, [result.courseId!]: result.completionCount! }));
+        } else if (event.word && result.word && result.studyCount !== undefined) {
           confirmedWordProgressRef.current = {
             ...confirmedWordProgressRef.current,
             [event.word]: Math.max(confirmedWordProgressRef.current[event.word] ?? 0, result.studyCount),
           };
           refreshWordProgress();
-        } else if (event.itemId && event.courseId && result.itemId) {
+        } else if (event.itemId && event.courseId && result.itemId && result.studyCount !== undefined) {
           confirmedSentenceProgressRef.current = {
             ...confirmedSentenceProgressRef.current,
             [event.itemId]: Math.max(confirmedSentenceProgressRef.current[event.itemId] ?? 0, result.studyCount),
@@ -588,6 +614,10 @@ export default function Home() {
   const filteredCourses = COURSE_PACKAGES.filter((course) =>
     `${course.title} ${course.subtitle} ${course.description}`.toLowerCase().includes(courseSearch.trim().toLowerCase()),
   );
+  const filteredCourseCollections = COURSE_COLLECTIONS.map((collection) => ({
+    ...collection,
+    courses: filteredCourses.filter((course) => course.collectionId === collection.id),
+  })).filter((collection) => collection.courses.length > 0);
   const filteredSentences = sentenceCourse.entries.filter((entry) =>
     `${entry.text} ${entry.translation}`.toLowerCase().includes(search.trim().toLowerCase()),
   );
@@ -717,11 +747,23 @@ export default function Home() {
       refreshWordProgress();
       refreshSentenceProgress(activeCourseId);
       const initialWord = randomIndex(WORDS.length);
-      const initialSentence = eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, sentenceProgressRef.current, -1, "random");
+      const firstEligibleSentence = initialEligibleSentenceIndex(
+        sentenceCourse.entries,
+        sentenceProgressRef.current,
+      );
+      const initialSentence = firstEligibleSentence >= 0 ? firstEligibleSentence : 0;
       setWordIndex(initialWord);
       setNextWordIndex(eligibleIndex(progressRef.current, initialWord));
+      sentenceEntriesRef.current = sentenceCourse.entries;
+      sentenceIndexRef.current = initialSentence;
+      currentIndexRef.current = sentenceMode ? initialSentence : initialWord;
       setSentenceIndex(initialSentence);
-      setNextSentenceIndex(eligibleSentenceIndex(MODERN_FAMILY_S01E01_COURSE.entries, sentenceProgressRef.current, initialSentence, MODERN_FAMILY_S01E01_COURSE.practiceOrder));
+      setNextSentenceIndex(eligibleSentenceIndex(
+        sentenceCourse.entries,
+        sentenceProgressRef.current,
+        initialSentence,
+        sentencePracticeOrder,
+      ));
       setPaletteIndex(randomIndex(PALETTES.length));
 
       const mergeWordProgress = (remoteProgress: Array<{ word: string; studyCount: number }>) => {
@@ -740,7 +782,10 @@ export default function Home() {
       };
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data: { progress: Array<{ word: string; studyCount: number }> }) => mergeWordProgress(data.progress))
+      .then((data: { progress: Array<{ word: string; studyCount: number }>; completions?: Array<{ courseId: string; completionCount: number }> }) => {
+        mergeWordProgress(data.progress);
+        setCourseCompletionCounts(Object.fromEntries((data.completions ?? []).map(({ courseId, completionCount }) => [courseId, completionCount])));
+      })
         .catch(() => undefined);
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}&courseId=${encodeURIComponent(activeCourseId)}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
@@ -749,7 +794,7 @@ export default function Home() {
       void flushPendingProgress(activeUserId, studyMode);
     }, 0);
     return () => window.clearTimeout(hydrateTimer);
-  }, [activeCourseId, activeUserId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, studyMode]);
+  }, [activeCourseId, activeUserId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceCourse, sentenceMode, sentencePracticeOrder, studyMode]);
 
   useEffect(() => {
     const retryPendingProgress = () => {
@@ -838,7 +883,13 @@ export default function Home() {
         courseId: activeCourseId,
         itemId: entry.id,
       };
-      pendingProgressRef.current = [...pendingProgressRef.current, event];
+      const projectedProgress = { ...sentenceProgressRef.current, [entry.id]: Math.min(MAX_STUDY_COUNT, (sentenceProgressRef.current[entry.id] ?? 0) + 1) };
+      const shouldRecordCompletion = !courseIsComplete(sentenceEntriesRef.current, sentenceProgressRef.current)
+        && courseIsComplete(sentenceEntriesRef.current, projectedProgress)
+        && !pendingProgressRef.current.some((pending) => pending.completionCourseId === activeCourseId);
+      pendingProgressRef.current = shouldRecordCompletion
+        ? [...pendingProgressRef.current, event, { id: pendingEventId(), userId, mode: studyMode, completionCourseId: activeCourseId }]
+        : [...pendingProgressRef.current, event];
       writePendingProgressEvents(userId, studyMode, pendingProgressRef.current);
       refreshSentenceProgress(activeCourseId);
       const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, index, sentencePracticeOrder);
@@ -885,7 +936,17 @@ export default function Home() {
         word: WORDS[currentIndexRef.current][0],
         mastered: true,
       };
-    pendingProgressRef.current = [...pendingProgressRef.current, event];
+    const entry = sentenceMode ? sentenceEntriesRef.current[currentIndexRef.current] : undefined;
+    const projectedProgress = entry
+      ? { ...sentenceProgressRef.current, [entry.id]: MAX_STUDY_COUNT }
+      : sentenceProgressRef.current;
+    const shouldRecordCompletion = sentenceMode && entry
+      && !courseIsComplete(sentenceEntriesRef.current, sentenceProgressRef.current)
+      && courseIsComplete(sentenceEntriesRef.current, projectedProgress)
+      && !pendingProgressRef.current.some((pending) => pending.completionCourseId === activeCourseId);
+    pendingProgressRef.current = shouldRecordCompletion
+      ? [...pendingProgressRef.current, event, { id: pendingEventId(), userId, mode: studyMode, completionCourseId: activeCourseId }]
+      : [...pendingProgressRef.current, event];
     writePendingProgressEvents(userId, studyMode, pendingProgressRef.current);
     if (sentenceMode) {
       refreshSentenceProgress(activeCourseId);
@@ -1415,23 +1476,44 @@ export default function Home() {
     beginRepeatTurn(currentIndexRef.current);
   }, [activate, activated, beginRepeatTurn, next, repeatState, studyMode]);
 
-  const handleCourseChange = useCallback((courseId: string) => {
-    if (courseId === activeCourseId) {
+  const handleCourseChange = useCallback(async (courseId: string, forceRestart = false) => {
+    if (courseId === activeCourseId && !forceRestart) {
       setCoursePickerOpen(false);
       return;
     }
     const targetCourse = COURSE_PACKAGES.find((c) => c.id === courseId) ?? DEFAULT_COURSE;
     const isSentence = targetCourse.kind === "sentence";
+    let targetProgress: ProgressMap = forceRestart ? {} : sentenceProgressRef.current;
+
+    if (isSentence && !forceRestart && userIdRef.current) {
+      try {
+        const response = await fetch(appPath(`/api/progress?userId=${encodeURIComponent(userIdRef.current)}&mode=${studyMode}&courseId=${encodeURIComponent(targetCourse.id)}`));
+        if (response.ok) {
+          const data = await response.json() as { progress: Array<{ itemId: string; studyCount: number }> };
+          targetProgress = Object.fromEntries(data.progress.map(({ itemId, studyCount }) => [itemId, studyCount]));
+          if (targetCourse.entries.length > 0 && targetCourse.entries.every((entry) => (targetProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT)) {
+            setCoursePickerOpen(false);
+            setRestartPromptError("");
+            setRestartPromptCourseId(targetCourse.id);
+            return;
+          }
+        }
+      } catch {
+        // Keep the current in-memory progress as a safe fallback while offline.
+      }
+    }
+
     activeCourseKindRef.current = isSentence ? "sentence" : "word";
 
     // Update refs synchronously so beginRepeatTurn doesn't see a mismatch
     if (isSentence) {
-      const initialSentence = eligibleSentenceIndex(targetCourse.entries, sentenceProgressRef.current, -1, targetCourse.practiceOrder);
+      const firstEligibleSentence = initialEligibleSentenceIndex(targetCourse.entries, targetProgress);
+      const initialSentence = firstEligibleSentence >= 0 ? firstEligibleSentence : 0;
       sentenceEntriesRef.current = targetCourse.entries;
       sentenceIndexRef.current = initialSentence;
       currentIndexRef.current = initialSentence;
       setSentenceIndex(initialSentence);
-      setNextSentenceIndex(eligibleSentenceIndex(targetCourse.entries, sentenceProgressRef.current, initialSentence, targetCourse.practiceOrder));
+      setNextSentenceIndex(eligibleSentenceIndex(targetCourse.entries, targetProgress, initialSentence, targetCourse.practiceOrder));
     } else {
       currentIndexRef.current = wordIndexRef.current;
     }
@@ -1451,7 +1533,33 @@ export default function Home() {
     setActivated(false);
     setRepeatState("idle");
     setRepeatMessage("READY");
-  }, [activeCourseId, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
+  }, [activeCourseId, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening, studyMode]);
+
+  const restartCompletedCourse = useCallback(async () => {
+    const courseId = restartPromptCourseId;
+    const userId = userIdRef.current;
+    if (!courseId || !userId) return;
+    setRestartPromptError("");
+    try {
+      const response = await fetch(appPath("/api/progress"), {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, mode: studyMode, courseId, resetCourse: true }),
+      });
+      if (!response.ok) throw new Error("reset failed");
+      pendingProgressRef.current = pendingProgressRef.current.filter((event) => event.courseId !== courseId && event.completionCourseId !== courseId);
+      writePendingProgressEvents(userId, studyMode, pendingProgressRef.current);
+      if (activeCourseIdRef.current === courseId) {
+        confirmedSentenceProgressRef.current = {};
+        sentenceProgressRef.current = {};
+        setSentenceProgress({});
+      }
+      setRestartPromptCourseId(null);
+      await handleCourseChange(courseId, true);
+    } catch {
+      setRestartPromptError("暂时无法重置进度，请稍后重试。");
+    }
+  }, [handleCourseChange, restartPromptCourseId, studyMode]);
 
   return (
     <main
@@ -1464,7 +1572,11 @@ export default function Home() {
         <div className="brand-area">
           <button
             className="course-button"
-            onClick={(event) => { event.stopPropagation(); setCoursePickerOpen(true); }}
+            onClick={(event) => {
+              event.stopPropagation();
+              setExpandedCourseCollectionId(activeCourse.collectionId);
+              setCoursePickerOpen(true);
+            }}
             aria-label="Choose course package"
             aria-expanded={coursePickerOpen}
           >
@@ -1650,20 +1762,56 @@ export default function Home() {
               aria-label="Search course packages"
             />
             <div className="course-list">
-              {filteredCourses.map((course) => (
-                <button
-                  className={course.id === activeCourse.id ? "course-card active" : "course-card"}
-                  key={course.id}
-                  onClick={() => handleCourseChange(course.id)}
-                >
-                  <span>{course.kind === "word" ? "WORD COURSE" : "DIALOGUE COURSE"}</span>
-                  <strong>{course.title}</strong>
-                  <small>{course.subtitle}</small>
-                </button>
-              ))}
-              {filteredCourses.length === 0 && <p className="panel-empty">没有匹配的课程</p>}
+              {filteredCourseCollections.map((collection) => {
+                const expanded = courseSearch.trim().length > 0 || expandedCourseCollectionId === collection.id;
+                return (
+                  <section className="course-collection" key={collection.id}>
+                    <button
+                      className="course-collection-toggle"
+                      onClick={() => setExpandedCourseCollectionId(expanded ? "" : collection.id)}
+                      aria-expanded={expanded}
+                    >
+                      <span><em>{collection.label}</em><strong>{collection.title}</strong><small>{collection.subtitle}</small></span>
+                      <i aria-hidden="true">{expanded ? "−" : "+"}</i>
+                    </button>
+                    {expanded && <div className="course-collection-courses">
+                      {collection.courses.map((course) => (
+                        <button
+                          className={course.id === activeCourse.id ? "course-card active" : "course-card"}
+                          key={course.id}
+                          onClick={() => handleCourseChange(course.id)}
+                        >
+                          <strong>{course.title}</strong>
+                          <small>{course.subtitle}</small>
+                          {(courseCompletionCounts[course.id] ?? 0) > 0 && (
+                            <span className="course-card-completion" aria-label={`Completed ${courseCompletionCounts[course.id]} times`}>
+                              × {courseCompletionCounts[course.id]}
+                            </span>
+                          )}
+                        </button>
+                      ))}
+                    </div>}
+                  </section>
+                );
+              })}
+              {filteredCourseCollections.length === 0 && <p className="panel-empty">没有匹配的课程</p>}
             </div>
           </aside>
+        </div>
+      )}
+
+      {restartPromptCourseId && (
+        <div className="restart-course-backdrop" role="presentation" onClick={(event) => event.stopPropagation()}>
+          <section className="restart-course-dialog" role="dialog" aria-modal="true" aria-labelledby="restart-course-title">
+            <span>COURSE COMPLETE</span>
+            <h2 id="restart-course-title">这门课程已经完成</h2>
+            <p>要重新开始练习吗？现有练习进度将被清零。</p>
+            {restartPromptError && <p className="restart-course-error">{restartPromptError}</p>}
+            <div>
+              <button onClick={() => setRestartPromptCourseId(null)}>取消</button>
+              <button className="restart-course-confirm" onClick={() => void restartCompletedCourse()}>重新开始</button>
+            </div>
+          </section>
         </div>
       )}
 
@@ -1680,13 +1828,14 @@ export default function Home() {
               <div>
                 <span>YOUR PROGRESS</span>
                 <h2>{totalStudies.toLocaleString()} / {(activeEntriesCount * MAX_STUDY_COUNT).toLocaleString()}</h2>
+                <p className="progress-course-context">{activeCourse.title}</p>
               </div>
               <button onClick={() => setPanelOpen(false)} aria-label="Close progress panel">×</button>
             </div>
             <div className="progress-track"><i style={{ width: `${totalStudies / (activeEntriesCount * MAX_STUDY_COUNT) * 100}%` }} /></div>
             <div className="panel-stats">
-              <span><b>{completedWords}</b> 已掌握</span>
-              <span><b>{activeEntriesCount - completedWords}</b> 学习中</span>
+              <span><b>{completedWords}</b><small>已掌握</small></span>
+              <span><b>{activeEntriesCount - completedWords}</b><small>学习中</small></span>
             </div>
             <input
               className="panel-search"
@@ -1698,13 +1847,13 @@ export default function Home() {
             <div className="word-list">
               {sentenceMode ? filteredSentences.map((entry) => {
                 const count = sentenceProgress[entry.id] ?? 0;
-                return <div className="word-row" key={entry.id}><div><strong>{entry.text}</strong><small>{entry.translation}</small></div><span className={count >= MAX_STUDY_COUNT ? "complete" : undefined}>{count} / {MAX_STUDY_COUNT}</span></div>;
+                return <div className="word-row" key={entry.id}><div><strong>{entry.text}</strong><small>{entry.translation}</small></div><span className={count >= MAX_STUDY_COUNT ? "progress-count complete" : "progress-count"}>{count} / {MAX_STUDY_COUNT}</span></div>;
               }) : filteredWords.map(([entry, entryMeaning, , entryPhonetic]) => {
                 const count = progress[entry] ?? 0;
                 return (
                   <div className="word-row" key={entry}>
                     <div><strong>{entry}</strong><small>/{entryPhonetic}/ · {entryMeaning}</small></div>
-                    <span className={count >= MAX_STUDY_COUNT ? "complete" : undefined}>{count} / {MAX_STUDY_COUNT}</span>
+                    <span className={count >= MAX_STUDY_COUNT ? "progress-count complete" : "progress-count"}>{count} / {MAX_STUDY_COUNT}</span>
                   </div>
                 );
               })}

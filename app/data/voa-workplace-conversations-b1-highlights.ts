@@ -1,0 +1,17 @@
+export const VOA_WORKPLACE_CONVERSATIONS_B1_HIGHLIGHTS: Readonly<Record<string, readonly string[]>> = {
+  "voa-work-b1-001": ["What do you think", "is about"],
+  "voa-work-b1-002": ["everything that goes on"],
+  "voa-work-b1-003": ["gossip", "rumors start"],
+  "voa-work-b1-004": ["Update your resume"],
+  "voa-work-b1-006": ["have been worrying"],
+  "voa-work-b1-007": ["The reason for", "give out new assignments"],
+  "voa-work-b1-008": ["take on anything"],
+  "voa-work-b1-009": ["go back to"],
+  "voa-work-b1-010": ["team up with"],
+  "voa-work-b1-011": ["What do you mean by"],
+  "voa-work-b1-015": ["right now"],
+  "voa-work-b1-016": ["find out", "completely honest"],
+  "voa-work-b1-017": ["people person"],
+  "voa-work-b1-018": ["most proud of"],
+  "voa-work-b1-020": ["not good with people"],
+};

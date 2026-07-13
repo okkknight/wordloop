@@ -1,0 +1,17 @@
+export const VOA_FOLLOW_INSTRUCTIONS_B1_HIGHLIGHTS: Readonly<Record<string, readonly string[]>> = {
+  "voa-follow-001": ["let me see", "research first"],
+  "voa-follow-005": ["haven't slept since"],
+  "voa-follow-006": ["a little accident"],
+  "voa-follow-007": ["gave it First Aid"],
+  "voa-follow-009": ["accidentally knocked", "into the sink"],
+  "voa-follow-010": ["to dry"],
+  "voa-follow-011": ["caught fire"],
+  "voa-follow-012": ["proud of yourself"],
+  "voa-follow-013": ["followed instructions"],
+  "voa-follow-014": ["something else", "want to share"],
+  "voa-follow-016": ["whole experiment"],
+  "voa-follow-017": ["ashamed of yourself"],
+  "voa-follow-018": ["at the end of"],
+  "voa-follow-019": ["At that point"],
+  "voa-follow-020": ["listen to yourself", "sound crazy"],
+};

@@ -6,7 +6,7 @@ const anonymousUserIdPattern = /^[0-9a-f-]{36}$/i;
 const namedUserIdPattern = /^name:[a-z]+$/;
 const studyModes = new Set(["listen", "repeat"]);
 const progressEventIdPattern = /^[a-z0-9-]{8,128}$/i;
-const maxStudyCount = 50;
+const maxStudyCount = 3;
 
 function validUserId(value: unknown): value is string {
   return typeof value === "string" && (anonymousUserIdPattern.test(value) || namedUserIdPattern.test(value));
@@ -54,8 +54,11 @@ export async function GET(request: Request) {
   const result = await env.DB.prepare(
     "SELECT word, study_count AS studyCount FROM word_mode_progress WHERE user_id = ? AND study_mode = ?",
   ).bind(userId, studyMode).all<{ word: string; studyCount: number }>();
+  const completionResult = await env.DB.prepare(
+    "SELECT course_id AS courseId, completion_count AS completionCount FROM course_completion_counts WHERE user_id = ?",
+  ).bind(userId).all<{ courseId: string; completionCount: number }>();
 
-  return Response.json({ progress: result.results });
+  return Response.json({ progress: result.results, completions: completionResult.results });
 }
 
 export async function POST(request: Request) {
@@ -64,10 +67,45 @@ export async function POST(request: Request) {
     mode?: string;
     clientEventId?: string;
     markMastered?: boolean;
+    resetCourse?: boolean;
+    completeCourse?: boolean;
     word?: string;
     courseId?: string;
     itemId?: string;
   };
+  if (payload.resetCourse === true) {
+    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !payload.courseId) {
+      return Response.json({ error: "invalid course reset" }, { status: 400 });
+    }
+    await env.DB.prepare(
+      "DELETE FROM course_mode_progress WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+    ).bind(payload.userId, payload.mode, payload.courseId).run();
+    await env.DB.prepare(
+      "DELETE FROM progress_events WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+    ).bind(payload.userId, payload.mode, payload.courseId).run();
+    return Response.json({ courseId: payload.courseId, reset: true });
+  }
+
+  if (payload.completeCourse === true) {
+    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !validProgressEventId(payload.clientEventId) || !payload.courseId) {
+      return Response.json({ error: "invalid course completion" }, { status: 400 });
+    }
+    const event = await env.DB.prepare(
+      "INSERT OR IGNORE INTO course_completion_events (event_id, user_id, course_id, created_at) VALUES (?, ?, ?, CURRENT_TIMESTAMP)",
+    ).bind(payload.clientEventId, payload.userId, payload.courseId).run();
+    const row = event.meta.changes === 1
+      ? await env.DB.prepare(
+        `INSERT INTO course_completion_counts (user_id, course_id, completion_count, updated_at)
+         VALUES (?, ?, 1, CURRENT_TIMESTAMP)
+         ON CONFLICT(user_id, course_id) DO UPDATE SET completion_count = course_completion_counts.completion_count + 1, updated_at = CURRENT_TIMESTAMP
+         RETURNING completion_count AS completionCount`,
+      ).bind(payload.userId, payload.courseId).first<{ completionCount: number }>()
+      : await env.DB.prepare(
+        "SELECT completion_count AS completionCount FROM course_completion_counts WHERE user_id = ? AND course_id = ?",
+      ).bind(payload.userId, payload.courseId).first<{ completionCount: number }>();
+    return Response.json({ courseId: payload.courseId, completionCount: row?.completionCount ?? 1 });
+  }
+
   if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !validProgressEventId(payload.clientEventId) || (payload.markMastered !== undefined && payload.markMastered !== true)) {
     return Response.json({ error: "invalid progress update" }, { status: 400 });
   }

@@ -1,0 +1,16 @@
+export const VOA_PETS_RESPONSIBILITY_B1_HIGHLIGHTS: Readonly<Record<string, readonly string[]>> = {
+  "voa-pets-b1-001": ["would have gone"],
+  "voa-pets-b1-002": ["won first place"],
+  "voa-pets-b1-003": ["haven't met", "have you"],
+  "voa-pets-b1-004": ["must have been", "a dozen"],
+  "voa-pets-b1-006": ["without a pet"],
+  "voa-pets-b1-007": ["The closest thing I have"],
+  "voa-pets-b1-008": ["since I was a little girl"],
+  "voa-pets-b1-009": ["was invited to", "one-of-a-kind"],
+  "voa-pets-b1-010": ["Only you could have"],
+  "voa-pets-b1-011": ["become part of"],
+  "voa-pets-b1-012": ["a big responsibility"],
+  "voa-pets-b1-013": ["may want to", "spend time with"],
+  "voa-pets-b1-014": ["watch Dublin", "a couple of hours"],
+  "voa-pets-b1-015": ["take very good care of"],
+};

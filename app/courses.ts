@@ -3,13 +3,37 @@ import modernFamilyS01E02 from "./data/modern-family-s01e02.json";
 import modernFamilyS01E03 from "./data/modern-family-s01e03.json";
 import modernFamilyS01E04 from "./data/modern-family-s01e04.json";
 import modernFamilyS01E05 from "./data/modern-family-s01e05.json";
-import voaEiamLayItOnThick from "./data/voa-eiam-lay-it-on-thick.json";
+import voaWorkplaceConversationsB1 from "./data/voa-workplace-conversations-b1.json";
+import voaProjectFeedbackB1 from "./data/voa-project-feedback-b1.json";
+import voaPetsResponsibilityB1 from "./data/voa-pets-responsibility-b1.json";
+import voaVisitPeruB1 from "./data/voa-visit-peru-b1.json";
+import voaWeatherAtWorkB1 from "./data/voa-weather-at-work-b1.json";
+import voaStayCalmB1 from "./data/voa-stay-calm-b1.json";
+import voaHelpingOutB1 from "./data/voa-helping-out-b1.json";
+import voaInCommonB1 from "./data/voa-in-common-b1.json";
+import voaKeepMovingB1 from "./data/voa-keep-moving-b1.json";
+import voaFindYourWayB1 from "./data/voa-find-your-way-b1.json";
+import voaSpeakForYourselfB1 from "./data/voa-speak-for-yourself-b1.json";
+import voaFollowInstructionsB1 from "./data/voa-follow-instructions-b1.json";
+import voaPoliteRequestsB1 from "./data/voa-polite-requests-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
 import { MODERN_FAMILY_S01E04_HIGHLIGHTS } from "./data/modern-family-s01e04-highlights";
 import { MODERN_FAMILY_S01E05_HIGHLIGHTS } from "./data/modern-family-s01e05-highlights";
-import { VOA_EIAM_LAY_IT_ON_THICK_HIGHLIGHTS } from "./data/voa-eiam-lay-it-on-thick-highlights";
+import { VOA_WORKPLACE_CONVERSATIONS_B1_HIGHLIGHTS } from "./data/voa-workplace-conversations-b1-highlights";
+import { VOA_PROJECT_FEEDBACK_B1_HIGHLIGHTS } from "./data/voa-project-feedback-b1-highlights";
+import { VOA_PETS_RESPONSIBILITY_B1_HIGHLIGHTS } from "./data/voa-pets-responsibility-b1-highlights";
+import { VOA_VISIT_PERU_B1_HIGHLIGHTS } from "./data/voa-visit-peru-b1-highlights";
+import { VOA_WEATHER_AT_WORK_B1_HIGHLIGHTS } from "./data/voa-weather-at-work-b1-highlights";
+import { VOA_STAY_CALM_B1_HIGHLIGHTS } from "./data/voa-stay-calm-b1-highlights";
+import { VOA_HELPING_OUT_B1_HIGHLIGHTS } from "./data/voa-helping-out-b1-highlights";
+import { VOA_IN_COMMON_B1_HIGHLIGHTS } from "./data/voa-in-common-b1-highlights";
+import { VOA_KEEP_MOVING_B1_HIGHLIGHTS } from "./data/voa-keep-moving-b1-highlights";
+import { VOA_FIND_YOUR_WAY_B1_HIGHLIGHTS } from "./data/voa-find-your-way-b1-highlights";
+import { VOA_SPEAK_FOR_YOURSELF_B1_HIGHLIGHTS } from "./data/voa-speak-for-yourself-b1-highlights";
+import { VOA_FOLLOW_INSTRUCTIONS_B1_HIGHLIGHTS } from "./data/voa-follow-instructions-b1-highlights";
+import { VOA_POLITE_REQUESTS_B1_HIGHLIGHTS } from "./data/voa-polite-requests-b1-highlights";
 import { WORDS } from "./words";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -31,12 +55,20 @@ export type CourseEntry = {
 
 export type CoursePackage = {
   id: string;
+  collectionId: string;
   title: string;
   subtitle: string;
   description: string;
   kind: "word" | "sentence";
   practiceOrder: "random" | "sequential";
   entries: readonly CourseEntry[];
+};
+
+export type CourseCollection = {
+  id: string;
+  label: string;
+  title: string;
+  subtitle: string;
 };
 
 const modernFamilyEntries = modernFamilyS01E01.entries
@@ -84,13 +116,43 @@ const modernFamilyS01E05Entries = modernFamilyS01E05.entries
     audio: `${basePath}/courses/modern-family/s01e05/${entry.audio}`,
   })) as CourseEntry[];
 
-const voaEiamLayItOnThickEntries = voaEiamLayItOnThick.entries
+const voaWorkplaceConversationsB1Entries = voaWorkplaceConversationsB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({
     ...entry,
-    highlights: VOA_EIAM_LAY_IT_ON_THICK_HIGHLIGHTS[entry.id],
-    audio: `${basePath}/courses/voa/eiam-lay-it-on-thick/${entry.audio}`,
+    highlights: VOA_WORKPLACE_CONVERSATIONS_B1_HIGHLIGHTS[entry.id],
+    audio: `${basePath}/courses/voa/workplace-conversations-b1/${entry.audio}`,
   })) as CourseEntry[];
+
+const voaProjectFeedbackB1Entries = voaProjectFeedbackB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, highlights: VOA_PROJECT_FEEDBACK_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/project-feedback-b1/${entry.audio}` })) as CourseEntry[];
+
+const voaPetsResponsibilityB1Entries = voaPetsResponsibilityB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, highlights: VOA_PETS_RESPONSIBILITY_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/pets-responsibility-b1/${entry.audio}` })) as CourseEntry[];
+
+const voaVisitPeruB1Entries = voaVisitPeruB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, highlights: VOA_VISIT_PERU_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/visit-peru-b1/${entry.audio}` })) as CourseEntry[];
+
+const voaWeatherAtWorkB1Entries = voaWeatherAtWorkB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, highlights: VOA_WEATHER_AT_WORK_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/weather-at-work-b1/${entry.audio}` })) as CourseEntry[];
+
+const voaStayCalmB1Entries = voaStayCalmB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, highlights: VOA_STAY_CALM_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/stay-calm-b1/${entry.audio}` })) as CourseEntry[];
+
+const voaHelpingOutB1Entries = voaHelpingOutB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, highlights: VOA_HELPING_OUT_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/helping-out-b1/${entry.audio}` })) as CourseEntry[];
+const voaInCommonB1Entries = voaInCommonB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, highlights: VOA_IN_COMMON_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/in-common-b1/${entry.audio}` })) as CourseEntry[];
+const voaKeepMovingB1Entries = voaKeepMovingB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, highlights: VOA_KEEP_MOVING_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/keep-moving-b1/${entry.audio}` })) as CourseEntry[];
+const voaFindYourWayB1Entries = voaFindYourWayB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, highlights: VOA_FIND_YOUR_WAY_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/find-your-way-b1/${entry.audio}` })) as CourseEntry[];
+const voaSpeakForYourselfB1Entries = voaSpeakForYourselfB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, highlights: VOA_SPEAK_FOR_YOURSELF_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/speak-for-yourself-b1/${entry.audio}` })) as CourseEntry[];
+const voaFollowInstructionsB1Entries = voaFollowInstructionsB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, highlights: VOA_FOLLOW_INSTRUCTIONS_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/follow-instructions-b1/${entry.audio}` })) as CourseEntry[];
+const voaPoliteRequestsB1Entries = voaPoliteRequestsB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, highlights: VOA_POLITE_REQUESTS_B1_HIGHLIGHTS[entry.id], audio: `${basePath}/courses/voa/polite-requests-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -103,6 +165,7 @@ const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) 
 export const COURSE_PACKAGES: readonly CoursePackage[] = [
   {
     id: "ielts-high-frequency",
+    collectionId: "ielts",
     title: "IELTS 高频词",
     subtitle: "Academic Word List · 570 words",
     description: "从 570 个高频学术词汇开始，逐词建立听辨和发音记忆。",
@@ -112,6 +175,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   },
   {
     id: "modern-family-s01e01",
+    collectionId: "modern-family-s01",
     title: "Modern Family · S01E01",
     subtitle: `Pilot · ${modernFamilyEntries.length} learning sentences`,
     description: "用真实对白练习听力、表达和跟读。",
@@ -121,6 +185,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   },
   {
     id: "modern-family-s01e02",
+    collectionId: "modern-family-s01",
     title: "Modern Family · S01E02",
     subtitle: `The Bicycle Thief · ${modernFamilyS01E02Entries.length} learning sentences`,
     description: "用真实对白练习听力、表达和跟读。",
@@ -130,6 +195,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   },
   {
     id: "modern-family-s01e03",
+    collectionId: "modern-family-s01",
     title: "Modern Family · S01E03",
     subtitle: `Come Fly with Me · ${modernFamilyS01E03Entries.length} learning sentences`,
     description: "用真实对白练习听力、表达和跟读。",
@@ -139,6 +205,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   },
   {
     id: "modern-family-s01e04",
+    collectionId: "modern-family-s01",
     title: "Modern Family · S01E04",
     subtitle: `The Incident · ${modernFamilyS01E04Entries.length} learning sentences`,
     description: "用真实对白练习听力、表达和跟读。",
@@ -148,6 +215,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   },
   {
     id: "modern-family-s01e05",
+    collectionId: "modern-family-s01",
     title: "Modern Family · S01E05",
     subtitle: `Coal Digger · ${modernFamilyS01E05Entries.length} learning sentences`,
     description: "用真实对白练习听力、表达和跟读。",
@@ -156,14 +224,87 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     entries: modernFamilyS01E05Entries,
   },
   {
-    id: "voa-eiam-lay-it-on-thick",
-    title: "VOA · Lay It On Thick",
-    subtitle: `English in a Minute · ${voaEiamLayItOnThickEntries.length} learning sentences`,
-    description: "高频美式表达精讲。Source: VOA Learning English",
+    id: "voa-workplace-conversations-b1",
+    collectionId: "voa-level-2",
+    title: "Workplace Conversations · B1",
+    subtitle: `VOA Learning English · ${voaWorkplaceConversationsB1Entries.length} learning sentences`,
+    description: "工作场景的自然对白：会议、协作、求职与面试。",
     kind: "sentence",
     practiceOrder: "sequential",
-    entries: voaEiamLayItOnThickEntries,
+    entries: voaWorkplaceConversationsB1Entries,
   },
+  {
+    id: "voa-project-feedback-b1",
+    collectionId: "voa-level-2",
+    title: "Project Feedback · B1",
+    subtitle: `VOA Learning English · ${voaProjectFeedbackB1Entries.length} learning sentences`,
+    description: "征求建议、复盘项目、表达观点与追问细节。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: voaProjectFeedbackB1Entries,
+  },
+  {
+    id: "voa-pets-responsibility-b1",
+    collectionId: "voa-level-2",
+    title: "Pets & Responsibility · B1",
+    subtitle: `VOA Learning English · ${voaPetsResponsibilityB1Entries.length} learning sentences`,
+    description: "分享经历、表达责任，以及照看他人的日常英语。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: voaPetsResponsibilityB1Entries,
+  },
+  {
+    id: "voa-visit-peru-b1",
+    collectionId: "voa-level-2",
+    title: "Visit to Peru · B1",
+    subtitle: `VOA Learning English · ${voaVisitPeruB1Entries.length} learning sentences`,
+    description: "邀约、婉拒、表达希望与安排时间的自然口语。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: voaVisitPeruB1Entries,
+  },
+  {
+    id: "voa-weather-at-work-b1",
+    collectionId: "voa-level-2",
+    title: "Weather at Work · B1",
+    subtitle: `VOA Learning English · ${voaWeatherAtWorkB1Entries.length} learning sentences`,
+    description: "工作准备、资源不足、实时信息与团队复盘的自然表达。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: voaWeatherAtWorkB1Entries,
+  },
+  {
+    id: "voa-stay-calm-b1",
+    collectionId: "voa-level-2",
+    title: "Stay Calm · B1",
+    subtitle: `VOA Learning English · ${voaStayCalmB1Entries.length} learning sentences`,
+    description: "表达担心、礼貌沟通、给出条件与保持冷静的自然口语。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: voaStayCalmB1Entries,
+  },
+  {
+    id: "voa-helping-out-b1",
+    collectionId: "voa-level-2",
+    title: "Helping Out · B1",
+    subtitle: `VOA Learning English · ${voaHelpingOutB1Entries.length} learning sentences`,
+    description: "提出帮助、给出建议、表达感受与感谢的实用口语。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: voaHelpingOutB1Entries,
+  },
+  { id: "voa-in-common-b1", collectionId: "voa-level-2", title: "In Common · B1", subtitle: `VOA Learning English · ${voaInCommonB1Entries.length} learning sentences`, description: "表达共同点、邀约、坦诚说明与关系感受的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaInCommonB1Entries },
+  { id: "voa-keep-moving-b1", collectionId: "voa-level-2", title: "Keep Moving · B1", subtitle: `VOA Learning English · ${voaKeepMovingB1Entries.length} learning sentences`, description: "协商节奏、运动建议、取消安排与求助的自然表达。", kind: "sentence", practiceOrder: "sequential", entries: voaKeepMovingB1Entries },
+  { id: "voa-find-your-way-b1", collectionId: "voa-level-2", title: "Find Your Way · B1", subtitle: `VOA Learning English · ${voaFindYourWayB1Entries.length} learning sentences`, description: "失物招领、问路、寻求帮助与回忆习惯的实用口语。", kind: "sentence", practiceOrder: "sequential", entries: voaFindYourWayB1Entries },
+  { id: "voa-speak-for-yourself-b1", collectionId: "voa-level-2", title: "Speak for Yourself · B1", subtitle: `VOA Learning English · ${voaSpeakForYourselfB1Entries.length} learning sentences`, description: "任务安排、表达观点、说明规则与投入工作的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaSpeakForYourselfB1Entries },
+  { id: "voa-follow-instructions-b1", collectionId: "voa-level-2", title: "Follow Instructions · B1", subtitle: `VOA Learning English · ${voaFollowInstructionsB1Entries.length} learning sentences`, description: "汇报任务、描述意外、表达评价与遵循指示的实用口语。", kind: "sentence", practiceOrder: "sequential", entries: voaFollowInstructionsB1Entries },
+  { id: "voa-polite-requests-b1", collectionId: "voa-level-2", title: "Polite Requests · B1", subtitle: `VOA Learning English · ${voaPoliteRequestsB1Entries.length} learning sentences`, description: "礼貌提问、委婉提醒、说明状况与公共场合沟通的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaPoliteRequestsB1Entries },
+];
+
+export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
+  { id: "ielts", label: "WORD COURSE", title: "IELTS 高频词", subtitle: "Academic Word List · 570 words" },
+  { id: "modern-family-s01", label: "DIALOGUE COURSE", title: "摩登家庭 · 第一季", subtitle: "5 集对白课程" },
+  { id: "voa-level-2", label: "DIALOGUE COURSE", title: "VOA · Level 2", subtitle: "13 节实用口语课程 · B1" },
 ];
 
 export const IELTS_HIGH_FREQUENCY_COURSE = COURSE_PACKAGES[0];

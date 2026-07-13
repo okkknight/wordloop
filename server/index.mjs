@@ -4,7 +4,7 @@ import { dirname, resolve } from "node:path";
 import { DatabaseSync } from "node:sqlite";
 
 const port = Number(process.env.PORT ?? 3011);
-const maxStudyCount = 50;
+const maxStudyCount = 3;
 const databasePath = resolve(process.env.WORDLOOP_DB_PATH ?? "./data/wordloop.sqlite");
 const openAiApiKey = process.env.OPENAI_API_KEY;
 const openAiRealtimeUrl = "https://api.openai.com/v1/realtime/calls";
@@ -60,6 +60,19 @@ database.exec(`
     course_id TEXT,
     item_id TEXT,
     word TEXT,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+  );
+  CREATE TABLE IF NOT EXISTS course_completion_counts (
+    user_id TEXT NOT NULL,
+    course_id TEXT NOT NULL,
+    completion_count INTEGER NOT NULL DEFAULT 0,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (user_id, course_id)
+  );
+  CREATE TABLE IF NOT EXISTS course_completion_events (
+    event_id TEXT PRIMARY KEY NOT NULL,
+    user_id TEXT NOT NULL,
+    course_id TEXT NOT NULL,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
   );
 `);
@@ -123,12 +136,48 @@ async function handleProgress(request, response, url) {
     const progress = database.prepare(
       "SELECT word, study_count AS studyCount FROM word_mode_progress WHERE user_id = ? AND study_mode = ?",
     ).all(userId, studyMode);
-    return sendJson(response, 200, { progress });
+    const completions = database.prepare(
+      "SELECT course_id AS courseId, completion_count AS completionCount FROM course_completion_counts WHERE user_id = ?",
+    ).all(userId);
+    return sendJson(response, 200, { progress, completions });
   }
 
   if (request.method === "POST") {
     let payload;
     try { payload = JSON.parse((await readBody(request)).toString("utf8")); } catch { return sendJson(response, 400, { error: "invalid JSON" }); }
+    if (payload.resetCourse === true) {
+      if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId) {
+        return sendJson(response, 400, { error: "invalid course reset" });
+      }
+      registerUser(payload.userId);
+      database.prepare(
+        "DELETE FROM course_mode_progress WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+      ).run(payload.userId, payload.mode, payload.courseId);
+      database.prepare(
+        "DELETE FROM progress_events WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+      ).run(payload.userId, payload.mode, payload.courseId);
+      return sendJson(response, 200, { courseId: payload.courseId, reset: true });
+    }
+    if (payload.completeCourse === true) {
+      if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !validProgressEventId(payload.clientEventId) || typeof payload.courseId !== "string" || !payload.courseId) {
+        return sendJson(response, 400, { error: "invalid course completion" });
+      }
+      registerUser(payload.userId);
+      const isNewEvent = database.prepare(
+        "INSERT OR IGNORE INTO course_completion_events (event_id, user_id, course_id, created_at) VALUES (?, ?, ?, CURRENT_TIMESTAMP)",
+      ).run(payload.clientEventId, payload.userId, payload.courseId).changes === 1;
+      const row = isNewEvent
+        ? database.prepare(
+          `INSERT INTO course_completion_counts (user_id, course_id, completion_count, updated_at)
+           VALUES (?, ?, 1, CURRENT_TIMESTAMP)
+           ON CONFLICT(user_id, course_id) DO UPDATE SET completion_count = course_completion_counts.completion_count + 1, updated_at = CURRENT_TIMESTAMP
+           RETURNING completion_count AS completionCount`,
+        ).get(payload.userId, payload.courseId)
+        : database.prepare(
+          "SELECT completion_count AS completionCount FROM course_completion_counts WHERE user_id = ? AND course_id = ?",
+        ).get(payload.userId, payload.courseId);
+      return sendJson(response, 200, { courseId: payload.courseId, completionCount: row?.completionCount ?? 1 });
+    }
     if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !validProgressEventId(payload.clientEventId) || (payload.markMastered !== undefined && payload.markMastered !== true)) {
       return sendJson(response, 400, { error: "invalid progress update" });
     }

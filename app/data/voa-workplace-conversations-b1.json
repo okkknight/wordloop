@@ -1,0 +1,28 @@
+{
+  "courseId": "voa-workplace-conversations-b1",
+  "provider": "VOA Learning English",
+  "attribution": "Source: VOA Learning English",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    { "id": "voa-work-b1-001", "text": "What do you think today's meeting is about? The email sounded important.", "translation": "你觉得今天的会议是关于什么的？那封邮件看起来很重要。", "start": 41.16, "end": 47.6, "duration": 6.44, "learnable": true, "audio": "audio/voa-work-b1-001.m4a" },
+    { "id": "voa-work-b1-002", "text": "Mark knows everything that goes on at the studio.", "translation": "马克知道工作室里发生的一切。", "start": 68.2, "end": 73.32, "duration": 5.12, "learnable": true, "audio": "audio/voa-work-b1-002.m4a" },
+    { "id": "voa-work-b1-003", "text": "We shouldn't gossip. That's how rumors start.", "translation": "我们不该说闲话，谣言就是这样传开的。", "start": 73.32, "end": 82.36, "duration": 9.04, "learnable": true, "audio": "audio/voa-work-b1-003.m4a" },
+    { "id": "voa-work-b1-004", "text": "Update your resume. I've already updated mine.", "translation": "更新你的简历吧，我已经更新好我的了。", "start": 170.68, "end": 176.28, "duration": 5.6, "learnable": true, "audio": "audio/voa-work-b1-004.m4a" },
+    { "id": "voa-work-b1-005", "text": "This meeting won't take long. Then you can all leave.", "translation": "这场会议不会太久，之后大家就可以离开。", "start": 181.32, "end": 185.08, "duration": 3.76, "learnable": true, "audio": "audio/voa-work-b1-005.m4a" },
+    { "id": "voa-work-b1-006", "text": "We've been worrying that you're going to fire us.", "translation": "我们一直担心你会解雇我们。", "start": 207.72, "end": 213.4, "duration": 5.68, "learnable": true, "audio": "audio/voa-work-b1-006.m4a" },
+    { "id": "voa-work-b1-007", "text": "The reason for this meeting is to tell you what a good job you've been doing and give out new assignments.", "translation": "这次会议是想告诉你们：你们做得很出色，并且给大家安排新的任务。", "start": 213.96, "end": 225.24, "duration": 11.28, "learnable": true, "audio": "audio/voa-work-b1-007.m4a" },
+    { "id": "voa-work-b1-008", "text": "I am ready to take on anything she gives me.", "translation": "不管她交给我什么任务，我都准备好了接受。", "start": 4.28, "end": 8.08, "duration": 3.8, "learnable": true, "audio": "audio/voa-work-b1-008.m4a" },
+    { "id": "voa-work-b1-009", "text": "I want you to go back to hosting and reporting.", "translation": "我希望你回去继续做主持和报道工作。", "start": 48.66, "end": 53.18, "duration": 4.52, "learnable": true, "audio": "audio/voa-work-b1-009.m4a" },
+    { "id": "voa-work-b1-010", "text": "I want you to team up with someone.", "translation": "我希望你和别人搭档合作。", "start": 55.5, "end": 61.5, "duration": 6, "learnable": true, "audio": "audio/voa-work-b1-010.m4a" },
+    { "id": "voa-work-b1-011", "text": "What do you mean by different?", "translation": "你说的“不同”是什么意思？", "start": 68.9, "end": 73.54, "duration": 4.64, "learnable": true, "audio": "audio/voa-work-b1-011.m4a" },
+    { "id": "voa-work-b1-012", "text": "I want you to team up with someone who isn't.", "translation": "我希望你和一个不像你那样的人合作。", "start": 75.78, "end": 82.42, "duration": 6.64, "learnable": true, "audio": "audio/voa-work-b1-012.m4a" },
+    { "id": "voa-work-b1-013", "text": "Forget about the crossword puzzle. I have a job offer for you.", "translation": "别管那个填字游戏了，我有一份工作机会要给你。", "start": 112.18, "end": 117.38, "duration": 5.2, "learnable": true, "audio": "audio/voa-work-b1-013.m4a" },
+    { "id": "voa-work-b1-014", "text": "My boss wants me to team up with someone to host a talk show.", "translation": "我老板想让我和别人搭档主持一档谈话节目。", "start": 118.3, "end": 123.5, "duration": 5.2, "learnable": true, "audio": "audio/voa-work-b1-014.m4a" },
+    { "id": "voa-work-b1-015", "text": "I don't have time right now. Your interview is tomorrow morning at 10 a.m.", "translation": "我现在没时间。你的面试在明天上午十点。", "start": 132.74, "end": 139.74, "duration": 7, "learnable": true, "audio": "audio/voa-work-b1-015.m4a" },
+    { "id": "voa-work-b1-016", "text": "I need to find out if you have the skills for this job. And I want you to be completely honest.", "translation": "我需要确认你是否具备这份工作所需的能力，而且我希望你完全坦诚。", "start": 164.9, "end": 176.5, "duration": 11.6, "learnable": true, "audio": "audio/voa-work-b1-016.m4a" },
+    { "id": "voa-work-b1-017", "text": "Are you a people person?", "translation": "你是个善于与人打交道的人吗？", "start": 181.58, "end": 186.62, "duration": 5.04, "learnable": true, "audio": "audio/voa-work-b1-017.m4a" },
+    { "id": "voa-work-b1-018", "text": "What work of yours are you most proud of?", "translation": "你最为哪项工作成果感到自豪？", "start": 193.94, "end": 199.7, "duration": 5.76, "learnable": true, "audio": "audio/voa-work-b1-018.m4a" },
+    { "id": "voa-work-b1-019", "text": "I think I've heard enough.", "translation": "我想我已经听得够多了。", "start": 213.9, "end": 217.98, "duration": 4.08, "learnable": true, "audio": "audio/voa-work-b1-019.m4a" },
+    { "id": "voa-work-b1-020", "text": "She said I was grumpy and not good with people.", "translation": "她说我脾气不好，也不擅长和人相处。", "start": 224.14, "end": 230.74, "duration": 6.6, "learnable": true, "audio": "audio/voa-work-b1-020.m4a" }
+  ]
+}

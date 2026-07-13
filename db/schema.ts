@@ -45,3 +45,21 @@ export const progressEvents = sqliteTable("progress_events", {
   word: text("word"),
   createdAt: text("created_at").notNull(),
 });
+
+export const courseCompletionCounts = sqliteTable(
+  "course_completion_counts",
+  {
+    userId: text("user_id").notNull(),
+    courseId: text("course_id").notNull(),
+    completionCount: integer("completion_count").notNull().default(0),
+    updatedAt: text("updated_at").notNull(),
+  },
+  (table) => [primaryKey({ columns: [table.userId, table.courseId] })],
+);
+
+export const courseCompletionEvents = sqliteTable("course_completion_events", {
+  eventId: text("event_id").primaryKey(),
+  userId: text("user_id").notNull(),
+  courseId: text("course_id").notNull(),
+  createdAt: text("created_at").notNull(),
+});

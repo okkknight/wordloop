@@ -1,0 +1,18 @@
+export const VOA_WEATHER_AT_WORK_B1_HIGHLIGHTS: Readonly<Record<string, readonly string[]>> = {
+  "voa-weather-b1-001": ["affects people's lives"],
+  "voa-weather-b1-002": ["Have you ever reported on"],
+  "voa-weather-b1-003": ["had been waiting for"],
+  "voa-weather-b1-004": ["I was ready"],
+  "voa-weather-b1-005": ["my whole life"],
+  "voa-weather-b1-006": ["by yourself"],
+  "voa-weather-b1-009": ["the blizzard of the century"],
+  "voa-weather-b1-010": ["How else have you"],
+  "voa-weather-b1-011": ["had just bought", "the latest"],
+  "voa-weather-b1-012": ["a work tool"],
+  "voa-weather-b1-013": ["in real time"],
+  "voa-weather-b1-015": ["Every time", "was broken"],
+  "voa-weather-b1-016": ["for 30 hours straight"],
+  "voa-weather-b1-017": ["By Saturday night"],
+  "voa-weather-b1-019": ["I thought I had", "ran out"],
+  "voa-weather-b1-021": ["team-building exercise"],
+};
