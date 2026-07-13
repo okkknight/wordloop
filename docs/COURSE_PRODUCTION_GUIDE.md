@@ -41,6 +41,12 @@ public/courses/modern-family/s01e03/audio/
 
 课程 ID、文件名和音频 ID 统一使用小写剧集编号：`modern-family-s01e03`、`s01e03-0001`。
 
+### 2.1 先验证源音内容（必做）
+
+不要仅相信原始音频的文件名。制作前应试听开头、中段和结尾，确认它们与同集字幕内容一致；若文件名与内容不符，绝不能按文件名直接切片。
+
+对来源复杂或已发现错位的媒体，先以 `scripts/transcribe_course_audio.py --word-timestamps` 生成实际音频的单词时间戳，再使用 `scripts/align_modern_family_episode.py` 将字幕与转写结果顺序对齐。该脚本会在同集覆盖率不足时拒绝输出，防止错集音频进入课程包。
+
 ## 3. 生成流程
 
 ### 3.1 初次生成
@@ -80,6 +86,8 @@ python3 scripts/prepare_modern_family_episode.py \
 应剔除的典型内容：纯人名；`No, no, no, no.`；单独的 `Okay.`；无语境碎片；字幕转写错误或含其他语言的台词。
 
 如果某类低质量内容在多集重复出现，可把**规范化后的完整句子**加入脚本的 `LOW_VALUE_EXACT`，或把明显外语词组加入 `NON_ENGLISH_PATTERNS`。不要为单个偶发问题写过宽正则，避免误删正常句子。`SHORT_KEEP` 只用于少量虽短但确有复用价值的完整表达。
+
+完成音频对齐后，还要逐条进行第二轮人工筛选：剔除必须依赖人物关系或剧情才能理解的句子、单独应答、重复台词、过度低幼表达和复用价值低的文化梗。将结论记录在 `app/data/modern-family-manual-exclusions.json`，并用 `scripts/apply_modern_family_manual_review.py` 同步移除 manifest、音频和高亮中的对应条目。
 
 ### 3.3 复制最终资产
 
@@ -142,6 +150,9 @@ export const MODERN_FAMILY_S01E03_HIGHLIGHTS: Readonly<Record<string, readonly s
 - [ ] `manifest.episode`、课程 ID、目录名、音频 ID 的剧集编号完全一致。
 - [ ] `learnable: true` 的每一项都有 `audio` 字段和对应的 `.m4a` 文件。
 - [ ] 音频文件数等于可学习句子数。
+- [ ] 已验证源音内容与同集字幕一致；错标文件不可进入切片流程。
+- [ ] 对经过转写对齐的课程，`scripts/verify_modern_family_course.py` 已通过。
+- [ ] 已完成逐条人工复核，低价值条目已记录在课程审阅清单中。
 - [ ] 所有 highlight 只指向可学习句子，且每个短语都存在于原句。
 - [ ] 试听若干开头、中段、结尾音频，确认没有明显错位或截断。
 - [ ] 在课程切换器中能看到新课程；进入后可播放、跟读、前进和恢复进度。

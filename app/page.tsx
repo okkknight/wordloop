@@ -279,6 +279,20 @@ function playFeedbackTone(context: AudioContext, passed: boolean) {
   }
 }
 
+function playMasteryCue(context: AudioContext) {
+  const startedAt = context.currentTime;
+  const oscillator = context.createOscillator();
+  const gain = context.createGain();
+  oscillator.type = "sine";
+  oscillator.frequency.setValueAtTime(740, startedAt);
+  gain.gain.setValueAtTime(0.0001, startedAt);
+  gain.gain.exponentialRampToValueAtTime(0.05, startedAt + 0.012);
+  gain.gain.exponentialRampToValueAtTime(0.0001, startedAt + 0.115);
+  oscillator.connect(gain).connect(context.destination);
+  oscillator.start(startedAt);
+  oscillator.stop(startedAt + 0.115);
+}
+
 function playRecordingCue(context: AudioContext) {
   const startedAt = context.currentTime;
   for (const [index, frequency] of [520, 700].entries()) {
@@ -970,9 +984,9 @@ export default function Home() {
   }, [activeCourseId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
 
   const markCurrentItemMastered = useCallback(() => {
-    if (currentStudyCount >= MAX_STUDY_COUNT) return;
+    if (currentStudyCount >= MAX_STUDY_COUNT) return false;
     const userId = userIdRef.current;
-    if (!userId) return;
+    if (!userId) return false;
     const event: PendingProgressEvent = sentenceMode
       ? {
         id: pendingEventId(),
@@ -1009,6 +1023,7 @@ export default function Home() {
       setNextWordIndex(eligibleIndex(progressRef.current, currentIndexRef.current));
     }
     void flushPendingProgress(userId, studyMode);
+    return true;
   }, [activeCourseId, currentStudyCount, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
 
   const finalizeRepeatTranscript = useCallback((turnId: number) => {
@@ -1402,6 +1417,13 @@ export default function Home() {
   useEffect(() => {
     nextRef.current = next;
   }, [next]);
+
+  const handleMarkCurrentItemMastered = useCallback(() => {
+    if (!markCurrentItemMastered()) return;
+    prepareFeedbackAudio();
+    playToneWhenReady(feedbackAudioContextRef.current, playMasteryCue);
+    nextRef.current();
+  }, [markCurrentItemMastered, prepareFeedbackAudio]);
 
   const activate = useCallback(() => {
     activatedRef.current = true;
@@ -1970,7 +1992,7 @@ export default function Home() {
           </span>
           <button
             className="mastery-button repeat-control"
-            onClick={(event) => { event.stopPropagation(); markCurrentItemMastered(); }}
+            onClick={(event) => { event.stopPropagation(); handleMarkCurrentItemMastered(); }}
             disabled={currentStudyCount >= MAX_STUDY_COUNT}
             aria-label={currentStudyCount >= MAX_STUDY_COUNT ? "Current item mastered" : "Mark current item as mastered"}
           >

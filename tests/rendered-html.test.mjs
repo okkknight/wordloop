@@ -80,8 +80,8 @@ test("ships the third sentence course package and its clips", async () => {
 
   assert.equal(course.episode, "S01E03");
   assert.equal(course.entries.length, 459);
-  assert.equal(course.entries.filter((entry) => entry.learnable).length, 134);
-  assert.equal(sentenceAudio.length, 134);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 53);
+  assert.equal(sentenceAudio.length, 53);
   assert.match(course.entries[0].text, /key to being a great dad/);
 });
 
@@ -92,8 +92,8 @@ test("ships the fourth sentence course package and its clips", async () => {
 
   assert.equal(course.episode, "S01E04");
   assert.equal(course.entries.length, 465);
-  assert.equal(course.entries.filter((entry) => entry.learnable).length, 185);
-  assert.equal(sentenceAudio.length, 185);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 79);
+  assert.equal(sentenceAudio.length, 79);
   assert.match(course.entries[0].text, /Riley Morton/);
 });
 
@@ -104,8 +104,8 @@ test("ships the fifth sentence course package and its clips", async () => {
 
   assert.equal(course.episode, "S01E05");
   assert.equal(course.entries.length, 512);
-  assert.equal(course.entries.filter((entry) => entry.learnable).length, 176);
-  assert.equal(sentenceAudio.length, 176);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 55);
+  assert.equal(sentenceAudio.length, 55);
   assert.match(course.entries[2].text, /because he's fine/);
 });
 
@@ -333,6 +333,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /repeatTranscriptPartsRef\.current\.set\(payload\.item_id, transcript\)/);
   assert.match(page, /scheduleRepeatTranscriptFinalization\(turnId\)/);
   assert.match(page, /scheduleRepeatRetry\(turnId, 1_000, true\)/);
+  assert.match(page, /function playMasteryCue\(context: AudioContext\)/);
+  assert.match(page, /handleMarkCurrentItemMastered/);
+  assert.match(page, /nextRef\.current\(\);/);
   assert.match(progressRoute, /export async function GET/);
   assert.match(progressRoute, /export async function POST/);
   assert.match(pronunciationRoute, /OPENAI_REALTIME_URL/);
