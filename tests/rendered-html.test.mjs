@@ -100,7 +100,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /const PASS_SCORE = 20/);
   assert.match(page, /sentenceIndexRef\.current = target\.index/);
   assert.match(page, /wordIndexRef\.current = target\.index/);
-  assert.match(page, /<span>SWITCH COURSE<\/span>/);
+  assert.match(page, /<span>COURSE<\/span>/);
   assert.doesNotMatch(page, /<span>\{activeCourse\.title\}<\/span>/);
   assert.doesNotMatch(page, /THIS \{sentenceMode \? "SENTENCE" : "WORD"\}/);
   assert.match(page, /const \[wordIndex, setWordIndex\] = useState\(0\)/);
@@ -131,7 +131,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /const \[textVisibilityMode, setTextVisibilityMode\] = useState<TextVisibilityMode>\("full"\)/);
   assert.match(page, /const visibilityControlModes: readonly TextVisibilityMode\[\]/);
   assert.match(page, /aria-label=\{visibilityAriaLabel\}/);
-  assert.match(page, /storedSentenceProgress, -1, "random"/);
+  assert.match(page, /pendingProgressRef\.current = readPendingProgressEvents\(activeUserId, studyMode\)/);
   assert.match(page, /function renderMaskedText/);
   assert.match(page, /const MIN_SPEECH_MS = 350/);
   assert.match(page, /const MIN_SENTENCE_WORD_COVERAGE = 0\.6/);
@@ -144,8 +144,12 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);
   assert.match(page, /用户名只能使用英文字母/);
   assert.match(page, /placeholder="USERNAME"/);
-  assert.match(page, /courseId: "modern-family-s01e01", itemId: entry\.id/);
-  assert.match(page, /const SEGMENT_SETTLE_MS = 900/);
+  assert.match(page, /const PENDING_PROGRESS_KEY = "word-loop-pending-progress"/);
+  assert.match(page, /clientEventId: event\.id/);
+  assert.match(page, /writePendingProgressEvents\(userId, studyMode, pendingProgressRef\.current\)/);
+  assert.match(page, /event\.isComposing \|\| isTextEntry/);
+  assert.match(page, /typeof event\.key === "string" \? event\.key\.toLowerCase\(\) : ""/);
+  assert.match(page, /const SEGMENT_SETTLE_MS = 700/);
   assert.match(page, /repeatTranscriptPartsRef\.current\.set\(payload\.item_id, transcript\)/);
   assert.match(page, /scheduleRepeatTranscriptFinalization\(turnId\)/);
   assert.match(page, /scheduleRepeatRetry\(turnId, 1_000, true\)/);
@@ -155,5 +159,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(pronunciationRoute, /gpt-4o-mini-transcribe/);
   assert.match(server, /const namedUserIdPattern = \/\^name:\[a-z\]\+\$\//);
   assert.match(server, /CREATE TABLE IF NOT EXISTS course_progress/);
+  assert.match(server, /CREATE TABLE IF NOT EXISTS word_mode_progress/);
+  assert.match(server, /CREATE TABLE IF NOT EXISTS course_mode_progress/);
+  assert.match(server, /CREATE TABLE IF NOT EXISTS progress_events/);
   assert.match(server, /CREATE TABLE IF NOT EXISTS study_users/);
 });

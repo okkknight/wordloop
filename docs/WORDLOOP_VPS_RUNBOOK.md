@@ -122,11 +122,23 @@ handle @wordloop {
 
 - SQLite 文件：`/opt/boringmax/wordloop/data/wordloop.sqlite`
 
-当前已确认的表：
+当前进度表：
+
+- `word_mode_progress`：按 `listen` / `repeat` 分开的单词进度
+- `course_mode_progress`：按 `listen` / `repeat` 分开的课程句子进度
+- `progress_events`：浏览器待同步操作的唯一事件 ID，用于重复请求去重
+- `study_users`
+
+历史兼容表：
 
 - `word_progress`
 - `course_progress`
-- `study_users`
+
+这两张旧表保存的是模式拆分前的合并进度。由于无法可靠地倒推一条旧记录来自听力还是跟读，新版本不会把它们自动归入任一模式；新产生的进度从拆分后的表开始保存。
+
+### 4.2 进度同步策略
+
+浏览器不再把本地完整进度当作最终数据源，而只保留尚未确认的学习事件。页面读取 VPS 数据库作为基准，再叠加这些待同步事件展示；网络恢复时会自动重试。每条事件附带唯一 `clientEventId`，`progress_events` 会阻止同一个事件因重试而重复累计。
 
 2026-07-12 实查记录数：
 
@@ -274,7 +286,7 @@ ssh root@89.208.242.44 'systemctl restart wordloop.service wordloop-api.service 
 1. `wordloop.service` 为 `active (running)`
 2. `wordloop-api.service` 为 `active (running)`
 3. `https://boringmax.com/wordloop/` 返回 HTTP 200
-4. `https://boringmax.com/wordloop/api/progress?userId=name:demo` 返回合法 JSON
+4. `https://boringmax.com/wordloop/api/progress?userId=name:demo&mode=listen` 返回合法 JSON
 5. 课程页面可打开、可切换课程、可播放音频
 6. 跟读流程能够正常请求发音会话
 7. 学习进度写入后，VPS 本机 SQLite 文件中的记录会变化
