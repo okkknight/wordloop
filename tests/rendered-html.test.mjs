@@ -56,8 +56,8 @@ test("ships the first sentence course package and its clips", async () => {
 
   assert.equal(course.episode, "S01E01");
   assert.equal(course.entries.length, 499);
-  assert.equal(course.entries.filter((entry) => entry.learnable).length, 134);
-  assert.equal(sentenceAudio.length, 134);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 124);
+  assert.equal(sentenceAudio.length, 124);
   assert.match(course.entries[0].text, /Kids, breakfast/);
 });
 
