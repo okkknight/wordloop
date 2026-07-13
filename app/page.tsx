@@ -515,12 +515,14 @@ export default function Home() {
   const nextIndexRef = useRef(nextWordIndex);
   const nextRef = useRef<() => void>(() => undefined);
   const courseSwitchRequestRef = useRef(0);
+  const activatedRef = useRef(activated);
   const listenAutoPlayRef = useRef(false);
   const [word, meaning, , phonetic] = WORDS[wordIndex];
   const activeCourse = COURSE_PACKAGES.find((course) => course.id === activeCourseId) ?? DEFAULT_COURSE;
   const sentenceMode = activeCourse.kind === "sentence";
   const sentenceCourse = sentenceMode ? activeCourse : MODERN_FAMILY_S01E01_COURSE;
   const sentencePracticeOrder = sentenceCourse.practiceOrder;
+  const sentencePracticeOrderRef = useRef(sentencePracticeOrder);
   // A course switch and its follow-up effects can briefly render with the
   // previous course's index. Keep that transient state inside the new course
   // instead of reading past its entries (for example, from a 220-sentence
@@ -736,7 +738,32 @@ export default function Home() {
 
   useEffect(() => {
     activeCourseIdRef.current = activeCourseId;
-  }, [activeCourseId]);
+    sentencePracticeOrderRef.current = sentencePracticeOrder;
+  }, [activeCourseId, sentencePracticeOrder]);
+
+  useEffect(() => {
+    activatedRef.current = activated;
+  }, [activated]);
+
+  const restoreRecentCourse = useCallback((courseId: string) => {
+    const course = COURSE_PACKAGES.find((item) => item.id === courseId);
+    if (!course || course.id === activeCourseIdRef.current) return;
+
+    activeCourseIdRef.current = course.id;
+    activeCourseKindRef.current = course.kind;
+    sentencePracticeOrderRef.current = course.practiceOrder;
+    if (course.kind === "sentence") {
+      const initialSentence = initialEligibleSentenceIndex(course.entries, {});
+      sentenceEntriesRef.current = course.entries;
+      sentenceIndexRef.current = initialSentence;
+      currentIndexRef.current = initialSentence;
+      setSentenceIndex(initialSentence);
+      setNextSentenceIndex(eligibleSentenceIndex(course.entries, {}, initialSentence, course.practiceOrder));
+    } else {
+      currentIndexRef.current = wordIndexRef.current;
+    }
+    setActiveCourseId(course.id);
+  }, []);
 
   useEffect(() => {
     if (!activeUserId) return;
@@ -744,7 +771,8 @@ export default function Home() {
       userIdRef.current = activeUserId;
       const locallyRememberedCourseId = localStorage.getItem(`word-loop-last-course:${activeUserId}`);
       if (locallyRememberedCourseId && COURSE_PACKAGES.some((course) => course.id === locallyRememberedCourseId) && locallyRememberedCourseId !== activeCourseIdRef.current) {
-        setActiveCourseId(locallyRememberedCourseId);
+        restoreRecentCourse(locallyRememberedCourseId);
+        return;
       }
       pendingProgressRef.current = readPendingProgressEvents(activeUserId, studyMode);
       confirmedWordProgressRef.current = {};
@@ -791,8 +819,8 @@ export default function Home() {
         mergeWordProgress(data.progress);
         setCourseCompletionCounts(Object.fromEntries((data.completions ?? []).map(({ courseId, completionCount }) => [courseId, completionCount])));
         const recentCourseId = data.recentCourseId;
-        if (recentCourseId && COURSE_PACKAGES.some((course) => course.id === recentCourseId) && recentCourseId !== activeCourseIdRef.current) {
-          setActiveCourseId(recentCourseId);
+        if (recentCourseId && !activatedRef.current && courseSwitchRequestRef.current === 0 && recentCourseId !== activeCourseIdRef.current) {
+          restoreRecentCourse(recentCourseId);
           localStorage.setItem(`word-loop-last-course:${activeUserId}`, recentCourseId);
         }
       })
@@ -804,7 +832,7 @@ export default function Home() {
       void flushPendingProgress(activeUserId, studyMode);
     }, 0);
     return () => window.clearTimeout(hydrateTimer);
-  }, [activeCourseId, activeUserId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceCourse, sentenceMode, sentencePracticeOrder, studyMode]);
+  }, [activeCourseId, activeUserId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, restoreRecentCourse, sentenceCourse, sentenceMode, sentencePracticeOrder, studyMode]);
 
   useEffect(() => {
     const retryPendingProgress = () => {
@@ -1328,7 +1356,7 @@ export default function Home() {
     const targetIndex = nextIndexRef.current >= 0
       ? nextIndexRef.current
       : sentenceMode
-        ? eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrder)
+        ? eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrderRef.current)
         : eligibleIndex(progressRef.current, currentIndexRef.current);
     if (targetIndex < 0) return;
     repeatAdvanceTargetRef.current = null;
@@ -1337,7 +1365,7 @@ export default function Home() {
     if (sentenceMode) {
       sentenceIndexRef.current = targetIndex;
       currentIndexRef.current = targetIndex;
-      setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex, sentencePracticeOrder));
+      setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex, sentencePracticeOrderRef.current));
       setSentenceIndex(targetIndex);
     } else {
       wordIndexRef.current = targetIndex;
@@ -1354,7 +1382,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(targetIndex);
-  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playListenItem, recordStudy, sentenceMode, sentencePracticeOrder, stopListening, studyMode]);
+  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playListenItem, recordStudy, sentenceMode, stopListening, studyMode]);
 
   useEffect(() => {
     nextRef.current = next;
@@ -1521,6 +1549,7 @@ export default function Home() {
     if (courseSwitchRequestRef.current !== requestId) return;
 
     activeCourseKindRef.current = isSentence ? "sentence" : "word";
+    sentencePracticeOrderRef.current = targetCourse.practiceOrder;
 
     // Update refs synchronously so beginRepeatTurn doesn't see a mismatch
     if (isSentence) {
