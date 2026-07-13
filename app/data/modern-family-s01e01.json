@@ -228,9 +228,10 @@
       "duration": 2.34,
       "text": "Luke got his head stuck in the banister again.",
       "translation": "卢克又把头卡在栏杆里了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0018.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0019",
@@ -265,9 +266,10 @@
       "duration": 0.96,
       "text": "Come on!",
       "translation": "拜托",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0021.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0022",
@@ -289,9 +291,10 @@
       "duration": 1.92,
       "text": "There, you know? I said it.",
       "translation": "你看 我坦白了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0023.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0024",
@@ -433,9 +436,10 @@
       "duration": 2.29,
       "text": "He tripped him, Jay. Where's the penalty?",
       "translation": "他下绊子 杰 怎么没人吹犯规",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0034.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0035",
@@ -484,9 +488,10 @@
       "duration": 1.59,
       "text": "Jay's from the city.",
       "translation": "杰来自城市",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0038.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0039",
@@ -520,9 +525,10 @@
       "duration": 2.42,
       "text": "Very poor but very, very beautiful.",
       "translation": "穷困潦倒 但风景怡人",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0041.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0042",
@@ -598,9 +604,10 @@
       "duration": 1.93,
       "text": "Stop him! You can do it!",
       "translation": "拦住他 你可以的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0047.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0048",
@@ -623,9 +630,10 @@
       "duration": 2.55,
       "text": "Come on, coach. You gotta take that kid out.",
       "translation": "教练 该让那孩子下场了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0049.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0050",
@@ -635,9 +643,10 @@
       "duration": 2.95,
       "text": "You wanna take him out? How about I take you out?",
       "translation": "你想让他下场吗 不如我让你\"下场\"如何",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0050.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0051",
@@ -672,9 +681,10 @@
       "duration": 2.22,
       "text": "I've wanted to tell her off for the last six weeks.",
       "translation": "那话我6周来一直想对她说来着",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0053.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0054",
@@ -684,9 +694,10 @@
       "duration": 1.55,
       "text": "I'm Josh. Ryan's dad.",
       "translation": "我叫乔希 莱恩的爸爸",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0054.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0055",
@@ -696,9 +707,10 @@
       "duration": 2.53,
       "text": "Hi, I'm Gloria Pritchett. Manny's mother.",
       "translation": "我叫歌洛莉亚·普里契特 曼尼的妈妈",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0055.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0056",
@@ -771,9 +783,10 @@
       "duration": 2.12,
       "text": "Who is a good girl? Who's that?",
       "translation": "谁是乖宝宝啊 是谁啊",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0061.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0062",
@@ -859,9 +872,10 @@
       "duration": 3.05,
       "text": "Sorry, sorry, sorry. Daddy needed snacks.",
       "translation": "抱歉 我来晚了 老爹去买点心了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0068.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0069",
@@ -935,9 +949,10 @@
       "duration": 1.88,
       "text": "Then we figured, they're already mean enough.",
       "translation": "后来又想 她们平时就够刻薄了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0074.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0075",
@@ -959,9 +974,10 @@
       "duration": 1.67,
       "text": "No, thank you. Ick.",
       "translation": "还是算了吧 想想就怕",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0076.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0077",
@@ -1010,9 +1026,10 @@
       "duration": 1.96,
       "text": "I gotta buy a motorized tie rack.\"",
       "translation": "考虑买个电动领带架什么的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0080.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0081",
@@ -1099,9 +1116,10 @@
       "duration": 0.84,
       "text": "Excuse me.",
       "translation": "不好意思",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0087.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0088",
@@ -1319,9 +1337,10 @@
       "duration": 2.97,
       "text": "Ooh, a boy. You gonna kiss him?",
       "translation": "哇 男生 你会和他亲嘴吗",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0104.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0105",
@@ -1410,9 +1429,10 @@
       "duration": 1.31,
       "text": "His name is Dylan.",
       "translation": "他叫迪兰",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0111.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0112",
@@ -1693,9 +1713,10 @@
       "duration": 1.31,
       "text": "The little bitch shot me.",
       "translation": "这小贱人用枪射我",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0133.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0134",
@@ -1718,9 +1739,10 @@
       "duration": 2.19,
       "text": "What did I tell you would happen if you got him a gun?",
       "translation": "早就告诉你 给他枪就会出事",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0135.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0136",
@@ -1756,9 +1778,10 @@
       "duration": 3.36,
       "text": "The agreement was that if he shoots someone, you shoot him.",
       "translation": "我们说好他用枪射了别人 你就得射他的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0138.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0139",
@@ -1820,9 +1843,10 @@
       "duration": 1.52,
       "text": "What's more important here, Dad?",
       "translation": "生日会和家法哪个更重要 爸爸",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0143.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0144",
@@ -1832,9 +1856,10 @@
       "duration": 1.82,
       "text": "You can shoot him afterwards. He'll be home at 2:00.",
       "translation": "你可以之后再射他 他两点就能到家",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0144.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0145",
@@ -1894,9 +1919,10 @@
       "duration": 1.81,
       "text": "4:15. You could shoot him at 4:15.",
       "translation": "4点15吧 你可以在那时候射他",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0149.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0150",
@@ -2019,9 +2045,10 @@
       "duration": 1.16,
       "text": "Why do you have to do things like that?",
       "translation": "那个妈妈吵架吗",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0159.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0160",
@@ -2057,9 +2084,10 @@
       "duration": 2.18,
       "text": "You could take it down here a little bit. That's all.",
       "translation": "你火气应该小一点 就这样",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0162.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0163",
@@ -2069,9 +2097,10 @@
       "duration": 1.91,
       "text": "Oh, yeah. 'Cause that's where you live, down here.",
       "translation": "没错 你总是这么忍气吞声的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0163.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0164",
@@ -2095,9 +2124,10 @@
       "duration": 2.93,
       "text": "you don't have to be so emotional all the time.That's all I'm saying.",
       "translation": "我只是说 你别那么容易激动嘛",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0165.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0166",
@@ -2144,9 +2174,10 @@
       "duration": 1.82,
       "text": "Oh. It's okay for you to take an older lover?",
       "translation": "你不就找了年长的对象吗",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0169.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0170",
@@ -2246,9 +2277,10 @@
       "duration": 1.77,
       "text": "in your puffy white underpants.",
       "translation": "然后被吊在旗杆上",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0177.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0178",
@@ -2308,9 +2340,10 @@
       "duration": 2.89,
       "text": "Manny's very passionate, just like his father.",
       "translation": "曼尼是个多情种 和他爹一个样",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0182.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0183",
@@ -2346,9 +2379,10 @@
       "duration": 2.46,
       "text": "fight and make love, fight and make love.",
       "translation": "吵架 做爱 吵架 做爱",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0185.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0186",
@@ -2358,9 +2392,10 @@
       "duration": 3.49,
       "text": "One time, I'm not kidding you, we fell out the window together.",
       "translation": "说真的 有一次 我们从窗口摔下去了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0186.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0187",
@@ -2564,9 +2599,10 @@
       "duration": 2.85,
       "text": "some sort of molecular physiology thing.",
       "translation": "像是分子生理学那类的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0202.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0203",
@@ -2671,9 +2707,10 @@
       "duration": 1.18,
       "text": "What the hell is that?",
       "translation": "这是什么玩意",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0210.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0211",
@@ -2707,9 +2744,10 @@
       "duration": 2.57,
       "text": "We're floating above her, always there to protect her.",
       "translation": "我们在她的上方 永远守护着她",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0213.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0214",
@@ -2757,9 +2795,10 @@
       "duration": 1.55,
       "text": "Your fathers are floating fairies.",
       "translation": "你的大爸二爸可是飞天小精灵哦",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0217.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0218",
@@ -2782,9 +2821,10 @@
       "duration": 2.16,
       "text": "have him paint something a little less gay?",
       "translation": "重新画点不那么基情的东西吗",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0219.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0220",
@@ -2847,9 +2887,10 @@
       "duration": 1.98,
       "text": "Even Pepper pointed it out on the way home from the airport.",
       "translation": "回来的路上 连胡娇都看出来了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0224.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0225",
@@ -2938,9 +2979,10 @@
       "duration": 2.5,
       "text": "You'd tell 'em. They'd say something judgmental.",
       "translation": "你一告诉他们 他们就开始说三道四",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0231.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0232",
@@ -2976,9 +3018,10 @@
       "duration": 1.79,
       "text": "suddenly turns into this huge fight.",
       "translation": "转眼就变成一团混战",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0234.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0235",
@@ -3001,9 +3044,10 @@
       "duration": 0.8,
       "text": "Thank you. Thank you.",
       "translation": "谢谢 谢谢",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0236.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0237",
@@ -3227,9 +3271,10 @@
       "duration": 1.32,
       "text": "You have to scare him.",
       "translation": "你得给他个下马威",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0254.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0255",
@@ -3278,9 +3323,10 @@
       "duration": 1.51,
       "text": "let the eyes do the work.",
       "translation": "用眼神中的杀气震住他们",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0258.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0259",
@@ -3316,9 +3362,10 @@
       "duration": 2.61,
       "text": "\"Nice to meet you.\" \"No, it's not.\"",
       "translation": "很高兴见到你 才怪",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0261.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0262",
@@ -3444,9 +3491,10 @@
       "duration": 2.34,
       "text": "\"Oh, where you from originally?\"",
       "translation": "你哪儿冒出来的啊",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0271.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0272",
@@ -3456,9 +3504,10 @@
       "duration": 3.32,
       "text": "\"I could defeat you if it came to a physical confrontation.\"",
       "translation": "单挑的话 我轻而易举就能放倒你",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0272.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0273",
@@ -3533,9 +3582,10 @@
       "duration": 2.38,
       "text": "So just flip me right back, and we're good.",
       "translation": "现在只需把我放平 就没事了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0278.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0279",
@@ -3635,9 +3685,10 @@
       "duration": 2.55,
       "text": "Hey, I'll give you 50 bucks not to do this.",
       "translation": "你取消行动的话 我就给你50块钱",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0286.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0287",
@@ -3647,9 +3698,10 @@
       "duration": 2.63,
       "text": "I'm 11 years old. What am I gonna do with money?",
       "translation": "我才11岁而已 要那么多钱干什么",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0287.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0288",
@@ -3788,9 +3840,10 @@
       "duration": 2.16,
       "text": "in a pair of ripped jeans thinks about me.",
       "translation": "穿着破牛仔裤的混蛋如何看我",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0298.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0299",
@@ -3825,9 +3878,10 @@
       "duration": 2.44,
       "text": "I love you, and I don't care how old you are.",
       "translation": "我爱你 我不在意你的年纪",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0301.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0302",
@@ -3862,9 +3916,10 @@
       "duration": 2.35,
       "text": "Is just because I don't wanna see him make a fool of himself.",
       "translation": "我不想让他出洋相",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0304.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0305",
@@ -3937,9 +3992,10 @@
       "duration": 2.2,
       "text": "It's gorgeous in Spanish.",
       "translation": "用西班牙语说很华丽的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0310.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0311",
@@ -3988,9 +4044,10 @@
       "duration": 3.06,
       "text": "she gave me a picture of me as an old-time sheriff.",
       "translation": "她却还了一幅把我画成老式警长的图",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0314.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0315",
@@ -4074,9 +4131,10 @@
       "duration": 2.5,
       "text": "We ask that all mall-walkers stay to the right.",
       "translation": "在商场散步锻炼的人必须靠右边走",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0321.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0322",
@@ -4147,9 +4205,10 @@
       "duration": 1.93,
       "text": "Lying on her bed, watching a movie.",
       "translation": "躺在她床上并肩看电影",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0327.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0328",
@@ -4278,9 +4337,10 @@
       "duration": 1.42,
       "text": "at a coin-op car wash.",
       "translation": "在自助洗车站给孩子喂奶",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0337.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0338",
@@ -4369,9 +4429,10 @@
       "duration": 2.74,
       "text": "First of all, it would be really cool to see Haley that fat.",
       "translation": "首先 看海莉怀孕变胖还蛮爽的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0344.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0345",
@@ -4508,9 +4569,10 @@
       "duration": 2.25,
       "text": "So, soak it. Keep it.",
       "translation": "所以 记好了 记住了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0355.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0356",
@@ -4684,9 +4746,10 @@
       "duration": 2.67,
       "text": "Lying on the bed with a tall senior.",
       "translation": "和高大的学长共卧一塌",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0369.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0370",
@@ -4889,9 +4952,10 @@
       "duration": 2.75,
       "text": "just to make sure he doesn't have to ever see us kiss.",
       "translation": "以防撞见我和小卡亲嘴",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0385.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0386",
@@ -4951,9 +5015,10 @@
       "duration": 1.11,
       "text": "Oh, God.",
       "translation": "天啊",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0390.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0391",
@@ -5001,9 +5066,10 @@
       "duration": 1.36,
       "text": "Yeah. Sports guy chest bump.",
       "translation": "来个运动员式的撞胸",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0394.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0395",
@@ -5066,9 +5132,10 @@
       "duration": 2.12,
       "text": "That looks good. Oh, thank you. Thanks.",
       "translation": "看起来很美味啊 谢谢",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0399.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0400",
@@ -5090,9 +5157,10 @@
       "duration": 2.83,
       "text": "Knock, knock! We're here. Coming in!",
       "translation": "有人吗 我们要进来了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0401.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0402",
@@ -5102,9 +5170,10 @@
       "duration": 2.42,
       "text": "Don't worry, Dad. Nothing gay going on here.",
       "translation": "别担心爸爸 我们没在里面搞基",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0402.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0403",
@@ -5223,9 +5292,10 @@
       "duration": 2.72,
       "text": "That's how she says \"Phil.\" Not \"Feel.\" Phil.",
       "translation": "她是叫你名字 不是要你去摸",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0411.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0412",
@@ -5261,9 +5331,10 @@
       "duration": 1.58,
       "text": "have something that I need to tell you guys.",
       "translation": "我有些事要告诉你们",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0414.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0415",
@@ -5298,9 +5369,10 @@
       "duration": 2.81,
       "text": "Oh, God. If Cam comes out here with boobs, I'm leaving.",
       "translation": "天啊 要是小卡隆了胸 我立马走人",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0417.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0418",
@@ -5375,9 +5447,10 @@
       "duration": 2.96,
       "text": "for something more, like, uh, maybe a baby?",
       "translation": "有一个 孩子",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0423.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0424",
@@ -5400,9 +5473,10 @@
       "duration": 1.29,
       "text": "Well, kids need a mother.",
       "translation": "孩子需要有妈妈",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0425.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0426",
@@ -5436,9 +5510,10 @@
       "duration": 2.81,
       "text": "I support you, Mitchell, even though you're not my son.",
       "translation": "我支持米奇尔 尽管你不是我亲生的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0428.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0429",
@@ -5461,9 +5536,10 @@
       "duration": 2.37,
       "text": "is that, Mitchell, you're a little uptight.",
       "translation": "米奇尔 你有点紧张兮兮的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0430.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0431",
@@ -5523,9 +5599,10 @@
       "duration": 2.91,
       "text": "Okay, people. Let's all \"Chillax.\"",
       "translation": "好了 各位都冷静点",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0435.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0436",
@@ -5610,9 +5687,10 @@
       "duration": 1.74,
       "text": "because he was a bit of a drama queen.",
       "translation": "他就喜欢小题大做",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0442.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0443",
@@ -5773,9 +5851,10 @@
       "duration": 1.62,
       "text": "Let me see her. Let me see her.",
       "translation": "让我看看 让我看看",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0455.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0456",
@@ -5798,9 +5877,10 @@
       "duration": 2.08,
       "text": "\"Lily.\" Isn't that gonna be hard for her to say?",
       "translation": "莉莉 对她来说不是很难发音吗",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0457.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0458",
@@ -5935,9 +6015,10 @@
       "duration": 2.69,
       "text": "I'm here to... blow at your back.",
       "translation": "我是来给你们 吹吹后背春风的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0468.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0469",
@@ -6039,9 +6120,10 @@
       "duration": 1.65,
       "text": "She wants her grandpa! She wants her daddy!",
       "translation": "她要爷爷抱 她要爸爸抱",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0476.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0477",
@@ -6088,9 +6170,10 @@
       "duration": 1.81,
       "text": "Ah. Look at this.",
       "translation": "看看这个",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0480.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0481",
@@ -6100,9 +6183,10 @@
       "duration": 3.88,
       "text": "We're from different worlds, yet we somehow fit together.",
       "translation": "我们来自不同的世界 但我们彼此相容",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0481.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0482",
@@ -6177,9 +6261,10 @@
       "duration": 3.43,
       "text": "Luke, so far, hasn't beaten me in basketball.",
       "translation": "至今为止 卢克在篮球上还没赢过我",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0487.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0488",
@@ -6279,9 +6364,10 @@
       "duration": 1.87,
       "text": "\"Well done. Well done.\"",
       "translation": "干得好 干得好",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0495.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
     },
     {
       "id": "s01e01-0496",
