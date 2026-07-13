@@ -1,22 +1,209 @@
-{"courseId":"voa-stay-calm-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-12-run-bees/4139015.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 12: Run! Bees!","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-stay-calm-b1-001","text":"If you ignore it, it will fly away.","translation":"如果你不理它，它就会飞走。","start":22.1,"end":26.1,"duration":4,"learnable":true,"audio":"audio/voa-stay-calm-b1-001.m4a"},
-{"id":"voa-stay-calm-b1-002","text":"But if you swat it, it might sting you.","translation":"但如果你拍打它，它可能会蜇你。","start":26,"end":30.1,"duration":4.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-002.m4a"},
-{"id":"voa-stay-calm-b1-003","text":"What makes you say that?","translation":"你为什么这么说？","start":40,"end":42.1,"duration":2.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-003.m4a"},
-{"id":"voa-stay-calm-b1-004","text":"If you talk to her, she'll probably help you get over your fear of bees.","translation":"如果你和她谈谈，她可能会帮你克服对蜜蜂的恐惧。","start":47,"end":52.1,"duration":5.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-004.m4a"},
-{"id":"voa-stay-calm-b1-005","text":"I think I'm at the wrong address.","translation":"我想我找错地址了。","start":119,"end":122.1,"duration":3.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-005.m4a"},
-{"id":"voa-stay-calm-b1-006","text":"This does not look like a place where bees are kept.","translation":"这里看起来不像是养蜜蜂的地方。","start":122,"end":126.1,"duration":4.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-006.m4a"},
-{"id":"voa-stay-calm-b1-007","text":"Oh, sorry to bother you.","translation":"噢，抱歉打扰你。","start":126,"end":128.1,"duration":2.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-007.m4a"},
-{"id":"voa-stay-calm-b1-008","text":"I'm looking for beekeeper Caroline.","translation":"我在找养蜂人 Caroline。","start":128,"end":131.1,"duration":3.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-008.m4a"},
-{"id":"voa-stay-calm-b1-009","text":"You're in the right place.","translation":"你来对地方了。","start":135,"end":137.1,"duration":2.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-009.m4a"},
-{"id":"voa-stay-calm-b1-010","text":"Caroline, I thought this class used real bees and real hives.","translation":"Caroline，我以为这门课会用真的蜜蜂和蜂巢。","start":139,"end":145.1,"duration":6.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-010.m4a"},
-{"id":"voa-stay-calm-b1-011","text":"That is really amazing and, at the same time, really scary.","translation":"这真的很令人惊叹，但同时也很可怕。","start":153,"end":157.1,"duration":4.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-011.m4a"},
-{"id":"voa-stay-calm-b1-012","text":"If you come, I'll show you.","translation":"如果你过来，我就给你看看。","start":159,"end":161.1,"duration":2.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-012.m4a"},
-{"id":"voa-stay-calm-b1-013","text":"Even my children help me.","translation":"连我的孩子都会帮我。","start":175,"end":177.1,"duration":2.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-013.m4a"},
-{"id":"voa-stay-calm-b1-014","text":"Tell me, why are you afraid of bees?","translation":"告诉我，你为什么害怕蜜蜂？","start":177,"end":179.1,"duration":2.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-014.m4a"},
-{"id":"voa-stay-calm-b1-015","text":"When I was a little girl, my mom ran out of honey.","translation":"我小时候，我妈妈的蜂蜜用完了。","start":181,"end":185.1,"duration":4.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-015.m4a"},
-{"id":"voa-stay-calm-b1-016","text":"If you hit a beehive with a stick and reach inside, you might get stung.","translation":"如果你用棍子敲蜂巢，还把手伸进去，你可能会被蜇。","start":204,"end":209.1,"duration":5.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-016.m4a"},
-{"id":"voa-stay-calm-b1-017","text":"If you do those things, you will get stung.","translation":"如果你那么做，就一定会被蜇。","start":210,"end":212.1,"duration":2.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-017.m4a"},
-{"id":"voa-stay-calm-b1-018","text":"Bees know your feelings, and if you stay calm, the bees will be calm.","translation":"蜜蜂能感知你的情绪；如果你保持冷静，它们也会平静。","start":219,"end":224.1,"duration":5.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-018.m4a"},
-{"id":"voa-stay-calm-b1-019","text":"If you're nervous, the bees will be nervous.","translation":"如果你紧张，蜜蜂也会紧张。","start":224,"end":227.1,"duration":3.1,"learnable":true,"audio":"audio/voa-stay-calm-b1-019.m4a"},
-{"id":"voa-stay-calm-b1-020","text":"Give me a minute to be calm.","translation":"给我一点时间冷静下来。","start":243.5,"end":245.1,"duration":1.6,"learnable":true,"audio":"audio/voa-stay-calm-b1-020.m4a"}
-]}
+{
+  "courseId": "voa-stay-calm-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-12-run-bees/4139015.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 12: Run! Bees!",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-stay-calm-b1-001",
+      "text": "If you ignore it, it will fly away.",
+      "translation": "如果你不理它，它就会飞走。",
+      "start": 22.66,
+      "end": 26.24,
+      "duration": 3.58,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-001.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-002",
+      "text": "But if you swat it, it might sting you.",
+      "translation": "但如果你拍打它，它可能会蜇你。",
+      "start": 25.94,
+      "end": 30.16,
+      "duration": 4.22,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-002.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-003",
+      "text": "What makes you say that?",
+      "translation": "你为什么这么说？",
+      "start": 40.0,
+      "end": 41.26,
+      "duration": 1.26,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-003.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-004",
+      "text": "If you talk to her, she'll probably help you get over your fear of bees.",
+      "translation": "如果你和她谈谈，她可能会帮你克服对蜜蜂的恐惧。",
+      "start": 47.2,
+      "end": 52.32,
+      "duration": 5.12,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-004.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-005",
+      "text": "I think I'm at the wrong address.",
+      "translation": "我想我找错地址了。",
+      "start": 119.4,
+      "end": 122.14,
+      "duration": 2.74,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-005.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-006",
+      "text": "This does not look like a place where bees are kept.",
+      "translation": "这里看起来不像是养蜜蜂的地方。",
+      "start": 122.34,
+      "end": 125.42,
+      "duration": 3.08,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-006.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-007",
+      "text": "Oh, sorry to bother you.",
+      "translation": "噢，抱歉打扰你。",
+      "start": 126.06,
+      "end": 128.14,
+      "duration": 2.08,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-007.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-008",
+      "text": "I'm looking for beekeeper Caroline.",
+      "translation": "我在找养蜂人 Caroline。",
+      "start": 128.1,
+      "end": 131.18,
+      "duration": 3.08,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-008.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-009",
+      "text": "You're in the right place.",
+      "translation": "你来对地方了。",
+      "start": 135.2,
+      "end": 136.56,
+      "duration": 1.36,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-009.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-010",
+      "text": "Caroline, I thought this class used real bees and real hives.",
+      "translation": "Caroline，我以为这门课会用真的蜜蜂和蜂巢。",
+      "start": 139.02,
+      "end": 145.22,
+      "duration": 6.2,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-010.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-011",
+      "text": "That is really amazing and, at the same time, really scary.",
+      "translation": "这真的很令人惊叹，但同时也很可怕。",
+      "start": 152.74,
+      "end": 157.42,
+      "duration": 4.68,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-011.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-012",
+      "text": "If you come, I'll show you.",
+      "translation": "如果你过来，我就给你看看。",
+      "start": 158.58,
+      "end": 160.46,
+      "duration": 1.88,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-012.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-013",
+      "text": "Even my children help me.",
+      "translation": "连我的孩子都会帮我。",
+      "start": 174.84,
+      "end": 176.6,
+      "duration": 1.76,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-013.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-014",
+      "text": "Tell me, why are you afraid of bees?",
+      "translation": "告诉我，你为什么害怕蜜蜂？",
+      "start": 176.46,
+      "end": 178.58,
+      "duration": 2.12,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-014.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-015",
+      "text": "When I was a little girl, my mom ran out of honey.",
+      "translation": "我小时候，我妈妈的蜂蜜用完了。",
+      "start": 181.76,
+      "end": 185.24,
+      "duration": 3.48,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-015.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-016",
+      "text": "If you hit a beehive with a stick and reach inside, you might get stung.",
+      "translation": "如果你用棍子敲蜂巢，还把手伸进去，你可能会被蜇。",
+      "start": 203.36,
+      "end": 208.72,
+      "duration": 5.36,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-016.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-017",
+      "text": "If you do those things, you will get stung.",
+      "translation": "如果你那么做，就一定会被蜇。",
+      "start": 209.6,
+      "end": 211.76,
+      "duration": 2.16,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-017.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-018",
+      "text": "Bees know your feelings, and if you stay calm, the bees will be calm.",
+      "translation": "蜜蜂能感知你的情绪；如果你保持冷静，它们也会平静。",
+      "start": 218.18,
+      "end": 223.62,
+      "duration": 5.44,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-018.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-019",
+      "text": "If you're nervous, the bees will be nervous.",
+      "translation": "如果你紧张，蜜蜂也会紧张。",
+      "start": 224.18,
+      "end": 226.66,
+      "duration": 2.48,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-019.m4a"
+    },
+    {
+      "id": "voa-stay-calm-b1-020",
+      "text": "Give me one minute to be calm.",
+      "translation": "给我一点时间冷静下来。",
+      "start": 242.24,
+      "end": 243.74,
+      "duration": 1.5,
+      "learnable": true,
+      "audio": "audio/voa-stay-calm-b1-020.m4a"
+    }
+  ]
+}

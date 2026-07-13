@@ -1,22 +1,208 @@
-{"courseId":"voa-visit-peru-b1","provider":"VOA Learning English","attribution":"Source: VOA Learning English","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-peru-b1-001","text":"I thought we could meet for lunch today.","translation":"我原以为我们今天可以一起吃午饭。","start":3,"end":6.72,"duration":3.72,"learnable":true,"audio":"audio/voa-peru-b1-001.m4a"},
-{"id":"voa-peru-b1-002","text":"I wish I could, but I can't.","translation":"我希望可以，但我做不到。","start":6.72,"end":9.4,"duration":2.68,"learnable":true,"audio":"audio/voa-peru-b1-002.m4a"},
-{"id":"voa-peru-b1-003","text":"I have to research Peru for a story.","translation":"我得为一篇报道研究秘鲁。","start":9.4,"end":12.64,"duration":3.24,"learnable":true,"audio":"audio/voa-peru-b1-003.m4a"},
-{"id":"voa-peru-b1-004","text":"I've been reading about Peru and listening to Peruvian music.","translation":"我一直在阅读关于秘鲁的资料，也在听秘鲁音乐。","start":15,"end":19.32,"duration":4.32,"learnable":true,"audio":"audio/voa-peru-b1-004.m4a"},
-{"id":"voa-peru-b1-005","text":"I really want to understand Peru.","translation":"我真的想了解秘鲁。","start":19.32,"end":23.12,"duration":3.8,"learnable":true,"audio":"audio/voa-peru-b1-005.m4a"},
-{"id":"voa-peru-b1-006","text":"My deadline is tomorrow.","translation":"我的截止日期是明天。","start":33.6,"end":35.76,"duration":2.16,"learnable":true,"audio":"audio/voa-peru-b1-006.m4a"},
-{"id":"voa-peru-b1-007","text":"I don't mean to really go there.","translation":"我的意思不是真的要去那里。","start":35.76,"end":39.2,"duration":3.44,"learnable":true,"audio":"audio/voa-peru-b1-007.m4a"},
-{"id":"voa-peru-b1-008","text":"Thanks for telling me about this event.","translation":"谢谢你告诉我这个活动。","start":65.92,"end":69.32,"duration":3.4,"learnable":true,"audio":"audio/voa-peru-b1-008.m4a"},
-{"id":"voa-peru-b1-009","text":"It's much better than staring at your computer.","translation":"这可比盯着电脑好多了。","start":70.32,"end":72.44,"duration":2.12,"learnable":true,"audio":"audio/voa-peru-b1-009.m4a"},
-{"id":"voa-peru-b1-010","text":"I hope it helps with your story.","translation":"我希望这能帮到你的报道。","start":72.44,"end":73.76,"duration":1.32,"learnable":true,"audio":"audio/voa-peru-b1-010.m4a"},
-{"id":"voa-peru-b1-011","text":"What should we see first?","translation":"我们先看什么？","start":75.6,"end":78.32,"duration":2.72,"learnable":true,"audio":"audio/voa-peru-b1-011.m4a"},
-{"id":"voa-peru-b1-012","text":"It is much more romantic in person.","translation":"亲眼看到时，它浪漫得多。","start":105.32,"end":112.32,"duration":7,"learnable":true,"audio":"audio/voa-peru-b1-012.m4a"},
-{"id":"voa-peru-b1-013","text":"The dancers are giving lessons after their performance.","translation":"舞者会在表演后开课。","start":112.32,"end":115.08,"duration":2.76,"learnable":true,"audio":"audio/voa-peru-b1-013.m4a"},
-{"id":"voa-peru-b1-014","text":"I'd love to, but I'm not ready to get married.","translation":"我很想，不过我还没准备好结婚。","start":116.08,"end":121.24,"duration":5.16,"learnable":true,"audio":"audio/voa-peru-b1-014.m4a"},
-{"id":"voa-peru-b1-015","text":"One day, I hope to meet the right guy.","translation":"有一天，我希望能遇到对的人。","start":121.24,"end":125.6,"duration":4.36,"learnable":true,"audio":"audio/voa-peru-b1-015.m4a"},
-{"id":"voa-peru-b1-016","text":"I hope I have time to see everything.","translation":"我希望有时间把所有东西都看一遍。","start":144.92,"end":146.92,"duration":2,"learnable":true,"audio":"audio/voa-peru-b1-016.m4a"},
-{"id":"voa-peru-b1-017","text":"I wish I could join you, but I have some work to do.","translation":"我希望能和你一起去，但我还有些工作要做。","start":146.92,"end":150.52,"duration":3.6,"learnable":true,"audio":"audio/voa-peru-b1-017.m4a"},
-{"id":"voa-peru-b1-018","text":"I'm hoping to finish in about an hour.","translation":"我希望大约一小时内完成。","start":155.92,"end":158.44,"duration":2.52,"learnable":true,"audio":"audio/voa-peru-b1-018.m4a"},
-{"id":"voa-peru-b1-019","text":"You know you're in the kids' section, right?","translation":"你知道你在儿童区，对吧？","start":186,"end":188.36,"duration":2.36,"learnable":true,"audio":"audio/voa-peru-b1-019.m4a"},
-{"id":"voa-peru-b1-020","text":"I learned so much about Peru.","translation":"我学到了很多关于秘鲁的知识。","start":207.12,"end":209.6,"duration":2.48,"learnable":true,"audio":"audio/voa-peru-b1-020.m4a"}
-]}
+{
+  "courseId": "voa-visit-peru-b1",
+  "provider": "VOA Learning English",
+  "attribution": "Source: VOA Learning English",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-peru-b1-001",
+      "text": "I thought we could meet for lunch today.",
+      "translation": "我原以为我们今天可以一起吃午饭。",
+      "start": 3.9,
+      "end": 6.26,
+      "duration": 2.36,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-001.m4a"
+    },
+    {
+      "id": "voa-peru-b1-002",
+      "text": "I wish I could, but I can't.",
+      "translation": "我希望可以，但我做不到。",
+      "start": 6.7,
+      "end": 9.26,
+      "duration": 2.56,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-002.m4a"
+    },
+    {
+      "id": "voa-peru-b1-003",
+      "text": "I have to research Peru for a story.",
+      "translation": "我得为一篇报道研究秘鲁。",
+      "start": 9.3,
+      "end": 11.82,
+      "duration": 2.52,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-003.m4a"
+    },
+    {
+      "id": "voa-peru-b1-004",
+      "text": "I've been reading about Peru and listening to Peruvian music.",
+      "translation": "我一直在阅读关于秘鲁的资料，也在听秘鲁音乐。",
+      "start": 14.68,
+      "end": 18.72,
+      "duration": 4.04,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-004.m4a"
+    },
+    {
+      "id": "voa-peru-b1-005",
+      "text": "I really want to understand Peru.",
+      "translation": "我真的想了解秘鲁。",
+      "start": 18.7,
+      "end": 22.14,
+      "duration": 3.44,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-005.m4a"
+    },
+    {
+      "id": "voa-peru-b1-006",
+      "text": "My deadline is tomorrow.",
+      "translation": "我的截止日期是明天。",
+      "start": 33.44,
+      "end": 35.58,
+      "duration": 2.14,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-006.m4a"
+    },
+    {
+      "id": "voa-peru-b1-007",
+      "text": "I don't mean to really go there.",
+      "translation": "我的意思不是真的要去那里。",
+      "start": 36.3,
+      "end": 38.88,
+      "duration": 2.58,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-007.m4a"
+    },
+    {
+      "id": "voa-peru-b1-008",
+      "text": "Thanks for telling me about this event.",
+      "translation": "谢谢你告诉我这个活动。",
+      "start": 67.2,
+      "end": 69.22,
+      "duration": 2.02,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-008.m4a"
+    },
+    {
+      "id": "voa-peru-b1-009",
+      "text": "It's much better than staring at your computer.",
+      "translation": "这可比盯着电脑好多了。",
+      "start": 69.82,
+      "end": 72.34,
+      "duration": 2.52,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-009.m4a"
+    },
+    {
+      "id": "voa-peru-b1-010",
+      "text": "I hope it helps with your story.",
+      "translation": "我希望这能帮到你的报道。",
+      "start": 72.38,
+      "end": 73.84,
+      "duration": 1.46,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-010.m4a"
+    },
+    {
+      "id": "voa-peru-b1-011",
+      "text": "What should we see first?",
+      "translation": "我们先看什么？",
+      "start": 76.12,
+      "end": 78.02,
+      "duration": 1.9,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-011.m4a"
+    },
+    {
+      "id": "voa-peru-b1-012",
+      "text": "It is much more romantic in person.",
+      "translation": "亲眼看到时，它浪漫得多。",
+      "start": 108.48,
+      "end": 111.58,
+      "duration": 3.1,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-012.m4a"
+    },
+    {
+      "id": "voa-peru-b1-013",
+      "text": "The dancers are giving lessons after their performance.",
+      "translation": "舞者会在表演后开课。",
+      "start": 111.28,
+      "end": 115.1,
+      "duration": 3.82,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-013.m4a"
+    },
+    {
+      "id": "voa-peru-b1-014",
+      "text": "I'd love to, but I'm not ready to get married.",
+      "translation": "我很想，不过我还没准备好结婚。",
+      "start": 116.2,
+      "end": 120.58,
+      "duration": 4.38,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-014.m4a"
+    },
+    {
+      "id": "voa-peru-b1-015",
+      "text": "One day, I hope to meet the right guy.",
+      "translation": "有一天，我希望能遇到对的人。",
+      "start": 121.7,
+      "end": 124.98,
+      "duration": 3.28,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-015.m4a"
+    },
+    {
+      "id": "voa-peru-b1-016",
+      "text": "I hope I have time to see everything.",
+      "translation": "我希望有时间把所有东西都看一遍。",
+      "start": 144.84,
+      "end": 147.44,
+      "duration": 2.6,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-016.m4a"
+    },
+    {
+      "id": "voa-peru-b1-017",
+      "text": "I wish I could join you, but I have some work to do.",
+      "translation": "我希望能和你一起去，但我还有些工作要做。",
+      "start": 147.7,
+      "end": 150.48,
+      "duration": 2.78,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-017.m4a"
+    },
+    {
+      "id": "voa-peru-b1-018",
+      "text": "I'm hoping to finish in about an hour.",
+      "translation": "我希望大约一小时内完成。",
+      "start": 155.32,
+      "end": 157.94,
+      "duration": 2.62,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-018.m4a"
+    },
+    {
+      "id": "voa-peru-b1-019",
+      "text": "You know you're in the kids' section, right?",
+      "translation": "你知道你在儿童区，对吧？",
+      "start": 186.18,
+      "end": 188.18,
+      "duration": 2.0,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-019.m4a"
+    },
+    {
+      "id": "voa-peru-b1-020",
+      "text": "I learned so much about Peru.",
+      "translation": "我学到了很多关于秘鲁的知识。",
+      "start": 206.94,
+      "end": 209.2,
+      "duration": 2.26,
+      "learnable": true,
+      "audio": "audio/voa-peru-b1-020.m4a"
+    }
+  ]
+}

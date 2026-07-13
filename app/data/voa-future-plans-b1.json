@@ -1,2 +1,209 @@
-{"courseId":"voa-future-plans-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-23/4300661.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 23: Rock Star","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-future-001","text":"Tomorrow, you'll be interviewing musician Emma G.","translation":"明天，你将采访音乐人艾玛·G。","audio":"audio/voa-future-plans-b1-001.m4a","learnable":true},{"id":"voa-future-002","text":"I will be talking to Emma G?","translation":"我将和艾玛·G交谈？","audio":"audio/voa-future-plans-b1-002.m4a","learnable":true},{"id":"voa-future-003","text":"Musician Emma G will be joining us here.","translation":"音乐人艾玛·G将来到这里与我们见面。","audio":"audio/voa-future-plans-b1-003.m4a","learnable":true},{"id":"voa-future-004","text":"She is a wonderful songwriter and an amazing singer.","translation":"她是一位出色的词曲作者和惊人的歌手。","audio":"audio/voa-future-plans-b1-004.m4a","learnable":true},{"id":"voa-future-005","text":"Thank you for coming on the show.","translation":"感谢你来参加节目。","audio":"audio/voa-future-plans-b1-005.m4a","learnable":true},{"id":"voa-future-006","text":"It's great to be here.","translation":"很高兴来到这里。","audio":"audio/voa-future-plans-b1-006.m4a","learnable":true},{"id":"voa-future-007","text":"We can't wait to hear you sing.","translation":"我们等不及想听你唱歌了。","audio":"audio/voa-future-plans-b1-007.m4a","learnable":true},{"id":"voa-future-008","text":"I feel like I know you. Is that strange?","translation":"我觉得好像认识你。这很奇怪吗？","audio":"audio/voa-future-plans-b1-008.m4a","learnable":true},{"id":"voa-future-009","text":"Now, let's talk about your schedule.","translation":"现在，我们来谈谈你的日程。","audio":"audio/voa-future-plans-b1-009.m4a","learnable":true},{"id":"voa-future-010","text":"Tell us exactly where you will be and when.","translation":"请准确告诉我们你何时会在哪里。","audio":"audio/voa-future-plans-b1-010.m4a","learnable":true},{"id":"voa-future-011","text":"In early June, I'll be performing at several venues.","translation":"六月初，我将在几个场地演出。","audio":"audio/voa-future-plans-b1-011.m4a","learnable":true},{"id":"voa-future-012","text":"That's my vacation week.","translation":"那是我的休假周。","audio":"audio/voa-future-plans-b1-012.m4a","learnable":true},{"id":"voa-future-013","text":"We can tour the city.","translation":"我们可以游览这座城市。","audio":"audio/voa-future-plans-b1-013.m4a","learnable":true},{"id":"voa-future-014","text":"Then in mid-July, I'm going to be teaching at a music camp.","translation":"然后在七月中旬，我将在一个音乐夏令营教学。","audio":"audio/voa-future-plans-b1-014.m4a","learnable":true},{"id":"voa-future-015","text":"I will be visiting my sister then.","translation":"那时我会去看望我姐姐。","audio":"audio/voa-future-plans-b1-015.m4a","learnable":true},{"id":"voa-future-016","text":"I could drive over. We could hang out.","translation":"我可以开车过去。我们可以一起玩。","audio":"audio/voa-future-plans-b1-016.m4a","learnable":true},{"id":"voa-future-017","text":"Maybe now is a good time for some music.","translation":"也许现在正是听点音乐的好时候。","audio":"audio/voa-future-plans-b1-017.m4a","learnable":true},{"id":"voa-future-018","text":"That's a great idea.","translation":"那是个很棒的主意。","audio":"audio/voa-future-plans-b1-018.m4a","learnable":true},{"id":"voa-future-019","text":"Sorry, Emma. That was me. I'm just so excited.","translation":"抱歉，艾玛。那是我。我只是太兴奋了。","audio":"audio/voa-future-plans-b1-019.m4a","learnable":true},{"id":"voa-future-020","text":"Come on over, then, and we can sing a song together first.","translation":"过来吧，然后我们可以先一起唱首歌。","audio":"audio/voa-future-plans-b1-020.m4a","learnable":true}]}
+{
+  "courseId": "voa-future-plans-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-23/4300661.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 23: Rock Star",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-future-001",
+      "text": "Tomorrow, you'll be interviewing musician Emma G.",
+      "translation": "明天，你将采访音乐人艾玛·G。",
+      "audio": "audio/voa-future-plans-b1-001.m4a",
+      "learnable": true,
+      "start": 4.88,
+      "end": 9.18,
+      "duration": 4.3
+    },
+    {
+      "id": "voa-future-002",
+      "text": "I will be talking to Emma G?",
+      "translation": "我将和艾玛·G交谈？",
+      "audio": "audio/voa-future-plans-b1-002.m4a",
+      "learnable": true,
+      "start": 9.88,
+      "end": 13.18,
+      "duration": 3.3
+    },
+    {
+      "id": "voa-future-003",
+      "text": "Musician Emma G will be joining us here.",
+      "translation": "音乐人艾玛·G将来到这里与我们见面。",
+      "audio": "audio/voa-future-plans-b1-003.m4a",
+      "learnable": true,
+      "start": 65.88,
+      "end": 71.18,
+      "duration": 5.3
+    },
+    {
+      "id": "voa-future-004",
+      "text": "She is a wonderful songwriter and an amazing singer.",
+      "translation": "她是一位出色的词曲作者和惊人的歌手。",
+      "audio": "audio/voa-future-plans-b1-004.m4a",
+      "learnable": true,
+      "start": 72.88,
+      "end": 77.18,
+      "duration": 4.3
+    },
+    {
+      "id": "voa-future-005",
+      "text": "Thank you for coming to the show.",
+      "translation": "感谢你来参加节目。",
+      "audio": "audio/voa-future-plans-b1-005.m4a",
+      "learnable": true,
+      "start": 83.88,
+      "end": 86.18,
+      "duration": 2.3
+    },
+    {
+      "id": "voa-future-006",
+      "text": "It's great to be here.",
+      "translation": "很高兴来到这里。",
+      "audio": "audio/voa-future-plans-b1-006.m4a",
+      "learnable": true,
+      "start": 86.88,
+      "end": 89.18,
+      "duration": 2.3
+    },
+    {
+      "id": "voa-future-007",
+      "text": "Well, we can't wait to hear you sing.",
+      "translation": "我们等不及想听你唱歌了。",
+      "audio": "audio/voa-future-plans-b1-007.m4a",
+      "learnable": true,
+      "start": 88.88,
+      "end": 93.18,
+      "duration": 4.3
+    },
+    {
+      "id": "voa-future-008",
+      "text": "So I feel like I know you. Is that strange?",
+      "translation": "我觉得好像认识你。这很奇怪吗？",
+      "audio": "audio/voa-future-plans-b1-008.m4a",
+      "learnable": true,
+      "start": 94.88,
+      "end": 100.18,
+      "duration": 5.3
+    },
+    {
+      "id": "voa-future-009",
+      "text": "Now, Emma, let's talk about your schedule.",
+      "translation": "现在，我们来谈谈你的日程。",
+      "audio": "audio/voa-future-plans-b1-009.m4a",
+      "learnable": true,
+      "start": 122.88,
+      "end": 127.18,
+      "duration": 4.3
+    },
+    {
+      "id": "voa-future-010",
+      "text": "Tell me, I mean tell us, exactly where you will be and when.",
+      "translation": "请准确告诉我们你何时会在哪里。",
+      "audio": "audio/voa-future-plans-b1-010.m4a",
+      "learnable": true,
+      "start": 126.88,
+      "end": 134.18,
+      "duration": 7.3
+    },
+    {
+      "id": "voa-future-011",
+      "text": "Well, in early June, I'll be performing at several venues across Austin, Texas.",
+      "translation": "六月初，我将在几个场地演出。",
+      "audio": "audio/voa-future-plans-b1-011.m4a",
+      "learnable": true,
+      "start": 135.88,
+      "end": 142.18,
+      "duration": 6.3
+    },
+    {
+      "id": "voa-future-012",
+      "text": "That's my vacation week.",
+      "translation": "那是我的休假周。",
+      "audio": "audio/voa-future-plans-b1-012.m4a",
+      "learnable": true,
+      "start": 141.88,
+      "end": 144.18,
+      "duration": 2.3
+    },
+    {
+      "id": "voa-future-013",
+      "text": "We can tour the city.",
+      "translation": "我们可以游览这座城市。",
+      "audio": "audio/voa-future-plans-b1-013.m4a",
+      "learnable": true,
+      "start": 145.88,
+      "end": 148.18,
+      "duration": 2.3
+    },
+    {
+      "id": "voa-future-014",
+      "text": "Then in mid-July, I'm going to be teaching at a music camp in Chicago.",
+      "translation": "然后在七月中旬，我将在一个音乐夏令营教学。",
+      "audio": "audio/voa-future-plans-b1-014.m4a",
+      "learnable": true,
+      "start": 151.88,
+      "end": 158.18,
+      "duration": 6.3
+    },
+    {
+      "id": "voa-future-015",
+      "text": "I will be visiting my sister then.",
+      "translation": "那时我会去看望我姐姐。",
+      "audio": "audio/voa-future-plans-b1-015.m4a",
+      "learnable": true,
+      "start": 157.88,
+      "end": 161.18,
+      "duration": 3.3
+    },
+    {
+      "id": "voa-future-016",
+      "text": "I could drive over. We could hang out.",
+      "translation": "我可以开车过去。我们可以一起玩。",
+      "audio": "audio/voa-future-plans-b1-016.m4a",
+      "learnable": true,
+      "start": 164.88,
+      "end": 170.18,
+      "duration": 5.3
+    },
+    {
+      "id": "voa-future-017",
+      "text": "You know, maybe now is a good time for some music.",
+      "translation": "也许现在正是听点音乐的好时候。",
+      "audio": "audio/voa-future-plans-b1-017.m4a",
+      "learnable": true,
+      "start": 171.88,
+      "end": 176.18,
+      "duration": 4.3
+    },
+    {
+      "id": "voa-future-018",
+      "text": "That's a great idea.",
+      "translation": "那是个很棒的主意。",
+      "audio": "audio/voa-future-plans-b1-018.m4a",
+      "learnable": true,
+      "start": 175.88,
+      "end": 179.18,
+      "duration": 3.3
+    },
+    {
+      "id": "voa-future-019",
+      "text": "Sorry, sorry, Emma, that was me. I'm just so excited.",
+      "translation": "抱歉，艾玛。那是我。我只是太兴奋了。",
+      "audio": "audio/voa-future-plans-b1-019.m4a",
+      "learnable": true,
+      "start": 215.88,
+      "end": 221.18,
+      "duration": 5.3
+    },
+    {
+      "id": "voa-future-020",
+      "text": "Well, come on over then and we can sing a song together first.",
+      "translation": "过来吧，然后我们可以先一起唱首歌。",
+      "audio": "audio/voa-future-plans-b1-020.m4a",
+      "learnable": true,
+      "start": 249.88,
+      "end": 254.18,
+      "duration": 4.3
+    }
+  ]
+}

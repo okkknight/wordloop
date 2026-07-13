@@ -1,18 +1,168 @@
-{"courseId":"voa-pets-responsibility-b1","provider":"VOA Learning English","attribution":"Source: VOA Learning English","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-pets-b1-001","text":"I would have gone, but I was busy.","translation":"我本来会去的，但当时很忙。","start":6,"end":9,"duration":3,"learnable":true,"audio":"audio/voa-pets-b1-001.m4a"},
-{"id":"voa-pets-b1-002","text":"I won first place in a pet contest!","translation":"我在宠物比赛中得了第一名！","start":12,"end":17,"duration":5,"learnable":true,"audio":"audio/voa-pets-b1-002.m4a"},
-{"id":"voa-pets-b1-003","text":"You haven't met my dog, have you?","translation":"你还没见过我的狗，对吧？","start":48,"end":51,"duration":3,"learnable":true,"audio":"audio/voa-pets-b1-003.m4a"},
-{"id":"voa-pets-b1-004","text":"There must have been a dozen different contests.","translation":"一定有十几种不同的比赛。","start":65,"end":69,"duration":4,"learnable":true,"audio":"audio/voa-pets-b1-004.m4a"},
-{"id":"voa-pets-b1-005","text":"Some were pretty strange.","translation":"有些还挺奇怪的。","start":69,"end":72,"duration":3,"learnable":true,"audio":"audio/voa-pets-b1-005.m4a"},
-{"id":"voa-pets-b1-006","text":"How did you win a pet contest without a pet?","translation":"你没有宠物，怎么会赢得宠物比赛呢？","start":101,"end":108,"duration":7,"learnable":true,"audio":"audio/voa-pets-b1-006.m4a"},
-{"id":"voa-pets-b1-007","text":"The closest thing I have is my pet rock.","translation":"我最接近宠物的东西就是我的宠物石头。","start":108,"end":115,"duration":7,"learnable":true,"audio":"audio/voa-pets-b1-007.m4a"},
-{"id":"voa-pets-b1-008","text":"I've had it since I was a little girl.","translation":"我从小女孩时就拥有它了。","start":115,"end":121,"duration":6,"learnable":true,"audio":"audio/voa-pets-b1-008.m4a"},
-{"id":"voa-pets-b1-009","text":"I was invited to enter the one-of-a-kind pet contest.","translation":"我获邀参加这场独一无二的宠物比赛。","start":124,"end":130,"duration":6,"learnable":true,"audio":"audio/voa-pets-b1-009.m4a"},
-{"id":"voa-pets-b1-010","text":"Only you could have won a pet contest with a pet rock.","translation":"只有你能带着一块宠物石头赢得宠物比赛。","start":132,"end":138,"duration":6,"learnable":true,"audio":"audio/voa-pets-b1-010.m4a"},
-{"id":"voa-pets-b1-011","text":"Pets become part of your family.","translation":"宠物会成为你家庭的一部分。","start":195,"end":199,"duration":4,"learnable":true,"audio":"audio/voa-pets-b1-011.m4a"},
-{"id":"voa-pets-b1-012","text":"It's a big responsibility.","translation":"这是一项重大的责任。","start":205,"end":207,"duration":2,"learnable":true,"audio":"audio/voa-pets-b1-012.m4a"},
-{"id":"voa-pets-b1-013","text":"You may want to spend time with a dog first.","translation":"你可能想先花些时间和狗相处。","start":207,"end":210,"duration":3,"learnable":true,"audio":"audio/voa-pets-b1-013.m4a"},
-{"id":"voa-pets-b1-014","text":"Do you want to watch Dublin for a couple of hours?","translation":"你想照看都柏林几个小时吗？","start":220,"end":223,"duration":3,"learnable":true,"audio":"audio/voa-pets-b1-014.m4a"},
-{"id":"voa-pets-b1-015","text":"I will take very good care of him.","translation":"我会非常好地照顾它。","start":225,"end":227,"duration":2,"learnable":true,"audio":"audio/voa-pets-b1-015.m4a"},
-{"id":"voa-pets-b1-016","text":"I don't want you to be lonely.","translation":"我不想让你感到孤单。","start":234,"end":237,"duration":3,"learnable":true,"audio":"audio/voa-pets-b1-016.m4a"}
-]}
+{
+  "courseId": "voa-pets-responsibility-b1",
+  "provider": "VOA Learning English",
+  "attribution": "Source: VOA Learning English",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-pets-b1-001",
+      "text": "I would have gone, but I was busy.",
+      "translation": "我本来会去的，但当时很忙。",
+      "start": 8.38,
+      "end": 10.98,
+      "duration": 2.6,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-001.m4a"
+    },
+    {
+      "id": "voa-pets-b1-002",
+      "text": "I won first place in a pet contest!",
+      "translation": "我在宠物比赛中得了第一名！",
+      "start": 14.68,
+      "end": 19.18,
+      "duration": 4.5,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-002.m4a"
+    },
+    {
+      "id": "voa-pets-b1-003",
+      "text": "You haven't met my dog, have you?",
+      "translation": "你还没见过我的狗，对吧？",
+      "start": 51.3,
+      "end": 53.34,
+      "duration": 2.04,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-003.m4a"
+    },
+    {
+      "id": "voa-pets-b1-004",
+      "text": "There must have been a dozen different contests.",
+      "translation": "一定有十几种不同的比赛。",
+      "start": 68.2,
+      "end": 72.34,
+      "duration": 4.14,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-004.m4a"
+    },
+    {
+      "id": "voa-pets-b1-005",
+      "text": "Some were pretty strange.",
+      "translation": "有些还挺奇怪的。",
+      "start": 73.04,
+      "end": 75.32,
+      "duration": 2.28,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-005.m4a"
+    },
+    {
+      "id": "voa-pets-b1-006",
+      "text": "How did you win a pet contest without a pet?",
+      "translation": "你没有宠物，怎么会赢得宠物比赛呢？",
+      "start": 102.7,
+      "end": 107.46,
+      "duration": 4.76,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-006.m4a"
+    },
+    {
+      "id": "voa-pets-b1-007",
+      "text": "The closest thing I have is my pet rock.",
+      "translation": "我最接近宠物的东西就是我的宠物石头。",
+      "start": 108.52,
+      "end": 113.84,
+      "duration": 5.32,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-007.m4a"
+    },
+    {
+      "id": "voa-pets-b1-008",
+      "text": "I've had it since I was a little girl.",
+      "translation": "我从小女孩时就拥有它了。",
+      "start": 117.86,
+      "end": 120.48,
+      "duration": 2.62,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-008.m4a"
+    },
+    {
+      "id": "voa-pets-b1-009",
+      "text": "I was invited to enter the one-of-a-kind pet contest.",
+      "translation": "我获邀参加这场独一无二的宠物比赛。",
+      "start": 124.52,
+      "end": 129.5,
+      "duration": 4.98,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-009.m4a"
+    },
+    {
+      "id": "voa-pets-b1-010",
+      "text": "Only you could have won a pet contest with a pet rock.",
+      "translation": "只有你能带着一块宠物石头赢得宠物比赛。",
+      "start": 132.56,
+      "end": 137.6,
+      "duration": 5.04,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-010.m4a"
+    },
+    {
+      "id": "voa-pets-b1-011",
+      "text": "Yes, and they become part of your family.",
+      "translation": "是的，它们会成为你家庭的一部分。",
+      "start": 194.5,
+      "end": 197.68,
+      "duration": 3.18,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-011.m4a"
+    },
+    {
+      "id": "voa-pets-b1-012",
+      "text": "It's a big responsibility.",
+      "translation": "这是一项重大的责任。",
+      "start": 204.9,
+      "end": 206.38,
+      "duration": 1.48,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-012.m4a"
+    },
+    {
+      "id": "voa-pets-b1-013",
+      "text": "You may want to spend time with a dog first.",
+      "translation": "你可能想先花些时间和狗相处。",
+      "start": 206.88,
+      "end": 209.98,
+      "duration": 3.1,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-013.m4a"
+    },
+    {
+      "id": "voa-pets-b1-014",
+      "text": "Do you want to watch Dublin for a couple of hours?",
+      "translation": "你想照看都柏林几个小时吗？",
+      "start": 219.96,
+      "end": 223.18,
+      "duration": 3.22,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-014.m4a"
+    },
+    {
+      "id": "voa-pets-b1-015",
+      "text": "I will take very good care of him.",
+      "translation": "我会非常好地照顾它。",
+      "start": 224.02,
+      "end": 227.0,
+      "duration": 2.98,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-015.m4a"
+    },
+    {
+      "id": "voa-pets-b1-016",
+      "text": "I don't want you to be lonely.",
+      "translation": "我不想让你感到孤单。",
+      "start": 233.7,
+      "end": 236.1,
+      "duration": 2.4,
+      "learnable": true,
+      "audio": "audio/voa-pets-b1-016.m4a"
+    }
+  ]
+}

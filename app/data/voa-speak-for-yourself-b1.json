@@ -1,21 +1,209 @@
-{"courseId":"voa-speak-for-yourself-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-17/4220576.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 17: Flour Baby, Part 1","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-speak-001","text":"Anna, Pete, I have a new assignment for you.","translation":"安娜、皮特，我有一项新任务交给你们。","audio":"audio/voa-speak-for-yourself-b1-001.m4a","learnable":true},
-{"id":"voa-speak-002","text":"We can interview single parents.","translation":"我们可以采访单亲家长。","audio":"audio/voa-speak-for-yourself-b1-002.m4a","learnable":true},
-{"id":"voa-speak-003","text":"They can share their experiences themselves.","translation":"他们可以亲自分享自己的经历。","audio":"audio/voa-speak-for-yourself-b1-003.m4a","learnable":true},
-{"id":"voa-speak-004","text":"How do we do that?","translation":"我们怎么做呢？","audio":"audio/voa-speak-for-yourself-b1-004.m4a","learnable":true},
-{"id":"voa-speak-005","text":"We're not parents.","translation":"我们又不是家长。","audio":"audio/voa-speak-for-yourself-b1-005.m4a","learnable":true},
-{"id":"voa-speak-006","text":"I asked myself the same question.","translation":"我也问过自己同样的问题。","audio":"audio/voa-speak-for-yourself-b1-006.m4a","learnable":true},
-{"id":"voa-speak-007","text":"Then an idea came to me.","translation":"然后我想到了一个主意。","audio":"audio/voa-speak-for-yourself-b1-007.m4a","learnable":true},
-{"id":"voa-speak-008","text":"Here are your instructions.","translation":"这是给你们的说明。","audio":"audio/voa-speak-for-yourself-b1-008.m4a","learnable":true},
-{"id":"voa-speak-009","text":"Do not leave your babies alone.","translation":"不要把你们的宝宝单独留下。","audio":"audio/voa-speak-for-yourself-b1-009.m4a","learnable":true},
-{"id":"voa-speak-010","text":"A baby cannot take care of itself.","translation":"婴儿不能照顾自己。","audio":"audio/voa-speak-for-yourself-b1-010.m4a","learnable":true},
-{"id":"voa-speak-011","text":"You two must do everything by yourselves.","translation":"你们两个必须自己完成所有事情。","audio":"audio/voa-speak-for-yourself-b1-011.m4a","learnable":true},
-{"id":"voa-speak-012","text":"We will meet next Friday.","translation":"我们下周五见。","audio":"audio/voa-speak-for-yourself-b1-012.m4a","learnable":true},
-{"id":"voa-speak-013","text":"The person who does the best research will get an extra day of vacation.","translation":"研究做得最好的人将获得额外一天假期。","audio":"audio/voa-speak-for-yourself-b1-013.m4a","learnable":true},
-{"id":"voa-speak-014","text":"This is a terrible idea.","translation":"这真是个糟糕的主意。","audio":"audio/voa-speak-for-yourself-b1-014.m4a","learnable":true},
-{"id":"voa-speak-015","text":"Speak for yourself, Pete!","translation":"你只代表你自己，皮特！","audio":"audio/voa-speak-for-yourself-b1-015.m4a","learnable":true},
-{"id":"voa-speak-016","text":"We need to throw ourselves into the research.","translation":"我们得全身心投入这项研究。","audio":"audio/voa-speak-for-yourself-b1-016.m4a","learnable":true},
-{"id":"voa-speak-017","text":"I'm starting right now!","translation":"我现在就开始！","audio":"audio/voa-speak-for-yourself-b1-017.m4a","learnable":true},
-{"id":"voa-speak-018","text":"You forgot your baby!","translation":"你忘了你的宝宝！","audio":"audio/voa-speak-for-yourself-b1-018.m4a","learnable":true},
-{"id":"voa-speak-019","text":"This is hard!","translation":"这太难了！","audio":"audio/voa-speak-for-yourself-b1-019.m4a","learnable":true},
-{"id":"voa-speak-020","text":"I really need that vacation day!","translation":"我真的很需要那一天假期！","audio":"audio/voa-speak-for-yourself-b1-020.m4a","learnable":true}]}
+{
+  "courseId": "voa-speak-for-yourself-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-17/4220576.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 17: Flour Baby, Part 1",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-speak-001",
+      "text": "Anna, Pete, I have a new assignment for you.",
+      "translation": "安娜、皮特，我有一项新任务交给你们。",
+      "audio": "audio/voa-speak-for-yourself-b1-001.m4a",
+      "learnable": true,
+      "start": 0.0,
+      "end": 5.64,
+      "duration": 5.64
+    },
+    {
+      "id": "voa-speak-002",
+      "text": "We can interview single parents.",
+      "translation": "我们可以采访单亲家长。",
+      "audio": "audio/voa-speak-for-yourself-b1-002.m4a",
+      "learnable": true,
+      "start": 18.26,
+      "end": 21.06,
+      "duration": 2.8
+    },
+    {
+      "id": "voa-speak-003",
+      "text": "They can share their experiences themselves.",
+      "translation": "他们可以亲自分享自己的经历。",
+      "audio": "audio/voa-speak-for-yourself-b1-003.m4a",
+      "learnable": true,
+      "start": 21.26,
+      "end": 24.7,
+      "duration": 3.44
+    },
+    {
+      "id": "voa-speak-004",
+      "text": "How do we do that?",
+      "translation": "我们怎么做呢？",
+      "audio": "audio/voa-speak-for-yourself-b1-004.m4a",
+      "learnable": true,
+      "start": 36.68,
+      "end": 38.7,
+      "duration": 2.02
+    },
+    {
+      "id": "voa-speak-005",
+      "text": "We're not parents.",
+      "translation": "我们又不是家长。",
+      "audio": "audio/voa-speak-for-yourself-b1-005.m4a",
+      "learnable": true,
+      "start": 39.24,
+      "end": 40.62,
+      "duration": 1.38
+    },
+    {
+      "id": "voa-speak-006",
+      "text": "I asked myself the same question.",
+      "translation": "我也问过自己同样的问题。",
+      "audio": "audio/voa-speak-for-yourself-b1-006.m4a",
+      "learnable": true,
+      "start": 40.78,
+      "end": 44.44,
+      "duration": 3.66
+    },
+    {
+      "id": "voa-speak-007",
+      "text": "Then an idea came to me.",
+      "translation": "然后我想到了一个主意。",
+      "audio": "audio/voa-speak-for-yourself-b1-007.m4a",
+      "learnable": true,
+      "start": 49.48,
+      "end": 52.7,
+      "duration": 3.22
+    },
+    {
+      "id": "voa-speak-008",
+      "text": "Here are your instructions.",
+      "translation": "这是给你们的说明。",
+      "audio": "audio/voa-speak-for-yourself-b1-008.m4a",
+      "learnable": true,
+      "start": 134.0,
+      "end": 135.68,
+      "duration": 1.68
+    },
+    {
+      "id": "voa-speak-009",
+      "text": "Do not leave your babies alone.",
+      "translation": "不要把你们的宝宝单独留下。",
+      "audio": "audio/voa-speak-for-yourself-b1-009.m4a",
+      "learnable": true,
+      "start": 136.1,
+      "end": 139.08,
+      "duration": 2.98
+    },
+    {
+      "id": "voa-speak-010",
+      "text": "A baby cannot take care of itself.",
+      "translation": "婴儿不能照顾自己。",
+      "audio": "audio/voa-speak-for-yourself-b1-010.m4a",
+      "learnable": true,
+      "start": 138.78,
+      "end": 142.82,
+      "duration": 4.04
+    },
+    {
+      "id": "voa-speak-011",
+      "text": "You two must do everything by yourselves.",
+      "translation": "你们两个必须自己完成所有事情。",
+      "audio": "audio/voa-speak-for-yourself-b1-011.m4a",
+      "learnable": true,
+      "start": 143.6,
+      "end": 147.34,
+      "duration": 3.74
+    },
+    {
+      "id": "voa-speak-012",
+      "text": "We will meet next Friday.",
+      "translation": "我们下周五见。",
+      "audio": "audio/voa-speak-for-yourself-b1-012.m4a",
+      "learnable": true,
+      "start": 147.8,
+      "end": 149.78,
+      "duration": 1.98
+    },
+    {
+      "id": "voa-speak-013",
+      "text": "The person who does the best research will get an extra day of vacation.",
+      "translation": "研究做得最好的人将获得额外一天假期。",
+      "audio": "audio/voa-speak-for-yourself-b1-013.m4a",
+      "learnable": true,
+      "start": 151.44,
+      "end": 157.78,
+      "duration": 6.34
+    },
+    {
+      "id": "voa-speak-014",
+      "text": "This is a terrible idea.",
+      "translation": "这真是个糟糕的主意。",
+      "audio": "audio/voa-speak-for-yourself-b1-014.m4a",
+      "learnable": true,
+      "start": 174.14,
+      "end": 176.28,
+      "duration": 2.14
+    },
+    {
+      "id": "voa-speak-015",
+      "text": "Speak for yourself, Pete!",
+      "translation": "你只代表你自己，皮特！",
+      "audio": "audio/voa-speak-for-yourself-b1-015.m4a",
+      "learnable": true,
+      "start": 176.82,
+      "end": 178.4,
+      "duration": 1.58
+    },
+    {
+      "id": "voa-speak-016",
+      "text": "We need to throw ourselves into the research.",
+      "translation": "我们得全身心投入这项研究。",
+      "audio": "audio/voa-speak-for-yourself-b1-016.m4a",
+      "learnable": true,
+      "start": 178.6,
+      "end": 181.92,
+      "duration": 3.32
+    },
+    {
+      "id": "voa-speak-017",
+      "text": "I'm starting right now!",
+      "translation": "我现在就开始！",
+      "audio": "audio/voa-speak-for-yourself-b1-017.m4a",
+      "learnable": true,
+      "start": 182.24,
+      "end": 184.92,
+      "duration": 2.68
+    },
+    {
+      "id": "voa-speak-018",
+      "text": "You forgot your baby!",
+      "translation": "你忘了你的宝宝！",
+      "audio": "audio/voa-speak-for-yourself-b1-018.m4a",
+      "learnable": true,
+      "start": 188.88,
+      "end": 190.72,
+      "duration": 1.84
+    },
+    {
+      "id": "voa-speak-019",
+      "text": "This is hard!",
+      "translation": "这太难了！",
+      "audio": "audio/voa-speak-for-yourself-b1-019.m4a",
+      "learnable": true,
+      "start": 218.34,
+      "end": 220.48,
+      "duration": 2.14
+    },
+    {
+      "id": "voa-speak-020",
+      "text": "I really need that vacation day!",
+      "translation": "我真的很需要那一天假期！",
+      "audio": "audio/voa-speak-for-yourself-b1-020.m4a",
+      "learnable": true,
+      "start": 223.64,
+      "end": 226.82,
+      "duration": 3.18
+    }
+  ]
+}

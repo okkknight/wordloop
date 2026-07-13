@@ -22,6 +22,33 @@ test("ships the complete vocabulary and audio set", async () => {
   assert.equal(audioFiles.length, 570);
 });
 
+test("ships all VOA Level 2 clips with complete alignment metadata", async () => {
+  const manifests = (await readdir(new URL("app/data", root)))
+    .filter((file) => file.startsWith("voa-") && file.endsWith(".json"));
+
+  assert.equal(manifests.length, 20);
+
+  for (const file of manifests) {
+    const course = JSON.parse(await read(`app/data/${file}`));
+    const slug = course.courseId.replace(/^voa-/, "");
+    const audioFiles = new Set(
+      (await readdir(new URL(`public/courses/voa/${slug}/audio`, root)))
+        .filter((name) => name.endsWith(".m4a")),
+    );
+    const learnableEntries = course.entries.filter((entry) => entry.learnable);
+
+    assert.equal(audioFiles.size, learnableEntries.length, `${course.courseId}: audio count`);
+    for (const entry of learnableEntries) {
+      assert.equal(typeof entry.start, "number", `${entry.id}: start`);
+      assert.equal(typeof entry.end, "number", `${entry.id}: end`);
+      assert.equal(typeof entry.duration, "number", `${entry.id}: duration`);
+      assert.ok(entry.end > entry.start, `${entry.id}: ordered timestamps`);
+      assert.ok(Math.abs(entry.duration - (entry.end - entry.start)) < 0.001, `${entry.id}: duration`);
+      assert.ok(audioFiles.has(entry.audio.replace(/^audio\//, "")), `${entry.id}: audio file`);
+    }
+  }
+});
+
 test("ships the first sentence course package and its clips", async () => {
   const course = JSON.parse(await read("app/data/modern-family-s01e01.json"));
   const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e01/audio", root)))

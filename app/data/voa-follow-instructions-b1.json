@@ -1,21 +1,209 @@
-{"courseId":"voa-follow-instructions-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-18/4231290.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 18: Flour Baby, Part 2","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-follow-001","text":"Okay, Pete, let me see your research first.","translation":"好的，皮特，让我先看看你的研究。","audio":"audio/voa-follow-instructions-b1-001.m4a","learnable":true},
-{"id":"voa-follow-002","text":"You and your baby look great.","translation":"你和你的宝宝看起来很棒。","audio":"audio/voa-follow-instructions-b1-002.m4a","learnable":true},
-{"id":"voa-follow-003","text":"What happened?","translation":"发生什么事了？","audio":"audio/voa-follow-instructions-b1-003.m4a","learnable":true},
-{"id":"voa-follow-004","text":"I took her everywhere.","translation":"我带她到处去。","audio":"audio/voa-follow-instructions-b1-004.m4a","learnable":true},
-{"id":"voa-follow-005","text":"I haven't slept since ... what day is it?","translation":"从那以后我就没睡过……今天星期几？","audio":"audio/voa-follow-instructions-b1-005.m4a","learnable":true},
-{"id":"voa-follow-006","text":"I had a little accident with a knife.","translation":"我用刀时出了点小意外。","audio":"audio/voa-follow-instructions-b1-006.m4a","learnable":true},
-{"id":"voa-follow-007","text":"But I gave it First Aid.","translation":"但我给它做了急救。","audio":"audio/voa-follow-instructions-b1-007.m4a","learnable":true},
-{"id":"voa-follow-008","text":"Is that a burn?","translation":"那是烫伤吗？","audio":"audio/voa-follow-instructions-b1-008.m4a","learnable":true},
-{"id":"voa-follow-009","text":"I accidentally knocked her into the sink.","translation":"我不小心把她撞进了水槽。","audio":"audio/voa-follow-instructions-b1-009.m4a","learnable":true},
-{"id":"voa-follow-010","text":"So I put her in the microwave to dry.","translation":"所以我把她放进微波炉弄干。","audio":"audio/voa-follow-instructions-b1-010.m4a","learnable":true},
-{"id":"voa-follow-011","text":"That's when she caught fire.","translation":"就是那时她着火了。","audio":"audio/voa-follow-instructions-b1-011.m4a","learnable":true},
-{"id":"voa-follow-012","text":"Anna, you should be very proud of yourself.","translation":"安娜，你应该为自己感到非常骄傲。","audio":"audio/voa-follow-instructions-b1-012.m4a","learnable":true},
-{"id":"voa-follow-013","text":"But she followed instructions.","translation":"但她遵循了指示。","audio":"audio/voa-follow-instructions-b1-013.m4a","learnable":true},
-{"id":"voa-follow-014","text":"Is there something else you want to share?","translation":"你还有别的想分享吗？","audio":"audio/voa-follow-instructions-b1-014.m4a","learnable":true},
-{"id":"voa-follow-015","text":"I'd like to share these.","translation":"我想分享这些。","audio":"audio/voa-follow-instructions-b1-015.m4a","learnable":true},
-{"id":"voa-follow-016","text":"This whole experiment was crazy.","translation":"整个实验都太疯狂了。","audio":"audio/voa-follow-instructions-b1-016.m4a","learnable":true},
-{"id":"voa-follow-017","text":"You should be ashamed of yourself.","translation":"你应该为自己感到羞愧。","audio":"audio/voa-follow-instructions-b1-017.m4a","learnable":true},
-{"id":"voa-follow-018","text":"I baked them at the end of the experiment.","translation":"我是在实验结束时烤它们的。","audio":"audio/voa-follow-instructions-b1-018.m4a","learnable":true},
-{"id":"voa-follow-019","text":"At that point, this was just a bag of flour.","translation":"到那时，这只是一袋面粉。","audio":"audio/voa-follow-instructions-b1-019.m4a","learnable":true},
-{"id":"voa-follow-020","text":"Will you listen to yourself? You sound crazy.","translation":"你能听听自己在说什么吗？你听起来太疯狂了。","audio":"audio/voa-follow-instructions-b1-020.m4a","learnable":true}]}
+{
+  "courseId": "voa-follow-instructions-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-18/4231290.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 18: Flour Baby, Part 2",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-follow-001",
+      "text": "Okay, Pete, let me see your research first.",
+      "translation": "好的，皮特，让我先看看你的研究。",
+      "audio": "audio/voa-follow-instructions-b1-001.m4a",
+      "learnable": true,
+      "start": 27.04,
+      "end": 31.2,
+      "duration": 4.16
+    },
+    {
+      "id": "voa-follow-002",
+      "text": "You and your baby look great.",
+      "translation": "你和你的宝宝看起来很棒。",
+      "audio": "audio/voa-follow-instructions-b1-002.m4a",
+      "learnable": true,
+      "start": 35.74,
+      "end": 38.76,
+      "duration": 3.02
+    },
+    {
+      "id": "voa-follow-003",
+      "text": "What happened?",
+      "translation": "发生什么事了？",
+      "audio": "audio/voa-follow-instructions-b1-003.m4a",
+      "learnable": true,
+      "start": 55.3,
+      "end": 57.26,
+      "duration": 1.96
+    },
+    {
+      "id": "voa-follow-004",
+      "text": "I took her everywhere.",
+      "translation": "我带她到处去。",
+      "audio": "audio/voa-follow-instructions-b1-004.m4a",
+      "learnable": true,
+      "start": 58.04,
+      "end": 60.54,
+      "duration": 2.5
+    },
+    {
+      "id": "voa-follow-005",
+      "text": "I haven't slept since ... what day is it?",
+      "translation": "从那以后我就没睡过……今天星期几？",
+      "audio": "audio/voa-follow-instructions-b1-005.m4a",
+      "learnable": true,
+      "start": 67.52,
+      "end": 71.82,
+      "duration": 4.3
+    },
+    {
+      "id": "voa-follow-006",
+      "text": "I was making myself a salad and had a little accident with a knife.",
+      "translation": "我在给自己做沙拉时，用刀出了点小意外。",
+      "audio": "audio/voa-follow-instructions-b1-006.m4a",
+      "learnable": true,
+      "start": 78.18,
+      "end": 85.04,
+      "duration": 6.86
+    },
+    {
+      "id": "voa-follow-007",
+      "text": "But I gave it First Aid.",
+      "translation": "但我给它做了急救。",
+      "audio": "audio/voa-follow-instructions-b1-007.m4a",
+      "learnable": true,
+      "start": 92.64,
+      "end": 94.28,
+      "duration": 1.64
+    },
+    {
+      "id": "voa-follow-008",
+      "text": "Is that a burn?",
+      "translation": "那是烫伤吗？",
+      "audio": "audio/voa-follow-instructions-b1-008.m4a",
+      "learnable": true,
+      "start": 95.58,
+      "end": 98.58,
+      "duration": 3.0
+    },
+    {
+      "id": "voa-follow-009",
+      "text": "I accidentally knocked her into the sink.",
+      "translation": "我不小心把她撞进了水槽。",
+      "audio": "audio/voa-follow-instructions-b1-009.m4a",
+      "learnable": true,
+      "start": 106.52,
+      "end": 109.82,
+      "duration": 3.3
+    },
+    {
+      "id": "voa-follow-010",
+      "text": "So I put her in the microwave to dry.",
+      "translation": "所以我把她放进微波炉弄干。",
+      "audio": "audio/voa-follow-instructions-b1-010.m4a",
+      "learnable": true,
+      "start": 109.58,
+      "end": 113.0,
+      "duration": 3.42
+    },
+    {
+      "id": "voa-follow-011",
+      "text": "That's when she caught fire.",
+      "translation": "就是那时她着火了。",
+      "audio": "audio/voa-follow-instructions-b1-011.m4a",
+      "learnable": true,
+      "start": 113.7,
+      "end": 116.7,
+      "duration": 3.0
+    },
+    {
+      "id": "voa-follow-012",
+      "text": "Anna, you should be very proud of yourself.",
+      "translation": "安娜，你应该为自己感到非常骄傲。",
+      "audio": "audio/voa-follow-instructions-b1-012.m4a",
+      "learnable": true,
+      "start": 167.26,
+      "end": 169.76,
+      "duration": 2.5
+    },
+    {
+      "id": "voa-follow-013",
+      "text": "But she followed instructions.",
+      "translation": "但她遵循了指示。",
+      "audio": "audio/voa-follow-instructions-b1-013.m4a",
+      "learnable": true,
+      "start": 182.04,
+      "end": 184.68,
+      "duration": 2.64
+    },
+    {
+      "id": "voa-follow-014",
+      "text": "Is there something else you want to share?",
+      "translation": "你还有别的想分享吗？",
+      "audio": "audio/voa-follow-instructions-b1-014.m4a",
+      "learnable": true,
+      "start": 195.14,
+      "end": 198.06,
+      "duration": 2.92
+    },
+    {
+      "id": "voa-follow-015",
+      "text": "I'd like to share these.",
+      "translation": "我想分享这些。",
+      "audio": "audio/voa-follow-instructions-b1-015.m4a",
+      "learnable": true,
+      "start": 199.56,
+      "end": 202.12,
+      "duration": 2.56
+    },
+    {
+      "id": "voa-follow-016",
+      "text": "This whole experiment was crazy.",
+      "translation": "整个实验都太疯狂了。",
+      "audio": "audio/voa-follow-instructions-b1-016.m4a",
+      "learnable": true,
+      "start": 226.24,
+      "end": 229.64,
+      "duration": 3.4
+    },
+    {
+      "id": "voa-follow-017",
+      "text": "You should be ashamed of yourself.",
+      "translation": "你应该为自己感到羞愧。",
+      "audio": "audio/voa-follow-instructions-b1-017.m4a",
+      "learnable": true,
+      "start": 207.34,
+      "end": 209.96,
+      "duration": 2.62
+    },
+    {
+      "id": "voa-follow-018",
+      "text": "I baked them at the end of the experiment.",
+      "translation": "我是在实验结束时烤它们的。",
+      "audio": "audio/voa-follow-instructions-b1-018.m4a",
+      "learnable": true,
+      "start": 210.06,
+      "end": 213.0,
+      "duration": 2.94
+    },
+    {
+      "id": "voa-follow-019",
+      "text": "At that point, this was just a bag of flour.",
+      "translation": "到那时，这只是一袋面粉。",
+      "audio": "audio/voa-follow-instructions-b1-019.m4a",
+      "learnable": true,
+      "start": 213.66,
+      "end": 217.86,
+      "duration": 4.2
+    },
+    {
+      "id": "voa-follow-020",
+      "text": "Will you listen to yourself? You sound crazy.",
+      "translation": "你能听听自己在说什么吗？你听起来太疯狂了。",
+      "audio": "audio/voa-follow-instructions-b1-020.m4a",
+      "learnable": true,
+      "start": 221.7,
+      "end": 225.04,
+      "duration": 3.34
+    }
+  ]
+}

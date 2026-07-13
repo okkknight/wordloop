@@ -1,2 +1,209 @@
-{"courseId":"voa-in-common-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-14-made-for-each-other/4159000.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 14: Made for Each Other","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-common-001","text":"What are you guys looking at?","translation":"你们在看什么？","start":0,"end":3.1,"learnable":true,"audio":"audio/voa-in-common-b1-001.m4a"},{"id":"voa-common-002","text":"We have so much in common.","translation":"我们有很多共同点。","start":6,"end":8.1,"learnable":true,"audio":"audio/voa-in-common-b1-002.m4a"},{"id":"voa-common-003","text":"Even small things.","translation":"连小事也是。","start":8,"end":10.1,"learnable":true,"audio":"audio/voa-in-common-b1-003.m4a"},{"id":"voa-common-004","text":"She can't whistle, and I can't either.","translation":"她不会吹口哨，我也不会。","start":10,"end":13.1,"learnable":true,"audio":"audio/voa-in-common-b1-004.m4a"},{"id":"voa-common-005","text":"My family is big, and so is his.","translation":"我的家庭很大，他的也是。","start":16,"end":21.1,"learnable":true,"audio":"audio/voa-in-common-b1-005.m4a"},{"id":"voa-common-006","text":"I don't like ball sports, and he doesn't either.","translation":"我不喜欢球类运动，他也不喜欢。","start":21,"end":25.1,"learnable":true,"audio":"audio/voa-in-common-b1-006.m4a"},{"id":"voa-common-007","text":"We are made for each other.","translation":"我们天生就是一对。","start":25,"end":28.1,"learnable":true,"audio":"audio/voa-in-common-b1-007.m4a"},{"id":"voa-common-008","text":"I like him, and he likes me.","translation":"我喜欢他，他也喜欢我。","start":102,"end":104.1,"learnable":true,"audio":"audio/voa-in-common-b1-008.m4a"},{"id":"voa-common-009","text":"Let's all get dinner tonight.","translation":"我们今晚一起吃晚饭吧。","start":106,"end":110.1,"learnable":true,"audio":"audio/voa-in-common-b1-009.m4a"},{"id":"voa-common-010","text":"I can't wait to meet him.","translation":"我等不及想见他了。","start":114,"end":117.1,"learnable":true,"audio":"audio/voa-in-common-b1-010.m4a"},{"id":"voa-common-011","text":"Bye, guys. Gotta go.","translation":"再见各位，我得走了。","start":124,"end":126.1,"learnable":true,"audio":"audio/voa-in-common-b1-011.m4a"},{"id":"voa-common-012","text":"You need to tell them the truth.","translation":"你得告诉他们真相。","start":156,"end":161.1,"learnable":true,"audio":"audio/voa-in-common-b1-012.m4a"},{"id":"voa-common-013","text":"Excuse me, is this seat taken?","translation":"不好意思，这个座位有人吗？","start":164,"end":170.1,"learnable":true,"audio":"audio/voa-in-common-b1-013.m4a"},{"id":"voa-common-014","text":"I need to talk to you.","translation":"我需要和你谈谈。","start":174,"end":177.1,"learnable":true,"audio":"audio/voa-in-common-b1-014.m4a"},{"id":"voa-common-015","text":"This morning, I lied.","translation":"今天早上，我撒谎了。","start":177,"end":181.1,"learnable":true,"audio":"audio/voa-in-common-b1-015.m4a"},{"id":"voa-common-016","text":"I'm sorry.","translation":"对不起。","start":189,"end":191.1,"learnable":true,"audio":"audio/voa-in-common-b1-016.m4a"},{"id":"voa-common-017","text":"But later, I really did meet someone.","translation":"但后来，我确实遇到了一个人。","start":191,"end":194.1,"learnable":true,"audio":"audio/voa-in-common-b1-017.m4a"},{"id":"voa-common-018","text":"And we have a lot in common.","translation":"而且我们有很多共同点。","start":194,"end":197.1,"learnable":true,"audio":"audio/voa-in-common-b1-018.m4a"},{"id":"voa-common-019","text":"That's the sad part.","translation":"这才是让人难过的部分。","start":214,"end":216.1,"learnable":true,"audio":"audio/voa-in-common-b1-019.m4a"},{"id":"voa-common-020","text":"Now I know that there is someone out there made for me.","translation":"现在我知道，世界上有一个适合我的人。","start":228,"end":235.1,"learnable":true,"audio":"audio/voa-in-common-b1-020.m4a"}]}
+{
+  "courseId": "voa-in-common-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-14-made-for-each-other/4159000.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 14: Made for Each Other",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-common-001",
+      "text": "Hello! What are you guys looking at?",
+      "translation": "你们在看什么？",
+      "start": 0.0,
+      "end": 3.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-001.m4a",
+      "duration": 3.18
+    },
+    {
+      "id": "voa-common-002",
+      "text": "We have so much in common.",
+      "translation": "我们有很多共同点。",
+      "start": 5.88,
+      "end": 8.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-002.m4a",
+      "duration": 2.3
+    },
+    {
+      "id": "voa-common-003",
+      "text": "Even small things.",
+      "translation": "连小事也是。",
+      "start": 7.88,
+      "end": 10.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-003.m4a",
+      "duration": 2.3
+    },
+    {
+      "id": "voa-common-004",
+      "text": "She can't whistle, and I can't either.",
+      "translation": "她不会吹口哨，我也不会。",
+      "start": 9.88,
+      "end": 13.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-004.m4a",
+      "duration": 3.3
+    },
+    {
+      "id": "voa-common-005",
+      "text": "My family is big, and so is his.",
+      "translation": "我的家庭很大，他的也是。",
+      "start": 15.88,
+      "end": 21.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-005.m4a",
+      "duration": 5.3
+    },
+    {
+      "id": "voa-common-006",
+      "text": "I don't like ball sports, and he doesn't either.",
+      "translation": "我不喜欢球类运动，他也不喜欢。",
+      "start": 20.88,
+      "end": 25.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-006.m4a",
+      "duration": 4.3
+    },
+    {
+      "id": "voa-common-007",
+      "text": "We are made for each other.",
+      "translation": "我们天生就是一对。",
+      "start": 24.88,
+      "end": 28.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-007.m4a",
+      "duration": 3.3
+    },
+    {
+      "id": "voa-common-008",
+      "text": "I like him, and he likes me.",
+      "translation": "我喜欢他，他也喜欢我。",
+      "start": 101.88,
+      "end": 104.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-008.m4a",
+      "duration": 2.3
+    },
+    {
+      "id": "voa-common-009",
+      "text": "Hey, let's all get dinner tonight.",
+      "translation": "我们今晚一起吃晚饭吧。",
+      "start": 105.88,
+      "end": 110.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-009.m4a",
+      "duration": 4.3
+    },
+    {
+      "id": "voa-common-010",
+      "text": "Yeah, I can't wait to meet him.",
+      "translation": "我等不及想见他了。",
+      "start": 113.88,
+      "end": 117.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-010.m4a",
+      "duration": 3.3
+    },
+    {
+      "id": "voa-common-011",
+      "text": "Bye, guys. Gotta go.",
+      "translation": "再见各位，我得走了。",
+      "start": 123.88,
+      "end": 126.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-011.m4a",
+      "duration": 2.3
+    },
+    {
+      "id": "voa-common-012",
+      "text": "Well, you need to tell them the truth.",
+      "translation": "你得告诉他们真相。",
+      "start": 155.88,
+      "end": 161.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-012.m4a",
+      "duration": 5.3
+    },
+    {
+      "id": "voa-common-013",
+      "text": "Excuse me. Is this seat taken?",
+      "translation": "不好意思，这个座位有人吗？",
+      "start": 163.88,
+      "end": 170.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-013.m4a",
+      "duration": 6.3
+    },
+    {
+      "id": "voa-common-014",
+      "text": "I need to talk to you.",
+      "translation": "我需要和你谈谈。",
+      "start": 173.88,
+      "end": 177.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-014.m4a",
+      "duration": 3.3
+    },
+    {
+      "id": "voa-common-015",
+      "text": "This morning, I lied.",
+      "translation": "今天早上，我撒谎了。",
+      "start": 176.88,
+      "end": 181.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-015.m4a",
+      "duration": 4.3
+    },
+    {
+      "id": "voa-common-016",
+      "text": "I'm sorry.",
+      "translation": "对不起。",
+      "start": 188.88,
+      "end": 191.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-016.m4a",
+      "duration": 2.3
+    },
+    {
+      "id": "voa-common-017",
+      "text": "But later, I really did meet someone.",
+      "translation": "但后来，我确实遇到了一个人。",
+      "start": 190.88,
+      "end": 194.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-017.m4a",
+      "duration": 3.3
+    },
+    {
+      "id": "voa-common-018",
+      "text": "And we have a lot in common.",
+      "translation": "而且我们有很多共同点。",
+      "start": 193.88,
+      "end": 197.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-018.m4a",
+      "duration": 3.3
+    },
+    {
+      "id": "voa-common-019",
+      "text": "That's the sad part.",
+      "translation": "这才是让人难过的部分。",
+      "start": 213.88,
+      "end": 216.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-019.m4a",
+      "duration": 2.3
+    },
+    {
+      "id": "voa-common-020",
+      "text": "Because now I know that there is someone out there made for me.",
+      "translation": "现在我知道，世界上有一个适合我的人。",
+      "start": 227.88,
+      "end": 235.18,
+      "learnable": true,
+      "audio": "audio/voa-in-common-b1-020.m4a",
+      "duration": 7.3
+    }
+  ]
+}

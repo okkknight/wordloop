@@ -1,21 +1,209 @@
-{"courseId":"voa-polite-requests-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-19/4244999.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 19: Movie Night","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-polite-001","text":"Hi, can you tell me how to get to your movie theater?","translation":"你好，你能告诉我怎么去你们的电影院吗？","audio":"audio/voa-polite-requests-b1-001.m4a","learnable":true},
-{"id":"voa-polite-002","text":"Thanks for the movie invitation.","translation":"谢谢你邀请我看电影。","audio":"audio/voa-polite-requests-b1-002.m4a","learnable":true},
-{"id":"voa-polite-003","text":"I take movies very seriously.","translation":"我很认真地看电影。","audio":"audio/voa-polite-requests-b1-003.m4a","learnable":true},
-{"id":"voa-polite-004","text":"You're not one of those people who talks during a movie, are you?","translation":"你不是那种看电影时会说话的人吧？","audio":"audio/voa-polite-requests-b1-004.m4a","learnable":true},
-{"id":"voa-polite-005","text":"I love the smell of popcorn.","translation":"我喜欢爆米花的味道。","audio":"audio/voa-polite-requests-b1-005.m4a","learnable":true},
-{"id":"voa-polite-006","text":"I love when people are quiet.","translation":"我喜欢大家安静的时候。","audio":"audio/voa-polite-requests-b1-006.m4a","learnable":true},
-{"id":"voa-polite-007","text":"Look, the previews are starting.","translation":"看，预告片要开始了。","audio":"audio/voa-polite-requests-b1-007.m4a","learnable":true},
-{"id":"voa-polite-008","text":"Oh, this one looks good.","translation":"哦，这部看起来不错。","audio":"audio/voa-polite-requests-b1-008.m4a","learnable":true},
-{"id":"voa-polite-009","text":"The previews are part of the movie experience.","translation":"预告片也是观影体验的一部分。","audio":"audio/voa-polite-requests-b1-009.m4a","learnable":true},
-{"id":"voa-polite-010","text":"Would you mind not talking?","translation":"你介意不要说话吗？","audio":"audio/voa-polite-requests-b1-010.m4a","learnable":true},
-{"id":"voa-polite-011","text":"I was wondering: are you almost finished with that?","translation":"我想问一下：你那个快弄完了吗？","audio":"audio/voa-polite-requests-b1-011.m4a","learnable":true},
-{"id":"voa-polite-012","text":"There's still a lot of milkshake at the bottom.","translation":"底下还有很多奶昔。","audio":"audio/voa-polite-requests-b1-012.m4a","learnable":true},
-{"id":"voa-polite-013","text":"Do you mind not drinking so loudly?","translation":"你介意别喝得这么大声吗？","audio":"audio/voa-polite-requests-b1-013.m4a","learnable":true},
-{"id":"voa-polite-014","text":"I'll try, but it's really thick.","translation":"我会尽量，不过它真的很稠。","audio":"audio/voa-polite-requests-b1-014.m4a","learnable":true},
-{"id":"voa-polite-015","text":"Would you mind opening that a little bit more quietly?","translation":"你介意把那个开得稍微安静一点吗？","audio":"audio/voa-polite-requests-b1-015.m4a","learnable":true},
-{"id":"voa-polite-016","text":"Now, would you mind being more quiet?","translation":"现在，你介意安静一点吗？","audio":"audio/voa-polite-requests-b1-016.m4a","learnable":true},
-{"id":"voa-polite-017","text":"Excuse me, would you mind turning down your phone light?","translation":"不好意思，你介意把手机灯光调暗一点吗？","audio":"audio/voa-polite-requests-b1-017.m4a","learnable":true},
-{"id":"voa-polite-018","text":"Sorry, I forgot to turn my phone off.","translation":"抱歉，我忘记关手机了。","audio":"audio/voa-polite-requests-b1-018.m4a","learnable":true},
-{"id":"voa-polite-019","text":"Can you please turn off your phone?","translation":"你能把手机关掉吗？","audio":"audio/voa-polite-requests-b1-019.m4a","learnable":true},
-{"id":"voa-polite-020","text":"Would you mind lending me your phone light for a minute?","translation":"你介意借我用一下手机灯光吗？","audio":"audio/voa-polite-requests-b1-020.m4a","learnable":true}]}
+{
+  "courseId": "voa-polite-requests-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-19/4244999.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 19: Movie Night",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-polite-001",
+      "text": "Hi, can you tell me how to get to your movie theater?",
+      "translation": "你好，你能告诉我怎么去你们的电影院吗？",
+      "audio": "audio/voa-polite-requests-b1-001.m4a",
+      "learnable": true,
+      "start": 6.54,
+      "end": 9.72,
+      "duration": 3.18
+    },
+    {
+      "id": "voa-polite-002",
+      "text": "Thanks for the movie invitation.",
+      "translation": "谢谢你邀请我看电影。",
+      "audio": "audio/voa-polite-requests-b1-002.m4a",
+      "learnable": true,
+      "start": 16.66,
+      "end": 18.2,
+      "duration": 1.54
+    },
+    {
+      "id": "voa-polite-003",
+      "text": "I take movies very seriously.",
+      "translation": "我很认真地看电影。",
+      "audio": "audio/voa-polite-requests-b1-003.m4a",
+      "learnable": true,
+      "start": 26.62,
+      "end": 29.8,
+      "duration": 3.18
+    },
+    {
+      "id": "voa-polite-004",
+      "text": "You're not one of those people who talks during a movie, are you?",
+      "translation": "你不是那种看电影时会说话的人吧？",
+      "audio": "audio/voa-polite-requests-b1-004.m4a",
+      "learnable": true,
+      "start": 30.52,
+      "end": 34.4,
+      "duration": 3.88
+    },
+    {
+      "id": "voa-polite-005",
+      "text": "I love the smell of popcorn.",
+      "translation": "我喜欢爆米花的味道。",
+      "audio": "audio/voa-polite-requests-b1-005.m4a",
+      "learnable": true,
+      "start": 98.08,
+      "end": 101.22,
+      "duration": 3.14
+    },
+    {
+      "id": "voa-polite-006",
+      "text": "I love when people are quiet.",
+      "translation": "我喜欢大家安静的时候。",
+      "audio": "audio/voa-polite-requests-b1-006.m4a",
+      "learnable": true,
+      "start": 107.02,
+      "end": 112.96,
+      "duration": 5.94
+    },
+    {
+      "id": "voa-polite-007",
+      "text": "Look, the previews are starting.",
+      "translation": "看，预告片要开始了。",
+      "audio": "audio/voa-polite-requests-b1-007.m4a",
+      "learnable": true,
+      "start": 117.58,
+      "end": 118.98,
+      "duration": 1.4
+    },
+    {
+      "id": "voa-polite-008",
+      "text": "Oh, this one looks good.",
+      "translation": "哦，这部看起来不错。",
+      "audio": "audio/voa-polite-requests-b1-008.m4a",
+      "learnable": true,
+      "start": 121.54,
+      "end": 123.5,
+      "duration": 1.96
+    },
+    {
+      "id": "voa-polite-009",
+      "text": "The previews are part of the movie experience.",
+      "translation": "预告片也是观影体验的一部分。",
+      "audio": "audio/voa-polite-requests-b1-009.m4a",
+      "learnable": true,
+      "start": 124.68,
+      "end": 128.18,
+      "duration": 3.5
+    },
+    {
+      "id": "voa-polite-010",
+      "text": "Would you mind not talking?",
+      "translation": "你介意不要说话吗？",
+      "audio": "audio/voa-polite-requests-b1-010.m4a",
+      "learnable": true,
+      "start": 129.1,
+      "end": 130.44,
+      "duration": 1.34
+    },
+    {
+      "id": "voa-polite-011",
+      "text": "I was wondering: are you almost finished with that?",
+      "translation": "我想问一下：你那个快弄完了吗？",
+      "audio": "audio/voa-polite-requests-b1-011.m4a",
+      "learnable": true,
+      "start": 144.74,
+      "end": 148.0,
+      "duration": 3.26
+    },
+    {
+      "id": "voa-polite-012",
+      "text": "There's still a lot of milkshake at the bottom.",
+      "translation": "底下还有很多奶昔。",
+      "audio": "audio/voa-polite-requests-b1-012.m4a",
+      "learnable": true,
+      "start": 148.66,
+      "end": 152.22,
+      "duration": 3.56
+    },
+    {
+      "id": "voa-polite-013",
+      "text": "Anna, would you mind not turning so loudly?",
+      "translation": "安娜，你介意别把它转得那么响吗？",
+      "audio": "audio/voa-polite-requests-b1-013.m4a",
+      "learnable": true,
+      "start": 154.06,
+      "end": 156.78,
+      "duration": 2.72
+    },
+    {
+      "id": "voa-polite-014",
+      "text": "I'll try, but it's really thick.",
+      "translation": "我会尽量，不过它真的很稠。",
+      "audio": "audio/voa-polite-requests-b1-014.m4a",
+      "learnable": true,
+      "start": 156.9,
+      "end": 159.74,
+      "duration": 2.84
+    },
+    {
+      "id": "voa-polite-015",
+      "text": "Would you mind opening that a little bit more quietly?",
+      "translation": "你介意把那个开得稍微安静一点吗？",
+      "audio": "audio/voa-polite-requests-b1-015.m4a",
+      "learnable": true,
+      "start": 185.58,
+      "end": 188.96,
+      "duration": 3.38
+    },
+    {
+      "id": "voa-polite-016",
+      "text": "Now, would you mind being more quiet?",
+      "translation": "现在，你介意安静一点吗？",
+      "audio": "audio/voa-polite-requests-b1-016.m4a",
+      "learnable": true,
+      "start": 209.9,
+      "end": 214.52,
+      "duration": 4.62
+    },
+    {
+      "id": "voa-polite-017",
+      "text": "Excuse me, would you mind turning down your phone light?",
+      "translation": "不好意思，你介意把手机灯光调暗一点吗？",
+      "audio": "audio/voa-polite-requests-b1-017.m4a",
+      "learnable": true,
+      "start": 222.44,
+      "end": 228.08,
+      "duration": 5.64
+    },
+    {
+      "id": "voa-polite-018",
+      "text": "Sorry, I forgot to turn my phone off.",
+      "translation": "抱歉，我忘记关手机了。",
+      "audio": "audio/voa-polite-requests-b1-018.m4a",
+      "learnable": true,
+      "start": 230.76,
+      "end": 233.14,
+      "duration": 2.38
+    },
+    {
+      "id": "voa-polite-019",
+      "text": "Anna, can you please turn your phone off?",
+      "translation": "安娜，你能把手机关掉吗？",
+      "audio": "audio/voa-polite-requests-b1-019.m4a",
+      "learnable": true,
+      "start": 238.66,
+      "end": 242.5,
+      "duration": 3.84
+    },
+    {
+      "id": "voa-polite-020",
+      "text": "Would you mind lending me your phone light for a minute?",
+      "translation": "你介意借我用一下手机灯光吗？",
+      "audio": "audio/voa-polite-requests-b1-020.m4a",
+      "learnable": true,
+      "start": 244.0,
+      "end": 247.08,
+      "duration": 3.08
+    }
+  ]
+}

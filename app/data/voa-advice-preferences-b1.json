@@ -1,1 +1,209 @@
-{"courseId":"voa-advice-preferences-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/4313171.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 24: I Feel Super!","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[{"id":"voa-advice-001","text":"Are you okay?","translation":"你还好吗？","audio":"audio/voa-advice-preferences-b1-001.m4a","learnable":true},{"id":"voa-advice-002","text":"You'd better see a doctor.","translation":"你最好去看医生。","audio":"audio/voa-advice-preferences-b1-002.m4a","learnable":true},{"id":"voa-advice-003","text":"I've never felt better.","translation":"我从没感觉这么好过。","audio":"audio/voa-advice-preferences-b1-003.m4a","learnable":true},{"id":"voa-advice-004","text":"What are you talking about?","translation":"你在说什么？","audio":"audio/voa-advice-preferences-b1-004.m4a","learnable":true},{"id":"voa-advice-005","text":"I would rather be called Lightning Bolt Lady.","translation":"我宁愿被叫作闪电女士。","audio":"audio/voa-advice-preferences-b1-005.m4a","learnable":true},{"id":"voa-advice-006","text":"Wait, don't tell me.","translation":"等等，别告诉我。","audio":"audio/voa-advice-preferences-b1-006.m4a","learnable":true},{"id":"voa-advice-007","text":"Please stop talking.","translation":"请别再说话了。","audio":"audio/voa-advice-preferences-b1-007.m4a","learnable":true},{"id":"voa-advice-008","text":"You really should get some help.","translation":"你真的应该寻求帮助。","audio":"audio/voa-advice-preferences-b1-008.m4a","learnable":true},{"id":"voa-advice-009","text":"Maybe I can become invisible.","translation":"也许我能隐形。","audio":"audio/voa-advice-preferences-b1-009.m4a","learnable":true},{"id":"voa-advice-010","text":"I can see you and so can everybody else.","translation":"我看得到你，其他人也看得到。","audio":"audio/voa-advice-preferences-b1-010.m4a","learnable":true},{"id":"voa-advice-011","text":"Maybe I can create a force field.","translation":"也许我能制造一个力场。","audio":"audio/voa-advice-preferences-b1-011.m4a","learnable":true},{"id":"voa-advice-012","text":"I see I have a lot of work to do.","translation":"我明白我还有很多要做。","audio":"audio/voa-advice-preferences-b1-012.m4a","learnable":true},{"id":"voa-advice-013","text":"You might get worse.","translation":"你的情况可能会变得更糟。","audio":"audio/voa-advice-preferences-b1-013.m4a","learnable":true},{"id":"voa-advice-014","text":"I'd rather go by myself.","translation":"我宁愿自己去。","audio":"audio/voa-advice-preferences-b1-014.m4a","learnable":true},{"id":"voa-advice-015","text":"Every time you speak, I get more confused.","translation":"你每说一句话，我就更困惑。","audio":"audio/voa-advice-preferences-b1-015.m4a","learnable":true},{"id":"voa-advice-016","text":"Now, stand back.","translation":"现在，退后。","audio":"audio/voa-advice-preferences-b1-016.m4a","learnable":true},{"id":"voa-advice-017","text":"Flying is not my superpower.","translation":"飞行不是我的超能力。","audio":"audio/voa-advice-preferences-b1-017.m4a","learnable":true},{"id":"voa-advice-018","text":"That's too bad.","translation":"那太糟了。","audio":"audio/voa-advice-preferences-b1-018.m4a","learnable":true},{"id":"voa-advice-019","text":"I'd rather walk. It's a nice day.","translation":"我宁愿走路。今天天气不错。","audio":"audio/voa-advice-preferences-b1-019.m4a","learnable":true},{"id":"voa-advice-020","text":"I'm not talking to strangers again.","translation":"我再也不和陌生人说话了。","audio":"audio/voa-advice-preferences-b1-020.m4a","learnable":true}]}
+{
+  "courseId": "voa-advice-preferences-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/4313171.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 24: I Feel Super!",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-advice-001",
+      "text": "Are you okay?",
+      "translation": "你还好吗？",
+      "audio": "audio/voa-advice-preferences-b1-001.m4a",
+      "learnable": true,
+      "start": 68.52,
+      "end": 70.5,
+      "duration": 1.98
+    },
+    {
+      "id": "voa-advice-002",
+      "text": "You'd better see a doctor.",
+      "translation": "你最好去看医生。",
+      "audio": "audio/voa-advice-preferences-b1-002.m4a",
+      "learnable": true,
+      "start": 123.32,
+      "end": 125.98,
+      "duration": 2.66
+    },
+    {
+      "id": "voa-advice-003",
+      "text": "I've never felt better.",
+      "translation": "我从没感觉这么好过。",
+      "audio": "audio/voa-advice-preferences-b1-003.m4a",
+      "learnable": true,
+      "start": 125.68,
+      "end": 127.66,
+      "duration": 1.98
+    },
+    {
+      "id": "voa-advice-004",
+      "text": "What are you talking about?",
+      "translation": "你在说什么？",
+      "audio": "audio/voa-advice-preferences-b1-004.m4a",
+      "learnable": true,
+      "start": 141.52,
+      "end": 143.7,
+      "duration": 2.18
+    },
+    {
+      "id": "voa-advice-005",
+      "text": "I would rather be called Lightning Bolt Lady.",
+      "translation": "我宁愿被叫作闪电女士。",
+      "audio": "audio/voa-advice-preferences-b1-005.m4a",
+      "learnable": true,
+      "start": 150.52,
+      "end": 154.78,
+      "duration": 4.26
+    },
+    {
+      "id": "voa-advice-006",
+      "text": "Wait, don't tell me.",
+      "translation": "等等，别告诉我。",
+      "audio": "audio/voa-advice-preferences-b1-006.m4a",
+      "learnable": true,
+      "start": 164.28,
+      "end": 166.02,
+      "duration": 1.74
+    },
+    {
+      "id": "voa-advice-007",
+      "text": "Please stop talking.",
+      "translation": "请别再说话了。",
+      "audio": "audio/voa-advice-preferences-b1-007.m4a",
+      "learnable": true,
+      "start": 175.36,
+      "end": 177.34,
+      "duration": 1.98
+    },
+    {
+      "id": "voa-advice-008",
+      "text": "You really should get some help.",
+      "translation": "你真的应该寻求帮助。",
+      "audio": "audio/voa-advice-preferences-b1-008.m4a",
+      "learnable": true,
+      "start": 177.04,
+      "end": 179.22,
+      "duration": 2.18
+    },
+    {
+      "id": "voa-advice-009",
+      "text": "Maybe I can become invisible.",
+      "translation": "也许我能隐形。",
+      "audio": "audio/voa-advice-preferences-b1-009.m4a",
+      "learnable": true,
+      "start": 182.6,
+      "end": 187.42,
+      "duration": 4.82
+    },
+    {
+      "id": "voa-advice-010",
+      "text": "I can see you and so can everybody else.",
+      "translation": "我看得到你，其他人也看得到。",
+      "audio": "audio/voa-advice-preferences-b1-010.m4a",
+      "learnable": true,
+      "start": 196.24,
+      "end": 201.1,
+      "duration": 4.86
+    },
+    {
+      "id": "voa-advice-011",
+      "text": "Maybe I can create a force field.",
+      "translation": "也许我能制造一个力场。",
+      "audio": "audio/voa-advice-preferences-b1-011.m4a",
+      "learnable": true,
+      "start": 204.08,
+      "end": 210.42,
+      "duration": 6.34
+    },
+    {
+      "id": "voa-advice-012",
+      "text": "I see I have a lot of work to do.",
+      "translation": "我明白我还有很多要做。",
+      "audio": "audio/voa-advice-preferences-b1-012.m4a",
+      "learnable": true,
+      "start": 217.36,
+      "end": 220.3,
+      "duration": 2.94
+    },
+    {
+      "id": "voa-advice-013",
+      "text": "You might get worse.",
+      "translation": "你的情况可能会变得更糟。",
+      "audio": "audio/voa-advice-preferences-b1-013.m4a",
+      "learnable": true,
+      "start": 223.88,
+      "end": 225.7,
+      "duration": 1.82
+    },
+    {
+      "id": "voa-advice-014",
+      "text": "But I'd rather go by myself.",
+      "translation": "我宁愿自己去。",
+      "audio": "audio/voa-advice-preferences-b1-014.m4a",
+      "learnable": true,
+      "start": 229.96,
+      "end": 233.1,
+      "duration": 3.14
+    },
+    {
+      "id": "voa-advice-015",
+      "text": "Every time you speak, I get more confused.",
+      "translation": "你每说一句话，我就更困惑。",
+      "audio": "audio/voa-advice-preferences-b1-015.m4a",
+      "learnable": true,
+      "start": 235.2,
+      "end": 238.5,
+      "duration": 3.3
+    },
+    {
+      "id": "voa-advice-016",
+      "text": "Now, stand back.",
+      "translation": "现在，退后。",
+      "audio": "audio/voa-advice-preferences-b1-016.m4a",
+      "learnable": true,
+      "start": 245.2,
+      "end": 247.1,
+      "duration": 1.9
+    },
+    {
+      "id": "voa-advice-017",
+      "text": "Flying is not my superpower.",
+      "translation": "飞行不是我的超能力。",
+      "audio": "audio/voa-advice-preferences-b1-017.m4a",
+      "learnable": true,
+      "start": 258.4,
+      "end": 261.7,
+      "duration": 3.3
+    },
+    {
+      "id": "voa-advice-018",
+      "text": "That's too bad.",
+      "translation": "那太糟了。",
+      "audio": "audio/voa-advice-preferences-b1-018.m4a",
+      "learnable": true,
+      "start": 261.4,
+      "end": 263.7,
+      "duration": 2.3
+    },
+    {
+      "id": "voa-advice-019",
+      "text": "You know, I'd rather walk. It's a nice day.",
+      "translation": "我宁愿走路。今天天气不错。",
+      "audio": "audio/voa-advice-preferences-b1-019.m4a",
+      "learnable": true,
+      "start": 266.4,
+      "end": 271.7,
+      "duration": 5.3
+    },
+    {
+      "id": "voa-advice-020",
+      "text": "I'm not talking to strangers again.",
+      "translation": "我再也不和陌生人说话了。",
+      "audio": "audio/voa-advice-preferences-b1-020.m4a",
+      "learnable": true,
+      "start": 276.4,
+      "end": 279.7,
+      "duration": 3.3
+    }
+  ]
+}

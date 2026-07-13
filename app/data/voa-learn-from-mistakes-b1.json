@@ -1,2 +1,209 @@
-{"courseId":"voa-learn-from-mistakes-b1","provider":"VOA Learning English","sourceUrl":"https://learningenglish.voanews.com/a/4283253.html","attribution":"Source: VOA Learning English · Let's Learn English Level 2, Lesson 22: Trash to Treasure, Part 2","licenseNote":"VOA-produced Learning English content is public domain; third-party agency material is excluded.","entries":[
-{"id":"voa-mistake-001","text":"Welcome to class, Anna.","translation":"欢迎来上课，安娜。","audio":"audio/voa-learn-from-mistakes-b1-001.m4a","learnable":true},{"id":"voa-mistake-002","text":"I can't wait to see your trash.","translation":"我等不及想看看你带来的垃圾了。","audio":"audio/voa-learn-from-mistakes-b1-002.m4a","learnable":true},{"id":"voa-mistake-003","text":"Tell me about that.","translation":"跟我说说那个。","audio":"audio/voa-learn-from-mistakes-b1-003.m4a","learnable":true},{"id":"voa-mistake-004","text":"This stuff is not saying anything to you or me or anyone.","translation":"这些东西并没有对你、我或任何人说话。","audio":"audio/voa-learn-from-mistakes-b1-004.m4a","learnable":true},{"id":"voa-mistake-005","text":"It's what we like to call in the business: garbage.","translation":"按我们这行的说法，这叫垃圾。","audio":"audio/voa-learn-from-mistakes-b1-005.m4a","learnable":true},{"id":"voa-mistake-006","text":"But you said to bring in trash.","translation":"但你说要带垃圾来。","audio":"audio/voa-learn-from-mistakes-b1-006.m4a","learnable":true},{"id":"voa-mistake-007","text":"Sometimes trash is treasure.","translation":"有时垃圾也是宝藏。","audio":"audio/voa-learn-from-mistakes-b1-007.m4a","learnable":true},{"id":"voa-mistake-008","text":"Sometimes it's just trash.","translation":"有时它就只是垃圾。","audio":"audio/voa-learn-from-mistakes-b1-008.m4a","learnable":true},{"id":"voa-mistake-009","text":"Don't worry.","translation":"别担心。","audio":"audio/voa-learn-from-mistakes-b1-009.m4a","learnable":true},{"id":"voa-mistake-010","text":"Next week, I could teach you decoupage.","translation":"下周我可以教你拼贴装饰。","audio":"audio/voa-learn-from-mistakes-b1-010.m4a","learnable":true},{"id":"voa-mistake-011","text":"That's fun to say.","translation":"这个说起来真有趣。","audio":"audio/voa-learn-from-mistakes-b1-011.m4a","learnable":true},{"id":"voa-mistake-012","text":"All you need to bring is a clean shoe box.","translation":"你只需要带一个干净的鞋盒。","audio":"audio/voa-learn-from-mistakes-b1-012.m4a","learnable":true},{"id":"voa-mistake-013","text":"See you next week.","translation":"下周见。","audio":"audio/voa-learn-from-mistakes-b1-013.m4a","learnable":true},{"id":"voa-mistake-014","text":"Don't start without me.","translation":"别在没有我的情况下开始。","audio":"audio/voa-learn-from-mistakes-b1-014.m4a","learnable":true},{"id":"voa-mistake-015","text":"Okay, I can fix this.","translation":"好，我能解决这个问题。","audio":"audio/voa-learn-from-mistakes-b1-015.m4a","learnable":true},{"id":"voa-mistake-016","text":"What happened?","translation":"发生什么事了？","audio":"audio/voa-learn-from-mistakes-b1-016.m4a","learnable":true},{"id":"voa-mistake-017","text":"I told you to wait for me.","translation":"我告诉过你要等我。","audio":"audio/voa-learn-from-mistakes-b1-017.m4a","learnable":true},{"id":"voa-mistake-018","text":"You told me not to start without you, which I didn't.","translation":"你告诉我不要在没有你的情况下开始，而我没有开始。","audio":"audio/voa-learn-from-mistakes-b1-018.m4a","learnable":true},{"id":"voa-mistake-019","text":"Your glue is really sticky.","translation":"你的胶水真的很黏。","audio":"audio/voa-learn-from-mistakes-b1-019.m4a","learnable":true},{"id":"voa-mistake-020","text":"Next week, let's try lamp making.","translation":"下周我们试试做灯吧。","audio":"audio/voa-learn-from-mistakes-b1-020.m4a","learnable":true}]}
+{
+  "courseId": "voa-learn-from-mistakes-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/4283253.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 22: Trash to Treasure, Part 2",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-mistake-001",
+      "text": "Welcome to class, Anna.",
+      "translation": "欢迎来上课，安娜。",
+      "audio": "audio/voa-learn-from-mistakes-b1-001.m4a",
+      "learnable": true,
+      "start": 7.78,
+      "end": 9.56,
+      "duration": 1.78
+    },
+    {
+      "id": "voa-mistake-002",
+      "text": "I can't wait to see your trash.",
+      "translation": "我等不及想看看你带来的垃圾了。",
+      "audio": "audio/voa-learn-from-mistakes-b1-002.m4a",
+      "learnable": true,
+      "start": 9.4,
+      "end": 12.48,
+      "duration": 3.08
+    },
+    {
+      "id": "voa-mistake-003",
+      "text": "Tell me about that.",
+      "translation": "跟我说说那个。",
+      "audio": "audio/voa-learn-from-mistakes-b1-003.m4a",
+      "learnable": true,
+      "start": 22.88,
+      "end": 24.76,
+      "duration": 1.88
+    },
+    {
+      "id": "voa-mistake-004",
+      "text": "This stuff is not saying anything to you or me or anyone.",
+      "translation": "这些东西并没有对你、我或任何人说话。",
+      "audio": "audio/voa-learn-from-mistakes-b1-004.m4a",
+      "learnable": true,
+      "start": 85.3,
+      "end": 94.22,
+      "duration": 8.92
+    },
+    {
+      "id": "voa-mistake-005",
+      "text": "It's what we like to call in the business: garbage.",
+      "translation": "按我们这行的说法，这叫垃圾。",
+      "audio": "audio/voa-learn-from-mistakes-b1-005.m4a",
+      "learnable": true,
+      "start": 94.4,
+      "end": 98.6,
+      "duration": 4.2
+    },
+    {
+      "id": "voa-mistake-006",
+      "text": "But you said to bring in trash.",
+      "translation": "但你说要带垃圾来。",
+      "audio": "audio/voa-learn-from-mistakes-b1-006.m4a",
+      "learnable": true,
+      "start": 99.7,
+      "end": 102.02,
+      "duration": 2.32
+    },
+    {
+      "id": "voa-mistake-007",
+      "text": "Sometimes trash is treasure.",
+      "translation": "有时垃圾也是宝藏。",
+      "audio": "audio/voa-learn-from-mistakes-b1-007.m4a",
+      "learnable": true,
+      "start": 102.8,
+      "end": 105.68,
+      "duration": 2.88
+    },
+    {
+      "id": "voa-mistake-008",
+      "text": "Sometimes it's just trash.",
+      "translation": "有时它就只是垃圾。",
+      "audio": "audio/voa-learn-from-mistakes-b1-008.m4a",
+      "learnable": true,
+      "start": 106.64,
+      "end": 109.08,
+      "duration": 2.44
+    },
+    {
+      "id": "voa-mistake-009",
+      "text": "Don't worry.",
+      "translation": "别担心。",
+      "audio": "audio/voa-learn-from-mistakes-b1-009.m4a",
+      "learnable": true,
+      "start": 112.36,
+      "end": 113.18,
+      "duration": 0.82
+    },
+    {
+      "id": "voa-mistake-010",
+      "text": "Next week, I could teach you decoupage.",
+      "translation": "下周我可以教你拼贴装饰。",
+      "audio": "audio/voa-learn-from-mistakes-b1-010.m4a",
+      "learnable": true,
+      "start": 113.6,
+      "end": 116.16,
+      "duration": 2.56
+    },
+    {
+      "id": "voa-mistake-011",
+      "text": "That's fun to say.",
+      "translation": "这个说起来真有趣。",
+      "audio": "audio/voa-learn-from-mistakes-b1-011.m4a",
+      "learnable": true,
+      "start": 119.46,
+      "end": 121.14,
+      "duration": 1.68
+    },
+    {
+      "id": "voa-mistake-012",
+      "text": "All you need to bring is a clean shoe box.",
+      "translation": "你只需要带一个干净的鞋盒。",
+      "audio": "audio/voa-learn-from-mistakes-b1-012.m4a",
+      "learnable": true,
+      "start": 121.56,
+      "end": 124.54,
+      "duration": 2.98
+    },
+    {
+      "id": "voa-mistake-013",
+      "text": "See you next week.",
+      "translation": "下周见。",
+      "audio": "audio/voa-learn-from-mistakes-b1-013.m4a",
+      "learnable": true,
+      "start": 130.76,
+      "end": 131.84,
+      "duration": 1.08
+    },
+    {
+      "id": "voa-mistake-014",
+      "text": "Don't start without me.",
+      "translation": "别在没有我的情况下开始。",
+      "audio": "audio/voa-learn-from-mistakes-b1-014.m4a",
+      "learnable": true,
+      "start": 205.84,
+      "end": 208.62,
+      "duration": 2.78
+    },
+    {
+      "id": "voa-mistake-015",
+      "text": "Okay, I can fix this.",
+      "translation": "好，我能解决这个问题。",
+      "audio": "audio/voa-learn-from-mistakes-b1-015.m4a",
+      "learnable": true,
+      "start": 213.22,
+      "end": 216.32,
+      "duration": 3.1
+    },
+    {
+      "id": "voa-mistake-016",
+      "text": "What happened?",
+      "translation": "发生什么事了？",
+      "audio": "audio/voa-learn-from-mistakes-b1-016.m4a",
+      "learnable": true,
+      "start": 232.22,
+      "end": 233.6,
+      "duration": 1.38
+    },
+    {
+      "id": "voa-mistake-017",
+      "text": "I told you to wait for me.",
+      "translation": "我告诉过你要等我。",
+      "audio": "audio/voa-learn-from-mistakes-b1-017.m4a",
+      "learnable": true,
+      "start": 233.88,
+      "end": 236.2,
+      "duration": 2.32
+    },
+    {
+      "id": "voa-mistake-018",
+      "text": "You told me not to start without you, which I didn't.",
+      "translation": "你告诉我不要在没有你的情况下开始，而我没有开始。",
+      "audio": "audio/voa-learn-from-mistakes-b1-018.m4a",
+      "learnable": true,
+      "start": 237.56,
+      "end": 241.28,
+      "duration": 3.72
+    },
+    {
+      "id": "voa-mistake-019",
+      "text": "Your glue is really sticky.",
+      "translation": "你的胶水真的很黏。",
+      "audio": "audio/voa-learn-from-mistakes-b1-019.m4a",
+      "learnable": true,
+      "start": 240.98,
+      "end": 244.44,
+      "duration": 3.46
+    },
+    {
+      "id": "voa-mistake-020",
+      "text": "Next week, let's try lamp making.",
+      "translation": "下周我们试试做灯吧。",
+      "audio": "audio/voa-learn-from-mistakes-b1-020.m4a",
+      "learnable": true,
+      "start": 246.12,
+      "end": 248.7,
+      "duration": 2.58
+    }
+  ]
+}
