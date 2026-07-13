@@ -1715,7 +1715,7 @@ export default function Home() {
             onClick={(event) => { event.stopPropagation(); next(); }}
             disabled={manualNextIndex < 0}
           >
-            NEXT {sentenceMode ? "SENTENCE" : "WORD"} <span aria-hidden="true">→</span>
+            NEXT <span aria-hidden="true">→</span>
           </button>
         </div>
       )}
@@ -1736,7 +1736,7 @@ export default function Home() {
             onClick={(event) => { event.stopPropagation(); next(); }}
             disabled={manualNextIndex < 0}
           >
-            NEXT {sentenceMode ? "SENTENCE" : "WORD"} <span aria-hidden="true">→</span>
+            NEXT <span aria-hidden="true">→</span>
           </button>
         </div>
       )}

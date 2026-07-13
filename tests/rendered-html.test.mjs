@@ -182,6 +182,23 @@ test("ships the B1 polite requests course and its clips", async () => {
   assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[9].text, /Would you mind not talking/i);
 });
 
+test("ships the B1 reported speech course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-reported-speech-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/reported-speech-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[3].text, /She said that/i);
+});
+
+test("ships the B1 creative reuse course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-creative-reuse-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/creative-reuse-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[13].text, /handmade, reclaimed and recycled/i);
+});
+test("ships the B1 learn from mistakes course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-learn-from-mistakes-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/learn-from-mistakes-b1/audio", root))).filter((file) => file.endsWith(".m4a"));
+  assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[14].text, /fix this/i);
+});
+
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
   const courses = await read("app/courses.ts");
@@ -242,6 +259,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /voa-speak-for-yourself-b1/);
   assert.match(courses, /voa-follow-instructions-b1/);
   assert.match(courses, /voa-polite-requests-b1/);
+  assert.match(courses, /voa-reported-speech-b1/);
+  assert.match(courses, /voa-creative-reuse-b1/);
+  assert.match(courses, /voa-learn-from-mistakes-b1/);
   assert.match(courses, /MODERN_FAMILY_S01E01_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E02_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E03_HIGHLIGHTS/);

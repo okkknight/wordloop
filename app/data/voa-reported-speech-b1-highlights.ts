@@ -1,0 +1,17 @@
+export const VOA_REPORTED_SPEECH_B1_HIGHLIGHTS: Readonly<Record<string, readonly string[]>> = {
+  "voa-report-002": ["use this as", "opening shot"],
+  "voa-report-003": ["give us instructions for"],
+  "voa-report-004": ["She said that"],
+  "voa-report-005": ["need to interview"],
+  "voa-report-006": ["should have fun"],
+  "voa-report-007": ["exact words"],
+  "voa-report-008": ["got good interviews"],
+  "voa-report-009": ["very different opinions"],
+  "voa-report-010": ["You know what"],
+  "voa-report-012": ["He said that", "unfortunately"],
+  "voa-report-016": ["one more time"],
+  "voa-report-017": ["I promise", "That's it"],
+  "voa-report-018": ["I was told that"],
+  "voa-report-019": ["Are you rolling"],
+  "voa-report-020": ["I can't tell you how"],
+};

@@ -1,0 +1,15 @@
+export const VOA_CREATIVE_REUSE_B1_HIGHLIGHTS: Readonly<Record<string, readonly string[]>> = {
+  "voa-reuse-001": ["talking to yourself"],
+  "voa-reuse-003": ["has a birthday coming up", "not to tell anyone"],
+  "voa-reuse-004": ["From the way"],
+  "voa-reuse-006": ["Do you know where I can"],
+  "voa-reuse-007": ["definitely find"],
+  "voa-reuse-009": ["Speaking of"],
+  "voa-reuse-011": ["How can I help you"],
+  "voa-reuse-012": ["told me about"],
+  "voa-reuse-014": ["we focus on", "handmade, reclaimed and recycled"],
+  "voa-reuse-015": ["good for the environment"],
+  "voa-reuse-016": ["one-of-a-kind"],
+  "voa-reuse-018": ["Every time I try to", "goes wrong"],
+  "voa-reuse-020": ["thrown away", "almost hear"],
+};

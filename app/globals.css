@@ -340,12 +340,13 @@ h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
 }
 .repeat-card {
   position: relative;
+  top: clamp(42px, 6vh, 58px);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: min(520px, 94%);
   max-width: 100%;
-  margin: clamp(56px, 8vh, 88px) auto 0;
+  margin: clamp(42px, 6vh, 72px) auto 0;
   text-align: center;
   animation: enter 420ms 120ms cubic-bezier(.2,.8,.2,1) both;
 }
@@ -726,7 +727,8 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   .meaning { margin-top: 34px; margin-left: 0; max-width: 82%; }
   .repeat-card {
     width: 100%;
-    margin-top: 64px;
+    top: 44px;
+    margin-top: 44px;
   }
   .repeat-visual { height: 72px; }
   .repeat-waveform { transform: scale(.82); }
