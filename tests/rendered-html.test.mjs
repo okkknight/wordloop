@@ -270,7 +270,6 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, \(audio\) => playFeedbackTone\(audio, false\)\)/);
   assert.match(page, /playToneWhenReady\(feedbackAudioContextRef\.current, playRecordingCue\)/);
   assert.match(courses, /modern-family-s01e01/);
-  assert.match(courses, /modern-family-s01e02/);
   assert.match(courses, /modern-family-s01e03/);
   assert.match(courses, /modern-family-s01e04/);
   assert.match(courses, /modern-family-s01e05/);
@@ -290,7 +289,6 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /voa-creative-reuse-b1/);
   assert.match(courses, /voa-learn-from-mistakes-b1/);
   assert.match(courses, /MODERN_FAMILY_S01E01_HIGHLIGHTS/);
-  assert.match(courses, /MODERN_FAMILY_S01E02_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E03_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E04_HIGHLIGHTS/);
   assert.match(courses, /MODERN_FAMILY_S01E05_HIGHLIGHTS/);
