@@ -3,11 +3,13 @@ import modernFamilyS01E02 from "./data/modern-family-s01e02.json";
 import modernFamilyS01E03 from "./data/modern-family-s01e03.json";
 import modernFamilyS01E04 from "./data/modern-family-s01e04.json";
 import modernFamilyS01E05 from "./data/modern-family-s01e05.json";
+import voaEiamLayItOnThick from "./data/voa-eiam-lay-it-on-thick.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
 import { MODERN_FAMILY_S01E04_HIGHLIGHTS } from "./data/modern-family-s01e04-highlights";
 import { MODERN_FAMILY_S01E05_HIGHLIGHTS } from "./data/modern-family-s01e05-highlights";
+import { VOA_EIAM_LAY_IT_ON_THICK_HIGHLIGHTS } from "./data/voa-eiam-lay-it-on-thick-highlights";
 import { WORDS } from "./words";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -82,6 +84,14 @@ const modernFamilyS01E05Entries = modernFamilyS01E05.entries
     audio: `${basePath}/courses/modern-family/s01e05/${entry.audio}`,
   })) as CourseEntry[];
 
+const voaEiamLayItOnThickEntries = voaEiamLayItOnThick.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({
+    ...entry,
+    highlights: VOA_EIAM_LAY_IT_ON_THICK_HIGHLIGHTS[entry.id],
+    audio: `${basePath}/courses/voa/eiam-lay-it-on-thick/${entry.audio}`,
+  })) as CourseEntry[];
+
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
   text: word,
@@ -144,6 +154,15 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     kind: "sentence",
     practiceOrder: "sequential",
     entries: modernFamilyS01E05Entries,
+  },
+  {
+    id: "voa-eiam-lay-it-on-thick",
+    title: "VOA · Lay It On Thick",
+    subtitle: `English in a Minute · ${voaEiamLayItOnThickEntries.length} learning sentences`,
+    description: "高频美式表达精讲。Source: VOA Learning English",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: voaEiamLayItOnThickEntries,
   },
 ];
 
