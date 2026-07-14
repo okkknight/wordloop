@@ -22,6 +22,7 @@ const MIN_SPEECH_MS = 350;
 const MIN_SENTENCE_WORD_COVERAGE = 0.6;
 const SEGMENT_SETTLE_MS = 700;
 const STARTUP_MAX_WAIT_MS = 650;
+const PANEL_CLOSE_MS = 240;
 const USER_ID_KEY = "word-loop-user-id";
 const USERNAME_KEY = "word-loop-username";
 const PENDING_PROGRESS_KEY = "word-loop-pending-progress";
@@ -469,6 +470,8 @@ export default function Home() {
   const [courseCompletionCounts, setCourseCompletionCounts] = useState<ProgressMap>({});
   const [panelOpen, setPanelOpen] = useState(false);
   const [coursePickerOpen, setCoursePickerOpen] = useState(false);
+  const [panelClosing, setPanelClosing] = useState(false);
+  const [coursePickerClosing, setCoursePickerClosing] = useState(false);
   const [restartPromptCourseId, setRestartPromptCourseId] = useState<string | null>(null);
   const [completionPromptCourseId, setCompletionPromptCourseId] = useState<string | null>(null);
   const [restartPromptError, setRestartPromptError] = useState("");
@@ -533,6 +536,8 @@ export default function Home() {
   const nextRef = useRef<() => void>(() => undefined);
   const courseSwitchRequestRef = useRef(0);
   const panelSwipeRef = useRef<{ pointerId: number; x: number; y: number } | null>(null);
+  const coursePickerCloseTimerRef = useRef<number | null>(null);
+  const progressPanelCloseTimerRef = useRef<number | null>(null);
   const hydratedUserIdRef = useRef("");
   const activatedRef = useRef(activated);
   const pendingActivationRef = useRef(false);
@@ -678,6 +683,42 @@ export default function Home() {
 
   const clearPanelSwipe = useCallback(() => {
     panelSwipeRef.current = null;
+  }, []);
+
+  const closeCoursePicker = useCallback(() => {
+    if (!coursePickerOpen || coursePickerClosing) return;
+    setCoursePickerClosing(true);
+    if (coursePickerCloseTimerRef.current !== null) window.clearTimeout(coursePickerCloseTimerRef.current);
+    coursePickerCloseTimerRef.current = window.setTimeout(() => {
+      coursePickerCloseTimerRef.current = null;
+      setCoursePickerOpen(false);
+      setCoursePickerClosing(false);
+    }, PANEL_CLOSE_MS);
+  }, [coursePickerClosing, coursePickerOpen]);
+
+  const closeProgressPanel = useCallback(() => {
+    if (!panelOpen || panelClosing) return;
+    setPanelClosing(true);
+    if (progressPanelCloseTimerRef.current !== null) window.clearTimeout(progressPanelCloseTimerRef.current);
+    progressPanelCloseTimerRef.current = window.setTimeout(() => {
+      progressPanelCloseTimerRef.current = null;
+      setPanelOpen(false);
+      setPanelClosing(false);
+    }, PANEL_CLOSE_MS);
+  }, [panelClosing, panelOpen]);
+
+  const openCoursePicker = useCallback(() => {
+    if (coursePickerCloseTimerRef.current !== null) window.clearTimeout(coursePickerCloseTimerRef.current);
+    coursePickerCloseTimerRef.current = null;
+    setCoursePickerClosing(false);
+    setCoursePickerOpen(true);
+  }, []);
+
+  const openProgressPanel = useCallback(() => {
+    if (progressPanelCloseTimerRef.current !== null) window.clearTimeout(progressPanelCloseTimerRef.current);
+    progressPanelCloseTimerRef.current = null;
+    setPanelClosing(false);
+    setPanelOpen(true);
   }, []);
 
   const stopListening = useCallback(() => {
@@ -1122,16 +1163,20 @@ export default function Home() {
   const playWord = useCallback((targetWord: string, onEnded?: () => void, onError?: () => void) => {
     const source = new URL(targetWord.startsWith("/") ? targetWord : appPath(`/audio/${targetWord}.m4a`), window.location.href).href;
     const preloaded = preloadedAudioRef.current;
-    const usePreloaded = preloaded?.src === source;
-    const audio = usePreloaded
-      ? preloaded.cloneNode(true) as HTMLAudioElement
-      : new Audio(source);
+    const audio = new Audio(source);
 
     audio.preload = "auto";
     audio.playsInline = true;
+    // A preload warms the browser cache, but its media state must never carry
+    // into a fresh learning turn (especially immediately after hydration).
+    audio.currentTime = 0;
     currentAudioRef.current?.pause();
     currentAudioRef.current = audio;
-    if (usePreloaded) preloadedAudioRef.current = null;
+    if (preloaded?.src === source) {
+      preloaded.pause();
+      preloaded.src = "";
+      preloadedAudioRef.current = null;
+    }
     let settled = false;
     const finish = () => {
       if (settled) return;
@@ -1639,7 +1684,7 @@ export default function Home() {
 
   const handleCourseChange = useCallback(async (courseId: string, forceRestart = false) => {
     if (courseId === activeCourseId && !forceRestart) {
-      setCoursePickerOpen(false);
+      closeCoursePicker();
       return;
     }
     const requestId = courseSwitchRequestRef.current + 1;
@@ -1657,7 +1702,7 @@ export default function Home() {
           const data = await response.json() as { progress: Array<{ itemId: string; studyCount: number }> };
           targetProgress = Object.fromEntries(data.progress.map(({ itemId, studyCount }) => [itemId, studyCount]));
           if (targetCourse.entries.length > 0 && targetCourse.entries.every((entry) => (targetProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT)) {
-            setCoursePickerOpen(false);
+            closeCoursePicker();
             setRestartPromptError("");
             setRestartPromptCourseId(targetCourse.id);
             return;
@@ -1709,7 +1754,7 @@ export default function Home() {
         body: JSON.stringify({ userId: userIdRef.current, mode: studyMode, courseId, selectCourse: true }),
       });
     }
-    setCoursePickerOpen(false);
+    closeCoursePicker();
     setRepeatState("idle");
     setRepeatMessage("READY");
     if (!wasActivated) return;
@@ -1724,7 +1769,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(currentIndexRef.current);
-  }, [activated, activeCourseId, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playListenItem, recordStudy, refreshSentenceProgress, stopListening, studyMode]);
+  }, [activated, activeCourseId, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, closeCoursePicker, playListenItem, recordStudy, refreshSentenceProgress, stopListening, studyMode]);
 
   const restartCompletedCourse = useCallback(async (courseId: string | null) => {
     const userId = userIdRef.current;
@@ -1766,7 +1811,7 @@ export default function Home() {
             onClick={(event) => {
               event.stopPropagation();
               setExpandedCourseCollectionId(activeCourse.collectionId);
-              setCoursePickerOpen(true);
+              openCoursePicker();
             }}
             aria-label="Choose course package"
             aria-expanded={coursePickerOpen}
@@ -1794,7 +1839,7 @@ export default function Home() {
         </div>
         <button
           className="progress-button topbar-progress"
-          onClick={(event) => { event.stopPropagation(); setPanelOpen(true); }}
+          onClick={(event) => { event.stopPropagation(); openProgressPanel(); }}
           aria-label="Open learning progress"
         >
           PROGRESS · {completedWords}/{activeEntriesCount}
@@ -1942,22 +1987,22 @@ export default function Home() {
 
       {coursePickerOpen && (
         <div
-          className="panel-backdrop"
+          className={coursePickerClosing ? "panel-backdrop closing course-panel-backdrop" : "panel-backdrop course-panel-backdrop"}
           onClick={(event) => {
             event.stopPropagation();
-            if (event.target === event.currentTarget) setCoursePickerOpen(false);
+            if (event.target === event.currentTarget) closeCoursePicker();
           }}
         >
           <aside
             className="course-panel"
             aria-label="Course packages"
             onPointerDown={beginPanelSwipe}
-            onPointerUp={(event) => endPanelSwipe(event, "left", () => setCoursePickerOpen(false))}
+            onPointerUp={(event) => endPanelSwipe(event, "left", closeCoursePicker)}
             onPointerCancel={clearPanelSwipe}
           >
             <div className="panel-header">
               <div><span>COURSE PACKAGES</span><h2>选择课程</h2></div>
-              <button onClick={() => setCoursePickerOpen(false)} aria-label="Close course selector">×</button>
+              <button onClick={closeCoursePicker} aria-label="Close course selector">×</button>
             </div>
             <input
               className="panel-search"
@@ -2028,7 +2073,7 @@ export default function Home() {
             <p>太棒了。你可以从头再练一遍，或者挑选下一门课程继续学习。</p>
             {restartPromptError && <p className="restart-course-error">{restartPromptError}</p>}
             <div>
-              <button onClick={() => { setCompletionPromptCourseId(null); setRestartPromptError(""); setCoursePickerOpen(true); }}>选择课程</button>
+              <button onClick={() => { setCompletionPromptCourseId(null); setRestartPromptError(""); openCoursePicker(); }}>选择课程</button>
               <button className="restart-course-confirm" onClick={() => void restartCompletedCourse(completionPromptCourseId)}>再练一次</button>
             </div>
           </section>
@@ -2037,17 +2082,17 @@ export default function Home() {
 
       {panelOpen && (
         <div
-          className="panel-backdrop"
+          className={panelClosing ? "panel-backdrop closing progress-panel-backdrop" : "panel-backdrop progress-panel-backdrop"}
           onClick={(event) => {
             event.stopPropagation();
-            if (event.target === event.currentTarget) setPanelOpen(false);
+            if (event.target === event.currentTarget) closeProgressPanel();
           }}
         >
           <aside
             className="progress-panel"
             aria-label="Learning progress panel"
             onPointerDown={beginPanelSwipe}
-            onPointerUp={(event) => endPanelSwipe(event, "right", () => setPanelOpen(false))}
+            onPointerUp={(event) => endPanelSwipe(event, "right", closeProgressPanel)}
             onPointerCancel={clearPanelSwipe}
           >
             <div className="panel-header">
@@ -2056,7 +2101,7 @@ export default function Home() {
                 <h2>{totalStudies.toLocaleString()} / {(activeEntriesCount * MAX_STUDY_COUNT).toLocaleString()}</h2>
                 <p className="progress-course-context">{activeCourse.title}</p>
               </div>
-              <button onClick={() => setPanelOpen(false)} aria-label="Close progress panel">×</button>
+              <button onClick={closeProgressPanel} aria-label="Close progress panel">×</button>
             </div>
             <div className="progress-track"><i style={{ width: `${totalStudies / (activeEntriesCount * MAX_STUDY_COUNT) * 100}%` }} /></div>
             <div className="panel-stats">

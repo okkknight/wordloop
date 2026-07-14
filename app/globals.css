@@ -105,6 +105,8 @@ button { font: inherit; }
 .word-stage {
   align-self: center;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   padding: 6vh 0;
   transform: translateY(clamp(28px, 5vh, 64px));
 }
@@ -216,8 +218,11 @@ h1 {
   display: flex;
   align-items: center;
   gap: 12px;
+  min-width: 0;
+  max-width: 100%;
   margin-top: clamp(20px, 3vh, 34px);
 }
+.sentence-translation { min-width: 0; flex: 1 1 auto; overflow-wrap: anywhere; }
 .study-actions {
   display: flex;
   align-items: center;
@@ -345,8 +350,8 @@ h1.very-long { font-size: clamp(46px, 7.8vw, 132px); }
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(520px, 94%);
-  max-width: 100%;
+  width: min(520px, calc(100vw - 48px));
+  max-width: calc(100vw - 48px);
   margin: clamp(42px, 6vh, 72px) auto 0;
   text-align: center;
   animation: enter 420ms 120ms cubic-bezier(.2,.8,.2,1) both;
@@ -612,6 +617,9 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   backdrop-filter: blur(7px);
   cursor: default;
 }
+.panel-backdrop.closing { animation: panel-backdrop-out 240ms ease both; pointer-events: none; }
+.course-panel-backdrop.closing .course-panel { animation: panel-out-left 240ms cubic-bezier(.4,0,1,1) both; }
+.progress-panel-backdrop.closing .progress-panel { animation: panel-out-right 240ms cubic-bezier(.4,0,1,1) both; }
 .restart-course-backdrop { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 24px; background: rgba(10, 12, 18, .48); backdrop-filter: blur(8px); }
 .restart-course-dialog { width: min(320px, 100%); padding: 25px; border: 1px solid color-mix(in srgb, var(--ink), transparent 78%); border-radius: 16px; color: var(--ink); background: var(--bg); box-shadow: 0 22px 60px rgba(0, 0, 0, .22); }
 .restart-course-dialog > span { color: var(--accent); font: 700 9px/1 var(--font-geist-mono); letter-spacing: .12em; }
@@ -688,6 +696,9 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
 .course-card p { margin: 12px 0 0; color: color-mix(in srgb, var(--ink), transparent 34%); font: 500 13px/1.45 var(--font-geist-sans), "PingFang SC", sans-serif; }
 @keyframes panel-in { from { transform: translateX(100%); } }
 @keyframes panel-in-left { from { transform: translateX(-100%); } }
+@keyframes panel-out-right { to { transform: translateX(100%); } }
+@keyframes panel-out-left { to { transform: translateX(-100%); } }
+@keyframes panel-backdrop-out { to { opacity: 0; } }
 .panel-header { display: flex; align-items: flex-start; justify-content: space-between; }
 .panel-header span { font: 700 10px/1 var(--font-geist-mono); letter-spacing: .12em; color: var(--accent); }
 .panel-header h2 { margin: 8px 0 0; font: 700 clamp(26px, 3vw, 34px)/1 var(--font-geist-sans); letter-spacing: -.04em; }
@@ -731,7 +742,8 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   h1.very-long { font-size: clamp(34px, 10.5vw, 58px); }
   .meaning { margin-top: 34px; margin-left: 0; max-width: 82%; }
   .repeat-card {
-    width: 100%;
+    width: calc(100vw - 48px);
+    max-width: calc(100vw - 48px);
     top: 44px;
     margin-top: 44px;
   }
