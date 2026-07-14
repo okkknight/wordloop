@@ -26,7 +26,7 @@ test("ships all VOA Level 2 clips with complete alignment metadata", async () =>
   const manifests = (await readdir(new URL("app/data", root)))
     .filter((file) => file.startsWith("voa-") && file.endsWith(".json"));
 
-  assert.equal(manifests.length, 20);
+  assert.equal(manifests.length, 23);
 
   for (const file of manifests) {
     const course = JSON.parse(await read(`app/data/${file}`));
@@ -227,6 +227,36 @@ test("ships the B1 learn from mistakes course and its clips", async () => {
   assert.equal(course.entries.length, 20); assert.equal(audio.length, 20); assert.match(course.entries[14].text, /fix this/i);
 });
 
+test("ships the B1 fish out of water course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-fish-out-of-water-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/fish-out-of-water-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(audio.length, 20);
+  assert.match(course.entries[0].text, /Why don't you join us/i);
+});
+
+test("ships the B1 for the birds course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-for-the-birds-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/for-the-birds-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(audio.length, 20);
+  assert.match(course.entries[6].text, /supposed to be counting birds/i);
+});
+
+test("ships the B1 where there's smoke course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-where-theres-smoke-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/where-theres-smoke-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(audio.length, 20);
+  assert.match(course.entries[4].text, /fire emergency/i);
+});
+
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
   const courses = await read("app/courses.ts");
@@ -281,6 +311,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /voa-weather-at-work-b1/);
   assert.match(courses, /voa-stay-calm-b1/);
   assert.match(courses, /voa-helping-out-b1/);
+  assert.match(courses, /voa-fish-out-of-water-b1/);
+  assert.match(courses, /voa-for-the-birds-b1/);
+  assert.match(courses, /voa-where-theres-smoke-b1/);
   assert.match(courses, /voa-in-common-b1/);
   assert.match(courses, /voa-keep-moving-b1/);
   assert.match(courses, /voa-find-your-way-b1/);

@@ -1,0 +1,209 @@
+{
+  "courseId": "voa-fish-out-of-water-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-27/4374632.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 27: Fish out of Water",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-fish-001",
+      "text": "Why don't you join us? My treat.",
+      "translation": "你为什么不和我们一起去呢？我请客。",
+      "learnable": true,
+      "audio": "audio/voa-fish-001.m4a",
+      "start": 16.24,
+      "end": 19.44,
+      "duration": 3.2
+    },
+    {
+      "id": "voa-fish-002",
+      "text": "Thanks, Ms. Weaver. But I already have plans.",
+      "translation": "谢谢您，韦弗女士。但我已经有安排了。",
+      "learnable": true,
+      "audio": "audio/voa-fish-002.m4a",
+      "start": 19.82,
+      "end": 23.08,
+      "duration": 3.26
+    },
+    {
+      "id": "voa-fish-003",
+      "text": "My friend has invited me to her houseboat.",
+      "translation": "我的朋友邀请我去她的船屋。",
+      "learnable": true,
+      "audio": "audio/voa-fish-003.m4a",
+      "start": 23.16,
+      "end": 28.18,
+      "duration": 5.02
+    },
+    {
+      "id": "voa-fish-004",
+      "text": "In fact, I'm thinking of living on a houseboat.",
+      "translation": "事实上，我正在考虑住在船屋上。",
+      "learnable": true,
+      "audio": "audio/voa-fish-004.m4a",
+      "start": 35.7,
+      "end": 40.88,
+      "duration": 5.18
+    },
+    {
+      "id": "voa-fish-005",
+      "text": "How about you give Anna a tour and I will make some lunch?",
+      "translation": "你带安娜参观一下怎么样？我来做点午餐。",
+      "learnable": true,
+      "audio": "audio/voa-fish-005.m4a",
+      "start": 105.96,
+      "end": 110.24,
+      "duration": 4.28
+    },
+    {
+      "id": "voa-fish-006",
+      "text": "No, not really. They don't live in these waters.",
+      "translation": "不，并不太怕。它们不生活在这些水域。",
+      "learnable": true,
+      "audio": "audio/voa-fish-006.m4a",
+      "start": 156.1,
+      "end": 158.78,
+      "duration": 2.68
+    },
+    {
+      "id": "voa-fish-007",
+      "text": "So, Phoenix, I think I'd like to live on a houseboat.",
+      "translation": "所以，菲尼克斯，我觉得我想住在船屋上。",
+      "learnable": true,
+      "audio": "audio/voa-fish-007.m4a",
+      "start": 119.06,
+      "end": 123.32,
+      "duration": 4.26
+    },
+    {
+      "id": "voa-fish-008",
+      "text": "It's much different than living in a house.",
+      "translation": "这和住在普通房子里很不一样。",
+      "learnable": true,
+      "audio": "audio/voa-fish-008.m4a",
+      "start": 125.5,
+      "end": 127.74,
+      "duration": 2.24
+    },
+    {
+      "id": "voa-fish-009",
+      "text": "I bet you had to get rid of a lot of stuff, didn't you?",
+      "translation": "我猜你们不得不处理掉很多东西，对吗？",
+      "learnable": true,
+      "audio": "audio/voa-fish-009.m4a",
+      "start": 129.2,
+      "end": 132.08,
+      "duration": 2.88
+    },
+    {
+      "id": "voa-fish-010",
+      "text": "We moved from a 3-story house to a boat! So, we really had to downsize!",
+      "translation": "我们从三层房子搬到船上，所以确实得缩减很多东西！",
+      "learnable": true,
+      "audio": "audio/voa-fish-010.m4a",
+      "start": 132.08,
+      "end": 136.22,
+      "duration": 4.14
+    },
+    {
+      "id": "voa-fish-011",
+      "text": "I'd have to get rid of a lot of stuff. I have a rock collection and I have some really big rocks.",
+      "translation": "我得处理掉很多东西。我有一套岩石收藏，其中有些石头特别大。",
+      "learnable": true,
+      "audio": "audio/voa-fish-011.m4a",
+      "start": 136.52,
+      "end": 143.34,
+      "duration": 6.82
+    },
+    {
+      "id": "voa-fish-012",
+      "text": "Can you stop this boat from rocking for a minute?",
+      "translation": "你能让这条船暂时别晃吗？",
+      "learnable": true,
+      "audio": "audio/voa-fish-012.m4a",
+      "start": 144.44,
+      "end": 147.5,
+      "duration": 3.06
+    },
+    {
+      "id": "voa-fish-013",
+      "text": "We're floating on water. I can't do that.",
+      "translation": "我们漂在水上，我做不到。",
+      "learnable": true,
+      "audio": "audio/voa-fish-013.m4a",
+      "start": 148.56,
+      "end": 151.24,
+      "duration": 2.68
+    },
+    {
+      "id": "voa-fish-014",
+      "text": "Well, since you live on the water, aren't you afraid of great white sharks?",
+      "translation": "既然你住在水上，难道不怕大白鲨吗？",
+      "learnable": true,
+      "audio": "audio/voa-fish-014.m4a",
+      "start": 151.38,
+      "end": 155.94,
+      "duration": 4.56
+    },
+    {
+      "id": "voa-fish-015",
+      "text": "You know, Anna, if you're afraid of sea life, maybe you shouldn't live on a houseboat. Do you have any boating experience?",
+      "translation": "安娜，如果你害怕海洋生物，也许就不该住船屋。你有航船经验吗？",
+      "learnable": true,
+      "audio": "audio/voa-fish-015.m4a",
+      "start": 167.84,
+      "end": 174.22,
+      "duration": 6.38
+    },
+    {
+      "id": "voa-fish-016",
+      "text": "Yeah, I don't think that counts.",
+      "translation": "是啊，我觉得那不算。",
+      "learnable": true,
+      "audio": "audio/voa-fish-016.m4a",
+      "start": 189.6,
+      "end": 192.44,
+      "duration": 2.84
+    },
+    {
+      "id": "voa-fish-017",
+      "text": "Fanny, does this rocking ever bother you?",
+      "translation": "范妮，这样晃动会让你不舒服吗？",
+      "learnable": true,
+      "audio": "audio/voa-fish-017.m4a",
+      "start": 193.2,
+      "end": 197.54,
+      "duration": 4.34
+    },
+    {
+      "id": "voa-fish-018",
+      "text": "Yeah, yeah. You know, I just need some fresh air.",
+      "translation": "嗯，嗯。你知道，我只是需要一点新鲜空气。",
+      "learnable": true,
+      "audio": "audio/voa-fish-018.m4a",
+      "start": 207.48,
+      "end": 211.12,
+      "duration": 3.64
+    },
+    {
+      "id": "voa-fish-019",
+      "text": "Oh, is that the time? I should really be going.",
+      "translation": "噢，已经这个时间了吗？我真的该走了。",
+      "learnable": true,
+      "audio": "audio/voa-fish-019.m4a",
+      "start": 217.34,
+      "end": 220.54,
+      "duration": 3.2
+    },
+    {
+      "id": "voa-fish-020",
+      "text": "Thanks for lunch, Fanny, and a tour of your houseboat. It's given me a great idea!",
+      "translation": "谢谢你的午餐和船屋参观，范妮。这给了我一个很棒的主意！",
+      "learnable": true,
+      "audio": "audio/voa-fish-020.m4a",
+      "start": 222.08,
+      "end": 228.18,
+      "duration": 6.1
+    }
+  ]
+}

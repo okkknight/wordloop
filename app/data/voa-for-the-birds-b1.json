@@ -1,0 +1,209 @@
+{
+  "courseId": "voa-for-the-birds-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-28/4396849.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 28: For the Birds",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-birds-001",
+      "text": "Oh, Anna, there you are! I am so glad we joined the Great City Bird Count! Aren't you?",
+      "translation": "哦，安娜，你在这儿啊！我很高兴我们参加了大城市观鸟统计！你不高兴吗？",
+      "learnable": true,
+      "audio": "audio/voa-birds-001.m4a",
+      "start": 5.58,
+      "end": 14.14,
+      "duration": 8.56
+    },
+    {
+      "id": "voa-birds-002",
+      "text": "No. Today has been a bust ... a flop ... a bummer!",
+      "translation": "不。今天真是白忙一场……失败……太扫兴了！",
+      "learnable": true,
+      "audio": "audio/voa-birds-002.m4a",
+      "start": 14.76,
+      "end": 20.82,
+      "duration": 6.06
+    },
+    {
+      "id": "voa-birds-003",
+      "text": "I'm sensing a little disappointment.",
+      "translation": "我感觉到你有点失望。",
+      "learnable": true,
+      "audio": "audio/voa-birds-003.m4a",
+      "start": 21.88,
+      "end": 25.3,
+      "duration": 3.42
+    },
+    {
+      "id": "voa-birds-004",
+      "text": "My official bird-watching form is almost full!",
+      "translation": "我的官方观鸟记录表都快填满了！",
+      "learnable": true,
+      "audio": "audio/voa-birds-004.m4a",
+      "start": 27.66,
+      "end": 31.55,
+      "duration": 3.89
+    },
+    {
+      "id": "voa-birds-005",
+      "text": "I've only seen pigeons ... lots and lots of pigeons! But I did write down some other valuable information.",
+      "translation": "我只看到了鸽子……好多好多鸽子！不过我确实记下了别的一些有价值的信息。",
+      "learnable": true,
+      "audio": "audio/voa-birds-005.m4a",
+      "start": 31.58,
+      "end": 42.36,
+      "duration": 10.78
+    },
+    {
+      "id": "voa-birds-006",
+      "text": "I found 10 ice cream trucks in this five-block area. Their music seems to follow me everywhere.",
+      "translation": "我在这五个街区里发现了十辆冰淇淋车。它们的音乐好像到处跟着我。",
+      "learnable": true,
+      "audio": "audio/voa-birds-006.m4a",
+      "start": 46.62,
+      "end": 54.64,
+      "duration": 8.02
+    },
+    {
+      "id": "voa-birds-007",
+      "text": "We're supposed to be counting birds, not ice cream trucks. This is important scientific work!",
+      "translation": "我们应该数的是鸟，不是冰淇淋车。这是重要的科学工作！",
+      "learnable": true,
+      "audio": "audio/voa-birds-007.m4a",
+      "start": 54.64,
+      "end": 62.38,
+      "duration": 7.74
+    },
+    {
+      "id": "voa-birds-008",
+      "text": "Well, when you want ice cream, my data will be pretty important.",
+      "translation": "嗯，等你想吃冰淇淋时，我的数据就会很重要。",
+      "learnable": true,
+      "audio": "audio/voa-birds-008.m4a",
+      "start": 62.92,
+      "end": 69.14,
+      "duration": 6.22
+    },
+    {
+      "id": "voa-birds-009",
+      "text": "Anna, birds are everywhere! I'm sure you'll find something. Use your imagination! But make sure that you put it on the official form.",
+      "translation": "安娜，鸟到处都是！我相信你会发现什么。发挥想象力！但一定要把它记在官方表格上。",
+      "learnable": true,
+      "audio": "audio/voa-birds-009.m4a",
+      "start": 70.64,
+      "end": 82.6,
+      "duration": 11.96
+    },
+    {
+      "id": "voa-birds-010",
+      "text": "That man is in the way. I can't see the price. I wonder what flavor he's getting.",
+      "translation": "那个人挡住了。我看不见价格。我想知道他买的是什么口味。",
+      "learnable": true,
+      "audio": "audio/voa-birds-010.m4a",
+      "start": 129.0,
+      "end": 136.56,
+      "duration": 7.56
+    },
+    {
+      "id": "voa-birds-011",
+      "text": "Strawberry? He doesn't seem like a strawberry kind of guy.",
+      "translation": "草莓？他看起来不像是喜欢草莓的那种人。",
+      "learnable": true,
+      "audio": "audio/voa-birds-011.m4a",
+      "start": 137.32,
+      "end": 143.28,
+      "duration": 5.96
+    },
+    {
+      "id": "voa-birds-012",
+      "text": "In fact, he doesn't seem like an ice cream truck kind of guy. That suit looks expensive.",
+      "translation": "事实上，他看起来不像会买冰淇淋车冰淇淋的人。那套西装看起来很贵。",
+      "learnable": true,
+      "audio": "audio/voa-birds-012.m4a",
+      "start": 144.52,
+      "end": 150.84,
+      "duration": 6.32
+    },
+    {
+      "id": "voa-birds-013",
+      "text": "Maybe he's a spy! You know what that means: The ice cream truck driver is a spy, too!",
+      "translation": "也许他是间谍！你知道这意味着什么：冰淇淋车司机也是间谍！",
+      "learnable": true,
+      "audio": "audio/voa-birds-013.m4a",
+      "start": 151.78,
+      "end": 159.02,
+      "duration": 7.24
+    },
+    {
+      "id": "voa-birds-014",
+      "text": "Genius! It's a perfect disguise.",
+      "translation": "天才！这是完美的伪装。",
+      "learnable": true,
+      "audio": "audio/voa-birds-014.m4a",
+      "start": 159.94,
+      "end": 163.18,
+      "duration": 3.24
+    },
+    {
+      "id": "voa-birds-015",
+      "text": "I was right! He is a spy! And, he just dropped off top-secret information! I ought to do something. Something needs to be done! I need to do something.",
+      "translation": "我说对了！他是间谍！而且他刚交接了绝密信息！我应该做点什么。必须有人采取行动！我得做点什么。",
+      "learnable": true,
+      "audio": "audio/voa-birds-015.m4a",
+      "start": 170.42,
+      "end": 182.42,
+      "duration": 12.0
+    },
+    {
+      "id": "voa-birds-016",
+      "text": "I did it! I took the spy's briefcase!",
+      "translation": "我做到了！我拿走了间谍的公文包！",
+      "learnable": true,
+      "audio": "audio/voa-birds-016.m4a",
+      "start": 192.88,
+      "end": 196.34,
+      "duration": 3.46
+    },
+    {
+      "id": "voa-birds-017",
+      "text": "What's that?! The ice cream truck -- it's following me! It wants the case back! I have to hide.",
+      "translation": "那是什么？！冰淇淋车——它在跟着我！它想拿回箱子！我必须躲起来。",
+      "learnable": true,
+      "audio": "audio/voa-birds-017.m4a",
+      "start": 196.8,
+      "end": 206.86,
+      "duration": 10.06
+    },
+    {
+      "id": "voa-birds-018",
+      "text": "This is my life now -- running, scared, alone.",
+      "translation": "这就是我现在的生活——奔跑、害怕、孤身一人。",
+      "learnable": true,
+      "audio": "audio/voa-birds-018.m4a",
+      "start": 213.46,
+      "end": 219.88,
+      "duration": 6.42
+    },
+    {
+      "id": "voa-birds-019",
+      "text": "Poems? You're a poet?",
+      "translation": "诗？你是诗人？",
+      "learnable": true,
+      "audio": "audio/voa-birds-019.m4a",
+      "start": 245.94,
+      "end": 247.48,
+      "duration": 1.54
+    },
+    {
+      "id": "voa-birds-020",
+      "text": "So, you're not a spy?",
+      "translation": "所以，你不是间谍？",
+      "learnable": true,
+      "audio": "audio/voa-birds-020.m4a",
+      "start": 251.2,
+      "end": 253.16,
+      "duration": 1.96
+    }
+  ]
+}

@@ -76,6 +76,11 @@ def main() -> None:
         default=[],
         help="Limit alignment to these entry IDs; preserves other course clips.",
     )
+    parser.add_argument(
+        "--strict-boundaries",
+        action="store_true",
+        help="Ensure selected clips never overlap, even when timestamp padding meets the next line.",
+    )
     parser.add_argument("--apply", action="store_true")
     args = parser.parse_args()
 
@@ -91,7 +96,7 @@ def main() -> None:
     if unknown_entries:
         raise ValueError(f"Unknown entry IDs: {', '.join(sorted(unknown_entries))}")
     entries = [entry for entry in manifest["entries"] if not requested_entries or str(entry["id"]) in requested_entries]
-    staged: list[tuple[dict[str, object], Path]] = []
+    staged: list[tuple[dict[str, object], Path, float, float]] = []
 
     for entry in entries:
         # The manifest always keeps the reviewed official text. This optional
@@ -116,7 +121,23 @@ def main() -> None:
         entry["start"] = round(start, 2)
         entry["end"] = round(end, 2)
         entry["duration"] = round(end - start, 2)
-        staged.append((entry, args.audio_dir / Path(str(entry["audio"])).name))
+        staged.append((
+            entry,
+            args.audio_dir / Path(str(entry["audio"])).name,
+            float(first["start"]),
+            float(last["end"]),
+        ))
+
+    if args.strict_boundaries:
+        ordered = sorted(staged, key=lambda item: item[2])
+        for previous, current in zip(ordered, ordered[1:]):
+            boundary = round((previous[3] + current[2]) / 2, 2)
+            previous_entry = previous[0]
+            current_entry = current[0]
+            previous_entry["end"] = min(float(previous_entry["end"]), boundary)
+            current_entry["start"] = max(float(current_entry["start"]), boundary)
+        for entry, _, _, _ in staged:
+            entry["duration"] = round(float(entry["end"]) - float(entry["start"]), 2)
 
     if not args.apply:
         print(json.dumps(manifest, ensure_ascii=False, indent=2))
@@ -124,13 +145,13 @@ def main() -> None:
 
     temporary_audio = args.audio_dir.parent / f".{args.audio_dir.name}-staging"
     shutil.rmtree(temporary_audio, ignore_errors=True)
-    for entry, output in staged:
+    for entry, output, _, _ in staged:
         run_ffmpeg(args.source, float(entry["start"]), float(entry["duration"]), temporary_audio / output.name)
     if len(list(temporary_audio.glob("*.m4a"))) != len(entries):
         raise RuntimeError("Incomplete staged audio output")
     args.manifest.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     args.audio_dir.mkdir(parents=True, exist_ok=True)
-    for _, output in staged:
+    for _, output, _, _ in staged:
         os.replace(temporary_audio / output.name, output)
     temporary_audio.rmdir()
     print(f"Aligned {len(entries)} entries")

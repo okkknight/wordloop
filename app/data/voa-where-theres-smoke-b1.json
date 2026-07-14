@@ -1,0 +1,209 @@
+{
+  "courseId": "voa-where-theres-smoke-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-29/4423736.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 29: Where There's Smoke...",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-smoke-001",
+      "text": "Hey, Anna. What are you reading?",
+      "translation": "嘿，安娜。你在读什么？",
+      "learnable": true,
+      "audio": "audio/voa-smoke-001.m4a",
+      "start": 1.44,
+      "end": 3.76,
+      "duration": 2.32
+    },
+    {
+      "id": "voa-smoke-002",
+      "text": "I'm reading about fire safety. Ms. Weaver named me fire safety monitor.",
+      "translation": "我在读消防安全知识。韦弗女士任命我为消防安全监督员。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-002.m4a",
+      "start": 4.02,
+      "end": 11.36,
+      "duration": 7.34
+    },
+    {
+      "id": "voa-smoke-003",
+      "text": "But the only time we have a fire emergency is when someone burns a piece of toast.",
+      "translation": "但我们唯一遇到火灾紧急情况的时候，就是有人把一片吐司烤糊了。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-003.m4a",
+      "start": 12.06,
+      "end": 16.78,
+      "duration": 4.72
+    },
+    {
+      "id": "voa-smoke-004",
+      "text": "That is true. But fire safety is very serious -- very serious.",
+      "translation": "这倒是真的。但消防安全非常严肃——非常严肃。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-004.m4a",
+      "start": 17.64,
+      "end": 23.57,
+      "duration": 5.93
+    },
+    {
+      "id": "voa-smoke-005",
+      "text": "If there is a fire emergency, I have to help everyone out of the building.",
+      "translation": "如果发生火灾紧急情况，我必须帮助大家撤离大楼。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-005.m4a",
+      "start": 23.57,
+      "end": 28.42,
+      "duration": 4.85
+    },
+    {
+      "id": "voa-smoke-006",
+      "text": "Well then, if I were you, I'd learn as much as possible.",
+      "translation": "那么，如果我是你，我会尽可能多学一些。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-006.m4a",
+      "start": 28.42,
+      "end": 32.3,
+      "duration": 3.88
+    },
+    {
+      "id": "voa-smoke-007",
+      "text": "You're right. And I know just who to call!",
+      "translation": "你说得对。而且我知道该找谁！",
+      "learnable": true,
+      "audio": "audio/voa-smoke-007.m4a",
+      "start": 33.68,
+      "end": 37.36,
+      "duration": 3.68
+    },
+    {
+      "id": "voa-smoke-008",
+      "text": "Hi, Firefighter Jones.",
+      "translation": "你好，琼斯消防员。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-008.m4a",
+      "start": 74.36,
+      "end": 75.94,
+      "duration": 1.58
+    },
+    {
+      "id": "voa-smoke-009",
+      "text": "I'm well, thanks. How are you?",
+      "translation": "我很好，谢谢。你怎么样？",
+      "learnable": true,
+      "audio": "audio/voa-smoke-009.m4a",
+      "start": 76.68,
+      "end": 78.32,
+      "duration": 1.64
+    },
+    {
+      "id": "voa-smoke-010",
+      "text": "Welcome to our firehouse.",
+      "translation": "欢迎来到我们的消防站。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-010.m4a",
+      "start": 81.7,
+      "end": 82.92,
+      "duration": 1.22
+    },
+    {
+      "id": "voa-smoke-011",
+      "text": "This place is beautiful.",
+      "translation": "这个地方真漂亮。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-011.m4a",
+      "start": 111.14,
+      "end": 113.24,
+      "duration": 2.1
+    },
+    {
+      "id": "voa-smoke-012",
+      "text": "Firefighter Jones, Firefighter Hatcher: Can you tell me some ways to prepare for a fire emergency?",
+      "translation": "琼斯消防员、哈彻消防员：你们能告诉我一些应对火灾紧急情况的准备方法吗？",
+      "learnable": true,
+      "audio": "audio/voa-smoke-012.m4a",
+      "start": 117.52,
+      "end": 124.28,
+      "duration": 6.76
+    },
+    {
+      "id": "voa-smoke-013",
+      "text": "Test it monthly and make sure the batteries are fully charged.",
+      "translation": "每月测试一次，并确保电池充满电。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-013.m4a",
+      "start": 129.74,
+      "end": 132.4,
+      "duration": 2.66
+    },
+    {
+      "id": "voa-smoke-014",
+      "text": "Everyone should know how to use a fire extinguisher.",
+      "translation": "每个人都应该知道如何使用灭火器。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-014.m4a",
+      "start": 141.5,
+      "end": 143.6,
+      "duration": 2.1
+    },
+    {
+      "id": "voa-smoke-015",
+      "text": "Have one handy and practice using it.",
+      "translation": "手边备一个，并练习使用它。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-015.m4a",
+      "start": 143.98,
+      "end": 145.86,
+      "duration": 1.88
+    },
+    {
+      "id": "voa-smoke-016",
+      "text": "If I am in a building and it's on fire, should I use the elevator?",
+      "translation": "如果我在一栋着火的大楼里，我应该坐电梯吗？",
+      "learnable": true,
+      "audio": "audio/voa-smoke-016.m4a",
+      "start": 152.0,
+      "end": 156.75,
+      "duration": 4.75
+    },
+    {
+      "id": "voa-smoke-017",
+      "text": "No. Always use the stairs.",
+      "translation": "不。总是走楼梯。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-017.m4a",
+      "start": 156.78,
+      "end": 158.64,
+      "duration": 1.86
+    },
+    {
+      "id": "voa-smoke-018",
+      "text": "Stay low.",
+      "translation": "保持低姿势。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-018.m4a",
+      "start": 162.74,
+      "end": 163.66,
+      "duration": 0.92
+    },
+    {
+      "id": "voa-smoke-019",
+      "text": "If you touch a door and it's hot, don't open it. There might be a fire on the other side.",
+      "translation": "如果你摸一扇门，发现它很烫，不要打开。另一边可能有火。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-019.m4a",
+      "start": 169.7,
+      "end": 174.88,
+      "duration": 5.18
+    },
+    {
+      "id": "voa-smoke-020",
+      "text": "Do not run. If you run, the fire will burn faster. You must stop, drop and roll.",
+      "translation": "不要跑。如果你跑，火会烧得更快。你必须停下、倒地、翻滚。",
+      "learnable": true,
+      "audio": "audio/voa-smoke-020.m4a",
+      "start": 179.42,
+      "end": 185.88,
+      "duration": 6.46
+    }
+  ]
+}
