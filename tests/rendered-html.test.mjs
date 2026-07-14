@@ -324,6 +324,11 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);
   assert.match(page, /用户名只能使用英文字母/);
   assert.match(page, /placeholder="USERNAME"/);
+  assert.match(page, /const STARTUP_MAX_WAIT_MS = 650/);
+  assert.match(page, /new FormData\(event\.currentTarget\)\.get\("username"\)/);
+  assert.match(page, /onInput=\{\(event\) => \{ setUsernameInput\(event\.currentTarget\.value\)/);
+  assert.match(page, /正在恢复上次课程/);
+  assert.match(page, /正在同步学习进度/);
   assert.match(page, /const PENDING_PROGRESS_KEY = "word-loop-pending-progress"/);
   assert.match(page, /clientEventId: event\.id/);
   assert.match(page, /writePendingProgressEvents\(userId, studyMode, pendingProgressRef\.current\)/);

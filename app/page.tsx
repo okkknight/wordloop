@@ -21,6 +21,7 @@ const SCORING_TIMEOUT_MS = 6_000;
 const MIN_SPEECH_MS = 350;
 const MIN_SENTENCE_WORD_COVERAGE = 0.6;
 const SEGMENT_SETTLE_MS = 700;
+const STARTUP_MAX_WAIT_MS = 650;
 const USER_ID_KEY = "word-loop-user-id";
 const USERNAME_KEY = "word-loop-username";
 const PENDING_PROGRESS_KEY = "word-loop-pending-progress";
@@ -60,6 +61,7 @@ type PendingProgressEvent = {
   targetStudyCount?: number;
 };
 type TextVisibilityMode = "full" | "focus" | "hidden";
+type StartupState = "idle" | "restoring" | "syncing";
 type RepeatState =
   | "idle"
   | "connecting"
@@ -480,6 +482,7 @@ export default function Home() {
   const [activeUserId, setActiveUserId] = useState("");
   const [usernameInput, setUsernameInput] = useState("");
   const [usernameError, setUsernameError] = useState("");
+  const [startupState, setStartupState] = useState<StartupState>("idle");
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const studyAudioSourceRef = useRef("");
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -788,6 +791,7 @@ export default function Home() {
       userIdRef.current = activeUserId;
       const locallyRememberedCourseId = localStorage.getItem(`word-loop-last-course:${activeUserId}`);
       if (!activatedRef.current && courseSwitchRequestRef.current === 0 && locallyRememberedCourseId && COURSE_PACKAGES.some((course) => course.id === locallyRememberedCourseId) && locallyRememberedCourseId !== activeCourseIdRef.current) {
+        if (pendingActivationRef.current) setStartupState("restoring");
         restoreRecentCourse(locallyRememberedCourseId);
         return;
       }
@@ -835,8 +839,9 @@ export default function Home() {
         pendingActivationRef.current = false;
         activateRef.current();
       };
+      if (pendingActivationRef.current) setStartupState("syncing");
       activationTimeout = pendingActivationRef.current
-        ? window.setTimeout(activatePendingSession, 1_200)
+        ? window.setTimeout(activatePendingSession, STARTUP_MAX_WAIT_MS)
         : null;
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
@@ -1443,8 +1448,9 @@ export default function Home() {
     activateRef.current = activate;
   }, [activate]);
 
-  const startWithIdentity = useCallback(() => {
-    const username = usernameInput.trim();
+  const startWithIdentity = useCallback((inputValue: string) => {
+    if (pendingActivationRef.current) return;
+    const username = inputValue.trim();
     if (username && !/^[A-Za-z]+$/.test(username)) {
       setUsernameError("用户名只能使用英文字母");
       return;
@@ -1459,13 +1465,15 @@ export default function Home() {
     setProgress({});
     setSentenceProgress({});
     setUsernameError("");
+    setUsernameInput(username);
+    setStartupState("restoring");
     if (activeUserId === userId) {
       activate();
       return;
     }
     pendingActivationRef.current = true;
     setActiveUserId(userId);
-  }, [activate, activeUserId, usernameInput]);
+  }, [activate, activeUserId]);
 
   const handleModeChange = useCallback((nextMode: StudyMode) => {
     if (nextMode === studyMode) return;
@@ -1729,12 +1737,18 @@ export default function Home() {
           <form
             className="start-form"
             onClick={(event) => event.stopPropagation()}
-            onSubmit={(event) => { event.preventDefault(); event.stopPropagation(); startWithIdentity(); }}
+            onSubmit={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              startWithIdentity(String(new FormData(event.currentTarget).get("username") ?? ""));
+            }}
           >
             <input
               id="username"
+              name="username"
               value={usernameInput}
               onChange={(event) => { setUsernameInput(event.target.value); setUsernameError(""); }}
+              onInput={(event) => { setUsernameInput(event.currentTarget.value); setUsernameError(""); }}
               placeholder="USERNAME"
               autoComplete="username"
               autoCapitalize="none"
@@ -1744,12 +1758,14 @@ export default function Home() {
               aria-describedby={usernameError ? "username-error" : undefined}
             />
             {usernameError && <p id="username-error" className="username-error">{usernameError}</p>}
-            <button type="submit">
+            <button type="submit" disabled={startupState !== "idle"} aria-busy={startupState !== "idle"}>
               <span className="start-icon" aria-hidden="true">▶</span>
-              START
+              {startupState === "idle" ? "START" : startupState === "restoring" ? "PREPARING…" : "SYNCING…"}
             </button>
           </form>
-          {studyMode !== "repeat" && <p>{activeCourse.description}</p>}
+          {startupState !== "idle"
+            ? <p aria-live="polite">{startupState === "restoring" ? "正在恢复上次课程" : "正在同步学习进度"}</p>
+            : studyMode !== "repeat" && <p>{activeCourse.description}</p>}
         </div>
       )}
 

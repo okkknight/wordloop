@@ -191,6 +191,7 @@ button { font: inherit; }
 }
 .start-form button:hover, .start-form button:focus-visible { color: var(--bg); border-color: var(--ink); background: var(--ink); outline: 0; transform: translateY(-2px); }
 .start-form button:active { transform: translateY(0) scale(.98); }
+.start-form button:disabled { cursor: progress; opacity: .72; transform: none; }
 .start-form button .start-icon { font-size: 12px; }
 .start-form .username-error { position: absolute; top: calc(100% + 7px); left: 0; color: var(--accent); opacity: 1; font-size: 9px; }
 @keyframes start-form-in { from { opacity: 0; transform: translateY(10px); } }
