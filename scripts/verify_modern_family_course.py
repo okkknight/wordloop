@@ -32,7 +32,8 @@ def main() -> None:
     if not learnable_ids.issubset(aligned):
         raise SystemExit("a learnable entry is missing from the alignment report")
     manually_removed = set(aligned) - learnable_ids
-    if any("manual-low-value" not in entry_by_id[entry_id].get("reviewReasons", []) for entry_id in manually_removed):
+    manual_reasons = {"manual-low-value", "below-a2"}
+    if any(not manual_reasons.intersection(entry_by_id[entry_id].get("reviewReasons", [])) for entry_id in manually_removed):
         raise SystemExit("an aligned entry was removed without a manual review reason")
     if report.get("alignedRatio", 0) < report["minimumAlignedRatio"]:
         raise SystemExit("course source did not meet the required alignment ratio")

@@ -14,10 +14,20 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--audio-dir", type=Path, required=True)
     parser.add_argument("--exclusions", type=Path, required=True)
+    parser.add_argument(
+        "--exclusion-key",
+        help="Catalog key to apply; defaults to the manifest course ID.",
+    )
+    parser.add_argument(
+        "--reason",
+        default="manual-low-value",
+        help="Review reason recorded on every excluded entry.",
+    )
     args = parser.parse_args()
 
     manifest = json.loads(args.manifest.read_text())
-    exclusions = json.loads(args.exclusions.read_text()).get(manifest["courseId"], [])
+    exclusion_key = args.exclusion_key or manifest["courseId"]
+    exclusions = json.loads(args.exclusions.read_text()).get(exclusion_key, [])
     ids = {entry["id"] for entry in manifest["entries"]}
     unknown = sorted(set(exclusions) - ids)
     if unknown:
@@ -30,8 +40,8 @@ def main() -> None:
         entry["learnable"] = False
         entry.pop("audio", None)
         reasons = entry.setdefault("reviewReasons", [])
-        if "manual-low-value" not in reasons:
-            reasons.append("manual-low-value")
+        if args.reason not in reasons:
+            reasons.append(args.reason)
         removed += 1
 
     staging = args.audio_dir.parent / f".{args.audio_dir.name}-reviewed"

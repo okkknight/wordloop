@@ -205,9 +205,10 @@
       "duration": 1.08,
       "text": "People know you're a girl.",
       "translation": "大家知道你是女生",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0016.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0017",
@@ -515,9 +516,10 @@
       "duration": 1.96,
       "text": "I come from a small village.",
       "translation": "我来自一个小山村",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0040.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0041",
@@ -800,9 +802,10 @@
       "duration": 1.04,
       "text": "Who's that?",
       "translation": "是谁啊",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0062.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0063",
@@ -1081,9 +1084,10 @@
       "duration": 1.18,
       "text": "You're right, you're right. Okay. I'm sorry.",
       "translation": "好吧 你说得对 我错了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0084.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0085",
@@ -1876,9 +1880,10 @@
       "duration": 1.28,
       "text": "I can't shoot him at 2:00.",
       "translation": "两点不行",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0145.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0146",
@@ -1991,9 +1996,10 @@
       "duration": 1.72,
       "text": "No, you're not quitting.",
       "translation": "不 你不能放弃",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0154.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0155",
@@ -2029,9 +2035,10 @@
       "duration": 4.22,
       "text": "She is not a girl. She's a woman.",
       "translation": "她不是小姑娘 她是成熟的女人",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0157.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0158",
@@ -2159,9 +2166,10 @@
       "duration": 2.42,
       "text": "I wanna tell Brenda Feldman I love her.",
       "translation": "我要告诉布兰达·费德曼我爱她",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0167.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0168",
@@ -2338,9 +2346,10 @@
       "duration": 1.92,
       "text": "Oh, geez. He's picking flowers.",
       "translation": "我的妈呀 他居然去采野花了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0181.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0182",
@@ -3455,9 +3464,10 @@
       "duration": 1.08,
       "text": "Not really.",
       "translation": "不太懂",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0267.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0268",
@@ -3675,9 +3685,10 @@
       "duration": 1.02,
       "text": "Of course it is.",
       "translation": "不用想也知道",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0284.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0285",
@@ -3804,9 +3815,10 @@
       "duration": 1.26,
       "text": "Come on. We're in the mall.",
       "translation": "别这样 我们都到商场了",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0294.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0295",
@@ -4109,9 +4121,10 @@
       "duration": 3.56,
       "text": "Come on. Let's get a pretzel.",
       "translation": "来 我们买椒盐卷去",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0318.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0319",
@@ -4637,9 +4650,10 @@
       "duration": 3.1,
       "text": "Oh, forget it. I can't do this.",
       "translation": "算了 我下不了手",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0359.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0360",
@@ -4661,9 +4675,10 @@
       "duration": 2.68,
       "text": "Mom! What are you doing?",
       "translation": "妈 你干什么啊",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0361.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0362",
@@ -5072,9 +5087,10 @@
       "duration": 1.64,
       "text": "Okay. You can do this.",
       "translation": "听话 你能做到的",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0393.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0394",
@@ -5507,9 +5523,10 @@
       "duration": 2.4,
       "text": "I mean if you two guys are bored, get a dog.",
       "translation": "如果你们俩无聊了 可以养条狗",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0426.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0427",
@@ -5519,9 +5536,10 @@
       "duration": 1.86,
       "text": "Okay, we're not bored, Dad.",
       "translation": "我们不是闲得无聊 爸",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0427.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0428",
@@ -5722,9 +5740,10 @@
       "duration": 0.76,
       "text": "No, no, no. Stop. Stop. No.",
       "translation": "不是的 打住 打住",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0443.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0444",
@@ -5773,9 +5792,10 @@
       "duration": 1.12,
       "text": "Her name is Lily.",
       "translation": "她名叫莉莉",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0447.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0448",
@@ -5823,9 +5843,10 @@
       "duration": 1.48,
       "text": "Come say hi to Lily.",
       "translation": "来和莉莉打招呼吧",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0451.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0452",
@@ -5988,9 +6009,10 @@
       "duration": 1.24,
       "text": "Of course you did.",
       "translation": "意料之中",
-      "learnable": true,
-      "reviewReasons": [],
-      "audio": "audio/s01e01-0464.m4a"
+      "learnable": false,
+      "reviewReasons": [
+        "below-a2"
+      ]
     },
     {
       "id": "s01e01-0465",
