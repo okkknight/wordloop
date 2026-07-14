@@ -1,0 +1,33 @@
+{
+  "courseId": "modern-family-s01",
+  "episode": "S01E05",
+  "method": "manual sentence-by-sentence review after audio alignment",
+  "minimumLevel": "A2",
+  "criteria": [
+    "Keep complete, natural English that is reusable outside this episode.",
+    "Exclude basic A1 identity statements, single responses, and simple directives.",
+    "Exclude plot-dependent jokes, character-specific exchanges, sports commentary, fragments, and culture-bound references."
+  ],
+  "modern-family-s01e05": {
+    "reviewedRetained": [
+      "s01e05-0003", "s01e05-0006", "s01e05-0011", "s01e05-0015", "s01e05-0018",
+      "s01e05-0020", "s01e05-0021", "s01e05-0022", "s01e05-0028", "s01e05-0035",
+      "s01e05-0049", "s01e05-0073", "s01e05-0078", "s01e05-0080", "s01e05-0091",
+      "s01e05-0110", "s01e05-0114", "s01e05-0118", "s01e05-0121", "s01e05-0135",
+      "s01e05-0137", "s01e05-0138", "s01e05-0139", "s01e05-0140", "s01e05-0142",
+      "s01e05-0143", "s01e05-0144", "s01e05-0145", "s01e05-0147", "s01e05-0160",
+      "s01e05-0161", "s01e05-0164", "s01e05-0165", "s01e05-0172", "s01e05-0188",
+      "s01e05-0203", "s01e05-0206", "s01e05-0211", "s01e05-0214", "s01e05-0227",
+      "s01e05-0237", "s01e05-0259", "s01e05-0261", "s01e05-0262", "s01e05-0263",
+      "s01e05-0265", "s01e05-0268", "s01e05-0273", "s01e05-0277", "s01e05-0279",
+      "s01e05-0280", "s01e05-0282", "s01e05-0285", "s01e05-0287", "s01e05-0288",
+      "s01e05-0304", "s01e05-0308", "s01e05-0316", "s01e05-0318", "s01e05-0319",
+      "s01e05-0338", "s01e05-0349", "s01e05-0352", "s01e05-0354", "s01e05-0358",
+      "s01e05-0359", "s01e05-0370", "s01e05-0374", "s01e05-0375", "s01e05-0383",
+      "s01e05-0384", "s01e05-0385", "s01e05-0390", "s01e05-0401", "s01e05-0414",
+      "s01e05-0418", "s01e05-0446", "s01e05-0449", "s01e05-0455", "s01e05-0456",
+      "s01e05-0464", "s01e05-0465", "s01e05-0467", "s01e05-0473", "s01e05-0484",
+      "s01e05-0487", "s01e05-0503", "s01e05-0511"
+    ]
+  }
+}

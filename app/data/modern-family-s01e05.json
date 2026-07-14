@@ -1,0 +1,6661 @@
+{
+  "courseId": "modern-family-s01e05",
+  "episode": "S01E05",
+  "sourceAudio": "modernfamily/S01E05. .mp3",
+  "sourceSubtitle": "modernfamily/season-01-subtitles/Modern Family S01E05 Coal Digger.简英.ass",
+  "entries": [
+    {
+      "id": "s01e05-0001",
+      "episode": "S01E05",
+      "start": 4.14,
+      "end": 6.18,
+      "duration": 2.04,
+      "text": "Let's go, buddy. Schooltime.",
+      "translation": "走吧 伙计 该上学了",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0002",
+      "episode": "S01E05",
+      "start": 6.45,
+      "end": 9.4,
+      "duration": 2.95,
+      "text": "Oh, and Gloria, if you want to get together with the girls later,",
+      "translation": "歌洛莉亚 如果你待会和你闺蜜有约",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0003",
+      "episode": "S01E05",
+      "start": 9.26,
+      "end": 12.12,
+      "duration": 2.86,
+      "text": "I could just, you know, watch the football game or something.",
+      "translation": "我可以自己看看橄榄球赛什么的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0003.m4a"
+    },
+    {
+      "id": "s01e05-0004",
+      "episode": "S01E05",
+      "start": 11.96,
+      "end": 14.3,
+      "duration": 2.34,
+      "text": "That means he wants to watch a football game.",
+      "translation": "其实他就是想看橄榄球赛",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0005",
+      "episode": "S01E05",
+      "start": 14.04,
+      "end": 15.62,
+      "duration": 1.58,
+      "text": "I'm not talking to you.",
+      "translation": "我不是和你说话",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0006",
+      "episode": "S01E05",
+      "start": 16.26,
+      "end": 18.6,
+      "duration": 2.34,
+      "text": "What are you drinking coffee for anyway?",
+      "translation": "你为什么要喝咖啡",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0006.m4a"
+    },
+    {
+      "id": "s01e05-0007",
+      "episode": "S01E05",
+      "start": 18.68,
+      "end": 20.84,
+      "duration": 2.16,
+      "text": "It's my culture. I'm Colombian.",
+      "translation": "这是我的文化习俗 我是哥伦比亚人",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0008",
+      "episode": "S01E05",
+      "start": 20.92,
+      "end": 22.46,
+      "duration": 1.54,
+      "text": "Oh, yeah? What part of Colombia",
+      "translation": "是吗 这些法式吐司",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0009",
+      "episode": "S01E05",
+      "start": 22.46,
+      "end": 24.66,
+      "duration": 2.2,
+      "text": "are those French toaster sticks from?",
+      "translation": "也是哥伦比亚的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0010",
+      "episode": "S01E05",
+      "start": 24.56,
+      "end": 26.5,
+      "duration": 1.94,
+      "text": "Babe, I'm not sure about the game.",
+      "translation": "亲爱的 我不太确定你今天能看比赛",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0011",
+      "episode": "S01E05",
+      "start": 26.26,
+      "end": 28.4,
+      "duration": 2.14,
+      "text": "The whole family's coming over for the barbecue.",
+      "translation": "因为全家人都要过来烧烤",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0011.m4a"
+    },
+    {
+      "id": "s01e05-0012",
+      "episode": "S01E05",
+      "start": 28.6,
+      "end": 30.07,
+      "duration": 1.47,
+      "text": "- That's today? - See.",
+      "translation": "-是今天吗 -没错",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0013",
+      "episode": "S01E05",
+      "start": 31.36,
+      "end": 32.5,
+      "duration": 1.14,
+      "text": "It's the Ohio State game.",
+      "translation": "今天可是俄亥俄州赛",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0014",
+      "episode": "S01E05",
+      "start": 32.72,
+      "end": 34.36,
+      "duration": 1.64,
+      "text": "So? Everybody can watch.",
+      "translation": "那又怎样 每个人都能看",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0015",
+      "episode": "S01E05",
+      "start": 34.28,
+      "end": 37.1,
+      "duration": 2.82,
+      "text": "I don't like watching the game with people who don't know the game.",
+      "translation": "我不喜欢和不懂球的人一起看比赛",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0015.m4a"
+    },
+    {
+      "id": "s01e05-0016",
+      "episode": "S01E05",
+      "start": 37.03,
+      "end": 37.7,
+      "duration": 0.67,
+      "text": "People talk.",
+      "translation": "七嘴八舌乱指点",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0017",
+      "episode": "S01E05",
+      "start": 37.7,
+      "end": 39.37,
+      "duration": 1.67,
+      "text": "You talk at my football games.",
+      "translation": "你也会乱指点我的橄榄球比赛",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0018",
+      "episode": "S01E05",
+      "start": 39.24,
+      "end": 40.72,
+      "duration": 1.48,
+      "text": "For one thing, it's called soccer.",
+      "translation": "首先 你那个是足球",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0018.m4a"
+    },
+    {
+      "id": "s01e05-0019",
+      "episode": "S01E05",
+      "start": 40.86,
+      "end": 43.08,
+      "duration": 2.22,
+      "text": "Your team scored two goals all season.",
+      "translation": "而且你们队整个赛季只得了两分",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0020",
+      "episode": "S01E05",
+      "start": 42.88,
+      "end": 44.32,
+      "duration": 1.44,
+      "text": "I'm not taking a big risk.",
+      "translation": "我随便说也不会冒风险",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0020.m4a"
+    },
+    {
+      "id": "s01e05-0021",
+      "episode": "S01E05",
+      "start": 45.9,
+      "end": 47.6,
+      "duration": 1.7,
+      "text": "How much of this did you drink?",
+      "translation": "你到底喝了多少啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0021.m4a"
+    },
+    {
+      "id": "s01e05-0022",
+      "episode": "S01E05",
+      "start": 47.66,
+      "end": 50.52,
+      "duration": 2.86,
+      "text": "Give me a break. I have to climb a rope today.",
+      "translation": "饶了我吧 我今天得去攀绳呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0022.m4a"
+    },
+    {
+      "id": "s01e05-0023",
+      "episode": "S01E05",
+      "start": 52.96,
+      "end": 54.49,
+      "duration": 1.53,
+      "text": "- Hey, Mom. - Yeah?",
+      "translation": "-妈妈 -怎么了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0024",
+      "episode": "S01E05",
+      "start": 55.14,
+      "end": 57.22,
+      "duration": 2.08,
+      "text": "Can I have $40 for lunch?",
+      "translation": "能给我40块钱吃午饭吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0025",
+      "episode": "S01E05",
+      "start": 57.82,
+      "end": 58.92,
+      "duration": 1.1,
+      "text": "Forty dollars?",
+      "translation": "40块",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0026",
+      "episode": "S01E05",
+      "start": 58.92,
+      "end": 61.78,
+      "duration": 2.86,
+      "text": "- I also need a book for school. - What book?",
+      "translation": "-学校还让我们买本书 -什么书",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0027",
+      "episode": "S01E05",
+      "start": 63.0,
+      "end": 64.07,
+      "duration": 1.07,
+      "text": "I want a dress.",
+      "translation": "我想买条裙子",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0028",
+      "episode": "S01E05",
+      "start": 64.54,
+      "end": 67.14,
+      "duration": 2.6,
+      "text": "Do you have any idea what a bad liar you are?",
+      "translation": "你知道你撒谎撒得多失败吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0028.m4a"
+    },
+    {
+      "id": "s01e05-0029",
+      "episode": "S01E05",
+      "start": 67.42,
+      "end": 68.51,
+      "duration": 1.09,
+      "text": "I'd be more worried that",
+      "translation": "我更担心的是",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0030",
+      "episode": "S01E05",
+      "start": 68.51,
+      "end": 70.33,
+      "duration": 1.82,
+      "text": "she couldn't come up with a single book title.",
+      "translation": "她连一本书的名字都想不出来",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0031",
+      "episode": "S01E05",
+      "start": 70.9,
+      "end": 72.16,
+      "duration": 1.26,
+      "text": "Luke, come on. We're late.",
+      "translation": "卢克 快点 我们要迟到了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0032",
+      "episode": "S01E05",
+      "start": 73.0,
+      "end": 76.08,
+      "duration": 3.08,
+      "text": "Mmm, there's a first- inside out and backwards.",
+      "translation": "这是第一次里外前后全都穿反了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0033",
+      "episode": "S01E05",
+      "start": 76.08,
+      "end": 77.9,
+      "duration": 1.82,
+      "text": "At least it isn't zipped into his...",
+      "translation": "至少他没把衣服塞进...",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0034",
+      "episode": "S01E05",
+      "start": 77.9,
+      "end": 79.8,
+      "duration": 1.9,
+      "text": "Oh. There it is.",
+      "translation": "好吧 真塞进去了",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0035",
+      "episode": "S01E05",
+      "start": 79.9,
+      "end": 83.24,
+      "duration": 3.34,
+      "text": "Well, there's book smart, and then there's street smart.",
+      "translation": "有人是\"读书大智慧\" 也有人是\"市井小聪明\"",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0035.m4a"
+    },
+    {
+      "id": "s01e05-0036",
+      "episode": "S01E05",
+      "start": 83.0,
+      "end": 84.58,
+      "duration": 1.58,
+      "text": "Yeah, and then there's Luke.",
+      "translation": "没错 卢克属于第三类怪胎",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0037",
+      "episode": "S01E05",
+      "start": 84.4,
+      "end": 87.66,
+      "duration": 3.26,
+      "text": "Oh, he's just... He's just curious. That's all.",
+      "translation": "他只是 他只是好奇心重 仅此而已",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0038",
+      "episode": "S01E05",
+      "start": 87.81,
+      "end": 91.06,
+      "duration": 3.25,
+      "text": "He's got this almost scientific mind...",
+      "translation": "他有着科学家的头脑",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0039",
+      "episode": "S01E05",
+      "start": 91.06,
+      "end": 93.96,
+      "duration": 2.9,
+      "text": "with a thirst for knowledge.",
+      "translation": "以及对知识的渴望",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0040",
+      "episode": "S01E05",
+      "start": 94.32,
+      "end": 96.64,
+      "duration": 2.32,
+      "text": "He's like this little Einstein.",
+      "translation": "他像小爱因斯坦一样",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0041",
+      "episode": "S01E05",
+      "start": 96.84,
+      "end": 99.52,
+      "duration": 2.68,
+      "text": "Some people ask, \"Why?\"",
+      "translation": "有些人会问\"为什么\"",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0042",
+      "episode": "S01E05",
+      "start": 100.02,
+      "end": 102.58,
+      "duration": 2.56,
+      "text": "Luke asks, \"Why not?\"",
+      "translation": "但卢克会问\"为什么不呢\"",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0043",
+      "episode": "S01E05",
+      "start": 103.3,
+      "end": 105.16,
+      "duration": 1.86,
+      "text": "I ask \"Why?\" a lot.",
+      "translation": "我经常问\"为什么\"",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0044",
+      "episode": "S01E05",
+      "start": 107.23,
+      "end": 110.43,
+      "duration": 3.2,
+      "text": "We're at the ten. We're at the five.",
+      "translation": "我们在十码区 现在是五码区",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0045",
+      "episode": "S01E05",
+      "start": 110.34,
+      "end": 113.02,
+      "duration": 2.68,
+      "text": "We're at the one. Daddy, we're scoring a touchdown!",
+      "translation": "到达一码 爸爸 我们触地得分啦",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0046",
+      "episode": "S01E05",
+      "start": 113.14,
+      "end": 114.89,
+      "duration": 1.75,
+      "text": "No, please... please don't spike our baby.",
+      "translation": "别 小心别弄伤孩子了",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0047",
+      "episode": "S01E05",
+      "start": 116.36,
+      "end": 117.86,
+      "duration": 1.5,
+      "text": "Why is she dressed like the Hamburglar?",
+      "translation": "为什么她穿得像汉堡神偷公仔",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0048",
+      "episode": "S01E05",
+      "start": 117.83,
+      "end": 119.67,
+      "duration": 1.84,
+      "text": "She's a referee.",
+      "translation": "她是裁判",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0049",
+      "episode": "S01E05",
+      "start": 119.32,
+      "end": 121.98,
+      "duration": 2.66,
+      "text": "Do... Do we even have to go to my dad's tonight?",
+      "translation": "我们今晚一定要去我爸那里吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0049.m4a"
+    },
+    {
+      "id": "s01e05-0050",
+      "episode": "S01E05",
+      "start": 121.76,
+      "end": 124.3,
+      "duration": 2.54,
+      "text": "Are you kidding me? We're playing Ohio State.",
+      "translation": "你在开玩笑吗 今晚是俄亥俄州赛",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0051",
+      "episode": "S01E05",
+      "start": 124.34,
+      "end": 126.08,
+      "duration": 1.74,
+      "text": "I collect antique fountain pens.",
+      "translation": "我收集古董钢笔",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0052",
+      "episode": "S01E05",
+      "start": 126.02,
+      "end": 128.66,
+      "duration": 2.64,
+      "text": "I'm quite adept at Japanese flower arrangement-",
+      "translation": "我很擅长日式插花技术",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0053",
+      "episode": "S01E05",
+      "start": 128.66,
+      "end": 129.98,
+      "duration": 1.32,
+      "text": "ikebana-",
+      "translation": "\"花道\"",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0054",
+      "episode": "S01E05",
+      "start": 130.51,
+      "end": 133.23,
+      "duration": 2.72,
+      "text": "and I was a starting offensive lineman at the University of Illinois.",
+      "translation": "而且我曾是伊利诺伊大学的首发进攻内锋",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0055",
+      "episode": "S01E05",
+      "start": 134.29,
+      "end": 135.39,
+      "duration": 1.1,
+      "text": "Surprise.",
+      "translation": "惊讶吧",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0056",
+      "episode": "S01E05",
+      "start": 135.52,
+      "end": 137.3,
+      "duration": 1.78,
+      "text": "- I don't like football. - You know what?",
+      "translation": "-我不喜欢橄榄球 -你知道吗",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0057",
+      "episode": "S01E05",
+      "start": 137.3,
+      "end": 139.22,
+      "duration": 1.92,
+      "text": "I thought part of being in a relationship...",
+      "translation": "我认为维持恋情的一方面",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0058",
+      "episode": "S01E05",
+      "start": 139.22,
+      "end": 141.07,
+      "duration": 1.85,
+      "text": "was pretending to enjoy your partner's interests.",
+      "translation": "就是要爱屋及乌",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0059",
+      "episode": "S01E05",
+      "start": 140.88,
+      "end": 144.2,
+      "duration": 3.32,
+      "text": "Do you think I really loved home pickle-making?",
+      "translation": "你以为我真的喜欢做腌菜吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0060",
+      "episode": "S01E05",
+      "start": 144.23,
+      "end": 145.6,
+      "duration": 1.37,
+      "text": "Yeah, 'cause you did.",
+      "translation": "是的 因为你确实喜欢",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0061",
+      "episode": "S01E05",
+      "start": 145.6,
+      "end": 146.48,
+      "duration": 0.88,
+      "text": "For a week,",
+      "translation": "就喜欢一周",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0062",
+      "episode": "S01E05",
+      "start": 146.48,
+      "end": 148.91,
+      "duration": 2.43,
+      "text": "until we became the weird guys who gave everybody pickles.",
+      "translation": "到后来别人都以为我们是到处送腌菜的怪胎",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0063",
+      "episode": "S01E05",
+      "start": 148.74,
+      "end": 151.88,
+      "duration": 3.14,
+      "text": "Oh, thank you, Marvin, for inviting us into your lovely home.",
+      "translation": "马文 谢谢邀请我们到你温馨的家来",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0064",
+      "episode": "S01E05",
+      "start": 151.64,
+      "end": 153.64,
+      "duration": 2.0,
+      "text": "Here. Would you care for a sack of pickles?",
+      "translation": "给你 请收下这包腌菜",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0065",
+      "episode": "S01E05",
+      "start": 153.62,
+      "end": 154.37,
+      "duration": 0.75,
+      "text": "It was charming.",
+      "translation": "你真可爱",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0066",
+      "episode": "S01E05",
+      "start": 154.66,
+      "end": 156.08,
+      "duration": 1.42,
+      "text": "We were picklers, Mitchell.",
+      "translation": "我们是腌菜工 米奇尔",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0067",
+      "episode": "S01E05",
+      "start": 156.76,
+      "end": 157.94,
+      "duration": 1.18,
+      "text": "Okay, you know what? Fine.",
+      "translation": "好吧 那就算了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0068",
+      "episode": "S01E05",
+      "start": 158.06,
+      "end": 159.62,
+      "duration": 1.56,
+      "text": "Stay home with your little jagged scissors.",
+      "translation": "和你的小剪刀待在家里吧",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0069",
+      "episode": "S01E05",
+      "start": 159.62,
+      "end": 161.3,
+      "duration": 1.68,
+      "text": "Maybe catch up on your scrapbooking.",
+      "translation": "你可以继续弄你的剪贴簿",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0070",
+      "episode": "S01E05",
+      "start": 161.76,
+      "end": 163.37,
+      "duration": 1.61,
+      "text": "Come... You loved scrapbooking.",
+      "translation": "拜托 你也喜欢剪贴簿啊",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0071",
+      "episode": "S01E05",
+      "start": 163.38,
+      "end": 165.64,
+      "duration": 2.26,
+      "text": "Did I, Mitchell? Did I?",
+      "translation": "我有吗 米奇尔 我有吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0072",
+      "episode": "S01E05",
+      "start": 165.54,
+      "end": 168.24,
+      "duration": 2.7,
+      "text": "Stop. Don't do the \"Double question to prove a point\" thing.",
+      "translation": "够了 别以为搞个双重反问就是真的了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0073",
+      "episode": "S01E05",
+      "start": 167.94,
+      "end": 169.54,
+      "duration": 1.6,
+      "text": "I hate it when people do that.",
+      "translation": "我讨厌别人那么做",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0073.m4a"
+    },
+    {
+      "id": "s01e05-0074",
+      "episode": "S01E05",
+      "start": 169.24,
+      "end": 171.58,
+      "duration": 2.34,
+      "text": "Do you, Mitchell? Do you?",
+      "translation": "是吗 米奇尔 是吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0075",
+      "episode": "S01E05",
+      "start": 171.74,
+      "end": 172.88,
+      "duration": 1.14,
+      "text": "Stop, Lily.",
+      "translation": "别闹了 莉莉",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0076",
+      "episode": "S01E05",
+      "start": 187.8,
+      "end": 190.66,
+      "duration": 2.86,
+      "text": "No problem. We'll be right down. Thanks.",
+      "translation": "没问题 我们马上过来 谢谢",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0077",
+      "episode": "S01E05",
+      "start": 196.44,
+      "end": 197.66,
+      "duration": 1.22,
+      "text": "Hey, honey. What's up?",
+      "translation": "亲爱的 怎么了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0078",
+      "episode": "S01E05",
+      "start": 198.34,
+      "end": 201.12,
+      "duration": 2.78,
+      "text": "The school just called. Luke got in a fight.",
+      "translation": "学校刚刚来电话了 卢克打架了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0078.m4a"
+    },
+    {
+      "id": "s01e05-0079",
+      "episode": "S01E05",
+      "start": 201.26,
+      "end": 203.08,
+      "duration": 1.82,
+      "text": "Oh, geez. Is he okay?",
+      "translation": "天呐 他还好吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0080",
+      "episode": "S01E05",
+      "start": 202.9,
+      "end": 205.84,
+      "duration": 2.94,
+      "text": "Yeah, he's fine, but they want us to come down there.",
+      "translation": "他没事 但老师想要我们去一趟",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0080.m4a"
+    },
+    {
+      "id": "s01e05-0081",
+      "episode": "S01E05",
+      "start": 206.13,
+      "end": 208.24,
+      "duration": 2.11,
+      "text": "- Where are you? - I'm showing a house.",
+      "translation": "-你在哪里 -我在带人看房子",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0082",
+      "episode": "S01E05",
+      "start": 208.24,
+      "end": 209.38,
+      "duration": 1.14,
+      "text": "What house?",
+      "translation": "什么房子",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0083",
+      "episode": "S01E05",
+      "start": 211.59,
+      "end": 212.64,
+      "duration": 1.05,
+      "text": "I'm golfing.",
+      "translation": "我在打高尔夫球",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0084",
+      "episode": "S01E05",
+      "start": 217.74,
+      "end": 219.27,
+      "duration": 1.53,
+      "text": "I bet it was that Durkas kid.",
+      "translation": "我猜是那个叫德卡斯的小孩",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0085",
+      "episode": "S01E05",
+      "start": 219.1,
+      "end": 220.28,
+      "duration": 1.18,
+      "text": "I hate that kid.",
+      "translation": "我讨厌那个小孩",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0086",
+      "episode": "S01E05",
+      "start": 220.12,
+      "end": 221.37,
+      "duration": 1.25,
+      "text": "He probably jumped on Luke",
+      "translation": "也许是他突然挑衅卢克",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0087",
+      "episode": "S01E05",
+      "start": 221.37,
+      "end": 222.82,
+      "duration": 1.45,
+      "text": "and Luke just fought back.",
+      "translation": "而卢克只是反抗而已",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0088",
+      "episode": "S01E05",
+      "start": 222.82,
+      "end": 225.34,
+      "duration": 2.52,
+      "text": "- Kid's a menace. - He made fun of my hair once.",
+      "translation": "-那小孩真讨厌 -他曾经取笑我的头发",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0089",
+      "episode": "S01E05",
+      "start": 225.34,
+      "end": 226.91,
+      "duration": 1.57,
+      "text": "Shh. The parents are probably in there.",
+      "translation": "嘘 他的家长可能在里面",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0090",
+      "episode": "S01E05",
+      "start": 227.18,
+      "end": 228.2,
+      "duration": 1.02,
+      "text": "I slept on it funny.",
+      "translation": "我只是睡觉把头发睡乱了",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0091",
+      "episode": "S01E05",
+      "start": 228.2,
+      "end": 229.52,
+      "duration": 1.32,
+      "text": "Like that never happened to him?",
+      "translation": "就好像他没有过一样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0091.m4a"
+    },
+    {
+      "id": "s01e05-0092",
+      "episode": "S01E05",
+      "start": 229.99,
+      "end": 230.93,
+      "duration": 0.94,
+      "text": "Come on.",
+      "translation": "走吧",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0093",
+      "episode": "S01E05",
+      "start": 232.52,
+      "end": 233.94,
+      "duration": 1.42,
+      "text": "What are you doing here?",
+      "translation": "你们在这里干嘛",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0094",
+      "episode": "S01E05",
+      "start": 233.8,
+      "end": 236.18,
+      "duration": 2.38,
+      "text": "These two knuckleheads were fighting each other.",
+      "translation": "这两个笨蛋在一起打架",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0095",
+      "episode": "S01E05",
+      "start": 235.95,
+      "end": 238.04,
+      "duration": 2.09,
+      "text": "- What? - Could've been worse.",
+      "translation": "-什么 -幸好是你啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0096",
+      "episode": "S01E05",
+      "start": 238.26,
+      "end": 240.92,
+      "duration": 2.66,
+      "text": "I was not ready to face Durkas today.",
+      "translation": "我还没准备好今天面对德卡斯",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0097",
+      "episode": "S01E05",
+      "start": 242.0,
+      "end": 242.65,
+      "duration": 0.65,
+      "text": "So what happened?",
+      "translation": "发生什么事了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0098",
+      "episode": "S01E05",
+      "start": 242.65,
+      "end": 245.11,
+      "duration": 2.46,
+      "text": "Well, apparently there was some name-calling",
+      "translation": "很明显 在操场上发生了骂人",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0099",
+      "episode": "S01E05",
+      "start": 245.11,
+      "end": 246.43,
+      "duration": 1.32,
+      "text": "and shoving on the playground.",
+      "translation": "和斗殴的事情",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0100",
+      "episode": "S01E05",
+      "start": 246.43,
+      "end": 248.23,
+      "duration": 1.8,
+      "text": "By the time a teacher separated them,",
+      "translation": "老师把他们分开的时候",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0101",
+      "episode": "S01E05",
+      "start": 248.32,
+      "end": 250.54,
+      "duration": 2.22,
+      "text": "Luke was sitting on Manny's chest.",
+      "translation": "卢克正坐在曼尼的胸上",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0102",
+      "episode": "S01E05",
+      "start": 250.53,
+      "end": 252.51,
+      "duration": 1.98,
+      "text": "- Luke, that's not like you. - Wait a minute.",
+      "translation": "-卢克 那可不像你啊 -等等",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0103",
+      "episode": "S01E05",
+      "start": 252.51,
+      "end": 254.53,
+      "duration": 2.02,
+      "text": "- You're Luke's father? - Grandfather.",
+      "translation": "-你是卢克的爸爸吗 -外公",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0104",
+      "episode": "S01E05",
+      "start": 254.53,
+      "end": 257.79,
+      "duration": 3.26,
+      "text": "- So Manny's father is... - Javier.",
+      "translation": "-那么曼尼的爸爸是 -哈维尔",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0105",
+      "episode": "S01E05",
+      "start": 257.86,
+      "end": 260.92,
+      "duration": 3.06,
+      "text": "Crazy guy. That's where he gets his fire.",
+      "translation": "一个疯子 就是从他身上遗传到的暴脾气",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0106",
+      "episode": "S01E05",
+      "start": 261.05,
+      "end": 263.07,
+      "duration": 2.02,
+      "text": "- Okay, you're... - He's our son.",
+      "translation": "-好吧 你是 -他是我们的儿子",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0107",
+      "episode": "S01E05",
+      "start": 263.07,
+      "end": 265.16,
+      "duration": 2.09,
+      "text": "- And my grandson. - I'm his daughter.",
+      "translation": "-我的外孙 -我是他女儿",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0108",
+      "episode": "S01E05",
+      "start": 265.32,
+      "end": 267.07,
+      "duration": 1.75,
+      "text": "- So you're... - His uncle.",
+      "translation": "-那么你是 -他小舅舅",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0109",
+      "episode": "S01E05",
+      "start": 267.24,
+      "end": 270.15,
+      "duration": 2.91,
+      "text": "Stop saying that or I'll sit on your chest again.",
+      "translation": "你要再敢这么说 我还会坐到你的胸上",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0110",
+      "episode": "S01E05",
+      "start": 270.62,
+      "end": 272.46,
+      "duration": 1.84,
+      "text": "Ho! Wait a second. Is that what this was all about?",
+      "translation": "等一下 打架就是因为这个吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0110.m4a"
+    },
+    {
+      "id": "s01e05-0111",
+      "episode": "S01E05",
+      "start": 272.3,
+      "end": 273.92,
+      "duration": 1.62,
+      "text": "He keeps calling me his nephew.",
+      "translation": "他一直说我是他的外甥",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0112",
+      "episode": "S01E05",
+      "start": 273.72,
+      "end": 274.92,
+      "duration": 1.2,
+      "text": "You are my nephew.",
+      "translation": "你就是我的外甥",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0113",
+      "episode": "S01E05",
+      "start": 274.82,
+      "end": 276.43,
+      "duration": 1.61,
+      "text": "- Shut up! - Okay, okay.",
+      "translation": "-闭嘴 -好了 好了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0114",
+      "episode": "S01E05",
+      "start": 276.56,
+      "end": 280.1,
+      "duration": 3.54,
+      "text": "I'm getting the sense that you're all related, uh, somehow.",
+      "translation": "我明白了 你们似乎是一家人",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0114.m4a"
+    },
+    {
+      "id": "s01e05-0115",
+      "episode": "S01E05",
+      "start": 280.47,
+      "end": 282.31,
+      "duration": 1.84,
+      "text": "So it's probably best if you work this out at home...",
+      "translation": "所以 也许你们最好能回家自己解决",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0116",
+      "episode": "S01E05",
+      "start": 282.31,
+      "end": 284.42,
+      "duration": 2.11,
+      "text": "so the boys can go back to class, okay?",
+      "translation": "这样孩子们就能回去上课了 好吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0117",
+      "episode": "S01E05",
+      "start": 284.94,
+      "end": 286.65,
+      "duration": 1.71,
+      "text": "But we're not happy about this, boys.",
+      "translation": "但是我们很生气你们这样 小伙子们",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0118",
+      "episode": "S01E05",
+      "start": 286.6,
+      "end": 289.42,
+      "duration": 2.82,
+      "text": "This is not how mature young men behave.",
+      "translation": "这不是成熟的年轻小伙的行为",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0118.m4a"
+    },
+    {
+      "id": "s01e05-0119",
+      "episode": "S01E05",
+      "start": 289.81,
+      "end": 291.38,
+      "duration": 1.57,
+      "text": "Here's your note for Miss Passwater.",
+      "translation": "把这便条给\"帕斯沃\"老师",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0120",
+      "episode": "S01E05",
+      "start": 290.12,
+      "end": 292.55,
+      "duration": 2.43,
+      "text": "[Passwater 意译为递水]",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "stage-direction",
+        "mixed-language-caption",
+        "too-short",
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0121",
+      "episode": "S01E05",
+      "start": 295.88,
+      "end": 298.18,
+      "duration": 2.3,
+      "text": "Look, I wouldn't worry. They're good kids.",
+      "translation": "我并不担心 他们都是好孩子",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0121.m4a"
+    },
+    {
+      "id": "s01e05-0122",
+      "episode": "S01E05",
+      "start": 298.48,
+      "end": 300.48,
+      "duration": 2.0,
+      "text": "It's just tough when one kid's a little different.",
+      "translation": "只是当某个孩子比较怪异时 会有点难处理",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0123",
+      "episode": "S01E05",
+      "start": 300.56,
+      "end": 302.24,
+      "duration": 1.68,
+      "text": "- Yes. - Yes.",
+      "translation": "-是的 -是的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "low-value-utterance",
+        "multiple-speakers",
+        "repetitive-utterance"
+      ]
+    },
+    {
+      "id": "s01e05-0124",
+      "episode": "S01E05",
+      "start": 303.76,
+      "end": 305.2,
+      "duration": 1.44,
+      "text": "You heard how she said that, right?",
+      "translation": "你听到她那么说了 对吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0125",
+      "episode": "S01E05",
+      "start": 305.83,
+      "end": 306.98,
+      "duration": 1.15,
+      "text": "\"Yes.\"",
+      "translation": "\"是的\"",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e05-0126",
+      "episode": "S01E05",
+      "start": 307.08,
+      "end": 310.1,
+      "duration": 3.02,
+      "text": "She thought Luke was the weird one. Luke.",
+      "translation": "她觉得卢克是怪异的那个 卢克",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0127",
+      "episode": "S01E05",
+      "start": 309.95,
+      "end": 312.75,
+      "duration": 2.8,
+      "text": "Her kid gets his head stuck in the furniture,",
+      "translation": "她家孩子把自己的头卡在家具里",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0128",
+      "episode": "S01E05",
+      "start": 312.75,
+      "end": 314.35,
+      "duration": 1.6,
+      "text": "and Manny is the different one.",
+      "translation": "还好意思说曼尼怪异",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0129",
+      "episode": "S01E05",
+      "start": 314.28,
+      "end": 315.42,
+      "duration": 1.14,
+      "text": "I will tell you what's weird.",
+      "translation": "我来告诉你什么怪异",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0130",
+      "episode": "S01E05",
+      "start": 315.2,
+      "end": 316.24,
+      "duration": 1.04,
+      "text": "Our son is not weird.",
+      "translation": "我们的孩子并不怪异",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0131",
+      "episode": "S01E05",
+      "start": 316.22,
+      "end": 317.84,
+      "duration": 1.62,
+      "text": "What's weird is that her kid wears aftershave",
+      "translation": "怪异的是她的孩子抹须后水",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0132",
+      "episode": "S01E05",
+      "start": 317.84,
+      "end": 319.32,
+      "duration": 1.48,
+      "text": "and dresses like a count.",
+      "translation": "而且打扮得像个伯爵",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0133",
+      "episode": "S01E05",
+      "start": 319.18,
+      "end": 321.44,
+      "duration": 2.26,
+      "text": "I think we should cancel with them for the barbecue.",
+      "translation": "我想我们别请他们过来烧烤了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0134",
+      "episode": "S01E05",
+      "start": 321.56,
+      "end": 324.54,
+      "duration": 2.98,
+      "text": "If we cancel, it'll just make this a bigger deal than it is.",
+      "translation": "如果我们不去 只会把问题越闹越大",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0135",
+      "episode": "S01E05",
+      "start": 324.46,
+      "end": 327.24,
+      "duration": 2.78,
+      "text": "It'll be good for Luke and Manny to spend some time.",
+      "translation": "让卢克和曼尼多相处一下对他们两个都好",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0135.m4a"
+    },
+    {
+      "id": "s01e05-0136",
+      "episode": "S01E05",
+      "start": 328.47,
+      "end": 330.96,
+      "duration": 2.49,
+      "text": "- Might be good for you and Gloria too. - Why?",
+      "translation": "-也许对你和歌洛莉亚也好 -为什么",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0137",
+      "episode": "S01E05",
+      "start": 330.86,
+      "end": 332.96,
+      "duration": 2.1,
+      "text": "She's always had a problem with me.",
+      "translation": "她一直对我有意见",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0137.m4a"
+    },
+    {
+      "id": "s01e05-0138",
+      "episode": "S01E05",
+      "start": 334.0,
+      "end": 336.06,
+      "duration": 2.06,
+      "text": "I think I'm gonna find out what it is.",
+      "translation": "我觉得我该找出是什么问题",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0138.m4a"
+    },
+    {
+      "id": "s01e05-0139",
+      "episode": "S01E05",
+      "start": 335.76,
+      "end": 337.48,
+      "duration": 1.72,
+      "text": "That's the worst thing you could do.",
+      "translation": "那是你最不该做的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0139.m4a"
+    },
+    {
+      "id": "s01e05-0140",
+      "episode": "S01E05",
+      "start": 337.5,
+      "end": 338.92,
+      "duration": 1.42,
+      "text": "Just sweep it under the rug.",
+      "translation": "就当没发生过 忍忍就过去了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0140.m4a"
+    },
+    {
+      "id": "s01e05-0141",
+      "episode": "S01E05",
+      "start": 339.29,
+      "end": 341.49,
+      "duration": 2.2,
+      "text": "- I'm not a sweeper. - Trust me on this.",
+      "translation": "-我可不是个\"忍者\" -听我的没错",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0142",
+      "episode": "S01E05",
+      "start": 341.46,
+      "end": 343.34,
+      "duration": 1.88,
+      "text": "I think you two need to talk it out.",
+      "translation": "我觉得你们俩得谈谈这件事",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0142.m4a"
+    },
+    {
+      "id": "s01e05-0143",
+      "episode": "S01E05",
+      "start": 343.3,
+      "end": 345.48,
+      "duration": 2.18,
+      "text": "I don't have anything to say to her.",
+      "translation": "我跟她没什么好说的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0143.m4a"
+    },
+    {
+      "id": "s01e05-0144",
+      "episode": "S01E05",
+      "start": 345.36,
+      "end": 347.36,
+      "duration": 2.0,
+      "text": "She's the one with the problem, not me.",
+      "translation": "她才是有问题的那个 不是我",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0144.m4a"
+    },
+    {
+      "id": "s01e05-0145",
+      "episode": "S01E05",
+      "start": 347.24,
+      "end": 348.66,
+      "duration": 1.42,
+      "text": "Whose side are you on?",
+      "translation": "你到底向着谁",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0145.m4a"
+    },
+    {
+      "id": "s01e05-0146",
+      "episode": "S01E05",
+      "start": 348.38,
+      "end": 350.68,
+      "duration": 2.3,
+      "text": "She's my daughter. You're my wife.",
+      "translation": "她是我的女儿 你是我的妻子",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0147",
+      "episode": "S01E05",
+      "start": 350.98,
+      "end": 352.92,
+      "duration": 1.94,
+      "text": "Let's remember what's important here.",
+      "translation": "让我们先理清重点",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0147.m4a"
+    },
+    {
+      "id": "s01e05-0148",
+      "episode": "S01E05",
+      "start": 353.54,
+      "end": 355.02,
+      "duration": 1.48,
+      "text": "There's a football game on.",
+      "translation": "橄榄球赛马上就开始了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0149",
+      "episode": "S01E05",
+      "start": 355.36,
+      "end": 357.84,
+      "duration": 2.48,
+      "text": "I just hate it when my two girls aren't getting along.",
+      "translation": "我只是不想我的两个女孩相处得不好",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0150",
+      "episode": "S01E05",
+      "start": 359.1,
+      "end": 361.14,
+      "duration": 2.04,
+      "text": "How exactly is she your girl?",
+      "translation": "她怎么成你的女孩了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0151",
+      "episode": "S01E05",
+      "start": 366.94,
+      "end": 368.86,
+      "duration": 1.92,
+      "text": "I got a few things for the party.",
+      "translation": "我为聚会准备了一点东西",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0152",
+      "episode": "S01E05",
+      "start": 368.86,
+      "end": 369.9,
+      "duration": 1.04,
+      "text": "Is Lily ready to go?",
+      "translation": "莉莉准备好要走了吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0153",
+      "episode": "S01E05",
+      "start": 370.4,
+      "end": 372.4,
+      "duration": 2.0,
+      "text": "Oh, yeah, yeah. She's ready.",
+      "translation": "是的 她准备好了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0154",
+      "episode": "S01E05",
+      "start": 373.4,
+      "end": 374.34,
+      "duration": 0.94,
+      "text": "What's wrong?",
+      "translation": "怎么了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0155",
+      "episode": "S01E05",
+      "start": 374.57,
+      "end": 377.29,
+      "duration": 2.72,
+      "text": "我真的很担心C·J·海托 I'm just really worried about C.J. Hightower.",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "mixed-language-caption"
+      ]
+    },
+    {
+      "id": "s01e05-0156",
+      "episode": "S01E05",
+      "start": 377.29,
+      "end": 378.67,
+      "duration": 1.38,
+      "text": "With the bad ankle,",
+      "translation": "他脚踝受伤了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0157",
+      "episode": "S01E05",
+      "start": 378.32,
+      "end": 380.6,
+      "duration": 2.28,
+      "text": "I don't know how he's gonna run his corner routes.",
+      "translation": "我不知道他要怎么跑完三角线路",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0158",
+      "episode": "S01E05",
+      "start": 380.48,
+      "end": 382.96,
+      "duration": 2.48,
+      "text": "What did my boyfriend just say?",
+      "translation": "我男友刚刚说了什么呀",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0159",
+      "episode": "S01E05",
+      "start": 382.88,
+      "end": 386.22,
+      "duration": 3.34,
+      "text": "Listen, I heard what you said, and I thought, yes,",
+      "translation": "我听了你之前说的 我同意你的话",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0160",
+      "episode": "S01E05",
+      "start": 386.12,
+      "end": 388.52,
+      "duration": 2.4,
+      "text": "I should try to learn more about football.",
+      "translation": "我应该多了解一下橄榄球",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0160.m4a"
+    },
+    {
+      "id": "s01e05-0161",
+      "episode": "S01E05",
+      "start": 388.5,
+      "end": 390.82,
+      "duration": 2.32,
+      "text": "That is very mature of you.",
+      "translation": "你这么做真是成熟了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0161.m4a"
+    },
+    {
+      "id": "s01e05-0162",
+      "episode": "S01E05",
+      "start": 390.93,
+      "end": 392.9,
+      "duration": 1.97,
+      "text": "I figure, if football fans can learn it,",
+      "translation": "我觉得 橄榄球迷都能学会",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0163",
+      "episode": "S01E05",
+      "start": 392.9,
+      "end": 394.11,
+      "duration": 1.21,
+      "text": "how hard can it be?",
+      "translation": "那能有多难呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0164",
+      "episode": "S01E05",
+      "start": 394.02,
+      "end": 395.66,
+      "duration": 1.64,
+      "text": "That's very elitist of you.",
+      "translation": "就你最聪明",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0164.m4a"
+    },
+    {
+      "id": "s01e05-0165",
+      "episode": "S01E05",
+      "start": 396.1,
+      "end": 398.2,
+      "duration": 2.1,
+      "text": "I'm taking baby steps here, all right?",
+      "translation": "我才刚刚起步 好不",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0165.m4a"
+    },
+    {
+      "id": "s01e05-0166",
+      "episode": "S01E05",
+      "start": 398.03,
+      "end": 400.28,
+      "duration": 2.25,
+      "text": "I'm actually- I'm really looking forward to it.",
+      "translation": "其实 我真的很期待",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0167",
+      "episode": "S01E05",
+      "start": 400.7,
+      "end": 401.86,
+      "duration": 1.16,
+      "text": "'Cause it's not just the game.",
+      "translation": "因为这不仅仅是比赛",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0168",
+      "episode": "S01E05",
+      "start": 401.64,
+      "end": 405.86,
+      "duration": 4.22,
+      "text": "It's-It's the bands and the drama, the pageantry.",
+      "translation": "而且现场彩旗招展 锣鼓喧天",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0169",
+      "episode": "S01E05",
+      "start": 405.82,
+      "end": 407.66,
+      "duration": 1.84,
+      "text": "Don't forget about the team mascots.",
+      "translation": "别忘了还有球队的吉祥物",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0170",
+      "episode": "S01E05",
+      "start": 407.21,
+      "end": 408.63,
+      "duration": 1.42,
+      "text": "They wear ascots?",
+      "translation": "他们戴\"宽领带\"吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0171",
+      "episode": "S01E05",
+      "start": 408.63,
+      "end": 410.87,
+      "duration": 2.24,
+      "text": "不是 是\"吉祥物\" 有个\"M\"开头 No. Mascots. With an \"M.\"",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "mixed-language-caption"
+      ]
+    },
+    {
+      "id": "s01e05-0172",
+      "episode": "S01E05",
+      "start": 410.86,
+      "end": 412.34,
+      "duration": 1.48,
+      "text": "That could have been very embarrassing.",
+      "translation": "要是在外人面前你就丢脸了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0172.m4a"
+    },
+    {
+      "id": "s01e05-0173",
+      "episode": "S01E05",
+      "start": 412.96,
+      "end": 413.95,
+      "duration": 0.99,
+      "text": "Okay.",
+      "translation": "好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e05-0174",
+      "episode": "S01E05",
+      "start": 414.85,
+      "end": 415.74,
+      "duration": 0.89,
+      "text": "Am I straight?",
+      "translation": "直吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0175",
+      "episode": "S01E05",
+      "start": 418.56,
+      "end": 420.3,
+      "duration": 1.74,
+      "text": "I'm not sure what you are right now.",
+      "translation": "我也不知道你是直男还是什么",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0176",
+      "episode": "S01E05",
+      "start": 423.21,
+      "end": 423.8,
+      "duration": 0.59,
+      "text": "How ya doin'?",
+      "translation": "你们好吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0177",
+      "episode": "S01E05",
+      "start": 423.8,
+      "end": 425.36,
+      "duration": 1.56,
+      "text": "- Hey, Gramps. - Hi, beautiful.",
+      "translation": "-外公好 -小美女好",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0178",
+      "episode": "S01E05",
+      "start": 425.36,
+      "end": 427.0,
+      "duration": 1.64,
+      "text": "Hi, Phil. Good to see ya.",
+      "translation": "你好 菲尔 见到你真好",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0179",
+      "episode": "S01E05",
+      "start": 426.88,
+      "end": 428.34,
+      "duration": 1.46,
+      "text": "Let me guess. Game's on?",
+      "translation": "让我猜猜 比赛开始了吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0180",
+      "episode": "S01E05",
+      "start": 428.58,
+      "end": 429.3,
+      "duration": 0.72,
+      "text": "Just started.",
+      "translation": "刚开始",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0181",
+      "episode": "S01E05",
+      "start": 429.88,
+      "end": 431.55,
+      "duration": 1.67,
+      "text": "Hey. For you.",
+      "translation": "送给你的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0182",
+      "episode": "S01E05",
+      "start": 432.2,
+      "end": 433.52,
+      "duration": 1.32,
+      "text": "It's nice to see you, Gloria.",
+      "translation": "很高兴见到你 歌洛莉亚",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0183",
+      "episode": "S01E05",
+      "start": 433.99,
+      "end": 435.3,
+      "duration": 1.31,
+      "text": "Ah! Two times today.",
+      "translation": "今天两次哦",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0184",
+      "episode": "S01E05",
+      "start": 435.86,
+      "end": 437.16,
+      "duration": 1.3,
+      "text": "- Okay, well... - Uh, Phil?",
+      "translation": "-抱两次好啊 -菲尔",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0185",
+      "episode": "S01E05",
+      "start": 437.42,
+      "end": 439.7,
+      "duration": 2.28,
+      "text": "She means we've seen them two times today.",
+      "translation": "她的意思是我们今天见了两次",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0186",
+      "episode": "S01E05",
+      "start": 439.66,
+      "end": 442.56,
+      "duration": 2.9,
+      "text": "Okay, everybody, the food's in there. The drinks are in there.",
+      "translation": "大家听着 吃的在那边 喝的在那边",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0187",
+      "episode": "S01E05",
+      "start": 442.34,
+      "end": 444.48,
+      "duration": 2.14,
+      "text": "- I'll be in here. - Hold on, Jay.",
+      "translation": "-我进屋去了 -等等 杰",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0188",
+      "episode": "S01E05",
+      "start": 444.42,
+      "end": 447.48,
+      "duration": 3.06,
+      "text": "I think we should address the elephant in the room.",
+      "translation": "我觉得我们不该忽视明显存在的一个问题",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0188.m4a"
+    },
+    {
+      "id": "s01e05-0189",
+      "episode": "S01E05",
+      "start": 447.38,
+      "end": 451.02,
+      "duration": 3.64,
+      "text": "Uh, Luke, Manny. Bring it in.",
+      "translation": "卢克 曼尼 都过来",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0190",
+      "episode": "S01E05",
+      "start": 451.96,
+      "end": 453.66,
+      "duration": 1.7,
+      "text": "Come on. Huddle up.",
+      "translation": "快点 聚在一起",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0191",
+      "episode": "S01E05",
+      "start": 453.28,
+      "end": 454.38,
+      "duration": 1.1,
+      "text": "Football.",
+      "translation": "像打橄榄球一样",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0192",
+      "episode": "S01E05",
+      "start": 455.76,
+      "end": 458.3,
+      "duration": 2.54,
+      "text": "Now in light of what happened at school today,",
+      "translation": "鉴于今天在学校里发生的事情",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0193",
+      "episode": "S01E05",
+      "start": 458.59,
+      "end": 460.59,
+      "duration": 2.0,
+      "text": "do you have any feelings you'd like to express?",
+      "translation": "你们有什么想说的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0194",
+      "episode": "S01E05",
+      "start": 460.68,
+      "end": 462.38,
+      "duration": 1.7,
+      "text": "I think this is the proper forum...",
+      "translation": "我觉得现在是个合适的表达机会",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0195",
+      "episode": "S01E05",
+      "start": 462.47,
+      "end": 465.22,
+      "duration": 2.75,
+      "text": "For god's sakes. All right, both of you.",
+      "translation": "老天啊 得了吧 你们两个",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0196",
+      "episode": "S01E05",
+      "start": 465.3,
+      "end": 468.41,
+      "duration": 3.11,
+      "text": "Now, in this family, do we kick and punch each other,",
+      "translation": "在这个家里 我们是欺负彼此",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0197",
+      "episode": "S01E05",
+      "start": 468.41,
+      "end": 469.72,
+      "duration": 1.31,
+      "text": "or do we love each other?",
+      "translation": "还是关爱彼此",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0198",
+      "episode": "S01E05",
+      "start": 469.62,
+      "end": 471.58,
+      "duration": 1.96,
+      "text": "Love each other. That's right.",
+      "translation": "关爱彼此 这就对了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0199",
+      "episode": "S01E05",
+      "start": 472.08,
+      "end": 472.82,
+      "duration": 0.74,
+      "text": "I'II be in the den.",
+      "translation": "我进屋去了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0200",
+      "episode": "S01E05",
+      "start": 476.74,
+      "end": 478.92,
+      "duration": 2.18,
+      "text": "So, I brought dessert.",
+      "translation": "我带了些甜点",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0201",
+      "episode": "S01E05",
+      "start": 479.4,
+      "end": 481.32,
+      "duration": 1.92,
+      "text": "Okay. Thank you.",
+      "translation": "好的 谢谢你",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0202",
+      "episode": "S01E05",
+      "start": 481.62,
+      "end": 482.82,
+      "duration": 1.2,
+      "text": "I make pie too.",
+      "translation": "我也做了派",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0203",
+      "episode": "S01E05",
+      "start": 484.82,
+      "end": 486.86,
+      "duration": 2.04,
+      "text": "You can never have too many pies, right?",
+      "translation": "派再多也不嫌多 对吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0203.m4a"
+    },
+    {
+      "id": "s01e05-0204",
+      "episode": "S01E05",
+      "start": 487.22,
+      "end": 489.05,
+      "duration": 1.83,
+      "text": "Okay, whoa. Whoa.",
+      "translation": "行了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0205",
+      "episode": "S01E05",
+      "start": 489.12,
+      "end": 490.9,
+      "duration": 1.78,
+      "text": "Everybody take a deep breath.",
+      "translation": "大家深呼吸",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0206",
+      "episode": "S01E05",
+      "start": 490.72,
+      "end": 492.22,
+      "duration": 1.5,
+      "text": "Let's think about getting real.",
+      "translation": "我们面对现实吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0206.m4a"
+    },
+    {
+      "id": "s01e05-0207",
+      "episode": "S01E05",
+      "start": 492.19,
+      "end": 493.08,
+      "duration": 0.89,
+      "text": "Phil, no.",
+      "translation": "菲尔 别这样",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0208",
+      "episode": "S01E05",
+      "start": 493.08,
+      "end": 494.58,
+      "duration": 1.5,
+      "text": "Why \"Phil, no\"?",
+      "translation": "为什么说\"菲尔 别这样\"",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0209",
+      "episode": "S01E05",
+      "start": 495.06,
+      "end": 496.29,
+      "duration": 1.23,
+      "text": "What is Phil doing?",
+      "translation": "菲尔要干嘛",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0210",
+      "episode": "S01E05",
+      "start": 496.06,
+      "end": 497.24,
+      "duration": 1.18,
+      "text": "I'm just gonna say it.",
+      "translation": "我只是想说出来",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0211",
+      "episode": "S01E05",
+      "start": 497.04,
+      "end": 499.04,
+      "duration": 2.0,
+      "text": "There's tension between you two.",
+      "translation": "你们俩之间的紧张气氛",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0211.m4a"
+    },
+    {
+      "id": "s01e05-0212",
+      "episode": "S01E05",
+      "start": 498.84,
+      "end": 500.16,
+      "duration": 1.32,
+      "text": "Bam. It's out there.",
+      "translation": "已经弥漫出来了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0213",
+      "episode": "S01E05",
+      "start": 500.2,
+      "end": 501.26,
+      "duration": 1.06,
+      "text": "I'm gonna kill you.",
+      "translation": "我要宰了你",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0214",
+      "episode": "S01E05",
+      "start": 501.78,
+      "end": 505.36,
+      "duration": 3.58,
+      "text": "I think he's right, and I think we should talk about it.",
+      "translation": "我想他是对的 而且我们应该谈谈",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0214.m4a"
+    },
+    {
+      "id": "s01e05-0215",
+      "episode": "S01E05",
+      "start": 504.98,
+      "end": 507.26,
+      "duration": 2.28,
+      "text": "That's what I'm talkin' about...",
+      "translation": "我就是想说这个",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0216",
+      "episode": "S01E05",
+      "start": 507.83,
+      "end": 512.0,
+      "duration": 4.17,
+      "text": "you two talking... about it.",
+      "translation": "你们谈谈 这个事儿",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0217",
+      "episode": "S01E05",
+      "start": 516.26,
+      "end": 517.46,
+      "duration": 1.2,
+      "text": "I like football.",
+      "translation": "我喜欢橄榄球",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0218",
+      "episode": "S01E05",
+      "start": 517.84,
+      "end": 519.96,
+      "duration": 2.12,
+      "text": "Haley hates it, which is weird",
+      "translation": "海莉很讨厌 这很奇怪",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0219",
+      "episode": "S01E05",
+      "start": 519.96,
+      "end": 522.77,
+      "duration": 2.81,
+      "text": "because it's all boys... and there's no reading required.",
+      "translation": "因为里面全是男孩 也不必看书",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0220",
+      "episode": "S01E05",
+      "start": 523.21,
+      "end": 524.15,
+      "duration": 0.94,
+      "text": "Do you know that she spends",
+      "translation": "你知道吗 她每天早上",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0221",
+      "episode": "S01E05",
+      "start": 524.15,
+      "end": 526.97,
+      "duration": 2.82,
+      "text": "at least 45 minutes every morning doing her hair?",
+      "translation": "至少花45分钟弄她的头发",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0222",
+      "episode": "S01E05",
+      "start": 526.97,
+      "end": 528.5,
+      "duration": 1.53,
+      "text": "And then sometimes...",
+      "translation": "而且有的时候",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0223",
+      "episode": "S01E05",
+      "start": 528.5,
+      "end": 530.65,
+      "duration": 2.15,
+      "text": "Let's go, Illini!",
+      "translation": "冲啊 伊利诺伊队",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0224",
+      "episode": "S01E05",
+      "start": 530.65,
+      "end": 532.58,
+      "duration": 1.93,
+      "text": "Let's go! Right now!",
+      "translation": "冲啊 快冲",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0225",
+      "episode": "S01E05",
+      "start": 532.76,
+      "end": 535.22,
+      "duration": 2.46,
+      "text": "Looks like I gotta watch the game with Dick Butkus.",
+      "translation": "看来我要和迪克·布特库斯一起看比赛了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0226",
+      "episode": "S01E05",
+      "start": 533.19,
+      "end": 537.67,
+      "duration": 4.48,
+      "text": "[音同Dick Butt-kiss意思为鸡鸡-屁股相亲",
+      "translation": "米奇以为是讽刺同性恋的做爱方式]",
+      "learnable": false,
+      "reviewReasons": [
+        "mixed-language-caption",
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0227",
+      "episode": "S01E05",
+      "start": 535.72,
+      "end": 537.22,
+      "duration": 1.5,
+      "text": "Dad! Dad, come on. That's offensive.",
+      "translation": "老爸 别这样 太冒犯人了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0227.m4a"
+    },
+    {
+      "id": "s01e05-0228",
+      "episode": "S01E05",
+      "start": 537.08,
+      "end": 538.99,
+      "duration": 1.91,
+      "text": "Mitchell, he's one of the greatest linebackers",
+      "translation": "米奇尔 那人是伊利诺斯州",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0229",
+      "episode": "S01E05",
+      "start": 538.99,
+      "end": 540.0,
+      "duration": 1.01,
+      "text": "to ever play at Illinois...",
+      "translation": "最棒的中后卫球员之一",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0230",
+      "episode": "S01E05",
+      "start": 540.0,
+      "end": 541.64,
+      "duration": 1.64,
+      "text": "and one of my personal heroes.",
+      "translation": "也是我自己的偶像之一",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0231",
+      "episode": "S01E05",
+      "start": 541.64,
+      "end": 543.3,
+      "duration": 1.66,
+      "text": "And his name is \"Butt-kiss\"?",
+      "translation": "难道他的名字真是\"亲屁股\"吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0232",
+      "episode": "S01E05",
+      "start": 543.9,
+      "end": 545.5,
+      "duration": 1.6,
+      "text": "We're just choosing to...",
+      "translation": "我们只是想要",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0233",
+      "episode": "S01E05",
+      "start": 545.74,
+      "end": 546.81,
+      "duration": 1.07,
+      "text": "Okay. All right.",
+      "translation": "好吧 没什么",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0234",
+      "episode": "S01E05",
+      "start": 547.38,
+      "end": 549.5,
+      "duration": 2.12,
+      "text": "Dad, I thought you were being homophobic. I'm sorry.",
+      "translation": "老爸 我以为你恐同呢 抱歉",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0235",
+      "episode": "S01E05",
+      "start": 549.4,
+      "end": 551.35,
+      "duration": 1.95,
+      "text": "- We got all night. - Yes, we do.",
+      "translation": "-我们有一整晚要相处呢 -好吧",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0236",
+      "episode": "S01E05",
+      "start": 551.46,
+      "end": 553.12,
+      "duration": 1.66,
+      "text": "- Are you joining us here? - Yeah.",
+      "translation": "-你要和我们一起看吗 -是的",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0237",
+      "episode": "S01E05",
+      "start": 553.02,
+      "end": 555.22,
+      "duration": 2.2,
+      "text": "Jay, you know what? He's been studying up.",
+      "translation": "杰 你知道吗 他正在钻研呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0237.m4a"
+    },
+    {
+      "id": "s01e05-0238",
+      "episode": "S01E05",
+      "start": 555.12,
+      "end": 557.79,
+      "duration": 2.67,
+      "text": "跟你说 我有点担心C·J·海托 I gotta tell ya, I'm a little worried about C.J. Hightower.",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "mixed-language-caption"
+      ]
+    },
+    {
+      "id": "s01e05-0239",
+      "episode": "S01E05",
+      "start": 557.68,
+      "end": 559.1,
+      "duration": 1.42,
+      "text": "Right? With the bad ankle?",
+      "translation": "没错吧 他脚踝受伤了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0240",
+      "episode": "S01E05",
+      "start": 559.34,
+      "end": 561.34,
+      "duration": 2.0,
+      "text": "I'm wondering how he's gonna run his corner routes.",
+      "translation": "我很好奇他怎么能完成三角线路",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0241",
+      "episode": "S01E05",
+      "start": 561.2,
+      "end": 562.9,
+      "duration": 1.7,
+      "text": "- Hightower's out. - What?",
+      "translation": "-海托不上场 -什么",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0242",
+      "episode": "S01E05",
+      "start": 563.54,
+      "end": 566.18,
+      "duration": 2.64,
+      "text": "Oh. Then who is gonna run the corner routes?",
+      "translation": "那谁来跑三角线路",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0243",
+      "episode": "S01E05",
+      "start": 566.04,
+      "end": 567.82,
+      "duration": 1.78,
+      "text": "I'll tell you who it won't be- Billings.",
+      "translation": "我来告诉你谁不会上吧 比林斯",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0244",
+      "episode": "S01E05",
+      "start": 568.58,
+      "end": 570.44,
+      "duration": 1.86,
+      "text": "That's low. He's in jail.",
+      "translation": "太明显了 他在坐牢",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0245",
+      "episode": "S01E05",
+      "start": 570.33,
+      "end": 572.52,
+      "duration": 2.19,
+      "text": "Oh, wow. Yeah. Then no.",
+      "translation": "是啊 他不会上",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0246",
+      "episode": "S01E05",
+      "start": 573.02,
+      "end": 573.64,
+      "duration": 0.62,
+      "text": "Double tight end,",
+      "translation": "双侧边锋",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0247",
+      "episode": "S01E05",
+      "start": 573.64,
+      "end": 575.42,
+      "duration": 1.78,
+      "text": "it's gonna be a quarterback roll-out to the left.",
+      "translation": "四分卫要冲到左边了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0248",
+      "episode": "S01E05",
+      "start": 575.42,
+      "end": 576.54,
+      "duration": 1.12,
+      "text": "- They're gonna run it. - No, trust me.",
+      "translation": "-他们要成功了 -不可能 相信我",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0249",
+      "episode": "S01E05",
+      "start": 576.4,
+      "end": 577.3,
+      "duration": 0.9,
+      "text": "He's got the slot.",
+      "translation": "他抢到位置了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0250",
+      "episode": "S01E05",
+      "start": 577.0,
+      "end": 578.5,
+      "duration": 1.5,
+      "text": "In the end zone! Touchdown!",
+      "translation": "到达阵区了 触地得分",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0251",
+      "episode": "S01E05",
+      "start": 580.11,
+      "end": 583.17,
+      "duration": 3.06,
+      "text": "Lucky call. Maybe they, uh, should've considered blitzing.",
+      "translation": "真幸运 也许 他们该考虑下闪电战",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0252",
+      "episode": "S01E05",
+      "start": 583.17,
+      "end": 585.29,
+      "duration": 2.12,
+      "text": "Blitzing wouldn't have helped them. Get outta here.",
+      "translation": "闪电战没用的 一边儿凉快去吧",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0253",
+      "episode": "S01E05",
+      "start": 585.29,
+      "end": 588.76,
+      "duration": 3.47,
+      "text": "Oh, gosh. Blitzing.",
+      "translation": "天呐 闪电战",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0254",
+      "episode": "S01E05",
+      "start": 588.84,
+      "end": 592.29,
+      "duration": 3.45,
+      "text": "So, my interest in football ended as suddenly and dramatically...",
+      "translation": "于是 我对橄榄球的兴趣突然消失殆尽",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0255",
+      "episode": "S01E05",
+      "start": 592.29,
+      "end": 594.4,
+      "duration": 2.11,
+      "text": "as the climax of West Side Story.",
+      "translation": "就像《西区故事》在高潮时戛然而止",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0256",
+      "episode": "S01E05",
+      "start": 594.54,
+      "end": 596.52,
+      "duration": 1.98,
+      "text": "I'm a musical theater fan.",
+      "translation": "我是个音乐剧迷",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0257",
+      "episode": "S01E05",
+      "start": 597.06,
+      "end": 598.29,
+      "duration": 1.23,
+      "text": "Surprise.",
+      "translation": "惊讶吧",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0258",
+      "episode": "S01E05",
+      "start": 600.14,
+      "end": 601.72,
+      "duration": 1.58,
+      "text": "Okay. The truth?",
+      "translation": "好吧 说实话吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0259",
+      "episode": "S01E05",
+      "start": 601.68,
+      "end": 604.12,
+      "duration": 2.44,
+      "text": "I sometimes feel like you don't like me.",
+      "translation": "有时候我觉得你不喜欢我",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0259.m4a"
+    },
+    {
+      "id": "s01e05-0260",
+      "episode": "S01E05",
+      "start": 605.68,
+      "end": 607.73,
+      "duration": 2.05,
+      "text": "Powerful, powerful stuff.",
+      "translation": "开门见山 重磅出击",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0261",
+      "episode": "S01E05",
+      "start": 608.72,
+      "end": 610.72,
+      "duration": 2.0,
+      "text": "Claire? Tell us how that makes you feel.",
+      "translation": "克莱尔 告诉我们你怎么想",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0261.m4a"
+    },
+    {
+      "id": "s01e05-0262",
+      "episode": "S01E05",
+      "start": 610.5,
+      "end": 612.2,
+      "duration": 1.7,
+      "text": "Right now, I'm feeling a lot of anger.",
+      "translation": "此时此刻 我感到怒火中烧啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0262.m4a"
+    },
+    {
+      "id": "s01e05-0263",
+      "episode": "S01E05",
+      "start": 612.3,
+      "end": 613.82,
+      "duration": 1.52,
+      "text": "No, don't tell me. Tell her.",
+      "translation": "别 别跟我说 跟她说",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0263.m4a"
+    },
+    {
+      "id": "s01e05-0264",
+      "episode": "S01E05",
+      "start": 614.18,
+      "end": 616.22,
+      "duration": 2.04,
+      "text": "Gloria, right now, I'm really angry at Phil.",
+      "translation": "歌洛莉亚 我现在很生菲尔的气",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0265",
+      "episode": "S01E05",
+      "start": 616.02,
+      "end": 617.74,
+      "duration": 1.72,
+      "text": "Let's respect the process.",
+      "translation": "别跑题了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0265.m4a"
+    },
+    {
+      "id": "s01e05-0266",
+      "episode": "S01E05",
+      "start": 620.49,
+      "end": 621.85,
+      "duration": 1.36,
+      "text": "Gloria, I don't know",
+      "translation": "歌洛莉亚 我不知道",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0267",
+      "episode": "S01E05",
+      "start": 621.85,
+      "end": 623.32,
+      "duration": 1.47,
+      "text": "why you think I don't like you.",
+      "translation": "为什么你觉得我不喜欢你",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0268",
+      "episode": "S01E05",
+      "start": 623.58,
+      "end": 625.98,
+      "duration": 2.4,
+      "text": "Sometimes when you see me, you make that face.",
+      "translation": "有时 你在我面前会摆出那种表情",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0268.m4a"
+    },
+    {
+      "id": "s01e05-0269",
+      "episode": "S01E05",
+      "start": 625.8,
+      "end": 626.49,
+      "duration": 0.69,
+      "text": "What face?",
+      "translation": "什么表情",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0270",
+      "episode": "S01E05",
+      "start": 626.49,
+      "end": 627.52,
+      "duration": 1.03,
+      "text": "Like this.",
+      "translation": "就像这样",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0271",
+      "episode": "S01E05",
+      "start": 627.52,
+      "end": 629.29,
+      "duration": 1.77,
+      "text": "- I do not make a face like that. - Oh, my God.",
+      "translation": "-我才没做过那种表情呢 -我的天啊",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0272",
+      "episode": "S01E05",
+      "start": 629.29,
+      "end": 631.22,
+      "duration": 1.93,
+      "text": "- That is so Claire. - Mitchell!",
+      "translation": "-那可是克莱尔的招牌表情 -米奇尔",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0273",
+      "episode": "S01E05",
+      "start": 631.1,
+      "end": 633.6,
+      "duration": 2.5,
+      "text": "See? She does that with everyone.",
+      "translation": "看见没 她对谁都那副表情",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0273.m4a"
+    },
+    {
+      "id": "s01e05-0274",
+      "episode": "S01E05",
+      "start": 633.98,
+      "end": 635.1,
+      "duration": 1.12,
+      "text": "It's just her face.",
+      "translation": "已经习惯成自然了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0275",
+      "episode": "S01E05",
+      "start": 635.12,
+      "end": 637.1,
+      "duration": 1.98,
+      "text": "No, it's not just the face.",
+      "translation": "不仅仅是那种表情",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0276",
+      "episode": "S01E05",
+      "start": 637.6,
+      "end": 638.32,
+      "duration": 0.72,
+      "text": "From the beginning,",
+      "translation": "从最开始到现在",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0277",
+      "episode": "S01E05",
+      "start": 638.14,
+      "end": 641.02,
+      "duration": 2.88,
+      "text": "I feel like Manny and I are not welcome in this family.",
+      "translation": "我觉得我和曼尼在这个家不受欢迎",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0277.m4a"
+    },
+    {
+      "id": "s01e05-0278",
+      "episode": "S01E05",
+      "start": 640.88,
+      "end": 642.36,
+      "duration": 1.48,
+      "text": "That is so crazy.",
+      "translation": "这也太疯狂了吧",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0279",
+      "episode": "S01E05",
+      "start": 642.32,
+      "end": 645.26,
+      "duration": 2.94,
+      "text": "No, it's not so crazy. It's how I feel.",
+      "translation": "不 一点都不疯狂 是我的真实感受",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0279.m4a"
+    },
+    {
+      "id": "s01e05-0280",
+      "episode": "S01E05",
+      "start": 648.58,
+      "end": 651.7,
+      "duration": 3.12,
+      "text": "I am sorry if you feel that way.",
+      "translation": "如果你那么想 我很抱歉",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0280.m4a"
+    },
+    {
+      "id": "s01e05-0281",
+      "episode": "S01E05",
+      "start": 651.6,
+      "end": 654.73,
+      "duration": 3.13,
+      "text": "I really am, because from the moment I met you,",
+      "translation": "真的很抱歉 从我见到你的那一刻起",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0282",
+      "episode": "S01E05",
+      "start": 654.72,
+      "end": 658.02,
+      "duration": 3.3,
+      "text": "I have tried to make you feel comfortable with us.",
+      "translation": "我就想让你融入到我们当中来",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0282.m4a"
+    },
+    {
+      "id": "s01e05-0283",
+      "episode": "S01E05",
+      "start": 659.22,
+      "end": 660.76,
+      "duration": 1.54,
+      "text": "You think it's all in my head?",
+      "translation": "你觉得这只是我自己胡思乱想",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0284",
+      "episode": "S01E05",
+      "start": 660.76,
+      "end": 662.9,
+      "duration": 2.14,
+      "text": "No. Kind- I don't know.",
+      "translation": "没 有点 我不知道",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0285",
+      "episode": "S01E05",
+      "start": 662.9,
+      "end": 666.74,
+      "duration": 3.84,
+      "text": "I mean, we really love having you and Manny in our family.",
+      "translation": "我是说 我们很欢迎你和曼尼加入我们家",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0285.m4a"
+    },
+    {
+      "id": "s01e05-0286",
+      "episode": "S01E05",
+      "start": 666.68,
+      "end": 667.92,
+      "duration": 1.24,
+      "text": "- Really? - Really.",
+      "translation": "-真的 -真的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers",
+        "repetitive-utterance"
+      ]
+    },
+    {
+      "id": "s01e05-0287",
+      "episode": "S01E05",
+      "start": 668.32,
+      "end": 670.7,
+      "duration": 2.38,
+      "text": "So, you don't have to be so defensive.",
+      "translation": "所以 你用不着这么有戒心",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0287.m4a"
+    },
+    {
+      "id": "s01e05-0288",
+      "episode": "S01E05",
+      "start": 671.2,
+      "end": 673.02,
+      "duration": 1.82,
+      "text": "I do that, don't I?",
+      "translation": "我是有戒心 是吧",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0288.m4a"
+    },
+    {
+      "id": "s01e05-0289",
+      "episode": "S01E05",
+      "start": 673.1,
+      "end": 674.98,
+      "duration": 1.88,
+      "text": "Well, a bit.",
+      "translation": "有一点吧",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0290",
+      "episode": "S01E05",
+      "start": 675.22,
+      "end": 677.8,
+      "duration": 2.58,
+      "text": "I'm feeling a hug.",
+      "translation": "我觉得应该拥抱了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0291",
+      "episode": "S01E05",
+      "start": 679.11,
+      "end": 680.88,
+      "duration": 1.77,
+      "text": "I was thinking group hug,",
+      "translation": "我是想说三人群抱",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0292",
+      "episode": "S01E05",
+      "start": 680.88,
+      "end": 683.07,
+      "duration": 2.19,
+      "text": "- But this is nice. - I'd be there if I could.",
+      "translation": "-但这也不错 -我要能去的话就去了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0293",
+      "episode": "S01E05",
+      "start": 683.04,
+      "end": 684.34,
+      "duration": 1.3,
+      "text": "Oh, my God. There's hugging.",
+      "translation": "天啊 这还有人搂搂抱抱呢",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0294",
+      "episode": "S01E05",
+      "start": 684.68,
+      "end": 686.34,
+      "duration": 1.66,
+      "text": "Haley, get off the phone already.",
+      "translation": "海莉 不打电话会死啊",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0295",
+      "episode": "S01E05",
+      "start": 686.28,
+      "end": 687.5,
+      "duration": 1.22,
+      "text": "Where did you go?",
+      "translation": "你去哪了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0296",
+      "episode": "S01E05",
+      "start": 687.87,
+      "end": 688.86,
+      "duration": 0.99,
+      "text": "You heard him.",
+      "translation": "你听见他说什么了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0297",
+      "episode": "S01E05",
+      "start": 688.48,
+      "end": 689.92,
+      "duration": 1.44,
+      "text": "He said, \"Get outta here.\"",
+      "translation": "他说\"一边凉快去\"",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0298",
+      "episode": "S01E05",
+      "start": 689.7,
+      "end": 691.72,
+      "duration": 2.02,
+      "text": "Oh, my God. You're such a girl.",
+      "translation": "天啊 你真像个娇弱的小姑娘",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0299",
+      "episode": "S01E05",
+      "start": 691.58,
+      "end": 694.33,
+      "duration": 2.75,
+      "text": "Dad- I was coming to get a beer anyways.",
+      "translation": "爸 反正我也想要喝杯啤酒的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0300",
+      "episode": "S01E05",
+      "start": 694.64,
+      "end": 695.67,
+      "duration": 1.03,
+      "text": "Nice apology.",
+      "translation": "你道歉真有诚意",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0301",
+      "episode": "S01E05",
+      "start": 695.67,
+      "end": 696.75,
+      "duration": 1.08,
+      "text": "Nice beer.",
+      "translation": "啤酒真不错",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0302",
+      "episode": "S01E05",
+      "start": 698.02,
+      "end": 700.35,
+      "duration": 2.33,
+      "text": "Hey, there are the little roustabouts.",
+      "translation": "嘿 两个壮小伙来了",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0303",
+      "episode": "S01E05",
+      "start": 700.35,
+      "end": 703.29,
+      "duration": 2.94,
+      "text": "- You look like you patched things up pretty good, huh? - Yeah.",
+      "translation": "-看来你们和好如初了 -没错",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0304",
+      "episode": "S01E05",
+      "start": 704.1,
+      "end": 706.48,
+      "duration": 2.38,
+      "text": "Oh, we can learn so much from the children.",
+      "translation": "我们能从孩子身上学到许多东西啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0304.m4a"
+    },
+    {
+      "id": "s01e05-0305",
+      "episode": "S01E05",
+      "start": 707.14,
+      "end": 708.48,
+      "duration": 1.34,
+      "text": "Bet it seems kind of silly now",
+      "translation": "现在再回头想想打架的事",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0306",
+      "episode": "S01E05",
+      "start": 708.48,
+      "end": 710.06,
+      "duration": 1.58,
+      "text": "what you were even fighting about, huh?",
+      "translation": "是不是觉得当时很蠢啊",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0307",
+      "episode": "S01E05",
+      "start": 710.06,
+      "end": 712.8,
+      "duration": 2.74,
+      "text": "- I made fun of his accent. - What accent?",
+      "translation": "-我笑他的口音 -什么口音",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0308",
+      "episode": "S01E05",
+      "start": 712.8,
+      "end": 716.02,
+      "duration": 3.22,
+      "text": "I made fun of him for having the same thing for lunch every day.",
+      "translation": "我笑他每天的午餐都一样",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0308.m4a"
+    },
+    {
+      "id": "s01e05-0309",
+      "episode": "S01E05",
+      "start": 716.62,
+      "end": 719.8,
+      "duration": 3.18,
+      "text": "I made fun of him because his mom used to dig coal.",
+      "translation": "我取笑他 因为他妈妈以前是挖煤的",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0310",
+      "episode": "S01E05",
+      "start": 720.94,
+      "end": 721.89,
+      "duration": 0.95,
+      "text": "What?",
+      "translation": "什么",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0311",
+      "episode": "S01E05",
+      "start": 721.64,
+      "end": 723.8,
+      "duration": 2.16,
+      "text": "He said you were a coal digger.",
+      "translation": "他说你是个挖煤工",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0312",
+      "episode": "S01E05",
+      "start": 723.62,
+      "end": 725.58,
+      "duration": 1.96,
+      "text": "Okay. I think we can move on.",
+      "translation": "好了 我觉得该换个话题了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0313",
+      "episode": "S01E05",
+      "start": 726.26,
+      "end": 727.7,
+      "duration": 1.44,
+      "text": "Who said I was a coal digger?",
+      "translation": "谁说我是个\"挖煤工\"",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0314",
+      "episode": "S01E05",
+      "start": 727.66,
+      "end": 729.52,
+      "duration": 1.86,
+      "text": "That's what my mom told me.",
+      "translation": "我妈告诉我的",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0315",
+      "episode": "S01E05",
+      "start": 729.26,
+      "end": 730.92,
+      "duration": 1.66,
+      "text": "What's a coal digger?",
+      "translation": "什么是挖煤工",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0316",
+      "episode": "S01E05",
+      "start": 730.76,
+      "end": 732.12,
+      "duration": 1.36,
+      "text": "Sweetheart, he heard it wrong.",
+      "translation": "宝贝 他听错了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0316.m4a"
+    },
+    {
+      "id": "s01e05-0317",
+      "episode": "S01E05",
+      "start": 731.88,
+      "end": 732.78,
+      "duration": 0.9,
+      "text": "It's \"Gold digger.\"",
+      "translation": "那叫\"淘金工\"[傍大款]",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0318",
+      "episode": "S01E05",
+      "start": 732.54,
+      "end": 734.38,
+      "duration": 1.84,
+      "text": "I'm gonna have to call you back.",
+      "translation": "我得过一会再打给你了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0318.m4a"
+    },
+    {
+      "id": "s01e05-0319",
+      "episode": "S01E05",
+      "start": 734.36,
+      "end": 738.22,
+      "duration": 3.86,
+      "text": "I really do not think that I remember ever saying that.",
+      "translation": "我真的不记得说过这话",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0319.m4a"
+    },
+    {
+      "id": "s01e05-0320",
+      "episode": "S01E05",
+      "start": 738.04,
+      "end": 740.04,
+      "duration": 2.0,
+      "text": "Well, you said in the car.",
+      "translation": "其实 你在车里这么说过",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0321",
+      "episode": "S01E05",
+      "start": 740.26,
+      "end": 741.6,
+      "duration": 1.34,
+      "text": "You said it at Christmas.",
+      "translation": "你圣诞节这么说过",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0322",
+      "episode": "S01E05",
+      "start": 741.63,
+      "end": 743.33,
+      "duration": 1.7,
+      "text": "- You said it in the Mexican restaurant- - Okay,",
+      "translation": "-你还在墨西哥餐厅这么说过 -好了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0323",
+      "episode": "S01E05",
+      "start": 743.33,
+      "end": 745.94,
+      "duration": 2.61,
+      "text": "Mr. \"Leaves His Sweatshirts at School Every Day...",
+      "translation": "乖儿子 你每天丢三落四",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0324",
+      "episode": "S01E05",
+      "start": 745.86,
+      "end": 747.4,
+      "duration": 1.54,
+      "text": "Suddenly Remembers Everything,\" Thank you.",
+      "translation": "今天却记忆如神 真谢谢你了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0325",
+      "episode": "S01E05",
+      "start": 748.98,
+      "end": 750.7,
+      "duration": 1.72,
+      "text": "And it was all in my head, huh?",
+      "translation": "还说是我自己胡思乱想 哈",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0326",
+      "episode": "S01E05",
+      "start": 750.7,
+      "end": 752.88,
+      "duration": 2.18,
+      "text": "Oh, listen. Gloria, it was...",
+      "translation": "听我说 歌洛莉亚 其实",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0327",
+      "episode": "S01E05",
+      "start": 752.88,
+      "end": 755.91,
+      "duration": 3.03,
+      "text": "like, a year ago, before I knew you.",
+      "translation": "都是一年前的事了 那时我还不了解你呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0328",
+      "episode": "S01E05",
+      "start": 755.91,
+      "end": 756.94,
+      "duration": 1.03,
+      "text": "Nice going.",
+      "translation": "你真行啊",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0329",
+      "episode": "S01E05",
+      "start": 756.78,
+      "end": 758.92,
+      "duration": 2.14,
+      "text": "Now my mom and my sister are fighting.",
+      "translation": "搞得我妈和我姐吵架了吧",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0330",
+      "episode": "S01E05",
+      "start": 763.73,
+      "end": 765.89,
+      "duration": 2.16,
+      "text": "If I say something that everybody else is thinking,",
+      "translation": "如果我说了众人都想说的话",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0331",
+      "episode": "S01E05",
+      "start": 765.89,
+      "end": 767.49,
+      "duration": 1.6,
+      "text": "does that make me a mean person?",
+      "translation": "是不是意味着我很刻薄呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0332",
+      "episode": "S01E05",
+      "start": 767.49,
+      "end": 770.94,
+      "duration": 3.45,
+      "text": "Or does it make me a brave person?",
+      "translation": "或者说我很勇敢呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0333",
+      "episode": "S01E05",
+      "start": 771.39,
+      "end": 772.96,
+      "duration": 1.57,
+      "text": "One who is courageous enough to",
+      "translation": "我就是一个有勇气",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0334",
+      "episode": "S01E05",
+      "start": 772.96,
+      "end": 775.78,
+      "duration": 2.82,
+      "text": "stand up and-and say something...",
+      "translation": "顶住压力 挺身而出",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0335",
+      "episode": "S01E05",
+      "start": 775.87,
+      "end": 777.06,
+      "duration": 1.19,
+      "text": "behind someone's back",
+      "translation": "在背后悄悄地说",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0336",
+      "episode": "S01E05",
+      "start": 777.06,
+      "end": 779.25,
+      "duration": 2.19,
+      "text": "to a 10-year-old.",
+      "translation": "只敢在小孩面前说",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0337",
+      "episode": "S01E05",
+      "start": 781.61,
+      "end": 782.96,
+      "duration": 1.35,
+      "text": "Well, she's pissed.",
+      "translation": "她现在可是气疯了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0338",
+      "episode": "S01E05",
+      "start": 782.84,
+      "end": 784.82,
+      "duration": 1.98,
+      "text": "Yeah. She wouldn't even come out of her room.",
+      "translation": "是啊 她甚至连房间都不愿意出了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0338.m4a"
+    },
+    {
+      "id": "s01e05-0339",
+      "episode": "S01E05",
+      "start": 785.82,
+      "end": 789.4,
+      "duration": 3.58,
+      "text": "Did you really have to call her that- a gold digger?",
+      "translation": "你真的非要说她是\"傍大款的\"吗",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0340",
+      "episode": "S01E05",
+      "start": 789.14,
+      "end": 791.2,
+      "duration": 2.06,
+      "text": "Well, you know what, Dad? It was a year ago.",
+      "translation": "知道吗 爸爸 那可是一年前",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0341",
+      "episode": "S01E05",
+      "start": 791.43,
+      "end": 794.27,
+      "duration": 2.84,
+      "text": "And it was a natural question to ask.",
+      "translation": "所以人家自然而然会问啊",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0342",
+      "episode": "S01E05",
+      "start": 794.27,
+      "end": 796.42,
+      "duration": 2.15,
+      "text": "She's a beautiful, hot woman,",
+      "translation": "她那么漂亮 那么性感",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0343",
+      "episode": "S01E05",
+      "start": 796.42,
+      "end": 798.93,
+      "duration": 2.51,
+      "text": "and you're not exactly, you know-",
+      "translation": "而你却不那么 你懂的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0344",
+      "episode": "S01E05",
+      "start": 800.35,
+      "end": 801.38,
+      "duration": 1.03,
+      "text": "Not exactly what?",
+      "translation": "不那么什么",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0345",
+      "episode": "S01E05",
+      "start": 801.72,
+      "end": 804.6,
+      "duration": 2.88,
+      "text": "Um- Mitchell, little help?",
+      "translation": "米奇尔 帮帮忙啊",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0346",
+      "episode": "S01E05",
+      "start": 804.56,
+      "end": 806.5,
+      "duration": 1.94,
+      "text": "No. You are doing great.",
+      "translation": "不用 你说的挺好的",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0347",
+      "episode": "S01E05",
+      "start": 806.46,
+      "end": 809.55,
+      "duration": 3.09,
+      "text": "See, this is exactly why we sweep things under the rug-",
+      "translation": "看见了吧 所以说家事要忍着",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0348",
+      "episode": "S01E05",
+      "start": 809.75,
+      "end": 811.11,
+      "duration": 1.36,
+      "text": "so people don't get hurt.",
+      "translation": "这样大家才不会受伤害",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0349",
+      "episode": "S01E05",
+      "start": 811.46,
+      "end": 813.66,
+      "duration": 2.2,
+      "text": "Yeah, until you sweep too much under the rug.",
+      "translation": "话是没错 但如果老是忍着憋着",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0349.m4a"
+    },
+    {
+      "id": "s01e05-0350",
+      "episode": "S01E05",
+      "start": 813.42,
+      "end": 814.76,
+      "duration": 1.34,
+      "text": "Then you got a lumpy rug.",
+      "translation": "矛盾就越积越多",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0351",
+      "episode": "S01E05",
+      "start": 815.16,
+      "end": 818.88,
+      "duration": 3.72,
+      "text": "Creates a tripping hazard. You open yourself up to lawsuits.",
+      "translation": "矛盾爆发的危险也越大 也会惹祸上身",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0352",
+      "episode": "S01E05",
+      "start": 818.58,
+      "end": 821.12,
+      "duration": 2.54,
+      "text": "Boy, you can go a really long time without blinking.",
+      "translation": "岳父大人 你可以好长时间不眨眼啊",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0352.m4a"
+    },
+    {
+      "id": "s01e05-0353",
+      "episode": "S01E05",
+      "start": 828.21,
+      "end": 830.1,
+      "duration": 1.89,
+      "text": "Gloria? It's Phil.",
+      "translation": "歌洛莉亚 我是菲尔",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0354",
+      "episode": "S01E05",
+      "start": 831.96,
+      "end": 833.56,
+      "duration": 1.6,
+      "text": "Can I talk to you for a second?",
+      "translation": "能和你谈一会吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0354.m4a"
+    },
+    {
+      "id": "s01e05-0355",
+      "episode": "S01E05",
+      "start": 834.13,
+      "end": 836.97,
+      "duration": 2.84,
+      "text": "Claire likes to say you can be part of the problem...",
+      "translation": "克莱尔总是说 \"你要么是问题制造者\"",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0356",
+      "episode": "S01E05",
+      "start": 837.05,
+      "end": 839.05,
+      "duration": 2.0,
+      "text": "or part of the solution.",
+      "translation": "\"要么就是问题解决者\"",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0357",
+      "episode": "S01E05",
+      "start": 839.14,
+      "end": 841.64,
+      "duration": 2.5,
+      "text": "But I happen to believe that you can be both.",
+      "translation": "而我则认为 解铃还须系铃人",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0358",
+      "episode": "S01E05",
+      "start": 842.86,
+      "end": 845.38,
+      "duration": 2.52,
+      "text": "Listen, Claire feels terrible.",
+      "translation": "听着 克莱尔感到很抱歉",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0358.m4a"
+    },
+    {
+      "id": "s01e05-0359",
+      "episode": "S01E05",
+      "start": 846.5,
+      "end": 847.92,
+      "duration": 1.42,
+      "text": "Why don't you talk to her?",
+      "translation": "要不你找她谈谈",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0359.m4a"
+    },
+    {
+      "id": "s01e05-0360",
+      "episode": "S01E05",
+      "start": 848.6,
+      "end": 852.36,
+      "duration": 3.76,
+      "text": "Why? I know what she thinks- a coal digger.",
+      "translation": "为什么 我知道她认为我是个挖煤的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0361",
+      "episode": "S01E05",
+      "start": 852.38,
+      "end": 853.84,
+      "duration": 1.46,
+      "text": "You know she's saying \"Gold digger\"?",
+      "translation": "你知道她说的其实是傍大款的吧",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0362",
+      "episode": "S01E05",
+      "start": 853.99,
+      "end": 855.03,
+      "duration": 1.04,
+      "text": "Yes, Phil!",
+      "translation": "我知道 菲尔",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0363",
+      "episode": "S01E05",
+      "start": 854.64,
+      "end": 856.68,
+      "duration": 2.04,
+      "text": "Well, I-I know she said that.",
+      "translation": "我知道她这么说过",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0364",
+      "episode": "S01E05",
+      "start": 856.57,
+      "end": 858.35,
+      "duration": 1.78,
+      "text": "But that was a long time ago,",
+      "translation": "但那是很早以前的事了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0365",
+      "episode": "S01E05",
+      "start": 858.35,
+      "end": 860.1,
+      "duration": 1.75,
+      "text": "before she knew you.",
+      "translation": "那时她尚未真正了解你",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0366",
+      "episode": "S01E05",
+      "start": 859.1,
+      "end": 861.86,
+      "duration": 2.76,
+      "text": "Does Jay buy me nice things?",
+      "translation": "杰是不是给我买好东西了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0367",
+      "episode": "S01E05",
+      "start": 861.7,
+      "end": 864.12,
+      "duration": 2.42,
+      "text": "Yes! Of course! All beautiful things.",
+      "translation": "没错 当然了 全是好东西",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0368",
+      "episode": "S01E05",
+      "start": 864.12,
+      "end": 867.16,
+      "duration": 3.04,
+      "text": "Look at this- yellow, red, blue.",
+      "translation": "看看这些 黄的 红的 蓝的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0369",
+      "episode": "S01E05",
+      "start": 867.25,
+      "end": 868.67,
+      "duration": 1.42,
+      "text": "All the colors.",
+      "translation": "五颜六色的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0370",
+      "episode": "S01E05",
+      "start": 868.38,
+      "end": 870.32,
+      "duration": 1.94,
+      "text": "Do you think I can't live without this?",
+      "translation": "你认为我没了这些就活不了了吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0370.m4a"
+    },
+    {
+      "id": "s01e05-0371",
+      "episode": "S01E05",
+      "start": 870.98,
+      "end": 872.68,
+      "duration": 1.7,
+      "text": "Take them away, Phil.",
+      "translation": "拿走啊 菲尔",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0372",
+      "episode": "S01E05",
+      "start": 873.77,
+      "end": 874.82,
+      "duration": 1.05,
+      "text": "Gloria,",
+      "translation": "歌洛莉亚",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "name-only",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0373",
+      "episode": "S01E05",
+      "start": 874.82,
+      "end": 877.96,
+      "duration": 3.14,
+      "text": "we all know you'd be fine without underwear.",
+      "translation": "我们都知道你不穿内裤也没事",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0374",
+      "episode": "S01E05",
+      "start": 878.0,
+      "end": 880.76,
+      "duration": 2.76,
+      "text": "I mean, we know it's not about that.",
+      "translation": "我是说 我们知道你说的不是这个",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0374.m4a"
+    },
+    {
+      "id": "s01e05-0375",
+      "episode": "S01E05",
+      "start": 880.58,
+      "end": 884.74,
+      "duration": 4.16,
+      "text": "No. It's about me not being accepted by my new family.",
+      "translation": "对 我说的是我不被这个家庭所接纳",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0375.m4a"
+    },
+    {
+      "id": "s01e05-0376",
+      "episode": "S01E05",
+      "start": 884.7,
+      "end": 886.24,
+      "duration": 1.54,
+      "text": "That is not true.",
+      "translation": "不是这样的",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0377",
+      "episode": "S01E05",
+      "start": 886.66,
+      "end": 888.78,
+      "duration": 2.12,
+      "text": "Gloria, look, you're a beautiful woman.",
+      "translation": "歌洛莉亚 听着 你是个大美女",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0378",
+      "episode": "S01E05",
+      "start": 889.1,
+      "end": 890.28,
+      "duration": 1.18,
+      "text": "In fact, you're probably one of those",
+      "translation": "其实 你很有可能",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0379",
+      "episode": "S01E05",
+      "start": 890.28,
+      "end": 892.21,
+      "duration": 1.93,
+      "text": "beautiful women who doesn't even know it.",
+      "translation": "都不知道自己是美女",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0380",
+      "episode": "S01E05",
+      "start": 892.06,
+      "end": 893.26,
+      "duration": 1.2,
+      "text": "No, I know it.",
+      "translation": "不 我知道的",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0381",
+      "episode": "S01E05",
+      "start": 894.49,
+      "end": 895.96,
+      "duration": 1.47,
+      "text": "So it's natural",
+      "translation": "所以克莱尔自然",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0382",
+      "episode": "S01E05",
+      "start": 895.96,
+      "end": 898.23,
+      "duration": 2.27,
+      "text": "for Claire to wonder about you and her dad.",
+      "translation": "会对你和她爸的关系产生联想啊",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0383",
+      "episode": "S01E05",
+      "start": 898.9,
+      "end": 901.64,
+      "duration": 2.74,
+      "text": "This family's very protective of each other.",
+      "translation": "这是个保护欲很强的家庭",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0383.m4a"
+    },
+    {
+      "id": "s01e05-0384",
+      "episode": "S01E05",
+      "start": 901.36,
+      "end": 903.7,
+      "duration": 2.34,
+      "text": "I remember the first time Claire brought me home.",
+      "translation": "我还记得克莱尔第一次带我去她家的时候",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0384.m4a"
+    },
+    {
+      "id": "s01e05-0385",
+      "episode": "S01E05",
+      "start": 903.88,
+      "end": 907.16,
+      "duration": 3.28,
+      "text": "Do you think Jay thought I was good enough for his little girl?",
+      "translation": "你以为杰会觉得我配得上他家千金吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0385.m4a"
+    },
+    {
+      "id": "s01e05-0386",
+      "episode": "S01E05",
+      "start": 907.41,
+      "end": 910.64,
+      "duration": 3.23,
+      "text": "No way. But over time,",
+      "translation": "才不会 但是过了一段时间",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0387",
+      "episode": "S01E05",
+      "start": 910.64,
+      "end": 913.32,
+      "duration": 2.68,
+      "text": "he realized that I loved Claire as much as he did.",
+      "translation": "他意识到我和他一样深爱着克莱尔",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0388",
+      "episode": "S01E05",
+      "start": 914.19,
+      "end": 915.97,
+      "duration": 1.78,
+      "text": "And by then, Mitch had brought Cam home,",
+      "translation": "与此同时 米奇把小卡带进家门",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0389",
+      "episode": "S01E05",
+      "start": 915.97,
+      "end": 917.3,
+      "duration": 1.33,
+      "text": "so I was golden.",
+      "translation": "相比之下我就是金龟婿了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0390",
+      "episode": "S01E05",
+      "start": 918.32,
+      "end": 919.7,
+      "duration": 1.38,
+      "text": "Claire just needs a little time.",
+      "translation": "克莱尔只是需要些时间",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0390.m4a"
+    },
+    {
+      "id": "s01e05-0391",
+      "episode": "S01E05",
+      "start": 921.08,
+      "end": 922.41,
+      "duration": 1.33,
+      "text": "And then, trust me,",
+      "translation": "相信我 过段时间后",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0392",
+      "episode": "S01E05",
+      "start": 922.41,
+      "end": 924.63,
+      "duration": 2.22,
+      "text": "she'll be the most loyal friend you've ever had.",
+      "translation": "她就会成为你最亲的闺蜜了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0393",
+      "episode": "S01E05",
+      "start": 928.14,
+      "end": 929.56,
+      "duration": 1.42,
+      "text": "You're not leaving, are you?",
+      "translation": "你们不是要走吧",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0394",
+      "episode": "S01E05",
+      "start": 929.82,
+      "end": 932.1,
+      "duration": 2.28,
+      "text": "You know, there's kind of a lot of drama.",
+      "translation": "你也知道 现在这儿闹得有点不愉快",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0395",
+      "episode": "S01E05",
+      "start": 932.02,
+      "end": 934.16,
+      "duration": 2.14,
+      "text": "- So we're torn. - Let me ask you something.",
+      "translation": "-我们深受折磨 -我问你们点事",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0396",
+      "episode": "S01E05",
+      "start": 934.32,
+      "end": 935.85,
+      "duration": 1.53,
+      "text": "Your sister said that Gloria",
+      "translation": "你姐姐说歌洛莉亚",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0397",
+      "episode": "S01E05",
+      "start": 935.85,
+      "end": 938.19,
+      "duration": 2.34,
+      "text": "would never go for anybody who looked like me.",
+      "translation": "绝不会喜欢上我这种样子的男人",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0398",
+      "episode": "S01E05",
+      "start": 939.16,
+      "end": 943.4,
+      "duration": 4.24,
+      "text": "Now, you guys basically are like women.",
+      "translation": "所以说 基本上 你们和女人差不多",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0399",
+      "episode": "S01E05",
+      "start": 943.55,
+      "end": 945.19,
+      "duration": 1.64,
+      "text": "You know, you look at guys.",
+      "translation": "你们喜欢男人",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0400",
+      "episode": "S01E05",
+      "start": 945.46,
+      "end": 946.88,
+      "duration": 1.42,
+      "text": "So what do you think?",
+      "translation": "所以你们怎么想",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0401",
+      "episode": "S01E05",
+      "start": 947.32,
+      "end": 950.32,
+      "duration": 3.0,
+      "text": "You're seriously asking us if you're attractive?",
+      "translation": "你真是在问我们 你是否有吸引力吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0401.m4a"
+    },
+    {
+      "id": "s01e05-0402",
+      "episode": "S01E05",
+      "start": 950.16,
+      "end": 952.38,
+      "duration": 2.22,
+      "text": "Well, I know I'm no Erik Estrada or anything.",
+      "translation": "我知道自己算不上高帅富",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0403",
+      "episode": "S01E05",
+      "start": 952.25,
+      "end": 954.31,
+      "duration": 2.06,
+      "text": "- I'm just curious is all. - Dad.",
+      "translation": "-我只是好奇罢了 -爸",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0404",
+      "episode": "S01E05",
+      "start": 955.12,
+      "end": 956.96,
+      "duration": 1.84,
+      "text": "So if I was in one of your bars and-",
+      "translation": "所以如果我出现在同志酒吧 然后",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0405",
+      "episode": "S01E05",
+      "start": 958.78,
+      "end": 961.48,
+      "duration": 2.7,
+      "text": "Righteous Brothers were on, you know.",
+      "translation": "播着经典老歌",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0406",
+      "episode": "S01E05",
+      "start": 961.25,
+      "end": 962.44,
+      "duration": 1.19,
+      "text": "Would you, uh,",
+      "translation": "你会不会",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0407",
+      "episode": "S01E05",
+      "start": 963.1,
+      "end": 964.92,
+      "duration": 1.82,
+      "text": "I don't know, check me out?",
+      "translation": "我不知道 和我搭讪",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0408",
+      "episode": "S01E05",
+      "start": 964.72,
+      "end": 968.3,
+      "duration": 3.58,
+      "text": "Dad, you're really close to ruining gay for me.",
+      "translation": "爸 你快要毁了做基佬的情调了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0409",
+      "episode": "S01E05",
+      "start": 968.13,
+      "end": 969.78,
+      "duration": 1.65,
+      "text": "- All right, fine. Whatever. - Jay. Jay, now listen.",
+      "translation": "-那好 无所谓 -杰 听着",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0410",
+      "episode": "S01E05",
+      "start": 969.78,
+      "end": 972.19,
+      "duration": 2.41,
+      "text": "I think it's- I just think it's",
+      "translation": "我觉得 我只是觉得",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0411",
+      "episode": "S01E05",
+      "start": 972.19,
+      "end": 974.94,
+      "duration": 2.75,
+      "text": "a little weird for a son to say this to his father.",
+      "translation": "要一个儿子对父亲这么说实在太诡异",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0412",
+      "episode": "S01E05",
+      "start": 974.94,
+      "end": 978.3,
+      "duration": 3.36,
+      "text": "But for the record, I think you're smokin' hot.",
+      "translation": "但我声明一下 我觉得你超性感的",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0413",
+      "episode": "S01E05",
+      "start": 978.3,
+      "end": 978.67,
+      "duration": 0.37,
+      "text": "Really?",
+      "translation": "真的吗",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0414",
+      "episode": "S01E05",
+      "start": 978.8,
+      "end": 981.32,
+      "duration": 2.52,
+      "text": "Yeah, 100%. You're totally my type.",
+      "translation": "当然 百分百肯定 你绝对是我的菜",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0414.m4a"
+    },
+    {
+      "id": "s01e05-0415",
+      "episode": "S01E05",
+      "start": 981.21,
+      "end": 982.42,
+      "duration": 1.21,
+      "text": "You're dangerous, you're getable,",
+      "translation": "你既危险 又触手可及",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0416",
+      "episode": "S01E05",
+      "start": 982.42,
+      "end": 984.66,
+      "duration": 2.24,
+      "text": "you have a little \"Cashola\" In your pocket.",
+      "translation": "你荷包里又装着鼓鼓的钱",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0417",
+      "episode": "S01E05",
+      "start": 986.19,
+      "end": 987.28,
+      "duration": 1.09,
+      "text": "Face, body, the whole-",
+      "translation": "长相 身材 还是整体",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0418",
+      "episode": "S01E05",
+      "start": 987.22,
+      "end": 990.82,
+      "duration": 3.6,
+      "text": "The whole kit and caboodle, I think. Really.",
+      "translation": "从头到脚都特帅 我觉得 真的",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0418.m4a"
+    },
+    {
+      "id": "s01e05-0419",
+      "episode": "S01E05",
+      "start": 992.14,
+      "end": 994.34,
+      "duration": 2.2,
+      "text": "- What about a seven? Nine. For sure, nine.",
+      "translation": "-那有7分吗 -9分 绝对的9分",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0420",
+      "episode": "S01E05",
+      "start": 994.34,
+      "end": 996.73,
+      "duration": 2.39,
+      "text": "- But you knew that. - I might have lowballed a little bit.",
+      "translation": "-但你肯定知道的 -我有点低估自己了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0421",
+      "episode": "S01E05",
+      "start": 996.56,
+      "end": 998.2,
+      "duration": 1.64,
+      "text": "Okay, isn't there a game on?",
+      "translation": "不是还有比赛呢吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0422",
+      "episode": "S01E05",
+      "start": 1000.41,
+      "end": 1002.42,
+      "duration": 2.01,
+      "text": "- Touchy. - I know.",
+      "translation": "-他太敏感 -我知道",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0423",
+      "episode": "S01E05",
+      "start": 1006.06,
+      "end": 1008.61,
+      "duration": 2.55,
+      "text": "Gloria? Come on, let's- let's talk about this.",
+      "translation": "歌洛莉亚 拜托 我们好好谈谈",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0424",
+      "episode": "S01E05",
+      "start": 1009.74,
+      "end": 1011.94,
+      "duration": 2.2,
+      "text": "I've seen her kick in a door before.",
+      "translation": "我可见过她破门而入过",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0425",
+      "episode": "S01E05",
+      "start": 1017.42,
+      "end": 1020.52,
+      "duration": 3.1,
+      "text": "I don't know what my husband is saying to you or...",
+      "translation": "我不知道我丈夫和你说了什么 或者",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0426",
+      "episode": "S01E05",
+      "start": 1020.52,
+      "end": 1022.34,
+      "duration": 1.82,
+      "text": "why he's covered in your underwear.",
+      "translation": "为什么他浑身都是你的内裤",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0427",
+      "episode": "S01E05",
+      "start": 1024.5,
+      "end": 1027.4,
+      "duration": 2.9,
+      "text": "Obviously I'm trying to seduce him for his money.",
+      "translation": "很显然我是看上他的钱了呗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0428",
+      "episode": "S01E05",
+      "start": 1028.24,
+      "end": 1029.76,
+      "duration": 1.52,
+      "text": "'Cause that's what I do, right?",
+      "translation": "因为我就是这样的人嘛 对不对",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0429",
+      "episode": "S01E05",
+      "start": 1029.71,
+      "end": 1031.56,
+      "duration": 1.85,
+      "text": "What do I have to give back...",
+      "translation": "我究竟要付出什么",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0430",
+      "episode": "S01E05",
+      "start": 1031.56,
+      "end": 1034.55,
+      "duration": 2.99,
+      "text": "so that everyone trusts me? Huh?",
+      "translation": "才能得到大家的信任啊",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0431",
+      "episode": "S01E05",
+      "start": 1035.57,
+      "end": 1037.03,
+      "duration": 1.46,
+      "text": "- These earrings? - No.",
+      "translation": "-耳环吗 -不是",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0432",
+      "episode": "S01E05",
+      "start": 1037.03,
+      "end": 1039.74,
+      "duration": 2.71,
+      "text": "- What? This bracelet? - No.",
+      "translation": "-那是什么 手镯吗 -不是",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0433",
+      "episode": "S01E05",
+      "start": 1039.74,
+      "end": 1041.82,
+      "duration": 2.08,
+      "text": "- My new dress? - No.",
+      "translation": "-还是我的新裙子 -不是",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0434",
+      "episode": "S01E05",
+      "start": 1045.73,
+      "end": 1048.22,
+      "duration": 2.49,
+      "text": "I didn't respond because...",
+      "translation": "我没出声是因为",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0435",
+      "episode": "S01E05",
+      "start": 1048.75,
+      "end": 1052.19,
+      "duration": 3.44,
+      "text": "this shouldn't be about me.",
+      "translation": "其实关键不在于我",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0436",
+      "episode": "S01E05",
+      "start": 1053.1,
+      "end": 1054.59,
+      "duration": 1.49,
+      "text": "It should be about you...",
+      "translation": "而在于你",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0437",
+      "episode": "S01E05",
+      "start": 1054.91,
+      "end": 1059.03,
+      "duration": 4.12,
+      "text": "talking to you... about it.",
+      "translation": "和你 好好谈 一谈",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0438",
+      "episode": "S01E05",
+      "start": 1061.7,
+      "end": 1063.45,
+      "duration": 1.75,
+      "text": "Phil? Honey?",
+      "translation": "菲尔 亲爱的",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0439",
+      "episode": "S01E05",
+      "start": 1063.45,
+      "end": 1064.54,
+      "duration": 1.09,
+      "text": "No, no, no. No.",
+      "translation": "不 不 不 不用",
+      "learnable": false,
+      "reviewReasons": [
+        "low-value-utterance",
+        "repetitive-utterance"
+      ]
+    },
+    {
+      "id": "s01e05-0440",
+      "episode": "S01E05",
+      "start": 1066.38,
+      "end": 1067.34,
+      "duration": 0.96,
+      "text": "You're welcome.",
+      "translation": "不用谢",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0441",
+      "episode": "S01E05",
+      "start": 1070.94,
+      "end": 1072.06,
+      "duration": 1.12,
+      "text": "I don't know what to say",
+      "translation": "我不知道该说些什么",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0442",
+      "episode": "S01E05",
+      "start": 1072.06,
+      "end": 1074.39,
+      "duration": 2.33,
+      "text": "except for that I am really, really sorry.",
+      "translation": "只能说我真的非常非常抱歉",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0443",
+      "episode": "S01E05",
+      "start": 1075.6,
+      "end": 1077.1,
+      "duration": 1.5,
+      "text": "Just tell me one thing.",
+      "translation": "你就告诉我一件事",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0444",
+      "episode": "S01E05",
+      "start": 1077.38,
+      "end": 1079.98,
+      "duration": 2.6,
+      "text": "How do you really feel that I'm with your father?",
+      "translation": "对于我和你爸的关系 你到底怎么想",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0445",
+      "episode": "S01E05",
+      "start": 1080.14,
+      "end": 1081.79,
+      "duration": 1.65,
+      "text": "Uh, well-",
+      "translation": "其实",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0446",
+      "episode": "S01E05",
+      "start": 1082.28,
+      "end": 1084.02,
+      "duration": 1.74,
+      "text": "Honestly, at first, it was hard.",
+      "translation": "说实话 一开始 我很难接受",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0446.m4a"
+    },
+    {
+      "id": "s01e05-0447",
+      "episode": "S01E05",
+      "start": 1083.87,
+      "end": 1086.42,
+      "duration": 2.55,
+      "text": "I mean, you don't expect to wake up one morning...",
+      "translation": "我是说 谁都不会期望有一天醒来后发现",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0448",
+      "episode": "S01E05",
+      "start": 1086.42,
+      "end": 1089.44,
+      "duration": 3.02,
+      "text": "with a new mom who looks like she fell off a mud flap.",
+      "translation": "多了一个比自己还年轻性感的后妈吧",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0449",
+      "episode": "S01E05",
+      "start": 1090.44,
+      "end": 1092.68,
+      "duration": 2.24,
+      "text": "But... I'm getting used to it.",
+      "translation": "但是 我正慢慢去习惯",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0449.m4a"
+    },
+    {
+      "id": "s01e05-0450",
+      "episode": "S01E05",
+      "start": 1092.6,
+      "end": 1096.62,
+      "duration": 4.02,
+      "text": "And the important thing is you make him happy,",
+      "translation": "而且 重要的是你能让他幸福",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0451",
+      "episode": "S01E05",
+      "start": 1096.62,
+      "end": 1099.34,
+      "duration": 2.72,
+      "text": "which you do in- in so many ways,",
+      "translation": "用你的各种方法",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0452",
+      "episode": "S01E05",
+      "start": 1100.13,
+      "end": 1101.54,
+      "duration": 1.41,
+      "text": "so many colors.",
+      "translation": "五颜六色的方法",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0453",
+      "episode": "S01E05",
+      "start": 1104.57,
+      "end": 1105.52,
+      "duration": 0.95,
+      "text": "Are we okay?",
+      "translation": "我们和好了吗",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0454",
+      "episode": "S01E05",
+      "start": 1107.13,
+      "end": 1108.72,
+      "duration": 1.59,
+      "text": "- No. - No?",
+      "translation": "-没 -没",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "low-value-utterance",
+        "multiple-speakers",
+        "repetitive-utterance"
+      ]
+    },
+    {
+      "id": "s01e05-0455",
+      "episode": "S01E05",
+      "start": 1109.24,
+      "end": 1111.92,
+      "duration": 2.68,
+      "text": "You embarrassed me in front of everyone downstairs.",
+      "translation": "你让我在所有人面前出丑了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0455.m4a"
+    },
+    {
+      "id": "s01e05-0456",
+      "episode": "S01E05",
+      "start": 1111.9,
+      "end": 1114.28,
+      "duration": 2.38,
+      "text": "What, I'm supposed just to forget about it?",
+      "translation": "怎么 要我这么轻易就忘掉吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0456.m4a"
+    },
+    {
+      "id": "s01e05-0457",
+      "episode": "S01E05",
+      "start": 1114.11,
+      "end": 1115.48,
+      "duration": 1.37,
+      "text": "What do you want me to do-",
+      "translation": "那你想要怎样",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0458",
+      "episode": "S01E05",
+      "start": 1115.48,
+      "end": 1117.93,
+      "duration": 2.45,
+      "text": "just embarrass myself so we're even?",
+      "translation": "让我也出丑 这样我们就扯平了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0459",
+      "episode": "S01E05",
+      "start": 1118.1,
+      "end": 1119.12,
+      "duration": 1.02,
+      "text": "Go jump in the pool.",
+      "translation": "跳进泳池",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0460",
+      "episode": "S01E05",
+      "start": 1119.17,
+      "end": 1123.54,
+      "duration": 4.37,
+      "text": "[Go jump in a lake 直译为跳湖 俗语 让某人离远点]",
+      "translation": "",
+      "learnable": false,
+      "reviewReasons": [
+        "stage-direction",
+        "mixed-language-caption",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0461",
+      "episode": "S01E05",
+      "start": 1119.7,
+      "end": 1121.43,
+      "duration": 1.73,
+      "text": "Oh, you mean go jump in a lake. Right.",
+      "translation": "是让我离你远点 是吧",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0462",
+      "episode": "S01E05",
+      "start": 1121.28,
+      "end": 1123.84,
+      "duration": 2.56,
+      "text": "Go jump in the pool with your clothes on.",
+      "translation": "我是让你穿着衣服跳进泳池",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0463",
+      "episode": "S01E05",
+      "start": 1123.54,
+      "end": 1124.86,
+      "duration": 1.32,
+      "text": "Then I know you're sorry.",
+      "translation": "那样我就知道你的歉意了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0464",
+      "episode": "S01E05",
+      "start": 1124.9,
+      "end": 1126.62,
+      "duration": 1.72,
+      "text": "I'm not gonna do that, Gloria.",
+      "translation": "我是不会跳的 歌洛莉亚",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0464.m4a"
+    },
+    {
+      "id": "s01e05-0465",
+      "episode": "S01E05",
+      "start": 1127.26,
+      "end": 1130.28,
+      "duration": 3.02,
+      "text": "Okay. Then I won't forgive you.",
+      "translation": "好的 那我也不会原谅你",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0465.m4a"
+    },
+    {
+      "id": "s01e05-0466",
+      "episode": "S01E05",
+      "start": 1132.32,
+      "end": 1133.82,
+      "duration": 1.5,
+      "text": "Now a field goal beats us.",
+      "translation": "再来个定位球 我们就输了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0467",
+      "episode": "S01E05",
+      "start": 1134.26,
+      "end": 1135.72,
+      "duration": 1.46,
+      "text": "Hey, you guys work that out?",
+      "translation": "你们俩和好了吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0467.m4a"
+    },
+    {
+      "id": "s01e05-0468",
+      "episode": "S01E05",
+      "start": 1135.92,
+      "end": 1138.04,
+      "duration": 2.12,
+      "text": "Almost. Gloria just wants me to jump in the pool.",
+      "translation": "差不多了 歌洛莉亚想让我跳进泳池",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0469",
+      "episode": "S01E05",
+      "start": 1137.88,
+      "end": 1139.85,
+      "duration": 1.97,
+      "text": "- Okay then. - What?",
+      "translation": "-那好吧 -什么",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0470",
+      "episode": "S01E05",
+      "start": 1139.85,
+      "end": 1143.7,
+      "duration": 3.85,
+      "text": "If they could get a pass rush on 'em, something, a break.",
+      "translation": "他们咋就不来个突破 或者请求暂停啊",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0471",
+      "episode": "S01E05",
+      "start": 1148.5,
+      "end": 1150.4,
+      "duration": 1.9,
+      "text": "This is so awesome.",
+      "translation": "太赞了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0472",
+      "episode": "S01E05",
+      "start": 1150.32,
+      "end": 1152.12,
+      "duration": 1.8,
+      "text": "I know. Mom does not look good wet.",
+      "translation": "我知道 我妈浑身湿透很难看的",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0473",
+      "episode": "S01E05",
+      "start": 1152.22,
+      "end": 1154.76,
+      "duration": 2.54,
+      "text": "Gloria, is this really necessary?",
+      "translation": "歌洛莉亚 这真有必要吗",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0473.m4a"
+    },
+    {
+      "id": "s01e05-0474",
+      "episode": "S01E05",
+      "start": 1154.7,
+      "end": 1157.52,
+      "duration": 2.82,
+      "text": "Dad, it's fine. It's fine. If I need to jump in this water...",
+      "translation": "爸 没事 如果我跳进泳池",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0475",
+      "episode": "S01E05",
+      "start": 1157.52,
+      "end": 1159.97,
+      "duration": 2.45,
+      "text": "to prove to Gloria how sorry I am, I will do it.",
+      "translation": "能证明我对歌洛莉亚的歉意 那我就跳",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0476",
+      "episode": "S01E05",
+      "start": 1159.97,
+      "end": 1161.51,
+      "duration": 1.54,
+      "text": "I'm fine.",
+      "translation": "我没事",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0477",
+      "episode": "S01E05",
+      "start": 1162.75,
+      "end": 1164.17,
+      "duration": 1.42,
+      "text": "You're serious? You're not gonna stop me?",
+      "translation": "你来真的吗 你就不拦我一下",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0478",
+      "episode": "S01E05",
+      "start": 1164.46,
+      "end": 1165.74,
+      "duration": 1.28,
+      "text": "Why would I do that?",
+      "translation": "我干嘛要拦",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0479",
+      "episode": "S01E05",
+      "start": 1165.54,
+      "end": 1167.14,
+      "duration": 1.6,
+      "text": "Because I am standing here.",
+      "translation": "因为我已经站这了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0480",
+      "episode": "S01E05",
+      "start": 1167.11,
+      "end": 1169.44,
+      "duration": 2.33,
+      "text": "I am showing you my willingness to-",
+      "translation": "我已经证明了我的诚意",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0481",
+      "episode": "S01E05",
+      "start": 1170.0,
+      "end": 1171.16,
+      "duration": 1.16,
+      "text": "No?",
+      "translation": "不行是吧",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context",
+        "low-value-utterance"
+      ]
+    },
+    {
+      "id": "s01e05-0482",
+      "episode": "S01E05",
+      "start": 1178.18,
+      "end": 1181.89,
+      "duration": 3.71,
+      "text": "- Are you happy? - Yes! I forgive you!",
+      "translation": "-你高兴了吧 -没错 我原谅你了",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0483",
+      "episode": "S01E05",
+      "start": 1182.06,
+      "end": 1183.34,
+      "duration": 1.28,
+      "text": "Then give me your hand.",
+      "translation": "那就拉我一把",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0484",
+      "episode": "S01E05",
+      "start": 1183.12,
+      "end": 1185.04,
+      "duration": 1.92,
+      "text": "Oh, that's the oldest trick in the book.",
+      "translation": "这招早就烂大街了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0484.m4a"
+    },
+    {
+      "id": "s01e05-0485",
+      "episode": "S01E05",
+      "start": 1184.87,
+      "end": 1186.77,
+      "duration": 1.9,
+      "text": "- She's gonna pull you in there. - No!",
+      "translation": "-她要把你也拉进池里 -我才不",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0486",
+      "episode": "S01E05",
+      "start": 1187.04,
+      "end": 1188.54,
+      "duration": 1.5,
+      "text": "And that's my job.",
+      "translation": "所以我来帮你",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0487",
+      "episode": "S01E05",
+      "start": 1191.36,
+      "end": 1194.66,
+      "duration": 3.3,
+      "text": "This is funny, but this is also a teaching moment.",
+      "translation": "真有趣 但同时也给我们上了一课",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0487.m4a"
+    },
+    {
+      "id": "s01e05-0488",
+      "episode": "S01E05",
+      "start": 1194.49,
+      "end": 1195.95,
+      "duration": 1.46,
+      "text": "- Yeah! - Think about...No!",
+      "translation": "-是吧 -好好想想 不",
+      "learnable": false,
+      "reviewReasons": [
+        "multiple-speakers"
+      ]
+    },
+    {
+      "id": "s01e05-0489",
+      "episode": "S01E05",
+      "start": 1202.5,
+      "end": 1203.64,
+      "duration": 1.14,
+      "text": "Cannonball!",
+      "translation": "大炸弹来啦",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0490",
+      "episode": "S01E05",
+      "start": 1208.48,
+      "end": 1210.24,
+      "duration": 1.76,
+      "text": "The snap! Fumble!",
+      "translation": "向后传球 失误了",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0491",
+      "episode": "S01E05",
+      "start": 1211.16,
+      "end": 1212.7,
+      "duration": 1.54,
+      "text": "How could he fumble that?",
+      "translation": "怎么会传球失误呢",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0492",
+      "episode": "S01E05",
+      "start": 1212.52,
+      "end": 1213.41,
+      "duration": 0.89,
+      "text": "Center blew the snap.",
+      "translation": "都怪中卫",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0493",
+      "episode": "S01E05",
+      "start": 1213.28,
+      "end": 1214.6,
+      "duration": 1.32,
+      "text": "You know what?I hate that.",
+      "translation": "你知道吗 我最讨厌这么说了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0494",
+      "episode": "S01E05",
+      "start": 1214.47,
+      "end": 1215.22,
+      "duration": 0.75,
+      "text": "I played center,",
+      "translation": "我以前就是中卫",
+      "learnable": false,
+      "reviewReasons": [
+        "short-low-context",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0495",
+      "episode": "S01E05",
+      "start": 1215.22,
+      "end": 1217.59,
+      "duration": 2.37,
+      "text": "and I always got blamed for a quarterback's clumsy hands.",
+      "translation": "明明是四分卫笨手笨脚 却让我背黑锅",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment",
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0496",
+      "episode": "S01E05",
+      "start": 1217.52,
+      "end": 1220.0,
+      "duration": 2.48,
+      "text": "Well, I was a quarterback, and it was probably your fault.",
+      "translation": "我当过四分卫 这可能确实是你的错",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0497",
+      "episode": "S01E05",
+      "start": 1219.92,
+      "end": 1221.85,
+      "duration": 1.93,
+      "text": "It's impossible to fumble the ball...",
+      "translation": "如果四分卫把手的位置放正确了",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0498",
+      "episode": "S01E05",
+      "start": 1221.85,
+      "end": 1223.97,
+      "duration": 2.12,
+      "text": "when the quarterback has the proper hand placement.",
+      "translation": "传球怎么可能会失误呢",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0499",
+      "episode": "S01E05",
+      "start": 1224.34,
+      "end": 1227.26,
+      "duration": 2.92,
+      "text": "It's weird to think of a woman being sexually attracted to Dad.",
+      "translation": "要有女性认为老爸有吸引力那就太诡异了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0500",
+      "episode": "S01E05",
+      "start": 1227.04,
+      "end": 1228.38,
+      "duration": 1.34,
+      "text": "No, you wanna hear weird?",
+      "translation": "不 你知道什么才诡异吗",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0501",
+      "episode": "S01E05",
+      "start": 1228.72,
+      "end": 1231.24,
+      "duration": 2.52,
+      "text": "Cam said he'd pick up dad at a gay bar.",
+      "translation": "小卡说他会在同志酒吧找老爸搭讪",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0502",
+      "episode": "S01E05",
+      "start": 1231.29,
+      "end": 1232.26,
+      "duration": 0.97,
+      "text": "Ooh. How did that come up?",
+      "translation": "这是唱的哪出啊",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0503",
+      "episode": "S01E05",
+      "start": 1232.46,
+      "end": 1234.34,
+      "duration": 1.88,
+      "text": "Mmm, I'm really trying to block it out.",
+      "translation": "嗯嗯 我正想忘记这事呢",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0503.m4a"
+    },
+    {
+      "id": "s01e05-0504",
+      "episode": "S01E05",
+      "start": 1234.02,
+      "end": 1234.89,
+      "duration": 0.87,
+      "text": "As far as I'm concerned,",
+      "translation": "我觉得嘛",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0505",
+      "episode": "S01E05",
+      "start": 1234.78,
+      "end": 1236.64,
+      "duration": 1.86,
+      "text": "Mom and Dad had sex two times.",
+      "translation": "老爸老妈也就上过两次床",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0506",
+      "episode": "S01E05",
+      "start": 1237.74,
+      "end": 1238.33,
+      "duration": 0.59,
+      "text": "Agreed.",
+      "translation": "同意",
+      "learnable": false,
+      "reviewReasons": [
+        "too-short",
+        "short-low-context"
+      ]
+    },
+    {
+      "id": "s01e05-0507",
+      "episode": "S01E05",
+      "start": 1238.33,
+      "end": 1239.9,
+      "duration": 1.57,
+      "text": "Okay, get your hands up there",
+      "translation": "好 把你的手放到这上来",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0508",
+      "episode": "S01E05",
+      "start": 1239.9,
+      "end": 1241.46,
+      "duration": 1.56,
+      "text": "like you're lifting me off the ground.",
+      "translation": "就像你要把我举起来一样",
+      "learnable": false,
+      "reviewReasons": [
+        "sentence-fragment"
+      ]
+    },
+    {
+      "id": "s01e05-0509",
+      "episode": "S01E05",
+      "start": 1241.44,
+      "end": 1243.58,
+      "duration": 2.14,
+      "text": "Be one with me, Jay. There you go.",
+      "translation": "和我合为一体 杰 这就成了",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0510",
+      "episode": "S01E05",
+      "start": 1243.71,
+      "end": 1245.38,
+      "duration": 1.67,
+      "text": "Do you wanna get something to eat?",
+      "translation": "你想不想吃点东西",
+      "learnable": false,
+      "reviewReasons": [
+        "audio-transcript-mismatch"
+      ]
+    },
+    {
+      "id": "s01e05-0511",
+      "episode": "S01E05",
+      "start": 1245.18,
+      "end": 1246.9,
+      "duration": 1.72,
+      "text": "I am never eating again.",
+      "translation": "我恶心得什么都吃不下了",
+      "learnable": true,
+      "reviewReasons": [],
+      "audio": "audio/s01e05-0511.m4a"
+    },
+    {
+      "id": "s01e05-0512",
+      "episode": "S01E05",
+      "start": 1246.84,
+      "end": 1248.1,
+      "duration": 1.26,
+      "text": "Just snap the damn thing.",
+      "translation": "赶紧传那该死的球",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    },
+    {
+      "id": "s01e05-0513",
+      "episode": "S01E05",
+      "start": 1249.42,
+      "end": 1251.44,
+      "duration": 2.02,
+      "text": "Perfect. That one kinda hurt.",
+      "translation": "完美 就是有点疼",
+      "learnable": false,
+      "reviewReasons": [
+        "manual-low-value"
+      ]
+    }
+  ],
+  "sourceTranscript": "work/modern-family-alignment/transcripts/S01E05.json"
+}

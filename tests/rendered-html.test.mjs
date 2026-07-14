@@ -97,6 +97,19 @@ test("ships the fourth sentence course package and its clips", async () => {
   assert.match(course.entries[2].text, /because he's fine/);
 });
 
+test("ships the manually reviewed fifth sentence course package and its clips", async () => {
+  const course = JSON.parse(await read("app/data/modern-family-s01e05.json"));
+  const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e05/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.episode, "S01E05");
+  assert.equal(course.entries.length, 513);
+  assert.equal(course.entries.filter((entry) => entry.learnable).length, 88);
+  assert.equal(sentenceAudio.length, 88);
+  assert.match(course.sourceSubtitle, /S01E05 Coal Digger/);
+  assert.match(course.entries[0].text, /Let's go, buddy\. Schooltime/);
+});
+
 test("ships the B1 workplace dialogue course and its clips", async () => {
   const course = JSON.parse(await read("app/data/voa-workplace-conversations-b1.json"));
   const sentenceAudio = (await readdir(new URL("public/courses/voa/workplace-conversations-b1/audio", root)))
@@ -261,6 +274,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /modern-family-s01e02/);
   assert.match(courses, /modern-family-s01e03/);
   assert.match(courses, /modern-family-s01e04/);
+  assert.match(courses, /modern-family-s01e05/);
   assert.match(courses, /voa-workplace-conversations-b1/);
   assert.match(courses, /voa-pets-responsibility-b1/);
   assert.match(courses, /voa-visit-peru-b1/);

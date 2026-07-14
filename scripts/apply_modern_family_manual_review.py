@@ -15,6 +15,13 @@ def main() -> None:
     parser.add_argument("--audio-dir", type=Path, required=True)
     parser.add_argument("--exclusions", type=Path, required=True)
     parser.add_argument(
+        "--retained-key",
+        help=(
+            "Read a manually reviewed `reviewedRetained` list from this key and "
+            "exclude every other aligned candidate."
+        ),
+    )
+    parser.add_argument(
         "--exclusion-key",
         help="Catalog key to apply; defaults to the manifest course ID.",
     )
@@ -27,13 +34,25 @@ def main() -> None:
 
     manifest = json.loads(args.manifest.read_text())
     exclusion_key = args.exclusion_key or manifest["courseId"]
-    raw_exclusions = json.loads(args.exclusions.read_text()).get(exclusion_key, [])
+    review = json.loads(args.exclusions.read_text())
     exclusions: dict[str, str] = {}
-    for item in raw_exclusions:
-        if isinstance(item, str):
-            exclusions[item] = args.reason
-        else:
-            exclusions[item["id"]] = item.get("reason", args.reason)
+    if args.retained_key:
+        retained = review.get(args.retained_key, {}).get("reviewedRetained", [])
+        if not isinstance(retained, list):
+            raise ValueError("reviewedRetained must be a list")
+        retained_ids = set(retained)
+        candidate_ids = {entry["id"] for entry in manifest["entries"] if entry["learnable"]}
+        unknown = sorted(retained_ids - candidate_ids)
+        if unknown:
+            raise ValueError(f"Unknown or unaligned retained IDs: {', '.join(unknown)}")
+        exclusions = {entry_id: args.reason for entry_id in candidate_ids - retained_ids}
+    else:
+        raw_exclusions = review.get(exclusion_key, [])
+        for item in raw_exclusions:
+            if isinstance(item, str):
+                exclusions[item] = args.reason
+            else:
+                exclusions[item["id"]] = item.get("reason", args.reason)
     ids = {entry["id"] for entry in manifest["entries"]}
     unknown = sorted(set(exclusions) - ids)
     if unknown:

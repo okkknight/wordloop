@@ -2,6 +2,7 @@ import modernFamilyS01E01 from "./data/modern-family-s01e01.json";
 import modernFamilyS01E02 from "./data/modern-family-s01e02.json";
 import modernFamilyS01E03 from "./data/modern-family-s01e03.json";
 import modernFamilyS01E04 from "./data/modern-family-s01e04.json";
+import modernFamilyS01E05 from "./data/modern-family-s01e05.json";
 import voaWorkplaceConversationsB1 from "./data/voa-workplace-conversations-b1.json";
 import voaProjectFeedbackB1 from "./data/voa-project-feedback-b1.json";
 import voaPetsResponsibilityB1 from "./data/voa-pets-responsibility-b1.json";
@@ -26,6 +27,7 @@ import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-hig
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
 import { MODERN_FAMILY_S01E04_HIGHLIGHTS } from "./data/modern-family-s01e04-highlights";
+import { MODERN_FAMILY_S01E05_HIGHLIGHTS } from "./data/modern-family-s01e05-highlights";
 import { VOA_WORKPLACE_CONVERSATIONS_B1_HIGHLIGHTS } from "./data/voa-workplace-conversations-b1-highlights";
 import { VOA_PROJECT_FEEDBACK_B1_HIGHLIGHTS } from "./data/voa-project-feedback-b1-highlights";
 import { VOA_PETS_RESPONSIBILITY_B1_HIGHLIGHTS } from "./data/voa-pets-responsibility-b1-highlights";
@@ -114,6 +116,15 @@ const modernFamilyS01E04Entries = modernFamilyS01E04.entries
     translation: entry.translation,
     highlights: MODERN_FAMILY_S01E04_HIGHLIGHTS[entry.id],
     audio: `${basePath}/courses/modern-family/s01e04/${entry.audio}`,
+  })) as CourseEntry[];
+
+const modernFamilyS01E05Entries = modernFamilyS01E05.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({
+    ...entry,
+    translation: entry.translation,
+    highlights: MODERN_FAMILY_S01E05_HIGHLIGHTS[entry.id],
+    audio: `${basePath}/courses/modern-family/s01e05/${entry.audio}`,
   })) as CourseEntry[];
 
 const voaWorkplaceConversationsB1Entries = voaWorkplaceConversationsB1.entries
@@ -221,6 +232,16 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     entries: modernFamilyS01E04Entries,
   },
   {
+    id: "modern-family-s01e05",
+    collectionId: "modern-family-s01",
+    title: "Modern Family · S01E05",
+    subtitle: `Coal Digger · ${modernFamilyS01E05Entries.length} learning sentences`,
+    description: "家庭磨合、表达误会与讨论分歧的自然口语。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: modernFamilyS01E05Entries,
+  },
+  {
     id: "voa-workplace-conversations-b1",
     collectionId: "voa-level-2",
     title: "Workplace Conversations · B1",
@@ -307,7 +328,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
   { id: "ielts", label: "WORD COURSE", title: "IELTS 高频词", subtitle: "Academic Word List · 570 words" },
-  { id: "modern-family-s01", label: "DIALOGUE COURSE", title: "摩登家庭 · 第一季", subtitle: "4 集对白课程" },
+  { id: "modern-family-s01", label: "DIALOGUE COURSE", title: "摩登家庭 · 第一季", subtitle: "5 集对白课程" },
   { id: "voa-level-2", label: "DIALOGUE COURSE", title: "VOA · Level 2", subtitle: "20 节实用口语课程 · B1" },
 ];
 

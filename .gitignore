@@ -24,7 +24,9 @@
 
 # Local source media and duplicate editor copies. The generated course clips in
 # public/courses are the only media needed by the application.
-/modernfamily/
+/modernfamily/*
+!/modernfamily/season-01-subtitles/
+!/modernfamily/season-01-subtitles/*.ass
 /app/globals 2.css
 /app/layout 2.tsx
 /app/page 2.tsx

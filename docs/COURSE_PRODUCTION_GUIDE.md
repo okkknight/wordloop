@@ -6,12 +6,13 @@
 
 每个课程包必须满足：
 
+- 只收录 A2 及以上的英语：句子需要包含可迁移的表达、搭配或句型，不能仅因语法完整就保留。
 - 以完整、有独立学习价值的英语句子为最小练习单位；不按单词或任意时长切片。
 - 每个可学习句子都要有与字幕时间线对应的独立音频片段。
 - 保留原剧顺序，课程使用 `practiceOrder: "sequential"`。
 - 不收录西语或其他非英语台词、纯人名、语气词、重复应答、舞台说明、多人混杂台词、明显断句和无上下文价值的片段。
 - 仅对有复用价值、不过分低幼的单词、词组或固定搭配添加点状下划线标记；无合适标记的句子保持不标记。
-- 原始剧集音频、压缩包和临时工作文件不进入 Git；仅提交最终 manifest、课程配置、标记文件和切分后的音频。
+- 原始剧集音频、压缩包和临时工作文件不进入 Git；`modernfamily/season-01-subtitles/` 是例外，作为已核验的权威字幕来源纳入版本控制。仅提交最终 manifest、课程配置、标记文件和切分后的音频。
 
 第一、二集分别保留 220、217 句。这是质量参考，不是固定配额；宁可少收录，也不要为凑数量保留低价值语料。
 
@@ -21,6 +22,9 @@
 
 1. 一份原始音频文件，例如 `modernfamily/S01E03. .mp3`。
 2. 一份同集双语 ASS 字幕。字幕应含英文和中文，并使用可被 Python `utf-16` 读取的编码；若不是，请先转换编码。
+
+摩登家庭课程只能使用 `modernfamily/season-01-subtitles/` 中按真实剧集编号
+命名的字幕。新增素材须先通过音频与对白核验，再按剧集编号和标题加入该目录。
 
 使用以下临时目录，不提交：
 
@@ -45,7 +49,7 @@ public/courses/modern-family/s01e03/audio/
 
 不要仅相信原始音频的文件名。制作前应试听开头、中段和结尾，确认它们与同集字幕内容一致；若文件名与内容不符，绝不能按文件名直接切片。
 
-对来源复杂或已发现错位的媒体，先以 `scripts/transcribe_course_audio.py --word-timestamps` 生成实际音频的单词时间戳，再使用 `scripts/align_modern_family_episode.py` 将字幕与转写结果顺序对齐。该脚本会在同集覆盖率不足时拒绝输出，防止错集音频进入课程包。
+对新增媒体，先以 `scripts/transcribe_course_audio.py --word-timestamps` 生成实际音频的单词时间戳，再使用 `scripts/align_modern_family_episode.py` 将字幕与转写结果顺序对齐。该脚本会在同集覆盖率不足时拒绝输出，确保课程文字与音频一致。
 
 ## 3. 生成流程
 
@@ -56,7 +60,7 @@ public/courses/modern-family/s01e03/audio/
 ```bash
 python3 scripts/prepare_modern_family_episode.py \
   --episode S01E03 \
-  --subtitle work/modern-family-s01e03/source/S01E03.ass \
+  --subtitle 'modernfamily/season-01-subtitles/Modern Family S01E03 Come Fly with Me.简英.ass' \
   --audio 'modernfamily/S01E03. .mp3' \
   --output work/modern-family-s01e03
 ```
@@ -76,7 +80,7 @@ python3 scripts/prepare_modern_family_episode.py \
 自动筛选只负责明显问题，不能代替内容判断。按原剧顺序逐句审阅 `manifest.json` 中 `learnable: true` 的条目，重点检查：
 
 - 句子是否完整、自然，能脱离具体画面练习；
-- 是否是无意义的寒暄、纯应答、重复喊叫或角色名；
+- 是否低于 A2，或是无意义的寒暄、纯应答、重复喊叫或角色名；
 - 是否是字幕切断的半句话，或两人台词被拼在一起；
 - 是否有西语、口音转写乱码、文化梗残片或不适合学习的表达；
 - 中文翻译是否存在；缺失翻译的条目不能直接上线。
@@ -87,7 +91,7 @@ python3 scripts/prepare_modern_family_episode.py \
 
 如果某类低质量内容在多集重复出现，可把**规范化后的完整句子**加入脚本的 `LOW_VALUE_EXACT`，或把明显外语词组加入 `NON_ENGLISH_PATTERNS`。不要为单个偶发问题写过宽正则，避免误删正常句子。`SHORT_KEEP` 只用于少量虽短但确有复用价值的完整表达。
 
-完成音频对齐后，还要逐条进行第二轮人工筛选：剔除必须依赖人物关系或剧情才能理解的句子、单独应答、重复台词、过度低幼表达和复用价值低的文化梗。将结论记录在 `app/data/modern-family-manual-exclusions.json`，并用 `scripts/apply_modern_family_manual_review.py` 同步移除 manifest、音频和高亮中的对应条目。
+完成音频对齐后，还要逐条进行第二轮人工筛选：剔除低于 A2、必须依赖人物关系或剧情才能理解的句子、单独应答、重复台词、过度低幼表达和复用价值低的文化梗。将结论记录在 `app/data/modern-family-manual-exclusions.json`，并用 `scripts/apply_modern_family_manual_review.py` 同步移除 manifest、音频和高亮中的对应条目。
 
 ### 3.3 复制最终资产
 
