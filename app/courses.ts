@@ -1,7 +1,7 @@
 import modernFamilyS01E01 from "./data/modern-family-s01e01.json";
+import modernFamilyS01E02 from "./data/modern-family-s01e02.json";
 import modernFamilyS01E03 from "./data/modern-family-s01e03.json";
 import modernFamilyS01E04 from "./data/modern-family-s01e04.json";
-import modernFamilyS01E05 from "./data/modern-family-s01e05.json";
 import voaWorkplaceConversationsB1 from "./data/voa-workplace-conversations-b1.json";
 import voaProjectFeedbackB1 from "./data/voa-project-feedback-b1.json";
 import voaPetsResponsibilityB1 from "./data/voa-pets-responsibility-b1.json";
@@ -23,9 +23,9 @@ import voaAdvicePreferencesB1 from "./data/voa-advice-preferences-b1.json";
 import voaOfferingHelpB1 from "./data/voa-offering-help-b1.json";
 import voaLookAlikesB1 from "./data/voa-look-alikes-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
+import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
 import { MODERN_FAMILY_S01E04_HIGHLIGHTS } from "./data/modern-family-s01e04-highlights";
-import { MODERN_FAMILY_S01E05_HIGHLIGHTS } from "./data/modern-family-s01e05-highlights";
 import { VOA_WORKPLACE_CONVERSATIONS_B1_HIGHLIGHTS } from "./data/voa-workplace-conversations-b1-highlights";
 import { VOA_PROJECT_FEEDBACK_B1_HIGHLIGHTS } from "./data/voa-project-feedback-b1-highlights";
 import { VOA_PETS_RESPONSIBILITY_B1_HIGHLIGHTS } from "./data/voa-pets-responsibility-b1-highlights";
@@ -89,6 +89,15 @@ const modernFamilyEntries = modernFamilyS01E01.entries
     audio: `${basePath}/courses/modern-family/s01e01/${entry.audio}`,
   })) as CourseEntry[];
 
+const modernFamilyS01E02Entries = modernFamilyS01E02.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({
+    ...entry,
+    translation: entry.translation,
+    highlights: MODERN_FAMILY_S01E02_HIGHLIGHTS[entry.id],
+    audio: `${basePath}/courses/modern-family/s01e02/${entry.audio}`,
+  })) as CourseEntry[];
+
 const modernFamilyS01E03Entries = modernFamilyS01E03.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({
@@ -105,15 +114,6 @@ const modernFamilyS01E04Entries = modernFamilyS01E04.entries
     translation: entry.translation,
     highlights: MODERN_FAMILY_S01E04_HIGHLIGHTS[entry.id],
     audio: `${basePath}/courses/modern-family/s01e04/${entry.audio}`,
-  })) as CourseEntry[];
-
-const modernFamilyS01E05Entries = modernFamilyS01E05.entries
-  .filter((entry) => entry.learnable && entry.audio)
-  .map((entry) => ({
-    ...entry,
-    translation: entry.translation,
-    highlights: MODERN_FAMILY_S01E05_HIGHLIGHTS[entry.id],
-    audio: `${basePath}/courses/modern-family/s01e05/${entry.audio}`,
   })) as CourseEntry[];
 
 const voaWorkplaceConversationsB1Entries = voaWorkplaceConversationsB1.entries
@@ -191,6 +191,16 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     entries: modernFamilyEntries,
   },
   {
+    id: "modern-family-s01e02",
+    collectionId: "modern-family-s01",
+    title: "Modern Family · S01E02",
+    subtitle: `The Bicycle Thief · ${modernFamilyS01E02Entries.length} learning sentences`,
+    description: "用真实对白练习听力、表达和跟读。",
+    kind: "sentence",
+    practiceOrder: "sequential",
+    entries: modernFamilyS01E02Entries,
+  },
+  {
     id: "modern-family-s01e03",
     collectionId: "modern-family-s01",
     title: "Modern Family · S01E03",
@@ -209,16 +219,6 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
     kind: "sentence",
     practiceOrder: "sequential",
     entries: modernFamilyS01E04Entries,
-  },
-  {
-    id: "modern-family-s01e05",
-    collectionId: "modern-family-s01",
-    title: "Modern Family · S01E05",
-    subtitle: `Coal Digger · ${modernFamilyS01E05Entries.length} learning sentences`,
-    description: "用真实对白练习听力、表达和跟读。",
-    kind: "sentence",
-    practiceOrder: "sequential",
-    entries: modernFamilyS01E05Entries,
   },
   {
     id: "voa-workplace-conversations-b1",
@@ -313,7 +313,7 @@ export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
 
 export const IELTS_HIGH_FREQUENCY_COURSE = COURSE_PACKAGES[0];
 export const MODERN_FAMILY_S01E01_COURSE = COURSE_PACKAGES[1];
-export const MODERN_FAMILY_S01E03_COURSE = COURSE_PACKAGES[2];
-export const MODERN_FAMILY_S01E04_COURSE = COURSE_PACKAGES[3];
-export const MODERN_FAMILY_S01E05_COURSE = COURSE_PACKAGES[4];
+export const MODERN_FAMILY_S01E02_COURSE = COURSE_PACKAGES[2];
+export const MODERN_FAMILY_S01E03_COURSE = COURSE_PACKAGES[3];
+export const MODERN_FAMILY_S01E04_COURSE = COURSE_PACKAGES[4];
 export const DEFAULT_COURSE = MODERN_FAMILY_S01E01_COURSE;
