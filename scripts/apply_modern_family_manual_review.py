@@ -27,7 +27,13 @@ def main() -> None:
 
     manifest = json.loads(args.manifest.read_text())
     exclusion_key = args.exclusion_key or manifest["courseId"]
-    exclusions = json.loads(args.exclusions.read_text()).get(exclusion_key, [])
+    raw_exclusions = json.loads(args.exclusions.read_text()).get(exclusion_key, [])
+    exclusions: dict[str, str] = {}
+    for item in raw_exclusions:
+        if isinstance(item, str):
+            exclusions[item] = args.reason
+        else:
+            exclusions[item["id"]] = item.get("reason", args.reason)
     ids = {entry["id"] for entry in manifest["entries"]}
     unknown = sorted(set(exclusions) - ids)
     if unknown:
@@ -35,13 +41,14 @@ def main() -> None:
 
     removed = 0
     for entry in manifest["entries"]:
-        if entry["id"] not in exclusions:
+        reason = exclusions.get(entry["id"])
+        if reason is None:
             continue
         entry["learnable"] = False
         entry.pop("audio", None)
         reasons = entry.setdefault("reviewReasons", [])
-        if args.reason not in reasons:
-            reasons.append(args.reason)
+        if reason not in reasons:
+            reasons.append(reason)
         removed += 1
 
     staging = args.audio_dir.parent / f".{args.audio_dir.name}-reviewed"

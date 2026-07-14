@@ -1,0 +1,49 @@
+{
+  "courseId": "modern-family-s01",
+  "episode": "S01E01",
+  "method": "manual sentence-by-sentence review",
+  "minimumLevel": "A2",
+  "criteria": [
+    "Keep natural, reusable A2+ spoken English.",
+    "Exclude basic A1 identity statements, single-response utterances, and simple directives.",
+    "Exclude context-bound jokes, lyrics, fragments, and low-reuse plot-specific lines."
+  ],
+  "reviewedRetained": [
+    "s01e01-0003", "s01e01-0007", "s01e01-0008", "s01e01-0010", "s01e01-0011", "s01e01-0015", "s01e01-0017", "s01e01-0019", "s01e01-0022", "s01e01-0036", "s01e01-0039", "s01e01-0043", "s01e01-0058", "s01e01-0060", "s01e01-0067", "s01e01-0069", "s01e01-0081", "s01e01-0082", "s01e01-0083", "s01e01-0096", "s01e01-0097", "s01e01-0098", "s01e01-0099", "s01e01-0107", "s01e01-0113", "s01e01-0114", "s01e01-0115", "s01e01-0118", "s01e01-0119", "s01e01-0150", "s01e01-0153", "s01e01-0166", "s01e01-0172", "s01e01-0179", "s01e01-0188", "s01e01-0189", "s01e01-0190", "s01e01-0195", "s01e01-0211", "s01e01-0212", "s01e01-0214", "s01e01-0238", "s01e01-0240", "s01e01-0241", "s01e01-0243", "s01e01-0246", "s01e01-0247", "s01e01-0250", "s01e01-0251", "s01e01-0253", "s01e01-0270", "s01e01-0273", "s01e01-0285", "s01e01-0295", "s01e01-0300", "s01e01-0302", "s01e01-0306", "s01e01-0323", "s01e01-0324", "s01e01-0325", "s01e01-0329", "s01e01-0330", "s01e01-0338", "s01e01-0341", "s01e01-0347", "s01e01-0353", "s01e01-0356", "s01e01-0357", "s01e01-0360", "s01e01-0365", "s01e01-0366", "s01e01-0376", "s01e01-0377", "s01e01-0379", "s01e01-0381", "s01e01-0386", "s01e01-0388", "s01e01-0389", "s01e01-0416", "s01e01-0432", "s01e01-0433", "s01e01-0438", "s01e01-0439", "s01e01-0449", "s01e01-0459", "s01e01-0460", "s01e01-0461", "s01e01-0462", "s01e01-0465", "s01e01-0479", "s01e01-0491"
+  ],
+  "modern-family-s01e01-manual-final": [
+    { "id": "s01e01-0016", "reason": "below-a2" },
+    { "id": "s01e01-0040", "reason": "below-a2" },
+    { "id": "s01e01-0062", "reason": "below-a2" },
+    { "id": "s01e01-0084", "reason": "below-a2" },
+    { "id": "s01e01-0145", "reason": "below-a2" },
+    { "id": "s01e01-0154", "reason": "below-a2" },
+    { "id": "s01e01-0157", "reason": "below-a2" },
+    { "id": "s01e01-0167", "reason": "below-a2" },
+    { "id": "s01e01-0181", "reason": "below-a2" },
+    { "id": "s01e01-0267", "reason": "below-a2" },
+    { "id": "s01e01-0284", "reason": "below-a2" },
+    { "id": "s01e01-0294", "reason": "below-a2" },
+    { "id": "s01e01-0318", "reason": "below-a2" },
+    { "id": "s01e01-0359", "reason": "below-a2" },
+    { "id": "s01e01-0361", "reason": "below-a2" },
+    { "id": "s01e01-0393", "reason": "below-a2" },
+    { "id": "s01e01-0426", "reason": "below-a2" },
+    { "id": "s01e01-0427", "reason": "below-a2" },
+    { "id": "s01e01-0443", "reason": "below-a2" },
+    { "id": "s01e01-0447", "reason": "below-a2" },
+    { "id": "s01e01-0451", "reason": "below-a2" },
+    { "id": "s01e01-0464", "reason": "below-a2" },
+    { "id": "s01e01-0052", "reason": "manual-low-value" },
+    { "id": "s01e01-0255", "reason": "manual-low-value" },
+    { "id": "s01e01-0288", "reason": "manual-low-value" },
+    { "id": "s01e01-0308", "reason": "manual-low-value" },
+    { "id": "s01e01-0316", "reason": "manual-low-value" },
+    { "id": "s01e01-0351", "reason": "manual-low-value" },
+    { "id": "s01e01-0400", "reason": "manual-low-value" },
+    { "id": "s01e01-0403", "reason": "manual-low-value" },
+    { "id": "s01e01-0437", "reason": "manual-low-value" },
+    { "id": "s01e01-0478", "reason": "manual-low-value" },
+    { "id": "s01e01-0482", "reason": "manual-low-value" }
+  ]
+}
