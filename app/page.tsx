@@ -470,6 +470,7 @@ export default function Home() {
   const [panelOpen, setPanelOpen] = useState(false);
   const [coursePickerOpen, setCoursePickerOpen] = useState(false);
   const [restartPromptCourseId, setRestartPromptCourseId] = useState<string | null>(null);
+  const [completionPromptCourseId, setCompletionPromptCourseId] = useState<string | null>(null);
   const [restartPromptError, setRestartPromptError] = useState("");
   const [expandedCourseCollectionId, setExpandedCourseCollectionId] = useState(DEFAULT_COURSE.collectionId);
   const [search, setSearch] = useState("");
@@ -484,7 +485,6 @@ export default function Home() {
   const [usernameError, setUsernameError] = useState("");
   const [startupState, setStartupState] = useState<StartupState>("idle");
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
-  const studyAudioSourceRef = useRef("");
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
@@ -532,6 +532,8 @@ export default function Home() {
   const nextIndexRef = useRef(nextWordIndex);
   const nextRef = useRef<() => void>(() => undefined);
   const courseSwitchRequestRef = useRef(0);
+  const panelSwipeRef = useRef<{ pointerId: number; x: number; y: number } | null>(null);
+  const hydratedUserIdRef = useRef("");
   const activatedRef = useRef(activated);
   const pendingActivationRef = useRef(false);
   const activateRef = useRef<() => void>(() => undefined);
@@ -551,7 +553,6 @@ export default function Home() {
   const currentItem = sentenceMode
     ? { id: sentence.id, text: sentence.text, meaning: sentence.translation, phonetic: "", audio: sentence.audio, highlights: sentence.highlights }
     : { id: word, text: word, meaning, phonetic, audio: appPath(`/audio/${word}.m4a`) };
-  const currentAudio = sentenceMode ? sentence.audio : appPath(`/audio/${word}.m4a`);
   const currentIndex = sentenceMode ? sentenceIndexInCourse : wordIndex;
   const nextIndex = sentenceMode ? nextSentenceIndex : nextWordIndex;
   const nextAudio = nextIndex < 0
@@ -626,6 +627,8 @@ export default function Home() {
     : sentenceMode
       ? eligibleSentenceIndex(sentenceCourse.entries, sentenceProgress, sentenceIndex, sentencePracticeOrder)
       : eligibleIndex(progress, wordIndex);
+  const activeCourseComplete = sentenceMode && courseIsComplete(sentenceCourse.entries, sentenceProgress);
+  const nextDisabled = manualNextIndex < 0 && !activeCourseComplete;
   const totalStudies = Object.values(activeProgress).reduce((sum, count) => sum + count, 0);
   const completedWords = sentenceMode
     ? sentenceCourse.entries.filter((entry) => (sentenceProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT).length
@@ -657,6 +660,25 @@ export default function Home() {
     : textVisibilityMode === "focus"
       ? "Hide all words"
       : `Show ${sentenceMode ? "sentence" : "word"}`;
+
+  const beginPanelSwipe = useCallback((event: React.PointerEvent<HTMLElement>) => {
+    if (event.pointerType === "mouse") return;
+    panelSwipeRef.current = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
+  }, []);
+
+  const endPanelSwipe = useCallback((event: React.PointerEvent<HTMLElement>, direction: "left" | "right", close: () => void) => {
+    const start = panelSwipeRef.current;
+    panelSwipeRef.current = null;
+    if (!start || start.pointerId !== event.pointerId) return;
+    const horizontalDistance = event.clientX - start.x;
+    const verticalDistance = event.clientY - start.y;
+    const movedTowardEdge = direction === "left" ? horizontalDistance < -72 : horizontalDistance > 72;
+    if (movedTowardEdge && Math.abs(horizontalDistance) > Math.abs(verticalDistance)) close();
+  }, []);
+
+  const clearPanelSwipe = useCallback(() => {
+    panelSwipeRef.current = null;
+  }, []);
 
   const stopListening = useCallback(() => {
     if (repeatTrackRef.current) repeatTrackRef.current.enabled = false;
@@ -786,53 +808,59 @@ export default function Home() {
 
   useEffect(() => {
     if (!activeUserId) return;
+    if (hydratedUserIdRef.current === activeUserId) return;
     let activationTimeout: number | null = null;
     const hydrateTimer = window.setTimeout(() => {
+      if (hydratedUserIdRef.current === activeUserId) return;
+      hydratedUserIdRef.current = activeUserId;
       userIdRef.current = activeUserId;
       const locallyRememberedCourseId = localStorage.getItem(`word-loop-last-course:${activeUserId}`);
+      let bootstrapCourse = COURSE_PACKAGES.find((course) => course.id === activeCourseIdRef.current) ?? DEFAULT_COURSE;
       if (!activatedRef.current && courseSwitchRequestRef.current === 0 && locallyRememberedCourseId && COURSE_PACKAGES.some((course) => course.id === locallyRememberedCourseId) && locallyRememberedCourseId !== activeCourseIdRef.current) {
         if (pendingActivationRef.current) setStartupState("restoring");
         restoreRecentCourse(locallyRememberedCourseId);
-        return;
+        bootstrapCourse = COURSE_PACKAGES.find((course) => course.id === locallyRememberedCourseId) ?? bootstrapCourse;
       }
-      pendingProgressRef.current = readPendingProgressEvents(activeUserId, studyMode);
+      const bootstrapSentenceMode = bootstrapCourse.kind === "sentence";
+      const bootstrapStudyMode = studyModeRef.current;
+      pendingProgressRef.current = readPendingProgressEvents(activeUserId, bootstrapStudyMode);
       confirmedWordProgressRef.current = {};
       confirmedSentenceProgressRef.current = {};
       refreshWordProgress();
-      refreshSentenceProgress(activeCourseId);
+      refreshSentenceProgress(bootstrapCourse.id);
       const initialWord = randomIndex(WORDS.length);
       const firstEligibleSentence = initialEligibleSentenceIndex(
-        sentenceCourse.entries,
+        bootstrapCourse.entries,
         sentenceProgressRef.current,
       );
       const initialSentence = firstEligibleSentence >= 0 ? firstEligibleSentence : 0;
       setWordIndex(initialWord);
       setNextWordIndex(eligibleIndex(progressRef.current, initialWord));
-      sentenceEntriesRef.current = sentenceCourse.entries;
+      sentenceEntriesRef.current = bootstrapCourse.entries;
       sentenceIndexRef.current = initialSentence;
-      currentIndexRef.current = sentenceMode ? initialSentence : initialWord;
+      currentIndexRef.current = bootstrapSentenceMode ? initialSentence : initialWord;
       setSentenceIndex(initialSentence);
       setNextSentenceIndex(eligibleSentenceIndex(
-        sentenceCourse.entries,
+        bootstrapCourse.entries,
         sentenceProgressRef.current,
         initialSentence,
-        sentencePracticeOrder,
+        bootstrapCourse.practiceOrder,
       ));
       setPaletteIndex(randomIndex(PALETTES.length));
 
       const mergeWordProgress = (remoteProgress: Array<{ word: string; studyCount: number }>) => {
-      if (userIdRef.current !== activeUserId) return;
+      if (userIdRef.current !== activeUserId || studyModeRef.current !== bootstrapStudyMode) return;
       for (const item of remoteProgress) {
         confirmedWordProgressRef.current[item.word] = Math.max(confirmedWordProgressRef.current[item.word] ?? 0, Math.min(MAX_STUDY_COUNT, item.studyCount));
       }
       refreshWordProgress();
       };
-      const mergeSentenceProgress = (remoteProgress: Array<{ itemId: string; studyCount: number }>) => {
-      if (userIdRef.current !== activeUserId) return;
+      const mergeSentenceProgress = (remoteProgress: Array<{ itemId: string; studyCount: number }>, courseId: string) => {
+      if (userIdRef.current !== activeUserId || studyModeRef.current !== bootstrapStudyMode) return;
       for (const item of remoteProgress) {
         confirmedSentenceProgressRef.current[item.itemId] = Math.max(confirmedSentenceProgressRef.current[item.itemId] ?? 0, Math.min(MAX_STUDY_COUNT, item.studyCount));
       }
-      refreshSentenceProgress(activeCourseId);
+      if (activeCourseIdRef.current === courseId) refreshSentenceProgress(courseId);
       };
       const activatePendingSession = () => {
         if (!pendingActivationRef.current) return;
@@ -843,7 +871,7 @@ export default function Home() {
       activationTimeout = pendingActivationRef.current
         ? window.setTimeout(activatePendingSession, STARTUP_MAX_WAIT_MS)
         : null;
-      void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}`))
+      void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${bootstrapStudyMode}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
       .then((data: { progress: Array<{ word: string; studyCount: number }>; completions?: Array<{ courseId: string; completionCount: number }>; recentCourseId?: string }) => {
         mergeWordProgress(data.progress);
@@ -856,17 +884,46 @@ export default function Home() {
         activatePendingSession();
       })
         .catch(activatePendingSession);
-      void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${studyMode}&courseId=${encodeURIComponent(activeCourseId)}`))
+      void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${bootstrapStudyMode}&courseId=${encodeURIComponent(bootstrapCourse.id)}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data: { progress: Array<{ itemId: string; studyCount: number }> }) => mergeSentenceProgress(data.progress))
+      .then((data: { progress: Array<{ itemId: string; studyCount: number }> }) => mergeSentenceProgress(data.progress, bootstrapCourse.id))
         .catch(() => undefined);
-      void flushPendingProgress(activeUserId, studyMode);
+      void flushPendingProgress(activeUserId, bootstrapStudyMode);
     }, 0);
     return () => {
       window.clearTimeout(hydrateTimer);
       if (activationTimeout !== null) window.clearTimeout(activationTimeout);
     };
-  }, [activeCourseId, activeUserId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, restoreRecentCourse, sentenceCourse, sentenceMode, sentencePracticeOrder, studyMode]);
+  }, [activeUserId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, restoreRecentCourse]);
+
+  useEffect(() => {
+    if (!activeUserId || !activated) return;
+    const userId = activeUserId;
+    const mode = studyMode;
+    const courseId = activeCourseId;
+    const mergeWordProgress = (remoteProgress: Array<{ word: string; studyCount: number }>) => {
+      if (userIdRef.current !== userId || studyModeRef.current !== mode) return;
+      for (const item of remoteProgress) {
+        confirmedWordProgressRef.current[item.word] = Math.max(confirmedWordProgressRef.current[item.word] ?? 0, Math.min(MAX_STUDY_COUNT, item.studyCount));
+      }
+      refreshWordProgress();
+    };
+    const mergeSentenceProgress = (remoteProgress: Array<{ itemId: string; studyCount: number }>) => {
+      if (userIdRef.current !== userId || studyModeRef.current !== mode || activeCourseIdRef.current !== courseId) return;
+      for (const item of remoteProgress) {
+        confirmedSentenceProgressRef.current[item.itemId] = Math.max(confirmedSentenceProgressRef.current[item.itemId] ?? 0, Math.min(MAX_STUDY_COUNT, item.studyCount));
+      }
+      refreshSentenceProgress(courseId);
+    };
+    void fetch(appPath(`/api/progress?userId=${encodeURIComponent(userId)}&mode=${mode}`))
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((data: { progress: Array<{ word: string; studyCount: number }> }) => mergeWordProgress(data.progress))
+      .catch(() => undefined);
+    void fetch(appPath(`/api/progress?userId=${encodeURIComponent(userId)}&mode=${mode}&courseId=${encodeURIComponent(courseId)}`))
+      .then((response) => response.ok ? response.json() : Promise.reject())
+      .then((data: { progress: Array<{ itemId: string; studyCount: number }> }) => mergeSentenceProgress(data.progress))
+      .catch(() => undefined);
+  }, [activeCourseId, activeUserId, activated, refreshSentenceProgress, refreshWordProgress, studyMode]);
 
   useEffect(() => {
     const retryPendingProgress = () => {
@@ -915,10 +972,6 @@ export default function Home() {
   useEffect(() => {
     listenAutoPlayRef.current = listenAutoPlay;
   }, [listenAutoPlay]);
-
-  useEffect(() => {
-    studyAudioSourceRef.current = currentAudio;
-  }, [currentAudio]);
 
   useEffect(() => {
     progressRef.current = progress;
@@ -1384,7 +1437,12 @@ export default function Home() {
 
   const speak = useCallback(() => {
     if (studyMode === "repeat") beginRepeatTurn(currentIndexRef.current);
-    else playWord(studyAudioSourceRef.current);
+    else {
+      const audio = activeCourseKindRef.current === "sentence"
+        ? sentenceEntriesRef.current[currentIndexRef.current]?.audio
+        : WORDS[currentIndexRef.current]?.[0];
+      if (audio) playWord(audio);
+    }
   }, [beginRepeatTurn, playWord, studyMode]);
 
   const next = useCallback(() => {
@@ -1393,7 +1451,12 @@ export default function Home() {
       : sentenceMode
         ? eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrderRef.current)
         : eligibleIndex(progressRef.current, currentIndexRef.current);
-    if (targetIndex < 0) return;
+    if (targetIndex < 0) {
+      if (activeCourseKindRef.current === "sentence" && courseIsComplete(sentenceEntriesRef.current, sentenceProgressRef.current)) {
+        setCompletionPromptCourseId(activeCourseIdRef.current);
+      }
+      return;
+    }
     repeatAdvanceTargetRef.current = null;
     stopListening();
     clearRepeatAdvanceTimer();
@@ -1496,7 +1559,10 @@ export default function Home() {
       clearRepeatPhaseTimers();
       setRepeatState("idle");
       setRepeatMessage("READY");
-      playListenItem(studyAudioSourceRef.current);
+      const audio = activeCourseKindRef.current === "sentence"
+        ? sentenceEntriesRef.current[currentIndexRef.current]?.audio
+        : WORDS[currentIndexRef.current]?.[0];
+      if (audio) playListenItem(audio);
       return;
     }
 
@@ -1620,6 +1686,8 @@ export default function Home() {
     } else {
       currentIndexRef.current = wordIndexRef.current;
     }
+    confirmedSentenceProgressRef.current = isSentence ? targetProgress : {};
+    refreshSentenceProgress(targetCourse.id);
 
     activeRepeatTurnRef.current = repeatTurnIdRef.current + 1;
     repeatTurnIdRef.current = activeRepeatTurnRef.current;
@@ -1631,6 +1699,7 @@ export default function Home() {
     clearRepeatPhaseTimers();
     currentAudioRef.current?.pause();
     stopListening();
+    activeCourseIdRef.current = courseId;
     setActiveCourseId(courseId);
     localStorage.setItem(`word-loop-last-course:${userIdRef.current}`, courseId);
     if (userIdRef.current) {
@@ -1655,10 +1724,9 @@ export default function Home() {
     }
 
     beginRepeatTurn(currentIndexRef.current);
-  }, [activated, activeCourseId, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playListenItem, recordStudy, stopListening, studyMode]);
+  }, [activated, activeCourseId, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, playListenItem, recordStudy, refreshSentenceProgress, stopListening, studyMode]);
 
-  const restartCompletedCourse = useCallback(async () => {
-    const courseId = restartPromptCourseId;
+  const restartCompletedCourse = useCallback(async (courseId: string | null) => {
     const userId = userIdRef.current;
     if (!courseId || !userId) return;
     setRestartPromptError("");
@@ -1677,11 +1745,12 @@ export default function Home() {
         setSentenceProgress({});
       }
       setRestartPromptCourseId(null);
+      setCompletionPromptCourseId(null);
       await handleCourseChange(courseId, true);
     } catch {
       setRestartPromptError("暂时无法重置进度，请稍后重试。");
     }
-  }, [handleCourseChange, restartPromptCourseId, studyMode]);
+  }, [handleCourseChange, studyMode]);
 
   return (
     <main
@@ -1843,7 +1912,7 @@ export default function Home() {
           <button
             className="manual-next repeat-control"
             onClick={(event) => { event.stopPropagation(); next(); }}
-            disabled={manualNextIndex < 0}
+            disabled={nextDisabled}
           >
             NEXT <span aria-hidden="true">→</span>
           </button>
@@ -1864,7 +1933,7 @@ export default function Home() {
           <button
             className="manual-next repeat-control"
             onClick={(event) => { event.stopPropagation(); next(); }}
-            disabled={manualNextIndex < 0}
+            disabled={nextDisabled}
           >
             NEXT <span aria-hidden="true">→</span>
           </button>
@@ -1879,7 +1948,13 @@ export default function Home() {
             if (event.target === event.currentTarget) setCoursePickerOpen(false);
           }}
         >
-          <aside className="course-panel" aria-label="Course packages">
+          <aside
+            className="course-panel"
+            aria-label="Course packages"
+            onPointerDown={beginPanelSwipe}
+            onPointerUp={(event) => endPanelSwipe(event, "left", () => setCoursePickerOpen(false))}
+            onPointerCancel={clearPanelSwipe}
+          >
             <div className="panel-header">
               <div><span>COURSE PACKAGES</span><h2>选择课程</h2></div>
               <button onClick={() => setCoursePickerOpen(false)} aria-label="Close course selector">×</button>
@@ -1939,7 +2014,22 @@ export default function Home() {
             {restartPromptError && <p className="restart-course-error">{restartPromptError}</p>}
             <div>
               <button onClick={() => setRestartPromptCourseId(null)}>取消</button>
-              <button className="restart-course-confirm" onClick={() => void restartCompletedCourse()}>重新开始</button>
+              <button className="restart-course-confirm" onClick={() => void restartCompletedCourse(restartPromptCourseId)}>重新开始</button>
+            </div>
+          </section>
+        </div>
+      )}
+
+      {completionPromptCourseId && (
+        <div className="restart-course-backdrop" role="presentation" onClick={(event) => event.stopPropagation()}>
+          <section className="restart-course-dialog completion-dialog" role="dialog" aria-modal="true" aria-labelledby="completion-course-title">
+            <span>COURSE COMPLETE</span>
+            <h2 id="completion-course-title">这门课程学完了</h2>
+            <p>太棒了。你可以从头再练一遍，或者挑选下一门课程继续学习。</p>
+            {restartPromptError && <p className="restart-course-error">{restartPromptError}</p>}
+            <div>
+              <button onClick={() => { setCompletionPromptCourseId(null); setRestartPromptError(""); setCoursePickerOpen(true); }}>选择课程</button>
+              <button className="restart-course-confirm" onClick={() => void restartCompletedCourse(completionPromptCourseId)}>再练一次</button>
             </div>
           </section>
         </div>
@@ -1953,7 +2043,13 @@ export default function Home() {
             if (event.target === event.currentTarget) setPanelOpen(false);
           }}
         >
-          <aside className="progress-panel" aria-label="Learning progress panel">
+          <aside
+            className="progress-panel"
+            aria-label="Learning progress panel"
+            onPointerDown={beginPanelSwipe}
+            onPointerUp={(event) => endPanelSwipe(event, "right", () => setPanelOpen(false))}
+            onPointerCancel={clearPanelSwipe}
+          >
             <div className="panel-header">
               <div>
                 <span>YOUR PROGRESS</span>

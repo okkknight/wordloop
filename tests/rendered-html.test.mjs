@@ -289,6 +289,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /completionPromptCourseId/);
   assert.match(page, /COURSE COMPLETE/);
   assert.match(page, /这门课程学完了/);
+  assert.match(page, /const beginPanelSwipe/);
+  assert.match(page, /endPanelSwipe\(event, "left"/);
+  assert.match(page, /endPanelSwipe\(event, "right"/);
   assert.match(page, /resetCourse: true/);
   assert.match(page, /completionCourseId/);
   assert.match(page, /course-card-completion/);
