@@ -26,7 +26,7 @@ test("ships all VOA Level 2 clips with complete alignment metadata", async () =>
   const manifests = (await readdir(new URL("app/data", root)))
     .filter((file) => file.startsWith("voa-") && file.endsWith(".json"));
 
-  assert.equal(manifests.length, 23);
+  assert.equal(manifests.length, 24);
 
   for (const file of manifests) {
     const course = JSON.parse(await read(`app/data/${file}`));
@@ -257,6 +257,16 @@ test("ships the B1 where there's smoke course and its clips", async () => {
   assert.match(course.entries[4].text, /fire emergency/i);
 });
 
+test("ships the B1 dream a little dream course and its clips", async () => {
+  const course = JSON.parse(await read("app/data/voa-dream-a-little-dream-b1.json"));
+  const audio = (await readdir(new URL("public/courses/voa/dream-a-little-dream-b1/audio", root)))
+    .filter((file) => file.endsWith(".m4a"));
+
+  assert.equal(course.entries.length, 20);
+  assert.equal(audio.length, 20);
+  assert.match(course.entries[3].text, /dream of being a nurse/i);
+});
+
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
   const courses = await read("app/courses.ts");
@@ -276,6 +286,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /COURSE_PACKAGES/);
   assert.match(page, /const MAX_STUDY_COUNT = 3/);
   assert.match(page, /restartPromptCourseId/);
+  assert.match(page, /completionPromptCourseId/);
+  assert.match(page, /COURSE COMPLETE/);
+  assert.match(page, /这门课程学完了/);
   assert.match(page, /resetCourse: true/);
   assert.match(page, /completionCourseId/);
   assert.match(page, /course-card-completion/);
@@ -314,6 +327,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(courses, /voa-fish-out-of-water-b1/);
   assert.match(courses, /voa-for-the-birds-b1/);
   assert.match(courses, /voa-where-theres-smoke-b1/);
+  assert.match(courses, /voa-dream-a-little-dream-b1/);
   assert.match(courses, /voa-in-common-b1/);
   assert.match(courses, /voa-keep-moving-b1/);
   assert.match(courses, /voa-find-your-way-b1/);
@@ -344,7 +358,9 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /const \[textVisibilityMode, setTextVisibilityMode\] = useState<TextVisibilityMode>\("full"\)/);
   assert.match(page, /const visibilityControlModes: readonly TextVisibilityMode\[\]/);
   assert.match(page, /aria-label=\{visibilityAriaLabel\}/);
-  assert.match(page, /pendingProgressRef\.current = readPendingProgressEvents\(activeUserId, studyMode\)/);
+  assert.match(page, /pendingProgressRef\.current = readPendingProgressEvents\(activeUserId, bootstrapStudyMode\)/);
+  assert.match(page, /if \(hydratedUserIdRef\.current === activeUserId\) return/);
+  assert.match(page, /activeCourseKindRef\.current === "sentence"/);
   assert.match(page, /function renderMaskedText/);
   assert.match(page, /const MIN_SPEECH_MS = 350/);
   assert.match(page, /const MIN_SENTENCE_WORD_COVERAGE = 0\.6/);

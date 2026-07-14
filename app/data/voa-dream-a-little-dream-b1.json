@@ -1,0 +1,209 @@
+{
+  "courseId": "voa-dream-a-little-dream-b1",
+  "provider": "VOA Learning English",
+  "sourceUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-30/4465315.html",
+  "attribution": "Source: VOA Learning English · Let's Learn English Level 2, Lesson 30: Dream a Little Dream",
+  "licenseNote": "VOA-produced Learning English content is public domain; third-party agency material is excluded.",
+  "entries": [
+    {
+      "id": "voa-dream-001",
+      "text": "Anna, where are you going in such a hurry?",
+      "translation": "安娜，你这么着急要去哪里？",
+      "learnable": true,
+      "audio": "audio/voa-dream-001.m4a",
+      "start": 0.88,
+      "end": 3.46,
+      "duration": 2.58
+    },
+    {
+      "id": "voa-dream-002",
+      "text": "Today I get the results from my blood test.",
+      "translation": "今天我要拿到血液检查结果。",
+      "learnable": true,
+      "audio": "audio/voa-dream-002.m4a",
+      "start": 5.88,
+      "end": 8.75,
+      "duration": 2.87
+    },
+    {
+      "id": "voa-dream-003",
+      "text": "I'm sure you're fine. Don't worry.",
+      "translation": "我相信你没事。别担心。",
+      "learnable": true,
+      "audio": "audio/voa-dream-003.m4a",
+      "start": 8.75,
+      "end": 10.92,
+      "duration": 2.17
+    },
+    {
+      "id": "voa-dream-004",
+      "text": "You know, I used to dream of being a nurse. It is such an honorable career.",
+      "translation": "你知道，我曾梦想成为一名护士。这是一份很崇高的职业。",
+      "learnable": true,
+      "audio": "audio/voa-dream-004.m4a",
+      "start": 11.58,
+      "end": 17.22,
+      "duration": 5.64
+    },
+    {
+      "id": "voa-dream-005",
+      "text": "Is there something you've dreamed of doing?",
+      "translation": "有什么事是你梦想去做的吗？",
+      "learnable": true,
+      "audio": "audio/voa-dream-005.m4a",
+      "start": 17.3,
+      "end": 19.48,
+      "duration": 2.18
+    },
+    {
+      "id": "voa-dream-006",
+      "text": "Sure! I would love to be a dog trainer.",
+      "translation": "当然！我很想成为训狗师。",
+      "learnable": true,
+      "audio": "audio/voa-dream-006.m4a",
+      "start": 19.76,
+      "end": 23.04,
+      "duration": 3.28
+    },
+    {
+      "id": "voa-dream-007",
+      "text": "Actually, I've taught my dog, Dublin, lots of tricks!",
+      "translation": "事实上，我已经教会我的狗都柏林很多把戏了！",
+      "learnable": true,
+      "audio": "audio/voa-dream-007.m4a",
+      "start": 23.6,
+      "end": 27.1,
+      "duration": 3.5
+    },
+    {
+      "id": "voa-dream-008",
+      "text": "Well, I'm off to the nurse.",
+      "translation": "好了，我要去找护士了。",
+      "learnable": true,
+      "audio": "audio/voa-dream-008.m4a",
+      "start": 27.34,
+      "end": 29.1,
+      "duration": 1.76
+    },
+    {
+      "id": "voa-dream-009",
+      "text": "I'm looking at her test results and they're not good.",
+      "translation": "我在看她的检查结果，情况不太好。",
+      "learnable": true,
+      "audio": "audio/voa-dream-009.m4a",
+      "start": 35.6,
+      "end": 39.12,
+      "duration": 3.52
+    },
+    {
+      "id": "voa-dream-010",
+      "text": "In fact, I'm afraid she's not going to make it.",
+      "translation": "事实上，我担心她撑不过去了。",
+      "learnable": true,
+      "audio": "audio/voa-dream-010.m4a",
+      "start": 39.62,
+      "end": 43.36,
+      "duration": 3.74
+    },
+    {
+      "id": "voa-dream-011",
+      "text": "What?! I'm not going to make it? I'm dying??",
+      "translation": "什么？！我撑不过去了吗？我要死了吗？？",
+      "learnable": true,
+      "audio": "audio/voa-dream-011.m4a",
+      "start": 44.32,
+      "end": 48.98,
+      "duration": 4.66
+    },
+    {
+      "id": "voa-dream-012",
+      "text": "Anna, come in. How are you?",
+      "translation": "安娜，进来吧。你怎么样？",
+      "learnable": true,
+      "audio": "audio/voa-dream-012.m4a",
+      "start": 50.98,
+      "end": 53.2,
+      "duration": 2.22
+    },
+    {
+      "id": "voa-dream-013",
+      "text": "I just heard you on the phone. Just tell me: How much longer do I have?",
+      "translation": "我刚才听到你打电话了。直接告诉我吧：我还有多久？",
+      "learnable": true,
+      "audio": "audio/voa-dream-013.m4a",
+      "start": 59.84,
+      "end": 64.8,
+      "duration": 4.96
+    },
+    {
+      "id": "voa-dream-014",
+      "text": "I wasn't talking about you. A student of mine didn't do well on her science test.",
+      "translation": "我说的不是你。我的一个学生科学考试没考好。",
+      "learnable": true,
+      "audio": "audio/voa-dream-014.m4a",
+      "start": 64.98,
+      "end": 70.02,
+      "duration": 5.04
+    },
+    {
+      "id": "voa-dream-015",
+      "text": "For a minute, my whole life passed before my eyes. There are so many things I haven't done yet.",
+      "translation": "刚才一瞬间，我的一生都在眼前闪过。我还有这么多事情没做。",
+      "learnable": true,
+      "audio": "audio/voa-dream-015.m4a",
+      "start": 76.84,
+      "end": 83.9,
+      "duration": 7.06
+    },
+    {
+      "id": "voa-dream-016",
+      "text": "Well, life is short. It's important to do something you love every day.",
+      "translation": "人生短暂。每天做自己热爱的事很重要。",
+      "learnable": true,
+      "audio": "audio/voa-dream-016.m4a",
+      "start": 83.9,
+      "end": 88.78,
+      "duration": 4.88
+    },
+    {
+      "id": "voa-dream-017",
+      "text": "I couldn't agree more.",
+      "translation": "我完全同意。",
+      "learnable": true,
+      "audio": "audio/voa-dream-017.m4a",
+      "start": 89.5,
+      "end": 91.58,
+      "duration": 2.08
+    },
+    {
+      "id": "voa-dream-018",
+      "text": "Let's talk about your blood test. Your cholesterol is really low.",
+      "translation": "来谈谈你的血检结果。你的胆固醇非常低。",
+      "learnable": true,
+      "audio": "audio/voa-dream-018.m4a",
+      "start": 93.12,
+      "end": 96.6,
+      "duration": 3.48
+    },
+    {
+      "id": "voa-dream-019",
+      "text": "That's easy. I'd love to win the World Karaoke Contest.",
+      "translation": "这很简单。我很想赢得世界卡拉 OK 大赛。",
+      "learnable": true,
+      "audio": "audio/voa-dream-019.m4a",
+      "start": 114.54,
+      "end": 119.78,
+      "duration": 5.24
+    },
+    {
+      "id": "voa-dream-020",
+      "text": "This is so strange. I just saw on Twitter that they are having auditions in D.C. this weekend!",
+      "translation": "这太奇怪了。我刚在推特上看到，他们这个周末要在华盛顿特区举行选拔！",
+      "learnable": true,
+      "audio": "audio/voa-dream-020.m4a",
+      "start": 119.98,
+      "end": 128.76,
+      "duration": 8.78
+    }
+  ]
+}

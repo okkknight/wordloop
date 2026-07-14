@@ -26,6 +26,7 @@ import voaLookAlikesB1 from "./data/voa-look-alikes-b1.json";
 import voaFishOutOfWaterB1 from "./data/voa-fish-out-of-water-b1.json";
 import voaForTheBirdsB1 from "./data/voa-for-the-birds-b1.json";
 import voaWhereTheresSmokeB1 from "./data/voa-where-theres-smoke-b1.json";
+import voaDreamALittleDreamB1 from "./data/voa-dream-a-little-dream-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -177,6 +178,7 @@ const voaLookAlikesB1Entries = voaLookAlikesB1.entries.filter((entry) => entry.l
 const voaFishOutOfWaterB1Entries = voaFishOutOfWaterB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, audio: `${basePath}/courses/voa/fish-out-of-water-b1/${entry.audio}` })) as CourseEntry[];
 const voaForTheBirdsB1Entries = voaForTheBirdsB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, audio: `${basePath}/courses/voa/for-the-birds-b1/${entry.audio}` })) as CourseEntry[];
 const voaWhereTheresSmokeB1Entries = voaWhereTheresSmokeB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, audio: `${basePath}/courses/voa/where-theres-smoke-b1/${entry.audio}` })) as CourseEntry[];
+const voaDreamALittleDreamB1Entries = voaDreamALittleDreamB1.entries.filter((entry) => entry.learnable && entry.audio).map((entry) => ({ ...entry, audio: `${basePath}/courses/voa/dream-a-little-dream-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -333,12 +335,13 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "voa-fish-out-of-water-b1", collectionId: "voa-level-2", title: "Fish out of Water · B1", subtitle: `VOA Learning English · ${voaFishOutOfWaterB1Entries.length} learning sentences`, description: "邀约与婉拒、船屋生活、表达担忧和礼貌离开的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaFishOutOfWaterB1Entries },
   { id: "voa-for-the-birds-b1", collectionId: "voa-level-2", title: "For the Birds · B1", subtitle: `VOA Learning English · ${voaForTheBirdsB1Entries.length} learning sentences`, description: "表达失望、说明职责、提出猜想，以及 have to 和 ought to 的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaForTheBirdsB1Entries },
   { id: "voa-where-theres-smoke-b1", collectionId: "voa-level-2", title: "Where There's Smoke... · B1", subtitle: `VOA Learning English · ${voaWhereTheresSmokeB1Entries.length} learning sentences`, description: "消防安全、紧急撤离、条件句与明确安全指令的实用口语。", kind: "sentence", practiceOrder: "sequential", entries: voaWhereTheresSmokeB1Entries },
+  { id: "voa-dream-a-little-dream-b1", collectionId: "voa-level-2", title: "Dream a Little Dream · B1", subtitle: `VOA Learning English · ${voaDreamALittleDreamB1Entries.length} learning sentences`, description: "表达梦想、讨论职业愿望、回应担心与谈论人生目标的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaDreamALittleDreamB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
   { id: "ielts", label: "WORD COURSE", title: "IELTS 高频词", subtitle: "Academic Word List · 570 words" },
   { id: "modern-family-s01", label: "DIALOGUE COURSE", title: "摩登家庭 · 第一季", subtitle: "5 集对白课程" },
-  { id: "voa-level-2", label: "DIALOGUE COURSE", title: "VOA · Level 2", subtitle: "23 节实用口语课程 · B1" },
+  { id: "voa-level-2", label: "DIALOGUE COURSE", title: "VOA · Level 2", subtitle: "24 节实用口语课程 · B1" },
 ];
 
 export const IELTS_HIGH_FREQUENCY_COURSE = COURSE_PACKAGES[0];
