@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P0.1 reviewed, P1 task ready
+
+- 独立 reviewer 对 `42b2486` 给出 PASS：33/33 测试通过、基线与 diff 检查通过、仅保留 4 个既有 lint error，业务源码和资源无修改。
+- Reviewer 确认 S01E01 manifest/运行时 ID 历史差异与 collection ID 唯一性校验是 P1 必须处理的风险。
+- 新增 [`../tasks/2026-07-15-p1-course-contract-exporter.md`](../tasks/2026-07-15-p1-course-contract-exporter.md)，明确运行时注册 ID 是规范 ID、Web 暂不改数据入口、生成产物与重复音频不入 Git。
+
 ## 2026-07-15 · P0.1 developed, pending review
 
 - 冻结仅面向 iPhone 的当前产品基线；桌面端、iPad 和 macOS 不在迁移验收范围。

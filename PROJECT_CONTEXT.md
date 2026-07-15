@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，当前检查点为 P0.1 当前行为与内容基线冻结。
+任务：执行 iOS 迁移 Plan，当前检查点为 P1 统一课程协议与确定性 exporter。
 
-执行状态：P0.1 基线已开发完成，等待独立复核；尚未创建 iOS 工程。
+执行状态：P0.1 已独立复核通过；P1 任务卡已基于真实基线与 reviewer 风险生成，尚未创建 iOS 工程。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -177,7 +177,8 @@ git diff --check
 - 项目入口：`README.md`
 - 原生 iOS 迁移：`docs/IOS_MIGRATION_SPEC.md`
 - iOS 实施 Plan：`docs/plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`
-- 当前任务卡：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
+- 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
+- 当前任务卡：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`

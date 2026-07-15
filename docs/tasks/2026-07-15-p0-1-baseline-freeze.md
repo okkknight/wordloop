@@ -1,6 +1,10 @@
 # P0.1 当前行为与内容基线冻结
 
-状态：开发完成，待独立复核
+状态：已独立复核通过
+
+复核提交：`42b2486`
+
+复核结果：PASS。`npm test` 33/33 通过，基线检查与 `git diff --check` 通过；lint 精确保留 `app/page.tsx` 的 4 个既有错误且无新增 warning；业务源码、API、数据库和课程资源未修改。
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
