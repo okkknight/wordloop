@@ -1,6 +1,6 @@
 # P3.3 iPhone 主学习页静态 Shell
 
-状态：首次复核问题已修复，待重新独立复核
+状态：修复后独立复核 PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -150,3 +150,15 @@ git status --short --ignored
 - speaker 与 visibility SF Symbols 固定为 18 pt semibold，不再随 accessibility Dynamic Type 膨胀；各自继续使用 44 × 44 pt frame。UI test 在 accessibility 3 下断言两个按钮可点击、命中框至少 44 pt 且不相交。
 - 四张视觉证据均已用刷新 App 重拍；accessibility 3 中两个图形完整留在各自圆形内且有明确间隔，Listen/Repeat 未选中文字对比可辨。hash 和差异记录已更新。
 - 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态完成修复后验收：八个 Package tests、iPhone build、DesignSystem 12/12、Features 26/26、App integration 1/1、UI 12/12、Web 41/41 全部通过；lint 精确保持既有 4 errors、0 warnings。仍需未参与修复的 reviewer 重新结论；P3.3 PASS 前不得进入 P3.4。
+
+## 修复后独立复核结果（2026-07-15）
+
+结论：**PASS**。
+
+- reviewer 确认 `PosterBackground`、`ModeSwitch` 与 DesignSystem 回归测试直接引用同一组 `WordLoopLayerOpacity.posterAccent / modeTrack / modeUnselectedText` token，值分别为 `0.58 / 0.10 / 1.0`。按 UI 相同 sRGB 层叠顺序独立复算，sun 纯背景区域为 **8.746483:1**，accent 圆环区域为 **5.300792:1**，均超过小文字 4.5:1；canonical palette 未改变。
+- `MainStudyView` 的 speaker 与 visibility SF Symbols 都固定为 18 pt semibold，外层各使用独立 44 × 44 pt frame。accessibility 3 截图中图形完整留在各自圆形内且有明确间隔；相关 UI test 实际验证两个按钮可点击、play 命中框至少 44 pt 且 `play.maxX <= visibility.minX`。
+- 四张刷新截图的尺寸和 SHA-256 与 `visual-verification.md` 一致：iPhone 17e repeat/listen/accessibility 3 为 `1170 × 2532 px`，hash 分别为 `0debaccf4a8e141e3932e068362d191fdf33256783c131570d7d12ee092fd0e3`、`841b2e5e13c7c03596894f9c8bd48c00c1f3b8a53665c9e0f4234910d1e7bf53`、`f9323971844cfab7a563b17c05e4d0c159f48cd24be2d69203ea28ffb537ea73`；iPhone 17 Pro hidden 为 `1206 × 2622 px` / `4fd9f33112db8a1e5b4d3d6ac1124a4be224fbdd9cf3a0b181bef3561e4f129b`。人工检查确认均为真实 study shell，未选中文字清晰，图标无越界重叠，也没有 Startup、gallery、App Switcher 或调试浮层。
+- 独立重跑 DesignSystem 12/12、Features 26/26、StudyShell 相关 UI 4/4 与 App integration 1/1；修复提交记录的完整冷验收为八个 Package、iPhone build、App UI 12/12，记录与当前源码及测试计数一致。
+- `npm run baseline:ios` 与 `npm test` 通过，Web 为 41/41；lint 精确保持既有 4 errors、0 warnings；`git diff --check` 通过，工作区只有 ignored 生成物。修复没有引入课程解析、音频、进度、持久化、网络或 Realtime，也没有扩展桌面/iPad 产品。
+
+P3.3 已满足退出标准。下一步可以根据当前真实页面 API 生成 P3.4 课程抽屉任务卡；本次复核未生成任务卡，也未实施 P3.4。

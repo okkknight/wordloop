@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.3 re-reviewed PASS
+
+- 修复后独立 reviewer 确认 PosterBackground、ModeSwitch 与测试共用 `posterAccent / modeTrack / modeUnselectedText = 0.58 / 0.10 / 1.0`；sun 纯背景与 accent 圆环区域按真实 sRGB 层叠分别为 8.746483:1 与 5.300792:1，均超过 4.5:1。
+- speaker/visibility SF Symbols 均固定为 18 pt semibold、各处于独立 44 pt frame；accessibility 3 截图无越界重叠，UI test 验证按钮可点击、命中框至少 44 pt 且不相交。
+- 四张刷新截图的 hash/尺寸与文档一致，均为真实 study shell。DesignSystem 12/12、Features 26/26、相关 UI 4/4、App integration 1/1、Web 41/41 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- P3.3 修复后独立复核结论为 PASS。下一步只根据当前真实主学习页 API 生成 P3.4 课程抽屉任务卡，不提前实施。
+
 ## 2026-07-15 · P3.3 visual blockers fixed, re-review pending
 
 - Design System 新增实际 sRGB layer compositing 和共享 `posterAccent / modeTrack / modeUnselectedText` opacity token；ModeSwitch 未选中文字改用不透明 ink，纯背景和 accent 圆环下实算约 8.746:1/5.301:1，同一 UI token 的单元测试锁定两种底层至少 4.5:1。
