@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P1 undeclared-file gap fixed, re-review pending
+
+- 第二轮独立复核确认源竞态修复有效，但发现临时树只验证 expected 文件、未拒绝额外文件，因此仍为 FAIL。
+- 临时树验证已改为递归枚举整个生成根，实际文件集合必须严格等于 catalog、report、每课 course/integrity 和全部声明音频；同时拒绝 symlink 与非普通文件。
+- 新增 `afterMaterialize` 注入未声明 M4A 的回归，必须失败且旧目标 digest 不变。
+- 双 rename 的强杀空窗由 reviewer 判定不阻塞可重建的 P1 开发产物；P7 App 安装器仍必须使用 immutable version directory + 原子指针/目录切换满足运行时零空窗。
+
 ## 2026-07-15 · P1 integrity race fixed, re-review pending
 
 - 独立 reviewer 对首个 CP-01 提交给出 FAIL：音频在 build 读取/哈希后、materialize 硬链接前被并发改写时，临时树可能与 `integrity.json` 不一致。

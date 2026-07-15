@@ -181,6 +181,16 @@ test("source mutations fail closed and a failed write preserves the last valid o
     })), /integrity mismatch/);
     assert.deepEqual(await digestGeneratedTree(output), goodDigest, "failed temporary verification preserves the last valid output");
 
+    await assert.rejects(withSourceDateEpoch(() => generateCoursePackages({
+      root: mutationRoot,
+      output,
+      mode: "write",
+      hooks: {
+        afterMaterialize: async ({ temporary: generated }) => cp(replacementAudio, join(generated, "courses/ielts-high-frequency/1/audio/undeclared.m4a")),
+      },
+    })), /file set mismatch/);
+    assert.deepEqual(await digestGeneratedTree(output), goodDigest, "an undeclared generated file cannot replace the last valid output");
+
     const duplicateCollection = originalCourses.replace('{ id: "ielts", label:', '{ id: "modern-family-s01", label:');
     await writeFile(coursesPath, duplicateCollection);
     await assert.rejects(loadCourseSources(mutationRoot), /Duplicate collection ID/);

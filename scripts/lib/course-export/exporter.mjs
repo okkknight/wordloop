@@ -176,23 +176,39 @@ async function materialize(result, directory) {
 }
 
 async function verifyMaterialized(result, directory) {
+  const expected = new Map([
+    ["catalog.json", { bytes: result.catalogBytes.length, sha256: sha256(result.catalogBytes) }],
+    ["validation-report.json", { bytes: result.validationReportBytes.length, sha256: sha256(result.validationReportBytes) }],
+  ]);
   for (const item of result.packages) {
-    const courseDirectory = join(directory, "courses", item.course.id, String(item.course.contentVersion));
-    const expected = new Map([
-      ["course.json", { bytes: item.courseBytes.length, sha256: sha256(item.courseBytes) }],
-      ...item.audios.map((audio) => [audio.packagePath, audio.integrity]),
-    ]);
-    for (const [path, integrity] of expected) {
-      const target = join(courseDirectory, path);
-      const info = await lstat(target);
-      if (!info.isFile() || info.isSymbolicLink()) throw new Error(`Generated package file is not regular: ${target}`);
-      const bytes = await readFile(target);
-      if (bytes.length !== integrity.bytes || sha256(bytes) !== integrity.sha256) {
-        throw new Error(`Generated package integrity mismatch: ${item.course.id}/${path}`);
-      }
+    const prefix = `courses/${item.course.id}/${item.course.contentVersion}`;
+    expected.set(`${prefix}/course.json`, { bytes: item.courseBytes.length, sha256: sha256(item.courseBytes) });
+    expected.set(`${prefix}/integrity.json`, { bytes: item.integrityBytes.length, sha256: sha256(item.integrityBytes) });
+    for (const audio of item.audios) expected.set(`${prefix}/${audio.packagePath}`, audio.integrity);
+  }
+  const actualPaths = [];
+  async function visit(current) {
+    const entries = await readdir(current, { withFileTypes: true });
+    for (const entry of entries) {
+      const path = join(current, entry.name);
+      const info = await lstat(path);
+      if (info.isSymbolicLink()) throw new Error(`Generated package contains symlink: ${path}`);
+      if (info.isDirectory()) await visit(path);
+      else if (info.isFile()) actualPaths.push(relative(directory, path));
+      else throw new Error(`Generated package contains unsupported entry: ${path}`);
     }
-    const writtenIntegrity = await readFile(join(courseDirectory, "integrity.json"));
-    if (!writtenIntegrity.equals(item.integrityBytes)) throw new Error(`Generated integrity manifest mismatch: ${item.course.id}`);
+  }
+  await visit(directory);
+  const expectedPaths = [...expected.keys()].sort();
+  actualPaths.sort();
+  if (JSON.stringify(actualPaths) !== JSON.stringify(expectedPaths)) {
+    throw new Error("Generated package file set mismatch");
+  }
+  for (const [path, integrity] of expected) {
+    const bytes = await readFile(join(directory, path));
+    if (bytes.length !== integrity.bytes || sha256(bytes) !== integrity.sha256) {
+      throw new Error(`Generated package integrity mismatch: ${path}`);
+    }
   }
 }
 
