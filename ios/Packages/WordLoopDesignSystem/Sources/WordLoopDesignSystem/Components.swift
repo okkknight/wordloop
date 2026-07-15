@@ -188,9 +188,11 @@ public struct CourseCard: View {
                     if let badge = model.badge { MonoLabel(badge) }
                 }
                 MonoLabel(model.metadata)
-                    .opacity(0.62)
+                    .opacity(WordLoopLayerOpacity.courseCardSecondaryText)
                 if let detail = model.detail {
-                    Text(detail).font(WordLoopTypography.body(size: 13)).opacity(0.68)
+                    Text(detail)
+                        .font(WordLoopTypography.body(size: 13))
+                        .opacity(WordLoopLayerOpacity.courseCardSecondaryText)
                 }
             }
             .multilineTextAlignment(.leading)
@@ -200,7 +202,20 @@ public struct CourseCard: View {
             .background(palette.background.color.opacity(0.88), in: RoundedRectangle(cornerRadius: WordLoopRadius.card))
             .overlay {
                 RoundedRectangle(cornerRadius: WordLoopRadius.card)
-                    .stroke(model.isSelected ? palette.accent.color : palette.ink.color.opacity(0.18), lineWidth: WordLoopBorder.hairline)
+                    .stroke(
+                        model.isSelected ? palette.accent.color : palette.ink.color.opacity(WordLoopLayerOpacity.courseCardBoundary),
+                        lineWidth: model.isSelected ? WordLoopBorder.emphasized : WordLoopBorder.hairline
+                    )
+            }
+            .overlay {
+                if model.isSelected {
+                    RoundedRectangle(cornerRadius: WordLoopRadius.card - 3)
+                        .inset(by: 3)
+                        .stroke(
+                            palette.ink.color.opacity(WordLoopLayerOpacity.courseCardBoundary),
+                            lineWidth: WordLoopBorder.hairline
+                        )
+                }
             }
         }
         .buttonStyle(.plain)
@@ -219,23 +234,32 @@ public enum SideDrawerEdge: Equatable, Sendable {
 public struct SideDrawer<Content: View>: View {
     private let edge: SideDrawerEdge
     private let palette: PosterPalette
+    private let kicker: String?
     private let title: String
     private let closeAccessibilityLabel: String
+    private let closeAccessibilityIdentifier: String
+    private let isModal: Bool
     private let onClose: () -> Void
     private let content: Content
 
     public init(
         edge: SideDrawerEdge,
         palette: PosterPalette,
+        kicker: String? = nil,
         title: String,
         closeAccessibilityLabel: String,
+        closeAccessibilityIdentifier: String? = nil,
+        isModal: Bool = true,
         onClose: @escaping () -> Void,
         @ViewBuilder content: () -> Content
     ) {
         self.edge = edge
         self.palette = palette
+        self.kicker = kicker
         self.title = title
         self.closeAccessibilityLabel = closeAccessibilityLabel
+        self.closeAccessibilityIdentifier = closeAccessibilityIdentifier ?? closeAccessibilityLabel
+        self.isModal = isModal
         self.onClose = onClose
         self.content = content()
     }
@@ -246,9 +270,15 @@ public struct SideDrawer<Content: View>: View {
                 if edge == .trailing { Spacer(minLength: 0) }
                 VStack(spacing: WordLoopSpacing.md) {
                     HStack(alignment: .top) {
-                        Text(title).font(WordLoopTypography.title())
+                        VStack(alignment: .leading, spacing: WordLoopSpacing.xs) {
+                            if let kicker {
+                                MonoLabel(kicker, color: palette.accessibleAccentText.color)
+                            }
+                            Text(title).font(WordLoopTypography.title())
+                        }
                         Spacer()
                         PosterButton(.icon(systemName: "xmark"), accessibilityLabel: closeAccessibilityLabel, action: onClose)
+                            .accessibilityIdentifier(closeAccessibilityIdentifier)
                     }
                     content.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 }
@@ -265,7 +295,7 @@ public struct SideDrawer<Content: View>: View {
             .background(.black.opacity(0.42))
         }
         .accessibilityElement(children: .contain)
-        .accessibilityAddTraits(.isModal)
+        .accessibilityAddTraits(isModal ? .isModal : [])
     }
 }
 

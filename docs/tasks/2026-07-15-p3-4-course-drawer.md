@@ -1,6 +1,6 @@
 # P3.4 iPhone 课程抽屉静态 Shell
 
-状态：任务卡已锁定，待开发
+状态：开发完成，待独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -116,7 +116,7 @@ git diff --check
 git status --short --ignored
 ```
 
-退出标准：抽屉方向、modal、搜索、集合、课程卡、selected/completion、空态、三种关闭入口、列表独立滚动和辅助字号通过；fixture 点击不改变主学习业务；P3.1–P3.3 回归保留；无正式课程解析、下载、音频、进度、持久化、网络或 Realtime 副作用；冷构建、App tests 和 Web 41 项不退化；lint 不超过既有 4 errors、0 warnings；没有桌面产品支持。
+退出标准：抽屉方向、modal、搜索、集合、课程卡、selected/completion、空态、三种关闭入口、列表独立滚动和辅助字号通过；fixture 点击不改变主学习业务；P3.1–P3.3 回归保留；无正式课程解析、下载、音频、进度、持久化、网络或 Realtime 副作用；冷构建、App tests 和 Web 42 项（含本任务新增结构测试）不退化；lint 不超过既有 4 errors、0 warnings；没有桌面产品支持。
 
 ## 交接
 

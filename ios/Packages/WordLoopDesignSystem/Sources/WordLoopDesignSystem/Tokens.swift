@@ -51,6 +51,8 @@ public enum WordLoopLayerOpacity {
     public static let posterAccent = 0.58
     public static let modeTrack = 0.10
     public static let modeUnselectedText = 1.0
+    public static let courseCardSecondaryText = 0.75
+    public static let courseCardBoundary = 0.56
 }
 
 public struct PosterPalette: Identifiable, Equatable, Hashable, Sendable {

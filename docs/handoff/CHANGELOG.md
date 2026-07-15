@@ -2,6 +2,15 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.4 course drawer developed, pending review
+
+- 新增 CourseDrawer 展示模型、三集合 fixture、确定性搜索/折叠、dismiss reason/action、`@MainActor @Observable` 内存 Store 和 SwiftUI 左侧抽屉；P3.3 `COURSE` 已接入，默认 Startup 与关闭的 study shell 路由不变。
+- 抽屉覆盖 selected/completion、空态、header/backdrop/主导左滑关闭、列表独立滚动、modal 背景隔离和 accessibility 3 + Reduce Motion；点击 S01E02 后仍验证主学习页为 S01E01 / 75/91，不模拟真实切课。
+- `SideDrawer` 支持可选 kicker、关闭 identifier 与由组合容器承载 modal trait；右侧遮罩作为同一 modal accessibility tree 的稳定按钮暴露。CourseCard 次要文字/边界改为共享 75%/56% 合成 token，六 palette 最低 5.068:1/3.097:1；selected 保留 canonical accent 外框和语义 ink 内框。
+- 四张真实 iPhone 17e/17 Pro 截图已保存并人工核对，覆盖默认、空态、`× 12` 完成次数和辅助字号收起态；尺寸、fixture、hash 与平台差异见课程抽屉视觉验证。
+- 从删除生成物、SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、iPhone build、DesignSystem 12/12、Features 39/39、App integration 1/1、UI 16/16、Web 42/42 全部通过；lint 精确保持既有 4 errors、0 warnings，diff check 与 ignore hygiene 通过。
+- P3.4 当前开发完成待独立复核；PASS 前不得生成或实施 P3.5 进度抽屉。
+
 ## 2026-07-15 · P3.3 re-reviewed PASS
 
 - 修复后独立 reviewer 确认 PosterBackground、ModeSwitch 与测试共用 `posterAccent / modeTrack / modeUnselectedText = 0.58 / 0.10 / 1.0`；sun 纯背景与 accent 圆环区域按真实 sRGB 层叠分别为 8.746483:1 与 5.300792:1，均超过 4.5:1。

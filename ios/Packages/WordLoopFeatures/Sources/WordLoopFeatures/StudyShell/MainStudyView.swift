@@ -3,12 +3,19 @@ import WordLoopDesignSystem
 
 public struct MainStudyView: View {
     @Bindable private var store: StudyShellStore
+    @Bindable private var courseDrawerStore: CourseDrawerStore
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var hasAppeared = false
 
     public init(store: StudyShellStore) {
         self.store = store
+        self.courseDrawerStore = CourseDrawerStore()
+    }
+
+    public init(store: StudyShellStore, courseDrawerStore: CourseDrawerStore) {
+        self.store = store
+        self.courseDrawerStore = courseDrawerStore
     }
 
     public var body: some View {
@@ -28,12 +35,24 @@ public struct MainStudyView: View {
                     }
                 }
             }
+            .accessibilityHidden(courseDrawerStore.state.isPresented)
             Color.clear
                 .frame(width: 1, height: 1)
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel("主学习页")
                 .accessibilityIdentifier("study.page")
+                .accessibilityHidden(courseDrawerStore.state.isPresented)
+
+            if courseDrawerStore.state.isPresented {
+                CourseDrawerView(store: courseDrawerStore, palette: store.state.palette)
+                    .transition(.move(edge: .leading).combined(with: .opacity))
+                    .zIndex(10)
+            }
         }
+        .animation(
+            .easeInOut(duration: WordLoopMotion.drawer(reduceMotion: motionReduced).duration),
+            value: courseDrawerStore.state.isPresented
+        )
         .onAppear {
             let motion = WordLoopMotion.contentEnter(reduceMotion: motionReduced)
             withAnimation(.easeOut(duration: motion.duration)) {
@@ -79,7 +98,7 @@ public struct MainStudyView: View {
     }
 
     private var courseButton: some View {
-        Button("COURSE") {}
+        Button("COURSE", action: courseDrawerStore.present)
             .font(WordLoopTypography.label(size: 10))
             .frame(minWidth: WordLoopSpacing.minimumHit, minHeight: WordLoopSpacing.minimumHit)
             .buttonStyle(.plain)

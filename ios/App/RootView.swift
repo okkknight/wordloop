@@ -6,6 +6,7 @@ struct RootView: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var startupStore: StartupStore
     @State private var studyShellStore: StudyShellStore
+    @State private var courseDrawerStore: CourseDrawerStore
 
     init(container: AppContainer) {
         self.container = container
@@ -22,6 +23,11 @@ struct RootView: View {
                 state: StudyShellViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
             )
         )
+        _courseDrawerStore = State(
+            initialValue: CourseDrawerStore(
+                state: CourseDrawerViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
+            )
+        )
     }
 
     var body: some View {
@@ -29,7 +35,7 @@ struct RootView: View {
             if showsDesignSystemGallery {
                 DesignSystemGalleryView()
             } else if showsStudyShell {
-                MainStudyView(store: studyShellStore)
+                MainStudyView(store: studyShellStore, courseDrawerStore: courseDrawerStore)
             } else {
                 StartupView(store: startupStore)
             }
