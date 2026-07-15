@@ -52,6 +52,6 @@ next-env.d.ts
 /.playwright-cli/
 /content/dist/
 /ios/Generated/
-/ios/.build/
+**/.build/
 /ios/.derivedData/
 **/xcuserdata/

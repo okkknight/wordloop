@@ -1,6 +1,6 @@
 # P2 原生 iPhone 工程与模块骨架
 
-状态：独立复核未通过，待修复工程缓存忽略规则
+状态：首次独立复核未通过；缓存忽略规则已修复，待重新复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -129,6 +129,7 @@ git status --short --ignored
 - App integration test 与 UI launch test 已额外通过；UI test 只验证无业务 skeleton 成功启动。
 - `npm test` 为 38/38；`npm run lint` 只有既有 `app/page.tsx` 4 errors、0 warnings；课程基线、export/check 与 `git diff --check` 均通过。
 - 未修改 Web UI、课程、音频、API、数据库或部署，也未实现任何 P3 之后的业务能力。
+- 首次独立复核发现 Package 目录内的标准 SwiftPM `.build/` 未被忽略；现已改为递归忽略所有 `.build/`，并增加 package-local cache 静态回归。其余验收项在首次复核中均通过。
 
 ## 独立复核结果
 

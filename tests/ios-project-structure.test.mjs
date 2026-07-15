@@ -72,7 +72,14 @@ test("native project is an iPhone-only Swift 6 modular skeleton", async () => {
   const sensitive = `${project}\n${shared}\n${app}\n${environment}`;
   assert.doesNotMatch(sensitive, /(?:sk-|OPENAI_API_KEY|api[_-]?key\s*=|token\s*=)/i);
 
-  for (const path of ["content/dist", "ios/Generated", "ios/.build", "ios/.derivedData", "ios/WordLoop.xcodeproj/xcuserdata/UserInterfaceState.xcuserstate"]) {
+  for (const path of [
+    "content/dist",
+    "ios/Generated",
+    "ios/.build/debug.yaml",
+    "ios/Packages/WordLoopCore/.build/debug.yaml",
+    "ios/.derivedData",
+    "ios/WordLoop.xcodeproj/xcuserdata/UserInterfaceState.xcuserstate",
+  ]) {
     const result = await execFileAsync("git", ["check-ignore", "-q", path], { cwd: root }).then(() => true, () => false);
     assert.equal(result, true, `${path} must be ignored`);
   }

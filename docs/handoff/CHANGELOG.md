@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P2 Package cache hygiene fixed, re-review pending
+
+- `.gitignore` 从只覆盖 `ios/.build/` 改为递归覆盖所有 `.build/`，因此统一验证目录和 `ios/Packages/<Package>/.build/` 标准 SwiftPM 缓存都不会污染工作区。
+- 工程结构测试新增 package-local `.build/debug.yaml` ignore 回归，避免后续退化。
+- 首次 reviewer 的其余冷启动构建、Package tests、App integration/UI tests、Web 38/38、lint、iPhone-only、密钥与边界检查均已通过；修复提交后必须重新独立复核，PASS 前仍不进入 P3。
+
 ## 2026-07-15 · P2 review failed on Package cache hygiene
 
 - 独立 reviewer 从删除课程生成物、SwiftPM cache 和 DerivedData 的状态执行完整验收；`scripts/verify_ios.sh` 成功重建内容、通过八个 Package tests 并编译 iPhone 17 Pro / iOS 26.5 Simulator。
