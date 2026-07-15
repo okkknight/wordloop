@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P0.1 developed, pending review
+
+- 冻结仅面向 iPhone 的当前产品基线；桌面端、iPad 和 macOS 不在迁移验收范围。
+- 新增 [`../ios-migration/baseline/README.md`](../ios-migration/baseline/README.md) 及 6 张 390 × 844 移动 Web 证据截图、产品验收矩阵、D1/Node API 合同和质量基线。
+- 新增 AST 驱动的内容清单工具与 5 项 mutation tests，验证真实注册表、30 门课程、570 个单词、836 个句子、1,406 个 M4A 和引用完整性。
+- `npm test` 构建成功且 33 项通过；lint 仍只有 `app/page.tsx` 的 4 个既有 memoization 错误，P0.1 新增文件无 error/warning。
+- Web UI、学习状态、课程、音频、API 和数据库均未修改。下一步必须先独立复核 CP-00，再生成 P1 任务卡。
+
 ## 2026-07-15 · P0.1 started
 
 - 在 `codex/ios-migration` 分支开始执行完整迁移 Plan。

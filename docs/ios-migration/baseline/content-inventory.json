@@ -1,0 +1,801 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "page": {
+      "path": "app/page.tsx",
+      "stateDeclarationsStartLine": 460
+    },
+    "styles": {
+      "path": "app/globals.css",
+      "posterStartLine": 7
+    },
+    "courses": {
+      "path": "app/courses.ts",
+      "packagesStartLine": 191
+    },
+    "words": {
+      "path": "app/words.ts",
+      "tupleStartLine": 5
+    }
+  },
+  "counts": {
+    "collections": 3,
+    "courses": 30,
+    "wordCourses": 1,
+    "sentenceCourses": 29,
+    "modernFamilyCourses": 5,
+    "voaCourses": 24,
+    "words": 570,
+    "sentenceEntries": 836,
+    "totalStudyEntries": 1406,
+    "wordAudioFiles": 570,
+    "sentenceAudioFiles": 836,
+    "totalM4aFiles": 1406,
+    "totalM4aBytes": 32700838
+  },
+  "defaults": {
+    "courseId": "modern-family-s01e01",
+    "studyMode": "repeat",
+    "maximumStudyCount": 3
+  },
+  "identity": {
+    "usernamePattern": "^[A-Za-z]+$",
+    "normalizedCase": "lowercase",
+    "namedUserPrefix": "name:",
+    "anonymousWhenEmpty": true,
+    "validationMessage": "用户名只能使用英文字母"
+  },
+  "timingMilliseconds": {
+    "autoAdvance": 700,
+    "listenAutoplayDelay": 500,
+    "playbackTimeout": 8000,
+    "speakTimeout": 6000,
+    "speakingTimeout": 6000,
+    "scoringTimeout": 6000,
+    "minimumSpeech": 350,
+    "segmentSettle": 700,
+    "startupMaximumWait": 650,
+    "panelClose": 240
+  },
+  "scoring": {
+    "passScore": 20,
+    "minimumSentenceWordCoverage": 0.6
+  },
+  "stateTypes": {
+    "startup": [
+      "idle",
+      "restoring",
+      "syncing"
+    ],
+    "repeat": [
+      "idle",
+      "connecting",
+      "ready",
+      "playing",
+      "speak",
+      "speaking",
+      "scoring",
+      "passed",
+      "paused",
+      "retry",
+      "error"
+    ],
+    "textVisibility": [
+      "full",
+      "focus",
+      "hidden"
+    ],
+    "studyMode": [
+      "listen",
+      "repeat"
+    ]
+  },
+  "repeatCopy": {
+    "labels": {
+      "values": {
+        "connecting": "CONNECTING",
+        "ready": "READY",
+        "playing": "LISTENING",
+        "speak": "SPEAKING",
+        "speaking": "SPEAKING",
+        "scoring": "CHECKING",
+        "passed": "GREAT",
+        "paused": "PAUSED",
+        "retry": "TRY AGAIN",
+        "error": "TRY AGAIN"
+      },
+      "fallback": "STANDBY"
+    },
+    "hints": {
+      "values": {
+        "connecting": "正在准备麦克风",
+        "ready": "听完示范后开始跟读",
+        "playing": "先听一遍标准发音",
+        "speak": "请清晰地跟读",
+        "speaking": "正在听你发音",
+        "scoring": "正在分析这次发音",
+        "passed": "这次发音通过了",
+        "paused": "准备好后继续练习",
+        "retry": "请再读一次",
+        "error": "请再读一次"
+      },
+      "fallback": "跟读模式已准备好"
+    }
+  },
+  "startupCopy": {
+    "placeholder": "USERNAME",
+    "idleAction": "START",
+    "restoringAction": "PREPARING…",
+    "syncingAction": "SYNCING…",
+    "restoringHint": "正在恢复上次课程",
+    "syncingHint": "正在同步学习进度"
+  },
+  "retryDelayMilliseconds": [
+    500,
+    850,
+    1000,
+    1200
+  ],
+  "hiddenPauseDelayMilliseconds": 1500,
+  "palettes": [
+    {
+      "background": "#f3f0e8",
+      "ink": "#1e3a34",
+      "accent": "#d4562b"
+    },
+    {
+      "background": "#f5d547",
+      "ink": "#282044",
+      "accent": "#e85b44"
+    },
+    {
+      "background": "#dfecff",
+      "ink": "#183565",
+      "accent": "#f06449"
+    },
+    {
+      "background": "#f8d9df",
+      "ink": "#4b1934",
+      "accent": "#157d6a"
+    },
+    {
+      "background": "#d8eee3",
+      "ink": "#173b33",
+      "accent": "#c84e34"
+    },
+    {
+      "background": "#26233e",
+      "ink": "#f4ead7",
+      "accent": "#f3bd4f"
+    }
+  ],
+  "collections": [
+    {
+      "id": "ielts",
+      "label": "WORD COURSE",
+      "title": "IELTS 高频词",
+      "subtitle": "Academic Word List · 570 words"
+    },
+    {
+      "id": "modern-family-s01",
+      "label": "DIALOGUE COURSE",
+      "title": "摩登家庭 · 第一季",
+      "subtitle": "5 集对白课程"
+    },
+    {
+      "id": "voa-level-2",
+      "label": "DIALOGUE COURSE",
+      "title": "VOA · Level 2",
+      "subtitle": "24 节实用口语课程 · B1"
+    }
+  ],
+  "registeredCourses": [
+    {
+      "id": "ielts-high-frequency",
+      "collectionId": "ielts",
+      "title": "IELTS 高频词",
+      "kind": "word",
+      "practiceOrder": "random",
+      "manifest": null
+    },
+    {
+      "id": "modern-family-s01e01",
+      "collectionId": "modern-family-s01",
+      "title": "Modern Family · S01E01",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/modern-family-s01e01.json"
+    },
+    {
+      "id": "modern-family-s01e02",
+      "collectionId": "modern-family-s01",
+      "title": "Modern Family · S01E02",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/modern-family-s01e02.json"
+    },
+    {
+      "id": "modern-family-s01e03",
+      "collectionId": "modern-family-s01",
+      "title": "Modern Family · S01E03",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/modern-family-s01e03.json"
+    },
+    {
+      "id": "modern-family-s01e04",
+      "collectionId": "modern-family-s01",
+      "title": "Modern Family · S01E04",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/modern-family-s01e04.json"
+    },
+    {
+      "id": "modern-family-s01e05",
+      "collectionId": "modern-family-s01",
+      "title": "Modern Family · S01E05",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/modern-family-s01e05.json"
+    },
+    {
+      "id": "voa-workplace-conversations-b1",
+      "collectionId": "voa-level-2",
+      "title": "Workplace Conversations · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-workplace-conversations-b1.json"
+    },
+    {
+      "id": "voa-project-feedback-b1",
+      "collectionId": "voa-level-2",
+      "title": "Project Feedback · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-project-feedback-b1.json"
+    },
+    {
+      "id": "voa-pets-responsibility-b1",
+      "collectionId": "voa-level-2",
+      "title": "Pets & Responsibility · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-pets-responsibility-b1.json"
+    },
+    {
+      "id": "voa-visit-peru-b1",
+      "collectionId": "voa-level-2",
+      "title": "Visit to Peru · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-visit-peru-b1.json"
+    },
+    {
+      "id": "voa-weather-at-work-b1",
+      "collectionId": "voa-level-2",
+      "title": "Weather at Work · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-weather-at-work-b1.json"
+    },
+    {
+      "id": "voa-stay-calm-b1",
+      "collectionId": "voa-level-2",
+      "title": "Stay Calm · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-stay-calm-b1.json"
+    },
+    {
+      "id": "voa-helping-out-b1",
+      "collectionId": "voa-level-2",
+      "title": "Helping Out · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-helping-out-b1.json"
+    },
+    {
+      "id": "voa-in-common-b1",
+      "collectionId": "voa-level-2",
+      "title": "In Common · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-in-common-b1.json"
+    },
+    {
+      "id": "voa-keep-moving-b1",
+      "collectionId": "voa-level-2",
+      "title": "Keep Moving · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-keep-moving-b1.json"
+    },
+    {
+      "id": "voa-find-your-way-b1",
+      "collectionId": "voa-level-2",
+      "title": "Find Your Way · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-find-your-way-b1.json"
+    },
+    {
+      "id": "voa-speak-for-yourself-b1",
+      "collectionId": "voa-level-2",
+      "title": "Speak for Yourself · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-speak-for-yourself-b1.json"
+    },
+    {
+      "id": "voa-follow-instructions-b1",
+      "collectionId": "voa-level-2",
+      "title": "Follow Instructions · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-follow-instructions-b1.json"
+    },
+    {
+      "id": "voa-polite-requests-b1",
+      "collectionId": "voa-level-2",
+      "title": "Polite Requests · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-polite-requests-b1.json"
+    },
+    {
+      "id": "voa-reported-speech-b1",
+      "collectionId": "voa-level-2",
+      "title": "Reported Speech · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-reported-speech-b1.json"
+    },
+    {
+      "id": "voa-creative-reuse-b1",
+      "collectionId": "voa-level-2",
+      "title": "Creative Reuse · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-creative-reuse-b1.json"
+    },
+    {
+      "id": "voa-learn-from-mistakes-b1",
+      "collectionId": "voa-level-2",
+      "title": "Learn from Mistakes · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-learn-from-mistakes-b1.json"
+    },
+    {
+      "id": "voa-future-plans-b1",
+      "collectionId": "voa-level-2",
+      "title": "Future Plans · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-future-plans-b1.json"
+    },
+    {
+      "id": "voa-advice-preferences-b1",
+      "collectionId": "voa-level-2",
+      "title": "Advice & Preferences · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-advice-preferences-b1.json"
+    },
+    {
+      "id": "voa-offering-help-b1",
+      "collectionId": "voa-level-2",
+      "title": "Offering Help · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-offering-help-b1.json"
+    },
+    {
+      "id": "voa-look-alikes-b1",
+      "collectionId": "voa-level-2",
+      "title": "Look-alikes · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-look-alikes-b1.json"
+    },
+    {
+      "id": "voa-fish-out-of-water-b1",
+      "collectionId": "voa-level-2",
+      "title": "Fish out of Water · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-fish-out-of-water-b1.json"
+    },
+    {
+      "id": "voa-for-the-birds-b1",
+      "collectionId": "voa-level-2",
+      "title": "For the Birds · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-for-the-birds-b1.json"
+    },
+    {
+      "id": "voa-where-theres-smoke-b1",
+      "collectionId": "voa-level-2",
+      "title": "Where There's Smoke... · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-where-theres-smoke-b1.json"
+    },
+    {
+      "id": "voa-dream-a-little-dream-b1",
+      "collectionId": "voa-level-2",
+      "title": "Dream a Little Dream · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/voa-dream-a-little-dream-b1.json"
+    }
+  ],
+  "sentenceCourses": [
+    {
+      "id": "modern-family-s01e01",
+      "collectionId": "modern-family-s01",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "modern-family",
+      "manifest": "app/data/modern-family-s01e01.json",
+      "manifestCourseId": "modern-family-s01",
+      "learnableEntries": 91,
+      "audioFiles": 91,
+      "audioBytes": 1462628
+    },
+    {
+      "id": "modern-family-s01e02",
+      "collectionId": "modern-family-s01",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "modern-family",
+      "manifest": "app/data/modern-family-s01e02.json",
+      "manifestCourseId": "modern-family-s01e02",
+      "learnableEntries": 53,
+      "audioFiles": 53,
+      "audioBytes": 865400
+    },
+    {
+      "id": "modern-family-s01e03",
+      "collectionId": "modern-family-s01",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "modern-family",
+      "manifest": "app/data/modern-family-s01e03.json",
+      "manifestCourseId": "modern-family-s01e03",
+      "learnableEntries": 79,
+      "audioFiles": 79,
+      "audioBytes": 1176707
+    },
+    {
+      "id": "modern-family-s01e04",
+      "collectionId": "modern-family-s01",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "modern-family",
+      "manifest": "app/data/modern-family-s01e04.json",
+      "manifestCourseId": "modern-family-s01e04",
+      "learnableEntries": 55,
+      "audioFiles": 55,
+      "audioBytes": 840875
+    },
+    {
+      "id": "modern-family-s01e05",
+      "collectionId": "modern-family-s01",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "modern-family",
+      "manifest": "app/data/modern-family-s01e05.json",
+      "manifestCourseId": "modern-family-s01e05",
+      "learnableEntries": 88,
+      "audioFiles": 88,
+      "audioBytes": 1372357
+    },
+    {
+      "id": "voa-workplace-conversations-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-workplace-conversations-b1.json",
+      "manifestCourseId": "voa-workplace-conversations-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 1212249
+    },
+    {
+      "id": "voa-project-feedback-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-project-feedback-b1.json",
+      "manifestCourseId": "voa-project-feedback-b1",
+      "learnableEntries": 15,
+      "audioFiles": 15,
+      "audioBytes": 857354
+    },
+    {
+      "id": "voa-pets-responsibility-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-pets-responsibility-b1.json",
+      "manifestCourseId": "voa-pets-responsibility-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 729004
+    },
+    {
+      "id": "voa-visit-peru-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-visit-peru-b1.json",
+      "manifestCourseId": "voa-visit-peru-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 698577
+    },
+    {
+      "id": "voa-weather-at-work-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-weather-at-work-b1.json",
+      "manifestCourseId": "voa-weather-at-work-b1",
+      "learnableEntries": 21,
+      "audioFiles": 21,
+      "audioBytes": 982970
+    },
+    {
+      "id": "voa-stay-calm-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-stay-calm-b1.json",
+      "manifestCourseId": "voa-stay-calm-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 823715
+    },
+    {
+      "id": "voa-helping-out-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-helping-out-b1.json",
+      "manifestCourseId": "voa-helping-out-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 655269
+    },
+    {
+      "id": "voa-in-common-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-in-common-b1.json",
+      "manifestCourseId": "voa-in-common-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 949836
+    },
+    {
+      "id": "voa-keep-moving-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-keep-moving-b1.json",
+      "manifestCourseId": "voa-keep-moving-b1",
+      "learnableEntries": 18,
+      "audioFiles": 18,
+      "audioBytes": 853872
+    },
+    {
+      "id": "voa-find-your-way-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-find-your-way-b1.json",
+      "manifestCourseId": "voa-find-your-way-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 785843
+    },
+    {
+      "id": "voa-speak-for-yourself-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-speak-for-yourself-b1.json",
+      "manifestCourseId": "voa-speak-for-yourself-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 781370
+    },
+    {
+      "id": "voa-follow-instructions-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-follow-instructions-b1.json",
+      "manifestCourseId": "voa-follow-instructions-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 838320
+    },
+    {
+      "id": "voa-polite-requests-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-polite-requests-b1.json",
+      "manifestCourseId": "voa-polite-requests-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 834147
+    },
+    {
+      "id": "voa-reported-speech-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-reported-speech-b1.json",
+      "manifestCourseId": "voa-reported-speech-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 694525
+    },
+    {
+      "id": "voa-creative-reuse-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-creative-reuse-b1.json",
+      "manifestCourseId": "voa-creative-reuse-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 911041
+    },
+    {
+      "id": "voa-learn-from-mistakes-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-learn-from-mistakes-b1.json",
+      "manifestCourseId": "voa-learn-from-mistakes-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 723258
+    },
+    {
+      "id": "voa-future-plans-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-future-plans-b1.json",
+      "manifestCourseId": "voa-future-plans-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 1109287
+    },
+    {
+      "id": "voa-advice-preferences-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-advice-preferences-b1.json",
+      "manifestCourseId": "voa-advice-preferences-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 803833
+    },
+    {
+      "id": "voa-offering-help-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-offering-help-b1.json",
+      "manifestCourseId": "voa-offering-help-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 923196
+    },
+    {
+      "id": "voa-look-alikes-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-look-alikes-b1.json",
+      "manifestCourseId": "voa-look-alikes-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 673001
+    },
+    {
+      "id": "voa-fish-out-of-water-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-fish-out-of-water-b1.json",
+      "manifestCourseId": "voa-fish-out-of-water-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 1043116
+    },
+    {
+      "id": "voa-for-the-birds-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-for-the-birds-b1.json",
+      "manifestCourseId": "voa-for-the-birds-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 1674552
+    },
+    {
+      "id": "voa-where-theres-smoke-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-where-theres-smoke-b1.json",
+      "manifestCourseId": "voa-where-theres-smoke-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 922338
+    },
+    {
+      "id": "voa-dream-a-little-dream-b1",
+      "collectionId": "voa-level-2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "voa",
+      "manifest": "app/data/voa-dream-a-little-dream-b1.json",
+      "manifestCourseId": "voa-dream-a-little-dream-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 1014703
+    }
+  ],
+  "representativeFiles": [
+    {
+      "path": "public/audio/abandon.m4a",
+      "bytes": 9444,
+      "sha256": "3fb0659af62b5a138310c727d6c0fa7adb599cb23a7a75b172992b2bc212298d"
+    },
+    {
+      "path": "public/courses/modern-family/s01e01/audio/s01e01-0003.m4a",
+      "bytes": 7099,
+      "sha256": "d9e76ee4892c447669f4f80942e0e47a18a6e07125e7d6e14b2a9b5ca5de8506"
+    },
+    {
+      "path": "public/courses/voa/workplace-conversations-b1/audio/voa-work-b1-001.m4a",
+      "bytes": 68746,
+      "sha256": "e535f90c0fef877930489566648c6856cff13a95adf2fc3b8ed80f6da7b08860"
+    }
+  ]
+}

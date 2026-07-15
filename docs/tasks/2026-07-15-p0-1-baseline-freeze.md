@@ -1,6 +1,6 @@
 # P0.1 当前行为与内容基线冻结
 
-状态：执行中
+状态：开发完成，待独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -15,7 +15,7 @@
 - 记录当前 build、test、lint 基线，保留已知失败而不借机修复。
 - 为 Startup、Study、Course Drawer、Progress Drawer、Dialog 建立页面验收矩阵。
 - 为 LISTEN、REPEAT、离线进度、课程完成建立状态验收矩阵。
-- 保存桌面与 iPhone 尺寸的当前 Web 截图；敏感数据不得进入截图或 fixture。
+- 只保存 iPhone 尺寸的当前 Web 截图；桌面端不在迁移范围，敏感数据不得进入截图或 fixture。
 - 保存匿名的 progress 与 pronunciation-session API 请求/响应示例或精确合同。
 
 ## 禁止范围

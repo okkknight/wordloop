@@ -26,8 +26,8 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 1,406 个最终音频片段：570 个单词音频和 836 个句子音频。
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
-- 当前分支：`main`，检查时与 `origin/main` 一致，工作区干净。
-- `npm test`：构建通过，28 项测试通过。
+- 当前迁移分支：`codex/ios-migration`。
+- `npm test`：构建通过，33 项测试通过（原有 28 项 + iOS 迁移基线 5 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
@@ -35,9 +35,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan，当前检查点为 P0.1 当前行为与内容基线冻结。
 
-执行状态：P0.1 任务卡已建立并开始执行；尚未创建 iOS 工程。
+执行状态：P0.1 基线已开发完成，等待独立复核；尚未创建 iOS 工程。
 
-本次只修改文档，不改变产品代码、课程内容、数据库、部署配置或线上服务。对已有功能没有运行时影响。
+P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
 ## 架构与数据流
 
@@ -119,6 +119,9 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `db/schema.ts`、`drizzle/*` | D1 schema 与迁移历史 |
 | `scripts/*` | 课程内容生产和验证工具 |
 | `tests/rendered-html.test.mjs` | 构建、内容数量、音频和流程契约测试 |
+| `docs/ios-migration/baseline/*` | iPhone 迁移的机器内容清单、截图、行为和 API 合同 |
+| `scripts/capture_ios_migration_baseline.mjs` | 生成并校验迁移内容基线 |
+| `tests/ios-migration-baseline.test.mjs` | 基线确定性和错误注入测试 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行
