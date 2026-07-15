@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，当前检查点为 P3.4 iPhone 课程抽屉静态 Shell。
+任务：执行 iOS 迁移 Plan，P3.4 iPhone 课程抽屉静态 Shell 已关闭，下一检查点为生成 P3.5 进度抽屉任务卡。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3 均已独立复核 PASS。P3.4 已开发完成并通过本地冷验收，当前等待未参与实现的 reviewer 独立复核；PASS 前不生成或实施 P3.5。
+执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4 均已独立复核 PASS。下一步只生成 P3.5 进度抽屉任务卡，在任务卡独立提交与确认前不实施。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -54,6 +54,8 @@ P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 s
 P3.3 已新增独立 StudyShell 展示模型、Character-offset highlight 校验、句子/单词文字可见性规则、`@MainActor @Observable` 内存 fixture Store 和 SwiftUI 主学习页。默认仍是 Startup，只有 `-wordloop-study-shell` 显式进入页面；Gallery 优先级由 UI test 锁定。页面覆盖 LISTEN/REPEAT、full/focus/hidden、课程上下文、英文/中文/音标、学习动作、代表性 repeat card、熟练度和底部控制；它不解析课程、不播放音频、不写进度、不连接网络、麦克风或 Realtime。首次 reviewer 发现的 mode switch 圆环区 3.389973:1 对比度和 accessibility 3 SF Symbols 越界重叠已修复。第二轮 reviewer 确认 UI/测试共用 opacity token，纯背景/圆环区实算为 8.746483:1/5.300792:1，两个图标固定 18 pt、44 pt 命中框不相交，四张截图与 DesignSystem 12、Features 26、相关 UI 4、App integration 1、Web 41 项均通过，结论为 PASS。
 
 P3.4 已新增独立 CourseDrawer 展示模型、三集合内存 fixture、确定性搜索/折叠、dismiss reason/action、SwiftUI 左侧抽屉和主学习页接线。页面覆盖 selected/completion、空态、header/backdrop/主导左滑关闭、列表独立滚动、accessibility 3 与 Reduce Motion；课程点击只关闭抽屉，主学习上下文仍为 S01E01 / 75/91。CourseCard 次要文字和边界改为跨六 palette 真实合成至少 4.5:1/3:1 的共享 token，selected 同时保留 canonical accent 外框与语义 ink 内框。当前不解析/切换正式课程，不持久化，不访问网络，不下载课程，不播放音频，不接进度或 Realtime。
+
+P3.4 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的冷状态确认八 Package/iPhone build，并复验 DesignSystem 12/12、Features 39/39、App integration 1/1、UI 16/16、Web 42/42、四张截图 hash/尺寸、真实合成对比度、modal/手势/选择不切课语义与 iPhone-only 设置，结论为 PASS。lint 精确保持既有 4 errors、0 warnings。
 
 ## 架构与数据流
 

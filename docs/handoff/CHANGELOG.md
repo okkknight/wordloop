@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.4 course drawer independently reviewed PASS
+
+- 独立 reviewer 确认三集合 fixture、搜索/空态/折叠、selected/completion、header/backdrop/主导左滑关闭、纵向列表滚动、modal 背景隔离和 accessibility 3 + Reduce Motion 均符合任务卡；点击 S01E02 后主学习页仍为 S01E01 / 75/91。
+- CourseCard 真实层顺序为半透明同色卡片背景叠在不透明 drawer background 上，与测试层顺序一致；六 palette 次要文字/边界和 selected 双边界均通过。四张真实 iPhone 截图的 hash、尺寸和人工视觉检查一致。
+- 从删除生成物、统一/Package SwiftPM cache 与 DerivedData 的冷状态重跑：八 Package tests 与 iPhone build、DesignSystem 12/12、Features 39/39、App integration 1/1、UI 16/16、Web 42/42 全部通过；lint 精确保持既有 4 errors、0 warnings，diff check 通过。
+- 无正式课程解析/切换、持久化、网络/下载、音频、进度或 Realtime 越界；iOS 17、Swift 6、iPhone-only 设置保持。P3.4 结论为 PASS，下一步只生成 P3.5 任务卡，本次不生成或实施。
+
 ## 2026-07-15 · P3.4 course drawer developed, pending review
 
 - 新增 CourseDrawer 展示模型、三集合 fixture、确定性搜索/折叠、dismiss reason/action、`@MainActor @Observable` 内存 Store 和 SwiftUI 左侧抽屉；P3.3 `COURSE` 已接入，默认 Startup 与关闭的 study shell 路由不变。

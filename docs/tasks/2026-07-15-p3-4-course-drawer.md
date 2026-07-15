@@ -1,6 +1,6 @@
 # P3.4 iPhone 课程抽屉静态 Shell
 
-状态：开发完成，待独立复核
+状态：独立复核 PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -121,3 +121,16 @@ git status --short --ignored
 ## 交接
 
 先单独提交本任务卡，再实施 CP-06。开发完成后把状态改为“开发完成，待独立复核”，刷新根 `PROJECT_CONTEXT.md` 与 `docs/handoff/CHANGELOG.md`，提交实现并交给未参与实现的 reviewer。P3.4 PASS 后才根据真实 MainStudyView/SideDrawer API 生成 P3.5 进度抽屉任务卡。
+
+## 独立复核结论（2026-07-15）
+
+结论：PASS。
+
+- reviewer 从删除 `content/dist`、`ios/Generated`、`ios/.derivedData`、`ios/.build` 与各 Package `.build` 的冷状态运行 `scripts/verify_ios.sh`，八个本地 Package 测试、内容 bootstrap 和 iPhone 17 Pro Simulator build 通过。
+- DesignSystem 12/12、Features 39/39、App integration 1/1、App UI 16/16、Web 42/42 全部通过；`npm run baseline:ios` 通过，`git diff --check` 通过。`npm run lint` 精确保持 `app/page.tsx` 的既有 4 errors、0 warnings，无新增债务。
+- 独立检查确认三集合 fixture、默认展开/搜索/空态、selected/completion 语义、header/backdrop/主导左滑三种关闭、纵向列表滚动和 modal 背景隔离均与任务卡一致；选择 S01E02 后主学习页仍为 S01E01 / 75/91。
+- CourseCard 的半透明同色背景实际叠在不透明 drawer background 上，最终合成色与单测使用的真实层顺序一致；六 palette 次要文字/边界门槛和 selected 双边界通过。
+- 四张真实 iPhone 截图的 SHA-256 与文档一致，iPhone 17e 为 1170 × 2532 px，iPhone 17 Pro 为 1206 × 2622 px；默认、空态、完成次数与 accessibility 3 + Reduce Motion 人工视觉检查无 blocker。
+- 静态边界检查未发现正式课程解析/切换、持久化、网络/下载、音频、进度或 Realtime 越界；工程仍是 iOS 17、Swift 6、`TARGETED_DEVICE_FAMILY = 1` 的 iPhone-only 产品。
+
+P3.4 验收关闭。下一步只能根据当前真实 MainStudyView/SideDrawer/CourseDrawer API 生成 P3.5 进度抽屉任务卡，本次复核不生成也不实施 P3.5。
