@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P2 review failed on Package cache hygiene
+
+- 独立 reviewer 从删除课程生成物、SwiftPM cache 和 DerivedData 的状态执行完整验收；`scripts/verify_ios.sh` 成功重建内容、通过八个 Package tests 并编译 iPhone 17 Pro / iOS 26.5 Simulator。
+- 独立 `xcodebuild test` 确认 App integration test 与 UI skeleton launch test 均通过；Release build settings 和实际 App 产物均只声明 iPhone device family，Catalyst 与 Designed for iPhone on Mac 关闭。
+- `npm run baseline:ios` 通过，`npm test` 38/38；lint 仍精确为 4 个既有 Web errors、0 warnings；无 Web 业务修改、远程 Swift dependency、密钥或已提交的生成物。
+- 阻塞问题：当前 `.gitignore` 只覆盖 `/ios/.build/`，不覆盖每个 Package 的 `ios/Packages/<Package>/.build/`。执行 Plan 中的常规 Package 命令后会出现未跟踪缓存，不满足“`.build/` 与生成目录均 ignored”的验收标准。
+- P2 结论为 FAIL。先补充 Package 本地 `.build/` 忽略规则和对应静态回归测试，再重新独立复核；PASS 前不进入 P3。
+
 ## 2026-07-15 · P2 developed, pending review
 
 - 新增可直接打开的 iPhone-only SwiftUI 工程、共享 scheme、App integration/UI test targets；固定 iOS 17、Swift 6、`TARGETED_DEVICE_FAMILY=1`，不支持 iPad、macOS 或 Catalyst。

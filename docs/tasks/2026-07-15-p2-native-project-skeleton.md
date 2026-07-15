@@ -1,6 +1,6 @@
 # P2 原生 iPhone 工程与模块骨架
 
-状态：开发完成，待独立复核
+状态：独立复核未通过，待修复工程缓存忽略规则
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -130,6 +130,18 @@ git status --short --ignored
 - `npm test` 为 38/38；`npm run lint` 只有既有 `app/page.tsx` 4 errors、0 warnings；课程基线、export/check 与 `git diff --check` 均通过。
 - 未修改 Web UI、课程、音频、API、数据库或部署，也未实现任何 P3 之后的业务能力。
 
+## 独立复核结果
+
+2026-07-15，未参与 P2 实现的 reviewer 对提交 `59c298c` 给出 **FAIL**。
+
+- 从删除 `content/dist/`、`ios/Generated/`、`ios/.derivedData/` 和 `ios/.build/` 的状态执行 `scripts/verify_ios.sh`：课程内容重建、八个 Package tests 和 iPhone 17 Pro / iOS 26.5 Simulator build 全部通过。
+- 独立执行 `xcodebuild test`：`AppIntegrationTests` 1/1、`AppUITests` 1/1 通过，UI test 验证 App 可启动并显示 skeleton。
+- `npm run baseline:ios` 通过；`npm test` 构建成功且 38/38 通过；`npm run lint` 精确保持既有 4 errors、0 warnings；`git diff --check` 通过。
+- Release build settings 与实际 App `Info.plist` 均确认 `TARGETED_DEVICE_FAMILY=1`、iOS 17、Swift 6，Catalyst 和 Designed for iPhone on Mac 关闭；没有 iPad/macOS App target。
+- 实查依赖图无环且只有本地 Package；未发现 Web 业务修改、密钥、用户态 Xcode 文件或已提交的生成物。
+- 阻塞项：`.gitignore` 只忽略统一缓存 `/ios/.build/`，不忽略常规 `swift test --package-path ios/Packages/<Package>` 或 `swift package --package-path ...` 产生的 `ios/Packages/<Package>/.build/`。复核时八个 Package 均出现未跟踪缓存，`git check-ignore -v ios/Packages/WordLoopCore/.build/debug.yaml` 返回 1，不满足“`.build/` 与生成目录均 ignored”验收标准。
+- 最小修复：忽略所有 iOS Package 本地 `.build/`，并扩展静态工程测试，对至少一个 `ios/Packages/<Package>/.build/` 路径执行 `git check-ignore`。
+
 ## 交接
 
-完成后把状态改为“开发完成，待独立复核”，刷新项目上下文与 handoff，提交 `CP-02 native project skeleton builds`，再由未参与实现的 reviewer 从删除所有生成缓存开始独立验收。P2 PASS 后才生成 P3 Design System 任务卡。
+P2 当前不能通过。先修复 Package 本地 `.build/` 忽略规则和对应回归测试，再由独立 reviewer 重新验收；PASS 前不生成或实施 P3 任务卡。
