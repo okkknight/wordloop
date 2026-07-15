@@ -1,6 +1,6 @@
 # P3.1 iPhone Design System 基础层
 
-状态：开发完成，待独立复核
+状态：独立复核 FAIL，待修复后重新复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -119,3 +119,23 @@ git status --short --ignored
 ## 交接
 
 完成后把状态改为“开发完成，待独立复核”，刷新 `PROJECT_CONTEXT.md` 与 handoff，提交 `CP-03 design system`，再由未参与实现的 reviewer 独立复核。P3.1 PASS 后才根据真实组件 API 生成 P3.2 启动页任务卡。
+
+## 独立复核结果（2026-07-15）
+
+结论：**FAIL**。
+
+已通过的独立证据：
+
+- 从删除 `content/dist`、`ios/Generated`、统一/Package SwiftPM cache 和 DerivedData 的状态执行 `scripts/verify_ios.sh`，课程重建、八个 Package tests 与 iPhone 17 Pro Simulator build 全部通过。
+- 独立 `xcodebuild test` 通过 App integration 1 项与 UI 3 项；`npm run baseline:ios` 通过，`npm test` 为 39/39，lint 精确保持既有 Web 4 errors、0 warnings。
+- 官方 `vercel/geist-font` tag `1.8.0` 当前解析到 `91158e012bdc4abd59fa066d0eae9fc11c2c9f24`；从该 commit 重新读取的两份 TTF 与 `LICENSE.txt` hash 均与仓库及最终 `WordLoop.app` 内资源一致。
+- App 最终 Info.plist 只含 `UIDeviceFamily = 1`，deployment target 17.0，Catalyst 与 Designed for iPhone on Mac 均关闭；App 源码仍只 import Features，DesignSystem 无业务 Package 依赖。
+- 三张截图尺寸与文档 SHA-256 一致，均是实际 gallery 页面，不是 App Switcher 或空白画面。
+
+阻塞问题：
+
+- `ConfirmDialog` 主按钮在 `Components.swift:320-321` 使用 `palette.background` 文字叠在 `palette.accent` 底色上。按当前六套机器真值计算，paper/sun/sky/rose/mint 的对比度分别只有 3.570、2.411、2.654、3.829、3.756:1，只有 night 为 8.764:1；五套未达到任务卡对关键控制小文字至少 4.5:1 的硬门槛。
+- 当前 `testSmallTextRolesMeetContrastWithoutChangingCanonicalAccents` 只验证 `ink/background` 与 `accessibleAccentText/background`，没有覆盖实际 confirm 按钮的前景/背景组合，因此现有 11 项 DesignSystem tests 会在真实问题存在时仍通过。
+- accessibility 3 截图还显示 palette 标签放大后与装饰 accent 圆部分重叠，使标签局部落在未经验证的底色上；修复时应一并保证辅助字号下装饰层不穿过文字。
+
+最小修复：为 accent-filled 控件定义并测试独立、跨六 palette 达到至少 4.5:1 的前景角色（必要时只调整文字角色，不改 canonical accent），让 `ConfirmDialog` 使用该角色；补覆盖六 palette 的真实按钮组合测试，并调整 gallery palette 装饰布局避免辅助字号文字重叠。修复后必须从冷缓存重新执行本任务全部验收，PASS 前不得进入 P3.2。

@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.1 review failed on critical-control contrast
+
+- 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑验收；八个 Package tests、iPhone build、App integration 1 项、UI 3 项、Web 39/39 与既有 lint 基线均通过。
+- 官方 Geist tag/commit 与三份上游资产重新核验通过；两份 TTF 和原始 OFL license 均以预期 hash 进入最终 `WordLoop.app`。模块边界、App 只 import Features 和 iPhone-only 设置也通过。
+- 阻塞问题：`ConfirmDialog` 主按钮使用 palette background 文字叠在 canonical accent 上，paper/sun/sky/rose/mint 的对比度仅 3.570/2.411/2.654/3.829/3.756:1，五套未达到关键控制小文字 4.5:1；现有单元测试没有覆盖这一真实组合。
+- accessibility 3 截图还显示 palette 标签与装饰 accent 圆局部重叠。先增加 accent-filled control 前景角色及六 palette 回归，并让辅助字号文字避开装饰层，再从冷状态重新复核；P3.1 结论为 FAIL，PASS 前不得进入 P3.2。
+
 ## 2026-07-15 · P3.1 developed, pending review
 
 - `WordLoopDesignSystem` 已实现六套 palette、tokens、Geist Sans/Mono、字体注册/系统回退、触觉协议、Reduce Motion 和九类无业务 SwiftUI 组件；自身不再依赖任何业务 Package。

@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan，当前检查点为 P3.1 iPhone Design System 基础层。
 
-执行状态：P0.1、P1、P2 已独立复核通过；P3.1 Design System 已开发完成，等待独立复核。
+执行状态：P0.1、P1、P2 已独立复核通过；P3.1 Design System 首次独立复核 FAIL，等待修复后重新复核。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -46,6 +46,8 @@ P2 已建立 iOS 17、Swift 6、仅 iPhone 的 SwiftUI 工程，以及 Core、Ne
 P2 首次复核发现的常规 SwiftPM `ios/Packages/*/.build/` 忽略缺口已修复并通过真实 package-local 命令与静态回归。重新 reviewer 确认冷启动重建、八个 Package tests、iPhone Simulator build、App integration/UI tests 和 Web 38 项回归全部通过，结论为 PASS。
 
 P3.1 已建立不依赖业务 Package 的 Design System：六套 palette、tokens、Geist Sans/Mono、OFL 许可、基础组件、触觉/Reduce Motion/可访问性边界和无业务 fixture gallery。当前 RootView 临时显示 gallery 供 CP-03 验收；它不是已完成的产品页面，P3.2 会用启动页替换。
+
+P3.1 首次 reviewer 已确认冷启动构建、Package/App/UI/Web tests、字体官方来源与 App Bundle 资源、模块边界和 iPhone-only 设置均通过，但发现 `ConfirmDialog` accent 主按钮在五套 palette 下只有 2.411–3.829:1 的文字对比度，未达到关键控制 4.5:1 门槛；现有测试未覆盖这个真实颜色组合。辅助字号 gallery 的 palette 标签还会与装饰圆局部重叠。修复并重新独立复核 PASS 前不得进入 P3.2。
 
 ## 架构与数据流
 
