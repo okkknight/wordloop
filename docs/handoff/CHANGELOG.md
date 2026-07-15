@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P1 integrity race fixed, re-review pending
+
+- 独立 reviewer 对首个 CP-01 提交给出 FAIL：音频在 build 读取/哈希后、materialize 硬链接前被并发改写时，临时树可能与 `integrity.json` 不一致。
+- Exporter 已改为把内存中已哈希的 bytes 写入临时树，再按每课 integrity 逐文件复验 bytes/SHA/regular-file；复验成功后才替换目标。
+- 新增两个竞态回归：build 后源变化仍输出一致快照；materialize 后临时文件被篡改必须失败且保留上次有效目标。
+- 修复后 `npm test` 仍为 37/37，新增文件 lint 0 warning；必须由独立 reviewer 重新复核后才能通过 P1。
+
 ## 2026-07-15 · P1 developed, pending review
 
 - 新增 `content/schema/`、成功/失败 fixtures 和 AST 驱动 exporter；30 门课程可由当前唯一源确定性生成 catalog/course/integrity 与 1,406 个 M4A 引用。

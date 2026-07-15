@@ -2,7 +2,7 @@
 
 状态：开发完成，待独立复核
 
-实现结果：JSON Schema、三类成功 fixtures、失败 fixtures、确定性 exporter、原子替换、iOS content bootstrap 与 4 项合同/exporter 测试均已落地。`npm test` 37/37 通过；lint 仍精确只有 P0 的 4 个既有错误且新增文件 0 warning；Web 业务源码与课程资源未修改。
+实现结果：JSON Schema、三类成功 fixtures、失败 fixtures、确定性 exporter、临时树逐文件完整性复验、原子替换、iOS content bootstrap 与 4 项合同/exporter 测试均已落地。首次独立复核发现 build/materialize 之间的源文件竞态，现已改为写入已哈希字节并增加并发变化/落盘篡改回归；等待重新独立复核。`npm test` 37/37 通过；lint 仍精确只有 P0 的 4 个既有错误且新增文件 0 warning；Web 业务源码与课程资源未修改。
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 

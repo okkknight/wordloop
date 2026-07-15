@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { execFile } from "node:child_process";
-import { lstat, mkdir, readFile, readdir, rename, rm, writeFile, link, copyFile } from "node:fs/promises";
+import { lstat, mkdir, readFile, readdir, rename, rm, writeFile } from "node:fs/promises";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { promisify } from "node:util";
 import { createContractValidator } from "./contract.mjs";
@@ -59,16 +59,6 @@ async function audioFile(sourcePath, packagePath) {
     durationMilliseconds: m4aDurationMilliseconds(bytes, sourcePath),
     integrity: { path: packagePath, bytes: bytes.length, sha256: sha256(bytes) },
   };
-}
-
-async function writeLinkedOrCopied(source, target) {
-  await mkdir(dirname(target), { recursive: true });
-  try {
-    await link(source, target);
-  } catch (error) {
-    if (!["EXDEV", "EPERM", "EACCES", "EMLINK"].includes(error.code)) throw error;
-    await copyFile(source, target);
-  }
 }
 
 async function packageForCourse(source) {
@@ -177,7 +167,32 @@ async function materialize(result, directory) {
     await mkdir(courseDirectory, { recursive: true });
     await writeFile(join(courseDirectory, "course.json"), item.courseBytes);
     await writeFile(join(courseDirectory, "integrity.json"), item.integrityBytes);
-    for (const audio of item.audios) await writeLinkedOrCopied(audio.sourcePath, join(courseDirectory, audio.packagePath));
+    for (const audio of item.audios) {
+      const target = join(courseDirectory, audio.packagePath);
+      await mkdir(dirname(target), { recursive: true });
+      await writeFile(target, audio.bytes);
+    }
+  }
+}
+
+async function verifyMaterialized(result, directory) {
+  for (const item of result.packages) {
+    const courseDirectory = join(directory, "courses", item.course.id, String(item.course.contentVersion));
+    const expected = new Map([
+      ["course.json", { bytes: item.courseBytes.length, sha256: sha256(item.courseBytes) }],
+      ...item.audios.map((audio) => [audio.packagePath, audio.integrity]),
+    ]);
+    for (const [path, integrity] of expected) {
+      const target = join(courseDirectory, path);
+      const info = await lstat(target);
+      if (!info.isFile() || info.isSymbolicLink()) throw new Error(`Generated package file is not regular: ${target}`);
+      const bytes = await readFile(target);
+      if (bytes.length !== integrity.bytes || sha256(bytes) !== integrity.sha256) {
+        throw new Error(`Generated package integrity mismatch: ${item.course.id}/${path}`);
+      }
+    }
+    const writtenIntegrity = await readFile(join(courseDirectory, "integrity.json"));
+    if (!writtenIntegrity.equals(item.integrityBytes)) throw new Error(`Generated integrity manifest mismatch: ${item.course.id}`);
   }
 }
 
@@ -199,13 +214,16 @@ async function treeDigest(directory) {
   return { files: entries, sha256: sha256(Buffer.from(`${entries.join("\n")}\n`)) };
 }
 
-export async function generateCoursePackages({ root, output, mode }) {
+export async function generateCoursePackages({ root, output, mode, hooks = {} }) {
   const target = resolve(output);
   const temporary = `${target}.tmp-${process.pid}-${Date.now()}`;
   await rm(temporary, { recursive: true, force: true });
   try {
     const result = await build(root);
+    await hooks.afterBuild?.({ temporary, result });
     await materialize(result, temporary);
+    await hooks.afterMaterialize?.({ temporary, result });
+    await verifyMaterialized(result, temporary);
     const generatedDigest = await treeDigest(temporary);
     if (mode === "check") {
       let currentDigest;

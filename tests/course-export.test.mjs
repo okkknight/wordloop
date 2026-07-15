@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { execFile } from "node:child_process";
+import { createHash } from "node:crypto";
 import { cp, mkdtemp, readFile, readdir, rename, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { basename, join, resolve } from "node:path";
@@ -78,6 +79,16 @@ test("exporter is deterministic, complete, and preserves runtime course semantic
     assert.deepEqual(report.sourceIdDifferences, [{ courseId: "modern-family-s01e01", sourceManifestId: "modern-family-s01", source: "app/data/modern-family-s01e01.json" }]);
     assert.equal(report.ignoredHighlights[0].entryIds.length, 47);
 
+    for (const descriptor of catalog.courses) {
+      const courseDirectory = join(first, "courses", descriptor.id, String(descriptor.contentVersion));
+      const integrity = await json(join(courseDirectory, "integrity.json"));
+      for (const file of integrity.files) {
+        const bytes = await readFile(join(courseDirectory, file.path));
+        assert.equal(bytes.length, file.bytes, `${descriptor.id}/${file.path} byte count`);
+        assert.equal(createHash("sha256").update(bytes).digest("hex"), file.sha256, `${descriptor.id}/${file.path} hash`);
+      }
+    }
+
     const ielts = await json(join(first, "courses/ielts-high-frequency/1/course.json"));
     const modernFamily = await json(join(first, "courses/modern-family-s01e01/1/course.json"));
     const voa = await json(join(first, "courses/voa-workplace-conversations-b1/1/course.json"));
@@ -146,6 +157,30 @@ test("source mutations fail closed and a failed write preserves the last valid o
     await withSourceDateEpoch(() => generateCoursePackages({ root: mutationRoot, output, mode: "write" }));
     const goodDigest = await digestGeneratedTree(output);
 
+    const sourceAudio = join(mutationRoot, "public/audio/abandon.m4a");
+    const replacementAudio = join(mutationRoot, "public/audio/abstract.m4a");
+    const originalAudio = await readFile(sourceAudio);
+    await withSourceDateEpoch(() => generateCoursePackages({
+      root: mutationRoot,
+      output,
+      mode: "write",
+      hooks: {
+        afterBuild: async () => cp(replacementAudio, sourceAudio),
+      },
+    }));
+    assert.deepEqual(await digestGeneratedTree(output), goodDigest, "materialize writes the bytes that were already hashed");
+    await writeFile(sourceAudio, originalAudio);
+
+    await assert.rejects(withSourceDateEpoch(() => generateCoursePackages({
+      root: mutationRoot,
+      output,
+      mode: "write",
+      hooks: {
+        afterMaterialize: async ({ temporary: generated }) => cp(replacementAudio, join(generated, "courses/ielts-high-frequency/1/audio/abandon.m4a")),
+      },
+    })), /integrity mismatch/);
+    assert.deepEqual(await digestGeneratedTree(output), goodDigest, "failed temporary verification preserves the last valid output");
+
     const duplicateCollection = originalCourses.replace('{ id: "ielts", label:', '{ id: "modern-family-s01", label:');
     await writeFile(coursesPath, duplicateCollection);
     await assert.rejects(loadCourseSources(mutationRoot), /Duplicate collection ID/);
@@ -158,7 +193,7 @@ test("source mutations fail closed and a failed write preserves the last valid o
     await assert.rejects(loadCourseSources(mutationRoot), /Unregistered course manifests/);
     await rm(orphanPath);
 
-    const audioPath = join(mutationRoot, "public/audio/abandon.m4a");
+    const audioPath = sourceAudio;
     const movedAudioPath = `${audioPath}.missing`;
     await rename(audioPath, movedAudioPath);
     await assert.rejects(loadCourseSources(mutationRoot), /audio mismatch/);
