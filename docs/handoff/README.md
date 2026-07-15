@@ -7,6 +7,8 @@
 1. 根目录 [`PROJECT_CONTEXT.md`](../../PROJECT_CONTEXT.md)：项目事实、架构、当前状态、风险和工作规则。
 2. [`CHANGELOG.md`](CHANGELOG.md)：只追加会影响未来接手的重要变化。
 3. 根据任务阅读专项文档：
+   - 原生 iOS 迁移：[`../IOS_MIGRATION_SPEC.md`](../IOS_MIGRATION_SPEC.md)
+   - iOS 实施 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
    - 课程制作：[`../COURSE_PRODUCTION_GUIDE.md`](../COURSE_PRODUCTION_GUIDE.md)
    - VOA 课程：[`../VOA_COURSE_PRODUCTION_GUIDE.md`](../VOA_COURSE_PRODUCTION_GUIDE.md)
    - VPS 发布运维：[`../WORDLOOP_VPS_RUNBOOK.md`](../WORDLOOP_VPS_RUNBOOK.md)

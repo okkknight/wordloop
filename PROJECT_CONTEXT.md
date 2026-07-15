@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：补充项目入口、上下文与接手文档。
+任务：制定原生 iOS 迁移规格，并锁定内置首发课程与远端可下载课程并存的混合内容架构。
 
-执行状态：已执行待验收。
+执行状态：迁移规格与实施 Plan 已落文档，尚未开始第一张任务卡或 iOS 工程实现。
 
 本次只修改文档，不改变产品代码、课程内容、数据库、部署配置或线上服务。对已有功能没有运行时影响。
 
@@ -168,11 +168,12 @@ git diff --check
 - 跟读通过标准是否要维持当前宽松的文字匹配，还是升级为更严格的口语评估。
 - 是否继续支持无认证的共享用户名，或引入真正账号体系。
 - 长期生产目标是继续 VPS，迁移到 Sites/Cloudflare，还是明确双部署支持。
-- 是否把 `app/page.tsx` 拆成课程、音频、进度和 Realtime 独立模块；拆分时需要回归两种模式、课程切换、离线同步和完成重练。
 
 ## 文档地图
 
 - 项目入口：`README.md`
+- 原生 iOS 迁移：`docs/IOS_MIGRATION_SPEC.md`
+- iOS 实施 Plan：`docs/plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`

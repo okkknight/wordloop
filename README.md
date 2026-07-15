@@ -10,7 +10,7 @@ WordLoop 是一个以原声音频为核心的英语听力与跟读学习应用�
 - 学习模式：`LISTEN` 听力练习、`REPEAT` 实时跟读
 - 掌握规则：每个单元累计练习 3 次，或使用“太简单”直接标记
 
-课程注册入口是 [`app/courses.ts`](app/courses.ts)，最终音频位于 `public/audio/` 和 `public/courses/`。完整项目边界、架构与风险请先阅读 [`PROJECT_CONTEXT.md`](PROJECT_CONTEXT.md)。
+课程注册入口是 [`app/courses.ts`](app/courses.ts)，最终音频位于 `public/audio/` 和 `public/courses/`。完整项目边界、架构与风险请先阅读 [`PROJECT_CONTEXT.md`](PROJECT_CONTEXT.md)。原生 iOS 技术栈迁移已形成可执行规格，见 [`docs/IOS_MIGRATION_SPEC.md`](docs/IOS_MIGRATION_SPEC.md)；当前仅完成规划，尚未创建 iOS 工程。
 
 ## 技术栈
 
