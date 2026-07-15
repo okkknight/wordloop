@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.1 re-reviewed PASS
+
+- 修复后独立 reviewer 确认 `ConfirmDialog` 使用的真实 `background text / accessible role fill` 组合在六套 palette 下为 8.764–10.784:1，全部超过 4.5:1；单元测试覆盖同一组合，组件接线与测试角色一致。
+- 三张刷新截图 hash 与文档一致；iPhone 17 Pro、390 × 844 pt iPhone 17e 和 accessibility 3 + Reduce Motion 均为真实 gallery，辅助字号 palette 标签与右上装饰圆不再重叠或裁切。
+- 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、iPhone build、App integration 1 项、UI 3 项、Web 39/39 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- P3.1 修复后独立复核结论为 PASS。下一步只根据当前真实 Design System API 生成 P3.2 启动页任务卡，不提前实现后续页面。
+
 ## 2026-07-15 · P3.1 contrast and accessibility layout fixed, re-review pending
 
 - ConfirmDialog 主按钮不再直接使用低对比 canonical accent 填充；改用每套 palette 已通过 4.5:1 的角色色作为填充，background 作为文字，同时用 canonical accent 细边框保留产品色彩语义。

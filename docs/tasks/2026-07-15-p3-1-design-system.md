@@ -1,6 +1,6 @@
 # P3.1 iPhone Design System 基础层
 
-状态：首次独立复核 FAIL；对比度与辅助字号布局已修复，待重新复核
+状态：修复后独立复核 PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -140,3 +140,15 @@ git status --short --ignored
 - accessibility 3 截图还显示 palette 标签放大后与装饰 accent 圆部分重叠，使标签局部落在未经验证的底色上；修复时应一并保证辅助字号下装饰层不穿过文字。
 
 最小修复：为 accent-filled 控件定义并测试独立、跨六 palette 达到至少 4.5:1 的前景角色（必要时只调整文字角色，不改 canonical accent），让 `ConfirmDialog` 使用该角色；补覆盖六 palette 的真实按钮组合测试，并调整 gallery palette 装饰布局避免辅助字号文字重叠。修复后必须从冷缓存重新执行本任务全部验收，PASS 前不得进入 P3.2。
+
+## 修复后独立复核结果（2026-07-15）
+
+结论：**PASS**。
+
+- `ConfirmDialog` 实际使用 `palette.background` 作为按钮文字、`palette.accessibleAccentText` 作为填充；独立按六套 sRGB 机器真值重算，paper/sun/sky/rose/mint/night 的对比度分别为 10.784、10.499、10.127、10.742、10.094、8.764:1，全部超过 4.5:1。
+- DesignSystem test 直接验证同一 `background / accessibleAccentText` 组合在六套 palette 下至少 4.5:1；独立静态检查确认组件连接的正是这两个角色，canonical accent 只保留为细边框。
+- 三张刷新截图 SHA-256 与视觉验证文档一致；标准和 390 × 844 pt 画面完整，accessibility 3 下六个 palette 标签保持左下、装饰圆隔离右上，没有重叠、横向裁切、空白页或 App Switcher 画面。
+- 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态执行 `scripts/verify_ios.sh`，八个 Package tests 与 iPhone 17 Pro build 全部通过；独立 `xcodebuild test` 通过 App integration 1 项与 UI 3 项。
+- `npm run baseline:ios` 通过，`npm test` 为 39/39；lint 精确保持既有 `app/page.tsx` 4 errors、0 warnings；`git diff --check` 通过，生成物与缓存均保持 ignored。
+
+P3.1 已关闭首次 review 的两个阻塞项并完成独立复核，可以基于当前真实 Design System API 生成 P3.2 启动页任务卡；本任务未实现任何后续页面。
