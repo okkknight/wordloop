@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P0.1 started
+
+- 在 `codex/ios-migration` 分支开始执行完整迁移 Plan。
+- 建立 [`../tasks/2026-07-15-p0-1-baseline-freeze.md`](../tasks/2026-07-15-p0-1-baseline-freeze.md)；当前只冻结 Web 行为、视觉、内容和 API 基线，不创建 iOS 工程或修改业务。
+- P0.1 完成并独立复核前不得生成或执行 P1 实现任务。
+
 ## 2026-07-15 · iOS implementation plan
 
 - 新增 [`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)，把迁移规格展开为 P0–P9 顺序路线图和 CP-00–CP-25 提交检查点。
