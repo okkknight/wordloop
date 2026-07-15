@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.4 reviewed, P3.5 task ready
+
+- P3.4 独立复核 PASS 后新增 [`../tasks/2026-07-15-p3-5-progress-drawer.md`](../tasks/2026-07-15-p3-5-progress-drawer.md)；本提交只锁定 CP-07 任务卡，不实现进度抽屉。
+- P3.5 以 M-04 和真实 390 × 844 Web 截图为基线：右侧 344/86vw 抽屉、`YOUR PROGRESS`、0/273、当前课程、track、已掌握/学习中、sentence/word 搜索、0...3 列表和三种关闭。
+- fixture 只含代表行和独立 summary 总量，不复制 91/570 条完整内容；不得读取 P6 Progress、API/outbox 或模拟同步。Course/Progress 双抽屉必须互斥，冲突 fixture 保护既有课程抽屉优先级。
+- 继续只面向 iPhone；P3.5 PASS 前不得生成或实施 P3.6。
+
 ## 2026-07-15 · P3.4 course drawer independently reviewed PASS
 
 - 独立 reviewer 确认三集合 fixture、搜索/空态/折叠、selected/completion、header/backdrop/主导左滑关闭、纵向列表滚动、modal 背景隔离和 accessibility 3 + Reduce Motion 均符合任务卡；点击 S01E02 后主学习页仍为 S01E01 / 75/91。
