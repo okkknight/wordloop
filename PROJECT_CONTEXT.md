@@ -27,15 +27,15 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，39 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项）。
+- `npm test`：构建通过，40 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，当前检查点为 P3.1 iPhone Design System 基础层。
+任务：执行 iOS 迁移 Plan，当前检查点为 P3.2 iPhone 启动页静态 Shell。
 
-执行状态：P0.1、P1、P2、P3.1 已独立复核通过；下一步根据当前真实 Design System API 生成 P3.2 启动页任务卡。
+执行状态：P0.1、P1、P2、P3.1 已独立复核通过；P3.2 已开发完成并通过本地验收，待独立 reviewer 复核。P3.2 PASS 前不生成或实施 P3.3。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -48,6 +48,8 @@ P2 首次复核发现的常规 SwiftPM `ios/Packages/*/.build/` 忽略缺口已�
 P3.1 已建立不依赖业务 Package 的 Design System：六套 palette、tokens、Geist Sans/Mono、OFL 许可、基础组件、触觉/Reduce Motion/可访问性边界和无业务 fixture gallery。当前 RootView 临时显示 gallery 供 CP-03 验收；它不是已完成的产品页面，P3.2 会用启动页替换。
 
 P3.1 首次 reviewer 发现的 `ConfirmDialog` 五套 palette 关键按钮低对比度及 accessibility 3 标签/装饰重叠已通过角色色、真实组合测试和布局隔离修复。修复后 reviewer 确认六套实际按钮组合为 8.764–10.784:1，刷新截图无重叠，并从冷缓存重跑 Package/App/UI/Web tests 全部通过，结论为 PASS。
+
+P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 state、submission、纯用户名 validator、内存 fixture Store 与 SwiftUI View 拆入独立 Startup feature 文件。页面覆盖匿名/命名提交、32 字符、ASCII 英文字母校验、三段按钮状态、中文辅助文案、键盘、Dynamic Type、VoiceOver 语义与 Reduce Motion；不接身份持久化、课程、进度、网络、音频或 Realtime。gallery 只保留 launch argument 回归入口。390 × 844 与 iPhone 17 Pro 四组截图已人工核对；冷缓存八 Package/iPhone build、App integration 1/UI 8、Web 40/40 均通过，lint 保持既有 4 errors、0 warnings，待独立复核。
 
 ## 架构与数据流
 
@@ -143,6 +145,9 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `ios/Packages/WordLoopDesignSystem` | 原生 palette、tokens、字体、基础组件、动效与触觉边界 |
 | `docs/ios-migration/p3/design-system/*` | Geist 字体审计与 iPhone 视觉截图证据 |
 | `tests/ios-design-system.test.mjs` | 字体 hash/许可、tokens、组件边界和 App 不越层静态检查 |
+| `ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/Startup` | 启动状态、用户名校验、fixture Store 与 iPhone SwiftUI 页面 |
+| `docs/ios-migration/p3/startup/*` | 启动页 390 × 844 / iPhone 17 Pro 视觉截图与差异证据 |
+| `tests/ios-startup-page.test.mjs` | 启动页固定文案、输入边界、fixture 路由和 App 模块边界检查 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行

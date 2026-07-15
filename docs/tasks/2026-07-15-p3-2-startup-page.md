@@ -1,6 +1,6 @@
 # P3.2 iPhone 启动页静态 Shell
 
-状态：任务卡已锁定，待开发
+状态：开发完成，待独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -115,6 +115,17 @@ git status --short --ignored
 ```
 
 退出标准：默认 App 启动是 iPhone startup page；fixture Store 覆盖全部显示状态且无业务副作用；用户名规则、三态文案、键盘、Safe Area、Dynamic Type、VoiceOver 和 Reduce Motion 通过；截图证据完整；P3.1 gallery 仍可通过测试参数回归；Web 39 项不退化；lint 不超过既有 4 errors、0 新 warnings；无桌面产品、业务越界或网络依赖。
+
+## 实施结果
+
+- `WordLoopFeatures/Startup` 已按文件拆出 state、submission、纯 validator、`@MainActor @Observable` fixture Store 和 SwiftUI View，没有继续扩大原有 `WordLoopFeatures.swift`。
+- 默认 App 路由已切为启动页；Design System gallery 只通过 `-wordloop-design-system-gallery` 暴露给调试/UI 回归，产品页面没有入口。App 仍只 import Features。
+- 用户名支持留空匿名、trim、ASCII 英文字母校验、小写归一化和 32 字符输入约束；没有 UserDefaults、Keychain、网络、课程、进度、音频或 Realtime 副作用。
+- `START / PREPARING… / SYNCING…`、两条中文辅助状态、busy 禁用、编辑清错、按钮与 Return 提交均由同一 Store 路径驱动。
+- 页面使用 rose palette、Geist、原生 TextField/键盘、Safe Area、44 pt 命中区和 Reduce Motion 分支；accessibility 3 下错误与按钮无重叠或裁切。
+- 视觉证据与 Web 差异说明见 [`../ios-migration/p3/startup/visual-verification.md`](../ios-migration/p3/startup/visual-verification.md)，包含 390 × 844 idle/invalid/accessibility 与 iPhone 17 Pro syncing 四张真机截图及 SHA-256。
+- 从删除课程生成物、统一/Package cache 和 DerivedData 的状态执行 `scripts/verify_ios.sh` 通过：八个 Package tests 与 iPhone build 全部成功。Features 为 11 tests；App integration 1 test、UI 8 tests 全部通过。
+- `npm run baseline:ios` 通过，`npm test` 为 40/40；lint 精确保持既有 Web 4 errors、0 warnings；`git diff --check` 通过。
 
 ## 交接
 

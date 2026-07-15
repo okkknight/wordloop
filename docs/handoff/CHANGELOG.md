@@ -2,6 +2,15 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.2 startup page developed, pending review
+
+- 默认 iPhone App 已从 Design System gallery 切到原生启动页；gallery 只保留 `-wordloop-design-system-gallery` 测试入口，App 仍只 import Features，没有桌面/iPad 产品分支。
+- Startup feature 已拆为 state、submission、纯 ASCII 用户名 validator、`@MainActor @Observable` 内存 fixture Store 和 SwiftUI View；留空匿名、trim/lowercase、32 字符、固定错误、编辑清错和 busy 防重入均有 Package tests。
+- 页面覆盖 `START / PREPARING… / SYNCING…`、两条中文辅助状态、按钮与 Return 提交、原生键盘避让、44 pt 命中区、accessibility identifiers、辅助字号和 Reduce Motion；未接持久化、课程、进度、网络、音频或 Realtime。
+- iPhone 17e 390 × 844 pt 的 idle/invalid/accessibility 3 及 iPhone 17 Pro syncing 四张截图已保存并人工核对；无裁切、重叠、启动黑边或 gallery，平台差异和 hash 见 startup visual verification。
+- 从删除课程生成物、统一/Package SwiftPM cache 和 DerivedData 的状态重跑：八个 Package tests、iPhone build、App integration 1、UI 8、Web 40/40 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- P3.2 当前是开发完成待独立复核；PASS 前不得生成或实现 P3.3 主学习页。
+
 ## 2026-07-15 · P3.1 re-reviewed PASS
 
 - 修复后独立 reviewer 确认 `ConfirmDialog` 使用的真实 `background text / accessible role fill` 组合在六套 palette 下为 8.764–10.784:1，全部超过 4.5:1；单元测试覆盖同一组合，组件接线与测试角色一致。
