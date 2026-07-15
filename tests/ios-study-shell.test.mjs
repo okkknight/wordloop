@@ -42,6 +42,7 @@ test("iOS study shell is an explicit fixture-only iPhone page", async () => {
   assert.match(view, /Waveform/);
   assert.match(view, /accessibilityReduceMotion/);
   assert.match(view, /minimumHit/);
+  assert.equal((view.match(/\.font\(\.system\(size: 18, weight: \.semibold\)\)/g) ?? []).length, 2);
 
   assert.match(appRoot, /-wordloop-study-shell/);
   assert.match(appRoot, /MainStudyView\(store: studyShellStore\)/);

@@ -190,6 +190,13 @@ final class AppUITests: XCTestCase {
 
         XCTAssertTrue(app.descendants(matching: .any)["study.page"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["study.english"].exists)
+        let playButton = app.buttons["study.play"]
+        let visibilityButton = app.buttons["study.visibility"]
+        XCTAssertTrue(playButton.isHittable)
+        XCTAssertTrue(visibilityButton.isHittable)
+        XCTAssertGreaterThanOrEqual(playButton.frame.width, 44)
+        XCTAssertGreaterThanOrEqual(playButton.frame.height, 44)
+        XCTAssertLessThanOrEqual(playButton.frame.maxX, visibilityButton.frame.minX)
         let nextButton = app.buttons["study.next"]
         XCTAssertTrue(nextButton.exists)
         if !nextButton.isHittable { app.swipeUp() }

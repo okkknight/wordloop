@@ -130,6 +130,7 @@ public struct MainStudyView: View {
             HStack(spacing: WordLoopSpacing.xs) {
                 Button {} label: {
                     Image(systemName: "speaker.wave.2.fill")
+                        .font(.system(size: 18, weight: .semibold))
                         .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
                         .background(store.state.palette.ink.color, in: Circle())
                         .foregroundStyle(store.state.palette.background.color)
@@ -140,6 +141,7 @@ public struct MainStudyView: View {
 
                 Button(action: store.cycleVisibility) {
                     Image(systemName: visibilityIcon)
+                        .font(.system(size: 18, weight: .semibold))
                         .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
                         .overlay(Circle().stroke(store.state.palette.ink.color, lineWidth: WordLoopBorder.hairline))
                 }

@@ -14,10 +14,10 @@
 
 | 文件 | 状态与 fixture | SHA-256 |
 | --- | --- | --- |
-| [`iphone-17e-repeat.png`](iphone-17e-repeat.png) | 390 × 844 pt；sentence / repeat / full；`-wordloop-study-shell -wordloop-study-mode repeat -wordloop-fixture-reduce-motion` | `0ca31b88122fef3a211f3facf50bc7eda047ce486513b9bbfc08fae8c23cb39d` |
-| [`iphone-17e-listen.png`](iphone-17e-listen.png) | 390 × 844 pt；sentence / listen / full；`-wordloop-study-shell -wordloop-study-mode listen -wordloop-fixture-reduce-motion` | `05d11f885772feefad9b0565e39410c9a907218565c08f38514a6ec6e6ed7bb8` |
-| [`iphone-17-pro-long-word-hidden.png`](iphone-17-pro-long-word-hidden.png) | 402 × 874 pt；long-word / listen / hidden；`-wordloop-study-item long-word -wordloop-study-visibility hidden` | `1fa713f0577b209805c3bdd2a34d37c33d07e8ed5f32a7102bf8aaf379b5bb26` |
-| [`iphone-17e-accessibility3-reduce-motion.png`](iphone-17e-accessibility3-reduce-motion.png) | 390 × 844 pt；sentence / repeat / accessibility 3 / Reduce Motion；页面启用纵向可达滚动 | `f241daa70ecc6b5df4b99cd860b13c19361aef12c4e32c35b697fc09b15553b0` |
+| [`iphone-17e-repeat.png`](iphone-17e-repeat.png) | 390 × 844 pt；sentence / repeat / full；`-wordloop-study-shell -wordloop-study-mode repeat -wordloop-fixture-reduce-motion` | `0debaccf4a8e141e3932e068362d191fdf33256783c131570d7d12ee092fd0e3` |
+| [`iphone-17e-listen.png`](iphone-17e-listen.png) | 390 × 844 pt；sentence / listen / full；`-wordloop-study-shell -wordloop-study-mode listen -wordloop-fixture-reduce-motion` | `841b2e5e13c7c03596894f9c8bd48c00c1f3b8a53665c9e0f4234910d1e7bf53` |
+| [`iphone-17-pro-long-word-hidden.png`](iphone-17-pro-long-word-hidden.png) | 402 × 874 pt；long-word / listen / hidden；`-wordloop-study-item long-word -wordloop-study-visibility hidden` | `4fd9f33112db8a1e5b4d3d6ac1124a4be224fbdd9cf3a0b181bef3561e4f129b` |
+| [`iphone-17e-accessibility3-reduce-motion.png`](iphone-17e-accessibility3-reduce-motion.png) | 390 × 844 pt；sentence / repeat / accessibility 3 / Reduce Motion；页面启用纵向可达滚动 | `f9323971844cfab7a563b17c05e4d0c159f48cd24be2d69203ea28ffb537ea73` |
 
 ## 与 Web 基线核对
 
@@ -36,5 +36,6 @@
 - accessibility 3 将顶栏重排为两行、底部控制重排为两组，并只在辅助字号启用纵向 ScrollView。截图显示初始阅读区，UI test 继续向上滚动并确认 `NEXT` 可点击，证明底部控制可达而非被裁掉。
 - 所有命中控件至少使用 `WordLoopSpacing.minimumHit = 44`；UI automation 实际点击 mode、visibility、AUTOPLAY/PAUSE，并检查边缘按钮仍在设备水平边界内。
 - Reduce Motion fixture 清零内容进入位移与 palette 动画，并让 waveform 停止循环；页面颜色、选中态和文案不依赖动画表达。
+- 首次复核指出 ModeSwitch 未选中文字在 accent 圆环上的实际层叠只有 3.390:1。修复后 track 与 poster accent 的 opacity 成为共享 token，未选中文字使用不透明 ink；同一 sRGB 合成测试覆盖纯背景 8.746:1 和圆环区域 5.301:1。accessibility 3 的 speaker/eye symbol 固定为不随 Dynamic Type 放大的 18 pt，并由 UI test 锁定两个 44 pt 命中框不重叠；刷新截图可见图形完整留在各自圆形内。
 
 P3.3 只验收主学习页静态 Shell。课程/进度抽屉、完成弹窗和完整 REPEAT 卡片状态分别留给 P3.4–P3.6；课程解析、真实播放、持久进度、网络同步、麦克风与 Realtime 均未实现。

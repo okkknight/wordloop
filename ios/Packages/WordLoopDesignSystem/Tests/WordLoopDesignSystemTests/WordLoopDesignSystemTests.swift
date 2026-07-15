@@ -39,6 +39,20 @@ final class WordLoopDesignSystemTests: XCTestCase {
         XCTAssertEqual(PosterPalette.all[5].accessibleAccentText, PosterPalette.all[5].accent)
     }
 
+    func testModeSwitchUnselectedTextMeetsContrastAcrossRealPosterLayers() throws {
+        let sun = try XCTUnwrap(PosterPalette.all.first(where: { $0.id == "sun" }))
+        let underlays = [
+            sun.background,
+            sun.accent.composited(over: sun.background, opacity: WordLoopLayerOpacity.posterAccent),
+        ]
+
+        for underlay in underlays {
+            let track = sun.ink.composited(over: underlay, opacity: WordLoopLayerOpacity.modeTrack)
+            let text = sun.ink.composited(over: track, opacity: WordLoopLayerOpacity.modeUnselectedText)
+            XCTAssertGreaterThanOrEqual(text.contrastRatio(with: track), 4.5)
+        }
+    }
+
     func testSpacingRadiusBorderAndShadowConstants() {
         XCTAssertEqual(
             [WordLoopSpacing.xxs, WordLoopSpacing.xs, WordLoopSpacing.sm, WordLoopSpacing.md, WordLoopSpacing.safe, WordLoopSpacing.safeWide, WordLoopSpacing.lg, WordLoopSpacing.minimumHit],

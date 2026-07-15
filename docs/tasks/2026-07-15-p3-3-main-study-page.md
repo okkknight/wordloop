@@ -1,6 +1,6 @@
 # P3.3 iPhone 主学习页静态 Shell
 
-状态：首次独立复核 FAIL
+状态：首次复核问题已修复，待重新独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -143,3 +143,10 @@ git status --short --ignored
 - accessibility 3 截图中，播放与 visibility 按钮的 SF Symbols 随 Dynamic Type 放大，但 `MainStudyView` 只给 `Image` 固定 44 × 44 pt frame，没有固定 symbol 字号或让图形在控件内缩放。结果 speaker 与 eye 图标越出各自圆形边界并明显互相重叠，不满足“accessibility 3 无文本/控件裁切”和控件视觉边界要求。现有 UI test 只验证页面可滚到 `NEXT`，没有检查这两个学习动作的几何关系。
 
 最小修复：让 mode switch 在圆环覆盖与纯背景两种真实底层上都使用至少 4.5:1 的最终文字/背景角色，并新增按 UI 实际 alpha 层叠计算的回归；为两个学习动作固定 Dynamic Type 安全的 symbol 尺寸/缩放与间距，确保图形留在各自至少 44 pt 的命中区域内。修复后刷新受影响的 listen 与 accessibility 3 截图，并从冷缓存重跑全部验收。P3.3 PASS 前不得生成或实施 P3.4。
+
+## 首次复核问题修复（2026-07-15）
+
+- `posterAccent / modeTrack / modeUnselectedText` opacity 已提升为 Design System 共享 token；`WordLoopSRGB.composited` 用与 SwiftUI 相同的 sRGB 层叠顺序计算最终颜色。未选中文字改为不透明 ink，纯背景区域实算约 8.746:1，accent 圆环区域约 5.301:1；单元测试直接引用页面相同 token 并断言两种真实底层均至少 4.5:1。
+- speaker 与 visibility SF Symbols 固定为 18 pt semibold，不再随 accessibility Dynamic Type 膨胀；各自继续使用 44 × 44 pt frame。UI test 在 accessibility 3 下断言两个按钮可点击、命中框至少 44 pt 且不相交。
+- 四张视觉证据均已用刷新 App 重拍；accessibility 3 中两个图形完整留在各自圆形内且有明确间隔，Listen/Repeat 未选中文字对比可辨。hash 和差异记录已更新。
+- 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态完成修复后验收：八个 Package tests、iPhone build、DesignSystem 12/12、Features 26/26、App integration 1/1、UI 12/12、Web 41/41 全部通过；lint 精确保持既有 4 errors、0 warnings。仍需未参与修复的 reviewer 重新结论；P3.3 PASS 前不得进入 P3.4。

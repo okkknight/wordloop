@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.3 visual blockers fixed, re-review pending
+
+- Design System 新增实际 sRGB layer compositing 和共享 `posterAccent / modeTrack / modeUnselectedText` opacity token；ModeSwitch 未选中文字改用不透明 ink，纯背景和 accent 圆环下实算约 8.746:1/5.301:1，同一 UI token 的单元测试锁定两种底层至少 4.5:1。
+- 主学习页 speaker/visibility SF Symbols 固定为 18 pt semibold，不再被 accessibility Dynamic Type 放大出 44 pt 圆形；UI test 验证两个按钮可点击、各至少 44 pt 且 frame 不相交。
+- 四张 study shell 截图全部从刷新 App 重拍并更新 hash；辅助字号图标边界与模式文字对比均已人工核对。
+- 修复后从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、iPhone build、DesignSystem 12/12、Features 26/26、App integration 1/1、UI 12/12、Web 41/41 全部通过；lint 精确保持既有 4 errors、0 warnings。仍需重新独立复核；P3.3 PASS 前不得生成或实施 P3.4。
+
 ## 2026-07-15 · P3.3 review failed on actual contrast and accessibility controls
 
 - 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、iPhone build、Features 26/26、App integration 1/1、UI 12/12、Web 41/41 全部通过；lint 精确保持既有 4 errors、0 warnings。

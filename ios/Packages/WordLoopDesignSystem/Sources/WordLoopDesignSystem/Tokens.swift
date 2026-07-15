@@ -33,6 +33,24 @@ public struct WordLoopSRGB: Equatable, Hashable, Sendable {
         let darker = min(relativeLuminance, other.relativeLuminance)
         return (lighter + 0.05) / (darker + 0.05)
     }
+
+    /// Returns the final sRGB value produced by drawing this color over an
+    /// opaque background. Tests use the same layer order as SwiftUI views so
+    /// translucent roles cannot be checked against the wrong underlay.
+    public func composited(over background: WordLoopSRGB, opacity: Double) -> WordLoopSRGB {
+        let alpha = min(max(opacity, 0), 1)
+        return .init(
+            red: red * alpha + background.red * (1 - alpha),
+            green: green * alpha + background.green * (1 - alpha),
+            blue: blue * alpha + background.blue * (1 - alpha)
+        )
+    }
+}
+
+public enum WordLoopLayerOpacity {
+    public static let posterAccent = 0.58
+    public static let modeTrack = 0.10
+    public static let modeUnselectedText = 1.0
 }
 
 public struct PosterPalette: Identifiable, Equatable, Hashable, Sendable {

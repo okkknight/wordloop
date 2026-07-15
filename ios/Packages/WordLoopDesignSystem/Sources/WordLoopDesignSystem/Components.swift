@@ -25,7 +25,7 @@ public struct PosterBackground<Content: View>: View {
         ZStack(alignment: .topTrailing) {
             palette.background.color.ignoresSafeArea()
             Circle()
-                .stroke(palette.accent.color.opacity(0.58), lineWidth: 58)
+                .stroke(palette.accent.color.opacity(WordLoopLayerOpacity.posterAccent), lineWidth: 58)
                 .frame(width: 310, height: 310)
                 .offset(x: 152, y: -154)
                 .accessibilityHidden(true)
@@ -85,7 +85,11 @@ public struct ModeSwitch: View {
                         .font(WordLoopTypography.label())
                         .padding(.horizontal, WordLoopSpacing.sm)
                         .frame(minHeight: WordLoopSpacing.minimumHit)
-                        .foregroundStyle(selection == option ? palette.background.color : palette.ink.color.opacity(0.72))
+                        .foregroundStyle(
+                            selection == option
+                                ? palette.background.color
+                                : palette.ink.color.opacity(WordLoopLayerOpacity.modeUnselectedText)
+                        )
                         .background(selection == option ? palette.ink.color : Color.clear, in: Capsule())
                 }
                 .buttonStyle(.plain)
@@ -96,7 +100,7 @@ public struct ModeSwitch: View {
             }
         }
         .padding(3)
-        .background(palette.ink.color.opacity(0.1), in: Capsule())
+        .background(palette.ink.color.opacity(WordLoopLayerOpacity.modeTrack), in: Capsule())
         .accessibilityElement(children: .contain)
         .accessibilityLabel(accessibilityLabel)
     }
