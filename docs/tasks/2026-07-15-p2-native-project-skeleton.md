@@ -1,6 +1,6 @@
 # P2 原生 iPhone 工程与模块骨架
 
-状态：首次独立复核未通过；缓存忽略规则已修复，待重新复核
+状态：重新独立复核通过
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -143,6 +143,16 @@ git status --short --ignored
 - 阻塞项：`.gitignore` 只忽略统一缓存 `/ios/.build/`，不忽略常规 `swift test --package-path ios/Packages/<Package>` 或 `swift package --package-path ...` 产生的 `ios/Packages/<Package>/.build/`。复核时八个 Package 均出现未跟踪缓存，`git check-ignore -v ios/Packages/WordLoopCore/.build/debug.yaml` 返回 1，不满足“`.build/` 与生成目录均 ignored”验收标准。
 - 最小修复：忽略所有 iOS Package 本地 `.build/`，并扩展静态工程测试，对至少一个 `ios/Packages/<Package>/.build/` 路径执行 `git check-ignore`。
 
+## 重新独立复核结果
+
+2026-07-15，同一独立 reviewer 对修复提交 `6d58b7a` 给出 **PASS**。
+
+- 独立执行常规 `swift test --package-path ios/Packages/WordLoopCore`，测试通过；实际生成的 package-local `.build/` 命中 `**/.build/` 忽略规则，`git status --short` 无缓存污染。
+- 新增 package-local cache 静态回归通过；`git check-ignore -v ios/Packages/WordLoopCore/.build/debug.yaml` 精确命中 `.gitignore`。
+- 从删除课程产物、统一缓存、Package 本地缓存和 DerivedData 的状态重跑 `scripts/verify_ios.sh`：内容重建、八个 Package tests 与 iPhone 17 Pro / iOS 26.5 Simulator build 通过。
+- 重跑 `xcodebuild test`：`AppIntegrationTests` 1/1、`AppUITests` 1/1 通过；`npm run baseline:ios` 通过，`npm test` 38/38。
+- `npm run lint` 仍精确为既有 4 errors、0 warnings；`git diff --check` 通过，修复没有触及 Web 业务或 iOS App/Package 实现。
+
 ## 交接
 
-P2 当前不能通过。先修复 Package 本地 `.build/` 忽略规则和对应回归测试，再由独立 reviewer 重新验收；PASS 前不生成或实施 P3 任务卡。
+P2 已通过独立复核。下一步可根据当前真实工程生成 P3 Design System 与逐页静态 Shell 任务卡；在新任务卡确定前不跨阶段实现。

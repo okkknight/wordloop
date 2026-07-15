@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P2 re-reviewed PASS
+
+- 独立 reviewer 执行常规 package-local `swift test --package-path ios/Packages/WordLoopCore`；生成的 `.build/` 被递归规则忽略，`git status --short` 无缓存污染，新增静态 ignore 回归通过。
+- 从删除课程生成物、统一/Package 本地缓存和 DerivedData 的状态重跑验收；八个 Package tests、iPhone 17 Pro / iOS 26.5 Simulator build、App integration/UI tests 全部通过。
+- `npm run baseline:ios` 通过，`npm test` 38/38；lint 精确保持既有 4 errors、0 warnings；没有 Web 业务或 iOS App/Package 实现变更。
+- P2 重新独立复核结论为 PASS。下一步根据当前真实工程生成 P3 Design System 与逐页静态 Shell 任务卡，不得跨阶段实现。
+
 ## 2026-07-15 · P2 Package cache hygiene fixed, re-review pending
 
 - `.gitignore` 从只覆盖 `ios/.build/` 改为递归覆盖所有 `.build/`，因此统一验证目录和 `ios/Packages/<Package>/.build/` 标准 SwiftPM 缓存都不会污染工作区。

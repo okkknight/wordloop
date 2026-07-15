@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，当前检查点仍为 P2 原生 iPhone 工程与模块骨架。
+任务：执行 iOS 迁移 Plan，P2 原生 iPhone 工程与模块骨架已通过，下一检查点为 P3 Design System 与逐页静态 Shell。
 
-执行状态：P0.1、P1 已独立复核通过；P2 首次独立复核发现的 Package 本地 `.build/` 忽略缺口已修复，等待重新复核。
+执行状态：P0.1、P1、P2 已独立复核通过；P3 任务卡尚未生成。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -43,7 +43,7 @@ P1 已建立 catalog/course/integrity JSON Schema 和唯一 exporter。规范产
 
 P2 已建立 iOS 17、Swift 6、仅 iPhone 的 SwiftUI 工程，以及 Core、Networking、Content、DesignSystem、Audio、Progress、Realtime、Features 八个本地 Swift Package。App 通过 Features 接入依赖图；当前 RootView 只有无业务 skeleton。课程生成物、SwiftPM cache、DerivedData 和 Xcode 用户文件均被忽略，可由统一脚本从空缓存重建并编译。
 
-P2 首次独立 reviewer 已验证八个 Package tests、iPhone Simulator build、App integration/UI tests 和 Web 38 项回归通过；其发现的常规 SwiftPM `ios/Packages/*/.build/` 忽略缺口已通过递归规则和静态回归修复，待重新独立复核。
+P2 首次复核发现的常规 SwiftPM `ios/Packages/*/.build/` 忽略缺口已修复并通过真实 package-local 命令与静态回归。重新 reviewer 确认冷启动重建、八个 Package tests、iPhone Simulator build、App integration/UI tests 和 Web 38 项回归全部通过，结论为 PASS。
 
 ## 架构与数据流
 
