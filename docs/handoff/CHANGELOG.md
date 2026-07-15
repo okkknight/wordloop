@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.2 re-reviewed PASS
+
+- 修复后独立 reviewer 确认 canonical rose palette 未改变，StartupView 与测试使用同一最终 sRGB 角色；placeholder 和输入边界实算分别为 5.083759:1 与 3.157488:1，达到 4.5:1/3:1 门槛，Node 静态测试锁定接线并禁止旧 opacity 回归。
+- 四张刷新截图的 hash/尺寸与文档一致，均为真实 Startup 页面；iPhone 17 Pro、390 × 844 pt iPhone 17e 和 accessibility 3 + Reduce Motion 无裁切、重叠或调试画面。
+- 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、iPhone build、Features 13/13、App integration 1/1、UI 8/8、Web 40/40 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- Release 设置实测为 iOS 17、Swift 6、iPhone device family，Catalyst 与 Designed for iPhone on Mac 均关闭；Startup 仍无越层业务依赖。P3.2 结论为 PASS，下一步只生成 P3.3 主学习页任务卡，不提前实施。
+
 ## 2026-07-15 · P3.2 startup input contrast fixed, re-review pending
 
 - canonical rose palette 保持不变；新增预合成 `StartupVisualRoles`，placeholder 使用 ink 72% 合成色约 5.084:1，下划线使用 accent 86% 合成色约 3.157:1，分别超过文本 4.5:1 和控件边界 3:1。

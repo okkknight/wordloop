@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，当前检查点为 P3.2 iPhone 启动页静态 Shell。
+任务：执行 iOS 迁移 Plan，P3.2 iPhone 启动页静态 Shell 已完成独立复核。
 
-执行状态：P0.1、P1、P2、P3.1 已独立复核通过；P3.2 首次独立复核 FAIL，输入 placeholder 与下划线对比度已用预合成角色色修复并补测试/截图，待重新复核。P3.2 PASS 前不生成或实施 P3.3。
+执行状态：P0.1、P1、P2、P3.1、P3.2 均已独立复核 PASS。下一步只根据当前真实 Startup/Design System API 生成 P3.3 主学习页任务卡，不提前实施 P3.3。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -49,7 +49,7 @@ P3.1 已建立不依赖业务 Package 的 Design System：六套 palette、token
 
 P3.1 首次 reviewer 发现的 `ConfirmDialog` 五套 palette 关键按钮低对比度及 accessibility 3 标签/装饰重叠已通过角色色、真实组合测试和布局隔离修复。修复后 reviewer 确认六套实际按钮组合为 8.764–10.784:1，刷新截图无重叠，并从冷缓存重跑 Package/App/UI/Web tests 全部通过，结论为 PASS。
 
-P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 state、submission、纯用户名 validator、内存 fixture Store 与 SwiftUI View 拆入独立 Startup feature 文件。页面覆盖匿名/命名提交、32 字符、ASCII 英文字母校验、三段按钮状态、中文辅助文案、键盘、Dynamic Type、VoiceOver 语义与 Reduce Motion；不接身份持久化、课程、进度、网络、音频或 Realtime。首次 reviewer 确认冷缓存八 Package/iPhone build、Features 11、App integration 1/UI 8、Web 40/40 与四张视觉证据均通过，但发现 placeholder 仅约 2.071:1、输入下划线约 2.822:1。现已保持 canonical palette 不变，使用实算约 5.084:1/3.157:1 的预合成角色色，Features 增至 13 tests 并刷新全部截图，待重新复核。
+P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 state、submission、纯用户名 validator、内存 fixture Store 与 SwiftUI View 拆入独立 Startup feature 文件。页面覆盖匿名/命名提交、32 字符、ASCII 英文字母校验、三段按钮状态、中文辅助文案、键盘、Dynamic Type、VoiceOver 语义与 Reduce Motion；不接身份持久化、课程、进度、网络、音频或 Realtime。首次 reviewer 发现 placeholder 约 2.071:1、输入下划线约 2.822:1；修复保持 canonical palette 不变，改为 UI 与测试共用的预合成角色色。修复后 reviewer 实算为 5.083759:1/3.157488:1，并从冷缓存确认八 Package/iPhone build、Features 13/13、App integration 1/1、UI 8/8、Web 40/40、四张视觉证据和 iPhone-only 设置全部通过，结论为 PASS。
 
 ## 架构与数据流
 
@@ -206,7 +206,7 @@ git diff --check
 - 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
 - 已复核课程合同：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 已复核原生骨架：`docs/tasks/2026-07-15-p2-native-project-skeleton.md`
-- 当前任务卡：`docs/tasks/2026-07-15-p3-1-design-system.md`
+- 当前任务卡：`docs/tasks/2026-07-15-p3-2-startup-page.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`

@@ -1,6 +1,6 @@
 # P3.2 iPhone 启动页静态 Shell
 
-状态：首次独立复核 FAIL；对比度已修复，待重新复核
+状态：修复后独立复核 PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -157,3 +157,16 @@ git status --short --ignored
 - `StartupView` 直接使用这两个最终角色色，不再调用被 reviewer 指出的 `accent.opacity(0.56/0.78)`。
 - Features 增加两项测试，直接对 UI 使用的同一 `StartupVisualRole` 断言 4.5:1 与 3:1；Node 静态测试同时锁定 View 接线和禁止旧 opacity 回归。
 - 四张受影响截图已全部刷新，尺寸不变，新 hash 记录在 startup visual verification。修复提交后必须重新执行冷验收与独立复核，PASS 前仍不进入 P3.3。
+
+## 修复后独立复核结果（2026-07-15）
+
+结论：**PASS**。
+
+- reviewer 确认 canonical rose palette 未改变；UI 与测试直接使用同一组最终 sRGB `StartupVisualRole`。placeholder 实算对比度为 **5.083759:1**，输入边界为 **3.157488:1**，分别超过普通文本 4.5:1 与非文本控件边界 3:1。Node 静态测试同时锁定 View 接线，并禁止旧的 `accent.opacity(0.56/0.78)` 回归。
+- 四张刷新截图的尺寸和 SHA-256 与 `visual-verification.md` 一致：iPhone 17 Pro syncing 为 `1206 × 2622 px` / `0a788388adff3e5d62536590c75b7182aeb032658865d2d05d7c608227c0fdc3`；iPhone 17e accessibility、idle、invalid 分别为 `1170 × 2532 px` / `830897ea16aef392dc96d21a93517246785d8829e4c56de76fbd119659fdbca3`、`c36fcea89711eae9e1c38571b17083349c877b4d871163dc90e7e7f5314e3f3a`、`fe813b5652f8363e462dab3c2250adc3a80eba10603f24d490396ca7dfcac833`。人工检查确认均为真实 Startup 页面，placeholder 与边界清晰，无裁切、重叠、gallery、App Switcher 或调试浮层。
+- 从删除 `content/dist`、`ios/Generated`、统一/Package SwiftPM cache 和 DerivedData 的状态执行 `scripts/verify_ios.sh`，课程重建、八个 Package tests 与 iPhone 17 Pro Simulator build 全部通过；Features 独立重跑为 13/13。
+- 独立 `xcodebuild test` 通过 App integration 1/1 与 UI 8/8；默认 Startup、gallery 参数入口、用户名提交/校验、busy 状态、键盘、accessibility 3 和 Reduce Motion 均无回归。
+- `npm run baseline:ios` 通过，`npm test` 为 40/40；lint 精确保持既有 Web 4 errors、0 warnings；`git diff --check` 通过。修复没有修改 Web、共享课程合同或 canonical Design System tokens，Startup 仍无持久化、网络、课程、进度、音频或 Realtime 依赖。
+- Release build settings 实测为 iOS 17、Swift 6、`TARGETED_DEVICE_FAMILY = 1`、`SUPPORTS_MACCATALYST = NO`、`SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO`，迁移产品仍仅面向 iPhone。
+
+P3.2 已满足退出标准。下一步可以根据当前真实 Startup/Design System API 生成 P3.3 主学习页任务卡；本次复核未生成任务卡，也未实施 P3.3。
