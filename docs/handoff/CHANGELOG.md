@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P1 reviewed, P2 task ready
+
+- 第三次独立 reviewer 对 `1806a26 + f8b7b2f + 2fc4120` 给出 PASS；竞态、篡改、额外文件、symlink 与 FIFO 注入均在 swap 前拒绝并保留旧目标。
+- 实查 Xcode 26.6、Swift 6.3.3 和 iPhone 17 Pro / iOS 26.5 Simulator 可用；本机无 XcodeGen/Tuist，P2 使用已提交 `.xcodeproj`，不增加机器级生成器依赖。
+- 新增 [`../tasks/2026-07-15-p2-native-project-skeleton.md`](../tasks/2026-07-15-p2-native-project-skeleton.md)，锁定 iOS 17、Swift 6、iPhone-only、八个本地 Package 和从空缓存验证。
+- P7 运行时课程安装仍必须用 immutable version directory + 原子指针/目录切换，不得照搬 P1 可重建开发产物的双 rename。
+
 ## 2026-07-15 · P1 undeclared-file gap fixed, re-review pending
 
 - 第二轮独立复核确认源竞态修复有效，但发现临时树只验证 expected 文件、未拒绝额外文件，因此仍为 FAIL。
