@@ -1,0 +1,19 @@
+# WordLoop 接手索引
+
+这套 handoff 文档刻意保持精简，避免项目状态散落在多个互相冲突的说明中。
+
+## 阅读顺序
+
+1. 根目录 [`PROJECT_CONTEXT.md`](../../PROJECT_CONTEXT.md)：项目事实、架构、当前状态、风险和工作规则。
+2. [`CHANGELOG.md`](CHANGELOG.md)：只追加会影响未来接手的重要变化。
+3. 根据任务阅读专项文档：
+   - 课程制作：[`../COURSE_PRODUCTION_GUIDE.md`](../COURSE_PRODUCTION_GUIDE.md)
+   - VOA 课程：[`../VOA_COURSE_PRODUCTION_GUIDE.md`](../VOA_COURSE_PRODUCTION_GUIDE.md)
+   - VPS 发布运维：[`../WORDLOOP_VPS_RUNBOOK.md`](../WORDLOOP_VPS_RUNBOOK.md)
+
+## 维护规则
+
+- `PROJECT_CONTEXT.md` 是唯一的项目上下文事实源；项目边界、架构或当前风险变化时直接更新它。
+- `CHANGELOG.md` 只追加有长期接手价值的变化，不记录每次小修小改，也不复制 Git log。
+- 专项步骤留在专项指南，不在 handoff 文档中重复维护。
+- 生产环境信息在每次部署前重新实机验证；文档中的日期表示最后确认时间，不代表永久有效。
