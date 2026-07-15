@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P2 developed, pending review
+
+- 新增可直接打开的 iPhone-only SwiftUI 工程、共享 scheme、App integration/UI test targets；固定 iOS 17、Swift 6、`TARGETED_DEVICE_FAMILY=1`，不支持 iPad、macOS 或 Catalyst。
+- 建立 Core、Networking、Content、DesignSystem、Audio、Progress、Realtime、Features 八个本地 Swift Package，App 只通过 Features 接入完整单向依赖图，没有第三方 Swift dependency。
+- 新增统一 iOS 验证脚本和工程结构测试；从删除课程生成物、SwiftPM cache 与 DerivedData 的状态可重建内容、通过八个 Package tests 并编译 iPhone 17 Pro / iOS 26.5 Simulator。
+- App integration test 和 UI skeleton launch test 已通过；`npm test` 为 38/38，课程基线/export/check 和 diff check 通过；lint 仍只有 4 个既有 Web errors、0 warnings。
+- 当前 RootView 仅为无业务 skeleton，未提前实现课程解析、视觉页面、音频、进度、Realtime 或下载。必须独立复核 P2 后才生成 P3 Design System 任务卡。
+
 ## 2026-07-15 · P1 reviewed, P2 task ready
 
 - 第三次独立 reviewer 对 `1806a26 + f8b7b2f + 2fc4120` 给出 PASS；竞态、篡改、额外文件、symlink 与 FIFO 注入均在 swap 前拒绝并保留旧目标。

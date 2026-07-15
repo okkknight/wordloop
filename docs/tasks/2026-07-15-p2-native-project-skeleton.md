@@ -1,6 +1,6 @@
 # P2 原生 iPhone 工程与模块骨架
 
-状态：待实施
+状态：开发完成，待独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -118,7 +118,17 @@ git diff --check
 git status --short --ignored
 ```
 
-退出标准：八个 Package tests 全绿；`WordLoop` 在 iPhone 17 Pro / iOS 26.5 Simulator destination 编译成功；干净重建不依赖残留；Web 37 项测试仍通过；lint 只允许既有 4 errors、0 新 warning；生成目录均 ignored。
+退出标准：八个 Package tests 全绿；`WordLoop` 在 iPhone 17 Pro / iOS 26.5 Simulator destination 编译成功；干净重建不依赖残留；Web 38 项测试仍通过；lint 只允许既有 4 errors、0 新 warning；生成目录均 ignored。
+
+## 实施结果
+
+- 已提交可直接打开的 `ios/WordLoop.xcodeproj`、共享 `WordLoop` scheme、App/Integration/UI 三个 target；工程固定 iOS 17、Swift 6、iPhone-only，并关闭 Mac Catalyst。
+- 八个本地 Package 已按锁定依赖图建立，App 只通过 `WordLoopFeatures` 接入整张模块图；无远程 Swift dependency。
+- `AppEnvironment` 从 build settings 读取环境与 HTTPS URL，Release API 默认指向当前 VPS；仓库内无 API key 或 token。
+- `scripts/verify_ios.sh` 可在删除课程生成物、SwiftPM cache 和 DerivedData 后重建课程资源，逐个测试八个 Package，并编译 iPhone 17 Pro / iOS 26.5 Simulator target。
+- App integration test 与 UI launch test 已额外通过；UI test 只验证无业务 skeleton 成功启动。
+- `npm test` 为 38/38；`npm run lint` 只有既有 `app/page.tsx` 4 errors、0 warnings；课程基线、export/check 与 `git diff --check` 均通过。
+- 未修改 Web UI、课程、音频、API、数据库或部署，也未实现任何 P3 之后的业务能力。
 
 ## 交接
 
