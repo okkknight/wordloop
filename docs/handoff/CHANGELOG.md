@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P2 reviewed, P3.1 task ready
+
+- P2 修复后独立复核 PASS：真实 package-local SwiftPM cache 已被 ignore，冷启动 verify、八个 Package tests、iPhone build、App integration/UI tests、Web 38/38 和工程卫生均通过。
+- 新增 [`../tasks/2026-07-15-p3-1-design-system.md`](../tasks/2026-07-15-p3-1-design-system.md)，只实现 Design System tokens、字体、基础组件和无业务 fixture gallery，不提前进入启动页或学习业务。
+- Geist 固定到官方 `vercel/geist-font` tag `1.8.0` / commit `91158e0`；按 OFL 1.1 随 App 嵌入时必须提交并分发原始许可文本，同时记录字体 SHA-256 和包体增量。
+- 迁移继续只面向 iPhone；Package 的 macOS host 支持仅用于 `swift test`，不得扩展成桌面产品。
+
 ## 2026-07-15 · P2 re-reviewed PASS
 
 - 独立 reviewer 执行常规 package-local `swift test --package-path ios/Packages/WordLoopCore`；生成的 `.build/` 被递归规则忽略，`git status --short` 无缓存污染，新增静态 ignore 回归通过。
