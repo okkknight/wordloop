@@ -1,21 +1,17 @@
 import SwiftUI
+import WordLoopFeatures
 
 struct RootView: View {
     let container: AppContainer
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     var body: some View {
-        VStack(spacing: 8) {
-            Text("WordLoop")
-                .font(.title.bold())
+        DesignSystemGalleryView()
+            .environment(\.dynamicTypeSize, fixtureAccessibilityText ? .accessibility3 : dynamicTypeSize)
+    }
 
-            Text("Native skeleton")
-                .font(.footnote.monospaced())
-                .foregroundStyle(.secondary)
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(uiColor: .systemBackground))
-        .accessibilityElement(children: .combine)
-        .accessibilityIdentifier("wordloop.root.skeleton")
+    private var fixtureAccessibilityText: Bool {
+        ProcessInfo.processInfo.arguments.contains("-wordloop-fixture-accessibility-text")
     }
 }
 

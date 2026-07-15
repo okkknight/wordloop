@@ -27,7 +27,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，38 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项）。
+- `npm test`：构建通过，39 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
@@ -35,15 +35,17 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan，当前检查点为 P3.1 iPhone Design System 基础层。
 
-执行状态：P0.1、P1、P2 已独立复核通过；P3.1 任务卡已生成，待实施。
+执行状态：P0.1、P1、P2 已独立复核通过；P3.1 Design System 已开发完成，等待独立复核。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
 P1 已建立 catalog/course/integrity JSON Schema 和唯一 exporter。规范产物从真实课程注册表生成，先把已哈希字节写入临时树并逐文件复验，再替换 `content/dist/`；该目录与 iOS Generated resources 均被 Git 忽略，Web 仍读取原数据源。运行时注册 ID 是规范 ID，S01E01 的历史 manifest ID 差异和未命中 highlights 会写入 validation report。
 
-P2 已建立 iOS 17、Swift 6、仅 iPhone 的 SwiftUI 工程，以及 Core、Networking、Content、DesignSystem、Audio、Progress、Realtime、Features 八个本地 Swift Package。App 通过 Features 接入依赖图；当前 RootView 只有无业务 skeleton。课程生成物、SwiftPM cache、DerivedData 和 Xcode 用户文件均被忽略，可由统一脚本从空缓存重建并编译。
+P2 已建立 iOS 17、Swift 6、仅 iPhone 的 SwiftUI 工程，以及 Core、Networking、Content、DesignSystem、Audio、Progress、Realtime、Features 八个本地 Swift Package。App 通过 Features 接入依赖图；课程生成物、SwiftPM cache、DerivedData 和 Xcode 用户文件均被忽略，可由统一脚本从空缓存重建并编译。
 
 P2 首次复核发现的常规 SwiftPM `ios/Packages/*/.build/` 忽略缺口已修复并通过真实 package-local 命令与静态回归。重新 reviewer 确认冷启动重建、八个 Package tests、iPhone Simulator build、App integration/UI tests 和 Web 38 项回归全部通过，结论为 PASS。
+
+P3.1 已建立不依赖业务 Package 的 Design System：六套 palette、tokens、Geist Sans/Mono、OFL 许可、基础组件、触觉/Reduce Motion/可访问性边界和无业务 fixture gallery。当前 RootView 临时显示 gallery 供 CP-03 验收；它不是已完成的产品页面，P3.2 会用启动页替换。
 
 ## 架构与数据流
 
@@ -136,6 +138,9 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `ios/Packages/*` | 八个本地 Swift Package 与单向依赖边界 |
 | `scripts/verify_ios.sh` | 从空缓存重建课程资源、测试 Packages 并编译 Simulator |
 | `tests/ios-project-structure.test.mjs` | iOS 17/Swift 6/iPhone-only、模块图和工程卫生静态检查 |
+| `ios/Packages/WordLoopDesignSystem` | 原生 palette、tokens、字体、基础组件、动效与触觉边界 |
+| `docs/ios-migration/p3/design-system/*` | Geist 字体审计与 iPhone 视觉截图证据 |
+| `tests/ios-design-system.test.mjs` | 字体 hash/许可、tokens、组件边界和 App 不越层静态检查 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行

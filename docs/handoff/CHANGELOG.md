@@ -2,6 +2,15 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.1 developed, pending review
+
+- `WordLoopDesignSystem` 已实现六套 palette、tokens、Geist Sans/Mono、字体注册/系统回退、触觉协议、Reduce Motion 和九类无业务 SwiftUI 组件；自身不再依赖任何业务 Package。
+- Geist 1.8.0 两个 variable TTF 与原始 OFL 1.1 license 已提交并核验上游字节；含许可未压缩增量 344,268 bytes，逐文件 hash 见字体审计。
+- 六套 ink/background 与小文字角色对比度由单元测试锁定至少 4.5:1；机器真值 accent 不改，只有不合格的小文字角色回退 ink。
+- Features fixture gallery 已在 iPhone 17 Pro、390 × 844 pt iPhone 17e 和 accessibility 3 + Reduce Motion 三组状态截图；App 仍只 import Features，gallery 不连接业务。
+- 冷启动 verify、DesignSystem 11 tests、Features 2 tests、App integration 1 test、App UI 3 tests、Web 39/39 全部通过；lint 仍精确为既有 4 errors、0 warnings。
+- P3.1 仍需未参与实现的 reviewer 复核；PASS 后才能生成 P3.2 启动页任务卡。
+
 ## 2026-07-15 · P2 reviewed, P3.1 task ready
 
 - P2 修复后独立复核 PASS：真实 package-local SwiftPM cache 已被 ignore，冷启动 verify、八个 Package tests、iPhone build、App integration/UI tests、Web 38/38 和工程卫生均通过。

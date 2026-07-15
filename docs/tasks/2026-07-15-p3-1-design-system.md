@@ -1,6 +1,6 @@
 # P3.1 iPhone Design System 基础层
 
-状态：待实施
+状态：开发完成，待独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -104,6 +104,17 @@ git status --short --ignored
 ```
 
 退出标准：字体来源、版本、hash、许可和包体增量可审计；DesignSystem/Features tests 与 App UI tests 通过；gallery 在 iPhone 上可访问且截图证据完整；六色板和基础组件可供后续页面复用；Web 38 项回归不退化；lint 不超过既有 4 errors、0 新 warnings；没有业务越界或桌面产品支持。
+
+## 实施结果
+
+- `WordLoopDesignSystem` 已移除对 Core 的无用依赖，成为不依赖任何业务 Package 的底层 SwiftUI library。
+- 六套 palette、间距/圆角/边框/投影、动效/Reduce Motion、字体、触觉协议和九类无业务视觉组件已实现；palette 顺序与 sRGB 原值由测试锁定。
+- 六套 ink/background 和小文字角色至少 4.5:1；装饰 accent 原值不变，accent 不足时只让小文字角色回退 ink。
+- 官方 Geist 1.8.0 的 Sans/Mono variable TTF 与原始 OFL 1.1 license 已作为 Package resources 提交；来源、commit、逐文件 SHA-256 和 344,268 bytes 未压缩增量见 [`../ios-migration/p3/design-system/font-audit.md`](../ios-migration/p3/design-system/font-audit.md)。
+- `WordLoopFeatures` 提供明确标注为无业务 fixture 的 gallery；App 仍只 import Features，没有接课程、网络、进度、音频、Realtime 或下载。
+- iPhone 17 Pro、390 × 844 pt iPhone 17e、accessibility 3 + Reduce Motion 三组截图和人工检查见 [`../ios-migration/p3/design-system/visual-verification.md`](../ios-migration/p3/design-system/visual-verification.md)。
+- DesignSystem 11 tests、Features 2 tests、App integration 1 test、App UI 3 tests 均通过；`npm test` 为 39/39，lint 仍只有既有 Web 4 errors、0 warnings。
+- 未修改 Web UI、课程、音频、API、数据库或部署；未创建 iPad、macOS 或 Catalyst 产品 target。
 
 ## 交接
 

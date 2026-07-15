@@ -11,15 +11,12 @@ let package = Package(
     products: [
         .library(name: "WordLoopDesignSystem", targets: ["WordLoopDesignSystem"]),
     ],
-    dependencies: [
-        .package(path: "../WordLoopCore"),
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "WordLoopDesignSystem",
-            dependencies: [
-                .product(name: "WordLoopCore", package: "WordLoopCore"),
-            ]
+            dependencies: [],
+            resources: [.process("Resources")]
         ),
         .testTarget(name: "WordLoopDesignSystemTests", dependencies: ["WordLoopDesignSystem"]),
     ],

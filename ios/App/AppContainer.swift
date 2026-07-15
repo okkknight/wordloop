@@ -5,7 +5,7 @@ struct AppContainer: Sendable {
     let environment: AppEnvironment
 
     static func live(bundle: Bundle = .main) -> AppContainer {
-        _ = WordLoopFeaturesModule.name
+        _ = WordLoopFeaturesModule.prepareDesignSystem()
         do {
             return AppContainer(environment: try AppEnvironment(bundle: bundle))
         } catch {
