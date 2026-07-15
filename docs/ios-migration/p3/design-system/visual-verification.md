@@ -14,9 +14,9 @@
 
 | 文件 | 状态 | SHA-256 |
 | --- | --- | --- |
-| [`screenshots/iphone-17-pro-gallery.png`](screenshots/iphone-17-pro-gallery.png) | 标准字号、完整 Design System gallery | `ad29cb501fed092f99083170766ff5d467b23b807cde3c4ba27fc276f730f7b7` |
-| [`screenshots/iphone-17e-gallery.png`](screenshots/iphone-17e-gallery.png) | 390 × 844 pt 最窄设备、标准字号 | `88b4cebc29a1f27b5d56effa707eff251ebf17870c8057061a01e8a46a20b913` |
-| [`screenshots/iphone-17e-accessibility-reduce-motion.png`](screenshots/iphone-17e-accessibility-reduce-motion.png) | accessibility 3 字号、fixture 强制 Reduce Motion | `951eaa37b44865a984d46bc728a01125ace905ae3352d7fa0d7ecc182274ae47` |
+| [`screenshots/iphone-17-pro-gallery.png`](screenshots/iphone-17-pro-gallery.png) | 标准字号、完整 Design System gallery | `3d0107378c2606115085637cb63e9a23cf05074c20b3d48cf0d53821734ca2a3` |
+| [`screenshots/iphone-17e-gallery.png`](screenshots/iphone-17e-gallery.png) | 390 × 844 pt 最窄设备、标准字号 | `c25a39a6626c3e6a975f545efc2f1ad9fd188d4ac3cf5278a33fd1cf522c1eff` |
+| [`screenshots/iphone-17e-accessibility-reduce-motion.png`](screenshots/iphone-17e-accessibility-reduce-motion.png) | accessibility 3 字号、fixture 强制 Reduce Motion | `45014ef5a7e07ff490d2e6ed9a0ecfca33ea2ca8bf9887dfdfbe5636f6dfed27` |
 
 ## 人工检查
 
@@ -24,7 +24,7 @@
 - 六套 `ink / background` 和小文字角色均由单元测试锁定为至少 4.5:1；装饰 accent 原值不变，accent 不足时仅小文字角色回退到 ink。
 - Geist Sans/Mono 已在模拟器渲染；没有空白字体或退回后导致的布局缺失。
 - 390 pt 宽度下 gallery 没有横向溢出；标题按宽度换行，palette 仍保持三列可辨识。
-- accessibility 3 下大标题、说明、palette label 和 ModeSwitch 放大并换行；页面通过自身 ScrollView 保持内容可达，不横向裁切。
+- accessibility 3 下大标题、说明、palette label 和 ModeSwitch 放大并换行；palette label 保持左下、装饰圆隔离到右上，不再相互覆盖；页面通过自身 ScrollView 保持内容可达，不横向裁切。
 - Reduce Motion fixture 通过 launch argument 让 Waveform 保持静态；同一组 launch arguments 已由 UI test 验证可启动。
 - UI tests 可操作 dialog 的 `CANCEL` 与 drawer 的关闭按钮，证明两个 modal visual container 暴露可用的 VoiceOver 控件。
 - 最小命中尺寸由 `WordLoopSpacing.minimumHit = 44` 和组件测试固定；纯装饰圆环从 accessibility tree 隐藏。

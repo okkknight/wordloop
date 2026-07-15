@@ -318,7 +318,11 @@ public struct ConfirmDialog: View {
                     .frame(minHeight: WordLoopSpacing.minimumHit)
                     .padding(.horizontal, 13)
                     .foregroundStyle(palette.background.color)
-                    .background(palette.accent.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.control))
+                    .background(palette.accessibleAccentText.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.control))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: WordLoopRadius.control)
+                            .stroke(palette.accent.color, lineWidth: WordLoopBorder.hairline)
+                    }
                     .accessibilityLabel(model.confirmTitle)
             }
         }

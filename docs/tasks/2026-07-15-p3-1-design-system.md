@@ -1,6 +1,6 @@
 # P3.1 iPhone Design System 基础层
 
-状态：独立复核 FAIL，待修复后重新复核
+状态：首次独立复核 FAIL；对比度与辅助字号布局已修复，待重新复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -115,6 +115,7 @@ git status --short --ignored
 - iPhone 17 Pro、390 × 844 pt iPhone 17e、accessibility 3 + Reduce Motion 三组截图和人工检查见 [`../ios-migration/p3/design-system/visual-verification.md`](../ios-migration/p3/design-system/visual-verification.md)。
 - DesignSystem 11 tests、Features 2 tests、App integration 1 test、App UI 3 tests 均通过；`npm test` 为 39/39，lint 仍只有既有 Web 4 errors、0 warnings。
 - 未修改 Web UI、课程、音频、API、数据库或部署；未创建 iPad、macOS 或 Catalyst 产品 target。
+- 首次 reviewer 发现 ConfirmDialog 的 canonical accent 填充在五套浅色 palette 下不足 4.5:1，且 accessibility 3 的 palette 标签与装饰圆重叠。修复后主按钮使用经过对比度选择的角色色并保留 canonical accent 边框，六套真实前景/填充组合加入测试；装饰圆移到右上独立区域，标签固定在左下且允许受控缩放。
 
 ## 交接
 

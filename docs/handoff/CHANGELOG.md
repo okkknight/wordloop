@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.1 contrast and accessibility layout fixed, re-review pending
+
+- ConfirmDialog 主按钮不再直接使用低对比 canonical accent 填充；改用每套 palette 已通过 4.5:1 的角色色作为填充，background 作为文字，同时用 canonical accent 细边框保留产品色彩语义。
+- DesignSystem tests 新增六套实际 `button text / selected fill` 对比组合，关闭首次 review 漏测。
+- gallery palette 装饰圆移到右上独立区域并从 accessibility tree 隐藏；标签固定左下、单行受控缩放，避免 accessibility 3 下相互覆盖。
+- 需重拍标准/最窄/辅助字号截图并重新独立复核；P3.1 PASS 前不进入 P3.2。
+
 ## 2026-07-15 · P3.1 review failed on critical-control contrast
 
 - 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑验收；八个 Package tests、iPhone build、App integration 1 项、UI 3 项、Web 39/39 与既有 lint 基线均通过。

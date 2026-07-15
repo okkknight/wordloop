@@ -33,6 +33,7 @@ final class WordLoopDesignSystemTests: XCTestCase {
         for palette in PosterPalette.all {
             XCTAssertGreaterThanOrEqual(palette.ink.contrastRatio(with: palette.background), 4.5)
             XCTAssertGreaterThanOrEqual(palette.accessibleAccentText.contrastRatio(with: palette.background), 4.5)
+            XCTAssertGreaterThanOrEqual(palette.background.contrastRatio(with: palette.accessibleAccentText), 4.5)
         }
         XCTAssertEqual(PosterPalette.all[0].accessibleAccentText, PosterPalette.all[0].ink)
         XCTAssertEqual(PosterPalette.all[5].accessibleAccentText, PosterPalette.all[5].accent)
