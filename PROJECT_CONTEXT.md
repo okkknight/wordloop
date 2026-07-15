@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan，当前检查点为 P3.2 iPhone 启动页静态 Shell。
 
-执行状态：P0.1、P1、P2、P3.1 已独立复核通过；P3.2 已开发完成并通过本地验收，待独立 reviewer 复核。P3.2 PASS 前不生成或实施 P3.3。
+执行状态：P0.1、P1、P2、P3.1 已独立复核通过；P3.2 首次独立复核 FAIL，等待输入 placeholder 与下划线对比度修复后重新复核。P3.2 PASS 前不生成或实施 P3.3。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -49,7 +49,7 @@ P3.1 已建立不依赖业务 Package 的 Design System：六套 palette、token
 
 P3.1 首次 reviewer 发现的 `ConfirmDialog` 五套 palette 关键按钮低对比度及 accessibility 3 标签/装饰重叠已通过角色色、真实组合测试和布局隔离修复。修复后 reviewer 确认六套实际按钮组合为 8.764–10.784:1，刷新截图无重叠，并从冷缓存重跑 Package/App/UI/Web tests 全部通过，结论为 PASS。
 
-P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 state、submission、纯用户名 validator、内存 fixture Store 与 SwiftUI View 拆入独立 Startup feature 文件。页面覆盖匿名/命名提交、32 字符、ASCII 英文字母校验、三段按钮状态、中文辅助文案、键盘、Dynamic Type、VoiceOver 语义与 Reduce Motion；不接身份持久化、课程、进度、网络、音频或 Realtime。gallery 只保留 launch argument 回归入口。390 × 844 与 iPhone 17 Pro 四组截图已人工核对；冷缓存八 Package/iPhone build、App integration 1/UI 8、Web 40/40 均通过，lint 保持既有 4 errors、0 warnings，待独立复核。
+P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 state、submission、纯用户名 validator、内存 fixture Store 与 SwiftUI View 拆入独立 Startup feature 文件。页面覆盖匿名/命名提交、32 字符、ASCII 英文字母校验、三段按钮状态、中文辅助文案、键盘、Dynamic Type、VoiceOver 语义与 Reduce Motion；不接身份持久化、课程、进度、网络、音频或 Realtime。首次 reviewer 确认冷缓存八 Package/iPhone build、Features 11、App integration 1/UI 8、Web 40/40 与四张视觉证据均通过，但发现 placeholder 仅约 2.071:1、输入下划线约 2.822:1，未达到 4.5:1 文本与 3:1 控件边界门槛，结论为 FAIL。
 
 ## 架构与数据流
 

@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.2 review failed on startup input contrast
+
+- 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、Features 11/11、iPhone build、App integration 1 项、UI 8 项、Web 40/40 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- 默认 Startup、gallery launch-argument 边界、用户名规则、按钮/Return、busy 三态、键盘操作、Dynamic Type/Reduce Motion、业务隔离、App 只 import Features 与 iPhone-only 设置均通过；四张截图 hash/尺寸匹配且为真实无裁切页面。
+- 阻塞问题：rose accent `#157d6a` 的 56% placeholder 合成到 `#f8d9df` 后仅约 2.071:1，低于普通文字 4.5:1；78% 输入下划线约 2.822:1，低于输入控件视觉边界 3:1。现有测试没有覆盖实际 alpha 合成组合。
+- P3.2 结论为 FAIL。保持 canonical palette 不变，改用达标的 placeholder/边界角色并补真实合成对比测试、刷新截图后重新独立复核；PASS 前不得生成或实现 P3.3。
+
 ## 2026-07-15 · P3.2 startup page developed, pending review
 
 - 默认 iPhone App 已从 Design System gallery 切到原生启动页；gallery 只保留 `-wordloop-design-system-gallery` 测试入口，App 仍只 import Features，没有桌面/iPad 产品分支。

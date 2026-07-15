@@ -1,6 +1,6 @@
 # P3.2 iPhone 启动页静态 Shell
 
-状态：开发完成，待独立复核
+状态：独立复核 FAIL，待修复后重新复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -130,3 +130,22 @@ git status --short --ignored
 ## 交接
 
 先单独提交本任务卡，再实施 CP-04。开发完成后把状态改为“开发完成，待独立复核”，刷新根 `PROJECT_CONTEXT.md` 与 `docs/handoff/CHANGELOG.md`，提交实现；由未参与实现的 reviewer 独立复核。P3.2 PASS 后才根据真实 startup/Design System API 生成 P3.3 主学习页任务卡。
+
+## 独立复核结果（2026-07-15）
+
+结论：**FAIL**。
+
+已通过的独立证据：
+
+- 从删除 `content/dist`、`ios/Generated`、统一/Package SwiftPM cache 和 DerivedData 的状态执行 `scripts/verify_ios.sh`，课程重建、八个 Package tests 与 iPhone 17 Pro Simulator build 全部通过；单独重跑 Features 为 11/11。
+- 独立 `xcodebuild test` 通过 App integration 1 项与 UI 8 项。默认启动为 Startup，gallery 只能通过 launch argument 打开；匿名/命名提交、trim/lowercase、Return `Go`、按钮提交、非法输入、编辑清错、busy 三态和键盘打开后的按钮操作均通过。
+- 四张截图尺寸与文档 SHA-256 一致，都是实际 Startup 页面，不是 App Switcher、gallery、空白或键盘调试画面；390 × 844、iPhone 17 Pro 与 accessibility 3 均无文字重叠或横向裁切。
+- Startup 源码未接持久化、网络、课程、进度、音频或 Realtime；App 仍只 import Features。Release build settings 为 iOS 17、`TARGETED_DEVICE_FAMILY = 1`，Catalyst 与 Designed for iPhone on Mac 均关闭。
+- `npm run baseline:ios` 通过，`npm test` 为 40/40；lint 精确保持既有 Web 4 errors、0 warnings；没有 Web 或共享课程合同修改，`git diff --check` 通过。
+
+阻塞问题：
+
+- `StartupView.swift` 的空态 `USERNAME` placeholder 使用 rose accent 的 `0.56` opacity。把 `#157d6a` 按该 alpha 合成到 rose background `#f8d9df` 后，对比度只有约 **2.071:1**；这是 10 pt 的必要输入文字，低于普通文本至少 4.5:1，idle 截图也可直接看到它明显偏淡。
+- 同一输入唯一可见边界使用 accent 的 `0.78` opacity，合成后约 **2.822:1**，低于非文本输入控件视觉边界 3:1。当前 Startup unit/UI/Node tests 均未锁定这两个实际 alpha 合成后的颜色组合，因此所有自动测试会在该问题存在时继续通过。
+
+最小修复：不改变 canonical rose palette；为 placeholder 选用对 background 至少 4.5:1 的文字角色，为输入下划线使用至少 3:1 的边界角色（例如移除会降到阈值以下的透明度，或使用经过计算的语义角色），并增加按实际 alpha 合成计算的回归测试。修复后重拍受影响截图并从冷缓存重新执行本任务全部验收。P3.2 PASS 前不得生成或实现 P3.3。
