@@ -1,6 +1,8 @@
 # P1 统一课程协议与确定性 Exporter
 
-状态：待实施
+状态：开发完成，待独立复核
+
+实现结果：JSON Schema、三类成功 fixtures、失败 fixtures、确定性 exporter、原子替换、iOS content bootstrap 与 4 项合同/exporter 测试均已落地。`npm test` 37/37 通过；lint 仍精确只有 P0 的 4 个既有错误且新增文件 0 warning；Web 业务源码与课程资源未修改。
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -13,7 +15,7 @@
 ## 已确认事实与决策
 
 - 规范课程 ID 以 `app/courses.ts` 的运行时注册表 ID 为真值。
-- `modern-family-s01e01.json` 中历史 `courseId=modern-family-s01` 只作为 validation report 的 source ID 差异记录；规范 `course.json.id` 必须为 `modern-family-s01e01`，不得静默把历史 ID传播到 iOS。
+- `modern-family-s01e01.json` 中历史 `courseId=modern-family-s01` 只作为 validation report 的 source ID 差异记录；规范 `course.json.id` 必须为 `modern-family-s01e01`，不得静默把历史 ID 传播到 iOS。
 - Web 第一阶段继续读取当前源文件；只用等价测试保证 exporter 不漂移，不修改 `app/page.tsx` 数据入口。
 - `content/dist/` 和 iOS Generated resources 是可重建产物，不提交 Git；课程源和现有音频仍只维护一份。
 - 目标平台仍仅为 iPhone；本任务没有桌面/iPad/macOS 产品工作。
@@ -42,7 +44,7 @@ content/fixtures/invalid/
 - 所有相对路径拒绝空段、`.`、`..`、反斜杠、URL scheme、绝对路径和 percent-encoded traversal。
 - integrity 声明 `course.json` 与所有 M4A 的相对路径、字节数和小写 64 位 SHA-256；拒绝未声明文件、重复路径和软链接。
 
-valid fixtures 覆盖 IELTS 单词、Modern Family 随机句子和 VOA 顺序句子；invalid fixtures 至少覆盖坏 hash、重复 course/entry/collection ID、路径逃逸、绝对路径、schema 不兼容、ID/version 不一致、未知枚举和空 entries。
+valid fixtures 覆盖 IELTS 随机单词、Modern Family 顺序句子和 VOA 顺序句子；invalid fixtures 至少覆盖坏 hash、重复 course/entry/collection ID、路径逃逸、绝对路径、schema 不兼容、ID/version 不一致、未知枚举和空 entries。这里以真实运行时注册表为准：当前全部 29 门句子课都是 `sequential`。
 
 使用正式 JSON Schema validator 跑 schema tests；依赖必须锁入 `package-lock.json`。
 

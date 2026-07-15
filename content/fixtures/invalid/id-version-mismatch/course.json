@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "different-course",
+  "collectionId": "fixture",
+  "contentVersion": 1,
+  "title": "Fixture Course",
+  "subtitle": "Fixture",
+  "description": "Fixture",
+  "kind": "sentence",
+  "practiceOrder": "sequential",
+  "entries": [
+    {
+      "id": "entry-1",
+      "text": "Mismatched identity",
+      "audio": "audio/entry-1.m4a",
+      "durationMilliseconds": 1000
+    }
+  ]
+}

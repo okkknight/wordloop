@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-course",
+  "collectionId": "fixture",
+  "contentVersion": 1,
+  "title": "Fixture Course",
+  "subtitle": "Fixture",
+  "description": "Fixture",
+  "kind": "video",
+  "practiceOrder": "adaptive",
+  "entries": [
+    {
+      "id": "entry-1",
+      "text": "Unknown enum",
+      "audio": "audio/entry-1.m4a",
+      "durationMilliseconds": 1000
+    }
+  ]
+}

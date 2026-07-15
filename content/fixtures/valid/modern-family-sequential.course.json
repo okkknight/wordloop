@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "modern-family-s01e01",
+  "collectionId": "modern-family-s01",
+  "contentVersion": 1,
+  "title": "Modern Family · S01E01",
+  "subtitle": "Pilot",
+  "description": "第一季第一集精选对白",
+  "kind": "sentence",
+  "practiceOrder": "sequential",
+  "entries": [
+    {
+      "id": "s01e01-0003",
+      "text": "Phil, would you get them?",
+      "translation": "菲尔，把他们叫下来好吗？",
+      "phonetic": null,
+      "highlights": ["get them"],
+      "audio": "audio/s01e01-0003.m4a",
+      "durationMilliseconds": 1700
+    }
+  ]
+}

@@ -13,6 +13,8 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "baseline:ios": "node scripts/capture_ios_migration_baseline.mjs --check",
     "baseline:ios:write": "node scripts/capture_ios_migration_baseline.mjs --write",
+    "content:export": "node scripts/export_course_packages.mjs --write",
+    "content:check": "node scripts/export_course_packages.mjs --check",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
@@ -29,6 +31,8 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",
     "@vitejs/plugin-rsc": "0.5.26",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
     "drizzle-kit": "0.31.10",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",

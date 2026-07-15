@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-15T00:00:00Z",
+  "defaultCourseId": "modern-family-s01e01",
+  "collections": [
+    {
+      "id": "modern-family-s01",
+      "label": "DIALOGUE COURSE",
+      "title": "摩登家庭 · 第一季",
+      "subtitle": "精选对白"
+    }
+  ],
+  "courses": [
+    {
+      "id": "modern-family-s01e01",
+      "collectionId": "modern-family-s01",
+      "title": "Modern Family · S01E01",
+      "subtitle": "Pilot",
+      "description": "第一季第一集精选对白",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "contentVersion": 1,
+      "minimumAppVersion": "1.0.0",
+      "manifestURL": "https://content.wordloop.app/courses/modern-family-s01e01/1/course.json",
+      "manifestSHA256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "downloadSize": 8192,
+      "status": "hidden"
+    }
+  ]
+}

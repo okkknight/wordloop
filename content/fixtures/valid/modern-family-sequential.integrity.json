@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "courseId": "modern-family-s01e01",
+  "contentVersion": 1,
+  "files": [
+    {
+      "path": "course.json",
+      "bytes": 620,
+      "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "path": "audio/s01e01-0003.m4a",
+      "bytes": 7572,
+      "sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    }
+  ]
+}

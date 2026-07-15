@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-15T00:00:00Z",
+  "defaultCourseId": "fixture-course",
+  "collections": [
+    {
+      "id": "fixture",
+      "label": "FIXTURE",
+      "title": "Fixture",
+      "subtitle": "Fixture collection"
+    },
+    {
+      "id": "fixture",
+      "label": "FIXTURE",
+      "title": "Fixture",
+      "subtitle": "Fixture collection"
+    }
+  ],
+  "courses": [
+    {
+      "id": "fixture-course",
+      "collectionId": "fixture",
+      "title": "Fixture Course",
+      "subtitle": "Fixture",
+      "description": "Fixture",
+      "kind": "word",
+      "practiceOrder": "random",
+      "contentVersion": 1,
+      "minimumAppVersion": "1.0.0",
+      "manifestURL": "courses/fixture-course/1/course.json",
+      "manifestSHA256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "downloadSize": 300,
+      "status": "available"
+    }
+  ]
+}

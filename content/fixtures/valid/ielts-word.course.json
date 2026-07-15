@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "ielts-high-frequency",
+  "collectionId": "ielts",
+  "contentVersion": 1,
+  "title": "IELTS 高频词",
+  "subtitle": "Academic Word List",
+  "description": "IELTS 高频单词练习",
+  "kind": "word",
+  "practiceOrder": "random",
+  "entries": [
+    {
+      "id": "word-abandon",
+      "text": "abandon",
+      "translation": "放弃",
+      "phonetic": "/əˈbændən/",
+      "audio": "audio/abandon.m4a",
+      "durationMilliseconds": 960
+    }
+  ]
+}

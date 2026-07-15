@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wordloop.app/schema/integrity.schema.json",
+  "title": "WordLoop Course Integrity Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "courseId", "contentVersion", "files"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "courseId": {
+      "$ref": "#/$defs/stableId"
+    },
+    "contentVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "files": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "contains": {
+        "type": "object",
+        "required": ["path"],
+        "properties": {
+          "path": {
+            "const": "course.json"
+          }
+        }
+      },
+      "minContains": 1,
+      "maxContains": 1,
+      "items": {
+        "$ref": "#/$defs/file"
+      }
+    }
+  },
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "packageFilePath": {
+      "type": "string",
+      "oneOf": [
+        {
+          "const": "course.json"
+        },
+        {
+          "pattern": "^audio/(?!\\.{1,2}(?:/|$))(?!.*\\/\\.{1,2}(?:/|$))(?!.*%[0-9A-Fa-f]{2})(?!.*\\\\)(?!.*//)[^/:]+(?:/[^/:]+)*\\.m4a$"
+        }
+      ]
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "bytes", "sha256"],
+      "properties": {
+        "path": {
+          "$ref": "#/$defs/packageFilePath"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    }
+  }
+}

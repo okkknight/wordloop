@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P1 developed, pending review
+
+- 新增 `content/schema/`、成功/失败 fixtures 和 AST 驱动 exporter；30 门课程可由当前唯一源确定性生成 catalog/course/integrity 与 1,406 个 M4A 引用。
+- 规范 ID 以运行时注册表为真值；validation report 显式记录 S01E01 历史 source ID 差异和 47 个当前被 Web 忽略的 stale highlight key。
+- 全部 29 门句子课按真实注册表保持 `sequential`，只有 IELTS 为 `random`；已修正 P1 任务卡原先的错误表述。
+- `content/dist/` 和 `ios/Generated/` 被 Git 忽略；bootstrap 可从空目录重建，不提交第二份课程或音频。
+- `npm test` 构建成功且 37/37 通过；lint 只有 4 个既有 `app/page.tsx` errors、0 warnings；Web UI、课程、音频、API 和数据库未修改。
+
 ## 2026-07-15 · P0.1 reviewed, P1 task ready
 
 - 独立 reviewer 对 `42b2486` 给出 PASS：33/33 测试通过、基线与 diff 检查通过、仅保留 4 个既有 lint error，业务源码和资源无修改。

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "courseId": "voa-workplace-conversations-b1",
+  "contentVersion": 3,
+  "files": [
+    {
+      "path": "course.json",
+      "bytes": 640,
+      "sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "path": "audio/voa-workplace-0001.m4a",
+      "bytes": 6528,
+      "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    }
+  ]
+}
