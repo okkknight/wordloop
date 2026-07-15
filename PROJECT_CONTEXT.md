@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，P3.3 iPhone 主学习页静态 Shell 已开发完成，待独立复核。
+任务：执行 iOS 迁移 Plan，当前检查点为 P3.3 iPhone 主学习页静态 Shell。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2 均已独立复核 PASS；P3.3 已完成实现与冷缓存自验，尚未由未参与开发的 reviewer 给出结论。P3.3 PASS 前不得生成或实施 P3.4 课程抽屉。
+执行状态：P0.1、P1、P2、P3.1、P3.2 均已独立复核 PASS；P3.3 首次独立复核 FAIL，阻塞于 mode switch 跨装饰圆环的真实对比度和 accessibility 3 学习动作图标重叠。P3.3 PASS 前不得生成或实施 P3.4 课程抽屉。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -51,7 +51,7 @@ P3.1 首次 reviewer 发现的 `ConfirmDialog` 五套 palette 关键按钮低对
 
 P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 state、submission、纯用户名 validator、内存 fixture Store 与 SwiftUI View 拆入独立 Startup feature 文件。页面覆盖匿名/命名提交、32 字符、ASCII 英文字母校验、三段按钮状态、中文辅助文案、键盘、Dynamic Type、VoiceOver 语义与 Reduce Motion；不接身份持久化、课程、进度、网络、音频或 Realtime。首次 reviewer 发现 placeholder 约 2.071:1、输入下划线约 2.822:1；修复保持 canonical palette 不变，改为 UI 与测试共用的预合成角色色。修复后 reviewer 实算为 5.083759:1/3.157488:1，并从冷缓存确认八 Package/iPhone build、Features 13/13、App integration 1/1、UI 8/8、Web 40/40、四张视觉证据和 iPhone-only 设置全部通过，结论为 PASS。
 
-P3.3 已新增独立 StudyShell 展示模型、Character-offset highlight 校验、句子/单词文字可见性规则、`@MainActor @Observable` 内存 fixture Store 和 SwiftUI 主学习页。默认仍是 Startup，只有 `-wordloop-study-shell` 显式进入页面；Gallery 优先级由 UI test 锁定。页面覆盖 LISTEN/REPEAT、full/focus/hidden、课程上下文、英文/中文/音标、学习动作、代表性 repeat card、熟练度和底部控制；标准 390 × 844 pt 单屏完整，accessibility 3 采用重排与纵向可达滚动。它不解析课程、不播放音频、不写进度、不连接网络、麦克风或 Realtime。自验从空生成物/cache/DerivedData 通过八 Package、iPhone build、Features 26/26、App integration 1/1、UI 12/12、Web 41/41；lint 精确保持既有 4 errors、0 warnings；四张真实视觉证据已记录。当前仍待独立 reviewer。
+P3.3 已新增独立 StudyShell 展示模型、Character-offset highlight 校验、句子/单词文字可见性规则、`@MainActor @Observable` 内存 fixture Store 和 SwiftUI 主学习页。默认仍是 Startup，只有 `-wordloop-study-shell` 显式进入页面；Gallery 优先级由 UI test 锁定。页面覆盖 LISTEN/REPEAT、full/focus/hidden、课程上下文、英文/中文/音标、学习动作、代表性 repeat card、熟练度和底部控制；它不解析课程、不播放音频、不写进度、不连接网络、麦克风或 Realtime。独立 reviewer 从冷缓存确认八 Package/iPhone build、Features 26/26、App integration 1/1、UI 12/12、Web 41/41 和 iPhone-only 边界均通过，但发现 mode switch 未选中文字在 accent 圆环区域的实际对比度仅 3.389973:1，且 accessibility 3 的 speaker/eye SF Symbols 越出 44 pt 圆形并互相重叠，因此首次结论为 FAIL。
 
 ## 架构与数据流
 

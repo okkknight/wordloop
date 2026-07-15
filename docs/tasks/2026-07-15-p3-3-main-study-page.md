@@ -1,6 +1,6 @@
 # P3.3 iPhone 主学习页静态 Shell
 
-状态：开发完成，待独立复核
+状态：首次独立复核 FAIL
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -124,3 +124,22 @@ git status --short --ignored
 ## 交接
 
 先单独提交本任务卡，再实施 CP-05。开发完成后把状态改为“开发完成，待独立复核”，刷新根 `PROJECT_CONTEXT.md` 与 `docs/handoff/CHANGELOG.md`，提交实现并交给未参与实现的 reviewer。P3.3 PASS 后才根据真实页面 API 生成 P3.4 课程抽屉任务卡。
+
+## 独立复核结果（2026-07-15）
+
+结论：**FAIL**。
+
+已通过的独立证据：
+
+- 从删除 `content/dist`、`ios/Generated`、统一/Package SwiftPM cache 和 DerivedData 的状态执行 `scripts/verify_ios.sh`，课程重建、八个 Package tests 与 iPhone 17 Pro Simulator build 全部通过；Features 独立重跑为 26/26。
+- 独立 `xcodebuild test` 通过 App integration 1/1 与 UI 12/12。默认启动仍是 Startup；显式 study fixture、gallery 冲突优先级、LISTEN/REPEAT、sentence/word visibility、底部控制和 accessibility 纵向可达均通过现有自动测试。
+- highlight Character range 对重复词、标点和非法范围 fail closed；fixture Store 只切换展示状态和记录 action，没有模拟课程前进或业务进度。StudyShell 未接课程解析、音频、进度、持久化、网络、麦克风或 Realtime；App 仍只 import Features。
+- 四张 PNG 的尺寸与 SHA-256 和 `visual-verification.md` 一致，均为真实 study shell。标准 iPhone 17e repeat/listen 和 iPhone 17 Pro hidden 页面没有横向裁切或系统区遮挡；批量原图查看器一度出现的黑块经直接像素检查确认不是 PNG 内容。
+- Release 设置实测为 iOS 17、Swift 6、`TARGETED_DEVICE_FAMILY = 1`、`SUPPORTS_MACCATALYST = NO`、`SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO`。`npm run baseline:ios` 通过，`npm test` 为 41/41；lint 精确保持既有 Web 4 errors、0 warnings；`git diff --check` 通过。
+
+阻塞问题：
+
+- `ModeSwitch` 的未选中文字使用 `ink.opacity(0.72)`，整个胶囊只铺 `ink.opacity(0.1)`；Study 页面又把该控件放在 `PosterBackground` 的 `accent.opacity(0.58)` 圆环上。按截图中的真实层叠顺序，以 sun `background #f5d547 / ink #282044 / accent #e85b44` 在 sRGB 中合成，未选中文字与胶囊背景只有 **3.389973:1**，低于普通小文字 4.5:1。纯 background 区域约 4.615573:1，但不能代表横跨圆环的实际页面。现有测试只断言不透明 `ink/background`，没有覆盖 View 使用的 opacity 与非均匀底层；listen 截图中的 `REPEAT` 已直接显示该低对比组合。
+- accessibility 3 截图中，播放与 visibility 按钮的 SF Symbols 随 Dynamic Type 放大，但 `MainStudyView` 只给 `Image` 固定 44 × 44 pt frame，没有固定 symbol 字号或让图形在控件内缩放。结果 speaker 与 eye 图标越出各自圆形边界并明显互相重叠，不满足“accessibility 3 无文本/控件裁切”和控件视觉边界要求。现有 UI test 只验证页面可滚到 `NEXT`，没有检查这两个学习动作的几何关系。
+
+最小修复：让 mode switch 在圆环覆盖与纯背景两种真实底层上都使用至少 4.5:1 的最终文字/背景角色，并新增按 UI 实际 alpha 层叠计算的回归；为两个学习动作固定 Dynamic Type 安全的 symbol 尺寸/缩放与间距，确保图形留在各自至少 44 pt 的命中区域内。修复后刷新受影响的 listen 与 accessibility 3 截图，并从冷缓存重跑全部验收。P3.3 PASS 前不得生成或实施 P3.4。

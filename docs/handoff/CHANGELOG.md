@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.3 review failed on actual contrast and accessibility controls
+
+- 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、iPhone build、Features 26/26、App integration 1/1、UI 12/12、Web 41/41 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- 默认 Startup、gallery/study fixture 优先级、highlight/visibility/Store 纯规则、四张截图 hash/尺寸、无业务运行时依赖和 iPhone-only 设置均通过；标准 390 × 844 repeat/listen 页面完整。
+- 阻塞一：sun ModeSwitch 的未选中文字跨在 accent 58% 圆环上，继续叠加 track ink 10% 与 text ink 72% 后实际仅 3.389973:1，低于小文字 4.5:1；现有测试只测不透明 ink/background，没有覆盖页面真实 alpha 层叠。
+- 阻塞二：accessibility 3 下播放/visibility SF Symbols 随字号放大并越出各自 44 pt 圆形、互相重叠；现有 UI test 只证明 `NEXT` 可滚动到达，没有检查学习动作几何。
+- P3.3 结论为 FAIL。修复真实层叠对比度和 Dynamic Type 图标尺寸/间距、刷新 listen/accessibility 截图并冷验收后重新复核；PASS 前不得生成或实施 P3.4。
+
 ## 2026-07-15 · P3.3 main study shell developed, pending review
 
 - 新增 StudyShell 展示模型、Character-offset highlight range、句子/单词 visibility cycle、`@MainActor @Observable` 内存 fixture Store 和独立 `MainStudyView`；没有依赖正式课程领域模型，也没有模拟业务进度。
