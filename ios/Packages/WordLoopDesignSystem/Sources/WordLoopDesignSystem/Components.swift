@@ -60,12 +60,19 @@ public struct ModeSwitch: View {
     public let options: [String]
     @Binding private var selection: String
     private let accessibilityLabel: String
+    private let accessibilityIdentifierPrefix: String?
     @Environment(\.posterPalette) private var palette
 
-    public init(options: [String], selection: Binding<String>, accessibilityLabel: String) {
+    public init(
+        options: [String],
+        selection: Binding<String>,
+        accessibilityLabel: String,
+        accessibilityIdentifierPrefix: String? = nil
+    ) {
         self.options = options
         _selection = selection
         self.accessibilityLabel = accessibilityLabel
+        self.accessibilityIdentifierPrefix = accessibilityIdentifierPrefix
     }
 
     public var body: some View {
@@ -85,12 +92,18 @@ public struct ModeSwitch: View {
                 .accessibilityLabel(option)
                 .accessibilityValue(selection == option ? "Selected" : "Not selected")
                 .accessibilityAddTraits(selection == option ? .isSelected : [])
+                .accessibilityIdentifier(identifier(for: option))
             }
         }
         .padding(3)
         .background(palette.ink.color.opacity(0.1), in: Capsule())
         .accessibilityElement(children: .contain)
         .accessibilityLabel(accessibilityLabel)
+    }
+
+    private func identifier(for option: String) -> String {
+        guard let accessibilityIdentifierPrefix else { return "" }
+        return "\(accessibilityIdentifierPrefix).\(option.lowercased())"
     }
 }
 

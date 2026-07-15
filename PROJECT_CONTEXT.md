@@ -27,15 +27,15 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，40 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项）。
+- `npm test`：构建通过，41 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项 + 主学习页结构 1 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，P3.2 iPhone 启动页静态 Shell 已完成独立复核。
+任务：执行 iOS 迁移 Plan，P3.3 iPhone 主学习页静态 Shell 已开发完成，待独立复核。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2 均已独立复核 PASS。下一步只根据当前真实 Startup/Design System API 生成 P3.3 主学习页任务卡，不提前实施 P3.3。
+执行状态：P0.1、P1、P2、P3.1、P3.2 均已独立复核 PASS；P3.3 已完成实现与冷缓存自验，尚未由未参与开发的 reviewer 给出结论。P3.3 PASS 前不得生成或实施 P3.4 课程抽屉。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -50,6 +50,8 @@ P3.1 已建立不依赖业务 Package 的 Design System：六套 palette、token
 P3.1 首次 reviewer 发现的 `ConfirmDialog` 五套 palette 关键按钮低对比度及 accessibility 3 标签/装饰重叠已通过角色色、真实组合测试和布局隔离修复。修复后 reviewer 确认六套实际按钮组合为 8.764–10.784:1，刷新截图无重叠，并从冷缓存重跑 Package/App/UI/Web tests 全部通过，结论为 PASS。
 
 P3.2 已把默认 App 路由从 fixture gallery 切为原生启动页，并将 state、submission、纯用户名 validator、内存 fixture Store 与 SwiftUI View 拆入独立 Startup feature 文件。页面覆盖匿名/命名提交、32 字符、ASCII 英文字母校验、三段按钮状态、中文辅助文案、键盘、Dynamic Type、VoiceOver 语义与 Reduce Motion；不接身份持久化、课程、进度、网络、音频或 Realtime。首次 reviewer 发现 placeholder 约 2.071:1、输入下划线约 2.822:1；修复保持 canonical palette 不变，改为 UI 与测试共用的预合成角色色。修复后 reviewer 实算为 5.083759:1/3.157488:1，并从冷缓存确认八 Package/iPhone build、Features 13/13、App integration 1/1、UI 8/8、Web 40/40、四张视觉证据和 iPhone-only 设置全部通过，结论为 PASS。
+
+P3.3 已新增独立 StudyShell 展示模型、Character-offset highlight 校验、句子/单词文字可见性规则、`@MainActor @Observable` 内存 fixture Store 和 SwiftUI 主学习页。默认仍是 Startup，只有 `-wordloop-study-shell` 显式进入页面；Gallery 优先级由 UI test 锁定。页面覆盖 LISTEN/REPEAT、full/focus/hidden、课程上下文、英文/中文/音标、学习动作、代表性 repeat card、熟练度和底部控制；标准 390 × 844 pt 单屏完整，accessibility 3 采用重排与纵向可达滚动。它不解析课程、不播放音频、不写进度、不连接网络、麦克风或 Realtime。自验从空生成物/cache/DerivedData 通过八 Package、iPhone build、Features 26/26、App integration 1/1、UI 12/12、Web 41/41；lint 精确保持既有 4 errors、0 warnings；四张真实视觉证据已记录。当前仍待独立 reviewer。
 
 ## 架构与数据流
 
@@ -148,6 +150,9 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/Startup` | 启动状态、用户名校验、fixture Store 与 iPhone SwiftUI 页面 |
 | `docs/ios-migration/p3/startup/*` | 启动页 390 × 844 / iPhone 17 Pro 视觉截图与差异证据 |
 | `tests/ios-startup-page.test.mjs` | 启动页固定文案、输入边界、fixture 路由和 App 模块边界检查 |
+| `ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/StudyShell` | 主学习页展示模型、内存 Store、文字 range/visibility 规则与 SwiftUI 页面 |
+| `docs/ios-migration/p3/study-shell/*` | Listen/Repeat、隐藏态与辅助字号真实 iPhone 视觉证据 |
+| `tests/ios-study-shell.test.mjs` | 主学习页 fixture 边界、稳定标识、模块隔离和禁用业务运行时静态检查 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行
@@ -206,7 +211,7 @@ git diff --check
 - 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
 - 已复核课程合同：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 已复核原生骨架：`docs/tasks/2026-07-15-p2-native-project-skeleton.md`
-- 当前任务卡：`docs/tasks/2026-07-15-p3-2-startup-page.md`
+- 当前任务卡：`docs/tasks/2026-07-15-p3-3-main-study-page.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`

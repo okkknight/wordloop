@@ -5,6 +5,7 @@ struct RootView: View {
     let container: AppContainer
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var startupStore: StartupStore
+    @State private var studyShellStore: StudyShellStore
 
     init(container: AppContainer) {
         self.container = container
@@ -16,12 +17,19 @@ struct RootView: View {
                 validationMessage: fixture.validationMessage
             )
         )
+        _studyShellStore = State(
+            initialValue: StudyShellStore(
+                state: StudyShellViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
+            )
+        )
     }
 
     var body: some View {
         Group {
             if showsDesignSystemGallery {
                 DesignSystemGalleryView()
+            } else if showsStudyShell {
+                MainStudyView(store: studyShellStore)
             } else {
                 StartupView(store: startupStore)
             }
@@ -31,6 +39,10 @@ struct RootView: View {
 
     private var showsDesignSystemGallery: Bool {
         ProcessInfo.processInfo.arguments.contains("-wordloop-design-system-gallery")
+    }
+
+    private var showsStudyShell: Bool {
+        ProcessInfo.processInfo.arguments.contains("-wordloop-study-shell")
     }
 
     private var fixtureAccessibilityText: Bool {

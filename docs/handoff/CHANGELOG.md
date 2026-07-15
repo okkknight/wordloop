@@ -2,6 +2,15 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.3 main study shell developed, pending review
+
+- 新增 StudyShell 展示模型、Character-offset highlight range、句子/单词 visibility cycle、`@MainActor @Observable` 内存 fixture Store 和独立 `MainStudyView`；没有依赖正式课程领域模型，也没有模拟业务进度。
+- App 默认仍是 Startup；仅 `-wordloop-study-shell` 显式进入主学习页，Design System gallery 在冲突参数下优先。Listen/Repeat、sentence/word/long-word、full/focus/hidden、palette、mastery 和 autoplay fixture 可组合。
+- 390 × 844 pt 标准 Listen/Repeat 保持顶部导航、课程上下文、超大英文、中文、学习动作和底部控制完整；accessibility 3 将顶/底控制重排并启用纵向可达滚动。黑色 Web 截图过渡伪影未进入原生实现。
+- 四张真实 iPhone 截图、尺寸、fixture、hash 和与 Web 的差异已记录；sun 小文字使用通过测试的 ink/semantic role，标准控件至少 44 pt，Reduce Motion 停止大位移和循环波形。
+- 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、iPhone build、Features 26/26、App integration 1/1、UI 12/12、Web 41/41 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- P3.3 当前是开发完成待独立复核；PASS 前不得生成或实施 P3.4 课程抽屉。
+
 ## 2026-07-15 · P3.2 re-reviewed PASS
 
 - 修复后独立 reviewer 确认 canonical rose palette 未改变，StartupView 与测试使用同一最终 sRGB 角色；placeholder 和输入边界实算分别为 5.083759:1 与 3.157488:1，达到 4.5:1/3:1 门槛，Node 静态测试锁定接线并禁止旧 opacity 回归。

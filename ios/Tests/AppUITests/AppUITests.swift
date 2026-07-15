@@ -106,4 +106,94 @@ final class AppUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["startup.error"].exists)
         XCTAssertTrue(app.buttons["startup.submit"].isHittable)
     }
+
+    func testStudyShellRequiresExplicitLaunchArgumentAndKeepsFixturePriority() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-study-shell"]
+        app.launch()
+
+        XCTAssertTrue(app.descendants(matching: .any)["study.page"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.descendants(matching: .any)["startup.page"].exists)
+        XCTAssertFalse(app.descendants(matching: .any)["design-system.gallery"].exists)
+        app.terminate()
+
+        let galleryApp = XCUIApplication()
+        galleryApp.launchArguments = ["-wordloop-study-shell", "-wordloop-design-system-gallery"]
+        galleryApp.launch()
+        XCTAssertTrue(galleryApp.descendants(matching: .any)["design-system.gallery"].waitForExistence(timeout: 5))
+        XCTAssertFalse(galleryApp.descendants(matching: .any)["study.page"].exists)
+    }
+
+    func testStudyShellBaselineContentAndSafeAreaControlsAreAccessible() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-study-shell"]
+        app.launch()
+
+        XCTAssertTrue(app.buttons["study.course"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["study.progress"].isHittable)
+        XCTAssertEqual(app.staticTexts["study.course-context"].label, "MODERN FAMILY · S01E01")
+        XCTAssertEqual(app.staticTexts["study.progress-count"].label, "第 75 条，共 91 条")
+        XCTAssertEqual(app.staticTexts["study.english"].label, "Uh, my dad still isn't completely comfortable with this.")
+        XCTAssertEqual(app.staticTexts["study.translation"].label, "我爸对这事还是不太习惯")
+        XCTAssertTrue(app.buttons["study.mastery"].isHittable)
+        XCTAssertTrue(app.buttons["study.too-easy"].isHittable)
+        XCTAssertTrue(app.buttons["study.primary-control"].isHittable)
+        XCTAssertTrue(app.buttons["study.next"].isHittable)
+
+        for identifier in ["study.course", "study.progress", "study.mastery", "study.too-easy", "study.primary-control", "study.next"] {
+            let frame = app.descendants(matching: .any)[identifier].frame
+            XCTAssertGreaterThanOrEqual(frame.minX, 0)
+            XCTAssertLessThanOrEqual(frame.maxX, app.frame.maxX)
+        }
+    }
+
+    func testStudyShellModeVisibilityAndWordFixturesStayDeterministic() {
+        let listenApp = XCUIApplication()
+        listenApp.launchArguments = ["-wordloop-study-shell", "-wordloop-study-mode", "listen"]
+        listenApp.launch()
+        XCTAssertEqual(listenApp.buttons["study.mode.listen"].value as? String, "Selected")
+        XCTAssertEqual(listenApp.buttons["study.primary-control"].label, "AUTOPLAY")
+        listenApp.buttons["study.primary-control"].tap()
+        XCTAssertEqual(listenApp.buttons["study.primary-control"].label, "AUTOPLAY ON")
+        listenApp.terminate()
+
+        let repeatApp = XCUIApplication()
+        repeatApp.launchArguments = ["-wordloop-study-shell", "-wordloop-study-mode", "repeat"]
+        repeatApp.launch()
+        XCTAssertEqual(repeatApp.buttons["study.mode.repeat"].value as? String, "Selected")
+        XCTAssertEqual(repeatApp.buttons["study.primary-control"].label, "PAUSE")
+        XCTAssertTrue(repeatApp.descendants(matching: .any)["study.repeat-card"].exists)
+        repeatApp.buttons["study.primary-control"].tap()
+        XCTAssertEqual(repeatApp.buttons["study.primary-control"].label, "RESUME")
+        repeatApp.terminate()
+
+        let wordApp = XCUIApplication()
+        wordApp.launchArguments = ["-wordloop-study-shell", "-wordloop-study-item", "word"]
+        wordApp.launch()
+        XCTAssertTrue(wordApp.staticTexts["study.phonetic"].waitForExistence(timeout: 5))
+        wordApp.buttons["study.visibility"].tap()
+        XCTAssertFalse(wordApp.staticTexts["study.english"].exists)
+        XCTAssertTrue(wordApp.staticTexts["study.hidden-copy"].exists)
+        wordApp.buttons["study.visibility"].tap()
+        XCTAssertTrue(wordApp.staticTexts["study.english"].exists)
+    }
+
+    func testStudyShellAccessibilityFixtureKeepsWorstCaseContentReachable() {
+        let app = XCUIApplication()
+        app.launchArguments = [
+            "-wordloop-study-shell",
+            "-wordloop-study-item", "long-word",
+            "-wordloop-fixture-accessibility-text",
+            "-wordloop-fixture-reduce-motion",
+        ]
+        app.launch()
+
+        XCTAssertTrue(app.descendants(matching: .any)["study.page"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["study.english"].exists)
+        let nextButton = app.buttons["study.next"]
+        XCTAssertTrue(nextButton.exists)
+        if !nextButton.isHittable { app.swipeUp() }
+        if !nextButton.isHittable { app.swipeUp() }
+        XCTAssertTrue(nextButton.isHittable)
+    }
 }
