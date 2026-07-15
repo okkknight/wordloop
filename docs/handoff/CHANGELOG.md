@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-15 · P3.2 startup input contrast fixed, re-review pending
+
+- canonical rose palette 保持不变；新增预合成 `StartupVisualRoles`，placeholder 使用 ink 72% 合成色约 5.084:1，下划线使用 accent 86% 合成色约 3.157:1，分别超过文本 4.5:1 和控件边界 3:1。
+- StartupView 直接引用最终 sRGB 角色，不再使用首次 review 指出的 0.56/0.78 accent opacity；Features 两项测试断言同一角色对象，Node 静态测试锁定接线并禁止旧值回归。
+- 四张 startup 截图已在原设备/fixture 下重拍并更新 hash；需从冷缓存重跑完整验收并重新独立复核，PASS 前仍不生成或实现 P3.3。
+
 ## 2026-07-15 · P3.2 review failed on startup input contrast
 
 - 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的状态重跑：八个 Package tests、Features 11/11、iPhone build、App integration 1 项、UI 8 项、Web 40/40 全部通过；lint 精确保持既有 4 errors、0 warnings。

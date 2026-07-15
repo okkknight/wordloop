@@ -30,6 +30,16 @@ final class StartupUsernameValidatorTests: XCTestCase {
     }
 }
 
+final class StartupVisualRolesTests: XCTestCase {
+    func testPlaceholderUsesTheSamePrecompositedTextRoleAsTheView() {
+        XCTAssertGreaterThanOrEqual(StartupVisualRoles.placeholder.contrastRatio, 4.5)
+    }
+
+    func testInputBoundaryUsesTheSamePrecompositedControlRoleAsTheView() {
+        XCTAssertGreaterThanOrEqual(StartupVisualRoles.inputBoundary.contrastRatio, 3.0)
+    }
+}
+
 final class StartupStoreTests: XCTestCase {
     @MainActor
     func testStoreSubmitsAnonymousAndNormalizedNamedValues() {

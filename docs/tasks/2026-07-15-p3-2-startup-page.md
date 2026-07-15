@@ -1,6 +1,6 @@
 # P3.2 iPhone 启动页静态 Shell
 
-状态：独立复核 FAIL，待修复后重新复核
+状态：首次独立复核 FAIL；对比度已修复，待重新复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -124,7 +124,7 @@ git status --short --ignored
 - `START / PREPARING… / SYNCING…`、两条中文辅助状态、busy 禁用、编辑清错、按钮与 Return 提交均由同一 Store 路径驱动。
 - 页面使用 rose palette、Geist、原生 TextField/键盘、Safe Area、44 pt 命中区和 Reduce Motion 分支；accessibility 3 下错误与按钮无重叠或裁切。
 - 视觉证据与 Web 差异说明见 [`../ios-migration/p3/startup/visual-verification.md`](../ios-migration/p3/startup/visual-verification.md)，包含 390 × 844 idle/invalid/accessibility 与 iPhone 17 Pro syncing 四张真机截图及 SHA-256。
-- 从删除课程生成物、统一/Package cache 和 DerivedData 的状态执行 `scripts/verify_ios.sh` 通过：八个 Package tests 与 iPhone build 全部成功。Features 为 11 tests；App integration 1 test、UI 8 tests 全部通过。
+- 从删除课程生成物、统一/Package cache 和 DerivedData 的状态执行 `scripts/verify_ios.sh` 通过：八个 Package tests 与 iPhone build 全部成功。修复前 Features 为 11 tests；补入真实颜色角色回归后为 13 tests。App integration 1 test、UI 8 tests 全部通过。
 - `npm run baseline:ios` 通过，`npm test` 为 40/40；lint 精确保持既有 Web 4 errors、0 warnings；`git diff --check` 通过。
 
 ## 交接
@@ -149,3 +149,11 @@ git status --short --ignored
 - 同一输入唯一可见边界使用 accent 的 `0.78` opacity，合成后约 **2.822:1**，低于非文本输入控件视觉边界 3:1。当前 Startup unit/UI/Node tests 均未锁定这两个实际 alpha 合成后的颜色组合，因此所有自动测试会在该问题存在时继续通过。
 
 最小修复：不改变 canonical rose palette；为 placeholder 选用对 background 至少 4.5:1 的文字角色，为输入下划线使用至少 3:1 的边界角色（例如移除会降到阈值以下的透明度，或使用经过计算的语义角色），并增加按实际 alpha 合成计算的回归测试。修复后重拍受影响截图并从冷缓存重新执行本任务全部验收。P3.2 PASS 前不得生成或实现 P3.3。
+
+## 首次复核问题修复
+
+- canonical rose palette 未修改。新增 `StartupVisualRoles`，在 sRGB 中预合成最终 UI 颜色，避免测试 alpha 与 SwiftUI 实际接线脱节。
+- placeholder 使用 ink 72% 对 background 的预合成色，实算约 **5.084:1**；输入下划线使用 accent 86% 的预合成色，实算约 **3.157:1**。
+- `StartupView` 直接使用这两个最终角色色，不再调用被 reviewer 指出的 `accent.opacity(0.56/0.78)`。
+- Features 增加两项测试，直接对 UI 使用的同一 `StartupVisualRole` 断言 4.5:1 与 3:1；Node 静态测试同时锁定 View 接线和禁止旧 opacity 回归。
+- 四张受影响截图已全部刷新，尺寸不变，新 hash 记录在 startup visual verification。修复提交后必须重新执行冷验收与独立复核，PASS 前仍不进入 P3.3。

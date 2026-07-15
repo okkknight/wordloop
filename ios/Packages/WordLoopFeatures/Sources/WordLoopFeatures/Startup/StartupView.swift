@@ -9,7 +9,7 @@ public struct StartupView: View {
     @FocusState private var usernameIsFocused: Bool
     @State private var hasAppeared = false
 
-    private let palette = PosterPalette.all.first(where: { $0.id == "rose" }) ?? .defaultPalette
+    private let palette = StartupVisualRoles.palette
 
     public init(
         store: StartupStore,
@@ -86,7 +86,7 @@ public struct StartupView: View {
                 prompt: Text("USERNAME")
                     .font(WordLoopTypography.label(size: 10))
                     .tracking(1.6)
-                    .foregroundStyle(palette.accent.color.opacity(0.56))
+                    .foregroundStyle(StartupVisualRoles.placeholder.foreground.color)
             )
             .font(WordLoopTypography.label(size: 14))
             .tracking(1.68)
@@ -97,7 +97,7 @@ public struct StartupView: View {
             .padding(.vertical, 10)
             .overlay(alignment: .bottom) {
                 Rectangle()
-                    .fill(palette.accent.color.opacity(0.78))
+                    .fill(StartupVisualRoles.inputBoundary.foreground.color)
                     .frame(height: WordLoopBorder.hairline)
                     .accessibilityHidden(true)
             }

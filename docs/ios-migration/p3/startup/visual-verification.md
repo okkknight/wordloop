@@ -14,10 +14,10 @@
 
 | 文件 | 状态与 fixture | SHA-256 |
 | --- | --- | --- |
-| [`screenshots/iphone-17e-startup-idle.png`](screenshots/iphone-17e-startup-idle.png) | 390 × 844 pt；idle；`-wordloop-fixture-reduce-motion` | `e53e317079b52a0f52274259e93833d14c1109c1024728676181d01032fb804f` |
-| [`screenshots/iphone-17e-startup-invalid.png`](screenshots/iphone-17e-startup-invalid.png) | 390 × 844 pt；invalid；`-wordloop-startup-invalid -wordloop-fixture-reduce-motion` | `02d0b844664f7dceae28df6efb67c5fa3c37908813674f8603cc6ad93c45ad36` |
-| [`screenshots/iphone-17-pro-startup-syncing.png`](screenshots/iphone-17-pro-startup-syncing.png) | 402 × 874 pt；syncing；`-wordloop-startup-state syncing -wordloop-fixture-reduce-motion` | `4f26034a57c8c5840fff9420c05d750e4f55bad6f7e203cbea5bb6b16b20f050` |
-| [`screenshots/iphone-17e-startup-accessibility-reduce-motion.png`](screenshots/iphone-17e-startup-accessibility-reduce-motion.png) | 390 × 844 pt；accessibility 3、invalid、Reduce Motion fixture | `54e1c848b8a24e74db500b2b6e1118fcf1fb8c5becda9c681d6550b0e631ee27` |
+| [`screenshots/iphone-17e-startup-idle.png`](screenshots/iphone-17e-startup-idle.png) | 390 × 844 pt；idle；`-wordloop-fixture-reduce-motion` | `c36fcea89711eae9e1c38571b17083349c877b4d871163dc90e7e7f5314e3f3a` |
+| [`screenshots/iphone-17e-startup-invalid.png`](screenshots/iphone-17e-startup-invalid.png) | 390 × 844 pt；invalid；`-wordloop-startup-invalid -wordloop-fixture-reduce-motion` | `fe813b5652f8363e462dab3c2250adc3a80eba10603f24d490396ca7dfcac833` |
+| [`screenshots/iphone-17-pro-startup-syncing.png`](screenshots/iphone-17-pro-startup-syncing.png) | 402 × 874 pt；syncing；`-wordloop-startup-state syncing -wordloop-fixture-reduce-motion` | `0a788388adff3e5d62536590c75b7182aeb032658865d2d05d7c608227c0fdc3` |
+| [`screenshots/iphone-17e-startup-accessibility-reduce-motion.png`](screenshots/iphone-17e-startup-accessibility-reduce-motion.png) | 390 × 844 pt；accessibility 3、invalid、Reduce Motion fixture | `830897ea16aef392dc96d21a93517246785d8829e4c56de76fbd119659fdbca3` |
 
 ## 与 Web 基线的核对
 
@@ -26,6 +26,7 @@
 - Web 截图是 390 × 844 CSS viewport，不带 iOS 状态栏/Home Indicator；原生截图保留系统 Safe Area 与系统栏，这是预期平台差异。
 - Web 用浏览器 backdrop blur 覆盖尚未激活的主学习页。P3.2 尚未实现 P3.3 主学习页，因此原生 fixture 使用相同最终 rose 可见色，不伪造不可见的业务页面；接入主学习页时再复核系统材质是否需要保留。
 - SwiftUI 使用原生 TextField、键盘、Dynamic Type 和 accessibility tree，字形抗锯齿与浏览器截图会有像素级差异；字体家族仍是已审计的 Geist Sans/Mono。
+- 首次独立复核发现 Web 风格的低透明 placeholder/下划线在 rose 上只有 2.071:1/2.822:1。刷新版本保持 canonical palette 不变，改用预合成后的 sRGB 角色：placeholder 为 ink 72% 合成色（约 5.084:1），下划线为 accent 86% 合成色（约 3.157:1）；UI 与单元测试引用同一角色对象。
 
 ## 人工检查
 

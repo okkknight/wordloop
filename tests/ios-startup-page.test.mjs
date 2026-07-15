@@ -7,10 +7,11 @@ const root = process.cwd();
 const startupRoot = join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/Startup");
 
 test("iOS startup shell keeps the frozen copy, fixture boundary, and App module boundary", async () => {
-  const [state, validator, store, view, appRoot, container] = await Promise.all([
+  const [state, validator, store, visualRoles, view, appRoot, container] = await Promise.all([
     readFile(join(startupRoot, "StartupState.swift"), "utf8"),
     readFile(join(startupRoot, "StartupUsernameValidator.swift"), "utf8"),
     readFile(join(startupRoot, "StartupStore.swift"), "utf8"),
+    readFile(join(startupRoot, "StartupVisualRoles.swift"), "utf8"),
     readFile(join(startupRoot, "StartupView.swift"), "utf8"),
     readFile(join(root, "ios/App/RootView.swift"), "utf8"),
     readFile(join(root, "ios/App/AppContainer.swift"), "utf8"),
@@ -28,7 +29,12 @@ test("iOS startup shell keeps the frozen copy, fixture boundary, and App module 
   for (const identifier of ["startup.page", "startup.username", "startup.error", "startup.helper", "startup.submit"]) {
     assert.match(view, new RegExp(identifier.replace(".", "\\.")));
   }
-  assert.match(view, /PosterPalette\.all\.first\(where: \{ \$0\.id == "rose" \}\)/);
+  assert.match(visualRoles, /PosterPalette\.all\.first\(where: \{ \$0\.id == "rose" \}\)/);
+  assert.match(visualRoles, /placeholder[\s\S]*opacity: 0\.72/);
+  assert.match(visualRoles, /inputBoundary[\s\S]*opacity: 0\.86/);
+  assert.match(view, /StartupVisualRoles\.placeholder\.foreground\.color/);
+  assert.match(view, /StartupVisualRoles\.inputBoundary\.foreground\.color/);
+  assert.doesNotMatch(view, /palette\.accent\.color\.opacity\((?:0\.56|0\.78)\)/);
   assert.match(view, /minimumHit/);
   assert.match(view, /accessibilityReduceMotion/);
   assert.match(view, /textInputAutocapitalization\(\.never\)/);
@@ -36,7 +42,7 @@ test("iOS startup shell keeps the frozen copy, fixture boundary, and App module 
   assert.match(view, /autocorrectionDisabled\(true\)/);
 
   const forbiddenRuntime = /(?:URLSession|UserDefaults|Keychain|SwiftData|AVFoundation|WebRTC|WordLoopNetworking)/;
-  assert.doesNotMatch(`${state}\n${validator}\n${store}\n${view}`, forbiddenRuntime);
+  assert.doesNotMatch(`${state}\n${validator}\n${store}\n${visualRoles}\n${view}`, forbiddenRuntime);
 
   assert.match(appRoot, /StartupView\(store: startupStore\)/);
   assert.match(appRoot, /-wordloop-design-system-gallery/);
