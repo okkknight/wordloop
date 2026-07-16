@@ -303,23 +303,38 @@ public struct ProgressTrack: View {
     private let progress: Double
     private let palette: PosterPalette
     private let accessibilityLabel: String
+    private let explicitAccessibilityValue: String?
 
-    public init(progress: Double, palette: PosterPalette, accessibilityLabel: String) {
+    public init(
+        progress: Double,
+        palette: PosterPalette,
+        accessibilityLabel: String,
+        accessibilityValue: String? = nil
+    ) {
         self.progress = min(max(progress, 0), 1)
         self.palette = palette
         self.accessibilityLabel = accessibilityLabel
+        self.explicitAccessibilityValue = accessibilityValue
     }
 
     public var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .leading) {
-                Capsule().fill(palette.ink.color.opacity(0.14))
-                Capsule().fill(palette.accent.color).frame(width: proxy.size.width * progress)
+                Capsule().fill(palette.ink.color.opacity(WordLoopLayerOpacity.progressBoundary))
+                Capsule()
+                    .fill(palette.accessibleAccentText.color)
+                    .frame(width: proxy.size.width * progress)
+                    .overlay(alignment: .top) {
+                        Capsule()
+                            .fill(palette.accent.color)
+                            .frame(height: 1)
+                            .accessibilityHidden(true)
+                    }
             }
         }
         .frame(height: 4)
         .accessibilityLabel(accessibilityLabel)
-        .accessibilityValue(Text(progress, format: .percent.precision(.fractionLength(0))))
+        .accessibilityValue(explicitAccessibilityValue ?? progress.formatted(.percent.precision(.fractionLength(0))))
     }
 }
 

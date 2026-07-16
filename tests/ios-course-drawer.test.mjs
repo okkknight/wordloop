@@ -40,9 +40,9 @@ test("iOS course drawer stays a fixture-only iPhone feature", async () => {
   assert.match(view, /选择课程/);
   assert.match(view, /搜索课程/);
   assert.match(studyView, /courseDrawerStore\.present/);
-  assert.match(studyView, /accessibilityHidden\(courseDrawerStore\.state\.isPresented\)/);
+  assert.match(studyView, /courseDrawerStore\.state\.isPresented \|\| progressDrawerStore\.state\.isPresented/);
   assert.match(appRoot, /CourseDrawerViewState\.fixture/);
-  assert.match(appRoot, /MainStudyView\(store: studyShellStore, courseDrawerStore: courseDrawerStore\)/);
+  assert.match(appRoot, /courseDrawerStore: courseDrawerStore,[\s\S]*progressDrawerStore: progressDrawerStore/);
 
   const runtime = `${models}\n${fixtures}\n${state}\n${store}\n${view}`;
   const forbiddenRuntime = /(?:URLSession|UserDefaults|Keychain|SwiftData|AVFoundation|WebRTC|WordLoopNetworking|WordLoopContent|WordLoopAudio|WordLoopProgress|WordLoopRealtime)/;

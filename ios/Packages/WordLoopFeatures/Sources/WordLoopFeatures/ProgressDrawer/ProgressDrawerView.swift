@@ -1,0 +1,214 @@
+import SwiftUI
+import WordLoopDesignSystem
+
+public struct ProgressDrawerView: View {
+    @Bindable private var store: ProgressDrawerStore
+    private let palette: PosterPalette
+    @FocusState private var searchIsFocused: Bool
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+
+    public init(store: ProgressDrawerStore, palette: PosterPalette) {
+        self.store = store
+        self.palette = palette
+    }
+
+    public var body: some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .leading) {
+                Color.clear
+                    .frame(width: 1, height: 1)
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel("学习进度")
+                    .accessibilityIdentifier("progress-drawer.page")
+
+                SideDrawer(
+                    edge: .trailing,
+                    palette: palette,
+                    kicker: "YOUR PROGRESS",
+                    title: store.state.summary.totalStudiesLabel,
+                    closeAccessibilityLabel: "关闭学习进度",
+                    closeAccessibilityIdentifier: "progress-drawer.close",
+                    isModal: false,
+                    onClose: { store.dismiss(reason: .header) }
+                ) {
+                    drawerContent
+                }
+                .simultaneousGesture(
+                    DragGesture(minimumDistance: 12)
+                        .onEnded { value in
+                            store.handleDrag(
+                                horizontal: Double(value.translation.width),
+                                vertical: Double(value.translation.height)
+                            )
+                        }
+                )
+
+                Button {
+                    store.dismiss(reason: .backdrop)
+                } label: {
+                    Rectangle()
+                        .fill(Color.black.opacity(0.001))
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .frame(width: max(0, geometry.size.width - min(344, geometry.size.width * 0.86)))
+                .frame(maxHeight: .infinity)
+                .accessibilityLabel("关闭学习进度")
+                .accessibilityIdentifier("progress-drawer.backdrop")
+            }
+            .accessibilityElement(children: .contain)
+            .accessibilityAddTraits(.isModal)
+        }
+    }
+
+    private var drawerContent: some View {
+        VStack(alignment: .leading, spacing: WordLoopSpacing.sm) {
+            summary
+            searchField
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(store.filteredEntries) { entry in
+                        entryRow(entry)
+                    }
+                    if store.filteredEntries.isEmpty {
+                        Text("没有匹配的学习记录")
+                            .font(WordLoopTypography.body(size: 13, weight: .semibold))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, WordLoopSpacing.safe)
+                            .accessibilityIdentifier("progress-drawer.empty")
+                    }
+                }
+                .padding(.bottom, WordLoopSpacing.safeWide)
+            }
+            .scrollIndicators(.hidden)
+            .accessibilityIdentifier("progress-drawer.list")
+        }
+    }
+
+    private var summary: some View {
+        VStack(alignment: .leading, spacing: WordLoopSpacing.xs) {
+            Text(store.state.summary.courseTitle)
+                .font(WordLoopTypography.body(size: 13, weight: .semibold))
+                .fixedSize(horizontal: false, vertical: true)
+                .accessibilityIdentifier("progress-drawer.course")
+
+            ProgressTrack(
+                progress: store.state.summary.progressFraction,
+                palette: palette,
+                accessibilityLabel: "课程学习进度",
+                accessibilityValue: "已学习 \(store.state.summary.totalStudies) 次，共 \(store.state.summary.maximumStudies) 次"
+            )
+            .accessibilityIdentifier("progress-drawer.track")
+
+            Group {
+                if dynamicTypeSize.isAccessibilitySize {
+                    VStack(alignment: .leading, spacing: WordLoopSpacing.xxs) { statistics }
+                } else {
+                    HStack(spacing: WordLoopSpacing.md) { statistics }
+                }
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var statistics: some View {
+        statistic("已掌握", value: store.state.summary.masteredCount, identifier: "progress-drawer.stats.mastered")
+        statistic("学习中", value: store.state.summary.learningCount, identifier: "progress-drawer.stats.learning")
+    }
+
+    private func statistic(_ label: String, value: Int, identifier: String) -> some View {
+        Text("\(label) \(value)")
+            .font(WordLoopTypography.label(size: 10))
+            .accessibilityLabel("\(label) \(value) 条")
+            .accessibilityIdentifier(identifier)
+    }
+
+    private var searchField: some View {
+        HStack(spacing: WordLoopSpacing.xs) {
+            Image(systemName: "magnifyingglass")
+                .font(.system(size: 14, weight: .semibold))
+                .accessibilityHidden(true)
+            TextField(
+                "",
+                text: Binding(
+                    get: { store.state.query },
+                    set: { store.updateQuery($0) }
+                ),
+                prompt: Text(store.state.searchPlaceholder).foregroundStyle(palette.ink.color)
+            )
+            .font(WordLoopTypography.body(size: 12, weight: .semibold))
+            .focused($searchIsFocused)
+            .autocorrectionDisabled(true)
+            .progressDrawerSearchTraits()
+            .accessibilityLabel("搜索学习记录")
+            .accessibilityIdentifier("progress-drawer.search")
+
+            if !store.state.query.isEmpty {
+                Button {
+                    store.updateQuery("")
+                    searchIsFocused = true
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 16, weight: .semibold))
+                        .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("清除搜索")
+                .accessibilityIdentifier("progress-drawer.search-clear")
+            }
+        }
+        .frame(minHeight: WordLoopSpacing.minimumHit)
+        .padding(.horizontal, WordLoopSpacing.xs)
+        .overlay {
+            RoundedRectangle(cornerRadius: WordLoopRadius.control)
+                .stroke(palette.ink.color.opacity(WordLoopLayerOpacity.progressBoundary), lineWidth: WordLoopBorder.hairline)
+        }
+    }
+
+    private func entryRow(_ entry: ProgressDrawerEntry) -> some View {
+        HStack(alignment: .top, spacing: WordLoopSpacing.xs) {
+            if entry.isMastered {
+                Capsule()
+                    .fill(palette.accent.color)
+                    .frame(width: 3, height: 28)
+                    .accessibilityHidden(true)
+            }
+            VStack(alignment: .leading, spacing: WordLoopSpacing.xxs) {
+                Text(entry.primaryText)
+                    .font(WordLoopTypography.body(size: 13, weight: .semibold))
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(entry.secondaryText)
+                    .font(WordLoopTypography.body(size: 12))
+                    .opacity(WordLoopLayerOpacity.progressSecondaryText)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Spacer(minLength: WordLoopSpacing.xs)
+            Text(entry.countLabel)
+                .font(WordLoopTypography.label(size: 10))
+                .foregroundStyle(entry.isMastered ? palette.accessibleAccentText.color : palette.ink.color)
+                .opacity(entry.isMastered ? 1 : WordLoopLayerOpacity.progressSecondaryText)
+        }
+        .padding(.vertical, WordLoopSpacing.sm)
+        .overlay(alignment: .bottom) {
+            Rectangle()
+                .fill(palette.ink.color.opacity(WordLoopLayerOpacity.progressBoundary))
+                .frame(height: WordLoopBorder.hairline)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(entry.accessibilityLabel)
+        .accessibilityIdentifier("progress-drawer.entry.\(entry.id)")
+    }
+}
+
+private extension View {
+    @ViewBuilder
+    func progressDrawerSearchTraits() -> some View {
+#if os(iOS)
+        self
+            .textInputAutocapitalization(.never)
+            .keyboardType(.default)
+#else
+        self
+#endif
+    }
+}

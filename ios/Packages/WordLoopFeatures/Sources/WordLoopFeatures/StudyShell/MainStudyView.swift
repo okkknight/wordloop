@@ -4,6 +4,7 @@ import WordLoopDesignSystem
 public struct MainStudyView: View {
     @Bindable private var store: StudyShellStore
     @Bindable private var courseDrawerStore: CourseDrawerStore
+    @Bindable private var progressDrawerStore: ProgressDrawerStore
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var hasAppeared = false
@@ -11,11 +12,23 @@ public struct MainStudyView: View {
     public init(store: StudyShellStore) {
         self.store = store
         self.courseDrawerStore = CourseDrawerStore()
+        self.progressDrawerStore = ProgressDrawerStore()
     }
 
     public init(store: StudyShellStore, courseDrawerStore: CourseDrawerStore) {
         self.store = store
         self.courseDrawerStore = courseDrawerStore
+        self.progressDrawerStore = ProgressDrawerStore()
+    }
+
+    public init(
+        store: StudyShellStore,
+        courseDrawerStore: CourseDrawerStore,
+        progressDrawerStore: ProgressDrawerStore
+    ) {
+        self.store = store
+        self.courseDrawerStore = courseDrawerStore
+        self.progressDrawerStore = progressDrawerStore
     }
 
     public var body: some View {
@@ -35,23 +48,34 @@ public struct MainStudyView: View {
                     }
                 }
             }
-            .accessibilityHidden(courseDrawerStore.state.isPresented)
+            .accessibilityHidden(isDrawerPresented)
+            .allowsHitTesting(!isDrawerPresented)
+            .id(isDrawerPresented ? "study-background-modal" : "study-background-active")
             Color.clear
                 .frame(width: 1, height: 1)
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel("主学习页")
                 .accessibilityIdentifier("study.page")
-                .accessibilityHidden(courseDrawerStore.state.isPresented)
+                .accessibilityHidden(isDrawerPresented)
+                .id(isDrawerPresented ? "study-page-modal" : "study-page-active")
 
             if courseDrawerStore.state.isPresented {
                 CourseDrawerView(store: courseDrawerStore, palette: store.state.palette)
                     .transition(.move(edge: .leading).combined(with: .opacity))
+                    .zIndex(10)
+            } else if progressDrawerStore.state.isPresented {
+                ProgressDrawerView(store: progressDrawerStore, palette: store.state.palette)
+                    .transition(.move(edge: .trailing).combined(with: .opacity))
                     .zIndex(10)
             }
         }
         .animation(
             .easeInOut(duration: WordLoopMotion.drawer(reduceMotion: motionReduced).duration),
             value: courseDrawerStore.state.isPresented
+        )
+        .animation(
+            .easeInOut(duration: WordLoopMotion.drawer(reduceMotion: motionReduced).duration),
+            value: progressDrawerStore.state.isPresented
         )
         .onAppear {
             let motion = WordLoopMotion.contentEnter(reduceMotion: motionReduced)
@@ -98,7 +122,10 @@ public struct MainStudyView: View {
     }
 
     private var courseButton: some View {
-        Button("COURSE", action: courseDrawerStore.present)
+        Button("COURSE") {
+            if progressDrawerStore.state.isPresented { progressDrawerStore.dismiss(reason: .header) }
+            courseDrawerStore.present()
+        }
             .font(WordLoopTypography.label(size: 10))
             .frame(minWidth: WordLoopSpacing.minimumHit, minHeight: WordLoopSpacing.minimumHit)
             .buttonStyle(.plain)
@@ -107,7 +134,10 @@ public struct MainStudyView: View {
     }
 
     private var progressButton: some View {
-        Button("PROGRESS") {}
+        Button("PROGRESS") {
+            if courseDrawerStore.state.isPresented { courseDrawerStore.dismiss(reason: .header) }
+            progressDrawerStore.present()
+        }
             .font(WordLoopTypography.label(size: 10))
             .frame(minWidth: WordLoopSpacing.minimumHit, minHeight: WordLoopSpacing.minimumHit)
             .buttonStyle(.plain)
@@ -344,5 +374,9 @@ public struct MainStudyView: View {
 
     private var motionReduced: Bool {
         reduceMotion || ProcessInfo.processInfo.arguments.contains("-wordloop-fixture-reduce-motion")
+    }
+
+    private var isDrawerPresented: Bool {
+        courseDrawerStore.state.isPresented || progressDrawerStore.state.isPresented
     }
 }

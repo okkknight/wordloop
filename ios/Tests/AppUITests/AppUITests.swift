@@ -209,30 +209,32 @@ final class AppUITests: XCTestCase {
         app.launchArguments = ["-wordloop-study-shell"]
         app.launch()
 
-        let courseButton = app.buttons["study.course"]
-        XCTAssertTrue(courseButton.waitForExistence(timeout: 5))
-        courseButton.tap()
-        XCTAssertTrue(app.descendants(matching: .any)["course-drawer.page"].waitForExistence(timeout: 2))
+        XCTAssertTrue(app.buttons["study.course"].waitForExistence(timeout: 5))
+        app.buttons["study.course"].tap()
+        var drawer = app.descendants(matching: .any)["course-drawer.page"]
+        XCTAssertTrue(drawer.waitForExistence(timeout: 2))
         XCTAssertFalse(app.buttons["study.next"].isHittable)
         app.buttons["course-drawer.close"].tap()
-        XCTAssertFalse(app.descendants(matching: .any)["course-drawer.page"].exists)
+        XCTAssertTrue(drawer.waitForNonExistence(timeout: 2))
         usleep(400_000)
 
         app.buttons["study.course"].tap()
+        drawer = app.descendants(matching: .any)["course-drawer.page"]
+        XCTAssertTrue(drawer.waitForExistence(timeout: 2))
         let backdrop = app.buttons["course-drawer.backdrop"]
         XCTAssertTrue(backdrop.waitForExistence(timeout: 2))
         backdrop.tap()
-        XCTAssertFalse(app.descendants(matching: .any)["course-drawer.page"].exists)
+        XCTAssertTrue(drawer.waitForNonExistence(timeout: 2))
         usleep(400_000)
 
         app.buttons["study.course"].tap()
-        XCTAssertTrue(app.descendants(matching: .any)["course-drawer.page"].waitForExistence(timeout: 2))
-        let drawer = app.descendants(matching: .any)["course-drawer.page"]
+        drawer = app.descendants(matching: .any)["course-drawer.page"]
+        XCTAssertTrue(drawer.waitForExistence(timeout: 2))
         let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.7, dy: 0.5))
         let end = app.coordinate(withNormalizedOffset: CGVector(dx: 0.2, dy: 0.52))
         start.press(forDuration: 0.05, thenDragTo: end)
-        XCTAssertFalse(drawer.exists)
-        XCTAssertTrue(courseButton.isHittable)
+        XCTAssertTrue(drawer.waitForNonExistence(timeout: 2))
+        XCTAssertTrue(app.buttons["study.course"].isHittable)
     }
 
     func testCourseDrawerFixtureExposesCollectionsSelectionAndCompletion() {
@@ -300,5 +302,115 @@ final class AppUITests: XCTestCase {
         XCTAssertTrue(search.isHittable)
         XCTAssertTrue(app.buttons["course-drawer.collection.modern-family-s01"].exists)
         XCTAssertFalse(app.buttons["study.next"].isHittable)
+    }
+
+    func testProgressDrawerOpensAndAllCloseEntrypointsWork() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-study-shell"]
+        app.launch()
+
+        XCTAssertTrue(app.buttons["study.progress"].waitForExistence(timeout: 5))
+        app.buttons["study.progress"].tap()
+        var drawer = app.descendants(matching: .any)["progress-drawer.page"]
+        XCTAssertTrue(drawer.waitForExistence(timeout: 2))
+        XCTAssertFalse(app.buttons["study.next"].isHittable)
+        app.buttons["progress-drawer.close"].tap()
+        XCTAssertTrue(drawer.waitForNonExistence(timeout: 2))
+        usleep(400_000)
+
+        app.buttons["study.progress"].tap()
+        drawer = app.descendants(matching: .any)["progress-drawer.page"]
+        XCTAssertTrue(drawer.waitForExistence(timeout: 2))
+        app.buttons["progress-drawer.backdrop"].tap()
+        XCTAssertTrue(drawer.waitForNonExistence(timeout: 2))
+        usleep(400_000)
+
+        app.buttons["study.progress"].tap()
+        drawer = app.descendants(matching: .any)["progress-drawer.page"]
+        XCTAssertTrue(drawer.waitForExistence(timeout: 2))
+        let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.35, dy: 0.5))
+        let end = app.coordinate(withNormalizedOffset: CGVector(dx: 0.85, dy: 0.52))
+        start.press(forDuration: 0.05, thenDragTo: end)
+        XCTAssertTrue(drawer.waitForNonExistence(timeout: 2))
+        XCTAssertTrue(app.buttons["study.progress"].isHittable)
+    }
+
+    func testProgressDrawerFixturesExposeLockedSummaryRowsAndCompletionSemantics() {
+        let baseline = XCUIApplication()
+        baseline.launchArguments = ["-wordloop-study-shell", "-wordloop-progress-drawer"]
+        baseline.launch()
+
+        XCTAssertTrue(baseline.descendants(matching: .any)["progress-drawer.page"].waitForExistence(timeout: 5))
+        XCTAssertTrue(baseline.staticTexts["YOUR PROGRESS"].exists)
+        XCTAssertTrue(baseline.staticTexts["0 / 273"].exists)
+        XCTAssertEqual(baseline.staticTexts["progress-drawer.course"].label, "Modern Family · S01E01")
+        XCTAssertEqual(baseline.staticTexts["progress-drawer.stats.mastered"].label, "已掌握 0 条")
+        XCTAssertEqual(baseline.staticTexts["progress-drawer.stats.learning"].label, "学习中 91 条")
+        let first = baseline.descendants(matching: .any)["progress-drawer.entry.s01e01-0003"]
+        XCTAssertTrue(first.exists)
+        XCTAssertTrue(first.label.contains("Phil, would you get them?"))
+        XCTAssertTrue(first.label.contains("已学习 0 次，共 3 次"))
+        baseline.terminate()
+
+        let mixed = XCUIApplication()
+        mixed.launchArguments = ["-wordloop-study-shell", "-wordloop-progress-drawer", "-wordloop-progress-mixed"]
+        mixed.launch()
+        let completed = mixed.descendants(matching: .any)["progress-drawer.entry.s01e01-0010"]
+        XCTAssertTrue(completed.waitForExistence(timeout: 5))
+        XCTAssertTrue(completed.label.contains("已学习 3 次，共 3 次"))
+        XCTAssertTrue(completed.label.contains("已掌握"))
+        XCTAssertEqual(mixed.staticTexts["progress-drawer.stats.mastered"].label, "已掌握 1 条")
+        XCTAssertEqual(mixed.staticTexts["study.progress-count"].label, "第 75 条，共 91 条")
+    }
+
+    func testProgressDrawerSearchEmptyClearWordAndVerticalScrollStayModal() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-study-shell", "-wordloop-progress-drawer"]
+        app.launch()
+
+        let search = app.textFields["progress-drawer.search"]
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        search.tap()
+        search.typeText("definitely absent")
+        XCTAssertTrue(app.staticTexts["progress-drawer.empty"].waitForExistence(timeout: 2))
+        app.buttons["progress-drawer.search-clear"].tap()
+        XCTAssertFalse(app.staticTexts["progress-drawer.empty"].exists)
+        app.scrollViews["progress-drawer.list"].swipeUp()
+        XCTAssertTrue(app.descendants(matching: .any)["progress-drawer.page"].exists)
+        app.terminate()
+
+        let word = XCUIApplication()
+        word.launchArguments = ["-wordloop-study-shell", "-wordloop-progress-drawer", "-wordloop-progress-word", "-wordloop-progress-query", "kʌmf"]
+        word.launch()
+        let result = word.descendants(matching: .any)["progress-drawer.entry.comfortable"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5))
+        XCTAssertTrue(result.label.contains("/ˈkʌmftəbl/"))
+        XCTAssertFalse(word.descendants(matching: .any)["progress-drawer.entry.academic"].exists)
+    }
+
+    func testProgressDrawerAccessibilityAndCourseFixturePriority() {
+        let accessible = XCUIApplication()
+        accessible.launchArguments = [
+            "-wordloop-study-shell", "-wordloop-progress-drawer", "-wordloop-progress-mixed",
+            "-wordloop-fixture-accessibility-text", "-wordloop-fixture-reduce-motion",
+        ]
+        accessible.launch()
+
+        let close = accessible.buttons["progress-drawer.close"]
+        let search = accessible.textFields["progress-drawer.search"]
+        XCTAssertTrue(close.waitForExistence(timeout: 5))
+        XCTAssertTrue(close.isHittable)
+        XCTAssertGreaterThanOrEqual(close.frame.width, 44)
+        XCTAssertGreaterThanOrEqual(close.frame.height, 44)
+        XCTAssertTrue(search.isHittable)
+        XCTAssertTrue(accessible.staticTexts["progress-drawer.stats.mastered"].exists)
+        XCTAssertFalse(accessible.buttons["study.next"].isHittable)
+        accessible.terminate()
+
+        let conflict = XCUIApplication()
+        conflict.launchArguments = ["-wordloop-study-shell", "-wordloop-course-drawer", "-wordloop-progress-drawer"]
+        conflict.launch()
+        XCTAssertTrue(conflict.descendants(matching: .any)["course-drawer.page"].waitForExistence(timeout: 5))
+        XCTAssertFalse(conflict.descendants(matching: .any)["progress-drawer.page"].exists)
     }
 }

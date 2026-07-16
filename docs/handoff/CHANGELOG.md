@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P3.5 progress drawer developed, pending review
+
+- 新增 ProgressDrawer entry/summary/state/fixtures/store 与 SwiftUI 右侧抽屉；基线为 0/273、0 已掌握/91 学习中和 10 条 S01E01 代表句，并提供 word、mixed、complete、query、empty fixture。
+- `PROGRESS` 已接入主学习页；课程/进度抽屉互斥，冲突 launch arguments 保持课程抽屉优先。header、backdrop、主导右滑关闭、搜索/clear、列表纵向滚动、完成语义和背景恢复均有 UI automation。
+- `ProgressTrack` 使用可达标语义 fill 与 56% ink underlay，canonical accent 只作 1 pt 装饰；次要文字 75% ink、边界 56% ink 按真实 sRGB 合成测试，六 palette 分别至少 4.5:1/3:1。
+- 四张真实 iPhone 17e/17 Pro 截图覆盖 sentence baseline、mixed、word search、accessibility 3 + Reduce Motion；验证记录见 [`../ios-migration/p3/progress-drawer/visual-verification.md`](../ios-migration/p3/progress-drawer/visual-verification.md)。
+- 开发侧已确认 Features 51/51、Web 43/43，lint 仍为既有 4 errors、0 warnings；完整冷构建与 App 20 项 UI 矩阵交由独立 reviewer 复验。P3.5 当前待复核，PASS 前不得生成或实施 P3.6。
+
 ## 2026-07-15 · P3.4 reviewed, P3.5 task ready
 
 - P3.4 独立复核 PASS 后新增 [`../tasks/2026-07-15-p3-5-progress-drawer.md`](../tasks/2026-07-15-p3-5-progress-drawer.md)；本提交只锁定 CP-07 任务卡，不实现进度抽屉。

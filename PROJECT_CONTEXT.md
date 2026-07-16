@@ -1,6 +1,6 @@
 # WordLoop 项目上下文
 
-更新日期：2026-07-15
+更新日期：2026-07-16
 
 ## 项目是什么
 
@@ -27,7 +27,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，42 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项 + 主学习页结构 1 项 + 课程抽屉结构 1 项）。
+- `npm test`：构建通过，43 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项 + 主学习页结构 1 项 + 课程抽屉结构 1 项 + 进度抽屉结构 1 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan，当前检查点为 P3.5 iPhone 进度抽屉静态 Shell。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4 均已独立复核 PASS。P3.5 任务卡已根据当前 MainStudyView、SideDrawer 和双抽屉边界锁定；下一步只实施 CP-07，不提前进入 P3.6。
+执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4 均已独立复核 PASS。P3.5 CP-07 已完成开发和本地验收，当前等待独立复核；复核 PASS 前不进入 P3.6。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -56,6 +56,10 @@ P3.3 已新增独立 StudyShell 展示模型、Character-offset highlight 校验
 P3.4 已新增独立 CourseDrawer 展示模型、三集合内存 fixture、确定性搜索/折叠、dismiss reason/action、SwiftUI 左侧抽屉和主学习页接线。页面覆盖 selected/completion、空态、header/backdrop/主导左滑关闭、列表独立滚动、accessibility 3 与 Reduce Motion；课程点击只关闭抽屉，主学习上下文仍为 S01E01 / 75/91。CourseCard 次要文字和边界改为跨六 palette 真实合成至少 4.5:1/3:1 的共享 token，selected 同时保留 canonical accent 外框与语义 ink 内框。当前不解析/切换正式课程，不持久化，不访问网络，不下载课程，不播放音频，不接进度或 Realtime。
 
 P3.4 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的冷状态确认八 Package/iPhone build，并复验 DesignSystem 12/12、Features 39/39、App integration 1/1、UI 16/16、Web 42/42、四张截图 hash/尺寸、真实合成对比度、modal/手势/选择不切课语义与 iPhone-only 设置，结论为 PASS。lint 精确保持既有 4 errors、0 warnings。
+
+P3.5 已新增独立 ProgressDrawer entry/summary/view state/fixture/store 与 SwiftUI 右侧抽屉。基线精确展示 `YOUR PROGRESS`、0/273、S01E01、0 已掌握/91 学习中、10 条代表句；另覆盖 word、mixed、complete、query 和 empty fixture。课程/进度抽屉互斥且冲突参数保持课程优先；三种关闭入口、列表独立滚动、搜索、完成语义、accessibility 3 与 Reduce Motion 已由 App UI test 覆盖。ProgressTrack 和条目边界使用真实合成可达标角色，canonical accent 只保留装饰；不读取 P6 Progress、不访问网络或持久化，也不改变主学习上下文。
+
+P3.5 开发侧验证：Features 51/51、App integration 1/1、UI 20 项目标矩阵（完整冷跑将在 reviewer 再确认）、Web 43/43；四张真实 iPhone 17e/17 Pro 截图已保存并人工检查。lint 精确保持既有 4 errors、0 warnings。当前结论仍为“待独立复核”，不得据此跳过 reviewer gate。
 
 ## 架构与数据流
 
