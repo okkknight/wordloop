@@ -40,12 +40,18 @@ struct StudyProgressClient: Sendable {
     var snapshot: @Sendable (CourseID, StudyMode) async -> [EntryID: Int]
     var record: @Sendable (CourseID, StudyMode, EntryID) async -> Int
     var master: @Sendable (CourseID, StudyMode, EntryID) async -> Int
+    var reset: @Sendable (CourseID, StudyMode) async throws -> Void
+    var completions: @Sendable () async -> [CourseID: Int]
+    var complete: @Sendable (CourseID, String) async throws -> Int
 
     static func temporary(repository: TemporaryProgressRepository) -> Self {
         Self(
             snapshot: { await repository.snapshot(courseID: $0, mode: $1) },
             record: { await repository.record(courseID: $0, mode: $1, entryID: $2) },
-            master: { await repository.master(courseID: $0, mode: $1, entryID: $2) }
+            master: { await repository.master(courseID: $0, mode: $1, entryID: $2) },
+            reset: { await repository.reset(courseID: $0, mode: $1) },
+            completions: { await repository.completions() },
+            complete: { await repository.complete(courseID: $0, completionID: $1) }
         )
     }
 }

@@ -14,6 +14,8 @@ public actor TemporaryProgressRepository {
     private static let masteryCount = 3
 
     private var counts: [Key: Int] = [:]
+    private var completionCounts: [CourseID: Int] = [:]
+    private var completionIDs: Set<String> = []
 
     public init() {}
 
@@ -42,6 +44,29 @@ public actor TemporaryProgressRepository {
         let key = Key(courseID: courseID, mode: mode, entryID: entryID)
         counts[key] = Self.masteryCount
         return Self.masteryCount
+    }
+
+    /// Clears one course and mode without changing historical completion counts.
+    public func reset(courseID: CourseID, mode: StudyMode) {
+        counts = counts.filter { key, _ in
+            key.courseID != courseID || key.mode != mode
+        }
+    }
+
+    /// Returns session-only completion counts shared by LISTEN and REPEAT.
+    public func completions() -> [CourseID: Int] {
+        completionCounts
+    }
+
+    /// Records one idempotent course completion and returns the resulting count.
+    @discardableResult
+    public func complete(courseID: CourseID, completionID: String) -> Int {
+        guard !completionID.isEmpty else { return completionCounts[courseID, default: 0] }
+        guard completionIDs.insert(completionID).inserted else {
+            return completionCounts[courseID, default: 0]
+        }
+        completionCounts[courseID, default: 0] += 1
+        return completionCounts[courseID, default: 0]
     }
 
     private static func clamped(_ count: Int) -> Int {

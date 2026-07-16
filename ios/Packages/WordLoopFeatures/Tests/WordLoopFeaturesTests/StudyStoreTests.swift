@@ -421,12 +421,83 @@ final class StudyStoreTests: XCTestCase {
         await harness.store.next()
         assertEqual(await harness.progress.counts(courseID: harness.primary.id, mode: .listen), [onlyID: 3])
         XCTAssertTrue(harness.store.state.courseExhausted)
+        XCTAssertTrue(harness.store.completionDialogStore.state.isPresented)
+        XCTAssertEqual(harness.store.completionDialogStore.state.kind, .courseCompleted)
+        assertEqual(await harness.progress.completions(), [harness.primary.id: 1])
+        let completedCard = harness.store.courseDrawerStore.state.collections
+            .flatMap(\.courses)
+            .first { $0.id == harness.primary.id.rawValue }
+        XCTAssertEqual(completedCard?.completionCount, 1)
 
         let playCountAtMastery = await harness.audio.playCallCount()
         await harness.store.next()
         XCTAssertTrue(harness.store.state.courseExhausted)
         assertEqual(await harness.audio.playCallCount(), playCountAtMastery)
         assertEqual(await harness.progress.counts(courseID: harness.primary.id, mode: .listen), [onlyID: 3])
+        assertEqual(await harness.progress.completions(), [harness.primary.id: 1])
+    }
+
+    func testNaturalCompletionCanRestartWithoutLosingCompletionCount() async {
+        let harness = makeHarness(primaryEntryCount: 1)
+        await enterListen(harness)
+        await harness.store.next()
+        await harness.store.next()
+
+        await harness.store.restartCourse(harness.primary.id.rawValue)
+
+        XCTAssertFalse(harness.store.completionDialogStore.state.isPresented)
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.primary.id)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+        assertEqual(
+            await harness.progress.counts(courseID: harness.primary.id, mode: .listen),
+            [harness.primary.entries[0].id: 1]
+        )
+        assertEqual(await harness.progress.completions(), [harness.primary.id: 1])
+    }
+
+    func testSelectingCompletedCoursePromptsBeforeResetAndThenStartsIt() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        await harness.progress.seedMastered(
+            courseID: harness.secondary.id,
+            mode: .listen,
+            entries: harness.secondary.entries.map(\.id)
+        )
+
+        await harness.store.selectCourse(harness.secondary.id.rawValue)
+
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.primary.id)
+        XCTAssertTrue(harness.store.completionDialogStore.state.isPresented)
+        XCTAssertEqual(harness.store.completionDialogStore.state.kind, .restartCompletedCourse)
+        XCTAssertEqual(harness.store.completionDialogStore.state.courseID, harness.secondary.id.rawValue)
+
+        await harness.store.restartCourse(harness.secondary.id.rawValue)
+
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.secondary.id)
+        XCTAssertFalse(harness.store.completionDialogStore.state.isPresented)
+        assertEqual(
+            await harness.progress.counts(courseID: harness.secondary.id, mode: .listen),
+            [harness.secondary.entries[0].id: 1]
+        )
+    }
+
+    func testResetFailureKeepsDialogOpenWithFixedRetryableError() async {
+        let harness = makeHarness(primaryEntryCount: 1)
+        await enterListen(harness)
+        await harness.store.next()
+        await harness.store.next()
+        await harness.progress.failNextReset()
+
+        await harness.store.restartCourse(harness.primary.id.rawValue)
+
+        XCTAssertTrue(harness.store.completionDialogStore.state.isPresented)
+        XCTAssertEqual(
+            harness.store.completionDialogStore.state.errorMessage,
+            CompletionDialogViewState.fixedErrorMessage
+        )
+        await harness.store.restartCourse(harness.primary.id.rawValue)
+        XCTAssertFalse(harness.store.completionDialogStore.state.isPresented)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
     }
 
     func testSwitchingToRepeatStopsListenWithoutRecordingRepeatProgress() async {
@@ -843,6 +914,9 @@ private actor TestProgress {
     }
 
     private var storage: [Key: [EntryID: Int]] = [:]
+    private var completionCounts: [CourseID: Int] = [:]
+    private var completionIDs: Set<String> = []
+    private var shouldFailNextReset = false
     private let snapshotSuspension = OneShotSuspension()
     private let masterSuspension = OneShotSuspension()
 
@@ -856,12 +930,27 @@ private actor TestProgress {
             },
             master: { [weak self] courseID, mode, entryID in
                 await self?.master(courseID: courseID, mode: mode, entryID: entryID) ?? 0
+            },
+            reset: { [weak self] courseID, mode in
+                try await self?.reset(courseID: courseID, mode: mode)
+            },
+            completions: { [weak self] in await self?.completionCounts ?? [:] },
+            complete: { [weak self] courseID, completionID in
+                await self?.complete(courseID: courseID, completionID: completionID) ?? 0
             }
         )
     }
 
     func counts(courseID: CourseID, mode: StudyMode) -> [EntryID: Int] {
         storage[Key(courseID: courseID, mode: mode), default: [:]]
+    }
+
+    func completions() -> [CourseID: Int] { completionCounts }
+    func failNextReset() { shouldFailNextReset = true }
+    func seedMastered(courseID: CourseID, mode: StudyMode, entries: [EntryID]) {
+        storage[Key(courseID: courseID, mode: mode)] = Dictionary(
+            uniqueKeysWithValues: entries.map { ($0, 3) }
+        )
     }
 
     func suspendNextSnapshot() async { await snapshotSuspension.arm() }
@@ -888,6 +977,22 @@ private actor TestProgress {
         let key = Key(courseID: courseID, mode: mode)
         storage[key, default: [:]][entryID] = 3
         return 3
+    }
+
+    private func reset(courseID: CourseID, mode: StudyMode) throws {
+        if shouldFailNextReset {
+            shouldFailNextReset = false
+            throw TestError.forcedFailure
+        }
+        storage[Key(courseID: courseID, mode: mode)] = [:]
+    }
+
+    private func complete(courseID: CourseID, completionID: String) -> Int {
+        guard completionIDs.insert(completionID).inserted else {
+            return completionCounts[courseID, default: 0]
+        }
+        completionCounts[courseID, default: 0] += 1
+        return completionCounts[courseID, default: 0]
     }
 }
 

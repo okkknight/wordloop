@@ -25,6 +25,8 @@ public final class StudyStore {
     private var collection: CourseCollectionDescriptor?
     private var currentEntryID: EntryID?
     private var mode: StudyMode = .repeat
+    private var completionCounts: [CourseID: Int] = [:]
+    private var settledCompletions: Set<CourseModeKey> = []
     private nonisolated let eventTask = StudyTaskSlot()
     private nonisolated let waitingTask = StudyTaskSlot()
     private var hasStarted = false
@@ -57,6 +59,8 @@ public final class StudyStore {
             let catalog = try await courses.catalog()
             guard isCurrent(generation) else { return }
             self.catalog = catalog
+            completionCounts = await progress.completions()
+            guard isCurrent(generation) else { return }
             failedCourseID = catalog.defaultCourseID
             try await loadCourse(id: catalog.defaultCourseID, generation: generation)
         } catch {
@@ -86,7 +90,7 @@ public final class StudyStore {
         state.phase = .loading
         await audio.stop()
         do {
-            try await loadCourse(id: courseID, generation: generation)
+            try await loadCourse(id: courseID, generation: generation, promptsForCompletedCourse: true)
         } catch {
             guard isCurrent(generation) else { return }
             state.phase = .failed
@@ -191,7 +195,34 @@ public final class StudyStore {
         }
     }
 
-    private func loadCourse(id: CourseID, generation: ListenSessionGeneration) async throws {
+    public func restartCourse(_ rawCourseID: String) async {
+        guard let courseID = CourseID(rawValue: rawCourseID), catalog != nil else { return }
+        let resetMode = mode
+        let generation = beginNewSession()
+        state.phase = .loading
+        await audio.stop()
+        guard isCurrent(generation), mode == resetMode else { return }
+
+        do {
+            try await progress.reset(courseID, resetMode)
+            guard isCurrent(generation), mode == resetMode else { return }
+            settledCompletions.remove(.init(courseID: courseID, mode: resetMode))
+            completionDialogStore.requestRestart()
+            try await loadCourse(id: courseID, generation: generation)
+        } catch {
+            guard isCurrent(generation), mode == resetMode else { return }
+            state.phase = .ready
+            state.listenPhase = .failed
+            completionDialogStore.state.errorMessage = CompletionDialogViewState.fixedErrorMessage
+            completionDialogStore.state.isPresented = true
+        }
+    }
+
+    private func loadCourse(
+        id: CourseID,
+        generation: ListenSessionGeneration,
+        promptsForCompletedCourse: Bool = false
+    ) async throws {
         let loaded = try await courses.course(id)
         guard isCurrent(generation), let catalog else { return }
         let counts = await progress.snapshot(id, mode)
@@ -203,6 +234,15 @@ public final class StudyStore {
             excluding: nil,
             randomIndex: random.index(max(1, loaded.entries.count))
         ) else {
+            if promptsForCompletedCourse {
+                state.phase = .ready
+                state.listenPhase = .idle
+                completionDialogStore.present(
+                    kind: .restartCompletedCourse,
+                    courseID: id.rawValue
+                )
+                return
+            }
             course = loaded
             collection = catalog.collections.first(where: { $0.id == loaded.descriptor.collectionID })
             let fallbackEntryID = loaded.entries.first?.id
@@ -215,7 +255,8 @@ public final class StudyStore {
             state.phase = .ready
             courseDrawerStore.state = StudyProjection.courseDrawerState(
                 catalog: catalog,
-                selectedCourseID: id
+                selectedCourseID: id,
+                completionCounts: completionCounts
             )
             if let fallbackEntryID {
                 await refreshProjection(
@@ -241,7 +282,8 @@ public final class StudyStore {
         state.phase = .ready
         courseDrawerStore.state = StudyProjection.courseDrawerState(
             catalog: catalog,
-            selectedCourseID: id
+            selectedCourseID: id,
+            completionCounts: completionCounts
         )
         await refreshProjection(
             course: loaded,
@@ -309,6 +351,13 @@ public final class StudyStore {
             guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
             state.activePlaybackRequestID = requestID
             state.listenPhase = .playing
+            if state.courseExhausted {
+                await settleCompletion(
+                    courseID: course.id,
+                    entryID: entryID,
+                    generation: generation
+                )
+            }
         } catch {
             guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
             failCurrentListenSession()
@@ -354,7 +403,8 @@ public final class StudyStore {
                 collections: [collection],
                 courses: [course.descriptor]
             ),
-            selectedCourseID: course.id
+            selectedCourseID: course.id,
+            completionCounts: completionCounts
         )
         drawer.isPresented = oldDrawerPresented
         drawer.query = oldDrawerQuery
@@ -509,8 +559,38 @@ public final class StudyStore {
         }
     }
 
+    private func settleCompletion(
+        courseID: CourseID,
+        entryID: EntryID,
+        generation: ListenSessionGeneration
+    ) async {
+        let key = CourseModeKey(courseID: courseID, mode: mode)
+        guard settledCompletions.insert(key).inserted else { return }
+        let completionID = UUID().uuidString
+        do {
+            let count = try await progress.complete(courseID, completionID)
+            guard sessionMatches(generation, courseID: courseID, entryID: entryID) else { return }
+            completionCounts[courseID] = count
+            if let catalog {
+                courseDrawerStore.state = StudyProjection.courseDrawerState(
+                    catalog: catalog,
+                    selectedCourseID: courseID,
+                    completionCounts: completionCounts
+                )
+            }
+            completionDialogStore.present(kind: .courseCompleted, courseID: courseID.rawValue)
+        } catch {
+            settledCompletions.remove(key)
+        }
+    }
+
     private var currentAudioURL: URL? {
         guard let course, let currentEntryID else { return nil }
         return course.entries.first(where: { $0.id == currentEntryID })?.audioURL
     }
+}
+
+private struct CourseModeKey: Hashable {
+    let courseID: CourseID
+    let mode: StudyMode
 }

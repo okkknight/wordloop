@@ -284,7 +284,7 @@ App Target 只完成：
 
 ### P4.4 完成与重练纯本地流程
 
-状态：任务卡已生成，待实施；详见 [`../tasks/2026-07-16-p4-4-local-completion-retrain.md`](../tasks/2026-07-16-p4-4-local-completion-retrain.md)。
+状态：已实现，完整 UI 回归与并发边界复验待完成；详见 [`../tasks/2026-07-16-p4-4-local-completion-retrain.md`](../tasks/2026-07-16-p4-4-local-completion-retrain.md)。
 
 先完成 UI 和状态流，不伪造服务端成功。所有临时 adapter 明确标注并在 P5 删除。
 

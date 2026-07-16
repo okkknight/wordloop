@@ -23,7 +23,8 @@ public struct LiveStudyView: View {
                     toggleRepeatPause: {},
                     next: { Task { await store.next() } },
                     markTooEasy: { Task { await store.markTooEasy() } },
-                    selectCourse: { courseID in Task { await store.selectCourse(courseID) } }
+                    selectCourse: { courseID in Task { await store.selectCourse(courseID) } },
+                    restartCourse: { courseID in Task { await store.restartCourse(courseID) } }
                 )
             )
 

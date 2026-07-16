@@ -11,6 +11,7 @@ struct StudyViewActions {
     var next: @MainActor () -> Void
     var markTooEasy: @MainActor () -> Void
     var selectCourse: @MainActor (String) -> Void
+    var restartCourse: (@MainActor (String) -> Void)?
 
     static func fixture(store: StudyShellStore) -> Self {
         Self(
@@ -21,7 +22,8 @@ struct StudyViewActions {
             toggleRepeatPause: store.togglePause,
             next: store.next,
             markTooEasy: store.markTooEasy,
-            selectCourse: { _ in }
+            selectCourse: { _ in },
+            restartCourse: nil
         )
     }
 }
@@ -123,7 +125,8 @@ public struct MainStudyView: View {
                 CompletionDialogView(
                     store: completionDialogStore,
                     palette: store.state.palette,
-                    onChooseCourse: courseDrawerStore.present
+                    onChooseCourse: courseDrawerStore.present,
+                    onRestartCourse: actions.restartCourse
                 )
                 .transition(.opacity)
                 .zIndex(20)

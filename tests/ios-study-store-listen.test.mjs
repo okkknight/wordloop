@@ -58,7 +58,9 @@ test("temporary progress is session-only and production study has no deferred pl
   assert.match(progress, /CourseID/);
   assert.match(progress, /StudyMode/);
   assert.match(progress, /EntryID/);
-  assert.doesNotMatch(progress, /UserDefaults|SwiftData|URLSession|Keychain|outbox|reset/);
+  assert.match(progress, /func reset\(courseID: CourseID, mode: StudyMode\)/);
+  assert.match(progress, /func complete\(courseID: CourseID, completionID: String\)/);
+  assert.doesNotMatch(progress, /UserDefaults|SwiftData|URLSession|Keychain|outbox/);
   assert.doesNotMatch(study, /URLSession|SwiftData|UserDefaults|AVAudioRecorder|WebRTC|MPRemoteCommandCenter|MPNowPlayingInfoCenter/);
   assert.doesNotMatch(appInfo, /UIBackgroundModes|audio/);
 });

@@ -5,16 +5,19 @@ public struct CompletionDialogView: View {
     @Bindable private var store: CompletionDialogStore
     private let palette: PosterPalette
     private let onChooseCourse: () -> Void
+    private let onRestartCourse: ((String) -> Void)?
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     public init(
         store: CompletionDialogStore,
         palette: PosterPalette,
-        onChooseCourse: @escaping () -> Void
+        onChooseCourse: @escaping () -> Void,
+        onRestartCourse: ((String) -> Void)? = nil
     ) {
         self.store = store
         self.palette = palette
         self.onChooseCourse = onChooseCourse
+        self.onRestartCourse = onRestartCourse
     }
 
     public var body: some View {
@@ -52,7 +55,7 @@ public struct CompletionDialogView: View {
             palette: palette,
             accessibilityIdentifierPrefix: "completion-dialog",
             onCancel: cancel,
-            onConfirm: store.requestRestart
+            onConfirm: restart
         )
         .accessibilityLabel(store.state.kind.accessibilityLabel)
     }
@@ -63,6 +66,14 @@ public struct CompletionDialogView: View {
             onChooseCourse()
         } else {
             store.cancel()
+        }
+    }
+
+    private func restart() {
+        if let onRestartCourse {
+            onRestartCourse(store.state.courseID)
+        } else {
+            store.requestRestart()
         }
     }
 }

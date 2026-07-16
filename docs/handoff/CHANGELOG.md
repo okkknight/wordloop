@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.4 local completion and retrain implemented
+
+- 临时进度 actor 新增 mode-scoped reset、课程 completion count 和 completion identity 幂等；StudyStore 接通自然完成、课程徽标、已完成课程确认、重练和固定错误。
+- live dialog 使用可选 restart callback，fixture 仍走 P3 presentation Store；完整 UI 首轮发现并修复 fixture confirm 退化，目标用例复验 1/1 通过。
+- Progress 9/9、Features 100/100、Web 53/53、baseline、统一 iOS verify 和 AppIntegration 5/5 通过；完整 UI 26 项与 completion/reset suspension 仍待复验，P4.4 尚未 PASS。
+
 ## 2026-07-16 · P4.3 passed, P4.4 task ready
 
 - 用户取消后续 coder/reviewer 双流要求；P4.3 以本轮直接源码审查、确定性并发回归和完整门禁作为 PASS 证据。

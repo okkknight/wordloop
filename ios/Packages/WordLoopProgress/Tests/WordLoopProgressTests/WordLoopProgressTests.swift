@@ -106,6 +106,43 @@ final class WordLoopProgressTests: XCTestCase {
         XCTAssertEqual(snapshot, [entryID: 3])
     }
 
+    func testResetClearsOnlyRequestedCourseModeAndKeepsCompletionCount() async throws {
+        let repository = TemporaryProgressRepository()
+        let firstCourse = try courseID("modern-family-s01e01")
+        let secondCourse = try courseID("modern-family-s01e02")
+        let entry = try entryID("entry-one")
+        _ = await repository.record(courseID: firstCourse, mode: .listen, entryID: entry)
+        _ = await repository.record(courseID: firstCourse, mode: .repeat, entryID: entry)
+        _ = await repository.record(courseID: secondCourse, mode: .listen, entryID: entry)
+        _ = await repository.complete(courseID: firstCourse, completionID: "completion-one")
+
+        await repository.reset(courseID: firstCourse, mode: .listen)
+
+        let firstListen = await repository.snapshot(courseID: firstCourse, mode: .listen)
+        let firstRepeat = await repository.snapshot(courseID: firstCourse, mode: .repeat)
+        let secondListen = await repository.snapshot(courseID: secondCourse, mode: .listen)
+        let completions = await repository.completions()
+        XCTAssertTrue(firstListen.isEmpty)
+        XCTAssertEqual(firstRepeat, [entry: 1])
+        XCTAssertEqual(secondListen, [entry: 1])
+        XCTAssertEqual(completions, [firstCourse: 1])
+    }
+
+    func testCompletionIsSharedAcrossModesAndIdempotentByIdentity() async throws {
+        let repository = TemporaryProgressRepository()
+        let course = try courseID("modern-family-s01e01")
+
+        let first = await repository.complete(courseID: course, completionID: "completion-one")
+        let duplicate = await repository.complete(courseID: course, completionID: "completion-one")
+        let second = await repository.complete(courseID: course, completionID: "completion-two")
+
+        XCTAssertEqual(first, 1)
+        XCTAssertEqual(duplicate, 1)
+        XCTAssertEqual(second, 2)
+        let completions = await repository.completions()
+        XCTAssertEqual(completions, [course: 2])
+    }
+
     private func courseID(_ rawValue: String) throws -> CourseID {
         try XCTUnwrap(CourseID(rawValue: rawValue))
     }
