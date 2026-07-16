@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.1 bundled repository independently reviewed PASS
+
+- 独立 reviewer 从提交 `58f9101` 删除 `content/dist`、两个 iOS resource 目标、统一/Package SwiftPM cache 与 DerivedData 后冷重建，确认 Core 9/9、Content 12/12、App integration 2/2、既有 UI 25/25、Web 47/47 与 baseline 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- 完整模式复验 30 门、570 word + 836 sentence、1,406 个音频 SHA 与 32,700,838 bytes；mutation、typed error、Repository 成功缓存/失败重试/unknown course 均通过。
+- 正式 App 根目录只有一套 Content bundle，含 1,406 M4A、30 course manifests、30 integrity、1 catalog、0 audit report；XCTest 插件中的测试依赖副本不属于正式产品资源。
+- reviewer 额外注入 Package 第二目标 rename 失败，确认第一目标旧树 digest 不变、失败退出且无 stage/previous 残留。Release 继续是 iOS 17、Swift 6、iPhone-only，无 Catalyst、Designed for Mac、iPad 或桌面产品。
+- P4.1 结论为 PASS。下一步只能基于已验证的 Repository/audio URL API 生成 P4.2 AudioPlayer 任务卡，不能提前实施 P4.3 LISTEN 接线。
+
 ## 2026-07-16 · P4.1 bundled repository developed, pending review
 
 - Core 已新增 fail-closed stable ID、课程枚举与 catalog/descriptor/course/entry 值模型；Content 已新增严格 wire DTO、typed error、`BundledCourseSource` 轻量/完整校验和成功缓存/失败重试的 actor `CourseRepository`。

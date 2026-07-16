@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；当前检查点为 P4.1 iPhone 内置课程领域模型与 Bundle Repository。
+任务：执行 iOS 迁移 Plan；P4.1 iPhone 内置课程领域模型与 Bundle Repository 已独立复核 PASS，下一检查点为 P4.2 AudioPlayer。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6 均已独立复核 PASS。P4.1 已完成 Core 课程领域模型、严格 Bundle source、轻量/完整 integrity 校验、actor Repository、Package resource mirror 与 iPhone App 集成，当前待未参与实现的 reviewer 冷验证；PASS 前不生成或实施 P4.2。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1 均已独立复核 PASS。下一步根据已验证的 `CourseEntry.audioURL`、Content bundle 与现有静态 StudyShell 边界生成 P4.2 AudioPlayer 任务卡；任务卡提交前不实施播放器。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -68,6 +68,8 @@ P3.6 已新增独立 CompletionDialog kind/state/action/store/view，接入不�
 P4.1 已在 Core 新增强类型课程/条目/集合 ID、课程 catalog/descriptor/entry 与业务枚举；Content 使用 `Bundle.module` 严格解码 catalog/course/integrity，拒绝未知字段、坏 schema/标量/路径/文件集合，并提供轻量校验、全量音频 SHA 校验和成功缓存/失败重试的 actor `CourseRepository`。bootstrap 原子生成中间目录与 Package `.copy` resource mirror，只打包 `catalog.json + courses/`，不把 `validation-report.json` 带进 App。
 
 开发侧已通过 Core 9/9、Content 12/12（30 门、1,406 entries/M4A、32,700,838 bytes 与全 SHA）、App integration 2/2、原有 UI 25/25、Web 47/47、baseline 和统一 iPhone 构建；主 App 根资源实查只有一套 Content bundle、1,406 个 M4A、无审计 report。P3 UI/fixture 未接 Repository，未实现播放器、网络、下载、进度或桌面产品。
+
+独立 reviewer 从删除全部生成物、SwiftPM cache 与 DerivedData 的冷状态复验以上矩阵，并额外注入 Package 第二目标切换失败，确认第一目标旧树 digest 不变且无 stage/previous 残留；Release 仍为 iOS 17、Swift 6、iPhone device family 1、Catalyst/Designed for Mac 关闭。P4.1 结论为 PASS。
 
 ## 架构与数据流
 
