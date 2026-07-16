@@ -9,7 +9,7 @@
 3. 根据任务阅读专项文档：
    - 原生 iOS 迁移：[`../IOS_MIGRATION_SPEC.md`](../IOS_MIGRATION_SPEC.md)
    - iOS 实施 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
-   - 当前 P4.3 任务卡（第二轮复核 FAIL）：[`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)
+   - 当前 P4.3 任务卡（第二轮阻断已修复，待第三轮复核）：[`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)
    - P4.2 AudioPlayer（已 PASS）：[`../tasks/2026-07-16-p4-2-audio-player.md`](../tasks/2026-07-16-p4-2-audio-player.md)
    - P4.1 Bundle Content（已 PASS）：[`../tasks/2026-07-16-p4-1-bundled-content-repository.md`](../tasks/2026-07-16-p4-1-bundled-content-repository.md)
    - 已复核 P2 任务卡：[`../tasks/2026-07-15-p2-native-project-skeleton.md`](../tasks/2026-07-15-p2-native-project-skeleton.md)

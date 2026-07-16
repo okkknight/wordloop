@@ -446,6 +446,81 @@ final class StudyStoreTests: XCTestCase {
         assertEqual(await harness.progress.counts(courseID: harness.primary.id, mode: .repeat), [:])
     }
 
+    func testOlderSuspendedModeIntentCannotOverwriteNewerModeIntent() async {
+        let harness = makeHarness()
+        await harness.store.start()
+        await harness.audio.suspendNextStops(count: 1)
+
+        let oldListen = Task { @MainActor in await harness.store.selectMode(.listen) }
+        await harness.audio.waitUntilStopsAreSuspended()
+        await harness.store.selectMode(.repeat)
+        await harness.audio.releaseSuspendedStops()
+        await oldListen.value
+
+        XCTAssertEqual(harness.store.shellStore.state.mode, .repeat)
+        XCTAssertEqual(harness.store.state.listenPhase, .idle)
+        XCTAssertNil(harness.store.state.activePlaybackRequestID)
+        assertEqual(await harness.audio.playCallCount(), 0)
+        assertEqual(await harness.progress.counts(courseID: harness.primary.id, mode: .listen), [:])
+    }
+
+    func testOlderSuspendedBackgroundPauseCannotOverwriteNewerSession() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        await harness.audio.suspendNextPauses(count: 1)
+
+        let oldBackground = Task { @MainActor in
+            await harness.store.setApplicationActive(false)
+        }
+        await harness.audio.waitUntilPausesAreSuspended()
+        await harness.store.next()
+        let currentToken = try! XCTUnwrap(harness.store.state.activePlaybackRequestID)
+        await harness.audio.releaseSuspendedPauses()
+        await oldBackground.value
+
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.primary.entries[1].id)
+        XCTAssertEqual(harness.store.state.activePlaybackRequestID, currentToken)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+    }
+
+    func testBackgroundDuringCourseLoadingLeavesRetryableFailure() async {
+        let harness = makeHarness()
+        await harness.store.start()
+        await harness.courses.suspendNextLoad(of: harness.secondary.id)
+
+        let selection = Task { @MainActor in
+            await harness.store.selectCourse(harness.secondary.id.rawValue)
+        }
+        await harness.courses.waitUntilLoadIsSuspended()
+        XCTAssertEqual(harness.store.state.phase, .loading)
+        await harness.store.setApplicationActive(false)
+        await harness.courses.releaseSuspendedLoad()
+        await selection.value
+
+        XCTAssertEqual(harness.store.state.phase, .failed)
+        XCTAssertEqual(harness.store.state.listenPhase, .failed)
+        await harness.store.retry()
+        XCTAssertEqual(harness.store.state.phase, .ready)
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.secondary.id)
+    }
+
+    func testModeIntentIsRejectedWhileInitialCourseIsLoading() async {
+        let harness = makeHarness()
+        await harness.courses.suspendNextLoad(of: harness.primary.id)
+
+        let start = Task { @MainActor in await harness.store.start() }
+        await harness.courses.waitUntilLoadIsSuspended()
+        await harness.store.selectMode(.listen)
+
+        XCTAssertEqual(harness.store.state.phase, .loading)
+        XCTAssertEqual(harness.store.shellStore.state.mode, .repeat)
+        await harness.courses.releaseSuspendedLoad()
+        await start.value
+        XCTAssertEqual(harness.store.state.phase, .ready)
+        XCTAssertEqual(harness.store.shellStore.state.mode, .repeat)
+        assertEqual(await harness.audio.playCallCount(), 0)
+    }
+
     private func enterListen(_ harness: StudyHarness) async {
         await harness.store.start()
         await harness.store.selectMode(.listen)
@@ -674,6 +749,9 @@ private final class TestAudio: @unchecked Sendable {
     func suspendNextStops(count: Int) async { await recorder.suspendNextStops(count: count) }
     func waitUntilStopsAreSuspended() async { await recorder.waitUntilStopsAreSuspended() }
     func releaseSuspendedStops() async { await recorder.releaseSuspendedStops() }
+    func suspendNextPauses(count: Int) async { await recorder.suspendNextPauses(count: count) }
+    func waitUntilPausesAreSuspended() async { await recorder.waitUntilPausesAreSuspended() }
+    func releaseSuspendedPauses() async { await recorder.releaseSuspendedPauses() }
 }
 
 private actor TestAudioRecorder {
@@ -682,6 +760,7 @@ private actor TestAudioRecorder {
     private(set) var pauseCallCount = 0
     private(set) var stopCallCount = 0
     private let stopBarrier = CountedSuspension()
+    private let pauseBarrier = CountedSuspension()
     private var shouldFailNextPrepare = false
     private var shouldFailNextPlay = false
     private var latestSnapshot = AudioPlaybackSnapshot(
@@ -727,7 +806,10 @@ private actor TestAudioRecorder {
         return token
     }
 
-    func pause() { pauseCallCount += 1 }
+    func pause() async {
+        pauseCallCount += 1
+        await pauseBarrier.suspendIfArmed()
+    }
 
     func stop() async {
         stopCallCount += 1
@@ -749,6 +831,9 @@ private actor TestAudioRecorder {
     func suspendNextStops(count: Int) async { await stopBarrier.arm(expected: count) }
     func waitUntilStopsAreSuspended() async { await stopBarrier.waitUntilSuspended() }
     func releaseSuspendedStops() async { await stopBarrier.release() }
+    func suspendNextPauses(count: Int) async { await pauseBarrier.arm(expected: count) }
+    func waitUntilPausesAreSuspended() async { await pauseBarrier.waitUntilSuspended() }
+    func releaseSuspendedPauses() async { await pauseBarrier.release() }
 }
 
 private actor TestProgress {

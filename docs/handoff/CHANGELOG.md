@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.3 second-review blockers fixed, third review pending
+
+- 修复旧 mode intent 在 suspended stop 后覆盖新 mode、旧 background pause 覆盖新 playback session、loading 被 lifecycle/mode 留成悬空态，以及 Audio engine start failure 丢 request token 四项第二轮 P1 阻断。
+- loading 期间 mode intent 明确拒绝；后台取消 loading 落到可重试失败态。所有 stop/pause 恢复写入绑定 generation，Audio 已分配 token 后的 start failure 保留 token。
+- 新增 4 条可控 suspension/loading StudyStore tests 和 1 个 Audio token 断言；Audio 21/21、Progress 7/7、Features 97/97（StudyStore 22/22）、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline 与统一 iPhone verify 通过，lint 精确保持既有 4 errors/0 warnings。
+- 本轮环境策略拒绝外层 `rm -rf` 冷清理，第三轮 reviewer 需从完整冷状态复核；P4.3 仍为开发完成待独立复核，PASS 前不生成 P4.4。
+
 ## 2026-07-16 · P4.3 second review failed after implementation commit 0bbc0ca
 
 - 第二轮 reviewer 冷验收确认 `scripts/verify_ios.sh`、Audio 21/21、Progress 7/7、Features 93/93、App integration 5/5、UI 26/26、Web 53/53、baseline 全部通过，lint 精确保持既有 4 errors/0 warnings；但源码审查结论仍为 FAIL。

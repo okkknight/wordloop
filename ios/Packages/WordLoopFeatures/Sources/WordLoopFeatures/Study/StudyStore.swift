@@ -105,11 +105,13 @@ public final class StudyStore {
     }
 
     public func selectMode(_ shellMode: StudyShellMode) async {
+        guard state.phase != .loading else { return }
         let requested: StudyMode = shellMode == .listen ? .listen : .repeat
         guard requested != mode else { return }
         mode = requested
         let generation = beginNewSession()
         await audio.stop()
+        guard isCurrent(generation), mode == requested else { return }
         shellStore.state.mode = shellMode
 
         guard let course, let currentEntryID else { return }
@@ -176,10 +178,15 @@ public final class StudyStore {
 
     public func setApplicationActive(_ isActive: Bool) async {
         guard !isActive else { return }
-        cancelWaitingAndAdvanceGeneration()
+        let generation = beginNewSession()
         await audio.pause()
+        guard isCurrent(generation) else { return }
         state.activePlaybackRequestID = nil
-        if state.listenPhase == .playing || state.listenPhase == .waiting {
+        if state.phase == .loading {
+            hasStarted = catalog != nil
+            state.phase = .failed
+            state.listenPhase = .failed
+        } else if state.listenPhase == .playing || state.listenPhase == .waiting {
             state.listenPhase = .paused
         }
     }

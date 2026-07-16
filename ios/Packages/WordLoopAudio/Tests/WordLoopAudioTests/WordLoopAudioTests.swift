@@ -222,6 +222,7 @@ final class WordLoopAudioTests: XCTestCase {
             await assertThrows(.playbackStartFailed) { _ = try await harness.player.play() }
             let snapshot = await harness.player.snapshot()
             XCTAssertEqual(snapshot.error, .playbackStartFailed)
+            XCTAssertNotNil(snapshot.requestID)
             XCTAssertEqual(harness.session.calls, [.configure, .activate, .deactivate])
         }
 

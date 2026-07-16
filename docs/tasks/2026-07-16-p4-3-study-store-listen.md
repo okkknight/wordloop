@@ -1,6 +1,6 @@
 # P4.3 iPhone StudyStore 与离线 LISTEN 主链路
 
-状态：第二轮独立复核 FAIL，待继续修复
+状态：开发完成，待第三轮独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -208,3 +208,11 @@ git status --short --ignored
 4. `AudioPlayer.play()` 已生成 request token 后若 engine start 失败，当前分支先失效 token 再发布无 token `.failed`；必须像 decode/media reset 一样保留本次 token。
 
 下一线程应先补三组确定性测试再修代码：suspended stop + 两个相反 mode intent；suspended pause + 更新会话；start/select loading + background/mode。另补 play-start failure 的 request token 断言。修复后重新跑完整任务卡门禁并开启新的独立 reviewer；P4.3 PASS 前仍不得生成 P4.4。
+
+## 第二轮阻断修复（2026-07-16）
+
+- `selectMode` 在 loading 期间明确拒绝 intent，并在 `audio.stop()` 恢复后同时校验 generation 与 requested mode；旧 suspended mode intent 不再覆盖新模式或触发播放/计次。
+- `setApplicationActive(false)` 绑定新的 generation，在 `audio.pause()` 恢复后才写 session 状态；旧 suspended lifecycle intent 无法清除新 playback token。后台取消 loading 时进入可重试失败态，初始加载与选课加载均不再永久悬空。
+- `AudioPlayer.play()` 的 engine start failure 以本次已分配 `PlaybackRequestID` 发布 `.failed` snapshot，保持与 decode/media reset 相同的 token 隔离语义。
+- 新增 4 条 StudyStore 确定性测试和 1 个 Audio token 断言，先复现全部失败再完成修复。开发侧门禁通过：Audio 21/21、Progress 7/7、Features 97/97（StudyStore 22/22）、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、`scripts/verify_ios.sh` 与 `git diff --check`；lint 精确保持既有 4 errors/0 warnings。
+- 本地执行策略拒绝任务卡外层 `rm -rf` 冷清理命令；统一 verify 仍完成 bootstrap、八 Package tests 和 iPhone build。第三轮 reviewer 必须在其允许的环境执行完整冷清理后复核。P4.3 PASS 前仍不得生成 P4.4。

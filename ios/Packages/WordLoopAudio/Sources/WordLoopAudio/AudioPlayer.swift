@@ -172,7 +172,7 @@ public actor AudioPlayer {
         guard currentSlot.engine.play() else {
             invalidateActiveRequest()
             session.deactivate()
-            transition(to: .failed, error: .playbackStartFailed)
+            transition(to: .failed, requestID: requestID, error: .playbackStartFailed)
             throw AudioPlayerError.playbackStartFailed
         }
 
