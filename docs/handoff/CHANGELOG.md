@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P3.5 progress drawer independently reviewed PASS
+
+- 独立 reviewer 确认右侧 344/86vw 抽屉、summary/track/stats、sentence/word/mixed/complete/query/empty fixture、0...3 与完成语义、header/backdrop/主导右滑关闭、列表独立滚动、modal 背景隔离与关闭后恢复均符合任务卡。
+- 课程/进度抽屉互斥，冲突 launch arguments 保持课程抽屉优先；进度 action 未改变 StudyShell，主学习上下文仍为 S01E01 第 75/91 条。无 P4 课程解析、P6 持久化/同步、P7 远程课程/下载或网络、音频、Realtime 越界。
+- 六 palette 实际合成独立复算最低为次要文字 5.068:1、边界 3.097:1、语义填充 8.764:1。四张真实 iPhone 截图的 hash、尺寸与逐张人工视觉检查一致。
+- 从删除生成物、统一/Package SwiftPM cache 与 DerivedData 的冷状态重跑：八 Package tests/iPhone build、DesignSystem 12/12、Features 51/51、App integration 1/1、UI 20/20、Web 43/43 全部通过；lint 精确保持既有 4 errors、0 warnings，diff/ignore hygiene 通过。
+- iOS 17、Swift 6、iPhone-only 设置保持，Catalyst/Designed for iPhone on Mac 关闭。P3.5 结论为 PASS，下一步只生成 P3.6 任务卡，本次不生成或实施。
+
 ## 2026-07-16 · P3.5 progress drawer developed, pending review
 
 - 新增 ProgressDrawer entry/summary/state/fixtures/store 与 SwiftUI 右侧抽屉；基线为 0/273、0 已掌握/91 学习中和 10 条 S01E01 代表句，并提供 word、mixed、complete、query、empty fixture。

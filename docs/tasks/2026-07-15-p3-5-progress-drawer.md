@@ -1,6 +1,6 @@
 # P3.5 iPhone 进度抽屉静态 Shell
 
-状态：开发完成，待独立复核
+状态：独立复核 PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -122,3 +122,18 @@ git status --short --ignored
 ## 交接
 
 先单独提交本任务卡，再实施 CP-07。开发完成后把状态改为“开发完成，待独立复核”，刷新根 `PROJECT_CONTEXT.md` 与 `docs/handoff/CHANGELOG.md`，提交实现并交给未参与实现的 reviewer。P3.5 PASS 后才根据真实双抽屉协调 API 生成 P3.6 对话框与 REPEAT 静态态任务卡。
+
+## 独立复核结论（2026-07-16）
+
+结论：PASS。
+
+- reviewer 从删除 `content/dist`、`ios/Generated`、`ios/.derivedData`、`ios/.build` 与所有 Package `.build` 的冷状态运行 `scripts/verify_ios.sh`，八个 Package tests、课程资源 bootstrap 和 iPhone 17 Pro Simulator build 通过。
+- iPhone 17 Pro / iOS 26.5 完整 `xcodebuild test` 正常结束并显示 `TEST SUCCEEDED`；xcresult 汇总 21/21，即 App integration 1/1 与 UI 20/20，0 failure。DesignSystem 12/12、Features 51/51、Web 43/43 全部通过，`npm run baseline:ios` 与 `git diff --check` 通过。
+- `npm run lint` 精确保持 `app/page.tsx` 的既有 4 errors、0 warnings，没有新增债务。ignore hygiene 通过，冷验收生成物及 cache 仍为 ignored，无意外 tracked 文件。
+- 独立代码与 UI 复核确认右侧 `min(344 pt, 86% viewport)` 抽屉、header/backdrop/主导右滑三种关闭、列表纵向滚动、sentence/word/mixed/complete/query/empty fixture、完成语义、关闭后背景恢复均通过；课程/进度抽屉互斥，冲突参数保持课程抽屉优先。
+- 进度抽屉只记录展示 action，打开、搜索与关闭未修改 StudyShell mode/item/index/palette/visibility/mastery 或 autoplay/pause 展示状态；UI 仍显示 S01E01 第 75/91 条。
+- 六 palette 按实际不透明 drawer background 层顺序独立复算：75% ink 次要文字最低 5.068:1，56% ink 边界/track underlay 最低 3.097:1，`accessibleAccentText` 最低 8.764:1；canonical accent 只作装饰，不单独承担状态语义。
+- 四张真实 App 截图的 SHA-256 与文档一致，iPhone 17e 为 1170 × 2532 px，iPhone 17 Pro 为 1206 × 2622 px；逐张人工检查右侧方向、左侧遮罩、文案、0...3 进度、word 搜索与 accessibility 3 + Reduce Motion 无裁切、重叠或调试浮层。
+- 静态边界检查未发现 P4 正式课程解析、P6 进度持久化/同步、P7 远程课程/下载，也无网络、音频或 Realtime 越界。Release 设置仍为 iOS 17、Swift 6、`TARGETED_DEVICE_FAMILY = 1`，Catalyst 与 Designed for iPhone on Mac 均关闭。
+
+P3.5 验收关闭。下一步只能根据当前真实双抽屉协调 API 生成 P3.6 任务卡，本次复核不生成也不实施 P3.6。

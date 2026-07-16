@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，当前检查点为 P3.5 iPhone 进度抽屉静态 Shell。
+任务：执行 iOS 迁移 Plan，P3.5 iPhone 进度抽屉静态 Shell 已关闭，下一检查点为生成 P3.6 任务卡。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4 均已独立复核 PASS。P3.5 CP-07 已完成开发和本地验收，当前等待独立复核；复核 PASS 前不进入 P3.6。
+执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4、P3.5 均已独立复核 PASS。下一步只生成 P3.6 对话框与 REPEAT 静态态任务卡，在任务卡独立提交与确认前不实施。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -59,7 +59,7 @@ P3.4 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的�
 
 P3.5 已新增独立 ProgressDrawer entry/summary/view state/fixture/store 与 SwiftUI 右侧抽屉。基线精确展示 `YOUR PROGRESS`、0/273、S01E01、0 已掌握/91 学习中、10 条代表句；另覆盖 word、mixed、complete、query 和 empty fixture。课程/进度抽屉互斥且冲突参数保持课程优先；三种关闭入口、列表独立滚动、搜索、完成语义、accessibility 3 与 Reduce Motion 已由 App UI test 覆盖。ProgressTrack 和条目边界使用真实合成可达标角色，canonical accent 只保留装饰；不读取 P6 Progress、不访问网络或持久化，也不改变主学习上下文。
 
-P3.5 开发侧验证：Features 51/51、App integration 1/1、UI 20 项目标矩阵（完整冷跑将在 reviewer 再确认）、Web 43/43；四张真实 iPhone 17e/17 Pro 截图已保存并人工检查。lint 精确保持既有 4 errors、0 warnings。当前结论仍为“待独立复核”，不得据此跳过 reviewer gate。
+P3.5 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的冷状态确认八 Package/iPhone build，并复验 DesignSystem 12/12、Features 51/51、App integration 1/1、UI 20/20、Web 43/43、四张截图 hash/尺寸/视觉、六 palette 真实合成对比度、双抽屉互斥与课程优先、三种关闭、背景恢复、学习状态不变、无 P4/P6/P7 越界和 iPhone-only 设置，结论为 PASS。lint 精确保持既有 4 errors、0 warnings。
 
 ## 架构与数据流
 
