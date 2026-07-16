@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；P4.1 iPhone 内置课程领域模型与 Bundle Repository 已独立复核 PASS，下一检查点为 P4.2 AudioPlayer。
+任务：执行 iOS 迁移 Plan；当前检查点为 P4.2 iPhone 本地 AudioPlayer。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1 均已独立复核 PASS。下一步根据已验证的 `CourseEntry.audioURL`、Content bundle 与现有静态 StudyShell 边界生成 P4.2 AudioPlayer 任务卡；任务卡提交前不实施播放器。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1 均已独立复核 PASS。P4.2 任务卡已根据 `CourseEntry.audioURL`、Web current/next 行为、现有空 Audio 骨架与 Apple Audio Session 语义锁定；下一步只实现播放器 primitive，不接 P3 UI、不提前实现 P4.3 AUTOPLAY/LISTEN 编排。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 

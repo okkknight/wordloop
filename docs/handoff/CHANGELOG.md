@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.1 reviewed, P4.2 AudioPlayer task ready
+
+- P4.1 独立复核 PASS 后新增 [`../tasks/2026-07-16-p4-2-audio-player.md`](../tasks/2026-07-16-p4-2-audio-player.md)；本提交只锁定 CP-10 任务卡，不实现播放器。
+- P4.2 固定本地 file URL、AVAudioPlayer current/next 双槽、每次 play request token、actor 状态/多播事件、单次 finish/fail 与迟到 callback 隔离；Audio 不认识 course/entry/autoplay。
+- interruption、耳机拔出和 background 均暂停并失效 token，回前台/中断结束不自动恢复；media reset fail closed。无 background audio、Now Playing、Remote Command、麦克风或桌面产品。
+- Web 当前没有音频 token，且已排队的 500 ms timer 有切课/切模式迟到风险；P4.2 只解决 audio callback，P4.3 必须再用 Listen session generation 解决 AUTOPLAY/NEXT 业务 timer。
+- P4.2 PASS 前不得接 StudyShell/Repository，不得生成或实施 P4.3。
+
 ## 2026-07-16 · P4.1 bundled repository independently reviewed PASS
 
 - 独立 reviewer 从提交 `58f9101` 删除 `content/dist`、两个 iOS resource 目标、统一/Package SwiftPM cache 与 DerivedData 后冷重建，确认 Core 9/9、Content 12/12、App integration 2/2、既有 UI 25/25、Web 47/47 与 baseline 全部通过；lint 精确保持既有 4 errors、0 warnings。

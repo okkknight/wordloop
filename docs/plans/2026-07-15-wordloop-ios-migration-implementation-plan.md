@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P4.1 已 PASS，下一步基于已验证 Repository API 生成 P4.2 AudioPlayer 任务卡
+状态：执行中；P0–P4.1 已 PASS，P4.2 AudioPlayer 任务卡已按真实 Repository/Web/AVFoundation 边界锁定待开发
 
 制定日期：2026-07-15
 
@@ -265,6 +265,8 @@ App Target 只完成：
 验证：30 门课程可枚举；抽样音频 URL 存在；内置数据与 exporter report 一致。
 
 ### P4.2 AudioPlayer
+
+状态：任务卡已锁定，待开发；详见 [`../tasks/2026-07-16-p4-2-audio-player.md`](../tasks/2026-07-16-p4-2-audio-player.md)。
 
 - 基于 AVFoundation 实现 load/play/pause/stop/finish/fail。
 - 只持有当前和下一条的 prepared asset。
