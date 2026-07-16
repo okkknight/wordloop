@@ -2,6 +2,11 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.3 passed, P4.4 task ready
+
+- 用户取消后续 coder/reviewer 双流要求；P4.3 以本轮直接源码审查、确定性并发回归和完整门禁作为 PASS 证据。
+- 新增 P4.4 任务卡，只实现会话期完成计数、自然完成对话框、已完成课程重练确认和当前模式 reset；P5 再替换临时 adapter，不提前持久化或同步。
+
 ## 2026-07-16 · P4.3 second-review blockers fixed, third review pending
 
 - 修复旧 mode intent 在 suspended stop 后覆盖新 mode、旧 background pause 覆盖新 playback session、loading 被 lifecycle/mode 留成悬空态，以及 Audio engine start failure 丢 request token 四项第二轮 P1 阻断。

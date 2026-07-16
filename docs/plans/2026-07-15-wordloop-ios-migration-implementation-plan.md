@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P4.2 已 PASS，P4.3 第二轮阻断已修复，待第三轮独立复核
+状态：执行中；P0–P4.3 已 PASS，当前执行 P4.4
 
 制定日期：2026-07-15
 
@@ -275,7 +275,7 @@ App Target 只完成：
 
 ### P4.3 StudyStore 与 LISTEN
 
-状态：开发完成，待第三轮独立复核；详见 [`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)。
+状态：PASS；详见 [`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)。
 
 - 课程选择、条目选择、random/sequential、文字三态。
 - 手动前进、自动播放、500 ms 等待、错误重试。
@@ -283,6 +283,8 @@ App Target 只完成：
 - 此阶段用本地临时进度 adapter，P5 再替换真实 ProgressRepository。
 
 ### P4.4 完成与重练纯本地流程
+
+状态：任务卡已生成，待实施；详见 [`../tasks/2026-07-16-p4-4-local-completion-retrain.md`](../tasks/2026-07-16-p4-4-local-completion-retrain.md)。
 
 先完成 UI 和状态流，不伪造服务端成功。所有临时 adapter 明确标注并在 P5 删除。
 

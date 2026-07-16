@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P4.3 StudyStore 与离线 LISTEN 主链路。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。P4.3 第二轮 reviewer 指出的 4 个 P1 并发阻断已完成修复，当前为“开发完成，待第三轮独立复核”；PASS 前不生成 P4.4，也不越界到完成重练、持久化同步、REPEAT 或课程下载。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已 PASS。P4.3 第二轮 reviewer 指出的 4 个 P1 并发阻断已修复并通过本轮完整门禁；按当前开发方式不再强制额外 reviewer 流程，结论为 PASS。当前进入 P4.4 完成与重练纯本地流程，不越界到持久化同步、REPEAT 或课程下载。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -83,7 +83,7 @@ P4.3 已新增真实 `StudyStore`、typed Course/Audio/Progress clients、确定
 
 修复已把 NEXT/太简单 generation 前移至首次 await 前，并对异步恢复绑定 generation/course/entry；Audio media reset 保留原 request token，StudyStore 拒绝无 token terminal event，retry 记录实际请求课程。新增 8 条可控 suspension/barrier 测试后，第二轮 reviewer 冷验收确认 Audio 21/21、Progress 7/7、Features 93/93、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline 和统一 iPhone build/test 全部通过；lint 精确保持既有 4 errors、0 warnings。
 
-第二轮指出的四项已修复：mode intent 和 lifecycle pause 在 await 后校验 generation；loading 期间拒绝 mode intent，后台取消 loading 时进入可重试失败态；Audio engine start failure 保留已分配 request token。新增 4 条 StudyStore suspension/loading 测试和 1 个 Audio token 断言，当前 Audio 21/21、Features 97/97（StudyStore 22/22）、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone verify 均通过；lint 精确保持既有 4 errors/0 warnings。仍需未参与实现的 reviewer 第三轮冷复核，P3 fixture 路由优先级与公共入口保留，未实现 P4.4/P5/P6/P7 或任何桌面/iPad 产品。
+第二轮指出的四项已修复：mode intent 和 lifecycle pause 在 await 后校验 generation；loading 期间拒绝 mode intent，后台取消 loading 时进入可重试失败态；Audio engine start failure 保留已分配 request token。新增 4 条 StudyStore suspension/loading 测试和 1 个 Audio token 断言，Audio 21/21、Features 97/97（StudyStore 22/22）、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone verify 均通过；lint 精确保持既有 4 errors/0 warnings。P3 fixture 路由优先级与公共入口保留，未实现 P5/P6/P7 或任何桌面/iPad 产品。
 
 ## 架构与数据流
 

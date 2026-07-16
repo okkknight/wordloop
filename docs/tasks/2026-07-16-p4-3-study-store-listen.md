@@ -1,6 +1,6 @@
 # P4.3 iPhone StudyStore 与离线 LISTEN 主链路
 
-状态：开发完成，待第三轮独立复核
+状态：PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
