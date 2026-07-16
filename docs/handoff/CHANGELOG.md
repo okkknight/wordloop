@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.2 native audio player developed, pending review
+
+- `WordLoopAudio` 已实现只播放已验证本地 file URL 的 actor `AudioPlayer`：current/next 双槽、每次 play request token、typed snapshot/event/error 与迟到 callback 隔离。
+- live adapter 使用 AVAudioPlayer 和 playback/spokenAudio session；interruption、耳机拔出、background 暂停且不自动恢复，media reset fail closed。不启用后台音频、Now Playing、Remote Command、麦克风或桌面产品。
+- 开发侧已通过 Audio 21/21、真实 Bundle M4A App integration 3/3、原有 UI 25/25、Web 50/50、baseline 和统一 iPhone 构建；lint 精确保持既有 4 errors、0 warnings。
+- P3 App/Features 尚未构造 AudioPlayer；课程/条目选择、AUTOPLAY、500 ms/NEXT 与 Listen session generation 属于 P4.3。P4.2 独立复核 PASS 前不得生成或实施 P4.3。
+
 ## 2026-07-16 · P4.1 reviewed, P4.2 AudioPlayer task ready
 
 - P4.1 独立复核 PASS 后新增 [`../tasks/2026-07-16-p4-2-audio-player.md`](../tasks/2026-07-16-p4-2-audio-player.md)；本提交只锁定 CP-10 任务卡，不实现播放器。

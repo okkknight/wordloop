@@ -1,4 +1,5 @@
 import XCTest
+import WordLoopAudio
 import WordLoopContent
 @testable import WordLoop
 
@@ -27,5 +28,28 @@ final class AppIntegrationTests: XCTestCase {
         let audioURL = try XCTUnwrap(course.entries.first?.audioURL)
         XCTAssertTrue(audioURL.isFileURL)
         XCTAssertTrue(FileManager.default.fileExists(atPath: audioURL.path))
+    }
+
+    func testLiveAudioPlayerPreparesAndReleasesBundledCurrentAndNext() async throws {
+        let source = try BundledCourseSource.live()
+        let catalog = try source.loadCatalog()
+        let descriptor = try XCTUnwrap(catalog.courses.first { $0.id == catalog.defaultCourseID })
+        let entries = try source.loadCourse(descriptor: descriptor).entries
+        let currentURL = try XCTUnwrap(entries.first?.audioURL)
+        let nextURL = try XCTUnwrap(entries.dropFirst().first?.audioURL)
+        let player = try AudioPlayer.live()
+
+        try await player.prepare(current: currentURL, next: nextURL)
+        let prepared = await player.snapshot()
+        XCTAssertEqual(prepared.phase, .prepared)
+        XCTAssertEqual(prepared.currentURL, currentURL)
+        XCTAssertEqual(prepared.nextURL, nextURL)
+
+        await player.stop()
+        let stopped = await player.snapshot()
+        XCTAssertEqual(stopped.phase, .stopped)
+        XCTAssertNil(stopped.currentURL)
+        XCTAssertNil(stopped.nextURL)
+        XCTAssertNil(stopped.requestID)
     }
 }

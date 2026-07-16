@@ -27,7 +27,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，47 项测试通过（既有 44 项 + P4.1 Bundle Repository/resource chain 3 项）。
+- `npm test`：构建通过，50 项测试通过（P4.1 后 47 项 + P4.2 AudioPlayer 边界 3 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P4.2 iPhone 本地 AudioPlayer。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1 均已独立复核 PASS。P4.2 任务卡已根据 `CourseEntry.audioURL`、Web current/next 行为、现有空 Audio 骨架与 Apple Audio Session 语义锁定；下一步只实现播放器 primitive，不接 P3 UI、不提前实现 P4.3 AUTOPLAY/LISTEN 编排。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1 均已独立复核 PASS。P4.2 本地 AudioPlayer primitive 已开发完成待独立复核；未接 P3 UI/Repository，未实现 P4.3 AUTOPLAY/LISTEN 编排，P4.2 PASS 前 P4.3 仍阻塞。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -70,6 +70,10 @@ P4.1 已在 Core 新增强类型课程/条目/集合 ID、课程 catalog/descrip
 开发侧已通过 Core 9/9、Content 12/12（30 门、1,406 entries/M4A、32,700,838 bytes 与全 SHA）、App integration 2/2、原有 UI 25/25、Web 47/47、baseline 和统一 iPhone 构建；主 App 根资源实查只有一套 Content bundle、1,406 个 M4A、无审计 report。P3 UI/fixture 未接 Repository，未实现播放器、网络、下载、进度或桌面产品。
 
 独立 reviewer 从删除全部生成物、SwiftPM cache 与 DerivedData 的冷状态复验以上矩阵，并额外注入 Package 第二目标切换失败，确认第一目标旧树 digest 不变且无 stage/previous 残留；Release 仍为 iOS 17、Swift 6、iPhone device family 1、Catalyst/Designed for Mac 关闭。P4.1 结论为 PASS。
+
+P4.2 已在 `WordLoopAudio` 实现 actor `AudioPlayer`：只接受本地普通文件，保留 current/next 双槽，以每次 play 的 request token 隔离迟到 callback，并对 pause/resume/replay/stop、interruption、耳机拔出、background 和 media reset 做 fail-closed 处理。中断结束或回前台不自动恢复，不启用后台音频。
+
+开发侧已通过 Audio 21/21 确定性单测、真实 Bundle M4A 的 App integration 3/3、原有 UI 25/25、Web 50/50、baseline 与统一 iPhone 构建；lint 精确保持既有 4 errors、0 warnings。P3 App/Features 仍未构造 AudioPlayer，未实现课程选择、500 ms/NEXT、AUTOPLAY、进度、网络、录音或桌面产品。
 
 ## 架构与数据流
 
@@ -162,6 +166,7 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `ios/Packages/*` | 八个本地 Swift Package 与单向依赖边界 |
 | `ios/Packages/WordLoopCore/Sources/WordLoopCore/Course*.swift` | 正式课程强类型 ID、枚举、catalog、descriptor、course 与 entry 领域模型 |
 | `ios/Packages/WordLoopContent/Sources/WordLoopContent` | 严格 Bundle source、wire 校验、typed error 与 actor CourseRepository |
+| `ios/Packages/WordLoopAudio/Sources/WordLoopAudio` | iPhone 本地 AVAudioPlayer adapter、actor 状态机、current/next 双槽、request token 与系统事件隔离 |
 | `scripts/verify_ios.sh` | 从空缓存重建课程资源、测试 Packages 并编译 Simulator |
 | `tests/ios-project-structure.test.mjs` | iOS 17/Swift 6/iPhone-only、模块图和工程卫生静态检查 |
 | `ios/Packages/WordLoopDesignSystem` | 原生 palette、tokens、字体、基础组件、动效与触觉边界 |
@@ -180,6 +185,7 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `docs/ios-migration/p3/completion-repeat/*` | 两类完成对话框与 speaking/passed/retry 辅助字号真实 iPhone 证据 |
 | `tests/ios-completion-repeat.test.mjs` | 对话框/11 个 REPEAT fixture、模态优先级与禁止业务副作用静态检查 |
 | `tests/ios-bundled-content-repository.test.mjs` | Package resource mirror、唯一 App 资源所有权与 P3/P4.1 隔离检查 |
+| `tests/ios-audio-player.test.mjs` | Audio public/seam/system 边界、P3/P4.3 隔离与 iPhone-only 静态检查 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行
@@ -238,7 +244,7 @@ git diff --check
 - 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
 - 已复核课程合同：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 已复核原生骨架：`docs/tasks/2026-07-15-p2-native-project-skeleton.md`
-- 当前任务卡：`docs/tasks/2026-07-16-p4-1-bundled-content-repository.md`
+- 当前任务卡：`docs/tasks/2026-07-16-p4-2-audio-player.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`

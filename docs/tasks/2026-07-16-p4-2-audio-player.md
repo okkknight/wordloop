@@ -1,6 +1,6 @@
 # P4.2 iPhone 本地音频播放器与系统中断隔离
 
-状态：任务卡已锁定，待开发
+状态：开发完成，待独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -205,7 +205,7 @@ git diff --check
 git status --short --ignored
 ```
 
-退出验收还必须确认：Audio fake 状态矩阵无 wall-clock/flaky test；Xcode integration 能用真实 Bundle M4A prepare/stop；App UI 25/25 原样；Web test 预期增至 48；lint 仍精确为既有 4 errors、0 warnings；Release build settings 为 iOS 17/Swift 6/device family 1/Catalyst 与 Designed for Mac 关闭；App 无 audio background mode；生成内容仍 ignored/untracked。
+退出验收还必须确认：Audio fake 状态矩阵无 wall-clock/flaky test；Xcode integration 能用真实 Bundle M4A prepare/stop；App UI 25/25 原样；Web test 预期增至 50；lint 仍精确为既有 4 errors、0 warnings；Release build settings 为 iOS 17/Swift 6/device family 1/Catalyst 与 Designed for Mac 关闭；App 无 audio background mode；生成内容仍 ignored/untracked。
 
 ## 退出与交接
 
