@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P3.5 reviewed, P3.6 task ready
+
+- P3.5 独立复核 PASS 后新增 [`../tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md`](../tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md)；本提交只锁定 CP-08 任务卡，不实现对话框或新增 REPEAT 状态。
+- P3.6 固定两类 `COURSE COMPLETE` 对话框、重置失败文案、不可点遮罩、取消/选择课程/restart intent，以及 `idle/connecting/ready/playing/speak/speaking/scoring/passed/paused/retry/error` 11 个纯展示态。
+- completion dialog 优先于两个抽屉；restart intent 不重置任何数据。REPEAT 只展示 waveform/check/transcript，不播放音频、不请求麦克风、不接 Realtime/评分/timer；继续只面向 iPhone。
+- P3.6 PASS 前不得生成或实施 P4.1。
+
 ## 2026-07-16 · P3.5 progress drawer independently reviewed PASS
 
 - 独立 reviewer 确认右侧 344/86vw 抽屉、summary/track/stats、sentence/word/mixed/complete/query/empty fixture、0...3 与完成语义、header/backdrop/主导右滑关闭、列表独立滚动、modal 背景隔离与关闭后恢复均符合任务卡。

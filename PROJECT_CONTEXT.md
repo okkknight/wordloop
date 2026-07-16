@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，P3.5 iPhone 进度抽屉静态 Shell 已关闭，下一检查点为生成 P3.6 任务卡。
+任务：执行 iOS 迁移 Plan，当前检查点为 P3.6 iPhone 完成对话框与 REPEAT 静态状态。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4、P3.5 均已独立复核 PASS。下一步只生成 P3.6 对话框与 REPEAT 静态态任务卡，在任务卡独立提交与确认前不实施。
+执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4、P3.5 均已独立复核 PASS。P3.6 任务卡已根据当前 ConfirmDialog、Waveform、StudyShell 和三个模态容器的真实 API 锁定；下一步只实施 CP-08，不提前进入 P4。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -222,7 +222,7 @@ git diff --check
 - 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
 - 已复核课程合同：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 已复核原生骨架：`docs/tasks/2026-07-15-p2-native-project-skeleton.md`
-- 当前任务卡：`docs/tasks/2026-07-15-p3-5-progress-drawer.md`
+- 当前任务卡：`docs/tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`
