@@ -1,6 +1,6 @@
 # P4.2 iPhone 本地音频播放器与系统中断隔离
 
-状态：开发完成，待独立复核
+状态：独立复核 PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -211,4 +211,4 @@ git status --short --ignored
 
 退出标准：iPhone live player 能 prepare 已验证的本地 current+next；双槽、token、状态、单次 settle、pause/resume/replay/stop、迟到 callback、interruption、耳机拔出、background、media reset 都由确定性 tests 证明；不自动恢复、不自动前进、不接 UI/业务/网络/录音/桌面产品。
 
-开发完成后把状态改为“开发完成，待独立复核”，刷新 `PROJECT_CONTEXT.md` 与 `docs/handoff/CHANGELOG.md`，提交 CP-10 实现并交给未参与实现的 reviewer 冷验证。只有 P4.2 独立复核 PASS 后，才根据真实 AudioPlayer API 与 P4.1 Repository API 生成 P4.3 StudyStore/LISTEN 任务卡。
+独立 reviewer 已对提交 `f6c2f51` 从删除全部生成物、SwiftPM cache 与 DerivedData 的冷状态复核：Audio 21/21、真实 Bundle M4A App integration 3/3、UI 25/25、Web 50/50、baseline 和 iPhone build 全部通过，lint 精确保持既有 4 errors、0 warnings。双槽/token/late callback/系统事件、无后台音频与 iPhone-only 边界均独立确认，结论为 PASS。下一步可根据已验证的 AudioPlayer 与 Repository API 生成 P4.3 StudyStore/LISTEN 任务卡。

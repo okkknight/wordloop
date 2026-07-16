@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.2 native audio player independently reviewed PASS
+
+- 独立 reviewer 从提交 `f6c2f51` 删除全部生成物、统一/Package SwiftPM cache 和 DerivedData 后冷重建，确认 Audio 21/21、真实 Bundle M4A App integration 3/3、原有 UI 25/25、Web 50/50、baseline 和 iPhone build 全部通过；lint 精确保持既有 4 errors、0 warnings。
+- 独立代码审计确认本地普通文件限制、current/next 双槽复用、每次 play token、finish/decode 保留结算 token 但先失效 active token、engine+token 双匹配、exactly-once 与迟到 callback 隔离。
+- interruption、耳机拔出、background 不自动恢复，media reset fail closed；P3 未接 Audio，无 P4.3 编排、网络、录音、后台音频、Remote Command、iPad/macOS/Catalyst/Designed for Mac 产品。
+- P4.2 结论为 PASS。下一步可基于已验证的 Repository、AudioPlayer 和 P3 Shell 生成 P4.3 StudyStore/LISTEN 任务卡。
+
 ## 2026-07-16 · P4.2 native audio player developed, pending review
 
 - `WordLoopAudio` 已实现只播放已验证本地 file URL 的 actor `AudioPlayer`：current/next 双槽、每次 play request token、typed snapshot/event/error 与迟到 callback 隔离。

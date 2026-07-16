@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；当前检查点为 P4.2 iPhone 本地 AudioPlayer。
+任务：执行 iOS 迁移 Plan；P4.2 iPhone 本地 AudioPlayer 已 PASS，下一检查点为 P4.3 StudyStore/LISTEN。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1 均已独立复核 PASS。P4.2 本地 AudioPlayer primitive 已开发完成待独立复核；未接 P3 UI/Repository，未实现 P4.3 AUTOPLAY/LISTEN 编排，P4.2 PASS 前 P4.3 仍阻塞。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。下一步基于已验证的 Repository、AudioPlayer 和 P3 Shell 生成 P4.3 任务卡；尚未实现 AUTOPLAY/LISTEN 业务编排。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -74,6 +74,8 @@ P4.1 已在 Core 新增强类型课程/条目/集合 ID、课程 catalog/descrip
 P4.2 已在 `WordLoopAudio` 实现 actor `AudioPlayer`：只接受本地普通文件，保留 current/next 双槽，以每次 play 的 request token 隔离迟到 callback，并对 pause/resume/replay/stop、interruption、耳机拔出、background 和 media reset 做 fail-closed 处理。中断结束或回前台不自动恢复，不启用后台音频。
 
 开发侧已通过 Audio 21/21 确定性单测、真实 Bundle M4A 的 App integration 3/3、原有 UI 25/25、Web 50/50、baseline 与统一 iPhone 构建；lint 精确保持既有 4 errors、0 warnings。P3 App/Features 仍未构造 AudioPlayer，未实现课程选择、500 ms/NEXT、AUTOPLAY、进度、网络、录音或桌面产品。
+
+独立 reviewer 对提交 `f6c2f51` 冷复核后确认上述矩阵，并复验 finish/decode 结算 token、engine+token 双校验、exactly-once、双槽复用、无自动恢复、多订阅清理、App 内 1,406 个 M4A/32,700,838 bytes 以及 iOS 17/Swift 6/iPhone family 1/Catalyst 和 Designed for Mac 关闭，P4.2 结论为 PASS。
 
 ## 架构与数据流
 
