@@ -1,6 +1,6 @@
 # P4.3 iPhone StudyStore 与离线 LISTEN 主链路
 
-状态：开发完成，待独立复核
+状态：第二轮独立复核 FAIL，待继续修复
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -197,3 +197,14 @@ git status --short --ignored
 - 第一轮独立复核虽确认全部既有门禁通过，但发现 async intent 换代过晚、nil request failure、并发/失败测试不足和选课失败重试无效，结论为 FAIL。修复将 generation 提前到首次 await 之前，并在异步恢复时绑定 course/entry；Audio media reset 保留 request token，StudyStore 拒绝无 token 失败，retry 记录实际请求课程。
 - 修复后新增 8 条可控 suspension/barrier 测试，覆盖旧 NEXT、旧太简单、并发 NEXT×3、A→B→C 旧 load、nil failure、preload failure、load/prepare/play retry 与 waiting 中手动 NEXT/切 REPEAT。开发侧冷门禁通过 Audio 21/21、Progress 7/7、Features 93/93、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone build/test 与 diff check；lint 精确保持既有 4 errors、0 warnings。
 - P4.4/P5/P6/P7 与 iPad、macOS、Catalyst、Designed for Mac 均未实施。当前待修复提交和第二轮独立 reviewer 冷复核，PASS 前不生成 P4.4。
+
+## 第二轮复核交接（2026-07-16）
+
+当前 P4.3 实现修复提交为 `0bbc0ca`；本交接文档另行提交后，工作区应保持干净。第二轮 reviewer 已确认冷 `verify_ios.sh`、Audio 21/21、Progress 7/7、Features 93/93（StudyStore 18/18）、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline 全部通过，lint 精确保持既有 4 errors/0 warnings，但源码审查仍判定 FAIL：
+
+1. `StudyStore.selectMode` 在 `await audio.stop()` 后未校验 generation/mode 就写 `shellStore.state.mode`，旧 mode intent 可覆盖新 mode UI。
+2. `setApplicationActive(false)` 在 `await audio.pause()` 后未校验 generation/session 就清 token/写 phase，旧后台 intent 可覆盖新会话。
+3. `start/selectCourse` 的 loading 可被后台或切模式 bump generation 后静默失效，留下 `hasStarted == true` 或永久 `.loading` 且无 retry 入口。新实现必须明确 loading 期间允许/拒绝哪些 intent，并保证 lifecycle 不会留下悬空 loading。
+4. `AudioPlayer.play()` 已生成 request token 后若 engine start 失败，当前分支先失效 token 再发布无 token `.failed`；必须像 decode/media reset 一样保留本次 token。
+
+下一线程应先补三组确定性测试再修代码：suspended stop + 两个相反 mode intent；suspended pause + 更新会话；start/select loading + background/mode。另补 play-start failure 的 request token 断言。修复后重新跑完整任务卡门禁并开启新的独立 reviewer；P4.3 PASS 前仍不得生成 P4.4。

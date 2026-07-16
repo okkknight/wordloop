@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.3 second review failed after implementation commit 0bbc0ca
+
+- 第二轮 reviewer 冷验收确认 `scripts/verify_ios.sh`、Audio 21/21、Progress 7/7、Features 93/93、App integration 5/5、UI 26/26、Web 53/53、baseline 全部通过，lint 精确保持既有 4 errors/0 warnings；但源码审查结论仍为 FAIL。
+- 阻断为：旧 `selectMode` 可在 suspended stop 后覆盖新 mode UI；旧 background intent 可在 suspended pause 后覆盖新会话；start/select loading 可被 lifecycle/mode generation 静默取消并永久悬空；engine start failure 已生成 token 却发布无 token terminal failure。
+- 用户要求转交其他线程，当前不继续修复。接手者先读 P4.3 任务卡末尾的第二轮复核交接，补三组 suspension 测试和 play-start token 断言，再修复、跑全门禁并启动新的独立 reviewer。P4.3 PASS 前不得生成 P4.4。
+
 ## 2026-07-16 · P4.3 first review failed, race fixes developed
 
 - 第一轮 reviewer 在全部既有门禁通过时仍判定 FAIL：旧 NEXT/太简单可能因 actor reentrancy 覆盖新切课，nil request failure 可污染新会话，任务卡并发/失败矩阵缺测，选课 load failure 的重试按钮实际无效。

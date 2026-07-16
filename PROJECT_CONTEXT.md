@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P4.3 StudyStore 与离线 LISTEN 主链路。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。P4.3 已完成开发并通过开发侧完整门禁，当前等待独立 reviewer 冷复核；PASS 前不生成 P4.4，也不越界到完成重练、持久化同步、REPEAT 或课程下载。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。P4.3 当前为“验收不通过”：HEAD `0bbc0ca` 已修复第一轮竞态，但第二轮源码审查又确认 4 个 P1 阻断；PASS 前不生成 P4.4，也不越界到完成重练、持久化同步、REPEAT 或课程下载。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -81,7 +81,9 @@ P4.3 已新增真实 `StudyStore`、typed Course/Audio/Progress clients、确定
 
 第一轮独立 reviewer 确认 Progress 7/7、Features 85/85、AppIntegration 5/5、App UI 26/26、Web 53/53 等既有门禁全绿，但从 Swift actor reentrancy 控制流发现旧 NEXT/太简单可在 await 后覆盖新切课、nil request failure 可污染新会话、并发/失败矩阵缺测及选课失败重试无效，结论为 FAIL。
 
-修复已把 intent generation 前移至首次 await 前，并对异步恢复绑定 generation/course/entry；Audio media reset 保留原 request token，StudyStore 拒绝无 token 失败，retry 记录实际请求课程。新增 8 条可控 suspension/barrier 测试后，开发侧冷门禁通过 Audio 21/21、Progress 7/7、Features 93/93、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline 和统一 iPhone build/test；lint 精确保持既有 4 errors、0 warnings。第二轮独立复核仍待完成。P3 fixture 路由优先级与公共入口保留，未实现 P4.4/P5/P6/P7 或任何桌面/iPad 产品。
+修复已把 NEXT/太简单 generation 前移至首次 await 前，并对异步恢复绑定 generation/course/entry；Audio media reset 保留原 request token，StudyStore 拒绝无 token terminal event，retry 记录实际请求课程。新增 8 条可控 suspension/barrier 测试后，第二轮 reviewer 冷验收确认 Audio 21/21、Progress 7/7、Features 93/93、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline 和统一 iPhone build/test 全部通过；lint 精确保持既有 4 errors、0 warnings。
+
+第二轮仍判定 FAIL：`selectMode` 在 suspended stop 后可由旧 intent 覆盖新视觉 mode；`setApplicationActive(false)` 在 suspended pause 后可由旧 lifecycle intent 覆盖新会话；start/select loading 可因 generation 被后台/切模式取消而永久悬空；Audio engine start failure 在 token 已生成后发布无 token failure。现有 18 条 StudyStore tests 未覆盖前三组 suspension。新线程必须先补可复现测试并修复这些边界，再跑完整门禁和第三轮独立复核。P3 fixture 路由优先级与公共入口保留，未实现 P4.4/P5/P6/P7 或任何桌面/iPad 产品。
 
 ## 架构与数据流
 
