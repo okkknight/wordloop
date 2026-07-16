@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P3.6 independently reviewed PASS
+
+- 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的冷状态确认 `scripts/verify_ios.sh`，并复验 DesignSystem 13/13、Features 65/65、App integration 1/1、UI 25/25、Web 44/44、baseline、diff/ignore hygiene；lint 精确保持既有 4 errors、0 warnings。
+- 两类 dialog、固定错误、不可点遮罩、completion > course > progress、选择课程唯一打开 CourseDrawer、restart intent 不改状态、11 个 REPEAT 展示态、retry transcript、accessibility 3 与 Reduce Motion 全部通过；无课程解析、音频、麦克风、Realtime、网络、持久化或 timer 越界。
+- 六 palette 独立实算最低为 secondary 5.068:1、boundary 3.097:1、primary/error 8.764:1、success 3.162:1、failure 3.112:1；五张真实 iPhone 截图 hash、尺寸和逐张视觉均通过。
+- reviewer 首次把提交内干净截图与临时损坏帧判反；按两个精确 SHA 原始分辨率复验后撤销误报，确认提交内 `17725e…8ac` 完整无黑条，最终结论为 PASS。下一步只基于当前真实静态 Shell/API 生成 P4.1 任务卡。
+
 ## 2026-07-16 · P3.6 completion dialog and REPEAT states developed, pending review
 
 - 新增两类 `COURSE COMPLETE` 原生对话框、固定错误、不可点击关闭的 material backdrop 和 completion > course > progress 的模态优先级；选择课程打开既有 CourseDrawer，重新开始/再练一次只记录 intent，不改变 S01E01、75/91、1/3 或任何进度。

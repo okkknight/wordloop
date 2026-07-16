@@ -1,6 +1,6 @@
 # P3.6 iPhone 完成对话框与 REPEAT 静态状态
 
-状态：开发完成，待独立复核
+状态：独立复核 PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 

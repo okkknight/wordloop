@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan，当前检查点为 P3.6 iPhone 完成对话框与 REPEAT 静态状态。
+任务：执行 iOS 迁移 Plan；P3 原生 iPhone 静态 Shell 已完成，下一检查点为 P4.1 课程领域模型与 Repository 任务卡。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4、P3.5 均已独立复核 PASS。P3.6 已完成两类完成对话框、固定错误、模态优先级与 11 个 REPEAT 纯展示态，当前待独立 reviewer 冷验证；PASS 前不进入 P4。
+执行状态：P0.1、P1、P2、P3.1–P3.6 均已独立复核 PASS。P3.6 已完成两类完成对话框、固定错误、模态优先级与 11 个 REPEAT 纯展示态；下一步只能先根据当前真实静态 Shell/API 生成 P4.1 课程领域模型与 Repository 任务卡。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -63,7 +63,7 @@ P3.5 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的�
 
 P3.6 已新增独立 CompletionDialog kind/state/action/store/view，接入不可点关闭的原生 modal backdrop，并把 StudyShell 的 REPEAT 卡扩展为 11 个确定性展示态。选择课程只打开既有 CourseDrawer，重练只记录 intent；没有真实 reset、进度变化、音频、麦克风、评分、Realtime、网络或 timer。DesignSystem 的 dialog 小字/边界/次按钮与成功失败视觉使用六 palette 实际合成达标角色。
 
-开发侧已确认 `scripts/verify_ios.sh`、DesignSystem 13/13、Features 65/65、App integration 1/1、UI 25/25、Web 44/44、iOS baseline、五张真实 iPhone 截图与 diff hygiene 通过；lint 精确保持既有 4 errors、0 warnings。P3.6 当前待独立复核。
+独立 reviewer 从删除生成物、统一/Package SwiftPM cache 和 DerivedData 的冷状态确认 `scripts/verify_ios.sh`，并复验 DesignSystem 13/13、Features 65/65、App integration 1/1、UI 25/25、Web 44/44、iOS baseline、五张真实 iPhone 截图、六 palette 实际合成、禁止业务越界和 iPhone-only 设置全部通过；lint 精确保持既有 4 errors、0 warnings，P3.6 结论为 PASS。
 
 ## 架构与数据流
 
@@ -229,7 +229,7 @@ git diff --check
 - 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
 - 已复核课程合同：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 已复核原生骨架：`docs/tasks/2026-07-15-p2-native-project-skeleton.md`
-- 当前任务卡：`docs/tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md`
+- 最新已通过任务卡：`docs/tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`
