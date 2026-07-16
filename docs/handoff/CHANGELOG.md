@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.3 first review failed, race fixes developed
+
+- 第一轮 reviewer 在全部既有门禁通过时仍判定 FAIL：旧 NEXT/太简单可能因 actor reentrancy 覆盖新切课，nil request failure 可污染新会话，任务卡并发/失败矩阵缺测，选课 load failure 的重试按钮实际无效。
+- 修复将 generation 提前到用户 intent 的首次 await 之前，所有异步恢复绑定 generation/course/entry；Audio media reset 保留 request token，StudyStore 拒绝无 token 的迟到失败；retry 记录并重新加载实际请求课程。
+- 新增可控 progress/course/audio suspension 与 counted barrier，确定性覆盖旧 NEXT、旧太简单、并发 NEXT×3、A→B→C 旧 load、nil/preload failure、load/prepare/play retry、waiting 中手动 NEXT/切 REPEAT。冷门禁通过 Audio 21/21、Progress 7/7、Features 93/93、App integration 5/5、UI 26/26、Web 53/53、baseline 与统一 iPhone build/test；待修复提交和第二轮独立冷复核。
+
 ## 2026-07-16 · P4.3 StudyStore/LISTEN developed, pending review
 
 - 新增真实 `StudyStore`、typed clients、selection/projection、Listen session generation、controlled 500 ms clock、临时内存进度 actor 与 live iPhone route；启动提交进入真实默认课程，P3 fixture 路由和公共入口保持可达。

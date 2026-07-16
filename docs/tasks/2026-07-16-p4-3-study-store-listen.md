@@ -194,5 +194,6 @@ git status --short --ignored
 - 已新增真实 `StudyStore`、typed clients、selection/projection、Listen session generation、controlled 500 ms clock、live route 与临时内存进度 actor；P3 展示 Store/fixture 公共入口保持不变。
 - 默认启动仍为 Startup，合法匿名/命名提交进入真实学习页；默认 REPEAT 不播放/计次，切入 LISTEN 后用内置课程 file URL 准备 current+next、计次并播放。重播不计次，NEXT/太简单/切课与文字可见性已接线。
 - audio finish/fail、AUTOPLAY waiting、快速切课/切模式、旧 token/旧 timer、后台暂停均由 generation + request token 守卫；回前台不自动播放。
-- 开发侧验证通过：Progress 7/7、Features 85/85、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone 构建与 `git diff --check`。lint 精确保持迁移前 Web 4 errors、0 warnings。
-- P4.4/P5/P6/P7 与 iPad、macOS、Catalyst、Designed for Mac 均未实施。当前只待独立 reviewer 从提交 SHA 冷复核，PASS 前不生成 P4.4。
+- 第一轮独立复核虽确认全部既有门禁通过，但发现 async intent 换代过晚、nil request failure、并发/失败测试不足和选课失败重试无效，结论为 FAIL。修复将 generation 提前到首次 await 之前，并在异步恢复时绑定 course/entry；Audio media reset 保留 request token，StudyStore 拒绝无 token 失败，retry 记录实际请求课程。
+- 修复后新增 8 条可控 suspension/barrier 测试，覆盖旧 NEXT、旧太简单、并发 NEXT×3、A→B→C 旧 load、nil failure、preload failure、load/prepare/play retry 与 waiting 中手动 NEXT/切 REPEAT。开发侧冷门禁通过 Audio 21/21、Progress 7/7、Features 93/93、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone build/test 与 diff check；lint 精确保持既有 4 errors、0 warnings。
+- P4.4/P5/P6/P7 与 iPad、macOS、Catalyst、Designed for Mac 均未实施。当前待修复提交和第二轮独立 reviewer 冷复核，PASS 前不生成 P4.4。

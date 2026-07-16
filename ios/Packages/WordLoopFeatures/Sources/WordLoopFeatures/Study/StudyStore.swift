@@ -28,6 +28,7 @@ public final class StudyStore {
     private nonisolated let eventTask = StudyTaskSlot()
     private nonisolated let waitingTask = StudyTaskSlot()
     private var hasStarted = false
+    private var failedCourseID: CourseID?
 
     init(
         courses: StudyCourseClient,
@@ -47,6 +48,7 @@ public final class StudyStore {
     public func start() async {
         guard !hasStarted else { return }
         hasStarted = true
+        failedCourseID = nil
         let generation = beginNewSession()
         state.phase = .loading
         await audio.stop()
@@ -55,6 +57,7 @@ public final class StudyStore {
             let catalog = try await courses.catalog()
             guard isCurrent(generation) else { return }
             self.catalog = catalog
+            failedCourseID = catalog.defaultCourseID
             try await loadCourse(id: catalog.defaultCourseID, generation: generation)
         } catch {
             guard isCurrent(generation) else { return }
@@ -79,6 +82,7 @@ public final class StudyStore {
     public func selectCourse(_ rawCourseID: String) async {
         guard let courseID = CourseID(rawValue: rawCourseID), catalog != nil else { return }
         let generation = beginNewSession()
+        failedCourseID = courseID
         state.phase = .loading
         await audio.stop()
         do {
@@ -87,6 +91,16 @@ public final class StudyStore {
             guard isCurrent(generation) else { return }
             state.phase = .failed
             state.listenPhase = .failed
+        }
+    }
+
+    public func retry() async {
+        guard state.phase == .failed else { return }
+        if let failedCourseID {
+            await selectCourse(failedCourseID.rawValue)
+        } else {
+            hasStarted = false
+            await start()
         }
     }
 
@@ -109,7 +123,11 @@ public final class StudyStore {
         } else {
             state.listenPhase = .idle
             state.activePlaybackRequestID = nil
-            await refreshProjection(course: course, currentEntryID: currentEntryID)
+            await refreshProjection(
+                course: course,
+                currentEntryID: currentEntryID,
+                generation: generation
+            )
         }
     }
 
@@ -119,32 +137,14 @@ public final class StudyStore {
 
     public func next() async {
         guard mode == .listen, let course, let activeEntryID = currentEntryID else { return }
-        let counts = await progress.snapshot(course.id, mode)
-        guard let selected = StudySelection.entry(
-            in: course.entries,
-            order: course.descriptor.practiceOrder,
-            studyCounts: counts,
-            excluding: activeEntryID,
-            randomIndex: random.index(max(1, course.entries.count))
-        ) else {
-            state.courseExhausted = true
-            return
-        }
-
         let generation = beginNewSession()
         await audio.stop()
-        self.currentEntryID = selected.id
-        chooseNextPalette()
-        if mode == .listen {
-            await playRound(
-                course: course,
-                entryID: selected.id,
-                generation: generation,
-                recordsProgress: true
-            )
-        } else {
-            await refreshProjection(course: course, currentEntryID: selected.id)
-        }
+        guard sessionMatches(generation, courseID: course.id, entryID: activeEntryID) else { return }
+        await advance(
+            from: activeEntryID,
+            in: course,
+            generation: generation
+        )
     }
 
     public func toggleAutoplay() async {
@@ -162,9 +162,16 @@ public final class StudyStore {
 
     public func markTooEasy() async {
         guard mode == .listen, let course, let currentEntryID else { return }
+        let generation = beginNewSession()
+        await audio.stop()
+        guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
         _ = await progress.master(course.id, mode, currentEntryID)
-        await refreshProjection(course: course, currentEntryID: currentEntryID)
-        await next()
+        guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
+        await advance(
+            from: currentEntryID,
+            in: course,
+            generation: generation
+        )
     }
 
     public func setApplicationActive(_ isActive: Bool) async {
@@ -190,16 +197,37 @@ public final class StudyStore {
             randomIndex: random.index(max(1, loaded.entries.count))
         ) else {
             course = loaded
-            currentEntryID = loaded.entries.first?.id
+            collection = catalog.collections.first(where: { $0.id == loaded.descriptor.collectionID })
+            let fallbackEntryID = loaded.entries.first?.id
+            currentEntryID = fallbackEntryID
+            failedCourseID = nil
             state.selectedCourseID = id
+            state.currentEntryID = fallbackEntryID
+            state.nextEntryID = nil
             state.courseExhausted = true
             state.phase = .ready
+            courseDrawerStore.state = StudyProjection.courseDrawerState(
+                catalog: catalog,
+                selectedCourseID: id
+            )
+            if let fallbackEntryID {
+                await refreshProjection(
+                    course: loaded,
+                    currentEntryID: fallbackEntryID,
+                    generation: generation
+                )
+                guard isCurrent(generation),
+                      self.course?.id == loaded.id,
+                      currentEntryID == fallbackEntryID else { return }
+            }
+            state.listenPhase = .idle
             return
         }
 
         course = loaded
         collection = catalog.collections.first(where: { $0.id == loaded.descriptor.collectionID })
         currentEntryID = first.id
+        failedCourseID = nil
         state.selectedCourseID = id
         state.currentEntryID = first.id
         state.courseExhausted = false
@@ -208,7 +236,14 @@ public final class StudyStore {
             catalog: catalog,
             selectedCourseID: id
         )
-        await refreshProjection(course: loaded, currentEntryID: first.id)
+        await refreshProjection(
+            course: loaded,
+            currentEntryID: first.id,
+            generation: generation
+        )
+        guard isCurrent(generation),
+              self.course?.id == loaded.id,
+              currentEntryID == first.id else { return }
 
         if mode == .listen {
             await playRound(
@@ -228,19 +263,23 @@ public final class StudyStore {
         generation: ListenSessionGeneration,
         recordsProgress: Bool
     ) async {
-        guard isCurrent(generation),
+        guard sessionMatches(generation, courseID: course.id, entryID: entryID),
               let entry = course.entries.first(where: { $0.id == entryID }) else { return }
 
         if recordsProgress {
             _ = await progress.record(course.id, .listen, entryID)
-            guard isCurrent(generation) else { return }
+            guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
         }
         currentEntryID = entryID
-        await refreshProjection(course: course, currentEntryID: entryID)
-        guard isCurrent(generation) else { return }
+        await refreshProjection(
+            course: course,
+            currentEntryID: entryID,
+            generation: generation
+        )
+        guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
 
         let counts = await progress.snapshot(course.id, .listen)
-        guard isCurrent(generation) else { return }
+        guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
         let next = StudySelection.entry(
             in: course.entries,
             order: course.descriptor.practiceOrder,
@@ -258,20 +297,29 @@ public final class StudyStore {
 
         do {
             try await audio.prepare(entry.audioURL, next?.audioURL)
-            guard isCurrent(generation) else { return }
+            guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
             let requestID = try await audio.play()
-            guard isCurrent(generation) else { return }
+            guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
             state.activePlaybackRequestID = requestID
             state.listenPhase = .playing
         } catch {
-            guard isCurrent(generation) else { return }
+            guard sessionMatches(generation, courseID: course.id, entryID: entryID) else { return }
             failCurrentListenSession()
         }
     }
 
-    private func refreshProjection(course: Course, currentEntryID: EntryID) async {
+    private func refreshProjection(
+        course: Course,
+        currentEntryID: EntryID,
+        generation: ListenSessionGeneration
+    ) async {
         guard let collection else { return }
-        let counts = await progress.snapshot(course.id, mode)
+        let projectionMode = mode
+        let counts = await progress.snapshot(course.id, projectionMode)
+        guard isCurrent(generation),
+              mode == projectionMode,
+              self.course?.id == course.id,
+              self.currentEntryID == currentEntryID else { return }
         let oldVisibility = shellStore.state.visibility
         let oldDrawerPresented = courseDrawerStore.state.isPresented
         let oldDrawerQuery = courseDrawerStore.state.query
@@ -283,7 +331,7 @@ public final class StudyStore {
             collection: collection,
             currentEntryID: currentEntryID,
             palette: shellStore.state.palette,
-            mode: mode,
+            mode: projectionMode,
             visibility: oldVisibility,
             masteryCount: counts[currentEntryID, default: 0],
             isAutoplayEnabled: state.isAutoplayEnabled
@@ -329,18 +377,22 @@ public final class StudyStore {
         case let .stateChanged(snapshot):
             switch snapshot.phase {
             case .finished:
-                guard snapshot.requestID == state.activePlaybackRequestID else { return }
+                guard let requestID = snapshot.requestID,
+                      requestID == state.activePlaybackRequestID else { return }
                 state.activePlaybackRequestID = nil
                 guard state.isAutoplayEnabled else {
                     state.listenPhase = .idle
                     return
                 }
-                scheduleAutoplayWait(settledRequestID: snapshot.requestID)
+                scheduleAutoplayWait(settledRequestID: requestID)
             case .failed:
-                guard snapshot.requestID == nil || snapshot.requestID == state.activePlaybackRequestID else { return }
+                guard let requestID = snapshot.requestID,
+                      requestID == state.activePlaybackRequestID else { return }
                 failCurrentListenSession()
             case .paused:
-                guard snapshot.currentURL == currentAudioURL else { return }
+                guard let requestID = snapshot.requestID,
+                      requestID == state.activePlaybackRequestID,
+                      snapshot.currentURL == currentAudioURL else { return }
                 cancelWaitingAndAdvanceGeneration()
                 state.activePlaybackRequestID = nil
                 state.listenPhase = .paused
@@ -350,7 +402,7 @@ public final class StudyStore {
         }
     }
 
-    private func scheduleAutoplayWait(settledRequestID: PlaybackRequestID?) {
+    private func scheduleAutoplayWait(settledRequestID: PlaybackRequestID) {
         waitingTask.cancel()
         let binding = SessionBinding(
             generation: state.listenGeneration,
@@ -398,6 +450,46 @@ public final class StudyStore {
 
     private func isCurrent(_ generation: ListenSessionGeneration) -> Bool {
         state.listenGeneration == generation
+    }
+
+    private func sessionMatches(
+        _ generation: ListenSessionGeneration,
+        courseID: CourseID,
+        entryID: EntryID
+    ) -> Bool {
+        isCurrent(generation)
+            && mode == .listen
+            && course?.id == courseID
+            && currentEntryID == entryID
+    }
+
+    private func advance(
+        from activeEntryID: EntryID,
+        in course: Course,
+        generation: ListenSessionGeneration
+    ) async {
+        guard sessionMatches(generation, courseID: course.id, entryID: activeEntryID) else { return }
+        let counts = await progress.snapshot(course.id, .listen)
+        guard sessionMatches(generation, courseID: course.id, entryID: activeEntryID) else { return }
+        guard let selected = StudySelection.entry(
+            in: course.entries,
+            order: course.descriptor.practiceOrder,
+            studyCounts: counts,
+            excluding: activeEntryID,
+            randomIndex: random.index(max(1, course.entries.count))
+        ) else {
+            state.courseExhausted = true
+            return
+        }
+
+        currentEntryID = selected.id
+        chooseNextPalette()
+        await playRound(
+            course: course,
+            entryID: selected.id,
+            generation: generation,
+            recordsProgress: true
+        )
     }
 
     private func chooseNextPalette() {

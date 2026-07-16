@@ -39,7 +39,11 @@ test("live study is split into state selection projection clients session and vi
   assert.match(store, /ListenSessionGeneration/);
   assert.match(store, /PlaybackRequestID/);
   assert.match(store, /\.milliseconds\(500\)/);
+  assert.match(store, /public func retry\(\) async/);
+  assert.match(store, /sessionMatches\(/);
+  assert.doesNotMatch(store, /requestID == nil \|\|/);
   assert.match(view, /MainStudyView\(/);
+  assert.match(view, /store\.retry\(\)/);
   assert.doesNotMatch(view, /CourseRepository|AudioPlayer|TemporaryProgressRepository|Task\.sleep/);
 });
 

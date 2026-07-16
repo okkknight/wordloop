@@ -38,7 +38,7 @@ public struct LiveStudyView: View {
                     .accessibilityLabel("正在加载课程")
                     .accessibilityIdentifier("live-study.loading")
             } else if store.state.phase == .failed {
-                Button("重试") { Task { await store.start() } }
+                Button("重试") { Task { await store.retry() } }
                     .accessibilityIdentifier("live-study.retry")
             }
         }

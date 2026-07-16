@@ -260,9 +260,10 @@ public actor AudioPlayer {
     private func pause(reason: AudioPauseReason) {
         guard currentSnapshot.phase == .playing else { return }
         currentSlot?.engine.pause()
+        let requestID = activeRequestID
         invalidateActiveRequest()
         session.deactivate()
-        transition(to: .paused, pauseReason: reason)
+        transition(to: .paused, requestID: requestID, pauseReason: reason)
     }
 
     private func settleFinish(engineID: UUID, requestID: PlaybackRequestID) {
@@ -288,10 +289,11 @@ public actor AudioPlayer {
         case .lifecycleBackground:
             pause(reason: .background)
         case .mediaServicesReset:
+            let requestID = activeRequestID
             invalidateActiveRequest()
             clearSlots()
             session.deactivate()
-            transition(to: .failed, error: .mediaServicesReset)
+            transition(to: .failed, requestID: requestID, error: .mediaServicesReset)
         case .interruptionEnded, .otherRouteChange, .lifecycleInactive, .lifecycleActive:
             break
         }

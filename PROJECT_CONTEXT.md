@@ -79,7 +79,9 @@ P4.2 已在 `WordLoopAudio` 实现 actor `AudioPlayer`：只接受本地普通�
 
 P4.3 已新增真实 `StudyStore`、typed Course/Audio/Progress clients、确定性 selection/projection、Listen session generation、controlled 500 ms clock、临时内存进度 actor 和 live iPhone route。启动页提交后进入内置默认课；REPEAT 保持静态且无业务副作用，切入 LISTEN 后准备 current+next、播放并计次，支持重播、NEXT、太简单、AUTOPLAY、切课、文字可见性和当前会话进度抽屉。音频失败关闭 AUTOPLAY，旧 token/timer/course transition 静默，后台取消自动前进且回前台不自动播放。
 
-开发侧已通过 Progress 7/7、Features 85/85、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone 验证与完整 iPhone Simulator test；lint 精确保持既有 4 errors、0 warnings。P3 fixture 路由优先级与公共入口保留，未实现 P4.4/P5/P6/P7 或任何桌面/iPad 产品。当前状态为待独立复核。
+第一轮独立 reviewer 确认 Progress 7/7、Features 85/85、AppIntegration 5/5、App UI 26/26、Web 53/53 等既有门禁全绿，但从 Swift actor reentrancy 控制流发现旧 NEXT/太简单可在 await 后覆盖新切课、nil request failure 可污染新会话、并发/失败矩阵缺测及选课失败重试无效，结论为 FAIL。
+
+修复已把 intent generation 前移至首次 await 前，并对异步恢复绑定 generation/course/entry；Audio media reset 保留原 request token，StudyStore 拒绝无 token 失败，retry 记录实际请求课程。新增 8 条可控 suspension/barrier 测试后，开发侧冷门禁通过 Audio 21/21、Progress 7/7、Features 93/93、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline 和统一 iPhone build/test；lint 精确保持既有 4 errors、0 warnings。第二轮独立复核仍待完成。P3 fixture 路由优先级与公共入口保留，未实现 P4.4/P5/P6/P7 或任何桌面/iPad 产品。
 
 ## 架构与数据流
 

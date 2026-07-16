@@ -198,6 +198,184 @@ final class StudyStoreTests: XCTestCase {
         XCTAssertEqual(harness.store.state.listenPhase, .playing)
     }
 
+    func testOldNextSuspendedOnProgressCannotOverrideNewerCourseSelection() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        await harness.progress.suspendNextSnapshot()
+
+        let oldNext = Task { @MainActor in await harness.store.next() }
+        await harness.progress.waitUntilSnapshotIsSuspended()
+        await harness.store.selectCourse(harness.secondary.id.rawValue)
+        let selectedToken = try! XCTUnwrap(harness.store.state.activePlaybackRequestID)
+        await harness.progress.releaseSuspendedSnapshot()
+        await oldNext.value
+
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.secondary.id)
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.secondary.entries[0].id)
+        XCTAssertEqual(harness.store.state.activePlaybackRequestID, selectedToken)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+    }
+
+    func testOldTooEasySuspendedOnMasterCannotAdvanceNewerCourse() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        await harness.progress.suspendNextMaster()
+
+        let oldTooEasy = Task { @MainActor in await harness.store.markTooEasy() }
+        await harness.progress.waitUntilMasterIsSuspended()
+        await harness.store.selectCourse(harness.secondary.id.rawValue)
+        let selectedToken = try! XCTUnwrap(harness.store.state.activePlaybackRequestID)
+        await harness.progress.releaseSuspendedMaster()
+        await oldTooEasy.value
+
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.secondary.id)
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.secondary.entries[0].id)
+        XCTAssertEqual(harness.store.state.activePlaybackRequestID, selectedToken)
+        assertEqual(
+            await harness.progress.counts(courseID: harness.secondary.id, mode: .listen),
+            [harness.secondary.entries[0].id: 1]
+        )
+    }
+
+    func testConcurrentNextIntentsCollapseToOneNewLearningRound() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        await harness.audio.suspendNextStops(count: 3)
+
+        let tasks = (0..<3).map { _ in
+            Task { @MainActor in await harness.store.next() }
+        }
+        await harness.audio.waitUntilStopsAreSuspended()
+        await harness.audio.releaseSuspendedStops()
+        for task in tasks { await task.value }
+
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.primary.entries[1].id)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+        assertEqual(await harness.audio.playCallCount(), 2)
+        assertEqual(
+            await harness.progress.counts(courseID: harness.primary.id, mode: .listen),
+            [harness.primary.entries[0].id: 1, harness.primary.entries[1].id: 1]
+        )
+    }
+
+    func testOldCourseLoadCannotOverrideNewerABCSelection() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        await harness.courses.suspendNextLoad(of: harness.secondary.id)
+
+        let oldSelection = Task { @MainActor in
+            await harness.store.selectCourse(harness.secondary.id.rawValue)
+        }
+        await harness.courses.waitUntilLoadIsSuspended()
+        await harness.store.selectCourse(harness.tertiary.id.rawValue)
+        let tertiaryToken = try! XCTUnwrap(harness.store.state.activePlaybackRequestID)
+        await harness.courses.releaseSuspendedLoad()
+        await oldSelection.value
+
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.tertiary.id)
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.tertiary.entries[0].id)
+        XCTAssertEqual(harness.store.state.activePlaybackRequestID, tertiaryToken)
+    }
+
+    func testNilRequestTerminalEventsAndPreloadFailureCannotPoisonCurrentPlayback() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        let token = try! XCTUnwrap(harness.store.state.activePlaybackRequestID)
+
+        for phase in [AudioPlaybackPhase.finished, .paused, .failed] {
+            harness.audio.emit(.stateChanged(snapshot(
+                phase: phase,
+                currentURL: harness.primary.entries[0].audioURL,
+                requestID: nil,
+                error: phase == .failed ? .mediaServicesReset : nil
+            )))
+        }
+        harness.audio.emit(.preloadFailed(harness.primary.entries[1].audioURL, .couldNotPrepare))
+        for _ in 0..<30 { await Task.yield() }
+
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+        XCTAssertEqual(harness.store.state.activePlaybackRequestID, token)
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.primary.entries[0].id)
+    }
+
+    func testCourseLoadFailureCanRetryTheRequestedCourse() async {
+        let harness = makeHarness()
+        await enterListen(harness)
+        await harness.courses.failNextLoad(of: harness.secondary.id)
+
+        await harness.store.selectCourse(harness.secondary.id.rawValue)
+        XCTAssertEqual(harness.store.state.phase, .failed)
+        XCTAssertEqual(harness.store.state.listenPhase, .failed)
+
+        await harness.store.retry()
+
+        XCTAssertEqual(harness.store.state.phase, .ready)
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.secondary.id)
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.secondary.entries[0].id)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+    }
+
+    func testPrepareAndPlayFailuresRemainRetryableWithoutExtraReplayProgress() async {
+        let prepareHarness = makeHarness()
+        await prepareHarness.store.start()
+        await prepareHarness.audio.failNextPrepare()
+        await prepareHarness.store.selectMode(.listen)
+        XCTAssertEqual(prepareHarness.store.state.listenPhase, .failed)
+        await prepareHarness.store.playCurrent()
+        XCTAssertEqual(prepareHarness.store.state.listenPhase, .playing)
+        assertEqual(
+            await prepareHarness.progress.counts(courseID: prepareHarness.primary.id, mode: .listen),
+            [prepareHarness.primary.entries[0].id: 1]
+        )
+
+        let playHarness = makeHarness()
+        await playHarness.store.start()
+        await playHarness.audio.failNextPlay()
+        await playHarness.store.selectMode(.listen)
+        XCTAssertEqual(playHarness.store.state.listenPhase, .failed)
+        await playHarness.store.playCurrent()
+        XCTAssertEqual(playHarness.store.state.listenPhase, .playing)
+        assertEqual(
+            await playHarness.progress.counts(courseID: playHarness.primary.id, mode: .listen),
+            [playHarness.primary.entries[0].id: 1]
+        )
+    }
+
+    func testManualNextAndRepeatDuringWaitingCancelOldClockWake() async {
+        let nextHarness = makeHarness()
+        await enterListen(nextHarness)
+        await nextHarness.store.toggleAutoplay()
+        let nextToken = try! XCTUnwrap(nextHarness.store.state.activePlaybackRequestID)
+        nextHarness.audio.emit(.stateChanged(snapshot(
+            phase: .finished,
+            currentURL: nextHarness.primary.entries[0].audioURL,
+            requestID: nextToken
+        )))
+        await eventually { nextHarness.store.state.listenPhase == .waiting }
+        await nextHarness.store.next()
+        XCTAssertEqual(nextHarness.store.state.currentEntryID, nextHarness.primary.entries[1].id)
+        await nextHarness.clock.advanceAll()
+        for _ in 0..<20 { await Task.yield() }
+        XCTAssertEqual(nextHarness.store.state.currentEntryID, nextHarness.primary.entries[1].id)
+
+        let repeatHarness = makeHarness()
+        await enterListen(repeatHarness)
+        await repeatHarness.store.toggleAutoplay()
+        let repeatToken = try! XCTUnwrap(repeatHarness.store.state.activePlaybackRequestID)
+        repeatHarness.audio.emit(.stateChanged(snapshot(
+            phase: .finished,
+            currentURL: repeatHarness.primary.entries[0].audioURL,
+            requestID: repeatToken
+        )))
+        await eventually { repeatHarness.store.state.listenPhase == .waiting }
+        await repeatHarness.store.selectMode(.repeat)
+        await repeatHarness.clock.advanceAll()
+        for _ in 0..<20 { await Task.yield() }
+        XCTAssertEqual(repeatHarness.store.shellStore.state.mode, .repeat)
+        XCTAssertEqual(repeatHarness.store.state.currentEntryID, repeatHarness.primary.entries[0].id)
+        XCTAssertEqual(repeatHarness.store.state.listenPhase, .idle)
+    }
+
     func testBackgroundDuringPlayingOrWaitingCancelsSessionAndNeverAutoResumes() async {
         let playingHarness = makeHarness()
         await enterListen(playingHarness)
@@ -277,6 +455,7 @@ final class StudyStoreTests: XCTestCase {
     private func makeHarness(primaryEntryCount: Int = 3) -> StudyHarness {
         let primary = makeCourse(id: "course-one", entryCount: primaryEntryCount)
         let secondary = makeCourse(id: "course-two", entryCount: 3)
+        let tertiary = makeCourse(id: "course-three", entryCount: 3)
         let collection = CourseCollectionDescriptor(
             id: CourseCollectionID(rawValue: "collection-one")!,
             label: "COLLECTION",
@@ -288,20 +467,14 @@ final class StudyStoreTests: XCTestCase {
             generatedAt: "fixture",
             defaultCourseID: primary.id,
             collections: [collection],
-            courses: [primary.descriptor, secondary.descriptor]
+            courses: [primary.descriptor, secondary.descriptor, tertiary.descriptor]
         )
         let audio = TestAudio()
         let progress = TestProgress()
         let clock = TestClock()
-        let coursesByID = [primary.id: primary, secondary.id: secondary]
+        let courses = TestCourses(catalog: catalog, courses: [primary, secondary, tertiary])
         let store = StudyStore(
-            courses: StudyCourseClient(
-                catalog: { catalog },
-                course: { id in
-                    guard let course = coursesByID[id] else { throw TestError.missingCourse }
-                    return course
-                }
-            ),
+            courses: courses.client,
             audio: audio.client,
             progress: progress.client,
             clock: clock.client,
@@ -311,6 +484,8 @@ final class StudyStoreTests: XCTestCase {
             store: store,
             primary: primary,
             secondary: secondary,
+            tertiary: tertiary,
+            courses: courses,
             audio: audio,
             progress: progress,
             clock: clock
@@ -392,6 +567,8 @@ private struct StudyHarness {
     let store: StudyStore
     let primary: Course
     let secondary: Course
+    let tertiary: Course
+    let courses: TestCourses
     let audio: TestAudio
     let progress: TestProgress
     let clock: TestClock
@@ -399,6 +576,62 @@ private struct StudyHarness {
 
 private enum TestError: Error {
     case missingCourse
+    case forcedFailure
+}
+
+private actor TestCourses {
+    private let catalogValue: CourseCatalog
+    private let coursesByID: [CourseID: Course]
+    private let loadSuspension = OneShotSuspension()
+    private var suspendedCourseID: CourseID?
+    private var failingCourseIDs: Set<CourseID> = []
+
+    init(catalog: CourseCatalog, courses: [Course]) {
+        catalogValue = catalog
+        coursesByID = Dictionary(uniqueKeysWithValues: courses.map { ($0.id, $0) })
+    }
+
+    nonisolated var client: StudyCourseClient {
+        StudyCourseClient(
+            catalog: { [weak self] in
+                guard let self else { throw TestError.missingCourse }
+                return self.catalogValue
+            },
+            course: { [weak self] id in
+                guard let self else { throw TestError.missingCourse }
+                return try await self.load(id)
+            }
+        )
+    }
+
+    func suspendNextLoad(of courseID: CourseID) async {
+        suspendedCourseID = courseID
+        await loadSuspension.arm()
+    }
+
+    func waitUntilLoadIsSuspended() async {
+        await loadSuspension.waitUntilSuspended()
+    }
+
+    func releaseSuspendedLoad() async {
+        await loadSuspension.release()
+    }
+
+    func failNextLoad(of courseID: CourseID) {
+        failingCourseIDs.insert(courseID)
+    }
+
+    private func load(_ id: CourseID) async throws -> Course {
+        if suspendedCourseID == id {
+            suspendedCourseID = nil
+            await loadSuspension.suspendIfArmed()
+        }
+        if failingCourseIDs.remove(id) != nil {
+            throw TestError.forcedFailure
+        }
+        guard let course = coursesByID[id] else { throw TestError.missingCourse }
+        return course
+    }
 }
 
 private struct PrepareCall: Equatable, Sendable {
@@ -419,8 +652,8 @@ private final class TestAudio: @unchecked Sendable {
 
     var client: StudyAudioClient {
         StudyAudioClient(
-            prepare: { [recorder] current, next in await recorder.prepare(current, next) },
-            play: { [recorder] in await recorder.play() },
+            prepare: { [recorder] current, next in try await recorder.prepare(current, next) },
+            play: { [recorder] in try await recorder.play() },
             pause: { [recorder] in await recorder.pause() },
             stop: { [recorder] in await recorder.stop() },
             snapshot: { [recorder] in await recorder.snapshot() },
@@ -436,6 +669,11 @@ private final class TestAudio: @unchecked Sendable {
     func playCallCount() async -> Int { await recorder.playCallCount }
     func pauseCallCount() async -> Int { await recorder.pauseCallCount }
     func stopCallCount() async -> Int { await recorder.stopCallCount }
+    func failNextPrepare() async { await recorder.failNextPrepare() }
+    func failNextPlay() async { await recorder.failNextPlay() }
+    func suspendNextStops(count: Int) async { await recorder.suspendNextStops(count: count) }
+    func waitUntilStopsAreSuspended() async { await recorder.waitUntilStopsAreSuspended() }
+    func releaseSuspendedStops() async { await recorder.releaseSuspendedStops() }
 }
 
 private actor TestAudioRecorder {
@@ -443,6 +681,9 @@ private actor TestAudioRecorder {
     private(set) var playCallCount = 0
     private(set) var pauseCallCount = 0
     private(set) var stopCallCount = 0
+    private let stopBarrier = CountedSuspension()
+    private var shouldFailNextPrepare = false
+    private var shouldFailNextPlay = false
     private var latestSnapshot = AudioPlaybackSnapshot(
         phase: .idle,
         currentURL: nil,
@@ -452,7 +693,11 @@ private actor TestAudioRecorder {
         error: nil
     )
 
-    func prepare(_ current: URL, _ next: URL?) {
+    func prepare(_ current: URL, _ next: URL?) throws {
+        if shouldFailNextPrepare {
+            shouldFailNextPrepare = false
+            throw AudioPlayerError.couldNotPrepare
+        }
         prepareCalls.append(.init(current: current, next: next))
         latestSnapshot = AudioPlaybackSnapshot(
             phase: .prepared,
@@ -464,7 +709,11 @@ private actor TestAudioRecorder {
         )
     }
 
-    func play() -> PlaybackRequestID {
+    func play() throws -> PlaybackRequestID {
+        if shouldFailNextPlay {
+            shouldFailNextPlay = false
+            throw AudioPlayerError.playbackStartFailed
+        }
         playCallCount += 1
         let token = PlaybackRequestID(rawValue: UUID())
         latestSnapshot = AudioPlaybackSnapshot(
@@ -480,8 +729,9 @@ private actor TestAudioRecorder {
 
     func pause() { pauseCallCount += 1 }
 
-    func stop() {
+    func stop() async {
         stopCallCount += 1
+        await stopBarrier.suspendIfArmed()
         latestSnapshot = AudioPlaybackSnapshot(
             phase: .stopped,
             currentURL: nil,
@@ -493,6 +743,12 @@ private actor TestAudioRecorder {
     }
 
     func snapshot() -> AudioPlaybackSnapshot { latestSnapshot }
+
+    func failNextPrepare() { shouldFailNextPrepare = true }
+    func failNextPlay() { shouldFailNextPlay = true }
+    func suspendNextStops(count: Int) async { await stopBarrier.arm(expected: count) }
+    func waitUntilStopsAreSuspended() async { await stopBarrier.waitUntilSuspended() }
+    func releaseSuspendedStops() async { await stopBarrier.release() }
 }
 
 private actor TestProgress {
@@ -502,11 +758,13 @@ private actor TestProgress {
     }
 
     private var storage: [Key: [EntryID: Int]] = [:]
+    private let snapshotSuspension = OneShotSuspension()
+    private let masterSuspension = OneShotSuspension()
 
     nonisolated var client: StudyProgressClient {
         StudyProgressClient(
             snapshot: { [weak self] courseID, mode in
-                await self?.counts(courseID: courseID, mode: mode) ?? [:]
+                await self?.snapshot(courseID: courseID, mode: mode) ?? [:]
             },
             record: { [weak self] courseID, mode, entryID in
                 await self?.record(courseID: courseID, mode: mode, entryID: entryID) ?? 0
@@ -521,6 +779,18 @@ private actor TestProgress {
         storage[Key(courseID: courseID, mode: mode), default: [:]]
     }
 
+    func suspendNextSnapshot() async { await snapshotSuspension.arm() }
+    func waitUntilSnapshotIsSuspended() async { await snapshotSuspension.waitUntilSuspended() }
+    func releaseSuspendedSnapshot() async { await snapshotSuspension.release() }
+    func suspendNextMaster() async { await masterSuspension.arm() }
+    func waitUntilMasterIsSuspended() async { await masterSuspension.waitUntilSuspended() }
+    func releaseSuspendedMaster() async { await masterSuspension.release() }
+
+    private func snapshot(courseID: CourseID, mode: StudyMode) async -> [EntryID: Int] {
+        await snapshotSuspension.suspendIfArmed()
+        return storage[Key(courseID: courseID, mode: mode), default: [:]]
+    }
+
     private func record(courseID: CourseID, mode: StudyMode, entryID: EntryID) -> Int {
         let key = Key(courseID: courseID, mode: mode)
         let count = min(3, storage[key, default: [:]][entryID, default: 0] + 1)
@@ -528,10 +798,89 @@ private actor TestProgress {
         return count
     }
 
-    private func master(courseID: CourseID, mode: StudyMode, entryID: EntryID) -> Int {
+    private func master(courseID: CourseID, mode: StudyMode, entryID: EntryID) async -> Int {
+        await masterSuspension.suspendIfArmed()
         let key = Key(courseID: courseID, mode: mode)
         storage[key, default: [:]][entryID] = 3
         return 3
+    }
+}
+
+private actor OneShotSuspension {
+    private var isArmed = false
+    private var isSuspended = false
+    private var suspendedContinuation: CheckedContinuation<Void, Never>?
+    private var observerContinuations: [CheckedContinuation<Void, Never>] = []
+
+    func arm() {
+        isArmed = true
+        isSuspended = false
+    }
+
+    func suspendIfArmed() async {
+        guard isArmed else { return }
+        isArmed = false
+        isSuspended = true
+        let observers = observerContinuations
+        observerContinuations.removeAll()
+        observers.forEach { $0.resume() }
+        await withCheckedContinuation { continuation in
+            suspendedContinuation = continuation
+        }
+    }
+
+    func waitUntilSuspended() async {
+        if isSuspended { return }
+        await withCheckedContinuation { continuation in
+            observerContinuations.append(continuation)
+        }
+    }
+
+    func release() {
+        isSuspended = false
+        let continuation = suspendedContinuation
+        suspendedContinuation = nil
+        continuation?.resume()
+    }
+}
+
+private actor CountedSuspension {
+    private var expected = 0
+    private var arrivals = 0
+    private var suspendedContinuations: [CheckedContinuation<Void, Never>] = []
+    private var observerContinuations: [CheckedContinuation<Void, Never>] = []
+
+    func arm(expected: Int) {
+        self.expected = max(0, expected)
+        arrivals = 0
+    }
+
+    func suspendIfArmed() async {
+        guard expected > 0, arrivals < expected else { return }
+        arrivals += 1
+        if arrivals == expected {
+            let observers = observerContinuations
+            observerContinuations.removeAll()
+            observers.forEach { $0.resume() }
+        }
+        await withCheckedContinuation { continuation in
+            suspendedContinuations.append(continuation)
+        }
+    }
+
+    func waitUntilSuspended() async {
+        if expected > 0, arrivals == expected { return }
+        await withCheckedContinuation { continuation in
+            observerContinuations.append(continuation)
+        }
+    }
+
+    func release() {
+        expected = 0
+        arrivals = 0
+        let continuations = suspendedContinuations
+        suspendedContinuations.removeAll()
+        continuations.forEach { $0.resume() }
     }
 }
 

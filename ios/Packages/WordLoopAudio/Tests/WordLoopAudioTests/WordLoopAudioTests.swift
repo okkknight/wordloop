@@ -258,7 +258,7 @@ final class WordLoopAudioTests: XCTestCase {
         let paused = await harness.player.snapshot()
         XCTAssertEqual(paused.phase, .paused)
         XCTAssertEqual(paused.pauseReason, .user)
-        XCTAssertNil(paused.requestID)
+        XCTAssertEqual(paused.requestID, first)
         XCTAssertEqual(engine.currentTime, 2.75)
 
         let second = try await harness.player.play()
@@ -325,7 +325,7 @@ final class WordLoopAudioTests: XCTestCase {
         ] {
             let harness = try AudioHarness()
             try await harness.player.prepare(current: harness.files.a, next: harness.files.b)
-            _ = try await harness.player.play()
+            let token = try await harness.player.play()
             let engine = try XCTUnwrap(harness.factory.engine(for: harness.files.a))
             let lateFinish = engine.queuedFinish()
 
@@ -337,7 +337,7 @@ final class WordLoopAudioTests: XCTestCase {
             let snapshot = await harness.player.snapshot()
             XCTAssertEqual(snapshot.phase, .paused)
             XCTAssertEqual(snapshot.pauseReason, reason)
-            XCTAssertNil(snapshot.requestID)
+            XCTAssertEqual(snapshot.requestID, token)
             XCTAssertEqual(engine.playCount, 1)
         }
     }
@@ -360,13 +360,14 @@ final class WordLoopAudioTests: XCTestCase {
     func testMediaServicesResetFailsClosedAndRequiresPrepare() async throws {
         let harness = try AudioHarness()
         try await harness.player.prepare(current: harness.files.a, next: harness.files.b)
-        _ = try await harness.player.play()
+        let token = try await harness.player.play()
 
         await harness.systemEvents.send(.mediaServicesReset)
 
         let snapshot = await harness.player.snapshot()
         XCTAssertEqual(snapshot.phase, .failed)
         XCTAssertEqual(snapshot.error, .mediaServicesReset)
+        XCTAssertEqual(snapshot.requestID, token)
         XCTAssertNil(snapshot.currentURL)
         XCTAssertNil(snapshot.nextURL)
         await assertThrows(.invalidState) { _ = try await harness.player.play() }
