@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.3 StudyStore/LISTEN task ready
+
+- P4.2 独立复核 PASS 后新增 [`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)；本提交只锁定 CP-11 任务卡，不实施业务代码。
+- 保留 P3 presentation/fixture stores，新增按文件拆分的真实 `StudyStore`、consumer-owned clients、controlled clock/random 和临时内存 Progress adapter；不把 Repository/Audio/timer 塞回 View。
+- LISTEN 以 generation + request token 同时隔离音频事件和 500 ms wait；修正 Web stale timer、音频失败不关 autoplay、sequential 初始随机和最后一条死锁等历史缺口。
+- 默认 Startup 合法 START 后进入真实学习页，同时新增确定性 live test route；既有 gallery/P3 fixture 路由、UI 与截图保留。
+- P4.3 仅交付 iPhone 内置课 LISTEN。完成/重练属 P4.4，身份/持久化/同步属 P5，REPEAT 属 P6，课程下载属 P7；P4.3 PASS 前不生成 P4.4。
+
 ## 2026-07-16 · P4.2 native audio player independently reviewed PASS
 
 - 独立 reviewer 从提交 `f6c2f51` 删除全部生成物、统一/Package SwiftPM cache 和 DerivedData 后冷重建，确认 Audio 21/21、真实 Bundle M4A App integration 3/3、原有 UI 25/25、Web 50/50、baseline 和 iPhone build 全部通过；lint 精确保持既有 4 errors、0 warnings。

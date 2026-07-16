@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P4.2 已 PASS，下一步生成 P4.3 StudyStore/LISTEN 任务卡
+状态：执行中；P0–P4.2 已 PASS，P4.3 StudyStore/LISTEN 任务卡已锁定待开发
 
 制定日期：2026-07-15
 
@@ -275,7 +275,7 @@ App Target 只完成：
 
 ### P4.3 StudyStore 与 LISTEN
 
-状态：待根据已验证的 Repository、AudioPlayer 与现有 P3 Shell 生成任务卡。
+状态：任务卡已锁定，待开发；详见 [`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)。
 
 - 课程选择、条目选择、random/sequential、文字三态。
 - 手动前进、自动播放、500 ms 等待、错误重试。

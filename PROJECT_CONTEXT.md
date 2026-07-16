@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；P4.2 iPhone 本地 AudioPlayer 已 PASS，下一检查点为 P4.3 StudyStore/LISTEN。
+任务：执行 iOS 迁移 Plan；当前检查点为 P4.3 StudyStore 与离线 LISTEN 主链路。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。下一步基于已验证的 Repository、AudioPlayer 和 P3 Shell 生成 P4.3 任务卡；尚未实现 AUTOPLAY/LISTEN 业务编排。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。P4.3 任务卡已根据 Web LISTEN 真实行为、冻结验收矩阵、P3 Shell、Repository 和 AudioPlayer API 锁定；下一步只实现离线 LISTEN，不越界到完成重练、持久化同步、REPEAT 或课程下载。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -246,7 +246,7 @@ git diff --check
 - 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
 - 已复核课程合同：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 已复核原生骨架：`docs/tasks/2026-07-15-p2-native-project-skeleton.md`
-- 当前任务卡：`docs/tasks/2026-07-16-p4-2-audio-player.md`
+- 当前任务卡：`docs/tasks/2026-07-16-p4-3-study-store-listen.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`
