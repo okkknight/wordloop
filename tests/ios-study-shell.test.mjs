@@ -7,7 +7,7 @@ const root = process.cwd();
 const sourceRoot = join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/StudyShell");
 
 test("iOS study shell is an explicit fixture-only iPhone page", async () => {
-  const [mode, visibility, item, state, store, view, appRoot, packageManifest] = await Promise.all([
+  const [mode, visibility, item, state, store, view, appRoot, appRoute, packageManifest] = await Promise.all([
     readFile(join(sourceRoot, "StudyShellMode.swift"), "utf8"),
     readFile(join(sourceRoot, "StudyTextVisibility.swift"), "utf8"),
     readFile(join(sourceRoot, "StudyShellItem.swift"), "utf8"),
@@ -15,6 +15,7 @@ test("iOS study shell is an explicit fixture-only iPhone page", async () => {
     readFile(join(sourceRoot, "StudyShellStore.swift"), "utf8"),
     readFile(join(sourceRoot, "MainStudyView.swift"), "utf8"),
     readFile(join(root, "ios/App/RootView.swift"), "utf8"),
+    readFile(join(root, "ios/App/AppRoute.swift"), "utf8"),
     readFile(join(root, "ios/Packages/WordLoopFeatures/Package.swift"), "utf8"),
   ]);
 
@@ -44,9 +45,10 @@ test("iOS study shell is an explicit fixture-only iPhone page", async () => {
   assert.match(view, /minimumHit/);
   assert.equal((view.match(/\.font\(\.system\(size: 18, weight: \.semibold\)\)/g) ?? []).length, 2);
 
-  assert.match(appRoot, /-wordloop-study-shell/);
+  assert.match(appRoute, /-wordloop-study-shell/);
   assert.match(appRoot, /courseDrawerStore: courseDrawerStore,[\s\S]*progressDrawerStore: progressDrawerStore/);
-  assert.match(appRoot, /if showsDesignSystemGallery[\s\S]*else if showsStudyShell[\s\S]*else[\s\S]*StartupView/);
+  assert.match(appRoute, /designSystemGallery[\s\S]*fixtureStudy[\s\S]*liveStudy[\s\S]*startup/);
+  assert.match(appRoot, /route == \.designSystemGallery[\s\S]*route == \.fixtureStudy[\s\S]*route == \.liveStudy[\s\S]*StartupView/);
   assert.doesNotMatch(appRoot, /import (?:WordLoopDesignSystem|WordLoopContent|WordLoopAudio|WordLoopProgress|WordLoopRealtime|WordLoopNetworking)/);
 
   const forbiddenRuntime = /(?:URLSession|UserDefaults|Keychain|SwiftData|AVFoundation|WebRTC|WordLoopNetworking)/;

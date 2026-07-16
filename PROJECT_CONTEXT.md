@@ -27,7 +27,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，50 项测试通过（P4.1 后 47 项 + P4.2 AudioPlayer 边界 3 项）。
+- `npm test`：构建通过，53 项测试通过（含 P4.3 StudyStore/LISTEN 边界 3 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P4.3 StudyStore 与离线 LISTEN 主链路。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。P4.3 任务卡已根据 Web LISTEN 真实行为、冻结验收矩阵、P3 Shell、Repository 和 AudioPlayer API 锁定；下一步只实现离线 LISTEN，不越界到完成重练、持久化同步、REPEAT 或课程下载。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1、P4.2 均已独立复核 PASS。P4.3 已完成开发并通过开发侧完整门禁，当前等待独立 reviewer 冷复核；PASS 前不生成 P4.4，也不越界到完成重练、持久化同步、REPEAT 或课程下载。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -76,6 +76,10 @@ P4.2 已在 `WordLoopAudio` 实现 actor `AudioPlayer`：只接受本地普通�
 开发侧已通过 Audio 21/21 确定性单测、真实 Bundle M4A 的 App integration 3/3、原有 UI 25/25、Web 50/50、baseline 与统一 iPhone 构建；lint 精确保持既有 4 errors、0 warnings。P3 App/Features 仍未构造 AudioPlayer，未实现课程选择、500 ms/NEXT、AUTOPLAY、进度、网络、录音或桌面产品。
 
 独立 reviewer 对提交 `f6c2f51` 冷复核后确认上述矩阵，并复验 finish/decode 结算 token、engine+token 双校验、exactly-once、双槽复用、无自动恢复、多订阅清理、App 内 1,406 个 M4A/32,700,838 bytes 以及 iOS 17/Swift 6/iPhone family 1/Catalyst 和 Designed for Mac 关闭，P4.2 结论为 PASS。
+
+P4.3 已新增真实 `StudyStore`、typed Course/Audio/Progress clients、确定性 selection/projection、Listen session generation、controlled 500 ms clock、临时内存进度 actor 和 live iPhone route。启动页提交后进入内置默认课；REPEAT 保持静态且无业务副作用，切入 LISTEN 后准备 current+next、播放并计次，支持重播、NEXT、太简单、AUTOPLAY、切课、文字可见性和当前会话进度抽屉。音频失败关闭 AUTOPLAY，旧 token/timer/course transition 静默，后台取消自动前进且回前台不自动播放。
+
+开发侧已通过 Progress 7/7、Features 85/85、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone 验证与完整 iPhone Simulator test；lint 精确保持既有 4 errors、0 warnings。P3 fixture 路由优先级与公共入口保留，未实现 P4.4/P5/P6/P7 或任何桌面/iPad 产品。当前状态为待独立复核。
 
 ## 架构与数据流
 
@@ -187,7 +191,10 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `docs/ios-migration/p3/completion-repeat/*` | 两类完成对话框与 speaking/passed/retry 辅助字号真实 iPhone 证据 |
 | `tests/ios-completion-repeat.test.mjs` | 对话框/11 个 REPEAT fixture、模态优先级与禁止业务副作用静态检查 |
 | `tests/ios-bundled-content-repository.test.mjs` | Package resource mirror、唯一 App 资源所有权与 P3/P4.1 隔离检查 |
-| `tests/ios-audio-player.test.mjs` | Audio public/seam/system 边界、P3/P4.3 隔离与 iPhone-only 静态检查 |
+| `tests/ios-audio-player.test.mjs` | Audio public/seam/system 边界、live factory 所有权与 iPhone-only 静态检查 |
+| `ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/Study` | 真实 iPhone 学习状态、clients、选择投影、LISTEN session 与 live View |
+| `ios/Packages/WordLoopProgress/Sources/WordLoopProgress/TemporaryProgressRepository.swift` | P4.3 会话期临时进度 actor，P5 前不持久化 |
+| `tests/ios-study-store-listen.test.mjs` | live route、Study 文件职责、临时进度和 P4.4/P5/P6/P7 禁止越界检查 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行

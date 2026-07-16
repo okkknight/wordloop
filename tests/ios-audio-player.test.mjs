@@ -61,10 +61,11 @@ test("system audio events pause safely without owning LISTEN orchestration", asy
   assert.doesNotMatch(source, /https?:\/\//);
 });
 
-test("Audio remains an iPhone-only service and P3 does not initialize it", async () => {
-  const [manifest, features, app, info, shared] = await Promise.all([
+test("Audio remains an iPhone-only service and only the live feature factory initializes it", async () => {
+  const [manifest, features, p3StudyShell, app, info, shared] = await Promise.all([
     readFile(join(audioRoot, "Package.swift"), "utf8"),
     swiftSource(join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures")),
+    swiftSource(join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/StudyShell")),
     swiftSource(join(root, "ios/App")),
     readFile(join(root, "ios/App/Info.plist"), "utf8"),
     readFile(join(root, "ios/Config/Shared.xcconfig"), "utf8"),
@@ -72,7 +73,10 @@ test("Audio remains an iPhone-only service and P3 does not initialize it", async
 
   assert.match(manifest, /\.package\(path: "\.\.\/WordLoopCore"\)/);
   assert.doesNotMatch(manifest, /https?:\/\//);
-  assert.doesNotMatch(`${features}\n${app}`, /AudioPlayer\.live\(\)|AudioPlayer\s*\(/);
+  assert.match(features, /makeLiveStudyStore\(\)/);
+  assert.match(features, /AudioPlayer\.live\(\)/);
+  assert.doesNotMatch(p3StudyShell, /AudioPlayer\.live\(\)|AudioPlayer\s*\(/);
+  assert.doesNotMatch(app, /AudioPlayer\.live\(\)|AudioPlayer\s*\(/);
   assert.doesNotMatch(info, /UIBackgroundModes|audio/);
   assert.match(shared, /TARGETED_DEVICE_FAMILY = 1/);
   assert.match(shared, /SUPPORTS_MACCATALYST = NO/);

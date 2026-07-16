@@ -9,6 +9,8 @@ struct RootView: View {
     @State private var courseDrawerStore: CourseDrawerStore
     @State private var progressDrawerStore: ProgressDrawerStore
     @State private var completionDialogStore: CompletionDialogStore
+    @State private var liveStudyStore: StudyStore
+    @State private var route: AppRoute
 
     init(container: AppContainer) {
         self.container = container
@@ -35,32 +37,30 @@ struct RootView: View {
         }
         _progressDrawerStore = State(initialValue: ProgressDrawerStore(state: progressState))
         _completionDialogStore = State(initialValue: CompletionDialogStore(state: completionState))
+        _liveStudyStore = State(initialValue: container.liveStudyStore)
+        _route = State(initialValue: AppRouteResolver.resolve(arguments: ProcessInfo.processInfo.arguments))
     }
 
     var body: some View {
         Group {
-            if showsDesignSystemGallery {
+            if route == .designSystemGallery {
                 DesignSystemGalleryView()
-            } else if showsStudyShell {
+            } else if route == .fixtureStudy {
                 MainStudyView(
                     store: studyShellStore,
                     courseDrawerStore: courseDrawerStore,
                     progressDrawerStore: progressDrawerStore,
                     completionDialogStore: completionDialogStore
                 )
+            } else if route == .liveStudy {
+                LiveStudyView(store: liveStudyStore)
             } else {
-                StartupView(store: startupStore)
+                StartupView(store: startupStore) { _ in
+                    route = .liveStudy
+                }
             }
         }
             .environment(\.dynamicTypeSize, fixtureAccessibilityText ? .accessibility3 : dynamicTypeSize)
-    }
-
-    private var showsDesignSystemGallery: Bool {
-        ProcessInfo.processInfo.arguments.contains("-wordloop-design-system-gallery")
-    }
-
-    private var showsStudyShell: Bool {
-        ProcessInfo.processInfo.arguments.contains("-wordloop-study-shell")
     }
 
     private var fixtureAccessibilityText: Bool {

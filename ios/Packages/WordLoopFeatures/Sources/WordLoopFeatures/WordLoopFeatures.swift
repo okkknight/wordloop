@@ -14,6 +14,19 @@ public enum WordLoopFeaturesModule {
     public static func prepareDesignSystem() -> WordLoopFontRegistrationResult {
         WordLoopFontRegistry.registerBundledFonts()
     }
+
+    @MainActor
+    public static func makeLiveStudyStore() throws -> StudyStore {
+        let source = try BundledCourseSource.live()
+        let courseRepository = CourseRepository(source: source)
+        let audioPlayer = try AudioPlayer.live()
+        let progressRepository = TemporaryProgressRepository()
+        return StudyStore(
+            courses: .live(repository: courseRepository),
+            audio: .live(player: audioPlayer),
+            progress: .temporary(repository: progressRepository)
+        )
+    }
 }
 
 public struct DesignSystemGalleryView: View {

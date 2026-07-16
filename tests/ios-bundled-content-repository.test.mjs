@@ -125,19 +125,25 @@ test("Package copy declaration, ignore rules, tracking and App resource ownershi
   }
 });
 
-test("content module remains read-only and P3 App/Features do not initialize the repository", async () => {
-  const [coreFiles, contentFiles, appFiles, featureFiles] = await Promise.all([
+test("content module remains read-only and repository construction stays in the live feature factory", async () => {
+  const presentationRoots = ["Startup", "StudyShell", "CourseDrawer", "ProgressDrawer", "CompletionDialog"];
+  const [coreFiles, contentFiles, appFiles, featureFiles, ...presentationFileGroups] = await Promise.all([
     regularFiles(join(root, "ios/Packages/WordLoopCore/Sources/WordLoopCore")),
     regularFiles(join(root, "ios/Packages/WordLoopContent/Sources/WordLoopContent")),
     regularFiles(join(root, "ios/App")),
     regularFiles(join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures")),
+    ...presentationRoots.map((directory) => regularFiles(join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures", directory))),
   ]);
   const readSwift = async (base, paths) => (await Promise.all(paths.filter((path) => path.endsWith(".swift")).map((path) => readFile(join(base, path), "utf8")))).join("\n");
-  const [core, content, app, features] = await Promise.all([
+  const [core, content, app, features, ...presentationSources] = await Promise.all([
     readSwift(join(root, "ios/Packages/WordLoopCore/Sources/WordLoopCore"), coreFiles),
     readSwift(join(root, "ios/Packages/WordLoopContent/Sources/WordLoopContent"), contentFiles),
     readSwift(join(root, "ios/App"), appFiles),
     readSwift(join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures"), featureFiles),
+    ...presentationRoots.map((directory, index) => readSwift(
+      join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures", directory),
+      presentationFileGroups[index],
+    )),
   ]);
 
   assert.doesNotMatch(core, /import (?:SwiftUI|AVFoundation|WordLoop\w+)/);
@@ -145,5 +151,9 @@ test("content module remains read-only and P3 App/Features do not initialize the
     content,
     /(?:URLSession|AVFoundation|SwiftData|UserDefaults|Keychain|WebRTC|Realtime|Timer\s*[.(]|DispatchSourceTimer)/,
   );
-  assert.doesNotMatch(`${app}\n${features}`, /(?:BundledCourseSource|CourseRepository)\s*\(/);
+  assert.match(features, /makeLiveStudyStore\(\)/);
+  assert.match(features, /BundledCourseSource\.live\(\)/);
+  assert.match(features, /CourseRepository\(source: source\)/);
+  assert.doesNotMatch(app, /(?:BundledCourseSource|CourseRepository)\s*\(/);
+  assert.doesNotMatch(presentationSources.join("\n"), /(?:BundledCourseSource|CourseRepository)\s*\(/);
 });

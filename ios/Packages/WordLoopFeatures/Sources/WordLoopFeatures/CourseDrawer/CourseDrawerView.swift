@@ -4,11 +4,23 @@ import WordLoopDesignSystem
 public struct CourseDrawerView: View {
     @Bindable private var store: CourseDrawerStore
     private let palette: PosterPalette
+    private let onSelectCourse: (String) -> Void
     @FocusState private var searchIsFocused: Bool
 
     public init(store: CourseDrawerStore, palette: PosterPalette) {
         self.store = store
         self.palette = palette
+        onSelectCourse = { _ in }
+    }
+
+    init(
+        store: CourseDrawerStore,
+        palette: PosterPalette,
+        onSelectCourse: @escaping (String) -> Void
+    ) {
+        self.store = store
+        self.palette = palette
+        self.onSelectCourse = onSelectCourse
     }
 
     public var body: some View {
@@ -168,7 +180,10 @@ public struct CourseDrawerView: View {
                             ),
                             palette: palette,
                             accessibilityLabel: courseAccessibilityLabel(course),
-                            action: { store.selectCourse(course.id) }
+                            action: {
+                                store.selectCourse(course.id)
+                                onSelectCourse(course.id)
+                            }
                         )
                         .accessibilityIdentifier("course-drawer.course.\(course.id)")
                     }

@@ -7,13 +7,14 @@ const root = process.cwd();
 const startupRoot = join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/Startup");
 
 test("iOS startup shell keeps the frozen copy, fixture boundary, and App module boundary", async () => {
-  const [state, validator, store, visualRoles, view, appRoot, container] = await Promise.all([
+  const [state, validator, store, visualRoles, view, appRoot, appRoute, container] = await Promise.all([
     readFile(join(startupRoot, "StartupState.swift"), "utf8"),
     readFile(join(startupRoot, "StartupUsernameValidator.swift"), "utf8"),
     readFile(join(startupRoot, "StartupStore.swift"), "utf8"),
     readFile(join(startupRoot, "StartupVisualRoles.swift"), "utf8"),
     readFile(join(startupRoot, "StartupView.swift"), "utf8"),
     readFile(join(root, "ios/App/RootView.swift"), "utf8"),
+    readFile(join(root, "ios/App/AppRoute.swift"), "utf8"),
     readFile(join(root, "ios/App/AppContainer.swift"), "utf8"),
   ]);
 
@@ -45,10 +46,13 @@ test("iOS startup shell keeps the frozen copy, fixture boundary, and App module 
   assert.doesNotMatch(`${state}\n${validator}\n${store}\n${visualRoles}\n${view}`, forbiddenRuntime);
 
   assert.match(appRoot, /StartupView\(store: startupStore\)/);
-  assert.match(appRoot, /-wordloop-design-system-gallery/);
+  assert.match(appRoute, /-wordloop-design-system-gallery/);
+  assert.match(appRoute, /case liveStudy/);
+  assert.match(appRoute, /designSystemGallery[\s\S]*fixtureStudy[\s\S]*liveStudy[\s\S]*startup/);
   assert.match(appRoot, /DesignSystemGalleryView\(\)/);
   assert.match(appRoot, /-wordloop-startup-state/);
   assert.match(appRoot, /-wordloop-startup-invalid/);
+  assert.match(appRoot, /StartupView\(store: startupStore\) \{ _ in[\s\S]*route = \.liveStudy/);
   assert.match(appRoot, /import WordLoopFeatures/);
   assert.doesNotMatch(`${appRoot}\n${container}`, /import (?:WordLoopDesignSystem|WordLoopContent|WordLoopAudio|WordLoopProgress|WordLoopRealtime|WordLoopNetworking)/);
 });

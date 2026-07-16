@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.3 StudyStore/LISTEN developed, pending review
+
+- 新增真实 `StudyStore`、typed clients、selection/projection、Listen session generation、controlled 500 ms clock、临时内存进度 actor 与 live iPhone route；启动提交进入真实默认课程，P3 fixture 路由和公共入口保持可达。
+- LISTEN 已接内置 30 门课程、AudioPlayer current+next、重播、NEXT、太简单、AUTOPLAY、切课、文字可见性与当前会话进度；REPEAT 保持静态且不录音、不计次。旧 token/timer/切课回调静默，失败关闭 AUTOPLAY，后台不自动恢复。
+- 开发侧门禁通过：Progress 7/7、Features 85/85、App integration 5/5、UI 26/26、Web 53/53、baseline、统一 iPhone build/test 与 diff check；lint 精确保持既有 4 errors、0 warnings。
+- 当前待未参与实现的 reviewer 从提交 SHA 冷复核；P4.3 PASS 前不生成 P4.4，且没有 P4.4/P5/P6/P7、iPad、macOS、Catalyst 或 Designed for Mac 越界。
+
 ## 2026-07-16 · P4.3 StudyStore/LISTEN task ready
 
 - P4.2 独立复核 PASS 后新增 [`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)；本提交只锁定 CP-11 任务卡，不实施业务代码。

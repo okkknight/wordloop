@@ -23,7 +23,13 @@ let package = Package(
                 .product(name: "WordLoopNetworking", package: "WordLoopNetworking"),
             ]
         ),
-        .testTarget(name: "WordLoopProgressTests", dependencies: ["WordLoopProgress"]),
+        .testTarget(
+            name: "WordLoopProgressTests",
+            dependencies: [
+                "WordLoopProgress",
+                .product(name: "WordLoopCore", package: "WordLoopCore"),
+            ]
+        ),
     ],
     swiftLanguageModes: [.v6]
 )

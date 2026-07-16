@@ -1,13 +1,18 @@
 import Foundation
 import WordLoopFeatures
 
-struct AppContainer: Sendable {
+@MainActor
+struct AppContainer {
     let environment: AppEnvironment
+    let liveStudyStore: StudyStore
 
     static func live(bundle: Bundle = .main) -> AppContainer {
         _ = WordLoopFeaturesModule.prepareDesignSystem()
         do {
-            return AppContainer(environment: try AppEnvironment(bundle: bundle))
+            return AppContainer(
+                environment: try AppEnvironment(bundle: bundle),
+                liveStudyStore: try WordLoopFeaturesModule.makeLiveStudyStore()
+            )
         } catch {
             preconditionFailure("Invalid WordLoop application configuration: \(error)")
         }
@@ -18,6 +23,7 @@ struct AppContainer: Sendable {
             apiBaseURL: URL(string: "https://example.invalid/api")!,
             catalogURL: URL(string: "https://example.invalid/catalog.json")!,
             configurationName: "Preview"
-        )
+        ),
+        liveStudyStore: try! WordLoopFeaturesModule.makeLiveStudyStore()
     )
 }

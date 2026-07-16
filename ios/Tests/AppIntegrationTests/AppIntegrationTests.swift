@@ -1,9 +1,23 @@
 import XCTest
 import WordLoopAudio
 import WordLoopContent
+import WordLoopFeatures
 @testable import WordLoop
 
 final class AppIntegrationTests: XCTestCase {
+    func testAppRoutePriorityKeepsFixturesAheadOfLiveStudy() {
+        XCTAssertEqual(
+            AppRouteResolver.resolve(arguments: ["-wordloop-live-study", "-wordloop-study-shell", "-wordloop-design-system-gallery"]),
+            .designSystemGallery
+        )
+        XCTAssertEqual(
+            AppRouteResolver.resolve(arguments: ["-wordloop-live-study", "-wordloop-study-shell"]),
+            .fixtureStudy
+        )
+        XCTAssertEqual(AppRouteResolver.resolve(arguments: ["-wordloop-live-study"]), .liveStudy)
+        XCTAssertEqual(AppRouteResolver.resolve(arguments: []), .startup)
+    }
+
     func testEnvironmentReadsBuildSettingValues() throws {
         let environment = try AppEnvironment(infoDictionary: [
             "WordLoopAPIBaseURL": "https://example.com/api",
@@ -51,5 +65,34 @@ final class AppIntegrationTests: XCTestCase {
         XCTAssertNil(stopped.currentURL)
         XCTAssertNil(stopped.nextURL)
         XCTAssertNil(stopped.requestID)
+    }
+
+    @MainActor
+    func testLiveStudyStoreLoadsAllBundledCoursesAndStartsListenWithRealAudio() async throws {
+        let source = try BundledCourseSource.live()
+        let catalog = try source.loadCatalog()
+        let store = try WordLoopFeaturesModule.makeLiveStudyStore()
+
+        await store.start()
+        XCTAssertEqual(store.state.phase, .ready)
+        XCTAssertEqual(store.state.selectedCourseID, catalog.defaultCourseID)
+
+        for descriptor in catalog.courses where descriptor.availability == .available {
+            await store.selectCourse(descriptor.id.rawValue)
+            XCTAssertEqual(store.state.phase, .ready)
+            XCTAssertEqual(store.state.selectedCourseID, descriptor.id)
+            XCTAssertNotNil(store.state.currentEntryID)
+        }
+
+        await store.selectCourse(catalog.defaultCourseID.rawValue)
+        await store.selectMode(.listen)
+        XCTAssertEqual(store.state.listenPhase, .playing)
+        XCTAssertNotNil(store.state.activePlaybackRequestID)
+        XCTAssertNotNil(store.state.currentEntryID)
+        XCTAssertNotNil(store.state.nextEntryID)
+
+        await store.setApplicationActive(false)
+        XCTAssertEqual(store.state.listenPhase, .paused)
+        XCTAssertNil(store.state.activePlaybackRequestID)
     }
 }

@@ -1,6 +1,6 @@
 # P4.3 iPhone StudyStore 与离线 LISTEN 主链路
 
-状态：任务卡已锁定，待开发
+状态：开发完成，待独立复核
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -188,3 +188,11 @@ git status --short --ignored
 退出标准：真实离线 LISTEN 主链路已在原有 iPhone UI 上可达；正式课程、current/next、计次、重播、NEXT、画布点击、AUTOPLAY/500 ms、音频失败、系统暂停、切课/切模式和所有迟到事件均由确定性 tests 证明；无 P4.4/P5/P6/P7 或桌面产品越界。
 
 开发完成后把本卡状态改为“开发完成，待独立复核”，刷新 `PROJECT_CONTEXT.md`、Plan 和 `docs/handoff/CHANGELOG.md`，提交 CP-11 实现并交给未参与实现的 reviewer 冷验证。只有 P4.3 独立复核 PASS 后才生成 P4.4 完成/重练任务卡。
+
+## 开发结果（2026-07-16）
+
+- 已新增真实 `StudyStore`、typed clients、selection/projection、Listen session generation、controlled 500 ms clock、live route 与临时内存进度 actor；P3 展示 Store/fixture 公共入口保持不变。
+- 默认启动仍为 Startup，合法匿名/命名提交进入真实学习页；默认 REPEAT 不播放/计次，切入 LISTEN 后用内置课程 file URL 准备 current+next、计次并播放。重播不计次，NEXT/太简单/切课与文字可见性已接线。
+- audio finish/fail、AUTOPLAY waiting、快速切课/切模式、旧 token/旧 timer、后台暂停均由 generation + request token 守卫；回前台不自动播放。
+- 开发侧验证通过：Progress 7/7、Features 85/85、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iPhone 构建与 `git diff --check`。lint 精确保持迁移前 Web 4 errors、0 warnings。
+- P4.4/P5/P6/P7 与 iPad、macOS、Catalyst、Designed for Mac 均未实施。当前只待独立 reviewer 从提交 SHA 冷复核，PASS 前不生成 P4.4。

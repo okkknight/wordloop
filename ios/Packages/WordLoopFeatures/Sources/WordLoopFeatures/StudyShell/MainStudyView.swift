@@ -1,6 +1,31 @@
 import SwiftUI
 import WordLoopDesignSystem
 
+@MainActor
+struct StudyViewActions {
+    var play: @MainActor () -> Void
+    var selectMode: @MainActor (StudyShellMode) -> Void
+    var cycleVisibility: @MainActor () -> Void
+    var toggleAutoplay: @MainActor () -> Void
+    var toggleRepeatPause: @MainActor () -> Void
+    var next: @MainActor () -> Void
+    var markTooEasy: @MainActor () -> Void
+    var selectCourse: @MainActor (String) -> Void
+
+    static func fixture(store: StudyShellStore) -> Self {
+        Self(
+            play: {},
+            selectMode: store.selectMode,
+            cycleVisibility: store.cycleVisibility,
+            toggleAutoplay: store.toggleAutoplay,
+            toggleRepeatPause: store.togglePause,
+            next: store.next,
+            markTooEasy: store.markTooEasy,
+            selectCourse: { _ in }
+        )
+    }
+}
+
 public struct MainStudyView: View {
     @Bindable private var store: StudyShellStore
     @Bindable private var courseDrawerStore: CourseDrawerStore
@@ -9,12 +34,14 @@ public struct MainStudyView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var hasAppeared = false
+    private let actions: StudyViewActions
 
     public init(store: StudyShellStore) {
         self.store = store
         self.courseDrawerStore = CourseDrawerStore()
         self.progressDrawerStore = ProgressDrawerStore()
         self.completionDialogStore = CompletionDialogStore()
+        actions = .fixture(store: store)
     }
 
     public init(store: StudyShellStore, courseDrawerStore: CourseDrawerStore) {
@@ -22,6 +49,7 @@ public struct MainStudyView: View {
         self.courseDrawerStore = courseDrawerStore
         self.progressDrawerStore = ProgressDrawerStore()
         self.completionDialogStore = CompletionDialogStore()
+        actions = .fixture(store: store)
     }
 
     public init(
@@ -33,6 +61,7 @@ public struct MainStudyView: View {
         self.courseDrawerStore = courseDrawerStore
         self.progressDrawerStore = progressDrawerStore
         self.completionDialogStore = CompletionDialogStore()
+        actions = .fixture(store: store)
     }
 
     public init(
@@ -45,6 +74,21 @@ public struct MainStudyView: View {
         self.courseDrawerStore = courseDrawerStore
         self.progressDrawerStore = progressDrawerStore
         self.completionDialogStore = completionDialogStore
+        actions = .fixture(store: store)
+    }
+
+    init(
+        store: StudyShellStore,
+        courseDrawerStore: CourseDrawerStore,
+        progressDrawerStore: ProgressDrawerStore,
+        completionDialogStore: CompletionDialogStore,
+        actions: StudyViewActions
+    ) {
+        self.store = store
+        self.courseDrawerStore = courseDrawerStore
+        self.progressDrawerStore = progressDrawerStore
+        self.completionDialogStore = completionDialogStore
+        self.actions = actions
     }
 
     public var body: some View {
@@ -84,7 +128,11 @@ public struct MainStudyView: View {
                 .transition(.opacity)
                 .zIndex(20)
             } else if courseDrawerStore.state.isPresented {
-                CourseDrawerView(store: courseDrawerStore, palette: store.state.palette)
+                CourseDrawerView(
+                    store: courseDrawerStore,
+                    palette: store.state.palette,
+                    onSelectCourse: actions.selectCourse
+                )
                     .transition(.move(edge: .leading).combined(with: .opacity))
                     .zIndex(10)
             } else if progressDrawerStore.state.isPresented {
@@ -180,7 +228,7 @@ public struct MainStudyView: View {
                 get: { store.state.mode.title },
                 set: { title in
                     if let mode = StudyShellMode(rawValue: title.lowercased()) {
-                        store.selectMode(mode)
+                        actions.selectMode(mode)
                     }
                 }
             ),
@@ -205,7 +253,7 @@ public struct MainStudyView: View {
             learningCopy
 
             HStack(spacing: WordLoopSpacing.xs) {
-                Button {} label: {
+                Button(action: actions.play) {
                     Image(systemName: "speaker.wave.2.fill")
                         .font(.system(size: 18, weight: .semibold))
                         .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
@@ -216,7 +264,7 @@ public struct MainStudyView: View {
                 .accessibilityLabel("播放当前学习内容")
                 .accessibilityIdentifier("study.play")
 
-                Button(action: store.cycleVisibility) {
+                Button(action: actions.cycleVisibility) {
                     Image(systemName: visibilityIcon)
                         .font(.system(size: 18, weight: .semibold))
                         .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
@@ -263,6 +311,8 @@ public struct MainStudyView: View {
             }
         }
         .frame(maxWidth: .infinity)
+        .contentShape(Rectangle())
+        .onTapGesture(perform: actions.next)
     }
 
     private var highlightedEnglish: Text {
@@ -383,7 +433,7 @@ public struct MainStudyView: View {
             .accessibilityLabel("熟练度 \(store.state.masteryCount) / 3")
             .accessibilityIdentifier("study.mastery")
 
-            Button(action: store.markTooEasy) {
+            Button(action: actions.markTooEasy) {
                 Text("太简单 ✓")
                     .font(WordLoopTypography.label(size: 11))
                     .frame(minHeight: WordLoopSpacing.minimumHit)
@@ -408,7 +458,7 @@ public struct MainStudyView: View {
             .buttonStyle(.plain)
             .accessibilityIdentifier("study.primary-control")
 
-            Button(action: store.next) {
+            Button(action: actions.next) {
                 Label("NEXT", systemImage: "arrow.right")
                     .font(WordLoopTypography.label(size: 11))
                     .labelStyle(.titleAndIcon)
@@ -429,8 +479,8 @@ public struct MainStudyView: View {
 
     private func primaryAction() {
         switch store.state.mode {
-        case .listen: store.toggleAutoplay()
-        case .repeat: store.togglePause()
+        case .listen: actions.toggleAutoplay()
+        case .repeat: actions.toggleRepeatPause()
         }
     }
 

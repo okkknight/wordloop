@@ -17,7 +17,8 @@ final class AppUITests: XCTestCase {
         let anonymousApp = XCUIApplication()
         anonymousApp.launch()
         anonymousApp.buttons["startup.submit"].tap()
-        XCTAssertEqual(anonymousApp.buttons["startup.submit"].value as? String, "已提交匿名用户")
+        XCTAssertTrue(anonymousApp.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
+        XCTAssertTrue(anonymousApp.descendants(matching: .any)["study.page"].exists)
 
         anonymousApp.terminate()
 
@@ -27,7 +28,49 @@ final class AppUITests: XCTestCase {
         username.tap()
         username.typeText(" Alice ")
         namedApp.keyboards.buttons["Go"].tap()
-        XCTAssertEqual(namedApp.buttons["startup.submit"].value as? String, "已提交用户 alice")
+        XCTAssertTrue(namedApp.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
+        XCTAssertTrue(namedApp.descendants(matching: .any)["study.page"].exists)
+    }
+
+    func testLiveStudyRouteLoadsBundledListenAndManualNext() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-live-study"]
+        app.launch()
+
+        XCTAssertTrue(app.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.staticTexts["study.course-context"].waitForExistence(timeout: 8))
+        XCTAssertEqual(app.staticTexts["study.course-context"].label, "MODERN FAMILY · S01E01")
+        XCTAssertEqual(app.staticTexts["study.progress-count"].label, "第 1 条，共 91 条")
+
+        app.buttons["study.mode.listen"].tap()
+        XCTAssertTrue(app.buttons["study.play"].waitForExistence(timeout: 3))
+        XCTAssertEqual(app.buttons["study.primary-control"].label, "AUTOPLAY")
+        XCTAssertEqual(app.buttons["study.mastery"].label, "熟练度 1 / 3")
+
+        app.buttons["study.next"].tap()
+        let secondProgress = NSPredicate(format: "label == %@", "第 2 条，共 91 条")
+        expectation(for: secondProgress, evaluatedWith: app.staticTexts["study.progress-count"])
+        waitForExpectations(timeout: 5)
+        XCTAssertEqual(app.buttons["study.mastery"].label, "熟练度 1 / 3")
+
+        app.buttons["study.course"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["course-drawer.page"].waitForExistence(timeout: 3))
+        let courseSearch = app.textFields["course-drawer.search"]
+        courseSearch.tap()
+        courseSearch.typeText("Workplace Conversations")
+        let workplaceCourse = app.descendants(matching: .any)["course-drawer.course.voa-workplace-conversations-b1"]
+        XCTAssertTrue(workplaceCourse.waitForExistence(timeout: 3))
+        workplaceCourse.tap()
+
+        let workplaceContext = NSPredicate(format: "label == %@", "WORKPLACE CONVERSATIONS · B1")
+        expectation(for: workplaceContext, evaluatedWith: app.staticTexts["study.course-context"])
+        waitForExpectations(timeout: 5)
+        XCTAssertEqual(app.staticTexts["study.progress-count"].label, "第 1 条，共 20 条")
+
+        app.buttons["study.progress"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["progress-drawer.page"].waitForExistence(timeout: 3))
+        XCTAssertEqual(app.staticTexts["progress-drawer.course"].label, "Workplace Conversations · B1")
+        XCTAssertEqual(app.staticTexts["progress-drawer.stats.learning"].label, "学习中 20 条")
     }
 
     func testStartupValidationClearsWhenEditing() {
