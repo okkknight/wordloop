@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P3 complete, P4.1 bundled repository task ready
+
+- P3.6 独立复核 PASS 后新增 [`../tasks/2026-07-16-p4-1-bundled-content-repository.md`](../tasks/2026-07-16-p4-1-bundled-content-repository.md)；本提交只锁定 CP-09 任务卡，不实现 Core/Content。
+- P4.1 固定 Core 强类型 ID/catalog/course/entry/StudyMode、严格 wire DTO、`BundledCourseSource`、轻量/完整 integrity 校验与 actor `CourseRepository`；正式内容暂不接入任何 P3 UI/Store。
+- bootstrap 必须在 Package 解析前生成被忽略的 target resource mirror，使用 `.copy` 保留目录；App 只打包 `catalog.json + courses/` 与 1,406 个 M4A，明确排除含 Web 源审计路径的 `validation-report.json` 和第二套资源。
+- 当前 1 random word + 29 sequential sentence 是机器真值；P4.1 不修静态 fixture 与正式 ID/highlight/phonetic 的已知差异，不实现播放器、LISTEN、进度、网络、下载、Realtime 或桌面产品。P4.1 PASS 前不得生成或实施 P4.2。
+
 ## 2026-07-16 · P3.6 independently reviewed PASS
 
 - 独立 reviewer 从删除课程生成物、统一/Package SwiftPM cache 与 DerivedData 的冷状态确认 `scripts/verify_ios.sh`，并复验 DesignSystem 13/13、Features 65/65、App integration 1/1、UI 25/25、Web 44/44、baseline、diff/ignore hygiene；lint 精确保持既有 4 errors、0 warnings。

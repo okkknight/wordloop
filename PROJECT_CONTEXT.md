@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；P3 原生 iPhone 静态 Shell 已完成，下一检查点为 P4.1 课程领域模型与 Repository 任务卡。
+任务：执行 iOS 迁移 Plan；当前检查点为 P4.1 iPhone 内置课程领域模型与 Bundle Repository。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6 均已独立复核 PASS。P3.6 已完成两类完成对话框、固定错误、模态优先级与 11 个 REPEAT 纯展示态；下一步只能先根据当前真实静态 Shell/API 生成 P4.1 课程领域模型与 Repository 任务卡。
+执行状态：P0.1、P1、P2、P3.1–P3.6 均已独立复核 PASS。P4.1 任务卡已根据当前 P1 exporter、空 WordLoopCore/Content 骨架、Package bootstrap 和 P3 fixture Shell 锁定；下一步只实现正式 Bundle Repository，不接 UI、不提前播放音频。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -229,7 +229,7 @@ git diff --check
 - 已复核基线：`docs/tasks/2026-07-15-p0-1-baseline-freeze.md`
 - 已复核课程合同：`docs/tasks/2026-07-15-p1-course-contract-exporter.md`
 - 已复核原生骨架：`docs/tasks/2026-07-15-p2-native-project-skeleton.md`
-- 最新已通过任务卡：`docs/tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md`
+- 当前任务卡：`docs/tasks/2026-07-16-p4-1-bundled-content-repository.md`
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`

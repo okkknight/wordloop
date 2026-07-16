@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P3.6 已 PASS，下一步基于当前静态 Shell/API 生成 P4.1 任务卡
+状态：执行中；P0–P3.6 已 PASS，P4.1 任务卡已按当前 Content/Shell API 锁定待开发
 
 制定日期：2026-07-15
 
