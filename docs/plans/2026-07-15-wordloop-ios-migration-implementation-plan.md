@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P3.6 已 PASS，P4.1 任务卡已按当前 Content/Shell API 锁定待开发
+状态：执行中；P0–P3.6 已 PASS，P4.1 已开发完成待独立复核
 
 制定日期：2026-07-15
 
@@ -254,6 +254,8 @@ App Target 只完成：
 目标：用首发内置课程完成离线学习主链路。
 
 ### P4.1 Core 模型与 Bundle source
+
+状态：开发完成，待独立复核；P4.1 PASS 前不生成或实施 P4.2。
 
 - 实现 `CourseID`、`EntryID`、`CourseDescriptor`、`Course`、`CourseEntry`、`StudyMode`。
 - 把 exporter 产物作为 `WordLoopContent` resources；不人工复制 JSON。

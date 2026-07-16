@@ -19,6 +19,9 @@ let package = Package(
             name: "WordLoopContent",
             dependencies: [
                 .product(name: "WordLoopCore", package: "WordLoopCore"),
+            ],
+            resources: [
+                .copy("Resources/WordLoopContent"),
             ]
         ),
         .testTarget(name: "WordLoopContentTests", dependencies: ["WordLoopContent"]),

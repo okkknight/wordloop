@@ -52,6 +52,7 @@ next-env.d.ts
 /.playwright-cli/
 /content/dist/
 /ios/Generated/
+/ios/Packages/WordLoopContent/Sources/WordLoopContent/Resources/WordLoopContent/
 **/.build/
 /ios/.derivedData/
 **/xcuserdata/

@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P4.1 bundled repository developed, pending review
+
+- Core 已新增 fail-closed stable ID、课程枚举与 catalog/descriptor/course/entry 值模型；Content 已新增严格 wire DTO、typed error、`BundledCourseSource` 轻量/完整校验和成功缓存/失败重试的 actor `CourseRepository`。
+- bootstrap 从同一 exporter 产物原子刷新 `ios/Generated` 与 Package resource mirror；SwiftPM 使用 `.copy` 保留目录，App 只接 `catalog.json + courses/`，明确排除 `validation-report.json`。生成目录保持 ignored/untracked。
+- 开发侧已确认 Core 9/9、Content 12/12、30 门/1,406 entries 与 M4A/32,700,838 bytes/全部 SHA、App integration 2/2、原有 UI 25/25、Web 47/47、baseline、统一 iPhone 构建和 diff hygiene；lint 精确保持既有 4 errors、0 warnings。
+- 主 App 根目录实查只有一个 `WordLoopContent_WordLoopContent.bundle`，含精确 1,406 个 M4A 且无审计 report；XCTest 插件按测试依赖另嵌资源，不属于正式 App 根资源。P3 UI/fixture 未接 Repository，无播放器、进度、网络、下载、Realtime 或桌面越界。
+- P4.1 当前开发完成待独立 reviewer 冷验证；PASS 前不得生成或实施 P4.2 AudioPlayer。
+
 ## 2026-07-16 · P3 complete, P4.1 bundled repository task ready
 
 - P3.6 独立复核 PASS 后新增 [`../tasks/2026-07-16-p4-1-bundled-content-repository.md`](../tasks/2026-07-16-p4-1-bundled-content-repository.md)；本提交只锁定 CP-09 任务卡，不实现 Core/Content。

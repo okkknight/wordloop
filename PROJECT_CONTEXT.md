@@ -27,7 +27,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，44 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项 + 主学习页结构 1 项 + 课程抽屉结构 1 项 + 进度抽屉结构 1 项 + 完成对话框/REPEAT 结构 1 项）。
+- `npm test`：构建通过，47 项测试通过（既有 44 项 + P4.1 Bundle Repository/resource chain 3 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P4.1 iPhone 内置课程领域模型与 Bundle Repository。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6 均已独立复核 PASS。P4.1 任务卡已根据当前 P1 exporter、空 WordLoopCore/Content 骨架、Package bootstrap 和 P3 fixture Shell 锁定；下一步只实现正式 Bundle Repository，不接 UI、不提前播放音频。
+执行状态：P0.1、P1、P2、P3.1–P3.6 均已独立复核 PASS。P4.1 已完成 Core 课程领域模型、严格 Bundle source、轻量/完整 integrity 校验、actor Repository、Package resource mirror 与 iPhone App 集成，当前待未参与实现的 reviewer 冷验证；PASS 前不生成或实施 P4.2。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -64,6 +64,10 @@ P3.5 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的�
 P3.6 已新增独立 CompletionDialog kind/state/action/store/view，接入不可点关闭的原生 modal backdrop，并把 StudyShell 的 REPEAT 卡扩展为 11 个确定性展示态。选择课程只打开既有 CourseDrawer，重练只记录 intent；没有真实 reset、进度变化、音频、麦克风、评分、Realtime、网络或 timer。DesignSystem 的 dialog 小字/边界/次按钮与成功失败视觉使用六 palette 实际合成达标角色。
 
 独立 reviewer 从删除生成物、统一/Package SwiftPM cache 和 DerivedData 的冷状态确认 `scripts/verify_ios.sh`，并复验 DesignSystem 13/13、Features 65/65、App integration 1/1、UI 25/25、Web 44/44、iOS baseline、五张真实 iPhone 截图、六 palette 实际合成、禁止业务越界和 iPhone-only 设置全部通过；lint 精确保持既有 4 errors、0 warnings，P3.6 结论为 PASS。
+
+P4.1 已在 Core 新增强类型课程/条目/集合 ID、课程 catalog/descriptor/entry 与业务枚举；Content 使用 `Bundle.module` 严格解码 catalog/course/integrity，拒绝未知字段、坏 schema/标量/路径/文件集合，并提供轻量校验、全量音频 SHA 校验和成功缓存/失败重试的 actor `CourseRepository`。bootstrap 原子生成中间目录与 Package `.copy` resource mirror，只打包 `catalog.json + courses/`，不把 `validation-report.json` 带进 App。
+
+开发侧已通过 Core 9/9、Content 12/12（30 门、1,406 entries/M4A、32,700,838 bytes 与全 SHA）、App integration 2/2、原有 UI 25/25、Web 47/47、baseline 和统一 iPhone 构建；主 App 根资源实查只有一套 Content bundle、1,406 个 M4A、无审计 report。P3 UI/fixture 未接 Repository，未实现播放器、网络、下载、进度或桌面产品。
 
 ## 架构与数据流
 
@@ -154,6 +158,8 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `tests/course-export.test.mjs` | Schema、等价、确定性、原子替换与 mutation tests |
 | `ios/WordLoop.xcodeproj` | iPhone-only SwiftUI App、integration test 与 UI test 工程 |
 | `ios/Packages/*` | 八个本地 Swift Package 与单向依赖边界 |
+| `ios/Packages/WordLoopCore/Sources/WordLoopCore/Course*.swift` | 正式课程强类型 ID、枚举、catalog、descriptor、course 与 entry 领域模型 |
+| `ios/Packages/WordLoopContent/Sources/WordLoopContent` | 严格 Bundle source、wire 校验、typed error 与 actor CourseRepository |
 | `scripts/verify_ios.sh` | 从空缓存重建课程资源、测试 Packages 并编译 Simulator |
 | `tests/ios-project-structure.test.mjs` | iOS 17/Swift 6/iPhone-only、模块图和工程卫生静态检查 |
 | `ios/Packages/WordLoopDesignSystem` | 原生 palette、tokens、字体、基础组件、动效与触觉边界 |
@@ -171,6 +177,7 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/CompletionDialog` | 完成对话框展示模型、内存 Store、原生 modal 与重练 intent |
 | `docs/ios-migration/p3/completion-repeat/*` | 两类完成对话框与 speaking/passed/retry 辅助字号真实 iPhone 证据 |
 | `tests/ios-completion-repeat.test.mjs` | 对话框/11 个 REPEAT fixture、模态优先级与禁止业务副作用静态检查 |
+| `tests/ios-bundled-content-repository.test.mjs` | Package resource mirror、唯一 App 资源所有权与 P3/P4.1 隔离检查 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行
