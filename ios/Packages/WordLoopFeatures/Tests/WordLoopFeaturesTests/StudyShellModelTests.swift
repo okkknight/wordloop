@@ -129,6 +129,89 @@ final class StudyShellModelTests: XCTestCase {
         XCTAssertGreaterThanOrEqual(sun.accessibleAccentText.contrastRatio(with: sun.background), 4.5)
         XCTAssertGreaterThanOrEqual(sun.ink.contrastRatio(with: sun.background), 3.0)
     }
+
+    func testRepeatPresentationStateMappingMatchesAllElevenLockedStates() {
+        let expected: [(StudyRepeatPresentationState, String, String, StudyRepeatVisualKind, Bool)] = [
+            (.idle, "STANDBY", "跟读模式已准备好", .idleWaveform, false),
+            (.connecting, "CONNECTING", "正在准备麦克风", .activeWaveform, false),
+            (.ready, "READY", "听完示范后开始跟读", .idleWaveform, false),
+            (.playing, "LISTENING", "先听一遍标准发音", .activeWaveform, false),
+            (.speak, "SPEAKING", "请清晰地跟读", .activeWaveform, false),
+            (.speaking, "SPEAKING", "正在听你发音", .emphasizedWaveform, false),
+            (.scoring, "CHECKING", "正在分析这次发音", .activeWaveform, false),
+            (.passed, "GREAT", "这次发音通过了", .success, false),
+            (.paused, "PAUSED", "准备好后继续练习", .idleWaveform, false),
+            (.retry, "TRY AGAIN", "请再读一次", .failure, true),
+            (.error, "TRY AGAIN", "请再读一次", .failure, true),
+        ]
+
+        XCTAssertEqual(StudyRepeatPresentationState.allCases.count, 11)
+        XCTAssertEqual(Set(StudyRepeatPresentationState.allCases.map(\.rawValue)).count, 11)
+        XCTAssertEqual(StudyRepeatVisualKind.allCases.count, 5)
+        for (state, title, instruction, visualKind, showsTranscript) in expected {
+            XCTAssertEqual(state.title, title, state.rawValue)
+            XCTAssertEqual(state.instruction, instruction, state.rawValue)
+            XCTAssertEqual(state.visualKind, visualKind, state.rawValue)
+            XCTAssertEqual(state.showsTranscript, showsTranscript, state.rawValue)
+            XCTAssertEqual(state.accessibilityLabel, "\(title)，\(instruction)", state.rawValue)
+        }
+    }
+
+    func testRepeatFixtureDefaultsAndInvalidValuesFailClosedToPlaying() {
+        let baseline = StudyShellViewState.baselineSentence
+        XCTAssertEqual(baseline.repeatPresentationState, .playing)
+        XCTAssertEqual(baseline.repeatPresentationState.title, "LISTENING")
+        XCTAssertFalse(baseline.isRepeatPaused)
+
+        for arguments in [
+            ["WordLoop", "-wordloop-repeat-state"],
+            ["WordLoop", "-wordloop-repeat-state", ""],
+            ["WordLoop", "-wordloop-repeat-state", "unknown"],
+        ] {
+            let fixture = StudyShellViewState.fixture(arguments: arguments)
+            XCTAssertEqual(fixture.repeatPresentationState, .playing)
+            XCTAssertFalse(fixture.isRepeatPaused)
+        }
+    }
+
+    func testPausedFixtureSynchronizesResumeControlAndOtherStatesDoNot() {
+        let paused = StudyShellViewState.fixture(arguments: [
+            "WordLoop", "-wordloop-repeat-state", "PAUSED",
+        ])
+        XCTAssertEqual(paused.repeatPresentationState, .paused)
+        XCTAssertTrue(paused.isRepeatPaused)
+
+        let playing = StudyShellViewState.fixture(arguments: [
+            "WordLoop", "-wordloop-repeat-state", "playing",
+        ])
+        XCTAssertFalse(playing.isRepeatPaused)
+    }
+
+    func testOnlyRetryAndErrorExposeNonEmptyTranscript() {
+        for state in StudyRepeatPresentationState.allCases {
+            let fixture = StudyShellViewState.fixture(arguments: [
+                "WordLoop",
+                "-wordloop-repeat-state", state.rawValue,
+                "-wordloop-repeat-transcript", "  You SAID this.  ",
+            ])
+            if state.showsTranscript {
+                XCTAssertEqual(fixture.repeatTranscript, "You SAID this.", state.rawValue)
+            } else {
+                XCTAssertNil(fixture.repeatTranscript, state.rawValue)
+            }
+        }
+    }
+
+    func testEmptyRetryTranscriptIsNotExposed() {
+        for transcript in ["", "   ", "\n\t"] {
+            let fixture = StudyShellViewState.fixture(arguments: [
+                "WordLoop",
+                "-wordloop-repeat-state", "retry",
+                "-wordloop-repeat-transcript", transcript,
+            ])
+            XCTAssertNil(fixture.repeatTranscript)
+        }
+    }
 }
 
 final class StudyShellStoreTests: XCTestCase {

@@ -5,6 +5,7 @@ public struct MainStudyView: View {
     @Bindable private var store: StudyShellStore
     @Bindable private var courseDrawerStore: CourseDrawerStore
     @Bindable private var progressDrawerStore: ProgressDrawerStore
+    @Bindable private var completionDialogStore: CompletionDialogStore
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var hasAppeared = false
@@ -13,12 +14,14 @@ public struct MainStudyView: View {
         self.store = store
         self.courseDrawerStore = CourseDrawerStore()
         self.progressDrawerStore = ProgressDrawerStore()
+        self.completionDialogStore = CompletionDialogStore()
     }
 
     public init(store: StudyShellStore, courseDrawerStore: CourseDrawerStore) {
         self.store = store
         self.courseDrawerStore = courseDrawerStore
         self.progressDrawerStore = ProgressDrawerStore()
+        self.completionDialogStore = CompletionDialogStore()
     }
 
     public init(
@@ -29,6 +32,19 @@ public struct MainStudyView: View {
         self.store = store
         self.courseDrawerStore = courseDrawerStore
         self.progressDrawerStore = progressDrawerStore
+        self.completionDialogStore = CompletionDialogStore()
+    }
+
+    public init(
+        store: StudyShellStore,
+        courseDrawerStore: CourseDrawerStore,
+        progressDrawerStore: ProgressDrawerStore,
+        completionDialogStore: CompletionDialogStore
+    ) {
+        self.store = store
+        self.courseDrawerStore = courseDrawerStore
+        self.progressDrawerStore = progressDrawerStore
+        self.completionDialogStore = completionDialogStore
     }
 
     public var body: some View {
@@ -48,18 +64,26 @@ public struct MainStudyView: View {
                     }
                 }
             }
-            .accessibilityHidden(isDrawerPresented)
-            .allowsHitTesting(!isDrawerPresented)
-            .id(isDrawerPresented ? "study-background-modal" : "study-background-active")
+            .accessibilityHidden(isModalPresented)
+            .allowsHitTesting(!isModalPresented)
+            .id(isModalPresented ? "study-background-modal" : "study-background-active")
             Color.clear
                 .frame(width: 1, height: 1)
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel("主学习页")
                 .accessibilityIdentifier("study.page")
-                .accessibilityHidden(isDrawerPresented)
-                .id(isDrawerPresented ? "study-page-modal" : "study-page-active")
+                .accessibilityHidden(isModalPresented)
+                .id(isModalPresented ? "study-page-modal" : "study-page-active")
 
-            if courseDrawerStore.state.isPresented {
+            if completionDialogStore.state.isPresented {
+                CompletionDialogView(
+                    store: completionDialogStore,
+                    palette: store.state.palette,
+                    onChooseCourse: courseDrawerStore.present
+                )
+                .transition(.opacity)
+                .zIndex(20)
+            } else if courseDrawerStore.state.isPresented {
                 CourseDrawerView(store: courseDrawerStore, palette: store.state.palette)
                     .transition(.move(edge: .leading).combined(with: .opacity))
                     .zIndex(10)
@@ -76,6 +100,10 @@ public struct MainStudyView: View {
         .animation(
             .easeInOut(duration: WordLoopMotion.drawer(reduceMotion: motionReduced).duration),
             value: progressDrawerStore.state.isPresented
+        )
+        .animation(
+            .easeInOut(duration: WordLoopMotion.exit(reduceMotion: motionReduced).duration),
+            value: completionDialogStore.state.isPresented
         )
         .onAppear {
             let motion = WordLoopMotion.contentEnter(reduceMotion: motionReduced)
@@ -250,18 +278,12 @@ public struct MainStudyView: View {
     }
 
     private var repeatCard: some View {
-        HStack(spacing: WordLoopSpacing.md) {
-            Waveform(
-                state: .active,
-                palette: store.state.palette,
-                accessibilityLabel: "标准发音波形"
-            )
-            VStack(alignment: .leading, spacing: WordLoopSpacing.xxs) {
-                MonoLabel(store.state.repeatPresentationState.title)
-                Text(store.state.repeatPresentationState.instruction)
-                    .font(WordLoopTypography.body(size: 14, weight: .semibold))
+        Group {
+            if dynamicTypeSize.isAccessibilitySize {
+                VStack(spacing: WordLoopSpacing.sm) { repeatCardElements }
+            } else {
+                HStack(spacing: WordLoopSpacing.md) { repeatCardElements }
             }
-            Spacer(minLength: 0)
         }
         .padding(.horizontal, WordLoopSpacing.md)
         .padding(.vertical, WordLoopSpacing.sm)
@@ -270,9 +292,68 @@ public struct MainStudyView: View {
             RoundedRectangle(cornerRadius: WordLoopRadius.card)
                 .stroke(store.state.palette.ink.color, lineWidth: WordLoopBorder.hairline)
         }
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("LISTENING，先听一遍标准发音")
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("study.repeat-card")
+    }
+
+    @ViewBuilder
+    private var repeatCardElements: some View {
+        repeatVisual
+        VStack(alignment: dynamicTypeSize.isAccessibilitySize ? .center : .leading, spacing: WordLoopSpacing.xxs) {
+            MonoLabel(store.state.repeatPresentationState.title)
+            Text(store.state.repeatPresentationState.instruction)
+                .font(WordLoopTypography.body(size: 14, weight: .semibold))
+                .multilineTextAlignment(dynamicTypeSize.isAccessibilitySize ? .center : .leading)
+        }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel(store.state.repeatPresentationState.accessibilityLabel)
+        .accessibilityIdentifier("study.repeat-state.\(store.state.repeatPresentationState.rawValue)")
+
+        if let transcript = store.state.repeatTranscript {
+            VStack(alignment: dynamicTypeSize.isAccessibilitySize ? .center : .leading, spacing: WordLoopSpacing.xxs) {
+                MonoLabel("You said", color: store.state.palette.accessibleAccentText.color)
+                Text(transcript)
+                    .font(WordLoopTypography.body(size: 13, weight: .semibold))
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("You said，\(transcript)")
+            .accessibilityIdentifier("study.repeat-transcript")
+        }
+        if !dynamicTypeSize.isAccessibilitySize { Spacer(minLength: 0) }
+    }
+
+    @ViewBuilder
+    private var repeatVisual: some View {
+        switch store.state.repeatPresentationState.visualKind {
+        case .success:
+            let success = store.state.palette.accessibleStatusVisual(.init(hex: 0x148263))
+            Image(systemName: "checkmark")
+                .font(.system(size: 30, weight: .bold))
+                .frame(width: 64, height: 64)
+                .foregroundStyle(success.color)
+                .overlay(Circle().stroke(success.color, lineWidth: WordLoopBorder.emphasized))
+                .accessibilityHidden(true)
+                .accessibilityIdentifier("study.repeat-result")
+        case .idleWaveform:
+            repeatWaveform(.idle)
+        case .activeWaveform:
+            repeatWaveform(.active)
+        case .emphasizedWaveform:
+            repeatWaveform(.active, tint: store.state.palette.accessibleAccentText)
+        case .failure:
+            repeatWaveform(.failure)
+        }
+    }
+
+    private func repeatWaveform(_ state: WaveformState, tint: WordLoopSRGB? = nil) -> some View {
+        Waveform(
+            state: state,
+            palette: store.state.palette,
+            accessibilityLabel: "跟读状态波形",
+            tint: tint
+        )
+        .accessibilityHidden(true)
     }
 
     @ViewBuilder
@@ -378,5 +459,9 @@ public struct MainStudyView: View {
 
     private var isDrawerPresented: Bool {
         courseDrawerStore.state.isPresented || progressDrawerStore.state.isPresented
+    }
+
+    private var isModalPresented: Bool {
+        completionDialogStore.state.isPresented || isDrawerPresented
     }
 }

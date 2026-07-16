@@ -5,6 +5,17 @@ private struct PosterPaletteEnvironmentKey: EnvironmentKey {
     static let defaultValue = PosterPalette.defaultPalette
 }
 
+private extension View {
+    @ViewBuilder
+    func optionalAccessibilityIdentifier(_ identifier: String?) -> some View {
+        if let identifier {
+            self.accessibilityIdentifier(identifier)
+        } else {
+            self
+        }
+    }
+}
+
 private extension EnvironmentValues {
     var posterPalette: PosterPalette {
         get { self[PosterPaletteEnvironmentKey.self] }
@@ -344,13 +355,22 @@ public struct ConfirmDialogModel: Equatable, Sendable {
     public let message: String
     public let cancelTitle: String
     public let confirmTitle: String
+    public let errorMessage: String?
 
-    public init(kicker: String, title: String, message: String, cancelTitle: String, confirmTitle: String) {
+    public init(
+        kicker: String,
+        title: String,
+        message: String,
+        cancelTitle: String,
+        confirmTitle: String,
+        errorMessage: String? = nil
+    ) {
         self.kicker = kicker
         self.title = title
         self.message = message
         self.cancelTitle = cancelTitle
         self.confirmTitle = confirmTitle
+        self.errorMessage = errorMessage
     }
 }
 
@@ -359,44 +379,101 @@ public struct ConfirmDialog: View {
     private let palette: PosterPalette
     private let onCancel: () -> Void
     private let onConfirm: () -> Void
+    private let accessibilityIdentifierPrefix: String?
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
-    public init(model: ConfirmDialogModel, palette: PosterPalette, onCancel: @escaping () -> Void, onConfirm: @escaping () -> Void) {
+    public init(
+        model: ConfirmDialogModel,
+        palette: PosterPalette,
+        accessibilityIdentifierPrefix: String? = nil,
+        onCancel: @escaping () -> Void,
+        onConfirm: @escaping () -> Void
+    ) {
         self.model = model
         self.palette = palette
         self.onCancel = onCancel
         self.onConfirm = onConfirm
+        self.accessibilityIdentifierPrefix = accessibilityIdentifierPrefix
     }
 
     public var body: some View {
         VStack(alignment: .leading, spacing: WordLoopSpacing.sm) {
             MonoLabel(model.kicker, color: palette.accessibleAccentText.color)
-            Text(model.title).font(WordLoopTypography.title(size: 23))
-            Text(model.message).font(WordLoopTypography.body(size: 13)).opacity(0.65)
-            HStack {
-                Spacer()
-                PosterButton(.text(model.cancelTitle), accessibilityLabel: model.cancelTitle, action: onCancel)
-                Button(model.confirmTitle, action: onConfirm)
-                    .font(WordLoopTypography.label(size: 11))
-                    .frame(minHeight: WordLoopSpacing.minimumHit)
-                    .padding(.horizontal, 13)
-                    .foregroundStyle(palette.background.color)
-                    .background(palette.accessibleAccentText.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.control))
-                    .overlay {
-                        RoundedRectangle(cornerRadius: WordLoopRadius.control)
-                            .stroke(palette.accent.color, lineWidth: WordLoopBorder.hairline)
-                    }
-                    .accessibilityLabel(model.confirmTitle)
+            Text(model.title)
+                .font(WordLoopTypography.title(size: 23))
+                .optionalAccessibilityIdentifier(identifier("title"))
+            Text(model.message)
+                .font(WordLoopTypography.body(size: 13))
+                .opacity(WordLoopLayerOpacity.dialogSecondaryText)
+                .optionalAccessibilityIdentifier(identifier("message"))
+            if let errorMessage = model.errorMessage {
+                Text(errorMessage)
+                    .font(WordLoopTypography.body(size: 13, weight: .semibold))
+                    .foregroundStyle(palette.accessibleAccentText.color)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .optionalAccessibilityIdentifier(identifier("error"))
             }
+            actions
         }
         .padding(WordLoopSpacing.safeWide)
         .frame(maxWidth: 320)
         .foregroundStyle(palette.ink.color)
         .background(palette.background.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.dialog))
-        .overlay { RoundedRectangle(cornerRadius: WordLoopRadius.dialog).stroke(palette.ink.color.opacity(0.22)) }
+        .overlay {
+            RoundedRectangle(cornerRadius: WordLoopRadius.dialog)
+                .stroke(palette.ink.color.opacity(WordLoopLayerOpacity.dialogBoundary))
+        }
         .shadow(color: .black.opacity(WordLoopShadow.dialog.colorOpacity), radius: WordLoopShadow.dialog.radius, y: WordLoopShadow.dialog.y)
         .padding(WordLoopSpacing.safeWide)
         .accessibilityElement(children: .contain)
         .accessibilityAddTraits(.isModal)
+    }
+
+    @ViewBuilder
+    private var actions: some View {
+        if dynamicTypeSize.isAccessibilitySize {
+            VStack(spacing: WordLoopSpacing.xs) {
+                cancelButton.frame(maxWidth: .infinity)
+                confirmButton.frame(maxWidth: .infinity)
+            }
+        } else {
+            HStack(spacing: WordLoopSpacing.xs) {
+                Spacer()
+                cancelButton
+                confirmButton
+            }
+        }
+    }
+
+    private var cancelButton: some View {
+        PosterButton(.text(model.cancelTitle), accessibilityLabel: model.cancelTitle, action: onCancel)
+            .overlay {
+                RoundedRectangle(cornerRadius: WordLoopRadius.control)
+                    .stroke(
+                        palette.ink.color.opacity(WordLoopLayerOpacity.dialogBoundary),
+                        lineWidth: WordLoopBorder.hairline
+                    )
+            }
+            .optionalAccessibilityIdentifier(identifier("cancel"))
+    }
+
+    private var confirmButton: some View {
+        Button(model.confirmTitle, action: onConfirm)
+            .font(WordLoopTypography.label(size: 11))
+            .frame(minHeight: WordLoopSpacing.minimumHit)
+            .padding(.horizontal, 13)
+            .foregroundStyle(palette.background.color)
+            .background(palette.accessibleAccentText.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.control))
+            .overlay {
+                RoundedRectangle(cornerRadius: WordLoopRadius.control)
+                    .stroke(palette.accent.color, lineWidth: WordLoopBorder.hairline)
+            }
+            .accessibilityLabel(model.confirmTitle)
+            .optionalAccessibilityIdentifier(identifier("confirm"))
+    }
+
+    private func identifier(_ suffix: String) -> String? {
+        accessibilityIdentifierPrefix.map { "\($0).\(suffix)" }
     }
 }
 
@@ -413,13 +490,20 @@ public struct Waveform: View {
     private let state: WaveformState
     private let palette: PosterPalette
     private let accessibilityLabel: String
+    private let tint: WordLoopSRGB?
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var animated = false
 
-    public init(state: WaveformState, palette: PosterPalette, accessibilityLabel: String) {
+    public init(
+        state: WaveformState,
+        palette: PosterPalette,
+        accessibilityLabel: String,
+        tint: WordLoopSRGB? = nil
+    ) {
         self.state = state
         self.palette = palette
         self.accessibilityLabel = accessibilityLabel
+        self.tint = tint
     }
 
     public var body: some View {
@@ -442,17 +526,18 @@ public struct Waveform: View {
     }
 
     private var color: Color {
-        switch state {
+        if let tint { return palette.accessibleStatusVisual(tint).color }
+        return switch state {
         case .idle, .active: palette.ink.color
-        case .success: Color(red: 0.078, green: 0.510, blue: 0.388)
-        case .failure: Color(red: 0.780, green: 0.408, blue: 0.341)
+        case .success: palette.accessibleStatusVisual(.init(hex: 0x148263)).color
+        case .failure: palette.accessibleStatusVisual(.init(hex: 0xc76857)).color
         }
     }
 
     private var opacity: Double {
         switch state {
         case .idle: 0.28
-        case .failure: 0.42
+        case .failure: 1
         case .active, .success: 0.78
         }
     }

@@ -8,6 +8,7 @@ struct RootView: View {
     @State private var studyShellStore: StudyShellStore
     @State private var courseDrawerStore: CourseDrawerStore
     @State private var progressDrawerStore: ProgressDrawerStore
+    @State private var completionDialogStore: CompletionDialogStore
 
     init(container: AppContainer) {
         self.container = container
@@ -24,13 +25,16 @@ struct RootView: View {
                 state: StudyShellViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
             )
         )
-        let courseState = CourseDrawerViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
+        var courseState = CourseDrawerViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
+        let completionState = CompletionDialogViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
+        if completionState.isPresented { courseState.isPresented = false }
         _courseDrawerStore = State(initialValue: CourseDrawerStore(state: courseState))
         var progressState = ProgressDrawerViewState.fixture(arguments: ProcessInfo.processInfo.arguments)
-        if courseState.isPresented {
+        if courseState.isPresented || completionState.isPresented {
             progressState.isPresented = false
         }
         _progressDrawerStore = State(initialValue: ProgressDrawerStore(state: progressState))
+        _completionDialogStore = State(initialValue: CompletionDialogStore(state: completionState))
     }
 
     var body: some View {
@@ -41,7 +45,8 @@ struct RootView: View {
                 MainStudyView(
                     store: studyShellStore,
                     courseDrawerStore: courseDrawerStore,
-                    progressDrawerStore: progressDrawerStore
+                    progressDrawerStore: progressDrawerStore,
+                    completionDialogStore: completionDialogStore
                 )
             } else {
                 StartupView(store: startupStore)

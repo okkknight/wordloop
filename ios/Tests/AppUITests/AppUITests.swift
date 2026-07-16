@@ -413,4 +413,143 @@ final class AppUITests: XCTestCase {
         XCTAssertTrue(conflict.descendants(matching: .any)["course-drawer.page"].waitForExistence(timeout: 5))
         XCTAssertFalse(conflict.descendants(matching: .any)["progress-drawer.page"].exists)
     }
+
+    func testRestartCompletionDialogCopyCancelAndRestartIntentStayPresentationOnly() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-study-shell", "-wordloop-completion-dialog", "restart"]
+        app.launch()
+
+        var dialog = app.descendants(matching: .any)["completion-dialog.page"]
+        XCTAssertTrue(dialog.waitForExistence(timeout: 5))
+        XCTAssertEqual(app.staticTexts["completion-dialog.title"].label, "这门课程已经完成")
+        XCTAssertEqual(app.staticTexts["completion-dialog.message"].label, "要重新开始练习吗？现有练习进度将被清零。")
+        XCTAssertEqual(app.buttons["completion-dialog.cancel"].label, "取消")
+        XCTAssertEqual(app.buttons["completion-dialog.confirm"].label, "重新开始")
+        XCTAssertFalse(app.buttons["study.next"].isHittable)
+
+        app.buttons["completion-dialog.cancel"].tap()
+        XCTAssertTrue(dialog.waitForNonExistence(timeout: 2))
+        XCTAssertTrue(app.buttons["study.next"].isHittable)
+
+        app.terminate()
+        app.launch()
+        dialog = app.descendants(matching: .any)["completion-dialog.page"]
+        XCTAssertTrue(dialog.waitForExistence(timeout: 5))
+        app.buttons["completion-dialog.confirm"].tap()
+        XCTAssertTrue(dialog.waitForNonExistence(timeout: 2))
+        XCTAssertEqual(app.staticTexts["study.course-context"].label, "MODERN FAMILY · S01E01")
+        XCTAssertEqual(app.staticTexts["study.progress-count"].label, "第 75 条，共 91 条")
+        XCTAssertEqual(app.buttons["study.mastery"].label, "熟练度 1 / 3")
+    }
+
+    func testNaturalCompletionDialogCanOpenCourseDrawerOrDismissRetrainIntent() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-study-shell", "-wordloop-completion-dialog", "complete"]
+        app.launch()
+
+        XCTAssertTrue(app.descendants(matching: .any)["completion-dialog.page"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.staticTexts["completion-dialog.title"].label, "这门课程学完了")
+        XCTAssertEqual(app.buttons["completion-dialog.cancel"].label, "选择课程")
+        XCTAssertEqual(app.buttons["completion-dialog.confirm"].label, "再练一次")
+        app.buttons["completion-dialog.cancel"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["course-drawer.page"].waitForExistence(timeout: 2))
+        XCTAssertFalse(app.descendants(matching: .any)["completion-dialog.page"].exists)
+
+        app.terminate()
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["completion-dialog.page"].waitForExistence(timeout: 5))
+        app.buttons["completion-dialog.confirm"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["completion-dialog.page"].waitForNonExistence(timeout: 2))
+        XCTAssertEqual(app.staticTexts["study.progress-count"].label, "第 75 条，共 91 条")
+    }
+
+    func testCompletionErrorBackdropAndModalPriorityStayDeterministic() {
+        let app = XCUIApplication()
+        app.launchArguments = [
+            "-wordloop-study-shell", "-wordloop-completion-dialog", "complete", "-wordloop-completion-error",
+            "-wordloop-course-drawer", "-wordloop-progress-drawer",
+        ]
+        app.launch()
+
+        let dialog = app.descendants(matching: .any)["completion-dialog.page"]
+        XCTAssertTrue(dialog.waitForExistence(timeout: 5))
+        XCTAssertEqual(app.staticTexts["completion-dialog.error"].label, "暂时无法重置进度，请稍后重试。")
+        XCTAssertFalse(app.descendants(matching: .any)["course-drawer.page"].exists)
+        XCTAssertFalse(app.descendants(matching: .any)["progress-drawer.page"].exists)
+        app.coordinate(withNormalizedOffset: CGVector(dx: 0.05, dy: 0.1)).tap()
+        XCTAssertTrue(dialog.exists)
+    }
+
+    func testAllRepeatPresentationFixturesExposeExactStaticState() {
+        let fixtures = [
+            ("idle", "STANDBY", "跟读模式已准备好"),
+            ("connecting", "CONNECTING", "正在准备麦克风"),
+            ("ready", "READY", "听完示范后开始跟读"),
+            ("playing", "LISTENING", "先听一遍标准发音"),
+            ("speak", "SPEAKING", "请清晰地跟读"),
+            ("speaking", "SPEAKING", "正在听你发音"),
+            ("scoring", "CHECKING", "正在分析这次发音"),
+            ("passed", "GREAT", "这次发音通过了"),
+            ("paused", "PAUSED", "准备好后继续练习"),
+            ("retry", "TRY AGAIN", "请再读一次"),
+            ("error", "TRY AGAIN", "请再读一次"),
+        ]
+
+        for fixture in fixtures {
+            let app = XCUIApplication()
+            app.launchArguments = [
+                "-wordloop-study-shell", "-wordloop-study-repeat",
+                "-wordloop-repeat-state", fixture.0,
+                "-wordloop-repeat-transcript", "I said this",
+                "-wordloop-fixture-reduce-motion",
+            ]
+            app.launch()
+
+            let state = app.descendants(matching: .any)["study.repeat-state.\(fixture.0)"]
+            XCTAssertTrue(state.waitForExistence(timeout: 5), fixture.0)
+            XCTAssertTrue(state.label.contains(fixture.1), fixture.0)
+            XCTAssertTrue(state.label.contains(fixture.2), fixture.0)
+            XCTAssertEqual(app.buttons["study.primary-control"].label, fixture.0 == "paused" ? "RESUME" : "PAUSE")
+            XCTAssertEqual(app.descendants(matching: .any)["study.repeat-result"].exists, fixture.0 == "passed")
+            XCTAssertEqual(app.descendants(matching: .any)["study.repeat-transcript"].exists, fixture.0 == "retry" || fixture.0 == "error")
+            app.terminate()
+        }
+    }
+
+    func testCompletionAndRetryAccessibilityFixtureRemainReachable() {
+        let dialogApp = XCUIApplication()
+        dialogApp.launchArguments = [
+            "-wordloop-study-shell", "-wordloop-completion-dialog", "complete", "-wordloop-completion-error",
+            "-wordloop-fixture-accessibility-text", "-wordloop-fixture-reduce-motion",
+        ]
+        dialogApp.launch()
+
+        for identifier in ["completion-dialog.cancel", "completion-dialog.confirm"] {
+            let button = dialogApp.buttons[identifier]
+            XCTAssertTrue(button.waitForExistence(timeout: 5))
+            XCTAssertTrue(button.isHittable)
+            XCTAssertGreaterThanOrEqual(button.frame.height, 44)
+            XCTAssertGreaterThanOrEqual(button.frame.minX, 0)
+            XCTAssertLessThanOrEqual(button.frame.maxX, dialogApp.frame.maxX)
+        }
+        dialogApp.terminate()
+
+        let retryApp = XCUIApplication()
+        retryApp.launchArguments = [
+            "-wordloop-study-shell", "-wordloop-study-repeat", "-wordloop-repeat-state", "retry",
+            "-wordloop-repeat-transcript", "A deliberately long fixture transcript that wraps safely",
+            "-wordloop-fixture-accessibility-text", "-wordloop-fixture-reduce-motion",
+        ]
+        retryApp.launch()
+        XCTAssertTrue(retryApp.descendants(matching: .any)["study.repeat-state.retry"].waitForExistence(timeout: 5))
+        XCTAssertTrue(retryApp.descendants(matching: .any)["study.repeat-transcript"].exists)
+        let next = retryApp.buttons["study.next"]
+        if !next.isHittable { retryApp.swipeUp() }
+        if !next.isHittable { retryApp.swipeUp() }
+        XCTAssertTrue(next.isHittable)
+        let evidence = XCTAttachment(screenshot: retryApp.screenshot())
+        evidence.name = "retry-accessibility3-after-scroll"
+        evidence.lifetime = .keepAlways
+        add(evidence)
+    }
 }

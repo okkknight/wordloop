@@ -55,6 +55,8 @@ public enum WordLoopLayerOpacity {
     public static let courseCardBoundary = 0.56
     public static let progressSecondaryText = 0.75
     public static let progressBoundary = 0.56
+    public static let dialogSecondaryText = 0.75
+    public static let dialogBoundary = 0.56
 }
 
 public struct PosterPalette: Identifiable, Equatable, Hashable, Sendable {
@@ -79,6 +81,10 @@ public struct PosterPalette: Identifiable, Equatable, Hashable, Sendable {
     /// back to ink when that accent cannot reach WCAG AA against the poster.
     public var accessibleAccentText: WordLoopSRGB {
         accent.contrastRatio(with: background) >= 4.5 ? accent : ink
+    }
+
+    public func accessibleStatusVisual(_ canonical: WordLoopSRGB) -> WordLoopSRGB {
+        canonical.contrastRatio(with: background) >= 3 ? canonical : ink
     }
 
     /// Deterministically advances through the canonical order without repeating

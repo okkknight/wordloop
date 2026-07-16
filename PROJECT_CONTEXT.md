@@ -27,7 +27,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
-- `npm test`：构建通过，43 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项 + 主学习页结构 1 项 + 课程抽屉结构 1 项 + 进度抽屉结构 1 项）。
+- `npm test`：构建通过，44 项测试通过（原有 28 项 + iOS 迁移基线 5 项 + 课程合同/exporter 4 项 + 原生工程结构 1 项 + Design System 结构 1 项 + 启动页结构 1 项 + 主学习页结构 1 项 + 课程抽屉结构 1 项 + 进度抽屉结构 1 项 + 完成对话框/REPEAT 结构 1 项）。
 - `npm run lint`：未通过，存在 4 个 `react-hooks/preserve-manual-memoization` 错误。
 - 构建会提示客户端 chunk 超过 500 kB。
 
@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan，当前检查点为 P3.6 iPhone 完成对话框与 REPEAT 静态状态。
 
-执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4、P3.5 均已独立复核 PASS。P3.6 任务卡已根据当前 ConfirmDialog、Waveform、StudyShell 和三个模态容器的真实 API 锁定；下一步只实施 CP-08，不提前进入 P4。
+执行状态：P0.1、P1、P2、P3.1、P3.2、P3.3、P3.4、P3.5 均已独立复核 PASS。P3.6 已完成两类完成对话框、固定错误、模态优先级与 11 个 REPEAT 纯展示态，当前待独立 reviewer 冷验证；PASS 前不进入 P4。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
@@ -60,6 +60,10 @@ P3.4 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的�
 P3.5 已新增独立 ProgressDrawer entry/summary/view state/fixture/store 与 SwiftUI 右侧抽屉。基线精确展示 `YOUR PROGRESS`、0/273、S01E01、0 已掌握/91 学习中、10 条代表句；另覆盖 word、mixed、complete、query 和 empty fixture。课程/进度抽屉互斥且冲突参数保持课程优先；三种关闭入口、列表独立滚动、搜索、完成语义、accessibility 3 与 Reduce Motion 已由 App UI test 覆盖。ProgressTrack 和条目边界使用真实合成可达标角色，canonical accent 只保留装饰；不读取 P6 Progress、不访问网络或持久化，也不改变主学习上下文。
 
 P3.5 独立 reviewer 已从删除生成物、SwiftPM cache 和 DerivedData 的冷状态确认八 Package/iPhone build，并复验 DesignSystem 12/12、Features 51/51、App integration 1/1、UI 20/20、Web 43/43、四张截图 hash/尺寸/视觉、六 palette 真实合成对比度、双抽屉互斥与课程优先、三种关闭、背景恢复、学习状态不变、无 P4/P6/P7 越界和 iPhone-only 设置，结论为 PASS。lint 精确保持既有 4 errors、0 warnings。
+
+P3.6 已新增独立 CompletionDialog kind/state/action/store/view，接入不可点关闭的原生 modal backdrop，并把 StudyShell 的 REPEAT 卡扩展为 11 个确定性展示态。选择课程只打开既有 CourseDrawer，重练只记录 intent；没有真实 reset、进度变化、音频、麦克风、评分、Realtime、网络或 timer。DesignSystem 的 dialog 小字/边界/次按钮与成功失败视觉使用六 palette 实际合成达标角色。
+
+开发侧已确认 `scripts/verify_ios.sh`、DesignSystem 13/13、Features 65/65、App integration 1/1、UI 25/25、Web 44/44、iOS baseline、五张真实 iPhone 截图与 diff hygiene 通过；lint 精确保持既有 4 errors、0 warnings。P3.6 当前待独立复核。
 
 ## 架构与数据流
 
@@ -164,6 +168,9 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/CourseDrawer` | 课程抽屉展示模型、内存 fixture Store、搜索/折叠/关闭规则与 SwiftUI 页面 |
 | `docs/ios-migration/p3/course-drawer/*` | 默认、空态、完成次数、辅助字号真实 iPhone 视觉证据 |
 | `tests/ios-course-drawer.test.mjs` | 课程抽屉 fixture、稳定标识、模块隔离和禁用业务运行时静态检查 |
+| `ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/CompletionDialog` | 完成对话框展示模型、内存 Store、原生 modal 与重练 intent |
+| `docs/ios-migration/p3/completion-repeat/*` | 两类完成对话框与 speaking/passed/retry 辅助字号真实 iPhone 证据 |
+| `tests/ios-completion-repeat.test.mjs` | 对话框/11 个 REPEAT fixture、模态优先级与禁止业务副作用静态检查 |
 | `docs/WORDLOOP_VPS_RUNBOOK.md` | 真实 VPS 拓扑和部署运维手册 |
 
 ## 验证与运行

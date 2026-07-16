@@ -45,7 +45,7 @@ test("iOS progress drawer stays a fixture-only iPhone feature", async () => {
   assert.match(studyView, /progressDrawerStore\.present/);
   assert.match(studyView, /courseDrawerStore\.state\.isPresented \|\| progressDrawerStore\.state\.isPresented/);
   assert.match(appRoot, /ProgressDrawerViewState\.fixture/);
-  assert.match(appRoot, /let courseState = CourseDrawerViewState\.fixture[\s\S]*if courseState\.isPresented[\s\S]*progressState\.isPresented = false/);
+  assert.match(appRoot, /var courseState = CourseDrawerViewState\.fixture[\s\S]*if courseState\.isPresented \|\| completionState\.isPresented[\s\S]*progressState\.isPresented = false/);
 
   const runtime = `${entry}\n${summary}\n${fixtures}\n${state}\n${store}\n${view}`;
   const forbiddenRuntime = /(?:URLSession|UserDefaults|Keychain|SwiftData|AVFoundation|WebRTC|WordLoopNetworking|WordLoopContent|WordLoopAudio|WordLoopProgress|WordLoopRealtime)/;

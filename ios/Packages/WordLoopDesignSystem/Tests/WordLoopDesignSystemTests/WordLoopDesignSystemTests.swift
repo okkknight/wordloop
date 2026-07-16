@@ -5,6 +5,33 @@ import XCTest
 @testable import WordLoopDesignSystem
 
 final class WordLoopDesignSystemTests: XCTestCase {
+    func testDialogAndRepeatVisualRolesMeetRealCompositedThresholds() {
+        let success = WordLoopSRGB(hex: 0x148263)
+        let failure = WordLoopSRGB(hex: 0xc76857)
+
+        for palette in PosterPalette.all {
+            let secondary = palette.ink.composited(
+                over: palette.background,
+                opacity: WordLoopLayerOpacity.dialogSecondaryText
+            )
+            let boundary = palette.ink.composited(
+                over: palette.background,
+                opacity: WordLoopLayerOpacity.dialogBoundary
+            )
+            let emphasizedWaveform = palette.accessibleAccentText.composited(
+                over: palette.background,
+                opacity: 0.78
+            )
+
+            XCTAssertGreaterThanOrEqual(secondary.contrastRatio(with: palette.background), 4.5, palette.id)
+            XCTAssertGreaterThanOrEqual(boundary.contrastRatio(with: palette.background), 3, palette.id)
+            XCTAssertGreaterThanOrEqual(palette.accessibleAccentText.contrastRatio(with: palette.background), 4.5, palette.id)
+            XCTAssertGreaterThanOrEqual(emphasizedWaveform.contrastRatio(with: palette.background), 3, palette.id)
+            XCTAssertGreaterThanOrEqual(palette.accessibleStatusVisual(success).contrastRatio(with: palette.background), 3, palette.id)
+            XCTAssertGreaterThanOrEqual(palette.accessibleStatusVisual(failure).contrastRatio(with: palette.background), 3, palette.id)
+        }
+    }
+
     func testModuleIsAvailable() {
         XCTAssertEqual(WordLoopDesignSystemModule.name, "WordLoopDesignSystem")
     }

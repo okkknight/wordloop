@@ -2,6 +2,14 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-16 · P3.6 completion dialog and REPEAT states developed, pending review
+
+- 新增两类 `COURSE COMPLETE` 原生对话框、固定错误、不可点击关闭的 material backdrop 和 completion > course > progress 的模态优先级；选择课程打开既有 CourseDrawer，重新开始/再练一次只记录 intent，不改变 S01E01、75/91、1/3 或任何进度。
+- REPEAT 卡新增 11 个确定性纯展示态、passed 圆形勾号及 retry/error transcript；accessibility 3 纵向自适应/可滚动，Reduce Motion 停止 waveform。没有音频、麦克风、评分、Realtime、网络、持久化、timer 或正式课程解析越界。
+- dialog 次要文字/边界/次按钮、强调波形与成功/失败视觉已按六 palette 实际层叠测试，最低分别为 5.068:1、3.097:1、8.764:1、3.162:1、3.112:1。
+- 开发侧已通过冷构建、DesignSystem 13/13、Features 65/65、App integration 1/1、UI 25/25、Web 44/44、baseline、五张真实 iPhone 截图和 diff hygiene；lint 精确保持既有 4 errors、0 warnings。
+- P3.6 当前开发完成待独立复核；PASS 前不得生成或实施 P4.1。
+
 ## 2026-07-16 · P3.5 reviewed, P3.6 task ready
 
 - P3.5 独立复核 PASS 后新增 [`../tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md`](../tasks/2026-07-16-p3-6-completion-dialog-repeat-states.md)；本提交只锁定 CP-08 任务卡，不实现对话框或新增 REPEAT 状态。
