@@ -8,7 +8,7 @@ import WordLoopRealtime
 struct StudyCourseClient: Sendable {
     var catalog: @Sendable () async throws -> CourseCatalog
     var course: @Sendable (CourseID) async throws -> Course
-    var bundledCourseIDs: @Sendable () async -> Set<CourseID> = { [] }
+    var bundledCourseVersions: @Sendable () async -> [CourseID: Int] = { [:] }
 
     static func live(
         repository: CourseRepository,
@@ -39,8 +39,8 @@ struct StudyCourseClient: Sendable {
                 }
                 return try await repository.course(id: id)
             },
-            bundledCourseIDs: {
-                Set((try? await repository.catalog().courses.map(\.id)) ?? [])
+            bundledCourseVersions: {
+                Dictionary(uniqueKeysWithValues: (try? await repository.catalog().courses.map { ($0.id, $0.contentVersion) }) ?? [])
             }
         )
     }

@@ -36,7 +36,7 @@ public final class StudyStore {
     private var currentEntryID: EntryID?
     private var mode: StudyMode = .repeat
     private var completionCounts: [CourseID: Int] = [:]
-    private var bundledCourseIDs: Set<CourseID> = []
+    private var bundledCourseVersions: [CourseID: Int] = [:]
     private var installations: [CourseID: CourseInstallation] = [:]
     private var settledCompletions: Set<CourseModeKey> = []
     private nonisolated let eventTask = StudyTaskSlot()
@@ -82,7 +82,7 @@ public final class StudyStore {
             let catalog = try await courses.catalog()
             guard isCurrent(generation) else { return }
             self.catalog = catalog
-            bundledCourseIDs = await courses.bundledCourseIDs()
+            bundledCourseVersions = await courses.bundledCourseVersions()
             installations = CourseInstallationIndex.newestByCourse(await downloads.installations())
             completionCounts = await progress.completions()
             guard isCurrent(generation) else { return }
@@ -137,7 +137,7 @@ public final class StudyStore {
     public func downloadCourse(_ rawCourseID: String) async {
         guard let courseID = CourseID(rawValue: rawCourseID),
               let descriptor = catalog?.courses.first(where: { $0.id == courseID }),
-              !bundledCourseIDs.contains(courseID),
+              bundledCourseVersions[courseID] ?? 0 < descriptor.contentVersion,
               descriptor.availability == .available else { return }
 
         installations[courseID] = CourseInstallation(
@@ -467,7 +467,7 @@ public final class StudyStore {
             ),
             selectedCourseID: course.id,
             completionCounts: completionCounts,
-            bundledCourseIDs: bundledCourseIDs,
+            bundledCourseVersions: bundledCourseVersions,
             installations: installations
         )
         drawer.isPresented = oldDrawerPresented
@@ -481,7 +481,7 @@ public final class StudyStore {
     }
 
     private func canOpen(_ descriptor: CourseDescriptor) -> Bool {
-        if bundledCourseIDs.contains(descriptor.id) { return true }
+        if bundledCourseVersions[descriptor.id] != nil { return true }
         return installations[descriptor.id]?.status == .installed
             && installations[descriptor.id]?.contentVersion == descriptor.contentVersion
     }

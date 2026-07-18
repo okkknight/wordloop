@@ -8,7 +8,7 @@ enum StudyProjection {
         catalog: CourseCatalog,
         selectedCourseID: CourseID?,
         completionCounts: [CourseID: Int] = [:],
-        bundledCourseIDs: Set<CourseID> = [],
+        bundledCourseVersions: [CourseID: Int] = [:],
         installations: [CourseID: CourseInstallation] = [:]
     ) -> CourseDrawerViewState {
         let availableCourses = catalog.courses.filter { $0.availability == .available }
@@ -24,7 +24,7 @@ enum StudyProjection {
                         isSelected: descriptor.id == selectedCourseID,
                         availability: courseAvailability(
                             descriptor: descriptor,
-                            bundledCourseIDs: bundledCourseIDs,
+                            bundledCourseVersions: bundledCourseVersions,
                             installations: installations
                         )
                     )
@@ -133,10 +133,12 @@ enum StudyProjection {
 
     private static func courseAvailability(
         descriptor: CourseDescriptor,
-        bundledCourseIDs: Set<CourseID>,
+        bundledCourseVersions: [CourseID: Int],
         installations: [CourseID: CourseInstallation]
     ) -> CourseDrawerAvailability {
-        if bundledCourseIDs.contains(descriptor.id) { return .builtIn }
+        if let bundledVersion = bundledCourseVersions[descriptor.id], bundledVersion >= descriptor.contentVersion {
+            return .builtIn
+        }
         guard let installation = installations[descriptor.id] else { return .download }
         if installation.contentVersion < descriptor.contentVersion { return .update }
         switch installation.status {

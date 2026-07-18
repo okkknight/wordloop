@@ -13,7 +13,7 @@ public enum CourseDrawerAvailability: String, Equatable, Sendable {
     case updateApp = "UPDATE APP"
 
     var canSelect: Bool {
-        self == .builtIn || self == .downloaded
+        self == .builtIn || self == .downloaded || self == .update
     }
 
     var actionTitle: String? {
