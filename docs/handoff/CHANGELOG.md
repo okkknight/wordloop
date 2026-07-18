@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P6.2 Realtime transport PARTIAL
+
+- `WordLoopRealtime` 已有 VPS SDP client、转写 lifecycle/item ID decoder 和仅在 REPEAT 用户意图后可调用的麦克风授权边界；Info.plist 已有用途说明，App 中不含 OpenAI key。
+- ADR 0001 固定 Google 官方 WebRTC 源码 revision `848836f85d4036def631df0ed6eeb001b5c0c174`，要求以官方脚本构建、记录 SHA-256/Xcode，并禁止未锁定 binary。
+- 官方构建被本机 depot_tools CIPD bootstrap 的临时目录错误阻断；未将二进制写入仓库，P6.2 不得标 PASS。接手先取得可校验的不可变 XCFramework artifact，再接 binary target、peer connection adapter 和 P6.3 state machine。
+
 ## 2026-07-18 · P5.3 persistent progress outbox PASS
 
 - 新增注入 base URL 的 VPS ProgressAPIClient，以及 event-first SwiftData PersistentProgressRepository；confirmed + pending 投影、UUID 重试、稳定顺序、attempt、同 partition 合并、refresh/recovery 已覆盖。
