@@ -49,6 +49,23 @@ final class WordLoopRealtimeTests: XCTestCase {
         )
         XCTAssertNil(RealtimeEventDecoder.decode(Data(#"{"type":"rate_limits.updated"}"#.utf8)))
     }
+
+    func testRepeatControllerRejectsOldAndUnarmedEvents() {
+        var controller = RepeatSessionController()
+        let first = controller.beginTurn()
+        XCTAssertNil(controller.receive(.speechStarted(itemID: "old"), turnID: first))
+        XCTAssertEqual(controller.playbackFinished(turnID: first), .enableMicrophone)
+        XCTAssertNil(controller.receive(.speechStarted(itemID: "old"), turnID: first &+ 1))
+        XCTAssertNil(controller.receive(.transcriptionCompleted(itemID: "old", transcript: "hello"), turnID: first))
+        XCTAssertNil(controller.receive(.speechStarted(itemID: "active"), turnID: first))
+        XCTAssertEqual(controller.receive(.speechStopped(itemID: "active"), turnID: first), .disableMicrophone)
+        XCTAssertEqual(
+            controller.receive(.transcriptionCompleted(itemID: "active", transcript: "hello"), turnID: first),
+            .score(turnID: first, itemID: "active", transcript: "hello")
+        )
+        controller.scored(turnID: first, passed: true)
+        XCTAssertEqual(controller.phase, .passed)
+    }
 }
 
 private func XCTAssertThrowsErrorAsync<T>(
