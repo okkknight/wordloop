@@ -8,6 +8,11 @@ import WordLoopRealtime
 @MainActor
 @Observable
 public final class StudyStore {
+    private static let repeatPlaybackTimeout: Duration = .seconds(8)
+    private static let repeatSpeakTimeout: Duration = .seconds(6)
+    private static let repeatSpeakingTimeout: Duration = .seconds(6)
+    private static let repeatScoringTimeout: Duration = .seconds(6)
+    private static let repeatRetryDelay: Duration = .milliseconds(850)
     public private(set) var state = StudyState()
 
     let shellStore = StudyShellStore()
@@ -32,6 +37,7 @@ public final class StudyStore {
     private var settledCompletions: Set<CourseModeKey> = []
     private nonisolated let eventTask = StudyTaskSlot()
     private nonisolated let waitingTask = StudyTaskSlot()
+    private nonisolated let repeatPhaseTask = StudyTaskSlot()
     private var hasStarted = false
     private var failedCourseID: CourseID?
     private var repeatController = RepeatSessionController()
@@ -464,6 +470,7 @@ public final class StudyStore {
                    let requestID = snapshot.requestID,
                    requestID == repeatPlaybackRequestID {
                     repeatPlaybackRequestID = nil
+                    repeatPhaseTask.cancel()
                     if let action = repeatController.playbackFinished(turnID: repeatController.turnID) {
                         handleRepeatAction(action)
                     }
@@ -496,6 +503,7 @@ public final class StudyStore {
 
     private func scheduleAutoplayWait(settledRequestID: PlaybackRequestID) {
         waitingTask.cancel()
+        repeatPhaseTask.cancel()
         let binding = SessionBinding(
             generation: state.listenGeneration,
             courseID: state.selectedCourseID,
@@ -684,6 +692,11 @@ public final class StudyStore {
             try await audio.prepare(entry.audioURL, nil)
             guard mode == .repeat, currentEntryID == entryID, repeatController.turnID == turn else { return }
             repeatPlaybackRequestID = try await audio.play()
+            scheduleRepeatTimeout(
+                turnID: turn,
+                phase: .playing,
+                duration: Self.repeatPlaybackTimeout
+            )
         } catch {
             state.repeatPhase = .retry
             applyRepeatPresentation(.retry)
@@ -708,6 +721,22 @@ public final class StudyStore {
         guard mode == .repeat else { return }
         let action = repeatController.receive(event, turnID: repeatController.turnID)
         syncRepeatPhase()
+        switch repeatController.phase {
+        case .speaking:
+            scheduleRepeatTimeout(
+                turnID: repeatController.turnID,
+                phase: .speaking,
+                duration: Self.repeatSpeakingTimeout
+            )
+        case .scoring:
+            scheduleRepeatTimeout(
+                turnID: repeatController.turnID,
+                phase: .scoring,
+                duration: Self.repeatScoringTimeout
+            )
+        default:
+            break
+        }
         guard let action else { return }
         handleRepeatAction(action)
     }
@@ -718,11 +747,17 @@ public final class StudyStore {
             realtime.setMicrophoneEnabled(true)
             state.repeatPhase = .armed
             applyRepeatPresentation(.speak)
+            scheduleRepeatTimeout(
+                turnID: repeatController.turnID,
+                phase: .armed,
+                duration: Self.repeatSpeakTimeout
+            )
         case .disableMicrophone:
             realtime.setMicrophoneEnabled(false)
             state.repeatPhase = repeatController.phase == .retry ? .retry : .scoring
             applyRepeatPresentation(state.repeatPhase == .retry ? .retry : .scoring)
         case let .score(turnID, _, transcript):
+            repeatPhaseTask.cancel()
             guard let course,
                   let entryID = currentEntryID,
                   let entry = course.entries.first(where: { $0.id == entryID }) else { return }
@@ -735,7 +770,10 @@ public final class StudyStore {
             state.repeatPhase = result.passed ? .passed : .retry
             shellStore.state.repeatTranscript = result.passed ? nil : transcript
             applyRepeatPresentation(result.passed ? .passed : .retry)
-            guard result.passed else { return }
+            guard result.passed else {
+                scheduleRepeatRetry(turnID: turnID)
+                return
+            }
             Task { @MainActor [weak self] in
                 guard let self else { return }
                 _ = await self.progress.record(course.id, .repeat, entryID)
@@ -767,6 +805,36 @@ public final class StudyStore {
     private func applyRepeatPresentation(_ presentation: StudyRepeatPresentationState) {
         shellStore.state.repeatPresentationState = presentation
         shellStore.state.isRepeatPaused = presentation == .paused
+    }
+
+    private func scheduleRepeatTimeout(
+        turnID: UInt64,
+        phase: RepeatSessionPhase,
+        duration: Duration
+    ) {
+        repeatPhaseTask.replace(with: Task { [weak self] in
+            do { try await Task.sleep(for: duration) } catch { return }
+            await self?.retryRepeatIfCurrent(turnID: turnID, phase: phase)
+        })
+    }
+
+    private func scheduleRepeatRetry(turnID: UInt64) {
+        repeatPhaseTask.replace(with: Task { [weak self] in
+            do { try await Task.sleep(for: Self.repeatRetryDelay) } catch { return }
+            guard let self, self.mode == .repeat, self.repeatController.turnID == turnID else { return }
+            await self.startRepeatTurn()
+        })
+    }
+
+    private func retryRepeatIfCurrent(turnID: UInt64, phase: RepeatSessionPhase) async {
+        guard mode == .repeat,
+              repeatController.turnID == turnID,
+              repeatController.phase == phase else { return }
+        realtime.setMicrophoneEnabled(false)
+        _ = repeatController.invalidate()
+        state.repeatPhase = .retry
+        applyRepeatPresentation(.retry)
+        scheduleRepeatRetry(turnID: repeatController.turnID)
     }
 
     private func syncRepeatPhase() {
