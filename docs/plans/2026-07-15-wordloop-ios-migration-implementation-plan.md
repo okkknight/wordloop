@@ -306,6 +306,8 @@ App Target 只完成：
 
 ### P5.2 SwiftData schema
 
+状态：READY；详见 [`../tasks/2026-07-18-p5-2-swiftdata-schema.md`](../tasks/2026-07-18-p5-2-swiftdata-schema.md)。
+
 实现 `StudyIdentity`、`ProgressRecord`、`ProgressEvent`、`CourseCompletionRecord/Event`、`CoursePreference`。定义 schema version 和迁移测试入口。
 
 ### P5.3 Progress Outbox

@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P5.2 SwiftData schema task ready
+
+- 新增 P5.2 任务卡：六个本地模型、SwiftData v1 VersionedSchema、MigrationPlan 和内存/磁盘 container factory。
+- progress record/event 按 user/mode/course/entry 分区；completion record/event 和 preference 跨 mode；复合唯一键使用 length-prefixed builder。
+- P5.2 禁止 repository/outbox processor、URLSession、VPS 请求、Startup/StudyStore/UI 接线和删除 P4 temporary adapter。
+
 ## 2026-07-18 · P5.1 progress contracts PASS
 
 - Swift DTO 与共享 fixtures 已完成；真实请求级测试启动隔离 VPS Node 和构建后 Worker/D1，覆盖五种 POST、两种 GET、固定错误、分支优先级、幂等、上限 3、跨 mode completion 与 mode-scoped reset。
