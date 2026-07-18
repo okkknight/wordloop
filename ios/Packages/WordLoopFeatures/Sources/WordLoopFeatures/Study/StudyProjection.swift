@@ -1,12 +1,15 @@
 import Foundation
 import WordLoopCore
+import WordLoopContent
 import WordLoopDesignSystem
 
 enum StudyProjection {
     static func courseDrawerState(
         catalog: CourseCatalog,
         selectedCourseID: CourseID?,
-        completionCounts: [CourseID: Int] = [:]
+        completionCounts: [CourseID: Int] = [:],
+        bundledCourseIDs: Set<CourseID> = [],
+        installations: [CourseID: CourseInstallation] = [:]
     ) -> CourseDrawerViewState {
         let availableCourses = catalog.courses.filter { $0.availability == .available }
         let collections: [CourseDrawerCollection] = catalog.collections.compactMap { collection -> CourseDrawerCollection? in
@@ -18,7 +21,12 @@ enum StudyProjection {
                         title: descriptor.title,
                         subtitle: descriptor.subtitle,
                         completionCount: completionCounts[descriptor.id, default: 0],
-                        isSelected: descriptor.id == selectedCourseID
+                        isSelected: descriptor.id == selectedCourseID,
+                        availability: courseAvailability(
+                            descriptor: descriptor,
+                            bundledCourseIDs: bundledCourseIDs,
+                            installations: installations
+                        )
                     )
                 }
             guard !courses.isEmpty else { return nil }
@@ -121,6 +129,21 @@ enum StudyProjection {
             : withoutLeadingSlash
         guard !unwrapped.isEmpty else { return nil }
         return "/\(unwrapped)/"
+    }
+
+    private static func courseAvailability(
+        descriptor: CourseDescriptor,
+        bundledCourseIDs: Set<CourseID>,
+        installations: [CourseID: CourseInstallation]
+    ) -> CourseDrawerAvailability {
+        if bundledCourseIDs.contains(descriptor.id) { return .builtIn }
+        guard let installation = installations[descriptor.id] else { return .download }
+        if installation.contentVersion < descriptor.contentVersion { return .update }
+        switch installation.status {
+        case .installed: return .downloaded
+        case .downloading: return .downloading
+        case .failed: return .tryAgain
+        }
     }
 
     static func highlightRanges(tokens: [String], in text: String) -> [StudyHighlightRange] {

@@ -5,22 +5,26 @@ public struct CourseDrawerView: View {
     @Bindable private var store: CourseDrawerStore
     private let palette: PosterPalette
     private let onSelectCourse: (String) -> Void
+    private let onRequestDownload: (String) -> Void
     @FocusState private var searchIsFocused: Bool
 
     public init(store: CourseDrawerStore, palette: PosterPalette) {
         self.store = store
         self.palette = palette
         onSelectCourse = { _ in }
+        onRequestDownload = { _ in }
     }
 
     init(
         store: CourseDrawerStore,
         palette: PosterPalette,
-        onSelectCourse: @escaping (String) -> Void
+        onSelectCourse: @escaping (String) -> Void,
+        onRequestDownload: @escaping (String) -> Void = { _ in }
     ) {
         self.store = store
         self.palette = palette
         self.onSelectCourse = onSelectCourse
+        self.onRequestDownload = onRequestDownload
     }
 
     public var body: some View {
@@ -171,21 +175,31 @@ public struct CourseDrawerView: View {
             if store.state.isExpanded(collection.id) {
                 VStack(spacing: WordLoopSpacing.xs) {
                     ForEach(collection.courses) { course in
-                        CourseCard(
-                            model: .init(
-                                title: course.title,
-                                metadata: course.subtitle,
-                                badge: course.completionBadge,
-                                isSelected: course.isSelected
-                            ),
-                            palette: palette,
-                            accessibilityLabel: courseAccessibilityLabel(course),
-                            action: {
-                                store.selectCourse(course.id)
-                                onSelectCourse(course.id)
+                        VStack(alignment: .leading, spacing: WordLoopSpacing.xs) {
+                            CourseCard(
+                                model: .init(
+                                    title: course.title,
+                                    metadata: "\(course.subtitle) · \(course.availability.rawValue)",
+                                    badge: course.completionBadge,
+                                    isSelected: course.isSelected
+                                ),
+                                palette: palette,
+                                accessibilityLabel: courseAccessibilityLabel(course),
+                                action: {
+                                    store.selectCourse(course.id)
+                                    onSelectCourse(course.id)
+                                }
+                            )
+                            .disabled(!course.availability.canSelect)
+                            .accessibilityIdentifier("course-drawer.course.\(course.id)")
+                            if let actionTitle = course.availability.actionTitle {
+                                PosterButton(.text(actionTitle), accessibilityLabel: "\(course.title)，\(actionTitle)") {
+                                    store.requestDownload(course.id)
+                                    onRequestDownload(course.id)
+                                }
+                                .accessibilityIdentifier("course-drawer.download.\(course.id)")
                             }
-                        )
-                        .accessibilityIdentifier("course-drawer.course.\(course.id)")
+                        }
                     }
                 }
                 .padding(.bottom, WordLoopSpacing.sm)
@@ -201,7 +215,7 @@ public struct CourseDrawerView: View {
     }
 
     private func courseAccessibilityLabel(_ course: CourseDrawerCourse) -> String {
-        var parts = [course.title, course.subtitle, course.selectionAccessibilityValue]
+        var parts = [course.title, course.subtitle, course.availability.rawValue, course.selectionAccessibilityValue]
         if let completion = course.completionAccessibilityValue {
             parts.append(completion)
         }

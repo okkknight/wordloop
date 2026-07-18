@@ -11,6 +11,7 @@ struct StudyViewActions {
     var next: @MainActor () -> Void
     var markTooEasy: @MainActor () -> Void
     var selectCourse: @MainActor (String) -> Void
+    var downloadCourse: @MainActor (String) -> Void
     var restartCourse: (@MainActor (String) -> Void)?
 
     static func fixture(store: StudyShellStore) -> Self {
@@ -23,6 +24,7 @@ struct StudyViewActions {
             next: store.next,
             markTooEasy: store.markTooEasy,
             selectCourse: { _ in },
+            downloadCourse: { _ in },
             restartCourse: nil
         )
     }
@@ -134,7 +136,8 @@ public struct MainStudyView: View {
                 CourseDrawerView(
                     store: courseDrawerStore,
                     palette: store.state.palette,
-                    onSelectCourse: actions.selectCourse
+                    onSelectCourse: actions.selectCourse,
+                    onRequestDownload: actions.downloadCourse
                 )
                     .transition(.move(edge: .leading).combined(with: .opacity))
                     .zIndex(10)

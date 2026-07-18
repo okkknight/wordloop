@@ -51,12 +51,19 @@ public final class CourseDrawerStore {
 
     public func selectCourse(_ courseID: String) {
         guard state.collections.contains(where: { collection in
-            collection.courses.contains(where: { $0.id == courseID })
+            collection.courses.contains(where: { $0.id == courseID && $0.availability.canSelect })
         }) else { return }
 
         state.isPresented = false
         state.lastDismissReason = .selection
         lastAction = .selectedCourse(courseID)
+    }
+
+    public func requestDownload(_ courseID: String) {
+        guard state.collections.contains(where: { collection in
+            collection.courses.contains(where: { $0.id == courseID && $0.availability.actionTitle != nil })
+        }) else { return }
+        lastAction = .requestedDownload(courseID)
     }
 
     @discardableResult

@@ -1,6 +1,7 @@
 import Foundation
 import Observation
 import WordLoopAudio
+import WordLoopContent
 import WordLoopCore
 import WordLoopDesignSystem
 import WordLoopRealtime
@@ -23,6 +24,7 @@ public final class StudyStore {
     private let courses: StudyCourseClient
     private let audio: StudyAudioClient
     private let progress: StudyProgressClient
+    private let downloads: StudyDownloadClient
     private let realtime: StudyRealtimeClient
     private let clock: StudyClock
     private let random: StudyRandomClient
@@ -34,6 +36,8 @@ public final class StudyStore {
     private var currentEntryID: EntryID?
     private var mode: StudyMode = .repeat
     private var completionCounts: [CourseID: Int] = [:]
+    private var bundledCourseIDs: Set<CourseID> = []
+    private var installations: [CourseID: CourseInstallation] = [:]
     private var settledCompletions: Set<CourseModeKey> = []
     private nonisolated let eventTask = StudyTaskSlot()
     private nonisolated let waitingTask = StudyTaskSlot()
@@ -49,6 +53,7 @@ public final class StudyStore {
         courses: StudyCourseClient,
         audio: StudyAudioClient,
         progress: StudyProgressClient,
+        downloads: StudyDownloadClient = .unavailable,
         realtime: StudyRealtimeClient = .unavailable,
         clock: StudyClock = .live,
         random: StudyRandomClient = .live,
@@ -57,6 +62,7 @@ public final class StudyStore {
         self.courses = courses
         self.audio = audio
         self.progress = progress
+        self.downloads = downloads
         self.realtime = realtime
         self.clock = clock
         self.random = random
@@ -76,6 +82,8 @@ public final class StudyStore {
             let catalog = try await courses.catalog()
             guard isCurrent(generation) else { return }
             self.catalog = catalog
+            bundledCourseIDs = await courses.bundledCourseIDs()
+            installations = Dictionary(uniqueKeysWithValues: await downloads.installations().map { ($0.courseID, $0) })
             completionCounts = await progress.completions()
             guard isCurrent(generation) else { return }
             let initialCourseID = preferredCourseID.flatMap { preferred in
@@ -108,7 +116,9 @@ public final class StudyStore {
     }
 
     public func selectCourse(_ rawCourseID: String) async {
-        guard let courseID = CourseID(rawValue: rawCourseID), catalog != nil else { return }
+        guard let courseID = CourseID(rawValue: rawCourseID),
+              let descriptor = catalog?.courses.first(where: { $0.id == courseID }),
+              canOpen(descriptor) else { return }
         let generation = beginNewSession()
         failedCourseID = courseID
         state.phase = .loading
@@ -122,6 +132,26 @@ public final class StudyStore {
             state.phase = .failed
             state.listenPhase = .failed
         }
+    }
+
+    public func downloadCourse(_ rawCourseID: String) async {
+        guard let courseID = CourseID(rawValue: rawCourseID),
+              let descriptor = catalog?.courses.first(where: { $0.id == courseID }),
+              !bundledCourseIDs.contains(courseID),
+              descriptor.availability == .available else { return }
+
+        installations[courseID] = CourseInstallation(
+            courseID: courseID,
+            contentVersion: descriptor.contentVersion,
+            relativePath: "courses/\(courseID.rawValue)/\(descriptor.contentVersion)",
+            downloadedBytes: 0,
+            expectedBytes: descriptor.downloadSize,
+            status: .downloading
+        )
+        await refreshCurrentProjection()
+        _ = try? await downloads.install(descriptor)
+        installations = Dictionary(uniqueKeysWithValues: await downloads.installations().map { ($0.courseID, $0) })
+        await refreshCurrentProjection()
     }
 
     public func retry() async {
@@ -436,7 +466,9 @@ public final class StudyStore {
                 courses: [course.descriptor]
             ),
             selectedCourseID: course.id,
-            completionCounts: completionCounts
+            completionCounts: completionCounts,
+            bundledCourseIDs: bundledCourseIDs,
+            installations: installations
         )
         drawer.isPresented = oldDrawerPresented
         drawer.query = oldDrawerQuery
@@ -446,6 +478,21 @@ public final class StudyStore {
         progressState.isPresented = oldProgressPresented
         progressState.query = oldProgressQuery
         progressDrawerStore.state = progressState
+    }
+
+    private func canOpen(_ descriptor: CourseDescriptor) -> Bool {
+        if bundledCourseIDs.contains(descriptor.id) { return true }
+        return installations[descriptor.id]?.status == .installed
+            && installations[descriptor.id]?.contentVersion == descriptor.contentVersion
+    }
+
+    private func refreshCurrentProjection() async {
+        guard let course, let currentEntryID else { return }
+        await refreshProjection(
+            course: course,
+            currentEntryID: currentEntryID,
+            generation: state.listenGeneration
+        )
     }
 
     private func observeAudioEvents() {

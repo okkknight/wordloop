@@ -11,6 +11,7 @@ public enum CourseDrawerAction: Equatable, Sendable {
     case updatedQuery(String)
     case toggledCollection(String?)
     case selectedCourse(String)
+    case requestedDownload(String)
 }
 
 public struct CourseDrawerViewState: Equatable, Sendable {

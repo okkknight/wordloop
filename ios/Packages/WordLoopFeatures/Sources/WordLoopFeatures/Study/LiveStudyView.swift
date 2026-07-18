@@ -24,8 +24,9 @@ public struct LiveStudyView: View {
                     toggleAutoplay: { Task { await store.toggleAutoplay() } },
                     toggleRepeatPause: { Task { await store.toggleRepeatPause() } },
                     next: { Task { await store.next() } },
-                    markTooEasy: { Task { await store.markTooEasy() } },
-                    selectCourse: { courseID in Task { await store.selectCourse(courseID) } },
+            markTooEasy: { Task { await store.markTooEasy() } },
+            selectCourse: { courseID in Task { await store.selectCourse(courseID) } },
+            downloadCourse: { courseID in Task { await store.downloadCourse(courseID) } },
                     restartCourse: { courseID in Task { await store.restartCourse(courseID) } }
                 )
             )

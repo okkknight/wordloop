@@ -8,11 +8,74 @@ import WordLoopRealtime
 struct StudyCourseClient: Sendable {
     var catalog: @Sendable () async throws -> CourseCatalog
     var course: @Sendable (CourseID) async throws -> Course
+    var bundledCourseIDs: @Sendable () async -> Set<CourseID> = { [] }
 
-    static func live(repository: CourseRepository) -> Self {
+    static func live(
+        repository: CourseRepository,
+        remoteCatalog: RemoteCatalogClient? = nil,
+        installations: CourseInstallationStore? = nil,
+        installedContentRootURL: URL? = nil
+    ) -> Self {
+        let descriptorCache = CourseDescriptorCache()
+        return Self(
+            catalog: {
+                let bundled = try await repository.catalog()
+                let catalog = if let remoteCatalog {
+                    await remoteCatalog.catalog(merging: bundled)
+                } else {
+                    bundled
+                }
+                await descriptorCache.replace(with: catalog)
+                return catalog
+            },
+            course: { id in
+                if let descriptor = await descriptorCache.descriptor(for: id),
+                   let installations,
+                   let installedContentRootURL,
+                   let installation = try? await installations.installation(for: id),
+                   installation.status == .installed,
+                   installation.contentVersion == descriptor.contentVersion {
+                    return try BundledCourseSource(resourceRootURL: installedContentRootURL).loadCourse(descriptor: descriptor)
+                }
+                return try await repository.course(id: id)
+            },
+            bundledCourseIDs: {
+                Set((try? await repository.catalog().courses.map(\.id)) ?? [])
+            }
+        )
+    }
+}
+
+private actor CourseDescriptorCache {
+    private var descriptors: [CourseID: CourseDescriptor] = [:]
+
+    func replace(with catalog: CourseCatalog) {
+        descriptors = Dictionary(uniqueKeysWithValues: catalog.courses.map { ($0.id, $0) })
+    }
+
+    func descriptor(for id: CourseID) -> CourseDescriptor? {
+        descriptors[id]
+    }
+}
+
+struct StudyDownloadClient: Sendable {
+    var installations: @Sendable () async -> [CourseInstallation]
+    var install: @Sendable (CourseDescriptor) async throws -> CourseInstallation
+
+    static let unavailable = Self(installations: { [] }, install: { _ in
+        throw CourseDownloadError.invalidCatalogURL
+    })
+
+    static func live(
+        manager: CourseDownloadManager,
+        installations: CourseInstallationStore,
+        catalogURL: URL
+    ) -> Self {
         Self(
-            catalog: { try await repository.catalog() },
-            course: { try await repository.course(id: $0) }
+            installations: { (try? await installations.all()) ?? [] },
+            install: { descriptor in
+                try await manager.install(descriptor: descriptor, catalogURL: catalogURL)
+            }
         )
     }
 }

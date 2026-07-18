@@ -11,7 +11,10 @@ struct AppContainer {
         _ = WordLoopFeaturesModule.prepareDesignSystem()
         do {
             let environment = try AppEnvironment(bundle: bundle)
-            let runtime = try WordLoopFeaturesModule.makeLiveRuntime(apiBaseURL: environment.apiBaseURL)
+            let runtime = try WordLoopFeaturesModule.makeLiveRuntime(
+                apiBaseURL: environment.apiBaseURL,
+                catalogURL: environment.catalogURL
+            )
             return AppContainer(environment: environment, liveStudyStore: runtime.studyStore, startupCoordinator: runtime.startupCoordinator)
         } catch {
             preconditionFailure("Invalid WordLoop application configuration: \(error)")
@@ -24,7 +27,11 @@ struct AppContainer {
             catalogURL: URL(string: "https://example.invalid/catalog.json")!,
             configurationName: "Preview"
         )
-        let runtime = try! WordLoopFeaturesModule.makeLiveRuntime(apiBaseURL: environment.apiBaseURL, inMemory: true)
+        let runtime = try! WordLoopFeaturesModule.makeLiveRuntime(
+            apiBaseURL: environment.apiBaseURL,
+            catalogURL: environment.catalogURL,
+            inMemory: true
+        )
         return AppContainer(environment: environment, liveStudyStore: runtime.studyStore, startupCoordinator: runtime.startupCoordinator)
     }()
 }
