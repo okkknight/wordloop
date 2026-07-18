@@ -83,7 +83,7 @@ public final class StudyStore {
             guard isCurrent(generation) else { return }
             self.catalog = catalog
             bundledCourseIDs = await courses.bundledCourseIDs()
-            installations = Dictionary(uniqueKeysWithValues: await downloads.installations().map { ($0.courseID, $0) })
+            installations = CourseInstallationIndex.newestByCourse(await downloads.installations())
             completionCounts = await progress.completions()
             guard isCurrent(generation) else { return }
             let initialCourseID = preferredCourseID.flatMap { preferred in
@@ -150,7 +150,7 @@ public final class StudyStore {
         )
         await refreshCurrentProjection()
         _ = try? await downloads.install(descriptor)
-        installations = Dictionary(uniqueKeysWithValues: await downloads.installations().map { ($0.courseID, $0) })
+        installations = CourseInstallationIndex.newestByCourse(await downloads.installations())
         await refreshCurrentProjection()
     }
 

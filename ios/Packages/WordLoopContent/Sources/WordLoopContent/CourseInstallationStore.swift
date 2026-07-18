@@ -48,6 +48,17 @@ public enum CourseInstallationStoreError: Error, Equatable, Sendable {
     case unsafePath(String)
 }
 
+public enum CourseInstallationIndex {
+    public static func newestByCourse(_ installations: [CourseInstallation]) -> [CourseID: CourseInstallation] {
+        installations.reduce(into: [:]) { result, installation in
+            if let current = result[installation.courseID], current.contentVersion >= installation.contentVersion {
+                return
+            }
+            result[installation.courseID] = installation
+        }
+    }
+}
+
 /// A small atomic JSON index. Course media is deliberately not embedded in persistence.
 public actor CourseInstallationStore {
     private let fileURL: URL
