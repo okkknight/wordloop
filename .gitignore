@@ -57,5 +57,6 @@ next-env.d.ts
 ios/Packages/*/Package.resolved
 /ios/.derivedData/
 /ios/.releaseDerivedData/
+/ios/.testDerivedData/
 **/xcuserdata/
 **/project.xcworkspace/
