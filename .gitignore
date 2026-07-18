@@ -54,5 +54,6 @@ next-env.d.ts
 /ios/Generated/
 /ios/Packages/WordLoopContent/Sources/WordLoopContent/Resources/WordLoopContent/
 **/.build/
+ios/Packages/*/Package.resolved
 /ios/.derivedData/
 **/xcuserdata/
