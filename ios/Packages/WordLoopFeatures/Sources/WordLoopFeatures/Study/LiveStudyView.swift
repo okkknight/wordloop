@@ -22,7 +22,7 @@ public struct LiveStudyView: View {
                     selectMode: { mode in Task { await store.selectMode(mode) } },
                     cycleVisibility: store.cycleVisibility,
                     toggleAutoplay: { Task { await store.toggleAutoplay() } },
-                    toggleRepeatPause: {},
+                    toggleRepeatPause: { Task { await store.toggleRepeatPause() } },
                     next: { Task { await store.next() } },
                     markTooEasy: { Task { await store.markTooEasy() } },
                     selectCourse: { courseID in Task { await store.selectCourse(courseID) } },

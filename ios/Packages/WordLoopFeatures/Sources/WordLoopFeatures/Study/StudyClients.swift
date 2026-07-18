@@ -3,6 +3,7 @@ import WordLoopAudio
 import WordLoopContent
 import WordLoopCore
 import WordLoopProgress
+import WordLoopRealtime
 
 struct StudyCourseClient: Sendable {
     var catalog: @Sendable () async throws -> CourseCatalog
@@ -106,6 +107,40 @@ struct StudyProgressClient: Sendable {
                 Task { _ = try? await repository.flush(userID: userID, mode: .repeat, trigger: .networkRecovered) }
                 return value
             }
+        )
+    }
+}
+
+struct StudyRealtimeClient: @unchecked Sendable {
+    var requestPermission: @Sendable () async -> Bool
+    var connect: @Sendable (
+        @escaping @Sendable (RealtimeTransportEvent) -> Void,
+        @escaping @Sendable (RealtimePeerConnectionState) -> Void
+    ) async throws -> Void
+    var setMicrophoneEnabled: @Sendable (Bool) -> Void
+    var close: @Sendable () -> Void
+
+    static let unavailable = Self(
+        requestPermission: { false },
+        connect: { _, _ in throw RealtimeTransportError.unavailablePeerConnection },
+        setMicrophoneEnabled: { _ in },
+        close: {}
+    )
+
+    static func live(apiBaseURL: URL, session: ActiveStudySession) throws -> Self {
+        let connection = LiveRealtimePeerConnection(
+            sessionClient: try PronunciationSessionClient(baseURL: apiBaseURL)
+        )
+        let authorizer = LiveMicrophoneAuthorizer()
+        return Self(
+            requestPermission: { await authorizer.requestPermission() },
+            connect: { event, state in
+                connection.onEvent = event
+                connection.onStateChange = state
+                try await connection.connect(userID: await session.userID)
+            },
+            setMicrophoneEnabled: { connection.setMicrophoneEnabled($0) },
+            close: { connection.close() }
         )
     }
 }

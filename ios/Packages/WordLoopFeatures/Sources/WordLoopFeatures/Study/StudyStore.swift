@@ -3,6 +3,7 @@ import Observation
 import WordLoopAudio
 import WordLoopCore
 import WordLoopDesignSystem
+import WordLoopRealtime
 
 @MainActor
 @Observable
@@ -17,6 +18,7 @@ public final class StudyStore {
     private let courses: StudyCourseClient
     private let audio: StudyAudioClient
     private let progress: StudyProgressClient
+    private let realtime: StudyRealtimeClient
     private let clock: StudyClock
     private let random: StudyRandomClient
     private let courseSelection: @Sendable (CourseID, StudyMode) async -> Void
@@ -32,11 +34,16 @@ public final class StudyStore {
     private nonisolated let waitingTask = StudyTaskSlot()
     private var hasStarted = false
     private var failedCourseID: CourseID?
+    private var repeatController = RepeatSessionController()
+    private var repeatPlaybackRequestID: PlaybackRequestID?
+    private var realtimeConnected = false
+    private var microphoneAuthorized = false
 
     init(
         courses: StudyCourseClient,
         audio: StudyAudioClient,
         progress: StudyProgressClient,
+        realtime: StudyRealtimeClient = .unavailable,
         clock: StudyClock = .live,
         random: StudyRandomClient = .live,
         courseSelection: @escaping @Sendable (CourseID, StudyMode) async -> Void = { _, _ in }
@@ -44,6 +51,7 @@ public final class StudyStore {
         self.courses = courses
         self.audio = audio
         self.progress = progress
+        self.realtime = realtime
         self.clock = clock
         self.random = random
         self.courseSelection = courseSelection
@@ -78,7 +86,11 @@ public final class StudyStore {
     }
 
     public func playCurrent() async {
-        guard mode == .listen, let course, let currentEntryID else { return }
+        if mode == .repeat {
+            await startRepeatTurn()
+            return
+        }
+        guard let course, let currentEntryID else { return }
         let generation = beginNewSession()
         await audio.stop()
         await playRound(
@@ -142,6 +154,7 @@ public final class StudyStore {
                 currentEntryID: currentEntryID,
                 generation: generation
             )
+            await startRepeatTurn()
         }
     }
 
@@ -192,6 +205,12 @@ public final class StudyStore {
         guard !isActive else { return }
         let generation = beginNewSession()
         await audio.pause()
+        realtime.setMicrophoneEnabled(false)
+        if mode == .repeat {
+            _ = repeatController.pause()
+            state.repeatPhase = .paused
+            applyRepeatPresentation(.paused)
+        }
         guard isCurrent(generation) else { return }
         state.activePlaybackRequestID = nil
         if state.phase == .loading {
@@ -441,6 +460,15 @@ public final class StudyStore {
         case let .stateChanged(snapshot):
             switch snapshot.phase {
             case .finished:
+                if mode == .repeat,
+                   let requestID = snapshot.requestID,
+                   requestID == repeatPlaybackRequestID {
+                    repeatPlaybackRequestID = nil
+                    if let action = repeatController.playbackFinished(turnID: repeatController.turnID) {
+                        handleRepeatAction(action)
+                    }
+                    return
+                }
                 guard let requestID = snapshot.requestID,
                       requestID == state.activePlaybackRequestID else { return }
                 state.activePlaybackRequestID = nil
@@ -503,6 +531,11 @@ public final class StudyStore {
     @discardableResult
     private func beginNewSession() -> ListenSessionGeneration {
         waitingTask.cancel()
+        if repeatController.phase != .idle {
+            realtime.setMicrophoneEnabled(false)
+            _ = repeatController.invalidate()
+            repeatPlaybackRequestID = nil
+        }
         state.listenGeneration = .init(rawValue: state.listenGeneration.rawValue &+ 1)
         state.activePlaybackRequestID = nil
         return state.listenGeneration
@@ -594,6 +627,176 @@ public final class StudyStore {
     private var currentAudioURL: URL? {
         guard let course, let currentEntryID else { return nil }
         return course.entries.first(where: { $0.id == currentEntryID })?.audioURL
+    }
+
+    public func toggleRepeatPause() async {
+        guard mode == .repeat else { return }
+        if state.repeatPhase == .paused {
+            await startRepeatTurn()
+        } else {
+            await audio.pause()
+            realtime.setMicrophoneEnabled(false)
+            _ = repeatController.pause()
+            state.repeatPhase = .paused
+            applyRepeatPresentation(.paused)
+        }
+    }
+
+    private func startRepeatTurn() async {
+        guard mode == .repeat,
+              let course,
+              let entryID = currentEntryID,
+              let entry = course.entries.first(where: { $0.id == entryID }) else { return }
+
+        state.repeatPhase = .connecting
+        applyRepeatPresentation(.connecting)
+        realtime.setMicrophoneEnabled(false)
+
+        if !microphoneAuthorized {
+            microphoneAuthorized = await realtime.requestPermission()
+        }
+        guard microphoneAuthorized else {
+            state.repeatPhase = .failed
+            applyRepeatPresentation(.error)
+            return
+        }
+        if !realtimeConnected {
+            do {
+                try await realtime.connect(
+                    { [weak self] event in
+                        Task { @MainActor in self?.handleRealtimeEvent(event) }
+                    },
+                    { [weak self] connectionState in
+                        Task { @MainActor in self?.handleRealtimeState(connectionState) }
+                    }
+                )
+                realtimeConnected = true
+            } catch {
+                state.repeatPhase = .failed
+                applyRepeatPresentation(.error)
+                return
+            }
+        }
+        let turn = repeatController.beginTurn()
+        state.repeatPhase = .playing
+        applyRepeatPresentation(.playing)
+        do {
+            try await audio.prepare(entry.audioURL, nil)
+            guard mode == .repeat, currentEntryID == entryID, repeatController.turnID == turn else { return }
+            repeatPlaybackRequestID = try await audio.play()
+        } catch {
+            state.repeatPhase = .retry
+            applyRepeatPresentation(.retry)
+        }
+    }
+
+    private func handleRealtimeState(_ connectionState: RealtimePeerConnectionState) {
+        switch connectionState {
+        case .ready:
+            repeatController.connected()
+        case .failed:
+            state.repeatPhase = .failed
+            applyRepeatPresentation(.error)
+        case .disconnected:
+            realtimeConnected = false
+        case .connecting:
+            break
+        }
+    }
+
+    private func handleRealtimeEvent(_ event: RealtimeTransportEvent) {
+        guard mode == .repeat else { return }
+        let action = repeatController.receive(event, turnID: repeatController.turnID)
+        syncRepeatPhase()
+        guard let action else { return }
+        handleRepeatAction(action)
+    }
+
+    private func handleRepeatAction(_ action: RepeatSessionAction) {
+        switch action {
+        case .enableMicrophone:
+            realtime.setMicrophoneEnabled(true)
+            state.repeatPhase = .armed
+            applyRepeatPresentation(.speak)
+        case .disableMicrophone:
+            realtime.setMicrophoneEnabled(false)
+            state.repeatPhase = repeatController.phase == .retry ? .retry : .scoring
+            applyRepeatPresentation(state.repeatPhase == .retry ? .retry : .scoring)
+        case let .score(turnID, _, transcript):
+            guard let course,
+                  let entryID = currentEntryID,
+                  let entry = course.entries.first(where: { $0.id == entryID }) else { return }
+            let result = RepeatScorer.score(
+                target: entry.text,
+                transcript: transcript,
+                sentence: course.descriptor.kind == .sentence
+            )
+            repeatController.scored(turnID: turnID, passed: result.passed)
+            state.repeatPhase = result.passed ? .passed : .retry
+            shellStore.state.repeatTranscript = result.passed ? nil : transcript
+            applyRepeatPresentation(result.passed ? .passed : .retry)
+            guard result.passed else { return }
+            Task { @MainActor [weak self] in
+                guard let self else { return }
+                _ = await self.progress.record(course.id, .repeat, entryID)
+                guard self.mode == .repeat,
+                      self.currentEntryID == entryID,
+                      self.repeatController.turnID == turnID else { return }
+                await self.advanceRepeat(from: entryID, in: course)
+            }
+        }
+    }
+
+    private func advanceRepeat(from entryID: EntryID, in course: Course) async {
+        let counts = await progress.snapshot(course.id, .repeat)
+        guard mode == .repeat, currentEntryID == entryID else { return }
+        guard let next = StudySelection.entry(
+            in: course.entries,
+            order: course.descriptor.practiceOrder,
+            studyCounts: counts,
+            excluding: entryID,
+            randomIndex: random.index(max(1, course.entries.count))
+        ) else { return }
+        currentEntryID = next.id
+        state.currentEntryID = next.id
+        chooseNextPalette()
+        await refreshProjection(course: course, currentEntryID: next.id, generation: state.listenGeneration)
+        await startRepeatTurn()
+    }
+
+    private func applyRepeatPresentation(_ presentation: StudyRepeatPresentationState) {
+        shellStore.state.repeatPresentationState = presentation
+        shellStore.state.isRepeatPaused = presentation == .paused
+    }
+
+    private func syncRepeatPhase() {
+        let presentation: StudyRepeatPresentationState
+        switch repeatController.phase {
+        case .idle: presentation = .idle
+        case .connecting: presentation = .connecting
+        case .ready: presentation = .ready
+        case .playing: presentation = .playing
+        case .armed: presentation = .speak
+        case .speaking: presentation = .speaking
+        case .scoring: presentation = .scoring
+        case .passed: presentation = .passed
+        case .retry: presentation = .retry
+        case .paused: presentation = .paused
+        case .recoverableError: presentation = .error
+        }
+        state.repeatPhase = switch repeatController.phase {
+        case .idle: .idle
+        case .connecting, .ready: .connecting
+        case .playing: .playing
+        case .armed: .armed
+        case .speaking: .speaking
+        case .scoring: .scoring
+        case .passed: .passed
+        case .retry: .retry
+        case .paused: .paused
+        case .recoverableError: .failed
+        }
+        applyRepeatPresentation(presentation)
     }
 }
 

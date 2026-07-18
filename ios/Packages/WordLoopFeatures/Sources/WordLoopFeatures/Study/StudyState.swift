@@ -17,6 +17,10 @@ public enum ListenPhase: Equatable, Sendable {
     case failed
 }
 
+public enum RepeatPhase: Equatable, Sendable {
+    case idle, connecting, playing, armed, speaking, scoring, passed, retry, paused, failed
+}
+
 public struct ListenSessionGeneration: RawRepresentable, Equatable, Hashable, Sendable {
     public let rawValue: UInt64
 
@@ -35,6 +39,7 @@ public struct StudyState: Equatable, Sendable {
     public var listenGeneration: ListenSessionGeneration
     public var activePlaybackRequestID: PlaybackRequestID?
     public var courseExhausted: Bool
+    public var repeatPhase: RepeatPhase
 
     public init(
         phase: StudyPhase = .idle,
@@ -45,7 +50,8 @@ public struct StudyState: Equatable, Sendable {
         isAutoplayEnabled: Bool = false,
         listenGeneration: ListenSessionGeneration = .init(rawValue: 0),
         activePlaybackRequestID: PlaybackRequestID? = nil,
-        courseExhausted: Bool = false
+        courseExhausted: Bool = false,
+        repeatPhase: RepeatPhase = .idle
     ) {
         self.phase = phase
         self.listenPhase = listenPhase
@@ -56,5 +62,6 @@ public struct StudyState: Equatable, Sendable {
         self.listenGeneration = listenGeneration
         self.activePlaybackRequestID = activePlaybackRequestID
         self.courseExhausted = courseExhausted
+        self.repeatPhase = repeatPhase
     }
 }

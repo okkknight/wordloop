@@ -16,6 +16,7 @@ public extension WordLoopFeaturesModule {
         let audioPlayer = try AudioPlayer.live()
         let persistence = try WordLoopProgressRuntime.make(apiBaseURL: apiBaseURL, inMemory: inMemory)
         let activeSession = ActiveStudySession()
+        let realtime = try StudyRealtimeClient.live(apiBaseURL: apiBaseURL, session: activeSession)
         let coordinator = StartupCoordinator(sessions: persistence.sessionRepository, activeSession: activeSession)
         let studyStore = StudyStore(
             courses: .live(repository: courseRepository),
@@ -24,6 +25,7 @@ public extension WordLoopFeaturesModule {
                 repository: persistence.progressRepository,
                 session: activeSession
             ),
+            realtime: realtime,
             courseSelection: { courseID, mode in
                 guard let userID = await activeSession.userID else { return }
                 try? await persistence.sessionRepository.publishRecentCourse(
