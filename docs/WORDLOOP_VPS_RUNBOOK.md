@@ -148,6 +148,10 @@ handle @wordloopContentStaging {
 和一个 M4A 都返回 200，且音频响应支持 `Range`。production catalog 不得在 staging
 真机验证前更新。
 
+默认 staging 发布命令为 `npm run content:publish:staging`。它先导出并上传仅新增的
+版本目录，最后原子替换 catalog；如需 production，必须显式传入另一组
+`WORDLOOP_CONTENT_REMOTE_ROOT` 与 `WORDLOOP_CONTENT_PUBLIC_BASE`，不能复用 staging 默认值。
+
 ## 4. 数据存储现状
 
 当前学习相关数据文件：

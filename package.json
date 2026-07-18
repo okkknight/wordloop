@@ -14,6 +14,7 @@
     "baseline:ios": "node scripts/capture_ios_migration_baseline.mjs --check",
     "baseline:ios:write": "node scripts/capture_ios_migration_baseline.mjs --write",
     "content:export": "node scripts/export_course_packages.mjs --write",
+    "content:publish:staging": "sh scripts/publish_ios_catalog.sh",
     "content:check": "node scripts/export_course_packages.mjs --check",
     "db:generate": "drizzle-kit generate"
   },
