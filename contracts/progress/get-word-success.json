@@ -1,0 +1,5 @@
+{
+  "progress": [{ "word": "example", "studyCount": 2 }],
+  "completions": [{ "courseId": "course-a", "completionCount": 1 }],
+  "recentCourseId": "course-a"
+}

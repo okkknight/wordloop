@@ -1,7 +1,5 @@
 import { env } from "cloudflare:workers";
-import { WORDS } from "../../words";
 
-const wordSet = new Set(WORDS.map(([word]) => word));
 const anonymousUserIdPattern = /^[0-9a-f-]{36}$/i;
 const namedUserIdPattern = /^name:[a-z]+$/;
 const studyModes = new Set(["listen", "repeat"]);
@@ -39,8 +37,11 @@ export async function GET(request: Request) {
   const url = new URL(request.url);
   const userId = url.searchParams.get("userId");
   const studyMode = url.searchParams.get("mode");
-  if (!validUserId(userId) || !validStudyMode(studyMode)) {
+  if (!validUserId(userId)) {
     return Response.json({ error: "invalid user id" }, { status: 400 });
+  }
+  if (!validStudyMode(studyMode)) {
+    return Response.json({ error: "invalid study mode" }, { status: 400 });
   }
 
   const courseId = url.searchParams.get("courseId");
@@ -81,7 +82,7 @@ export async function POST(request: Request) {
     itemId?: string;
   };
   if (payload.selectCourse === true) {
-    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !payload.courseId) {
+    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId) {
       return Response.json({ error: "invalid course selection" }, { status: 400 });
     }
     await env.DB.prepare(
@@ -92,7 +93,7 @@ export async function POST(request: Request) {
     return Response.json({ recentCourseId: payload.courseId });
   }
   if (payload.resetCourse === true) {
-    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !payload.courseId) {
+    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId) {
       return Response.json({ error: "invalid course reset" }, { status: 400 });
     }
     await env.DB.prepare(
@@ -105,7 +106,7 @@ export async function POST(request: Request) {
   }
 
   if (payload.completeCourse === true) {
-    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !validProgressEventId(payload.clientEventId) || !payload.courseId) {
+    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || !validProgressEventId(payload.clientEventId) || typeof payload.courseId !== "string" || !payload.courseId) {
       return Response.json({ error: "invalid course completion" }, { status: 400 });
     }
     const event = await env.DB.prepare(
@@ -128,7 +129,7 @@ export async function POST(request: Request) {
     return Response.json({ error: "invalid progress update" }, { status: 400 });
   }
 
-  if (payload.courseId && payload.itemId) {
+  if (typeof payload.courseId === "string" && typeof payload.itemId === "string" && payload.courseId && payload.itemId) {
     const isNewEvent = await claimProgressEvent(payload.clientEventId, payload.userId, payload.mode, payload.courseId, payload.itemId, null);
     const row = isNewEvent
       ? await env.DB.prepare(
@@ -145,7 +146,7 @@ export async function POST(request: Request) {
     return Response.json({ itemId: payload.itemId, studyCount: row?.studyCount ?? 1 });
   }
 
-  if (!payload.word || !wordSet.has(payload.word)) {
+  if (typeof payload.word !== "string" || !payload.word.trim()) {
     return Response.json({ error: "invalid progress update" }, { status: 400 });
   }
 
