@@ -16,6 +16,12 @@ test("P5.1 progress fixtures cover every frozen request shape", async () => {
   assert.deepEqual(JSON.parse(await read("contracts/progress/get-course-success.json")), {
     progress: [{ itemId: "line-001", studyCount: 3 }],
   });
+  const errors = JSON.parse(await read("contracts/progress/error-cases.json"));
+  assert.deepEqual(errors.map(({ status, response }) => [status, response.error]), [
+    [400, "invalid user id"],
+    [400, "invalid study mode"],
+    [400, "invalid progress update"],
+  ]);
 });
 
 test("P5.1 Networking remains DTO-only and temporary progress stays in P4", async () => {

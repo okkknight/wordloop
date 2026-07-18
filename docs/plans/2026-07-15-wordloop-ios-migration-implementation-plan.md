@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P4.4 已 PASS，当前执行 P5.1
+状态：执行中；P0–P5.1 已 PASS，当前执行 P5.2
 
 制定日期：2026-07-15
 
@@ -298,7 +298,7 @@ App Target 只完成：
 
 ### P5.1 API DTO 与契约 fixtures
 
-状态：READY；详见 [`../tasks/2026-07-18-p5-1-progress-api-contracts.md`](../tasks/2026-07-18-p5-1-progress-api-contracts.md)。
+状态：PASS；详见 [`../tasks/2026-07-18-p5-1-progress-api-contracts.md`](../tasks/2026-07-18-p5-1-progress-api-contracts.md)。
 
 - 在 `WordLoopNetworking` 定义 progress GET/POST、select/reset/complete DTO。
 - 用 P0 fixtures 测试解码/编码。

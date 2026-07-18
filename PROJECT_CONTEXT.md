@@ -33,11 +33,11 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；当前检查点为 P5.1 API DTO 与契约 fixtures。
+任务：执行 iOS 迁移 Plan；当前检查点为 P5.2 SwiftData schema。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4 均已 PASS。P4.4 会话期完成/重练通过 Progress 9/9、Features 103/103（StudyStore 28/28）、Web 53/53、baseline、统一 iOS verify、AppIntegration 5/5、App UI 26/26 和 diff check；lint 精确保持既有 4 errors/0 warnings。当前进入 P5.1，先锁定 API DTO 与 Node/Cloudflare 契约 fixtures，不提前实现 SwiftData/outbox。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4、P5.1 均已 PASS。P5.1 通过 Networking 4/4、真实 VPS Node/Worker 请求合同 1/1、Web 57/57、统一 iOS verify、AppIntegration 5/5、App UI 26/26、baseline 和 diff check；lint 精确保持既有 4 errors/0 warnings。当前进入 P5.2 SwiftData schema，不提前实现 outbox/transport/UI 接线。
 
-P5.1 任务卡已锁定：以当前 VPS Node 和 P0 API baseline 为合同真值，Cloudflare 对齐 Node 的错误/非空校验；Swift 只增加显式 Codable DTO，共用 fixtures 必须通过 Swift round-trip 与 Node/Cloudflare 请求级测试。本阶段禁止 transport、SwiftData、outbox、UI 接线和替换 P4 temporary adapter。
+P5.1 已以当前 VPS Node 和 P0 API baseline 为合同真值完成。共享 fixtures 驱动 Swift round-trip 与隔离的真实 VPS Node/Worker 请求；回归修复 D1 progress event 漏写 `created_at` 的静默丢事件。线上环境和后续 transport 仍明确走 VPS，Cloudflare 仅保持兼容合同。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 

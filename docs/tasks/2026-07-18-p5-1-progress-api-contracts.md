@@ -1,6 +1,6 @@
 # P5.1 Progress API DTO 与契约 fixtures
 
-状态：READY
+状态：PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -53,3 +53,11 @@
 ## 退出条件
 
 Swift、Node、Cloudflare 三方对同一 fixtures 的 JSON 合同一致；已记录的 D1/Node 响应差异被消除或由测试明确排除。完成后进入 P5.2 SwiftData schema，不提前接 P5.3 网络同步。
+
+## 最终实现结果（2026-07-18）
+
+- `WordLoopNetworking` 已增加两种 GET shape、五种 POST request、对应 response/error 与 query DTO；共享 fixtures 精确覆盖可选 recent course、固定 400 error 和所有分支。
+- 请求级测试启动隔离的真实 VPS Node server 与构建后 Worker + D1，对相同 payload 比较状态码/JSON，并覆盖分支优先级、event 幂等、上限 3、跨 mode completion、mode-scoped reset 和 select 幂等。
+- 真实 handler 回归发现并修复 D1 `progress_events.created_at` 漏写导致 `INSERT OR IGNORE` 静默丢事件；Cloudflare 的 mode error 与非空校验也已对齐 VPS Node。线上合同和后续 transport 仍以 VPS 为主，未改变部署目标。
+- Networking 4/4、VPS/Worker 请求合同 1/1、Web 57/57、统一 iOS verify、AppIntegration 5/5、App UI 26/26、baseline 与 diff check 全部通过；lint 精确保持既有 4 errors/0 warnings。
+- 源码审计确认无 URLSession、SwiftData、outbox、UI 接线或 temporary adapter 替换。P5.1 结论为 PASS。

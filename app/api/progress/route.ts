@@ -27,8 +27,8 @@ async function claimProgressEvent(
   word: string | null,
 ) {
   const result = await env.DB.prepare(
-    `INSERT OR IGNORE INTO progress_events (event_id, user_id, study_mode, course_id, item_id, word)
-     VALUES (?, ?, ?, ?, ?, ?)`,
+    `INSERT OR IGNORE INTO progress_events (event_id, user_id, study_mode, course_id, item_id, word, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)`,
   ).bind(eventId, userId, studyMode, courseId, itemId, word).run();
   return result.meta.changes === 1;
 }

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "invalid-user",
+    "method": "GET",
+    "path": "/api/progress?userId=bad&mode=listen",
+    "status": 400,
+    "response": { "error": "invalid user id" }
+  },
+  {
+    "name": "invalid-mode",
+    "method": "GET",
+    "path": "/api/progress?userId=name:alice&mode=bad",
+    "status": 400,
+    "response": { "error": "invalid study mode" }
+  },
+  {
+    "name": "invalid-progress-update",
+    "method": "POST",
+    "path": "/api/progress",
+    "request": { "userId": "name:alice", "mode": "listen", "clientEventId": "event-009", "word": "" },
+    "status": 400,
+    "response": { "error": "invalid progress update" }
+  }
+]

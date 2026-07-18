@@ -15,11 +15,18 @@ final class WordLoopNetworkingTests: XCTestCase {
         let course = try decode(CourseProgressSnapshotDTO.self, fixture: "get-course-success.json")
         XCTAssertEqual(course.progress, [.init(itemId: "line-001", studyCount: 3)])
 
-        let missingRecent = try JSONDecoder().decode(
-            WordProgressSnapshotDTO.self,
-            from: Data(#"{"progress":[],"completions":[]}"#.utf8)
-        )
+        let missingRecent = try decode(WordProgressSnapshotDTO.self, fixture: "get-word-no-recent.json")
         XCTAssertNil(missingRecent.recentCourseId)
+
+        let errors = try JSONDecoder().decode(
+            [ErrorCase].self,
+            from: Data(contentsOf: fixtureURL("error-cases.json"))
+        )
+        XCTAssertEqual(errors.map(\.response), [
+            .init(error: "invalid user id"),
+            .init(error: "invalid study mode"),
+            .init(error: "invalid progress update"),
+        ])
     }
 
     func testExplicitPostDTOsMatchEverySharedFixture() throws {
@@ -63,6 +70,10 @@ final class WordLoopNetworkingTests: XCTestCase {
     private struct PostCase: Decodable {
         let name: String
         let request: AnyJSON
+    }
+
+    private struct ErrorCase: Decodable {
+        let response: ProgressErrorDTO
     }
 
     private enum AnyJSON: Decodable, Equatable {

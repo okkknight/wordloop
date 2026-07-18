@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P5.1 progress contracts PASS
+
+- Swift DTO 与共享 fixtures 已完成；真实请求级测试启动隔离 VPS Node 和构建后 Worker/D1，覆盖五种 POST、两种 GET、固定错误、分支优先级、幂等、上限 3、跨 mode completion 与 mode-scoped reset。
+- 测试发现并修复 D1 progress event 漏写 `created_at` 导致事件静默丢弃；Cloudflare 校验对齐 VPS Node。线上/后续 transport 仍以 VPS 为目标，未改部署。
+- Networking 4/4、请求合同 1/1、Web 57/57、统一 iOS verify、AppIntegration 5/5、App UI 26/26、baseline、diff check 全绿；lint 保持既有 4 errors/0 warnings。P5.1 PASS，进入 P5.2。
+
 ## 2026-07-18 · P5.1 progress contract task ready
 
 - 新增 P5.1 任务卡：以真实 VPS Node 与 P0 API baseline 为合同真值，Swift 增加显式 Codable DTO，共用 JSON fixtures 同时驱动 Swift round-trip 与 Node/Cloudflare 请求级测试。
