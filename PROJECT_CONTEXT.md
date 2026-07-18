@@ -33,9 +33,9 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；当前检查点为 P4.3 StudyStore 与离线 LISTEN 主链路。
+任务：执行 iOS 迁移 Plan；当前检查点为 P5.1 API DTO 与契约 fixtures。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.3 均已 PASS。P4.4 会话期完成/重练已实现，Progress 9/9、Features 100/100、Web 53/53、baseline、统一 iOS verify、AppIntegration 5/5 和修复后的目标 UI 用例均通过；完整 26 项 UI 套件与 reset/complete suspension 边界仍待复验，因此 P4.4 尚未 PASS，不进入 P5。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4 均已 PASS。P4.4 会话期完成/重练通过 Progress 9/9、Features 103/103（StudyStore 28/28）、Web 53/53、baseline、统一 iOS verify、AppIntegration 5/5、App UI 26/26 和 diff check；lint 精确保持既有 4 errors/0 warnings。当前进入 P5.1，先锁定 API DTO 与 Node/Cloudflare 契约 fixtures，不提前实现 SwiftData/outbox。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 

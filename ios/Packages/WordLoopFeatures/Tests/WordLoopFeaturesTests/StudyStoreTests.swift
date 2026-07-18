@@ -500,6 +500,72 @@ final class StudyStoreTests: XCTestCase {
         XCTAssertEqual(harness.store.state.listenPhase, .playing)
     }
 
+    func testSuspendedResetCannotOverwriteNewerCourseSelection() async {
+        let harness = makeHarness(primaryEntryCount: 1)
+        await enterListen(harness)
+        await harness.store.next()
+        await harness.store.next()
+        await harness.progress.suspendNextReset()
+
+        let oldReset = Task { @MainActor in
+            await harness.store.restartCourse(harness.primary.id.rawValue)
+        }
+        await harness.progress.waitUntilResetIsSuspended()
+        await harness.store.selectCourse(harness.secondary.id.rawValue)
+        let selectedToken = try! XCTUnwrap(harness.store.state.activePlaybackRequestID)
+        await harness.progress.releaseSuspendedReset()
+        await oldReset.value
+
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.secondary.id)
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.secondary.entries[0].id)
+        XCTAssertEqual(harness.store.state.activePlaybackRequestID, selectedToken)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+        XCTAssertTrue(harness.store.completionDialogStore.state.isPresented)
+        XCTAssertEqual(harness.store.completionDialogStore.state.kind, .courseCompleted)
+    }
+
+    func testSuspendedResetCannotOverwriteNewerModeIntent() async {
+        let harness = makeHarness(primaryEntryCount: 1)
+        await enterListen(harness)
+        await harness.store.next()
+        await harness.store.next()
+        await harness.progress.suspendNextReset()
+
+        let oldReset = Task { @MainActor in
+            await harness.store.restartCourse(harness.primary.id.rawValue)
+        }
+        await harness.progress.waitUntilResetIsSuspended()
+        await harness.store.selectMode(.repeat)
+        await harness.progress.releaseSuspendedReset()
+        await oldReset.value
+
+        XCTAssertEqual(harness.store.shellStore.state.mode, .repeat)
+        XCTAssertEqual(harness.store.state.listenPhase, .idle)
+        XCTAssertNil(harness.store.state.activePlaybackRequestID)
+        XCTAssertTrue(harness.store.completionDialogStore.state.isPresented)
+        XCTAssertEqual(harness.store.completionDialogStore.state.kind, .courseCompleted)
+    }
+
+    func testSuspendedCompletionCannotPresentOverNewerCourseSession() async {
+        let harness = makeHarness(primaryEntryCount: 1)
+        await enterListen(harness)
+        await harness.store.next()
+        await harness.progress.suspendNextComplete()
+
+        let oldCompletion = Task { @MainActor in await harness.store.next() }
+        await harness.progress.waitUntilCompleteIsSuspended()
+        await harness.store.selectCourse(harness.secondary.id.rawValue)
+        let selectedToken = try! XCTUnwrap(harness.store.state.activePlaybackRequestID)
+        await harness.progress.releaseSuspendedComplete()
+        await oldCompletion.value
+
+        XCTAssertEqual(harness.store.state.selectedCourseID, harness.secondary.id)
+        XCTAssertEqual(harness.store.state.currentEntryID, harness.secondary.entries[0].id)
+        XCTAssertEqual(harness.store.state.activePlaybackRequestID, selectedToken)
+        XCTAssertEqual(harness.store.state.listenPhase, .playing)
+        XCTAssertFalse(harness.store.completionDialogStore.state.isPresented)
+    }
+
     func testSwitchingToRepeatStopsListenWithoutRecordingRepeatProgress() async {
         let harness = makeHarness()
         await enterListen(harness)
@@ -919,6 +985,8 @@ private actor TestProgress {
     private var shouldFailNextReset = false
     private let snapshotSuspension = OneShotSuspension()
     private let masterSuspension = OneShotSuspension()
+    private let resetSuspension = OneShotSuspension()
+    private let completeSuspension = OneShotSuspension()
 
     nonisolated var client: StudyProgressClient {
         StudyProgressClient(
@@ -959,6 +1027,12 @@ private actor TestProgress {
     func suspendNextMaster() async { await masterSuspension.arm() }
     func waitUntilMasterIsSuspended() async { await masterSuspension.waitUntilSuspended() }
     func releaseSuspendedMaster() async { await masterSuspension.release() }
+    func suspendNextReset() async { await resetSuspension.arm() }
+    func waitUntilResetIsSuspended() async { await resetSuspension.waitUntilSuspended() }
+    func releaseSuspendedReset() async { await resetSuspension.release() }
+    func suspendNextComplete() async { await completeSuspension.arm() }
+    func waitUntilCompleteIsSuspended() async { await completeSuspension.waitUntilSuspended() }
+    func releaseSuspendedComplete() async { await completeSuspension.release() }
 
     private func snapshot(courseID: CourseID, mode: StudyMode) async -> [EntryID: Int] {
         await snapshotSuspension.suspendIfArmed()
@@ -979,7 +1053,8 @@ private actor TestProgress {
         return 3
     }
 
-    private func reset(courseID: CourseID, mode: StudyMode) throws {
+    private func reset(courseID: CourseID, mode: StudyMode) async throws {
+        await resetSuspension.suspendIfArmed()
         if shouldFailNextReset {
             shouldFailNextReset = false
             throw TestError.forcedFailure
@@ -987,7 +1062,8 @@ private actor TestProgress {
         storage[Key(courseID: courseID, mode: mode)] = [:]
     }
 
-    private func complete(courseID: CourseID, completionID: String) -> Int {
+    private func complete(courseID: CourseID, completionID: String) async -> Int {
+        await completeSuspension.suspendIfArmed()
         guard completionIDs.insert(completionID).inserted else {
             return completionCounts[courseID, default: 0]
         }

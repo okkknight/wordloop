@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P4.3 已 PASS，当前执行 P4.4
+状态：执行中；P0–P4.4 已 PASS，当前执行 P5.1
 
 制定日期：2026-07-15
 
@@ -284,7 +284,7 @@ App Target 只完成：
 
 ### P4.4 完成与重练纯本地流程
 
-状态：已实现，完整 UI 回归与并发边界复验待完成；详见 [`../tasks/2026-07-16-p4-4-local-completion-retrain.md`](../tasks/2026-07-16-p4-4-local-completion-retrain.md)。
+状态：PASS；详见 [`../tasks/2026-07-16-p4-4-local-completion-retrain.md`](../tasks/2026-07-16-p4-4-local-completion-retrain.md)。
 
 先完成 UI 和状态流，不伪造服务端成功。所有临时 adapter 明确标注并在 P5 删除。
 

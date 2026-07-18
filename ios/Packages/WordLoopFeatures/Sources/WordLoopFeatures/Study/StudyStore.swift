@@ -199,7 +199,6 @@ public final class StudyStore {
         guard let courseID = CourseID(rawValue: rawCourseID), catalog != nil else { return }
         let resetMode = mode
         let generation = beginNewSession()
-        state.phase = .loading
         await audio.stop()
         guard isCurrent(generation), mode == resetMode else { return }
 

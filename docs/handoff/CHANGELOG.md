@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P4.4 completion and retrain PASS
+
+- reset 不再占用 course-loading phase；新增可控 suspension 测试，确认旧 reset 在新切课/切模式后、旧 completion 在新切课后都不能回写新会话。
+- Progress 9/9、Features 103/103（StudyStore 28/28）、AppIntegration 5/5、App UI 26/26、Web 53/53、baseline、统一 iOS verify 与 diff check 全部通过；lint 精确保持既有 4 errors/0 warnings。
+- P4.4 结论为 PASS。当前进入 P5.1 API DTO 与契约 fixtures；P5.1 不提前实现 SwiftData、outbox、身份恢复或正式同步。
+
 ## 2026-07-16 · P4.4 local completion and retrain implemented
 
 - 临时进度 actor 新增 mode-scoped reset、课程 completion count 和 completion identity 幂等；StudyStore 接通自然完成、课程徽标、已完成课程确认、重练和固定错误。
