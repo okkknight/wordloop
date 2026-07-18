@@ -49,7 +49,7 @@ test("live study is split into state selection projection clients session and vi
 
 test("temporary progress is session-only and production study has no deferred platform scope", async () => {
   const [progress, study, appInfo] = await Promise.all([
-    swiftSource(join(root, "ios/Packages/WordLoopProgress/Sources/WordLoopProgress")),
+    readFile(join(root, "ios/Packages/WordLoopProgress/Sources/WordLoopProgress/TemporaryProgressRepository.swift"), "utf8"),
     swiftSource(join(root, "ios/Packages/WordLoopFeatures/Sources/WordLoopFeatures/Study")),
     readFile(join(root, "ios/App/Info.plist"), "utf8"),
   ]);

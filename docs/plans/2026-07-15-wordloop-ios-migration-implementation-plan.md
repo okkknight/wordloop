@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P5.1 已 PASS，当前执行 P5.2
+状态：执行中；P0–P5.2 已 PASS，当前执行 P5.3
 
 制定日期：2026-07-15
 
@@ -306,7 +306,7 @@ App Target 只完成：
 
 ### P5.2 SwiftData schema
 
-状态：READY；详见 [`../tasks/2026-07-18-p5-2-swiftdata-schema.md`](../tasks/2026-07-18-p5-2-swiftdata-schema.md)。
+状态：PASS；详见 [`../tasks/2026-07-18-p5-2-swiftdata-schema.md`](../tasks/2026-07-18-p5-2-swiftdata-schema.md)。
 
 实现 `StudyIdentity`、`ProgressRecord`、`ProgressEvent`、`CourseCompletionRecord/Event`、`CoursePreference`。定义 schema version 和迁移测试入口。
 

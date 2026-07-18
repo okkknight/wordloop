@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P5.2 SwiftData schema PASS
+
+- WordLoopProgress 新增六个 SwiftData v1 模型、length-prefixed 唯一键、VersionedSchema/MigrationPlan 和内存/磁盘 container factory。
+- Progress 14/14（schema 5/5）、相关 Node 5/5、统一 iOS verify、baseline、diff check 通过；lint 保持既有 4 errors/0 warnings。无 App/UI 改动，按用户要求未重跑无关 UI。
+- P4 temporary adapter 保留；没有 transport/outbox processor/UI 越界。P5.2 PASS，进入 P5.3。
+
 ## 2026-07-18 · P5.2 SwiftData schema task ready
 
 - 新增 P5.2 任务卡：六个本地模型、SwiftData v1 VersionedSchema、MigrationPlan 和内存/磁盘 container factory。

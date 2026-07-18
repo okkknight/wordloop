@@ -1,6 +1,6 @@
 # P5.2 SwiftData v1 Schema
 
-状态：READY
+状态：PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -53,3 +53,10 @@
 ## 退出条件
 
 六个 v1 模型、显式版本、迁移 plan 和 container factory 已被真实内存/磁盘 SwiftData 测试证明；没有提前实现 transport/outbox processor/UI。完成后进入 P5.3 Progress Outbox。
+
+## 最终实现结果（2026-07-18）
+
+- `WordLoopProgress` 已增加六个 `@Model`、length-prefixed 复合键、`WordLoopProgressSchemaV1`、空初始 migration stages 和内存/磁盘 container factory。
+- Progress 14/14（其中 schema 5/5）通过：六模型 round-trip、唯一键 upsert、mode/边界无碰撞、显式 schema/migration，以及磁盘 container 关闭重开后六模型全部恢复。
+- 相关 Node 静态边界 5/5、统一 iOS verify、baseline 和 diff check 通过；lint 精确保持既有 4 errors/0 warnings。因本阶段不改 App/Features/UI，按用户要求未重复运行无关的 26 项 UI。
+- P4 `TemporaryProgressRepository` 保留且仍无持久化；schema 无 URLSession、网络监听、flush processor、Startup/StudyStore/UI 接线。P5.2 结论为 PASS。
