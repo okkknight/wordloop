@@ -52,7 +52,9 @@ test("iOS startup shell keeps the frozen copy, fixture boundary, and App module 
   assert.match(appRoot, /DesignSystemGalleryView\(\)/);
   assert.match(appRoot, /-wordloop-startup-state/);
   assert.match(appRoot, /-wordloop-startup-invalid/);
-  assert.match(appRoot, /StartupView\(store: startupStore\) \{ _ in[\s\S]*route = \.liveStudy/);
+  assert.match(appRoot, /StartupView\(store: startupStore\) \{ submission in[\s\S]*activate\(submission\)/);
+  assert.match(appRoot, /startupCoordinator\.restore\(\)/);
+  assert.match(appRoot, /start\(preferredCourseID: resolution\.preferredCourseID\)/);
   assert.match(appRoot, /import WordLoopFeatures/);
   assert.doesNotMatch(`${appRoot}\n${container}`, /import (?:WordLoopDesignSystem|WordLoopContent|WordLoopAudio|WordLoopProgress|WordLoopRealtime|WordLoopNetworking)/);
 });

@@ -19,6 +19,7 @@ public final class StudyStore {
     private let progress: StudyProgressClient
     private let clock: StudyClock
     private let random: StudyRandomClient
+    private let courseSelection: @Sendable (CourseID, StudyMode) async -> Void
 
     private var catalog: CourseCatalog?
     private var course: Course?
@@ -37,17 +38,19 @@ public final class StudyStore {
         audio: StudyAudioClient,
         progress: StudyProgressClient,
         clock: StudyClock = .live,
-        random: StudyRandomClient = .live
+        random: StudyRandomClient = .live,
+        courseSelection: @escaping @Sendable (CourseID, StudyMode) async -> Void = { _, _ in }
     ) {
         self.courses = courses
         self.audio = audio
         self.progress = progress
         self.clock = clock
         self.random = random
+        self.courseSelection = courseSelection
         observeAudioEvents()
     }
 
-    public func start() async {
+    public func start(preferredCourseID: CourseID? = nil) async {
         guard !hasStarted else { return }
         hasStarted = true
         failedCourseID = nil
@@ -61,8 +64,11 @@ public final class StudyStore {
             self.catalog = catalog
             completionCounts = await progress.completions()
             guard isCurrent(generation) else { return }
-            failedCourseID = catalog.defaultCourseID
-            try await loadCourse(id: catalog.defaultCourseID, generation: generation)
+            let initialCourseID = preferredCourseID.flatMap { preferred in
+                catalog.courses.contains(where: { $0.id == preferred && $0.availability == .available }) ? preferred : nil
+            } ?? catalog.defaultCourseID
+            failedCourseID = initialCourseID
+            try await loadCourse(id: initialCourseID, generation: generation)
         } catch {
             guard isCurrent(generation) else { return }
             hasStarted = false
@@ -91,6 +97,8 @@ public final class StudyStore {
         await audio.stop()
         do {
             try await loadCourse(id: courseID, generation: generation, promptsForCompletedCourse: true)
+            guard isCurrent(generation), state.selectedCourseID == courseID else { return }
+            await courseSelection(courseID, mode)
         } catch {
             guard isCurrent(generation) else { return }
             state.phase = .failed

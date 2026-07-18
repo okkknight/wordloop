@@ -27,6 +27,7 @@ public enum WordLoopFeaturesModule {
             progress: .temporary(repository: progressRepository)
         )
     }
+
 }
 
 public struct DesignSystemGalleryView: View {

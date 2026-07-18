@@ -38,6 +38,30 @@ final class ProgressAPIClientTests: XCTestCase {
         XCTAssertEqual(object["courseId"], "course-a")
     }
 
+    func testOverviewAndSelectCourseUseVPSContractShapes() async throws {
+        let overviewRecorder = RequestRecorder(response: .json(
+            #"{"progress":[],"completions":[],"recentCourseId":"course-a"}"#
+        ))
+        let overview = try await makeClient(overviewRecorder).fetchProgressOverview(
+            userID: "name:alice", mode: .repeat
+        )
+        XCTAssertEqual(overview.recentCourseId, "course-a")
+        let overviewRequests = await overviewRecorder.requests()
+        let get = try XCTUnwrap(overviewRequests.first)
+        XCTAssertEqual(get.url?.absoluteString, "https://boringmax.com/wordloop/api/progress?userId=name:alice&mode=repeat")
+
+        let selectRecorder = RequestRecorder(response: .json(#"{"recentCourseId":"course-b"}"#))
+        let selected = try await makeClient(selectRecorder).selectCourse(.init(
+            userId: "name:alice", mode: .listen, courseId: "course-b"
+        ))
+        XCTAssertEqual(selected.recentCourseId, "course-b")
+        let selectRequests = await selectRecorder.requests()
+        let post = try XCTUnwrap(selectRequests.first)
+        let object = try XCTUnwrap(JSONSerialization.jsonObject(with: try XCTUnwrap(post.httpBody)) as? [String: AnyHashable])
+        XCTAssertEqual(object["selectCourse"], true)
+        XCTAssertEqual(object["courseId"], "course-b")
+    }
+
     func testHTTPAndDecodeFailuresRemainStructured() async throws {
         let rejected = RequestRecorder(response: .init(
             data: Data(#"{"error":"invalid progress update"}"#.utf8),

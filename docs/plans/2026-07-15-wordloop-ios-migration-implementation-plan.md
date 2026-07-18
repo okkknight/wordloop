@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P5.3 已 PASS，当前执行 P5.4
+状态：执行中；P0–P5.4 已 PASS，当前执行 P5.5
 
 制定日期：2026-07-15
 
@@ -321,6 +321,8 @@ App Target 只完成：
 - 服务端值与 pending events 合并，上限 3。
 
 ### P5.4 Startup 与课程恢复
+
+状态：PASS；详见 [`../tasks/2026-07-18-p5-4-startup-course-restore.md`](../tasks/2026-07-18-p5-4-startup-course-restore.md)。
 
 接入用户名规范化、最近课程、启动 restoring/syncing/ready/error。网络失败时允许使用本地已知身份和内置课程，不阻塞进入 App。
 

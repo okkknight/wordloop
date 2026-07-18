@@ -22,6 +22,16 @@ final class StudyStoreTests: XCTestCase {
         assertEqual(await harness.progress.counts(courseID: harness.primary.id, mode: .repeat), [:])
     }
 
+    func testStartRestoresAvailablePreferredCourseAndFallsBackForUnknownCourse() async {
+        let preferred = makeHarness()
+        await preferred.store.start(preferredCourseID: preferred.secondary.id)
+        XCTAssertEqual(preferred.store.state.selectedCourseID, preferred.secondary.id)
+
+        let fallback = makeHarness()
+        await fallback.store.start(preferredCourseID: CourseID(rawValue: "unknown-course"))
+        XCTAssertEqual(fallback.store.state.selectedCourseID, fallback.primary.id)
+    }
+
     func testEnteringListenRecordsAndPlaysCurrentAndNextWhileReplayOnlyIssuesANewToken() async {
         let harness = makeHarness()
         await harness.store.start()

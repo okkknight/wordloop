@@ -54,6 +54,50 @@ struct StudyProgressClient: Sendable {
             complete: { await repository.complete(courseID: $0, completionID: $1) }
         )
     }
+
+    static func persistent(
+        repository: PersistentProgressRepository,
+        session: ActiveStudySession,
+        completionFallback: TemporaryProgressRepository
+    ) -> Self {
+        Self(
+            snapshot: { courseID, mode in
+                guard let userID = await session.userID else {
+                    return await completionFallback.snapshot(courseID: courseID, mode: mode)
+                }
+                _ = try? await repository.flush(userID: userID, mode: mode, trigger: .appBecameActive)
+                if let remote = try? await repository.refresh(userID: userID, mode: mode, courseID: courseID) {
+                    return remote
+                }
+                return (try? await repository.snapshot(userID: userID, mode: mode, courseID: courseID)) ?? [:]
+            },
+            record: { courseID, mode, entryID in
+                guard let userID = await session.userID else {
+                    return await completionFallback.record(courseID: courseID, mode: mode, entryID: entryID)
+                }
+                let value = (try? await repository.record(userID: userID, mode: mode, courseID: courseID, entryID: entryID)) ?? 0
+                Task { _ = try? await repository.flush(userID: userID, mode: mode, trigger: .networkRecovered) }
+                return value
+            },
+            master: { courseID, mode, entryID in
+                guard let userID = await session.userID else {
+                    return await completionFallback.master(courseID: courseID, mode: mode, entryID: entryID)
+                }
+                let value = (try? await repository.master(userID: userID, mode: mode, courseID: courseID, entryID: entryID)) ?? 0
+                Task { _ = try? await repository.flush(userID: userID, mode: mode, trigger: .networkRecovered) }
+                return value
+            },
+            reset: { await completionFallback.reset(courseID: $0, mode: $1) },
+            completions: { await completionFallback.completions() },
+            complete: { await completionFallback.complete(courseID: $0, completionID: $1) }
+        )
+    }
+}
+
+actor ActiveStudySession {
+    private(set) var userID: String?
+
+    func activate(_ userID: String) { self.userID = userID }
 }
 
 struct StudyClock: Sendable {

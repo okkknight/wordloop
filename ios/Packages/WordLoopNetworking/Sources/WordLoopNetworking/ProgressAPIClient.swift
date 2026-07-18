@@ -46,6 +46,23 @@ public struct ProgressAPIClient: Sendable {
         return try await perform(request, response: CourseProgressSnapshotDTO.self)
     }
 
+    public func fetchProgressOverview(userID: String, mode: ProgressStudyModeDTO) async throws -> WordProgressSnapshotDTO {
+        var components = URLComponents(url: endpoint, resolvingAgainstBaseURL: false)
+        components?.queryItems = ProgressQueryDTO(userID: userID, mode: mode).queryItems
+        guard let url = components?.url else { throw ProgressAPIError.invalidBaseURL }
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        return try await perform(request, response: WordProgressSnapshotDTO.self)
+    }
+
+    public func selectCourse(_ requestDTO: SelectCourseRequestDTO) async throws -> SelectCourseResponseDTO {
+        var request = URLRequest(url: endpoint)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try encoder.encode(requestDTO)
+        return try await perform(request, response: SelectCourseResponseDTO.self)
+    }
+
     public func sendCourseProgress(_ requestDTO: CourseProgressRequestDTO) async throws -> CourseProgressResponseDTO {
         var request = URLRequest(url: endpoint)
         request.httpMethod = "POST"

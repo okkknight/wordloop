@@ -103,6 +103,12 @@ final class StartupStoreTests: XCTestCase {
         XCTAssertEqual(StartupState.syncing.buttonTitle, "SYNCING…")
         XCTAssertEqual(StartupState.syncing.helperText, "正在同步学习进度")
         XCTAssertTrue(StartupState.syncing.isBusy)
+
+        XCTAssertEqual(StartupState.restoring.helperText, "正在恢复上次课程")
+        XCTAssertEqual(StartupState.ready.buttonTitle, "READY")
+        XCTAssertFalse(StartupState.ready.isBusy)
+        XCTAssertEqual(StartupState.error.helperText, "无法同步，仍可使用本地课程")
+        XCTAssertFalse(StartupState.error.isBusy)
     }
 
     @MainActor

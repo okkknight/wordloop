@@ -4,6 +4,7 @@ import XCTest
 final class AppUITests: XCTestCase {
     func testAppLaunchesIntoStartupPage() {
         let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-ui-fresh-start"]
         app.launch()
 
         XCTAssertTrue(app.descendants(matching: .any)["startup.page"].waitForExistence(timeout: 5))
@@ -15,6 +16,7 @@ final class AppUITests: XCTestCase {
 
     func testStartupAcceptsAnonymousAndNormalizedNamedSubmissions() {
         let anonymousApp = XCUIApplication()
+        anonymousApp.launchArguments = ["-wordloop-ui-fresh-start"]
         anonymousApp.launch()
         anonymousApp.buttons["startup.submit"].tap()
         XCTAssertTrue(anonymousApp.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
@@ -23,6 +25,7 @@ final class AppUITests: XCTestCase {
         anonymousApp.terminate()
 
         let namedApp = XCUIApplication()
+        namedApp.launchArguments = ["-wordloop-ui-fresh-start"]
         namedApp.launch()
         let username = namedApp.textFields["startup.username"]
         username.tap()
@@ -30,6 +33,20 @@ final class AppUITests: XCTestCase {
         namedApp.keyboards.buttons["Go"].tap()
         XCTAssertTrue(namedApp.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
         XCTAssertTrue(namedApp.descendants(matching: .any)["study.page"].exists)
+    }
+
+    func testStartupRestoresPersistedIdentityAfterRelaunch() {
+        let firstLaunch = XCUIApplication()
+        firstLaunch.launchArguments = ["-wordloop-ui-fresh-start"]
+        firstLaunch.launch()
+        firstLaunch.buttons["startup.submit"].tap()
+        XCTAssertTrue(firstLaunch.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
+        firstLaunch.terminate()
+
+        let restored = XCUIApplication()
+        restored.launch()
+        XCTAssertTrue(restored.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
+        XCTAssertFalse(restored.descendants(matching: .any)["startup.page"].exists)
     }
 
     func testLiveStudyRouteLoadsBundledListenAndManualNext() {
@@ -75,6 +92,7 @@ final class AppUITests: XCTestCase {
 
     func testStartupValidationClearsWhenEditing() {
         let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-ui-fresh-start"]
         app.launch()
 
         let username = app.textFields["startup.username"]

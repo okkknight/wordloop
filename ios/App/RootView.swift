@@ -11,6 +11,7 @@ struct RootView: View {
     @State private var completionDialogStore: CompletionDialogStore
     @State private var liveStudyStore: StudyStore
     @State private var route: AppRoute
+    @State private var startupTaskStarted = false
 
     init(container: AppContainer) {
         self.container = container
@@ -55,16 +56,57 @@ struct RootView: View {
             } else if route == .liveStudy {
                 LiveStudyView(store: liveStudyStore)
             } else {
-                StartupView(store: startupStore) { _ in
-                    route = .liveStudy
+                StartupView(store: startupStore) { submission in
+                    Task { await activate(submission) }
                 }
             }
         }
             .environment(\.dynamicTypeSize, fixtureAccessibilityText ? .accessibility3 : dynamicTypeSize)
+            .task {
+                guard route == .startup, !startupTaskStarted, !isStartupFixture else { return }
+                startupTaskStarted = true
+                await restoreStartup()
+            }
     }
 
     private var fixtureAccessibilityText: Bool {
         ProcessInfo.processInfo.arguments.contains("-wordloop-fixture-accessibility-text")
+    }
+
+    private var isStartupFixture: Bool {
+        ProcessInfo.processInfo.arguments.contains("-wordloop-startup-state") ||
+        ProcessInfo.processInfo.arguments.contains("-wordloop-startup-invalid") ||
+        ProcessInfo.processInfo.arguments.contains("-wordloop-ui-fresh-start")
+    }
+
+    @MainActor
+    private func restoreStartup() async {
+        startupStore.setRuntimeState(.restoring)
+        do {
+            guard let resolution = try await container.startupCoordinator.restore() else {
+                startupStore.setRuntimeState(.idle)
+                return
+            }
+            startupStore.setRuntimeState(.syncing)
+            await liveStudyStore.start(preferredCourseID: resolution.preferredCourseID)
+            startupStore.setRuntimeState(resolution.usedOfflineFallback ? .error : .ready)
+            route = .liveStudy
+        } catch {
+            startupStore.setRuntimeState(.idle)
+        }
+    }
+
+    @MainActor
+    private func activate(_ submission: StartupSubmission) async {
+        startupStore.setRuntimeState(.syncing)
+        do {
+            let resolution = try await container.startupCoordinator.activate(submission)
+            await liveStudyStore.start(preferredCourseID: resolution.preferredCourseID)
+            startupStore.setRuntimeState(resolution.usedOfflineFallback ? .error : .ready)
+            route = .liveStudy
+        } catch {
+            startupStore.setRuntimeState(.error)
+        }
     }
 
 }

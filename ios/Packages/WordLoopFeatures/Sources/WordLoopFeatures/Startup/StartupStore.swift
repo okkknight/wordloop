@@ -53,4 +53,8 @@ public final class StartupStore {
     public func setFixtureState(_ state: StartupState) {
         self.state = state
     }
+
+    public func setRuntimeState(_ state: StartupState) {
+        self.state = state
+    }
 }

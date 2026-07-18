@@ -33,15 +33,17 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
-任务：执行 iOS 迁移 Plan；当前检查点为 P5.4 Startup 与课程恢复。
+任务：执行 iOS 迁移 Plan；当前检查点为 P5.5 完成、次数与重练。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4、P5.1–P5.3 均已 PASS。P5.3 通过 Networking 8/8、Progress 20/20（outbox 6/6）、相关 Node 11/11、统一 iOS verify、baseline 和 diff check；App/Feature/UI 未改，按用户要求未跑无关 UI。当前进入 P5.4 Startup 与课程恢复。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4、P5.1–P5.4 均已 PASS。P5.4 通过 Networking 9/9、Progress 22/22、Features 104/104、Web/Node 62/62、统一 iOS verify、baseline/diff check，以及启动提交 UI 2/2、跨启动恢复 UI 1/1。当前进入 P5.5 完成、次数与重练。
 
 P5.1 已以当前 VPS Node 和 P0 API baseline 为合同真值完成。共享 fixtures 驱动 Swift round-trip 与隔离的真实 VPS Node/Worker 请求；回归修复 D1 progress event 漏写 `created_at` 的静默丢事件。线上环境和后续 transport 仍明确走 VPS，Cloudflare 仅保持兼容合同。
 
 P5.2 已建立六个 SwiftData v1 模型、显式 VersionedSchema/MigrationPlan 和可测试 container factory；磁盘关闭重开恢复六模型已通过。progress 按 mode，completion/preference 跨 mode，复合唯一键使用 length-prefixed builder；尚未实现 repository/outbox processor、URLSession、VPS 请求或 UI 接线。
 
-P5.3 已完成：Networking transport 从 App 注入的 `WORDLOOP_API_BASE_URL` 指向 VPS；Persistent ProgressRepository 以 confirmed record + pending events 计算投影，事件先落盘、重试复用 UUID、同 user/mode 串行。live Feature 尚未替换 P4 adapter，identity/preference/reset/completion 尚未接入。
+P5.3 已完成：Networking transport 从 App 注入的 `WORDLOOP_API_BASE_URL` 指向 VPS；Persistent ProgressRepository 以 confirmed record + pending events 计算投影，事件先落盘、重试复用 UUID、同 user/mode 串行。
+
+P5.4 已完成：live App 使用同一个 SwiftData container 保存 active identity、recent course 和条目 outbox；匿名 UUID 跨重开稳定，命名用户规范为 `name:<lowercase>`。启动自动恢复本地身份并尝试从 VPS 同步 recent course，失败仍进入 bundle 课程；StudyStore 条目进度已替换为 persistent repository。completion/reset 仍使用窄化 P4 fallback，P5.5 必须删除。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
