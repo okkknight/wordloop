@@ -152,6 +152,15 @@ handle @wordloopContentStaging {
 版本目录，最后原子替换 catalog；如需 production，必须显式传入另一组
 `WORDLOOP_CONTENT_REMOTE_ROOT` 与 `WORDLOOP_CONTENT_PUBLIC_BASE`，不能复用 staging 默认值。
 
+production 使用相同的静态规则，目录为 `/opt/boringmax/wordloop/content/`，地址为
+`https://boringmax.com/wordloop-content/catalog.json`。发布必须显式执行：
+
+```sh
+WORDLOOP_CONTENT_REMOTE_ROOT=/opt/boringmax/wordloop/content \
+WORDLOOP_CONTENT_PUBLIC_BASE=https://boringmax.com/wordloop-content \
+npm run content:publish:staging
+```
+
 ## 4. 数据存储现状
 
 当前学习相关数据文件：
