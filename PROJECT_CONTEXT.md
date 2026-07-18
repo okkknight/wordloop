@@ -41,6 +41,8 @@ P5.1 已以当前 VPS Node 和 P0 API baseline 为合同真值完成。共享 fi
 
 P5.2 已建立六个 SwiftData v1 模型、显式 VersionedSchema/MigrationPlan 和可测试 container factory；磁盘关闭重开恢复六模型已通过。progress 按 mode，completion/preference 跨 mode，复合唯一键使用 length-prefixed builder；尚未实现 repository/outbox processor、URLSession、VPS 请求或 UI 接线。
 
+P5.3 任务卡已锁定：Networking transport 从 App 注入的 `WORDLOOP_API_BASE_URL` 指向 VPS，只追加 `progress`；Persistent ProgressRepository 以 confirmed record + pending events 计算投影，事件先落盘、重试复用 UUID、同 user/mode 串行。P5.3 不接 App/Feature，不处理 identity/preference/reset/completion。
+
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
 P1 已建立 catalog/course/integrity JSON Schema 和唯一 exporter。规范产物从真实课程注册表生成，先把已哈希字节写入临时树并逐文件复验，再替换 `content/dist/`；该目录与 iOS Generated resources 均被 Git 忽略，Web 仍读取原数据源。运行时注册 ID 是规范 ID，S01E01 的历史 manifest ID 差异和未命中 highlights 会写入 validation report。

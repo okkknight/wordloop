@@ -312,6 +312,8 @@ App Target 只完成：
 
 ### P5.3 Progress Outbox
 
+状态：READY；详见 [`../tasks/2026-07-18-p5-3-progress-outbox.md`](../tasks/2026-07-18-p5-3-progress-outbox.md)。
+
 - 本地事务先写 event，再向 UI 发布派生值。
 - 同一个 UUID 重试；服务端确认后归档/删除。
 - 网络恢复、App active、用户手动重试触发 flush。

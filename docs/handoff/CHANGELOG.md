@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P5.3 VPS progress outbox task ready
+
+- 锁定 Persistent ProgressRepository：confirmed record + pending event 投影、先落盘再发布、相同 UUID 重试、同 user/mode 串行与稳定顺序。
+- Networking transport 只接收 App 注入的 VPS `WORDLOOP_API_BASE_URL` 并追加 `progress`；Cloudflare 不是线上 target。
+- P5.3 不接 App/Feature，不实现 identity/preference/reset/completion 或 lifecycle/network monitor；只提供 network/app-active/manual 三种 flush 入口。
+
 ## 2026-07-18 · P5.2 SwiftData schema PASS
 
 - WordLoopProgress 新增六个 SwiftData v1 模型、length-prefixed 唯一键、VersionedSchema/MigrationPlan 和内存/磁盘 container factory。
