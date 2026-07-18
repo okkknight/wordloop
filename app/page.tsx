@@ -11,7 +11,7 @@ import {
 import { WORDS } from "./words";
 
 const MAX_STUDY_COUNT = 3;
-const PASS_SCORE = 20;
+const PASS_SCORE = 15;
 const AUTO_ADVANCE_MS = 700;
 const LISTEN_AUTOPLAY_DELAY_MS = 500;
 const PLAYBACK_TIMEOUT_MS = 8_000;
