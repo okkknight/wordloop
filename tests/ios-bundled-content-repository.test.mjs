@@ -151,7 +151,7 @@ test("content module remains read-only and repository construction stays in the 
     content,
     /(?:URLSession|AVFoundation|SwiftData|UserDefaults|Keychain|WebRTC|Realtime|Timer\s*[.(]|DispatchSourceTimer)/,
   );
-  assert.match(features, /makeLiveStudyStore\(\)/);
+  assert.match(features, /makeLocalIntegrationStudyStore\(\)/);
   assert.match(features, /BundledCourseSource\.live\(\)/);
   assert.match(features, /CourseRepository\(source: source\)/);
   assert.doesNotMatch(app, /(?:BundledCourseSource|CourseRepository)\s*\(/);

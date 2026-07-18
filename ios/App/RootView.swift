@@ -54,7 +54,12 @@ struct RootView: View {
                     completionDialogStore: completionDialogStore
                 )
             } else if route == .liveStudy {
-                LiveStudyView(store: liveStudyStore)
+                LiveStudyView(store: liveStudyStore) {
+                    guard ProcessInfo.processInfo.arguments.contains("-wordloop-live-study") else { return }
+                    if (try? await container.startupCoordinator.restore()) == nil {
+                        _ = try? await container.startupCoordinator.activate(.anonymous)
+                    }
+                }
             } else {
                 StartupView(store: startupStore) { submission in
                     Task { await activate(submission) }

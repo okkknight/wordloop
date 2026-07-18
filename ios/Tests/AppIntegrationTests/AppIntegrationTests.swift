@@ -71,7 +71,7 @@ final class AppIntegrationTests: XCTestCase {
     func testLiveStudyStoreLoadsAllBundledCoursesAndStartsListenWithRealAudio() async throws {
         let source = try BundledCourseSource.live()
         let catalog = try source.loadCatalog()
-        let store = try WordLoopFeaturesModule.makeLiveStudyStore()
+        let store = try WordLoopFeaturesModule.makeLocalIntegrationStudyStore()
 
         await store.start()
         XCTAssertEqual(store.state.phase, .ready)

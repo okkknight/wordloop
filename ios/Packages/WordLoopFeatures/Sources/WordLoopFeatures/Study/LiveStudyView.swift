@@ -2,10 +2,12 @@ import SwiftUI
 
 public struct LiveStudyView: View {
     @Bindable private var store: StudyStore
+    private let beforeStart: @Sendable () async -> Void
     @Environment(\.scenePhase) private var scenePhase
 
-    public init(store: StudyStore) {
+    public init(store: StudyStore, beforeStart: @escaping @Sendable () async -> Void = {}) {
         self.store = store
+        self.beforeStart = beforeStart
     }
 
     public var body: some View {
@@ -43,7 +45,10 @@ public struct LiveStudyView: View {
                     .accessibilityIdentifier("live-study.retry")
             }
         }
-        .task { await store.start() }
+        .task {
+            await beforeStart()
+            await store.start()
+        }
         .onChange(of: scenePhase) { _, phase in
             Task { await store.setApplicationActive(phase == .active) }
         }

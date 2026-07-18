@@ -73,7 +73,7 @@ test("Audio remains an iPhone-only service and only the live feature factory ini
 
   assert.match(manifest, /\.package\(path: "\.\.\/WordLoopCore"\)/);
   assert.doesNotMatch(manifest, /https?:\/\//);
-  assert.match(features, /makeLiveStudyStore\(\)/);
+  assert.match(features, /makeLocalIntegrationStudyStore\(\)/);
   assert.match(features, /AudioPlayer\.live\(\)/);
   assert.doesNotMatch(p3StudyShell, /AudioPlayer\.live\(\)|AudioPlayer\s*\(/);
   assert.doesNotMatch(app, /AudioPlayer\.live\(\)|AudioPlayer\s*\(/);

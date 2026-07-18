@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P5.4 已 PASS，当前执行 P5.5
+状态：执行中；P0–P5.5 已 PASS，当前执行 P6.1
 
 制定日期：2026-07-15
 
@@ -327,6 +327,8 @@ App Target 只完成：
 接入用户名规范化、最近课程、启动 restoring/syncing/ready/error。网络失败时允许使用本地已知身份和内置课程，不阻塞进入 App。
 
 ### P5.5 完成、次数与重练
+
+状态：PASS；详见 [`../tasks/2026-07-18-p5-5-completion-reset.md`](../tasks/2026-07-18-p5-5-completion-reset.md)。
 
 接入 `clientEventId`、完成次数、resetCourse 和 pending 状态；删除 P4 临时 adapter。
 

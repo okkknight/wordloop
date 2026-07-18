@@ -4,6 +4,7 @@ import SwiftData
 public enum ProgressEventKind: String, Codable, CaseIterable, Sendable {
     case increment
     case master
+    case reset
 }
 
 public enum ProgressOutboxState: String, Codable, CaseIterable, Sendable {

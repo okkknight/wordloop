@@ -62,6 +62,29 @@ final class ProgressAPIClientTests: XCTestCase {
         XCTAssertEqual(object["courseId"], "course-b")
     }
 
+    func testResetAndCompleteCourseUseFrozenVPSBodies() async throws {
+        let resetRecorder = RequestRecorder(response: .json(#"{"courseId":"course-a","reset":true}"#))
+        let reset = try await makeClient(resetRecorder).resetCourse(.init(
+            userId: "name:alice", mode: .listen, courseId: "course-a"
+        ))
+        XCTAssertTrue(reset.reset)
+        let resetRequests = await resetRecorder.requests()
+        let resetBody = try XCTUnwrap(resetRequests.first?.httpBody)
+        let resetObject = try XCTUnwrap(JSONSerialization.jsonObject(with: resetBody) as? [String: AnyHashable])
+        XCTAssertEqual(resetObject["resetCourse"], true)
+
+        let completeRecorder = RequestRecorder(response: .json(#"{"courseId":"course-a","completionCount":2}"#))
+        let complete = try await makeClient(completeRecorder).completeCourse(.init(
+            userId: "name:alice", mode: .repeat, clientEventId: "completion-001", courseId: "course-a"
+        ))
+        XCTAssertEqual(complete.completionCount, 2)
+        let completeRequests = await completeRecorder.requests()
+        let completeBody = try XCTUnwrap(completeRequests.first?.httpBody)
+        let completeObject = try XCTUnwrap(JSONSerialization.jsonObject(with: completeBody) as? [String: AnyHashable])
+        XCTAssertEqual(completeObject["clientEventId"], "completion-001")
+        XCTAssertEqual(completeObject["completeCourse"], true)
+    }
+
     func testHTTPAndDecodeFailuresRemainStructured() async throws {
         let rejected = RequestRecorder(response: .init(
             data: Data(#"{"error":"invalid progress update"}"#.utf8),

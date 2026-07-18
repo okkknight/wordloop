@@ -16,7 +16,7 @@ public enum WordLoopFeaturesModule {
     }
 
     @MainActor
-    public static func makeLiveStudyStore() throws -> StudyStore {
+    public static func makeLocalIntegrationStudyStore() throws -> StudyStore {
         let source = try BundledCourseSource.live()
         let courseRepository = CourseRepository(source: source)
         let audioPlayer = try AudioPlayer.live()

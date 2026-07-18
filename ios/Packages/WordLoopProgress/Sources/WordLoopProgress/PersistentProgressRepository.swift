@@ -28,6 +28,7 @@ public actor PersistentProgressRepository {
     private let eventID: @Sendable () -> String
     private let now: @Sendable () -> Date
     private var activePartitions: Set<String> = []
+    private var lastEventCreatedAt: Date?
 
     public init(
         container: ModelContainer,
@@ -63,6 +64,59 @@ public actor PersistentProgressRepository {
         return try projectedSnapshot(userID: userID, mode: mode, courseID: courseID)
     }
 
+    public func reset(userID: String, mode: StudyMode, courseID: CourseID) throws {
+        let course = courseID.rawValue
+        for event in try events(userID: userID, mode: mode, courseID: course) {
+            context.delete(event)
+        }
+        let id = eventID()
+        try requireUniqueEventID(id)
+        context.insert(ProgressEvent(
+            clientEventID: id, userID: userID, modeRawValue: mode.rawValue,
+            courseID: course, entryID: "__reset__", kindRawValue: ProgressEventKind.reset.rawValue,
+            stateRawValue: ProgressOutboxState.pending.rawValue, createdAt: nextEventDate()
+        ))
+        try context.save()
+    }
+
+    public func completions(userID: String) throws -> [CourseID: Int] {
+        try recoverInterruptedCompletionEvents(userID: userID)
+        var raw = Dictionary(uniqueKeysWithValues: try completionRecords(userID: userID).map {
+            ($0.courseID, max(0, $0.completionCount))
+        })
+        for event in try completionEvents(userID: userID) where try outboxState(event.stateRawValue) != .acknowledged {
+            raw[event.courseID, default: 0] += 1
+        }
+        return raw.reduce(into: [:]) { result, item in
+            if let id = CourseID(rawValue: item.key), item.value > 0 { result[id] = item.value }
+        }
+    }
+
+    @discardableResult
+    public func complete(userID: String, courseID: CourseID, clientEventID: String) throws -> Int {
+        try requireUniqueEventID(clientEventID)
+        context.insert(CourseCompletionEvent(
+            clientEventID: clientEventID, userID: userID, courseID: courseID.rawValue,
+            stateRawValue: ProgressOutboxState.pending.rawValue, createdAt: nextEventDate()
+        ))
+        try context.save()
+        return try completions(userID: userID)[courseID, default: 0]
+    }
+
+    public func refreshCompletions(userID: String, mode: StudyMode) async throws -> [CourseID: Int] {
+        let overview = try await api.fetchProgressOverview(userID: userID, mode: wireMode(mode))
+        let existing = try completionRecords(userID: userID)
+        existing.forEach(context.delete)
+        for row in overview.completions {
+            context.insert(CourseCompletionRecord(
+                userID: userID, courseID: row.courseId,
+                completionCount: max(0, row.completionCount), updatedAt: now()
+            ))
+        }
+        try context.save()
+        return try completions(userID: userID)
+    }
+
     @discardableResult
     public func flush(
         userID: String,
@@ -84,21 +138,45 @@ public actor PersistentProgressRepository {
             try context.save()
 
             do {
-                let response = try await api.sendCourseProgress(.init(
-                    userId: event.userID,
-                    mode: wireMode(mode),
-                    clientEventId: event.clientEventID,
-                    courseId: event.courseID,
-                    itemId: event.entryID,
-                    markMastered: kind == .master
+                switch kind {
+                case .increment, .master:
+                    let response = try await api.sendCourseProgress(.init(
+                        userId: event.userID, mode: wireMode(mode), clientEventId: event.clientEventID,
+                        courseId: event.courseID, itemId: event.entryID, markMastered: kind == .master
+                    ))
+                    try applyConfirmed(
+                        userID: event.userID, mode: mode, courseID: event.courseID,
+                        entryID: response.itemId, count: response.studyCount, updatedAt: now()
+                    )
+                case .reset:
+                    _ = try await api.resetCourse(.init(
+                        userId: event.userID, mode: wireMode(mode), courseId: event.courseID
+                    ))
+                    try confirmedRecords(userID: event.userID, mode: mode, courseID: event.courseID).forEach(context.delete)
+                }
+                context.delete(event)
+                try context.save()
+                sent += 1
+            } catch {
+                event.stateRawValue = ProgressOutboxState.pending.rawValue
+                try? context.save()
+                throw error
+            }
+        }
+        let completionQueue = mode == .repeat ? try pendingCompletionEvents(userID: userID) : []
+        for event in completionQueue {
+            event.stateRawValue = ProgressOutboxState.sending.rawValue
+            event.attemptCount += 1
+            event.lastAttemptAt = now()
+            try context.save()
+            do {
+                let response = try await api.completeCourse(.init(
+                    userId: event.userID, mode: wireMode(mode),
+                    clientEventId: event.clientEventID, courseId: event.courseID
                 ))
-                try applyConfirmed(
-                    userID: event.userID,
-                    mode: mode,
-                    courseID: event.courseID,
-                    entryID: response.itemId,
-                    count: response.studyCount,
-                    updatedAt: now()
+                try applyCompletionConfirmed(
+                    userID: event.userID, courseID: response.courseId,
+                    count: response.completionCount, updatedAt: now()
                 )
                 context.delete(event)
                 try context.save()
@@ -142,10 +220,7 @@ public actor PersistentProgressRepository {
         kind: ProgressEventKind
     ) throws -> Int {
         let id = eventID()
-        let descriptor = FetchDescriptor<ProgressEvent>(predicate: #Predicate { $0.clientEventID == id })
-        guard try context.fetchCount(descriptor) == 0 else {
-            throw PersistentProgressError.duplicateEventID(id)
-        }
+        try requireUniqueEventID(id)
         context.insert(ProgressEvent(
             clientEventID: id,
             userID: userID,
@@ -154,7 +229,7 @@ public actor PersistentProgressRepository {
             entryID: entryID.rawValue,
             kindRawValue: kind.rawValue,
             stateRawValue: ProgressOutboxState.pending.rawValue,
-            createdAt: now()
+            createdAt: nextEventDate()
         ))
         try context.save()
         return try projectedCount(
@@ -174,6 +249,8 @@ public actor PersistentProgressRepository {
                 raw[event.entryID] = clamped(raw[event.entryID, default: 0] + 1)
             case .master:
                 raw[event.entryID] = 3
+            case .reset:
+                raw.removeAll()
             }
         }
         return try raw.reduce(into: [:]) { result, item in
@@ -260,6 +337,63 @@ public actor PersistentProgressRepository {
                 updatedAt: updatedAt
             ))
         }
+    }
+
+    private func completionRecords(userID: String) throws -> [CourseCompletionRecord] {
+        try context.fetch(FetchDescriptor<CourseCompletionRecord>(predicate: #Predicate { $0.userID == userID }))
+    }
+
+    private func completionEvents(userID: String) throws -> [CourseCompletionEvent] {
+        try context.fetch(FetchDescriptor<CourseCompletionEvent>(
+            predicate: #Predicate { $0.userID == userID },
+            sortBy: [SortDescriptor(\CourseCompletionEvent.createdAt), SortDescriptor(\CourseCompletionEvent.clientEventID)]
+        ))
+    }
+
+    private func pendingCompletionEvents(userID: String) throws -> [CourseCompletionEvent] {
+        try completionEvents(userID: userID).filter { try outboxState($0.stateRawValue) != .acknowledged }
+    }
+
+    private func recoverInterruptedCompletionEvents(userID: String) throws {
+        var changed = false
+        for event in try completionEvents(userID: userID) where try outboxState(event.stateRawValue) == .sending {
+            event.stateRawValue = ProgressOutboxState.pending.rawValue
+            changed = true
+        }
+        if changed { try context.save() }
+    }
+
+    private func applyCompletionConfirmed(userID: String, courseID: String, count: Int, updatedAt: Date) throws {
+        let recordID = CourseCompletionRecord.makeID(userID: userID, courseID: courseID)
+        let descriptor = FetchDescriptor<CourseCompletionRecord>(predicate: #Predicate { $0.recordID == recordID })
+        if let record = try context.fetch(descriptor).first {
+            record.completionCount = max(0, count)
+            record.updatedAt = updatedAt
+        } else {
+            context.insert(CourseCompletionRecord(
+                userID: userID, courseID: courseID,
+                completionCount: max(0, count), updatedAt: updatedAt
+            ))
+        }
+    }
+
+    private func requireUniqueEventID(_ id: String) throws {
+        let progress = FetchDescriptor<ProgressEvent>(predicate: #Predicate { $0.clientEventID == id })
+        let completion = FetchDescriptor<CourseCompletionEvent>(predicate: #Predicate { $0.clientEventID == id })
+        guard try context.fetchCount(progress) == 0, try context.fetchCount(completion) == 0 else {
+            throw PersistentProgressError.duplicateEventID(id)
+        }
+    }
+
+    private func nextEventDate() -> Date {
+        let candidate = now()
+        let value = if let lastEventCreatedAt, candidate <= lastEventCreatedAt {
+            lastEventCreatedAt.addingTimeInterval(0.000_001)
+        } else {
+            candidate
+        }
+        lastEventCreatedAt = value
+        return value
     }
 
     private func eventKind(_ rawValue: String) throws -> ProgressEventKind {

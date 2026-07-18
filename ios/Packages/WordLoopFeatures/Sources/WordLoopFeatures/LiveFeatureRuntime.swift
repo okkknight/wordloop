@@ -16,15 +16,13 @@ public extension WordLoopFeaturesModule {
         let audioPlayer = try AudioPlayer.live()
         let persistence = try WordLoopProgressRuntime.make(apiBaseURL: apiBaseURL, inMemory: inMemory)
         let activeSession = ActiveStudySession()
-        let completionFallback = TemporaryProgressRepository()
         let coordinator = StartupCoordinator(sessions: persistence.sessionRepository, activeSession: activeSession)
         let studyStore = StudyStore(
             courses: .live(repository: courseRepository),
             audio: .live(player: audioPlayer),
             progress: .persistent(
                 repository: persistence.progressRepository,
-                session: activeSession,
-                completionFallback: completionFallback
+                session: activeSession
             ),
             courseSelection: { courseID, mode in
                 guard let userID = await activeSession.userID else { return }

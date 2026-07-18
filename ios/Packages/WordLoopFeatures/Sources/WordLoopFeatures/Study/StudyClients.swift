@@ -57,13 +57,12 @@ struct StudyProgressClient: Sendable {
 
     static func persistent(
         repository: PersistentProgressRepository,
-        session: ActiveStudySession,
-        completionFallback: TemporaryProgressRepository
+        session: ActiveStudySession
     ) -> Self {
         Self(
             snapshot: { courseID, mode in
                 guard let userID = await session.userID else {
-                    return await completionFallback.snapshot(courseID: courseID, mode: mode)
+                    return [:]
                 }
                 _ = try? await repository.flush(userID: userID, mode: mode, trigger: .appBecameActive)
                 if let remote = try? await repository.refresh(userID: userID, mode: mode, courseID: courseID) {
@@ -73,7 +72,7 @@ struct StudyProgressClient: Sendable {
             },
             record: { courseID, mode, entryID in
                 guard let userID = await session.userID else {
-                    return await completionFallback.record(courseID: courseID, mode: mode, entryID: entryID)
+                    return 0
                 }
                 let value = (try? await repository.record(userID: userID, mode: mode, courseID: courseID, entryID: entryID)) ?? 0
                 Task { _ = try? await repository.flush(userID: userID, mode: mode, trigger: .networkRecovered) }
@@ -81,15 +80,32 @@ struct StudyProgressClient: Sendable {
             },
             master: { courseID, mode, entryID in
                 guard let userID = await session.userID else {
-                    return await completionFallback.master(courseID: courseID, mode: mode, entryID: entryID)
+                    return 0
                 }
                 let value = (try? await repository.master(userID: userID, mode: mode, courseID: courseID, entryID: entryID)) ?? 0
                 Task { _ = try? await repository.flush(userID: userID, mode: mode, trigger: .networkRecovered) }
                 return value
             },
-            reset: { await completionFallback.reset(courseID: $0, mode: $1) },
-            completions: { await completionFallback.completions() },
-            complete: { await completionFallback.complete(courseID: $0, completionID: $1) }
+            reset: { courseID, mode in
+                guard let userID = await session.userID else { return }
+                try await repository.reset(userID: userID, mode: mode, courseID: courseID)
+                Task { _ = try? await repository.flush(userID: userID, mode: mode, trigger: .networkRecovered) }
+            },
+            completions: {
+                guard let userID = await session.userID else { return [:] }
+                if let remote = try? await repository.refreshCompletions(userID: userID, mode: .repeat) {
+                    return remote
+                }
+                return (try? await repository.completions(userID: userID)) ?? [:]
+            },
+            complete: { courseID, completionID in
+                guard let userID = await session.userID else { return 0 }
+                let value = try await repository.complete(
+                    userID: userID, courseID: courseID, clientEventID: completionID
+                )
+                Task { _ = try? await repository.flush(userID: userID, mode: .repeat, trigger: .networkRecovered) }
+                return value
+            }
         )
     }
 }
