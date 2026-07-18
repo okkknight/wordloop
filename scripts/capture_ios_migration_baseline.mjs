@@ -210,8 +210,9 @@ function sentenceAudioDirectory(courseFile) {
 }
 
 async function buildInventory() {
-  const [pageSource, coursesSource, wordsSource, cssSource] = await Promise.all([
+  const [pageSource, repeatScorerSource, coursesSource, wordsSource, cssSource] = await Promise.all([
     read("app/page.tsx"),
+    read("app/repeat-scorer.ts"),
     read("app/courses.ts"),
     read("app/words.ts"),
     read("app/globals.css"),
@@ -330,8 +331,8 @@ async function buildInventory() {
       panelClose: numericConstant(pageSource, "PANEL_CLOSE_MS"),
     },
     scoring: {
-      passScore: numericConstant(pageSource, "PASS_SCORE"),
-      minimumSentenceWordCoverage: numericConstant(pageSource, "MIN_SENTENCE_WORD_COVERAGE"),
+      passScore: numericConstant(repeatScorerSource, "REPEAT_PASS_SCORE"),
+      minimumSentenceWordCoverage: numericConstant(repeatScorerSource, "MIN_SENTENCE_WORD_COVERAGE"),
     },
     stateTypes: {
       startup: stringUnion(pageSource, "StartupState"),

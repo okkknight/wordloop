@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P5.5 已 PASS，当前执行 P6.1
+状态：执行中；P0–P6.1 已 PASS，当前执行 P6.2
 
 制定日期：2026-07-15
 
@@ -341,6 +341,8 @@ App Target 只完成：
 目标：等价迁移当前稳定跟读状态机，不趁机调整评分。
 
 ### P6.1 评分 golden fixtures
+
+状态：PASS；详见 [`../tasks/2026-07-18-p6-1-repeat-scoring-golden.md`](../tasks/2026-07-18-p6-1-repeat-scoring-golden.md)。
 
 - 从 Web 的 normalize、候选窗口、Levenshtein、句子 60% 覆盖规则提取匿名 fixture。
 - 实现纯 Swift scorer。

@@ -269,6 +269,7 @@ test("ships the B1 dream a little dream course and its clips", async () => {
 
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
+  const repeatScorer = await read("app/repeat-scorer.ts");
   const courses = await read("app/courses.ts");
   const progressRoute = await read("app/api/progress/route.ts");
   const schema = await read("db/schema.ts");
@@ -314,7 +315,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(progressRoute, /payload\.completeCourse === true/);
   assert.match(schema, /courseCompletionCounts/);
   assert.match(completionMigration, /course_completion_events/);
-  assert.match(page, /const PASS_SCORE = 20/);
+  assert.match(repeatScorer, /REPEAT_PASS_SCORE = 20/);
+  assert.match(page, /scoreRepeatTranscript/);
   assert.match(page, /sentenceIndexRef\.current = target\.index/);
   assert.match(page, /wordIndexRef\.current = target\.index/);
   assert.match(page, /<span>COURSE<\/span>/);
@@ -380,11 +382,11 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /activeCourseKindRef\.current === "sentence"/);
   assert.match(page, /function renderMaskedText/);
   assert.match(page, /const MIN_SPEECH_MS = 350/);
-  assert.match(page, /const MIN_SENTENCE_WORD_COVERAGE = 0\.6/);
+  assert.match(repeatScorer, /MIN_SENTENCE_WORD_COVERAGE = 0\.6/);
   assert.match(page, /hasEnoughSpeechEvidence\(repeatWordRef\.current, transcript\)/);
-  assert.match(page, /function normalizeCoverageWord/);
-  assert.match(page, /word === "'em"/);
-  assert.match(page, /sentenceWordCoverage\(repeatWordRef\.current, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
+  assert.match(repeatScorer, /function normalizeCoverageWord/);
+  assert.match(repeatScorer, /word === "'em"/);
+  assert.match(repeatScorer, /sentenceWordCoverage\(target, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
   assert.match(page, /renderStudyText\(currentItem\.text, textVisibilityMode, currentItem\.highlights\)/);
   assert.match(page, /learning-highlight/);
   assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);

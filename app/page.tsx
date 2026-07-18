@@ -9,9 +9,9 @@ import {
   type CourseEntry,
 } from "./courses";
 import { WORDS } from "./words";
+import { hasEnoughSpeechEvidence, scoreRepeatTranscript } from "./repeat-scorer";
 
 const MAX_STUDY_COUNT = 3;
-const PASS_SCORE = 20;
 const AUTO_ADVANCE_MS = 700;
 const LISTEN_AUTOPLAY_DELAY_MS = 500;
 const PLAYBACK_TIMEOUT_MS = 8_000;
@@ -19,7 +19,6 @@ const SPEAK_TIMEOUT_MS = 6_000;
 const SPEAKING_TIMEOUT_MS = 6_000;
 const SCORING_TIMEOUT_MS = 6_000;
 const MIN_SPEECH_MS = 350;
-const MIN_SENTENCE_WORD_COVERAGE = 0.6;
 const SEGMENT_SETTLE_MS = 700;
 const STARTUP_MAX_WAIT_MS = 650;
 const PANEL_CLOSE_MS = 240;
@@ -75,13 +74,6 @@ type RepeatState =
   | "paused"
   | "retry"
   | "error";
-
-type ScoreResult = {
-  feedback: string;
-  matched: string;
-  passed: boolean;
-  score: number;
-};
 
 function readPendingProgressEvents(userId: string, studyMode: StudyMode): PendingProgressEvent[] {
   try {
@@ -169,56 +161,6 @@ function initialEligibleSentenceIndex(entries: readonly CourseEntry[], progress:
 
 function courseIsComplete(entries: readonly CourseEntry[], progress: ProgressMap) {
   return entries.length > 0 && entries.every((entry) => (progress[entry.id] ?? 0) >= MAX_STUDY_COUNT);
-}
-
-function normalizeSpeech(value: string) {
-  return value.toLowerCase().replace(/[^a-z]/g, "");
-}
-
-function speechCandidates(transcript: string) {
-  const withoutNoiseLabels = transcript.replace(
-    /[\[(](?:background noise|noise|music|laughter|silence|inaudible)[\])]/gi,
-    " ",
-  );
-  const words = withoutNoiseLabels
-    .split(/\s+/)
-    .map(normalizeSpeech)
-    .filter(Boolean);
-  const candidates = new Set(words);
-
-  // Transcription can split a spoken phrase into several pieces. Include
-  // adjacent windows long enough to cover a complete learning sentence, while
-  // still ignoring unrelated words during scoring.
-  for (let start = 0; start < words.length; start += 1) {
-    let combined = words[start];
-    for (let end = start + 1; end < Math.min(words.length, start + 12); end += 1) {
-      combined += words[end];
-      candidates.add(combined);
-    }
-  }
-
-  return [...candidates];
-}
-
-function hasEnoughSpeechEvidence(target: string, transcript: string) {
-  const spokenWords = transcript.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
-  const targetWords = target.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
-  const minimumWords = targetWords.length > 1 ? 2 : 1;
-  return spokenWords.length >= minimumWords;
-}
-
-function normalizeCoverageWord(value: string) {
-  const word = value.toLowerCase().replace(/’/g, "'").replace(/^[^a-z']+|[^a-z']+$/g, "");
-  if (word === "'em" || word === "em") return "them";
-  const contraction = word.match(/^([a-z]+)'(?:d|ll|re|ve|m|s)$/);
-  return contraction?.[1] ?? normalizeSpeech(word);
-}
-
-function sentenceWordCoverage(target: string, transcript: string) {
-  const targetWords = target.split(/\s+/).map(normalizeCoverageWord).filter(Boolean);
-  const spokenWords = new Set(transcript.split(/\s+/).map(normalizeCoverageWord).filter(Boolean));
-  if (targetWords.length === 0) return 0;
-  return targetWords.filter((word) => spokenWords.has(word)).length / targetWords.length;
 }
 
 function escapeRegExp(value: string) {
@@ -377,81 +319,6 @@ function repeatStatusHint(state: RepeatState) {
     default:
       return "跟读模式已准备好";
   }
-}
-
-function levenshtein(a: string, b: string) {
-  if (!a.length) return b.length;
-  if (!b.length) return a.length;
-
-  const matrix = Array.from({ length: a.length + 1 }, (_, row) =>
-    Array.from({ length: b.length + 1 }, (_, column) =>
-      row === 0 ? column : column === 0 ? row : 0,
-    ),
-  );
-
-  for (let row = 1; row <= a.length; row += 1) {
-    for (let column = 1; column <= b.length; column += 1) {
-      const cost = a[row - 1] === b[column - 1] ? 0 : 1;
-      matrix[row][column] = Math.min(
-        matrix[row - 1][column] + 1,
-        matrix[row][column - 1] + 1,
-        matrix[row - 1][column - 1] + cost,
-      );
-    }
-  }
-
-  return matrix[a.length][b.length];
-}
-
-function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
-  const normalizedTarget = normalizeSpeech(targetWord);
-  const candidates = speechCandidates(transcript);
-
-  let matched = "";
-  let bestSimilarity = 0;
-
-  for (const candidate of candidates) {
-    const distance = levenshtein(normalizedTarget, candidate);
-    const similarity = Math.max(
-      0,
-      1 - distance / Math.max(normalizedTarget.length, candidate.length, 1),
-    );
-    if (similarity > bestSimilarity) {
-      bestSimilarity = similarity;
-      matched = candidate;
-    }
-  }
-
-  const exact = candidates.includes(normalizedTarget);
-  const score = exact
-    ? 100
-    : Math.round(bestSimilarity * 100);
-  const passed = exact || score >= PASS_SCORE;
-
-  if (passed) {
-    return {
-      feedback: "PASS",
-      matched,
-      passed: true,
-      score,
-    };
-  }
-
-  if (!matched) {
-    return {
-      feedback: "TRY AGAIN",
-      matched,
-      passed: false,
-      score: 0,
-    };
-  }
-
-  return {
-    feedback: "TRY AGAIN",
-    matched,
-    passed: false,
-    score,
-  };
 }
 
 export default function Home() {
@@ -1139,10 +1006,12 @@ export default function Home() {
     repeatListeningTurnRef.current = null;
     clearRepeatPhaseTimers();
     setRepeatTranscript(transcript);
-    const result = scoreTranscript(repeatWordRef.current, transcript);
-    const meetsSentenceCoverage = activeCourseKindRef.current !== "sentence"
-      || sentenceWordCoverage(repeatWordRef.current, transcript) >= MIN_SENTENCE_WORD_COVERAGE;
-    const passed = result.passed && meetsSentenceCoverage;
+    const result = scoreRepeatTranscript(
+      repeatWordRef.current,
+      transcript,
+      activeCourseKindRef.current === "sentence",
+    );
+    const passed = result.passed;
     playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, passed));
     if (!passed) {
       scheduleRepeatRetry(turnId, 850);

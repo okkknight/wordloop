@@ -3,7 +3,7 @@
   "sources": {
     "page": {
       "path": "app/page.tsx",
-      "stateDeclarationsStartLine": 460
+      "stateDeclarationsStartLine": 327
     },
     "styles": {
       "path": "app/globals.css",

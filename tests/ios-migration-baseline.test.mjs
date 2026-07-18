@@ -12,6 +12,7 @@ async function fixture() {
   const target = await mkdtemp(join(tmpdir(), "wordloop-baseline-"));
   await mkdir(join(target, "app/data"), { recursive: true });
   await cp(join(root, "app/page.tsx"), join(target, "app/page.tsx"));
+  await cp(join(root, "app/repeat-scorer.ts"), join(target, "app/repeat-scorer.ts"));
   await cp(join(root, "app/courses.ts"), join(target, "app/courses.ts"));
   await cp(join(root, "app/words.ts"), join(target, "app/words.ts"));
   await cp(join(root, "app/globals.css"), join(target, "app/globals.css"));
