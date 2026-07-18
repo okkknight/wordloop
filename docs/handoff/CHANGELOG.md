@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P5.1 progress contract task ready
+
+- 新增 P5.1 任务卡：以真实 VPS Node 与 P0 API baseline 为合同真值，Swift 增加显式 Codable DTO，共用 JSON fixtures 同时驱动 Swift round-trip 与 Node/Cloudflare 请求级测试。
+- 锁定 Cloudflare 对齐 Node 的 mode error、非空 course/item/word 校验；不改变路径、成功字段、数据库 schema 或 POST 分支优先级。
+- P5.1 禁止 transport、SwiftData、outbox、UI 接线和替换 P4 temporary adapter；完成后才进入 P5.2。
+
 ## 2026-07-18 · P4.4 completion and retrain PASS
 
 - reset 不再占用 course-loading phase；新增可控 suspension 测试，确认旧 reset 在新切课/切模式后、旧 completion 在新切课后都不能回写新会话。

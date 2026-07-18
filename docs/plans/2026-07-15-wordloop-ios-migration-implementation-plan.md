@@ -298,6 +298,8 @@ App Target 只完成：
 
 ### P5.1 API DTO 与契约 fixtures
 
+状态：READY；详见 [`../tasks/2026-07-18-p5-1-progress-api-contracts.md`](../tasks/2026-07-18-p5-1-progress-api-contracts.md)。
+
 - 在 `WordLoopNetworking` 定义 progress GET/POST、select/reset/complete DTO。
 - 用 P0 fixtures 测试解码/编码。
 - 增加 Node 与 Cloudflare 路由的共享契约测试；不先改 API 形状。

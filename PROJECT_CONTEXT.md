@@ -37,6 +37,8 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4 均已 PASS。P4.4 会话期完成/重练通过 Progress 9/9、Features 103/103（StudyStore 28/28）、Web 53/53、baseline、统一 iOS verify、AppIntegration 5/5、App UI 26/26 和 diff check；lint 精确保持既有 4 errors/0 warnings。当前进入 P5.1，先锁定 API DTO 与 Node/Cloudflare 契约 fixtures，不提前实现 SwiftData/outbox。
 
+P5.1 任务卡已锁定：以当前 VPS Node 和 P0 API baseline 为合同真值，Cloudflare 对齐 Node 的错误/非空校验；Swift 只增加显式 Codable DTO，共用 fixtures 必须通过 Swift round-trip 与 Node/Cloudflare 请求级测试。本阶段禁止 transport、SwiftData、outbox、UI 接线和替换 P4 temporary adapter。
+
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 
 P1 已建立 catalog/course/integrity JSON Schema 和唯一 exporter。规范产物从真实课程注册表生成，先把已哈希字节写入临时树并逐文件复验，再替换 `content/dist/`；该目录与 iOS Generated resources 均被 Git 忽略，Web 仍读取原数据源。运行时注册 ID 是规范 ID，S01E01 的历史 manifest ID 差异和未命中 highlights 会写入 validation report。
