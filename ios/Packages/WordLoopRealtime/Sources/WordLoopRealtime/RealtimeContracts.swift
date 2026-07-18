@@ -5,6 +5,7 @@ public enum RealtimeTransportError: Error, Equatable, Sendable {
     case nonHTTPResponse
     case rejected(statusCode: Int, message: String?)
     case invalidSDPAnswer
+    case unavailablePeerConnection
 }
 
 public struct RealtimeHTTPTransport: @unchecked Sendable {

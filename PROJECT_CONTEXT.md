@@ -35,7 +35,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P6.2 Realtime transport 与依赖 ADR。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4、P5.1–P5.5、P6.1 均已 PASS。P6.2 已完成 VPS SDP client、Realtime 生命周期 decoder、延迟到 REPEAT 用户动作的麦克风权限边界及依赖 ADR；官方 WebRTC XCFramework 尚未构建完成，因 depot_tools CIPD bootstrap 在本机临时目录失败，P6.2 为 PARTIAL，不得宣称原生 REPEAT 已可用。详见 `docs/tasks/2026-07-18-p6-2-realtime-transport.md` 与 `docs/adr/0001-ios-webrtc-dependency.md`。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4、P5.1–P5.5、P6.1–P6.2 均已 PASS。P6.2 已固定并实际链接 WebRTC `150.0.0` XCFramework，完成 VPS SDP session、data channel、Realtime 生命周期 decoder 和麦克风权限边界；P6.3 才将这些 transport 事件接入原有 REPEAT turn/state machine。详见 `docs/tasks/2026-07-18-p6-2-realtime-transport.md` 与 `docs/adr/0001-ios-webrtc-dependency.md`。
 
 P5.1 已以当前 VPS Node 和 P0 API baseline 为合同真值完成。共享 fixtures 驱动 Swift round-trip 与隔离的真实 VPS Node/Worker 请求；回归修复 D1 progress event 漏写 `created_at` 的静默丢事件。线上环境和后续 transport 仍明确走 VPS，Cloudflare 仅保持兼容合同。
 

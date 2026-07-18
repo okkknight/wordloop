@@ -14,6 +14,7 @@ let package = Package(
     dependencies: [
         .package(path: "../WordLoopCore"),
         .package(path: "../WordLoopNetworking"),
+        .package(url: "https://github.com/stasel/WebRTC.git", exact: "150.0.0"),
     ],
     targets: [
         .target(
@@ -21,6 +22,7 @@ let package = Package(
             dependencies: [
                 .product(name: "WordLoopCore", package: "WordLoopCore"),
                 .product(name: "WordLoopNetworking", package: "WordLoopNetworking"),
+                .product(name: "WebRTC", package: "WebRTC"),
             ]
         ),
         .testTarget(name: "WordLoopRealtimeTests", dependencies: ["WordLoopRealtime"]),

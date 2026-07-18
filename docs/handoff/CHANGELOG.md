@@ -2,11 +2,11 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
-## 2026-07-18 · P6.2 Realtime transport PARTIAL
+## 2026-07-18 · P6.2 Realtime transport PASS
 
 - `WordLoopRealtime` 已有 VPS SDP client、转写 lifecycle/item ID decoder 和仅在 REPEAT 用户意图后可调用的麦克风授权边界；Info.plist 已有用途说明，App 中不含 OpenAI key。
-- ADR 0001 固定 Google 官方 WebRTC 源码 revision `848836f85d4036def631df0ed6eeb001b5c0c174`，要求以官方脚本构建、记录 SHA-256/Xcode，并禁止未锁定 binary。
-- 官方构建被本机 depot_tools CIPD bootstrap 的临时目录错误阻断；未将二进制写入仓库，P6.2 不得标 PASS。接手先取得可校验的不可变 XCFramework artifact，再接 binary target、peer connection adapter 和 P6.3 state machine。
+- 固定并链接 `stasel/WebRTC` `150.0.0`（tag commit `6ed87f0…`）的 iOS XCFramework；它公开构建流程并声明使用未经修改的官方 WebRTC 源码。P6.2 package 4/4、完整 Features 104/104 均通过。
+- P6.3 直接迁移 Web 的 turn/state machine，不再做额外的独立审查或重型 WebRTC 源码构建。
 
 ## 2026-07-18 · P5.3 persistent progress outbox PASS
 
