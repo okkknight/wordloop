@@ -1,6 +1,6 @@
 # P5.3 Persistent Progress Repository 与 VPS Outbox
 
-状态：READY
+状态：PASS
 
 上游 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
 
@@ -61,3 +61,10 @@
 ## 退出条件
 
 飞行模式下条目学习能持久化并在进程重启后恢复投影；联网/手动/App-active 触发的 flush 使用相同 UUID 幂等同步 VPS，失败可重试且同 partition 不乱序。完成后进入 P5.4 Startup 与课程恢复。
+
+## 最终实现结果（2026-07-18）
+
+- `ProgressAPIClient` 从 App 注入 HTTPS base URL 并只追加 `progress`；GET/POST course-item DTO、结构化 HTTP/JSON error 与可注入 transport 已完成，源码不硬编码域名。Debug/Release 仍指向 VPS `https://boringmax.com/wordloop/api`。
+- `PersistentProgressRepository` 已实现 event-first save、confirmed + pending 投影、0...3 clamp、稳定顺序、同 user/mode trigger 合并、attempt 元数据、失败恢复 pending、原 UUID 重试、成功 confirmed upsert + event 删除、refresh 合并和 interrupted sending 恢复。
+- Networking 8/8、Progress 20/20（outbox 6/6）、相关 Node 11/11、统一 iOS verify、baseline 与 diff check 通过。App/Feature/UI 未改，按用户要求未跑无关 UI；lint 基线未触碰，仍为既有 4 errors/0 warnings。
+- P4 temporary adapter 仍是 live Feature 工厂实现；P5.3 未接 identity/preference/reset/completion、scene/network monitor 或 UI。P5.3 结论为 PASS。

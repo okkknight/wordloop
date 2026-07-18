@@ -34,6 +34,11 @@ public struct WordProgressDTO: Codable, Equatable, Sendable {
 public struct CourseItemProgressDTO: Codable, Equatable, Sendable {
     public let itemId: String
     public let studyCount: Int
+
+    public init(itemId: String, studyCount: Int) {
+        self.itemId = itemId
+        self.studyCount = studyCount
+    }
 }
 
 public struct CourseCompletionDTO: Codable, Equatable, Sendable {
@@ -49,6 +54,10 @@ public struct WordProgressSnapshotDTO: Codable, Equatable, Sendable {
 
 public struct CourseProgressSnapshotDTO: Codable, Equatable, Sendable {
     public let progress: [CourseItemProgressDTO]
+
+    public init(progress: [CourseItemProgressDTO]) {
+        self.progress = progress
+    }
 }
 
 public struct WordProgressRequestDTO: Codable, Equatable, Sendable {

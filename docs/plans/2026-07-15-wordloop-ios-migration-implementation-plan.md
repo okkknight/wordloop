@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：执行中；P0–P5.2 已 PASS，当前执行 P5.3
+状态：执行中；P0–P5.3 已 PASS，当前执行 P5.4
 
 制定日期：2026-07-15
 
@@ -312,7 +312,7 @@ App Target 只完成：
 
 ### P5.3 Progress Outbox
 
-状态：READY；详见 [`../tasks/2026-07-18-p5-3-progress-outbox.md`](../tasks/2026-07-18-p5-3-progress-outbox.md)。
+状态：PASS；详见 [`../tasks/2026-07-18-p5-3-progress-outbox.md`](../tasks/2026-07-18-p5-3-progress-outbox.md)。
 
 - 本地事务先写 event，再向 UI 发布派生值。
 - 同一个 UUID 重试；服务端确认后归档/删除。

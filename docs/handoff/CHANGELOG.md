@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-18 · P5.3 persistent progress outbox PASS
+
+- 新增注入 base URL 的 VPS ProgressAPIClient，以及 event-first SwiftData PersistentProgressRepository；confirmed + pending 投影、UUID 重试、稳定顺序、attempt、同 partition 合并、refresh/recovery 已覆盖。
+- Networking 8/8、Progress 20/20（outbox 6/6）、相关 Node 11/11、统一 iOS verify、baseline、diff check 通过；无 App/UI 改动，未跑无关 UI。
+- live Feature 仍用 P4 temporary adapter；P5.3 PASS，进入 P5.4 identity/startup/recent-course 与接线。
+
 ## 2026-07-18 · P5.3 VPS progress outbox task ready
 
 - 锁定 Persistent ProgressRepository：confirmed record + pending event 投影、先落盘再发布、相同 UUID 重试、同 user/mode 串行与稳定顺序。
