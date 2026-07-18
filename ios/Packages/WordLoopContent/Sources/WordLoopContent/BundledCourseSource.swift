@@ -20,71 +20,7 @@ public struct BundledCourseSource: CourseSource, Sendable {
     public func loadCatalog() throws -> CourseCatalog {
         let document = "catalog.json"
         let data = try readData(relativePath: document)
-        let wire = try CourseContentValidation.decodeCatalog(data, document: document)
-        try CourseContentValidation.requireSchema(wire.schemaVersion, document: document)
-        try CourseContentValidation.requireTimestamp(wire.generatedAt, document: document)
-        try CourseContentValidation.requireStableID(wire.defaultCourseId, kind: "default course")
-        guard !wire.collections.isEmpty else {
-            throw CourseContentError.invalidValue(document: document, field: "collections")
-        }
-        guard !wire.courses.isEmpty else {
-            throw CourseContentError.invalidValue(document: document, field: "courses")
-        }
-
-        let collections = try wire.collections.map { item -> CourseCollectionDescriptor in
-            try CourseContentValidation.requireStableID(item.id, kind: "collection")
-            try CourseContentValidation.requireNonEmpty(item.label, document: document, field: "collection.label")
-            try CourseContentValidation.requireNonEmpty(item.title, document: document, field: "collection.title")
-            try CourseContentValidation.requireNonEmpty(item.subtitle, document: document, field: "collection.subtitle")
-            return CourseCollectionDescriptor(
-                id: try collectionID(item.id),
-                label: item.label,
-                title: item.title,
-                subtitle: item.subtitle
-            )
-        }
-        try CourseContentValidation.requireUnique(collections.map(\.id), kind: "collection") { $0.rawValue }
-        let collectionIDs = Set(collections.map(\.id))
-
-        let descriptors = try wire.courses.map { item -> CourseDescriptor in
-            try validateDescriptor(item, document: document)
-            let id = try courseID(item.id)
-            let expectedManifest = "courses/\(id.rawValue)/\(item.contentVersion)/course.json"
-            guard item.manifestURL == expectedManifest else {
-                throw CourseContentError.metadataMismatch(courseID: id.rawValue, field: "manifestLocation")
-            }
-            let collection = try collectionID(item.collectionId)
-            guard collectionIDs.contains(collection) else {
-                throw CourseContentError.unknownCollection(courseID: item.id, collectionID: item.collectionId)
-            }
-            return CourseDescriptor(
-                id: id,
-                collectionID: collection,
-                title: item.title,
-                subtitle: item.subtitle,
-                description: item.description,
-                kind: try courseKind(item.kind, document: document),
-                practiceOrder: try practiceOrder(item.practiceOrder, document: document),
-                contentVersion: item.contentVersion,
-                minimumAppVersion: item.minimumAppVersion,
-                manifestLocation: item.manifestURL,
-                manifestSHA256: item.manifestSHA256,
-                downloadSize: item.downloadSize,
-                availability: try availability(item.status, document: document)
-            )
-        }
-        try CourseContentValidation.requireUnique(descriptors.map(\.id), kind: "course") { $0.rawValue }
-
-        guard let defaultID = CourseID(rawValue: wire.defaultCourseId), descriptors.contains(where: { $0.id == defaultID }) else {
-            throw CourseContentError.defaultCourseMissing(wire.defaultCourseId)
-        }
-        return CourseCatalog(
-            schemaVersion: wire.schemaVersion,
-            generatedAt: wire.generatedAt,
-            defaultCourseID: defaultID,
-            collections: collections,
-            courses: descriptors
-        )
+        return try CourseCatalogDecoder.decode(data, document: document)
     }
 
     public func loadCourse(descriptor: CourseDescriptor) throws -> Course {
