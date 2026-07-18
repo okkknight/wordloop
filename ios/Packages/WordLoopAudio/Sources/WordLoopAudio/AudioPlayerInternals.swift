@@ -22,6 +22,7 @@ protocol AudioEngineFactory: Sendable {
 
 protocol AudioSessionControlling: Sendable {
     func configureForSpokenPlayback() throws
+    func configureForRepeat() throws
     func activate() throws
     func deactivate()
 }

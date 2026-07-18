@@ -99,6 +99,14 @@ struct IOSAudioSessionController: AudioSessionControlling, @unchecked Sendable {
         try session.setCategory(.playback, mode: .spokenAudio, options: [])
     }
 
+    func configureForRepeat() throws {
+        try session.setCategory(
+            .playAndRecord,
+            mode: .voiceChat,
+            options: [.defaultToSpeaker, .allowBluetooth]
+        )
+    }
+
     func activate() throws {
         try session.setActive(true)
     }

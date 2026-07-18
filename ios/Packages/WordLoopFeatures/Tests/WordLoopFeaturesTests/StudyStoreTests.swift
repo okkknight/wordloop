@@ -879,7 +879,8 @@ private final class TestAudio: @unchecked Sendable {
             pause: { [recorder] in await recorder.pause() },
             stop: { [recorder] in await recorder.stop() },
             snapshot: { [recorder] in await recorder.snapshot() },
-            events: { [stream] in stream }
+            events: { [stream] in stream },
+            configureForRepeat: {}
         )
     }
 

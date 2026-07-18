@@ -19,6 +19,7 @@ public actor AudioPlayer {
     )
     private var subscribers: [UUID: AsyncStream<AudioPlayerEvent>.Continuation] = [:]
     private var observesSystemEvents = false
+    private var usesRepeatSession = false
 
     public static func live() throws -> AudioPlayer {
         #if os(iOS)
@@ -53,6 +54,7 @@ public actor AudioPlayer {
 
     public func prepare(current: URL, next: URL?) async throws {
         startObservingSystemEventsIfNeeded()
+        usesRepeatSession = false
         let wasPlaying = currentSnapshot.phase == .playing
         invalidateActiveRequest()
         if wasPlaying {
@@ -135,6 +137,18 @@ public actor AudioPlayer {
         transition(to: .prepared)
     }
 
+    public func configureForRepeat() throws {
+        startObservingSystemEventsIfNeeded()
+        do {
+            try session.configureForRepeat()
+            try session.activate()
+            usesRepeatSession = true
+        } catch {
+            session.deactivate()
+            throw AudioPlayerError.sessionActivationFailed
+        }
+    }
+
     @discardableResult
     public func play() async throws -> PlaybackRequestID {
         startObservingSystemEventsIfNeeded()
@@ -148,7 +162,11 @@ public actor AudioPlayer {
         }
 
         do {
-            try session.configureForSpokenPlayback()
+            if usesRepeatSession {
+                try session.configureForRepeat()
+            } else {
+                try session.configureForSpokenPlayback()
+            }
             try session.activate()
         } catch {
             invalidateActiveRequest()

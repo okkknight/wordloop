@@ -687,9 +687,11 @@ public final class StudyStore {
         }
         let turn = repeatController.beginTurn()
         state.repeatPhase = .playing
+        shellStore.state.repeatTranscript = nil
         applyRepeatPresentation(.playing)
         do {
             try await audio.prepare(entry.audioURL, nil)
+            try await audio.configureForRepeat()
             guard mode == .repeat, currentEntryID == entryID, repeatController.turnID == turn else { return }
             repeatPlaybackRequestID = try await audio.play()
             scheduleRepeatTimeout(

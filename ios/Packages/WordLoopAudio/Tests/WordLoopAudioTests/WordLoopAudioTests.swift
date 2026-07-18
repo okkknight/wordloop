@@ -617,6 +617,12 @@ private final class FakeAudioSession: AudioSessionControlling, @unchecked Sendab
         if configurationFails { throw CocoaError(.featureUnsupported) }
     }
 
+    func configureForRepeat() throws {
+        calls.append(.configure)
+        log.append("session.configure")
+        if configurationFails { throw CocoaError(.featureUnsupported) }
+    }
+
     func activate() throws {
         calls.append(.activate)
         log.append("session.activate")

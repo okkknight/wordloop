@@ -24,6 +24,7 @@ struct StudyAudioClient: Sendable {
     var stop: @Sendable () async -> Void
     var snapshot: @Sendable () async -> AudioPlaybackSnapshot
     var events: @Sendable () async -> AsyncStream<AudioPlayerEvent>
+    var configureForRepeat: @Sendable () async throws -> Void
 
     static func live(player: AudioPlayer) -> Self {
         Self(
@@ -32,7 +33,8 @@ struct StudyAudioClient: Sendable {
             pause: { await player.pause() },
             stop: { await player.stop() },
             snapshot: { await player.snapshot() },
-            events: { await player.events() }
+            events: { await player.events() },
+            configureForRepeat: { try await player.configureForRepeat() }
         )
     }
 }
