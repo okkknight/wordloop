@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-22 · C01 current-life course developed, baseline refresh blocked
+
+- 按课程池 releaseOrder 2 完成 C01《谈论自己的工作、学习与近况 / Talking About Work, Study, and Current Life》：A2、16 句、检查器 0 error/0 warning、16 段 `marin` AI 语音与 `AI PRACTICE` 注册表条目已生成；运行时 ID 为 `c01-talking-work-study-current-life-a2`。
+- 内容导出成功，库存为 33 门课程、884 个句子条目、1,454 个 M4A。音频容器检查、候选检查、课程 exporter 和定向 lint 通过。
+- `baseline:ios:write` 目前被工作区既有 `app/page.tsx` 改动阻断：脚本仍要求启动文案 `USERNAME`；同一原因使 `rendered-html` 的启动文案断言失败。未改动该页面或 iOS 工作区文件；恢复/更新启动文案合同后需重写 `content-inventory.json` 并复跑相关基线测试。
+
 ## 2026-07-22 · B01 introduction course developed, pending review
 
 - 按 `course_topic` 的 releaseOrder 1 完成 B01《在新环境中介绍自己 / Introducing Yourself in a New Situation》：A2、16 句、`3/4/6/3` 难度配额、16×2 候选句、检查报告与最终人工确认稿均存于 `wordloop_course_production_pack/outputs/b01-introducing-yourself-a2/`。

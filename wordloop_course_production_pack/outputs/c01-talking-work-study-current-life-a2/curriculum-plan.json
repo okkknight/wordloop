@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池已冻结首发顺序；本产物只将 releaseOrder 2 的 C01 转写为可执行的单课提案，不改变选题、类型、等级或能力地图。",
+  "courses": [
+    {
+      "courseId": "C01",
+      "titleZh": "谈论自己的工作、学习与近况",
+      "titleEn": "Talking About Work, Study, and Current Life",
+      "courseType": "topic_expression",
+      "typeReason": "课程要求学习者围绕自己的当前生活作连续但简洁的表达，重点是个人情况与近况，而不是完成一个场景任务或练习单一对话动作。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够简洁介绍自己的工作或学习状态、日常内容以及最近的基本感受。",
+      "communicationGoals": [
+        "说明目前工作、学习或主要身份。",
+        "描述常见任务、环境和一天中的基本安排。",
+        "表达简单喜欢、困难或近期变化。"
+      ],
+      "abilityTags": [
+        "C1 描述个人情况",
+        "C5 轻度原因表达",
+        "工作与学习",
+        "当前近况"
+      ],
+      "selectionReason": "这是课程池 releaseOrder 2 的冻结课程，为学习者建立可迁移的基础个人介绍内容。",
+      "distinctiveValue": "让学习者拥有一套真实且可调整的基础个人介绍内容。",
+      "prerequisites": [
+        "B01"
+      ],
+      "humanReviewRisks": [
+        "避免扩展成完整职业履历。",
+        "避免引入长期职业目标或工作制度评价。",
+        "感受表达应保持具体、轻度且日常。"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "当前身份",
+      "日常工作与学习",
+      "近期感受"
+    ],
+    "duplicatesResolved": [
+      "不重复 B01 的短自我介绍，而是扩展为当前生活的基础表达。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "确认工作与学习例句比例。",
+      "确认近况感受保持 A2 可表达范围。"
+    ]
+  }
+}

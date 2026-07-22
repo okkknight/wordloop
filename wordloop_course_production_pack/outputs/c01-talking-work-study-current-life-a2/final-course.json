@@ -1,0 +1,270 @@
+{
+  "courseId": "c01-talking-work-study-current-life-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "简单身份",
+      "role": "说明目前的主要身份",
+      "text": "I’m a student right now.",
+      "translation": "我现在是一名学生。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I’m",
+        "right now"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "以最短的当前身份开场。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "简单身份",
+      "role": "说明基础工作状态",
+      "text": "I work at a small company downtown.",
+      "translation": "我在市中心的一家小公司工作。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I work"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "给出普通且可替换的工作状态。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "简单身份",
+      "role": "说明当前学习状态",
+      "text": "I’m studying English in the evenings.",
+      "translation": "我晚上学习英语。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I’m studying"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "用日常学习信息补充当前身份。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "日常安排",
+      "role": "描述一天开始的时间",
+      "text": "I usually start work around nine in the morning.",
+      "translation": "我通常早上九点左右开始工作。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I usually"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "加入常见时间安排但保持单一信息。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "日常安排",
+      "role": "说明一项常见工作内容",
+      "text": "Most days, I answer emails and work with my team.",
+      "translation": "大多数时候，我回复邮件并和团队一起工作。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Most days, I"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "描述一项高频日常工作。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "日常安排",
+      "role": "说明工作或学习环境",
+      "text": "My team is small, so we work closely together.",
+      "translation": "我的团队很小，所以我们紧密合作。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "My team",
+        "work closely"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "说明小团队环境与合作方式。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "日常安排",
+      "role": "说明工作之外的学习安排",
+      "text": "After work, I study for about an hour.",
+      "translation": "下班后，我学习大约一个小时。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "After work",
+        "study"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "补充工作外学习安排。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充近况",
+      "role": "说明当前一段时间的重点",
+      "text": "Lately, I’ve been working on a new project.",
+      "translation": "最近，我一直在做一个新项目。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Lately, I’ve been"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "用近期项目表达当前重点。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "补充近况",
+      "role": "表达简单的工作或学习喜好",
+      "text": "I like my work because I learn something new every day.",
+      "translation": "我喜欢我的工作，因为每天都能学到新东西。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I like",
+        "because"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "把喜欢和一个简单原因连起来。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "补充近况",
+      "role": "说明一个普通困难",
+      "text": "The hardest part is finding enough time after work.",
+      "translation": "最难的是下班后找到足够的时间。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The hardest part"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "用具体但轻度的困难保持真实感。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "补充近况",
+      "role": "说明合作对象或互动方式",
+      "text": "I usually work with two people on my team.",
+      "translation": "我通常和团队中的两个人一起工作。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I usually work with"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "说明普通合作对象。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "补充近况",
+      "role": "说明近期的一个变化",
+      "text": "Lately, I’ve been getting used to a new schedule.",
+      "translation": "最近，我一直在适应新的时间安排。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Lately, I’ve been"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "表达一个近期适应变化。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "补充近况",
+      "role": "连接过去和现在",
+      "text": "I’ve been doing this job for a few months now.",
+      "translation": "我做这份工作已经几个月了。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I’ve been",
+        "for a few months"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "以持续时间形成 A2+ 挑战。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "表达感受",
+      "role": "表达积极但不过度的感受",
+      "text": "I’m happy with how things are going so far.",
+      "translation": "到目前为止，我对事情的进展感到满意。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "happy with",
+        "so far"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在挑战后回落为总体积极感受。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "表达感受",
+      "role": "说明当前想改善的一点",
+      "text": "I’m trying to speak English a little more every day.",
+      "translation": "我正努力每天多说一点英语。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I’m trying to"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "表达一个小而现实的调整目标。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "表达感受",
+      "role": "用完整近况自然收尾",
+      "text": "Right now, I’m busy, but I feel good about it.",
+      "translation": "现在我很忙，但我对此感觉不错。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Right now",
+        "but"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "以忙碌但积极的近况完整收尾。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句从当前身份和日常安排逐步过渡到近期重点、轻度困难与基本感受，达成 C01 的个人情况表达目标。",
+    "naturalness": "最终句均为自然、现代的美式口语，避免履历化、职场术语和抽象评价。",
+    "realWorldUsefulness": "句子可独立用于认识新同事、同学、朋友或活动参与者时谈论近况。",
+    "coreChunkCoverage": "工作、学习、日常任务和近期状态四类核心表达均在明确沟通动作中出现。",
+    "difficultyDistribution": "严格保持 entry 3、targetBase 4、targetCore 6、stretch 3 的蓝图配额。",
+    "difficultyCurve": "挑战句位于 13、15、16；第 14 句回落为简短感受，最后一句整合忙碌与积极状态。",
+    "repetitionQuality": "工作、学习、团队、课程和近期变化分别承担不同信息任务，没有机械替换。",
+    "fillerRisk": "低。每句都服务于当前身份、日常安排、近期变化或基本感受。"
+  },
+  "humanReviewFocus": [
+    "确认工作与学习例句的比例符合产品定位。",
+    "抽读第 13、15、16 句，确认自然语速对 A2+ 学习者友好。",
+    "确认第 10 和第 16 句的连读节奏。"
+  ],
+  "needsHumanReview": true
+}

@@ -1,0 +1,632 @@
+{
+  "courseId": "c01-talking-work-study-current-life-a2",
+  "candidateCountPerSlot": 2,
+  "slots": [
+    {
+      "slot": 1,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s01-a",
+          "text": "I’m a student right now.",
+          "translation": "我现在是一名学生。",
+          "usedChunks": [
+            "I’m",
+            "right now"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s01-b",
+          "text": "I’m working full-time right now.",
+          "translation": "我现在全职工作。",
+          "usedChunks": [
+            "I’m",
+            "right now"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s02-a",
+          "text": "I work at a small company downtown.",
+          "translation": "我在市中心的一家小公司工作。",
+          "usedChunks": [
+            "I work"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s02-b",
+          "text": "I work from home for a small company.",
+          "translation": "我为一家小公司在家办公。",
+          "usedChunks": [
+            "I work"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s03-a",
+          "text": "I’m studying English in the evenings.",
+          "translation": "我晚上学习英语。",
+          "usedChunks": [
+            "I’m studying"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s03-b",
+          "text": "I’m studying business part-time right now.",
+          "translation": "我现在兼职学习商务。",
+          "usedChunks": [
+            "I’m studying"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s04-a",
+          "text": "I usually start work around nine in the morning.",
+          "translation": "我通常早上九点左右开始工作。",
+          "usedChunks": [
+            "I usually"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s04-b",
+          "text": "I usually have class in the evening after work.",
+          "translation": "我通常下班后晚上上课。",
+          "usedChunks": [
+            "I usually"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s05-a",
+          "text": "Most days, I answer emails and work with my team.",
+          "translation": "大多数时候，我回复邮件并和团队一起工作。",
+          "usedChunks": [
+            "Most days, I"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s05-b",
+          "text": "Most days, I help customers and solve small problems.",
+          "translation": "大多数时候，我帮助客户并解决一些小问题。",
+          "usedChunks": [
+            "Most days, I"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s06-a",
+          "text": "My team is small, so we work closely together.",
+          "translation": "我的团队很小，所以我们紧密合作。",
+          "usedChunks": [
+            "My team",
+            "work closely"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s06-b",
+          "text": "My class is friendly, and we often help each other.",
+          "translation": "我的班级很友好，我们常常互相帮助。",
+          "usedChunks": [
+            "My team",
+            "work closely"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s07-a",
+          "text": "After work, I study for about an hour.",
+          "translation": "下班后，我学习大约一个小时。",
+          "usedChunks": [
+            "After work",
+            "study"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s07-b",
+          "text": "In the evening, I usually review my class notes.",
+          "translation": "晚上，我通常复习课堂笔记。",
+          "usedChunks": [
+            "After work",
+            "study"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s08-a",
+          "text": "Lately, I’ve been working on a new project.",
+          "translation": "最近，我一直在做一个新项目。",
+          "usedChunks": [
+            "Lately, I’ve been"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s08-b",
+          "text": "Lately, I’ve been spending more time on my classes.",
+          "translation": "最近，我花更多时间在课程上。",
+          "usedChunks": [
+            "Lately, I’ve been"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s09-a",
+          "text": "I like my work because I learn something new every day.",
+          "translation": "我喜欢我的工作，因为每天都能学到新东西。",
+          "usedChunks": [
+            "I like",
+            "because"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s09-b",
+          "text": "I enjoy my classes because the teachers are helpful.",
+          "translation": "我喜欢我的课程，因为老师很有帮助。",
+          "usedChunks": [
+            "I like",
+            "because"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s10-a",
+          "text": "The hardest part is finding enough time after work.",
+          "translation": "最难的是下班后找到足够的时间。",
+          "usedChunks": [
+            "The hardest part"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s10-b",
+          "text": "The hardest part can be staying focused when I’m tired.",
+          "translation": "最难的部分可能是累的时候保持专注。",
+          "usedChunks": [
+            "The hardest part"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s11-a",
+          "text": "I usually work with two people on my team.",
+          "translation": "我通常和团队中的两个人一起工作。",
+          "usedChunks": [
+            "I usually work with"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s11-b",
+          "text": "I study with a friend from my English class.",
+          "translation": "我和英语课上的一个朋友一起学习。",
+          "usedChunks": [
+            "I usually work with"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s12-a",
+          "text": "Lately, I’ve been getting used to a new schedule.",
+          "translation": "最近，我一直在适应新的时间安排。",
+          "usedChunks": [
+            "Lately, I’ve been"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s12-b",
+          "text": "Lately, I’ve been starting my day a little earlier.",
+          "translation": "最近，我开始让一天早一点开始。",
+          "usedChunks": [
+            "Lately, I’ve been"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s13-a",
+          "text": "I’ve been doing this job for a few months now.",
+          "translation": "我做这份工作已经几个月了。",
+          "usedChunks": [
+            "I’ve been",
+            "for a few months"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s13-b",
+          "text": "I’ve been taking this class since the spring semester began.",
+          "translation": "我从春季学期开始就一直上这门课。",
+          "usedChunks": [
+            "I’ve been",
+            "for a few months"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s14-a",
+          "text": "I’m happy with how things are going so far.",
+          "translation": "到目前为止，我对事情的进展感到满意。",
+          "usedChunks": [
+            "happy with",
+            "so far"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s14-b",
+          "text": "So far, I’m happy with my progress in class.",
+          "translation": "到目前为止，我对自己在课上的进步感到满意。",
+          "usedChunks": [
+            "happy with",
+            "so far"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s15-a",
+          "text": "I’m trying to speak English a little more every day.",
+          "translation": "我正努力每天多说一点英语。",
+          "usedChunks": [
+            "I’m trying to"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s15-b",
+          "text": "I’m trying to make more time for studying this month.",
+          "translation": "我正努力这个月多留些时间学习。",
+          "usedChunks": [
+            "I’m trying to"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s16-a",
+          "text": "Right now, I’m busy, but I feel good about it.",
+          "translation": "现在我很忙，但我对此感觉不错。",
+          "usedChunks": [
+            "Right now",
+            "but"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        },
+        {
+          "candidateId": "s16-b",
+          "text": "Right now, life is busy, but I’m learning a lot.",
+          "translation": "现在生活很忙，但我学到了很多。",
+          "usedChunks": [
+            "Right now",
+            "but"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于自然谈论当前工作、学习或近况。"
+        }
+      ]
+    }
+  ],
+  "generationReview": {
+    "coverageComplete": true,
+    "warnings": []
+  }
+}
