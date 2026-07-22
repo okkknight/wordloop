@@ -1,0 +1,44 @@
+{
+  "courseId": "polite-boundaries-b1",
+  "finalSentences": [
+    {"order":1,"slot":1,"section":"先认可请求","role":"用直接但友好的方式说明当前不能答应","text":"I can't take that on right now.","translation":"我现在接不了这件事。","difficultyBand":"entry","usedChunks":["right now"],"sourceCandidateId":"s01-a","edited":false,"selectionReason":"最短且明确，作为开场让学习者先练习不带过度解释的边界。"},
+    {"order":2,"slot":2,"section":"先认可请求","role":"在合作意愿后做简短婉拒","text":"I'd love to join, but I can't today.","translation":"我很想参加，但今天不行。","difficultyBand":"entry","usedChunks":["I'd love to, but"],"sourceCandidateId":"s02-a","edited":false,"selectionReason":"保留友好语气，同时只增加一个当天的时间限制。"},
+    {"order":3,"slot":3,"section":"先认可请求","role":"提出时间边界","text":"My schedule is full this week.","translation":"我这周的安排已经满了。","difficultyBand":"entry","usedChunks":["this week"],"sourceCandidateId":"s03-a","edited":false,"selectionReason":"用高频、独立的说法明确一周范围，不依赖具体场景。"},
+    {"order":4,"slot":4,"section":"先认可请求","role":"以简单问题提出调整","text":"Could we move this to next week?","translation":"我们能把这件事移到下周吗？","difficultyBand":"entry","usedChunks":["Could we"],"sourceCandidateId":"s04-b","edited":false,"selectionReason":"第一次把边界转成可执行的替代安排，句型保持简短。"},
+    {"order":5,"slot":5,"section":"说明当前范围","role":"清楚区分可做与不可做的部分","text":"I can review the draft, but I can't rewrite it.","translation":"我可以看一下这份草稿，但不能重写它。","difficultyBand":"targetBase","usedChunks":["I can","but I can't"],"sourceCandidateId":"s05-a","edited":false,"selectionReason":"范围对比具体、自然，避免抽象职责词。"},
+    {"order":6,"slot":6,"section":"说明当前范围","role":"把婉拒和短理由连起来","text":"I'd love to help, but this week is packed.","translation":"我很想帮忙，但这周已经排满了。","difficultyBand":"targetBase","usedChunks":["I'd love to, but","this week"],"sourceCandidateId":"s06-b","edited":false,"selectionReason":"把开头的礼貌婉拒带入工作量理由，且没有重复上一句的具体任务。"},
+    {"order":7,"slot":7,"section":"说明当前范围","role":"用自然表达说明工作量限制","text":"I don't have the bandwidth to take on another task.","translation":"我现在没有精力再接一项任务。","difficultyBand":"targetBase","usedChunks":["I don't have the bandwidth to","take on"],"sourceCandidateId":"s07-a","edited":false,"selectionReason":"核心表达首次完整出现，搭配 take on 具有高迁移价值。"},
+    {"order":8,"slot":8,"section":"说明当前范围","role":"说明已有优先事项","text":"My first priority is the work I already promised to finish.","translation":"我最优先要完成的是已经答应做的工作。","difficultyBand":"targetCore","usedChunks":["first priority","promised to finish"],"sourceCandidateId":"s08-b","edited":false,"selectionReason":"自然解释优先级，提供比单纯“忙”更成熟的理由。"},
+    {"order":9,"slot":9,"section":"说明当前范围","role":"给出有限支持而非完全拒绝","text":"I can take a quick look, but not a full review.","translation":"我可以快速看一眼，但不能做完整审阅。","difficultyBand":"targetBase","usedChunks":["take a quick look"],"sourceCandidateId":"s09-a","edited":false,"selectionReason":"难度适度回落，同时示范有限支持而非完全拒绝。"},
+    {"order":10,"slot":10,"section":"说明当前范围","role":"把限制转成共同协商","text":"Could we move the meeting to Friday afternoon?","translation":"我们能把会议改到周五下午吗？","difficultyBand":"targetBase","usedChunks":["Could we","move the meeting"],"sourceCandidateId":"s10-a","edited":false,"selectionReason":"让 Could we 在不同于第 4 句的职场协商任务中复现。"},
+    {"order":11,"slot":11,"section":"协商可行替代","role":"明确不能承担完整范围","text":"I don't have the bandwidth to finish the whole project today.","translation":"我今天没有精力完成整个项目。","difficultyBand":"targetCore","usedChunks":["I don't have the bandwidth to","whole project"],"sourceCandidateId":"s11-a","edited":false,"selectionReason":"把工作量表达从额外任务扩展到完整项目范围。"},
+    {"order":12,"slot":12,"section":"协商可行替代","role":"提出一个明确的小范围帮助","text":"I can prepare the notes, but I can't run the meeting.","translation":"我可以准备笔记，但不能主持会议。","difficultyBand":"targetCore","usedChunks":["I can","but I can't"],"sourceCandidateId":"s12-a","edited":false,"selectionReason":"分工边界具体且自然，与草稿审阅的场景不同。"},
+    {"order":13,"slot":13,"section":"协商可行替代","role":"在条件限制下给出替代时间","text":"Once I finish this report, we can talk about the next step.","translation":"等我完成这份报告，我们就能谈下一步。","difficultyBand":"stretch","usedChunks":["Once I finish","next step"],"sourceCandidateId":"s13-a","edited":false,"selectionReason":"首次挑战句只增加一个条件关系，并给出明确的后续动作。"},
+    {"order":14,"slot":14,"section":"协商可行替代","role":"保留善意并提出不同安排","text":"I'd love to support you, but I can only help remotely.","translation":"我很想支持你，但我只能远程帮忙。","difficultyBand":"targetCore","usedChunks":["I'd love to, but","help remotely"],"sourceCandidateId":"s14-a","edited":false,"selectionReason":"在挑战句后回落，复现善意表达并改变支持方式。"},
+    {"order":15,"slot":15,"section":"协商可行替代","role":"限定可提供的时间或精力","text":"I don't have the bandwidth to provide ongoing support right now.","translation":"我现在没有精力持续提供支持。","difficultyBand":"targetCore","usedChunks":["I don't have the bandwidth to","ongoing support"],"sourceCandidateId":"s15-a","edited":false,"selectionReason":"把边界从一次任务升级为持续责任，仍保持单句清晰。"},
+    {"order":16,"slot":16,"section":"协商可行替代","role":"提出可执行的拆分方案","text":"Could we break this into smaller parts and share the work?","translation":"我们能把这件事拆成更小的部分，再分担工作吗？","difficultyBand":"stretch","usedChunks":["Could we","break this into","share the work"],"sourceCandidateId":"s16-a","edited":false,"selectionReason":"第二个挑战句练习协商步骤，但只围绕同一件事的拆分。"},
+    {"order":17,"slot":17,"section":"坚定而礼貌地收尾","role":"在复杂请求中明确两个边界","text":"I can help once, but I can't commit to weekly meetings.","translation":"我可以帮一次，但不能承诺每周开会。","difficultyBand":"targetCore","usedChunks":["I can","but I can't","commit to"],"sourceCandidateId":"s17-b","edited":false,"selectionReason":"在挑战后回落，清楚对比一次性帮助和长期承诺。"},
+    {"order":18,"slot":18,"section":"坚定而礼貌地收尾","role":"在对方继续请求时重申边界","text":"I understand this is urgent, but I need to finish my current work.","translation":"我理解这件事很急，但我得先完成手头的工作。","difficultyBand":"stretch","usedChunks":["I understand","current work"],"sourceCandidateId":"s18-a","edited":false,"selectionReason":"加入对对方处境的认可，同时保持既定优先级，符合 B1+。"},
+    {"order":19,"slot":19,"section":"坚定而礼貌地收尾","role":"用善意拒绝结束社交安排","text":"I'd love to come, but I need a quiet evening at home.","translation":"我很想来，但今晚我需要在家安静休息。","difficultyBand":"targetCore","usedChunks":["I'd love to, but","quiet evening"],"sourceCandidateId":"s19-a","edited":false,"selectionReason":"将同一沟通动作自然迁移到社交场景，而非重复职场任务。"},
+    {"order":20,"slot":20,"section":"坚定而礼貌地收尾","role":"共同确认一个现实的下一步","text":"Could we find a time that works for both of us?","translation":"我们能找一个双方都合适的时间吗？","difficultyBand":"stretch","usedChunks":["Could we","works for both of us"],"sourceCandidateId":"s20-a","edited":false,"selectionReason":"以简洁、合作且可迁移的协商问题收尾，不人为拉长句子。"}
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "20 句形成从直接说明限制、解释优先级、给出有限支持到协商下一步的完整练习链，覆盖了已批准的学习成果。",
+    "naturalness": "最终选择均为自然、现代的美式口语；没有专名、戏剧化背景或为展示语法而写的书面句。",
+    "realWorldUsefulness": "句子可用于临时请求、任务分工、会议调整、长期协作和社交邀请，且每句都可独立朗读。",
+    "coreChunkCoverage": "四个核心表达分别在不同语义任务中复现 3 至 4 次；I can/but I can't 练范围，I'd love to/but 练善意拒绝，bandwidth 练工作量，Could we 练协商。",
+    "difficultyDistribution": "严格保持 entry 4、targetBase 5、targetCore 7、stretch 4 的蓝图配额。",
+    "difficultyCurve": "挑战句位于 13、16、18、20，且每次都由较稳定的核心句隔开；第 20 句以自然整合收尾而非句法堆叠。",
+    "repetitionQuality": "重复核心表达时改变了时间、任务范围、支持方式、长期承诺和社交情境，未出现仅替换名词的重复。",
+    "fillerRisk": "低。每句都承担一个可识别的沟通动作；第 3、9 句承担必要的时间边界与有限支持过渡。"
+  },
+  "humanReviewFocus": [
+    "确认 bandwidth 是否适合目标用户的 B1+ 口语风格；如果希望更基础，可把相关句子改为 I can't take on more right now。",
+    "确认第 19 句的 quiet evening at home 是否符合产品希望呈现的个人边界语气。",
+    "人工朗读 13、16、18、20 四句，确认节奏和停顿对目标学习者友好。",
+    "本课程仍是原创文本成品，未经音频制作、运行时课程包转换或产品接入，不能视为可发布课程。"
+  ],
+  "needsHumanReview": true
+}

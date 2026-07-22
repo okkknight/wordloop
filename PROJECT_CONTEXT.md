@@ -22,8 +22,8 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 当前产品状态
 
-- 30 门课程：1 门 IELTS、5 门《摩登家庭》、24 门 VOA Level 2。
-- 1,406 个最终音频片段：570 个单词音频和 836 个句子音频。
+- 31 门课程：1 门 IELTS、5 门《摩登家庭》、24 门 VOA Level 2、1 门 AI 原创口语课。
+- 1,426 个最终音频片段：570 个单词音频和 856 个句子音频。
 - 默认课程：`modern-family-s01e01`。
 - 默认模式：`repeat`。
 - 当前迁移分支：`codex/ios-migration`。
@@ -34,6 +34,8 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 ## 最新任务
 
 任务：实现 `wordloop_course_production_pack` 的确定性候选句检查器；执行状态：已开发，待独立复核。
+
+任务：接入 AI 原创课程 `polite-boundaries-b1`；执行状态：已开发，待独立复核。课程归入 `AI PRACTICE`，20 条原创句子由 OpenAI `gpt-4o-mini-tts` 的 `marin` 音色生成，并无损封装为 `.m4a`。manifest、注册表、iOS 基线与内容 exporter 已更新，课程与界面均标明 AI 合成语音；相关 38 项回归、音频容器检查和内容导出通过。生成脚本读取未跟踪 `.env.local` 的 `OPENAI_API_KEY`，密钥不得提交。
 
 新增 `scripts/check_course_candidates.mjs` 与可复用的 `scripts/lib/course-pipeline/checker.mjs`。它以生产包的蓝图/候选句 JSON Schema 为入口，检查 20 槽位完整性、候选数量、词数、标点、重复、相似度、核心表达、粗略分句、字段一致性和难度曲线；JSON report 有 error 时 CLI 非零退出。专用 Node 测试 4/4 与新增文件 lint 已通过。它尚未调用模型、管理人工批准、生成音频、转成运行时 course manifest，或接入 `app/courses.ts`；完整 AI 编排属于后续阶段。
 

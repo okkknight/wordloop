@@ -206,6 +206,9 @@ function sentenceAudioDirectory(courseFile) {
   if (id.startsWith("voa-")) {
     return join(root, "public/courses/voa", id.replace("voa-", ""), "audio");
   }
+  if (id.startsWith("ai-")) {
+    return join(root, "public/courses/ai", id.replace("ai-", ""), "audio");
+  }
   throw new Error(`Unknown sentence course path: ${id}`);
 }
 
@@ -257,7 +260,7 @@ async function buildInventory() {
       collectionId: registeredCourse.collectionId,
       kind: registeredCourse.kind,
       practiceOrder: registeredCourse.practiceOrder,
-      family: registeredCourse.id.startsWith("voa-") ? "voa" : "modern-family",
+      family: registeredCourse.id.startsWith("voa-") ? "voa" : registeredCourse.collectionId === "ai-practice" ? "ai" : "modern-family",
       manifest: relative(root, manifestPath),
       manifestCourseId: manifest.courseId ?? null,
       learnableEntries: entries.length,
@@ -368,11 +371,11 @@ async function buildInventory() {
   };
 
   const expected = {
-    collections: 3,
-    courses: 30,
+    collections: 4,
+    courses: 31,
     words: 570,
-    sentenceEntries: 836,
-    totalM4aFiles: 1406,
+    sentenceEntries: 856,
+    totalM4aFiles: 1426,
     palettes: 6,
   };
   for (const [key, value] of Object.entries(expected)) {

@@ -49,6 +49,23 @@ test("ships all VOA Level 2 clips with complete alignment metadata", async () =>
   }
 });
 
+test("ships the AI voice course with a visible synthetic-voice disclosure", async () => {
+  const course = JSON.parse(await read("app/data/ai-polite-boundaries-b1.json"));
+  const audioFiles = new Set(
+    (await readdir(new URL("public/courses/ai/polite-boundaries-b1/audio", root))).filter((name) => name.endsWith(".m4a")),
+  );
+  assert.equal(course.provider, "OpenAI");
+  assert.match(course.attribution, /AI-generated voice/i);
+  assert.match(course.licenseNote, /AI-generated/i);
+  assert.equal(course.entries.length, 20);
+  assert.equal(audioFiles.size, 20);
+  for (const entry of course.entries) {
+    assert.equal(entry.learnable, true);
+    assert.ok(entry.duration > 0, `${entry.id}: positive duration`);
+    assert.ok(audioFiles.has(entry.audio.replace(/^audio\//, "")), `${entry.id}: audio file`);
+  }
+});
+
 test("ships the first sentence course package and its clips", async () => {
   const course = JSON.parse(await read("app/data/modern-family-s01e01.json"));
   const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e01/audio", root)))

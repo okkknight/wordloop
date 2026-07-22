@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-22 · AI 原创课程已接入，待独立复核
+
+- 新增 `AI PRACTICE` 集合与 `Setting Boundaries Politely · B1`：20 个原创句子、20 段 `marin` AI 合成语音、独立 manifest/`.m4a` 资产及明确 AI 语音披露。
+- `scripts/generate_ai_course_audio.mjs` 使用 `gpt-4o-mini-tts` 生成 AAC 并无损封装为现有 `.m4a` 合同格式；密钥只从未跟踪 `.env.local` 或环境读取。
+- 内容 export、iOS baseline、38 项相关 Node 测试、所有新音频的 `ffprobe` 容器检查通过。下一位 reviewer 应抽听 20 段音频，并确认 AI 披露在课程选择器和课程元数据中足够清晰。
+
 ## 2026-07-22 · AI 原创课程候选句检查器已开发，待独立复核
 
 - 新增 `scripts/check_course_candidates.mjs` 与 `scripts/lib/course-pipeline/checker.mjs`，基于 production pack 的 Draft 2020-12 Schema 验证蓝图和候选句，并输出稳定的 JSON report/终端摘要；error 会以非零退出。

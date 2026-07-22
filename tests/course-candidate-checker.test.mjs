@@ -71,6 +71,32 @@ test("checker accepts a schema-valid course and produces only editorial warnings
   assert.match(report.metrics.wordTokenizer, /apostrophes/i);
 });
 
+test("checker matches a core chunk with variable words around punctuation", async () => {
+  const checker = await createCourseCandidateChecker(root);
+  const blueprint = makeBlueprint();
+  const candidates = makeCandidates();
+  blueprint.coreChunkCoverage[0] = { chunk: "I'd love to, but", plannedCount: 1, slots: [1], distinctUses: ["A polite refusal."] };
+  blueprint.sentenceSlots[0].requiredChunks = ["I'd love to, but"];
+  candidates.slots[0].options = [
+    { ...candidates.slots[0].options[0], text: "I'd love to join, but I can't today.", wordCount: 8, usedChunks: ["I'd love to, but"] },
+    { ...candidates.slots[0].options[1], text: "I'd love to help, but I'm busy tonight.", wordCount: 8, usedChunks: ["I'd love to, but"] },
+  ];
+  const report = checkCourseCandidates({ checker, blueprint, candidates });
+  assert.equal(report.errors.some((item) => item.code === "required_chunk_missing" || item.code === "planned_chunk_missing"), false);
+});
+
+test("clause heuristic does not treat the pronoun that as a second clause", async () => {
+  const checker = await createCourseCandidateChecker(root);
+  const blueprint = makeBlueprint();
+  const candidates = makeCandidates();
+  candidates.slots[0].options = [
+    { ...candidates.slots[0].options[0], text: "I can't take that on right now.", wordCount: 7, usedChunks: ["right now"] },
+    { ...candidates.slots[0].options[1], text: "I'm not available for that today.", wordCount: 6, usedChunks: ["today"] },
+  ];
+  const report = checkCourseCandidates({ checker, blueprint, candidates });
+  assert.equal(report.warnings.some((item) => item.code === "clause_count_warning" && item.slot === 1), false);
+});
+
 test("checker reports structural, word-count, required-chunk, and duplicate errors", async () => {
   const checker = await createCourseCandidateChecker(root);
   const candidates = makeCandidates();

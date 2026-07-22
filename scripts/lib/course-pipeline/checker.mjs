@@ -76,7 +76,7 @@ function levenshtein(left, right) {
 }
 
 function estimateClauses(text) {
-  const markers = String(text).match(/[,;]|\b(?:and|but|or|so|because|although|while|if|when|that|which|who)\b/gi) ?? [];
+  const markers = String(text).match(/;|\b(?:and|but|or|so|because|although|while|if|when|which|who)\b|\b(?:once|after|before)\s+(?:i|we|you|they|he|she|it)\b/gi) ?? [];
   return Math.max(1, markers.length + 1);
 }
 
@@ -84,12 +84,14 @@ function containsChunk(text, chunk, matchers = []) {
   const normalizedText = normalizeSentence(text);
   const normalizedChunk = normalizeSentence(chunk);
   if (normalizedChunk && normalizedText.includes(normalizedChunk)) return true;
-  for (const matcher of matchers) {
-    const parts = String(matcher).split("...").map(normalizeSentence).filter(Boolean);
-    if (parts.length && parts.every((part, index) => {
-      const position = normalizedText.indexOf(part);
-      if (position === -1) return false;
-      return index === 0 || position >= normalizedText.indexOf(parts[index - 1]) + parts[index - 1].length;
+  for (const matcher of [chunk, ...matchers]) {
+    const parts = String(matcher).split(/\.\.\.|,/).map(normalizeSentence).filter(Boolean);
+    let position = 0;
+    if (parts.length > 1 && parts.every((part) => {
+      const next = normalizedText.indexOf(part, position);
+      if (next === -1) return false;
+      position = next + part.length;
+      return true;
     })) return true;
   }
   return false;
