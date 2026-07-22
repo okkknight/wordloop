@@ -1,0 +1,565 @@
+{
+  "courseId": "b01-introducing-yourself-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "A2",
+    "learnerOutcome": "学习者能够在工作、活动或社交环境中进行简短、自然且有回应空间的自我介绍。",
+    "communicationGoals": [
+      "说出姓名和基本背景。",
+      "介绍工作、学习或当前身份。",
+      "说明自己为什么来到这里或与场合的关系。",
+      "向对方提出一个简单的互相了解问题。"
+    ],
+    "coreChunks": [
+      "I'm here for ...",
+      "I work ...",
+      "This is my first time ...",
+      "What brought you here?"
+    ],
+    "supportingVocabulary": [
+      "new here",
+      "workshop",
+      "event",
+      "class",
+      "team",
+      "nearby",
+      "field"
+    ],
+    "contentBoundaries": [
+      "不扩展成完整个人履历。",
+      "不训练长时间维持闲聊。",
+      "不加入高度正式的演讲式介绍。",
+      "不要求分享过度私人的信息。"
+    ],
+    "realWorldContexts": [
+      "第一次参加工作坊或社区活动。",
+      "在新工作、新课程或朋友聚会中认识人。",
+      "与同事、同学或活动参与者进行低压力交流。"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "前三句只建立名字、身份和到场原因，每句只承担一个信息动作。",
+      "中段逐步加入工作、学习、时间和熟悉程度等一项补充信息。",
+      "后三个挑战槽位只增加一个新的交流负载：过去经历、礼貌追问或表达后续兴趣。",
+      "第 16 句以自然延续交流收尾，不写成复杂承诺。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "简单开场",
+      "purpose": "用名字、当下身份和到场原因完成低压力的第一句交流。",
+      "sentenceCount": 3
+    },
+    {
+      "name": "补充个人背景",
+      "purpose": "用工作、学习、首次参与和近期变化补充有限但有回应空间的信息。",
+      "sentenceCount": 4
+    },
+    {
+      "name": "连接当前场合",
+      "purpose": "说明自己与场合的关系，并用自然方式保持交流平衡。",
+      "sentenceCount": 6
+    },
+    {
+      "name": "邀请回应",
+      "purpose": "用简单追问或后续兴趣把介绍变成双向交流。",
+      "sentenceCount": 3
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I'm here for",
+      "plannedCount": 2,
+      "slots": [
+        2,
+        8
+      ],
+      "distinctUses": [
+        "说明今天参加的活动。",
+        "说明参加活动的个人目的。"
+      ]
+    },
+    {
+      "chunk": "I work",
+      "plannedCount": 2,
+      "slots": [
+        3,
+        9
+      ],
+      "distinctUses": [
+        "说明所属团队或基本职业背景。",
+        "补充日常工作内容。"
+      ]
+    },
+    {
+      "chunk": "This is my first time",
+      "plannedCount": 2,
+      "slots": [
+        5,
+        11
+      ],
+      "distinctUses": [
+        "说明第一次参加活动。",
+        "说明第一次来到某个社群或课程。"
+      ]
+    },
+    {
+      "chunk": "What brought you here",
+      "plannedCount": 1,
+      "slots": [
+        15
+      ],
+      "distinctUses": [
+        "用低压力问题邀请对方分享与场合的关系。"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "简单开场",
+      "role": "说出姓名并完成友好问候",
+      "meaningTarget": "介绍自己的名字并表示很高兴认识对方",
+      "difficultyBand": "entry",
+      "difficultyFocus": "名字与问候",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Hi",
+        "Nice to meet you"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 8,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "第一次见到同事、同学或活动参与者时",
+      "avoid": [
+        "完整履历",
+        "过度正式称呼"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "简单开场",
+      "role": "说明今天到场的直接原因",
+      "meaningTarget": "说出自己今天是来参加什么活动的",
+      "difficultyBand": "entry",
+      "difficultyFocus": "场合关联",
+      "requiredChunks": [
+        "I'm here for"
+      ],
+      "optionalChunks": [
+        "the workshop",
+        "the event"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "补充原因",
+      "realWorldUse": "工作坊、课程或开放活动开始前",
+      "avoid": [
+        "复杂目的",
+        "私人经历"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "简单开场",
+      "role": "给出最短的工作身份信息",
+      "meaningTarget": "说明自己在哪个团队工作或目前在做什么",
+      "difficultyBand": "entry",
+      "difficultyFocus": "基本身份",
+      "requiredChunks": [
+        "I work"
+      ],
+      "optionalChunks": [
+        "with",
+        "on a team"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "身份补充",
+      "realWorldUse": "新工作或专业活动中的自我介绍",
+      "avoid": [
+        "职位头衔堆叠",
+        "公司内部术语"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "补充个人背景",
+      "role": "补充一个学习或日常身份",
+      "meaningTarget": "说明自己正在学习什么或在工作之外做什么",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "加入时间信息",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "after work",
+        "I'm studying"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 10,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "增加生活背景",
+      "realWorldUse": "介绍工作之外的学习或活动时",
+      "avoid": [
+        "长期计划",
+        "多个爱好清单"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充个人背景",
+      "role": "说明自己是初次参加者",
+      "meaningTarget": "告诉对方这是自己第一次来这个活动或地点",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "首次经历",
+      "requiredChunks": [
+        "This is my first time"
+      ],
+      "optionalChunks": [
+        "at this event",
+        "here"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 11,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "增加熟悉程度",
+      "realWorldUse": "第一次参加课程、社区活动或团队聚会时",
+      "avoid": [
+        "紧张自我否定",
+        "要求对方照顾"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充个人背景",
+      "role": "说明一个近期生活变化",
+      "meaningTarget": "简短说明自己最近搬来或刚开始新的安排",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "过去到现在的变化",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "a few months ago",
+        "I moved"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 11,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "时间扩展",
+      "realWorldUse": "说明自己为何对新环境还不熟悉时",
+      "avoid": [
+        "完整搬家故事",
+        "私密地址"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充个人背景",
+      "role": "表达一个轻松的个人偏好",
+      "meaningTarget": "说明自己喜欢在活动中认识人或了解新事物",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "原因或偏好",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I enjoy",
+        "meeting new people"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 12,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "加入态度",
+      "realWorldUse": "希望让介绍显得开放友好时",
+      "avoid": [
+        "空泛赞美",
+        "强迫亲密感"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "连接当前场合",
+      "role": "说明参加活动的具体目标",
+      "meaningTarget": "说明自己来这里是为了认识同行或学习某项内容",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "目的加对象",
+      "requiredChunks": [
+        "I'm here for"
+      ],
+      "optionalChunks": [
+        "to meet",
+        "to learn"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "具体化目的",
+      "realWorldUse": "专业活动、兴趣小组或课程中",
+      "avoid": [
+        "过度宏大目标",
+        "行业黑话"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "连接当前场合",
+      "role": "补充日常工作内容",
+      "meaningTarget": "说明自己主要负责哪一类简单工作",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "职业细节",
+      "requiredChunks": [
+        "I work"
+      ],
+      "optionalChunks": [
+        "mostly",
+        "with"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "职业细化",
+      "realWorldUse": "对方问起自己做什么时",
+      "avoid": [
+        "岗位职责列表",
+        "技术术语堆叠"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "连接当前场合",
+      "role": "说明日程与当前场合的关系",
+      "meaningTarget": "说明自己在课程或工作之后来到这里",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "连接两个日常活动",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "after class",
+        "nearby"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "时间连接",
+      "realWorldUse": "说明自己和本地环境的关系时",
+      "avoid": [
+        "精确时间表",
+        "多个地点"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "连接当前场合",
+      "role": "再次说明初次参与并表达正面感受",
+      "meaningTarget": "说明这是第一次参与，但目前感觉友好或舒适",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "初次经历加感受",
+      "requiredChunks": [
+        "This is my first time"
+      ],
+      "optionalChunks": [
+        "so far",
+        "friendly"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "感受补充",
+      "realWorldUse": "想让陌生场合的交流更自然时",
+      "avoid": [
+        "夸张评价",
+        "负面抱怨"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "连接当前场合",
+      "role": "说明自己与另一位参与者的简单关系",
+      "meaningTarget": "说明自己是和同事、朋友或同学一起来的",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "关系信息",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I came with",
+        "a coworker"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 12,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "关系补充",
+      "realWorldUse": "活动中需要说明自己如何来到这里时",
+      "avoid": [
+        "他人隐私",
+        "复杂人物关系"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "连接当前场合",
+      "role": "说明自己过去一段时间在寻找的社群",
+      "meaningTarget": "说明搬来后一直想找到这样的活动或小组",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "持续时间",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I've been looking for",
+        "since I moved"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "增加时间跨度",
+      "realWorldUse": "解释自己为什么特别想参加某个社群时",
+      "avoid": [
+        "复杂过去完成时",
+        "私人困难"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "邀请回应",
+      "role": "表达对他人背景的兴趣",
+      "meaningTarget": "说出自己愿意了解别人做什么或为何参加",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "表达交流意愿",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I enjoy",
+        "learning about"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "挑战后回落",
+      "realWorldUse": "自我介绍后希望表现出开放态度时",
+      "avoid": [
+        "过度热情",
+        "连续提问"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "邀请回应",
+      "role": "用礼貌问题邀请对方说明到场原因",
+      "meaningTarget": "询问对方为什么来到这里，同时给对方拒绝或简答的空间",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "礼貌追问",
+      "requiredChunks": [
+        "What brought you here"
+      ],
+      "optionalChunks": [
+        "if you don't mind"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 13,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "转向对方",
+      "realWorldUse": "活动、课程或新工作中想继续交流时",
+      "avoid": [
+        "私人盘问",
+        "一次问多个问题"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "邀请回应",
+      "role": "以自然后续兴趣结束介绍",
+      "meaningTarget": "表示之后愿意听对方多介绍自己的工作或兴趣",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "礼貌的后续连接",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd love to hear",
+        "more about"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 14,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "完整收尾",
+      "realWorldUse": "介绍结束、准备继续交流时",
+      "avoid": [
+        "具体承诺",
+        "索取联系方式"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "严格遵循 B01 的一个主要能力：在新环境中开启交流。",
+      "16 个槽位覆盖姓名、身份、场合关系和邀请回应，但不扩展成履历或闲聊课。",
+      "四个核心表达各在不同沟通动作中复现，且不会用同一句机械替换名词。"
+    ],
+    "risks": [
+      "使用示例姓名时需避免让学习者误以为必须照读该姓名。",
+      "工作场景不能压过学习、活动和社交场景。",
+      "第 15 句需要保持友好，不应变成过度私人的盘问。"
+    ],
+    "humanReviewFocus": [
+      "确认核心表达是否符合你希望的 A2 美式口语语气。",
+      "确认课程中的工作、学习与社交例句比例。",
+      "确认最后三句的挑战度足够但仍适合 A2+。"
+    ]
+  },
+  "approved": false
+}

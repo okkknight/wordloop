@@ -10,6 +10,8 @@ const defaults = {
   audioDirectory: "public/courses/ai/polite-boundaries-b1/audio",
   voice: "marin",
   model: "gpt-4o-mini-tts",
+  audioPrefix: "polite-boundaries-b1",
+  entryPrefix: "ai-boundaries",
 };
 
 function parseArguments(argumentsPassed) {
@@ -17,10 +19,10 @@ function parseArguments(argumentsPassed) {
   for (let index = 0; index < argumentsPassed.length; index += 1) {
     const argument = argumentsPassed[index];
     if (argument === "--force") result.force = true;
-    else if (Object.hasOwn({ "--course": true, "--manifest": true, "--audio-dir": true, "--voice": true, "--model": true }, argument)) {
+    else if (Object.hasOwn({ "--course": true, "--manifest": true, "--audio-dir": true, "--voice": true, "--model": true, "--audio-prefix": true, "--entry-prefix": true }, argument)) {
       const value = argumentsPassed[index + 1];
       if (!value || value.startsWith("--")) throw new Error(`${argument} requires a value`);
-      result[{ "--course": "course", "--manifest": "manifest", "--audio-dir": "audioDirectory", "--voice": "voice", "--model": "model" }[argument]] = value;
+      result[{ "--course": "course", "--manifest": "manifest", "--audio-dir": "audioDirectory", "--voice": "voice", "--model": "model", "--audio-prefix": "audioPrefix", "--entry-prefix": "entryPrefix" }[argument]] = value;
       index += 1;
     } else throw new Error(`Unknown argument: ${argument}`);
   }
@@ -93,15 +95,15 @@ await mkdir(audioDirectory, { recursive: true });
 
 const entries = [];
 for (const sentence of course.finalSentences) {
-  const filename = `polite-boundaries-b1-${String(sentence.order).padStart(3, "0")}.m4a`;
+  const filename = `${options.audioPrefix}-${String(sentence.order).padStart(3, "0")}.m4a`;
   const target = join(audioDirectory, filename);
   if (options.force || !(await stat(target).then(() => true).catch(() => false))) {
-    console.log(`Generating ${sentence.order}/20: ${sentence.text}`);
+    console.log(`Generating ${sentence.order}/${course.finalSentences.length}: ${sentence.text}`);
     await generateSpeech({ key, text: sentence.text, voice: options.voice, model: options.model, target });
   }
   const duration = await durationSeconds(target);
   entries.push({
-    id: `ai-boundaries-${String(sentence.order).padStart(3, "0")}`,
+    id: `${options.entryPrefix}-${String(sentence.order).padStart(3, "0")}`,
     text: sentence.text,
     translation: sentence.translation,
     audio: `audio/${filename}`,

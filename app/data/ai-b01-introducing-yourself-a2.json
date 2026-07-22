@@ -1,0 +1,169 @@
+{
+  "courseId": "b01-introducing-yourself-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-b01-001",
+      "text": "Hi, I’m Alex. Nice to meet you.",
+      "translation": "嗨，我是 Alex。很高兴认识你。",
+      "audio": "audio/b01-introducing-yourself-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-b01-002",
+      "text": "I’m here for the workshop today.",
+      "translation": "我今天来参加这个工作坊。",
+      "audio": "audio/b01-introducing-yourself-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.176,
+      "duration": 2.176
+    },
+    {
+      "id": "ai-b01-003",
+      "text": "I work with the design team downtown.",
+      "translation": "我在市中心的设计团队工作。",
+      "audio": "audio/b01-introducing-yourself-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-b01-004",
+      "text": "I’m studying English after work these days.",
+      "translation": "我最近下班后学英语。",
+      "audio": "audio/b01-introducing-yourself-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    },
+    {
+      "id": "ai-b01-005",
+      "text": "This is my first time at this event.",
+      "translation": "这是我第一次参加这个活动。",
+      "audio": "audio/b01-introducing-yourself-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-b01-006",
+      "text": "I moved here a few months ago.",
+      "translation": "我几个月前搬到这里。",
+      "audio": "audio/b01-introducing-yourself-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-b01-007",
+      "text": "I enjoy meeting new people at events like this.",
+      "translation": "我喜欢在这样的活动中认识新朋友。",
+      "audio": "audio/b01-introducing-yourself-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.053,
+      "duration": 4.053
+    },
+    {
+      "id": "ai-b01-008",
+      "text": "I’m here for a chance to meet people in my field.",
+      "translation": "我来这里是想认识同行。",
+      "audio": "audio/b01-introducing-yourself-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.584,
+      "duration": 3.584
+    },
+    {
+      "id": "ai-b01-009",
+      "text": "I work in marketing, mostly on social media projects.",
+      "translation": "我做市场营销，主要负责社交媒体项目。",
+      "audio": "audio/b01-introducing-yourself-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.395,
+      "duration": 4.395
+    },
+    {
+      "id": "ai-b01-010",
+      "text": "I take a class nearby, so I came here after class.",
+      "translation": "我在附近上课，所以课后过来了。",
+      "audio": "audio/b01-introducing-yourself-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-b01-011",
+      "text": "This is my first time with this group, but everyone seems friendly.",
+      "translation": "这是我第一次参加这个小组，但大家看起来都很友好。",
+      "audio": "audio/b01-introducing-yourself-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.693,
+      "duration": 4.693
+    },
+    {
+      "id": "ai-b01-012",
+      "text": "I came with a coworker from my office.",
+      "translation": "我和办公室的一位同事一起来的。",
+      "audio": "audio/b01-introducing-yourself-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-b01-013",
+      "text": "I’ve been looking for a group like this since I moved here.",
+      "translation": "自从搬来后，我一直在找这样的社群。",
+      "audio": "audio/b01-introducing-yourself-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    },
+    {
+      "id": "ai-b01-014",
+      "text": "I enjoy learning about what other people do.",
+      "translation": "我喜欢了解其他人做什么。",
+      "audio": "audio/b01-introducing-yourself-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-b01-015",
+      "text": "What brought you here, if you don’t mind me asking?",
+      "translation": "如果你不介意我问，是什么让你来这里的？",
+      "audio": "audio/b01-introducing-yourself-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-b01-016",
+      "text": "I’d love to hear more about your work sometime.",
+      "translation": "我很愿意之后多听你介绍你的工作。",
+      "audio": "audio/b01-introducing-yourself-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    }
+  ]
+}

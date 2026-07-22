@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-22 · B01 introduction course developed, pending review
+
+- 按 `course_topic` 的 releaseOrder 1 完成 B01《在新环境中介绍自己 / Introducing Yourself in a New Situation》：A2、16 句、`3/4/6/3` 难度配额、16×2 候选句、检查报告与最终人工确认稿均存于 `wordloop_course_production_pack/outputs/b01-introducing-yourself-a2/`。
+- 课程池编号为 `B01`；运行时规范 ID 为 `b01-introducing-yourself-a2`，满足 exporter 的小写稳定 ID 合同。新增 16 段 `marin` AI 语音、manifest、注册表条目和 AI 合成披露，归入 `AI PRACTICE`。
+- 音频生成器新增 `--audio-prefix` 与 `--entry-prefix`，可为后续课程生成不冲突的资源名和条目 ID。
+- 课程接入后内容库存为 32 门课程、868 个句子条目、1,438 个 M4A；下一位 reviewer 应复核 B01 语言自然度、16 段音频与课程池 B01 边界，随后才开始 B02。
+
 ## 2026-07-22 · AI 原创课程已接入，待独立复核
 
 - 统一 `wordloop_course_production_pack` 与 `course_topic`：生产标准、提示词、Schema、检查器、示例与试制课程均改为 16 句，默认难度配额为 entry 3、targetBase 4、targetCore 6、stretch 3。

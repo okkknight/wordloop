@@ -1,0 +1,27 @@
+{
+  "valid": true,
+  "summary": {
+    "errorCount": 0,
+    "warningCount": 1
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "code": "high_similarity",
+      "message": "Candidate pair needs editorial review for possible mechanical repetition",
+      "first": {
+        "slot": 15,
+        "candidateId": "s15-a"
+      },
+      "second": {
+        "slot": 15,
+        "candidateId": "s15-b"
+      },
+      "tokenSimilarity": 0.9,
+      "sequenceSimilarity": 0.891
+    }
+  ],
+  "metrics": {
+    "wordTokenizer": "ASCII words with internal apostrophes and hyphens each count as one word"
+  }
+}

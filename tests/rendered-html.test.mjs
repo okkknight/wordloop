@@ -66,6 +66,21 @@ test("ships the AI voice course with a visible synthetic-voice disclosure", asyn
   }
 });
 
+test("ships the B01 introduction course with its approved 16 AI voice clips", async () => {
+  const course = JSON.parse(await read("app/data/ai-b01-introducing-yourself-a2.json"));
+  const audioFiles = new Set(
+    (await readdir(new URL("public/courses/ai/b01-introducing-yourself-a2/audio", root))).filter((name) => name.endsWith(".m4a")),
+  );
+  assert.equal(course.courseId, "b01-introducing-yourself-a2");
+  assert.equal(course.entries.length, 16);
+  assert.equal(audioFiles.size, 16);
+  assert.match(course.licenseNote, /AI-generated/i);
+  for (const entry of course.entries) {
+    assert.ok(entry.duration > 0, `${entry.id}: positive duration`);
+    assert.ok(audioFiles.has(entry.audio.replace(/^audio\//, "")), `${entry.id}: audio file`);
+  }
+});
+
 test("ships the first sentence course package and its clips", async () => {
   const course = JSON.parse(await read("app/data/modern-family-s01e01.json"));
   const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e01/audio", root)))

@@ -28,6 +28,7 @@ import voaForTheBirdsB1 from "./data/voa-for-the-birds-b1.json";
 import voaWhereTheresSmokeB1 from "./data/voa-where-theres-smoke-b1.json";
 import voaDreamALittleDreamB1 from "./data/voa-dream-a-little-dream-b1.json";
 import aiPoliteBoundariesB1 from "./data/ai-polite-boundaries-b1.json";
+import aiB01IntroducingYourselfA2 from "./data/ai-b01-introducing-yourself-a2.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -183,6 +184,9 @@ const voaDreamALittleDreamB1Entries = voaDreamALittleDreamB1.entries.filter((ent
 const aiPoliteBoundariesB1Entries = aiPoliteBoundariesB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/polite-boundaries-b1/${entry.audio}` })) as CourseEntry[];
+const aiB01IntroducingYourselfA2Entries = aiB01IntroducingYourselfA2.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/b01-introducing-yourself-a2/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -341,6 +345,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "voa-where-theres-smoke-b1", collectionId: "voa-level-2", title: "Where There's Smoke... · B1", subtitle: `VOA Learning English · ${voaWhereTheresSmokeB1Entries.length} learning sentences`, description: "消防安全、紧急撤离、条件句与明确安全指令的实用口语。", kind: "sentence", practiceOrder: "sequential", entries: voaWhereTheresSmokeB1Entries },
   { id: "voa-dream-a-little-dream-b1", collectionId: "voa-level-2", title: "Dream a Little Dream · B1", subtitle: `VOA Learning English · ${voaDreamALittleDreamB1Entries.length} learning sentences`, description: "表达梦想、讨论职业愿望、回应担心与谈论人生目标的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaDreamALittleDreamB1Entries },
   { id: "polite-boundaries-b1", collectionId: "ai-practice", title: "Setting Boundaries Politely · B1", subtitle: `AI voice · ${aiPoliteBoundariesB1Entries.length} learning sentences`, description: "练习礼貌说明限制、协商替代方案与坚定收尾。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiPoliteBoundariesB1Entries },
+  { id: "b01-introducing-yourself-a2", collectionId: "ai-practice", title: "Introducing Yourself · A2", subtitle: `AI voice · ${aiB01IntroducingYourselfA2Entries.length} learning sentences`, description: "在新环境中介绍自己、说明与场合的关系，并自然邀请对方回应。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB01IntroducingYourselfA2Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

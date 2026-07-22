@@ -11,7 +11,7 @@
     },
     "courses": {
       "path": "app/courses.ts",
-      "packagesStartLine": 195
+      "packagesStartLine": 199
     },
     "words": {
       "path": "app/words.ts",
@@ -20,18 +20,18 @@
   },
   "counts": {
     "collections": 4,
-    "courses": 31,
+    "courses": 32,
     "wordCourses": 1,
-    "sentenceCourses": 30,
+    "sentenceCourses": 31,
     "modernFamilyCourses": 5,
     "voaCourses": 24,
     "words": 570,
-    "sentenceEntries": 852,
-    "totalStudyEntries": 1422,
+    "sentenceEntries": 868,
+    "totalStudyEntries": 1438,
     "wordAudioFiles": 570,
-    "sentenceAudioFiles": 852,
-    "totalM4aFiles": 1422,
-    "totalM4aBytes": 33216097
+    "sentenceAudioFiles": 868,
+    "totalM4aFiles": 1438,
+    "totalM4aBytes": 33711028
   },
   "defaults": {
     "courseId": "modern-family-s01e01",
@@ -443,6 +443,14 @@
       "kind": "sentence",
       "practiceOrder": "sequential",
       "manifest": "app/data/ai-polite-boundaries-b1.json"
+    },
+    {
+      "id": "b01-introducing-yourself-a2",
+      "collectionId": "ai-practice",
+      "title": "Introducing Yourself · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b01-introducing-yourself-a2.json"
     }
   ],
   "sentenceCourses": [
@@ -805,6 +813,18 @@
       "learnableEntries": 16,
       "audioFiles": 16,
       "audioBytes": 515259
+    },
+    {
+      "id": "b01-introducing-yourself-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b01-introducing-yourself-a2.json",
+      "manifestCourseId": "b01-introducing-yourself-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 494931
     }
   ],
   "representativeFiles": [
