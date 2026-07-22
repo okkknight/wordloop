@@ -14,23 +14,36 @@ public actor StudySessionRepository {
     private let api: ProgressAPIClient
     private let uuid: @Sendable () -> UUID
     private let now: @Sendable () -> Date
+    private let guestIdentity: GuestIdentityStore
     private let activeIdentityID = "active"
 
     public init(
         container: ModelContainer,
         api: ProgressAPIClient,
         uuid: @escaping @Sendable () -> UUID = { UUID() },
-        now: @escaping @Sendable () -> Date = { Date() }
+        now: @escaping @Sendable () -> Date = { Date() },
+        guestIdentity: GuestIdentityStore = .init()
     ) {
         context = ModelContext(container)
         context.autosaveEnabled = false
         self.api = api
         self.uuid = uuid
         self.now = now
+        self.guestIdentity = guestIdentity
     }
 
     public func restore() throws -> StudySession? {
-        guard let identity = try activeIdentity() else { return nil }
+        guard let identity = try activeIdentity() else {
+            guard let userID = guestIdentity.load() else { return nil }
+            let date = now()
+            context.insert(StudyIdentity(
+                identityID: activeIdentityID, userID: userID, username: nil,
+                createdAt: date, updatedAt: date
+            ))
+            try context.save()
+            return try session(try activeIdentity()!)
+        }
+        if identity.username == nil { guestIdentity.save(identity.userID) }
         return try session(identity)
     }
 
@@ -44,7 +57,7 @@ public actor StudySessionRepository {
         } else if let existing, existing.username == nil {
             userID = existing.userID
         } else {
-            userID = uuid().uuidString.lowercased()
+            userID = guestIdentity.load() ?? uuid().uuidString.lowercased()
         }
         if let existing {
             existing.userID = userID
@@ -57,6 +70,7 @@ public actor StudySessionRepository {
                 createdAt: date, updatedAt: date
             ))
         }
+        if validName == nil { guestIdentity.save(userID) }
         try context.save()
         return try session(try activeIdentity()!)
     }

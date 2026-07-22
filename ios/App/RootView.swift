@@ -88,9 +88,11 @@ struct RootView: View {
     private func restoreStartup() async {
         startupStore.setRuntimeState(.restoring)
         do {
-            guard let resolution = try await container.startupCoordinator.restore() else {
-                startupStore.setRuntimeState(.idle)
-                return
+            let resolution: StartupResolution
+            if let restored = try await container.startupCoordinator.restore() {
+                resolution = restored
+            } else {
+                resolution = try await container.startupCoordinator.activate(.anonymous)
             }
             startupStore.setRuntimeState(.syncing)
             await liveStudyStore.start(preferredCourseID: resolution.preferredCourseID)

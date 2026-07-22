@@ -23,7 +23,6 @@ const SEGMENT_SETTLE_MS = 700;
 const STARTUP_MAX_WAIT_MS = 650;
 const PANEL_CLOSE_MS = 240;
 const USER_ID_KEY = "word-loop-user-id";
-const USERNAME_KEY = "word-loop-username";
 const PENDING_PROGRESS_KEY = "word-loop-pending-progress";
 const APP_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -366,8 +365,6 @@ export default function Home() {
   const [textVisibilityMode, setTextVisibilityMode] = useState<TextVisibilityMode>("full");
   const [listenAutoPlay, setListenAutoPlay] = useState(false);
   const [activeUserId, setActiveUserId] = useState("");
-  const [usernameInput, setUsernameInput] = useState("");
-  const [usernameError, setUsernameError] = useState("");
   const [startupState, setStartupState] = useState<StartupState>("idle");
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
@@ -720,12 +717,6 @@ export default function Home() {
 
   useEffect(() => {
     const identityTimer = window.setTimeout(() => {
-      const storedUsername = localStorage.getItem(USERNAME_KEY)?.trim().toLowerCase() ?? "";
-      if (/^[a-z]+$/.test(storedUsername)) {
-        setUsernameInput(storedUsername);
-        setActiveUserId(`name:${storedUsername}`);
-        return;
-      }
       setActiveUserId(anonymousUserId());
     }, 0);
     return () => window.clearTimeout(identityTimer);
@@ -1510,24 +1501,14 @@ export default function Home() {
     activateRef.current = activate;
   }, [activate]);
 
-  const startWithIdentity = useCallback((inputValue: string) => {
+  const startAsGuest = useCallback(() => {
     if (pendingActivationRef.current) return;
-    const username = inputValue.trim();
-    if (username && !/^[A-Za-z]+$/.test(username)) {
-      setUsernameError("用户名只能使用英文字母");
-      return;
-    }
-    const normalizedUsername = username.toLowerCase();
-    const userId = normalizedUsername ? `name:${normalizedUsername}` : anonymousUserId();
-    if (normalizedUsername) localStorage.setItem(USERNAME_KEY, normalizedUsername);
-    else localStorage.removeItem(USERNAME_KEY);
+    const userId = anonymousUserId();
     userIdRef.current = userId;
     progressRef.current = {};
     sentenceProgressRef.current = {};
     setProgress({});
     setSentenceProgress({});
-    setUsernameError("");
-    setUsernameInput(username);
     setStartupState("restoring");
     if (activeUserId === userId) {
       activate();
@@ -1809,35 +1790,12 @@ export default function Home() {
 
       {!activated && (
         <div className="start-overlay" role="dialog" aria-label="Start study mode">
-          <form
-            className="start-form"
-            onClick={(event) => event.stopPropagation()}
-            onSubmit={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
-              startWithIdentity(String(new FormData(event.currentTarget).get("username") ?? ""));
-            }}
-          >
-            <input
-              id="username"
-              name="username"
-              value={usernameInput}
-              onChange={(event) => { setUsernameInput(event.target.value); setUsernameError(""); }}
-              onInput={(event) => { setUsernameInput(event.currentTarget.value); setUsernameError(""); }}
-              placeholder="USERNAME"
-              autoComplete="username"
-              autoCapitalize="none"
-              spellCheck={false}
-              autoFocus
-              maxLength={32}
-              aria-describedby={usernameError ? "username-error" : undefined}
-            />
-            {usernameError && <p id="username-error" className="username-error">{usernameError}</p>}
-            <button type="submit" disabled={startupState !== "idle"} aria-busy={startupState !== "idle"}>
+          <div className="start-form" onClick={(event) => event.stopPropagation()}>
+            <button type="button" onClick={startAsGuest} disabled={startupState !== "idle"} aria-busy={startupState !== "idle"}>
               <span className="start-icon" aria-hidden="true">▶</span>
               {startupState === "idle" ? "START" : startupState === "restoring" ? "PREPARING…" : "SYNCING…"}
             </button>
-          </form>
+          </div>
           {startupState !== "idle"
             ? <p aria-live="polite">{startupState === "restoring" ? "正在恢复上次课程" : "正在同步学习进度"}</p>
             : studyMode !== "repeat" && <p>{activeCourse.description}</p>}
