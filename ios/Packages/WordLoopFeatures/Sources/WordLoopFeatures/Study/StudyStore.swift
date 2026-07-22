@@ -29,6 +29,7 @@ public final class StudyStore {
     private let clock: StudyClock
     private let random: StudyRandomClient
     private let courseSelection: @Sendable (CourseID, StudyMode) async -> Void
+    private let feedback = FeedbackCuePlayer()
 
     private var catalog: CourseCatalog?
     private var course: Course?
@@ -228,7 +229,15 @@ public final class StudyStore {
         guard mode == .listen else { return }
         state.isAutoplayEnabled.toggle()
         shellStore.state.isAutoplayEnabled = state.isAutoplayEnabled
-        guard !state.isAutoplayEnabled else { return }
+        guard !state.isAutoplayEnabled else {
+            // Same as Web `toggleListenAutoPlay`: if the current clip is no
+            // longer playing, enabling autoplay immediately begins the next
+            // learning round instead of waiting for a manual NEXT tap.
+            if state.listenPhase != .playing {
+                await next()
+            }
+            return
+        }
         if state.listenPhase == .waiting {
             cancelWaitingAndAdvanceGeneration()
             state.listenPhase = .idle
@@ -246,6 +255,7 @@ public final class StudyStore {
             guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
             _ = await progress.master(course.id, .listen, currentEntryID)
             guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
+            feedback.play(.mastery)
             if await settleIfCourseExhausted(
                 course: course,
                 entryID: currentEntryID,
@@ -263,6 +273,7 @@ public final class StudyStore {
             guard isCurrent(generation), self.currentEntryID == currentEntryID else { return }
             _ = await progress.master(course.id, .repeat, currentEntryID)
             guard isCurrent(generation), self.currentEntryID == currentEntryID else { return }
+            feedback.play(.mastery)
             if await settleIfCourseExhausted(
                 course: course,
                 entryID: currentEntryID,
@@ -1049,6 +1060,7 @@ public final class StudyStore {
             ) else { return }
             state.repeatPhase = .retry
             applyRepeatPresentation(.retry)
+            feedback.play(.failed)
         }
     }
 
@@ -1099,6 +1111,7 @@ public final class StudyStore {
             realtime.setMicrophoneEnabled(true)
             state.repeatPhase = .armed
             applyRepeatPresentation(.speak)
+            feedback.play(.recordingReady)
             scheduleRepeatTimeout(
                 turnID: repeatController.turnID,
                 phase: .armed,
@@ -1122,6 +1135,7 @@ public final class StudyStore {
             state.repeatPhase = result.passed ? .passed : .retry
             shellStore.state.repeatTranscript = result.passed ? nil : transcript
             applyRepeatPresentation(result.passed ? .passed : .retry)
+            feedback.play(result.passed ? .passed : .failed)
             guard result.passed else {
                 scheduleRepeatRetry(turnID: turnID)
                 return
@@ -1228,6 +1242,7 @@ public final class StudyStore {
         _ = repeatController.invalidate()
         state.repeatPhase = .retry
         applyRepeatPresentation(.retry)
+        feedback.play(.failed)
         scheduleRepeatRetry(turnID: repeatController.turnID)
     }
 

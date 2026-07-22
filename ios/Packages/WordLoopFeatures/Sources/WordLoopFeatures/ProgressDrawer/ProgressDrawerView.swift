@@ -32,6 +32,7 @@ public struct ProgressDrawerView: View {
                     onClose: { store.dismiss(reason: .header) }
                 ) {
                     drawerContent
+                        .frame(maxHeight: .infinity, alignment: .top)
                 }
                 .simultaneousGesture(
                     DragGesture(minimumDistance: 12)
@@ -80,6 +81,7 @@ public struct ProgressDrawerView: View {
                 }
                 .padding(.bottom, WordLoopSpacing.safeWide)
             }
+            .frame(maxHeight: .infinity)
             .scrollIndicators(.hidden)
             .accessibilityIdentifier("progress-drawer.list")
         }

@@ -311,8 +311,17 @@ public struct MainStudyView: View {
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.top, 15)
                 .offset(y: 46)
+                .contentShape(Rectangle())
+                .onTapGesture(perform: actions.next)
                 .accessibilityLabel(store.state.visibility == .hidden ? "学习内容已隐藏" : englishAccessibilityLabel)
                 .accessibilityIdentifier(store.state.visibility == .hidden ? "study.hidden-copy" : "study.english")
+
+                // Web recreates `h1` for each item and runs its 520ms
+                // `enter` animation. Tie the native copy to the entry ID so
+                // a new sentence gets the same short rise + fade instead of
+                // an abrupt text replacement.
+                .id(store.state.item.id)
+                .transition(.opacity.combined(with: .offset(y: 14)))
 
             // In Web JSX only `renderStudyText` changes with visibility.  The
             // phonetic/meaning row and its play + visibility controls remain
@@ -367,10 +376,14 @@ public struct MainStudyView: View {
                 }
             }
             .offset(y: 44)
+            .id("\(store.state.item.id)-meaning")
+            .transition(.opacity.combined(with: .offset(y: 10)))
         }
         .frame(maxWidth: .infinity)
-        .contentShape(Rectangle())
-        .onTapGesture(perform: actions.next)
+        .animation(
+            .timingCurve(0.2, 0.8, 0.2, 1, duration: 0.52),
+            value: store.state.item.id
+        )
     }
 
     private var visibleTextSegments: [StudyShellTextSegment] {
@@ -741,6 +754,7 @@ public struct MainStudyView: View {
                 palette: store.state.palette,
                 isFocusVisible: focusedStudyAction == .play
             ))
+            .contentShape(Rectangle())
             .accessibilityLabel("播放当前学习内容")
             .accessibilityIdentifier("study.play")
 
@@ -760,11 +774,13 @@ public struct MainStudyView: View {
                 palette: store.state.palette,
                 isFocusVisible: focusedStudyAction == .visibility
             ))
+            .contentShape(Rectangle())
             .accessibilityLabel(store.state.visibility.nextAccessibilityAction(for: store.state.item.kind))
             .accessibilityValue(store.state.visibility.accessibilityValue)
             .accessibilityIdentifier("study.visibility")
         }
         .padding(2)
+        .contentShape(Capsule())
         .overlay(Capsule().stroke(store.state.palette.ink.color.opacity(0.16), lineWidth: 1))
         .background(Color.white.opacity(0.10), in: Capsule())
     }
@@ -908,12 +924,14 @@ private final class DottedStudyTextView: UIView {
     }
 
     override func draw(_ rect: CGRect) {
-        super.draw(rect)
         guard bounds.width > 0 else { return }
         textContainer.size = .init(width: bounds.width, height: .greatestFiniteMagnitude)
         let glyphRange = layoutManager.glyphRange(for: textContainer)
-        layoutManager.drawGlyphs(forGlyphRange: glyphRange, at: .zero)
+        // CSS text decoration lives below glyph paint. Draw our literal dots
+        // first so descenders and the rest of the letters naturally cover
+        // them, matching `text-decoration-skip-ink: none` on the Web page.
         drawHighlightDots()
+        layoutManager.drawGlyphs(forGlyphRange: glyphRange, at: .zero)
     }
 
     override func sizeThatFits(_ size: CGSize) -> CGSize {
@@ -961,9 +979,9 @@ private final class DottedStudyTextView: UIView {
                 self.drawDots(
                     from: lineRect.minX + prefixWidth,
                     through: lineRect.minX + prefixWidth + highlightWidth,
-                    // TextKit's line fragment baseline sits lower than the
-                    // rendered Geist glyph baseline. Compensate by .12em so
-                    // this lands at Web's `.065em` visible underline offset.
+                    // Keep the reference's existing visual distance from the
+                    // glyph baseline. The correction here is paint order
+                    // (dots first, glyphs second), never a geometry change.
                     at: baseline - (font?.pointSize ?? 0) * 0.12
                 )
             }

@@ -69,6 +69,7 @@ public struct CourseDrawerView: View {
         VStack(spacing: 0) {
             panelHeader
             drawerContent
+                .frame(maxHeight: .infinity, alignment: .top)
         }
         // Direct `.course-panel`: 20px on the mobile reference, panel width
         // `min(344px, 86vw)`, its own poster background, and a right shadow.
@@ -129,6 +130,7 @@ public struct CourseDrawerView: View {
                 }
                 .padding(.bottom, WordLoopSpacing.safeWide)
             }
+            .frame(maxHeight: .infinity)
             .scrollIndicators(.hidden)
             .accessibilityIdentifier("course-drawer.list")
         }
