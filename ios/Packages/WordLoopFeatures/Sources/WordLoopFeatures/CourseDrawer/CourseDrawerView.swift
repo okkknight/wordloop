@@ -2,6 +2,8 @@ import SwiftUI
 import WordLoopDesignSystem
 
 public struct CourseDrawerView: View {
+    private static let drawerMaximumWidth: CGFloat = 304
+    private static let drawerWidthFraction: CGFloat = 0.78
     @Bindable private var store: CourseDrawerStore
     private let palette: PosterPalette
     private let onSelectCourse: (String) -> Void
@@ -36,7 +38,7 @@ public struct CourseDrawerView: View {
                     .accessibilityLabel("课程选择器")
                     .accessibilityIdentifier("course-drawer.page")
 
-                coursePanel(width: min(344, geometry.size.width * 0.86))
+                coursePanel(width: drawerWidth(in: geometry.size.width))
                 .simultaneousGesture(
                     DragGesture(minimumDistance: 12)
                         .onEnded { value in
@@ -55,7 +57,7 @@ public struct CourseDrawerView: View {
                         .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
-                .frame(width: max(0, geometry.size.width - min(344, geometry.size.width * 0.86)))
+                .frame(width: max(0, geometry.size.width - drawerWidth(in: geometry.size.width)))
                 .frame(maxHeight: .infinity)
                 .accessibilityLabel("关闭课程选择器")
                 .accessibilityIdentifier("course-drawer.backdrop")
@@ -71,8 +73,8 @@ public struct CourseDrawerView: View {
             drawerContent
                 .frame(maxHeight: .infinity, alignment: .top)
         }
-        // Direct `.course-panel`: 20px on the mobile reference, panel width
-        // `min(344px, 86vw)`, its own poster background, and a right shadow.
+        // A compact mobile measure leaves a clear, tappable backdrop while
+        // preserving enough line length for course titles and search.
         .padding(20)
         .frame(width: width, alignment: .leading)
         .frame(maxHeight: .infinity, alignment: .top)
@@ -87,6 +89,10 @@ public struct CourseDrawerView: View {
                 .overlay(Color.black.opacity(0.42))
                 .ignoresSafeArea()
         }
+    }
+
+    private func drawerWidth(in availableWidth: CGFloat) -> CGFloat {
+        min(Self.drawerMaximumWidth, availableWidth * Self.drawerWidthFraction)
     }
 
     private var panelHeader: some View {

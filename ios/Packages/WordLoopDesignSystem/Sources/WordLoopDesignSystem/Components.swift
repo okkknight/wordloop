@@ -312,7 +312,7 @@ public struct SideDrawer<Content: View>: View {
                     content.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 }
                 .padding(20)
-                .frame(width: min(344, proxy.size.width * 0.86))
+                .frame(width: min(304, proxy.size.width * 0.78))
                 .frame(maxHeight: .infinity)
                 .foregroundStyle(palette.ink.color)
                 .background(palette.background.color)

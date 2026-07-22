@@ -2,6 +2,8 @@ import SwiftUI
 import WordLoopDesignSystem
 
 public struct ProgressDrawerView: View {
+    private static let drawerMaximumWidth: CGFloat = 304
+    private static let drawerWidthFraction: CGFloat = 0.78
     @Bindable private var store: ProgressDrawerStore
     private let palette: PosterPalette
     @FocusState private var searchIsFocused: Bool
@@ -52,7 +54,7 @@ public struct ProgressDrawerView: View {
                         .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
-                .frame(width: max(0, geometry.size.width - min(344, geometry.size.width * 0.86)))
+                .frame(width: max(0, geometry.size.width - drawerWidth(in: geometry.size.width)))
                 .frame(maxHeight: .infinity)
                 .accessibilityLabel("关闭学习进度")
                 .accessibilityIdentifier("progress-drawer.backdrop")
@@ -60,6 +62,10 @@ public struct ProgressDrawerView: View {
             .accessibilityElement(children: .contain)
             .accessibilityAddTraits(.isModal)
         }
+    }
+
+    private func drawerWidth(in availableWidth: CGFloat) -> CGFloat {
+        min(Self.drawerMaximumWidth, availableWidth * Self.drawerWidthFraction)
     }
 
     private var drawerContent: some View {
