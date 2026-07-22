@@ -36,18 +36,7 @@ public struct CourseDrawerView: View {
                     .accessibilityLabel("课程选择器")
                     .accessibilityIdentifier("course-drawer.page")
 
-                SideDrawer(
-                    edge: .leading,
-                    palette: palette,
-                    kicker: "COURSE PACKAGES",
-                    title: "选择课程",
-                    closeAccessibilityLabel: "关闭课程选择器",
-                    closeAccessibilityIdentifier: "course-drawer.close",
-                    isModal: false,
-                    onClose: { store.dismiss(reason: .header) }
-                ) {
-                    drawerContent
-                }
+                coursePanel(width: min(344, geometry.size.width * 0.86))
                 .simultaneousGesture(
                     DragGesture(minimumDistance: 12)
                         .onEnded { value in
@@ -76,6 +65,52 @@ public struct CourseDrawerView: View {
         }
     }
 
+    private func coursePanel(width: CGFloat) -> some View {
+        VStack(spacing: 0) {
+            panelHeader
+            drawerContent
+        }
+        // Direct `.course-panel`: 20px on the mobile reference, panel width
+        // `min(344px, 86vw)`, its own poster background, and a right shadow.
+        .padding(20)
+        .frame(width: width, alignment: .leading)
+        .frame(maxHeight: .infinity, alignment: .top)
+        .foregroundStyle(palette.ink.color)
+        .background(palette.background.color)
+        .shadow(color: .black.opacity(0.16), radius: 30, x: 20)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background {
+            // Web `.panel-backdrop`: a 42% black veil over a 7px blur.
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .overlay(Color.black.opacity(0.42))
+                .ignoresSafeArea()
+        }
+    }
+
+    private var panelHeader: some View {
+        HStack(alignment: .top) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("COURSE PACKAGES")
+                    .font(WordLoopTypography.label(size: 10, weight: .bold))
+                    .tracking(1.2)
+                    .foregroundStyle(palette.accent.color)
+                Text("选择课程")
+                    .font(WordLoopTypography.title(size: 26, weight: .bold))
+                    .tracking(-1.04)
+            }
+            Spacer(minLength: 0)
+            Button("×") { store.dismiss(reason: .header) }
+                .font(WordLoopTypography.body(size: 30, weight: .regular))
+                .frame(width: 30, height: 30)
+                .contentShape(Rectangle())
+                .buttonStyle(.plain)
+                .accessibilityLabel("关闭课程选择器")
+                .accessibilityIdentifier("course-drawer.close")
+        }
+        .padding(.bottom, 22)
+    }
+
     private var drawerContent: some View {
         VStack(spacing: 0) {
             searchField
@@ -101,9 +136,6 @@ public struct CourseDrawerView: View {
 
     private var searchField: some View {
         HStack(spacing: WordLoopSpacing.xs) {
-            Image(systemName: "magnifyingglass")
-                .font(.system(size: 14, weight: .semibold))
-                .accessibilityHidden(true)
             TextField(
                 "",
                 text: Binding(
@@ -111,7 +143,7 @@ public struct CourseDrawerView: View {
                     set: { query in store.updateQuery(query) }
                 ),
                 prompt: Text("搜索课程")
-                    .foregroundStyle(palette.ink.color)
+                    .foregroundStyle(palette.ink.color.opacity(0.6))
             )
             .font(WordLoopTypography.body(size: 12, weight: .semibold))
             .focused($searchIsFocused)
@@ -120,28 +152,21 @@ public struct CourseDrawerView: View {
             .accessibilityLabel("搜索课程")
             .accessibilityIdentifier("course-drawer.search")
 
-            if !store.state.query.isEmpty {
-                Button {
-                    store.updateQuery("")
-                    searchIsFocused = true
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("清除搜索")
-                .accessibilityIdentifier("course-drawer.search-clear")
-            }
         }
-        .padding(.leading, WordLoopSpacing.sm)
-        .frame(minHeight: WordLoopSpacing.minimumHit)
+        .padding(.horizontal, 12)
+        .frame(height: 36)
+        .background(Color.white.opacity(0.12), in: RoundedRectangle(cornerRadius: 10))
         .overlay {
             RoundedRectangle(cornerRadius: WordLoopRadius.control)
-                .stroke(palette.ink.color, lineWidth: WordLoopBorder.hairline)
+                .stroke(searchIsFocused ? palette.accent.color : palette.ink.color.opacity(0.24), lineWidth: WordLoopBorder.hairline)
         }
-        .padding(.top, WordLoopSpacing.safe)
-        .padding(.bottom, WordLoopSpacing.md)
+        .overlay {
+            if searchIsFocused {
+                RoundedRectangle(cornerRadius: 11)
+                    .stroke(palette.accent.color.opacity(0.12), lineWidth: 3)
+            }
+        }
+        .padding(.bottom, 18)
     }
 
     private func collectionSection(_ collection: CourseDrawerCollection) -> some View {
@@ -149,22 +174,33 @@ public struct CourseDrawerView: View {
             Button {
                 store.toggleCollection(collection.id)
             } label: {
-                HStack(alignment: .center, spacing: WordLoopSpacing.sm) {
-                    VStack(alignment: .leading, spacing: WordLoopSpacing.xxs) {
-                        MonoLabel(collection.label, color: palette.accessibleAccentText.color)
+                HStack(alignment: .center, spacing: 12) {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text(collection.label)
+                            .font(WordLoopTypography.label(size: 8, weight: .bold))
+                            .tracking(0.88)
+                            .foregroundStyle(palette.accent.color)
+                            .padding(.bottom, 5)
                         Text(collection.title)
                             .font(WordLoopTypography.title(size: 16, weight: .bold))
+                            .tracking(-0.4)
                         Text(collection.subtitle)
                             .font(WordLoopTypography.label(size: 9))
+                            .foregroundStyle(palette.ink.color.opacity(0.52))
+                            .padding(.top, 4)
                             .fixedSize(horizontal: false, vertical: true)
                     }
                     Spacer(minLength: 0)
-                    Image(systemName: store.state.isExpanded(collection.id) ? "minus" : "plus")
-                        .font(.system(size: 17, weight: .medium))
-                        .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
+                    // Web renders a font glyph (`+` / `−`), not an SF Symbol.
+                    Text(store.state.isExpanded(collection.id) ? "−" : "+")
+                        .font(WordLoopTypography.body(size: 21, weight: .light))
+                        .frame(width: 20, height: 20)
+                        .foregroundStyle(palette.accent.color)
                         .accessibilityHidden(true)
                 }
-                .frame(maxWidth: .infinity, minHeight: WordLoopSpacing.minimumHit, alignment: .leading)
+                .padding(.horizontal, 3)
+                .padding(.vertical, 13)
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
@@ -173,23 +209,10 @@ public struct CourseDrawerView: View {
             .accessibilityIdentifier("course-drawer.collection.\(collection.id)")
 
             if store.state.isExpanded(collection.id) {
-                VStack(spacing: WordLoopSpacing.xs) {
+                VStack(spacing: 7) {
                     ForEach(collection.courses) { course in
                         VStack(alignment: .leading, spacing: WordLoopSpacing.xs) {
-                            CourseCard(
-                                model: .init(
-                                    title: course.title,
-                                    metadata: "\(course.subtitle) · \(course.availability.rawValue)",
-                                    badge: course.completionBadge,
-                                    isSelected: course.isSelected
-                                ),
-                                palette: palette,
-                                accessibilityLabel: courseAccessibilityLabel(course),
-                                action: {
-                                    store.selectCourse(course.id)
-                                    onSelectCourse(course.id)
-                                }
-                            )
+                            courseCard(course)
                             .disabled(!course.availability.canSelect)
                             .accessibilityIdentifier("course-drawer.course.\(course.id)")
                             if let actionTitle = course.availability.actionTitle {
@@ -202,16 +225,65 @@ public struct CourseDrawerView: View {
                         }
                     }
                 }
-                .padding(.bottom, WordLoopSpacing.sm)
+                .padding(.horizontal, 3)
+                .padding(.bottom, 14)
             }
         }
-        .padding(.vertical, WordLoopSpacing.xxs)
+        .padding(.vertical, 0)
         .overlay(alignment: .top) {
             Rectangle()
-                .fill(palette.ink.color)
+                .fill(palette.ink.color.opacity(0.14))
                 .frame(height: WordLoopBorder.hairline)
                 .accessibilityHidden(true)
         }
+    }
+
+    private func courseCard(_ course: CourseDrawerCourse) -> some View {
+        Button {
+            store.selectCourse(course.id)
+            onSelectCourse(course.id)
+        } label: {
+            VStack(alignment: .leading, spacing: 0) {
+                Text(course.title)
+                    .font(WordLoopTypography.title(size: 16, weight: .semibold))
+                    .tracking(-0.48)
+                Text(course.subtitle)
+                    .font(WordLoopTypography.label(size: 9, weight: .medium))
+                    .foregroundStyle(palette.ink.color.opacity(0.60))
+                    .padding(.top, 5)
+            }
+            .padding(.horizontal, 13)
+            .padding(.vertical, 11)
+            .frame(maxWidth: .infinity, minHeight: 60, alignment: .leading)
+            .background(Color.white.opacity(0.12), in: RoundedRectangle(cornerRadius: 13))
+            .overlay {
+                RoundedRectangle(cornerRadius: 13)
+                    .stroke(course.isSelected ? palette.accent.color : palette.ink.color.opacity(0.18), lineWidth: 1)
+            }
+            .shadow(color: course.isSelected ? palette.accent.color.opacity(0.14) : .clear, radius: 0)
+            .overlay {
+                if course.isSelected {
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(palette.accent.color.opacity(0.14), lineWidth: 3)
+                }
+            }
+            .overlay(alignment: .topTrailing) {
+                // Web exposes completion only as a top-right `× N` badge;
+                // availability is not rendered into the card metadata.
+                if let badge = course.completionBadge {
+                    Text(badge)
+                        .font(WordLoopTypography.label(size: 9, weight: .semibold))
+                        .tracking(0.27)
+                        .foregroundStyle(palette.ink.color.opacity(0.46))
+                        .padding(.top, 11)
+                        .padding(.trailing, 12)
+                }
+            }
+        }
+        .buttonStyle(.plain)
+        .contentShape(RoundedRectangle(cornerRadius: 13))
+        .accessibilityLabel(courseAccessibilityLabel(course))
+        .accessibilityValue(course.isSelected ? "当前课程" : "未选择")
     }
 
     private func courseAccessibilityLabel(_ course: CourseDrawerCourse) -> String {

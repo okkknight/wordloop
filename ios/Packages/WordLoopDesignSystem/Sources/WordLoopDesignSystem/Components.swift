@@ -25,26 +25,41 @@ private extension EnvironmentValues {
 
 public struct PosterBackground<Content: View>: View {
     private let palette: PosterPalette
+    private let insetContent: Bool
     private let content: Content
 
-    public init(palette: PosterPalette, @ViewBuilder content: () -> Content) {
+    public init(
+        palette: PosterPalette,
+        insetContent: Bool = true,
+        @ViewBuilder content: () -> Content
+    ) {
         self.palette = palette
+        self.insetContent = insetContent
         self.content = content()
     }
 
     public var body: some View {
         ZStack(alignment: .topTrailing) {
             palette.background.color.ignoresSafeArea()
-            Circle()
-                .stroke(palette.accent.color.opacity(WordLoopLayerOpacity.posterAccent), lineWidth: 58)
-                .frame(width: 310, height: 310)
-                .offset(x: 152, y: -154)
-                .accessibilityHidden(true)
+            GeometryReader { proxy in
+                // Web mobile rule: width 110vw, right -55vw, top -18%.
+                // GeometryReader centers the oversized child before applying
+                // its offset; its measured mobile placement is therefore
+                // `.50w` on the native canvas.
+                Circle()
+                    .stroke(palette.accent.color.opacity(WordLoopLayerOpacity.posterAccent), lineWidth: 40)
+                    .frame(width: proxy.size.width * 1.1, height: proxy.size.width * 1.1)
+                    // The native canvas includes the system safe area while
+                    // the Web capture starts at the poster edge; compensate
+                    // that 17pt difference in the decorative layer only.
+                    .offset(x: proxy.size.width * 0.50, y: -proxy.size.height * 0.20)
+                    .accessibilityHidden(true)
+            }
             content
                 .foregroundStyle(palette.ink.color)
-                .padding(.horizontal, WordLoopSpacing.safeWide)
-                .padding(.vertical, WordLoopSpacing.safe)
+                .padding(insetContent ? WordLoopSpacing.safeWide : 0)
         }
+        .ignoresSafeArea(edges: .vertical)
         .environment(\.posterPalette, palette)
     }
 }
@@ -94,12 +109,13 @@ public struct ModeSwitch: View {
                 } label: {
                     Text(option)
                         .font(WordLoopTypography.label())
-                        .padding(.horizontal, WordLoopSpacing.sm)
-                        .frame(minHeight: WordLoopSpacing.minimumHit)
+                        .tracking(0.8)
+                        .padding(.horizontal, 12)
+                        .frame(height: 28)
                         .foregroundStyle(
                             selection == option
                                 ? palette.background.color
-                                : palette.ink.color.opacity(WordLoopLayerOpacity.modeUnselectedText)
+                                : palette.ink.color.opacity(0.7)
                         )
                         .background(selection == option ? palette.ink.color : Color.clear, in: Capsule())
                 }
@@ -219,14 +235,7 @@ public struct CourseCard: View {
                     )
             }
             .overlay {
-                if model.isSelected {
-                    RoundedRectangle(cornerRadius: WordLoopRadius.card - 3)
-                        .inset(by: 3)
-                        .stroke(
-                            palette.ink.color.opacity(WordLoopLayerOpacity.courseCardBoundary),
-                            lineWidth: WordLoopBorder.hairline
-                        )
-                }
+                EmptyView()
             }
         }
         .buttonStyle(.plain)
@@ -279,23 +288,30 @@ public struct SideDrawer<Content: View>: View {
         GeometryReader { proxy in
             HStack(spacing: 0) {
                 if edge == .trailing { Spacer(minLength: 0) }
-                VStack(spacing: WordLoopSpacing.md) {
+                VStack(spacing: 18) {
                     HStack(alignment: .top) {
                         VStack(alignment: .leading, spacing: WordLoopSpacing.xs) {
                             if let kicker {
-                                MonoLabel(kicker, color: palette.accessibleAccentText.color)
+                                Text(kicker)
+                                    .font(WordLoopTypography.label(size: 10, weight: .bold))
+                                    .tracking(1.2)
+                                    .foregroundStyle(palette.accent.color)
                             }
-                            Text(title).font(WordLoopTypography.title())
+                            Text(title)
+                                .font(WordLoopTypography.title(size: 26, weight: .bold))
+                                .tracking(-1.04)
                         }
                         Spacer()
-                        PosterButton(.icon(systemName: "xmark"), accessibilityLabel: closeAccessibilityLabel, action: onClose)
+                        Button("×", action: onClose)
+                            .font(WordLoopTypography.body(size: 30, weight: .regular))
+                            .frame(width: 30, height: 30)
+                            .contentShape(Rectangle())
+                            .buttonStyle(.plain)
                             .accessibilityIdentifier(closeAccessibilityIdentifier)
                     }
                     content.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 }
-                .padding(.horizontal, WordLoopSpacing.safe)
-                .padding(.vertical, WordLoopSpacing.safeWide)
-                .safeAreaPadding(.vertical)
+                .padding(20)
                 .frame(width: min(344, proxy.size.width * 0.86))
                 .frame(maxHeight: .infinity)
                 .foregroundStyle(palette.ink.color)
@@ -303,7 +319,12 @@ public struct SideDrawer<Content: View>: View {
                 .shadow(color: .black.opacity(WordLoopShadow.drawer.colorOpacity), radius: WordLoopShadow.drawer.radius)
                 if edge == .leading { Spacer(minLength: 0) }
             }
-            .background(.black.opacity(0.42))
+            .background {
+                Rectangle()
+                    .fill(.ultraThinMaterial)
+                    .overlay(Color.black.opacity(0.42))
+                    .ignoresSafeArea()
+            }
         }
         .accessibilityElement(children: .contain)
         .accessibilityAddTraits(isModal ? .isModal : [])
@@ -397,31 +418,41 @@ public struct ConfirmDialog: View {
     }
 
     public var body: some View {
-        VStack(alignment: .leading, spacing: WordLoopSpacing.sm) {
-            MonoLabel(model.kicker, color: palette.accessibleAccentText.color)
+        VStack(alignment: .leading, spacing: 0) {
+            Text(model.kicker)
+                .font(WordLoopTypography.label(size: 9, weight: .bold))
+                .tracking(1.08)
+                .foregroundStyle(palette.accent.color)
             Text(model.title)
                 .font(WordLoopTypography.title(size: 23))
+                .tracking(-0.92)
+                .padding(.top, 9)
                 .optionalAccessibilityIdentifier(identifier("title"))
             Text(model.message)
                 .font(WordLoopTypography.body(size: 13))
-                .opacity(WordLoopLayerOpacity.dialogSecondaryText)
+                .opacity(0.65)
+                .padding(.top, 12)
                 .optionalAccessibilityIdentifier(identifier("message"))
             if let errorMessage = model.errorMessage {
                 Text(errorMessage)
                     .font(WordLoopTypography.body(size: 13, weight: .semibold))
-                    .foregroundStyle(palette.accessibleAccentText.color)
+                    .foregroundStyle(palette.accent.color)
+                    .padding(.top, 12)
                     .fixedSize(horizontal: false, vertical: true)
                     .optionalAccessibilityIdentifier(identifier("error"))
             }
-            actions
+            actions.padding(.top, 22)
         }
-        .padding(WordLoopSpacing.safeWide)
-        .frame(maxWidth: 320)
+        .padding(25)
+        // `.restart-course-dialog { width: min(320px, 100%) }` — use an
+        // explicit 320pt desktop/mobile dialog width rather than allowing the
+        // intrinsic Chinese copy to shrink the card below the Web measure.
+        .frame(width: 320, alignment: .leading)
         .foregroundStyle(palette.ink.color)
         .background(palette.background.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.dialog))
         .overlay {
             RoundedRectangle(cornerRadius: WordLoopRadius.dialog)
-                .stroke(palette.ink.color.opacity(WordLoopLayerOpacity.dialogBoundary))
+                .stroke(palette.ink.color.opacity(0.22))
         }
         .shadow(color: .black.opacity(WordLoopShadow.dialog.colorOpacity), radius: WordLoopShadow.dialog.radius, y: WordLoopShadow.dialog.y)
         .padding(WordLoopSpacing.safeWide)
@@ -446,11 +477,16 @@ public struct ConfirmDialog: View {
     }
 
     private var cancelButton: some View {
-        PosterButton(.text(model.cancelTitle), accessibilityLabel: model.cancelTitle, action: onCancel)
+        Button(model.cancelTitle, action: onCancel)
+            .font(WordLoopTypography.body(size: 11, weight: .semibold))
+            .frame(minWidth: 0, minHeight: 34)
+            .padding(.horizontal, 13)
+            .foregroundStyle(palette.ink.color)
+            .buttonStyle(.plain)
             .overlay {
                 RoundedRectangle(cornerRadius: WordLoopRadius.control)
                     .stroke(
-                        palette.ink.color.opacity(WordLoopLayerOpacity.dialogBoundary),
+                        palette.ink.color.opacity(0.28),
                         lineWidth: WordLoopBorder.hairline
                     )
             }
@@ -459,11 +495,11 @@ public struct ConfirmDialog: View {
 
     private var confirmButton: some View {
         Button(model.confirmTitle, action: onConfirm)
-            .font(WordLoopTypography.label(size: 11))
-            .frame(minHeight: WordLoopSpacing.minimumHit)
+            .font(WordLoopTypography.body(size: 11, weight: .semibold))
+            .frame(minHeight: 34)
             .padding(.horizontal, 13)
             .foregroundStyle(palette.background.color)
-            .background(palette.accessibleAccentText.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.control))
+            .background(palette.accent.color, in: RoundedRectangle(cornerRadius: WordLoopRadius.control))
             .overlay {
                 RoundedRectangle(cornerRadius: WordLoopRadius.control)
                     .stroke(palette.accent.color, lineWidth: WordLoopBorder.hairline)
@@ -526,18 +562,18 @@ public struct Waveform: View {
     }
 
     private var color: Color {
-        if let tint { return palette.accessibleStatusVisual(tint).color }
+        if let tint { return tint.color }
         return switch state {
         case .idle, .active: palette.ink.color
-        case .success: palette.accessibleStatusVisual(.init(hex: 0x148263)).color
-        case .failure: palette.accessibleStatusVisual(.init(hex: 0xc76857)).color
+        case .success: WordLoopSRGB(hex: 0x148263).color
+        case .failure: WordLoopSRGB(hex: 0xc76857).color
         }
     }
 
     private var opacity: Double {
         switch state {
         case .idle: 0.28
-        case .failure: 1
+        case .failure: 0.42
         case .active, .success: 0.78
         }
     }

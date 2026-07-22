@@ -29,6 +29,7 @@ public actor PersistentProgressRepository {
     private let now: @Sendable () -> Date
     private var activePartitions: Set<String> = []
     private var lastEventCreatedAt: Date?
+    private let resumeDefaults = UserDefaults.standard
 
     public init(
         container: ModelContainer,
@@ -77,6 +78,23 @@ public actor PersistentProgressRepository {
             stateRawValue: ProgressOutboxState.pending.rawValue, createdAt: nextEventDate()
         ))
         try context.save()
+        resumeDefaults.removeObject(forKey: resumeKey(userID: userID, mode: mode, courseID: courseID))
+    }
+
+    public func resumeEntry(userID: String, mode: StudyMode, courseID: CourseID) -> EntryID? {
+        guard let raw = resumeDefaults.string(forKey: resumeKey(userID: userID, mode: mode, courseID: courseID)) else { return nil }
+        return EntryID(rawValue: raw)
+    }
+
+    public func setResumeEntry(userID: String, mode: StudyMode, courseID: CourseID, entryID: EntryID?) async {
+        let key = resumeKey(userID: userID, mode: mode, courseID: courseID)
+        if let entryID { resumeDefaults.set(entryID.rawValue, forKey: key) }
+        else { resumeDefaults.removeObject(forKey: key) }
+        let request = UpdateCourseResumeRequestDTO(
+            userId: userID, mode: wireMode(mode), courseId: courseID.rawValue, itemId: entryID?.rawValue
+        )
+        let api = self.api
+        Task { _ = try? await api.updateCourseResume(request) }
     }
 
     public func completions(userID: String) throws -> [CourseID: Int] {
@@ -209,6 +227,9 @@ public actor PersistentProgressRepository {
             )
         }
         try context.save()
+        let key = resumeKey(userID: userID, mode: mode, courseID: courseID)
+        if let resumeItemId = response.resumeItemId { resumeDefaults.set(resumeItemId, forKey: key) }
+        else { resumeDefaults.removeObject(forKey: key) }
         return try projectedSnapshot(userID: userID, mode: mode, courseID: courseID)
     }
 
@@ -419,6 +440,10 @@ public actor PersistentProgressRepository {
 
     private func partitionKey(userID: String, mode: StudyMode) -> String {
         ProgressStableKey.make(userID, mode.rawValue)
+    }
+
+    private func resumeKey(userID: String, mode: StudyMode, courseID: CourseID) -> String {
+        "wordloop.resume.\(ProgressStableKey.make(userID, mode.rawValue, courseID.rawValue))"
     }
 
     private func clamped(_ count: Int) -> Int { min(max(count, 0), 3) }

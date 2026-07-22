@@ -58,5 +58,6 @@ ios/Packages/*/Package.resolved
 /ios/.derivedData/
 /ios/.releaseDerivedData/
 /ios/.testDerivedData/
+/.visual-qa/
 **/xcuserdata/
 **/project.xcworkspace/

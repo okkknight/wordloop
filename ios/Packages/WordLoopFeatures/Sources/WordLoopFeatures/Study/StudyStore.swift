@@ -42,10 +42,14 @@ public final class StudyStore {
     private nonisolated let eventTask = StudyTaskSlot()
     private nonisolated let waitingTask = StudyTaskSlot()
     private nonisolated let repeatPhaseTask = StudyTaskSlot()
+    private nonisolated let progressSyncTask = StudyTaskSlot()
+    private nonisolated let completionPresentationTask = StudyTaskSlot()
     private var hasStarted = false
     private var failedCourseID: CourseID?
     private var repeatController = RepeatSessionController()
     private var repeatPlaybackRequestID: PlaybackRequestID?
+    private var repeatAttemptID: UInt64 = 0
+    private var pendingListenCompletion: CompletionPresentationBinding?
     private var realtimeConnected = false
     private var microphoneAuthorized = false
 
@@ -101,7 +105,7 @@ public final class StudyStore {
 
     public func playCurrent() async {
         if mode == .repeat {
-            await startRepeatTurn()
+            await restartRepeatTurn()
             return
         }
         guard let course, let currentEntryID else { return }
@@ -190,7 +194,7 @@ public final class StudyStore {
                 currentEntryID: currentEntryID,
                 generation: generation
             )
-            await startRepeatTurn()
+            await startRepeatTurn(generation: generation)
         }
     }
 
@@ -199,15 +203,25 @@ public final class StudyStore {
     }
 
     public func next() async {
-        guard mode == .listen, let course, let activeEntryID = currentEntryID else { return }
+        guard let course, let activeEntryID = currentEntryID else { return }
         let generation = beginNewSession()
         await audio.stop()
-        guard sessionMatches(generation, courseID: course.id, entryID: activeEntryID) else { return }
-        await advance(
-            from: activeEntryID,
-            in: course,
-            generation: generation
-        )
+        switch mode {
+        case .listen:
+            guard sessionMatches(generation, courseID: course.id, entryID: activeEntryID) else { return }
+            await advance(
+                from: activeEntryID,
+                in: course,
+                generation: generation
+            )
+        case .repeat:
+            guard isCurrent(generation), currentEntryID == activeEntryID else { return }
+            await advanceRepeat(
+                from: activeEntryID,
+                in: course,
+                generation: generation
+            )
+        }
     }
 
     public func toggleAutoplay() async {
@@ -224,30 +238,58 @@ public final class StudyStore {
     }
 
     public func markTooEasy() async {
-        guard mode == .listen, let course, let currentEntryID else { return }
+        guard let course, let currentEntryID else { return }
         let generation = beginNewSession()
         await audio.stop()
-        guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
-        _ = await progress.master(course.id, mode, currentEntryID)
-        guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
-        await advance(
-            from: currentEntryID,
-            in: course,
-            generation: generation
-        )
+        switch mode {
+        case .listen:
+            guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
+            _ = await progress.master(course.id, .listen, currentEntryID)
+            guard sessionMatches(generation, courseID: course.id, entryID: currentEntryID) else { return }
+            if await settleIfCourseExhausted(
+                course: course,
+                entryID: currentEntryID,
+                generation: generation,
+                mode: .listen
+            ) {
+                return
+            }
+            await advance(
+                from: currentEntryID,
+                in: course,
+                generation: generation
+            )
+        case .repeat:
+            guard isCurrent(generation), self.currentEntryID == currentEntryID else { return }
+            _ = await progress.master(course.id, .repeat, currentEntryID)
+            guard isCurrent(generation), self.currentEntryID == currentEntryID else { return }
+            if await settleIfCourseExhausted(
+                course: course,
+                entryID: currentEntryID,
+                generation: generation,
+                mode: .repeat
+            ) {
+                return
+            }
+            await advanceRepeat(
+                from: currentEntryID,
+                in: course,
+                generation: generation
+            )
+        }
     }
 
     public func setApplicationActive(_ isActive: Bool) async {
         guard !isActive else { return }
         let generation = beginNewSession()
         await audio.pause()
+        guard isCurrent(generation) else { return }
         realtime.setMicrophoneEnabled(false)
         if mode == .repeat {
             _ = repeatController.pause()
             state.repeatPhase = .paused
             applyRepeatPresentation(.paused)
         }
-        guard isCurrent(generation) else { return }
         state.activePlaybackRequestID = nil
         if state.phase == .loading {
             hasStarted = catalog != nil
@@ -287,13 +329,21 @@ public final class StudyStore {
     ) async throws {
         let loaded = try await courses.course(id)
         guard isCurrent(generation), let catalog else { return }
+        // Reconcile before choosing the first item: the cursor is the canonical
+        // cross-device resume target, while the local snapshot remains the
+        // offline fallback.
+        await progress.synchronize(id, mode)
+        guard isCurrent(generation) else { return }
         let counts = await progress.snapshot(id, mode)
+        guard isCurrent(generation) else { return }
+        let resumeEntryID = await progress.resumeEntry(id, mode)
         guard isCurrent(generation) else { return }
         guard let first = StudySelection.entry(
             in: loaded.entries,
             order: loaded.descriptor.practiceOrder,
             studyCounts: counts,
             excluding: nil,
+            preferredEntryID: resumeEntryID,
             randomIndex: random.index(max(1, loaded.entries.count))
         ) else {
             if promptsForCompletedCourse {
@@ -342,6 +392,8 @@ public final class StudyStore {
         state.currentEntryID = first.id
         state.courseExhausted = false
         state.phase = .ready
+        await progress.setResumeEntry(id, mode, first.id)
+        guard isCurrent(generation), currentEntryID == first.id else { return }
         courseDrawerStore.state = StudyProjection.courseDrawerState(
             catalog: catalog,
             selectedCourseID: id,
@@ -365,6 +417,13 @@ public final class StudyStore {
             )
         } else {
             state.listenPhase = .idle
+            scheduleProgressSynchronization(
+                course: loaded,
+                entryID: first.id,
+                generation: generation,
+                mode: .repeat
+            )
+            await startRepeatTurn(generation: generation)
         }
     }
 
@@ -405,6 +464,12 @@ public final class StudyStore {
             studyCounts: counts
         ).isEmpty
         state.listenPhase = .preparing
+        scheduleProgressSynchronization(
+            course: course,
+            entryID: entryID,
+            generation: generation,
+            mode: .listen
+        )
 
         do {
             try await audio.prepare(entry.audioURL, next?.audioURL)
@@ -417,7 +482,9 @@ public final class StudyStore {
                 await settleCompletion(
                     courseID: course.id,
                     entryID: entryID,
-                    generation: generation
+                    generation: generation,
+                    mode: .listen,
+                    presentation: .afterListenPlayback
                 )
             }
         } catch {
@@ -495,6 +562,42 @@ public final class StudyStore {
         )
     }
 
+    private func scheduleProgressSynchronization(
+        course: Course,
+        entryID: EntryID,
+        generation: ListenSessionGeneration,
+        mode: StudyMode
+    ) {
+        let progress = progress
+        progressSyncTask.replace(with: Task { [weak self] in
+            await progress.synchronize(course.id, mode)
+            await progress.synchronizeCompletions()
+            guard let self else { return }
+            await self.applySynchronizedProgress(
+                course: course,
+                entryID: entryID,
+                generation: generation,
+                mode: mode
+            )
+        })
+    }
+
+    private func applySynchronizedProgress(
+        course: Course,
+        entryID: EntryID,
+        generation: ListenSessionGeneration,
+        mode: StudyMode
+    ) async {
+        guard courseSessionMatches(
+            generation,
+            courseID: course.id,
+            entryID: entryID,
+            mode: mode
+        ) else { return }
+        completionCounts = await progress.completions()
+        await refreshProjection(course: course, currentEntryID: entryID, generation: generation)
+    }
+
     private func observeAudioEvents() {
         let audio = audio
         eventTask.replace(with: Task { [weak self] in
@@ -526,6 +629,9 @@ public final class StudyStore {
                 guard let requestID = snapshot.requestID,
                       requestID == state.activePlaybackRequestID else { return }
                 state.activePlaybackRequestID = nil
+                if presentPendingListenCompletionIfCurrent() {
+                    return
+                }
                 guard state.isAutoplayEnabled else {
                     state.listenPhase = .idle
                     return
@@ -550,6 +656,8 @@ public final class StudyStore {
 
     private func scheduleAutoplayWait(settledRequestID: PlaybackRequestID) {
         waitingTask.cancel()
+        completionPresentationTask.cancel()
+        pendingListenCompletion = nil
         repeatPhaseTask.cancel()
         let binding = SessionBinding(
             generation: state.listenGeneration,
@@ -615,6 +723,35 @@ public final class StudyStore {
             && currentEntryID == entryID
     }
 
+    private func courseSessionMatches(
+        _ generation: ListenSessionGeneration,
+        courseID: CourseID,
+        entryID: EntryID,
+        mode expectedMode: StudyMode
+    ) -> Bool {
+        isCurrent(generation)
+            && mode == expectedMode
+            && course?.id == courseID
+            && currentEntryID == entryID
+    }
+
+    private func repeatSessionMatches(
+        _ generation: ListenSessionGeneration,
+        courseID: CourseID,
+        entryID: EntryID,
+        turnID: UInt64,
+        attemptID: UInt64? = nil
+    ) -> Bool {
+        courseSessionMatches(
+            generation,
+            courseID: courseID,
+            entryID: entryID,
+            mode: .repeat
+        )
+            && repeatController.turnID == turnID
+            && (attemptID == nil || repeatAttemptID == attemptID)
+    }
+
     private func advance(
         from activeEntryID: EntryID,
         in course: Course,
@@ -635,6 +772,8 @@ public final class StudyStore {
         }
 
         currentEntryID = selected.id
+        await progress.setResumeEntry(course.id, .listen, selected.id)
+        guard isCurrent(generation), self.course?.id == course.id, currentEntryID == selected.id else { return }
         chooseNextPalette()
         await playRound(
             course: course,
@@ -654,17 +793,64 @@ public final class StudyStore {
         }
     }
 
+    private func settleIfCourseExhausted(
+        course: Course,
+        entryID: EntryID,
+        generation: ListenSessionGeneration,
+        mode: StudyMode
+    ) async -> Bool {
+        guard courseSessionMatches(
+            generation,
+            courseID: course.id,
+            entryID: entryID,
+            mode: mode
+        ) else { return false }
+        let counts = await progress.snapshot(course.id, mode)
+        guard courseSessionMatches(
+            generation,
+            courseID: course.id,
+            entryID: entryID,
+            mode: mode
+        ) else { return false }
+        let isExhausted = StudySelection.eligibleEntries(
+            in: course.entries,
+            studyCounts: counts
+        ).isEmpty
+        state.courseExhausted = isExhausted
+        if isExhausted {
+            state.nextEntryID = nil
+            await settleCompletion(
+                courseID: course.id,
+                entryID: entryID,
+                generation: generation,
+                mode: mode,
+                presentation: .delayed
+            )
+        }
+        return isExhausted
+    }
+
     private func settleCompletion(
         courseID: CourseID,
         entryID: EntryID,
-        generation: ListenSessionGeneration
+        generation: ListenSessionGeneration,
+        mode: StudyMode,
+        presentation: CompletionPresentationTiming
     ) async {
         let key = CourseModeKey(courseID: courseID, mode: mode)
         guard settledCompletions.insert(key).inserted else { return }
         let completionID = UUID().uuidString
         do {
             let count = try await progress.complete(courseID, completionID)
-            guard sessionMatches(generation, courseID: courseID, entryID: entryID) else { return }
+            guard courseSessionMatches(
+                generation,
+                courseID: courseID,
+                entryID: entryID,
+                mode: mode
+            ) else {
+                settledCompletions.remove(key)
+                return
+            }
             completionCounts[courseID] = count
             if let catalog {
                 courseDrawerStore.state = StudyProjection.courseDrawerState(
@@ -673,10 +859,55 @@ public final class StudyStore {
                     completionCounts: completionCounts
                 )
             }
-            completionDialogStore.present(kind: .courseCompleted, courseID: courseID.rawValue)
+            scheduleCompletionPresentation(
+                .init(
+                    generation: generation,
+                    courseID: courseID,
+                    entryID: entryID,
+                    mode: mode
+                ),
+                timing: presentation
+            )
         } catch {
             settledCompletions.remove(key)
         }
+    }
+
+    private func scheduleCompletionPresentation(
+        _ binding: CompletionPresentationBinding,
+        timing: CompletionPresentationTiming
+    ) {
+        switch timing {
+        case .afterListenPlayback:
+            pendingListenCompletion = binding
+        case .delayed:
+            completionPresentationTask.replace(with: Task { [weak self] in
+                do { try await Task.sleep(for: .milliseconds(800)) } catch { return }
+                await self?.presentCompletionIfCurrent(binding)
+            })
+        }
+    }
+
+    private func presentPendingListenCompletionIfCurrent() -> Bool {
+        guard let binding = pendingListenCompletion else { return false }
+        pendingListenCompletion = nil
+        guard completionBindingMatches(binding) else { return false }
+        completionDialogStore.present(kind: .courseCompleted, courseID: binding.courseID.rawValue)
+        return true
+    }
+
+    private func presentCompletionIfCurrent(_ binding: CompletionPresentationBinding) {
+        guard completionBindingMatches(binding) else { return }
+        completionDialogStore.present(kind: .courseCompleted, courseID: binding.courseID.rawValue)
+    }
+
+    private func completionBindingMatches(_ binding: CompletionPresentationBinding) -> Bool {
+        courseSessionMatches(
+            binding.generation,
+            courseID: binding.courseID,
+            entryID: binding.entryID,
+            mode: binding.mode
+        )
     }
 
     private var currentAudioURL: URL? {
@@ -687,9 +918,11 @@ public final class StudyStore {
     public func toggleRepeatPause() async {
         guard mode == .repeat else { return }
         if state.repeatPhase == .paused {
-            await startRepeatTurn()
+            await restartRepeatTurn()
         } else {
+            let generation = beginNewSession()
             await audio.pause()
+            guard isCurrent(generation), mode == .repeat else { return }
             realtime.setMicrophoneEnabled(false)
             _ = repeatController.pause()
             state.repeatPhase = .paused
@@ -697,18 +930,49 @@ public final class StudyStore {
         }
     }
 
-    private func startRepeatTurn() async {
+    private func restartRepeatTurn() async {
+        guard mode == .repeat,
+              let course,
+              let entryID = currentEntryID else { return }
+        let generation = beginNewSession()
+        await audio.stop()
+        guard courseSessionMatches(
+            generation,
+            courseID: course.id,
+            entryID: entryID,
+            mode: .repeat
+        ) else { return }
+        await startRepeatTurn(generation: generation)
+    }
+
+    private func startRepeatTurn(generation: ListenSessionGeneration? = nil) async {
         guard mode == .repeat,
               let course,
               let entryID = currentEntryID,
               let entry = course.entries.first(where: { $0.id == entryID }) else { return }
+        let generation = generation ?? state.listenGeneration
+        guard courseSessionMatches(
+            generation,
+            courseID: course.id,
+            entryID: entryID,
+            mode: .repeat
+        ) else { return }
+        repeatAttemptID &+= 1
+        let attemptID = repeatAttemptID
 
         state.repeatPhase = .connecting
         applyRepeatPresentation(.connecting)
         realtime.setMicrophoneEnabled(false)
 
         if !microphoneAuthorized {
-            microphoneAuthorized = await realtime.requestPermission()
+            let granted = await realtime.requestPermission()
+            guard courseSessionMatches(
+                generation,
+                courseID: course.id,
+                entryID: entryID,
+                mode: .repeat
+            ), repeatAttemptID == attemptID else { return }
+            microphoneAuthorized = granted
         }
         guard microphoneAuthorized else {
             state.repeatPhase = .failed
@@ -725,8 +989,20 @@ public final class StudyStore {
                         Task { @MainActor in self?.handleRealtimeState(connectionState) }
                     }
                 )
+                guard courseSessionMatches(
+                    generation,
+                    courseID: course.id,
+                    entryID: entryID,
+                    mode: .repeat
+                ), repeatAttemptID == attemptID else { return }
                 realtimeConnected = true
             } catch {
+                guard courseSessionMatches(
+                    generation,
+                    courseID: course.id,
+                    entryID: entryID,
+                    mode: .repeat
+                ), repeatAttemptID == attemptID else { return }
                 state.repeatPhase = .failed
                 applyRepeatPresentation(.error)
                 return
@@ -739,14 +1015,38 @@ public final class StudyStore {
         do {
             try await audio.prepare(entry.audioURL, nil)
             try await audio.configureForRepeat()
-            guard mode == .repeat, currentEntryID == entryID, repeatController.turnID == turn else { return }
-            repeatPlaybackRequestID = try await audio.play()
+            guard repeatSessionMatches(
+                generation,
+                courseID: course.id,
+                entryID: entryID,
+                turnID: turn,
+                attemptID: attemptID
+            ) else { return }
+            let requestID = try await audio.play()
+            guard repeatSessionMatches(
+                generation,
+                courseID: course.id,
+                entryID: entryID,
+                turnID: turn,
+                attemptID: attemptID
+            ) else {
+                await audio.stop()
+                return
+            }
+            repeatPlaybackRequestID = requestID
             scheduleRepeatTimeout(
                 turnID: turn,
                 phase: .playing,
                 duration: Self.repeatPlaybackTimeout
             )
         } catch {
+            guard repeatSessionMatches(
+                generation,
+                courseID: course.id,
+                entryID: entryID,
+                turnID: turn,
+                attemptID: attemptID
+            ) else { return }
             state.repeatPhase = .retry
             applyRepeatPresentation(.retry)
         }
@@ -755,8 +1055,11 @@ public final class StudyStore {
     private func handleRealtimeState(_ connectionState: RealtimePeerConnectionState) {
         switch connectionState {
         case .ready:
+            guard mode == .repeat else { return }
             repeatController.connected()
         case .failed:
+            realtimeConnected = false
+            guard mode == .repeat else { return }
             state.repeatPhase = .failed
             applyRepeatPresentation(.error)
         case .disconnected:
@@ -829,26 +1132,68 @@ public final class StudyStore {
                 guard self.mode == .repeat,
                       self.currentEntryID == entryID,
                       self.repeatController.turnID == turnID else { return }
-                await self.advanceRepeat(from: entryID, in: course)
+                await self.advanceRepeat(
+                    from: entryID,
+                    in: course,
+                    generation: self.state.listenGeneration,
+                    settlesCompletion: true
+                )
             }
         }
     }
 
-    private func advanceRepeat(from entryID: EntryID, in course: Course) async {
+    private func advanceRepeat(
+        from entryID: EntryID,
+        in course: Course,
+        generation: ListenSessionGeneration,
+        settlesCompletion: Bool = false
+    ) async {
         let counts = await progress.snapshot(course.id, .repeat)
-        guard mode == .repeat, currentEntryID == entryID else { return }
+        guard courseSessionMatches(
+            generation,
+            courseID: course.id,
+            entryID: entryID,
+            mode: .repeat
+        ) else { return }
         guard let next = StudySelection.entry(
             in: course.entries,
             order: course.descriptor.practiceOrder,
             studyCounts: counts,
             excluding: entryID,
             randomIndex: random.index(max(1, course.entries.count))
-        ) else { return }
+        ) else {
+            state.courseExhausted = true
+            state.nextEntryID = nil
+            if settlesCompletion {
+                await settleCompletion(
+                    courseID: course.id,
+                    entryID: entryID,
+                    generation: generation,
+                    mode: .repeat,
+                    presentation: .delayed
+                )
+            }
+            return
+        }
         currentEntryID = next.id
         state.currentEntryID = next.id
+        await progress.setResumeEntry(course.id, .repeat, next.id)
+        guard courseSessionMatches(generation, courseID: course.id, entryID: next.id, mode: .repeat) else { return }
         chooseNextPalette()
-        await refreshProjection(course: course, currentEntryID: next.id, generation: state.listenGeneration)
-        await startRepeatTurn()
+        await refreshProjection(course: course, currentEntryID: next.id, generation: generation)
+        guard courseSessionMatches(
+            generation,
+            courseID: course.id,
+            entryID: next.id,
+            mode: .repeat
+        ) else { return }
+        scheduleProgressSynchronization(
+            course: course,
+            entryID: next.id,
+            generation: generation,
+            mode: .repeat
+        )
+        await startRepeatTurn(generation: generation)
     }
 
     private func applyRepeatPresentation(_ presentation: StudyRepeatPresentationState) {
@@ -920,4 +1265,16 @@ public final class StudyStore {
 private struct CourseModeKey: Hashable {
     let courseID: CourseID
     let mode: StudyMode
+}
+
+private struct CompletionPresentationBinding {
+    let generation: ListenSessionGeneration
+    let courseID: CourseID
+    let entryID: EntryID
+    let mode: StudyMode
+}
+
+private enum CompletionPresentationTiming {
+    case afterListenPlayback
+    case delayed
 }

@@ -13,10 +13,12 @@ public struct StudyHighlightRange: Equatable, Hashable, Sendable {
 public struct StudyShellTextSegment: Equatable, Sendable {
     public let text: String
     public let isHighlighted: Bool
+    public let isPlaceholder: Bool
 
-    public init(text: String, isHighlighted: Bool) {
+    public init(text: String, isHighlighted: Bool, isPlaceholder: Bool = false) {
         self.text = text
         self.isHighlighted = isHighlighted
+        self.isPlaceholder = isPlaceholder
     }
 }
 

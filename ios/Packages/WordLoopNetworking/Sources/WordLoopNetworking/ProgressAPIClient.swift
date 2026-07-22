@@ -63,6 +63,14 @@ public struct ProgressAPIClient: Sendable {
         return try await perform(request, response: SelectCourseResponseDTO.self)
     }
 
+    public func updateCourseResume(_ requestDTO: UpdateCourseResumeRequestDTO) async throws -> UpdateCourseResumeResponseDTO {
+        var request = URLRequest(url: endpoint)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try encoder.encode(requestDTO)
+        return try await perform(request, response: UpdateCourseResumeResponseDTO.self)
+    }
+
     public func resetCourse(_ requestDTO: ResetCourseRequestDTO) async throws -> ResetCourseResponseDTO {
         var request = URLRequest(url: endpoint)
         request.httpMethod = "POST"

@@ -63,3 +63,15 @@ export const courseCompletionEvents = sqliteTable("course_completion_events", {
   courseId: text("course_id").notNull(),
   createdAt: text("created_at").notNull(),
 });
+
+export const courseResumePositions = sqliteTable(
+  "course_resume_positions",
+  {
+    userId: text("user_id").notNull(),
+    studyMode: text("study_mode", { enum: ["listen", "repeat"] }).notNull(),
+    courseId: text("course_id").notNull(),
+    resumeItemId: text("resume_item_id").notNull(),
+    updatedAt: text("updated_at").notNull(),
+  },
+  (table) => [primaryKey({ columns: [table.userId, table.studyMode, table.courseId] })],
+);

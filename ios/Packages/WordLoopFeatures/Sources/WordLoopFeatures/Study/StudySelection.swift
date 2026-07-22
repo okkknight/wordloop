@@ -20,6 +20,7 @@ enum StudySelection {
         order: CoursePracticeOrder,
         studyCounts: [EntryID: Int],
         excluding currentEntryID: EntryID?,
+        preferredEntryID: EntryID? = nil,
         randomIndex: Int
     ) -> CourseEntry? {
         let eligible = eligibleEntries(in: entries, studyCounts: studyCounts)
@@ -27,6 +28,11 @@ enum StudySelection {
 
         let alternatives = eligible.filter { $0.id != currentEntryID }
         let candidates = alternatives.isEmpty ? eligible : alternatives
+
+        if let preferredEntryID,
+           let preferred = candidates.first(where: { $0.id == preferredEntryID }) {
+            return preferred
+        }
 
         switch order {
         case .random:

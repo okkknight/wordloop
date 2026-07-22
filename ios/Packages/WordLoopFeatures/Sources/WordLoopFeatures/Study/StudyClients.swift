@@ -109,6 +109,10 @@ struct StudyProgressClient: Sendable {
     var reset: @Sendable (CourseID, StudyMode) async throws -> Void
     var completions: @Sendable () async -> [CourseID: Int]
     var complete: @Sendable (CourseID, String) async throws -> Int
+    var resumeEntry: @Sendable (CourseID, StudyMode) async -> EntryID? = { _, _ in nil }
+    var setResumeEntry: @Sendable (CourseID, StudyMode, EntryID?) async -> Void = { _, _, _ in }
+    var synchronize: @Sendable (CourseID, StudyMode) async -> Void = { _, _ in }
+    var synchronizeCompletions: @Sendable () async -> Void = {}
 
     static func temporary(repository: TemporaryProgressRepository) -> Self {
         Self(
@@ -117,7 +121,11 @@ struct StudyProgressClient: Sendable {
             master: { await repository.master(courseID: $0, mode: $1, entryID: $2) },
             reset: { await repository.reset(courseID: $0, mode: $1) },
             completions: { await repository.completions() },
-            complete: { await repository.complete(courseID: $0, completionID: $1) }
+            complete: { await repository.complete(courseID: $0, completionID: $1) },
+            resumeEntry: { _, _ in nil },
+            setResumeEntry: { _, _, _ in },
+            synchronize: { _, _ in },
+            synchronizeCompletions: {}
         )
     }
 
@@ -130,11 +138,15 @@ struct StudyProgressClient: Sendable {
                 guard let userID = await session.userID else {
                     return [:]
                 }
-                _ = try? await repository.flush(userID: userID, mode: mode, trigger: .appBecameActive)
-                if let remote = try? await repository.refresh(userID: userID, mode: mode, courseID: courseID) {
-                    return remote
-                }
-                return (try? await repository.snapshot(userID: userID, mode: mode, courseID: courseID)) ?? [:]
+                // The local outbox is the source of truth for the current
+                // turn. `StudyStore` requests remote reconciliation in a
+                // separately cancellable task so it never blocks playback.
+                let local = (try? await repository.snapshot(
+                    userID: userID,
+                    mode: mode,
+                    courseID: courseID
+                )) ?? [:]
+                return local
             },
             record: { courseID, mode, entryID in
                 guard let userID = await session.userID else {
@@ -159,9 +171,6 @@ struct StudyProgressClient: Sendable {
             },
             completions: {
                 guard let userID = await session.userID else { return [:] }
-                if let remote = try? await repository.refreshCompletions(userID: userID, mode: .repeat) {
-                    return remote
-                }
                 return (try? await repository.completions(userID: userID)) ?? [:]
             },
             complete: { courseID, completionID in
@@ -171,6 +180,23 @@ struct StudyProgressClient: Sendable {
                 )
                 Task { _ = try? await repository.flush(userID: userID, mode: .repeat, trigger: .networkRecovered) }
                 return value
+            },
+            resumeEntry: { courseID, mode in
+                guard let userID = await session.userID else { return nil }
+                return await repository.resumeEntry(userID: userID, mode: mode, courseID: courseID)
+            },
+            setResumeEntry: { courseID, mode, entryID in
+                guard let userID = await session.userID else { return }
+                await repository.setResumeEntry(userID: userID, mode: mode, courseID: courseID, entryID: entryID)
+            },
+            synchronize: { courseID, mode in
+                guard let userID = await session.userID else { return }
+                _ = try? await repository.flush(userID: userID, mode: mode, trigger: .appBecameActive)
+                _ = try? await repository.refresh(userID: userID, mode: mode, courseID: courseID)
+            },
+            synchronizeCompletions: {
+                guard let userID = await session.userID else { return }
+                _ = try? await repository.refreshCompletions(userID: userID, mode: .repeat)
             }
         )
     }

@@ -20,6 +20,8 @@ public final class LiveRealtimePeerConnection: NSObject, @unchecked Sendable {
     private var dataChannel: RTCDataChannel?
     private var audioTrack: RTCAudioTrack?
     private var audioSource: RTCAudioSource?
+    private let readyLock = NSLock()
+    private var readyContinuation: CheckedContinuation<Void, Error>?
 
     public init(sessionClient: PronunciationSessionClient) {
         self.sessionClient = sessionClient
@@ -68,6 +70,7 @@ public final class LiveRealtimePeerConnection: NSObject, @unchecked Sendable {
                 RTCSessionDescription(type: .answer, sdp: answerSDP),
                 on: peerConnection
             )
+            try await waitUntilDataChannelIsOpen(channel)
         } catch {
             close()
             onStateChange?(.failed)
@@ -80,6 +83,7 @@ public final class LiveRealtimePeerConnection: NSObject, @unchecked Sendable {
     }
 
     public func close() {
+        resumeReadyWaiter(throwing: CancellationError())
         dataChannel?.delegate = nil
         dataChannel?.close()
         dataChannel = nil
@@ -127,12 +131,35 @@ public final class LiveRealtimePeerConnection: NSObject, @unchecked Sendable {
             }
         }
     }
+
+    private func waitUntilDataChannelIsOpen(_ channel: RTCDataChannel?) async throws {
+        guard let channel else { throw RealtimeTransportError.unavailablePeerConnection }
+        guard channel.readyState != .open else { return }
+        try await withCheckedThrowingContinuation { continuation in
+            let shouldResumeImmediately = readyLock.withLock { () -> Bool in
+                if channel.readyState == .open { return true }
+                readyContinuation = continuation
+                return false
+            }
+            if shouldResumeImmediately { continuation.resume() }
+        }
+    }
+
+    private func resumeReadyWaiter(throwing error: Error? = nil) {
+        let continuation = readyLock.withLock { () -> CheckedContinuation<Void, Error>? in
+            defer { readyContinuation = nil }
+            return readyContinuation
+        }
+        if let error { continuation?.resume(throwing: error) }
+        else { continuation?.resume() }
+    }
 }
 
 extension LiveRealtimePeerConnection: RTCDataChannelDelegate {
     public func dataChannelDidChangeState(_ dataChannel: RTCDataChannel) {
         if dataChannel.readyState == .open {
             onStateChange?(.ready)
+            resumeReadyWaiter()
         }
     }
 
@@ -155,8 +182,12 @@ extension LiveRealtimePeerConnection: RTCPeerConnectionDelegate {
 
     public func peerConnection(_ peerConnection: RTCPeerConnection, didChange newState: RTCPeerConnectionState) {
         switch newState {
-        case .failed: onStateChange?(.failed)
-        case .disconnected, .closed: onStateChange?(.disconnected)
+        case .failed:
+            resumeReadyWaiter(throwing: RealtimeTransportError.unavailablePeerConnection)
+            onStateChange?(.failed)
+        case .disconnected, .closed:
+            resumeReadyWaiter(throwing: RealtimeTransportError.unavailablePeerConnection)
+            onStateChange?(.disconnected)
         default: break
         }
     }

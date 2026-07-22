@@ -62,7 +62,7 @@ public struct ProgressDrawerView: View {
     }
 
     private var drawerContent: some View {
-        VStack(alignment: .leading, spacing: WordLoopSpacing.sm) {
+        VStack(alignment: .leading, spacing: 13) {
             summary
             searchField
             ScrollView {
@@ -117,17 +117,24 @@ public struct ProgressDrawerView: View {
     }
 
     private func statistic(_ label: String, value: Int, identifier: String) -> some View {
-        Text("\(label) \(value)")
-            .font(WordLoopTypography.label(size: 10))
+        VStack(alignment: .leading, spacing: 4) {
+            Text("\(value)")
+                .font(WordLoopTypography.title(size: 16, weight: .bold))
+            Text(label)
+                .font(WordLoopTypography.label(size: 9, weight: .regular))
+                .opacity(0.54)
+        }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 9)
+            .overlay(RoundedRectangle(cornerRadius: 10).stroke(palette.ink.color.opacity(0.14), lineWidth: 1))
+            .background(palette.background.color.opacity(0.88), in: RoundedRectangle(cornerRadius: 10))
             .accessibilityLabel("\(label) \(value) 条")
             .accessibilityIdentifier(identifier)
     }
 
     private var searchField: some View {
         HStack(spacing: WordLoopSpacing.xs) {
-            Image(systemName: "magnifyingglass")
-                .font(.system(size: 14, weight: .semibold))
-                .accessibilityHidden(true)
             TextField(
                 "",
                 text: Binding(
@@ -143,36 +150,23 @@ public struct ProgressDrawerView: View {
             .accessibilityLabel("搜索学习记录")
             .accessibilityIdentifier("progress-drawer.search")
 
-            if !store.state.query.isEmpty {
-                Button {
-                    store.updateQuery("")
-                    searchIsFocused = true
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(width: WordLoopSpacing.minimumHit, height: WordLoopSpacing.minimumHit)
-                }
-                .buttonStyle(.plain)
-                .accessibilityLabel("清除搜索")
-                .accessibilityIdentifier("progress-drawer.search-clear")
-            }
         }
-        .frame(minHeight: WordLoopSpacing.minimumHit)
-        .padding(.horizontal, WordLoopSpacing.xs)
+        .frame(height: 36)
+        .padding(.horizontal, 12)
         .overlay {
             RoundedRectangle(cornerRadius: WordLoopRadius.control)
-                .stroke(palette.ink.color.opacity(WordLoopLayerOpacity.progressBoundary), lineWidth: WordLoopBorder.hairline)
+                .stroke(searchIsFocused ? palette.accent.color : palette.ink.color.opacity(0.24), lineWidth: WordLoopBorder.hairline)
+        }
+        .overlay {
+            if searchIsFocused {
+                RoundedRectangle(cornerRadius: 11)
+                    .stroke(palette.accent.color.opacity(0.12), lineWidth: 3)
+            }
         }
     }
 
     private func entryRow(_ entry: ProgressDrawerEntry) -> some View {
         HStack(alignment: .top, spacing: WordLoopSpacing.xs) {
-            if entry.isMastered {
-                Capsule()
-                    .fill(palette.accent.color)
-                    .frame(width: 3, height: 28)
-                    .accessibilityHidden(true)
-            }
             VStack(alignment: .leading, spacing: WordLoopSpacing.xxs) {
                 Text(entry.primaryText)
                     .font(WordLoopTypography.body(size: 13, weight: .semibold))
@@ -188,7 +182,7 @@ public struct ProgressDrawerView: View {
                 .foregroundStyle(entry.isMastered ? palette.accessibleAccentText.color : palette.ink.color)
                 .opacity(entry.isMastered ? 1 : WordLoopLayerOpacity.progressSecondaryText)
         }
-        .padding(.vertical, WordLoopSpacing.sm)
+        .padding(.vertical, 10)
         .overlay(alignment: .bottom) {
             Rectangle()
                 .fill(palette.ink.color.opacity(WordLoopLayerOpacity.progressBoundary))

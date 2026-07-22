@@ -156,7 +156,22 @@ function initialEligibleSentenceIndex(entries: readonly CourseEntry[], progress:
   const available = entries.flatMap((entry, index) =>
     (progress[entry.id] ?? 0) < MAX_STUDY_COUNT ? [index] : [],
   );
-  return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
+  // A new course always starts at the first sentence in manifest order.
+  return available[0] ?? -1;
+}
+
+function resumeSentenceIndex(
+  entries: readonly CourseEntry[],
+  progress: ProgressMap,
+  resumeItemId: string | null | undefined,
+) {
+  const index = resumeItemId ? entries.findIndex((entry) => entry.id === resumeItemId) : -1;
+  if (index >= 0 && (progress[entries[index].id] ?? 0) < MAX_STUDY_COUNT) return index;
+  return initialEligibleSentenceIndex(entries, progress);
+}
+
+function sentenceResumeStorageKey(userId: string, mode: StudyMode, courseId: string) {
+  return `word-loop-resume:${userId}:${mode}:${courseId}`;
 }
 
 function courseIsComplete(entries: readonly CourseEntry[], progress: ProgressMap) {
@@ -359,6 +374,7 @@ export default function Home() {
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
   const repeatAdvanceTimerRef = useRef<number | null>(null);
+  const completionPromptTimerRef = useRef<number | null>(null);
   const listenAutoPlayTimerRef = useRef<number | null>(null);
   const hiddenPauseTimerRef = useRef<number | null>(null);
   const repeatAdvanceTargetRef = useRef<{ index: number; sentenceMode: boolean; turnId: number } | null>(null);
@@ -444,6 +460,25 @@ export default function Home() {
     const next = applyPendingProgress(confirmedSentenceProgressRef.current, pendingProgressRef.current, "sentence", courseId);
     sentenceProgressRef.current = next;
     setSentenceProgress(next);
+  }, []);
+
+  const persistSentenceResume = useCallback((courseId: string, entryId: string | null) => {
+    const userId = userIdRef.current;
+    if (!userId) return;
+    const key = sentenceResumeStorageKey(userId, studyModeRef.current, courseId);
+    if (entryId) localStorage.setItem(key, entryId);
+    else localStorage.removeItem(key);
+    void fetch(appPath("/api/progress"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userId,
+        mode: studyModeRef.current,
+        courseId,
+        itemId: entryId,
+        updateResumePosition: true,
+      }),
+    });
   }, []);
 
   const flushPendingProgress = useCallback(async (userId: string, mode: StudyMode) => {
@@ -608,6 +643,21 @@ export default function Home() {
     }
   }, []);
 
+  const clearCompletionPromptTimer = useCallback(() => {
+    if (completionPromptTimerRef.current !== null) {
+      window.clearTimeout(completionPromptTimerRef.current);
+      completionPromptTimerRef.current = null;
+    }
+  }, []);
+
+  const scheduleCompletionPrompt = useCallback((courseId: string) => {
+    clearCompletionPromptTimer();
+    completionPromptTimerRef.current = window.setTimeout(() => {
+      completionPromptTimerRef.current = null;
+      if (activeCourseIdRef.current === courseId) setCompletionPromptCourseId(courseId);
+    }, 800);
+  }, [clearCompletionPromptTimer]);
+
   const clearListenAutoPlayTimer = useCallback(() => {
     if (listenAutoPlayTimerRef.current !== null) {
       window.clearTimeout(listenAutoPlayTimerRef.current);
@@ -731,6 +781,7 @@ export default function Home() {
       }
       const bootstrapSentenceMode = bootstrapCourse.kind === "sentence";
       const bootstrapStudyMode = studyModeRef.current;
+      let courseSnapshotSettled = !bootstrapSentenceMode;
       pendingProgressRef.current = readPendingProgressEvents(activeUserId, bootstrapStudyMode);
       confirmedWordProgressRef.current = {};
       confirmedSentenceProgressRef.current = {};
@@ -771,13 +822,16 @@ export default function Home() {
       if (activeCourseIdRef.current === courseId) refreshSentenceProgress(courseId);
       };
       const activatePendingSession = () => {
-        if (!pendingActivationRef.current) return;
+        if (!pendingActivationRef.current || !courseSnapshotSettled) return;
         pendingActivationRef.current = false;
         activateRef.current();
       };
       if (pendingActivationRef.current) setStartupState("syncing");
       activationTimeout = pendingActivationRef.current
-        ? window.setTimeout(activatePendingSession, STARTUP_MAX_WAIT_MS)
+        ? window.setTimeout(() => {
+          courseSnapshotSettled = true;
+          activatePendingSession();
+        }, STARTUP_MAX_WAIT_MS)
         : null;
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${bootstrapStudyMode}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
@@ -794,8 +848,23 @@ export default function Home() {
         .catch(activatePendingSession);
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${bootstrapStudyMode}&courseId=${encodeURIComponent(bootstrapCourse.id)}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data: { progress: Array<{ itemId: string; studyCount: number }> }) => mergeSentenceProgress(data.progress, bootstrapCourse.id))
-        .catch(() => undefined);
+      .then((data: { progress: Array<{ itemId: string; studyCount: number }>; resumeItemId?: string | null }) => {
+        mergeSentenceProgress(data.progress, bootstrapCourse.id);
+        const resumeItemId = data.resumeItemId ?? localStorage.getItem(sentenceResumeStorageKey(activeUserId, bootstrapStudyMode, bootstrapCourse.id));
+        if (resumeItemId) localStorage.setItem(sentenceResumeStorageKey(activeUserId, bootstrapStudyMode, bootstrapCourse.id), resumeItemId);
+        const resumeIndex = resumeSentenceIndex(bootstrapCourse.entries, sentenceProgressRef.current, resumeItemId);
+        if (!activatedRef.current && activeCourseIdRef.current === bootstrapCourse.id && resumeIndex >= 0) {
+          sentenceIndexRef.current = resumeIndex;
+          currentIndexRef.current = resumeIndex;
+          setSentenceIndex(resumeIndex);
+          setNextSentenceIndex(eligibleSentenceIndex(bootstrapCourse.entries, sentenceProgressRef.current, resumeIndex, bootstrapCourse.practiceOrder));
+        }
+      })
+        .catch(() => undefined)
+        .finally(() => {
+          courseSnapshotSettled = true;
+          activatePendingSession();
+        });
       void flushPendingProgress(activeUserId, bootstrapStudyMode);
     }, 0);
     return () => {
@@ -891,6 +960,7 @@ export default function Home() {
 
   useEffect(() => () => {
     clearRepeatAdvanceTimer();
+    clearCompletionPromptTimer();
     clearListenAutoPlayTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
@@ -902,7 +972,7 @@ export default function Home() {
     dataChannelRef.current?.close();
     repeatStreamRef.current?.getTracks().forEach((track) => track.stop());
     void feedbackAudioContextRef.current?.close();
-  }, [clearListenAutoPlayTimer, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
+  }, [clearCompletionPromptTimer, clearListenAutoPlayTimer, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
     if (sentenceMode) {
@@ -927,6 +997,7 @@ export default function Home() {
       refreshSentenceProgress(activeCourseId);
       const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, index, sentencePracticeOrder);
       setNextSentenceIndex(nextEligibleIndex);
+      persistSentenceResume(activeCourseId, sentenceEntriesRef.current[nextEligibleIndex]?.id ?? null);
       void flushPendingProgress(userId, studyMode);
       return nextEligibleIndex;
     }
@@ -947,7 +1018,7 @@ export default function Home() {
     setNextWordIndex(nextEligibleIndex);
     void flushPendingProgress(userId, studyMode);
     return nextEligibleIndex;
-  }, [activeCourseId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
+  }, [activeCourseId, flushPendingProgress, persistSentenceResume, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
 
   const markCurrentItemMastered = useCallback(() => {
     if (currentStudyCount >= MAX_STUDY_COUNT) return false;
@@ -983,14 +1054,16 @@ export default function Home() {
     writePendingProgressEvents(userId, studyMode, pendingProgressRef.current);
     if (sentenceMode) {
       refreshSentenceProgress(activeCourseId);
-      setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrder));
+      const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrder);
+      setNextSentenceIndex(nextEligibleIndex);
+      persistSentenceResume(activeCourseId, sentenceEntriesRef.current[nextEligibleIndex]?.id ?? null);
     } else {
       refreshWordProgress();
       setNextWordIndex(eligibleIndex(progressRef.current, currentIndexRef.current));
     }
     void flushPendingProgress(userId, studyMode);
     return true;
-  }, [activeCourseId, currentStudyCount, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
+  }, [activeCourseId, currentStudyCount, flushPendingProgress, persistSentenceResume, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
 
   const finalizeRepeatTranscript = useCallback((turnId: number) => {
     if (!isActiveRepeatTurn(turnId) || repeatListeningTurnRef.current !== turnId || repeatSpeechInProgressRef.current) return;
@@ -1019,9 +1092,12 @@ export default function Home() {
     }
 
     const upcomingIndex = recordStudy(currentIndexRef.current);
+    if (upcomingIndex < 0 && activeCourseKindRef.current === "sentence") {
+      scheduleCompletionPrompt(activeCourseIdRef.current);
+    }
     repeatAdvanceTargetRef.current = { index: upcomingIndex, sentenceMode, turnId };
     setRepeatState("passed");
-  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
+  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleCompletionPrompt, scheduleRepeatRetry, sentenceMode, stopListening]);
 
   const scheduleRepeatTranscriptFinalization = useCallback((turnId: number) => {
     if (repeatSpeechInProgressRef.current) return;
@@ -1062,9 +1138,10 @@ export default function Home() {
     void audio.play().catch(fail);
   }, []);
 
-  const playListenItem = useCallback((targetWord: string) => {
+  const playListenItem = useCallback((targetWord: string, onFinished?: () => void) => {
     clearListenAutoPlayTimer();
     playWord(targetWord, () => {
+      onFinished?.();
       if (!listenAutoPlayRef.current) return;
       listenAutoPlayTimerRef.current = window.setTimeout(() => {
         if (listenAutoPlayRef.current) nextRef.current();
@@ -1367,7 +1444,7 @@ export default function Home() {
         : eligibleIndex(progressRef.current, currentIndexRef.current);
     if (targetIndex < 0) {
       if (activeCourseKindRef.current === "sentence" && courseIsComplete(sentenceEntriesRef.current, sentenceProgressRef.current)) {
-        setCompletionPromptCourseId(activeCourseIdRef.current);
+        scheduleCompletionPrompt(activeCourseIdRef.current);
       }
       return;
     }
@@ -1379,6 +1456,7 @@ export default function Home() {
       currentIndexRef.current = targetIndex;
       setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex, sentencePracticeOrderRef.current));
       setSentenceIndex(targetIndex);
+      persistSentenceResume(activeCourseIdRef.current, sentenceEntriesRef.current[targetIndex]?.id ?? null);
     } else {
       wordIndexRef.current = targetIndex;
       currentIndexRef.current = targetIndex;
@@ -1388,13 +1466,17 @@ export default function Home() {
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
 
     if (studyMode === "listen") {
-      playListenItem(sentenceMode ? sentenceEntriesRef.current[targetIndex].audio : WORDS[targetIndex][0]);
-      recordStudy(targetIndex);
+      const upcomingIndex = recordStudy(targetIndex);
+      const completionCourseId = upcomingIndex < 0 && sentenceMode ? activeCourseIdRef.current : null;
+      playListenItem(
+        sentenceMode ? sentenceEntriesRef.current[targetIndex].audio : WORDS[targetIndex][0],
+        completionCourseId ? () => scheduleCompletionPrompt(completionCourseId) : undefined,
+      );
       return;
     }
 
     beginRepeatTurn(targetIndex);
-  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playListenItem, recordStudy, sentenceMode, stopListening, studyMode]);
+  }, [beginRepeatTurn, clearRepeatAdvanceTimer, persistSentenceResume, playListenItem, recordStudy, scheduleCompletionPrompt, sentenceMode, stopListening, studyMode]);
 
   useEffect(() => {
     nextRef.current = next;
@@ -1414,12 +1496,15 @@ export default function Home() {
       const audio = activeCourseKindRef.current === "sentence"
         ? sentenceEntriesRef.current[currentIndexRef.current]?.audio
         : WORDS[currentIndexRef.current]?.[0];
-      if (audio) playListenItem(audio);
-      recordStudy(currentIndexRef.current);
+      const upcomingIndex = recordStudy(currentIndexRef.current);
+      const completionCourseId = upcomingIndex < 0 && activeCourseKindRef.current === "sentence"
+        ? activeCourseIdRef.current
+        : null;
+      if (audio) playListenItem(audio, completionCourseId ? () => scheduleCompletionPrompt(completionCourseId) : undefined);
       return;
     }
     beginRepeatTurn(currentIndexRef.current);
-  }, [beginRepeatTurn, playListenItem, recordStudy, studyMode]);
+  }, [beginRepeatTurn, playListenItem, recordStudy, scheduleCompletionPrompt, studyMode]);
 
   useEffect(() => {
     activateRef.current = activate;
@@ -1562,14 +1647,19 @@ export default function Home() {
     const isSentence = targetCourse.kind === "sentence";
     const wasActivated = activated;
     let targetProgress: ProgressMap = forceRestart ? {} : sentenceProgressRef.current;
+    let targetResumeItemId: string | null = forceRestart ? null : (userIdRef.current
+      ? localStorage.getItem(sentenceResumeStorageKey(userIdRef.current, studyMode, targetCourse.id))
+      : null);
 
     if (isSentence && !forceRestart && userIdRef.current) {
       try {
         const response = await fetch(appPath(`/api/progress?userId=${encodeURIComponent(userIdRef.current)}&mode=${studyMode}&courseId=${encodeURIComponent(targetCourse.id)}`));
         if (courseSwitchRequestRef.current !== requestId) return;
         if (response.ok) {
-          const data = await response.json() as { progress: Array<{ itemId: string; studyCount: number }> };
+          const data = await response.json() as { progress: Array<{ itemId: string; studyCount: number }>; resumeItemId?: string | null };
           targetProgress = Object.fromEntries(data.progress.map(({ itemId, studyCount }) => [itemId, studyCount]));
+          targetResumeItemId = data.resumeItemId ?? targetResumeItemId;
+          if (targetResumeItemId) localStorage.setItem(sentenceResumeStorageKey(userIdRef.current, studyMode, targetCourse.id), targetResumeItemId);
           if (targetCourse.entries.length > 0 && targetCourse.entries.every((entry) => (targetProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT)) {
             closeCoursePicker();
             setRestartPromptError("");
@@ -1590,13 +1680,14 @@ export default function Home() {
 
     // Update refs synchronously so beginRepeatTurn doesn't see a mismatch
     if (isSentence) {
-      const firstEligibleSentence = initialEligibleSentenceIndex(targetCourse.entries, targetProgress);
+      const firstEligibleSentence = resumeSentenceIndex(targetCourse.entries, targetProgress, targetResumeItemId);
       const initialSentence = firstEligibleSentence >= 0 ? firstEligibleSentence : 0;
       sentenceEntriesRef.current = targetCourse.entries;
       sentenceIndexRef.current = initialSentence;
       currentIndexRef.current = initialSentence;
       setSentenceIndex(initialSentence);
       setNextSentenceIndex(eligibleSentenceIndex(targetCourse.entries, targetProgress, initialSentence, targetCourse.practiceOrder));
+      persistSentenceResume(targetCourse.id, targetCourse.entries[initialSentence]?.id ?? null);
     } else {
       currentIndexRef.current = wordIndexRef.current;
     }
@@ -1608,6 +1699,7 @@ export default function Home() {
     repeatAdvanceTargetRef.current = null;
     repeatListeningTurnRef.current = null;
     clearRepeatAdvanceTimer();
+    clearCompletionPromptTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
     clearRepeatPhaseTimers();
@@ -1638,7 +1730,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(currentIndexRef.current);
-  }, [activated, activeCourseId, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, closeCoursePicker, playListenItem, recordStudy, refreshSentenceProgress, stopListening, studyMode]);
+  }, [activated, activeCourseId, beginRepeatTurn, clearCompletionPromptTimer, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, closeCoursePicker, persistSentenceResume, playListenItem, recordStudy, refreshSentenceProgress, stopListening, studyMode]);
 
   const restartCompletedCourse = useCallback(async (courseId: string | null) => {
     const userId = userIdRef.current;

@@ -10,7 +10,9 @@ struct StartupVisualRole: Equatable, Sendable {
 }
 
 enum StartupVisualRoles {
-    static let palette = PosterPalette.all.first(where: { $0.id == "rose" }) ?? .defaultPalette
+    // Web initial render is `PALETTES[0]`; startup must not invent a
+    // separate rose-only screen before the first study palette is chosen.
+    static let palette = PosterPalette.defaultPalette
 
     // Precomposite the final sRGB roles so the rendered colors and the tested
     // colors are identical. Canonical palette values remain unchanged.

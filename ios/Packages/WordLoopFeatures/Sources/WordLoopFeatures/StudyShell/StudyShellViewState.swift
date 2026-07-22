@@ -168,6 +168,35 @@ public struct StudyShellViewState: Equatable, Sendable {
         return state
     }
 
+    /// Exact content/state carrier for the Web screenshot used in visual QA.
+    /// It is reachable only through the simulator fixture argument and never
+    /// changes production course data.
+    public static var webReference: StudyShellViewState {
+        let english = "I don't know about this. Should I call a doctor?"
+        return .init(
+            palette: palette(id: "rose"),
+            courseLabel: "MODERN FAMILY · S01E01",
+            courseTitle: "MODERN FAMILY",
+            currentIndex: 52,
+            totalCount: 91,
+            item: .init(
+                id: "web-reference-call-a-doctor",
+                kind: .sentence,
+                english: english,
+                translation: "我不知道该怎么办  要打电话叫医生吗",
+                // `app/data/modern-family-s01e01-highlights.ts`, s01e01-0273:
+                // "I don't know about this" and "call a doctor".
+                highlightRanges: [.init(0, 23), .init(34, 47)]
+            ),
+            mode: .repeat,
+            visibility: .full,
+            masteryCount: 1,
+            isAutoplayEnabled: false,
+            isRepeatPaused: true,
+            repeatPresentationState: .paused
+        )
+    }
+
     public static var longWord: StudyShellViewState {
         var state = word
         state.item = .init(
@@ -185,6 +214,7 @@ public struct StudyShellViewState: Equatable, Sendable {
         var state: StudyShellViewState = switch itemName {
         case "word": .word
         case "long-word": .longWord
+        case "web-reference": .webReference
         default: .baselineSentence
         }
 

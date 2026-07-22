@@ -11,7 +11,7 @@
     },
     "courses": {
       "path": "app/courses.ts",
-      "packagesStartLine": 191
+      "packagesStartLine": 195
     },
     "words": {
       "path": "app/words.ts",
@@ -19,19 +19,19 @@
     }
   },
   "counts": {
-    "collections": 3,
-    "courses": 30,
+    "collections": 4,
+    "courses": 31,
     "wordCourses": 1,
-    "sentenceCourses": 29,
+    "sentenceCourses": 30,
     "modernFamilyCourses": 5,
     "voaCourses": 24,
     "words": 570,
-    "sentenceEntries": 836,
-    "totalStudyEntries": 1406,
+    "sentenceEntries": 856,
+    "totalStudyEntries": 1426,
     "wordAudioFiles": 570,
-    "sentenceAudioFiles": 836,
-    "totalM4aFiles": 1406,
-    "totalM4aBytes": 32700838
+    "sentenceAudioFiles": 856,
+    "totalM4aFiles": 1426,
+    "totalM4aBytes": 33360777
   },
   "defaults": {
     "courseId": "modern-family-s01e01",
@@ -187,6 +187,12 @@
       "label": "DIALOGUE COURSE",
       "title": "VOA · Level 2",
       "subtitle": "24 节实用口语课程 · B1"
+    },
+    {
+      "id": "ai-practice",
+      "label": "AI PRACTICE",
+      "title": "AI 原创口语",
+      "subtitle": "AI 合成语音 · 原创句子课程"
     }
   ],
   "registeredCourses": [
@@ -429,6 +435,14 @@
       "kind": "sentence",
       "practiceOrder": "sequential",
       "manifest": "app/data/voa-dream-a-little-dream-b1.json"
+    },
+    {
+      "id": "polite-boundaries-b1",
+      "collectionId": "ai-practice",
+      "title": "Setting Boundaries Politely · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-polite-boundaries-b1.json"
     }
   ],
   "sentenceCourses": [
@@ -779,6 +793,18 @@
       "learnableEntries": 20,
       "audioFiles": 20,
       "audioBytes": 1014703
+    },
+    {
+      "id": "polite-boundaries-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-polite-boundaries-b1.json",
+      "manifestCourseId": "polite-boundaries-b1",
+      "learnableEntries": 20,
+      "audioFiles": 20,
+      "audioBytes": 659939
     }
   ],
   "representativeFiles": [

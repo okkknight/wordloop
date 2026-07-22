@@ -49,7 +49,10 @@ export async function GET(request: Request) {
     const result = await env.DB.prepare(
       "SELECT item_id AS itemId, study_count AS studyCount FROM course_mode_progress WHERE user_id = ? AND study_mode = ? AND course_id = ?",
     ).bind(userId, studyMode, courseId).all<{ itemId: string; studyCount: number }>();
-    return Response.json({ progress: result.results });
+    const resume = await env.DB.prepare(
+      "SELECT resume_item_id AS resumeItemId FROM course_resume_positions WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+    ).bind(userId, studyMode, courseId).first<{ resumeItemId: string }>();
+    return Response.json({ progress: result.results, resumeItemId: resume?.resumeItemId ?? null });
   }
 
   const result = await env.DB.prepare(
@@ -77,10 +80,28 @@ export async function POST(request: Request) {
     resetCourse?: boolean;
     completeCourse?: boolean;
     selectCourse?: boolean;
+    updateResumePosition?: boolean;
     word?: string;
     courseId?: string;
     itemId?: string;
   };
+  if (payload.updateResumePosition === true) {
+    if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId || (payload.itemId !== null && (typeof payload.itemId !== "string" || !payload.itemId))) {
+      return Response.json({ error: "invalid course resume position" }, { status: 400 });
+    }
+    if (typeof payload.itemId === "string") {
+      await env.DB.prepare(
+        `INSERT INTO course_resume_positions (user_id, study_mode, course_id, resume_item_id, updated_at)
+         VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
+         ON CONFLICT(user_id, study_mode, course_id) DO UPDATE SET resume_item_id = excluded.resume_item_id, updated_at = CURRENT_TIMESTAMP`,
+      ).bind(payload.userId, payload.mode, payload.courseId, payload.itemId).run();
+    } else {
+      await env.DB.prepare(
+        "DELETE FROM course_resume_positions WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+      ).bind(payload.userId, payload.mode, payload.courseId).run();
+    }
+    return Response.json({ courseId: payload.courseId, resumeItemId: payload.itemId ?? null });
+  }
   if (payload.selectCourse === true) {
     if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId) {
       return Response.json({ error: "invalid course selection" }, { status: 400 });
@@ -101,6 +122,9 @@ export async function POST(request: Request) {
     ).bind(payload.userId, payload.mode, payload.courseId).run();
     await env.DB.prepare(
       "DELETE FROM progress_events WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+    ).bind(payload.userId, payload.mode, payload.courseId).run();
+    await env.DB.prepare(
+      "DELETE FROM course_resume_positions WHERE user_id = ? AND study_mode = ? AND course_id = ?",
     ).bind(payload.userId, payload.mode, payload.courseId).run();
     return Response.json({ courseId: payload.courseId, reset: true });
   }

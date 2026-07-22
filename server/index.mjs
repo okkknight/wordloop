@@ -80,6 +80,14 @@ database.exec(`
     last_course_id TEXT NOT NULL,
     updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
   );
+  CREATE TABLE IF NOT EXISTS course_resume_positions (
+    user_id TEXT NOT NULL,
+    study_mode TEXT NOT NULL CHECK (study_mode IN ('listen', 'repeat')),
+    course_id TEXT NOT NULL,
+    resume_item_id TEXT NOT NULL,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (user_id, study_mode, course_id)
+  );
 `);
 
 function sendJson(response, status, value) {
@@ -136,7 +144,10 @@ async function handleProgress(request, response, url) {
       const progress = database.prepare(
         "SELECT item_id AS itemId, study_count AS studyCount FROM course_mode_progress WHERE user_id = ? AND study_mode = ? AND course_id = ?",
       ).all(userId, studyMode, courseId);
-      return sendJson(response, 200, { progress });
+      const resume = database.prepare(
+        "SELECT resume_item_id AS resumeItemId FROM course_resume_positions WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+      ).get(userId, studyMode, courseId);
+      return sendJson(response, 200, { progress, resumeItemId: resume?.resumeItemId ?? null });
     }
     const progress = database.prepare(
       "SELECT word, study_count AS studyCount FROM word_mode_progress WHERE user_id = ? AND study_mode = ?",
@@ -156,6 +167,23 @@ async function handleProgress(request, response, url) {
   if (request.method === "POST") {
     let payload;
     try { payload = JSON.parse((await readBody(request)).toString("utf8")); } catch { return sendJson(response, 400, { error: "invalid JSON" }); }
+    if (payload.updateResumePosition === true) {
+      if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId || (payload.itemId !== null && (typeof payload.itemId !== "string" || !payload.itemId))) {
+        return sendJson(response, 400, { error: "invalid course resume position" });
+      }
+      registerUser(payload.userId);
+      if (typeof payload.itemId === "string") {
+        database.prepare(
+          `INSERT INTO course_resume_positions (user_id, study_mode, course_id, resume_item_id, updated_at)
+           VALUES (?, ?, ?, ?, CURRENT_TIMESTAMP)
+           ON CONFLICT(user_id, study_mode, course_id) DO UPDATE SET resume_item_id = excluded.resume_item_id, updated_at = CURRENT_TIMESTAMP`,
+        ).run(payload.userId, payload.mode, payload.courseId, payload.itemId);
+      } else {
+        database.prepare("DELETE FROM course_resume_positions WHERE user_id = ? AND study_mode = ? AND course_id = ?")
+          .run(payload.userId, payload.mode, payload.courseId);
+      }
+      return sendJson(response, 200, { courseId: payload.courseId, resumeItemId: payload.itemId ?? null });
+    }
     if (payload.selectCourse === true) {
       if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId) {
         return sendJson(response, 400, { error: "invalid course selection" });
@@ -178,6 +206,9 @@ async function handleProgress(request, response, url) {
       ).run(payload.userId, payload.mode, payload.courseId);
       database.prepare(
         "DELETE FROM progress_events WHERE user_id = ? AND study_mode = ? AND course_id = ?",
+      ).run(payload.userId, payload.mode, payload.courseId);
+      database.prepare(
+        "DELETE FROM course_resume_positions WHERE user_id = ? AND study_mode = ? AND course_id = ?",
       ).run(payload.userId, payload.mode, payload.courseId);
       return sendJson(response, 200, { courseId: payload.courseId, reset: true });
     }

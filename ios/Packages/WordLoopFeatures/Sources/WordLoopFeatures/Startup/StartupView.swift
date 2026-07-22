@@ -24,7 +24,12 @@ public struct StartupView: View {
             Color.clear
         }
         .overlay {
-            palette.background.color
+            // Direct `.start-overlay`: a 92% poster-color veil over a
+            // 12px blur. Keep the underlying poster motif visible rather
+            // than replacing it with an unrelated blank system surface.
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .overlay(palette.background.color.opacity(0.92))
                 .ignoresSafeArea()
                 .allowsHitTesting(false)
                 .accessibilityHidden(true)
@@ -126,8 +131,8 @@ public struct StartupView: View {
     private var startButton: some View {
         Button(action: submit) {
             HStack(spacing: 14) {
-                Image(systemName: "play.fill")
-                    .font(.system(size: 12, weight: .bold))
+                Text("▶")
+                    .font(WordLoopTypography.body(size: 12, weight: .bold))
                     .foregroundStyle(palette.accessibleAccentText.color)
                     .accessibilityHidden(true)
                 Text(store.state.buttonTitle)
