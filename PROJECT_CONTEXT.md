@@ -1,6 +1,6 @@
 # WordLoop 项目上下文
 
-更新日期：2026-07-18
+更新日期：2026-07-22
 
 ## 项目是什么
 
@@ -32,6 +32,12 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 - 构建会提示客户端 chunk 超过 500 kB。
 
 ## 最新任务
+
+任务：实现 `wordloop_course_production_pack` 的确定性候选句检查器；执行状态：已开发，待独立复核。
+
+新增 `scripts/check_course_candidates.mjs` 与可复用的 `scripts/lib/course-pipeline/checker.mjs`。它以生产包的蓝图/候选句 JSON Schema 为入口，检查 20 槽位完整性、候选数量、词数、标点、重复、相似度、核心表达、粗略分句、字段一致性和难度曲线；JSON report 有 error 时 CLI 非零退出。专用 Node 测试 4/4 与新增文件 lint 已通过。它尚未调用模型、管理人工批准、生成音频、转成运行时 course manifest，或接入 `app/courses.ts`；完整 AI 编排属于后续阶段。
+
+该工作与 iOS 迁移并行且不改变当前 Web/iOS 产品行为。仓库级 `npm run lint` 仍只有原有 `app/page.tsx` 的 4 个 React Compiler errors。本轮完整 `npm test` 为 64/68：4 个 iOS 静态边界测试读取到工作区既有的未提交 Swift 改动而失败；新增 Node 检查器测试通过，且未改动这些 iOS 文件。
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P6.2 Realtime transport 与依赖 ADR。
 
@@ -176,6 +182,8 @@ playing -> speak -> speaking -> scoring -> passed / retry
 | `server/index.mjs` | VPS 进度和 Realtime API |
 | `db/schema.ts`、`drizzle/*` | D1 schema 与迁移历史 |
 | `scripts/*` | 课程内容生产和验证工具 |
+| `scripts/check_course_candidates.mjs` | AI 原创句子课程的 CLI 检查入口，错误时非零退出 |
+| `scripts/lib/course-pipeline/checker.mjs` | 候选句 JSON Schema 和确定性规则检查实现 |
 | `tests/rendered-html.test.mjs` | 构建、内容数量、音频和流程契约测试 |
 | `docs/ios-migration/baseline/*` | iPhone 迁移的机器内容清单、截图、行为和 API 合同 |
 | `scripts/capture_ios_migration_baseline.mjs` | 生成并校验迁移内容基线 |
@@ -273,6 +281,7 @@ git diff --check
 - 接手索引：`docs/handoff/README.md`
 - 接手变更：`docs/handoff/CHANGELOG.md`
 - 通用课程制作：`docs/COURSE_PRODUCTION_GUIDE.md`
+- AI 原创课程生产规格：`wordloop_course_production_pack/00_README.md`
 - VOA 课程制作：`docs/VOA_COURSE_PRODUCTION_GUIDE.md`
 - 素材审计：`docs/MODERN_FAMILY_SOURCE_AUDIT.md`
 - VPS 运维：`docs/WORDLOOP_VPS_RUNBOOK.md`

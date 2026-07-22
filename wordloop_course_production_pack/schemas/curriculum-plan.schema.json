@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WordLoop Curriculum Plan",
+  "type": "object",
+  "required": ["curriculumRationale", "courses", "portfolioReview"],
+  "properties": {
+    "curriculumRationale": {"type": "string"},
+    "courses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "courseId", "titleZh", "titleEn", "courseType", "typeReason",
+          "targetLevel", "difficultyRange", "learnerOutcome",
+          "communicationGoals", "abilityTags", "selectionReason",
+          "distinctiveValue", "humanReviewRisks"
+        ],
+        "properties": {
+          "courseId": {"type": "string"},
+          "titleZh": {"type": "string"},
+          "titleEn": {"type": "string"},
+          "courseType": {
+            "enum": ["scenario_interaction", "communication_skill", "topic_expression"]
+          },
+          "typeReason": {"type": "string"},
+          "targetLevel": {"enum": ["A2", "B1", "B2"]},
+          "difficultyRange": {
+            "type": "object",
+            "required": ["entry", "core", "stretch"],
+            "properties": {
+              "entry": {"type": "string"},
+              "core": {"type": "string"},
+              "stretch": {"type": "string"}
+            },
+            "additionalProperties": false
+          },
+          "learnerOutcome": {"type": "string"},
+          "communicationGoals": {
+            "type": "array", "minItems": 2, "maxItems": 4,
+            "items": {"type": "string"}
+          },
+          "abilityTags": {
+            "type": "array", "minItems": 3, "maxItems": 6,
+            "items": {"type": "string"}
+          },
+          "selectionReason": {"type": "string"},
+          "distinctiveValue": {"type": "string"},
+          "prerequisites": {"type": "array", "items": {"type": "string"}},
+          "humanReviewRisks": {"type": "array", "items": {"type": "string"}},
+          "approved": {"type": "boolean", "default": false}
+        },
+        "additionalProperties": false
+      }
+    },
+    "portfolioReview": {
+      "type": "object",
+      "required": [
+        "typeDistribution", "levelDistribution", "coverageDomains",
+        "duplicatesResolved", "remainingGaps", "humanReviewFocus"
+      ],
+      "properties": {
+        "typeDistribution": {"type": "object"},
+        "levelDistribution": {"type": "object"},
+        "coverageDomains": {"type": "array", "items": {"type": "string"}},
+        "duplicatesResolved": {"type": "array", "items": {"type": "string"}},
+        "remainingGaps": {"type": "array", "items": {"type": "string"}},
+        "humanReviewFocus": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  },
+  "additionalProperties": false
+}

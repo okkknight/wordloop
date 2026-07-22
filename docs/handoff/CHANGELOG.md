@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-22 · AI 原创课程候选句检查器已开发，待独立复核
+
+- 新增 `scripts/check_course_candidates.mjs` 与 `scripts/lib/course-pipeline/checker.mjs`，基于 production pack 的 Draft 2020-12 Schema 验证蓝图和候选句，并输出稳定的 JSON report/终端摘要；error 会以非零退出。
+- 已覆盖 Schema、20 槽位/候选数、词数（缩写/连字符规则）、异常标点、规范化重复、高相似度警告、required/core chunk 覆盖、分句启发式、自报字段及难度曲线。它有意不裁决自然度、课程价值或精确 CEFR。
+- 专用 Node 测试 4/4、仅新增文件 lint 与 `git diff --check` 通过；完整 `npm test` 为 64/68，4 个失败均为读取工作区既有未提交 Swift 改动的 iOS 静态边界测试，和新增 Node 检查器无交集。全仓 lint 仍复现既有 `app/page.tsx` 的 4 项 React Compiler errors。下一位 reviewer 应复跑专用测试，并重点审阅 chunk matcher、相似度阈值和错误/警告分界。
+
 ## 2026-07-18 · P6.2 Realtime transport PASS
 
 - `WordLoopRealtime` 已有 VPS SDP client、转写 lifecycle/item ID decoder 和仅在 REPEAT 用户意图后可调用的麦克风授权边界；Info.plist 已有用途说明，App 中不含 OpenAI key。
