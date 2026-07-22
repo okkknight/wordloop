@@ -13,6 +13,7 @@ const DEFAULTS = Object.freeze({
   wordCountTolerance: 1,
   forbiddenCharacters: ["(", ")", "/", "\\", "—", "–"],
 });
+const SENTENCE_COUNT = 16;
 
 async function readJson(path) {
   return JSON.parse(await readFile(path, "utf8"));
@@ -123,9 +124,9 @@ function validateSlots(report, blueprint, candidates, expectedCandidateCount) {
   const checkIds = (slots, field) => {
     const ids = slots.map((item) => item?.slot).filter(Number.isInteger);
     const duplicates = ids.filter((id, index) => ids.indexOf(id) !== index);
-    const missing = Array.from({ length: 20 }, (_, index) => index + 1).filter((id) => !ids.includes(id));
-    if (slots.length !== 20 || duplicates.length || missing.length) {
-      issue(report, "errors", "slot_set_invalid", `${field} must contain each slot from 1 through 20 exactly once`, { field, duplicates: [...new Set(duplicates)], missing });
+    const missing = Array.from({ length: SENTENCE_COUNT }, (_, index) => index + 1).filter((id) => !ids.includes(id));
+    if (slots.length !== SENTENCE_COUNT || duplicates.length || missing.length) {
+      issue(report, "errors", "slot_set_invalid", `${field} must contain each slot from 1 through ${SENTENCE_COUNT} exactly once`, { field, duplicates: [...new Set(duplicates)], missing });
     }
   };
   checkIds(blueprintSlots, "blueprint.sentenceSlots");
@@ -153,7 +154,7 @@ function validateDifficultyPlan(report, blueprint) {
   const slots = blueprint?.sentenceSlots ?? [];
   if (!plan || !Array.isArray(plan.curve) || !plan.distribution) return;
   const total = Object.values(plan.distribution).reduce((sum, value) => sum + value, 0);
-  if (total !== 20) issue(report, "errors", "difficulty_distribution_invalid", "Difficulty distribution must total 20", { actual: total });
+  if (total !== SENTENCE_COUNT) issue(report, "errors", "difficulty_distribution_invalid", `Difficulty distribution must total ${SENTENCE_COUNT}`, { actual: total });
   for (const band of BANDS) {
     const actual = plan.curve.filter((value) => value === band).length;
     if (actual !== plan.distribution[band]) issue(report, "errors", "difficulty_curve_mismatch", `Difficulty curve has ${actual} ${band} slots but distribution declares ${plan.distribution[band]}`, { band, actual, expected: plan.distribution[band] });

@@ -4,9 +4,10 @@
 
 ## 2026-07-22 · AI 原创课程已接入，待独立复核
 
-- 新增 `AI PRACTICE` 集合与 `Setting Boundaries Politely · B1`：20 个原创句子、20 段 `marin` AI 合成语音、独立 manifest/`.m4a` 资产及明确 AI 语音披露。
+- 统一 `wordloop_course_production_pack` 与 `course_topic`：生产标准、提示词、Schema、检查器、示例与试制课程均改为 16 句，默认难度配额为 entry 3、targetBase 4、targetCore 6、stretch 3。
+- `AI PRACTICE` 的 `Setting Boundaries Politely · B1` 已收敛为 16 个原创句子、16 段 `marin` AI 合成语音；移除未引用的后四段音频，保留独立 manifest/`.m4a` 资产及明确 AI 语音披露。
 - `scripts/generate_ai_course_audio.mjs` 使用 `gpt-4o-mini-tts` 生成 AAC 并无损封装为现有 `.m4a` 合同格式；密钥只从未跟踪 `.env.local` 或环境读取。
-- 内容 export、iOS baseline、38 项相关 Node 测试、所有新音频的 `ffprobe` 容器检查通过。下一位 reviewer 应抽听 20 段音频，并确认 AI 披露在课程选择器和课程元数据中足够清晰。
+- 下一位 reviewer 应确认 16 句 Schema/检查器的边界、课程池冻结字段与试制课程的区分，并抽听 16 段音频、确认 AI 披露在课程选择器和课程元数据中足够清晰。
 
 ## 2026-07-22 · AI 原创课程候选句检查器已开发，待独立复核
 

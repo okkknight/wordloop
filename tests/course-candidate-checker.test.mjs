@@ -11,7 +11,7 @@ const root = resolve(import.meta.dirname, "..");
 const execFileAsync = promisify(execFile);
 
 function makeBlueprint() {
-  const curve = ["entry", "entry", "entry", "entry", ...Array(5).fill("targetBase"), ...Array(5).fill("targetCore"), "stretch", "stretch", "targetCore", "targetCore", "stretch", "stretch"];
+  const curve = ["entry", "entry", "entry", ...Array(4).fill("targetBase"), ...Array(5).fill("targetCore"), "stretch", "targetCore", "stretch", "stretch"];
   return {
     courseId: "office-small-talk",
     courseBrief: {
@@ -21,9 +21,9 @@ function makeBlueprint() {
     },
     difficultyPlan: {
       entryLevel: "A2+", coreLevel: "B1", stretchLevel: "B1+",
-      distribution: { entry: 4, targetBase: 5, targetCore: 7, stretch: 4 }, curve, principles: ["Increase one factor at a time."], adjustmentReason: null,
+      distribution: { entry: 3, targetBase: 4, targetCore: 6, stretch: 3 }, curve, principles: ["Increase one factor at a time."], adjustmentReason: null,
     },
-    contentStructure: [{ name: "Open", purpose: "Start naturally.", sentenceCount: 20 }],
+    contentStructure: [{ name: "Open", purpose: "Start naturally.", sentenceCount: 16 }],
     coreChunkCoverage: [{ chunk: "I'd like", plannedCount: 1, slots: [1], distinctUses: ["A polite opening."], chunkMatchers: ["I'd like..."] }],
     sentenceSlots: curve.map((difficultyBand, index) => ({
       slot: index + 1, section: "Open", role: "Practice a useful line.", meaningTarget: "Say one useful thing.", difficultyBand,
@@ -38,7 +38,7 @@ function makeBlueprint() {
 function makeCandidates() {
   return {
     courseId: "office-small-talk", candidateCountPerSlot: 2,
-    slots: Array.from({ length: 20 }, (_, index) => ({
+    slots: Array.from({ length: 16 }, (_, index) => ({
       slot: index + 1,
       generationWarning: null,
       options: [
@@ -111,6 +111,15 @@ test("checker reports structural, word-count, required-chunk, and duplicate erro
   assert.ok(report.errors.some((item) => item.code === "required_chunk_missing"));
   assert.ok(report.errors.some((item) => item.code === "duplicate_sentence"));
   assert.ok(report.warnings.some((item) => item.code === "reported_word_count_mismatch"));
+});
+
+test("checker rejects a seventeenth candidate slot under the 16-sentence standard", async () => {
+  const checker = await createCourseCandidateChecker(root);
+  const candidates = makeCandidates();
+  candidates.slots.push({ ...candidates.slots.at(-1), slot: 17 });
+  const report = checkCourseCandidates({ checker, blueprint: makeBlueprint(), candidates });
+  assert.equal(report.valid, false);
+  assert.ok(report.errors.some((item) => item.code === "schema_invalid"));
 });
 
 test("CLI writes a report and exits nonzero when errors are found", async () => {

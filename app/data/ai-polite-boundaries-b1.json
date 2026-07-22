@@ -164,46 +164,6 @@
       "start": 0,
       "end": 4.224,
       "duration": 4.224
-    },
-    {
-      "id": "ai-boundaries-017",
-      "text": "I can help once, but I can't commit to weekly meetings.",
-      "translation": "我可以帮一次，但不能承诺每周开会。",
-      "audio": "audio/polite-boundaries-b1-017.m4a",
-      "learnable": true,
-      "start": 0,
-      "end": 4.48,
-      "duration": 4.48
-    },
-    {
-      "id": "ai-boundaries-018",
-      "text": "I understand this is urgent, but I need to finish my current work.",
-      "translation": "我理解这件事很急，但我得先完成手头的工作。",
-      "audio": "audio/polite-boundaries-b1-018.m4a",
-      "learnable": true,
-      "start": 0,
-      "end": 4.053,
-      "duration": 4.053
-    },
-    {
-      "id": "ai-boundaries-019",
-      "text": "I'd love to come, but I need a quiet evening at home.",
-      "translation": "我很想来，但今晚我需要在家安静休息。",
-      "audio": "audio/polite-boundaries-b1-019.m4a",
-      "learnable": true,
-      "start": 0,
-      "end": 4.267,
-      "duration": 4.267
-    },
-    {
-      "id": "ai-boundaries-020",
-      "text": "Could we find a time that works for both of us?",
-      "translation": "我们能找一个双方都合适的时间吗？",
-      "audio": "audio/polite-boundaries-b1-020.m4a",
-      "learnable": true,
-      "start": 0,
-      "end": 2.773,
-      "duration": 2.773
     }
   ]
 }

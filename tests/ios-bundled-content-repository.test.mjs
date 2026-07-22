@@ -80,10 +80,10 @@ test("bootstrap atomically refreshes the intermediate and exact Package resource
   assert.equal(report.counts.collections, 4);
   assert.equal(report.counts.courses, 31);
   assert.equal(report.counts.wordEntries, 570);
-  assert.equal(report.counts.sentenceEntries, 856);
-  assert.equal(report.counts.audioFiles, 1_426);
-  assert.equal(report.counts.audioBytes, 33_360_777);
-  assert.equal(bundledFiles.filter((path) => path.endsWith(".m4a")).length, 1_426);
+  assert.equal(report.counts.sentenceEntries, 852);
+  assert.equal(report.counts.audioFiles, 1_422);
+  assert.equal(report.counts.audioBytes, 33_216_097);
+  assert.equal(bundledFiles.filter((path) => path.endsWith(".m4a")).length, 1_422);
 });
 
 test("Package copy declaration, ignore rules, tracking and App resource ownership stay singular", async () => {

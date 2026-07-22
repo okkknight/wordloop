@@ -57,8 +57,8 @@ test("ships the AI voice course with a visible synthetic-voice disclosure", asyn
   assert.equal(course.provider, "OpenAI");
   assert.match(course.attribution, /AI-generated voice/i);
   assert.match(course.licenseNote, /AI-generated/i);
-  assert.equal(course.entries.length, 20);
-  assert.equal(audioFiles.size, 20);
+  assert.equal(course.entries.length, 16);
+  assert.equal(audioFiles.size, 16);
   for (const entry of course.entries) {
     assert.equal(entry.learnable, true);
     assert.ok(entry.duration > 0, `${entry.id}: positive duration`);

@@ -7,6 +7,8 @@
     "courseId": {"type": "string"},
     "finalSentences": {
       "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
       "items": {
         "type": "object",
         "required": [
@@ -14,8 +16,8 @@
           "difficultyBand", "usedChunks", "sourceCandidateId", "selectionReason"
         ],
         "properties": {
-          "order": {"type": "integer", "minimum": 1, "maximum": 20},
-          "slot": {"type": "integer", "minimum": 1, "maximum": 20},
+          "order": {"type": "integer", "minimum": 1, "maximum": 16},
+          "slot": {"type": "integer", "minimum": 1, "maximum": 16},
           "section": {"type": "string"},
           "role": {"type": "string"},
           "text": {"type": "string"},
@@ -34,7 +36,7 @@
         "type": "object",
         "required": ["slot", "reason", "regenerationInstructions"],
         "properties": {
-          "slot": {"type": "integer", "minimum": 1, "maximum": 20},
+          "slot": {"type": "integer", "minimum": 1, "maximum": 16},
           "reason": {"type": "string"},
           "regenerationInstructions": {"type": "array", "items": {"type": "string"}}
         }

@@ -7,12 +7,12 @@
     "courseId": {"type": "string"},
     "candidateCountPerSlot": {"type": "integer", "minimum": 1},
     "slots": {
-      "type": "array", "minItems": 20, "maxItems": 20,
+      "type": "array", "minItems": 16, "maxItems": 16,
       "items": {
         "type": "object",
         "required": ["slot", "options"],
         "properties": {
-          "slot": {"type": "integer", "minimum": 1, "maximum": 20},
+          "slot": {"type": "integer", "minimum": 1, "maximum": 16},
           "generationWarning": {"type": ["string", "null"]},
           "options": {
             "type": "array",

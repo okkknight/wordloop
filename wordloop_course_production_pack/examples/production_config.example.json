@@ -1,6 +1,6 @@
 {
   "courseCount": 30,
-  "sentenceCountPerCourse": 20,
+  "sentenceCountPerCourse": 16,
   "candidateCountPerSlot": 2,
   "levelRange": ["A2", "B1", "B2"],
   "targetLearner": "以中文为母语、希望提升真实英语口语输出能力的成年人",

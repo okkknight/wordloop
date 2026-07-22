@@ -1,0 +1,1238 @@
+{
+  "version": "1.0",
+  "project": "WordLoop",
+  "sentenceCountPerCourse": 16,
+  "languageVariant": "American English",
+  "targetLearners": "A2-B2 adult English learners focused on spoken output",
+  "domains": {
+    "A": {
+      "nameZh": "现实任务",
+      "goalZh": "把事情办成",
+      "courseCount": 11
+    },
+    "B": {
+      "nameZh": "互动沟通",
+      "goalZh": "和别人顺利交流",
+      "courseCount": 10
+    },
+    "C": {
+      "nameZh": "自我表达",
+      "goalZh": "把自己的生活讲清楚",
+      "courseCount": 9
+    },
+    "D": {
+      "nameZh": "观点表达",
+      "goalZh": "把自己的想法讲明白",
+      "courseCount": 6
+    }
+  },
+  "difficultyDistribution": {
+    "A2": 14,
+    "B1": 14,
+    "B2": 8
+  },
+  "courseTypeDistribution": {
+    "scenario_interaction": 11,
+    "communication_skill": 11,
+    "topic_expression": 14
+  },
+  "sentenceDifficultyPattern": {
+    "entry": 3,
+    "targetBase": 4,
+    "targetCore": 6,
+    "stretch": 3,
+    "note": "采用波浪式递进，最后一句强调完整与实用，不必是全课最难句。"
+  },
+  "abilities": [
+    {
+      "id": "A1",
+      "domain": "A",
+      "name": "获取信息",
+      "definition": "主动询问完成现实任务所需的价格、时间、地点、规则和细节。",
+      "levelRange": "A2-B1",
+      "courses": [
+        "A01",
+        "A02"
+      ]
+    },
+    {
+      "id": "A2",
+      "domain": "A",
+      "name": "表达需求",
+      "definition": "清楚说出自己想要什么，并表达规格、数量、选项和基本偏好。",
+      "levelRange": "A2-B1",
+      "courses": [
+        "A03",
+        "A04"
+      ]
+    },
+    {
+      "id": "A3",
+      "domain": "A",
+      "name": "提供必要信息",
+      "definition": "回应对方的问题，提供身份、预订、身体情况等完成任务所需的信息。",
+      "levelRange": "A2-B1",
+      "courses": [
+        "A05",
+        "A06"
+      ]
+    },
+    {
+      "id": "A4",
+      "domain": "A",
+      "name": "修改与确认",
+      "definition": "调整需求、核对关键信息，并确保双方对时间、数量和安排理解一致。",
+      "levelRange": "A2-B1",
+      "courses": [
+        "A07",
+        "A08"
+      ]
+    },
+    {
+      "id": "A5",
+      "domain": "A",
+      "name": "说明并解决问题",
+      "definition": "客观说明错误或服务问题，提出期望，并与对方协商可接受的处理方式。",
+      "levelRange": "B1-B2",
+      "courses": [
+        "A09",
+        "A10"
+      ]
+    },
+    {
+      "id": "A6",
+      "domain": "A",
+      "name": "安排并完成事项",
+      "definition": "提出时间、协商安排、确认结果，并在需要时改期或取消。",
+      "levelRange": "B1",
+      "courses": [
+        "A11"
+      ]
+    },
+    {
+      "id": "B1",
+      "domain": "B",
+      "name": "开启交流",
+      "definition": "在新环境中自然打招呼、自我介绍并开启低压力的交流。",
+      "levelRange": "A2",
+      "courses": [
+        "B01",
+        "B02"
+      ]
+    },
+    {
+      "id": "B2",
+      "domain": "B",
+      "name": "延续交流",
+      "definition": "通过回应、追问、补充和转换话题，让对话不止停留在一问一答。",
+      "levelRange": "A2-B1",
+      "courses": [
+        "B03",
+        "B04"
+      ]
+    },
+    {
+      "id": "B3",
+      "domain": "B",
+      "name": "请求澄清",
+      "definition": "听不清、听不懂或不确定时，请求重复、解释并核对自己的理解。",
+      "levelRange": "A2-B1",
+      "courses": [
+        "B05",
+        "B06"
+      ]
+    },
+    {
+      "id": "B4",
+      "domain": "B",
+      "name": "表示理解与回应",
+      "definition": "对消息和个人分享作出自然、合适且能继续交流的回应。",
+      "levelRange": "B1",
+      "courses": [
+        "B07"
+      ]
+    },
+    {
+      "id": "B5",
+      "domain": "B",
+      "name": "礼貌表达意图",
+      "definition": "用合适的语气提出请求、请人帮忙、拒绝或提出替代方案。",
+      "levelRange": "A2-B2",
+      "courses": [
+        "B08",
+        "B09"
+      ]
+    },
+    {
+      "id": "B6",
+      "domain": "B",
+      "name": "修复关系与交流",
+      "definition": "承认影响、道歉、解释意图、澄清误会并提出修复方式。",
+      "levelRange": "B2",
+      "courses": [
+        "B10"
+      ]
+    },
+    {
+      "id": "C1",
+      "domain": "C",
+      "name": "描述个人情况",
+      "definition": "介绍自己的工作、学习、居住环境和当前生活状态。",
+      "levelRange": "A2",
+      "courses": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "id": "C2",
+      "domain": "C",
+      "name": "描述习惯与日常",
+      "definition": "有条理地描述日常流程、频率、固定习惯和偶尔的变化。",
+      "levelRange": "A2",
+      "courses": [
+        "C03",
+        "C04"
+      ]
+    },
+    {
+      "id": "C3",
+      "domain": "C",
+      "name": "描述经历",
+      "definition": "交代背景、经过、结果和感受，讲清楚一件过去发生的事情。",
+      "levelRange": "B1",
+      "courses": [
+        "C05",
+        "C06"
+      ]
+    },
+    {
+      "id": "C4",
+      "domain": "C",
+      "name": "表达偏好与感受",
+      "definition": "说明喜欢、不喜欢、理想状态和选择倾向，并补充具体原因。",
+      "levelRange": "A2-B1",
+      "courses": [
+        "C07"
+      ]
+    },
+    {
+      "id": "C5",
+      "domain": "C",
+      "name": "解释原因与动机",
+      "definition": "说明自己为什么这样想、这样做，以及哪些因素促成了变化。",
+      "levelRange": "B1",
+      "courses": [
+        "C08"
+      ]
+    },
+    {
+      "id": "C6",
+      "domain": "C",
+      "name": "表达计划、变化与目标",
+      "definition": "连接过去、现在和未来，说明计划、目标、困难与调整。",
+      "levelRange": "B2",
+      "courses": [
+        "C09"
+      ]
+    },
+    {
+      "id": "D1",
+      "domain": "D",
+      "name": "清楚表达立场",
+      "definition": "直接说明自己如何看待一个问题，并保持观点清晰不过度绝对。",
+      "levelRange": "B1",
+      "courses": [
+        "D01"
+      ]
+    },
+    {
+      "id": "D2",
+      "domain": "D",
+      "name": "支持自己的观点",
+      "definition": "使用具体例子、个人经验和因果解释支撑自己的判断。",
+      "levelRange": "B1-B2",
+      "courses": [
+        "D02"
+      ]
+    },
+    {
+      "id": "D3",
+      "domain": "D",
+      "name": "比较不同选择",
+      "definition": "比较两个选择的异同、适用条件，并说明自己的倾向。",
+      "levelRange": "B1",
+      "courses": [
+        "D03"
+      ]
+    },
+    {
+      "id": "D4",
+      "domain": "D",
+      "name": "讨论优缺点与取舍",
+      "definition": "同时说明收益、成本和适用条件，形成有现实感的判断。",
+      "levelRange": "B2",
+      "courses": [
+        "D04"
+      ]
+    },
+    {
+      "id": "D5",
+      "domain": "D",
+      "name": "表达条件、让步与限制",
+      "definition": "承认合理之处，同时说明条件、例外和观点的适用范围。",
+      "levelRange": "B2",
+      "courses": [
+        "D05"
+      ]
+    },
+    {
+      "id": "D6",
+      "domain": "D",
+      "name": "回应不同观点并总结立场",
+      "definition": "准确回应另一种看法，说明分歧，并形成综合后的最终立场。",
+      "levelRange": "B2",
+      "courses": [
+        "D06"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "courseId": "A01",
+      "releaseOrder": 10,
+      "titleZh": "询问商品与服务信息",
+      "titleEn": "Asking About Products and Services",
+      "domain": "A",
+      "primaryAbility": "A1",
+      "secondaryAbilities": [
+        "A4"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够询问价格、可用情况、规格和基本服务条件，并确认关键细节。",
+      "contentDimensions": [
+        "询问价格、费用以及是否包含额外收费",
+        "询问商品或服务是否可用以及可用时间",
+        "询问尺寸、规格、选项和基本差异",
+        "复述并确认自己得到的关键信息"
+      ],
+      "scopeBoundaries": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ],
+      "distinctiveValue": "训练的是在行动之前主动获取信息，而不是提出购买需求。"
+    },
+    {
+      "courseId": "A02",
+      "releaseOrder": 11,
+      "titleZh": "问路与确认公共交通路线",
+      "titleEn": "Asking for Directions and Transit Information",
+      "domain": "A",
+      "primaryAbility": "A1",
+      "secondaryAbilities": [
+        "A4"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够询问地点、路线和公共交通信息，并通过地标或站点确认自己理解正确。",
+      "contentDimensions": [
+        "询问某个地点在哪里以及如何到达",
+        "询问应该乘坐哪条线路、在哪一站下车",
+        "询问距离、步行时间和明显地标",
+        "复述路线并确认方向、出口或站点"
+      ],
+      "scopeBoundaries": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ],
+      "distinctiveValue": "聚焦陌生环境中的路线获取与确认，和一般的信息询问区分开。"
+    },
+    {
+      "courseId": "A03",
+      "releaseOrder": 12,
+      "titleZh": "点餐并调整食物和饮品",
+      "titleEn": "Ordering and Customizing Food and Drinks",
+      "domain": "A",
+      "primaryAbility": "A2",
+      "secondaryAbilities": [
+        "A4"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够完成基础点餐，选择数量和规格，提出常见调整，并确认订单。",
+      "contentDimensions": [
+        "点选食物或饮品并说明数量",
+        "选择大小、温度、套餐或配菜",
+        "提出少糖、去冰、不加某种配料等常见调整",
+        "确认订单内容并自然结束点单"
+      ],
+      "scopeBoundaries": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ],
+      "distinctiveValue": "完整覆盖一次简单点单的核心任务，而不是罗列食物词汇。"
+    },
+    {
+      "courseId": "A04",
+      "releaseOrder": 13,
+      "titleZh": "在商店说明自己的购买需求",
+      "titleEn": "Explaining What You Need While Shopping",
+      "domain": "A",
+      "primaryAbility": "A2",
+      "secondaryAbilities": [
+        "A1"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够说明自己想找什么、用途和偏好，并请求查看、试用或比较替代选项。",
+      "contentDimensions": [
+        "说明想购买的物品及基本用途",
+        "表达尺寸、颜色、风格或功能偏好",
+        "说明预算或最重视的条件",
+        "请求试穿、查看其他款式或比较选项"
+      ],
+      "scopeBoundaries": [
+        "不处理退换和商品质量问题",
+        "不把重点放在单纯询价",
+        "不涉及专业级产品参数"
+      ],
+      "distinctiveValue": "训练把模糊的购买意图转化为店员能够理解的具体需求。"
+    },
+    {
+      "courseId": "A05",
+      "releaseOrder": 14,
+      "titleZh": "办理入住并提供预订信息",
+      "titleEn": "Checking In and Providing Booking Information",
+      "domain": "A",
+      "primaryAbility": "A3",
+      "secondaryAbilities": [
+        "A4"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够说明自己有预订，提供姓名、日期和必要信息，并确认入住安排。",
+      "contentDimensions": [
+        "说明已有预订并提供预订姓名",
+        "提供入住日期、晚数和身份证明等基本信息",
+        "回答关于人数、房型和付款方式的简单问题",
+        "确认房间、钥匙、早餐和退房时间"
+      ],
+      "scopeBoundaries": [
+        "不处理房间投诉或严重预订错误",
+        "不重点训练更改预订",
+        "不涉及复杂押金和法律条款"
+      ],
+      "distinctiveValue": "重点是准确提供信息并完成入住，而不是提出住宿偏好。"
+    },
+    {
+      "courseId": "A06",
+      "releaseOrder": 18,
+      "titleZh": "描述身体不适并询问基本建议",
+      "titleEn": "Describing Symptoms and Asking Basic Health Questions",
+      "domain": "A",
+      "primaryAbility": "A3",
+      "secondaryAbilities": [
+        "A1"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够描述症状的位置、持续时间和变化，回答常见问题，并询问基本处理建议。",
+      "contentDimensions": [
+        "描述主要症状和身体部位",
+        "说明症状何时开始、持续多久以及严重程度",
+        "说明症状变化、已尝试的方法和相关影响",
+        "回答关于药物、过敏等基本问题并询问下一步"
+      ],
+      "scopeBoundaries": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ],
+      "distinctiveValue": "训练向医护或药店人员提供清晰、足够且不过度专业的信息。"
+    },
+    {
+      "courseId": "A07",
+      "releaseOrder": 19,
+      "titleZh": "更改预订或预约",
+      "titleEn": "Changing a Reservation or Appointment",
+      "domain": "A",
+      "primaryAbility": "A4",
+      "secondaryAbilities": [
+        "A6"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够找到已有预约，提出时间或内容变更，说明限制，并确认新的安排。",
+      "contentDimensions": [
+        "说明现有预订或预约信息",
+        "提出改时间、改人数或改服务内容的请求",
+        "说明原因、时间限制和可接受的替代方案",
+        "确认新的日期、时间、费用或变更结果"
+      ],
+      "scopeBoundaries": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ],
+      "distinctiveValue": "专门训练对既有安排进行准确、礼貌的调整。"
+    },
+    {
+      "courseId": "A08",
+      "releaseOrder": 20,
+      "titleZh": "确认行程与预订细节",
+      "titleEn": "Confirming Travel and Booking Details",
+      "domain": "A",
+      "primaryAbility": "A4",
+      "secondaryAbilities": [
+        "A1"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够逐项核对日期、时间、姓名和服务细节，发现并澄清潜在误差。",
+      "contentDimensions": [
+        "确认出发、到达、入住或活动时间",
+        "核对姓名、证件、订单号等关键信息",
+        "确认座位、行李、房型或包含的服务",
+        "总结整项预订并指出需要再次核对的地方"
+      ],
+      "scopeBoundaries": [
+        "不处理严重延误、取消或赔偿",
+        "不替代问路和公共交通课程",
+        "不扩展成旅行经历分享"
+      ],
+      "distinctiveValue": "重点训练高风险信息的准确核对，而不是完成预订本身。"
+    },
+    {
+      "courseId": "A09",
+      "releaseOrder": 21,
+      "titleZh": "退换商品并说明原因",
+      "titleEn": "Returning or Exchanging a Product",
+      "domain": "A",
+      "primaryAbility": "A5",
+      "secondaryAbilities": [
+        "A3"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够说明退换需求和商品问题，提供购买信息，并讨论退款、换货或商店余额。",
+      "contentDimensions": [
+        "直接说明想退货或换货",
+        "描述尺寸、功能、损坏或不符合预期的问题",
+        "提供收据、购买时间和付款方式等信息",
+        "询问并回应退款、换货、维修或商店余额方案"
+      ],
+      "scopeBoundaries": [
+        "不使用激烈投诉或威胁性语言",
+        "不处理复杂保修和法律争议",
+        "不重复一般购物需求课程"
+      ],
+      "distinctiveValue": "围绕有规则约束的退换流程，训练清楚说明理由和接受替代处理。"
+    },
+    {
+      "courseId": "A10",
+      "releaseOrder": 29,
+      "titleZh": "说明服务问题并协商解决方案",
+      "titleEn": "Reporting a Service Problem and Negotiating a Solution",
+      "domain": "A",
+      "primaryAbility": "A5",
+      "secondaryAbilities": [
+        "B5"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够客观说明服务问题及其影响，评估对方方案，并礼貌协商更合适的解决方式。",
+      "contentDimensions": [
+        "准确描述发生了什么以及与原约定的差异",
+        "说明问题造成的实际影响和自己的合理期待",
+        "回应道歉、解释或初步解决方案",
+        "提出替代方案、设定合理条件并确认最终处理"
+      ],
+      "scopeBoundaries": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ],
+      "distinctiveValue": "将问题表达、礼貌立场和协商能力结合起来，是现实任务领域的高阶课程。"
+    },
+    {
+      "courseId": "A11",
+      "releaseOrder": 22,
+      "titleZh": "安排、改期与取消计划",
+      "titleEn": "Scheduling, Rescheduling, and Canceling Plans",
+      "domain": "A",
+      "primaryAbility": "A6",
+      "secondaryAbilities": [
+        "B5"
+      ],
+      "courseType": "scenario_interaction",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够提出时间、询问对方是否方便、协商替代时间，并礼貌改期或取消。",
+      "contentDimensions": [
+        "提出见面、通话或活动的时间建议",
+        "询问对方的可用时间和偏好",
+        "在时间冲突时提出并比较替代方案",
+        "确认安排，或礼貌说明改期和取消"
+      ],
+      "scopeBoundaries": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ],
+      "distinctiveValue": "训练把一个模糊意向推进为明确安排，并在变化时维持交流关系。"
+    },
+    {
+      "courseId": "B01",
+      "releaseOrder": 1,
+      "titleZh": "在新环境中介绍自己",
+      "titleEn": "Introducing Yourself in a New Situation",
+      "domain": "B",
+      "primaryAbility": "B1",
+      "secondaryAbilities": [
+        "C1"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够在工作、活动或社交环境中进行简短、自然且有回应空间的自我介绍。",
+      "contentDimensions": [
+        "说出姓名和基本背景",
+        "介绍工作、学习或当前身份",
+        "说明自己为什么来到这里或与场合的关系",
+        "向对方提出一个简单的互相了解问题"
+      ],
+      "scopeBoundaries": [
+        "不扩展成完整个人履历",
+        "不训练长时间维持闲聊",
+        "不加入高度正式的演讲式介绍"
+      ],
+      "distinctiveValue": "让自我介绍成为交流入口，而不是一段需要背诵的个人档案。"
+    },
+    {
+      "courseId": "B02",
+      "releaseOrder": 6,
+      "titleZh": "自然开启一段闲聊",
+      "titleEn": "Starting Small Talk Naturally",
+      "domain": "B",
+      "primaryAbility": "B1",
+      "secondaryAbilities": [
+        "B2"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够根据共同环境开启轻松话题，并提出不会给对方压力的问题。",
+      "contentDimensions": [
+        "从天气、环境或正在发生的事情开始",
+        "对共同场合做简短自然的评论",
+        "分享一小段与话题相关的信息",
+        "提出简单、开放但不过度私人的问题"
+      ],
+      "scopeBoundaries": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ],
+      "distinctiveValue": "训练如何找到自然开口点，解决知道单词却不知道怎么开始的问题。"
+    },
+    {
+      "courseId": "B03",
+      "releaseOrder": 7,
+      "titleZh": "表示兴趣并继续追问",
+      "titleEn": "Showing Interest and Asking Follow-Up Questions",
+      "domain": "B",
+      "primaryAbility": "B2",
+      "secondaryAbilities": [
+        "B4"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够用简短回应表示兴趣，并通过合适的追问邀请对方继续说。",
+      "contentDimensions": [
+        "使用自然短回应表达兴趣或惊讶",
+        "围绕时间、地点、人物和方式继续追问",
+        "邀请对方补充感受、原因或细节",
+        "短暂联系自己的经历，但不抢走话题"
+      ],
+      "scopeBoundaries": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ],
+      "distinctiveValue": "重点是把对方的回答接住，而不是自己持续输出。"
+    },
+    {
+      "courseId": "B04",
+      "releaseOrder": 15,
+      "titleZh": "让对话继续并自然转换话题",
+      "titleEn": "Keeping a Conversation Going and Changing Topics Smoothly",
+      "domain": "B",
+      "primaryAbility": "B2",
+      "secondaryAbilities": [
+        "B1"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够围绕已有信息补充、追问，在话题变短时恢复交流，并自然转入相关话题。",
+      "contentDimensions": [
+        "从对方回答中选择一个细节继续展开",
+        "补充相关经历或信息，使交流保持平衡",
+        "面对简短回答时换一种方式继续",
+        "使用关联句从旧话题自然过渡到新话题"
+      ],
+      "scopeBoundaries": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ],
+      "distinctiveValue": "训练对话的流动能力，而不是背诵某个主题下的问答。"
+    },
+    {
+      "courseId": "B05",
+      "releaseOrder": 8,
+      "titleZh": "请对方重复或说慢一点",
+      "titleEn": "Asking Someone to Repeat or Slow Down",
+      "domain": "B",
+      "primaryAbility": "B3",
+      "secondaryAbilities": [
+        "B5"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够自然说明自己没听清，请对方重复、放慢或只重说关键部分。",
+      "contentDimensions": [
+        "简短说明自己没有听清",
+        "礼貌请求完整重复一次",
+        "请求对方放慢速度或分段表达",
+        "指出具体没听清的词、数字或部分并继续交流"
+      ],
+      "scopeBoundaries": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ],
+      "distinctiveValue": "解决声音层面的理解障碍，让学习者敢于及时中断并请求重说。"
+    },
+    {
+      "courseId": "B06",
+      "releaseOrder": 16,
+      "titleZh": "澄清意思并确认理解",
+      "titleEn": "Clarifying Meaning and Checking Understanding",
+      "domain": "B",
+      "primaryAbility": "B3",
+      "secondaryAbilities": [
+        "B4"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够询问具体含义、区分可能的解释、复述自己的理解并确认关键信息。",
+      "contentDimensions": [
+        "询问一个词、说法或要求具体是什么意思",
+        "在两个可能理解之间进行区分",
+        "用自己的话复述对方意思",
+        "确认时间、数字、责任和下一步等关键信息"
+      ],
+      "scopeBoundaries": [
+        "不重复单纯请求重说的表达",
+        "不把澄清升级成争论或反驳",
+        "不引入专业术语解释任务"
+      ],
+      "distinctiveValue": "训练意义层面的确认，比单纯听清更进一步。"
+    },
+    {
+      "courseId": "B07",
+      "releaseOrder": 17,
+      "titleZh": "自然回应消息和个人分享",
+      "titleEn": "Responding Naturally to News and Personal Stories",
+      "domain": "B",
+      "primaryAbility": "B4",
+      "secondaryAbilities": [
+        "B2"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够根据好消息、坏消息、意外信息和个人经历，作出合适回应并继续交流。",
+      "contentDimensions": [
+        "回应成功、机会和其他好消息",
+        "回应失望、困难和普通坏消息",
+        "回应令人意外或有趣的信息",
+        "表达共情并提出不冒犯的后续问题"
+      ],
+      "scopeBoundaries": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ],
+      "distinctiveValue": "训练根据内容选择回应，而不是用同一个‘That’s great’应付所有分享。"
+    },
+    {
+      "courseId": "B08",
+      "releaseOrder": 9,
+      "titleZh": "礼貌提出请求和请人帮忙",
+      "titleEn": "Making Polite Requests and Asking for Favors",
+      "domain": "B",
+      "primaryAbility": "B5",
+      "secondaryAbilities": [
+        "A2"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够提出日常小请求、询问许可、请人帮忙，并自然接受对方同意或拒绝。",
+      "contentDimensions": [
+        "提出简单直接但礼貌的请求",
+        "询问是否可以做某件事",
+        "请对方提供一个小帮助或方便",
+        "回应同意、拒绝或延迟并表示感谢"
+      ],
+      "scopeBoundaries": [
+        "不涉及复杂协商或高成本请求",
+        "不重复点餐和服务需求",
+        "不训练强硬命令或正式公文语气"
+      ],
+      "distinctiveValue": "提供可跨场景迁移的请求能力，而不是绑定某一个服务场景。"
+    },
+    {
+      "courseId": "B09",
+      "releaseOrder": 30,
+      "titleZh": "礼貌拒绝并提供替代方案",
+      "titleEn": "Refusing Politely and Offering Alternatives",
+      "domain": "B",
+      "primaryAbility": "B5",
+      "secondaryAbilities": [
+        "B6"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够清楚拒绝请求或邀请，同时表达感谢、给出适度理由，并提出可行替代方案。",
+      "contentDimensions": [
+        "不含糊地表达无法接受或参加",
+        "用合适程度的理由解释限制",
+        "表达感谢、遗憾或对关系的重视",
+        "提出其他时间、方式或较小范围的替代方案"
+      ],
+      "scopeBoundaries": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ],
+      "distinctiveValue": "兼顾边界与关系，训练比简单说no更成熟的拒绝方式。"
+    },
+    {
+      "courseId": "B10",
+      "releaseOrder": 31,
+      "titleZh": "道歉、解释并修复误会",
+      "titleEn": "Apologizing, Explaining, and Repairing a Misunderstanding",
+      "domain": "B",
+      "primaryAbility": "B6",
+      "secondaryAbilities": [
+        "B3"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够承认对方受到的影响，真诚道歉，解释但不推卸责任，并提出修复方式。",
+      "contentDimensions": [
+        "承认具体发生的事情和造成的影响",
+        "作出直接、适度且不含糊的道歉",
+        "解释背景或本意，但避免把解释变成借口",
+        "澄清误会并提出下一步修复行动"
+      ],
+      "scopeBoundaries": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ],
+      "distinctiveValue": "将语言准确性和关系修复结合，是互动沟通的高阶能力。"
+    },
+    {
+      "courseId": "C01",
+      "releaseOrder": 2,
+      "titleZh": "谈论自己的工作、学习与近况",
+      "titleEn": "Talking About Work, Study, and Current Life",
+      "domain": "C",
+      "primaryAbility": "C1",
+      "secondaryAbilities": [
+        "C5"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够简洁介绍自己的工作或学习状态、日常内容以及最近的基本感受。",
+      "contentDimensions": [
+        "说明目前工作、学习或主要身份",
+        "描述常见任务和一天中的基本安排",
+        "介绍工作或学习环境和合作对象",
+        "表达简单的喜欢、困难或近况"
+      ],
+      "scopeBoundaries": [
+        "不展开完整职业履历",
+        "不讨论长期职业目标",
+        "不进入工作制度和社会议题评价"
+      ],
+      "distinctiveValue": "让学习者拥有一套真实且可调整的基础个人介绍内容。"
+    },
+    {
+      "courseId": "C02",
+      "releaseOrder": 3,
+      "titleZh": "描述自己居住的地方与周边环境",
+      "titleEn": "Describing Where I Live and My Surroundings",
+      "domain": "C",
+      "primaryAbility": "C1",
+      "secondaryAbilities": [
+        "C4"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够介绍自己住在哪里、周边有什么、出行是否方便以及自己的感受。",
+      "contentDimensions": [
+        "说明所在城市、区域和住所类型",
+        "描述附近常见地点和设施",
+        "说明交通、购物和生活便利程度",
+        "表达对环境的喜欢、不便和理想改进"
+      ],
+      "scopeBoundaries": [
+        "不训练给别人指路",
+        "不做城市之间的系统比较",
+        "不使用房地产和城市规划术语"
+      ],
+      "distinctiveValue": "以自己的真实生活空间为素材，适合反复替换和迁移。"
+    },
+    {
+      "courseId": "C03",
+      "releaseOrder": 4,
+      "titleZh": "描述我的日常作息",
+      "titleEn": "Describing My Daily Routine",
+      "domain": "C",
+      "primaryAbility": "C2",
+      "secondaryAbilities": [
+        "C1"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够按照时间顺序描述工作日的主要活动、频率和常见变化。",
+      "contentDimensions": [
+        "描述起床、早餐和出门前的活动",
+        "描述工作或学习时段的主要安排",
+        "描述下班、晚饭和晚间活动",
+        "说明频率、偶尔变化和周中差异"
+      ],
+      "scopeBoundaries": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ],
+      "distinctiveValue": "建立最基础的连续自我表达能力，并提供大量可替换的个人内容。"
+    },
+    {
+      "courseId": "C04",
+      "releaseOrder": 5,
+      "titleZh": "谈论我的周末与空闲时间",
+      "titleEn": "Talking About My Weekend and Free Time",
+      "domain": "C",
+      "primaryAbility": "C2",
+      "secondaryAbilities": [
+        "C4"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "A2",
+      "learnerOutcome": "能够描述自己通常如何度过周末、喜欢独处还是外出，并表达理想的休息方式。",
+      "contentDimensions": [
+        "描述常见周末活动和时间安排",
+        "表达待在家与外出的不同选择",
+        "描述独处、朋友和家庭活动",
+        "表达最喜欢或最理想的周末状态"
+      ],
+      "scopeBoundaries": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ],
+      "distinctiveValue": "是高频、低门槛的自我表达主题，能快速建立开口信心。"
+    },
+    {
+      "courseId": "C05",
+      "releaseOrder": 23,
+      "titleZh": "讲述最近发生的一件小事",
+      "titleEn": "Telling a Recent Everyday Experience",
+      "domain": "C",
+      "primaryAbility": "C3",
+      "secondaryAbilities": [
+        "C2"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够交代背景，按顺序讲述一件日常小事，并说明结果和感受。",
+      "contentDimensions": [
+        "说明事情发生的时间、地点和起因",
+        "按照自然顺序描述主要经过",
+        "描述一个小问题、变化或意外",
+        "说明最后结果以及自己的反应"
+      ],
+      "scopeBoundaries": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ],
+      "distinctiveValue": "让学习者从描述习惯过渡到真正讲述发生过的事情。"
+    },
+    {
+      "courseId": "C06",
+      "releaseOrder": 24,
+      "titleZh": "分享一次难忘的旅行或经历",
+      "titleEn": "Sharing a Memorable Trip or Experience",
+      "domain": "C",
+      "primaryAbility": "C3",
+      "secondaryAbilities": [
+        "C4"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够介绍一次经历的背景、关键事件和难忘细节，并表达它为什么重要。",
+      "contentDimensions": [
+        "交代目的地、时间或经历背景",
+        "描述期待与实际发生的关键事件",
+        "选择一个具体人物、场景或细节展开",
+        "说明感受、收获以及为什么记得它"
+      ],
+      "scopeBoundaries": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ],
+      "distinctiveValue": "在日常叙事基础上增加细节选择和个人意义，使表达更有内容。"
+    },
+    {
+      "courseId": "C07",
+      "releaseOrder": 25,
+      "titleZh": "表达我的偏好与理想生活方式",
+      "titleEn": "Explaining Preferences and an Ideal Lifestyle",
+      "domain": "C",
+      "primaryAbility": "C4",
+      "secondaryAbilities": [
+        "C5"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够表达对节奏、环境、社交和生活方式的偏好，并说明原因和现实限制。",
+      "contentDimensions": [
+        "表达对生活节奏、环境和日常安排的偏好",
+        "描述理想的一天或理想生活状态",
+        "说明偏好背后的原因和感受",
+        "承认现实限制并表达可以接受的折中"
+      ],
+      "scopeBoundaries": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ],
+      "distinctiveValue": "帮助学习者从简单喜欢进入更完整、更个人化的生活表达。"
+    },
+    {
+      "courseId": "C08",
+      "releaseOrder": 26,
+      "titleZh": "解释我的动力与习惯改变",
+      "titleEn": "Explaining Motivation and Why I Changed a Habit",
+      "domain": "C",
+      "primaryAbility": "C5",
+      "secondaryAbilities": [
+        "C6"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够说明原来的状态、促成改变的原因、采取的行动以及遇到的困难。",
+      "contentDimensions": [
+        "描述改变之前的习惯或问题",
+        "说明触发改变的事件、感受或目标",
+        "描述已经采取的具体行动",
+        "说明效果、困难和接下来想继续调整的地方"
+      ],
+      "scopeBoundaries": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ],
+      "distinctiveValue": "训练因果和变化叙述，是从日常描述走向解释自己的关键课程。"
+    },
+    {
+      "courseId": "C09",
+      "releaseOrder": 32,
+      "titleZh": "谈论计划、目标与个人变化",
+      "titleEn": "Talking About Plans, Goals, and Personal Change",
+      "domain": "C",
+      "primaryAbility": "C6",
+      "secondaryAbilities": [
+        "C5"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够把过去、当前方向和未来目标连接起来，并说明障碍、优先级和调整方式。",
+      "contentDimensions": [
+        "说明当前最重要的方向和近期计划",
+        "描述长期目标以及它对自己的意义",
+        "说明现实障碍、优先级冲突和不确定性",
+        "比较过去与现在，并表达根据情况调整计划的方式"
+      ],
+      "scopeBoundaries": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ],
+      "distinctiveValue": "形成较成熟的连续自我表达，综合时间、动机、限制和变化。"
+    },
+    {
+      "courseId": "D01",
+      "releaseOrder": 27,
+      "titleZh": "清楚表达观点并说明原因",
+      "titleEn": "Stating an Opinion Clearly and Explaining Why",
+      "domain": "D",
+      "primaryAbility": "D1",
+      "secondaryAbilities": [
+        "D2"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够明确说出自己的观点，给出主要原因和简单例子，并用一句话收束。",
+      "contentDimensions": [
+        "直接表达同意、不同意或个人判断",
+        "说明一到两个主要原因",
+        "给出简单、具体且相关的例子",
+        "重述并简洁总结自己的基本立场"
+      ],
+      "scopeBoundaries": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ],
+      "distinctiveValue": "建立观点表达的最小完整结构，是进入B2复杂讨论前的基础。"
+    },
+    {
+      "courseId": "D02",
+      "releaseOrder": 33,
+      "titleZh": "用例子和个人经历支持观点",
+      "titleEn": "Supporting a View with Examples and Personal Experience",
+      "domain": "D",
+      "primaryAbility": "D2",
+      "secondaryAbilities": [
+        "D1"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够选择有说服力的具体例子或个人经历，并清楚说明它如何支持自己的判断。",
+      "contentDimensions": [
+        "提出需要被支持的核心判断",
+        "引入一个具体、相关的现实例子",
+        "使用个人经历说明原因或影响",
+        "明确连接例子与最终结论，避免只讲故事"
+      ],
+      "scopeBoundaries": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ],
+      "distinctiveValue": "解决观点有结论却缺少支撑的问题，让表达更可信、更具体。"
+    },
+    {
+      "courseId": "D03",
+      "releaseOrder": 28,
+      "titleZh": "比较两种选择并说明偏好",
+      "titleEn": "Comparing Two Choices and Explaining a Preference",
+      "domain": "D",
+      "primaryAbility": "D3",
+      "secondaryAbilities": [
+        "C4"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B1",
+      "learnerOutcome": "能够比较两个常见选择的相同与不同，根据条件说明自己更倾向哪一种。",
+      "contentDimensions": [
+        "清楚提出需要比较的两个选项",
+        "比较关键差异和少量共同点",
+        "说明不同人或不同情况下的适用性",
+        "表达个人选择以及做出选择的标准"
+      ],
+      "scopeBoundaries": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ],
+      "distinctiveValue": "训练结构清晰的比较和选择，是从个人偏好过渡到观点表达的桥梁。"
+    },
+    {
+      "courseId": "D04",
+      "releaseOrder": 34,
+      "titleZh": "讨论优缺点与现实取舍",
+      "titleEn": "Discussing Advantages, Disadvantages, and Trade-Offs",
+      "domain": "D",
+      "primaryAbility": "D4",
+      "secondaryAbilities": [
+        "D3"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够讨论一个选择的收益和代价，说明适用条件，并形成不绝对的综合判断。",
+      "contentDimensions": [
+        "说明一个选择最明显的好处",
+        "说明成本、限制和潜在负面影响",
+        "分析它对不同人或不同情境是否合适",
+        "表达自己愿意接受什么代价以及最终判断"
+      ],
+      "scopeBoundaries": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ],
+      "distinctiveValue": "把简单比较提升为现实权衡，训练更成熟的判断表达。"
+    },
+    {
+      "courseId": "D05",
+      "releaseOrder": 35,
+      "titleZh": "表达部分同意、条件与例外",
+      "titleEn": "Expressing Partial Agreement, Conditions, and Exceptions",
+      "domain": "D",
+      "primaryAbility": "D5",
+      "secondaryAbilities": [
+        "D1"
+      ],
+      "courseType": "topic_expression",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够承认观点中合理的部分，同时说明条件、例外和自己的保留意见。",
+      "contentDimensions": [
+        "先承认对方观点或常见看法中的合理部分",
+        "指出观点成立所需要的具体条件",
+        "提出一个重要例外或被忽略的限制",
+        "形成有限度的结论并保留自己的立场"
+      ],
+      "scopeBoundaries": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ],
+      "distinctiveValue": "帮助学习者摆脱非黑即白的观点表达，形成更自然的B2语气。"
+    },
+    {
+      "courseId": "D06",
+      "releaseOrder": 36,
+      "titleZh": "回应不同观点并总结立场",
+      "titleEn": "Responding to Another View and Summarizing Your Position",
+      "domain": "D",
+      "primaryAbility": "D6",
+      "secondaryAbilities": [
+        "D5"
+      ],
+      "courseType": "communication_skill",
+      "targetLevel": "B2",
+      "learnerOutcome": "能够准确概括另一种观点，说明同意与不同意之处，并给出综合后的最终立场。",
+      "contentDimensions": [
+        "用公平、准确的方式复述对方主要观点",
+        "指出自己认同的部分和共同基础",
+        "回应关键分歧并解释原因",
+        "综合双方信息，给出更完整的最终判断"
+      ],
+      "scopeBoundaries": [
+        "不训练攻击性辩论技巧",
+        "不要求大量事实证据和研究引用",
+        "不使用假想稻草人观点"
+      ],
+      "distinctiveValue": "是课程池中最高阶的互动观点能力，将理解、回应和总结整合在一起。"
+    }
+  ]
+}

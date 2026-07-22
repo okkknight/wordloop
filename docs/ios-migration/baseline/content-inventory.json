@@ -3,7 +3,7 @@
   "sources": {
     "page": {
       "path": "app/page.tsx",
-      "stateDeclarationsStartLine": 327
+      "stateDeclarationsStartLine": 342
     },
     "styles": {
       "path": "app/globals.css",
@@ -26,12 +26,12 @@
     "modernFamilyCourses": 5,
     "voaCourses": 24,
     "words": 570,
-    "sentenceEntries": 856,
-    "totalStudyEntries": 1426,
+    "sentenceEntries": 852,
+    "totalStudyEntries": 1422,
     "wordAudioFiles": 570,
-    "sentenceAudioFiles": 856,
-    "totalM4aFiles": 1426,
-    "totalM4aBytes": 33360777
+    "sentenceAudioFiles": 852,
+    "totalM4aFiles": 1422,
+    "totalM4aBytes": 33216097
   },
   "defaults": {
     "courseId": "modern-family-s01e01",
@@ -802,9 +802,9 @@
       "family": "ai",
       "manifest": "app/data/ai-polite-boundaries-b1.json",
       "manifestCourseId": "polite-boundaries-b1",
-      "learnableEntries": 20,
-      "audioFiles": 20,
-      "audioBytes": 659939
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 515259
     }
   ],
   "representativeFiles": [

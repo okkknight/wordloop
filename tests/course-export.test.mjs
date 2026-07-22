@@ -75,7 +75,7 @@ test("exporter is deterministic, complete, and preserves runtime course semantic
     assert.equal(catalog.defaultCourseId, "modern-family-s01e01");
     assert.equal(catalog.collections.length, 4);
     assert.equal(catalog.courses.length, 31);
-    assert.deepEqual(report.counts, { collections: 4, courses: 31, wordEntries: 570, sentenceEntries: 856, audioFiles: 1426, audioBytes: 33360777 });
+    assert.deepEqual(report.counts, { collections: 4, courses: 31, wordEntries: 570, sentenceEntries: 852, audioFiles: 1422, audioBytes: 33216097 });
     assert.deepEqual(report.sourceIdDifferences, [{ courseId: "modern-family-s01e01", sourceManifestId: "modern-family-s01", source: "app/data/modern-family-s01e01.json" }]);
     assert.equal(report.ignoredHighlights[0].entryIds.length, 47);
 
