@@ -1,0 +1,590 @@
+{
+  "courseId": "c05-telling-a-recent-everyday-experience-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够交代背景，按顺序讲述一件日常小事，并说明结果和感受。",
+    "communicationGoals": [
+      "说明事情发生的时间、地点和起因",
+      "按照自然顺序描述主要经过",
+      "描述一个小问题、变化或意外",
+      "说明最后结果以及自己的反应"
+    ],
+    "coreChunks": [
+      "Yesterday",
+      "It all started when",
+      "The surprising part was",
+      "In the end"
+    ],
+    "supportingVocabulary": [
+      "unexpected",
+      "routine",
+      "incident",
+      "outcome",
+      "reaction",
+      "sequence",
+      "describe",
+      "experience",
+      "background",
+      "location"
+    ],
+    "contentBoundaries": [
+      "不要求戏剧化或虚构故事",
+      "不做旅行主题的重复版本",
+      "不强调文学化叙事和复杂时态展示"
+    ],
+    "realWorldContexts": [
+      "Sharing a story about a minor mishap at work with a colleague.",
+      "Describing a small but memorable event from a weekend to a friend.",
+      "Explaining a surprising encounter at a local store to a family member."
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "说明事情发生的时间、地点和起因",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "按照自然顺序描述主要经过",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "描述一个小问题、变化或意外",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "说明最后结果以及自己的反应",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "Yesterday",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "说明事情发生的时间、地点和起因"
+      ]
+    },
+    {
+      "chunk": "It all started when",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "按照自然顺序描述主要经过"
+      ]
+    },
+    {
+      "chunk": "The surprising part was",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "描述一个小问题、变化或意外"
+      ]
+    },
+    {
+      "chunk": "In the end",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "说明最后结果以及自己的反应"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "meaningTarget": "说明事情发生的时间、地点和起因",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "meaningTarget": "说明事情发生的时间、地点和起因",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "meaningTarget": "说明事情发生的时间、地点和起因",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "meaningTarget": "说明事情发生的时间、地点和起因",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "meaningTarget": "按照自然顺序描述主要经过",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "meaningTarget": "按照自然顺序描述主要经过",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "meaningTarget": "按照自然顺序描述主要经过",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "meaningTarget": "按照自然顺序描述主要经过",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "meaningTarget": "描述一个小问题、变化或意外",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "meaningTarget": "描述一个小问题、变化或意外",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "meaningTarget": "描述一个小问题、变化或意外",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "meaningTarget": "描述一个小问题、变化或意外",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "meaningTarget": "说明最后结果以及自己的反应",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "meaningTarget": "说明最后结果以及自己的反应",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "meaningTarget": "说明最后结果以及自己的反应",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "meaningTarget": "说明最后结果以及自己的反应",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Yesterday",
+        "It all started when",
+        "The surprising part was",
+        "In the end"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不要求戏剧化或虚构故事",
+      "不做旅行主题的重复版本",
+      "不强调文学化叙事和复杂时态展示"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

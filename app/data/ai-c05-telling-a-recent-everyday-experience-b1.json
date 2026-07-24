@@ -1,0 +1,169 @@
+{
+  "courseId": "c05-telling-a-recent-everyday-experience-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-c05-001",
+      "text": "Last week, I was at the grocery store.",
+      "translation": "上周，我在杂货店。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-c05-002",
+      "text": "Yesterday, I went to the library to return some books.",
+      "translation": "昨天，我去图书馆还书。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-c05-003",
+      "text": "On Monday, I was working from home.",
+      "translation": "周一，我在家工作。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-c05-004",
+      "text": "A few days ago, I was at my friend's house.",
+      "translation": "几天前，我在朋友家。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.584,
+      "duration": 3.584
+    },
+    {
+      "id": "ai-c05-005",
+      "text": "I picked up some fresh vegetables and fruits.",
+      "translation": "我买了一些新鲜的蔬菜和水果。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-c05-006",
+      "text": "It all started when I noticed my phone was missing.",
+      "translation": "事情开始于我发现手机不见了。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.224,
+      "duration": 4.224
+    },
+    {
+      "id": "ai-c05-007",
+      "text": "I decided to call my friend to catch up.",
+      "translation": "我决定给朋友打电话聊聊近况。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.944,
+      "duration": 2.944
+    },
+    {
+      "id": "ai-c05-008",
+      "text": "Then, I realized I had left my wallet at home.",
+      "translation": "然后，我意识到我把钱包忘在家里了。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    },
+    {
+      "id": "ai-c05-009",
+      "text": "Suddenly, it started to rain heavily.",
+      "translation": "突然，开始下起大雨。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-c05-010",
+      "text": "The surprising part was I found an old friend there.",
+      "translation": "令人惊讶的是，我在那里遇到了一个老朋友。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-c05-011",
+      "text": "I accidentally spilled coffee on my shirt.",
+      "translation": "我不小心把咖啡洒在了衬衫上。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-c05-012",
+      "text": "I forgot my umbrella and got soaked.",
+      "translation": "我忘了带伞，结果淋湿了。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-c05-013",
+      "text": "Eventually, I managed to fix the problem myself.",
+      "translation": "最终，我自己解决了这个问题。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.627,
+      "duration": 3.627
+    },
+    {
+      "id": "ai-c05-014",
+      "text": "In the end, I felt relieved that everything worked out.",
+      "translation": "最后，我感到很欣慰，一切都解决了。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.499,
+      "duration": 3.499
+    },
+    {
+      "id": "ai-c05-015",
+      "text": "I learned to always double-check my belongings.",
+      "translation": "我学会了要时刻检查自己的物品。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.627,
+      "duration": 3.627
+    },
+    {
+      "id": "ai-c05-016",
+      "text": "It taught me to be more prepared for surprises.",
+      "translation": "这让我学会了更好地准备应对意外。",
+      "audio": "audio/c05-telling-a-recent-everyday-experience-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.352,
+      "duration": 4.352
+    }
+  ]
+}

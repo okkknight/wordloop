@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "C05",
+      "titleZh": "讲述最近发生的一件小事",
+      "titleEn": "Telling a Recent Everyday Experience",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够交代背景，按顺序讲述一件日常小事，并说明结果和感受。",
+      "communicationGoals": [
+        "说明事情发生的时间、地点和起因",
+        "按照自然顺序描述主要经过",
+        "描述一个小问题、变化或意外",
+        "说明最后结果以及自己的反应"
+      ],
+      "abilityTags": [
+        "C3",
+        "C2",
+        "C"
+      ],
+      "selectionReason": "课程池 releaseOrder 23 的冻结课程。",
+      "distinctiveValue": "让学习者从描述习惯过渡到真正讲述发生过的事情。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不要求戏剧化或虚构故事",
+        "不做旅行主题的重复版本",
+        "不强调文学化叙事和复杂时态展示"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "说明事情发生的时间、地点和起因",
+      "按照自然顺序描述主要经过",
+      "描述一个小问题、变化或意外",
+      "说明最后结果以及自己的反应"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不要求戏剧化或虚构故事",
+      "不做旅行主题的重复版本",
+      "不强调文学化叙事和复杂时态展示"
+    ]
+  }
+}
