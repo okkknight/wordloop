@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池已冻结首发顺序；本产物只将 releaseOrder 3 的 C02 转写为可执行单课提案。",
+  "courses": [
+    {
+      "courseId": "C02",
+      "titleZh": "描述自己居住的地方与周边环境",
+      "titleEn": "Describing Where I Live and My Surroundings",
+      "courseType": "topic_expression",
+      "typeReason": "围绕学习者真实居住空间描述位置、设施、便利度和感受，属于主题表达型课程。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够介绍自己住在哪里、周边有什么、出行是否方便以及自己的感受。",
+      "communicationGoals": [
+        "说明所在区域和住所类型。",
+        "描述附近常见地点与设施。",
+        "表达交通、购物和生活便利程度。",
+        "说出喜欢、不便或小的理想改进。"
+      ],
+      "abilityTags": [
+        "C1 描述个人情况",
+        "C4 表达偏好与感受",
+        "居住环境"
+      ],
+      "selectionReason": "课程池 releaseOrder 3 的冻结课程。",
+      "distinctiveValue": "以自己的真实生活空间为素材，适合反复替换和迁移。",
+      "prerequisites": [
+        "C01"
+      ],
+      "humanReviewRisks": [
+        "不训练给别人指路。",
+        "不做城市系统比较。",
+        "不使用房地产和城市规划术语。"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "住所",
+      "周边设施",
+      "交通与便利",
+      "居住感受"
+    ],
+    "duplicatesResolved": [
+      "不与 A02 问路课程重复。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "确认住所与周边设施表达的比例。"
+    ]
+  }
+}

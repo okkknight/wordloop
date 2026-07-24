@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-24 · C02 where-I-live course developed, pending independent review
+
+- 按课程池 releaseOrder 3 完成 C02《描述自己居住的地方与周边环境 / Describing Where I Live and My Surroundings》：A2、16 句、`3/4/6/3` 难度配额、16×2 候选句、最终人工确认稿与检查报告均位于 `wordloop_course_production_pack/outputs/c02-describing-where-i-live-a2/`；候选检查为 0 error / 0 warning。
+- 已生成 16 段 OpenAI `gpt-4o-mini-tts` `marin` AI 语音、manifest 与 `AI PRACTICE` 注册条目；运行时 ID 为 `c02-describing-where-i-live-a2`，课程与 manifest 明确披露 AI 合成语音。
+- 内容 exporter 成功，当前库存为 34 门课程、900 个句子条目、1,470 个 M4A、34,678,423 bytes。下一位 reviewer 应抽听 C02 的 16 段音频，并核对课程池边界、manifest、注册表与 exporter 产物。
+- iOS baseline 仍不能写回：现有 `app/page.tsx` 未满足 `USERNAME` 启动文案合同；未修改该页面，待该独立问题恢复后再重写 `docs/ios-migration/baseline/content-inventory.json` 并复跑完整基线。
+
 ## 2026-07-22 · C01 current-life course developed, baseline refresh blocked
 
 - 按课程池 releaseOrder 2 完成 C01《谈论自己的工作、学习与近况 / Talking About Work, Study, and Current Life》：A2、16 句、检查器 0 error/0 warning、16 段 `marin` AI 语音与 `AI PRACTICE` 注册表条目已生成；运行时 ID 为 `c01-talking-work-study-current-life-a2`。

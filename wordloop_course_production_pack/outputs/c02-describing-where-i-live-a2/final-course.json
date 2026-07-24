@@ -1,0 +1,39 @@
+{
+  "courseId": "c02-describing-where-i-live-a2",
+  "finalSentences": [
+    {"order": 1, "slot": 1, "section": "位置与住所", "role": "说明住在哪个城市或区域", "text": "I live in a quiet part of the city.", "translation": "我住在城市一个安静的区域。", "difficultyBand": "entry", "usedChunks": ["I live in"], "sourceCandidateId": "s01-a", "edited": false, "selectionReason": "以清晰、可替换的地点信息开启描述。"},
+    {"order": 2, "slot": 2, "section": "位置与住所", "role": "说明住所类型", "text": "I live in a small apartment with my roommate.", "translation": "我和室友住在一间小公寓里。", "difficultyBand": "entry", "usedChunks": ["I live in"], "sourceCandidateId": "s02-a", "edited": false, "selectionReason": "用日常的住所与合住信息补充背景。"},
+    {"order": 3, "slot": 3, "section": "位置与住所", "role": "表达环境总体感受", "text": "It’s pretty quiet, especially at night.", "translation": "这里很安静，尤其是在晚上。", "difficultyBand": "entry", "usedChunks": ["It’s", "pretty"], "sourceCandidateId": "s03-a", "edited": false, "selectionReason": "用简单形容词描述总体感受。"},
+    {"order": 4, "slot": 4, "section": "附近设施", "role": "说明附近常见地点", "text": "There’s a small park near my home.", "translation": "我家附近有一个小公园。", "difficultyBand": "targetBase", "usedChunks": ["There’s a"], "sourceCandidateId": "s04-a", "edited": false, "selectionReason": "引入核心设施句型，信息具体但负担低。"},
+    {"order": 5, "slot": 5, "section": "附近设施", "role": "说明步行可达的服务", "text": "The grocery store is within walking distance.", "translation": "杂货店在步行距离内。", "difficultyBand": "targetBase", "usedChunks": ["within walking distance"], "sourceCandidateId": "s05-a", "edited": false, "selectionReason": "加入高度实用的距离表达。"},
+    {"order": 6, "slot": 6, "section": "附近设施", "role": "说明购物便利度", "text": "I can buy daily things around the corner.", "translation": "我可以在街角买到日用品。", "difficultyBand": "targetBase", "usedChunks": ["around the corner"], "sourceCandidateId": "s06-a", "edited": false, "selectionReason": "把周边设施转化为日常生活便利。"},
+    {"order": 7, "slot": 7, "section": "附近设施", "role": "说明休闲地点", "text": "I like going to the park on weekends.", "translation": "我周末喜欢去公园。", "difficultyBand": "targetBase", "usedChunks": ["on weekends"], "sourceCandidateId": "s07-a", "edited": false, "selectionReason": "加入简单、自然的个人使用场景。"},
+    {"order": 8, "slot": 8, "section": "生活便利", "role": "说明交通方式", "text": "I usually take the bus to get around.", "translation": "我通常坐公交车出行。", "difficultyBand": "targetCore", "usedChunks": ["I usually", "take the bus", "get around"], "sourceCandidateId": "s08-a", "edited": false, "selectionReason": "覆盖核心日常出行句型。"},
+    {"order": 9, "slot": 9, "section": "生活便利", "role": "说明交通便利或不便", "text": "Getting around is easy because the station is close.", "translation": "出行很方便，因为车站很近。", "difficultyBand": "targetCore", "usedChunks": ["Getting around", "because"], "sourceCandidateId": "s09-a", "edited": false, "selectionReason": "在评价后补充一个清楚的原因。"},
+    {"order": 10, "slot": 10, "section": "生活便利", "role": "描述高峰时的变化", "text": "The area gets very busy in the early morning.", "translation": "这个区域清晨会非常忙。", "difficultyBand": "targetCore", "usedChunks": ["gets very busy"], "sourceCandidateId": "s10-a", "edited": false, "selectionReason": "加入时间变化，同时维持单一信息点。"},
+    {"order": 11, "slot": 11, "section": "生活便利", "role": "说明一个实际不便", "text": "The only problem is that parking can be hard.", "translation": "唯一的问题是停车可能很难。", "difficultyBand": "targetCore", "usedChunks": ["The only problem is"], "sourceCandidateId": "s11-a", "edited": false, "selectionReason": "表达轻度不便，避免过度负面的表述。"},
+    {"order": 12, "slot": 12, "section": "生活便利", "role": "说明理想改进", "text": "I wish there were more trees near my building.", "translation": "我希望我楼附近有更多树。", "difficultyBand": "targetCore", "usedChunks": ["I wish there were"], "sourceCandidateId": "s12-a", "edited": false, "selectionReason": "覆盖核心愿望句型，表达克制且真实的改进。"},
+    {"order": 13, "slot": 13, "section": "感受与比较", "role": "连接过去和现在的住处", "text": "Since I moved here, I’ve gotten used to the buses.", "translation": "自从搬来后，我已经习惯坐公交了。", "difficultyBand": "stretch", "usedChunks": ["Since I moved here", "gotten used to"], "sourceCandidateId": "s13-a", "edited": false, "selectionReason": "用搬家后的适应经历形成 A2+ 挑战句。"},
+    {"order": 14, "slot": 14, "section": "感受与比较", "role": "表达喜欢的具体原因", "text": "I like this area because it feels safe.", "translation": "我喜欢这个区域，因为它让我觉得安全。", "difficultyBand": "targetCore", "usedChunks": ["I like", "because"], "sourceCandidateId": "s14-a", "edited": false, "selectionReason": "在挑战句后回落为易迁移的喜好加原因表达。"},
+    {"order": 15, "slot": 15, "section": "感受与比较", "role": "提出有限的理想变化", "text": "If I could change one thing, I’d add more parks.", "translation": "如果我能改变一件事，我会增加更多公园。", "difficultyBand": "stretch", "usedChunks": ["If I could", "I’d"], "sourceCandidateId": "s15-a", "edited": false, "selectionReason": "用有限条件句表达一个具体、温和的愿望。"},
+    {"order": 16, "slot": 16, "section": "感受与比较", "role": "整合便利与限制", "text": "Overall, it’s convenient to live here, but it can be noisy.", "translation": "总体来说，住在这里很方便，但可能有点吵。", "difficultyBand": "stretch", "usedChunks": ["Overall"], "sourceCandidateId": "s16-a", "edited": false, "selectionReason": "用平衡评价收束整节课，保留真实生活感。"}
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句依次覆盖住处、周边设施、日常便利与个人感受，完整达成 C02 的沟通目标。",
+    "naturalness": "表达面向真实的日常闲聊，语气自然，不依赖具体城市或虚构对话背景。",
+    "realWorldUsefulness": "每句都可用于和新同事、同学或朋友谈论社区与居住体验。",
+    "coreChunkCoverage": "四个核心表达分别用于说明住处、附近设施、日常出行和理想改进。",
+    "difficultyDistribution": "严格保持 entry 3、targetBase 4、targetCore 6、stretch 3 的蓝图配额。",
+    "difficultyCurve": "挑战句在 13、15、16；第 14 句回落为简单的喜好与原因表达。",
+    "repetitionQuality": "相近主题句分别承担地点、设施、购物、休闲、交通和感受功能，未以替换名词凑数。",
+    "fillerRisk": "低。所有句子均服务于介绍住处、周边环境或居住感受。"
+  },
+  "humanReviewFocus": [
+    "确认第 6 句 around the corner 的口语感是否符合产品语气。",
+    "抽读第 13、15、16 句，确认 A2+ 学习者在自然语速下可跟读。",
+    "确认公园、公交、杂货店等生活场景的覆盖符合课程定位。"
+  ],
+  "needsHumanReview": true
+}
