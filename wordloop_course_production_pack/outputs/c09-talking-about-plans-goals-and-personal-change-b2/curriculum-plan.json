@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "C09",
+      "titleZh": "谈论计划、目标与个人变化",
+      "titleEn": "Talking About Plans, Goals, and Personal Change",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够把过去、当前方向和未来目标连接起来，并说明障碍、优先级和调整方式。",
+      "communicationGoals": [
+        "说明当前最重要的方向和近期计划",
+        "描述长期目标以及它对自己的意义",
+        "说明现实障碍、优先级冲突和不确定性",
+        "比较过去与现在，并表达根据情况调整计划的方式"
+      ],
+      "abilityTags": [
+        "C6",
+        "C5",
+        "C"
+      ],
+      "selectionReason": "课程池 releaseOrder 32 的冻结课程。",
+      "distinctiveValue": "形成较成熟的连续自我表达，综合时间、动机、限制和变化。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "说明当前最重要的方向和近期计划",
+      "描述长期目标以及它对自己的意义",
+      "说明现实障碍、优先级冲突和不确定性",
+      "比较过去与现在，并表达根据情况调整计划的方式"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不限定为职业规划",
+      "不扩展成抽象成功学讨论",
+      "不要求承诺过度具体或不真实的未来细节"
+    ]
+  }
+}

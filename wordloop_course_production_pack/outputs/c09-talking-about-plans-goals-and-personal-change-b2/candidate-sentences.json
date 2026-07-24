@@ -1,0 +1,618 @@
+{
+  "courseId": "c09-talking-about-plans-goals-and-personal-change-b2",
+  "candidateCountPerSlot": 2,
+  "slots": [
+    {
+      "slot": 1,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s01-a",
+          "text": "I'm focusing on improving my health right now.",
+          "translation": "我现在专注于改善我的健康。",
+          "usedChunks": [
+            "I'm focusing"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s01-b",
+          "text": "My priority is spending more time with family.",
+          "translation": "我的优先事项是花更多时间与家人在一起。",
+          "usedChunks": [
+            "My priority"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s02-a",
+          "text": "I'm planning to start a new hobby next month.",
+          "translation": "我计划下个月开始一个新爱好。",
+          "usedChunks": [
+            "I'm planning to"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s02-b",
+          "text": "I'm planning to take a short trip this weekend.",
+          "translation": "我计划这个周末去短途旅行。",
+          "usedChunks": [
+            "I'm planning to"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s03-a",
+          "text": "This week, I'm dedicating time to finish my book.",
+          "translation": "这周我会专心完成我的书。",
+          "usedChunks": [
+            "This week,"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s03-b",
+          "text": "I'm working on organizing my workspace today.",
+          "translation": "我今天在整理我的工作空间。",
+          "usedChunks": [
+            "I'm working"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s04-a",
+          "text": "I'm setting aside time to volunteer at the local shelter.",
+          "translation": "我正在安排时间去当地的收容所做志愿者。",
+          "usedChunks": [
+            "I'm setting"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s04-b",
+          "text": "I'm focusing on learning a new language this year.",
+          "translation": "我今年专注于学习一门新语言。",
+          "usedChunks": [
+            "I'm focusing"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s05-a",
+          "text": "I want to travel to every continent before I turn 50.",
+          "translation": "我想在50岁之前游遍每个大陆。",
+          "usedChunks": [
+            "I want"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s05-b",
+          "text": "My dream is to write a novel that gets published.",
+          "translation": "我的梦想是写一本能出版的小说。",
+          "usedChunks": [
+            "My dream"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s06-a",
+          "text": "My main goal is to become more self-sufficient.",
+          "translation": "我的主要目标是变得更加自给自足。",
+          "usedChunks": [
+            "My main goal is"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s06-b",
+          "text": "My main goal is to complete a marathon next year.",
+          "translation": "我的主要目标是明年完成马拉松。",
+          "usedChunks": [
+            "My main goal is"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s07-a",
+          "text": "I hope to make a positive impact on my community.",
+          "translation": "我希望对我的社区产生积极影响。",
+          "usedChunks": [
+            "I hope"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s07-b",
+          "text": "I aim to learn how to play the guitar by the end of the year.",
+          "translation": "我的目标是在年底前学会弹吉他。",
+          "usedChunks": [
+            "I aim"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 15,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s08-a",
+          "text": "Achieving financial independence is important to me.",
+          "translation": "实现财务独立对我来说很重要。",
+          "usedChunks": [
+            "Achieving financial"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s08-b",
+          "text": "I want to develop skills that allow me to work remotely.",
+          "translation": "我想发展能让我远程工作的技能。",
+          "usedChunks": [
+            "I want"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s09-a",
+          "text": "Balancing work and personal life is challenging.",
+          "translation": "平衡工作和个人生活是有挑战性的。",
+          "usedChunks": [
+            "Balancing work"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s09-b",
+          "text": "Finding time for exercise is harder than I expected.",
+          "translation": "找到时间锻炼比我想象的要难。",
+          "usedChunks": [
+            "Finding time"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s10-a",
+          "text": "I've realized that I need to prioritize my mental health.",
+          "translation": "我意识到我需要优先考虑我的心理健康。",
+          "usedChunks": [
+            "I've realized that"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s10-b",
+          "text": "I've realized that managing stress is crucial for me.",
+          "translation": "我意识到管理压力对我来说至关重要。",
+          "usedChunks": [
+            "I've realized that"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s11-a",
+          "text": "Sometimes, unexpected events disrupt my plans.",
+          "translation": "有时，意外事件会打乱我的计划。",
+          "usedChunks": [
+            "Sometimes, unexpected"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s11-b",
+          "text": "Juggling multiple responsibilities can be overwhelming.",
+          "translation": "同时处理多项责任可能会让人不堪重负。",
+          "usedChunks": [
+            "Juggling multiple"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s12-a",
+          "text": "Uncertainty about the future makes planning difficult.",
+          "translation": "对未来的不确定性使计划变得困难。",
+          "usedChunks": [
+            "Uncertainty about"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s12-b",
+          "text": "Limited resources often force me to adjust my goals.",
+          "translation": "有限的资源常常迫使我调整目标。",
+          "usedChunks": [
+            "Limited resources"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s13-a",
+          "text": "I used to be more spontaneous, but now I plan ahead.",
+          "translation": "我过去比较随性，但现在我会提前计划。",
+          "usedChunks": [
+            "I used"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s13-b",
+          "text": "I was less organized before, but I've learned to manage my time better.",
+          "translation": "我以前不太有条理，但我学会了更好地管理时间。",
+          "usedChunks": [
+            "I was"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 13,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s14-a",
+          "text": "In the past, I focused more on short-term goals.",
+          "translation": "过去，我更注重短期目标。",
+          "usedChunks": [
+            "In the past, I"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s14-b",
+          "text": "In the past, I didn't consider the long-term effects of my actions.",
+          "translation": "过去，我没有考虑过我行为的长期影响。",
+          "usedChunks": [
+            "In the past, I"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 12,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s15-a",
+          "text": "I've adapted my plans to fit my current lifestyle.",
+          "translation": "我调整了我的计划以适应我目前的生活方式。",
+          "usedChunks": [
+            "I've adapted"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s15-b",
+          "text": "I've shifted my priorities to align with my values.",
+          "translation": "我调整了我的优先事项以符合我的价值观。",
+          "usedChunks": [
+            "I've shifted"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s16-a",
+          "text": "I've learned to be flexible with my expectations.",
+          "translation": "我学会了对自己的期望保持灵活性。",
+          "usedChunks": [
+            "I've learned"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s16-b",
+          "text": "I've adjusted my approach to better handle changes.",
+          "translation": "我调整了我的方法以更好地应对变化。",
+          "usedChunks": [
+            "I've adjusted"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    }
+  ],
+  "generationReview": {
+    "coverageComplete": true,
+    "warnings": []
+  }
+}
