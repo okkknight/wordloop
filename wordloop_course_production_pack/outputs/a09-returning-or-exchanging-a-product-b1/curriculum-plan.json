@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A09",
+      "titleZh": "退换商品并说明原因",
+      "titleEn": "Returning or Exchanging a Product",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够说明退换需求和商品问题，提供购买信息，并讨论退款、换货或商店余额。",
+      "communicationGoals": [
+        "直接说明想退货或换货",
+        "描述尺寸、功能、损坏或不符合预期的问题",
+        "提供收据、购买时间和付款方式等信息",
+        "询问并回应退款、换货、维修或商店余额方案"
+      ],
+      "abilityTags": [
+        "A5",
+        "A3",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 21 的冻结课程。",
+      "distinctiveValue": "围绕有规则约束的退换流程，训练清楚说明理由和接受替代处理。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不使用激烈投诉或威胁性语言",
+        "不处理复杂保修和法律争议",
+        "不重复一般购物需求课程"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "直接说明想退货或换货",
+      "描述尺寸、功能、损坏或不符合预期的问题",
+      "提供收据、购买时间和付款方式等信息",
+      "询问并回应退款、换货、维修或商店余额方案"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不使用激烈投诉或威胁性语言",
+      "不处理复杂保修和法律争议",
+      "不重复一般购物需求课程"
+    ]
+  }
+}

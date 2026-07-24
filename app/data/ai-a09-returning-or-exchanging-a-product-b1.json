@@ -1,0 +1,169 @@
+{
+  "courseId": "a09-returning-or-exchanging-a-product-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a09-001",
+      "text": "I need to exchange this item.",
+      "translation": "我需要换这个商品。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a09-002",
+      "text": "I would like to return this shirt.",
+      "translation": "我想退掉这件衬衫。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-a09-003",
+      "text": "I want to exchange this for a different size.",
+      "translation": "我想换个不同尺码的。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a09-004",
+      "text": "I am here to return this product.",
+      "translation": "我来退这个产品。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-a09-005",
+      "text": "The size is too small for me.",
+      "translation": "这个尺码对我来说太小了。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-a09-006",
+      "text": "The product is defective and won't turn on.",
+      "translation": "产品有缺陷，无法开机。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a09-007",
+      "text": "The color is not what I ordered.",
+      "translation": "颜色不是我订的那种。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.92,
+      "duration": 1.92
+    },
+    {
+      "id": "ai-a09-008",
+      "text": "The fabric feels different than described.",
+      "translation": "面料感觉和描述的不一样。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-a09-009",
+      "text": "Here's my receipt from last week.",
+      "translation": "这是我上周的收据。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-a09-010",
+      "text": "I bought it on Monday.",
+      "translation": "我是在星期一买的。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.261,
+      "duration": 2.261
+    },
+    {
+      "id": "ai-a09-011",
+      "text": "I paid with my credit card.",
+      "translation": "我是用信用卡支付的。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a09-012",
+      "text": "I purchased it online.",
+      "translation": "我是在网上买的。",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.944,
+      "duration": 2.944
+    },
+    {
+      "id": "ai-a09-013",
+      "text": "Is there an option for store credit?",
+      "translation": "有商店余额的选项吗？",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a09-014",
+      "text": "Can I get a refund for this purchase?",
+      "translation": "我能为这次购买退款吗？",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-a09-015",
+      "text": "Could I exchange this for something else?",
+      "translation": "我可以换成别的东西吗？",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a09-016",
+      "text": "What is your return policy?",
+      "translation": "你们的退货政策是什么？",
+      "audio": "audio/a09-returning-or-exchanging-a-product-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.877,
+      "duration": 1.877
+    }
+  ]
+}
