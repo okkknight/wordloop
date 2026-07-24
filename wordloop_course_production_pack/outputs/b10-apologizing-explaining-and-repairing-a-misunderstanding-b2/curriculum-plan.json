@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B10",
+      "titleZh": "道歉、解释并修复误会",
+      "titleEn": "Apologizing, Explaining, and Repairing a Misunderstanding",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够承认对方受到的影响，真诚道歉，解释但不推卸责任，并提出修复方式。",
+      "communicationGoals": [
+        "承认具体发生的事情和造成的影响",
+        "作出直接、适度且不含糊的道歉",
+        "解释背景或本意，但避免把解释变成借口",
+        "澄清误会并提出下一步修复行动"
+      ],
+      "abilityTags": [
+        "B6",
+        "B3",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 31 的冻结课程。",
+      "distinctiveValue": "将语言准确性和关系修复结合，是互动沟通的高阶能力。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "承认具体发生的事情和造成的影响",
+      "作出直接、适度且不含糊的道歉",
+      "解释背景或本意，但避免把解释变成借口",
+      "澄清误会并提出下一步修复行动"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不处理法律责任和正式危机沟通",
+      "不包含操控性或虚假道歉",
+      "不重复普通服务投诉的解决语言"
+    ]
+  }
+}
