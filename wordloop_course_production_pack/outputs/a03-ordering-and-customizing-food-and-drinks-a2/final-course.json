@@ -1,0 +1,261 @@
+{
+  "courseId": "a03-ordering-and-customizing-food-and-drinks-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "text": "Can I get two coffees?",
+      "translation": "我可以要两杯咖啡吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Can I"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "text": "I'd like to order a salad.",
+      "translation": "我想点一个沙拉。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I'd like to order"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "text": "Can I have a burger?",
+      "translation": "我可以要一个汉堡吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Can I"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "text": "Could I get a cup of tea?",
+      "translation": "我可以要一杯茶吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Could I"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "text": "I'll have a large soda.",
+      "translation": "我要一大杯汽水。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I'll have"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "text": "Can I have it with extra cheese?",
+      "translation": "我可以加点奶酪吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Can I have it with"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "text": "I'd like the soup hot.",
+      "translation": "我想要热的汤。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I'd like"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "text": "I'll take the combo with a drink.",
+      "translation": "我要套餐加饮料。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I'll take"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "text": "No ice in my drink, please.",
+      "translation": "请不要在我的饮料里加冰。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "No ice"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "text": "Make it a large, please, with extra cream.",
+      "translation": "请做大杯，加多点奶油。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Make it a large, please"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "text": "Hold the mayo on my sandwich.",
+      "translation": "我的三明治不要加蛋黄酱。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Hold the"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "text": "Can you make the soup less salty?",
+      "translation": "你能把汤做得淡一点吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "text": "Everything looks good, thank you.",
+      "translation": "一切看起来不错，谢谢。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Everything looks"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "text": "Could you repeat my order to make sure?",
+      "translation": "你能重复一下我的订单以确认吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Could you repeat my order"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "text": "Thanks, that's perfect.",
+      "translation": "谢谢，太完美了。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Thanks, that's"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "text": "Thanks for your help, have a good day!",
+      "translation": "谢谢你的帮助，祝你有美好的一天！",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Thanks for"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

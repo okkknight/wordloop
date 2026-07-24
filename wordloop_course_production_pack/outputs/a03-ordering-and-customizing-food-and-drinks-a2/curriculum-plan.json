@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A03",
+      "titleZh": "点餐并调整食物和饮品",
+      "titleEn": "Ordering and Customizing Food and Drinks",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够完成基础点餐，选择数量和规格，提出常见调整，并确认订单。",
+      "communicationGoals": [
+        "点选食物或饮品并说明数量",
+        "选择大小、温度、套餐或配菜",
+        "提出少糖、去冰、不加某种配料等常见调整",
+        "确认订单内容并自然结束点单"
+      ],
+      "abilityTags": [
+        "A2",
+        "A4",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 12 的冻结课程。",
+      "distinctiveValue": "完整覆盖一次简单点单的核心任务，而不是罗列食物词汇。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "点选食物或饮品并说明数量",
+      "选择大小、温度、套餐或配菜",
+      "提出少糖、去冰、不加某种配料等常见调整",
+      "确认订单内容并自然结束点单"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不处理上错餐、退款或投诉",
+      "不加入复杂过敏史或专业饮食限制",
+      "不扩展成餐厅社交对话"
+    ]
+  }
+}
