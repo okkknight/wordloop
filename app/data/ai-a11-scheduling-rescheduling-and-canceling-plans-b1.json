@@ -1,0 +1,169 @@
+{
+  "courseId": "a11-scheduling-rescheduling-and-canceling-plans-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a11-001",
+      "text": "How about we get together this weekend?",
+      "translation": "我们这个周末聚一下怎么样？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a11-002",
+      "text": "Can we meet on Friday afternoon?",
+      "translation": "我们可以在星期五下午见面吗？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-a11-003",
+      "text": "Let's plan for dinner next Tuesday.",
+      "translation": "我们计划下周二吃晚饭吧。",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a11-004",
+      "text": "Shall we schedule a meeting for next week?",
+      "translation": "我们安排下周开会好吗？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-a11-005",
+      "text": "When are you available this week?",
+      "translation": "你这周什么时候有空？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.517,
+      "duration": 2.517
+    },
+    {
+      "id": "ai-a11-006",
+      "text": "Does this time work for you, or should we find another?",
+      "translation": "这个时间对你合适吗，还是我们找另一个时间？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.499,
+      "duration": 3.499
+    },
+    {
+      "id": "ai-a11-007",
+      "text": "Do you have any preferences for the meeting time?",
+      "translation": "你对会议时间有什么偏好吗？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    },
+    {
+      "id": "ai-a11-008",
+      "text": "Could you let me know your availability?",
+      "translation": "你能告诉我你的空闲时间吗？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a11-009",
+      "text": "If Monday doesn't work, how about Wednesday?",
+      "translation": "如果星期一不行，那星期三怎么样？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a11-010",
+      "text": "Let's reschedule for next Thursday at 2 PM.",
+      "translation": "我们改到下周四下午2点吧。",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-a11-011",
+      "text": "Would moving it to the afternoon help?",
+      "translation": "改到下午会有帮助吗？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a11-012",
+      "text": "Is there a better time for you later this week?",
+      "translation": "这周晚些时候有没有更好的时间？",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.115,
+      "duration": 3.115
+    },
+    {
+      "id": "ai-a11-013",
+      "text": "Everything is set for our meeting tomorrow.",
+      "translation": "我们明天的会议一切都安排好了。",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-a11-014",
+      "text": "I need to cancel our lunch tomorrow.",
+      "translation": "我需要取消我们明天的午餐。",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-a11-015",
+      "text": "Thanks for understanding about the change.",
+      "translation": "感谢你理解这次的变动。",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a11-016",
+      "text": "Let me know if there's anything else I can do.",
+      "translation": "如果还有什么我能做的，请告诉我。",
+      "audio": "audio/a11-scheduling-rescheduling-and-canceling-plans-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    }
+  ]
+}

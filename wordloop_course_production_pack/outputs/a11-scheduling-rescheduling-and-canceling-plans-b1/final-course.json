@@ -1,0 +1,261 @@
+{
+  "courseId": "a11-scheduling-rescheduling-and-canceling-plans-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "text": "How about we get together this weekend?",
+      "translation": "我们这个周末聚一下怎么样？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "How about"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "text": "Can we meet on Friday afternoon?",
+      "translation": "我们可以在星期五下午见面吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Can we meet on"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "text": "Let's plan for dinner next Tuesday.",
+      "translation": "我们计划下周二吃晚饭吧。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Let's plan"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "text": "Shall we schedule a meeting for next week?",
+      "translation": "我们安排下周开会好吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Shall we"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "text": "When are you available this week?",
+      "translation": "你这周什么时候有空？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "When are"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "text": "Does this time work for you, or should we find another?",
+      "translation": "这个时间对你合适吗，还是我们找另一个时间？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Does this time work for you"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "text": "Do you have any preferences for the meeting time?",
+      "translation": "你对会议时间有什么偏好吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Do you"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "text": "Could you let me know your availability?",
+      "translation": "你能告诉我你的空闲时间吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Could you"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "text": "If Monday doesn't work, how about Wednesday?",
+      "translation": "如果星期一不行，那星期三怎么样？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "If Monday"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "text": "Let's reschedule for next Thursday at 2 PM.",
+      "translation": "我们改到下周四下午2点吧。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Let's reschedule for"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "text": "Would moving it to the afternoon help?",
+      "translation": "改到下午会有帮助吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Would moving"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "text": "Is there a better time for you later this week?",
+      "translation": "这周晚些时候有没有更好的时间？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Is there"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "text": "Everything is set for our meeting tomorrow.",
+      "translation": "我们明天的会议一切都安排好了。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Everything is"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "text": "I need to cancel our lunch tomorrow.",
+      "translation": "我需要取消我们明天的午餐。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I need to cancel our"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "text": "Thanks for understanding about the change.",
+      "translation": "感谢你理解这次的变动。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Thanks for"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "text": "Let me know if there's anything else I can do.",
+      "translation": "如果还有什么我能做的，请告诉我。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Let me"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

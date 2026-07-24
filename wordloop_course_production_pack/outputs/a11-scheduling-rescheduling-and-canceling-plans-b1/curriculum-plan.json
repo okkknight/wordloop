@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A11",
+      "titleZh": "安排、改期与取消计划",
+      "titleEn": "Scheduling, Rescheduling, and Canceling Plans",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够提出时间、询问对方是否方便、协商替代时间，并礼貌改期或取消。",
+      "communicationGoals": [
+        "提出见面、通话或活动的时间建议",
+        "询问对方的可用时间和偏好",
+        "在时间冲突时提出并比较替代方案",
+        "确认安排，或礼貌说明改期和取消"
+      ],
+      "abilityTags": [
+        "A6",
+        "B5",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 22 的冻结课程。",
+      "distinctiveValue": "训练把一个模糊意向推进为明确安排，并在变化时维持交流关系。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "提出见面、通话或活动的时间建议",
+      "询问对方的可用时间和偏好",
+      "在时间冲突时提出并比较替代方案",
+      "确认安排，或礼貌说明改期和取消"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不重复更改商业预约的流程性表达",
+      "不深入闲聊或活动内容本身",
+      "不涉及复杂会议主持和项目管理"
+    ]
+  }
+}

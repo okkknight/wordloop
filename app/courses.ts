@@ -49,6 +49,7 @@ import aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1 from "./data/ai-a0
 import aiA07ChangingAReservationOrAppointmentB1 from "./data/ai-a07-changing-a-reservation-or-appointment-b1.json";
 import aiA08ConfirmingTravelAndBookingDetailsB1 from "./data/ai-a08-confirming-travel-and-booking-details-b1.json";
 import aiA09ReturningOrExchangingAProductB1 from "./data/ai-a09-returning-or-exchanging-a-product-b1.json";
+import aiA11SchedulingReschedulingAndCancelingPlansB1 from "./data/ai-a11-scheduling-rescheduling-and-canceling-plans-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -267,6 +268,9 @@ const aiA08ConfirmingTravelAndBookingDetailsB1Entries = aiA08ConfirmingTravelAnd
 const aiA09ReturningOrExchangingAProductB1Entries = aiA09ReturningOrExchangingAProductB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a09-returning-or-exchanging-a-product-b1/${entry.audio}` })) as CourseEntry[];
+const aiA11SchedulingReschedulingAndCancelingPlansB1Entries = aiA11SchedulingReschedulingAndCancelingPlansB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a11-scheduling-rescheduling-and-canceling-plans-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -446,6 +450,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "a07-changing-a-reservation-or-appointment-b1", collectionId: "ai-practice", title: "Change a Reservation · B1", subtitle: `Everyday English · ${aiA07ChangingAReservationOrAppointmentB1Entries.length} learning sentences`, description: "更改预订或预约，说明原因、提出替代时间并确认新安排。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA07ChangingAReservationOrAppointmentB1Entries },
   { id: "a08-confirming-travel-and-booking-details-b1", collectionId: "ai-practice", title: "Travel & Booking Details · B1", subtitle: `Everyday English · ${aiA08ConfirmingTravelAndBookingDetailsB1Entries.length} learning sentences`, description: "确认旅行时间、身份信息、座位、房间和预订细节。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA08ConfirmingTravelAndBookingDetailsB1Entries },
   { id: "a09-returning-or-exchanging-a-product-b1", collectionId: "ai-practice", title: "Returns & Exchanges · B1", subtitle: `Everyday English · ${aiA09ReturningOrExchangingAProductB1Entries.length} learning sentences`, description: "说明退换原因、提供购买信息并询问退款或替换方案。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA09ReturningOrExchangingAProductB1Entries },
+  { id: "a11-scheduling-rescheduling-and-canceling-plans-b1", collectionId: "ai-practice", title: "Schedule & Reschedule · B1", subtitle: `Everyday English · ${aiA11SchedulingReschedulingAndCancelingPlansB1Entries.length} learning sentences`, description: "安排、改期、取消计划，并确认双方时间和后续安排。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA11SchedulingReschedulingAndCancelingPlansB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
