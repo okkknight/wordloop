@@ -6,12 +6,20 @@ public struct ProgressDrawerView: View {
     private static let drawerWidthFraction: CGFloat = 0.78
     @Bindable private var store: ProgressDrawerStore
     private let palette: PosterPalette
+    private let onDeleteAllData: (@MainActor () async throws -> Void)?
     @FocusState private var searchIsFocused: Bool
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @State private var showsDeleteConfirmation = false
+    @State private var dataDeletionError: String?
 
-    public init(store: ProgressDrawerStore, palette: PosterPalette) {
+    public init(
+        store: ProgressDrawerStore,
+        palette: PosterPalette,
+        onDeleteAllData: (@MainActor () async throws -> Void)? = nil
+    ) {
         self.store = store
         self.palette = palette
+        self.onDeleteAllData = onDeleteAllData
     }
 
     public var body: some View {
@@ -62,6 +70,22 @@ public struct ProgressDrawerView: View {
             .accessibilityElement(children: .contain)
             .accessibilityAddTraits(.isModal)
         }
+        .alert("删除全部学习数据？", isPresented: $showsDeleteConfirmation) {
+            Button("取消", role: .cancel) {}
+            Button("删除", role: .destructive) {
+                Task { await deleteAllData() }
+            }
+        } message: {
+            Text("这会从本机和 WordLoop 服务器删除当前游客的学习进度，并在此设备上创建新的游客身份。此操作无法撤销。")
+        }
+        .alert("暂时无法删除数据", isPresented: Binding(
+            get: { dataDeletionError != nil },
+            set: { if !$0 { dataDeletionError = nil } }
+        )) {
+            Button("知道了", role: .cancel) {}
+        } message: {
+            Text(dataDeletionError ?? "请稍后重试。")
+        }
     }
 
     private func drawerWidth(in availableWidth: CGFloat) -> CGFloat {
@@ -90,6 +114,30 @@ public struct ProgressDrawerView: View {
             .frame(maxHeight: .infinity)
             .scrollIndicators(.hidden)
             .accessibilityIdentifier("progress-drawer.list")
+
+            if onDeleteAllData != nil {
+                Button("DELETE MY LEARNING DATA") {
+                    showsDeleteConfirmation = true
+                }
+                .font(WordLoopTypography.label(size: 9, weight: .semibold))
+                .tracking(0.8)
+                .foregroundStyle(palette.ink.color.opacity(0.58))
+                .buttonStyle(.plain)
+                .padding(.top, 2)
+                .accessibilityLabel("删除全部学习数据")
+                .accessibilityIdentifier("progress-drawer.delete-data")
+            }
+        }
+    }
+
+    @MainActor
+    private func deleteAllData() async {
+        guard let onDeleteAllData else { return }
+        do {
+            try await onDeleteAllData()
+            store.dismiss(reason: .header)
+        } catch {
+            dataDeletionError = "请检查网络后重试。"
         }
     }
 

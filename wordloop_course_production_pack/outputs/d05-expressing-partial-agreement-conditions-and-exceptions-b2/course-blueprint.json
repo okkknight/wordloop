@@ -1,0 +1,586 @@
+{
+  "courseId": "d05-expressing-partial-agreement-conditions-and-exceptions-b2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B2",
+    "learnerOutcome": "能够承认观点中合理的部分，同时说明条件、例外和自己的保留意见。",
+    "communicationGoals": [
+      "先承认对方观点或常见看法中的合理部分",
+      "指出观点成立所需要的具体条件",
+      "提出一个重要例外或被忽略的限制",
+      "形成有限度的结论并保留自己的立场"
+    ],
+    "coreChunks": [
+      "I see your point",
+      "That's true to some",
+      "If we consider the",
+      "Except in cases where"
+    ],
+    "supportingVocabulary": [
+      "conditionally",
+      "partially",
+      "exceptions",
+      "limitations",
+      "perspective",
+      "acknowledge"
+    ],
+    "contentBoundaries": [
+      "不进行完整反驳和总结对话",
+      "不把表达变成模糊回避",
+      "不使用过度学术或法律式限定"
+    ],
+    "realWorldContexts": [
+      "Discussing workplace policies during a team meeting",
+      "Negotiating terms in a business contract",
+      "Debating social issues in a community forum"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B2-",
+    "coreLevel": "B2",
+    "stretchLevel": "B2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "先承认对方观点或常见看法中的合理部分",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "指出观点成立所需要的具体条件",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "提出一个重要例外或被忽略的限制",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "形成有限度的结论并保留自己的立场",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I see your point",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "先承认对方观点或常见看法中的合理部分"
+      ]
+    },
+    {
+      "chunk": "That's true to some",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "指出观点成立所需要的具体条件"
+      ]
+    },
+    {
+      "chunk": "If we consider the",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "提出一个重要例外或被忽略的限制"
+      ]
+    },
+    {
+      "chunk": "Except in cases where",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "形成有限度的结论并保留自己的立场"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "meaningTarget": "先承认对方观点或常见看法中的合理部分",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "meaningTarget": "先承认对方观点或常见看法中的合理部分",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "meaningTarget": "先承认对方观点或常见看法中的合理部分",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "meaningTarget": "先承认对方观点或常见看法中的合理部分",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "meaningTarget": "指出观点成立所需要的具体条件",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "meaningTarget": "指出观点成立所需要的具体条件",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "meaningTarget": "指出观点成立所需要的具体条件",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "meaningTarget": "指出观点成立所需要的具体条件",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "meaningTarget": "提出一个重要例外或被忽略的限制",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "meaningTarget": "提出一个重要例外或被忽略的限制",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "meaningTarget": "提出一个重要例外或被忽略的限制",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "meaningTarget": "提出一个重要例外或被忽略的限制",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "meaningTarget": "形成有限度的结论并保留自己的立场",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "meaningTarget": "形成有限度的结论并保留自己的立场",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "meaningTarget": "形成有限度的结论并保留自己的立场",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "meaningTarget": "形成有限度的结论并保留自己的立场",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I see your point",
+        "That's true to some",
+        "If we consider the",
+        "Except in cases where"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不进行完整反驳和总结对话",
+      "不把表达变成模糊回避",
+      "不使用过度学术或法律式限定"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

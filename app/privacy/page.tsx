@@ -23,7 +23,7 @@ export default function PrivacyPage() {
         <section>
           <h2>麦克风与语音练习</h2>
           <p>
-            仅当你主动进入 REPEAT 跟读练习并允许麦克风权限时，应用才会采集麦克风音频，用于实时转写和发音练习。音频会经由 WordLoop 服务连接至 OpenAI 的实时语音服务完成处理；我们不会将原始录音保存为课程进度的一部分。
+            仅当你主动进入 REPEAT 跟读练习并允许麦克风权限时，应用才会采集麦克风音频，用于实时转写和发音练习。音频会经由 WordLoop 服务连接至 OpenAI 的实时语音服务完成处理；WordLoop 不会将原始录音保存为课程进度的一部分。OpenAI API 的默认滥用监测日志可能保留相关 API 内容最多 30 天，具体以其当期数据控制政策为准。
           </p>
           <p>拒绝麦克风权限不会影响浏览课程、听音和学习单词；你可以随时在 iPhone“设置”中关闭该权限。</p>
         </section>
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2>保存与删除</h2>
-          <p>游客标识会保存在设备的安全存储中，学习进度保存在 WordLoop 服务器。你可以在课程内重置单门课程进度；如需删除与游客标识关联的全部服务器学习数据，请邮件联系我们。卸载应用不会自动删除服务器中的既有学习记录。</p>
+          <p>游客标识会保存在设备的安全存储中，学习进度保存在 WordLoop 服务器。你可以在课程内重置单门课程进度；也可以打开“学习进度”侧栏，选择“删除全部学习数据”，一次性删除当前游客在本机和服务器中的学习记录，并生成新的游客标识。卸载应用不会自动删除服务器中的既有学习记录。</p>
         </section>
 
         <section>
@@ -45,7 +45,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2>联系我们</h2>
-          <p>如对本政策、你的数据或删除请求有任何问题，请联系：<a href="mailto:okkknight@gmail.com">okkknight@gmail.com</a>。</p>
+          <p>如对本政策或你的数据有任何问题，请联系：<a href="mailto:okkknight@gmail.com">okkknight@gmail.com</a>。</p>
         </section>
       </article>
     </main>

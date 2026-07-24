@@ -98,9 +98,48 @@ public actor StudySessionRepository {
         _ = try await api.selectCourse(.init(userId: userID, mode: wireMode(mode), courseId: courseID.rawValue))
     }
 
+    /// Deletes the anonymous profile's synced progress, clears its device
+    /// cache, and immediately gives this device a fresh guest identity.
+    /// A named legacy profile intentionally cannot use this path because the
+    /// app no longer creates named accounts and an email-assisted request is
+    /// safer for an identifier a user may have shared elsewhere.
+    public func deleteAnonymousData() async throws -> StudySession {
+        guard let identity = try activeIdentity(), identity.username == nil,
+              UUID(uuidString: identity.userID) != nil else {
+            throw StudySessionDeletionError.notAnonymous
+        }
+
+        let previousUserID = identity.userID
+        _ = try await api.deleteUserData(.init(userId: previousUserID))
+        try deleteLocalData(userID: previousUserID)
+        guestIdentity.clear()
+
+        let nextUserID = uuid().uuidString.lowercased()
+        identity.userID = nextUserID
+        identity.updatedAt = now()
+        guestIdentity.save(nextUserID)
+        try context.save()
+        return try session(identity)
+    }
+
     private func activeIdentity() throws -> StudyIdentity? {
         let id = activeIdentityID
         return try context.fetch(FetchDescriptor<StudyIdentity>(predicate: #Predicate { $0.identityID == id })).first
+    }
+
+    private func deleteLocalData(userID: String) throws {
+        try context.fetch(FetchDescriptor<ProgressRecord>(predicate: #Predicate { $0.userID == userID })).forEach(context.delete)
+        try context.fetch(FetchDescriptor<ProgressEvent>(predicate: #Predicate { $0.userID == userID })).forEach(context.delete)
+        try context.fetch(FetchDescriptor<CourseCompletionRecord>(predicate: #Predicate { $0.userID == userID })).forEach(context.delete)
+        try context.fetch(FetchDescriptor<CourseCompletionEvent>(predicate: #Predicate { $0.userID == userID })).forEach(context.delete)
+        try context.fetch(FetchDescriptor<CoursePreference>(predicate: #Predicate { $0.userID == userID })).forEach(context.delete)
+        // Resume keys encode every component into one stable key, so remove
+        // all WordLoop resume positions alongside a full guest-data wipe.
+        // There is only one active profile on a device.
+        let prefix = "wordloop.resume."
+        UserDefaults.standard.dictionaryRepresentation().keys
+            .filter { $0.hasPrefix(prefix) }
+            .forEach(UserDefaults.standard.removeObject(forKey:))
     }
 
     private func session(_ identity: StudyIdentity) throws -> StudySession {
@@ -118,4 +157,8 @@ public actor StudySessionRepository {
     private func wireMode(_ mode: StudyMode) -> ProgressStudyModeDTO {
         mode == .listen ? .listen : .repeat
     }
+}
+
+public enum StudySessionDeletionError: Error, Equatable, Sendable {
+    case notAnonymous
 }

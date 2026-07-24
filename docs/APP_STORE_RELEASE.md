@@ -24,9 +24,9 @@ App Privacy 问卷和商店审核说明必须与最终网络行为一致：
 
 1. 随机游客标识、课程偏好和学习进度会同步到 WordLoop 服务。
 2. REPEAT 仅在用户主动开始后申请麦克风权限。
-3. 跟读语音通过 WordLoop 服务连接 OpenAI Realtime，用于实时转写/发音练习；不将原始录音作为学习进度保存。
+3. 跟读语音通过 WordLoop 服务连接 OpenAI Realtime，用于实时转写/发音练习；WordLoop 不将原始录音作为学习进度保存，但 OpenAI API 默认滥用监测日志可能保留相关 API 内容最多 30 天。
 4. 不使用广告跟踪，不出售个人信息。
-5. 用户可通过支持邮箱请求删除其游客标识关联的服务器进度。
+5. 用户可在 App 的“学习进度”侧栏删除当前游客的全部本机和服务器学习数据；删除后会轮换为新的游客标识。
 
 在提交前，需要逐项复核 App Privacy 问卷、OpenAI 的当期数据处理条款和最终服务端日志，不能把以上草稿直接当作法律结论。
 
@@ -37,7 +37,8 @@ App Privacy 问卷和商店审核说明必须与最终网络行为一致：
 - [ ] 首发远程 catalog 与内置 catalog 使用同一课程白名单，默认课程为日常英语会话的第一节。
 - [ ] 更新课程抽屉/进度页等测试基线，不再引用 IELTS、Modern Family 或 VOA。
 - [ ] 真实 iPhone 验证 LISTEN、REPEAT、拒绝麦克风、网络失败、游客进度恢复与删除请求路径。
-- [ ] 复核 `PrivacyInfo.xcprivacy`、`NSMicrophoneUsageDescription`、第三方 SDK 隐私清单和 App Privacy 问卷。
+- [ ] 真实 iPhone 验证“删除全部学习数据”：服务器删除成功、离线失败不清理本地数据、完成后使用新的游客身份重新进入第一节。
+- [ ] 复核 `PrivacyInfo.xcprivacy`、`NSMicrophoneUsageDescription`、第三方 SDK 隐私清单和 App Privacy 问卷（保守选择 User ID、Product Interaction、Audio Data，均为 App Functionality、linked、not tracking）。
 - [ ] 检查 App Icon、启动体验、版本号/构建号、签名、出口合规问卷。
 - [ ] 完成 TestFlight 内测，依据崩溃/反馈修正后再提交审核。
 

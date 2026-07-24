@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "D05",
+      "titleZh": "表达部分同意、条件与例外",
+      "titleEn": "Expressing Partial Agreement, Conditions, and Exceptions",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够承认观点中合理的部分，同时说明条件、例外和自己的保留意见。",
+      "communicationGoals": [
+        "先承认对方观点或常见看法中的合理部分",
+        "指出观点成立所需要的具体条件",
+        "提出一个重要例外或被忽略的限制",
+        "形成有限度的结论并保留自己的立场"
+      ],
+      "abilityTags": [
+        "D5",
+        "D1",
+        "D"
+      ],
+      "selectionReason": "课程池 releaseOrder 35 的冻结课程。",
+      "distinctiveValue": "帮助学习者摆脱非黑即白的观点表达，形成更自然的B2语气。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不进行完整反驳和总结对话",
+        "不把表达变成模糊回避",
+        "不使用过度学术或法律式限定"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "先承认对方观点或常见看法中的合理部分",
+      "指出观点成立所需要的具体条件",
+      "提出一个重要例外或被忽略的限制",
+      "形成有限度的结论并保留自己的立场"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不进行完整反驳和总结对话",
+      "不把表达变成模糊回避",
+      "不使用过度学术或法律式限定"
+    ]
+  }
+}

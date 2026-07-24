@@ -78,6 +78,7 @@ export async function POST(request: Request) {
     clientEventId?: string;
     markMastered?: boolean;
     resetCourse?: boolean;
+    deleteAllData?: boolean;
     completeCourse?: boolean;
     selectCourse?: boolean;
     updateResumePosition?: boolean;
@@ -85,6 +86,25 @@ export async function POST(request: Request) {
     courseId?: string;
     itemId?: string;
   };
+  if (payload.deleteAllData === true) {
+    if (!validUserId(payload.userId)) {
+      return Response.json({ error: "invalid data deletion request" }, { status: 400 });
+    }
+    const userID = payload.userId;
+    await env.DB.batch([
+      env.DB.prepare("DELETE FROM word_progress WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM course_progress WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM word_mode_progress WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM course_mode_progress WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM progress_events WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM course_completion_counts WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM course_completion_events WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM course_preferences WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM course_resume_positions WHERE user_id = ?").bind(userID),
+      env.DB.prepare("DELETE FROM study_users WHERE user_id = ?").bind(userID),
+    ]);
+    return Response.json({ deleted: true });
+  }
   if (payload.updateResumePosition === true) {
     if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId || (payload.itemId !== null && (typeof payload.itemId !== "string" || !payload.itemId))) {
       return Response.json({ error: "invalid course resume position" }, { status: 400 });

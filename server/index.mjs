@@ -164,9 +164,40 @@ async function handleProgress(request, response, url) {
     return sendJson(response, 200, { progress, completions, recentCourseId: preference?.recentCourseId ?? recentProgress?.recentCourseId });
   }
 
-  if (request.method === "POST") {
+    if (request.method === "POST") {
     let payload;
     try { payload = JSON.parse((await readBody(request)).toString("utf8")); } catch { return sendJson(response, 400, { error: "invalid JSON" }); }
+    if (payload.deleteAllData === true) {
+      if (!validUserId(payload.userId)) return sendJson(response, 400, { error: "invalid data deletion request" });
+      // `node:sqlite` does not expose better-sqlite3's `transaction` helper.
+      // Use an explicit transaction so a failed statement never leaves a
+      // partial guest-data deletion on the VPS.
+      database.exec("BEGIN IMMEDIATE");
+      try {
+        // Keep this list explicit: the guest ID is the only application
+        // identifier, so all learning data associated with it must leave the
+        // VPS together rather than merely hiding current-course progress.
+        for (const table of [
+          "word_progress",
+          "course_progress",
+          "word_mode_progress",
+          "course_mode_progress",
+          "progress_events",
+          "course_completion_counts",
+          "course_completion_events",
+          "course_preferences",
+          "course_resume_positions",
+          "study_users",
+        ]) {
+          database.prepare(`DELETE FROM ${table} WHERE user_id = ?`).run(payload.userId);
+        }
+        database.exec("COMMIT");
+      } catch (error) {
+        database.exec("ROLLBACK");
+        throw error;
+      }
+      return sendJson(response, 200, { deleted: true });
+    }
     if (payload.updateResumePosition === true) {
       if (!validUserId(payload.userId) || !validStudyMode(payload.mode) || typeof payload.courseId !== "string" || !payload.courseId || (payload.itemId !== null && (typeof payload.itemId !== "string" || !payload.itemId))) {
         return sendJson(response, 400, { error: "invalid course resume position" });

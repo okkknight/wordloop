@@ -62,6 +62,7 @@ import aiB10ApologizingExplainingAndRepairingAMisunderstandingB2 from "./data/ai
 import aiC09TalkingAboutPlansGoalsAndPersonalChangeB2 from "./data/ai-c09-talking-about-plans-goals-and-personal-change-b2.json";
 import aiD02SupportingAViewWithExamplesAndPersonalExperienceB2 from "./data/ai-d02-supporting-a-view-with-examples-and-personal-experience-b2.json";
 import aiD04DiscussingAdvantagesDisadvantagesAndTradeOffsB2 from "./data/ai-d04-discussing-advantages-disadvantages-and-trade-offs-b2.json";
+import aiD05ExpressingPartialAgreementConditionsAndExceptionsB2 from "./data/ai-d05-expressing-partial-agreement-conditions-and-exceptions-b2.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -319,6 +320,9 @@ const aiD02SupportingAViewWithExamplesAndPersonalExperienceB2Entries = aiD02Supp
 const aiD04DiscussingAdvantagesDisadvantagesAndTradeOffsB2Entries = aiD04DiscussingAdvantagesDisadvantagesAndTradeOffsB2.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/d04-discussing-advantages-disadvantages-and-trade-offs-b2/${entry.audio}` })) as CourseEntry[];
+const aiD05ExpressingPartialAgreementConditionsAndExceptionsB2Entries = aiD05ExpressingPartialAgreementConditionsAndExceptionsB2.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/d05-expressing-partial-agreement-conditions-and-exceptions-b2/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -511,6 +515,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "c09-talking-about-plans-goals-and-personal-change-b2", collectionId: "ai-practice", title: "Plans, Goals & Change · B2", subtitle: `Everyday English · ${aiC09TalkingAboutPlansGoalsAndPersonalChangeB2Entries.length} learning sentences`, description: "谈论当前计划、长期目标、现实阻碍和个人调整。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC09TalkingAboutPlansGoalsAndPersonalChangeB2Entries },
   { id: "d02-supporting-a-view-with-examples-and-personal-experience-b2", collectionId: "ai-practice", title: "Support a View · B2", subtitle: `Everyday English · ${aiD02SupportingAViewWithExamplesAndPersonalExperienceB2Entries.length} learning sentences`, description: "用例子和个人经历支持观点，并总结论证。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD02SupportingAViewWithExamplesAndPersonalExperienceB2Entries },
   { id: "d04-discussing-advantages-disadvantages-and-trade-offs-b2", collectionId: "ai-practice", title: "Advantages & Trade-offs · B2", subtitle: `Everyday English · ${aiD04DiscussingAdvantagesDisadvantagesAndTradeOffsB2Entries.length} learning sentences`, description: "讨论优势、劣势、适用情境和需要接受的权衡。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD04DiscussingAdvantagesDisadvantagesAndTradeOffsB2Entries },
+  { id: "d05-expressing-partial-agreement-conditions-and-exceptions-b2", collectionId: "ai-practice", title: "Agreement, Conditions & Exceptions · B2", subtitle: `Everyday English · ${aiD05ExpressingPartialAgreementConditionsAndExceptionsB2Entries.length} learning sentences`, description: "表达部分同意、提出条件、说明例外并保留谨慎立场。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD05ExpressingPartialAgreementConditionsAndExceptionsB2Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

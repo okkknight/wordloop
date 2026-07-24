@@ -14,6 +14,7 @@ struct StudyViewActions {
     var selectCourse: @MainActor (String) -> Void
     var downloadCourse: @MainActor (String) -> Void
     var restartCourse: (@MainActor (String) -> Void)?
+    var deleteAllData: (@MainActor () async throws -> Void)?
 
     static func fixture(store: StudyShellStore) -> Self {
         Self(
@@ -26,7 +27,8 @@ struct StudyViewActions {
             markTooEasy: store.markTooEasy,
             selectCourse: { _ in },
             downloadCourse: { _ in },
-            restartCourse: nil
+            restartCourse: nil,
+            deleteAllData: nil
         )
     }
 }
@@ -148,7 +150,11 @@ public struct MainStudyView: View {
                     .transition(.move(edge: .leading))
                     .zIndex(10)
             } else if progressDrawerStore.state.isPresented {
-                ProgressDrawerView(store: progressDrawerStore, palette: store.state.palette)
+                ProgressDrawerView(
+                    store: progressDrawerStore,
+                    palette: store.state.palette,
+                    onDeleteAllData: actions.deleteAllData
+                )
                     // Same direct translation for `.progress-panel`.
                     .transition(.move(edge: .trailing))
                     .zIndex(10)

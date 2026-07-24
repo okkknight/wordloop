@@ -37,4 +37,10 @@ public actor StartupCoordinator {
             return StartupResolution(preferredCourseID: local.recentCourseID, usedOfflineFallback: true)
         }
     }
+
+    public func deleteAnonymousData() async throws -> StudySession {
+        let replacement = try await sessions.deleteAnonymousData()
+        await activeSession.activate(replacement.userID)
+        return replacement
+    }
 }

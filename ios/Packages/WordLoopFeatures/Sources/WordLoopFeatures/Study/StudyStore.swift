@@ -104,6 +104,21 @@ public final class StudyStore {
         }
     }
 
+    /// The active guest identity changed after an explicit data-deletion
+    /// request.  Discard the old session projection before loading the new
+    /// guest's clean progress state.
+    public func restartForNewIdentity(preferredCourseID: CourseID? = nil) async {
+        _ = beginNewSession()
+        await audio.stop()
+        hasStarted = false
+        currentEntryID = nil
+        course = nil
+        collection = nil
+        completionCounts = [:]
+        state = StudyState()
+        await start(preferredCourseID: preferredCourseID)
+    }
+
     public func playCurrent() async {
         if mode == .repeat {
             await restartRepeatTurn()

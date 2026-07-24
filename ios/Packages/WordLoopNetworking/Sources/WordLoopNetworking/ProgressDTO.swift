@@ -145,6 +145,16 @@ public struct ResetCourseRequestDTO: Codable, Equatable, Sendable {
     }
 }
 
+public struct DeleteUserDataRequestDTO: Codable, Equatable, Sendable {
+    public let userId: String
+    public let deleteAllData: Bool
+
+    public init(userId: String) {
+        self.userId = userId
+        self.deleteAllData = true
+    }
+}
+
 public struct CompleteCourseRequestDTO: Codable, Equatable, Sendable {
     public let userId: String
     public let mode: ProgressStudyModeDTO
@@ -178,6 +188,10 @@ public struct SelectCourseResponseDTO: Codable, Equatable, Sendable {
 public struct ResetCourseResponseDTO: Codable, Equatable, Sendable {
     public let courseId: String
     public let reset: Bool
+}
+
+public struct DeleteUserDataResponseDTO: Codable, Equatable, Sendable {
+    public let deleted: Bool
 }
 
 public struct CompleteCourseResponseDTO: Codable, Equatable, Sendable {

@@ -59,6 +59,9 @@ struct RootView: View {
                     if (try? await container.startupCoordinator.restore()) == nil {
                         _ = try? await container.startupCoordinator.activate(.anonymous)
                     }
+                } deleteAllData: {
+                    let replacement = try await container.startupCoordinator.deleteAnonymousData()
+                    await liveStudyStore.restartForNewIdentity(preferredCourseID: replacement.recentCourseID)
                 }
             } else {
                 StartupView(store: startupStore) { submission in

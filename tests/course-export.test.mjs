@@ -74,8 +74,8 @@ test("exporter is deterministic, complete, and preserves runtime course semantic
     const report = await json(join(first, "validation-report.json"));
     assert.equal(catalog.defaultCourseId, "modern-family-s01e01");
     assert.equal(catalog.collections.length, 4);
-    assert.equal(catalog.courses.length, 65);
-    assert.deepEqual(report.counts, { collections: 4, courses: 65, wordEntries: 570, sentenceEntries: 1396, audioFiles: 1966, audioBytes: 49480992 });
+    assert.equal(catalog.courses.length, 66);
+    assert.deepEqual(report.counts, { collections: 4, courses: 66, wordEntries: 570, sentenceEntries: 1412, audioFiles: 1982, audioBytes: 50083088 });
     assert.deepEqual(report.sourceIdDifferences, [{ courseId: "modern-family-s01e01", sourceManifestId: "modern-family-s01", source: "app/data/modern-family-s01e01.json" }]);
     assert.equal(report.ignoredHighlights[0].entryIds.length, 47);
 

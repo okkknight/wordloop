@@ -3,11 +3,17 @@ import SwiftUI
 public struct LiveStudyView: View {
     @Bindable private var store: StudyStore
     private let beforeStart: @Sendable () async -> Void
+    private let deleteAllData: @MainActor () async throws -> Void
     @Environment(\.scenePhase) private var scenePhase
 
-    public init(store: StudyStore, beforeStart: @escaping @Sendable () async -> Void = {}) {
+    public init(
+        store: StudyStore,
+        beforeStart: @escaping @Sendable () async -> Void = {},
+        deleteAllData: @escaping @MainActor () async throws -> Void = {}
+    ) {
         self.store = store
         self.beforeStart = beforeStart
+        self.deleteAllData = deleteAllData
     }
 
     public var body: some View {
@@ -27,7 +33,8 @@ public struct LiveStudyView: View {
             markTooEasy: { Task { await store.markTooEasy() } },
             selectCourse: { courseID in Task { await store.selectCourse(courseID) } },
             downloadCourse: { courseID in Task { await store.downloadCourse(courseID) } },
-                    restartCourse: { courseID in Task { await store.restartCourse(courseID) } }
+                    restartCourse: { courseID in Task { await store.restartCourse(courseID) } },
+                    deleteAllData: deleteAllData
                 )
             )
 
