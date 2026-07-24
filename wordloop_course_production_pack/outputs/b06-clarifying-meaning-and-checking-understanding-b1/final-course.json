@@ -1,0 +1,261 @@
+{
+  "courseId": "b06-clarifying-meaning-and-checking-understanding-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "询问一个词、说法或要求具体是什么意思",
+      "text": "What exactly does that mean?",
+      "translation": "那到底是什么意思？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "What exactly"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "询问一个词、说法或要求具体是什么意思",
+      "text": "What do you mean by 'urgent'?",
+      "translation": "你说的“紧急”是什么意思？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "What do you mean by"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "询问一个词、说法或要求具体是什么意思",
+      "text": "Could you tell me what 'streamline' means?",
+      "translation": "你能告诉我“简化”是什么意思吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Could you"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "询问一个词、说法或要求具体是什么意思",
+      "text": "What does 'touch base' mean here?",
+      "translation": "这里的“联系”是什么意思？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "What does"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "在两个可能理解之间进行区分",
+      "text": "Do you mean we should start now or wait?",
+      "translation": "你的意思是我们现在开始还是等一下？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Do you"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "在两个可能理解之间进行区分",
+      "text": "Could you clarify that, do we need to submit today or tomorrow?",
+      "translation": "你能澄清一下吗，我们需要今天还是明天提交？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Could you clarify that"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "在两个可能理解之间进行区分",
+      "text": "Is this for everyone or just the managers?",
+      "translation": "这是给所有人还是仅仅给经理的？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Is this"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "在两个可能理解之间进行区分",
+      "text": "Do you mean the meeting is at 2 PM or 3 PM?",
+      "translation": "你的意思是会议在下午两点还是三点？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Do you"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "用自己的话复述对方意思",
+      "text": "So, you think we should focus on marketing first?",
+      "translation": "所以，你认为我们应该先专注于市场营销？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "So, you"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "用自己的话复述对方意思",
+      "text": "So, you're saying that we need to increase the budget?",
+      "translation": "所以，你是说我们需要增加预算？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "So, you're saying that"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "用自己的话复述对方意思",
+      "text": "You mean we should contact the supplier directly?",
+      "translation": "你的意思是我们应该直接联系供应商？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "You mean"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "用自己的话复述对方意思",
+      "text": "So, we need to finish this by Monday, right?",
+      "translation": "所以，我们需要在周一之前完成，对吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "So, we"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "确认时间、数字、责任和下一步等关键信息",
+      "text": "Are we meeting at 10 AM or 11 AM tomorrow?",
+      "translation": "我们明天是上午十点还是十一点见面？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Are we"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "确认时间、数字、责任和下一步等关键信息",
+      "text": "Just to confirm, you mean the deadline is extended?",
+      "translation": "只是确认一下，你的意思是截止日期延长了？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Just to confirm, you mean"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "确认时间、数字、责任和下一步等关键信息",
+      "text": "Are we responsible for the entire project or just a part?",
+      "translation": "我们负责整个项目还是只负责一部分？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Are we"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "确认时间、数字、责任和下一步等关键信息",
+      "text": "Do we need to prepare a presentation or just a report?",
+      "translation": "我们需要准备一个演示还是只需要一个报告？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Do we"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

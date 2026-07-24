@@ -43,6 +43,7 @@ import aiA03OrderingAndCustomizingFoodAndDrinksA2 from "./data/ai-a03-ordering-a
 import aiA04ExplainingWhatYouNeedWhileShoppingA2 from "./data/ai-a04-explaining-what-you-need-while-shopping-a2.json";
 import aiA05CheckingInAndProvidingBookingInformationA2 from "./data/ai-a05-checking-in-and-providing-booking-information-a2.json";
 import aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1 from "./data/ai-b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1.json";
+import aiB06ClarifyingMeaningAndCheckingUnderstandingB1 from "./data/ai-b06-clarifying-meaning-and-checking-understanding-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -243,6 +244,9 @@ const aiA05CheckingInAndProvidingBookingInformationA2Entries = aiA05CheckingInAn
 const aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries = aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1/${entry.audio}` })) as CourseEntry[];
+const aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries = aiB06ClarifyingMeaningAndCheckingUnderstandingB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/b06-clarifying-meaning-and-checking-understanding-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -416,6 +420,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "a04-explaining-what-you-need-while-shopping-a2", collectionId: "ai-practice", title: "Shopping Needs · A2", subtitle: `Everyday English · ${aiA04ExplainingWhatYouNeedWhileShoppingA2Entries.length} learning sentences`, description: "购物时说明用途、偏好、预算、尺寸并比较选择。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA04ExplainingWhatYouNeedWhileShoppingA2Entries },
   { id: "a05-checking-in-and-providing-booking-information-a2", collectionId: "ai-practice", title: "Hotel Check-in · A2", subtitle: `Everyday English · ${aiA05CheckingInAndProvidingBookingInformationA2Entries.length} learning sentences`, description: "办理入住并提供预订、身份、房间和付款信息。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA05CheckingInAndProvidingBookingInformationA2Entries },
   { id: "b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1", collectionId: "ai-practice", title: "Keep a Conversation Going · B1", subtitle: `Everyday English · ${aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries.length} learning sentences`, description: "追问、回应、延续话题并自然转换谈话方向。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries },
+  { id: "b06-clarifying-meaning-and-checking-understanding-b1", collectionId: "ai-practice", title: "Clarify & Check Understanding · B1", subtitle: `Everyday English · ${aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries.length} learning sentences`, description: "询问词义、澄清信息并确认自己是否理解正确。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

@@ -1,0 +1,169 @@
+{
+  "courseId": "b06-clarifying-meaning-and-checking-understanding-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-b06-001",
+      "text": "What exactly does that mean?",
+      "translation": "那到底是什么意思？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.261,
+      "duration": 2.261
+    },
+    {
+      "id": "ai-b06-002",
+      "text": "What do you mean by 'urgent'?",
+      "translation": "你说的“紧急”是什么意思？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.517,
+      "duration": 2.517
+    },
+    {
+      "id": "ai-b06-003",
+      "text": "Could you tell me what 'streamline' means?",
+      "translation": "你能告诉我“简化”是什么意思吗？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-b06-004",
+      "text": "What does 'touch base' mean here?",
+      "translation": "这里的“联系”是什么意思？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-b06-005",
+      "text": "Do you mean we should start now or wait?",
+      "translation": "你的意思是我们现在开始还是等一下？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.584,
+      "duration": 3.584
+    },
+    {
+      "id": "ai-b06-006",
+      "text": "Could you clarify that, do we need to submit today or tomorrow?",
+      "translation": "你能澄清一下吗，我们需要今天还是明天提交？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.669,
+      "duration": 3.669
+    },
+    {
+      "id": "ai-b06-007",
+      "text": "Is this for everyone or just the managers?",
+      "translation": "这是给所有人还是仅仅给经理的？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-b06-008",
+      "text": "Do you mean the meeting is at 2 PM or 3 PM?",
+      "translation": "你的意思是会议在下午两点还是三点？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-b06-009",
+      "text": "So, you think we should focus on marketing first?",
+      "translation": "所以，你认为我们应该先专注于市场营销？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-b06-010",
+      "text": "So, you're saying that we need to increase the budget?",
+      "translation": "所以，你是说我们需要增加预算？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-b06-011",
+      "text": "You mean we should contact the supplier directly?",
+      "translation": "你的意思是我们应该直接联系供应商？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-b06-012",
+      "text": "So, we need to finish this by Monday, right?",
+      "translation": "所以，我们需要在周一之前完成，对吗？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-b06-013",
+      "text": "Are we meeting at 10 AM or 11 AM tomorrow?",
+      "translation": "我们明天是上午十点还是十一点见面？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-b06-014",
+      "text": "Just to confirm, you mean the deadline is extended?",
+      "translation": "只是确认一下，你的意思是截止日期延长了？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-b06-015",
+      "text": "Are we responsible for the entire project or just a part?",
+      "translation": "我们负责整个项目还是只负责一部分？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-b06-016",
+      "text": "Do we need to prepare a presentation or just a report?",
+      "translation": "我们需要准备一个演示还是只需要一个报告？",
+      "audio": "audio/b06-clarifying-meaning-and-checking-understanding-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    }
+  ]
+}
