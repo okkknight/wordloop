@@ -1,0 +1,618 @@
+{
+  "courseId": "b05-asking-someone-to-repeat-or-slow-down-a2",
+  "candidateCountPerSlot": 2,
+  "slots": [
+    {
+      "slot": 1,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s01-a",
+          "text": "I didn't catch that.",
+          "translation": "我没听清。",
+          "usedChunks": [
+            "I didn't"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 4,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s01-b",
+          "text": "I missed what you said.",
+          "translation": "我没听清你说的话。",
+          "usedChunks": [
+            "I missed"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s02-a",
+          "text": "Could you say that again? I didn't hear you.",
+          "translation": "你能再说一遍吗？我没听清。",
+          "usedChunks": [
+            "Could you say that again"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s02-b",
+          "text": "Could you say that again? I missed it.",
+          "translation": "你能再说一遍吗？我没听到。",
+          "usedChunks": [
+            "Could you say that again"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s03-a",
+          "text": "Sorry, I didn't get that.",
+          "translation": "抱歉，我没听清。",
+          "usedChunks": [
+            "Sorry, I"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s03-b",
+          "text": "I didn't hear what you said.",
+          "translation": "我没听到你说什么。",
+          "usedChunks": [
+            "I didn't"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s04-a",
+          "text": "I didn't understand what you said.",
+          "translation": "我没听懂你说的话。",
+          "usedChunks": [
+            "I didn't"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s04-b",
+          "text": "I couldn't hear you clearly.",
+          "translation": "我听不清楚你说的话。",
+          "usedChunks": [
+            "I couldn't"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s05-a",
+          "text": "Could you say that again?",
+          "translation": "你能再说一遍吗？",
+          "usedChunks": [
+            "Could you"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s05-b",
+          "text": "Would you mind repeating that?",
+          "translation": "你介意重复一下吗？",
+          "usedChunks": [
+            "Would you"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s06-a",
+          "text": "Can you slow down, please?",
+          "translation": "你能慢一点吗？",
+          "usedChunks": [
+            "Can you slow down, please"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s06-b",
+          "text": "Can you slow down, please, and repeat that?",
+          "translation": "你能慢一点并重复一下吗？",
+          "usedChunks": [
+            "Can you slow down, please"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s07-a",
+          "text": "Could you repeat that for me?",
+          "translation": "你能为我重复一下吗？",
+          "usedChunks": [
+            "Could you"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s07-b",
+          "text": "Can you say it again, please?",
+          "translation": "你能再说一遍吗？",
+          "usedChunks": [
+            "Can you"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s08-a",
+          "text": "Would you mind saying that again?",
+          "translation": "你介意再说一遍吗？",
+          "usedChunks": [
+            "Would you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s08-b",
+          "text": "Could you repeat what you just said?",
+          "translation": "你能重复一下你刚才说的话吗？",
+          "usedChunks": [
+            "Could you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s09-a",
+          "text": "Can you slow down a bit?",
+          "translation": "你能稍微放慢一点吗？",
+          "usedChunks": [
+            "Can you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s09-b",
+          "text": "Could you speak a little slower?",
+          "translation": "你能说得慢一点吗？",
+          "usedChunks": [
+            "Could you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s10-a",
+          "text": "I didn't catch that part, could you slow down?",
+          "translation": "我没听清那部分，你能放慢一点吗？",
+          "usedChunks": [
+            "I didn't catch that part"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s10-b",
+          "text": "I didn't catch that part, can you speak slower?",
+          "translation": "我没听清那部分，你能说慢一点吗？",
+          "usedChunks": [
+            "I didn't catch that part"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s11-a",
+          "text": "Could you say that more slowly?",
+          "translation": "你能说得再慢一点吗？",
+          "usedChunks": [
+            "Could you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s11-b",
+          "text": "Can you repeat that slowly?",
+          "translation": "你能慢慢重复一遍吗？",
+          "usedChunks": [
+            "Can you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s12-a",
+          "text": "Would you mind slowing down?",
+          "translation": "你介意放慢一点吗？",
+          "usedChunks": [
+            "Would you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s12-b",
+          "text": "Can you break it down a bit?",
+          "translation": "你能分开说一下吗？",
+          "usedChunks": [
+            "Can you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s13-a",
+          "text": "Could you repeat the number?",
+          "translation": "你能重复一下那个数字吗？",
+          "usedChunks": [
+            "Could you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s13-b",
+          "text": "What was the date again?",
+          "translation": "日期是什么来着？",
+          "usedChunks": [
+            "What was"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s14-a",
+          "text": "What was the last word you said?",
+          "translation": "你刚才说的最后一个词是什么？",
+          "usedChunks": [
+            "What was the last word"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s14-b",
+          "text": "What was the last word in that sentence?",
+          "translation": "那句话的最后一个词是什么？",
+          "usedChunks": [
+            "What was the last word"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s15-a",
+          "text": "I missed the name you mentioned.",
+          "translation": "我没听清你提到的名字。",
+          "usedChunks": [
+            "I missed"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s15-b",
+          "text": "Can you say that part about the meeting again?",
+          "translation": "你能再说一遍关于会议的那部分吗？",
+          "usedChunks": [
+            "Can you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s16-a",
+          "text": "Could you tell me the address again?",
+          "translation": "你能再告诉我一次地址吗？",
+          "usedChunks": [
+            "Could you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s16-b",
+          "text": "I didn't catch the time you said.",
+          "translation": "我没听清你说的时间。",
+          "usedChunks": [
+            "I didn't"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    }
+  ],
+  "generationReview": {
+    "coverageComplete": true,
+    "warnings": []
+  }
+}

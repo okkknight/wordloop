@@ -1,0 +1,588 @@
+{
+  "courseId": "b05-asking-someone-to-repeat-or-slow-down-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够自然说明自己没听清，请对方重复、放慢或只重说关键部分。",
+    "communicationGoals": [
+      "简短说明自己没有听清",
+      "礼貌请求完整重复一次",
+      "请求对方放慢速度或分段表达",
+      "指出具体没听清的词、数字或部分并继续交流"
+    ],
+    "coreChunks": [
+      "Could you say that",
+      "Can you slow down",
+      "I didn't catch that",
+      "What was the last"
+    ],
+    "supportingVocabulary": [
+      "repeat",
+      "slow down",
+      "missed",
+      "understand",
+      "part",
+      "word",
+      "again",
+      "please"
+    ],
+    "contentBoundaries": [
+      "不深入询问词义和概念解释",
+      "不处理复杂信息核对",
+      "不使用过度道歉或自我贬低的表达"
+    ],
+    "realWorldContexts": [
+      "Asking for clarification during a phone call with a service provider.",
+      "Requesting a colleague to repeat instructions in a noisy office.",
+      "Clarifying details during a conversation in a crowded restaurant."
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "简短说明自己没有听清",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "礼貌请求完整重复一次",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "请求对方放慢速度或分段表达",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "指出具体没听清的词、数字或部分并继续交流",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "Could you say that",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "简短说明自己没有听清"
+      ]
+    },
+    {
+      "chunk": "Can you slow down",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "礼貌请求完整重复一次"
+      ]
+    },
+    {
+      "chunk": "I didn't catch that",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "请求对方放慢速度或分段表达"
+      ]
+    },
+    {
+      "chunk": "What was the last",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "指出具体没听清的词、数字或部分并继续交流"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "简短说明自己没有听清",
+      "meaningTarget": "简短说明自己没有听清",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "简短说明自己没有听清",
+      "meaningTarget": "简短说明自己没有听清",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "简短说明自己没有听清",
+      "meaningTarget": "简短说明自己没有听清",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "简短说明自己没有听清",
+      "meaningTarget": "简短说明自己没有听清",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "礼貌请求完整重复一次",
+      "meaningTarget": "礼貌请求完整重复一次",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "礼貌请求完整重复一次",
+      "meaningTarget": "礼貌请求完整重复一次",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "礼貌请求完整重复一次",
+      "meaningTarget": "礼貌请求完整重复一次",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "礼貌请求完整重复一次",
+      "meaningTarget": "礼貌请求完整重复一次",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "请求对方放慢速度或分段表达",
+      "meaningTarget": "请求对方放慢速度或分段表达",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "请求对方放慢速度或分段表达",
+      "meaningTarget": "请求对方放慢速度或分段表达",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "请求对方放慢速度或分段表达",
+      "meaningTarget": "请求对方放慢速度或分段表达",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "请求对方放慢速度或分段表达",
+      "meaningTarget": "请求对方放慢速度或分段表达",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "指出具体没听清的词、数字或部分并继续交流",
+      "meaningTarget": "指出具体没听清的词、数字或部分并继续交流",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "指出具体没听清的词、数字或部分并继续交流",
+      "meaningTarget": "指出具体没听清的词、数字或部分并继续交流",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "指出具体没听清的词、数字或部分并继续交流",
+      "meaningTarget": "指出具体没听清的词、数字或部分并继续交流",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "指出具体没听清的词、数字或部分并继续交流",
+      "meaningTarget": "指出具体没听清的词、数字或部分并继续交流",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Could you say that",
+        "Can you slow down",
+        "I didn't catch that",
+        "What was the last"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不深入询问词义和概念解释",
+      "不处理复杂信息核对",
+      "不使用过度道歉或自我贬低的表达"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
