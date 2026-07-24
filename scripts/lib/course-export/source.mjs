@@ -181,7 +181,7 @@ function assertUnique(values, label) {
   if (duplicates.size) throw new Error(`Duplicate ${label}: ${[...duplicates].join(", ")}`);
 }
 
-export async function loadCourseSources(root) {
+export async function loadCourseSources(root, { courseIds, defaultCourseId: requestedDefaultCourseId } = {}) {
   const [coursesSource, wordsSource] = await Promise.all([
     readFile(join(root, "app/courses.ts"), "utf8"),
     readFile(join(root, "app/words.ts"), "utf8"),
@@ -290,5 +290,17 @@ export async function loadCourseSources(root) {
     if (!directory) throw new Error(`${course.id} has no entries`);
     await assertExactAudioSet(directory, course.entries.map((entry) => entry.audioSource), course.id);
   }
-  return { collections, courses, words, defaultCourseId };
+  if (!courseIds) return { collections, courses, words, defaultCourseId };
+
+  assertUnique(courseIds, "selected course ID");
+  const selectedIDs = new Set(courseIds);
+  const selectedCourses = courses.filter((course) => selectedIDs.has(course.id));
+  const missing = courseIds.filter((id) => !selectedCourses.some((course) => course.id === id));
+  if (missing.length) throw new Error(`Selected courses are not registered: ${missing.join(", ")}`);
+  if (selectedCourses.length !== courseIds.length) throw new Error("Selected course count mismatch");
+  const selectedCollectionIDs = new Set(selectedCourses.map((course) => course.collectionId));
+  const selectedCollections = collections.filter((collection) => selectedCollectionIDs.has(collection.id));
+  const selectedDefaultCourseId = requestedDefaultCourseId ?? defaultCourseId;
+  if (!selectedIDs.has(selectedDefaultCourseId)) throw new Error(`Selected default course is not in the release: ${selectedDefaultCourseId}`);
+  return { collections: selectedCollections, courses: selectedCourses, words, defaultCourseId: selectedDefaultCourseId };
 }

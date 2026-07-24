@@ -80,7 +80,7 @@ prepare_stage() {
 }
 
 cd "$repository_root"
-npm run content:export
+npm run content:export:app-store
 
 generated_stage=$(prepare_stage "$generated_root")
 package_stage=$(prepare_stage "$package_resource_root")

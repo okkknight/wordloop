@@ -109,8 +109,8 @@ async function packageForCourse(source) {
   return { source, course, courseBytes, integrity, integrityBytes, audios };
 }
 
-async function build(root) {
-  const sources = await loadCourseSources(root);
+async function build(root, sourceOptions) {
+  const sources = await loadCourseSources(root, sourceOptions);
   const packages = [];
   for (const source of sources.courses) packages.push(await packageForCourse(source));
   const timestamp = await generatedAt(root);
@@ -230,12 +230,12 @@ async function treeDigest(directory) {
   return { files: entries, sha256: sha256(Buffer.from(`${entries.join("\n")}\n`)) };
 }
 
-export async function generateCoursePackages({ root, output, mode, hooks = {} }) {
+export async function generateCoursePackages({ root, output, mode, sourceOptions, hooks = {} }) {
   const target = resolve(output);
   const temporary = `${target}.tmp-${process.pid}-${Date.now()}`;
   await rm(temporary, { recursive: true, force: true });
   try {
-    const result = await build(root);
+    const result = await build(root, sourceOptions);
     await hooks.afterBuild?.({ temporary, result });
     await materialize(result, temporary);
     await hooks.afterMaterialize?.({ temporary, result });
