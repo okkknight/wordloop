@@ -1,5 +1,5 @@
 {
-  "courseCount": 30,
+  "courseCount": 36,
   "sentenceCountPerCourse": 16,
   "candidateCountPerSlot": 2,
   "levelRange": ["A2", "B1", "B2"],
