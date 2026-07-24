@@ -37,11 +37,11 @@ test("iOS migration baseline output is deterministic and grounded in the runtime
   assert.equal(second.status, 0, second.stderr);
   assert.equal(first.stdout, second.stdout);
   const inventory = JSON.parse(first.stdout);
-  assert.equal(inventory.counts.courses, 49);
-  assert.equal(inventory.counts.totalM4aFiles, 1710);
+  assert.equal(inventory.counts.courses, 50);
+  assert.equal(inventory.counts.totalM4aFiles, 1726);
   assert.equal(inventory.defaults.courseId, "modern-family-s01e01");
   assert.equal(inventory.defaults.studyMode, "repeat");
-  assert.equal(inventory.registeredCourses.length, 49);
+  assert.equal(inventory.registeredCourses.length, 50);
 });
 
 test("iOS migration baseline observes default course and mode source changes", async () => {

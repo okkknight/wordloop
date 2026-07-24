@@ -46,6 +46,7 @@ import aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1 from "./data/ai
 import aiB06ClarifyingMeaningAndCheckingUnderstandingB1 from "./data/ai-b06-clarifying-meaning-and-checking-understanding-b1.json";
 import aiB07RespondingNaturallyToNewsAndPersonalStoriesB1 from "./data/ai-b07-responding-naturally-to-news-and-personal-stories-b1.json";
 import aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1 from "./data/ai-a06-describing-symptoms-and-asking-basic-health-questions-b1.json";
+import aiA07ChangingAReservationOrAppointmentB1 from "./data/ai-a07-changing-a-reservation-or-appointment-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -255,6 +256,9 @@ const aiB07RespondingNaturallyToNewsAndPersonalStoriesB1Entries = aiB07Respondin
 const aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1Entries = aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a06-describing-symptoms-and-asking-basic-health-questions-b1/${entry.audio}` })) as CourseEntry[];
+const aiA07ChangingAReservationOrAppointmentB1Entries = aiA07ChangingAReservationOrAppointmentB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a07-changing-a-reservation-or-appointment-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -431,6 +435,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "b06-clarifying-meaning-and-checking-understanding-b1", collectionId: "ai-practice", title: "Clarify & Check Understanding · B1", subtitle: `Everyday English · ${aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries.length} learning sentences`, description: "询问词义、澄清信息并确认自己是否理解正确。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries },
   { id: "b07-responding-naturally-to-news-and-personal-stories-b1", collectionId: "ai-practice", title: "Respond to News & Stories · B1", subtitle: `Everyday English · ${aiB07RespondingNaturallyToNewsAndPersonalStoriesB1Entries.length} learning sentences`, description: "自然回应好消息、困难、意外和个人经历，并推动交流。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB07RespondingNaturallyToNewsAndPersonalStoriesB1Entries },
   { id: "a06-describing-symptoms-and-asking-basic-health-questions-b1", collectionId: "ai-practice", title: "Health Questions · B1", subtitle: `Everyday English · ${aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1Entries.length} learning sentences`, description: "描述症状、说明变化并向医疗人员询问基础信息。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1Entries },
+  { id: "a07-changing-a-reservation-or-appointment-b1", collectionId: "ai-practice", title: "Change a Reservation · B1", subtitle: `Everyday English · ${aiA07ChangingAReservationOrAppointmentB1Entries.length} learning sentences`, description: "更改预订或预约，说明原因、提出替代时间并确认新安排。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA07ChangingAReservationOrAppointmentB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

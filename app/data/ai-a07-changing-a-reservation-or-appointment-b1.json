@@ -1,0 +1,169 @@
+{
+  "courseId": "a07-changing-a-reservation-or-appointment-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a07-001",
+      "text": "I have a reservation for dinner at 7 PM.",
+      "translation": "我有一个晚上七点的晚餐预订。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-a07-002",
+      "text": "I need to change my dinner reservation.",
+      "translation": "我需要更改我的晚餐预订。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    },
+    {
+      "id": "ai-a07-003",
+      "text": "The reservation is under the name Smith.",
+      "translation": "预订是在史密斯的名字下。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-a07-004",
+      "text": "I booked a table for four at your restaurant.",
+      "translation": "我在你们餐厅预订了一张四人桌。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-a07-005",
+      "text": "Could we change the reservation to 8 PM?",
+      "translation": "我们可以把预订改到晚上八点吗？",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.944,
+      "duration": 2.944
+    },
+    {
+      "id": "ai-a07-006",
+      "text": "Can we reschedule for next week?",
+      "translation": "我们可以改到下周吗？",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-a07-007",
+      "text": "I'd like to switch to a different service.",
+      "translation": "我想换一个不同的服务。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-a07-008",
+      "text": "Can we change the date to the 15th?",
+      "translation": "我们可以把日期改到15号吗？",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-a07-009",
+      "text": "I have a conflict with the original time.",
+      "translation": "我和原来的时间有冲突。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.499,
+      "duration": 3.499
+    },
+    {
+      "id": "ai-a07-010",
+      "text": "Is there a fee for changing the reservation?",
+      "translation": "更改预订需要收费吗？",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a07-011",
+      "text": "I need to adjust due to a work meeting.",
+      "translation": "我需要调整，因为有个工作会议。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a07-012",
+      "text": "I can only make it after 5 PM.",
+      "translation": "我只能在下午五点以后到。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-a07-013",
+      "text": "The new reservation is confirmed for 8 PM.",
+      "translation": "新的预订确认在晚上八点。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-a07-014",
+      "text": "Could you confirm the new time with me?",
+      "translation": "你能和我确认一下新时间吗？",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-a07-015",
+      "text": "The updated details are all set, thank you.",
+      "translation": "更新的细节都已安排好，谢谢。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.523,
+      "duration": 4.523
+    },
+    {
+      "id": "ai-a07-016",
+      "text": "Thanks for helping me with the changes.",
+      "translation": "谢谢你帮我做出更改。",
+      "audio": "audio/a07-changing-a-reservation-or-appointment-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    }
+  ]
+}
