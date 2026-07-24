@@ -8,31 +8,19 @@ final class AppUITests: XCTestCase {
         app.launch()
 
         XCTAssertTrue(app.descendants(matching: .any)["startup.page"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.textFields["startup.username"].exists)
+        XCTAssertFalse(app.textFields["startup.username"].exists)
         XCTAssertTrue(app.buttons["startup.submit"].exists)
         XCTAssertEqual(app.buttons["startup.submit"].label, "START")
         XCTAssertFalse(app.descendants(matching: .any)["design-system.gallery"].exists)
     }
 
-    func testStartupAcceptsAnonymousAndNormalizedNamedSubmissions() {
-        let anonymousApp = XCUIApplication()
-        anonymousApp.launchArguments = ["-wordloop-ui-fresh-start"]
-        anonymousApp.launch()
-        anonymousApp.buttons["startup.submit"].tap()
-        XCTAssertTrue(anonymousApp.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
-        XCTAssertTrue(anonymousApp.descendants(matching: .any)["study.page"].exists)
-
-        anonymousApp.terminate()
-
-        let namedApp = XCUIApplication()
-        namedApp.launchArguments = ["-wordloop-ui-fresh-start"]
-        namedApp.launch()
-        let username = namedApp.textFields["startup.username"]
-        username.tap()
-        username.typeText(" Alice ")
-        namedApp.keyboards.buttons["Go"].tap()
-        XCTAssertTrue(namedApp.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
-        XCTAssertTrue(namedApp.descendants(matching: .any)["study.page"].exists)
+    func testStartupEntersAsGuest() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-wordloop-ui-fresh-start"]
+        app.launch()
+        app.buttons["startup.submit"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["live-study.page"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.descendants(matching: .any)["study.page"].exists)
     }
 
     func testStartupRestoresPersistedIdentityAfterRelaunch() {
@@ -88,24 +76,6 @@ final class AppUITests: XCTestCase {
         XCTAssertTrue(app.descendants(matching: .any)["progress-drawer.page"].waitForExistence(timeout: 3))
         XCTAssertEqual(app.staticTexts["progress-drawer.course"].label, "Workplace Conversations · B1")
         XCTAssertEqual(app.staticTexts["progress-drawer.stats.learning"].label, "学习中 20 条")
-    }
-
-    func testStartupValidationClearsWhenEditing() {
-        let app = XCUIApplication()
-        app.launchArguments = ["-wordloop-ui-fresh-start"]
-        app.launch()
-
-        let username = app.textFields["startup.username"]
-        username.tap()
-        username.typeText("Word1")
-        app.buttons["startup.submit"].tap()
-        XCTAssertTrue(app.staticTexts["startup.error"].waitForExistence(timeout: 2))
-        XCTAssertEqual(app.staticTexts["startup.error"].label, "用户名只能使用英文字母")
-
-        username.tap()
-        username.typeText("a")
-        XCTAssertFalse(app.staticTexts["startup.error"].exists)
-        XCTAssertTrue(app.buttons["startup.submit"].isHittable)
     }
 
     func testStartupBusyFixturesExposeExactCopyAndDisabledButton() {

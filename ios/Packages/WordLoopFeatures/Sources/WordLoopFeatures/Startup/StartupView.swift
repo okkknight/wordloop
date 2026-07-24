@@ -6,7 +6,6 @@ public struct StartupView: View {
     private let onSubmission: (StartupSubmission) -> Void
 
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @FocusState private var usernameIsFocused: Bool
     @State private var hasAppeared = false
 
     private let palette = StartupVisualRoles.palette
@@ -62,7 +61,6 @@ public struct StartupView: View {
 
     private var form: some View {
         VStack(spacing: WordLoopSpacing.lg) {
-            usernameField
             startButton
             if let helperText = store.state.helperText {
                 Text(helperText)
@@ -78,54 +76,6 @@ public struct StartupView: View {
         .offset(y: hasAppeared ? 0 : WordLoopMotion.contentEnter(reduceMotion: motionReduced).displacement)
         .opacity(hasAppeared ? 1 : 0)
         .accessibilityElement(children: .contain)
-    }
-
-    private var usernameField: some View {
-        VStack(spacing: WordLoopSpacing.xs) {
-            TextField(
-                "",
-                text: Binding(
-                    get: { store.username },
-                    set: { store.updateUsername($0) }
-                ),
-                prompt: Text("USERNAME")
-                    .font(WordLoopTypography.label(size: 10))
-                    .tracking(1.6)
-                    .foregroundStyle(StartupVisualRoles.placeholder.foreground.color)
-            )
-            .font(WordLoopTypography.label(size: 14))
-            .tracking(1.68)
-            .foregroundStyle(palette.ink.color)
-            .tint(palette.accent.color)
-            .multilineTextAlignment(.center)
-            .frame(maxWidth: 238)
-            .padding(.vertical, 10)
-            .overlay(alignment: .bottom) {
-                Rectangle()
-                    .fill(StartupVisualRoles.inputBoundary.foreground.color)
-                    .frame(height: WordLoopBorder.hairline)
-                    .accessibilityHidden(true)
-            }
-            .focused($usernameIsFocused)
-            .autocorrectionDisabled(true)
-            .startupUsernameInputTraits()
-            .submitLabel(.go)
-            .onSubmit(submit)
-            .accessibilityLabel("用户名，可选")
-            .accessibilityHint(store.validationMessage ?? "仅可使用英文字母，留空将匿名进入")
-            .accessibilityIdentifier("startup.username")
-
-            if let validationMessage = store.validationMessage {
-                Text(validationMessage)
-                    .font(WordLoopTypography.label(size: 10))
-                    .foregroundStyle(palette.accessibleAccentText.color)
-                    .multilineTextAlignment(.center)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .accessibilityIdentifier("startup.error")
-                    .accessibilityAddTraits(.updatesFrequently)
-            }
-        }
-        .frame(maxWidth: .infinity)
     }
 
     private var startButton: some View {
@@ -171,25 +121,10 @@ public struct StartupView: View {
 
     private func submit() {
         guard let submission = store.submit() else { return }
-        usernameIsFocused = false
         onSubmission(submission)
     }
 
     private var motionReduced: Bool {
         reduceMotion || ProcessInfo.processInfo.arguments.contains("-wordloop-fixture-reduce-motion")
-    }
-}
-
-private extension View {
-    @ViewBuilder
-    func startupUsernameInputTraits() -> some View {
-#if os(iOS)
-        self
-            .textInputAutocapitalization(.never)
-            .keyboardType(.asciiCapable)
-            .textContentType(.username)
-#else
-        self
-#endif
     }
 }
