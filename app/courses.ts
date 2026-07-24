@@ -348,16 +348,16 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "voa-for-the-birds-b1", collectionId: "voa-level-2", title: "For the Birds · B1", subtitle: `VOA Learning English · ${voaForTheBirdsB1Entries.length} learning sentences`, description: "表达失望、说明职责、提出猜想，以及 have to 和 ought to 的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaForTheBirdsB1Entries },
   { id: "voa-where-theres-smoke-b1", collectionId: "voa-level-2", title: "Where There's Smoke... · B1", subtitle: `VOA Learning English · ${voaWhereTheresSmokeB1Entries.length} learning sentences`, description: "消防安全、紧急撤离、条件句与明确安全指令的实用口语。", kind: "sentence", practiceOrder: "sequential", entries: voaWhereTheresSmokeB1Entries },
   { id: "voa-dream-a-little-dream-b1", collectionId: "voa-level-2", title: "Dream a Little Dream · B1", subtitle: `VOA Learning English · ${voaDreamALittleDreamB1Entries.length} learning sentences`, description: "表达梦想、讨论职业愿望、回应担心与谈论人生目标的自然口语。", kind: "sentence", practiceOrder: "sequential", entries: voaDreamALittleDreamB1Entries },
-  { id: "polite-boundaries-b1", collectionId: "ai-practice", title: "Setting Boundaries Politely · B1", subtitle: `AI voice · ${aiPoliteBoundariesB1Entries.length} learning sentences`, description: "练习礼貌说明限制、协商替代方案与坚定收尾。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiPoliteBoundariesB1Entries },
-  { id: "b01-introducing-yourself-a2", collectionId: "ai-practice", title: "Introducing Yourself · A2", subtitle: `AI voice · ${aiB01IntroducingYourselfA2Entries.length} learning sentences`, description: "在新环境中介绍自己、说明与场合的关系，并自然邀请对方回应。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB01IntroducingYourselfA2Entries },
-  { id: "c01-talking-work-study-current-life-a2", collectionId: "ai-practice", title: "Work, Study & Current Life · A2", subtitle: `AI voice · ${aiC01TalkingWorkStudyCurrentLifeA2Entries.length} learning sentences`, description: "谈论当前工作、学习、日常安排与基本近况。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC01TalkingWorkStudyCurrentLifeA2Entries },
+  { id: "polite-boundaries-b1", collectionId: "ai-practice", title: "Setting Boundaries Politely · B1", subtitle: `Everyday English · ${aiPoliteBoundariesB1Entries.length} learning sentences`, description: "练习礼貌说明限制、协商替代方案与坚定收尾。", kind: "sentence", practiceOrder: "sequential", entries: aiPoliteBoundariesB1Entries },
+  { id: "b01-introducing-yourself-a2", collectionId: "ai-practice", title: "Introducing Yourself · A2", subtitle: `Everyday English · ${aiB01IntroducingYourselfA2Entries.length} learning sentences`, description: "在新环境中介绍自己、说明与场合的关系，并自然邀请对方回应。", kind: "sentence", practiceOrder: "sequential", entries: aiB01IntroducingYourselfA2Entries },
+  { id: "c01-talking-work-study-current-life-a2", collectionId: "ai-practice", title: "Work, Study & Current Life · A2", subtitle: `Everyday English · ${aiC01TalkingWorkStudyCurrentLifeA2Entries.length} learning sentences`, description: "谈论当前工作、学习、日常安排与基本近况。", kind: "sentence", practiceOrder: "sequential", entries: aiC01TalkingWorkStudyCurrentLifeA2Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
   { id: "ielts", label: "WORD COURSE", title: "IELTS 高频词", subtitle: "Academic Word List · 570 words" },
   { id: "modern-family-s01", label: "DIALOGUE COURSE", title: "摩登家庭 · 第一季", subtitle: "5 集对白课程" },
   { id: "voa-level-2", label: "DIALOGUE COURSE", title: "VOA · Level 2", subtitle: "24 节实用口语课程 · B1" },
-  { id: "ai-practice", label: "AI PRACTICE", title: "AI 原创口语", subtitle: "AI 合成语音 · 原创句子课程" },
+  { id: "ai-practice", label: "SPEAKING COURSE", title: "日常英语会话", subtitle: "Everyday English · 实用场景口语" },
 ];
 
 export const IELTS_HIGH_FREQUENCY_COURSE = COURSE_PACKAGES[0];

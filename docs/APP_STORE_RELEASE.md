@@ -10,8 +10,8 @@
 - 支持邮箱：okkknight@gmail.com
 - 隐私政策：`https://boringmax.com/wordloop/privacy`
 - 支持页：`https://boringmax.com/wordloop/support`
-- 首发课程：IELTS 高频词与 AI 原创口语课程
-- 首发不包含：Modern Family、VOA 课程、相关文本、音频及封面/元数据
+- 首发课程：日常英语会话（`Everyday English`）36 节实用场景口语课
+- 首发不包含：IELTS 高频词、Modern Family、VOA 课程，以及它们的相关文本、音频及封面/元数据
 - 首发地区：先不包含中国大陆；待合规手续核验后再决定开放。
 
 ## 中国大陆区
@@ -32,9 +32,10 @@ App Privacy 问卷和商店审核说明必须与最终网络行为一致：
 
 ## 工程发布闸门
 
-- [ ] 建立仅含 `ielts` 与 `ai-practice` 的 iOS 首发内容包；资源层也不得打入 Modern Family / VOA 音频或课程文件。
-- [ ] 首发远程 catalog 与内置 catalog 使用同一课程白名单，默认课程改为 IELTS。
-- [ ] 更新课程抽屉/进度页等测试基线，不再引用 Modern Family / VOA。
+- [ ] 将 `ai-practice` 扩充到 36 节，并以“日常英语会话 / Everyday English”作为首发课程集合名称。
+- [ ] 建立仅含 36 节 `ai-practice` 的 iOS 首发内容包；资源层不得打入 IELTS、Modern Family 或 VOA 的音频、课程文件和元数据。
+- [ ] 首发远程 catalog 与内置 catalog 使用同一课程白名单，默认课程为日常英语会话的第一节。
+- [ ] 更新课程抽屉/进度页等测试基线，不再引用 IELTS、Modern Family 或 VOA。
 - [ ] 真实 iPhone 验证 LISTEN、REPEAT、拒绝麦克风、网络失败、游客进度恢复与删除请求路径。
 - [ ] 复核 `PrivacyInfo.xcprivacy`、`NSMicrophoneUsageDescription`、第三方 SDK 隐私清单和 App Privacy 问卷。
 - [ ] 检查 App Icon、启动体验、版本号/构建号、签名、出口合规问卷。
