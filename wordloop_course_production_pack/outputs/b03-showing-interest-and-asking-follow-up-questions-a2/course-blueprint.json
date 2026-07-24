@@ -1,0 +1,586 @@
+{
+  "courseId": "b03-showing-interest-and-asking-follow-up-questions-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够用简短回应表示兴趣，并通过合适的追问邀请对方继续说。",
+    "communicationGoals": [
+      "使用自然短回应表达兴趣或惊讶",
+      "围绕时间、地点、人物和方式继续追问",
+      "邀请对方补充感受、原因或细节",
+      "短暂联系自己的经历，但不抢走话题"
+    ],
+    "coreChunks": [
+      "That's interesting",
+      "How did that make",
+      "What happened next",
+      "Can you explain why"
+    ],
+    "supportingVocabulary": [
+      "fascinating",
+      "curious",
+      "elaborate",
+      "details",
+      "experience",
+      "insight"
+    ],
+    "contentBoundaries": [
+      "不训练大幅转换话题",
+      "不处理坏消息中的深度安慰",
+      "不使用审问式连续提问"
+    ],
+    "realWorldContexts": [
+      "Discussing a friend's recent travel experience",
+      "Talking about a colleague's new project",
+      "Listening to a family member's story about their day"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "使用自然短回应表达兴趣或惊讶",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "围绕时间、地点、人物和方式继续追问",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "邀请对方补充感受、原因或细节",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "短暂联系自己的经历，但不抢走话题",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "That's interesting",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "使用自然短回应表达兴趣或惊讶"
+      ]
+    },
+    {
+      "chunk": "How did that make",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "围绕时间、地点、人物和方式继续追问"
+      ]
+    },
+    {
+      "chunk": "What happened next",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "邀请对方补充感受、原因或细节"
+      ]
+    },
+    {
+      "chunk": "Can you explain why",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "短暂联系自己的经历，但不抢走话题"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "meaningTarget": "使用自然短回应表达兴趣或惊讶",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "meaningTarget": "使用自然短回应表达兴趣或惊讶",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "meaningTarget": "使用自然短回应表达兴趣或惊讶",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "meaningTarget": "使用自然短回应表达兴趣或惊讶",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "meaningTarget": "围绕时间、地点、人物和方式继续追问",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "meaningTarget": "围绕时间、地点、人物和方式继续追问",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "meaningTarget": "围绕时间、地点、人物和方式继续追问",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "meaningTarget": "围绕时间、地点、人物和方式继续追问",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "meaningTarget": "邀请对方补充感受、原因或细节",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "meaningTarget": "邀请对方补充感受、原因或细节",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "meaningTarget": "邀请对方补充感受、原因或细节",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "meaningTarget": "邀请对方补充感受、原因或细节",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "meaningTarget": "短暂联系自己的经历，但不抢走话题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "meaningTarget": "短暂联系自己的经历，但不抢走话题",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "meaningTarget": "短暂联系自己的经历，但不抢走话题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "meaningTarget": "短暂联系自己的经历，但不抢走话题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's interesting",
+        "How did that make",
+        "What happened next",
+        "Can you explain why"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不训练大幅转换话题",
+      "不处理坏消息中的深度安慰",
+      "不使用审问式连续提问"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

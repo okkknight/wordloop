@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B03",
+      "titleZh": "表示兴趣并继续追问",
+      "titleEn": "Showing Interest and Asking Follow-Up Questions",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够用简短回应表示兴趣，并通过合适的追问邀请对方继续说。",
+      "communicationGoals": [
+        "使用自然短回应表达兴趣或惊讶",
+        "围绕时间、地点、人物和方式继续追问",
+        "邀请对方补充感受、原因或细节",
+        "短暂联系自己的经历，但不抢走话题"
+      ],
+      "abilityTags": [
+        "B2",
+        "B4",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 7 的冻结课程。",
+      "distinctiveValue": "重点是把对方的回答接住，而不是自己持续输出。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不训练大幅转换话题",
+        "不处理坏消息中的深度安慰",
+        "不使用审问式连续提问"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "使用自然短回应表达兴趣或惊讶",
+      "围绕时间、地点、人物和方式继续追问",
+      "邀请对方补充感受、原因或细节",
+      "短暂联系自己的经历，但不抢走话题"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不训练大幅转换话题",
+      "不处理坏消息中的深度安慰",
+      "不使用审问式连续提问"
+    ]
+  }
+}

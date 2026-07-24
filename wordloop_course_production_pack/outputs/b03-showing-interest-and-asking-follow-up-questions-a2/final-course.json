@@ -1,0 +1,261 @@
+{
+  "courseId": "b03-showing-interest-and-asking-follow-up-questions-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "text": "Wow, really?",
+      "translation": "哇，真的吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Wow, really?"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "text": "That's interesting, tell me more about it.",
+      "translation": "那很有趣，告诉我更多吧。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "That's interesting, tell me more"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "text": "No way!",
+      "translation": "不会吧！",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "No way!"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "使用自然短回应表达兴趣或惊讶",
+      "text": "I didn't know that!",
+      "translation": "我不知道这个！",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I didn't"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "text": "Where did you go after that?",
+      "translation": "之后你去了哪里？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Where did"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "text": "How did that make you feel about the whole situation?",
+      "translation": "这让你对整个情况有什么感觉？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "How did that make you feel"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "text": "When did you first notice it?",
+      "translation": "你什么时候第一次注意到的？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "When did"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "围绕时间、地点、人物和方式继续追问",
+      "text": "How did you get there?",
+      "translation": "你是怎么到那里的？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "How did"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "text": "Can you tell me more about that?",
+      "translation": "你能多讲讲吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "text": "What happened next?",
+      "translation": "接下来发生了什么？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "What happened next"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "text": "How did that make you feel?",
+      "translation": "那让你感觉如何？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "How did"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "邀请对方补充感受、原因或细节",
+      "text": "Why do you think that happened?",
+      "translation": "你觉得为什么会这样？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Why do"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "text": "I tried that once, and it was fun.",
+      "translation": "我曾经试过一次，挺有趣的。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I tried"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "text": "Can you explain why you chose that option? I had a similar choice once.",
+      "translation": "你能解释一下你为什么选择那个选项吗？我也曾经有过类似的选择。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you explain why"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "text": "I had a similar experience last year.",
+      "translation": "我去年有过类似的经历。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I had"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "短暂联系自己的经历，但不抢走话题",
+      "text": "I remember feeling the same way once.",
+      "translation": "我记得我曾经也有过同样的感觉。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I remember"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

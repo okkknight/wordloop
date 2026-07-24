@@ -18,7 +18,7 @@ for (let index = 0; index < args.length; index += 1) {
   options[{ "--from": "from", "--to": "to", "--model": "model", "--retries": "retries" }[key]] = key === "--retries" ? Number(value) : value;
 }
 const bands = ["entry", "entry", "entry", "targetBase", "targetBase", "targetBase", "targetBase", "targetCore", "targetCore", "targetCore", "targetCore", "targetCore", "stretch", "targetCore", "stretch", "stretch"];
-const ranges = [[5, 22], [5, 22], [5, 22], [5, 22], [5, 22], [5, 22], [5, 22], [5, 24], [5, 24], [5, 24], [5, 24], [5, 24], [5, 26], [5, 24], [5, 26], [5, 26]];
+const ranges = [[2, 22], [2, 22], [2, 22], [2, 22], [2, 22], [2, 22], [2, 22], [2, 24], [2, 24], [2, 24], [2, 24], [2, 24], [2, 26], [2, 24], [2, 26], [2, 26]];
 const sectionNames = ["建立任务", "补充关键信息", "处理回应与变化", "完成交流"];
 
 function slug(course) { return `${course.courseId.toLowerCase()}-${course.titleEn.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}-${course.targetLevel.toLowerCase()}`; }
