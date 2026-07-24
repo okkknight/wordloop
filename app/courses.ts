@@ -42,6 +42,7 @@ import aiA02AskingForDirectionsAndTransitInformationA2 from "./data/ai-a02-askin
 import aiA03OrderingAndCustomizingFoodAndDrinksA2 from "./data/ai-a03-ordering-and-customizing-food-and-drinks-a2.json";
 import aiA04ExplainingWhatYouNeedWhileShoppingA2 from "./data/ai-a04-explaining-what-you-need-while-shopping-a2.json";
 import aiA05CheckingInAndProvidingBookingInformationA2 from "./data/ai-a05-checking-in-and-providing-booking-information-a2.json";
+import aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1 from "./data/ai-b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -239,6 +240,9 @@ const aiA04ExplainingWhatYouNeedWhileShoppingA2Entries = aiA04ExplainingWhatYouN
 const aiA05CheckingInAndProvidingBookingInformationA2Entries = aiA05CheckingInAndProvidingBookingInformationA2.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a05-checking-in-and-providing-booking-information-a2/${entry.audio}` })) as CourseEntry[];
+const aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries = aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -411,6 +415,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "a03-ordering-and-customizing-food-and-drinks-a2", collectionId: "ai-practice", title: "Food & Drink Orders · A2", subtitle: `Everyday English · ${aiA03OrderingAndCustomizingFoodAndDrinksA2Entries.length} learning sentences`, description: "点餐、说明偏好、定制食物饮料并核对订单。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA03OrderingAndCustomizingFoodAndDrinksA2Entries },
   { id: "a04-explaining-what-you-need-while-shopping-a2", collectionId: "ai-practice", title: "Shopping Needs · A2", subtitle: `Everyday English · ${aiA04ExplainingWhatYouNeedWhileShoppingA2Entries.length} learning sentences`, description: "购物时说明用途、偏好、预算、尺寸并比较选择。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA04ExplainingWhatYouNeedWhileShoppingA2Entries },
   { id: "a05-checking-in-and-providing-booking-information-a2", collectionId: "ai-practice", title: "Hotel Check-in · A2", subtitle: `Everyday English · ${aiA05CheckingInAndProvidingBookingInformationA2Entries.length} learning sentences`, description: "办理入住并提供预订、身份、房间和付款信息。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA05CheckingInAndProvidingBookingInformationA2Entries },
+  { id: "b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1", collectionId: "ai-practice", title: "Keep a Conversation Going · B1", subtitle: `Everyday English · ${aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries.length} learning sentences`, description: "追问、回应、延续话题并自然转换谈话方向。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
