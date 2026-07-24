@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-24 · C03 daily-routine course developed, pending independent review
+
+- 按 releaseOrder 4 完成 C03《描述我的日常作息 / Describing My Daily Routine》：16 句、16 段 `marin` AI 语音、manifest 与 `AI PRACTICE` 注册表条目均已生成；候选检查为 0 error / 0 warning。
+- 新增 `scripts/generate_course_pool_text.mjs`，将后续课程拆为课程设计、每四槽候选句、规则检查和独立语言审查，任何不通过内容不会写入课程资产。
+- 内容库存为 35 门课程、916 个句子条目、1,486 个 M4A、35,337,603 bytes；iOS 启动页文案基线阻塞仍独立存在。
+
 ## 2026-07-24 · C02 where-I-live course developed, pending independent review
 
 - 按课程池 releaseOrder 3 完成 C02《描述自己居住的地方与周边环境 / Describing Where I Live and My Surroundings》：A2、16 句、`3/4/6/3` 难度配额、16×2 候选句、最终人工确认稿与检查报告均位于 `wordloop_course_production_pack/outputs/c02-describing-where-i-live-a2/`；候选检查为 0 error / 0 warning。

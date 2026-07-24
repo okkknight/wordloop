@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "C03",
+      "titleZh": "描述我的日常作息",
+      "titleEn": "Describing My Daily Routine",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够按照时间顺序描述工作日的主要活动、频率和常见变化。",
+      "communicationGoals": [
+        "描述起床、早餐和出门前的活动",
+        "描述工作或学习时段的主要安排",
+        "描述下班、晚饭和晚间活动",
+        "说明频率、偶尔变化和周中差异"
+      ],
+      "abilityTags": [
+        "C2",
+        "C1",
+        "C"
+      ],
+      "selectionReason": "课程池 releaseOrder 4 的冻结课程。",
+      "distinctiveValue": "建立最基础的连续自我表达能力，并提供大量可替换的个人内容。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "描述起床、早餐和出门前的活动",
+      "描述工作或学习时段的主要安排",
+      "描述下班、晚饭和晚间活动",
+      "说明频率、偶尔变化和周中差异"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不解释复杂的习惯形成原因",
+      "不讨论长期目标和自我改造",
+      "不写成精确到每分钟的流水账"
+    ]
+  }
+}
