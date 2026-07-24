@@ -1,0 +1,169 @@
+{
+  "courseId": "b08-making-polite-requests-and-asking-for-favors-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-b08-001",
+      "text": "Can you pass me the salt?",
+      "translation": "你能把盐递给我吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.176,
+      "duration": 2.176
+    },
+    {
+      "id": "ai-b08-002",
+      "text": "Could you help me with this box?",
+      "translation": "你能帮我搬一下这个箱子吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.304,
+      "duration": 2.304
+    },
+    {
+      "id": "ai-b08-003",
+      "text": "Would you mind holding the door?",
+      "translation": "你介意帮我扶一下门吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.304,
+      "duration": 2.304
+    },
+    {
+      "id": "ai-b08-004",
+      "text": "Can I borrow your book for a day?",
+      "translation": "我可以借你的书一天吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-b08-005",
+      "text": "Is it okay if I sit here?",
+      "translation": "我可以坐在这里吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.133,
+      "duration": 2.133
+    },
+    {
+      "id": "ai-b08-006",
+      "text": "Would you mind if I joined you for lunch?",
+      "translation": "你介意我和你一起吃午饭吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-b08-007",
+      "text": "Is it alright if I call you later?",
+      "translation": "我可以晚点给你打电话吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-b08-008",
+      "text": "Is it okay if I bring a friend to the party?",
+      "translation": "我可以带一个朋友去派对吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-b08-009",
+      "text": "Could you give me a hand with this project?",
+      "translation": "你能帮我一下这个项目吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-b08-010",
+      "text": "Can I ask you to watch my bag for a minute?",
+      "translation": "我可以请你帮我看一下包吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.115,
+      "duration": 3.115
+    },
+    {
+      "id": "ai-b08-011",
+      "text": "Could you show me how to use this app?",
+      "translation": "你能教我怎么用这个应用吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-b08-012",
+      "text": "Could you tell me where the nearest coffee shop is?",
+      "translation": "你能告诉我最近的咖啡店在哪里吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    },
+    {
+      "id": "ai-b08-013",
+      "text": "Sure, I can help with that.",
+      "translation": "当然，我可以帮忙。",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-b08-014",
+      "text": "Is it okay if I call you back later?",
+      "translation": "我可以晚点给你回电话吗？",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-b08-015",
+      "text": "Yes, that's no problem at all.",
+      "translation": "是的，这完全没问题。",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.669,
+      "duration": 3.669
+    },
+    {
+      "id": "ai-b08-016",
+      "text": "Thanks for understanding!",
+      "translation": "谢谢你的理解！",
+      "audio": "audio/b08-making-polite-requests-and-asking-for-favors-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.219,
+      "duration": 2.219
+    }
+  ]
+}
