@@ -1,0 +1,169 @@
+{
+  "courseId": "d02-supporting-a-view-with-examples-and-personal-experience-b2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-d02-001",
+      "text": "I believe that effective communication is key to success.",
+      "translation": "我相信有效的沟通是成功的关键。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.779,
+      "duration": 4.779
+    },
+    {
+      "id": "ai-d02-002",
+      "text": "For example, I once worked on a project where communication was crucial.",
+      "translation": "例如，我曾参与过一个项目，在那里沟通至关重要。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.205,
+      "duration": 5.205
+    },
+    {
+      "id": "ai-d02-003",
+      "text": "I think that learning from mistakes is vital for personal growth.",
+      "translation": "我认为从错误中学习对个人成长至关重要。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.565,
+      "duration": 4.565
+    },
+    {
+      "id": "ai-d02-004",
+      "text": "It's clear to me that persistence leads to success.",
+      "translation": "对我来说，坚持不懈会带来成功。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-d02-005",
+      "text": "Take the example of a company that thrived due to innovation.",
+      "translation": "以一家因创新而繁荣的公司为例。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-d02-006",
+      "text": "This reminds me of a time when I had to adapt quickly to change.",
+      "translation": "这让我想起了一次我必须快速适应变化的经历。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.565,
+      "duration": 4.565
+    },
+    {
+      "id": "ai-d02-007",
+      "text": "Think about how technology has transformed communication.",
+      "translation": "想想科技如何改变了沟通方式。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.627,
+      "duration": 3.627
+    },
+    {
+      "id": "ai-d02-008",
+      "text": "A good example is how remote work has changed the job market.",
+      "translation": "一个很好的例子是远程工作如何改变了就业市场。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    },
+    {
+      "id": "ai-d02-009",
+      "text": "When I faced a challenge, I learned the importance of resilience.",
+      "translation": "当我面临挑战时，我学会了韧性的重要性。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.181,
+      "duration": 4.181
+    },
+    {
+      "id": "ai-d02-010",
+      "text": "To illustrate my point, I once volunteered in a community project.",
+      "translation": "为了说明我的观点，我曾在一个社区项目中做志愿者。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.163,
+      "duration": 5.163
+    },
+    {
+      "id": "ai-d02-011",
+      "text": "I realized the value of patience when learning a new skill.",
+      "translation": "我在学习新技能时意识到了耐心的价值。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.968,
+      "duration": 3.968
+    },
+    {
+      "id": "ai-d02-012",
+      "text": "Experiencing different cultures taught me to be more open-minded.",
+      "translation": "体验不同文化让我变得更加开放。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    },
+    {
+      "id": "ai-d02-013",
+      "text": "This example clearly shows why adaptability is crucial in today's world.",
+      "translation": "这个例子清楚地表明了为什么适应能力在当今世界至关重要。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.864,
+      "duration": 4.864
+    },
+    {
+      "id": "ai-d02-014",
+      "text": "From my experience, I can say that hard work pays off in the long run.",
+      "translation": "根据我的经验，我可以说努力工作从长远来看是有回报的。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.523,
+      "duration": 4.523
+    },
+    {
+      "id": "ai-d02-015",
+      "text": "Ultimately, this shows that perseverance is key to overcoming obstacles.",
+      "translation": "最终，这表明坚持不懈是克服障碍的关键。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.205,
+      "duration": 5.205
+    },
+    {
+      "id": "ai-d02-016",
+      "text": "Therefore, it's evident that good planning leads to better results.",
+      "translation": "因此，很明显，良好的规划会带来更好的结果。",
+      "audio": "audio/d02-supporting-a-view-with-examples-and-personal-experience-b2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.267,
+      "duration": 4.267
+    }
+  ]
+}

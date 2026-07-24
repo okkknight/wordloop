@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "D02",
+      "titleZh": "用例子和个人经历支持观点",
+      "titleEn": "Supporting a View with Examples and Personal Experience",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够选择有说服力的具体例子或个人经历，并清楚说明它如何支持自己的判断。",
+      "communicationGoals": [
+        "提出需要被支持的核心判断",
+        "引入一个具体、相关的现实例子",
+        "使用个人经历说明原因或影响",
+        "明确连接例子与最终结论，避免只讲故事"
+      ],
+      "abilityTags": [
+        "D2",
+        "D1",
+        "D"
+      ],
+      "selectionReason": "课程池 releaseOrder 33 的冻结课程。",
+      "distinctiveValue": "解决观点有结论却缺少支撑的问题，让表达更可信、更具体。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "提出需要被支持的核心判断",
+      "引入一个具体、相关的现实例子",
+      "使用个人经历说明原因或影响",
+      "明确连接例子与最终结论，避免只讲故事"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不要求研究数据或引用来源",
+      "不训练正式辩论和反驳",
+      "不编造戏剧化案例"
+    ]
+  }
+}

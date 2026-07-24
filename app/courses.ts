@@ -60,6 +60,7 @@ import aiA10ReportingAServiceProblemAndNegotiatingASolutionB2 from "./data/ai-a1
 import aiB09RefusingPolitelyAndOfferingAlternativesB2 from "./data/ai-b09-refusing-politely-and-offering-alternatives-b2.json";
 import aiB10ApologizingExplainingAndRepairingAMisunderstandingB2 from "./data/ai-b10-apologizing-explaining-and-repairing-a-misunderstanding-b2.json";
 import aiC09TalkingAboutPlansGoalsAndPersonalChangeB2 from "./data/ai-c09-talking-about-plans-goals-and-personal-change-b2.json";
+import aiD02SupportingAViewWithExamplesAndPersonalExperienceB2 from "./data/ai-d02-supporting-a-view-with-examples-and-personal-experience-b2.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -311,6 +312,9 @@ const aiB10ApologizingExplainingAndRepairingAMisunderstandingB2Entries = aiB10Ap
 const aiC09TalkingAboutPlansGoalsAndPersonalChangeB2Entries = aiC09TalkingAboutPlansGoalsAndPersonalChangeB2.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/c09-talking-about-plans-goals-and-personal-change-b2/${entry.audio}` })) as CourseEntry[];
+const aiD02SupportingAViewWithExamplesAndPersonalExperienceB2Entries = aiD02SupportingAViewWithExamplesAndPersonalExperienceB2.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/d02-supporting-a-view-with-examples-and-personal-experience-b2/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -501,6 +505,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "b09-refusing-politely-and-offering-alternatives-b2", collectionId: "ai-practice", title: "Refuse Politely · B2", subtitle: `Everyday English · ${aiB09RefusingPolitelyAndOfferingAlternativesB2Entries.length} learning sentences`, description: "礼貌拒绝邀约或请求，说明原因、维护关系并提供替代方案。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB09RefusingPolitelyAndOfferingAlternativesB2Entries },
   { id: "b10-apologizing-explaining-and-repairing-a-misunderstanding-b2", collectionId: "ai-practice", title: "Repair a Misunderstanding · B2", subtitle: `Everyday English · ${aiB10ApologizingExplainingAndRepairingAMisunderstandingB2Entries.length} learning sentences`, description: "道歉、解释误会、提出补救办法并修复后续沟通。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB10ApologizingExplainingAndRepairingAMisunderstandingB2Entries },
   { id: "c09-talking-about-plans-goals-and-personal-change-b2", collectionId: "ai-practice", title: "Plans, Goals & Change · B2", subtitle: `Everyday English · ${aiC09TalkingAboutPlansGoalsAndPersonalChangeB2Entries.length} learning sentences`, description: "谈论当前计划、长期目标、现实阻碍和个人调整。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC09TalkingAboutPlansGoalsAndPersonalChangeB2Entries },
+  { id: "d02-supporting-a-view-with-examples-and-personal-experience-b2", collectionId: "ai-practice", title: "Support a View · B2", subtitle: `Everyday English · ${aiD02SupportingAViewWithExamplesAndPersonalExperienceB2Entries.length} learning sentences`, description: "用例子和个人经历支持观点，并总结论证。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD02SupportingAViewWithExamplesAndPersonalExperienceB2Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

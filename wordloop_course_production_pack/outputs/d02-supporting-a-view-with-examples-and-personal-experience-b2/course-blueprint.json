@@ -1,0 +1,586 @@
+{
+  "courseId": "d02-supporting-a-view-with-examples-and-personal-experience-b2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B2",
+    "learnerOutcome": "能够选择有说服力的具体例子或个人经历，并清楚说明它如何支持自己的判断。",
+    "communicationGoals": [
+      "提出需要被支持的核心判断",
+      "引入一个具体、相关的现实例子",
+      "使用个人经历说明原因或影响",
+      "明确连接例子与最终结论，避免只讲故事"
+    ],
+    "coreChunks": [
+      "For example",
+      "This reminds me of",
+      "To illustrate my point",
+      "From my experience"
+    ],
+    "supportingVocabulary": [
+      "persuasive",
+      "relevant",
+      "conclusion",
+      "example",
+      "experience",
+      "support"
+    ],
+    "contentBoundaries": [
+      "不要求研究数据或引用来源",
+      "不训练正式辩论和反驳",
+      "不编造戏剧化案例"
+    ],
+    "realWorldContexts": [
+      "Discussing a business proposal with colleagues",
+      "Explaining a personal decision to a friend",
+      "Justifying a project choice in a team meeting"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B2-",
+    "coreLevel": "B2",
+    "stretchLevel": "B2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "提出需要被支持的核心判断",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "引入一个具体、相关的现实例子",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "使用个人经历说明原因或影响",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "明确连接例子与最终结论，避免只讲故事",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "For example",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "提出需要被支持的核心判断"
+      ]
+    },
+    {
+      "chunk": "This reminds me of",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "引入一个具体、相关的现实例子"
+      ]
+    },
+    {
+      "chunk": "To illustrate my point",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "使用个人经历说明原因或影响"
+      ]
+    },
+    {
+      "chunk": "From my experience",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "明确连接例子与最终结论，避免只讲故事"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "提出需要被支持的核心判断",
+      "meaningTarget": "提出需要被支持的核心判断",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "提出需要被支持的核心判断",
+      "meaningTarget": "提出需要被支持的核心判断",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "提出需要被支持的核心判断",
+      "meaningTarget": "提出需要被支持的核心判断",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "提出需要被支持的核心判断",
+      "meaningTarget": "提出需要被支持的核心判断",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "引入一个具体、相关的现实例子",
+      "meaningTarget": "引入一个具体、相关的现实例子",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "引入一个具体、相关的现实例子",
+      "meaningTarget": "引入一个具体、相关的现实例子",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "引入一个具体、相关的现实例子",
+      "meaningTarget": "引入一个具体、相关的现实例子",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "引入一个具体、相关的现实例子",
+      "meaningTarget": "引入一个具体、相关的现实例子",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "使用个人经历说明原因或影响",
+      "meaningTarget": "使用个人经历说明原因或影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "使用个人经历说明原因或影响",
+      "meaningTarget": "使用个人经历说明原因或影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "使用个人经历说明原因或影响",
+      "meaningTarget": "使用个人经历说明原因或影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "使用个人经历说明原因或影响",
+      "meaningTarget": "使用个人经历说明原因或影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "明确连接例子与最终结论，避免只讲故事",
+      "meaningTarget": "明确连接例子与最终结论，避免只讲故事",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "明确连接例子与最终结论，避免只讲故事",
+      "meaningTarget": "明确连接例子与最终结论，避免只讲故事",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "明确连接例子与最终结论，避免只讲故事",
+      "meaningTarget": "明确连接例子与最终结论，避免只讲故事",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "明确连接例子与最终结论，避免只讲故事",
+      "meaningTarget": "明确连接例子与最终结论，避免只讲故事",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "For example",
+        "This reminds me of",
+        "To illustrate my point",
+        "From my experience"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求研究数据或引用来源",
+        "不训练正式辩论和反驳",
+        "不编造戏剧化案例"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不要求研究数据或引用来源",
+      "不训练正式辩论和反驳",
+      "不编造戏剧化案例"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
