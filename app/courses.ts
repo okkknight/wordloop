@@ -52,6 +52,7 @@ import aiA09ReturningOrExchangingAProductB1 from "./data/ai-a09-returning-or-exc
 import aiA11SchedulingReschedulingAndCancelingPlansB1 from "./data/ai-a11-scheduling-rescheduling-and-canceling-plans-b1.json";
 import aiC05TellingARecentEverydayExperienceB1 from "./data/ai-c05-telling-a-recent-everyday-experience-b1.json";
 import aiC06SharingAMemorableTripOrExperienceB1 from "./data/ai-c06-sharing-a-memorable-trip-or-experience-b1.json";
+import aiC07ExplainingPreferencesAndAnIdealLifestyleB1 from "./data/ai-c07-explaining-preferences-and-an-ideal-lifestyle-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -279,6 +280,9 @@ const aiC05TellingARecentEverydayExperienceB1Entries = aiC05TellingARecentEveryd
 const aiC06SharingAMemorableTripOrExperienceB1Entries = aiC06SharingAMemorableTripOrExperienceB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/c06-sharing-a-memorable-trip-or-experience-b1/${entry.audio}` })) as CourseEntry[];
+const aiC07ExplainingPreferencesAndAnIdealLifestyleB1Entries = aiC07ExplainingPreferencesAndAnIdealLifestyleB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/c07-explaining-preferences-and-an-ideal-lifestyle-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -461,6 +465,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "a11-scheduling-rescheduling-and-canceling-plans-b1", collectionId: "ai-practice", title: "Schedule & Reschedule · B1", subtitle: `Everyday English · ${aiA11SchedulingReschedulingAndCancelingPlansB1Entries.length} learning sentences`, description: "安排、改期、取消计划，并确认双方时间和后续安排。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA11SchedulingReschedulingAndCancelingPlansB1Entries },
   { id: "c05-telling-a-recent-everyday-experience-b1", collectionId: "ai-practice", title: "Recent Everyday Experiences · B1", subtitle: `Everyday English · ${aiC05TellingARecentEverydayExperienceB1Entries.length} learning sentences`, description: "用时间、事件、转折与结果讲述近期日常经历。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC05TellingARecentEverydayExperienceB1Entries },
   { id: "c06-sharing-a-memorable-trip-or-experience-b1", collectionId: "ai-practice", title: "Memorable Trips & Experiences · B1", subtitle: `Everyday English · ${aiC06SharingAMemorableTripOrExperienceB1Entries.length} learning sentences`, description: "分享难忘旅行或经历，加入意外、细节、感受和收获。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC06SharingAMemorableTripOrExperienceB1Entries },
+  { id: "c07-explaining-preferences-and-an-ideal-lifestyle-b1", collectionId: "ai-practice", title: "Preferences & Ideal Lifestyle · B1", subtitle: `Everyday English · ${aiC07ExplainingPreferencesAndAnIdealLifestyleB1Entries.length} learning sentences`, description: "解释个人偏好、理想生活方式及现实中的取舍。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC07ExplainingPreferencesAndAnIdealLifestyleB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

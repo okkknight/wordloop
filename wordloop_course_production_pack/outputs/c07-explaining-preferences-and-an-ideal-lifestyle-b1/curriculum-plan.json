@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "C07",
+      "titleZh": "表达我的偏好与理想生活方式",
+      "titleEn": "Explaining Preferences and an Ideal Lifestyle",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够表达对节奏、环境、社交和生活方式的偏好，并说明原因和现实限制。",
+      "communicationGoals": [
+        "表达对生活节奏、环境和日常安排的偏好",
+        "描述理想的一天或理想生活状态",
+        "说明偏好背后的原因和感受",
+        "承认现实限制并表达可以接受的折中"
+      ],
+      "abilityTags": [
+        "C4",
+        "C5",
+        "C"
+      ],
+      "selectionReason": "课程池 releaseOrder 25 的冻结课程。",
+      "distinctiveValue": "帮助学习者从简单喜欢进入更完整、更个人化的生活表达。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "表达对生活节奏、环境和日常安排的偏好",
+      "描述理想的一天或理想生活状态",
+      "说明偏好背后的原因和感受",
+      "承认现实限制并表达可以接受的折中"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不做两个选项的系统比较课程",
+      "不变成长期目标规划",
+      "不使用空泛的幸福或成功口号"
+    ]
+  }
+}
