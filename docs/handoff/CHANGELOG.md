@@ -6,7 +6,7 @@
 
 - 按产品决定将 TypeScript `REPEAT_PASS_SCORE` 与 Swift `RepeatScorer.passScore` 从 20 统一调整为 15；句子 60% 单词覆盖率及其余评分规则不变。
 - 未新增测试用例，只同步既有 Web 静态断言。Swift Core 10/10 通过；Web 定向测试 30/31，评分阈值断言已通过，唯一失败是既有启动页测试仍要求已移除的“用户名只能使用英文字母”文案，与本次评分修改无关。
-- 下一位 reviewer 应确认 Web/iOS 常量均为 15、现有评分 fixtures 仍通过、VPS 运行源码为 15，且没有改变句子覆盖率。
+- VPS 仅原子安装 `app/repeat-scorer.ts`，未同步 iOS 目录或环境文件；远端源码确认 15，`wordloop.service`、`wordloop-api.service`、`caddy` 均 active，公网首页与进度 API 均为 HTTP 200。下一位 reviewer 仍应独立确认 Web/iOS 常量与 60% 覆盖率边界。
 
 ## 2026-07-24 · startup baseline aligned to the anonymous Web start flow, pending independent review
 
