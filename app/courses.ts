@@ -57,6 +57,7 @@ import aiC08ExplainingMotivationAndWhyIChangedAHabitB1 from "./data/ai-c08-expla
 import aiD01StatingAnOpinionClearlyAndExplainingWhyB1 from "./data/ai-d01-stating-an-opinion-clearly-and-explaining-why-b1.json";
 import aiD03ComparingTwoChoicesAndExplainingAPreferenceB1 from "./data/ai-d03-comparing-two-choices-and-explaining-a-preference-b1.json";
 import aiA10ReportingAServiceProblemAndNegotiatingASolutionB2 from "./data/ai-a10-reporting-a-service-problem-and-negotiating-a-solution-b2.json";
+import aiB09RefusingPolitelyAndOfferingAlternativesB2 from "./data/ai-b09-refusing-politely-and-offering-alternatives-b2.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -299,6 +300,9 @@ const aiD03ComparingTwoChoicesAndExplainingAPreferenceB1Entries = aiD03Comparing
 const aiA10ReportingAServiceProblemAndNegotiatingASolutionB2Entries = aiA10ReportingAServiceProblemAndNegotiatingASolutionB2.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a10-reporting-a-service-problem-and-negotiating-a-solution-b2/${entry.audio}` })) as CourseEntry[];
+const aiB09RefusingPolitelyAndOfferingAlternativesB2Entries = aiB09RefusingPolitelyAndOfferingAlternativesB2.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/b09-refusing-politely-and-offering-alternatives-b2/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -486,6 +490,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "d01-stating-an-opinion-clearly-and-explaining-why-b1", collectionId: "ai-practice", title: "State an Opinion · B1", subtitle: `Everyday English · ${aiD01StatingAnOpinionClearlyAndExplainingWhyB1Entries.length} learning sentences`, description: "清楚表达立场、说明理由、举例并做简短总结。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD01StatingAnOpinionClearlyAndExplainingWhyB1Entries },
   { id: "d03-comparing-two-choices-and-explaining-a-preference-b1", collectionId: "ai-practice", title: "Compare Choices · B1", subtitle: `Everyday English · ${aiD03ComparingTwoChoicesAndExplainingAPreferenceB1Entries.length} learning sentences`, description: "比较两种选择、说明优缺点，并解释自己偏好的理由。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD03ComparingTwoChoicesAndExplainingAPreferenceB1Entries },
   { id: "a10-reporting-a-service-problem-and-negotiating-a-solution-b2", collectionId: "ai-practice", title: "Service Problems & Solutions · B2", subtitle: `Everyday English · ${aiA10ReportingAServiceProblemAndNegotiatingASolutionB2Entries.length} learning sentences`, description: "说明服务问题及影响，回应对方并协商可执行的解决方案。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA10ReportingAServiceProblemAndNegotiatingASolutionB2Entries },
+  { id: "b09-refusing-politely-and-offering-alternatives-b2", collectionId: "ai-practice", title: "Refuse Politely · B2", subtitle: `Everyday English · ${aiB09RefusingPolitelyAndOfferingAlternativesB2Entries.length} learning sentences`, description: "礼貌拒绝邀约或请求，说明原因、维护关系并提供替代方案。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB09RefusingPolitelyAndOfferingAlternativesB2Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

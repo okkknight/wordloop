@@ -1,0 +1,169 @@
+{
+  "courseId": "b09-refusing-politely-and-offering-alternatives-b2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-b09-001",
+      "text": "I'm not able to join you.",
+      "translation": "我不能和你一起去。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.005,
+      "duration": 2.005
+    },
+    {
+      "id": "ai-b09-002",
+      "text": "I appreciate the offer, but I have to decline.",
+      "translation": "我很感激你的邀请，但我不得不拒绝。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-b09-003",
+      "text": "I have to say no to that.",
+      "translation": "我必须拒绝。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-b09-004",
+      "text": "I'm afraid I can't go.",
+      "translation": "恐怕我不能去。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.048,
+      "duration": 2.048
+    },
+    {
+      "id": "ai-b09-005",
+      "text": "I have other commitments that day.",
+      "translation": "那天我有其他安排。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-b09-006",
+      "text": "Unfortunately, I can't make it because of a prior engagement.",
+      "translation": "不幸的是，我因为有约在先不能参加。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-b09-007",
+      "text": "I have a family obligation I can't miss.",
+      "translation": "我有一个不能错过的家庭责任。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-b09-008",
+      "text": "I'm swamped with deadlines at work.",
+      "translation": "我被工作的截止日期压得喘不过气来。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-b09-009",
+      "text": "I really appreciate your understanding.",
+      "translation": "我真的很感激你的理解。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-b09-010",
+      "text": "How about another time when I'm less busy?",
+      "translation": "等我不那么忙的时候再约怎么样？",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-b09-011",
+      "text": "I value our relationship and hope we can meet soon.",
+      "translation": "我很重视我们的关系，希望我们能尽快见面。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.011,
+      "duration": 4.011
+    },
+    {
+      "id": "ai-b09-012",
+      "text": "I regret missing out, but let's plan something soon.",
+      "translation": "我很遗憾错过，但我们尽快计划点什么吧。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.011,
+      "duration": 4.011
+    },
+    {
+      "id": "ai-b09-013",
+      "text": "Maybe we could do a quick call instead?",
+      "translation": "也许我们可以打个简短的电话？",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-b09-014",
+      "text": "Thank you for understanding, perhaps we can reschedule.",
+      "translation": "谢谢你的理解，也许我们可以重新安排。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-b09-015",
+      "text": "Could we try a different day?",
+      "translation": "我们可以换一天试试吗？",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-b09-016",
+      "text": "Let's aim for next month instead.",
+      "translation": "我们改为下个月吧。",
+      "audio": "audio/b09-refusing-politely-and-offering-alternatives-b2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    }
+  ]
+}

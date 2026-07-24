@@ -1,0 +1,585 @@
+{
+  "courseId": "b09-refusing-politely-and-offering-alternatives-b2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "B2",
+    "learnerOutcome": "能够清楚拒绝请求或邀请，同时表达感谢、给出适度理由，并提出可行替代方案。",
+    "communicationGoals": [
+      "不含糊地表达无法接受或参加",
+      "用合适程度的理由解释限制",
+      "表达感谢、遗憾或对关系的重视",
+      "提出其他时间、方式或较小范围的替代方案"
+    ],
+    "coreChunks": [
+      "I appreciate the offer",
+      "Unfortunately",
+      "How about another time",
+      "Thank you for understanding"
+    ],
+    "supportingVocabulary": [
+      "regret",
+      "alternative",
+      "schedule",
+      "prior commitment",
+      "appreciate",
+      "consideration"
+    ],
+    "contentBoundaries": [
+      "不为拒绝编造复杂故事",
+      "不进入价值争论或冲突升级",
+      "不把拒绝变成长篇道歉"
+    ],
+    "realWorldContexts": [
+      "Declining a dinner invitation from a colleague",
+      "Refusing a project proposal from a team member"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B2-",
+    "coreLevel": "B2",
+    "stretchLevel": "B2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "不含糊地表达无法接受或参加",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "用合适程度的理由解释限制",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "表达感谢、遗憾或对关系的重视",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "提出其他时间、方式或较小范围的替代方案",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I appreciate the offer",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "不含糊地表达无法接受或参加"
+      ]
+    },
+    {
+      "chunk": "Unfortunately",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "用合适程度的理由解释限制"
+      ]
+    },
+    {
+      "chunk": "How about another time",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "表达感谢、遗憾或对关系的重视"
+      ]
+    },
+    {
+      "chunk": "Thank you for understanding",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "提出其他时间、方式或较小范围的替代方案"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "不含糊地表达无法接受或参加",
+      "meaningTarget": "不含糊地表达无法接受或参加",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "不含糊地表达无法接受或参加",
+      "meaningTarget": "不含糊地表达无法接受或参加",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "不含糊地表达无法接受或参加",
+      "meaningTarget": "不含糊地表达无法接受或参加",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "不含糊地表达无法接受或参加",
+      "meaningTarget": "不含糊地表达无法接受或参加",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "用合适程度的理由解释限制",
+      "meaningTarget": "用合适程度的理由解释限制",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "用合适程度的理由解释限制",
+      "meaningTarget": "用合适程度的理由解释限制",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "用合适程度的理由解释限制",
+      "meaningTarget": "用合适程度的理由解释限制",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "用合适程度的理由解释限制",
+      "meaningTarget": "用合适程度的理由解释限制",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "表达感谢、遗憾或对关系的重视",
+      "meaningTarget": "表达感谢、遗憾或对关系的重视",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "表达感谢、遗憾或对关系的重视",
+      "meaningTarget": "表达感谢、遗憾或对关系的重视",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "表达感谢、遗憾或对关系的重视",
+      "meaningTarget": "表达感谢、遗憾或对关系的重视",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "表达感谢、遗憾或对关系的重视",
+      "meaningTarget": "表达感谢、遗憾或对关系的重视",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "提出其他时间、方式或较小范围的替代方案",
+      "meaningTarget": "提出其他时间、方式或较小范围的替代方案",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "提出其他时间、方式或较小范围的替代方案",
+      "meaningTarget": "提出其他时间、方式或较小范围的替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "提出其他时间、方式或较小范围的替代方案",
+      "meaningTarget": "提出其他时间、方式或较小范围的替代方案",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "提出其他时间、方式或较小范围的替代方案",
+      "meaningTarget": "提出其他时间、方式或较小范围的替代方案",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I appreciate the offer",
+        "Unfortunately",
+        "How about another time",
+        "Thank you for understanding"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不为拒绝编造复杂故事",
+      "不进入价值争论或冲突升级",
+      "不把拒绝变成长篇道歉"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
