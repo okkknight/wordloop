@@ -348,7 +348,6 @@ async function buildInventory() {
       hints: switchReturns(pageSource, "repeatStatusHint"),
     },
     startupCopy: {
-      placeholder: "USERNAME",
       idleAction: "START",
       restoringAction: "PREPARING…",
       syncingAction: "SYNCING…",
@@ -389,9 +388,6 @@ async function buildInventory() {
   if (unknownCollections.length) throw new Error(`Courses reference unknown collections: ${unknownCollections.map((course) => course.id).join(", ")}`);
   for (const copy of Object.values(inventory.startupCopy)) {
     if (!pageSource.includes(copy)) throw new Error(`Missing startup copy in app/page.tsx: ${copy}`);
-  }
-  if (!pageSource.includes("/^[A-Za-z]+$/") || !pageSource.includes("`name:${normalizedUsername}`")) {
-    throw new Error("Username validation or name: normalization contract changed");
   }
   if (JSON.stringify(inventory.retryDelayMilliseconds) !== JSON.stringify([500, 850, 1000, 1200])) {
     throw new Error(`Unexpected repeat retry delays: ${inventory.retryDelayMilliseconds.join(", ")}`);

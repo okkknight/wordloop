@@ -3,15 +3,15 @@
   "sources": {
     "page": {
       "path": "app/page.tsx",
-      "stateDeclarationsStartLine": 342
+      "stateDeclarationsStartLine": 341
     },
     "styles": {
       "path": "app/globals.css",
-      "posterStartLine": 7
+      "posterStartLine": 18
     },
     "courses": {
       "path": "app/courses.ts",
-      "packagesStartLine": 199
+      "packagesStartLine": 339
     },
     "words": {
       "path": "app/words.ts",
@@ -20,18 +20,18 @@
   },
   "counts": {
     "collections": 4,
-    "courses": 32,
+    "courses": 67,
     "wordCourses": 1,
-    "sentenceCourses": 31,
+    "sentenceCourses": 66,
     "modernFamilyCourses": 5,
     "voaCourses": 24,
     "words": 570,
-    "sentenceEntries": 868,
-    "totalStudyEntries": 1438,
+    "sentenceEntries": 1428,
+    "totalStudyEntries": 1998,
     "wordAudioFiles": 570,
-    "sentenceAudioFiles": 868,
-    "totalM4aFiles": 1438,
-    "totalM4aBytes": 33711028
+    "sentenceAudioFiles": 1428,
+    "totalM4aFiles": 1998,
+    "totalM4aBytes": 50690927
   },
   "defaults": {
     "courseId": "modern-family-s01e01",
@@ -123,7 +123,6 @@
     }
   },
   "startupCopy": {
-    "placeholder": "USERNAME",
     "idleAction": "START",
     "restoringAction": "PREPARING…",
     "syncingAction": "SYNCING…",
@@ -190,9 +189,9 @@
     },
     {
       "id": "ai-practice",
-      "label": "AI PRACTICE",
-      "title": "AI 原创口语",
-      "subtitle": "AI 合成语音 · 原创句子课程"
+      "label": "SPEAKING COURSE",
+      "title": "日常英语会话",
+      "subtitle": "Everyday English · 实用场景口语"
     }
   ],
   "registeredCourses": [
@@ -451,6 +450,286 @@
       "kind": "sentence",
       "practiceOrder": "sequential",
       "manifest": "app/data/ai-b01-introducing-yourself-a2.json"
+    },
+    {
+      "id": "c01-talking-work-study-current-life-a2",
+      "collectionId": "ai-practice",
+      "title": "Work, Study & Current Life · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c01-talking-work-study-current-life-a2.json"
+    },
+    {
+      "id": "c02-describing-where-i-live-a2",
+      "collectionId": "ai-practice",
+      "title": "Where I Live · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c02-describing-where-i-live-a2.json"
+    },
+    {
+      "id": "c03-describing-my-daily-routine-a2",
+      "collectionId": "ai-practice",
+      "title": "My Daily Routine · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c03-describing-my-daily-routine-a2.json"
+    },
+    {
+      "id": "c04-talking-about-my-weekend-and-free-time-a2",
+      "collectionId": "ai-practice",
+      "title": "Weekends & Free Time · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c04-talking-about-my-weekend-and-free-time-a2.json"
+    },
+    {
+      "id": "b02-starting-small-talk-naturally-a2",
+      "collectionId": "ai-practice",
+      "title": "Starting Small Talk · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b02-starting-small-talk-naturally-a2.json"
+    },
+    {
+      "id": "b03-showing-interest-and-asking-follow-up-questions-a2",
+      "collectionId": "ai-practice",
+      "title": "Show Interest & Follow Up · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b03-showing-interest-and-asking-follow-up-questions-a2.json"
+    },
+    {
+      "id": "b05-asking-someone-to-repeat-or-slow-down-a2",
+      "collectionId": "ai-practice",
+      "title": "Repeat or Slow Down · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b05-asking-someone-to-repeat-or-slow-down-a2.json"
+    },
+    {
+      "id": "b08-making-polite-requests-and-asking-for-favors-a2",
+      "collectionId": "ai-practice",
+      "title": "Polite Requests & Favors · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b08-making-polite-requests-and-asking-for-favors-a2.json"
+    },
+    {
+      "id": "a01-asking-about-products-and-services-a2",
+      "collectionId": "ai-practice",
+      "title": "Products & Services · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a01-asking-about-products-and-services-a2.json"
+    },
+    {
+      "id": "a02-asking-for-directions-and-transit-information-a2",
+      "collectionId": "ai-practice",
+      "title": "Directions & Transit · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a02-asking-for-directions-and-transit-information-a2.json"
+    },
+    {
+      "id": "a03-ordering-and-customizing-food-and-drinks-a2",
+      "collectionId": "ai-practice",
+      "title": "Food & Drink Orders · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a03-ordering-and-customizing-food-and-drinks-a2.json"
+    },
+    {
+      "id": "a04-explaining-what-you-need-while-shopping-a2",
+      "collectionId": "ai-practice",
+      "title": "Shopping Needs · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a04-explaining-what-you-need-while-shopping-a2.json"
+    },
+    {
+      "id": "a05-checking-in-and-providing-booking-information-a2",
+      "collectionId": "ai-practice",
+      "title": "Hotel Check-in · A2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a05-checking-in-and-providing-booking-information-a2.json"
+    },
+    {
+      "id": "b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1",
+      "collectionId": "ai-practice",
+      "title": "Keep a Conversation Going · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1.json"
+    },
+    {
+      "id": "b06-clarifying-meaning-and-checking-understanding-b1",
+      "collectionId": "ai-practice",
+      "title": "Clarify & Check Understanding · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b06-clarifying-meaning-and-checking-understanding-b1.json"
+    },
+    {
+      "id": "b07-responding-naturally-to-news-and-personal-stories-b1",
+      "collectionId": "ai-practice",
+      "title": "Respond to News & Stories · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b07-responding-naturally-to-news-and-personal-stories-b1.json"
+    },
+    {
+      "id": "a06-describing-symptoms-and-asking-basic-health-questions-b1",
+      "collectionId": "ai-practice",
+      "title": "Health Questions · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a06-describing-symptoms-and-asking-basic-health-questions-b1.json"
+    },
+    {
+      "id": "a07-changing-a-reservation-or-appointment-b1",
+      "collectionId": "ai-practice",
+      "title": "Change a Reservation · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a07-changing-a-reservation-or-appointment-b1.json"
+    },
+    {
+      "id": "a08-confirming-travel-and-booking-details-b1",
+      "collectionId": "ai-practice",
+      "title": "Travel & Booking Details · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a08-confirming-travel-and-booking-details-b1.json"
+    },
+    {
+      "id": "a09-returning-or-exchanging-a-product-b1",
+      "collectionId": "ai-practice",
+      "title": "Returns & Exchanges · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a09-returning-or-exchanging-a-product-b1.json"
+    },
+    {
+      "id": "a11-scheduling-rescheduling-and-canceling-plans-b1",
+      "collectionId": "ai-practice",
+      "title": "Schedule & Reschedule · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a11-scheduling-rescheduling-and-canceling-plans-b1.json"
+    },
+    {
+      "id": "c05-telling-a-recent-everyday-experience-b1",
+      "collectionId": "ai-practice",
+      "title": "Recent Everyday Experiences · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c05-telling-a-recent-everyday-experience-b1.json"
+    },
+    {
+      "id": "c06-sharing-a-memorable-trip-or-experience-b1",
+      "collectionId": "ai-practice",
+      "title": "Memorable Trips & Experiences · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c06-sharing-a-memorable-trip-or-experience-b1.json"
+    },
+    {
+      "id": "c07-explaining-preferences-and-an-ideal-lifestyle-b1",
+      "collectionId": "ai-practice",
+      "title": "Preferences & Ideal Lifestyle · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c07-explaining-preferences-and-an-ideal-lifestyle-b1.json"
+    },
+    {
+      "id": "c08-explaining-motivation-and-why-i-changed-a-habit-b1",
+      "collectionId": "ai-practice",
+      "title": "Why I Changed a Habit · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c08-explaining-motivation-and-why-i-changed-a-habit-b1.json"
+    },
+    {
+      "id": "d01-stating-an-opinion-clearly-and-explaining-why-b1",
+      "collectionId": "ai-practice",
+      "title": "State an Opinion · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-d01-stating-an-opinion-clearly-and-explaining-why-b1.json"
+    },
+    {
+      "id": "d03-comparing-two-choices-and-explaining-a-preference-b1",
+      "collectionId": "ai-practice",
+      "title": "Compare Choices · B1",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-d03-comparing-two-choices-and-explaining-a-preference-b1.json"
+    },
+    {
+      "id": "a10-reporting-a-service-problem-and-negotiating-a-solution-b2",
+      "collectionId": "ai-practice",
+      "title": "Service Problems & Solutions · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-a10-reporting-a-service-problem-and-negotiating-a-solution-b2.json"
+    },
+    {
+      "id": "b09-refusing-politely-and-offering-alternatives-b2",
+      "collectionId": "ai-practice",
+      "title": "Refuse Politely · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b09-refusing-politely-and-offering-alternatives-b2.json"
+    },
+    {
+      "id": "b10-apologizing-explaining-and-repairing-a-misunderstanding-b2",
+      "collectionId": "ai-practice",
+      "title": "Repair a Misunderstanding · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-b10-apologizing-explaining-and-repairing-a-misunderstanding-b2.json"
+    },
+    {
+      "id": "c09-talking-about-plans-goals-and-personal-change-b2",
+      "collectionId": "ai-practice",
+      "title": "Plans, Goals & Change · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-c09-talking-about-plans-goals-and-personal-change-b2.json"
+    },
+    {
+      "id": "d02-supporting-a-view-with-examples-and-personal-experience-b2",
+      "collectionId": "ai-practice",
+      "title": "Support a View · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-d02-supporting-a-view-with-examples-and-personal-experience-b2.json"
+    },
+    {
+      "id": "d04-discussing-advantages-disadvantages-and-trade-offs-b2",
+      "collectionId": "ai-practice",
+      "title": "Advantages & Trade-offs · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-d04-discussing-advantages-disadvantages-and-trade-offs-b2.json"
+    },
+    {
+      "id": "d05-expressing-partial-agreement-conditions-and-exceptions-b2",
+      "collectionId": "ai-practice",
+      "title": "Agreement, Conditions & Exceptions · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-d05-expressing-partial-agreement-conditions-and-exceptions-b2.json"
+    },
+    {
+      "id": "d06-responding-to-another-view-and-summarizing-your-position-b2",
+      "collectionId": "ai-practice",
+      "title": "Respond & Summarize a Position · B2",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "manifest": "app/data/ai-d06-responding-to-another-view-and-summarizing-your-position-b2.json"
     }
   ],
   "sentenceCourses": [
@@ -825,6 +1104,426 @@
       "learnableEntries": 16,
       "audioFiles": 16,
       "audioBytes": 494931
+    },
+    {
+      "id": "c01-talking-work-study-current-life-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c01-talking-work-study-current-life-a2.json",
+      "manifestCourseId": "c01-talking-work-study-current-life-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 478892
+    },
+    {
+      "id": "c02-describing-where-i-live-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c02-describing-where-i-live-a2.json",
+      "manifestCourseId": "c02-describing-where-i-live-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 488503
+    },
+    {
+      "id": "c03-describing-my-daily-routine-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c03-describing-my-daily-routine-a2.json",
+      "manifestCourseId": "c03-describing-my-daily-routine-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 659180
+    },
+    {
+      "id": "c04-talking-about-my-weekend-and-free-time-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c04-talking-about-my-weekend-and-free-time-a2.json",
+      "manifestCourseId": "c04-talking-about-my-weekend-and-free-time-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 689549
+    },
+    {
+      "id": "b02-starting-small-talk-naturally-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b02-starting-small-talk-naturally-a2.json",
+      "manifestCourseId": "b02-starting-small-talk-naturally-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 457405
+    },
+    {
+      "id": "b03-showing-interest-and-asking-follow-up-questions-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b03-showing-interest-and-asking-follow-up-questions-a2.json",
+      "manifestCourseId": "b03-showing-interest-and-asking-follow-up-questions-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 375316
+    },
+    {
+      "id": "b05-asking-someone-to-repeat-or-slow-down-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b05-asking-someone-to-repeat-or-slow-down-a2.json",
+      "manifestCourseId": "b05-asking-someone-to-repeat-or-slow-down-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 352947
+    },
+    {
+      "id": "b08-making-polite-requests-and-asking-for-favors-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b08-making-polite-requests-and-asking-for-favors-a2.json",
+      "manifestCourseId": "b08-making-polite-requests-and-asking-for-favors-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 402631
+    },
+    {
+      "id": "a01-asking-about-products-and-services-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a01-asking-about-products-and-services-a2.json",
+      "manifestCourseId": "a01-asking-about-products-and-services-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 472040
+    },
+    {
+      "id": "a02-asking-for-directions-and-transit-information-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a02-asking-for-directions-and-transit-information-a2.json",
+      "manifestCourseId": "a02-asking-for-directions-and-transit-information-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 432389
+    },
+    {
+      "id": "a03-ordering-and-customizing-food-and-drinks-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a03-ordering-and-customizing-food-and-drinks-a2.json",
+      "manifestCourseId": "a03-ordering-and-customizing-food-and-drinks-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 348840
+    },
+    {
+      "id": "a04-explaining-what-you-need-while-shopping-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a04-explaining-what-you-need-while-shopping-a2.json",
+      "manifestCourseId": "a04-explaining-what-you-need-while-shopping-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 469620
+    },
+    {
+      "id": "a05-checking-in-and-providing-booking-information-a2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a05-checking-in-and-providing-booking-information-a2.json",
+      "manifestCourseId": "a05-checking-in-and-providing-booking-information-a2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 405664
+    },
+    {
+      "id": "b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1.json",
+      "manifestCourseId": "b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 453101
+    },
+    {
+      "id": "b06-clarifying-meaning-and-checking-understanding-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b06-clarifying-meaning-and-checking-understanding-b1.json",
+      "manifestCourseId": "b06-clarifying-meaning-and-checking-understanding-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 483420
+    },
+    {
+      "id": "b07-responding-naturally-to-news-and-personal-stories-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b07-responding-naturally-to-news-and-personal-stories-b1.json",
+      "manifestCourseId": "b07-responding-naturally-to-news-and-personal-stories-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 411386
+    },
+    {
+      "id": "a06-describing-symptoms-and-asking-basic-health-questions-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a06-describing-symptoms-and-asking-basic-health-questions-b1.json",
+      "manifestCourseId": "a06-describing-symptoms-and-asking-basic-health-questions-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 403073
+    },
+    {
+      "id": "a07-changing-a-reservation-or-appointment-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a07-changing-a-reservation-or-appointment-b1.json",
+      "manifestCourseId": "a07-changing-a-reservation-or-appointment-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 459419
+    },
+    {
+      "id": "a08-confirming-travel-and-booking-details-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a08-confirming-travel-and-booking-details-b1.json",
+      "manifestCourseId": "a08-confirming-travel-and-booking-details-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 451373
+    },
+    {
+      "id": "a09-returning-or-exchanging-a-product-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a09-returning-or-exchanging-a-product-b1.json",
+      "manifestCourseId": "a09-returning-or-exchanging-a-product-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 391030
+    },
+    {
+      "id": "a11-scheduling-rescheduling-and-canceling-plans-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a11-scheduling-rescheduling-and-canceling-plans-b1.json",
+      "manifestCourseId": "a11-scheduling-rescheduling-and-canceling-plans-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 450805
+    },
+    {
+      "id": "c05-telling-a-recent-everyday-experience-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c05-telling-a-recent-everyday-experience-b1.json",
+      "manifestCourseId": "c05-telling-a-recent-everyday-experience-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 516524
+    },
+    {
+      "id": "c06-sharing-a-memorable-trip-or-experience-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c06-sharing-a-memorable-trip-or-experience-b1.json",
+      "manifestCourseId": "c06-sharing-a-memorable-trip-or-experience-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 554547
+    },
+    {
+      "id": "c07-explaining-preferences-and-an-ideal-lifestyle-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c07-explaining-preferences-and-an-ideal-lifestyle-b1.json",
+      "manifestCourseId": "c07-explaining-preferences-and-an-ideal-lifestyle-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 587688
+    },
+    {
+      "id": "c08-explaining-motivation-and-why-i-changed-a-habit-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c08-explaining-motivation-and-why-i-changed-a-habit-b1.json",
+      "manifestCourseId": "c08-explaining-motivation-and-why-i-changed-a-habit-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 477437
+    },
+    {
+      "id": "d01-stating-an-opinion-clearly-and-explaining-why-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-d01-stating-an-opinion-clearly-and-explaining-why-b1.json",
+      "manifestCourseId": "d01-stating-an-opinion-clearly-and-explaining-why-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 379214
+    },
+    {
+      "id": "d03-comparing-two-choices-and-explaining-a-preference-b1",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-d03-comparing-two-choices-and-explaining-a-preference-b1.json",
+      "manifestCourseId": "d03-comparing-two-choices-and-explaining-a-preference-b1",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 493622
+    },
+    {
+      "id": "a10-reporting-a-service-problem-and-negotiating-a-solution-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-a10-reporting-a-service-problem-and-negotiating-a-solution-b2.json",
+      "manifestCourseId": "a10-reporting-a-service-problem-and-negotiating-a-solution-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 528548
+    },
+    {
+      "id": "b09-refusing-politely-and-offering-alternatives-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b09-refusing-politely-and-offering-alternatives-b2.json",
+      "manifestCourseId": "b09-refusing-politely-and-offering-alternatives-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 442748
+    },
+    {
+      "id": "b10-apologizing-explaining-and-repairing-a-misunderstanding-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-b10-apologizing-explaining-and-repairing-a-misunderstanding-b2.json",
+      "manifestCourseId": "b10-apologizing-explaining-and-repairing-a-misunderstanding-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 534758
+    },
+    {
+      "id": "c09-talking-about-plans-goals-and-personal-change-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-c09-talking-about-plans-goals-and-personal-change-b2.json",
+      "manifestCourseId": "c09-talking-about-plans-goals-and-personal-change-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 553624
+    },
+    {
+      "id": "d02-supporting-a-view-with-examples-and-personal-experience-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-d02-supporting-a-view-with-examples-and-personal-experience-b2.json",
+      "manifestCourseId": "d02-supporting-a-view-with-examples-and-personal-experience-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 674253
+    },
+    {
+      "id": "d04-discussing-advantages-disadvantages-and-trade-offs-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-d04-discussing-advantages-disadvantages-and-trade-offs-b2.json",
+      "manifestCourseId": "d04-discussing-advantages-disadvantages-and-trade-offs-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 490418
+    },
+    {
+      "id": "d05-expressing-partial-agreement-conditions-and-exceptions-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-d05-expressing-partial-agreement-conditions-and-exceptions-b2.json",
+      "manifestCourseId": "d05-expressing-partial-agreement-conditions-and-exceptions-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 602096
+    },
+    {
+      "id": "d06-responding-to-another-view-and-summarizing-your-position-b2",
+      "collectionId": "ai-practice",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "family": "ai",
+      "manifest": "app/data/ai-d06-responding-to-another-view-and-summarizing-your-position-b2.json",
+      "manifestCourseId": "d06-responding-to-another-view-and-summarizing-your-position-b2",
+      "learnableEntries": 16,
+      "audioFiles": 16,
+      "audioBytes": 607839
     }
   ],
   "representativeFiles": [

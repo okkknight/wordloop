@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-24 · startup baseline aligned to the anonymous Web start flow, pending independent review
+
+- 当前 `app/page.tsx` 启动页为匿名直接开始，没有 `USERNAME` 输入；基线生成器已移除该陈旧文案断言，未改动 Web 启动页行为。
+- iOS 命名身份仍保留 ASCII 英文字母校验、lowercase 规范化与 `name:<lowercase>` ID 前缀；该 native 合同继续由 iOS 实现与测试维护，不再由 Web 内容基线脚本断言。
+- 已重写并通过 `baseline:ios`；清单同步当前课程注册表为 67 门课程、1,428 个句子条目和 1,998 个音频片段。下一位 reviewer 应复跑基线及检查来源迁移是否符合 Web/iOS 的职责边界。
+
 ## 2026-07-24 · C03 daily-routine course developed, pending independent review
 
 - 按 releaseOrder 4 完成 C03《描述我的日常作息 / Describing My Daily Routine》：16 句、16 段 `marin` AI 语音、manifest 与 `AI PRACTICE` 注册表条目均已生成；候选检查为 0 error / 0 warning。
