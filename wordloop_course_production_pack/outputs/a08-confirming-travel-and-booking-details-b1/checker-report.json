@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "summary": {
+    "errorCount": 0,
+    "warningCount": 0
+  },
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "wordTokenizer": "ASCII words with internal apostrophes and hyphens each count as one word"
+  }
+}

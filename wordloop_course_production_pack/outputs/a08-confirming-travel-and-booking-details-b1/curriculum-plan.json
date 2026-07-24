@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A08",
+      "titleZh": "确认行程与预订细节",
+      "titleEn": "Confirming Travel and Booking Details",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够逐项核对日期、时间、姓名和服务细节，发现并澄清潜在误差。",
+      "communicationGoals": [
+        "确认出发、到达、入住或活动时间",
+        "核对姓名、证件、订单号等关键信息",
+        "确认座位、行李、房型或包含的服务",
+        "总结整项预订并指出需要再次核对的地方"
+      ],
+      "abilityTags": [
+        "A4",
+        "A1",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 20 的冻结课程。",
+      "distinctiveValue": "重点训练高风险信息的准确核对，而不是完成预订本身。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不处理严重延误、取消或赔偿",
+        "不替代问路和公共交通课程",
+        "不扩展成旅行经历分享"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "确认出发、到达、入住或活动时间",
+      "核对姓名、证件、订单号等关键信息",
+      "确认座位、行李、房型或包含的服务",
+      "总结整项预订并指出需要再次核对的地方"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不处理严重延误、取消或赔偿",
+      "不替代问路和公共交通课程",
+      "不扩展成旅行经历分享"
+    ]
+  }
+}
