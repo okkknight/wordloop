@@ -1,0 +1,169 @@
+{
+  "courseId": "d03-comparing-two-choices-and-explaining-a-preference-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-d03-001",
+      "text": "Do you like tea or coffee more?",
+      "translation": "你更喜欢茶还是咖啡？",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.115,
+      "duration": 3.115
+    },
+    {
+      "id": "ai-d03-002",
+      "text": "I prefer this because it's more relaxing.",
+      "translation": "我更喜欢这个，因为它更放松。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-d03-003",
+      "text": "Which do you find more exciting, movies or books?",
+      "translation": "你觉得电影还是书更让人兴奋？",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.12,
+      "duration": 5.12
+    },
+    {
+      "id": "ai-d03-004",
+      "text": "Is it better to travel by car or by train?",
+      "translation": "开车旅行好还是坐火车好？",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-d03-005",
+      "text": "Tea is calming, while coffee gives you energy.",
+      "translation": "茶让人平静，而咖啡给你能量。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-d03-006",
+      "text": "On the other hand, books let you imagine more.",
+      "translation": "另一方面，书籍让你有更多想象空间。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-d03-007",
+      "text": "Movies are visual, but books are more detailed.",
+      "translation": "电影是视觉的，但书更详细。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-d03-008",
+      "text": "Traveling by car offers flexibility, but trains are faster.",
+      "translation": "开车旅行灵活，但火车更快。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.309,
+      "duration": 4.309
+    },
+    {
+      "id": "ai-d03-009",
+      "text": "For families, dogs might be better.",
+      "translation": "对于家庭来说，狗可能更好。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-d03-010",
+      "text": "Both options have their own charm.",
+      "translation": "两种选择都有各自的魅力。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-d03-011",
+      "text": "For students, books might be more useful.",
+      "translation": "对于学生来说，书籍可能更有用。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-d03-012",
+      "text": "For city dwellers, trains might be more practical.",
+      "translation": "对于城市居民来说，火车可能更实用。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.944,
+      "duration": 2.944
+    },
+    {
+      "id": "ai-d03-013",
+      "text": "I would choose tea because it helps me relax.",
+      "translation": "我会选择茶，因为它让我放松。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-d03-014",
+      "text": "In this situation, I would go with the train.",
+      "translation": "在这种情况下，我会选择火车。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-d03-015",
+      "text": "My choice is coffee because it keeps me awake.",
+      "translation": "我的选择是咖啡，因为它让我保持清醒。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-d03-016",
+      "text": "I lean towards winter vacations for the cozy feeling.",
+      "translation": "我倾向于寒假，因为它有舒适的感觉。",
+      "audio": "audio/d03-comparing-two-choices-and-explaining-a-preference-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    }
+  ]
+}

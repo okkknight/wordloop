@@ -55,6 +55,7 @@ import aiC06SharingAMemorableTripOrExperienceB1 from "./data/ai-c06-sharing-a-me
 import aiC07ExplainingPreferencesAndAnIdealLifestyleB1 from "./data/ai-c07-explaining-preferences-and-an-ideal-lifestyle-b1.json";
 import aiC08ExplainingMotivationAndWhyIChangedAHabitB1 from "./data/ai-c08-explaining-motivation-and-why-i-changed-a-habit-b1.json";
 import aiD01StatingAnOpinionClearlyAndExplainingWhyB1 from "./data/ai-d01-stating-an-opinion-clearly-and-explaining-why-b1.json";
+import aiD03ComparingTwoChoicesAndExplainingAPreferenceB1 from "./data/ai-d03-comparing-two-choices-and-explaining-a-preference-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -291,6 +292,9 @@ const aiC08ExplainingMotivationAndWhyIChangedAHabitB1Entries = aiC08ExplainingMo
 const aiD01StatingAnOpinionClearlyAndExplainingWhyB1Entries = aiD01StatingAnOpinionClearlyAndExplainingWhyB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/d01-stating-an-opinion-clearly-and-explaining-why-b1/${entry.audio}` })) as CourseEntry[];
+const aiD03ComparingTwoChoicesAndExplainingAPreferenceB1Entries = aiD03ComparingTwoChoicesAndExplainingAPreferenceB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/d03-comparing-two-choices-and-explaining-a-preference-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -476,6 +480,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "c07-explaining-preferences-and-an-ideal-lifestyle-b1", collectionId: "ai-practice", title: "Preferences & Ideal Lifestyle · B1", subtitle: `Everyday English · ${aiC07ExplainingPreferencesAndAnIdealLifestyleB1Entries.length} learning sentences`, description: "解释个人偏好、理想生活方式及现实中的取舍。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC07ExplainingPreferencesAndAnIdealLifestyleB1Entries },
   { id: "c08-explaining-motivation-and-why-i-changed-a-habit-b1", collectionId: "ai-practice", title: "Why I Changed a Habit · B1", subtitle: `Everyday English · ${aiC08ExplainingMotivationAndWhyIChangedAHabitB1Entries.length} learning sentences`, description: "解释改变习惯的原因、采取的行动、遇到的困难和后续计划。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC08ExplainingMotivationAndWhyIChangedAHabitB1Entries },
   { id: "d01-stating-an-opinion-clearly-and-explaining-why-b1", collectionId: "ai-practice", title: "State an Opinion · B1", subtitle: `Everyday English · ${aiD01StatingAnOpinionClearlyAndExplainingWhyB1Entries.length} learning sentences`, description: "清楚表达立场、说明理由、举例并做简短总结。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD01StatingAnOpinionClearlyAndExplainingWhyB1Entries },
+  { id: "d03-comparing-two-choices-and-explaining-a-preference-b1", collectionId: "ai-practice", title: "Compare Choices · B1", subtitle: `Everyday English · ${aiD03ComparingTwoChoicesAndExplainingAPreferenceB1Entries.length} learning sentences`, description: "比较两种选择、说明优缺点，并解释自己偏好的理由。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiD03ComparingTwoChoicesAndExplainingAPreferenceB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [
