@@ -1,4 +1,4 @@
-export const REPEAT_PASS_SCORE = 20;
+export const REPEAT_PASS_SCORE = 15;
 export const MIN_SENTENCE_WORD_COVERAGE = 0.6;
 
 export type RepeatScoreResult = {

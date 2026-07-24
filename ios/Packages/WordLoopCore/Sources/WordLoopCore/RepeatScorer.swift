@@ -13,7 +13,7 @@ public struct RepeatScoreResult: Equatable, Sendable {
 }
 
 public enum RepeatScorer {
-    public static let passScore = 20
+    public static let passScore = 15
     public static let minimumSentenceWordCoverage = 0.6
 
     public static func score(target: String, transcript: String, sentence: Bool) -> RepeatScoreResult {

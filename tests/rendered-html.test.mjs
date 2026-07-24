@@ -362,7 +362,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(progressRoute, /payload\.completeCourse === true/);
   assert.match(schema, /courseCompletionCounts/);
   assert.match(completionMigration, /course_completion_events/);
-  assert.match(repeatScorer, /REPEAT_PASS_SCORE = 20/);
+  assert.match(repeatScorer, /REPEAT_PASS_SCORE = 15/);
   assert.match(page, /scoreRepeatTranscript/);
   assert.match(page, /sentenceIndexRef\.current = target\.index/);
   assert.match(page, /wordIndexRef\.current = target\.index/);

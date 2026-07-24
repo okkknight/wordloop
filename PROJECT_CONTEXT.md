@@ -33,6 +33,8 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 ## 最新任务
 
+任务：将 Web、VPS 线上 Web 与 iOS REPEAT 评分门槛统一为 15 分；执行状态：已开发，待独立复核。只调整词面相似度通过常量及既有 Web 静态断言，不新增测试用例；句子 60% 单词覆盖率、精确匹配、normalization、候选窗口和 Levenshtein 规则均保持不变。
+
 任务：对齐 iOS 内容基线与当前匿名启动流程；执行状态：已开发，待独立复核。Web 启动页没有用户名输入，启动操作为匿名直接开始；基线已移除陈旧的 `USERNAME` 文案断言。命名用户的 ASCII 字母校验与 `name:<lowercase>` 规范仍由 iOS 原生实现与测试维护，不再由此 Web 内容基线脚本错误断言。基线同时已按当前注册表重写为 67 门课程、1,428 个句子条目和 1,998 个音频片段。
 
 任务：按课程池制作 B01 `在新环境中介绍自己`；执行状态：已开发，待独立复核。课程池编号保留为 `B01`，运行时 ID 为 `b01-introducing-yourself-a2` 以满足小写稳定 ID 合同。已完成蓝图、16×2 候选句、检查、编辑组课与人工终审，16 段 OpenAI `gpt-4o-mini-tts` `marin` 语音已接入 `AI PRACTICE`，课程与 manifest 明确披露 AI 合成语音。生成器现支持课程专属音频和条目前缀，避免跨课文件名冲突。
@@ -47,7 +49,7 @@ WordLoop 是一个单页英语学习产品，通过短音频单元形成“听�
 
 任务：执行 iOS 迁移 Plan；当前检查点为 P6.2 Realtime transport 与依赖 ADR。
 
-执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4、P5.1–P5.5、P6.1–P6.2 均已 PASS。P6.2 已固定并实际链接 WebRTC `150.0.0` XCFramework，完成 VPS SDP session、data channel、Realtime 生命周期 decoder 和麦克风权限边界；P6.3 才将这些 transport 事件接入原有 REPEAT turn/state machine。详见 `docs/tasks/2026-07-18-p6-2-realtime-transport.md` 与 `docs/adr/0001-ios-webrtc-dependency.md`。
+执行状态：P0.1、P1、P2、P3.1–P3.6、P4.1–P4.4、P5.1–P5.5、P6.1–P6.2 原阶段均已 PASS；P6.1 的 15 分产品调整已开发、待独立复核。P6.2 已固定并实际链接 WebRTC `150.0.0` XCFramework，完成 VPS SDP session、data channel、Realtime 生命周期 decoder 和麦克风权限边界；P6.3 才将这些 transport 事件接入原有 REPEAT turn/state machine。详见 `docs/tasks/2026-07-18-p6-1-repeat-scoring-golden.md`、`docs/tasks/2026-07-18-p6-2-realtime-transport.md` 与 `docs/adr/0001-ios-webrtc-dependency.md`。
 
 P5.1 已以当前 VPS Node 和 P0 API baseline 为合同真值完成。共享 fixtures 驱动 Swift round-trip 与隔离的真实 VPS Node/Worker 请求；回归修复 D1 progress event 漏写 `created_at` 的静默丢事件。线上环境和后续 transport 仍明确走 VPS，Cloudflare 仅保持兼容合同。
 
@@ -59,7 +61,7 @@ P5.4 已完成：live App 使用同一个 SwiftData container 保存 active iden
 
 P5.5 已完成：completion 先写 `CourseCompletionEvent`，pending 与 confirmed 次数合并，失败/强杀后以原 `clientEventId` 重试；reset 作为有序 progress event 本地立即生效并幂等同步 VPS，严格隔离 user/mode/course。App live runtime 已无 P4 completion/reset fallback；temporary repository 仅保留给明确命名的 local integration fixture。
 
-P6.1 已完成：Web 评分逻辑提取为纯 TypeScript scorer，Swift Core 对同一组匿名 JSON fixtures 实现完全一致的 normalization、最多 12 token 候选窗口、Levenshtein、20 分通过阈值和句子 60% 覆盖；现有重复词覆盖与宽松阈值语义被照实保留，没有趁迁移调整评分。
+P6.1 原评分迁移已完成；按 2026-07-24 产品决定，Web、VPS 与 iOS 的词面相似度通过阈值现统一为 15 分。TypeScript 与 Swift Core 继续共享 normalization、最多 12 token 候选窗口、Levenshtein 和句子 60% 覆盖规则；重复词覆盖语义不变。
 
 P0.1 新增机器可重复生成的内容清单、iPhone 截图、产品验收矩阵、API 合同和基线测试；不改变 Web 产品代码、课程内容、数据库、部署配置或线上服务。
 

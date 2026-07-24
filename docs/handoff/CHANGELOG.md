@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-24 · Web, VPS and iOS repeat threshold aligned to 15, pending independent review
+
+- 按产品决定将 TypeScript `REPEAT_PASS_SCORE` 与 Swift `RepeatScorer.passScore` 从 20 统一调整为 15；句子 60% 单词覆盖率及其余评分规则不变。
+- 未新增测试用例，只同步既有 Web 静态断言。Swift Core 10/10 通过；Web 定向测试 30/31，评分阈值断言已通过，唯一失败是既有启动页测试仍要求已移除的“用户名只能使用英文字母”文案，与本次评分修改无关。
+- 下一位 reviewer 应确认 Web/iOS 常量均为 15、现有评分 fixtures 仍通过、VPS 运行源码为 15，且没有改变句子覆盖率。
+
 ## 2026-07-24 · startup baseline aligned to the anonymous Web start flow, pending independent review
 
 - 当前 `app/page.tsx` 启动页为匿名直接开始，没有 `USERNAME` 输入；基线生成器已移除该陈旧文案断言，未改动 Web 启动页行为。
