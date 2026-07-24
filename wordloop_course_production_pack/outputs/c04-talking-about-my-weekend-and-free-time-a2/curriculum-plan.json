@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "C04",
+      "titleZh": "谈论我的周末与空闲时间",
+      "titleEn": "Talking About My Weekend and Free Time",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够描述自己通常如何度过周末、喜欢独处还是外出，并表达理想的休息方式。",
+      "communicationGoals": [
+        "描述常见周末活动和时间安排",
+        "表达待在家与外出的不同选择",
+        "描述独处、朋友和家庭活动",
+        "表达最喜欢或最理想的周末状态"
+      ],
+      "abilityTags": [
+        "C2",
+        "C4",
+        "C"
+      ],
+      "selectionReason": "课程池 releaseOrder 5 的冻结课程。",
+      "distinctiveValue": "是高频、低门槛的自我表达主题，能快速建立开口信心。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "描述常见周末活动和时间安排",
+      "表达待在家与外出的不同选择",
+      "描述独处、朋友和家庭活动",
+      "表达最喜欢或最理想的周末状态"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不讲述一整次具体周末经历",
+      "不进入工作与生活平衡的观点讨论",
+      "不要求复杂原因和让步结构"
+    ]
+  }
+}

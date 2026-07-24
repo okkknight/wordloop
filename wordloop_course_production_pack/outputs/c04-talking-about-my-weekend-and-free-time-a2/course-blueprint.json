@@ -1,0 +1,590 @@
+{
+  "courseId": "c04-talking-about-my-weekend-and-free-time-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够描述自己通常如何度过周末、喜欢独处还是外出，并表达理想的休息方式。",
+    "communicationGoals": [
+      "描述常见周末活动和时间安排",
+      "表达待在家与外出的不同选择",
+      "描述独处、朋友和家庭活动",
+      "表达最喜欢或最理想的周末状态"
+    ],
+    "coreChunks": [
+      "On weekends",
+      "I prefer to spend",
+      "My ideal weekend involves",
+      "When I'm alone"
+    ],
+    "supportingVocabulary": [
+      "relax",
+      "hiking",
+      "friends",
+      "family",
+      "movies",
+      "reading",
+      "outdoors",
+      "quiet",
+      "busy",
+      "socialize"
+    ],
+    "contentBoundaries": [
+      "不讲述一整次具体周末经历",
+      "不进入工作与生活平衡的观点讨论",
+      "不要求复杂原因和让步结构"
+    ],
+    "realWorldContexts": [
+      "Discussing weekend plans with a coworker during a lunch break",
+      "Chatting with a friend about weekend activities at a coffee shop",
+      "Sharing weekend preferences in a language exchange group"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "描述常见周末活动和时间安排",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "表达待在家与外出的不同选择",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "描述独处、朋友和家庭活动",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "表达最喜欢或最理想的周末状态",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "On weekends",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "描述常见周末活动和时间安排"
+      ]
+    },
+    {
+      "chunk": "I prefer to spend",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "表达待在家与外出的不同选择"
+      ]
+    },
+    {
+      "chunk": "My ideal weekend involves",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "描述独处、朋友和家庭活动"
+      ]
+    },
+    {
+      "chunk": "When I'm alone",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "表达最喜欢或最理想的周末状态"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "meaningTarget": "描述常见周末活动和时间安排",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "meaningTarget": "描述常见周末活动和时间安排",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "meaningTarget": "描述常见周末活动和时间安排",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "meaningTarget": "描述常见周末活动和时间安排",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "meaningTarget": "表达待在家与外出的不同选择",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "meaningTarget": "表达待在家与外出的不同选择",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "meaningTarget": "表达待在家与外出的不同选择",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "meaningTarget": "表达待在家与外出的不同选择",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "meaningTarget": "描述独处、朋友和家庭活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "meaningTarget": "描述独处、朋友和家庭活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "meaningTarget": "描述独处、朋友和家庭活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "meaningTarget": "描述独处、朋友和家庭活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "meaningTarget": "表达最喜欢或最理想的周末状态",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "meaningTarget": "表达最喜欢或最理想的周末状态",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "meaningTarget": "表达最喜欢或最理想的周末状态",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "meaningTarget": "表达最喜欢或最理想的周末状态",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "On weekends",
+        "I prefer to spend",
+        "My ideal weekend involves",
+        "When I'm alone"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不讲述一整次具体周末经历",
+        "不进入工作与生活平衡的观点讨论",
+        "不要求复杂原因和让步结构"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不讲述一整次具体周末经历",
+      "不进入工作与生活平衡的观点讨论",
+      "不要求复杂原因和让步结构"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

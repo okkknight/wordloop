@@ -1,0 +1,261 @@
+{
+  "courseId": "c04-talking-about-my-weekend-and-free-time-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "text": "I like to go hiking in the mountains.",
+      "translation": "我喜欢去山里徒步旅行。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I like"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "text": "On weekends, I usually visit my family.",
+      "translation": "周末，我通常会去看望家人。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "On weekends, I usually"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "text": "I often meet friends for coffee on Saturdays.",
+      "translation": "我经常在周六和朋友喝咖啡。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I often"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述常见周末活动和时间安排",
+      "text": "I spend my Sundays cooking new recipes.",
+      "translation": "我把周日用来尝试新食谱。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I spend"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "text": "Sometimes I just stay home and relax with a good book.",
+      "translation": "有时我只是待在家里，拿本好书放松一下。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Sometimes I"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "text": "I prefer to spend my time at home watching movies.",
+      "translation": "我更喜欢在家看电影。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I prefer to spend my time"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "text": "Going for a walk in the park is a nice way to spend the day.",
+      "translation": "去公园散步是度过一天的好方法。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Going for"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "表达待在家与外出的不同选择",
+      "text": "On weekends, I like to either visit a museum or just chill at home.",
+      "translation": "周末，我喜欢去博物馆或在家放松。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "On weekends,"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "text": "I like to spend time with my family on weekends, maybe have a barbecue.",
+      "translation": "我喜欢周末和家人共度时光，也许会来个烧烤。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I like"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "text": "My ideal weekend involves hiking with friends and enjoying nature.",
+      "translation": "我理想的周末是和朋友一起去徒步旅行，享受大自然。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "My ideal weekend involves"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "text": "Sometimes, I just want to stay home and watch TV all day.",
+      "translation": "有时候，我只想待在家里看一整天电视。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Sometimes, I"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述独处、朋友和家庭活动",
+      "text": "Spending time with my family on Sundays is very important to me.",
+      "translation": "周日和家人共度时光对我来说非常重要。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Spending time"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "text": "My ideal weekend involves spending time in nature, maybe hiking or having a picnic.",
+      "translation": "我理想的周末是花时间在大自然中，也许是徒步旅行或野餐。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "My ideal"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "text": "When I'm alone, I like to watch movies or catch up on my favorite TV shows.",
+      "translation": "当我独处时，我喜欢看电影或追我最喜欢的电视剧。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "When I'm alone, I like to"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "text": "A perfect weekend for me is one where I can spend quality time with family and friends.",
+      "translation": "对我来说，完美的周末是能和家人朋友共度美好时光。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "A perfect"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "表达最喜欢或最理想的周末状态",
+      "text": "I find weekends most enjoyable when I can balance some social time with relaxation.",
+      "translation": "我觉得周末最愉快的是能在社交和放松之间找到平衡。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I find"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}
