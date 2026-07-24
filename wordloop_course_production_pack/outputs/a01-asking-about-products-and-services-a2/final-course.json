@@ -1,0 +1,261 @@
+{
+  "courseId": "a01-asking-about-products-and-services-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "text": "Is there an extra fee for delivery?",
+      "translation": "送货有额外费用吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Is there"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "text": "How much does this cost per month?",
+      "translation": "这个每个月多少钱？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "How much does this cost"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "text": "Are there any hidden fees I should know about?",
+      "translation": "有我需要知道的隐藏费用吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Are there"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "text": "What is the total price with all fees?",
+      "translation": "加上所有费用后的总价是多少？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "What is"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "text": "Do you have this item in stock?",
+      "translation": "你们有这个商品的库存吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Do you"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "text": "Is this available now, or do I need to wait?",
+      "translation": "这个现在有货吗，还是我需要等？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Is this available now"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "text": "Can I get this service today?",
+      "translation": "我今天可以得到这个服务吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Can I"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "text": "When will this be back in stock?",
+      "translation": "这个什么时候会有货？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "When will"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "text": "Does this come in different sizes?",
+      "translation": "这个有不同的尺寸吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Does this"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "text": "What are the options for colors?",
+      "translation": "颜色有哪些选择？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "What are the options"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "text": "Can you tell me the dimensions of this?",
+      "translation": "你能告诉我这个的尺寸吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "text": "Is there a difference between these two models?",
+      "translation": "这两种型号之间有区别吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Is there"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "text": "So, just to be clear, the total cost is $50, right?",
+      "translation": "所以，确认一下，总费用是50美元，对吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "So, just"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "text": "Can you confirm that detail about the delivery time?",
+      "translation": "你能确认一下关于送货时间的细节吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you confirm that detail"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "text": "Just to confirm, this model comes in blue and red, correct?",
+      "translation": "确认一下，这款有蓝色和红色，对吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Just to"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "text": "Let me double-check: the price includes installation, right?",
+      "translation": "让我再确认一下：价格包括安装，对吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Let me"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

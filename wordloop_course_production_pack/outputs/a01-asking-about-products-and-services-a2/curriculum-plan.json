@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A01",
+      "titleZh": "询问商品与服务信息",
+      "titleEn": "Asking About Products and Services",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够询问价格、可用情况、规格和基本服务条件，并确认关键细节。",
+      "communicationGoals": [
+        "询问价格、费用以及是否包含额外收费",
+        "询问商品或服务是否可用以及可用时间",
+        "询问尺寸、规格、选项和基本差异",
+        "复述并确认自己得到的关键信息"
+      ],
+      "abilityTags": [
+        "A1",
+        "A4",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 10 的冻结课程。",
+      "distinctiveValue": "训练的是在行动之前主动获取信息，而不是提出购买需求。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "询问价格、费用以及是否包含额外收费",
+      "询问商品或服务是否可用以及可用时间",
+      "询问尺寸、规格、选项和基本差异",
+      "复述并确认自己得到的关键信息"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不进入实际点单、购买或付款流程",
+      "不处理退换、投诉或服务错误",
+      "不进行复杂议价"
+    ]
+  }
+}
