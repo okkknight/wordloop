@@ -1,0 +1,589 @@
+{
+  "courseId": "d01-stating-an-opinion-clearly-and-explaining-why-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够明确说出自己的观点，给出主要原因和简单例子，并用一句话收束。",
+    "communicationGoals": [
+      "直接表达同意、不同意或个人判断",
+      "说明一到两个主要原因",
+      "给出简单、具体且相关的例子",
+      "重述并简洁总结自己的基本立场"
+    ],
+    "coreChunks": [
+      "In my opinion",
+      "The main reason is",
+      "For example",
+      "To sum up"
+    ],
+    "supportingVocabulary": [
+      "agree",
+      "disagree",
+      "important",
+      "reason",
+      "example",
+      "clearly",
+      "opinion",
+      "explain",
+      "support",
+      "viewpoint"
+    ],
+    "contentBoundaries": [
+      "不要求同时讨论正反两面",
+      "不回应复杂反方意见",
+      "不使用抽象学术语言"
+    ],
+    "realWorldContexts": [
+      "Discussing the benefits of a healthy diet with a friend",
+      "Explaining why a particular movie is your favorite during a casual conversation"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "直接表达同意、不同意或个人判断",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "说明一到两个主要原因",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "给出简单、具体且相关的例子",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "重述并简洁总结自己的基本立场",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "In my opinion",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "直接表达同意、不同意或个人判断"
+      ]
+    },
+    {
+      "chunk": "The main reason is",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "说明一到两个主要原因"
+      ]
+    },
+    {
+      "chunk": "For example",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "给出简单、具体且相关的例子"
+      ]
+    },
+    {
+      "chunk": "To sum up",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "重述并简洁总结自己的基本立场"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "直接表达同意、不同意或个人判断",
+      "meaningTarget": "直接表达同意、不同意或个人判断",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "直接表达同意、不同意或个人判断",
+      "meaningTarget": "直接表达同意、不同意或个人判断",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "直接表达同意、不同意或个人判断",
+      "meaningTarget": "直接表达同意、不同意或个人判断",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "直接表达同意、不同意或个人判断",
+      "meaningTarget": "直接表达同意、不同意或个人判断",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明一到两个主要原因",
+      "meaningTarget": "说明一到两个主要原因",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明一到两个主要原因",
+      "meaningTarget": "说明一到两个主要原因",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明一到两个主要原因",
+      "meaningTarget": "说明一到两个主要原因",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明一到两个主要原因",
+      "meaningTarget": "说明一到两个主要原因",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "给出简单、具体且相关的例子",
+      "meaningTarget": "给出简单、具体且相关的例子",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "给出简单、具体且相关的例子",
+      "meaningTarget": "给出简单、具体且相关的例子",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "给出简单、具体且相关的例子",
+      "meaningTarget": "给出简单、具体且相关的例子",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "给出简单、具体且相关的例子",
+      "meaningTarget": "给出简单、具体且相关的例子",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "重述并简洁总结自己的基本立场",
+      "meaningTarget": "重述并简洁总结自己的基本立场",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "重述并简洁总结自己的基本立场",
+      "meaningTarget": "重述并简洁总结自己的基本立场",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "重述并简洁总结自己的基本立场",
+      "meaningTarget": "重述并简洁总结自己的基本立场",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "重述并简洁总结自己的基本立场",
+      "meaningTarget": "重述并简洁总结自己的基本立场",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "In my opinion",
+        "The main reason is",
+        "For example",
+        "To sum up"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不要求同时讨论正反两面",
+      "不回应复杂反方意见",
+      "不使用抽象学术语言"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
