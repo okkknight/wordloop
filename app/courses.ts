@@ -38,6 +38,7 @@ import aiB03ShowingInterestAndAskingFollowUpQuestionsA2 from "./data/ai-b03-show
 import aiB05AskingSomeoneToRepeatOrSlowDownA2 from "./data/ai-b05-asking-someone-to-repeat-or-slow-down-a2.json";
 import aiB08MakingPoliteRequestsAndAskingForFavorsA2 from "./data/ai-b08-making-polite-requests-and-asking-for-favors-a2.json";
 import aiA01AskingAboutProductsAndServicesA2 from "./data/ai-a01-asking-about-products-and-services-a2.json";
+import aiA02AskingForDirectionsAndTransitInformationA2 from "./data/ai-a02-asking-for-directions-and-transit-information-a2.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -223,6 +224,9 @@ const aiB08MakingPoliteRequestsAndAskingForFavorsA2Entries = aiB08MakingPoliteRe
 const aiA01AskingAboutProductsAndServicesA2Entries = aiA01AskingAboutProductsAndServicesA2.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a01-asking-about-products-and-services-a2/${entry.audio}` })) as CourseEntry[];
+const aiA02AskingForDirectionsAndTransitInformationA2Entries = aiA02AskingForDirectionsAndTransitInformationA2.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a02-asking-for-directions-and-transit-information-a2/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -391,6 +395,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "b05-asking-someone-to-repeat-or-slow-down-a2", collectionId: "ai-practice", title: "Repeat or Slow Down · A2", subtitle: `Everyday English · ${aiB05AskingSomeoneToRepeatOrSlowDownA2Entries.length} learning sentences`, description: "听不清或不理解时礼貌请求重复、放慢或换一种说法。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB05AskingSomeoneToRepeatOrSlowDownA2Entries },
   { id: "b08-making-polite-requests-and-asking-for-favors-a2", collectionId: "ai-practice", title: "Polite Requests & Favors · A2", subtitle: `Everyday English · ${aiB08MakingPoliteRequestsAndAskingForFavorsA2Entries.length} learning sentences`, description: "在日常场景中礼貌提出请求、征求允许并回应他人的帮忙。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB08MakingPoliteRequestsAndAskingForFavorsA2Entries },
   { id: "a01-asking-about-products-and-services-a2", collectionId: "ai-practice", title: "Products & Services · A2", subtitle: `Everyday English · ${aiA01AskingAboutProductsAndServicesA2Entries.length} learning sentences`, description: "询问商品和服务的价格、库存、选择与关键信息。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA01AskingAboutProductsAndServicesA2Entries },
+  { id: "a02-asking-for-directions-and-transit-information-a2", collectionId: "ai-practice", title: "Directions & Transit · A2", subtitle: `Everyday English · ${aiA02AskingForDirectionsAndTransitInformationA2Entries.length} learning sentences`, description: "询问地点、路线、公共交通和换乘信息。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA02AskingForDirectionsAndTransitInformationA2Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

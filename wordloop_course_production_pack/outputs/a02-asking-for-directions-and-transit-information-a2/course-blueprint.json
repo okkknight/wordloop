@@ -1,0 +1,586 @@
+{
+  "courseId": "a02-asking-for-directions-and-transit-information-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "scenario_interaction",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够询问地点、路线和公共交通信息，并通过地标或站点确认自己理解正确。",
+    "communicationGoals": [
+      "询问某个地点在哪里以及如何到达",
+      "询问应该乘坐哪条线路、在哪一站下车",
+      "询问距离、步行时间和明显地标",
+      "复述路线并确认方向、出口或站点"
+    ],
+    "coreChunks": [
+      "How do I get",
+      "Which bus should I",
+      "Where is the nearest",
+      "Is this the right"
+    ],
+    "supportingVocabulary": [
+      "intersection",
+      "landmark",
+      "route",
+      "station",
+      "transfer",
+      "destination"
+    ],
+    "contentBoundaries": [
+      "不涉及机票、酒店等旅行预订",
+      "不扩展成介绍自己的城市",
+      "不处理交通延误或退款"
+    ],
+    "realWorldContexts": [
+      "Asking a stranger for directions in a new city",
+      "Confirming the correct subway line at a station",
+      "Inquiring about bus routes at a transit center"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "询问某个地点在哪里以及如何到达",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "询问应该乘坐哪条线路、在哪一站下车",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "询问距离、步行时间和明显地标",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "复述路线并确认方向、出口或站点",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "How do I get",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "询问某个地点在哪里以及如何到达"
+      ]
+    },
+    {
+      "chunk": "Which bus should I",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "询问应该乘坐哪条线路、在哪一站下车"
+      ]
+    },
+    {
+      "chunk": "Where is the nearest",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "询问距离、步行时间和明显地标"
+      ]
+    },
+    {
+      "chunk": "Is this the right",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "复述路线并确认方向、出口或站点"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "meaningTarget": "询问某个地点在哪里以及如何到达",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "meaningTarget": "询问某个地点在哪里以及如何到达",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "meaningTarget": "询问某个地点在哪里以及如何到达",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "meaningTarget": "询问某个地点在哪里以及如何到达",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "meaningTarget": "询问应该乘坐哪条线路、在哪一站下车",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "meaningTarget": "询问应该乘坐哪条线路、在哪一站下车",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "meaningTarget": "询问应该乘坐哪条线路、在哪一站下车",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "meaningTarget": "询问应该乘坐哪条线路、在哪一站下车",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "meaningTarget": "询问距离、步行时间和明显地标",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "meaningTarget": "询问距离、步行时间和明显地标",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "meaningTarget": "询问距离、步行时间和明显地标",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "meaningTarget": "询问距离、步行时间和明显地标",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "meaningTarget": "复述路线并确认方向、出口或站点",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "meaningTarget": "复述路线并确认方向、出口或站点",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "meaningTarget": "复述路线并确认方向、出口或站点",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "meaningTarget": "复述路线并确认方向、出口或站点",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How do I get",
+        "Which bus should I",
+        "Where is the nearest",
+        "Is this the right"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不涉及机票、酒店等旅行预订",
+      "不扩展成介绍自己的城市",
+      "不处理交通延误或退款"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
