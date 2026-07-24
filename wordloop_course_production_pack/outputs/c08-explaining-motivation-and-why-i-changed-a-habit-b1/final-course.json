@@ -1,0 +1,261 @@
+{
+  "courseId": "c08-explaining-motivation-and-why-i-changed-a-habit-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "text": "I often skipped breakfast.",
+      "translation": "我经常不吃早餐。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I often"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "text": "I used to watch TV until midnight.",
+      "translation": "我过去常常看到半夜。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I used to"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "text": "I rarely exercised.",
+      "translation": "我很少锻炼。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I rarely"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "text": "I was constantly stressed at work.",
+      "translation": "我在工作中总是感到压力很大。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I was"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "text": "A health scare made me rethink my habits.",
+      "translation": "一次健康问题让我重新思考我的习惯。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "A health"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "text": "The reason I changed was to improve my health.",
+      "translation": "我改变的原因是为了改善健康。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The reason I changed"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "text": "I wanted to feel more energetic during the day.",
+      "translation": "我想在白天感到更有活力。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I wanted"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "text": "I felt tired all the time, so I knew I had to change.",
+      "translation": "我总是感到疲惫，所以我知道我必须改变。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I felt"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "text": "I started going to bed earlier.",
+      "translation": "我开始早点上床睡觉。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I started"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "text": "I decided to join a gym.",
+      "translation": "我决定加入一个健身房。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I decided to"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "text": "I set a regular schedule for my tasks.",
+      "translation": "我为我的任务设定了一个固定的时间表。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I set"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "text": "I started using a planner to organize my week.",
+      "translation": "我开始用计划本来安排我的一周。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I started"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "text": "I feel more focused now, but it's still hard to stay consistent.",
+      "translation": "我现在感觉更专注，但仍然很难保持一致。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I feel"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "text": "One challenge I faced was staying motivated.",
+      "translation": "我面临的一个挑战是保持动力。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "One challenge I faced"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "text": "I plan to keep adjusting my schedule to find what works best.",
+      "translation": "我计划继续调整我的时间表以找到最合适的方式。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I plan"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "text": "I want to focus on building healthier habits gradually.",
+      "translation": "我想逐步专注于养成更健康的习惯。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I want"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

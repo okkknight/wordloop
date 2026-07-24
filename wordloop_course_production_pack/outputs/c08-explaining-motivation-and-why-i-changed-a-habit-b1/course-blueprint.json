@@ -1,0 +1,586 @@
+{
+  "courseId": "c08-explaining-motivation-and-why-i-changed-a-habit-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够说明原来的状态、促成改变的原因、采取的行动以及遇到的困难。",
+    "communicationGoals": [
+      "描述改变之前的习惯或问题",
+      "说明触发改变的事件、感受或目标",
+      "描述已经采取的具体行动",
+      "说明效果、困难和接下来想继续调整的地方"
+    ],
+    "coreChunks": [
+      "I used to watch",
+      "The reason I changed",
+      "I decided to join",
+      "One challenge I faced"
+    ],
+    "supportingVocabulary": [
+      "motivation",
+      "habit",
+      "trigger",
+      "goal",
+      "action",
+      "obstacle"
+    ],
+    "contentBoundaries": [
+      "不扩展成完整人生目标课程",
+      "不提供健康或心理治疗建议",
+      "不把内容写成励志演讲"
+    ],
+    "realWorldContexts": [
+      "Explaining a lifestyle change to a friend",
+      "Discussing a habit change in a support group",
+      "Sharing a personal story at a community event"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "描述改变之前的习惯或问题",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "说明触发改变的事件、感受或目标",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "描述已经采取的具体行动",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "说明效果、困难和接下来想继续调整的地方",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I used to watch",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "描述改变之前的习惯或问题"
+      ]
+    },
+    {
+      "chunk": "The reason I changed",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "说明触发改变的事件、感受或目标"
+      ]
+    },
+    {
+      "chunk": "I decided to join",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "描述已经采取的具体行动"
+      ]
+    },
+    {
+      "chunk": "One challenge I faced",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "说明效果、困难和接下来想继续调整的地方"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "meaningTarget": "描述改变之前的习惯或问题",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "meaningTarget": "描述改变之前的习惯或问题",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "meaningTarget": "描述改变之前的习惯或问题",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述改变之前的习惯或问题",
+      "meaningTarget": "描述改变之前的习惯或问题",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "meaningTarget": "说明触发改变的事件、感受或目标",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "meaningTarget": "说明触发改变的事件、感受或目标",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "meaningTarget": "说明触发改变的事件、感受或目标",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明触发改变的事件、感受或目标",
+      "meaningTarget": "说明触发改变的事件、感受或目标",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "meaningTarget": "描述已经采取的具体行动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "meaningTarget": "描述已经采取的具体行动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "meaningTarget": "描述已经采取的具体行动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述已经采取的具体行动",
+      "meaningTarget": "描述已经采取的具体行动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "meaningTarget": "说明效果、困难和接下来想继续调整的地方",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "meaningTarget": "说明效果、困难和接下来想继续调整的地方",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "meaningTarget": "说明效果、困难和接下来想继续调整的地方",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明效果、困难和接下来想继续调整的地方",
+      "meaningTarget": "说明效果、困难和接下来想继续调整的地方",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I used to watch",
+        "The reason I changed",
+        "I decided to join",
+        "One challenge I faced"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不扩展成完整人生目标课程",
+      "不提供健康或心理治疗建议",
+      "不把内容写成励志演讲"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
