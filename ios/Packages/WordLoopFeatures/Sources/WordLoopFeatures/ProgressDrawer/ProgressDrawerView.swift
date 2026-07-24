@@ -11,6 +11,8 @@ public struct ProgressDrawerView: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var showsDeleteConfirmation = false
     @State private var dataDeletionError: String?
+    @State private var isPanelVisible = false
+    @State private var isDismissing = false
 
     public init(
         store: ProgressDrawerStore,
@@ -31,6 +33,20 @@ public struct ProgressDrawerView: View {
                     .accessibilityLabel("学习进度")
                     .accessibilityIdentifier("progress-drawer.page")
 
+                drawerBackdrop
+
+                Button {
+                    dismiss { store.dismiss(reason: .backdrop) }
+                } label: {
+                    Rectangle()
+                        .fill(Color.black.opacity(0.001))
+                        .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .accessibilityLabel("关闭学习进度")
+                .accessibilityIdentifier("progress-drawer.backdrop")
+
                 SideDrawer(
                     edge: .trailing,
                     palette: palette,
@@ -39,7 +55,8 @@ public struct ProgressDrawerView: View {
                     closeAccessibilityLabel: "关闭学习进度",
                     closeAccessibilityIdentifier: "progress-drawer.close",
                     isModal: false,
-                    onClose: { store.dismiss(reason: .header) }
+                    isPanelVisible: isPanelVisible,
+                    onClose: { dismiss { store.dismiss(reason: .header) } }
                 ) {
                     drawerContent
                         .frame(maxHeight: .infinity, alignment: .top)
@@ -47,29 +64,21 @@ public struct ProgressDrawerView: View {
                 .simultaneousGesture(
                     DragGesture(minimumDistance: 12)
                         .onEnded { value in
-                            store.handleDrag(
-                                horizontal: Double(value.translation.width),
-                                vertical: Double(value.translation.height)
-                            )
+                            guard value.translation.width > 72,
+                                  abs(value.translation.width) > abs(value.translation.height) else { return }
+                            dismiss { store.dismiss(reason: .swipe) }
                         }
                 )
 
-                Button {
-                    store.dismiss(reason: .backdrop)
-                } label: {
-                    Rectangle()
-                        .fill(Color.black.opacity(0.001))
-                        .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-                .frame(width: max(0, geometry.size.width - drawerWidth(in: geometry.size.width)))
-                .frame(maxHeight: .infinity)
-                .accessibilityLabel("关闭学习进度")
-                .accessibilityIdentifier("progress-drawer.backdrop")
             }
             .accessibilityElement(children: .contain)
             .accessibilityAddTraits(.isModal)
         }
+        .onAppear {
+            isDismissing = false
+            isPanelVisible = true
+        }
+        .onDisappear { isPanelVisible = false }
         .alert("删除全部学习数据？", isPresented: $showsDeleteConfirmation) {
             Button("取消", role: .cancel) {}
             Button("删除", role: .destructive) {
@@ -90,6 +99,26 @@ public struct ProgressDrawerView: View {
 
     private func drawerWidth(in availableWidth: CGFloat) -> CGFloat {
         min(Self.drawerMaximumWidth, availableWidth * Self.drawerWidthFraction)
+    }
+
+    private var drawerBackdrop: some View {
+        Rectangle()
+            .fill(.ultraThinMaterial)
+            .overlay(Color.black.opacity(0.42))
+            .ignoresSafeArea()
+            .opacity(isPanelVisible ? 1 : 0)
+            .animation(.easeInOut(duration: WordLoopMotion.drawerDuration), value: isPanelVisible)
+            .accessibilityHidden(true)
+    }
+
+    private func dismiss(_ action: @escaping @MainActor () -> Void) {
+        guard !isDismissing else { return }
+        isDismissing = true
+        isPanelVisible = false
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: UInt64(WordLoopMotion.drawerDuration * 1_000_000_000))
+            action()
+        }
     }
 
     private var drawerContent: some View {
@@ -135,7 +164,7 @@ public struct ProgressDrawerView: View {
         guard let onDeleteAllData else { return }
         do {
             try await onDeleteAllData()
-            store.dismiss(reason: .header)
+            dismiss { store.dismiss(reason: .header) }
         } catch {
             dataDeletionError = "请检查网络后重试。"
         }

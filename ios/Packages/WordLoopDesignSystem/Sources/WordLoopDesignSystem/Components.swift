@@ -259,6 +259,7 @@ public struct SideDrawer<Content: View>: View {
     private let closeAccessibilityLabel: String
     private let closeAccessibilityIdentifier: String
     private let isModal: Bool
+    private let isPanelVisible: Bool
     private let onClose: () -> Void
     private let content: Content
 
@@ -270,6 +271,7 @@ public struct SideDrawer<Content: View>: View {
         closeAccessibilityLabel: String,
         closeAccessibilityIdentifier: String? = nil,
         isModal: Bool = true,
+        isPanelVisible: Bool = true,
         onClose: @escaping () -> Void,
         @ViewBuilder content: () -> Content
     ) {
@@ -280,6 +282,7 @@ public struct SideDrawer<Content: View>: View {
         self.closeAccessibilityLabel = closeAccessibilityLabel
         self.closeAccessibilityIdentifier = closeAccessibilityIdentifier ?? closeAccessibilityLabel
         self.isModal = isModal
+        self.isPanelVisible = isPanelVisible
         self.onClose = onClose
         self.content = content()
     }
@@ -316,18 +319,19 @@ public struct SideDrawer<Content: View>: View {
                 .frame(maxHeight: .infinity)
                 .foregroundStyle(palette.ink.color)
                 .background(palette.background.color)
-                .shadow(color: .black.opacity(WordLoopShadow.drawer.colorOpacity), radius: WordLoopShadow.drawer.radius)
+                .offset(x: panelOffset(for: proxy.size.width))
+                .animation(.easeInOut(duration: WordLoopMotion.drawerDuration), value: isPanelVisible)
                 if edge == .leading { Spacer(minLength: 0) }
-            }
-            .background {
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-                    .overlay(Color.black.opacity(0.42))
-                    .ignoresSafeArea()
             }
         }
         .accessibilityElement(children: .contain)
         .accessibilityAddTraits(isModal ? .isModal : [])
+    }
+
+    private func panelOffset(for availableWidth: CGFloat) -> CGFloat {
+        guard !isPanelVisible else { return 0 }
+        let width = min(304, availableWidth * 0.78)
+        return edge == .leading ? -width : width
     }
 }
 

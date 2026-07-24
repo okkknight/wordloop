@@ -9,6 +9,8 @@ public struct CourseDrawerView: View {
     private let onSelectCourse: (String) -> Void
     private let onRequestDownload: (String) -> Void
     @FocusState private var searchIsFocused: Bool
+    @State private var isPanelVisible = false
+    @State private var isDismissing = false
 
     public init(store: CourseDrawerStore, palette: PosterPalette) {
         self.store = store
@@ -31,40 +33,48 @@ public struct CourseDrawerView: View {
 
     public var body: some View {
         GeometryReader { geometry in
-            ZStack(alignment: .trailing) {
+            ZStack(alignment: .leading) {
                 Color.clear
                     .frame(width: 1, height: 1)
                     .accessibilityElement(children: .ignore)
                     .accessibilityLabel("课程选择器")
                     .accessibilityIdentifier("course-drawer.page")
 
-                coursePanel(width: drawerWidth(in: geometry.size.width))
-                .simultaneousGesture(
-                    DragGesture(minimumDistance: 12)
-                        .onEnded { value in
-                            store.handleDrag(
-                                horizontal: Double(value.translation.width),
-                                vertical: Double(value.translation.height)
-                            )
-                        }
-                )
+                drawerBackdrop
 
                 Button {
-                    store.dismiss(reason: .backdrop)
+                    dismiss { store.dismiss(reason: .backdrop) }
                 } label: {
                     Rectangle()
                         .fill(Color.black.opacity(0.001))
                         .contentShape(Rectangle())
                 }
                 .buttonStyle(.plain)
-                .frame(width: max(0, geometry.size.width - drawerWidth(in: geometry.size.width)))
-                .frame(maxHeight: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .accessibilityLabel("关闭课程选择器")
                 .accessibilityIdentifier("course-drawer.backdrop")
+
+                coursePanel(width: drawerWidth(in: geometry.size.width))
+                .offset(x: isPanelVisible ? 0 : -drawerWidth(in: geometry.size.width))
+                .animation(.easeInOut(duration: WordLoopMotion.drawerDuration), value: isPanelVisible)
+                .simultaneousGesture(
+                    DragGesture(minimumDistance: 12)
+                        .onEnded { value in
+                            guard value.translation.width < -72,
+                                  abs(value.translation.width) > abs(value.translation.height) else { return }
+                            dismiss { store.dismiss(reason: .swipe) }
+                        }
+                )
+
             }
             .accessibilityElement(children: .contain)
             .accessibilityAddTraits(.isModal)
         }
+        .onAppear {
+            isDismissing = false
+            isPanelVisible = true
+        }
+        .onDisappear { isPanelVisible = false }
     }
 
     private func coursePanel(width: CGFloat) -> some View {
@@ -80,14 +90,25 @@ public struct CourseDrawerView: View {
         .frame(maxHeight: .infinity, alignment: .top)
         .foregroundStyle(palette.ink.color)
         .background(palette.background.color)
-        .shadow(color: .black.opacity(0.16), radius: 30, x: 20)
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background {
-            // Web `.panel-backdrop`: a 42% black veil over a 7px blur.
-            Rectangle()
-                .fill(.ultraThinMaterial)
-                .overlay(Color.black.opacity(0.42))
-                .ignoresSafeArea()
+    }
+
+    private var drawerBackdrop: some View {
+        Rectangle()
+            .fill(.ultraThinMaterial)
+            .overlay(Color.black.opacity(0.42))
+            .ignoresSafeArea()
+            .opacity(isPanelVisible ? 1 : 0)
+            .animation(.easeInOut(duration: WordLoopMotion.drawerDuration), value: isPanelVisible)
+            .accessibilityHidden(true)
+    }
+
+    private func dismiss(_ action: @escaping @MainActor () -> Void) {
+        guard !isDismissing else { return }
+        isDismissing = true
+        isPanelVisible = false
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: UInt64(WordLoopMotion.drawerDuration * 1_000_000_000))
+            action()
         }
     }
 
@@ -107,7 +128,7 @@ public struct CourseDrawerView: View {
                     .tracking(-1.04)
             }
             Spacer(minLength: 0)
-            Button("×") { store.dismiss(reason: .header) }
+            Button("×") { dismiss { store.dismiss(reason: .header) } }
                 .font(WordLoopTypography.body(size: 30, weight: .regular))
                 .frame(width: 30, height: 30)
                 .contentShape(Rectangle())
@@ -248,8 +269,10 @@ public struct CourseDrawerView: View {
 
     private func courseCard(_ course: CourseDrawerCourse) -> some View {
         Button {
-            store.selectCourse(course.id)
-            onSelectCourse(course.id)
+            dismiss {
+                store.selectCourse(course.id)
+                onSelectCourse(course.id)
+            }
         } label: {
             VStack(alignment: .leading, spacing: 0) {
                 Text(course.title)

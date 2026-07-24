@@ -145,9 +145,6 @@ public struct MainStudyView: View {
                     onSelectCourse: actions.selectCourse,
                     onRequestDownload: actions.downloadCourse
                 )
-                    // Web `.course-panel` animates only translateX; its
-                    // panel never fades during the 260ms drawer transition.
-                    .transition(.move(edge: .leading))
                     .zIndex(10)
             } else if progressDrawerStore.state.isPresented {
                 ProgressDrawerView(
@@ -155,19 +152,9 @@ public struct MainStudyView: View {
                     palette: store.state.palette,
                     onDeleteAllData: actions.deleteAllData
                 )
-                    // Same direct translation for `.progress-panel`.
-                    .transition(.move(edge: .trailing))
                     .zIndex(10)
             }
         }
-        .animation(
-            .easeInOut(duration: WordLoopMotion.drawer(reduceMotion: motionReduced).duration),
-            value: courseDrawerStore.state.isPresented
-        )
-        .animation(
-            .easeInOut(duration: WordLoopMotion.drawer(reduceMotion: motionReduced).duration),
-            value: progressDrawerStore.state.isPresented
-        )
         .animation(
             .easeInOut(duration: WordLoopMotion.exit(reduceMotion: motionReduced).duration),
             value: completionDialogStore.state.isPresented
