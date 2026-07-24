@@ -443,13 +443,11 @@ public final class StudyStore {
             )
         } else {
             state.listenPhase = .idle
-            scheduleProgressSynchronization(
-                course: loaded,
-                entryID: first.id,
-                generation: generation,
-                mode: .repeat
-            )
-            await startRepeatTurn(generation: generation)
+            // REPEAT is the default presentation, but it must remain paused
+            // until the learner explicitly presses RESUME.  Starting a turn
+            // here would trigger the system microphone prompt on first launch.
+            state.repeatPhase = .paused
+            applyRepeatPresentation(.paused)
         }
     }
 

@@ -6,7 +6,7 @@ import WordLoopCore
 
 @MainActor
 final class StudyStoreTests: XCTestCase {
-    func testStartLoadsDefaultSequentialEntryInRepeatWithoutPlayingOrRecording() async {
+    func testStartLoadsDefaultSequentialEntryInPausedRepeatWithoutRecording() async {
         let harness = makeHarness()
 
         await harness.store.start()
@@ -15,6 +15,7 @@ final class StudyStoreTests: XCTestCase {
         XCTAssertEqual(harness.store.state.selectedCourseID, harness.primary.id)
         XCTAssertEqual(harness.store.state.currentEntryID, harness.primary.entries[0].id)
         XCTAssertEqual(harness.store.state.listenPhase, .idle)
+        XCTAssertEqual(harness.store.state.repeatPhase, .paused)
         XCTAssertEqual(harness.store.shellStore.state.mode, .repeat)
         assertEqual(await harness.audio.prepareCalls(), [])
         assertEqual(await harness.audio.playCallCount(), 0)
