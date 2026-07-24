@@ -1,0 +1,586 @@
+{
+  "courseId": "c06-sharing-a-memorable-trip-or-experience-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够介绍一次经历的背景、关键事件和难忘细节，并表达它为什么重要。",
+    "communicationGoals": [
+      "交代目的地、时间或经历背景",
+      "描述期待与实际发生的关键事件",
+      "选择一个具体人物、场景或细节展开",
+      "说明感受、收获以及为什么记得它"
+    ],
+    "coreChunks": [
+      "One memorable trip was",
+      "I remember it because",
+      "The highlight of the",
+      "What made it special"
+    ],
+    "supportingVocabulary": [
+      "unforgettable",
+      "destination",
+      "experience",
+      "highlight",
+      "memorable",
+      "significance"
+    ],
+    "contentBoundaries": [
+      "不训练预订、问路和行程安排",
+      "不要求宏大人生感悟",
+      "不堆叠景点和旅游词汇"
+    ],
+    "realWorldContexts": [
+      "Discussing travel experiences at a social gathering",
+      "Sharing stories in a language exchange group",
+      "Writing a personal blog post about travel"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "交代目的地、时间或经历背景",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "描述期待与实际发生的关键事件",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "选择一个具体人物、场景或细节展开",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "说明感受、收获以及为什么记得它",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "One memorable trip was",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "交代目的地、时间或经历背景"
+      ]
+    },
+    {
+      "chunk": "I remember it because",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "描述期待与实际发生的关键事件"
+      ]
+    },
+    {
+      "chunk": "The highlight of the",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "选择一个具体人物、场景或细节展开"
+      ]
+    },
+    {
+      "chunk": "What made it special",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "说明感受、收获以及为什么记得它"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "meaningTarget": "交代目的地、时间或经历背景",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "meaningTarget": "交代目的地、时间或经历背景",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "meaningTarget": "交代目的地、时间或经历背景",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "meaningTarget": "交代目的地、时间或经历背景",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "meaningTarget": "描述期待与实际发生的关键事件",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "meaningTarget": "描述期待与实际发生的关键事件",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "meaningTarget": "描述期待与实际发生的关键事件",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "meaningTarget": "描述期待与实际发生的关键事件",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "meaningTarget": "选择一个具体人物、场景或细节展开",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "meaningTarget": "选择一个具体人物、场景或细节展开",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "meaningTarget": "选择一个具体人物、场景或细节展开",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "meaningTarget": "选择一个具体人物、场景或细节展开",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "meaningTarget": "说明感受、收获以及为什么记得它",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "meaningTarget": "说明感受、收获以及为什么记得它",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "meaningTarget": "说明感受、收获以及为什么记得它",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "meaningTarget": "说明感受、收获以及为什么记得它",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One memorable trip was",
+        "I remember it because",
+        "The highlight of the",
+        "What made it special"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不训练预订、问路和行程安排",
+      "不要求宏大人生感悟",
+      "不堆叠景点和旅游词汇"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
