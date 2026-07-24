@@ -20,6 +20,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>WordLoop may use the camera only when you explicitly enable a video input for speaking practice. It is never accessed by default.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>WordLoop uses your microphone only while you practice speaking in REPEAT mode.</string>
 	<key>UILaunchScreen</key>
