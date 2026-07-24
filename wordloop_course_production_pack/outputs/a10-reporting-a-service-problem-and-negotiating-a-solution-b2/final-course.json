@@ -1,0 +1,261 @@
+{
+  "courseId": "a10-reporting-a-service-problem-and-negotiating-a-solution-b2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "text": "The delivery arrived two days late.",
+      "translation": "送货晚了两天。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "The delivery"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "text": "I noticed an issue with the billing statement.",
+      "translation": "我注意到账单有问题。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I noticed an issue with"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "text": "The software update caused unexpected errors.",
+      "translation": "软件更新导致了意外错误。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "The software"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "text": "The service was not as described in the contract.",
+      "translation": "服务与合同中描述的不符。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The service"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "text": "It's affecting our project timeline significantly.",
+      "translation": "这严重影响了我们的项目时间表。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "It's affecting"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "text": "This has impacted us by delaying our launch.",
+      "translation": "这影响了我们，推迟了我们的发布。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "This has impacted us by"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "text": "Our team is struggling to keep up with the workload.",
+      "translation": "我们的团队难以跟上工作量。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Our team"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "text": "Our reputation with clients is at risk due to this.",
+      "translation": "由于这个问题，我们与客户的声誉岌岌可危。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Our reputation"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "text": "Thank you for your apology, but we need a concrete plan.",
+      "translation": "感谢你的道歉，但我们需要一个具体的计划。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Thank you"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "text": "I appreciate your suggestion, but it doesn't fully address our needs.",
+      "translation": "感谢你的建议，但它并没有完全满足我们的需求。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I appreciate your suggestion, but"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "text": "I see your point, but we still need further assistance.",
+      "translation": "我明白你的意思，但我们仍然需要进一步的帮助。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I see"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "text": "I understand you're trying to help, but we're still facing issues.",
+      "translation": "我知道你在努力帮忙，但我们仍然面临问题。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I understand"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "text": "Perhaps a partial refund could be considered.",
+      "translation": "也许可以考虑部分退款。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Perhaps a"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "text": "Could we consider an alternative that better suits our timeline?",
+      "translation": "我们能否考虑一个更符合我们时间表的替代方案？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Could we consider an alternative"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "text": "A service credit might be a fair solution.",
+      "translation": "服务积分可能是一个公平的解决方案。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "A service"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "text": "Let's agree on a timeline for resolving this issue.",
+      "translation": "让我们就解决这个问题的时间表达成一致。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Let's agree"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

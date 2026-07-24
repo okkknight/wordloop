@@ -1,0 +1,618 @@
+{
+  "courseId": "a10-reporting-a-service-problem-and-negotiating-a-solution-b2",
+  "candidateCountPerSlot": 2,
+  "slots": [
+    {
+      "slot": 1,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s01-a",
+          "text": "The delivery arrived two days late.",
+          "translation": "送货晚了两天。",
+          "usedChunks": [
+            "The delivery"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s01-b",
+          "text": "The technician didn't show up as scheduled.",
+          "translation": "技术人员没有按计划出现。",
+          "usedChunks": [
+            "The technician"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s02-a",
+          "text": "I noticed an issue with the billing statement.",
+          "translation": "我注意到账单有问题。",
+          "usedChunks": [
+            "I noticed an issue with"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s02-b",
+          "text": "I noticed an issue with the installation process.",
+          "translation": "我注意到安装过程中有问题。",
+          "usedChunks": [
+            "I noticed an issue with"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s03-a",
+          "text": "The software update caused unexpected errors.",
+          "translation": "软件更新导致了意外错误。",
+          "usedChunks": [
+            "The software"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s03-b",
+          "text": "The package was missing several items.",
+          "translation": "包裹里缺了好几样东西。",
+          "usedChunks": [
+            "The package"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s04-a",
+          "text": "The service was not as described in the contract.",
+          "translation": "服务与合同中描述的不符。",
+          "usedChunks": [
+            "The service"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s04-b",
+          "text": "The product quality did not meet our expectations.",
+          "translation": "产品质量没有达到我们的期望。",
+          "usedChunks": [
+            "The product"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s05-a",
+          "text": "It's affecting our project timeline significantly.",
+          "translation": "这严重影响了我们的项目时间表。",
+          "usedChunks": [
+            "It's affecting"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s05-b",
+          "text": "We're unable to meet our client's deadline now.",
+          "translation": "我们现在无法满足客户的截止日期。",
+          "usedChunks": [
+            "We're unable"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s06-a",
+          "text": "This has impacted us by delaying our launch.",
+          "translation": "这影响了我们，推迟了我们的发布。",
+          "usedChunks": [
+            "This has impacted us by"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s06-b",
+          "text": "This has impacted us by increasing our costs.",
+          "translation": "这影响了我们，增加了我们的成本。",
+          "usedChunks": [
+            "This has impacted us by"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s07-a",
+          "text": "Our team is struggling to keep up with the workload.",
+          "translation": "我们的团队难以跟上工作量。",
+          "usedChunks": [
+            "Our team"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s07-b",
+          "text": "We had to reschedule important meetings.",
+          "translation": "我们不得不重新安排重要会议。",
+          "usedChunks": [
+            "We had"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s08-a",
+          "text": "Our reputation with clients is at risk due to this.",
+          "translation": "由于这个问题，我们与客户的声誉岌岌可危。",
+          "usedChunks": [
+            "Our reputation"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s08-b",
+          "text": "We are losing valuable time and resources.",
+          "translation": "我们正在失去宝贵的时间和资源。",
+          "usedChunks": [
+            "We are"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s09-a",
+          "text": "Thank you for your apology, but we need a concrete plan.",
+          "translation": "感谢你的道歉，但我们需要一个具体的计划。",
+          "usedChunks": [
+            "Thank you"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s09-b",
+          "text": "I understand your explanation, but the issue persists.",
+          "translation": "我理解你的解释，但问题依然存在。",
+          "usedChunks": [
+            "I understand"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s10-a",
+          "text": "I appreciate your suggestion, but it doesn't fully address our needs.",
+          "translation": "感谢你的建议，但它并没有完全满足我们的需求。",
+          "usedChunks": [
+            "I appreciate your suggestion, but"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s10-b",
+          "text": "I appreciate your suggestion, but we require a more immediate solution.",
+          "translation": "感谢你的建议，但我们需要更直接的解决方案。",
+          "usedChunks": [
+            "I appreciate your suggestion, but"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s11-a",
+          "text": "I see your point, but we still need further assistance.",
+          "translation": "我明白你的意思，但我们仍然需要进一步的帮助。",
+          "usedChunks": [
+            "I see"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s11-b",
+          "text": "Your offer is a start, but it's not sufficient.",
+          "translation": "你的提议是个开始，但还不够。",
+          "usedChunks": [
+            "Your offer"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s12-a",
+          "text": "I understand you're trying to help, but we're still facing issues.",
+          "translation": "我知道你在努力帮忙，但我们仍然面临问题。",
+          "usedChunks": [
+            "I understand"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s12-b",
+          "text": "I appreciate the effort, but the problem remains unresolved.",
+          "translation": "我感谢你的努力，但问题仍未解决。",
+          "usedChunks": [
+            "I appreciate"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s13-a",
+          "text": "Perhaps a partial refund could be considered.",
+          "translation": "也许可以考虑部分退款。",
+          "usedChunks": [
+            "Perhaps a"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s13-b",
+          "text": "Would it be possible to expedite the next delivery?",
+          "translation": "能否加快下次的送货速度？",
+          "usedChunks": [
+            "Would it"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s14-a",
+          "text": "Could we consider an alternative that better suits our timeline?",
+          "translation": "我们能否考虑一个更符合我们时间表的替代方案？",
+          "usedChunks": [
+            "Could we consider an alternative"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s14-b",
+          "text": "Could we consider an alternative that minimizes disruption?",
+          "translation": "我们能否考虑一个能将干扰降到最低的替代方案？",
+          "usedChunks": [
+            "Could we consider an alternative"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s15-a",
+          "text": "A service credit might be a fair solution.",
+          "translation": "服务积分可能是一个公平的解决方案。",
+          "usedChunks": [
+            "A service"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s15-b",
+          "text": "Offering a discount on future services could work for us.",
+          "translation": "对未来的服务提供折扣可能对我们有用。",
+          "usedChunks": [
+            "Offering a"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s16-a",
+          "text": "Let's agree on a timeline for resolving this issue.",
+          "translation": "让我们就解决这个问题的时间表达成一致。",
+          "usedChunks": [
+            "Let's agree"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s16-b",
+          "text": "Can we finalize the details of the compensation?",
+          "translation": "我们能否敲定赔偿的细节？",
+          "usedChunks": [
+            "Can we"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    }
+  ],
+  "generationReview": {
+    "coverageComplete": true,
+    "warnings": []
+  }
+}
