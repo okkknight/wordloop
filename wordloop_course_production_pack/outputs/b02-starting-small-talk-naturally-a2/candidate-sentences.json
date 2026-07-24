@@ -1,0 +1,618 @@
+{
+  "courseId": "b02-starting-small-talk-naturally-a2",
+  "candidateCountPerSlot": 2,
+  "slots": [
+    {
+      "slot": 1,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s01-a",
+          "text": "The sky is so clear today.",
+          "translation": "今天的天空真清澈。",
+          "usedChunks": [
+            "The sky"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s01-b",
+          "text": "It's really nice outside right now.",
+          "translation": "外面现在真不错。",
+          "usedChunks": [
+            "It's really"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s02-a",
+          "text": "Lovely weather today, isn't it?",
+          "translation": "今天天气真好，不是吗？",
+          "usedChunks": [
+            "Lovely weather today, isn't it"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s02-b",
+          "text": "Lovely weather today, isn't it? Perfect for a walk.",
+          "translation": "今天天气真好，不是吗？很适合散步。",
+          "usedChunks": [
+            "Lovely weather today, isn't it"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s03-a",
+          "text": "I can't believe how warm it is for October.",
+          "translation": "真不敢相信十月的天气这么暖和。",
+          "usedChunks": [
+            "I can't"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s03-b",
+          "text": "The leaves are turning such beautiful colors.",
+          "translation": "树叶变得如此美丽的颜色。",
+          "usedChunks": [
+            "The leaves"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s04-a",
+          "text": "There's a nice breeze coming through.",
+          "translation": "有一阵宜人的微风吹过。",
+          "usedChunks": [
+            "There's a"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s04-b",
+          "text": "The sunset is amazing tonight.",
+          "translation": "今晚的日落真美。",
+          "usedChunks": [
+            "The sunset"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s05-a",
+          "text": "The music here is really nice.",
+          "translation": "这里的音乐真不错。",
+          "usedChunks": [
+            "The music"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s05-b",
+          "text": "This place has a cozy vibe.",
+          "translation": "这个地方的氛围很舒适。",
+          "usedChunks": [
+            "This place"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s06-a",
+          "text": "I noticed you're reading a mystery novel.",
+          "translation": "我注意到你在读一本悬疑小说。",
+          "usedChunks": [
+            "I noticed you're reading.."
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s06-b",
+          "text": "I noticed you're reading a travel guide.",
+          "translation": "我注意到你在读一本旅行指南。",
+          "usedChunks": [
+            "I noticed you're reading.."
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s07-a",
+          "text": "The coffee smells great today.",
+          "translation": "今天的咖啡闻起来很香。",
+          "usedChunks": [
+            "The coffee"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s07-b",
+          "text": "The view from here is amazing.",
+          "translation": "从这里看出去的景色很棒。",
+          "usedChunks": [
+            "The view"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s08-a",
+          "text": "It's such a sunny day outside.",
+          "translation": "外面真是个阳光明媚的日子。",
+          "usedChunks": [
+            "It's such"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s08-b",
+          "text": "The park is really lively this afternoon.",
+          "translation": "今天下午公园里真热闹。",
+          "usedChunks": [
+            "The park"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s09-a",
+          "text": "I heard there's a new exhibit at the museum.",
+          "translation": "我听说博物馆有一个新的展览。",
+          "usedChunks": [
+            "I heard"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s09-b",
+          "text": "There's a farmers market every Saturday downtown.",
+          "translation": "市中心每周六有一个农贸市场。",
+          "usedChunks": [
+            "There's a"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s10-a",
+          "text": "Have you tried the coffee here? It's really good.",
+          "translation": "你试过这里的咖啡吗？真的很好喝。",
+          "usedChunks": [
+            "Have you tried the coffee here"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s10-b",
+          "text": "Have you tried the coffee here? I think it's amazing.",
+          "translation": "你试过这里的咖啡吗？我觉得很棒。",
+          "usedChunks": [
+            "Have you tried the coffee here"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s11-a",
+          "text": "The park is beautiful this time of year with all the flowers.",
+          "translation": "这个季节公园里的花很美。",
+          "usedChunks": [
+            "The park"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 12,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s11-b",
+          "text": "I read that the local library is hosting a book sale.",
+          "translation": "我读到当地图书馆正在举办图书特卖。",
+          "usedChunks": [
+            "I read"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s12-a",
+          "text": "The new restaurant on Main Street has great reviews.",
+          "translation": "主街上的新餐馆评价很好。",
+          "usedChunks": [
+            "The new"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s12-b",
+          "text": "I saw a movie last night that was really interesting.",
+          "translation": "我昨晚看了一部很有趣的电影。",
+          "usedChunks": [
+            "I saw"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s13-a",
+          "text": "Do you have any weekend plans?",
+          "translation": "你周末有什么计划吗？",
+          "usedChunks": [
+            "Do you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s13-b",
+          "text": "Have you tried the new café nearby?",
+          "translation": "你尝试过附近的新咖啡馆吗？",
+          "usedChunks": [
+            "Have you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s14-a",
+          "text": "This place has a nice vibe. Do you come here often?",
+          "translation": "这个地方氛围很好。你经常来这里吗？",
+          "usedChunks": [
+            "This place has a nice vibe"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s14-b",
+          "text": "This place has a nice vibe. What do you think of it?",
+          "translation": "这个地方氛围很好。你觉得怎么样？",
+          "usedChunks": [
+            "This place has a nice vibe"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 12,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s15-a",
+          "text": "Have you seen any good movies lately?",
+          "translation": "你最近看过什么好电影吗？",
+          "usedChunks": [
+            "Have you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s15-b",
+          "text": "Do you like to travel?",
+          "translation": "你喜欢旅行吗？",
+          "usedChunks": [
+            "Do you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s16-a",
+          "text": "What do you usually do to relax?",
+          "translation": "你通常怎么放松？",
+          "usedChunks": [
+            "What do"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s16-b",
+          "text": "Have you read any good books recently?",
+          "translation": "你最近读过什么好书吗？",
+          "usedChunks": [
+            "Have you"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    }
+  ],
+  "generationReview": {
+    "coverageComplete": true,
+    "warnings": []
+  }
+}

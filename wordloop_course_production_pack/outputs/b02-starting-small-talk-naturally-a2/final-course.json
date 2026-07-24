@@ -1,0 +1,261 @@
+{
+  "courseId": "b02-starting-small-talk-naturally-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "text": "The sky is so clear today.",
+      "translation": "今天的天空真清澈。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "The sky"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "text": "Lovely weather today, isn't it?",
+      "translation": "今天天气真好，不是吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Lovely weather today, isn't it"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "text": "I can't believe how warm it is for October.",
+      "translation": "真不敢相信十月的天气这么暖和。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I can't"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "text": "There's a nice breeze coming through.",
+      "translation": "有一阵宜人的微风吹过。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "There's a"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "text": "The music here is really nice.",
+      "translation": "这里的音乐真不错。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The music"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "text": "I noticed you're reading a mystery novel.",
+      "translation": "我注意到你在读一本悬疑小说。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I noticed you're reading.."
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "text": "The coffee smells great today.",
+      "translation": "今天的咖啡闻起来很香。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The coffee"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "text": "It's such a sunny day outside.",
+      "translation": "外面真是个阳光明媚的日子。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "It's such"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "text": "I heard there's a new exhibit at the museum.",
+      "translation": "我听说博物馆有一个新的展览。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I heard"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "text": "Have you tried the coffee here? It's really good.",
+      "translation": "你试过这里的咖啡吗？真的很好喝。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Have you tried the coffee here"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "text": "The park is beautiful this time of year with all the flowers.",
+      "translation": "这个季节公园里的花很美。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The park"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "text": "The new restaurant on Main Street has great reviews.",
+      "translation": "主街上的新餐馆评价很好。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The new"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "text": "Do you have any weekend plans?",
+      "translation": "你周末有什么计划吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Do you"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "text": "This place has a nice vibe. Do you come here often?",
+      "translation": "这个地方氛围很好。你经常来这里吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "This place has a nice vibe"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "text": "Have you seen any good movies lately?",
+      "translation": "你最近看过什么好电影吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Have you"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "text": "What do you usually do to relax?",
+      "translation": "你通常怎么放松？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "What do"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

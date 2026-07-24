@@ -33,6 +33,7 @@ import aiC01TalkingWorkStudyCurrentLifeA2 from "./data/ai-c01-talking-work-study
 import aiC02DescribingWhereILiveA2 from "./data/ai-c02-describing-where-i-live-a2.json";
 import aiC03DescribingMyDailyRoutineA2 from "./data/ai-c03-describing-my-daily-routine-a2.json";
 import aiC04TalkingAboutMyWeekendAndFreeTimeA2 from "./data/ai-c04-talking-about-my-weekend-and-free-time-a2.json";
+import aiB02StartingSmallTalkNaturallyA2 from "./data/ai-b02-starting-small-talk-naturally-a2.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -203,6 +204,9 @@ const aiC03DescribingMyDailyRoutineA2Entries = aiC03DescribingMyDailyRoutineA2.e
 const aiC04TalkingAboutMyWeekendAndFreeTimeA2Entries = aiC04TalkingAboutMyWeekendAndFreeTimeA2.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/c04-talking-about-my-weekend-and-free-time-a2/${entry.audio}` })) as CourseEntry[];
+const aiB02StartingSmallTalkNaturallyA2Entries = aiB02StartingSmallTalkNaturallyA2.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/b02-starting-small-talk-naturally-a2/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -366,6 +370,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "c02-describing-where-i-live-a2", collectionId: "ai-practice", title: "Where I Live · A2", subtitle: `Everyday English · ${aiC02DescribingWhereILiveA2Entries.length} learning sentences`, description: "介绍住处、周边设施、生活便利与居住感受。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC02DescribingWhereILiveA2Entries },
   { id: "c03-describing-my-daily-routine-a2", collectionId: "ai-practice", title: "My Daily Routine · A2", subtitle: `Everyday English · ${aiC03DescribingMyDailyRoutineA2Entries.length} learning sentences`, description: "按时间顺序描述日常作息、工作安排与常见变化。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC03DescribingMyDailyRoutineA2Entries },
   { id: "c04-talking-about-my-weekend-and-free-time-a2", collectionId: "ai-practice", title: "Weekends & Free Time · A2", subtitle: `Everyday English · ${aiC04TalkingAboutMyWeekendAndFreeTimeA2Entries.length} learning sentences`, description: "谈论周末安排、休闲活动、偏好和理想的空闲时间。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiC04TalkingAboutMyWeekendAndFreeTimeA2Entries },
+  { id: "b02-starting-small-talk-naturally-a2", collectionId: "ai-practice", title: "Starting Small Talk · A2", subtitle: `Everyday English · ${aiB02StartingSmallTalkNaturallyA2Entries.length} learning sentences`, description: "用天气、环境、共同场合和轻松提问自然开启闲聊。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB02StartingSmallTalkNaturallyA2Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

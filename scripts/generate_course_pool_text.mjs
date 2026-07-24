@@ -18,14 +18,14 @@ for (let index = 0; index < args.length; index += 1) {
   options[{ "--from": "from", "--to": "to", "--model": "model", "--retries": "retries" }[key]] = key === "--retries" ? Number(value) : value;
 }
 const bands = ["entry", "entry", "entry", "targetBase", "targetBase", "targetBase", "targetBase", "targetCore", "targetCore", "targetCore", "targetCore", "targetCore", "stretch", "targetCore", "stretch", "stretch"];
-const ranges = [[5, 22], [5, 22], [5, 22], [6, 22], [7, 22], [7, 22], [7, 22], [8, 24], [8, 24], [8, 24], [8, 24], [8, 24], [10, 26], [8, 24], [10, 26], [10, 26]];
+const ranges = [[5, 22], [5, 22], [5, 22], [5, 22], [5, 22], [5, 22], [5, 22], [5, 24], [5, 24], [5, 24], [5, 24], [5, 24], [5, 26], [5, 24], [5, 26], [5, 26]];
 const sectionNames = ["建立任务", "补充关键信息", "处理回应与变化", "完成交流"];
 
 function slug(course) { return `${course.courseId.toLowerCase()}-${course.titleEn.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}-${course.targetLevel.toLowerCase()}`; }
 function envValue(text, name) { return text.split(/\r?\n/).find((line) => line.startsWith(`${name}=`))?.slice(name.length + 1)?.trim(); }
 async function key() { return process.env.OPENAI_API_KEY || envValue(await readFile(join(root, ".env.local"), "utf8"), "OPENAI_API_KEY") || (() => { throw new Error("OPENAI_API_KEY is required"); })(); }
 async function request(apiKey, messages, schema) {
-  const response = await fetch("https://api.openai.com/v1/chat/completions", { method: "POST", headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" }, body: JSON.stringify({ model: options.model, temperature: 0.25, response_format: { type: "json_schema", json_schema: { name: "wordloop_response", strict: true, schema } }, messages }) });
+  const response = await fetch("https://api.openai.com/v1/chat/completions", { method: "POST", headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" }, signal: AbortSignal.timeout(45_000), body: JSON.stringify({ model: options.model, temperature: 0.25, response_format: { type: "json_schema", json_schema: { name: "wordloop_response", strict: true, schema } }, messages }) });
   if (!response.ok) throw new Error(`OpenAI request failed (${response.status}): ${await response.text()}`);
   return JSON.parse((await response.json()).choices[0].message.content);
 }

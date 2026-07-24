@@ -1,0 +1,586 @@
+{
+  "courseId": "b02-starting-small-talk-naturally-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够根据共同环境开启轻松话题，并提出不会给对方压力的问题。",
+    "communicationGoals": [
+      "从天气、环境或正在发生的事情开始",
+      "对共同场合做简短自然的评论",
+      "分享一小段与话题相关的信息",
+      "提出简单、开放但不过度私人的问题"
+    ],
+    "coreChunks": [
+      "Lovely weather today",
+      "I noticed you're reading",
+      "Have you tried the",
+      "This place has a"
+    ],
+    "supportingVocabulary": [
+      "sunny",
+      "breezy",
+      "novel",
+      "café",
+      "vibe",
+      "interesting"
+    ],
+    "contentBoundaries": [
+      "不深入私人或敏感话题",
+      "不要求长时间延续对话",
+      "不把课程变成固定场景句库"
+    ],
+    "realWorldContexts": [
+      "Meeting someone at a coffee shop",
+      "Waiting in line at a bookstore",
+      "Attending a community event"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "从天气、环境或正在发生的事情开始",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "对共同场合做简短自然的评论",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "分享一小段与话题相关的信息",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "提出简单、开放但不过度私人的问题",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "Lovely weather today",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "从天气、环境或正在发生的事情开始"
+      ]
+    },
+    {
+      "chunk": "I noticed you're reading",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "对共同场合做简短自然的评论"
+      ]
+    },
+    {
+      "chunk": "Have you tried the",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "分享一小段与话题相关的信息"
+      ]
+    },
+    {
+      "chunk": "This place has a",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "提出简单、开放但不过度私人的问题"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "meaningTarget": "从天气、环境或正在发生的事情开始",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "meaningTarget": "从天气、环境或正在发生的事情开始",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "meaningTarget": "从天气、环境或正在发生的事情开始",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "从天气、环境或正在发生的事情开始",
+      "meaningTarget": "从天气、环境或正在发生的事情开始",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "meaningTarget": "对共同场合做简短自然的评论",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "meaningTarget": "对共同场合做简短自然的评论",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "meaningTarget": "对共同场合做简短自然的评论",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "对共同场合做简短自然的评论",
+      "meaningTarget": "对共同场合做简短自然的评论",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "meaningTarget": "分享一小段与话题相关的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "meaningTarget": "分享一小段与话题相关的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "meaningTarget": "分享一小段与话题相关的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "分享一小段与话题相关的信息",
+      "meaningTarget": "分享一小段与话题相关的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "meaningTarget": "提出简单、开放但不过度私人的问题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "meaningTarget": "提出简单、开放但不过度私人的问题",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "meaningTarget": "提出简单、开放但不过度私人的问题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "提出简单、开放但不过度私人的问题",
+      "meaningTarget": "提出简单、开放但不过度私人的问题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Lovely weather today",
+        "I noticed you're reading",
+        "Have you tried the",
+        "This place has a"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不深入私人或敏感话题",
+      "不要求长时间延续对话",
+      "不把课程变成固定场景句库"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

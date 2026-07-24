@@ -372,10 +372,10 @@ async function buildInventory() {
 
   const expected = {
     collections: 4,
-    courses: 36,
+    courses: 37,
     words: 570,
-    sentenceEntries: 932,
-    totalM4aFiles: 1502,
+    sentenceEntries: 948,
+    totalM4aFiles: 1518,
     palettes: 6,
   };
   for (const [key, value] of Object.entries(expected)) {
