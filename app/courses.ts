@@ -45,6 +45,7 @@ import aiA05CheckingInAndProvidingBookingInformationA2 from "./data/ai-a05-check
 import aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1 from "./data/ai-b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1.json";
 import aiB06ClarifyingMeaningAndCheckingUnderstandingB1 from "./data/ai-b06-clarifying-meaning-and-checking-understanding-b1.json";
 import aiB07RespondingNaturallyToNewsAndPersonalStoriesB1 from "./data/ai-b07-responding-naturally-to-news-and-personal-stories-b1.json";
+import aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1 from "./data/ai-a06-describing-symptoms-and-asking-basic-health-questions-b1.json";
 import { MODERN_FAMILY_S01E01_HIGHLIGHTS } from "./data/modern-family-s01e01-highlights";
 import { MODERN_FAMILY_S01E02_HIGHLIGHTS } from "./data/modern-family-s01e02-highlights";
 import { MODERN_FAMILY_S01E03_HIGHLIGHTS } from "./data/modern-family-s01e03-highlights";
@@ -251,6 +252,9 @@ const aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries = aiB06ClarifyingM
 const aiB07RespondingNaturallyToNewsAndPersonalStoriesB1Entries = aiB07RespondingNaturallyToNewsAndPersonalStoriesB1.entries
   .filter((entry) => entry.learnable && entry.audio)
   .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/b07-responding-naturally-to-news-and-personal-stories-b1/${entry.audio}` })) as CourseEntry[];
+const aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1Entries = aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1.entries
+  .filter((entry) => entry.learnable && entry.audio)
+  .map((entry) => ({ ...entry, audio: `${basePath}/courses/ai/a06-describing-symptoms-and-asking-basic-health-questions-b1/${entry.audio}` })) as CourseEntry[];
 
 const ieltsEntries: CourseEntry[] = WORDS.map(([word, translation, , phonetic]) => ({
   id: word,
@@ -426,6 +430,7 @@ export const COURSE_PACKAGES: readonly CoursePackage[] = [
   { id: "b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1", collectionId: "ai-practice", title: "Keep a Conversation Going · B1", subtitle: `Everyday English · ${aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries.length} learning sentences`, description: "追问、回应、延续话题并自然转换谈话方向。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB04KeepingAConversationGoingAndChangingTopicsSmoothlyB1Entries },
   { id: "b06-clarifying-meaning-and-checking-understanding-b1", collectionId: "ai-practice", title: "Clarify & Check Understanding · B1", subtitle: `Everyday English · ${aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries.length} learning sentences`, description: "询问词义、澄清信息并确认自己是否理解正确。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB06ClarifyingMeaningAndCheckingUnderstandingB1Entries },
   { id: "b07-responding-naturally-to-news-and-personal-stories-b1", collectionId: "ai-practice", title: "Respond to News & Stories · B1", subtitle: `Everyday English · ${aiB07RespondingNaturallyToNewsAndPersonalStoriesB1Entries.length} learning sentences`, description: "自然回应好消息、困难、意外和个人经历，并推动交流。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiB07RespondingNaturallyToNewsAndPersonalStoriesB1Entries },
+  { id: "a06-describing-symptoms-and-asking-basic-health-questions-b1", collectionId: "ai-practice", title: "Health Questions · B1", subtitle: `Everyday English · ${aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1Entries.length} learning sentences`, description: "描述症状、说明变化并向医疗人员询问基础信息。语音为 AI 合成。", kind: "sentence", practiceOrder: "sequential", entries: aiA06DescribingSymptomsAndAskingBasicHealthQuestionsB1Entries },
 ];
 
 export const COURSE_COLLECTIONS: readonly CourseCollection[] = [

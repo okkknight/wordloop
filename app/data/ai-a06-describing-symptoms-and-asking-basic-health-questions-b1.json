@@ -1,0 +1,169 @@
+{
+  "courseId": "a06-describing-symptoms-and-asking-basic-health-questions-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a06-001",
+      "text": "My throat feels sore.",
+      "translation": "我的喉咙感觉疼。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.304,
+      "duration": 2.304
+    },
+    {
+      "id": "ai-a06-002",
+      "text": "I have a pain here in my lower back.",
+      "translation": "我这里的下背部有疼痛。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-a06-003",
+      "text": "My head is pounding.",
+      "translation": "我的头在剧烈地疼。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.219,
+      "duration": 2.219
+    },
+    {
+      "id": "ai-a06-004",
+      "text": "My knee is swollen.",
+      "translation": "我的膝盖肿了。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.963,
+      "duration": 1.963
+    },
+    {
+      "id": "ai-a06-005",
+      "text": "The headache started last night.",
+      "translation": "头痛是昨晚开始的。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-a06-006",
+      "text": "It started two days ago after I ate.",
+      "translation": "两天前吃完东西后开始的。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-a06-007",
+      "text": "The fever has been going on for three days.",
+      "translation": "发烧已经持续三天了。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a06-008",
+      "text": "The pain is mild but constant.",
+      "translation": "疼痛是轻微的但持续不断。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.072,
+      "duration": 3.072
+    },
+    {
+      "id": "ai-a06-009",
+      "text": "The swelling has gone down a bit.",
+      "translation": "肿胀已经消退了一些。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a06-010",
+      "text": "The pain is getting worse despite the medication.",
+      "translation": "尽管吃了药，疼痛还是在加重。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-a06-011",
+      "text": "I've tried using a cold compress.",
+      "translation": "我试过用冷敷。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a06-012",
+      "text": "Resting seems to help a little.",
+      "translation": "休息似乎有一点帮助。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-a06-013",
+      "text": "I'm not allergic to any medications.",
+      "translation": "我对任何药物都不过敏。",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a06-014",
+      "text": "What should I do next to feel better?",
+      "translation": "接下来我该怎么做才能感觉好些？",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.133,
+      "duration": 2.133
+    },
+    {
+      "id": "ai-a06-015",
+      "text": "Can I take ibuprofen for this?",
+      "translation": "我可以吃布洛芬吗？",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a06-016",
+      "text": "Should I see a doctor if it doesn't improve?",
+      "translation": "如果没有好转，我应该去看医生吗？",
+      "audio": "audio/a06-describing-symptoms-and-asking-basic-health-questions-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    }
+  ]
+}

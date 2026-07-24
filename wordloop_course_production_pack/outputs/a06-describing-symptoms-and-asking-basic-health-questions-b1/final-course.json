@@ -1,0 +1,261 @@
+{
+  "courseId": "a06-describing-symptoms-and-asking-basic-health-questions-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "text": "My throat feels sore.",
+      "translation": "我的喉咙感觉疼。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "My throat"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "text": "I have a pain here in my lower back.",
+      "translation": "我这里的下背部有疼痛。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I have a pain here"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "text": "My head is pounding.",
+      "translation": "我的头在剧烈地疼。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "My head"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "text": "My knee is swollen.",
+      "translation": "我的膝盖肿了。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "My knee"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "text": "The headache started last night.",
+      "translation": "头痛是昨晚开始的。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The headache"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "text": "It started two days ago after I ate.",
+      "translation": "两天前吃完东西后开始的。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "It started two days ago"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "text": "The fever has been going on for three days.",
+      "translation": "发烧已经持续三天了。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The fever"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "text": "The pain is mild but constant.",
+      "translation": "疼痛是轻微的但持续不断。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The pain"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "text": "The swelling has gone down a bit.",
+      "translation": "肿胀已经消退了一些。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The swelling"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "text": "The pain is getting worse despite the medication.",
+      "translation": "尽管吃了药，疼痛还是在加重。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The pain is getting worse"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "text": "I've tried using a cold compress.",
+      "translation": "我试过用冷敷。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I've tried"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "text": "Resting seems to help a little.",
+      "translation": "休息似乎有一点帮助。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Resting seems"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "text": "I'm not allergic to any medications.",
+      "translation": "我对任何药物都不过敏。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I'm not"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "text": "What should I do next to feel better?",
+      "translation": "接下来我该怎么做才能感觉好些？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "What should I do next"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "text": "Can I take ibuprofen for this?",
+      "translation": "我可以吃布洛芬吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Can I"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "text": "Should I see a doctor if it doesn't improve?",
+      "translation": "如果没有好转，我应该去看医生吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Should I"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}
