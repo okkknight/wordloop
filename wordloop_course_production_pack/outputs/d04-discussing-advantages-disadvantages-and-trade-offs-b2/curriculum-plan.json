@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "D04",
+      "titleZh": "讨论优缺点与现实取舍",
+      "titleEn": "Discussing Advantages, Disadvantages, and Trade-Offs",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够讨论一个选择的收益和代价，说明适用条件，并形成不绝对的综合判断。",
+      "communicationGoals": [
+        "说明一个选择最明显的好处",
+        "说明成本、限制和潜在负面影响",
+        "分析它对不同人或不同情境是否合适",
+        "表达自己愿意接受什么代价以及最终判断"
+      ],
+      "abilityTags": [
+        "D4",
+        "D3",
+        "D"
+      ],
+      "selectionReason": "课程池 releaseOrder 34 的冻结课程。",
+      "distinctiveValue": "把简单比较提升为现实权衡，训练更成熟的判断表达。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "说明一个选择最明显的好处",
+      "说明成本、限制和潜在负面影响",
+      "分析它对不同人或不同情境是否合适",
+      "表达自己愿意接受什么代价以及最终判断"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不只生成正反两张清单",
+      "不进入正式政策或学术分析",
+      "不要求回应具体对手观点"
+    ]
+  }
+}

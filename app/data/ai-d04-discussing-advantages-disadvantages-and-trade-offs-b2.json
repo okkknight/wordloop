@@ -1,0 +1,169 @@
+{
+  "courseId": "d04-discussing-advantages-disadvantages-and-trade-offs-b2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-d04-001",
+      "text": "The main benefit is the cost savings.",
+      "translation": "主要的好处是节省成本。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-d04-002",
+      "text": "One advantage is that it's very convenient.",
+      "translation": "一个优点是它非常方便。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.115,
+      "duration": 3.115
+    },
+    {
+      "id": "ai-d04-003",
+      "text": "It offers great flexibility.",
+      "translation": "它提供了很大的灵活性。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-d04-004",
+      "text": "The best part is the ease of use.",
+      "translation": "最好的部分是使用方便。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-d04-005",
+      "text": "The initial cost can be quite high.",
+      "translation": "初始成本可能相当高。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-d04-006",
+      "text": "A downside might be the limited availability.",
+      "translation": "一个缺点可能是有限的可用性。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-d04-007",
+      "text": "It could lead to increased stress.",
+      "translation": "这可能导致压力增加。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-d04-008",
+      "text": "It might not suit everyone's needs.",
+      "translation": "它可能不适合每个人的需求。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-d04-009",
+      "text": "For large families, it might be too small.",
+      "translation": "对于大家庭来说，这可能太小了。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-d04-010",
+      "text": "In this situation, it's better to choose quality over quantity.",
+      "translation": "在这种情况下，最好选择质量而不是数量。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.011,
+      "duration": 4.011
+    },
+    {
+      "id": "ai-d04-011",
+      "text": "For beginners, this is a good option.",
+      "translation": "对于初学者来说，这是一个不错的选择。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-d04-012",
+      "text": "For those on a budget, this is ideal.",
+      "translation": "对于预算有限的人来说，这是理想的选择。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-d04-013",
+      "text": "I'm okay with the extra effort if it means better results.",
+      "translation": "如果能带来更好的结果，我可以接受额外的努力。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-d04-014",
+      "text": "I'm willing to accept some delays for higher quality.",
+      "translation": "我愿意接受一些延误以获得更高的质量。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-d04-015",
+      "text": "Ultimately, I think the benefits outweigh the drawbacks.",
+      "translation": "最终，我认为好处大于缺点。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-d04-016",
+      "text": "Overall, I'm satisfied with the decision despite the challenges.",
+      "translation": "总的来说，尽管有挑战，我对这个决定感到满意。",
+      "audio": "audio/d04-discussing-advantages-disadvantages-and-trade-offs-b2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.248,
+      "duration": 5.248
+    }
+  ]
+}

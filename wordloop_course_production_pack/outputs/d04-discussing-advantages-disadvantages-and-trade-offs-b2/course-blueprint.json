@@ -1,0 +1,589 @@
+{
+  "courseId": "d04-discussing-advantages-disadvantages-and-trade-offs-b2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B2",
+    "learnerOutcome": "能够讨论一个选择的收益和代价，说明适用条件，并形成不绝对的综合判断。",
+    "communicationGoals": [
+      "说明一个选择最明显的好处",
+      "说明成本、限制和潜在负面影响",
+      "分析它对不同人或不同情境是否合适",
+      "表达自己愿意接受什么代价以及最终判断"
+    ],
+    "coreChunks": [
+      "One advantage is that",
+      "A downside might be",
+      "In this situation",
+      "I'm willing to accept"
+    ],
+    "supportingVocabulary": [
+      "benefit",
+      "drawback",
+      "trade-off",
+      "compromise",
+      "evaluate",
+      "consideration",
+      "context",
+      "impact",
+      "sacrifice"
+    ],
+    "contentBoundaries": [
+      "不只生成正反两张清单",
+      "不进入正式政策或学术分析",
+      "不要求回应具体对手观点"
+    ],
+    "realWorldContexts": [
+      "Choosing between remote work and office work",
+      "Deciding on a budget-friendly vacation versus a luxury trip",
+      "Evaluating the pros and cons of buying a new car versus a used one"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B2-",
+    "coreLevel": "B2",
+    "stretchLevel": "B2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "说明一个选择最明显的好处",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "说明成本、限制和潜在负面影响",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "分析它对不同人或不同情境是否合适",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "表达自己愿意接受什么代价以及最终判断",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "One advantage is that",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "说明一个选择最明显的好处"
+      ]
+    },
+    {
+      "chunk": "A downside might be",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "说明成本、限制和潜在负面影响"
+      ]
+    },
+    {
+      "chunk": "In this situation",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "分析它对不同人或不同情境是否合适"
+      ]
+    },
+    {
+      "chunk": "I'm willing to accept",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "表达自己愿意接受什么代价以及最终判断"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "说明一个选择最明显的好处",
+      "meaningTarget": "说明一个选择最明显的好处",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "说明一个选择最明显的好处",
+      "meaningTarget": "说明一个选择最明显的好处",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "说明一个选择最明显的好处",
+      "meaningTarget": "说明一个选择最明显的好处",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "说明一个选择最明显的好处",
+      "meaningTarget": "说明一个选择最明显的好处",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明成本、限制和潜在负面影响",
+      "meaningTarget": "说明成本、限制和潜在负面影响",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明成本、限制和潜在负面影响",
+      "meaningTarget": "说明成本、限制和潜在负面影响",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明成本、限制和潜在负面影响",
+      "meaningTarget": "说明成本、限制和潜在负面影响",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明成本、限制和潜在负面影响",
+      "meaningTarget": "说明成本、限制和潜在负面影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "分析它对不同人或不同情境是否合适",
+      "meaningTarget": "分析它对不同人或不同情境是否合适",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "分析它对不同人或不同情境是否合适",
+      "meaningTarget": "分析它对不同人或不同情境是否合适",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "分析它对不同人或不同情境是否合适",
+      "meaningTarget": "分析它对不同人或不同情境是否合适",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "分析它对不同人或不同情境是否合适",
+      "meaningTarget": "分析它对不同人或不同情境是否合适",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "表达自己愿意接受什么代价以及最终判断",
+      "meaningTarget": "表达自己愿意接受什么代价以及最终判断",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "表达自己愿意接受什么代价以及最终判断",
+      "meaningTarget": "表达自己愿意接受什么代价以及最终判断",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "表达自己愿意接受什么代价以及最终判断",
+      "meaningTarget": "表达自己愿意接受什么代价以及最终判断",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "表达自己愿意接受什么代价以及最终判断",
+      "meaningTarget": "表达自己愿意接受什么代价以及最终判断",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "One advantage is that",
+        "A downside might be",
+        "In this situation",
+        "I'm willing to accept"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不只生成正反两张清单",
+        "不进入正式政策或学术分析",
+        "不要求回应具体对手观点"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不只生成正反两张清单",
+      "不进入正式政策或学术分析",
+      "不要求回应具体对手观点"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

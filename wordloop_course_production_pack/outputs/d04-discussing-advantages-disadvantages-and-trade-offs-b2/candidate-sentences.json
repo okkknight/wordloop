@@ -1,0 +1,618 @@
+{
+  "courseId": "d04-discussing-advantages-disadvantages-and-trade-offs-b2",
+  "candidateCountPerSlot": 2,
+  "slots": [
+    {
+      "slot": 1,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s01-a",
+          "text": "The main benefit is the cost savings.",
+          "translation": "主要的好处是节省成本。",
+          "usedChunks": [
+            "The main"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s01-b",
+          "text": "It really helps with time management.",
+          "translation": "这确实有助于时间管理。",
+          "usedChunks": [
+            "It really"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s02-a",
+          "text": "One advantage is that it's very convenient.",
+          "translation": "一个优点是它非常方便。",
+          "usedChunks": [
+            "One advantage is that"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s02-b",
+          "text": "One advantage is that it saves a lot of time.",
+          "translation": "一个优点是它节省了很多时间。",
+          "usedChunks": [
+            "One advantage is that"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s03-a",
+          "text": "It offers great flexibility.",
+          "translation": "它提供了很大的灵活性。",
+          "usedChunks": [
+            "It offers"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 4,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s03-b",
+          "text": "The biggest plus is the increased efficiency.",
+          "translation": "最大的优点是提高了效率。",
+          "usedChunks": [
+            "The biggest"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s04-a",
+          "text": "The best part is the ease of use.",
+          "translation": "最好的部分是使用方便。",
+          "usedChunks": [
+            "The best"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s04-b",
+          "text": "Its greatest strength is reliability.",
+          "translation": "它最大的优势是可靠性。",
+          "usedChunks": [
+            "Its greatest"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 5,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s05-a",
+          "text": "The initial cost can be quite high.",
+          "translation": "初始成本可能相当高。",
+          "usedChunks": [
+            "The initial"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s05-b",
+          "text": "It may require a lot of maintenance.",
+          "translation": "它可能需要大量维护。",
+          "usedChunks": [
+            "It may"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s06-a",
+          "text": "A downside might be the limited availability.",
+          "translation": "一个缺点可能是有限的可用性。",
+          "usedChunks": [
+            "A downside might be"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s06-b",
+          "text": "A downside might be the steep learning curve.",
+          "translation": "一个缺点可能是陡峭的学习曲线。",
+          "usedChunks": [
+            "A downside might be"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s07-a",
+          "text": "It could lead to increased stress.",
+          "translation": "这可能导致压力增加。",
+          "usedChunks": [
+            "It could"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s07-b",
+          "text": "There might be some privacy concerns.",
+          "translation": "可能会有一些隐私问题。",
+          "usedChunks": [
+            "There might"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s08-a",
+          "text": "It might not suit everyone's needs.",
+          "translation": "它可能不适合每个人的需求。",
+          "usedChunks": [
+            "It might"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s08-b",
+          "text": "Some people might find it too complex.",
+          "translation": "有些人可能觉得它太复杂了。",
+          "usedChunks": [
+            "Some people"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s09-a",
+          "text": "For large families, it might be too small.",
+          "translation": "对于大家庭来说，这可能太小了。",
+          "usedChunks": [
+            "For large"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s09-b",
+          "text": "In urban areas, it could be more practical.",
+          "translation": "在城市地区，这可能更实用。",
+          "usedChunks": [
+            "In urban"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s10-a",
+          "text": "In this situation, it's better to choose quality over quantity.",
+          "translation": "在这种情况下，最好选择质量而不是数量。",
+          "usedChunks": [
+            "In this situation, it's better to"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s10-b",
+          "text": "In this situation, it's better to wait for a better opportunity.",
+          "translation": "在这种情况下，最好等待一个更好的机会。",
+          "usedChunks": [
+            "In this situation, it's better to"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s11-a",
+          "text": "For beginners, this is a good option.",
+          "translation": "对于初学者来说，这是一个不错的选择。",
+          "usedChunks": [
+            "For beginners,"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s11-b",
+          "text": "In a crisis, quick decisions are crucial.",
+          "translation": "在危机中，快速决策至关重要。",
+          "usedChunks": [
+            "In a"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s12-a",
+          "text": "For those on a budget, this is ideal.",
+          "translation": "对于预算有限的人来说，这是理想的选择。",
+          "usedChunks": [
+            "For those"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s12-b",
+          "text": "In a competitive market, innovation is key.",
+          "translation": "在竞争激烈的市场中，创新是关键。",
+          "usedChunks": [
+            "In a"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s13-a",
+          "text": "I'm okay with the extra effort if it means better results.",
+          "translation": "如果能带来更好的结果，我可以接受额外的努力。",
+          "usedChunks": [
+            "I'm okay"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s13-b",
+          "text": "I'm prepared to compromise on speed for accuracy.",
+          "translation": "我准备在速度上妥协以换取准确性。",
+          "usedChunks": [
+            "I'm prepared"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s14-a",
+          "text": "I'm willing to accept some delays for higher quality.",
+          "translation": "我愿意接受一些延误以获得更高的质量。",
+          "usedChunks": [
+            "I'm willing to accept"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s14-b",
+          "text": "I'm willing to accept the higher cost for better service.",
+          "translation": "我愿意接受更高的成本以获得更好的服务。",
+          "usedChunks": [
+            "I'm willing to accept"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s15-a",
+          "text": "Ultimately, I think the benefits outweigh the drawbacks.",
+          "translation": "最终，我认为好处大于缺点。",
+          "usedChunks": [
+            "Ultimately, I"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s15-b",
+          "text": "In the end, it's a trade-off I'm comfortable with.",
+          "translation": "最后，这是我能接受的权衡。",
+          "usedChunks": [
+            "In the"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s16-a",
+          "text": "Overall, I'm satisfied with the decision despite the challenges.",
+          "translation": "总的来说，尽管有挑战，我对这个决定感到满意。",
+          "usedChunks": [
+            "Overall, I'm"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        },
+        {
+          "candidateId": "s16-b",
+          "text": "All things considered, it's a fair compromise.",
+          "translation": "综上所述，这是一个公平的妥协。",
+          "usedChunks": [
+            "All things"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于课程目标所对应的真实成人交流。"
+        }
+      ]
+    }
+  ],
+  "generationReview": {
+    "coverageComplete": true,
+    "warnings": []
+  }
+}
