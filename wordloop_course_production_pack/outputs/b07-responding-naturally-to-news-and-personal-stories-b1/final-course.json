@@ -1,0 +1,261 @@
+{
+  "courseId": "b07-responding-naturally-to-news-and-personal-stories-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "text": "That's fantastic news!",
+      "translation": "那真是太棒的消息了！",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "That's fantastic"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "text": "That's wonderful to hear. Congratulations!",
+      "translation": "听到这个消息真好。恭喜！",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "That's wonderful to hear"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "text": "I'm thrilled for you!",
+      "translation": "我为你感到兴奋！",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I'm thrilled"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "text": "How exciting!",
+      "translation": "多么令人兴奋啊！",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "How exciting!"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "text": "That's tough to deal with.",
+      "translation": "那真是难以应对。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "That's tough"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "text": "I'm sorry to hear that. Is there anything I can do?",
+      "translation": "听到这个消息我很遗憾。我能帮上什么忙吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I'm sorry to hear that"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "text": "That's really unfortunate.",
+      "translation": "那真是不幸。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "That's really"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "text": "That sounds really challenging.",
+      "translation": "听起来真是个挑战。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "That sounds"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "text": "That's quite unexpected!",
+      "translation": "那真是出乎意料！",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "That's quite"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "text": "Wow, that's surprising! How did that happen?",
+      "translation": "哇，那真让人惊讶！这是怎么发生的？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Wow, that's surprising"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "text": "That's really something!",
+      "translation": "那真是了不起！",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "That's really"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "text": "That's fascinating!",
+      "translation": "那真是太有趣了！",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "That's fascinating!"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "text": "I understand how you feel. What are you thinking of doing next?",
+      "translation": "我理解你的感受。你接下来打算怎么做？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I understand"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "text": "Tell me more about that. I'm really interested.",
+      "translation": "告诉我更多关于这件事的细节。我真的很感兴趣。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Tell me more about that"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "text": "I can relate to that. What do you think will help?",
+      "translation": "我能理解这种感受。你觉得什么会有帮助？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I can"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "text": "I get where you're coming from. What are your thoughts on it now?",
+      "translation": "我理解你的出发点。你现在对此有什么想法？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I get"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

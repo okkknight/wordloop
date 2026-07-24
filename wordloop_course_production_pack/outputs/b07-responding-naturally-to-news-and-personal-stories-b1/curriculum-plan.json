@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B07",
+      "titleZh": "自然回应消息和个人分享",
+      "titleEn": "Responding Naturally to News and Personal Stories",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够根据好消息、坏消息、意外信息和个人经历，作出合适回应并继续交流。",
+      "communicationGoals": [
+        "回应成功、机会和其他好消息",
+        "回应失望、困难和普通坏消息",
+        "回应令人意外或有趣的信息",
+        "表达共情并提出不冒犯的后续问题"
+      ],
+      "abilityTags": [
+        "B4",
+        "B2",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 17 的冻结课程。",
+      "distinctiveValue": "训练根据内容选择回应，而不是用同一个‘That’s great’应付所有分享。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "回应成功、机会和其他好消息",
+      "回应失望、困难和普通坏消息",
+      "回应令人意外或有趣的信息",
+      "表达共情并提出不冒犯的后续问题"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不处理严重创伤和危机安慰",
+      "不扩展成关系修复和道歉",
+      "不只堆叠感叹词或固定短语"
+    ]
+  }
+}

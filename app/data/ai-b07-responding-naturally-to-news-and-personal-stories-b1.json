@@ -1,0 +1,169 @@
+{
+  "courseId": "b07-responding-naturally-to-news-and-personal-stories-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-b07-001",
+      "text": "That's fantastic news!",
+      "translation": "那真是太棒的消息了！",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.005,
+      "duration": 2.005
+    },
+    {
+      "id": "ai-b07-002",
+      "text": "That's wonderful to hear. Congratulations!",
+      "translation": "听到这个消息真好。恭喜！",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    },
+    {
+      "id": "ai-b07-003",
+      "text": "I'm thrilled for you!",
+      "translation": "我为你感到兴奋！",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.963,
+      "duration": 1.963
+    },
+    {
+      "id": "ai-b07-004",
+      "text": "How exciting!",
+      "translation": "多么令人兴奋啊！",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.451,
+      "duration": 1.451
+    },
+    {
+      "id": "ai-b07-005",
+      "text": "That's tough to deal with.",
+      "translation": "那真是难以应对。",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-b07-006",
+      "text": "I'm sorry to hear that. Is there anything I can do?",
+      "translation": "听到这个消息我很遗憾。我能帮上什么忙吗？",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.309,
+      "duration": 4.309
+    },
+    {
+      "id": "ai-b07-007",
+      "text": "That's really unfortunate.",
+      "translation": "那真是不幸。",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-b07-008",
+      "text": "That sounds really challenging.",
+      "translation": "听起来真是个挑战。",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.133,
+      "duration": 2.133
+    },
+    {
+      "id": "ai-b07-009",
+      "text": "That's quite unexpected!",
+      "translation": "那真是出乎意料！",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.219,
+      "duration": 2.219
+    },
+    {
+      "id": "ai-b07-010",
+      "text": "Wow, that's surprising! How did that happen?",
+      "translation": "哇，那真让人惊讶！这是怎么发生的？",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-b07-011",
+      "text": "That's really something!",
+      "translation": "那真是了不起！",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.005,
+      "duration": 2.005
+    },
+    {
+      "id": "ai-b07-012",
+      "text": "That's fascinating!",
+      "translation": "那真是太有趣了！",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.664,
+      "duration": 1.664
+    },
+    {
+      "id": "ai-b07-013",
+      "text": "I understand how you feel. What are you thinking of doing next?",
+      "translation": "我理解你的感受。你接下来打算怎么做？",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.565,
+      "duration": 4.565
+    },
+    {
+      "id": "ai-b07-014",
+      "text": "Tell me more about that. I'm really interested.",
+      "translation": "告诉我更多关于这件事的细节。我真的很感兴趣。",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.499,
+      "duration": 3.499
+    },
+    {
+      "id": "ai-b07-015",
+      "text": "I can relate to that. What do you think will help?",
+      "translation": "我能理解这种感受。你觉得什么会有帮助？",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.669,
+      "duration": 3.669
+    },
+    {
+      "id": "ai-b07-016",
+      "text": "I get where you're coming from. What are your thoughts on it now?",
+      "translation": "我理解你的出发点。你现在对此有什么想法？",
+      "audio": "audio/b07-responding-naturally-to-news-and-personal-stories-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+{
+  "courseId": "b07-responding-naturally-to-news-and-personal-stories-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够根据好消息、坏消息、意外信息和个人经历，作出合适回应并继续交流。",
+    "communicationGoals": [
+      "回应成功、机会和其他好消息",
+      "回应失望、困难和普通坏消息",
+      "回应令人意外或有趣的信息",
+      "表达共情并提出不冒犯的后续问题"
+    ],
+    "coreChunks": [
+      "That's wonderful to hear",
+      "I'm sorry to hear",
+      "Wow",
+      "Tell me more about"
+    ],
+    "supportingVocabulary": [
+      "congratulations",
+      "unfortunately",
+      "unexpected",
+      "empathy",
+      "challenge",
+      "opportunity"
+    ],
+    "contentBoundaries": [
+      "不处理严重创伤和危机安慰",
+      "不扩展成关系修复和道歉",
+      "不只堆叠感叹词或固定短语"
+    ],
+    "realWorldContexts": [
+      "A friend shares they got a new job",
+      "A colleague mentions a project setback",
+      "A family member talks about an unusual event"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "回应成功、机会和其他好消息",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "回应失望、困难和普通坏消息",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "回应令人意外或有趣的信息",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "表达共情并提出不冒犯的后续问题",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "That's wonderful to hear",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "回应成功、机会和其他好消息"
+      ]
+    },
+    {
+      "chunk": "I'm sorry to hear",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "回应失望、困难和普通坏消息"
+      ]
+    },
+    {
+      "chunk": "Wow",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "回应令人意外或有趣的信息"
+      ]
+    },
+    {
+      "chunk": "Tell me more about",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "表达共情并提出不冒犯的后续问题"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "meaningTarget": "回应成功、机会和其他好消息",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "meaningTarget": "回应成功、机会和其他好消息",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "meaningTarget": "回应成功、机会和其他好消息",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "回应成功、机会和其他好消息",
+      "meaningTarget": "回应成功、机会和其他好消息",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "meaningTarget": "回应失望、困难和普通坏消息",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "meaningTarget": "回应失望、困难和普通坏消息",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "meaningTarget": "回应失望、困难和普通坏消息",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "回应失望、困难和普通坏消息",
+      "meaningTarget": "回应失望、困难和普通坏消息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "meaningTarget": "回应令人意外或有趣的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "meaningTarget": "回应令人意外或有趣的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "meaningTarget": "回应令人意外或有趣的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "回应令人意外或有趣的信息",
+      "meaningTarget": "回应令人意外或有趣的信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "meaningTarget": "表达共情并提出不冒犯的后续问题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "meaningTarget": "表达共情并提出不冒犯的后续问题",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "meaningTarget": "表达共情并提出不冒犯的后续问题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "表达共情并提出不冒犯的后续问题",
+      "meaningTarget": "表达共情并提出不冒犯的后续问题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "That's wonderful to hear",
+        "I'm sorry to hear",
+        "Wow",
+        "Tell me more about"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理严重创伤和危机安慰",
+        "不扩展成关系修复和道歉",
+        "不只堆叠感叹词或固定短语"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不处理严重创伤和危机安慰",
+      "不扩展成关系修复和道歉",
+      "不只堆叠感叹词或固定短语"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}
