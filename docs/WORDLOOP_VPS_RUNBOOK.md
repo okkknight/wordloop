@@ -299,7 +299,24 @@ ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && ls -la'
 - `package-lock.json`
 - 其他运行时依赖的配置文件
 
-### 7.2 建议发布步骤
+`app/data/` 的课程 manifest 与 `public/courses/` 的实际音频属于运行时内容，必须随课程发布同步；不要因根目录的 `data/` 被排除而误以为可以省略它们。
+
+### 7.2 同步边界：只上传运行时需要的内容
+
+VPS 磁盘有限。发布命令必须只同步当前 `vinext dev` 和 Node API 的运行时依赖，不要把本地生产、测试、iOS 或验收材料当作线上依赖上传。
+
+下列目录**不得同步到 VPS**（即使本地存在）：
+
+- `ios/`：Xcode 工程、SwiftPM/DerivedData 与 App Store 工作材料；Web 服务不读取它。
+- `docs/`、`tests/`、`wordloop_course_production_pack/`、`course_topic/`：说明、测试与课程生产过程材料；线上只读取已注册的 manifest 和音频。
+- `modernfamily/`：原始整集 MP3 与字幕；线上只需要已切分的 `public/courses/modern-family/` 音频。
+- `.visual-qa/`、`.playwright-cli/`、`work/`、`outputs/`、`coverage/`：视觉验收、浏览器会话、临时工作区和测试输出。
+- `.git/`、本地依赖/构建缓存（`node_modules/`、`.wrangler/`、`.vinext/`、`dist/`、`.cache/`、`.turbo/`、`.next/`）。其中 VPS 的 `node_modules/` 仅由远端 `npm install` 生成。
+- 密钥与本地环境文件（`.env*`、`.dev.vars`、`.openai/`）。VPS 使用服务器已有的环境文件，绝不从本地覆盖。
+
+以下目录必须在 VPS **保留但不得由 rsync 覆盖或删除**：`data/`（SQLite 学习进度）、`tmp/`、`.wrangler/`、`.vinext/` 和服务器环境文件。它们是运行时状态，不是待上传源文件。
+
+### 7.3 建议发布步骤
 
 如果继续沿用当前模式，推荐按下面的顺序发布：
 
@@ -308,13 +325,27 @@ cd /Users/linpeiwen/knightspace/wordloop
 npm run build
 rsync -a --delete \
   --exclude '/.git' \
+  --exclude '/.env*' \
   --exclude '/.dev.vars' \
+  --exclude '/.openai' \
   --exclude '/data' \
   --exclude '/tmp' \
   --exclude '/node_modules' \
   --exclude '/.wrangler' \
   --exclude '/.vinext' \
   --exclude '/dist' \
+  --exclude '/.cache' \
+  --exclude '/.turbo' \
+  --exclude '/.next' \
+  --exclude '/ios' \
+  --exclude '/docs' \
+  --exclude '/tests' \
+  --exclude '/wordloop_course_production_pack' \
+  --exclude '/course_topic' \
+  --exclude '/modernfamily' \
+  --exclude '/.visual-qa' \
+  --exclude '/.playwright-cli' \
+  --exclude '/coverage' \
   --exclude '/work' \
   --exclude '/outputs' \
   ./ root@89.208.242.44:/opt/boringmax/wordloop/
@@ -326,6 +357,7 @@ ssh root@89.208.242.44 'systemctl restart wordloop.service wordloop-api.service 
 
 - `npm run build` 用于先在本地做一次完整校验
 - `rsync` 同步的是源码，不是单独静态目录
+- 发布前先按 7.2 核对新增目录；没有运行时读取路径的目录一律加入根目录排除规则，而不是“为了完整”上传。
 - 排除规则必须以 `/` 开头，使其只匹配仓库根目录；特别是不能写 `--exclude data`，否则会误排除 `app/data` 内的课程 manifest。
 - 需要保留 VPS 的 `data/` 学习进度库、`.dev.vars`、`tmp/` 和 `.wrangler/` 运行时目录；前端服务用户为 `shipnow`，若重建运行时目录需将其所有权设为 `shipnow:shipnow`。
 - 如果依赖未变，可按需跳过线上 `npm install`

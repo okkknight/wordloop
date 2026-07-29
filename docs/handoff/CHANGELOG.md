@@ -2,6 +2,11 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-30 · VPS deployment sync boundary documented
+
+- `WORDLOOP_VPS_RUNBOOK.md` 现明确只同步 Web/API 运行时源码、manifest 和课程音频；`ios/`、生产材料、原始影视素材、验收文件、测试、缓存和本地环境文件不得上传到 VPS。
+- 新增根目录锚定的 `rsync` 排除清单，并说明 `data/`、`tmp/`、`.wrangler/`、`.vinext/` 与服务器环境文件是远端运行状态，必须保留且不应由 rsync 覆盖。
+
 ## 2026-07-24 · Web, VPS and iOS repeat threshold aligned to 15, pending independent review
 
 - 按产品决定将 TypeScript `REPEAT_PASS_SCORE` 与 Swift `RepeatScorer.passScore` 从 20 统一调整为 15；句子 60% 单词覆盖率及其余评分规则不变。
