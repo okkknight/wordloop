@@ -314,7 +314,7 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(progressRoute, /payload\.completeCourse === true/);
   assert.match(schema, /courseCompletionCounts/);
   assert.match(completionMigration, /course_completion_events/);
-  assert.match(page, /const PASS_SCORE = 20/);
+  assert.match(page, /const PASS_SCORE = 15/);
   assert.match(page, /sentenceIndexRef\.current = target\.index/);
   assert.match(page, /wordIndexRef\.current = target\.index/);
   assert.match(page, /<span>COURSE<\/span>/);
