@@ -2,6 +2,11 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-07-30 · VPS deployment sync boundary documented
+
+- `WORDLOOP_VPS_RUNBOOK.md` 现明确只同步 Web/API 运行时源码、manifest 和课程音频；`ios/`、生产材料、原始影视素材、验收文件、测试、缓存和本地环境文件不得上传到 VPS。
+- 新增根目录锚定的 `rsync` 排除清单，并说明 `data/`、`tmp/`、`.wrangler/`、`.vinext/` 与服务器环境文件是远端运行状态，必须保留且不应由 rsync 覆盖。
+
 ## 2026-07-15 · iOS implementation plan
 
 - 新增 [`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)，把迁移规格展开为 P0–P9 顺序路线图和 CP-00–CP-25 提交检查点。
