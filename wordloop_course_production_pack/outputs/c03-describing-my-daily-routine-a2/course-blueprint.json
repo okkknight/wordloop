@@ -1,0 +1,590 @@
+{
+  "courseId": "c03-describing-my-daily-routine-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够按照时间顺序描述工作日的主要活动、频率和常见变化。",
+    "communicationGoals": [
+      "描述起床、早餐和出门前的活动",
+      "描述工作或学习时段的主要安排",
+      "描述下班、晚饭和晚间活动",
+      "说明频率、偶尔变化和周中差异"
+    ],
+    "coreChunks": [
+      "I usually wake up",
+      "For breakfast",
+      "I start work around",
+      "In the evening"
+    ],
+    "supportingVocabulary": [
+      "routine",
+      "schedule",
+      "habit",
+      "occasionally",
+      "typically",
+      "weekday",
+      "weekend",
+      "variation",
+      "activity",
+      "frequency"
+    ],
+    "contentBoundaries": [
+      "不解释复杂的习惯形成原因",
+      "不讨论长期目标和自我改造",
+      "不写成精确到每分钟的流水账"
+    ],
+    "realWorldContexts": [
+      "Discussing daily routines with a language partner",
+      "Writing a simple diary entry about a typical day",
+      "Explaining your daily schedule to a new friend"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "描述起床、早餐和出门前的活动",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "描述工作或学习时段的主要安排",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "描述下班、晚饭和晚间活动",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "说明频率、偶尔变化和周中差异",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I usually wake up",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "描述起床、早餐和出门前的活动"
+      ]
+    },
+    {
+      "chunk": "For breakfast",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "描述工作或学习时段的主要安排"
+      ]
+    },
+    {
+      "chunk": "I start work around",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "描述下班、晚饭和晚间活动"
+      ]
+    },
+    {
+      "chunk": "In the evening",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "说明频率、偶尔变化和周中差异"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "meaningTarget": "描述起床、早餐和出门前的活动",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "meaningTarget": "描述起床、早餐和出门前的活动",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "meaningTarget": "描述起床、早餐和出门前的活动",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "meaningTarget": "描述起床、早餐和出门前的活动",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "meaningTarget": "描述工作或学习时段的主要安排",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "meaningTarget": "描述工作或学习时段的主要安排",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "meaningTarget": "描述工作或学习时段的主要安排",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "meaningTarget": "描述工作或学习时段的主要安排",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "meaningTarget": "描述下班、晚饭和晚间活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "meaningTarget": "描述下班、晚饭和晚间活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "meaningTarget": "描述下班、晚饭和晚间活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "meaningTarget": "描述下班、晚饭和晚间活动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "meaningTarget": "说明频率、偶尔变化和周中差异",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "meaningTarget": "说明频率、偶尔变化和周中差异",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "meaningTarget": "说明频率、偶尔变化和周中差异",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "meaningTarget": "说明频率、偶尔变化和周中差异",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually wake up",
+        "For breakfast",
+        "I start work around",
+        "In the evening"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不解释复杂的习惯形成原因",
+        "不讨论长期目标和自我改造",
+        "不写成精确到每分钟的流水账"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不解释复杂的习惯形成原因",
+      "不讨论长期目标和自我改造",
+      "不写成精确到每分钟的流水账"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

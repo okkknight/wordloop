@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "fixture-course",
+  "collectionId": "fixture",
+  "contentVersion": 1,
+  "title": "Fixture Course",
+  "subtitle": "Fixture",
+  "description": "Fixture",
+  "kind": "sentence",
+  "practiceOrder": "sequential",
+  "entries": []
+}

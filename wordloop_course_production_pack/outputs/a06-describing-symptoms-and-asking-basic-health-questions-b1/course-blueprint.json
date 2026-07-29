@@ -1,0 +1,590 @@
+{
+  "courseId": "a06-describing-symptoms-and-asking-basic-health-questions-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "scenario_interaction",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够描述症状的位置、持续时间和变化，回答常见问题，并询问基本处理建议。",
+    "communicationGoals": [
+      "描述主要症状和身体部位",
+      "说明症状何时开始、持续多久以及严重程度",
+      "说明症状变化、已尝试的方法和相关影响",
+      "回答关于药物、过敏等基本问题并询问下一步"
+    ],
+    "coreChunks": [
+      "I have a pain",
+      "It started two days",
+      "The pain is getting",
+      "What should I do"
+    ],
+    "supportingVocabulary": [
+      "headache",
+      "nausea",
+      "dizziness",
+      "allergic",
+      "medication",
+      "treatment",
+      "symptoms",
+      "duration",
+      "intensity",
+      "relief"
+    ],
+    "contentBoundaries": [
+      "不要求AI给出诊断或治疗结论",
+      "不覆盖急救和危及生命的情境",
+      "不展开复杂病史和医学术语"
+    ],
+    "realWorldContexts": [
+      "Visiting a pharmacy for over-the-counter advice",
+      "Describing symptoms to a nurse at a clinic",
+      "Calling a doctor's office for guidance"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "描述主要症状和身体部位",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "说明症状何时开始、持续多久以及严重程度",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "说明症状变化、已尝试的方法和相关影响",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "回答关于药物、过敏等基本问题并询问下一步",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I have a pain",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "描述主要症状和身体部位"
+      ]
+    },
+    {
+      "chunk": "It started two days",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "说明症状何时开始、持续多久以及严重程度"
+      ]
+    },
+    {
+      "chunk": "The pain is getting",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "说明症状变化、已尝试的方法和相关影响"
+      ]
+    },
+    {
+      "chunk": "What should I do",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "回答关于药物、过敏等基本问题并询问下一步"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "meaningTarget": "描述主要症状和身体部位",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "meaningTarget": "描述主要症状和身体部位",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "meaningTarget": "描述主要症状和身体部位",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述主要症状和身体部位",
+      "meaningTarget": "描述主要症状和身体部位",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "meaningTarget": "说明症状何时开始、持续多久以及严重程度",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "meaningTarget": "说明症状何时开始、持续多久以及严重程度",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "meaningTarget": "说明症状何时开始、持续多久以及严重程度",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明症状何时开始、持续多久以及严重程度",
+      "meaningTarget": "说明症状何时开始、持续多久以及严重程度",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "meaningTarget": "说明症状变化、已尝试的方法和相关影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "meaningTarget": "说明症状变化、已尝试的方法和相关影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "meaningTarget": "说明症状变化、已尝试的方法和相关影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "说明症状变化、已尝试的方法和相关影响",
+      "meaningTarget": "说明症状变化、已尝试的方法和相关影响",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "meaningTarget": "回答关于药物、过敏等基本问题并询问下一步",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "meaningTarget": "回答关于药物、过敏等基本问题并询问下一步",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "meaningTarget": "回答关于药物、过敏等基本问题并询问下一步",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "回答关于药物、过敏等基本问题并询问下一步",
+      "meaningTarget": "回答关于药物、过敏等基本问题并询问下一步",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I have a pain",
+        "It started two days",
+        "The pain is getting",
+        "What should I do"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不要求AI给出诊断或治疗结论",
+      "不覆盖急救和危及生命的情境",
+      "不展开复杂病史和医学术语"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

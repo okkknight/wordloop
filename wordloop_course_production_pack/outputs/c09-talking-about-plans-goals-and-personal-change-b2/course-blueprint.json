@@ -1,0 +1,586 @@
+{
+  "courseId": "c09-talking-about-plans-goals-and-personal-change-b2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B2",
+    "learnerOutcome": "能够把过去、当前方向和未来目标连接起来，并说明障碍、优先级和调整方式。",
+    "communicationGoals": [
+      "说明当前最重要的方向和近期计划",
+      "描述长期目标以及它对自己的意义",
+      "说明现实障碍、优先级冲突和不确定性",
+      "比较过去与现在，并表达根据情况调整计划的方式"
+    ],
+    "coreChunks": [
+      "I'm planning to start",
+      "My main goal is",
+      "I've realized that I",
+      "In the past"
+    ],
+    "supportingVocabulary": [
+      "prioritize",
+      "adjust",
+      "obstacles",
+      "long-term",
+      "flexibility",
+      "progress"
+    ],
+    "contentBoundaries": [
+      "不限定为职业规划",
+      "不扩展成抽象成功学讨论",
+      "不要求承诺过度具体或不真实的未来细节"
+    ],
+    "realWorldContexts": [
+      "Discussing career plans with a mentor",
+      "Reflecting on personal growth in a journal",
+      "Setting goals during a team meeting"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B2-",
+    "coreLevel": "B2",
+    "stretchLevel": "B2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "说明当前最重要的方向和近期计划",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "描述长期目标以及它对自己的意义",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "说明现实障碍、优先级冲突和不确定性",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "比较过去与现在，并表达根据情况调整计划的方式",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I'm planning to start",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "说明当前最重要的方向和近期计划"
+      ]
+    },
+    {
+      "chunk": "My main goal is",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "描述长期目标以及它对自己的意义"
+      ]
+    },
+    {
+      "chunk": "I've realized that I",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "说明现实障碍、优先级冲突和不确定性"
+      ]
+    },
+    {
+      "chunk": "In the past",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "比较过去与现在，并表达根据情况调整计划的方式"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "说明当前最重要的方向和近期计划",
+      "meaningTarget": "说明当前最重要的方向和近期计划",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "说明当前最重要的方向和近期计划",
+      "meaningTarget": "说明当前最重要的方向和近期计划",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "说明当前最重要的方向和近期计划",
+      "meaningTarget": "说明当前最重要的方向和近期计划",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "说明当前最重要的方向和近期计划",
+      "meaningTarget": "说明当前最重要的方向和近期计划",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "描述长期目标以及它对自己的意义",
+      "meaningTarget": "描述长期目标以及它对自己的意义",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "描述长期目标以及它对自己的意义",
+      "meaningTarget": "描述长期目标以及它对自己的意义",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "描述长期目标以及它对自己的意义",
+      "meaningTarget": "描述长期目标以及它对自己的意义",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "描述长期目标以及它对自己的意义",
+      "meaningTarget": "描述长期目标以及它对自己的意义",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "说明现实障碍、优先级冲突和不确定性",
+      "meaningTarget": "说明现实障碍、优先级冲突和不确定性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "说明现实障碍、优先级冲突和不确定性",
+      "meaningTarget": "说明现实障碍、优先级冲突和不确定性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "说明现实障碍、优先级冲突和不确定性",
+      "meaningTarget": "说明现实障碍、优先级冲突和不确定性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "说明现实障碍、优先级冲突和不确定性",
+      "meaningTarget": "说明现实障碍、优先级冲突和不确定性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "比较过去与现在，并表达根据情况调整计划的方式",
+      "meaningTarget": "比较过去与现在，并表达根据情况调整计划的方式",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "比较过去与现在，并表达根据情况调整计划的方式",
+      "meaningTarget": "比较过去与现在，并表达根据情况调整计划的方式",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "比较过去与现在，并表达根据情况调整计划的方式",
+      "meaningTarget": "比较过去与现在，并表达根据情况调整计划的方式",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "比较过去与现在，并表达根据情况调整计划的方式",
+      "meaningTarget": "比较过去与现在，并表达根据情况调整计划的方式",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'm planning to start",
+        "My main goal is",
+        "I've realized that I",
+        "In the past"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不限定为职业规划",
+        "不扩展成抽象成功学讨论",
+        "不要求承诺过度具体或不真实的未来细节"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不限定为职业规划",
+      "不扩展成抽象成功学讨论",
+      "不要求承诺过度具体或不真实的未来细节"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

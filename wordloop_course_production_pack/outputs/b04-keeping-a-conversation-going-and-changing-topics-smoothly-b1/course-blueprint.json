@@ -1,0 +1,590 @@
+{
+  "courseId": "b04-keeping-a-conversation-going-and-changing-topics-smoothly-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够围绕已有信息补充、追问，在话题变短时恢复交流，并自然转入相关话题。",
+    "communicationGoals": [
+      "从对方回答中选择一个细节继续展开",
+      "补充相关经历或信息，使交流保持平衡",
+      "面对简短回答时换一种方式继续",
+      "使用关联句从旧话题自然过渡到新话题"
+    ],
+    "coreChunks": [
+      "Tell me more about",
+      "That reminds me of",
+      "Speaking of that",
+      "How did you feel"
+    ],
+    "supportingVocabulary": [
+      "elaborate",
+      "transition",
+      "segue",
+      "detail",
+      "experience",
+      "balance",
+      "expand",
+      "connect",
+      "smoothly",
+      "naturally"
+    ],
+    "contentBoundaries": [
+      "不进入正式讨论或辩论",
+      "不依赖固定的周末、工作等单一主题",
+      "不使用生硬的话题跳转模板"
+    ],
+    "realWorldContexts": [
+      "Discussing weekend plans with a friend",
+      "Chatting about a recent movie you both watched",
+      "Catching up with a colleague after a vacation"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "从对方回答中选择一个细节继续展开",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "补充相关经历或信息，使交流保持平衡",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "面对简短回答时换一种方式继续",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "使用关联句从旧话题自然过渡到新话题",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "Tell me more about",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "从对方回答中选择一个细节继续展开"
+      ]
+    },
+    {
+      "chunk": "That reminds me of",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "补充相关经历或信息，使交流保持平衡"
+      ]
+    },
+    {
+      "chunk": "Speaking of that",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "面对简短回答时换一种方式继续"
+      ]
+    },
+    {
+      "chunk": "How did you feel",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "使用关联句从旧话题自然过渡到新话题"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "从对方回答中选择一个细节继续展开",
+      "meaningTarget": "从对方回答中选择一个细节继续展开",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "从对方回答中选择一个细节继续展开",
+      "meaningTarget": "从对方回答中选择一个细节继续展开",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "从对方回答中选择一个细节继续展开",
+      "meaningTarget": "从对方回答中选择一个细节继续展开",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "从对方回答中选择一个细节继续展开",
+      "meaningTarget": "从对方回答中选择一个细节继续展开",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "补充相关经历或信息，使交流保持平衡",
+      "meaningTarget": "补充相关经历或信息，使交流保持平衡",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "补充相关经历或信息，使交流保持平衡",
+      "meaningTarget": "补充相关经历或信息，使交流保持平衡",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "补充相关经历或信息，使交流保持平衡",
+      "meaningTarget": "补充相关经历或信息，使交流保持平衡",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "补充相关经历或信息，使交流保持平衡",
+      "meaningTarget": "补充相关经历或信息，使交流保持平衡",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "面对简短回答时换一种方式继续",
+      "meaningTarget": "面对简短回答时换一种方式继续",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "面对简短回答时换一种方式继续",
+      "meaningTarget": "面对简短回答时换一种方式继续",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "面对简短回答时换一种方式继续",
+      "meaningTarget": "面对简短回答时换一种方式继续",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "面对简短回答时换一种方式继续",
+      "meaningTarget": "面对简短回答时换一种方式继续",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "使用关联句从旧话题自然过渡到新话题",
+      "meaningTarget": "使用关联句从旧话题自然过渡到新话题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "使用关联句从旧话题自然过渡到新话题",
+      "meaningTarget": "使用关联句从旧话题自然过渡到新话题",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "使用关联句从旧话题自然过渡到新话题",
+      "meaningTarget": "使用关联句从旧话题自然过渡到新话题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "使用关联句从旧话题自然过渡到新话题",
+      "meaningTarget": "使用关联句从旧话题自然过渡到新话题",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Tell me more about",
+        "That reminds me of",
+        "Speaking of that",
+        "How did you feel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不进入正式讨论或辩论",
+      "不依赖固定的周末、工作等单一主题",
+      "不使用生硬的话题跳转模板"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

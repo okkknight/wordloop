@@ -1,0 +1,11 @@
+#include "Shared.xcconfig"
+
+WORDLOOP_CONFIGURATION_NAME = Release
+WORDLOOP_API_BASE_URL = https:/$()/boringmax.com/wordloop/api
+WORDLOOP_CATALOG_URL = https:/$()/boringmax.com/wordloop-content/catalog.json
+
+// Archive builds are for TestFlight/App Store. Keep Debug on automatic
+// development signing, but make the app target request an App Store profile
+// for Release so archiving does not require a registered development device.
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = Apple Distribution
+PROVISIONING_PROFILE_SPECIFIER = WordLoop App Store

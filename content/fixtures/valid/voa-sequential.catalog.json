@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-15T00:00:00Z",
+  "defaultCourseId": "voa-workplace-conversations-b1",
+  "collections": [
+    {
+      "id": "voa-level-2",
+      "label": "DIALOGUE COURSE",
+      "title": "VOA · Level 2",
+      "subtitle": "实用口语课程 · B1"
+    }
+  ],
+  "courses": [
+    {
+      "id": "voa-workplace-conversations-b1",
+      "collectionId": "voa-level-2",
+      "title": "Workplace Conversations · B1",
+      "subtitle": "VOA Learning English",
+      "description": "职场英语对话练习",
+      "kind": "sentence",
+      "practiceOrder": "sequential",
+      "contentVersion": 3,
+      "minimumAppVersion": "1.2.0-beta.1+45",
+      "manifestURL": "courses/voa-workplace-conversations-b1/3/course.json",
+      "manifestSHA256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "downloadSize": 7168,
+      "status": "retired"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "courseId": "c09-talking-about-plans-goals-and-personal-change-b2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-c09-001",
+      "text": "I'm focusing on improving my health right now.",
+      "translation": "我现在专注于改善我的健康。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.053,
+      "duration": 4.053
+    },
+    {
+      "id": "ai-c09-002",
+      "text": "I'm planning to start a new hobby next month.",
+      "translation": "我计划下个月开始一个新爱好。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.011,
+      "duration": 4.011
+    },
+    {
+      "id": "ai-c09-003",
+      "text": "This week, I'm dedicating time to finish my book.",
+      "translation": "这周我会专心完成我的书。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    },
+    {
+      "id": "ai-c09-004",
+      "text": "I'm setting aside time to volunteer at the local shelter.",
+      "translation": "我正在安排时间去当地的收容所做志愿者。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.669,
+      "duration": 3.669
+    },
+    {
+      "id": "ai-c09-005",
+      "text": "I want to travel to every continent before I turn 50.",
+      "translation": "我想在50岁之前游遍每个大陆。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.053,
+      "duration": 4.053
+    },
+    {
+      "id": "ai-c09-006",
+      "text": "My main goal is to become more self-sufficient.",
+      "translation": "我的主要目标是变得更加自给自足。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-c09-007",
+      "text": "I hope to make a positive impact on my community.",
+      "translation": "我希望对我的社区产生积极影响。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-c09-008",
+      "text": "Achieving financial independence is important to me.",
+      "translation": "实现财务独立对我来说很重要。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-c09-009",
+      "text": "Balancing work and personal life is challenging.",
+      "translation": "平衡工作和个人生活是有挑战性的。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-c09-010",
+      "text": "I've realized that I need to prioritize my mental health.",
+      "translation": "我意识到我需要优先考虑我的心理健康。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.48,
+      "duration": 4.48
+    },
+    {
+      "id": "ai-c09-011",
+      "text": "Sometimes, unexpected events disrupt my plans.",
+      "translation": "有时，意外事件会打乱我的计划。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.224,
+      "duration": 4.224
+    },
+    {
+      "id": "ai-c09-012",
+      "text": "Uncertainty about the future makes planning difficult.",
+      "translation": "对未来的不确定性使计划变得困难。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-c09-013",
+      "text": "I used to be more spontaneous, but now I plan ahead.",
+      "translation": "我过去比较随性，但现在我会提前计划。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    },
+    {
+      "id": "ai-c09-014",
+      "text": "In the past, I focused more on short-term goals.",
+      "translation": "过去，我更注重短期目标。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-c09-015",
+      "text": "I've adapted my plans to fit my current lifestyle.",
+      "translation": "我调整了我的计划以适应我目前的生活方式。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.584,
+      "duration": 3.584
+    },
+    {
+      "id": "ai-c09-016",
+      "text": "I've learned to be flexible with my expectations.",
+      "translation": "我学会了对自己的期望保持灵活性。",
+      "audio": "audio/c09-talking-about-plans-goals-and-personal-change-b2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    }
+  ]
+}

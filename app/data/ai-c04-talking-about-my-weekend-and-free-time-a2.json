@@ -1,0 +1,169 @@
+{
+  "courseId": "c04-talking-about-my-weekend-and-free-time-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-c04-001",
+      "text": "I like to go hiking in the mountains.",
+      "translation": "我喜欢去山里徒步旅行。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-c04-002",
+      "text": "On weekends, I usually visit my family.",
+      "translation": "周末，我通常会去看望家人。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-c04-003",
+      "text": "I often meet friends for coffee on Saturdays.",
+      "translation": "我经常在周六和朋友喝咖啡。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.181,
+      "duration": 4.181
+    },
+    {
+      "id": "ai-c04-004",
+      "text": "I spend my Sundays cooking new recipes.",
+      "translation": "我把周日用来尝试新食谱。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-c04-005",
+      "text": "Sometimes I just stay home and relax with a good book.",
+      "translation": "有时我只是待在家里，拿本好书放松一下。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.48,
+      "duration": 4.48
+    },
+    {
+      "id": "ai-c04-006",
+      "text": "I prefer to spend my time at home watching movies.",
+      "translation": "我更喜欢在家看电影。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.565,
+      "duration": 4.565
+    },
+    {
+      "id": "ai-c04-007",
+      "text": "Going for a walk in the park is a nice way to spend the day.",
+      "translation": "去公园散步是度过一天的好方法。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.181,
+      "duration": 4.181
+    },
+    {
+      "id": "ai-c04-008",
+      "text": "On weekends, I like to either visit a museum or just chill at home.",
+      "translation": "周末，我喜欢去博物馆或在家放松。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.523,
+      "duration": 4.523
+    },
+    {
+      "id": "ai-c04-009",
+      "text": "I like to spend time with my family on weekends, maybe have a barbecue.",
+      "translation": "我喜欢周末和家人共度时光，也许会来个烧烤。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.973,
+      "duration": 5.973
+    },
+    {
+      "id": "ai-c04-010",
+      "text": "My ideal weekend involves hiking with friends and enjoying nature.",
+      "translation": "我理想的周末是和朋友一起去徒步旅行，享受大自然。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.267,
+      "duration": 4.267
+    },
+    {
+      "id": "ai-c04-011",
+      "text": "Sometimes, I just want to stay home and watch TV all day.",
+      "translation": "有时候，我只想待在家里看一整天电视。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.352,
+      "duration": 4.352
+    },
+    {
+      "id": "ai-c04-012",
+      "text": "Spending time with my family on Sundays is very important to me.",
+      "translation": "周日和家人共度时光对我来说非常重要。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.547,
+      "duration": 5.547
+    },
+    {
+      "id": "ai-c04-013",
+      "text": "My ideal weekend involves spending time in nature, maybe hiking or having a picnic.",
+      "translation": "我理想的周末是花时间在大自然中，也许是徒步旅行或野餐。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.717,
+      "duration": 5.717
+    },
+    {
+      "id": "ai-c04-014",
+      "text": "When I'm alone, I like to watch movies or catch up on my favorite TV shows.",
+      "translation": "当我独处时，我喜欢看电影或追我最喜欢的电视剧。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.352,
+      "duration": 4.352
+    },
+    {
+      "id": "ai-c04-015",
+      "text": "A perfect weekend for me is one where I can spend quality time with family and friends.",
+      "translation": "对我来说，完美的周末是能和家人朋友共度美好时光。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.717,
+      "duration": 5.717
+    },
+    {
+      "id": "ai-c04-016",
+      "text": "I find weekends most enjoyable when I can balance some social time with relaxation.",
+      "translation": "我觉得周末最愉快的是能在社交和放松之间找到平衡。",
+      "audio": "audio/c04-talking-about-my-weekend-and-free-time-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 6.144,
+      "duration": 6.144
+    }
+  ]
+}

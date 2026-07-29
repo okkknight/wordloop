@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "D01",
+      "titleZh": "清楚表达观点并说明原因",
+      "titleEn": "Stating an Opinion Clearly and Explaining Why",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够明确说出自己的观点，给出主要原因和简单例子，并用一句话收束。",
+      "communicationGoals": [
+        "直接表达同意、不同意或个人判断",
+        "说明一到两个主要原因",
+        "给出简单、具体且相关的例子",
+        "重述并简洁总结自己的基本立场"
+      ],
+      "abilityTags": [
+        "D1",
+        "D2",
+        "D"
+      ],
+      "selectionReason": "课程池 releaseOrder 27 的冻结课程。",
+      "distinctiveValue": "建立观点表达的最小完整结构，是进入B2复杂讨论前的基础。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不要求同时讨论正反两面",
+        "不回应复杂反方意见",
+        "不使用抽象学术语言"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "直接表达同意、不同意或个人判断",
+      "说明一到两个主要原因",
+      "给出简单、具体且相关的例子",
+      "重述并简洁总结自己的基本立场"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不要求同时讨论正反两面",
+      "不回应复杂反方意见",
+      "不使用抽象学术语言"
+    ]
+  }
+}

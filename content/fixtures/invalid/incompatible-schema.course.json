@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "id": "fixture-course",
+  "collectionId": "fixture",
+  "contentVersion": 1,
+  "title": "Fixture Course",
+  "subtitle": "Fixture",
+  "description": "Fixture",
+  "kind": "word",
+  "practiceOrder": "random",
+  "entries": [
+    {
+      "id": "word-fixture",
+      "text": "fixture",
+      "audio": "audio/fixture.m4a",
+      "durationMilliseconds": 1000
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+{
+  "courseId": "c02-describing-where-i-live-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够介绍自己住在哪里、周边有什么、出行是否方便以及自己的感受。",
+    "communicationGoals": [
+      "说明所在区域和住所类型。",
+      "描述附近常见地点与设施。",
+      "表达交通、购物和生活便利程度。",
+      "说出喜欢、不便或小的理想改进。"
+    ],
+    "coreChunks": [
+      "I live in ...",
+      "There’s a ...",
+      "I usually ...",
+      "I wish there were ..."
+    ],
+    "supportingVocabulary": [
+      "apartment",
+      "nearby",
+      "walking distance",
+      "station",
+      "grocery store",
+      "overall"
+    ],
+    "contentBoundaries": [
+      "不训练给别人指路。",
+      "不做城市之间的系统比较。",
+      "不使用房地产和城市规划术语。"
+    ],
+    "realWorldContexts": [
+      "认识新同事或同学时。",
+      "谈论搬家、社区或日常生活时。"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "前三句建立住处与总体感受。",
+      "中段每次增加设施、交通或一个实际便利信息。",
+      "挑战句只增加变化、条件或整合感受。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "位置与住所",
+      "purpose": "说明住处和总体环境。",
+      "sentenceCount": 3
+    },
+    {
+      "name": "附近设施",
+      "purpose": "描述附近常见地点。",
+      "sentenceCount": 4
+    },
+    {
+      "name": "生活便利",
+      "purpose": "说明交通、购物和限制。",
+      "sentenceCount": 6
+    },
+    {
+      "name": "感受与比较",
+      "purpose": "表达喜欢、变化和有限改进。",
+      "sentenceCount": 3
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I live in",
+      "plannedCount": 1,
+      "slots": [
+        1
+      ],
+      "distinctUses": [
+        "说明居住地点。"
+      ]
+    },
+    {
+      "chunk": "There’s a",
+      "plannedCount": 1,
+      "slots": [
+        4
+      ],
+      "distinctUses": [
+        "介绍附近设施。"
+      ]
+    },
+    {
+      "chunk": "I usually",
+      "plannedCount": 1,
+      "slots": [
+        8
+      ],
+      "distinctUses": [
+        "说明日常出行。"
+      ]
+    },
+    {
+      "chunk": "I wish there were",
+      "plannedCount": 1,
+      "slots": [
+        12
+      ],
+      "distinctUses": [
+        "表达理想改进。"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "位置与住所",
+      "role": "说明住在哪个城市或区域",
+      "meaningTarget": "说出自己住在某个城市、地区或附近",
+      "difficultyBand": "entry",
+      "difficultyFocus": "地点",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I live in",
+        "near"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "位置与住所",
+      "role": "说明住所类型",
+      "meaningTarget": "说出自己住在公寓、房子或合住空间",
+      "difficultyBand": "entry",
+      "difficultyFocus": "住所类型",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "an apartment",
+        "a house"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "位置与住所",
+      "role": "表达环境总体感受",
+      "meaningTarget": "用一个简单形容词说周边安静、热闹或方便",
+      "difficultyBand": "entry",
+      "difficultyFocus": "基本感受",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "It’s",
+        "pretty"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "附近设施",
+      "role": "说明附近常见地点",
+      "meaningTarget": "介绍附近有商店、公园或咖啡馆",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "设施",
+      "requiredChunks": [
+        "There’s a"
+      ],
+      "optionalChunks": [
+        "nearby",
+        "close to"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 10,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "附近设施",
+      "role": "说明步行可达的服务",
+      "meaningTarget": "说出一个常去地点离家不远",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "距离",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "within walking distance",
+        "not far"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 12,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "附近设施",
+      "role": "说明购物便利度",
+      "meaningTarget": "表达买日用品是否容易",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "日常便利",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "grocery store",
+        "around the corner"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 12,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "附近设施",
+      "role": "说明休闲地点",
+      "meaningTarget": "介绍附近一个喜欢去的地方",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "个人偏好",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I like going to",
+        "on weekends"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 12,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "生活便利",
+      "role": "说明交通方式",
+      "meaningTarget": "说出自己通常如何出行",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "交通",
+      "requiredChunks": [
+        "I usually"
+      ],
+      "optionalChunks": [
+        "take the bus",
+        "get around"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "生活便利",
+      "role": "说明交通便利或不便",
+      "meaningTarget": "表达交通总体是否方便",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "评价加原因",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "because",
+        "station"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "生活便利",
+      "role": "描述高峰时的变化",
+      "meaningTarget": "说明某个时间段会拥挤或安静",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "时间变化",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "in the morning",
+        "gets busy"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "生活便利",
+      "role": "说明一个实际不便",
+      "meaningTarget": "表达一个轻度生活问题",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "限制",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "The only problem",
+        "can be"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "生活便利",
+      "role": "说明理想改进",
+      "meaningTarget": "表达希望附近多一个什么设施",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "愿望",
+      "requiredChunks": [
+        "I wish there were"
+      ],
+      "optionalChunks": [
+        "more",
+        "closer"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 14,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "感受与比较",
+      "role": "连接过去和现在的住处",
+      "meaningTarget": "说明搬来后适应了什么",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "变化",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "since I moved",
+        "I’ve gotten used to"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "感受与比较",
+      "role": "表达喜欢的具体原因",
+      "meaningTarget": "说明一个环境特点为何适合自己",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "原因",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I like",
+        "because"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "感受与比较",
+      "role": "提出有限的理想变化",
+      "meaningTarget": "表达如果可以会改变的一件小事",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "条件",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "If I could",
+        "I’d"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "感受与比较",
+      "role": "用总体感受收尾",
+      "meaningTarget": "概括方便但仍有小缺点",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "整合",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Overall",
+        "but"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己的住处和周边环境时",
+      "avoid": [
+        "问路指令",
+        "城市系统比较",
+        "房地产术语"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "严格聚焦居住环境表达。",
+      "16 槽位覆盖住所、设施、便利和感受。"
+    ],
+    "risks": [
+      "避免把描述变成问路或房产介绍。"
+    ],
+    "humanReviewFocus": [
+      "确认交通与设施的场景比例。"
+    ]
+  },
+  "approved": false
+}

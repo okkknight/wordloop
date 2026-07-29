@@ -1,0 +1,263 @@
+{
+  "courseId": "b01-introducing-yourself-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "简单开场",
+      "role": "说出姓名并完成友好问候",
+      "text": "Hi, I’m Alex. Nice to meet you.",
+      "translation": "嗨，我是 Alex。很高兴认识你。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Nice to meet you"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "以最短、友好的姓名和问候开始，便于 A2 学习者直接开口。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "简单开场",
+      "role": "说明今天到场的直接原因",
+      "text": "I’m here for the workshop today.",
+      "translation": "我今天来参加这个工作坊。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I’m here for"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "明确连接当下活动，不增加额外背景。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "简单开场",
+      "role": "给出最短的工作身份信息",
+      "text": "I work with the design team downtown.",
+      "translation": "我在市中心的设计团队工作。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I work"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "用一个普通团队信息给出基本身份。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "补充个人背景",
+      "role": "补充一个学习或日常身份",
+      "text": "I’m studying English after work these days.",
+      "translation": "我最近下班后学英语。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "after work"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "加入学习信息，但保持单句和日常语气。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充个人背景",
+      "role": "说明自己是初次参加者",
+      "text": "This is my first time at this event.",
+      "translation": "这是我第一次参加这个活动。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "This is my first time"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "清楚说明初次参加，能自然引出对方回应。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充个人背景",
+      "role": "说明一个近期生活变化",
+      "text": "I moved here a few months ago.",
+      "translation": "我几个月前搬到这里。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "a few months ago"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "提供简单的近期变化，不依赖私人细节。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充个人背景",
+      "role": "表达一个轻松的个人偏好",
+      "text": "I enjoy meeting new people at events like this.",
+      "translation": "我喜欢在这样的活动中认识新朋友。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "meeting new people"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "用轻松偏好让介绍显得开放而不夸张。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "连接当前场合",
+      "role": "说明参加活动的具体目标",
+      "text": "I’m here for a chance to meet people in my field.",
+      "translation": "我来这里是想认识同行。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I’m here for"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "把到场原因具体化为认识同行，适合跨场景迁移。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "连接当前场合",
+      "role": "补充日常工作内容",
+      "text": "I work in marketing, mostly on social media projects.",
+      "translation": "我做市场营销，主要负责社交媒体项目。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I work"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "以常见职业和简单工作内容补充身份。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "连接当前场合",
+      "role": "说明日程与当前场合的关系",
+      "text": "I take a class nearby, so I came here after class.",
+      "translation": "我在附近上课，所以课后过来了。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "after class"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "用自然的时间连接解释自己如何来到当前场合。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "连接当前场合",
+      "role": "再次说明初次参与并表达正面感受",
+      "text": "This is my first time with this group, but everyone seems friendly.",
+      "translation": "这是我第一次参加这个小组，但大家看起来都很友好。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "This is my first time"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "把初次参与和正面感受合在一起，维持低压力语气。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "连接当前场合",
+      "role": "说明自己与另一位参与者的简单关系",
+      "text": "I came with a coworker from my office.",
+      "translation": "我和办公室的一位同事一起来的。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "came with a coworker"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "说明同行关系，但不引入复杂人物背景。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "连接当前场合",
+      "role": "说明自己过去一段时间在寻找的社群",
+      "text": "I’ve been looking for a group like this since I moved here.",
+      "translation": "自从搬来后，我一直在找这样的社群。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I’ve been looking for"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "用一项持续经历形成 A2+ 的挑战句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "邀请回应",
+      "role": "表达对他人背景的兴趣",
+      "text": "I enjoy learning about what other people do.",
+      "translation": "我喜欢了解其他人做什么。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "learning about"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在挑战句后回落为简单的兴趣表达。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "邀请回应",
+      "role": "用礼貌问题邀请对方说明到场原因",
+      "text": "What brought you here, if you don’t mind me asking?",
+      "translation": "如果你不介意我问，是什么让你来这里的？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "What brought you here"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "用礼貌、不过度私人的问题把话题交给对方。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "邀请回应",
+      "role": "以自然后续兴趣结束介绍",
+      "text": "I’d love to hear more about your work sometime.",
+      "translation": "我很愿意之后多听你介绍你的工作。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I’d love to hear"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "以表达后续兴趣收尾，形成自然的交流入口。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句从姓名、身份和到场原因开始，逐步补充工作、学习和近期背景，最后自然邀请对方回应，完整达成 B01 的开启交流目标。",
+    "naturalness": "选句使用自然、现代的美式口语，不依赖正式履历、专有公司信息或虚构对话前文。",
+    "realWorldUsefulness": "每句可独立用于工作坊、课程、新工作或社交活动中的低压力初次交流。",
+    "coreChunkCoverage": "四个核心表达分别覆盖到场原因、工作身份、初次参与和邀请回应，且在不同沟通任务中复现。",
+    "difficultyDistribution": "严格保持 entry 3、targetBase 4、targetCore 6、stretch 3 的蓝图配额。",
+    "difficultyCurve": "挑战句位于 13、15、16；第 14 句先回落为简单兴趣表达，最后两句只增加礼貌追问与后续连接。",
+    "repetitionQuality": "保留同类自我介绍动作，但改变了姓名、身份、活动目的、日程和交流邀请，未出现只替换名词的填充句。",
+    "fillerRisk": "低。所有句子均服务于开始交流、补充有限背景或邀请对方回应。"
+  },
+  "humanReviewFocus": [
+    "确认示例姓名 Alex 是否适合以可替换示例形式出现在最终课程中。",
+    "抽读第 13、15、16 句，确认 A2+ 学习者能在自然语速下跟读。",
+    "确认工作、学习、活动和社交的覆盖比例符合产品定位。"
+  ],
+  "needsHumanReview": true
+}

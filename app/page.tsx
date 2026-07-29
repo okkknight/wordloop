@@ -9,9 +9,9 @@ import {
   type CourseEntry,
 } from "./courses";
 import { WORDS } from "./words";
+import { hasEnoughSpeechEvidence, scoreRepeatTranscript } from "./repeat-scorer";
 
 const MAX_STUDY_COUNT = 3;
-const PASS_SCORE = 15;
 const AUTO_ADVANCE_MS = 700;
 const LISTEN_AUTOPLAY_DELAY_MS = 500;
 const PLAYBACK_TIMEOUT_MS = 8_000;
@@ -19,12 +19,10 @@ const SPEAK_TIMEOUT_MS = 6_000;
 const SPEAKING_TIMEOUT_MS = 6_000;
 const SCORING_TIMEOUT_MS = 6_000;
 const MIN_SPEECH_MS = 350;
-const MIN_SENTENCE_WORD_COVERAGE = 0.6;
 const SEGMENT_SETTLE_MS = 700;
 const STARTUP_MAX_WAIT_MS = 650;
 const PANEL_CLOSE_MS = 240;
 const USER_ID_KEY = "word-loop-user-id";
-const USERNAME_KEY = "word-loop-username";
 const PENDING_PROGRESS_KEY = "word-loop-pending-progress";
 const APP_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -75,13 +73,6 @@ type RepeatState =
   | "paused"
   | "retry"
   | "error";
-
-type ScoreResult = {
-  feedback: string;
-  matched: string;
-  passed: boolean;
-  score: number;
-};
 
 function readPendingProgressEvents(userId: string, studyMode: StudyMode): PendingProgressEvent[] {
   try {
@@ -164,61 +155,26 @@ function initialEligibleSentenceIndex(entries: readonly CourseEntry[], progress:
   const available = entries.flatMap((entry, index) =>
     (progress[entry.id] ?? 0) < MAX_STUDY_COUNT ? [index] : [],
   );
-  return available.length ? available[Math.floor(Math.random() * available.length)] : -1;
+  // A new course always starts at the first sentence in manifest order.
+  return available[0] ?? -1;
+}
+
+function resumeSentenceIndex(
+  entries: readonly CourseEntry[],
+  progress: ProgressMap,
+  resumeItemId: string | null | undefined,
+) {
+  const index = resumeItemId ? entries.findIndex((entry) => entry.id === resumeItemId) : -1;
+  if (index >= 0 && (progress[entries[index].id] ?? 0) < MAX_STUDY_COUNT) return index;
+  return initialEligibleSentenceIndex(entries, progress);
+}
+
+function sentenceResumeStorageKey(userId: string, mode: StudyMode, courseId: string) {
+  return `word-loop-resume:${userId}:${mode}:${courseId}`;
 }
 
 function courseIsComplete(entries: readonly CourseEntry[], progress: ProgressMap) {
   return entries.length > 0 && entries.every((entry) => (progress[entry.id] ?? 0) >= MAX_STUDY_COUNT);
-}
-
-function normalizeSpeech(value: string) {
-  return value.toLowerCase().replace(/[^a-z]/g, "");
-}
-
-function speechCandidates(transcript: string) {
-  const withoutNoiseLabels = transcript.replace(
-    /[\[(](?:background noise|noise|music|laughter|silence|inaudible)[\])]/gi,
-    " ",
-  );
-  const words = withoutNoiseLabels
-    .split(/\s+/)
-    .map(normalizeSpeech)
-    .filter(Boolean);
-  const candidates = new Set(words);
-
-  // Transcription can split a spoken phrase into several pieces. Include
-  // adjacent windows long enough to cover a complete learning sentence, while
-  // still ignoring unrelated words during scoring.
-  for (let start = 0; start < words.length; start += 1) {
-    let combined = words[start];
-    for (let end = start + 1; end < Math.min(words.length, start + 12); end += 1) {
-      combined += words[end];
-      candidates.add(combined);
-    }
-  }
-
-  return [...candidates];
-}
-
-function hasEnoughSpeechEvidence(target: string, transcript: string) {
-  const spokenWords = transcript.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
-  const targetWords = target.match(/[A-Za-z]+(?:'[A-Za-z]+)?/g) ?? [];
-  const minimumWords = targetWords.length > 1 ? 2 : 1;
-  return spokenWords.length >= minimumWords;
-}
-
-function normalizeCoverageWord(value: string) {
-  const word = value.toLowerCase().replace(/’/g, "'").replace(/^[^a-z']+|[^a-z']+$/g, "");
-  if (word === "'em" || word === "em") return "them";
-  const contraction = word.match(/^([a-z]+)'(?:d|ll|re|ve|m|s)$/);
-  return contraction?.[1] ?? normalizeSpeech(word);
-}
-
-function sentenceWordCoverage(target: string, transcript: string) {
-  const targetWords = target.split(/\s+/).map(normalizeCoverageWord).filter(Boolean);
-  const spokenWords = new Set(transcript.split(/\s+/).map(normalizeCoverageWord).filter(Boolean));
-  if (targetWords.length === 0) return 0;
-  return targetWords.filter((word) => spokenWords.has(word)).length / targetWords.length;
 }
 
 function escapeRegExp(value: string) {
@@ -379,81 +335,6 @@ function repeatStatusHint(state: RepeatState) {
   }
 }
 
-function levenshtein(a: string, b: string) {
-  if (!a.length) return b.length;
-  if (!b.length) return a.length;
-
-  const matrix = Array.from({ length: a.length + 1 }, (_, row) =>
-    Array.from({ length: b.length + 1 }, (_, column) =>
-      row === 0 ? column : column === 0 ? row : 0,
-    ),
-  );
-
-  for (let row = 1; row <= a.length; row += 1) {
-    for (let column = 1; column <= b.length; column += 1) {
-      const cost = a[row - 1] === b[column - 1] ? 0 : 1;
-      matrix[row][column] = Math.min(
-        matrix[row - 1][column] + 1,
-        matrix[row][column - 1] + 1,
-        matrix[row - 1][column - 1] + cost,
-      );
-    }
-  }
-
-  return matrix[a.length][b.length];
-}
-
-function scoreTranscript(targetWord: string, transcript: string): ScoreResult {
-  const normalizedTarget = normalizeSpeech(targetWord);
-  const candidates = speechCandidates(transcript);
-
-  let matched = "";
-  let bestSimilarity = 0;
-
-  for (const candidate of candidates) {
-    const distance = levenshtein(normalizedTarget, candidate);
-    const similarity = Math.max(
-      0,
-      1 - distance / Math.max(normalizedTarget.length, candidate.length, 1),
-    );
-    if (similarity > bestSimilarity) {
-      bestSimilarity = similarity;
-      matched = candidate;
-    }
-  }
-
-  const exact = candidates.includes(normalizedTarget);
-  const score = exact
-    ? 100
-    : Math.round(bestSimilarity * 100);
-  const passed = exact || score >= PASS_SCORE;
-
-  if (passed) {
-    return {
-      feedback: "PASS",
-      matched,
-      passed: true,
-      score,
-    };
-  }
-
-  if (!matched) {
-    return {
-      feedback: "TRY AGAIN",
-      matched,
-      passed: false,
-      score: 0,
-    };
-  }
-
-  return {
-    feedback: "TRY AGAIN",
-    matched,
-    passed: false,
-    score,
-  };
-}
-
 export default function Home() {
   // Keep the first server and client render identical. Randomizing here caused
   // hydration to rebuild the page differently across browsers.
@@ -484,14 +365,13 @@ export default function Home() {
   const [textVisibilityMode, setTextVisibilityMode] = useState<TextVisibilityMode>("full");
   const [listenAutoPlay, setListenAutoPlay] = useState(false);
   const [activeUserId, setActiveUserId] = useState("");
-  const [usernameInput, setUsernameInput] = useState("");
-  const [usernameError, setUsernameError] = useState("");
   const [startupState, setStartupState] = useState<StartupState>("idle");
   const currentAudioRef = useRef<HTMLAudioElement | null>(null);
   const preloadedAudioRef = useRef<HTMLAudioElement | null>(null);
   const dataChannelRef = useRef<RTCDataChannel | null>(null);
   const peerConnectionRef = useRef<RTCPeerConnection | null>(null);
   const repeatAdvanceTimerRef = useRef<number | null>(null);
+  const completionPromptTimerRef = useRef<number | null>(null);
   const listenAutoPlayTimerRef = useRef<number | null>(null);
   const hiddenPauseTimerRef = useRef<number | null>(null);
   const repeatAdvanceTargetRef = useRef<{ index: number; sentenceMode: boolean; turnId: number } | null>(null);
@@ -577,6 +457,25 @@ export default function Home() {
     const next = applyPendingProgress(confirmedSentenceProgressRef.current, pendingProgressRef.current, "sentence", courseId);
     sentenceProgressRef.current = next;
     setSentenceProgress(next);
+  }, []);
+
+  const persistSentenceResume = useCallback((courseId: string, entryId: string | null) => {
+    const userId = userIdRef.current;
+    if (!userId) return;
+    const key = sentenceResumeStorageKey(userId, studyModeRef.current, courseId);
+    if (entryId) localStorage.setItem(key, entryId);
+    else localStorage.removeItem(key);
+    void fetch(appPath("/api/progress"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userId,
+        mode: studyModeRef.current,
+        courseId,
+        itemId: entryId,
+        updateResumePosition: true,
+      }),
+    });
   }, []);
 
   const flushPendingProgress = useCallback(async (userId: string, mode: StudyMode) => {
@@ -741,6 +640,21 @@ export default function Home() {
     }
   }, []);
 
+  const clearCompletionPromptTimer = useCallback(() => {
+    if (completionPromptTimerRef.current !== null) {
+      window.clearTimeout(completionPromptTimerRef.current);
+      completionPromptTimerRef.current = null;
+    }
+  }, []);
+
+  const scheduleCompletionPrompt = useCallback((courseId: string) => {
+    clearCompletionPromptTimer();
+    completionPromptTimerRef.current = window.setTimeout(() => {
+      completionPromptTimerRef.current = null;
+      if (activeCourseIdRef.current === courseId) setCompletionPromptCourseId(courseId);
+    }, 800);
+  }, [clearCompletionPromptTimer]);
+
   const clearListenAutoPlayTimer = useCallback(() => {
     if (listenAutoPlayTimerRef.current !== null) {
       window.clearTimeout(listenAutoPlayTimerRef.current);
@@ -803,12 +717,6 @@ export default function Home() {
 
   useEffect(() => {
     const identityTimer = window.setTimeout(() => {
-      const storedUsername = localStorage.getItem(USERNAME_KEY)?.trim().toLowerCase() ?? "";
-      if (/^[a-z]+$/.test(storedUsername)) {
-        setUsernameInput(storedUsername);
-        setActiveUserId(`name:${storedUsername}`);
-        return;
-      }
       setActiveUserId(anonymousUserId());
     }, 0);
     return () => window.clearTimeout(identityTimer);
@@ -864,6 +772,7 @@ export default function Home() {
       }
       const bootstrapSentenceMode = bootstrapCourse.kind === "sentence";
       const bootstrapStudyMode = studyModeRef.current;
+      let courseSnapshotSettled = !bootstrapSentenceMode;
       pendingProgressRef.current = readPendingProgressEvents(activeUserId, bootstrapStudyMode);
       confirmedWordProgressRef.current = {};
       confirmedSentenceProgressRef.current = {};
@@ -904,13 +813,16 @@ export default function Home() {
       if (activeCourseIdRef.current === courseId) refreshSentenceProgress(courseId);
       };
       const activatePendingSession = () => {
-        if (!pendingActivationRef.current) return;
+        if (!pendingActivationRef.current || !courseSnapshotSettled) return;
         pendingActivationRef.current = false;
         activateRef.current();
       };
       if (pendingActivationRef.current) setStartupState("syncing");
       activationTimeout = pendingActivationRef.current
-        ? window.setTimeout(activatePendingSession, STARTUP_MAX_WAIT_MS)
+        ? window.setTimeout(() => {
+          courseSnapshotSettled = true;
+          activatePendingSession();
+        }, STARTUP_MAX_WAIT_MS)
         : null;
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${bootstrapStudyMode}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
@@ -927,8 +839,23 @@ export default function Home() {
         .catch(activatePendingSession);
       void fetch(appPath(`/api/progress?userId=${encodeURIComponent(activeUserId)}&mode=${bootstrapStudyMode}&courseId=${encodeURIComponent(bootstrapCourse.id)}`))
       .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((data: { progress: Array<{ itemId: string; studyCount: number }> }) => mergeSentenceProgress(data.progress, bootstrapCourse.id))
-        .catch(() => undefined);
+      .then((data: { progress: Array<{ itemId: string; studyCount: number }>; resumeItemId?: string | null }) => {
+        mergeSentenceProgress(data.progress, bootstrapCourse.id);
+        const resumeItemId = data.resumeItemId ?? localStorage.getItem(sentenceResumeStorageKey(activeUserId, bootstrapStudyMode, bootstrapCourse.id));
+        if (resumeItemId) localStorage.setItem(sentenceResumeStorageKey(activeUserId, bootstrapStudyMode, bootstrapCourse.id), resumeItemId);
+        const resumeIndex = resumeSentenceIndex(bootstrapCourse.entries, sentenceProgressRef.current, resumeItemId);
+        if (!activatedRef.current && activeCourseIdRef.current === bootstrapCourse.id && resumeIndex >= 0) {
+          sentenceIndexRef.current = resumeIndex;
+          currentIndexRef.current = resumeIndex;
+          setSentenceIndex(resumeIndex);
+          setNextSentenceIndex(eligibleSentenceIndex(bootstrapCourse.entries, sentenceProgressRef.current, resumeIndex, bootstrapCourse.practiceOrder));
+        }
+      })
+        .catch(() => undefined)
+        .finally(() => {
+          courseSnapshotSettled = true;
+          activatePendingSession();
+        });
       void flushPendingProgress(activeUserId, bootstrapStudyMode);
     }, 0);
     return () => {
@@ -1024,6 +951,7 @@ export default function Home() {
 
   useEffect(() => () => {
     clearRepeatAdvanceTimer();
+    clearCompletionPromptTimer();
     clearListenAutoPlayTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
@@ -1035,7 +963,7 @@ export default function Home() {
     dataChannelRef.current?.close();
     repeatStreamRef.current?.getTracks().forEach((track) => track.stop());
     void feedbackAudioContextRef.current?.close();
-  }, [clearListenAutoPlayTimer, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
+  }, [clearCompletionPromptTimer, clearListenAutoPlayTimer, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, stopListening]);
 
   const recordStudy = useCallback((index: number) => {
     if (sentenceMode) {
@@ -1060,6 +988,7 @@ export default function Home() {
       refreshSentenceProgress(activeCourseId);
       const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, index, sentencePracticeOrder);
       setNextSentenceIndex(nextEligibleIndex);
+      persistSentenceResume(activeCourseId, sentenceEntriesRef.current[nextEligibleIndex]?.id ?? null);
       void flushPendingProgress(userId, studyMode);
       return nextEligibleIndex;
     }
@@ -1080,7 +1009,7 @@ export default function Home() {
     setNextWordIndex(nextEligibleIndex);
     void flushPendingProgress(userId, studyMode);
     return nextEligibleIndex;
-  }, [activeCourseId, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
+  }, [activeCourseId, flushPendingProgress, persistSentenceResume, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
 
   const markCurrentItemMastered = useCallback(() => {
     if (currentStudyCount >= MAX_STUDY_COUNT) return false;
@@ -1116,14 +1045,16 @@ export default function Home() {
     writePendingProgressEvents(userId, studyMode, pendingProgressRef.current);
     if (sentenceMode) {
       refreshSentenceProgress(activeCourseId);
-      setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrder));
+      const nextEligibleIndex = eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, currentIndexRef.current, sentencePracticeOrder);
+      setNextSentenceIndex(nextEligibleIndex);
+      persistSentenceResume(activeCourseId, sentenceEntriesRef.current[nextEligibleIndex]?.id ?? null);
     } else {
       refreshWordProgress();
       setNextWordIndex(eligibleIndex(progressRef.current, currentIndexRef.current));
     }
     void flushPendingProgress(userId, studyMode);
     return true;
-  }, [activeCourseId, currentStudyCount, flushPendingProgress, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
+  }, [activeCourseId, currentStudyCount, flushPendingProgress, persistSentenceResume, refreshSentenceProgress, refreshWordProgress, sentenceMode, sentencePracticeOrder, studyMode]);
 
   const finalizeRepeatTranscript = useCallback((turnId: number) => {
     if (!isActiveRepeatTurn(turnId) || repeatListeningTurnRef.current !== turnId || repeatSpeechInProgressRef.current) return;
@@ -1139,10 +1070,12 @@ export default function Home() {
     repeatListeningTurnRef.current = null;
     clearRepeatPhaseTimers();
     setRepeatTranscript(transcript);
-    const result = scoreTranscript(repeatWordRef.current, transcript);
-    const meetsSentenceCoverage = activeCourseKindRef.current !== "sentence"
-      || sentenceWordCoverage(repeatWordRef.current, transcript) >= MIN_SENTENCE_WORD_COVERAGE;
-    const passed = result.passed && meetsSentenceCoverage;
+    const result = scoreRepeatTranscript(
+      repeatWordRef.current,
+      transcript,
+      activeCourseKindRef.current === "sentence",
+    );
+    const passed = result.passed;
     playToneWhenReady(feedbackAudioContextRef.current, (audio) => playFeedbackTone(audio, passed));
     if (!passed) {
       scheduleRepeatRetry(turnId, 850);
@@ -1150,9 +1083,12 @@ export default function Home() {
     }
 
     const upcomingIndex = recordStudy(currentIndexRef.current);
+    if (upcomingIndex < 0 && activeCourseKindRef.current === "sentence") {
+      scheduleCompletionPrompt(activeCourseIdRef.current);
+    }
     repeatAdvanceTargetRef.current = { index: upcomingIndex, sentenceMode, turnId };
     setRepeatState("passed");
-  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleRepeatRetry, sentenceMode, stopListening]);
+  }, [clearRepeatPhaseTimers, isActiveRepeatTurn, recordStudy, scheduleCompletionPrompt, scheduleRepeatRetry, sentenceMode, stopListening]);
 
   const scheduleRepeatTranscriptFinalization = useCallback((turnId: number) => {
     if (repeatSpeechInProgressRef.current) return;
@@ -1193,9 +1129,10 @@ export default function Home() {
     void audio.play().catch(fail);
   }, []);
 
-  const playListenItem = useCallback((targetWord: string) => {
+  const playListenItem = useCallback((targetWord: string, onFinished?: () => void) => {
     clearListenAutoPlayTimer();
     playWord(targetWord, () => {
+      onFinished?.();
       if (!listenAutoPlayRef.current) return;
       listenAutoPlayTimerRef.current = window.setTimeout(() => {
         if (listenAutoPlayRef.current) nextRef.current();
@@ -1498,7 +1435,7 @@ export default function Home() {
         : eligibleIndex(progressRef.current, currentIndexRef.current);
     if (targetIndex < 0) {
       if (activeCourseKindRef.current === "sentence" && courseIsComplete(sentenceEntriesRef.current, sentenceProgressRef.current)) {
-        setCompletionPromptCourseId(activeCourseIdRef.current);
+        scheduleCompletionPrompt(activeCourseIdRef.current);
       }
       return;
     }
@@ -1510,6 +1447,7 @@ export default function Home() {
       currentIndexRef.current = targetIndex;
       setNextSentenceIndex(eligibleSentenceIndex(sentenceEntriesRef.current, sentenceProgressRef.current, targetIndex, sentencePracticeOrderRef.current));
       setSentenceIndex(targetIndex);
+      persistSentenceResume(activeCourseIdRef.current, sentenceEntriesRef.current[targetIndex]?.id ?? null);
     } else {
       wordIndexRef.current = targetIndex;
       currentIndexRef.current = targetIndex;
@@ -1519,13 +1457,17 @@ export default function Home() {
     setPaletteIndex((current) => randomIndex(PALETTES.length, current));
 
     if (studyMode === "listen") {
-      playListenItem(sentenceMode ? sentenceEntriesRef.current[targetIndex].audio : WORDS[targetIndex][0]);
-      recordStudy(targetIndex);
+      const upcomingIndex = recordStudy(targetIndex);
+      const completionCourseId = upcomingIndex < 0 && sentenceMode ? activeCourseIdRef.current : null;
+      playListenItem(
+        sentenceMode ? sentenceEntriesRef.current[targetIndex].audio : WORDS[targetIndex][0],
+        completionCourseId ? () => scheduleCompletionPrompt(completionCourseId) : undefined,
+      );
       return;
     }
 
     beginRepeatTurn(targetIndex);
-  }, [beginRepeatTurn, clearRepeatAdvanceTimer, playListenItem, recordStudy, sentenceMode, stopListening, studyMode]);
+  }, [beginRepeatTurn, clearRepeatAdvanceTimer, persistSentenceResume, playListenItem, recordStudy, scheduleCompletionPrompt, sentenceMode, stopListening, studyMode]);
 
   useEffect(() => {
     nextRef.current = next;
@@ -1545,35 +1487,28 @@ export default function Home() {
       const audio = activeCourseKindRef.current === "sentence"
         ? sentenceEntriesRef.current[currentIndexRef.current]?.audio
         : WORDS[currentIndexRef.current]?.[0];
-      if (audio) playListenItem(audio);
-      recordStudy(currentIndexRef.current);
+      const upcomingIndex = recordStudy(currentIndexRef.current);
+      const completionCourseId = upcomingIndex < 0 && activeCourseKindRef.current === "sentence"
+        ? activeCourseIdRef.current
+        : null;
+      if (audio) playListenItem(audio, completionCourseId ? () => scheduleCompletionPrompt(completionCourseId) : undefined);
       return;
     }
     beginRepeatTurn(currentIndexRef.current);
-  }, [beginRepeatTurn, playListenItem, recordStudy, studyMode]);
+  }, [beginRepeatTurn, playListenItem, recordStudy, scheduleCompletionPrompt, studyMode]);
 
   useEffect(() => {
     activateRef.current = activate;
   }, [activate]);
 
-  const startWithIdentity = useCallback((inputValue: string) => {
+  const startAsGuest = useCallback(() => {
     if (pendingActivationRef.current) return;
-    const username = inputValue.trim();
-    if (username && !/^[A-Za-z]+$/.test(username)) {
-      setUsernameError("用户名只能使用英文字母");
-      return;
-    }
-    const normalizedUsername = username.toLowerCase();
-    const userId = normalizedUsername ? `name:${normalizedUsername}` : anonymousUserId();
-    if (normalizedUsername) localStorage.setItem(USERNAME_KEY, normalizedUsername);
-    else localStorage.removeItem(USERNAME_KEY);
+    const userId = anonymousUserId();
     userIdRef.current = userId;
     progressRef.current = {};
     sentenceProgressRef.current = {};
     setProgress({});
     setSentenceProgress({});
-    setUsernameError("");
-    setUsernameInput(username);
     setStartupState("restoring");
     if (activeUserId === userId) {
       activate();
@@ -1693,14 +1628,19 @@ export default function Home() {
     const isSentence = targetCourse.kind === "sentence";
     const wasActivated = activated;
     let targetProgress: ProgressMap = forceRestart ? {} : sentenceProgressRef.current;
+    let targetResumeItemId: string | null = forceRestart ? null : (userIdRef.current
+      ? localStorage.getItem(sentenceResumeStorageKey(userIdRef.current, studyMode, targetCourse.id))
+      : null);
 
     if (isSentence && !forceRestart && userIdRef.current) {
       try {
         const response = await fetch(appPath(`/api/progress?userId=${encodeURIComponent(userIdRef.current)}&mode=${studyMode}&courseId=${encodeURIComponent(targetCourse.id)}`));
         if (courseSwitchRequestRef.current !== requestId) return;
         if (response.ok) {
-          const data = await response.json() as { progress: Array<{ itemId: string; studyCount: number }> };
+          const data = await response.json() as { progress: Array<{ itemId: string; studyCount: number }>; resumeItemId?: string | null };
           targetProgress = Object.fromEntries(data.progress.map(({ itemId, studyCount }) => [itemId, studyCount]));
+          targetResumeItemId = data.resumeItemId ?? targetResumeItemId;
+          if (targetResumeItemId) localStorage.setItem(sentenceResumeStorageKey(userIdRef.current, studyMode, targetCourse.id), targetResumeItemId);
           if (targetCourse.entries.length > 0 && targetCourse.entries.every((entry) => (targetProgress[entry.id] ?? 0) >= MAX_STUDY_COUNT)) {
             closeCoursePicker();
             setRestartPromptError("");
@@ -1721,13 +1661,14 @@ export default function Home() {
 
     // Update refs synchronously so beginRepeatTurn doesn't see a mismatch
     if (isSentence) {
-      const firstEligibleSentence = initialEligibleSentenceIndex(targetCourse.entries, targetProgress);
+      const firstEligibleSentence = resumeSentenceIndex(targetCourse.entries, targetProgress, targetResumeItemId);
       const initialSentence = firstEligibleSentence >= 0 ? firstEligibleSentence : 0;
       sentenceEntriesRef.current = targetCourse.entries;
       sentenceIndexRef.current = initialSentence;
       currentIndexRef.current = initialSentence;
       setSentenceIndex(initialSentence);
       setNextSentenceIndex(eligibleSentenceIndex(targetCourse.entries, targetProgress, initialSentence, targetCourse.practiceOrder));
+      persistSentenceResume(targetCourse.id, targetCourse.entries[initialSentence]?.id ?? null);
     } else {
       currentIndexRef.current = wordIndexRef.current;
     }
@@ -1739,6 +1680,7 @@ export default function Home() {
     repeatAdvanceTargetRef.current = null;
     repeatListeningTurnRef.current = null;
     clearRepeatAdvanceTimer();
+    clearCompletionPromptTimer();
     clearRepeatRetryTimer();
     clearRepeatPlaybackTimer();
     clearRepeatPhaseTimers();
@@ -1769,7 +1711,7 @@ export default function Home() {
     }
 
     beginRepeatTurn(currentIndexRef.current);
-  }, [activated, activeCourseId, beginRepeatTurn, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, closeCoursePicker, playListenItem, recordStudy, refreshSentenceProgress, stopListening, studyMode]);
+  }, [activated, activeCourseId, beginRepeatTurn, clearCompletionPromptTimer, clearRepeatAdvanceTimer, clearRepeatPhaseTimers, clearRepeatPlaybackTimer, clearRepeatRetryTimer, closeCoursePicker, persistSentenceResume, playListenItem, recordStudy, refreshSentenceProgress, stopListening, studyMode]);
 
   const restartCompletedCourse = useCallback(async (courseId: string | null) => {
     const userId = userIdRef.current;
@@ -1848,35 +1790,12 @@ export default function Home() {
 
       {!activated && (
         <div className="start-overlay" role="dialog" aria-label="Start study mode">
-          <form
-            className="start-form"
-            onClick={(event) => event.stopPropagation()}
-            onSubmit={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
-              startWithIdentity(String(new FormData(event.currentTarget).get("username") ?? ""));
-            }}
-          >
-            <input
-              id="username"
-              name="username"
-              value={usernameInput}
-              onChange={(event) => { setUsernameInput(event.target.value); setUsernameError(""); }}
-              onInput={(event) => { setUsernameInput(event.currentTarget.value); setUsernameError(""); }}
-              placeholder="USERNAME"
-              autoComplete="username"
-              autoCapitalize="none"
-              spellCheck={false}
-              autoFocus
-              maxLength={32}
-              aria-describedby={usernameError ? "username-error" : undefined}
-            />
-            {usernameError && <p id="username-error" className="username-error">{usernameError}</p>}
-            <button type="submit" disabled={startupState !== "idle"} aria-busy={startupState !== "idle"}>
+          <div className="start-form" onClick={(event) => event.stopPropagation()}>
+            <button type="button" onClick={startAsGuest} disabled={startupState !== "idle"} aria-busy={startupState !== "idle"}>
               <span className="start-icon" aria-hidden="true">▶</span>
               {startupState === "idle" ? "START" : startupState === "restoring" ? "PREPARING…" : "SYNCING…"}
             </button>
-          </form>
+          </div>
           {startupState !== "idle"
             ? <p aria-live="polite">{startupState === "restoring" ? "正在恢复上次课程" : "正在同步学习进度"}</p>
             : studyMode !== "repeat" && <p>{activeCourse.description}</p>}

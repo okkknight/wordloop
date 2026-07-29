@@ -49,6 +49,53 @@ test("ships all VOA Level 2 clips with complete alignment metadata", async () =>
   }
 });
 
+test("ships the AI voice course with a visible synthetic-voice disclosure", async () => {
+  const course = JSON.parse(await read("app/data/ai-polite-boundaries-b1.json"));
+  const audioFiles = new Set(
+    (await readdir(new URL("public/courses/ai/polite-boundaries-b1/audio", root))).filter((name) => name.endsWith(".m4a")),
+  );
+  assert.equal(course.provider, "OpenAI");
+  assert.match(course.attribution, /AI-generated voice/i);
+  assert.match(course.licenseNote, /AI-generated/i);
+  assert.equal(course.entries.length, 16);
+  assert.equal(audioFiles.size, 16);
+  for (const entry of course.entries) {
+    assert.equal(entry.learnable, true);
+    assert.ok(entry.duration > 0, `${entry.id}: positive duration`);
+    assert.ok(audioFiles.has(entry.audio.replace(/^audio\//, "")), `${entry.id}: audio file`);
+  }
+});
+
+test("ships the B01 introduction course with its approved 16 AI voice clips", async () => {
+  const course = JSON.parse(await read("app/data/ai-b01-introducing-yourself-a2.json"));
+  const audioFiles = new Set(
+    (await readdir(new URL("public/courses/ai/b01-introducing-yourself-a2/audio", root))).filter((name) => name.endsWith(".m4a")),
+  );
+  assert.equal(course.courseId, "b01-introducing-yourself-a2");
+  assert.equal(course.entries.length, 16);
+  assert.equal(audioFiles.size, 16);
+  assert.match(course.licenseNote, /AI-generated/i);
+  for (const entry of course.entries) {
+    assert.ok(entry.duration > 0, `${entry.id}: positive duration`);
+    assert.ok(audioFiles.has(entry.audio.replace(/^audio\//, "")), `${entry.id}: audio file`);
+  }
+});
+
+test("ships the C02 where-I-live course with its approved 16 AI voice clips", async () => {
+  const course = JSON.parse(await read("app/data/ai-c02-describing-where-i-live-a2.json"));
+  const audioFiles = new Set(
+    (await readdir(new URL("public/courses/ai/c02-describing-where-i-live-a2/audio", root))).filter((name) => name.endsWith(".m4a")),
+  );
+  assert.equal(course.courseId, "c02-describing-where-i-live-a2");
+  assert.equal(course.entries.length, 16);
+  assert.equal(audioFiles.size, 16);
+  assert.match(course.licenseNote, /AI-generated/i);
+  for (const entry of course.entries) {
+    assert.ok(entry.duration > 0, `${entry.id}: positive duration`);
+    assert.ok(audioFiles.has(entry.audio.replace(/^audio\//, "")), `${entry.id}: audio file`);
+  }
+});
+
 test("ships the first sentence course package and its clips", async () => {
   const course = JSON.parse(await read("app/data/modern-family-s01e01.json"));
   const sentenceAudio = (await readdir(new URL("public/courses/modern-family/s01e01/audio", root)))
@@ -269,6 +316,7 @@ test("ships the B1 dream a little dream course and its clips", async () => {
 
 test("exposes the listen, repeat, progress, and pronunciation flows", async () => {
   const page = await read("app/page.tsx");
+  const repeatScorer = await read("app/repeat-scorer.ts");
   const courses = await read("app/courses.ts");
   const progressRoute = await read("app/api/progress/route.ts");
   const schema = await read("db/schema.ts");
@@ -314,7 +362,8 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(progressRoute, /payload\.completeCourse === true/);
   assert.match(schema, /courseCompletionCounts/);
   assert.match(completionMigration, /course_completion_events/);
-  assert.match(page, /const PASS_SCORE = 15/);
+  assert.match(repeatScorer, /REPEAT_PASS_SCORE = 15/);
+  assert.match(page, /scoreRepeatTranscript/);
   assert.match(page, /sentenceIndexRef\.current = target\.index/);
   assert.match(page, /wordIndexRef\.current = target\.index/);
   assert.match(page, /<span>COURSE<\/span>/);
@@ -380,11 +429,11 @@ test("exposes the listen, repeat, progress, and pronunciation flows", async () =
   assert.match(page, /activeCourseKindRef\.current === "sentence"/);
   assert.match(page, /function renderMaskedText/);
   assert.match(page, /const MIN_SPEECH_MS = 350/);
-  assert.match(page, /const MIN_SENTENCE_WORD_COVERAGE = 0\.6/);
+  assert.match(repeatScorer, /MIN_SENTENCE_WORD_COVERAGE = 0\.6/);
   assert.match(page, /hasEnoughSpeechEvidence\(repeatWordRef\.current, transcript\)/);
-  assert.match(page, /function normalizeCoverageWord/);
-  assert.match(page, /word === "'em"/);
-  assert.match(page, /sentenceWordCoverage\(repeatWordRef\.current, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
+  assert.match(repeatScorer, /function normalizeCoverageWord/);
+  assert.match(repeatScorer, /word === "'em"/);
+  assert.match(repeatScorer, /sentenceWordCoverage\(target, transcript\) >= MIN_SENTENCE_WORD_COVERAGE/);
   assert.match(page, /renderStudyText\(currentItem\.text, textVisibilityMode, currentItem\.highlights\)/);
   assert.match(page, /learning-highlight/);
   assert.match(page, /audio: sentence\.audio, highlights: sentence\.highlights/);

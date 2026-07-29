@@ -50,3 +50,14 @@ next-env.d.ts
 /outputs/
 /work/
 /.playwright-cli/
+/content/dist/
+/ios/Generated/
+/ios/Packages/WordLoopContent/Sources/WordLoopContent/Resources/WordLoopContent/
+**/.build/
+ios/Packages/*/Package.resolved
+/ios/.derivedData/
+/ios/.releaseDerivedData/
+/ios/.testDerivedData/
+/.visual-qa/
+**/xcuserdata/
+**/project.xcworkspace/

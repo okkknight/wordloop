@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B06",
+      "titleZh": "澄清意思并确认理解",
+      "titleEn": "Clarifying Meaning and Checking Understanding",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够询问具体含义、区分可能的解释、复述自己的理解并确认关键信息。",
+      "communicationGoals": [
+        "询问一个词、说法或要求具体是什么意思",
+        "在两个可能理解之间进行区分",
+        "用自己的话复述对方意思",
+        "确认时间、数字、责任和下一步等关键信息"
+      ],
+      "abilityTags": [
+        "B3",
+        "B4",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 16 的冻结课程。",
+      "distinctiveValue": "训练意义层面的确认，比单纯听清更进一步。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不重复单纯请求重说的表达",
+        "不把澄清升级成争论或反驳",
+        "不引入专业术语解释任务"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "询问一个词、说法或要求具体是什么意思",
+      "在两个可能理解之间进行区分",
+      "用自己的话复述对方意思",
+      "确认时间、数字、责任和下一步等关键信息"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不重复单纯请求重说的表达",
+      "不把澄清升级成争论或反驳",
+      "不引入专业术语解释任务"
+    ]
+  }
+}

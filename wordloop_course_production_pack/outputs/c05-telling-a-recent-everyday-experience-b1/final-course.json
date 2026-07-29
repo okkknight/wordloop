@@ -1,0 +1,261 @@
+{
+  "courseId": "c05-telling-a-recent-everyday-experience-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "text": "Last week, I was at the grocery store.",
+      "translation": "上周，我在杂货店。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Last week,"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "text": "Yesterday, I went to the library to return some books.",
+      "translation": "昨天，我去图书馆还书。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Yesterday, I went to"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "text": "On Monday, I was working from home.",
+      "translation": "周一，我在家工作。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "On Monday,"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "说明事情发生的时间、地点和起因",
+      "text": "A few days ago, I was at my friend's house.",
+      "translation": "几天前，我在朋友家。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "A few"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "text": "I picked up some fresh vegetables and fruits.",
+      "translation": "我买了一些新鲜的蔬菜和水果。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I picked"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "text": "It all started when I noticed my phone was missing.",
+      "translation": "事情开始于我发现手机不见了。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "It all started when"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "text": "I decided to call my friend to catch up.",
+      "translation": "我决定给朋友打电话聊聊近况。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I decided"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "按照自然顺序描述主要经过",
+      "text": "Then, I realized I had left my wallet at home.",
+      "translation": "然后，我意识到我把钱包忘在家里了。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Then, I"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "text": "Suddenly, it started to rain heavily.",
+      "translation": "突然，开始下起大雨。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Suddenly, it"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "text": "The surprising part was I found an old friend there.",
+      "translation": "令人惊讶的是，我在那里遇到了一个老朋友。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The surprising part was"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "text": "I accidentally spilled coffee on my shirt.",
+      "translation": "我不小心把咖啡洒在了衬衫上。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I accidentally"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述一个小问题、变化或意外",
+      "text": "I forgot my umbrella and got soaked.",
+      "translation": "我忘了带伞，结果淋湿了。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I forgot"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "text": "Eventually, I managed to fix the problem myself.",
+      "translation": "最终，我自己解决了这个问题。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Eventually, I"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "text": "In the end, I felt relieved that everything worked out.",
+      "translation": "最后，我感到很欣慰，一切都解决了。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "In the end, I felt"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "text": "I learned to always double-check my belongings.",
+      "translation": "我学会了要时刻检查自己的物品。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I learned"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明最后结果以及自己的反应",
+      "text": "It taught me to be more prepared for surprises.",
+      "translation": "这让我学会了更好地准备应对意外。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "It taught"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

@@ -1,0 +1,586 @@
+{
+  "courseId": "b10-apologizing-explaining-and-repairing-a-misunderstanding-b2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "B2",
+    "learnerOutcome": "能够承认对方受到的影响，真诚道歉，解释但不推卸责任，并提出修复方式。",
+    "communicationGoals": [
+      "承认具体发生的事情和造成的影响",
+      "作出直接、适度且不含糊的道歉",
+      "解释背景或本意，但避免把解释变成借口",
+      "澄清误会并提出下一步修复行动"
+    ],
+    "coreChunks": [
+      "I apologize for the",
+      "Let me clarify what",
+      "Here's how I plan",
+      "I understand how this"
+    ],
+    "supportingVocabulary": [
+      "sincere",
+      "impact",
+      "intent",
+      "resolve",
+      "miscommunication",
+      "clarification"
+    ],
+    "contentBoundaries": [
+      "不处理法律责任和正式危机沟通",
+      "不包含操控性或虚假道歉",
+      "不重复普通服务投诉的解决语言"
+    ],
+    "realWorldContexts": [
+      "Resolving a scheduling conflict with a coworker",
+      "Clarifying a misinterpreted email with a client",
+      "Addressing a misunderstanding in a team meeting"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B2-",
+    "coreLevel": "B2",
+    "stretchLevel": "B2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "承认具体发生的事情和造成的影响",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "作出直接、适度且不含糊的道歉",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "解释背景或本意，但避免把解释变成借口",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "澄清误会并提出下一步修复行动",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I apologize for the",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "承认具体发生的事情和造成的影响"
+      ]
+    },
+    {
+      "chunk": "Let me clarify what",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "作出直接、适度且不含糊的道歉"
+      ]
+    },
+    {
+      "chunk": "Here's how I plan",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "解释背景或本意，但避免把解释变成借口"
+      ]
+    },
+    {
+      "chunk": "I understand how this",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "澄清误会并提出下一步修复行动"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "承认具体发生的事情和造成的影响",
+      "meaningTarget": "承认具体发生的事情和造成的影响",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "承认具体发生的事情和造成的影响",
+      "meaningTarget": "承认具体发生的事情和造成的影响",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "承认具体发生的事情和造成的影响",
+      "meaningTarget": "承认具体发生的事情和造成的影响",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "承认具体发生的事情和造成的影响",
+      "meaningTarget": "承认具体发生的事情和造成的影响",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "作出直接、适度且不含糊的道歉",
+      "meaningTarget": "作出直接、适度且不含糊的道歉",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "作出直接、适度且不含糊的道歉",
+      "meaningTarget": "作出直接、适度且不含糊的道歉",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "作出直接、适度且不含糊的道歉",
+      "meaningTarget": "作出直接、适度且不含糊的道歉",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "作出直接、适度且不含糊的道歉",
+      "meaningTarget": "作出直接、适度且不含糊的道歉",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "解释背景或本意，但避免把解释变成借口",
+      "meaningTarget": "解释背景或本意，但避免把解释变成借口",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "解释背景或本意，但避免把解释变成借口",
+      "meaningTarget": "解释背景或本意，但避免把解释变成借口",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "解释背景或本意，但避免把解释变成借口",
+      "meaningTarget": "解释背景或本意，但避免把解释变成借口",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "解释背景或本意，但避免把解释变成借口",
+      "meaningTarget": "解释背景或本意，但避免把解释变成借口",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "澄清误会并提出下一步修复行动",
+      "meaningTarget": "澄清误会并提出下一步修复行动",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "澄清误会并提出下一步修复行动",
+      "meaningTarget": "澄清误会并提出下一步修复行动",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "澄清误会并提出下一步修复行动",
+      "meaningTarget": "澄清误会并提出下一步修复行动",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "澄清误会并提出下一步修复行动",
+      "meaningTarget": "澄清误会并提出下一步修复行动",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I apologize for the",
+        "Let me clarify what",
+        "Here's how I plan",
+        "I understand how this"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理法律责任和正式危机沟通",
+        "不包含操控性或虚假道歉",
+        "不重复普通服务投诉的解决语言"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不处理法律责任和正式危机沟通",
+      "不包含操控性或虚假道歉",
+      "不重复普通服务投诉的解决语言"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

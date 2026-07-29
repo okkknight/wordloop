@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A02",
+      "titleZh": "问路与确认公共交通路线",
+      "titleEn": "Asking for Directions and Transit Information",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够询问地点、路线和公共交通信息，并通过地标或站点确认自己理解正确。",
+      "communicationGoals": [
+        "询问某个地点在哪里以及如何到达",
+        "询问应该乘坐哪条线路、在哪一站下车",
+        "询问距离、步行时间和明显地标",
+        "复述路线并确认方向、出口或站点"
+      ],
+      "abilityTags": [
+        "A1",
+        "A4",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 11 的冻结课程。",
+      "distinctiveValue": "聚焦陌生环境中的路线获取与确认，和一般的信息询问区分开。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不涉及机票、酒店等旅行预订",
+        "不扩展成介绍自己的城市",
+        "不处理交通延误或退款"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "询问某个地点在哪里以及如何到达",
+      "询问应该乘坐哪条线路、在哪一站下车",
+      "询问距离、步行时间和明显地标",
+      "复述路线并确认方向、出口或站点"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不涉及机票、酒店等旅行预订",
+      "不扩展成介绍自己的城市",
+      "不处理交通延误或退款"
+    ]
+  }
+}

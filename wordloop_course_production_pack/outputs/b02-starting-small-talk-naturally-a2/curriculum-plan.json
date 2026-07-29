@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B02",
+      "titleZh": "自然开启一段闲聊",
+      "titleEn": "Starting Small Talk Naturally",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够根据共同环境开启轻松话题，并提出不会给对方压力的问题。",
+      "communicationGoals": [
+        "从天气、环境或正在发生的事情开始",
+        "对共同场合做简短自然的评论",
+        "分享一小段与话题相关的信息",
+        "提出简单、开放但不过度私人的问题"
+      ],
+      "abilityTags": [
+        "B1",
+        "B2",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 6 的冻结课程。",
+      "distinctiveValue": "训练如何找到自然开口点，解决知道单词却不知道怎么开始的问题。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不深入私人或敏感话题",
+        "不要求长时间延续对话",
+        "不把课程变成固定场景句库"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "从天气、环境或正在发生的事情开始",
+      "对共同场合做简短自然的评论",
+      "分享一小段与话题相关的信息",
+      "提出简单、开放但不过度私人的问题"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不深入私人或敏感话题",
+      "不要求长时间延续对话",
+      "不把课程变成固定场景句库"
+    ]
+  }
+}

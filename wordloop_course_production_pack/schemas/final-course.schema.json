@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WordLoop Final Course",
+  "type": "object",
+  "required": ["courseId", "finalSentences", "regenerateSlots", "courseReview", "humanReviewFocus"],
+  "properties": {
+    "courseId": {"type": "string"},
+    "finalSentences": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "required": [
+          "order", "slot", "section", "role", "text", "translation",
+          "difficultyBand", "usedChunks", "sourceCandidateId", "selectionReason"
+        ],
+        "properties": {
+          "order": {"type": "integer", "minimum": 1, "maximum": 16},
+          "slot": {"type": "integer", "minimum": 1, "maximum": 16},
+          "section": {"type": "string"},
+          "role": {"type": "string"},
+          "text": {"type": "string"},
+          "translation": {"type": "string"},
+          "difficultyBand": {"enum": ["entry", "targetBase", "targetCore", "stretch"]},
+          "usedChunks": {"type": "array", "items": {"type": "string"}},
+          "sourceCandidateId": {"type": ["string", "null"]},
+          "edited": {"type": "boolean", "default": false},
+          "selectionReason": {"type": "string"}
+        }
+      }
+    },
+    "regenerateSlots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slot", "reason", "regenerationInstructions"],
+        "properties": {
+          "slot": {"type": "integer", "minimum": 1, "maximum": 16},
+          "reason": {"type": "string"},
+          "regenerationInstructions": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "courseReview": {
+      "type": "object",
+      "required": [
+        "recommendation", "learnerOutcomeFit", "naturalness",
+        "realWorldUsefulness", "coreChunkCoverage", "difficultyDistribution",
+        "difficultyCurve", "repetitionQuality", "fillerRisk"
+      ],
+      "properties": {
+        "recommendation": {"enum": ["approve", "revise", "regenerate_slots"]},
+        "learnerOutcomeFit": {"type": "string"},
+        "naturalness": {"type": "string"},
+        "realWorldUsefulness": {"type": "string"},
+        "coreChunkCoverage": {"type": "string"},
+        "difficultyDistribution": {"type": "string"},
+        "difficultyCurve": {"type": "string"},
+        "repetitionQuality": {"type": "string"},
+        "fillerRisk": {"type": "string"}
+      }
+    },
+    "humanReviewFocus": {"type": "array", "items": {"type": "string"}},
+    "needsHumanReview": {"type": "boolean", "const": true}
+  },
+  "additionalProperties": false
+}

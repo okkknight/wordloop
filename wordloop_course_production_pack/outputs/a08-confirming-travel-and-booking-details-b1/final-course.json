@@ -1,0 +1,261 @@
+{
+  "courseId": "a08-confirming-travel-and-booking-details-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "确认出发、到达、入住或活动时间",
+      "text": "What time does the flight leave?",
+      "translation": "航班几点起飞？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "What time"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "确认出发、到达、入住或活动时间",
+      "text": "Can you confirm the date of the concert?",
+      "translation": "你能确认一下音乐会的日期吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Can you confirm the date"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "确认出发、到达、入住或活动时间",
+      "text": "What time does the train arrive?",
+      "translation": "火车几点到达？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "What time"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "确认出发、到达、入住或活动时间",
+      "text": "Is the meeting at 3 PM or 4 PM?",
+      "translation": "会议是下午三点还是四点？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Is the"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "核对姓名、证件、订单号等关键信息",
+      "text": "Can you verify my passport number?",
+      "translation": "你能核对一下我的护照号码吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Can you"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "核对姓名、证件、订单号等关键信息",
+      "text": "Is the name spelled correctly on the ticket?",
+      "translation": "票上的名字拼写正确吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Is the name spelled correctly"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "核对姓名、证件、订单号等关键信息",
+      "text": "Could you double-check my ID number?",
+      "translation": "你能再核对一下我的身份证号码吗？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Could you"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "核对姓名、证件、订单号等关键信息",
+      "text": "Can you confirm my booking reference?",
+      "translation": "你能确认一下我的预订参考号吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "确认座位、行李、房型或包含的服务",
+      "text": "Are we in seats 12A and 12B?",
+      "translation": "我们在12A和12B座位吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Are we"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "确认座位、行李、房型或包含的服务",
+      "text": "What time is the check-in for the flight?",
+      "translation": "航班的办理登机手续时间是几点？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "What time is the check-in"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "确认座位、行李、房型或包含的服务",
+      "text": "Is breakfast included with the room?",
+      "translation": "房间包含早餐吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Is breakfast"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "确认座位、行李、房型或包含的服务",
+      "text": "Is there a shuttle service to the airport?",
+      "translation": "有到机场的班车服务吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Is there"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "总结整项预订并指出需要再次核对的地方",
+      "text": "Let's review the itinerary one more time.",
+      "translation": "我们再检查一下行程安排。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Let's review"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "总结整项预订并指出需要再次核对的地方",
+      "text": "Does this include breakfast for both days?",
+      "translation": "这包括两天的早餐吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Does this include breakfast"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "总结整项预订并指出需要再次核对的地方",
+      "text": "Please summarize the reservation details for me.",
+      "translation": "请为我总结一下预订细节。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Please summarize"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "总结整项预订并指出需要再次核对的地方",
+      "text": "Let's make sure we have everything right before we go.",
+      "translation": "我们出发前确保所有信息无误。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Let's make"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

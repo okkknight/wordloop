@@ -1,0 +1,27 @@
+[
+  {
+    "name": "word-progress",
+    "request": { "userId": "name:alice", "mode": "listen", "clientEventId": "event-001", "word": "example" },
+    "response": { "word": "example", "studyCount": 1 }
+  },
+  {
+    "name": "course-progress-mastered",
+    "request": { "userId": "name:alice", "mode": "repeat", "clientEventId": "event-002", "courseId": "course-a", "itemId": "line-001", "markMastered": true },
+    "response": { "itemId": "line-001", "studyCount": 3 }
+  },
+  {
+    "name": "select-course",
+    "request": { "userId": "name:alice", "mode": "listen", "courseId": "course-a", "selectCourse": true },
+    "response": { "recentCourseId": "course-a" }
+  },
+  {
+    "name": "reset-course",
+    "request": { "userId": "name:alice", "mode": "repeat", "courseId": "course-a", "resetCourse": true },
+    "response": { "courseId": "course-a", "reset": true }
+  },
+  {
+    "name": "complete-course",
+    "request": { "userId": "name:alice", "mode": "listen", "clientEventId": "event-003", "courseId": "course-a", "completeCourse": true },
+    "response": { "courseId": "course-a", "completionCount": 1 }
+  }
+]

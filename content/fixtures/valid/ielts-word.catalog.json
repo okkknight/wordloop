@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-15T00:00:00Z",
+  "defaultCourseId": "ielts-high-frequency",
+  "collections": [
+    {
+      "id": "ielts",
+      "label": "WORD COURSE",
+      "title": "IELTS 高频词",
+      "subtitle": "Academic Word List"
+    }
+  ],
+  "courses": [
+    {
+      "id": "ielts-high-frequency",
+      "collectionId": "ielts",
+      "title": "IELTS 高频词",
+      "subtitle": "Academic Word List",
+      "description": "IELTS 高频单词练习",
+      "kind": "word",
+      "practiceOrder": "random",
+      "contentVersion": 1,
+      "minimumAppVersion": "1.0.0",
+      "manifestURL": "courses/ielts-high-frequency/1/course.json",
+      "manifestSHA256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "downloadSize": 4096,
+      "status": "available"
+    }
+  ]
+}

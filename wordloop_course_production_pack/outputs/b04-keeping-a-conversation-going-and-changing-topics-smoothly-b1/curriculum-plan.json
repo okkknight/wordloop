@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B04",
+      "titleZh": "让对话继续并自然转换话题",
+      "titleEn": "Keeping a Conversation Going and Changing Topics Smoothly",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够围绕已有信息补充、追问，在话题变短时恢复交流，并自然转入相关话题。",
+      "communicationGoals": [
+        "从对方回答中选择一个细节继续展开",
+        "补充相关经历或信息，使交流保持平衡",
+        "面对简短回答时换一种方式继续",
+        "使用关联句从旧话题自然过渡到新话题"
+      ],
+      "abilityTags": [
+        "B2",
+        "B1",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 15 的冻结课程。",
+      "distinctiveValue": "训练对话的流动能力，而不是背诵某个主题下的问答。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不进入正式讨论或辩论",
+        "不依赖固定的周末、工作等单一主题",
+        "不使用生硬的话题跳转模板"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "从对方回答中选择一个细节继续展开",
+      "补充相关经历或信息，使交流保持平衡",
+      "面对简短回答时换一种方式继续",
+      "使用关联句从旧话题自然过渡到新话题"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不进入正式讨论或辩论",
+      "不依赖固定的周末、工作等单一主题",
+      "不使用生硬的话题跳转模板"
+    ]
+  }
+}

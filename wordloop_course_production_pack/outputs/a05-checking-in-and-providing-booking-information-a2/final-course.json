@@ -1,0 +1,261 @@
+{
+  "courseId": "a05-checking-in-and-providing-booking-information-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "说明已有预订并提供预订姓名",
+      "text": "I booked a room for tonight.",
+      "translation": "我预订了今晚的房间。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I booked"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "说明已有预订并提供预订姓名",
+      "text": "I have a reservation under Smith.",
+      "translation": "我以史密斯的名字预订了。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I have a reservation under"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "说明已有预订并提供预订姓名",
+      "text": "My reservation is for two nights.",
+      "translation": "我的预订是两晚。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "My reservation"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "说明已有预订并提供预订姓名",
+      "text": "The reservation is in my name, Emily.",
+      "translation": "预订是以我的名字，艾米丽。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The reservation"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "提供入住日期、晚数和身份证明等基本信息",
+      "text": "I'm checking in today for two nights.",
+      "translation": "我今天入住，住两晚。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I'm checking"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "提供入住日期、晚数和身份证明等基本信息",
+      "text": "My check-in date is October 5th.",
+      "translation": "我的入住日期是10月5日。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "My check-in date is"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "提供入住日期、晚数和身份证明等基本信息",
+      "text": "I have my ID ready for check-in.",
+      "translation": "我准备好了身份证以便办理入住。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I have"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "提供入住日期、晚数和身份证明等基本信息",
+      "text": "I'll need to show my driver's license, right?",
+      "translation": "我需要出示我的驾照，对吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I'll need"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "回答关于人数、房型和付款方式的简单问题",
+      "text": "There are two of us staying in the room.",
+      "translation": "我们两个人住在房间里。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "There are"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "回答关于人数、房型和付款方式的简单问题",
+      "text": "I will stay for four nights.",
+      "translation": "我会住四晚。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I will stay for"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "回答关于人数、房型和付款方式的简单问题",
+      "text": "We prefer a room with a king bed.",
+      "translation": "我们更喜欢有特大床的房间。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "We prefer"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "回答关于人数、房型和付款方式的简单问题",
+      "text": "I'll pay with my credit card.",
+      "translation": "我会用信用卡支付。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I'll pay"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "确认房间、钥匙、早餐和退房时间",
+      "text": "Is breakfast included with my room?",
+      "translation": "我的房间包含早餐吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Is breakfast"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "确认房间、钥匙、早餐和退房时间",
+      "text": "Can you confirm my room has a sea view?",
+      "translation": "你能确认我的房间有海景吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you confirm my room"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "确认房间、钥匙、早餐和退房时间",
+      "text": "What time is check-out tomorrow?",
+      "translation": "明天几点退房？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "What time"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "确认房间、钥匙、早餐和退房时间",
+      "text": "Could I get an extra key card, please?",
+      "translation": "我可以再要一张房卡吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Could I"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

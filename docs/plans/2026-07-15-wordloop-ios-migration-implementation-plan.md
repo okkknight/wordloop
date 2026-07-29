@@ -1,6 +1,6 @@
 # WordLoop 原生 iOS 迁移实施 Plan
 
-状态：待执行
+状态：执行中；P0–P6.1 已 PASS，当前执行 P6.2
 
 制定日期：2026-07-15
 
@@ -255,6 +255,8 @@ App Target 只完成：
 
 ### P4.1 Core 模型与 Bundle source
 
+状态：独立复核 PASS；下一步只生成 P4.2 AudioPlayer 任务卡。
+
 - 实现 `CourseID`、`EntryID`、`CourseDescriptor`、`Course`、`CourseEntry`、`StudyMode`。
 - 把 exporter 产物作为 `WordLoopContent` resources；不人工复制 JSON。
 - 实现 manifest/integrity 解码和启动期轻量校验。
@@ -264,6 +266,8 @@ App Target 只完成：
 
 ### P4.2 AudioPlayer
 
+状态：独立复核 PASS；详见 [`../tasks/2026-07-16-p4-2-audio-player.md`](../tasks/2026-07-16-p4-2-audio-player.md)。
+
 - 基于 AVFoundation 实现 load/play/pause/stop/finish/fail。
 - 只持有当前和下一条的 prepared asset。
 - 每次播放有 request token；迟到 completion 不能影响新条目。
@@ -271,12 +275,16 @@ App Target 只完成：
 
 ### P4.3 StudyStore 与 LISTEN
 
+状态：PASS；详见 [`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)。
+
 - 课程选择、条目选择、random/sequential、文字三态。
 - 手动前进、自动播放、500 ms 等待、错误重试。
 - 切课/切模式取消旧播放并准备新条目。
 - 此阶段用本地临时进度 adapter，P5 再替换真实 ProgressRepository。
 
 ### P4.4 完成与重练纯本地流程
+
+状态：PASS；详见 [`../tasks/2026-07-16-p4-4-local-completion-retrain.md`](../tasks/2026-07-16-p4-4-local-completion-retrain.md)。
 
 先完成 UI 和状态流，不伪造服务端成功。所有临时 adapter 明确标注并在 P5 删除。
 
@@ -290,15 +298,21 @@ App Target 只完成：
 
 ### P5.1 API DTO 与契约 fixtures
 
+状态：PASS；详见 [`../tasks/2026-07-18-p5-1-progress-api-contracts.md`](../tasks/2026-07-18-p5-1-progress-api-contracts.md)。
+
 - 在 `WordLoopNetworking` 定义 progress GET/POST、select/reset/complete DTO。
 - 用 P0 fixtures 测试解码/编码。
 - 增加 Node 与 Cloudflare 路由的共享契约测试；不先改 API 形状。
 
 ### P5.2 SwiftData schema
 
+状态：PASS；详见 [`../tasks/2026-07-18-p5-2-swiftdata-schema.md`](../tasks/2026-07-18-p5-2-swiftdata-schema.md)。
+
 实现 `StudyIdentity`、`ProgressRecord`、`ProgressEvent`、`CourseCompletionRecord/Event`、`CoursePreference`。定义 schema version 和迁移测试入口。
 
 ### P5.3 Progress Outbox
+
+状态：PASS；详见 [`../tasks/2026-07-18-p5-3-progress-outbox.md`](../tasks/2026-07-18-p5-3-progress-outbox.md)。
 
 - 本地事务先写 event，再向 UI 发布派生值。
 - 同一个 UUID 重试；服务端确认后归档/删除。
@@ -308,9 +322,13 @@ App Target 只完成：
 
 ### P5.4 Startup 与课程恢复
 
+状态：PASS；详见 [`../tasks/2026-07-18-p5-4-startup-course-restore.md`](../tasks/2026-07-18-p5-4-startup-course-restore.md)。
+
 接入用户名规范化、最近课程、启动 restoring/syncing/ready/error。网络失败时允许使用本地已知身份和内置课程，不阻塞进入 App。
 
 ### P5.5 完成、次数与重练
+
+状态：PASS；详见 [`../tasks/2026-07-18-p5-5-completion-reset.md`](../tasks/2026-07-18-p5-5-completion-reset.md)。
 
 接入 `clientEventId`、完成次数、resetCourse 和 pending 状态；删除 P4 临时 adapter。
 
@@ -320,9 +338,11 @@ App Target 只完成：
 
 ## 12. P6：REPEAT 原生迁移
 
-目标：等价迁移当前稳定跟读状态机，不趁机调整评分。
+目标：等价迁移当前稳定跟读状态机；按 2026-07-24 产品决定，将 Web、VPS 与 iOS 通过门槛统一为 15 分。
 
 ### P6.1 评分 golden fixtures
+
+状态：原评分迁移 PASS；15 分产品调整已开发、待独立复核。详见 [`../tasks/2026-07-18-p6-1-repeat-scoring-golden.md`](../tasks/2026-07-18-p6-1-repeat-scoring-golden.md)。
 
 - 从 Web 的 normalize、候选窗口、Levenshtein、句子 60% 覆盖规则提取匿名 fixture。
 - 实现纯 Swift scorer。

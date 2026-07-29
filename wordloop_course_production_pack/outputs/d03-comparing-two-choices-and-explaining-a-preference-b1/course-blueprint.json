@@ -1,0 +1,585 @@
+{
+  "courseId": "d03-comparing-two-choices-and-explaining-a-preference-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够比较两个常见选择的相同与不同，根据条件说明自己更倾向哪一种。",
+    "communicationGoals": [
+      "清楚提出需要比较的两个选项",
+      "比较关键差异和少量共同点",
+      "说明不同人或不同情况下的适用性",
+      "表达个人选择以及做出选择的标准"
+    ],
+    "coreChunks": [
+      "I prefer this because",
+      "On the other hand",
+      "Both options have their",
+      "In this situation"
+    ],
+    "supportingVocabulary": [
+      "compare",
+      "advantage",
+      "disadvantage",
+      "preference",
+      "similarity",
+      "difference"
+    ],
+    "contentBoundaries": [
+      "不展开全面优缺点分析",
+      "不处理复杂例外和反方观点",
+      "不依赖某一个固定比较主题"
+    ],
+    "realWorldContexts": [
+      "Choosing between two job offers",
+      "Deciding on a vacation destination"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "清楚提出需要比较的两个选项",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "比较关键差异和少量共同点",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "说明不同人或不同情况下的适用性",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "表达个人选择以及做出选择的标准",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I prefer this because",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "清楚提出需要比较的两个选项"
+      ]
+    },
+    {
+      "chunk": "On the other hand",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "比较关键差异和少量共同点"
+      ]
+    },
+    {
+      "chunk": "Both options have their",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "说明不同人或不同情况下的适用性"
+      ]
+    },
+    {
+      "chunk": "In this situation",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "表达个人选择以及做出选择的标准"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "清楚提出需要比较的两个选项",
+      "meaningTarget": "清楚提出需要比较的两个选项",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "清楚提出需要比较的两个选项",
+      "meaningTarget": "清楚提出需要比较的两个选项",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "清楚提出需要比较的两个选项",
+      "meaningTarget": "清楚提出需要比较的两个选项",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "清楚提出需要比较的两个选项",
+      "meaningTarget": "清楚提出需要比较的两个选项",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "比较关键差异和少量共同点",
+      "meaningTarget": "比较关键差异和少量共同点",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "比较关键差异和少量共同点",
+      "meaningTarget": "比较关键差异和少量共同点",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "比较关键差异和少量共同点",
+      "meaningTarget": "比较关键差异和少量共同点",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "比较关键差异和少量共同点",
+      "meaningTarget": "比较关键差异和少量共同点",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "说明不同人或不同情况下的适用性",
+      "meaningTarget": "说明不同人或不同情况下的适用性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "说明不同人或不同情况下的适用性",
+      "meaningTarget": "说明不同人或不同情况下的适用性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "说明不同人或不同情况下的适用性",
+      "meaningTarget": "说明不同人或不同情况下的适用性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "说明不同人或不同情况下的适用性",
+      "meaningTarget": "说明不同人或不同情况下的适用性",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "表达个人选择以及做出选择的标准",
+      "meaningTarget": "表达个人选择以及做出选择的标准",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "表达个人选择以及做出选择的标准",
+      "meaningTarget": "表达个人选择以及做出选择的标准",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "表达个人选择以及做出选择的标准",
+      "meaningTarget": "表达个人选择以及做出选择的标准",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "表达个人选择以及做出选择的标准",
+      "meaningTarget": "表达个人选择以及做出选择的标准",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer this because",
+        "On the other hand",
+        "Both options have their",
+        "In this situation"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不展开全面优缺点分析",
+      "不处理复杂例外和反方观点",
+      "不依赖某一个固定比较主题"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

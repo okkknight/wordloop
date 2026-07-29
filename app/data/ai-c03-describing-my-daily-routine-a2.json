@@ -1,0 +1,169 @@
+{
+  "courseId": "c03-describing-my-daily-routine-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-c03-001",
+      "text": "I get up early and make some coffee.",
+      "translation": "我早起并煮咖啡。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-c03-002",
+      "text": "I usually wake up at 7 a.m. and brush my teeth.",
+      "translation": "我通常在早上七点起床并刷牙。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-c03-003",
+      "text": "After waking up, I check my phone for messages.",
+      "translation": "醒来后，我查看手机上的信息。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-c03-004",
+      "text": "Before leaving, I make sure to feed the cat.",
+      "translation": "出门前，我一定会喂猫。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-c03-005",
+      "text": "I usually start my workday by checking emails and setting priorities.",
+      "translation": "我通常通过查看电子邮件和设定优先事项来开始我的工作日。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.224,
+      "duration": 4.224
+    },
+    {
+      "id": "ai-c03-006",
+      "text": "For breakfast, I often have cereal and then head to the office.",
+      "translation": "早餐我经常吃麦片，然后去办公室。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    },
+    {
+      "id": "ai-c03-007",
+      "text": "During work, I focus on completing my tasks and attending meetings.",
+      "translation": "工作期间，我专注于完成任务和参加会议。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.651,
+      "duration": 4.651
+    },
+    {
+      "id": "ai-c03-008",
+      "text": "My typical workday involves answering client calls and managing projects.",
+      "translation": "我典型的工作日包括接听客户电话和管理项目。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.779,
+      "duration": 4.779
+    },
+    {
+      "id": "ai-c03-009",
+      "text": "After work, I usually go for a walk to relax before dinner.",
+      "translation": "下班后，我通常会去散步放松一下，然后再吃晚饭。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-c03-010",
+      "text": "I start work around 9 AM and finish by 5 PM, then head home for dinner.",
+      "translation": "我大约早上九点开始工作，下午五点结束，然后回家吃晚饭。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.461,
+      "duration": 5.461
+    },
+    {
+      "id": "ai-c03-011",
+      "text": "In the evening, I like to read a book or watch a movie after dinner.",
+      "translation": "晚上，我喜欢在晚饭后读书或看电影。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.395,
+      "duration": 4.395
+    },
+    {
+      "id": "ai-c03-012",
+      "text": "I sometimes go to the gym in the evening if I have time.",
+      "translation": "如果有时间，我有时晚上会去健身房。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-c03-013",
+      "text": "I usually go for a jog in the morning, but sometimes I just walk instead.",
+      "translation": "我通常早上去慢跑，但有时我只是散步。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.12,
+      "duration": 5.12
+    },
+    {
+      "id": "ai-c03-014",
+      "text": "In the evening, I like to read a book, but sometimes I watch TV instead.",
+      "translation": "晚上，我喜欢读书，但有时我会看电视。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.205,
+      "duration": 5.205
+    },
+    {
+      "id": "ai-c03-015",
+      "text": "During the week, I often go to bed by 10 PM, but on weekends I stay up later.",
+      "translation": "工作日我通常在晚上十点前睡觉，但周末我会熬夜。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 6.059,
+      "duration": 6.059
+    },
+    {
+      "id": "ai-c03-016",
+      "text": "I tend to drink coffee every morning, except on Sundays when I prefer tea.",
+      "translation": "我倾向于每天早上喝咖啡，除了星期天我更喜欢喝茶。",
+      "audio": "audio/c03-describing-my-daily-routine-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.949,
+      "duration": 4.949
+    }
+  ]
+}

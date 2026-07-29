@@ -1,0 +1,590 @@
+{
+  "courseId": "a03-ordering-and-customizing-food-and-drinks-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "scenario_interaction",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够完成基础点餐，选择数量和规格，提出常见调整，并确认订单。",
+    "communicationGoals": [
+      "点选食物或饮品并说明数量",
+      "选择大小、温度、套餐或配菜",
+      "提出少糖、去冰、不加某种配料等常见调整",
+      "确认订单内容并自然结束点单"
+    ],
+    "coreChunks": [
+      "I'd like to order",
+      "Can I have it",
+      "Make it a large",
+      "Could you repeat my"
+    ],
+    "supportingVocabulary": [
+      "menu",
+      "sugar",
+      "ice",
+      "side dish",
+      "combo",
+      "temperature",
+      "size",
+      "customize",
+      "order",
+      "confirm"
+    ],
+    "contentBoundaries": [
+      "不处理上错餐、退款或投诉",
+      "不加入复杂过敏史或专业饮食限制",
+      "不扩展成餐厅社交对话"
+    ],
+    "realWorldContexts": [
+      "Ordering a coffee with specific milk and sugar preferences at a cafe",
+      "Customizing a sandwich order at a deli",
+      "Requesting a specific drink size and ice level at a fast-food restaurant"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "点选食物或饮品并说明数量",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "选择大小、温度、套餐或配菜",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "提出少糖、去冰、不加某种配料等常见调整",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "确认订单内容并自然结束点单",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I'd like to order",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "点选食物或饮品并说明数量"
+      ]
+    },
+    {
+      "chunk": "Can I have it",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "选择大小、温度、套餐或配菜"
+      ]
+    },
+    {
+      "chunk": "Make it a large",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "提出少糖、去冰、不加某种配料等常见调整"
+      ]
+    },
+    {
+      "chunk": "Could you repeat my",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "确认订单内容并自然结束点单"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "meaningTarget": "点选食物或饮品并说明数量",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "meaningTarget": "点选食物或饮品并说明数量",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "meaningTarget": "点选食物或饮品并说明数量",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "点选食物或饮品并说明数量",
+      "meaningTarget": "点选食物或饮品并说明数量",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "meaningTarget": "选择大小、温度、套餐或配菜",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "meaningTarget": "选择大小、温度、套餐或配菜",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "meaningTarget": "选择大小、温度、套餐或配菜",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "选择大小、温度、套餐或配菜",
+      "meaningTarget": "选择大小、温度、套餐或配菜",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "meaningTarget": "提出少糖、去冰、不加某种配料等常见调整",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "meaningTarget": "提出少糖、去冰、不加某种配料等常见调整",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "meaningTarget": "提出少糖、去冰、不加某种配料等常见调整",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "提出少糖、去冰、不加某种配料等常见调整",
+      "meaningTarget": "提出少糖、去冰、不加某种配料等常见调整",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "meaningTarget": "确认订单内容并自然结束点单",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "meaningTarget": "确认订单内容并自然结束点单",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "meaningTarget": "确认订单内容并自然结束点单",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "确认订单内容并自然结束点单",
+      "meaningTarget": "确认订单内容并自然结束点单",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I'd like to order",
+        "Can I have it",
+        "Make it a large",
+        "Could you repeat my"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理上错餐、退款或投诉",
+        "不加入复杂过敏史或专业饮食限制",
+        "不扩展成餐厅社交对话"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不处理上错餐、退款或投诉",
+      "不加入复杂过敏史或专业饮食限制",
+      "不扩展成餐厅社交对话"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

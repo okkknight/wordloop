@@ -1,0 +1,72 @@
+{
+  "curriculumRationale": "现有 B1 课程已覆盖礼貌请求、邀约与婉拒、任务安排和项目反馈，但尚未系统训练在工作与日常协作中清楚说明时间、精力和优先级限制，并提出替代方案的表达能力。本课以可迁移的沟通动作为中心，而非某一个具体场景。",
+  "courses": [
+    {
+      "courseId": "polite-boundaries-b1",
+      "titleZh": "礼貌设定边界",
+      "titleEn": "Setting Boundaries Politely",
+      "courseType": "communication_skill",
+      "typeReason": "核心学习成果是在多种关系和情境中清楚表达限制、保留合作意愿并协商下一步，因此属于跨场景沟通技能，而不是单一场景任务或个人主题表达。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "A2+",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "学习者能够礼貌地说明自己暂时不能承担、参加或回复某项请求的原因，并在合适时提出时间、范围或替代方案。",
+      "communicationGoals": [
+        "先表达理解或合作意愿，再清楚说明限制。",
+        "用简短、真实的理由解释时间、精力或优先级限制。",
+        "提出延后、缩小范围、换人或改用其他方式等可执行替代。",
+        "在不失礼的情况下保持明确立场。"
+      ],
+      "abilityTags": [
+        "礼貌拒绝",
+        "说明限制",
+        "协商替代方案",
+        "时间与优先级",
+        "语气控制"
+      ],
+      "selectionReason": "成年学习者常需要回应临时请求、额外任务、社交安排和协作压力。该能力高频、可迁移，并能在 16 句独立跟读中形成从直接说明到协商方案的清晰递进。",
+      "distinctiveValue": "不同于现有的 Polite Requests（提出请求）和 Fish out of Water（邀约与离开），本课聚焦回应他人的请求时如何设定界限；不同于 Project Feedback，它不评价工作成果，而是处理自身可承担的范围。",
+      "prerequisites": [
+        "voa-polite-requests-b1",
+        "voa-future-plans-b1"
+      ],
+      "humanReviewRisks": [
+        "避免把明确边界写成消极、冷漠或过度道歉的语气。",
+        "避免只围绕职场任务；后续句子应覆盖日常协作和社交安排，但保持同一沟通动作。",
+        "避免把复杂组织政治、法律义务或诊断性心理建议带入课程。",
+        "最终要确认每句都能脱离上下文独立朗读，而不是依赖虚构对话。"
+      ],
+      "approved": true
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "工作协作",
+      "日常安排",
+      "社交邀请",
+      "跨场景沟通技能"
+    ],
+    "duplicatesResolved": [
+      "未选择泛化的工作闲聊、日程安排或项目反馈主题，因为现有课程已覆盖这些领域。",
+      "将主题限定为回应请求时设定边界和协商替代，避免与礼貌请求或单纯婉拒重复。"
+    ],
+    "remainingGaps": [
+      "这是单门试制课，不能代表完整课程池的类型和等级均衡。",
+      "原创句子课程的音频来源、许可和运行时接入方式尚未确定。"
+    ],
+    "humanReviewFocus": [
+      "确认该主题与产品方向及现有课程的区分足够明确。",
+      "确认 B1 的任务范围合适；若希望训练更复杂的让步和冲突处理，可改为 B2。",
+      "批准后才生成单课蓝图；最终课程仍必须进行人工语言和教学价值终审。"
+    ]
+  }
+}

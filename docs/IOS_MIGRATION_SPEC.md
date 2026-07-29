@@ -54,7 +54,7 @@
 
 - iPad 专属布局、macOS、watchOS、visionOS。
 - 订阅、内购、付费课程。
-- 新账号体系、音素级发音评分或调整当前通过阈值。
+- 新账号体系或音素级发音评分；通过阈值仅采用已确认的 Web、VPS 与 iOS 统一 15 分决定，不继续扩展评分规则。
 - 从远端下发 Swift、JavaScript、HTML 小程序或其他可执行逻辑。
 - 重写现有 Web；Web 只做共享课程产物所需的最小适配。
 
@@ -347,7 +347,7 @@ idle → connecting → ready → playing → armed → speaking → scoring
 | retry/error | `TRY AGAIN` | 请再读一次 |
 | paused | `PAUSED` | 准备好后继续练习 |
 
-每次生成递增 `turnID`。播放结束后才 armed；转写必须同时匹配当前 `turnID`、Realtime item ID 和 armed 状态。切课、切模式、暂停、后台和重试都使旧 turn 失效。评分先做纯 Swift 等价迁移并建立 golden tests，不调整阈值。
+每次生成递增 `turnID`。播放结束后才 armed；转写必须同时匹配当前 `turnID`、Realtime item ID 和 armed 状态。切课、切模式、暂停、后台和重试都使旧 turn 失效。评分以纯 Swift 等价迁移和 golden fixtures 为基础；按 2026-07-24 产品决定，Web、VPS 与 iOS 的通过阈值统一为 15 分，句子 60% 覆盖率不变。
 
 首次进入 REPEAT 且用户主动开始时才请求麦克风。拒绝后页面保持可读，显示 `OPEN SETTINGS`；LISTEN 仍可用。Release 必须包含用途说明和 Privacy Manifest 检查。
 

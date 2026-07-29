@@ -1,0 +1,169 @@
+{
+  "courseId": "a03-ordering-and-customizing-food-and-drinks-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a03-001",
+      "text": "Can I get two coffees?",
+      "translation": "我可以要两杯咖啡吗？",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.176,
+      "duration": 2.176
+    },
+    {
+      "id": "ai-a03-002",
+      "text": "I'd like to order a salad.",
+      "translation": "我想点一个沙拉。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.261,
+      "duration": 2.261
+    },
+    {
+      "id": "ai-a03-003",
+      "text": "Can I have a burger?",
+      "translation": "我可以要一个汉堡吗？",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.579,
+      "duration": 1.579
+    },
+    {
+      "id": "ai-a03-004",
+      "text": "Could I get a cup of tea?",
+      "translation": "我可以要一杯茶吗？",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.963,
+      "duration": 1.963
+    },
+    {
+      "id": "ai-a03-005",
+      "text": "I'll have a large soda.",
+      "translation": "我要一大杯汽水。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.048,
+      "duration": 2.048
+    },
+    {
+      "id": "ai-a03-006",
+      "text": "Can I have it with extra cheese?",
+      "translation": "我可以加点奶酪吗？",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.304,
+      "duration": 2.304
+    },
+    {
+      "id": "ai-a03-007",
+      "text": "I'd like the soup hot.",
+      "translation": "我想要热的汤。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.877,
+      "duration": 1.877
+    },
+    {
+      "id": "ai-a03-008",
+      "text": "I'll take the combo with a drink.",
+      "translation": "我要套餐加饮料。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-a03-009",
+      "text": "No ice in my drink, please.",
+      "translation": "请不要在我的饮料里加冰。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-a03-010",
+      "text": "Make it a large, please, with extra cream.",
+      "translation": "请做大杯，加多点奶油。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-a03-011",
+      "text": "Hold the mayo on my sandwich.",
+      "translation": "我的三明治不要加蛋黄酱。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.176,
+      "duration": 2.176
+    },
+    {
+      "id": "ai-a03-012",
+      "text": "Can you make the soup less salty?",
+      "translation": "你能把汤做得淡一点吗？",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a03-013",
+      "text": "Everything looks good, thank you.",
+      "translation": "一切看起来不错，谢谢。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-a03-014",
+      "text": "Could you repeat my order to make sure?",
+      "translation": "你能重复一下我的订单以确认吗？",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-a03-015",
+      "text": "Thanks, that's perfect.",
+      "translation": "谢谢，太完美了。",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.005,
+      "duration": 2.005
+    },
+    {
+      "id": "ai-a03-016",
+      "text": "Thanks for your help, have a good day!",
+      "translation": "谢谢你的帮助，祝你有美好的一天！",
+      "audio": "audio/a03-ordering-and-customizing-food-and-drinks-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.517,
+      "duration": 2.517
+    }
+  ]
+}

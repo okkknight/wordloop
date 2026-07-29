@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wordloop.app/schema/course.schema.json",
+  "title": "WordLoop Course Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "collectionId",
+    "contentVersion",
+    "title",
+    "subtitle",
+    "description",
+    "kind",
+    "practiceOrder",
+    "entries"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "id": {
+      "$ref": "#/$defs/stableId"
+    },
+    "collectionId": {
+      "$ref": "#/$defs/stableId"
+    },
+    "contentVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "$ref": "#/$defs/nonEmptyText"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": ["word", "sentence"]
+    },
+    "practiceOrder": {
+      "enum": ["random", "sequential"]
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "nonEmptyText": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nullableText": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "safeAudioPath": {
+      "type": "string",
+      "pattern": "^audio/(?!\\.{1,2}(?:/|$))(?!.*\\/\\.{1,2}(?:/|$))(?!.*%[0-9A-Fa-f]{2})(?!.*\\\\)(?!.*//)[^/:]+(?:/[^/:]+)*\\.m4a$"
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "audio", "durationMilliseconds"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stableId"
+        },
+        "text": {
+          "$ref": "#/$defs/nonEmptyText"
+        },
+        "translation": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "phonetic": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "highlights": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmptyText"
+          }
+        },
+        "audio": {
+          "$ref": "#/$defs/safeAudioPath"
+        },
+        "durationMilliseconds": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

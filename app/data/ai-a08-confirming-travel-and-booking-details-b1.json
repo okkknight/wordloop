@@ -1,0 +1,169 @@
+{
+  "courseId": "a08-confirming-travel-and-booking-details-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a08-001",
+      "text": "What time does the flight leave?",
+      "translation": "航班几点起飞？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-a08-002",
+      "text": "Can you confirm the date of the concert?",
+      "translation": "你能确认一下音乐会的日期吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a08-003",
+      "text": "What time does the train arrive?",
+      "translation": "火车几点到达？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a08-004",
+      "text": "Is the meeting at 3 PM or 4 PM?",
+      "translation": "会议是下午三点还是四点？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-a08-005",
+      "text": "Can you verify my passport number?",
+      "translation": "你能核对一下我的护照号码吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-a08-006",
+      "text": "Is the name spelled correctly on the ticket?",
+      "translation": "票上的名字拼写正确吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.517,
+      "duration": 2.517
+    },
+    {
+      "id": "ai-a08-007",
+      "text": "Could you double-check my ID number?",
+      "translation": "你能再核对一下我的身份证号码吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.072,
+      "duration": 3.072
+    },
+    {
+      "id": "ai-a08-008",
+      "text": "Can you confirm my booking reference?",
+      "translation": "你能确认一下我的预订参考号吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-a08-009",
+      "text": "Are we in seats 12A and 12B?",
+      "translation": "我们在12A和12B座位吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a08-010",
+      "text": "What time is the check-in for the flight?",
+      "translation": "航班的办理登机手续时间是几点？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-a08-011",
+      "text": "Is breakfast included with the room?",
+      "translation": "房间包含早餐吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-a08-012",
+      "text": "Is there a shuttle service to the airport?",
+      "translation": "有到机场的班车服务吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-a08-013",
+      "text": "Let's review the itinerary one more time.",
+      "translation": "我们再检查一下行程安排。",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.072,
+      "duration": 3.072
+    },
+    {
+      "id": "ai-a08-014",
+      "text": "Does this include breakfast for both days?",
+      "translation": "这包括两天的早餐吗？",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-a08-015",
+      "text": "Please summarize the reservation details for me.",
+      "translation": "请为我总结一下预订细节。",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-a08-016",
+      "text": "Let's make sure we have everything right before we go.",
+      "translation": "我们出发前确保所有信息无误。",
+      "audio": "audio/a08-confirming-travel-and-booking-details-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    }
+  ]
+}

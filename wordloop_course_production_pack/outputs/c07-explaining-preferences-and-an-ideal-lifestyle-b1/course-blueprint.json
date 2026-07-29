@@ -1,0 +1,586 @@
+{
+  "courseId": "c07-explaining-preferences-and-an-ideal-lifestyle-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够表达对节奏、环境、社交和生活方式的偏好，并说明原因和现实限制。",
+    "communicationGoals": [
+      "表达对生活节奏、环境和日常安排的偏好",
+      "描述理想的一天或理想生活状态",
+      "说明偏好背后的原因和感受",
+      "承认现实限制并表达可以接受的折中"
+    ],
+    "coreChunks": [
+      "I prefer a lifestyle",
+      "My ideal day includes",
+      "I feel happiest when",
+      "I can compromise by"
+    ],
+    "supportingVocabulary": [
+      "balance",
+      "routine",
+      "environment",
+      "social",
+      "flexibility",
+      "compromise"
+    ],
+    "contentBoundaries": [
+      "不做两个选项的系统比较课程",
+      "不变成长期目标规划",
+      "不使用空泛的幸福或成功口号"
+    ],
+    "realWorldContexts": [
+      "Discussing weekend plans with friends",
+      "Explaining your daily routine to a new colleague",
+      "Talking about lifestyle choices with a partner"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "表达对生活节奏、环境和日常安排的偏好",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "描述理想的一天或理想生活状态",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "说明偏好背后的原因和感受",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "承认现实限制并表达可以接受的折中",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I prefer a lifestyle",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "表达对生活节奏、环境和日常安排的偏好"
+      ]
+    },
+    {
+      "chunk": "My ideal day includes",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "描述理想的一天或理想生活状态"
+      ]
+    },
+    {
+      "chunk": "I feel happiest when",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "说明偏好背后的原因和感受"
+      ]
+    },
+    {
+      "chunk": "I can compromise by",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "承认现实限制并表达可以接受的折中"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "表达对生活节奏、环境和日常安排的偏好",
+      "meaningTarget": "表达对生活节奏、环境和日常安排的偏好",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "表达对生活节奏、环境和日常安排的偏好",
+      "meaningTarget": "表达对生活节奏、环境和日常安排的偏好",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "表达对生活节奏、环境和日常安排的偏好",
+      "meaningTarget": "表达对生活节奏、环境和日常安排的偏好",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "表达对生活节奏、环境和日常安排的偏好",
+      "meaningTarget": "表达对生活节奏、环境和日常安排的偏好",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "描述理想的一天或理想生活状态",
+      "meaningTarget": "描述理想的一天或理想生活状态",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "描述理想的一天或理想生活状态",
+      "meaningTarget": "描述理想的一天或理想生活状态",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "描述理想的一天或理想生活状态",
+      "meaningTarget": "描述理想的一天或理想生活状态",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "描述理想的一天或理想生活状态",
+      "meaningTarget": "描述理想的一天或理想生活状态",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "说明偏好背后的原因和感受",
+      "meaningTarget": "说明偏好背后的原因和感受",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "说明偏好背后的原因和感受",
+      "meaningTarget": "说明偏好背后的原因和感受",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "说明偏好背后的原因和感受",
+      "meaningTarget": "说明偏好背后的原因和感受",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "说明偏好背后的原因和感受",
+      "meaningTarget": "说明偏好背后的原因和感受",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "承认现实限制并表达可以接受的折中",
+      "meaningTarget": "承认现实限制并表达可以接受的折中",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "承认现实限制并表达可以接受的折中",
+      "meaningTarget": "承认现实限制并表达可以接受的折中",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "承认现实限制并表达可以接受的折中",
+      "meaningTarget": "承认现实限制并表达可以接受的折中",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "承认现实限制并表达可以接受的折中",
+      "meaningTarget": "承认现实限制并表达可以接受的折中",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I prefer a lifestyle",
+        "My ideal day includes",
+        "I feel happiest when",
+        "I can compromise by"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不做两个选项的系统比较课程",
+        "不变成长期目标规划",
+        "不使用空泛的幸福或成功口号"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不做两个选项的系统比较课程",
+      "不变成长期目标规划",
+      "不使用空泛的幸福或成功口号"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

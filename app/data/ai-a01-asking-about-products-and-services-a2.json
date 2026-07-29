@@ -1,0 +1,169 @@
+{
+  "courseId": "a01-asking-about-products-and-services-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a01-001",
+      "text": "Is there an extra fee for delivery?",
+      "translation": "送货有额外费用吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a01-002",
+      "text": "How much does this cost per month?",
+      "translation": "这个每个月多少钱？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-a01-003",
+      "text": "Are there any hidden fees I should know about?",
+      "translation": "有我需要知道的隐藏费用吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-a01-004",
+      "text": "What is the total price with all fees?",
+      "translation": "加上所有费用后的总价是多少？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.115,
+      "duration": 3.115
+    },
+    {
+      "id": "ai-a01-005",
+      "text": "Do you have this item in stock?",
+      "translation": "你们有这个商品的库存吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a01-006",
+      "text": "Is this available now, or do I need to wait?",
+      "translation": "这个现在有货吗，还是我需要等？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-a01-007",
+      "text": "Can I get this service today?",
+      "translation": "我今天可以得到这个服务吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.176,
+      "duration": 2.176
+    },
+    {
+      "id": "ai-a01-008",
+      "text": "When will this be back in stock?",
+      "translation": "这个什么时候会有货？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-a01-009",
+      "text": "Does this come in different sizes?",
+      "translation": "这个有不同的尺寸吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-a01-010",
+      "text": "What are the options for colors?",
+      "translation": "颜色有哪些选择？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-a01-011",
+      "text": "Can you tell me the dimensions of this?",
+      "translation": "你能告诉我这个的尺寸吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a01-012",
+      "text": "Is there a difference between these two models?",
+      "translation": "这两种型号之间有区别吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a01-013",
+      "text": "So, just to be clear, the total cost is $50, right?",
+      "translation": "所以，确认一下，总费用是50美元，对吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.821,
+      "duration": 4.821
+    },
+    {
+      "id": "ai-a01-014",
+      "text": "Can you confirm that detail about the delivery time?",
+      "translation": "你能确认一下关于送货时间的细节吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-a01-015",
+      "text": "Just to confirm, this model comes in blue and red, correct?",
+      "translation": "确认一下，这款有蓝色和红色，对吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.352,
+      "duration": 4.352
+    },
+    {
+      "id": "ai-a01-016",
+      "text": "Let me double-check: the price includes installation, right?",
+      "translation": "让我再确认一下：价格包括安装，对吗？",
+      "audio": "audio/a01-asking-about-products-and-services-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.352,
+      "duration": 4.352
+    }
+  ]
+}

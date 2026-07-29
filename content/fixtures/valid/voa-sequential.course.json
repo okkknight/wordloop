@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "voa-workplace-conversations-b1",
+  "collectionId": "voa-level-2",
+  "contentVersion": 3,
+  "title": "Workplace Conversations · B1",
+  "subtitle": "VOA Learning English",
+  "description": "职场英语对话练习",
+  "kind": "sentence",
+  "practiceOrder": "sequential",
+  "entries": [
+    {
+      "id": "voa-workplace-0001",
+      "text": "Could we talk about the project timeline?",
+      "translation": "我们能谈谈项目时间表吗？",
+      "highlights": ["talk about", "project timeline"],
+      "audio": "audio/voa-workplace-0001.m4a",
+      "durationMilliseconds": 2350
+    }
+  ]
+}

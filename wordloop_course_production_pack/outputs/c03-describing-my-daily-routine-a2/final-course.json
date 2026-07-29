@@ -1,0 +1,261 @@
+{
+  "courseId": "c03-describing-my-daily-routine-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "text": "I get up early and make some coffee.",
+      "translation": "我早起并煮咖啡。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I get"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "text": "I usually wake up at 7 a.m. and brush my teeth.",
+      "translation": "我通常在早上七点起床并刷牙。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I usually wake up at"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "text": "After waking up, I check my phone for messages.",
+      "translation": "醒来后，我查看手机上的信息。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "After waking"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "描述起床、早餐和出门前的活动",
+      "text": "Before leaving, I make sure to feed the cat.",
+      "translation": "出门前，我一定会喂猫。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Before leaving,"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "text": "I usually start my workday by checking emails and setting priorities.",
+      "translation": "我通常通过查看电子邮件和设定优先事项来开始我的工作日。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I usually"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "text": "For breakfast, I often have cereal and then head to the office.",
+      "translation": "早餐我经常吃麦片，然后去办公室。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "For breakfast, I often have"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "text": "During work, I focus on completing my tasks and attending meetings.",
+      "translation": "工作期间，我专注于完成任务和参加会议。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "During work,"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "描述工作或学习时段的主要安排",
+      "text": "My typical workday involves answering client calls and managing projects.",
+      "translation": "我典型的工作日包括接听客户电话和管理项目。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "My typical"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "text": "After work, I usually go for a walk to relax before dinner.",
+      "translation": "下班后，我通常会去散步放松一下，然后再吃晚饭。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "After work,"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "text": "I start work around 9 AM and finish by 5 PM, then head home for dinner.",
+      "translation": "我大约早上九点开始工作，下午五点结束，然后回家吃晚饭。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I start work around"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "text": "In the evening, I like to read a book or watch a movie after dinner.",
+      "translation": "晚上，我喜欢在晚饭后读书或看电影。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "In the"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "描述下班、晚饭和晚间活动",
+      "text": "I sometimes go to the gym in the evening if I have time.",
+      "translation": "如果有时间，我有时晚上会去健身房。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I sometimes"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "text": "I usually go for a jog in the morning, but sometimes I just walk instead.",
+      "translation": "我通常早上去慢跑，但有时我只是散步。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I usually"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "text": "In the evening, I like to read a book, but sometimes I watch TV instead.",
+      "translation": "晚上，我喜欢读书，但有时我会看电视。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "In the evening, I like to"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "text": "During the week, I often go to bed by 10 PM, but on weekends I stay up later.",
+      "translation": "工作日我通常在晚上十点前睡觉，但周末我会熬夜。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "During the"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明频率、偶尔变化和周中差异",
+      "text": "I tend to drink coffee every morning, except on Sundays when I prefer tea.",
+      "translation": "我倾向于每天早上喝咖啡，除了星期天我更喜欢喝茶。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I tend"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

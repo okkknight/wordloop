@@ -1,0 +1,6 @@
+@wordloopContentStaging path /wordloop-content-staging/*
+handle @wordloopContentStaging {
+    uri strip_prefix /wordloop-content-staging
+    root * /opt/boringmax/wordloop/content-staging
+    file_server
+}

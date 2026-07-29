@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "C08",
+      "titleZh": "解释我的动力与习惯改变",
+      "titleEn": "Explaining Motivation and Why I Changed a Habit",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够说明原来的状态、促成改变的原因、采取的行动以及遇到的困难。",
+      "communicationGoals": [
+        "描述改变之前的习惯或问题",
+        "说明触发改变的事件、感受或目标",
+        "描述已经采取的具体行动",
+        "说明效果、困难和接下来想继续调整的地方"
+      ],
+      "abilityTags": [
+        "C5",
+        "C6",
+        "C"
+      ],
+      "selectionReason": "课程池 releaseOrder 26 的冻结课程。",
+      "distinctiveValue": "训练因果和变化叙述，是从日常描述走向解释自己的关键课程。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不扩展成完整人生目标课程",
+        "不提供健康或心理治疗建议",
+        "不把内容写成励志演讲"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "描述改变之前的习惯或问题",
+      "说明触发改变的事件、感受或目标",
+      "描述已经采取的具体行动",
+      "说明效果、困难和接下来想继续调整的地方"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不扩展成完整人生目标课程",
+      "不提供健康或心理治疗建议",
+      "不把内容写成励志演讲"
+    ]
+  }
+}

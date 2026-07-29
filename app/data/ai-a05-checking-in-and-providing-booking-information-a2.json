@@ -1,0 +1,169 @@
+{
+  "courseId": "a05-checking-in-and-providing-booking-information-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a05-001",
+      "text": "I booked a room for tonight.",
+      "translation": "我预订了今晚的房间。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-a05-002",
+      "text": "I have a reservation under Smith.",
+      "translation": "我以史密斯的名字预订了。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a05-003",
+      "text": "My reservation is for two nights.",
+      "translation": "我的预订是两晚。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-a05-004",
+      "text": "The reservation is in my name, Emily.",
+      "translation": "预订是以我的名字，艾米丽。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-a05-005",
+      "text": "I'm checking in today for two nights.",
+      "translation": "我今天入住，住两晚。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-a05-006",
+      "text": "My check-in date is October 5th.",
+      "translation": "我的入住日期是10月5日。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    },
+    {
+      "id": "ai-a05-007",
+      "text": "I have my ID ready for check-in.",
+      "translation": "我准备好了身份证以便办理入住。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-a05-008",
+      "text": "I'll need to show my driver's license, right?",
+      "translation": "我需要出示我的驾照，对吗？",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-a05-009",
+      "text": "There are two of us staying in the room.",
+      "translation": "我们两个人住在房间里。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    },
+    {
+      "id": "ai-a05-010",
+      "text": "I will stay for four nights.",
+      "translation": "我会住四晚。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-a05-011",
+      "text": "We prefer a room with a king bed.",
+      "translation": "我们更喜欢有特大床的房间。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a05-012",
+      "text": "I'll pay with my credit card.",
+      "translation": "我会用信用卡支付。",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-a05-013",
+      "text": "Is breakfast included with my room?",
+      "translation": "我的房间包含早餐吗？",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a05-014",
+      "text": "Can you confirm my room has a sea view?",
+      "translation": "你能确认我的房间有海景吗？",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a05-015",
+      "text": "What time is check-out tomorrow?",
+      "translation": "明天几点退房？",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.133,
+      "duration": 2.133
+    },
+    {
+      "id": "ai-a05-016",
+      "text": "Could I get an extra key card, please?",
+      "translation": "我可以再要一张房卡吗？",
+      "audio": "audio/a05-checking-in-and-providing-booking-information-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.261,
+      "duration": 2.261
+    }
+  ]
+}

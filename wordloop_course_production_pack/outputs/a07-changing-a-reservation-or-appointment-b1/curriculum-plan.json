@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A07",
+      "titleZh": "更改预订或预约",
+      "titleEn": "Changing a Reservation or Appointment",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够找到已有预约，提出时间或内容变更，说明限制，并确认新的安排。",
+      "communicationGoals": [
+        "说明现有预订或预约信息",
+        "提出改时间、改人数或改服务内容的请求",
+        "说明原因、时间限制和可接受的替代方案",
+        "确认新的日期、时间、费用或变更结果"
+      ],
+      "abilityTags": [
+        "A4",
+        "A6",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 19 的冻结课程。",
+      "distinctiveValue": "专门训练对既有安排进行准确、礼貌的调整。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "说明现有预订或预约信息",
+      "提出改时间、改人数或改服务内容的请求",
+      "说明原因、时间限制和可接受的替代方案",
+      "确认新的日期、时间、费用或变更结果"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不处理首次预约的完整流程",
+      "不把变更发展成投诉或赔偿谈判",
+      "不涉及复杂合同取消条款"
+    ]
+  }
+}

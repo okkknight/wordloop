@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A10",
+      "titleZh": "说明服务问题并协商解决方案",
+      "titleEn": "Reporting a Service Problem and Negotiating a Solution",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够客观说明服务问题及其影响，评估对方方案，并礼貌协商更合适的解决方式。",
+      "communicationGoals": [
+        "准确描述发生了什么以及与原约定的差异",
+        "说明问题造成的实际影响和自己的合理期待",
+        "回应道歉、解释或初步解决方案",
+        "提出替代方案、设定合理条件并确认最终处理"
+      ],
+      "abilityTags": [
+        "A5",
+        "B5",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 29 的冻结课程。",
+      "distinctiveValue": "将问题表达、礼貌立场和协商能力结合起来，是现实任务领域的高阶课程。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "准确描述发生了什么以及与原约定的差异",
+      "说明问题造成的实际影响和自己的合理期待",
+      "回应道歉、解释或初步解决方案",
+      "提出替代方案、设定合理条件并确认最终处理"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不进入法律威胁、索赔或极端冲突",
+      "不做简单商品退换的重复版本",
+      "不要求使用攻击性或过度正式的投诉语言"
+    ]
+  }
+}

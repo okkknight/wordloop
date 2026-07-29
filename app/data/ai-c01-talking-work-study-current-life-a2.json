@@ -1,0 +1,169 @@
+{
+  "courseId": "c01-talking-work-study-current-life-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-c01-001",
+      "text": "I’m a student right now.",
+      "translation": "我现在是一名学生。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.048,
+      "duration": 2.048
+    },
+    {
+      "id": "ai-c01-002",
+      "text": "I work at a small company downtown.",
+      "translation": "我在市中心的一家小公司工作。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-c01-003",
+      "text": "I’m studying English in the evenings.",
+      "translation": "我晚上学习英语。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-c01-004",
+      "text": "I usually start work around nine in the morning.",
+      "translation": "我通常早上九点左右开始工作。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-c01-005",
+      "text": "Most days, I answer emails and work with my team.",
+      "translation": "大多数时候，我回复邮件并和团队一起工作。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.627,
+      "duration": 3.627
+    },
+    {
+      "id": "ai-c01-006",
+      "text": "My team is small, so we work closely together.",
+      "translation": "我的团队很小，所以我们紧密合作。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.669,
+      "duration": 3.669
+    },
+    {
+      "id": "ai-c01-007",
+      "text": "After work, I study for about an hour.",
+      "translation": "下班后，我学习大约一个小时。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-c01-008",
+      "text": "Lately, I’ve been working on a new project.",
+      "translation": "最近，我一直在做一个新项目。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.029,
+      "duration": 3.029
+    },
+    {
+      "id": "ai-c01-009",
+      "text": "I like my work because I learn something new every day.",
+      "translation": "我喜欢我的工作，因为每天都能学到新东西。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    },
+    {
+      "id": "ai-c01-010",
+      "text": "The hardest part is finding enough time after work.",
+      "translation": "最难的是下班后找到足够的时间。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-c01-011",
+      "text": "I usually work with two people on my team.",
+      "translation": "我通常和团队中的两个人一起工作。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-c01-012",
+      "text": "Lately, I’ve been getting used to a new schedule.",
+      "translation": "最近，我一直在适应新的时间安排。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-c01-013",
+      "text": "I’ve been doing this job for a few months now.",
+      "translation": "我做这份工作已经几个月了。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-c01-014",
+      "text": "I’m happy with how things are going so far.",
+      "translation": "到目前为止，我对事情的进展感到满意。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-c01-015",
+      "text": "I’m trying to speak English a little more every day.",
+      "translation": "我正努力每天多说一点英语。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.523,
+      "duration": 4.523
+    },
+    {
+      "id": "ai-c01-016",
+      "text": "Right now, I’m busy, but I feel good about it.",
+      "translation": "现在我很忙，但我对此感觉不错。",
+      "audio": "audio/c01-talking-work-study-current-life-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    }
+  ]
+}

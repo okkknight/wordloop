@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B09",
+      "titleZh": "礼貌拒绝并提供替代方案",
+      "titleEn": "Refusing Politely and Offering Alternatives",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够清楚拒绝请求或邀请，同时表达感谢、给出适度理由，并提出可行替代方案。",
+      "communicationGoals": [
+        "不含糊地表达无法接受或参加",
+        "用合适程度的理由解释限制",
+        "表达感谢、遗憾或对关系的重视",
+        "提出其他时间、方式或较小范围的替代方案"
+      ],
+      "abilityTags": [
+        "B5",
+        "B6",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 30 的冻结课程。",
+      "distinctiveValue": "兼顾边界与关系，训练比简单说no更成熟的拒绝方式。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不为拒绝编造复杂故事",
+        "不进入价值争论或冲突升级",
+        "不把拒绝变成长篇道歉"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "不含糊地表达无法接受或参加",
+      "用合适程度的理由解释限制",
+      "表达感谢、遗憾或对关系的重视",
+      "提出其他时间、方式或较小范围的替代方案"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不为拒绝编造复杂故事",
+      "不进入价值争论或冲突升级",
+      "不把拒绝变成长篇道歉"
+    ]
+  }
+}

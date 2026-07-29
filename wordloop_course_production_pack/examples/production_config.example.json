@@ -1,0 +1,28 @@
+{
+  "courseCount": 36,
+  "sentenceCountPerCourse": 16,
+  "candidateCountPerSlot": 2,
+  "levelRange": ["A2", "B1", "B2"],
+  "targetLearner": "以中文为母语、希望提升真实英语口语输出能力的成年人",
+  "learningGoal": "通过跟读自然、实用的英语句子，提高生活交流、沟通能力和个人表达能力",
+  "languageVariant": "American English",
+  "preferredTypeDistribution": {
+    "scenario_interaction": 0.4,
+    "communication_skill": 0.3,
+    "topic_expression": 0.3
+  },
+  "generation": {
+    "maxJsonRetries": 2,
+    "maxSlotRegenerationRetries": 2
+  },
+  "checker": {
+    "tokenSimilarityWarning": 0.82,
+    "sequenceSimilarityWarning": 0.88,
+    "wordCountTolerance": 1
+  },
+  "batchRequirements": [
+    "优先覆盖成年人的高频生活和工作表达",
+    "避免大量餐饮购物类课程挤占课程池",
+    "确保 A2 也包含基础自我表达，B2 也包含复杂现实场景"
+  ]
+}

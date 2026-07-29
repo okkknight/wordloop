@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- iOS applies the rounded squircle mask itself; keeping the source full
+       bleed also avoids transparent App Store icon corners. -->
+  <rect width="1024" height="1024" fill="#f7d94d"/>
+  <path d="M784 120c-190 0-344 154-344 344s154 344 344 344" fill="none" stroke="#ef8842" stroke-width="104"/>
+  <path d="M240 607v-91M303 663V460M366 712V411M429 749V374M492 774V349M555 749V374M618 712V411M681 663V460M744 607v-91" fill="none" stroke="#292447" stroke-linecap="round" stroke-width="34"/>
+</svg>

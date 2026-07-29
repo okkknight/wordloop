@@ -1,0 +1,261 @@
+{
+  "courseId": "c06-sharing-a-memorable-trip-or-experience-b1",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "text": "I once traveled to the Grand Canyon.",
+      "translation": "我曾去过大峡谷旅行。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I once"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "text": "One memorable trip was to Yellowstone National Park.",
+      "translation": "一次难忘的旅行是去黄石国家公园。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "One memorable trip was"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "text": "In 2019, I went to San Francisco with my friends.",
+      "translation": "2019年，我和朋友们去了旧金山。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "In 2019,"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "交代目的地、时间或经历背景",
+      "text": "We decided to explore the Rocky Mountains in the fall.",
+      "translation": "我们决定在秋天探索落基山脉。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "We decided"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "text": "We expected sunny weather, but it rained every day.",
+      "translation": "我们期待晴天，但每天都下雨。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "We expected"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "text": "I remember it because we got lost in the city.",
+      "translation": "我记得是因为我们在城市里迷路了。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I remember it because"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "text": "The concert was supposed to start at 8, but it was delayed.",
+      "translation": "音乐会本应在8点开始，但被推迟了。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "The concert"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "描述期待与实际发生的关键事件",
+      "text": "We missed our flight and had to stay an extra night.",
+      "translation": "我们错过了航班，不得不多住了一晚。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "We missed"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "text": "The guide who showed us around was really knowledgeable.",
+      "translation": "带我们参观的导游非常博学。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The guide"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "text": "The highlight of the trip was seeing the Northern Lights.",
+      "translation": "旅行的亮点是看到北极光。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The highlight of the trip"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "text": "The street performer played the violin beautifully.",
+      "translation": "街头艺人小提琴拉得很美。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The street"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "选择一个具体人物、场景或细节展开",
+      "text": "The local market was full of vibrant colors and sounds.",
+      "translation": "当地市场充满了鲜艳的色彩和声音。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The local"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "text": "I felt a sense of peace walking through the forest.",
+      "translation": "在森林中漫步时，我感到一种宁静。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I felt"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "text": "What made it special was the kindness of the locals.",
+      "translation": "特别之处在于当地人的善良。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "What made it special"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "text": "I learned a lot about the culture and history of the area.",
+      "translation": "我学到了很多关于该地区的文化和历史。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I learned"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "说明感受、收获以及为什么记得它",
+      "text": "It was a trip that reminded me of the beauty of nature.",
+      "translation": "这次旅行让我想起了大自然的美丽。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "It was"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

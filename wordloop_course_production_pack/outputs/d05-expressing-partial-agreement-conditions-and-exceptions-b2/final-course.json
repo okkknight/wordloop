@@ -1,0 +1,261 @@
+{
+  "courseId": "d05-expressing-partial-agreement-conditions-and-exceptions-b2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "text": "I agree with you up to a point.",
+      "translation": "我在某种程度上同意你的观点。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I agree"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "text": "I see your point, but there are other factors to consider.",
+      "translation": "我明白你的观点，但还有其他因素需要考虑。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I see your point, but"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "text": "You make a good case, though it's not the whole story.",
+      "translation": "你提出了一个很好的论点，尽管这不是全部。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "You make"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "先承认对方观点或常见看法中的合理部分",
+      "text": "That's a fair assessment, but it's not without exceptions.",
+      "translation": "这是一个公平的评估，但并非没有例外。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "That's a"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "text": "This idea works if everyone is on board.",
+      "translation": "如果每个人都同意，这个想法就有效。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "This idea"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "text": "That's true to some extent, assuming the conditions remain stable.",
+      "translation": "在某种程度上这是正确的，假设条件保持稳定。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "That's true to some extent"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "text": "It could work, assuming everyone does their part.",
+      "translation": "假设每个人都尽到自己的责任，这可能会奏效。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "It could"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "指出观点成立所需要的具体条件",
+      "text": "The proposal is sound, provided we address the risks.",
+      "translation": "如果我们解决风险，这个提议是合理的。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "The proposal"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "text": "However, there's an exception when it comes to safety regulations.",
+      "translation": "然而，在安全法规方面有一个例外。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "However, there's"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "text": "If we consider the situation, it changes the outcome significantly.",
+      "translation": "如果我们考虑到这种情况，结果会有很大不同。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "If we consider the situation"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "text": "That rule is generally true, except for rare instances.",
+      "translation": "这个规则通常是正确的，除了少数情况。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "That rule"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "提出一个重要例外或被忽略的限制",
+      "text": "In most cases, yes, but not when deadlines are tight.",
+      "translation": "在大多数情况下是的，但在截止日期紧迫时不是。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "In most"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "text": "Overall, I think it's a good idea, but I'm cautious about the timeline.",
+      "translation": "总的来说，我认为这是个好主意，但我对时间表持谨慎态度。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Overall, I"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "text": "Except in cases where the budget is exceeded, the project should proceed.",
+      "translation": "除非预算超支，否则项目应该继续。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Except in cases where"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "text": "I mostly agree, but I still have some reservations about the cost.",
+      "translation": "我基本同意，但我对成本仍有一些保留意见。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I mostly"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "形成有限度的结论并保留自己的立场",
+      "text": "While I support the initiative, I have doubts about its long-term impact.",
+      "translation": "虽然我支持这个倡议，但我对其长期影响有疑虑。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "While I"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

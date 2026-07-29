@@ -1,0 +1,618 @@
+{
+  "courseId": "b01-introducing-yourself-a2",
+  "candidateCountPerSlot": 2,
+  "slots": [
+    {
+      "slot": 1,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s01-a",
+          "text": "Hi, I’m Alex. Nice to meet you.",
+          "translation": "嗨，我是 Alex。很高兴认识你。",
+          "usedChunks": [
+            "Nice to meet you"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s01-b",
+          "text": "Hello, I’m Alex. I’m glad we could meet.",
+          "translation": "你好，我是 Alex。很高兴我们能见面。",
+          "usedChunks": [
+            "I’m glad we could meet"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 2,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s02-a",
+          "text": "I’m here for the workshop today.",
+          "translation": "我今天来参加这个工作坊。",
+          "usedChunks": [
+            "I’m here for"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 6,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s02-b",
+          "text": "I’m here for the community event tonight.",
+          "translation": "我今晚来参加这个社区活动。",
+          "usedChunks": [
+            "I’m here for"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s03-a",
+          "text": "I work with the design team downtown.",
+          "translation": "我在市中心的设计团队工作。",
+          "usedChunks": [
+            "I work"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s03-b",
+          "text": "I work on a small team nearby.",
+          "translation": "我在附近的一个小团队工作。",
+          "usedChunks": [
+            "I work"
+          ],
+          "estimatedDifficulty": "entry",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s04-a",
+          "text": "I’m studying English after work these days.",
+          "translation": "我最近下班后学英语。",
+          "usedChunks": [
+            "after work"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s04-b",
+          "text": "I’m taking an English class after work.",
+          "translation": "我下班后在上英语课。",
+          "usedChunks": [
+            "English class"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 5,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s05-a",
+          "text": "This is my first time at this event.",
+          "translation": "这是我第一次参加这个活动。",
+          "usedChunks": [
+            "This is my first time"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s05-b",
+          "text": "This is my first time coming here.",
+          "translation": "这是我第一次来这里。",
+          "usedChunks": [
+            "This is my first time"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s06-a",
+          "text": "I moved here a few months ago.",
+          "translation": "我几个月前搬到这里。",
+          "usedChunks": [
+            "a few months ago"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s06-b",
+          "text": "I just moved to this area recently.",
+          "translation": "我最近刚搬到这个地区。",
+          "usedChunks": [
+            "moved to this area"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 7,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s07-a",
+          "text": "I enjoy meeting new people at events like this.",
+          "translation": "我喜欢在这样的活动中认识新朋友。",
+          "usedChunks": [
+            "meeting new people"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s07-b",
+          "text": "I like meeting people and learning new things.",
+          "translation": "我喜欢认识人，也喜欢学习新东西。",
+          "usedChunks": [
+            "learning new things"
+          ],
+          "estimatedDifficulty": "targetBase",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 8,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s08-a",
+          "text": "I’m here for a chance to meet people in my field.",
+          "translation": "我来这里是想认识同行。",
+          "usedChunks": [
+            "I’m here for"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s08-b",
+          "text": "I’m here for the chance to learn from other people.",
+          "translation": "我来这里是想向其他人学习。",
+          "usedChunks": [
+            "I’m here for"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s09-a",
+          "text": "I work in marketing, mostly on social media projects.",
+          "translation": "我做市场营销，主要负责社交媒体项目。",
+          "usedChunks": [
+            "I work"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s09-b",
+          "text": "I work in marketing and help with online projects.",
+          "translation": "我做市场营销，参与线上项目。",
+          "usedChunks": [
+            "I work"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 10,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s10-a",
+          "text": "I take a class nearby, so I came here after class.",
+          "translation": "我在附近上课，所以课后过来了。",
+          "usedChunks": [
+            "after class"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s10-b",
+          "text": "My class is nearby, and I came here afterward.",
+          "translation": "我的课就在附近，我下课后过来了。",
+          "usedChunks": [
+            "nearby"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 11,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s11-a",
+          "text": "This is my first time with this group, but everyone seems friendly.",
+          "translation": "这是我第一次参加这个小组，但大家看起来都很友好。",
+          "usedChunks": [
+            "This is my first time"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 12,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s11-b",
+          "text": "This is my first time here, and people have been very friendly.",
+          "translation": "这是我第一次来这里，大家一直都很友好。",
+          "usedChunks": [
+            "This is my first time"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 12,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s12-a",
+          "text": "I came with a coworker from my office.",
+          "translation": "我和办公室的一位同事一起来的。",
+          "usedChunks": [
+            "came with a coworker"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s12-b",
+          "text": "I came here with a friend from class.",
+          "translation": "我和班上的一个朋友一起来的。",
+          "usedChunks": [
+            "friend from class"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s13-a",
+          "text": "I’ve been looking for a group like this since I moved here.",
+          "translation": "自从搬来后，我一直在找这样的社群。",
+          "usedChunks": [
+            "I’ve been looking for"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 12,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s13-b",
+          "text": "I’ve wanted to join a group like this since I moved here.",
+          "translation": "自从搬来后，我一直想加入这样的社群。",
+          "usedChunks": [
+            "wanted to join"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 12,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s14-a",
+          "text": "I enjoy learning about what other people do.",
+          "translation": "我喜欢了解其他人做什么。",
+          "usedChunks": [
+            "learning about"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 8,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s14-b",
+          "text": "I like hearing about the work other people do.",
+          "translation": "我喜欢听别人谈他们所做的工作。",
+          "usedChunks": [
+            "hearing about"
+          ],
+          "estimatedDifficulty": "targetCore",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s15-a",
+          "text": "What brought you here, if you don’t mind me asking?",
+          "translation": "如果你不介意我问，是什么让你来这里的？",
+          "usedChunks": [
+            "What brought you here"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 10,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s15-b",
+          "text": "What brought you here today, if you don’t mind me asking?",
+          "translation": "如果你不介意我问，是什么让你今天来这里的？",
+          "usedChunks": [
+            "What brought you here"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 11,
+          "clauseCount": 2,
+          "informationUnitCount": 2,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    },
+    {
+      "slot": 16,
+      "generationWarning": null,
+      "options": [
+        {
+          "candidateId": "s16-a",
+          "text": "I’d love to hear more about your work sometime.",
+          "translation": "我很愿意之后多听你介绍你的工作。",
+          "usedChunks": [
+            "I’d love to hear"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        },
+        {
+          "candidateId": "s16-b",
+          "text": "I’d love to hear more about what you do.",
+          "translation": "我很愿意多听你介绍你是做什么的。",
+          "usedChunks": [
+            "hear more about"
+          ],
+          "estimatedDifficulty": "stretch",
+          "difficultyFactors": [
+            "blueprint slot focus"
+          ],
+          "wordCount": 9,
+          "clauseCount": 1,
+          "informationUnitCount": 1,
+          "realWorldUseExplanation": "用于在新环境中完成自然、简短的自我介绍。"
+        }
+      ]
+    }
+  ],
+  "generationReview": {
+    "coverageComplete": true,
+    "warnings": []
+  }
+}

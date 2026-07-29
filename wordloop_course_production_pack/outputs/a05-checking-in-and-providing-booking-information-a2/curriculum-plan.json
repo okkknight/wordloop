@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A05",
+      "titleZh": "办理入住并提供预订信息",
+      "titleEn": "Checking In and Providing Booking Information",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够说明自己有预订，提供姓名、日期和必要信息，并确认入住安排。",
+      "communicationGoals": [
+        "说明已有预订并提供预订姓名",
+        "提供入住日期、晚数和身份证明等基本信息",
+        "回答关于人数、房型和付款方式的简单问题",
+        "确认房间、钥匙、早餐和退房时间"
+      ],
+      "abilityTags": [
+        "A3",
+        "A4",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 14 的冻结课程。",
+      "distinctiveValue": "重点是准确提供信息并完成入住，而不是提出住宿偏好。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不处理房间投诉或严重预订错误",
+        "不重点训练更改预订",
+        "不涉及复杂押金和法律条款"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "说明已有预订并提供预订姓名",
+      "提供入住日期、晚数和身份证明等基本信息",
+      "回答关于人数、房型和付款方式的简单问题",
+      "确认房间、钥匙、早餐和退房时间"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不处理房间投诉或严重预订错误",
+      "不重点训练更改预订",
+      "不涉及复杂押金和法律条款"
+    ]
+  }
+}

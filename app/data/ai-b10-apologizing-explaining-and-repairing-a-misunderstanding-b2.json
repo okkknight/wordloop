@@ -1,0 +1,169 @@
+{
+  "courseId": "b10-apologizing-explaining-and-repairing-a-misunderstanding-b2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-b10-001",
+      "text": "I see now that my actions caused confusion.",
+      "translation": "我现在明白我的行为引起了混乱。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.115,
+      "duration": 3.115
+    },
+    {
+      "id": "ai-b10-002",
+      "text": "I apologize for the misunderstanding; it was not my intention.",
+      "translation": "我为误会道歉；这不是我的本意。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.309,
+      "duration": 4.309
+    },
+    {
+      "id": "ai-b10-003",
+      "text": "I acknowledge that my email was unclear.",
+      "translation": "我承认我的邮件不够清楚。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-b10-004",
+      "text": "I admit that my explanation was lacking.",
+      "translation": "我承认我的解释不够充分。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-b10-005",
+      "text": "I'm truly sorry for any inconvenience this caused.",
+      "translation": "对由此造成的不便，我深感抱歉。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-b10-006",
+      "text": "Let me clarify what happened so there's no confusion.",
+      "translation": "让我澄清一下发生的事情，以免产生误解。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    },
+    {
+      "id": "ai-b10-007",
+      "text": "I'm sorry for the oversight on my part.",
+      "translation": "对我的疏忽，我感到抱歉。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-b10-008",
+      "text": "Please accept my apology for the mix-up.",
+      "translation": "请接受我对混乱的道歉。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-b10-009",
+      "text": "I intended to help, not to complicate things.",
+      "translation": "我的本意是帮助，而不是让事情复杂化。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-b10-010",
+      "text": "Here's how I plan to fix this: I'll resend the correct information.",
+      "translation": "这是我计划解决问题的方法：我会重新发送正确的信息。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.267,
+      "duration": 4.267
+    },
+    {
+      "id": "ai-b10-011",
+      "text": "I was trying to be efficient, but I see it backfired.",
+      "translation": "我试图提高效率，但我看到事与愿违。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.053,
+      "duration": 4.053
+    },
+    {
+      "id": "ai-b10-012",
+      "text": "I thought I was being clear, but I realize I wasn't.",
+      "translation": "我以为我说得很清楚，但我意识到我没有。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-b10-013",
+      "text": "Let's ensure we're on the same page moving forward.",
+      "translation": "让我们确保接下来我们达成一致。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-b10-014",
+      "text": "I understand how this affected you, and I'm committed to making it right.",
+      "translation": "我理解这对你的影响，我会努力纠正。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.011,
+      "duration": 4.011
+    },
+    {
+      "id": "ai-b10-015",
+      "text": "To clear things up, I'll provide a detailed explanation.",
+      "translation": "为了澄清问题，我会提供详细的解释。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.584,
+      "duration": 3.584
+    },
+    {
+      "id": "ai-b10-016",
+      "text": "Let's set up a meeting to discuss how to move forward.",
+      "translation": "让我们安排一次会议来讨论如何继续。",
+      "audio": "audio/b10-apologizing-explaining-and-repairing-a-misunderstanding-b2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    }
+  ]
+}

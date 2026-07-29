@@ -1,0 +1,169 @@
+{
+  "courseId": "d06-responding-to-another-view-and-summarizing-your-position-b2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-d06-001",
+      "text": "You're saying that we should focus more on renewable energy.",
+      "translation": "你是说我们应该更多地关注可再生能源。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.181,
+      "duration": 4.181
+    },
+    {
+      "id": "ai-d06-002",
+      "text": "I understand your point about needing more public transportation.",
+      "translation": "我理解你关于需要更多公共交通的观点。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.523,
+      "duration": 4.523
+    },
+    {
+      "id": "ai-d06-003",
+      "text": "You're suggesting that we implement stricter regulations on pollution.",
+      "translation": "你建议我们对污染实施更严格的法规。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.096,
+      "duration": 4.096
+    },
+    {
+      "id": "ai-d06-004",
+      "text": "You mentioned that technology can improve education outcomes.",
+      "translation": "你提到科技可以改善教育成果。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.968,
+      "duration": 3.968
+    },
+    {
+      "id": "ai-d06-005",
+      "text": "I agree that reducing waste is crucial for the environment.",
+      "translation": "我同意减少浪费对环境至关重要。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.011,
+      "duration": 4.011
+    },
+    {
+      "id": "ai-d06-006",
+      "text": "I agree with you on the importance of mental health awareness.",
+      "translation": "我同意你关于心理健康意识重要性的观点。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.669,
+      "duration": 3.669
+    },
+    {
+      "id": "ai-d06-007",
+      "text": "We both think that education should be accessible to everyone.",
+      "translation": "我们都认为教育应该对所有人开放。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.224,
+      "duration": 4.224
+    },
+    {
+      "id": "ai-d06-008",
+      "text": "We can both agree that innovation drives progress.",
+      "translation": "我们都同意创新推动进步。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.968,
+      "duration": 3.968
+    },
+    {
+      "id": "ai-d06-009",
+      "text": "However, I see a challenge in the funding allocation.",
+      "translation": "然而，我在资金分配上看到一个挑战。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.968,
+      "duration": 3.968
+    },
+    {
+      "id": "ai-d06-010",
+      "text": "Where we differ is in how we should implement these changes.",
+      "translation": "我们不同的地方在于我们应该如何实施这些改变。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.499,
+      "duration": 3.499
+    },
+    {
+      "id": "ai-d06-011",
+      "text": "My concern is about the potential costs involved.",
+      "translation": "我担心的是可能涉及的成本。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-d06-012",
+      "text": "I see the benefits, but I'm worried about the risks.",
+      "translation": "我看到好处，但我担心风险。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-d06-013",
+      "text": "Overall, we need a balanced approach that considers both views.",
+      "translation": "总的来说，我们需要一种平衡的方法来考虑双方的观点。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.925,
+      "duration": 3.925
+    },
+    {
+      "id": "ai-d06-014",
+      "text": "In conclusion, I believe we should prioritize sustainable practices.",
+      "translation": "总之，我认为我们应该优先考虑可持续的做法。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 5.077,
+      "duration": 5.077
+    },
+    {
+      "id": "ai-d06-015",
+      "text": "Taking everything into account, a phased approach seems wise.",
+      "translation": "考虑到所有因素，分阶段的方法似乎明智。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.181,
+      "duration": 4.181
+    },
+    {
+      "id": "ai-d06-016",
+      "text": "After weighing the options, a flexible plan is advisable.",
+      "translation": "在权衡各种选择后，灵活的计划是可取的。",
+      "audio": "audio/d06-responding-to-another-view-and-summarizing-your-position-b2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.523,
+      "duration": 4.523
+    }
+  ]
+}

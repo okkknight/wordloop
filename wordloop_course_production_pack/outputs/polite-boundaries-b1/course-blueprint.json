@@ -1,0 +1,581 @@
+{
+  "courseId": "polite-boundaries-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "communication_skill",
+    "targetLevel": "B1",
+    "learnerOutcome": "学习者能够先认可对方的请求，再说明自己当前可承担的范围，并提出明确、可执行的替代方案。",
+    "communicationGoals": [
+      "用简洁自然的方式表达愿意合作而非立刻回避。",
+      "说明时间、精力或优先级限制，不作过度解释。",
+      "提出延后、缩小范围、换一种协作方式等替代方案。",
+      "在对方继续请求时保持礼貌且明确的立场。"
+    ],
+    "coreChunks": [
+      "I'd love to, but",
+      "I don't have the bandwidth to",
+      "Could we",
+      "I can ..., but I can't ..."
+    ],
+    "supportingVocabulary": [
+      "right now",
+      "this week",
+      "take on",
+      "deadline",
+      "prioritize",
+      "reschedule",
+      "help with",
+      "commit to"
+    ],
+    "contentBoundaries": [
+      "不教授法律、合同、医疗或心理健康建议。",
+      "不要求解释私人细节，也不把道歉作为每句的必要组成部分。",
+      "不围绕单一职场角色、公司流程或人际冲突剧情。",
+      "不把拒绝写成攻击性、冷漠或被动攻击的语气。"
+    ],
+    "realWorldContexts": [
+      "同事临时增加任务时。",
+      "朋友邀请或请人帮忙时。",
+      "安排会议、项目协作或家庭分工时。",
+      "需要调整承诺范围或截止时间时。"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2+",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "前三句只建立明确、礼貌的基本回应，不同时增加理由和替代方案。",
+      "中段分别增加时间限制、工作量和替代方案，每次只增加一个主要信息单位。",
+      "三个 stretch 槽位分散出现，分别练习条件、持续性限制和拆分方案，不连续堆叠超过两个。",
+      "最后一句强调完整而自然的协商表达，不追求最长或最抽象。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "先认可请求",
+      "purpose": "建立合作语气，并练习最短、可独立使用的边界表达。",
+      "sentenceCount": 3
+    },
+    {
+      "name": "说明当前范围",
+      "purpose": "从时间限制逐步过渡到工作量、优先级和有限支持。",
+      "sentenceCount": 7
+    },
+    {
+      "name": "协商可行替代",
+      "purpose": "练习提出新的时间、缩小范围或换一种支持方式。",
+      "sentenceCount": 6
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I'd love to, but",
+      "plannedCount": 3,
+      "slots": [
+        2,
+        6,
+        14
+      ],
+      "distinctUses": [
+        "婉拒一个即时邀请。",
+        "说明本周无法额外承担任务。",
+        "在肯定请求后提出不同支持方式。"
+      ]
+    },
+    {
+      "chunk": "I don't have the bandwidth to",
+      "plannedCount": 3,
+      "slots": [
+        7,
+        11,
+        15
+      ],
+      "distinctUses": [
+        "说明当前工作量。",
+        "说明无法承担完整任务。",
+        "说明无法提供持续支持。"
+      ]
+    },
+    {
+      "chunk": "Could we",
+      "plannedCount": 3,
+      "slots": [
+        4,
+        10,
+        16
+      ],
+      "distinctUses": [
+        "请求调整时间。",
+        "提出重排会议时间。",
+        "提出拆分任务的方案。"
+      ]
+    },
+    {
+      "chunk": "I can ..., but I can't ...",
+      "plannedCount": 2,
+      "slots": [
+        5,
+        12
+      ],
+      "distinctUses": [
+        "区分能够与不能够承担的事项。",
+        "限定自己能提供的帮助范围。"
+      ],
+      "chunkMatchers": [
+        "I can...but I can't"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "先认可请求",
+      "role": "用直接但友好的方式说明当前不能答应",
+      "meaningTarget": "表达现在无法参加或承担某件事",
+      "difficultyBand": "entry",
+      "difficultyFocus": "直接表达限制",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "right now"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "朋友或同事提出一个即时请求时",
+      "avoid": [
+        "只说 No",
+        "加入复杂理由"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "先认可请求",
+      "role": "在合作意愿后做简短婉拒",
+      "meaningTarget": "表达愿意帮忙但今天不能加入",
+      "difficultyBand": "entry",
+      "difficultyFocus": "加入礼貌让步",
+      "requiredChunks": [
+        "I'd love to, but"
+      ],
+      "optionalChunks": [
+        "today"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 10,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "礼貌化",
+      "realWorldUse": "收到聚会、会议或协作邀请时",
+      "avoid": [
+        "过度道歉",
+        "解释私人细节"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "先认可请求",
+      "role": "提出时间边界",
+      "meaningTarget": "说明自己这周已经安排满了",
+      "difficultyBand": "entry",
+      "difficultyFocus": "增加时间范围",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "this week",
+        "already"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 10,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "具体化",
+      "realWorldUse": "有人临时请求本周协助时",
+      "avoid": [
+        "使用具体日期",
+        "加入第二个理由"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "说明当前范围",
+      "role": "以简单问题提出调整",
+      "meaningTarget": "请求把事情改到稍后的时间",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "引入替代时间",
+      "requiredChunks": [
+        "Could we"
+      ],
+      "optionalChunks": [
+        "later",
+        "next week"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 10,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "引入替代",
+      "realWorldUse": "无法按原计划参加或回复时",
+      "avoid": [
+        "同时说明多个限制",
+        "复杂条件句"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "说明当前范围",
+      "role": "清楚区分可做与不可做的部分",
+      "meaningTarget": "表示能帮其中一部分，但不能负责全部",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "增加范围对比",
+      "requiredChunks": [
+        "I can",
+        "but I can't"
+      ],
+      "optionalChunks": [
+        "help with"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "范围变化",
+      "realWorldUse": "同事请你接手整项工作时",
+      "avoid": [
+        "列举多个任务",
+        "使用抽象职责名称"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "说明当前范围",
+      "role": "把婉拒和短理由连起来",
+      "meaningTarget": "说明愿意参加但本周工作太满",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "增加一个理由",
+      "requiredChunks": [
+        "I'd love to, but"
+      ],
+      "optionalChunks": [
+        "this week",
+        "deadline"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "理由化",
+      "realWorldUse": "朋友安排活动或同事提出额外任务时",
+      "avoid": [
+        "把理由写成长解释",
+        "情绪化措辞"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "说明当前范围",
+      "role": "用自然表达说明工作量限制",
+      "meaningTarget": "说明目前没有精力再接一项任务",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "引入工作量表达",
+      "requiredChunks": [
+        "I don't have the bandwidth to"
+      ],
+      "optionalChunks": [
+        "take on",
+        "right now"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "引入核心表达",
+      "realWorldUse": "被请求额外接手工作或协调事务时",
+      "avoid": [
+        "把 bandwidth 解释成技术网络",
+        "附加多个原因"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "说明当前范围",
+      "role": "说明已有优先事项",
+      "meaningTarget": "解释需要先完成已经承诺的事情",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "增加优先级原因",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "prioritize",
+        "committed to"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "提高理由复杂度",
+      "realWorldUse": "有人要求你打断当前工作时",
+      "avoid": [
+        "多个从句",
+        "公司内部术语"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "说明当前范围",
+      "role": "给出有限支持而非完全拒绝",
+      "meaningTarget": "说明可以看一部分内容但不能全面参与",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "从拒绝回落到有限支持",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "take a look",
+        "part of"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "回落与巩固",
+      "realWorldUse": "同事请你完整审阅或处理一件事时",
+      "avoid": [
+        "机械重复 I can",
+        "含糊的 maybe"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "说明当前范围",
+      "role": "把限制转成共同协商",
+      "meaningTarget": "建议重新安排顺序或时间",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "把替代扩展为协商",
+      "requiredChunks": [
+        "Could we"
+      ],
+      "optionalChunks": [
+        "reschedule",
+        "move"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "整合替代",
+      "realWorldUse": "会议、截止时间或拜访需要调整时",
+      "avoid": [
+        "指定精确日期",
+        "解释过多背景"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "协商可行替代",
+      "role": "明确不能承担完整范围",
+      "meaningTarget": "说明当前无法完成整个请求，但保留协商空间",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "增加请求范围",
+      "requiredChunks": [
+        "I don't have the bandwidth to"
+      ],
+      "optionalChunks": [
+        "the whole",
+        "right now"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "扩大范围",
+      "realWorldUse": "对方请求你负责完整项目或安排时",
+      "avoid": [
+        "把任务写得过于专业",
+        "加入两个替代方案"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "协商可行替代",
+      "role": "提出一个明确的小范围帮助",
+      "meaningTarget": "说明能完成一个具体部分，但不能承担另一个部分",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "增加具体选择",
+      "requiredChunks": [
+        "I can",
+        "but I can't"
+      ],
+      "optionalChunks": [
+        "help with",
+        "take on"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "细化替代",
+      "realWorldUse": "协商分工或朋友请求协助时",
+      "avoid": [
+        "列出三项以上工作",
+        "只换名词"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "协商可行替代",
+      "role": "在条件限制下给出替代时间",
+      "meaningTarget": "说明完成当前优先事项后可以再讨论",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "引入条件",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "once",
+        "after I finish"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "条件化",
+      "realWorldUse": "无法立即答应但可在之后参与时",
+      "avoid": [
+        "多层条件句",
+        "模糊承诺"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "协商可行替代",
+      "role": "保留善意并提出不同安排",
+      "meaningTarget": "说明很想支持，但建议换一种参与方式",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "改变支持方式",
+      "requiredChunks": [
+        "I'd love to, but"
+      ],
+      "optionalChunks": [
+        "instead",
+        "help another way"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "条件后回落",
+      "realWorldUse": "不能亲自参加但能提供其他帮助时",
+      "avoid": [
+        "泛泛说 let me know",
+        "引入新场景剧情"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "协商可行替代",
+      "role": "限定可提供的时间或精力",
+      "meaningTarget": "说明只能提供有限协助，而不能承担持续责任",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "增加持续性限制",
+      "requiredChunks": [
+        "I don't have the bandwidth to"
+      ],
+      "optionalChunks": [
+        "ongoing",
+        "support"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "增加持续性",
+      "realWorldUse": "被要求长期帮忙或持续跟进时",
+      "avoid": [
+        "抽象管理术语",
+        "消极语气"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "协商可行替代",
+      "role": "提出可执行的拆分方案",
+      "meaningTarget": "建议把请求分成更小部分再决定谁来做",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "增加协商步骤",
+      "requiredChunks": [
+        "Could we"
+      ],
+      "optionalChunks": [
+        "break it into",
+        "figure out"
+      ],
+      "wordCountMin": 11,
+      "wordCountMax": 16,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "方案化",
+      "realWorldUse": "工作量太大或家庭分工不清时",
+      "avoid": [
+        "三步以上流程",
+        "命令式语气"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "16 个槽位都围绕回应请求时的边界表达，避免变成泛化拒绝课。",
+      "核心表达各出现 3 至 4 次，重复时改变沟通任务，而非只替换名词。",
+      "难度从短回应、时间限制到范围协商和坚持立场，且 stretch 槽位均被回落句隔开。",
+      "工作、社交和日常协作均有覆盖，但底层沟通动作保持一致。"
+    ],
+    "risks": [
+      "bandwidth 和 commit to 的自然度及 B1+ 适配性需在候选句阶段重点审稿。",
+      "“把时间留给自己”一类日常边界句必须避免显得过度私密或生硬。"
+    ],
+    "humanReviewFocus": [
+      "确认核心表达是否符合你希望的美式口语语气，尤其是 bandwidth。",
+      "确认工作情境与日常社交的比例符合产品定位。",
+      "确认你希望保留“坚定重申边界”这一 B1+ stretch，而不是将课程整体降到更轻的 B1。"
+    ]
+  },
+  "approved": true
+}

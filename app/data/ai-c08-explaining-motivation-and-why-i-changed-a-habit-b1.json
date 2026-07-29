@@ -1,0 +1,169 @@
+{
+  "courseId": "c08-explaining-motivation-and-why-i-changed-a-habit-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-c08-001",
+      "text": "I often skipped breakfast.",
+      "translation": "我经常不吃早餐。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.219,
+      "duration": 2.219
+    },
+    {
+      "id": "ai-c08-002",
+      "text": "I used to watch TV until midnight.",
+      "translation": "我过去常常看到半夜。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-c08-003",
+      "text": "I rarely exercised.",
+      "translation": "我很少锻炼。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 1.707,
+      "duration": 1.707
+    },
+    {
+      "id": "ai-c08-004",
+      "text": "I was constantly stressed at work.",
+      "translation": "我在工作中总是感到压力很大。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-c08-005",
+      "text": "A health scare made me rethink my habits.",
+      "translation": "一次健康问题让我重新思考我的习惯。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-c08-006",
+      "text": "The reason I changed was to improve my health.",
+      "translation": "我改变的原因是为了改善健康。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-c08-007",
+      "text": "I wanted to feel more energetic during the day.",
+      "translation": "我想在白天感到更有活力。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    },
+    {
+      "id": "ai-c08-008",
+      "text": "I felt tired all the time, so I knew I had to change.",
+      "translation": "我总是感到疲惫，所以我知道我必须改变。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.48,
+      "duration": 4.48
+    },
+    {
+      "id": "ai-c08-009",
+      "text": "I started going to bed earlier.",
+      "translation": "我开始早点上床睡觉。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-c08-010",
+      "text": "I decided to join a gym.",
+      "translation": "我决定加入一个健身房。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.261,
+      "duration": 2.261
+    },
+    {
+      "id": "ai-c08-011",
+      "text": "I set a regular schedule for my tasks.",
+      "translation": "我为我的任务设定了一个固定的时间表。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.072,
+      "duration": 3.072
+    },
+    {
+      "id": "ai-c08-012",
+      "text": "I started using a planner to organize my week.",
+      "translation": "我开始用计划本来安排我的一周。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.243,
+      "duration": 3.243
+    },
+    {
+      "id": "ai-c08-013",
+      "text": "I feel more focused now, but it's still hard to stay consistent.",
+      "translation": "我现在感觉更专注，但仍然很难保持一致。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.565,
+      "duration": 4.565
+    },
+    {
+      "id": "ai-c08-014",
+      "text": "One challenge I faced was staying motivated.",
+      "translation": "我面临的一个挑战是保持动力。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.944,
+      "duration": 2.944
+    },
+    {
+      "id": "ai-c08-015",
+      "text": "I plan to keep adjusting my schedule to find what works best.",
+      "translation": "我计划继续调整我的时间表以找到最合适的方式。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.395,
+      "duration": 4.395
+    },
+    {
+      "id": "ai-c08-016",
+      "text": "I want to focus on building healthier habits gradually.",
+      "translation": "我想逐步专注于养成更健康的习惯。",
+      "audio": "audio/c08-explaining-motivation-and-why-i-changed-a-habit-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.584,
+      "duration": 3.584
+    }
+  ]
+}

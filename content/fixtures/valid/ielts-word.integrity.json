@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "courseId": "ielts-high-frequency",
+  "contentVersion": 1,
+  "files": [
+    {
+      "path": "course.json",
+      "bytes": 512,
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "path": "audio/abandon.m4a",
+      "bytes": 3584,
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  ]
+}

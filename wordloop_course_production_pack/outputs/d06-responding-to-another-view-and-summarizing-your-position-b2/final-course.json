@@ -1,0 +1,261 @@
+{
+  "courseId": "d06-responding-to-another-view-and-summarizing-your-position-b2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "用公平、准确的方式复述对方主要观点",
+      "text": "You're saying that we should focus more on renewable energy.",
+      "translation": "你是说我们应该更多地关注可再生能源。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "You're saying"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "用公平、准确的方式复述对方主要观点",
+      "text": "I understand your point about needing more public transportation.",
+      "translation": "我理解你关于需要更多公共交通的观点。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "I understand your point"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "用公平、准确的方式复述对方主要观点",
+      "text": "You're suggesting that we implement stricter regulations on pollution.",
+      "translation": "你建议我们对污染实施更严格的法规。",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "You're suggesting"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "用公平、准确的方式复述对方主要观点",
+      "text": "You mentioned that technology can improve education outcomes.",
+      "translation": "你提到科技可以改善教育成果。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "You mentioned"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "指出自己认同的部分和共同基础",
+      "text": "I agree that reducing waste is crucial for the environment.",
+      "translation": "我同意减少浪费对环境至关重要。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I agree"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "指出自己认同的部分和共同基础",
+      "text": "I agree with you on the importance of mental health awareness.",
+      "translation": "我同意你关于心理健康意识重要性的观点。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "I agree with you on"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "指出自己认同的部分和共同基础",
+      "text": "We both think that education should be accessible to everyone.",
+      "translation": "我们都认为教育应该对所有人开放。",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "We both"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "指出自己认同的部分和共同基础",
+      "text": "We can both agree that innovation drives progress.",
+      "translation": "我们都同意创新推动进步。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "We can"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "回应关键分歧并解释原因",
+      "text": "However, I see a challenge in the funding allocation.",
+      "translation": "然而，我在资金分配上看到一个挑战。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "However, I"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "回应关键分歧并解释原因",
+      "text": "Where we differ is in how we should implement these changes.",
+      "translation": "我们不同的地方在于我们应该如何实施这些改变。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Where we differ is"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "回应关键分歧并解释原因",
+      "text": "My concern is about the potential costs involved.",
+      "translation": "我担心的是可能涉及的成本。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "My concern"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "回应关键分歧并解释原因",
+      "text": "I see the benefits, but I'm worried about the risks.",
+      "translation": "我看到好处，但我担心风险。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "I see"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "综合双方信息，给出更完整的最终判断",
+      "text": "Overall, we need a balanced approach that considers both views.",
+      "translation": "总的来说，我们需要一种平衡的方法来考虑双方的观点。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Overall, we"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "综合双方信息，给出更完整的最终判断",
+      "text": "In conclusion, I believe we should prioritize sustainable practices.",
+      "translation": "总之，我认为我们应该优先考虑可持续的做法。",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "In conclusion, I believe"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "综合双方信息，给出更完整的最终判断",
+      "text": "Taking everything into account, a phased approach seems wise.",
+      "translation": "考虑到所有因素，分阶段的方法似乎明智。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Taking everything"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "综合双方信息，给出更完整的最终判断",
+      "text": "After weighing the options, a flexible plan is advisable.",
+      "translation": "在权衡各种选择后，灵活的计划是可取的。",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "After weighing"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

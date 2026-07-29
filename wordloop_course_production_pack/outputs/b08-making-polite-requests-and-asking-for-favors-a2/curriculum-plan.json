@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B08",
+      "titleZh": "礼貌提出请求和请人帮忙",
+      "titleEn": "Making Polite Requests and Asking for Favors",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够提出日常小请求、询问许可、请人帮忙，并自然接受对方同意或拒绝。",
+      "communicationGoals": [
+        "提出简单直接但礼貌的请求",
+        "询问是否可以做某件事",
+        "请对方提供一个小帮助或方便",
+        "回应同意、拒绝或延迟并表示感谢"
+      ],
+      "abilityTags": [
+        "B5",
+        "A2",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 9 的冻结课程。",
+      "distinctiveValue": "提供可跨场景迁移的请求能力，而不是绑定某一个服务场景。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不涉及复杂协商或高成本请求",
+        "不重复点餐和服务需求",
+        "不训练强硬命令或正式公文语气"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "提出简单直接但礼貌的请求",
+      "询问是否可以做某件事",
+      "请对方提供一个小帮助或方便",
+      "回应同意、拒绝或延迟并表示感谢"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不涉及复杂协商或高成本请求",
+      "不重复点餐和服务需求",
+      "不训练强硬命令或正式公文语气"
+    ]
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "courseId": "a01-asking-about-products-and-services-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "scenario_interaction",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够询问价格、可用情况、规格和基本服务条件，并确认关键细节。",
+    "communicationGoals": [
+      "询问价格、费用以及是否包含额外收费",
+      "询问商品或服务是否可用以及可用时间",
+      "询问尺寸、规格、选项和基本差异",
+      "复述并确认自己得到的关键信息"
+    ],
+    "coreChunks": [
+      "How much does this",
+      "Is this available now",
+      "What are the options",
+      "Can you confirm that"
+    ],
+    "supportingVocabulary": [
+      "price",
+      "availability",
+      "specifications",
+      "options",
+      "details",
+      "confirm"
+    ],
+    "contentBoundaries": [
+      "不进入实际点单、购买或付款流程",
+      "不处理退换、投诉或服务错误",
+      "不进行复杂议价"
+    ],
+    "realWorldContexts": [
+      "Inquiring about a product at a retail store",
+      "Asking about service options at a hotel"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "询问价格、费用以及是否包含额外收费",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "询问商品或服务是否可用以及可用时间",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "询问尺寸、规格、选项和基本差异",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "复述并确认自己得到的关键信息",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "How much does this",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "询问价格、费用以及是否包含额外收费"
+      ]
+    },
+    {
+      "chunk": "Is this available now",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "询问商品或服务是否可用以及可用时间"
+      ]
+    },
+    {
+      "chunk": "What are the options",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "询问尺寸、规格、选项和基本差异"
+      ]
+    },
+    {
+      "chunk": "Can you confirm that",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "复述并确认自己得到的关键信息"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "meaningTarget": "询问价格、费用以及是否包含额外收费",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "meaningTarget": "询问价格、费用以及是否包含额外收费",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "meaningTarget": "询问价格、费用以及是否包含额外收费",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "询问价格、费用以及是否包含额外收费",
+      "meaningTarget": "询问价格、费用以及是否包含额外收费",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "meaningTarget": "询问商品或服务是否可用以及可用时间",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "meaningTarget": "询问商品或服务是否可用以及可用时间",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "meaningTarget": "询问商品或服务是否可用以及可用时间",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "询问商品或服务是否可用以及可用时间",
+      "meaningTarget": "询问商品或服务是否可用以及可用时间",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "meaningTarget": "询问尺寸、规格、选项和基本差异",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "meaningTarget": "询问尺寸、规格、选项和基本差异",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "meaningTarget": "询问尺寸、规格、选项和基本差异",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "询问尺寸、规格、选项和基本差异",
+      "meaningTarget": "询问尺寸、规格、选项和基本差异",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "meaningTarget": "复述并确认自己得到的关键信息",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "meaningTarget": "复述并确认自己得到的关键信息",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "meaningTarget": "复述并确认自己得到的关键信息",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "复述并确认自己得到的关键信息",
+      "meaningTarget": "复述并确认自己得到的关键信息",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "How much does this",
+        "Is this available now",
+        "What are the options",
+        "Can you confirm that"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入实际点单、购买或付款流程",
+        "不处理退换、投诉或服务错误",
+        "不进行复杂议价"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不进入实际点单、购买或付款流程",
+      "不处理退换、投诉或服务错误",
+      "不进行复杂议价"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

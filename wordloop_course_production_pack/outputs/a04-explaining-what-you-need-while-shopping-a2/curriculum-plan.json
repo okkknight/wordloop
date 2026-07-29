@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A04",
+      "titleZh": "在商店说明自己的购买需求",
+      "titleEn": "Explaining What You Need While Shopping",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够说明自己想找什么、用途和偏好，并请求查看、试用或比较替代选项。",
+      "communicationGoals": [
+        "说明想购买的物品及基本用途",
+        "表达尺寸、颜色、风格或功能偏好",
+        "说明预算或最重视的条件",
+        "请求试穿、查看其他款式或比较选项"
+      ],
+      "abilityTags": [
+        "A2",
+        "A1",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 13 的冻结课程。",
+      "distinctiveValue": "训练把模糊的购买意图转化为店员能够理解的具体需求。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不处理退换和商品质量问题",
+        "不把重点放在单纯询价",
+        "不涉及专业级产品参数"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "说明想购买的物品及基本用途",
+      "表达尺寸、颜色、风格或功能偏好",
+      "说明预算或最重视的条件",
+      "请求试穿、查看其他款式或比较选项"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不处理退换和商品质量问题",
+      "不把重点放在单纯询价",
+      "不涉及专业级产品参数"
+    ]
+  }
+}

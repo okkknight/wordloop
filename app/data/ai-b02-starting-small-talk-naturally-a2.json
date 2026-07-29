@@ -1,0 +1,169 @@
+{
+  "courseId": "b02-starting-small-talk-naturally-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-b02-001",
+      "text": "The sky is so clear today.",
+      "translation": "今天的天空真清澈。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.072,
+      "duration": 3.072
+    },
+    {
+      "id": "ai-b02-002",
+      "text": "Lovely weather today, isn't it?",
+      "translation": "今天天气真好，不是吗？",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-b02-003",
+      "text": "I can't believe how warm it is for October.",
+      "translation": "真不敢相信十月的天气这么暖和。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-b02-004",
+      "text": "There's a nice breeze coming through.",
+      "translation": "有一阵宜人的微风吹过。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.755,
+      "duration": 3.755
+    },
+    {
+      "id": "ai-b02-005",
+      "text": "The music here is really nice.",
+      "translation": "这里的音乐真不错。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.219,
+      "duration": 2.219
+    },
+    {
+      "id": "ai-b02-006",
+      "text": "I noticed you're reading a mystery novel.",
+      "translation": "我注意到你在读一本悬疑小说。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-b02-007",
+      "text": "The coffee smells great today.",
+      "translation": "今天的咖啡闻起来很香。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.219,
+      "duration": 2.219
+    },
+    {
+      "id": "ai-b02-008",
+      "text": "It's such a sunny day outside.",
+      "translation": "外面真是个阳光明媚的日子。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.517,
+      "duration": 2.517
+    },
+    {
+      "id": "ai-b02-009",
+      "text": "I heard there's a new exhibit at the museum.",
+      "translation": "我听说博物馆有一个新的展览。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-b02-010",
+      "text": "Have you tried the coffee here? It's really good.",
+      "translation": "你试过这里的咖啡吗？真的很好喝。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.499,
+      "duration": 3.499
+    },
+    {
+      "id": "ai-b02-011",
+      "text": "The park is beautiful this time of year with all the flowers.",
+      "translation": "这个季节公园里的花很美。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.651,
+      "duration": 4.651
+    },
+    {
+      "id": "ai-b02-012",
+      "text": "The new restaurant on Main Street has great reviews.",
+      "translation": "主街上的新餐馆评价很好。",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-b02-013",
+      "text": "Do you have any weekend plans?",
+      "translation": "你周末有什么计划吗？",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.56,
+      "duration": 2.56
+    },
+    {
+      "id": "ai-b02-014",
+      "text": "This place has a nice vibe. Do you come here often?",
+      "translation": "这个地方氛围很好。你经常来这里吗？",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-b02-015",
+      "text": "Have you seen any good movies lately?",
+      "translation": "你最近看过什么好电影吗？",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-b02-016",
+      "text": "What do you usually do to relax?",
+      "translation": "你通常怎么放松？",
+      "audio": "audio/b02-starting-small-talk-naturally-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    }
+  ]
+}

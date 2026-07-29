@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wordloop.app/schema/catalog.schema.json",
+  "title": "WordLoop Course Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "defaultCourseId", "collections", "courses"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "generatedAt": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-([0-2][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]Z$"
+    },
+    "defaultCourseId": {
+      "$ref": "#/$defs/stableId"
+    },
+    "collections": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/collection"
+      }
+    },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/courseDescriptor"
+      }
+    }
+  },
+  "$defs": {
+    "stableId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "nonEmptyText": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-((?:0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*)(?:\\.(?:0|[1-9][0-9]*|[0-9]*[A-Za-z-][0-9A-Za-z-]*))*))?(?:\\+([0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*))?$"
+    },
+    "safeRelativePath": {
+      "type": "string",
+      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*\\\\)(?!.*%[0-9A-Fa-f]{2})(?!.*(?:^|/)(?:\\.|\\.\\.)(?:/|$))(?!.*//)(?!.*[A-Za-z][A-Za-z0-9+.-]*:)[^/]+(?:/[^/]+)*$"
+    },
+    "manifestLocation": {
+      "type": "string",
+      "anyOf": [
+        {
+          "pattern": "^https://[^\\s]+$"
+        },
+        {
+          "$ref": "#/$defs/safeRelativePath"
+        }
+      ]
+    },
+    "collection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "title", "subtitle"],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stableId"
+        },
+        "label": {
+          "$ref": "#/$defs/nonEmptyText"
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyText"
+        },
+        "subtitle": {
+          "$ref": "#/$defs/nonEmptyText"
+        }
+      }
+    },
+    "courseDescriptor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "collectionId",
+        "title",
+        "subtitle",
+        "description",
+        "kind",
+        "practiceOrder",
+        "contentVersion",
+        "minimumAppVersion",
+        "manifestURL",
+        "manifestSHA256",
+        "downloadSize",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/stableId"
+        },
+        "collectionId": {
+          "$ref": "#/$defs/stableId"
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyText"
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": ["word", "sentence"]
+        },
+        "practiceOrder": {
+          "enum": ["random", "sequential"]
+        },
+        "contentVersion": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "minimumAppVersion": {
+          "$ref": "#/$defs/semver"
+        },
+        "manifestURL": {
+          "$ref": "#/$defs/manifestLocation"
+        },
+        "manifestSHA256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "downloadSize": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "status": {
+          "enum": ["available", "hidden", "retired"]
+        }
+      }
+    }
+  }
+}

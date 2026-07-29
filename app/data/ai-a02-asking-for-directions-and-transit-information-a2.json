@@ -1,0 +1,169 @@
+{
+  "courseId": "a02-asking-for-directions-and-transit-information-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a02-001",
+      "text": "Where is the nearest coffee shop?",
+      "translation": "最近的咖啡店在哪里？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.133,
+      "duration": 2.133
+    },
+    {
+      "id": "ai-a02-002",
+      "text": "How do I get to the train station from here?",
+      "translation": "我从这里怎么去火车站？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-a02-003",
+      "text": "Is there a pharmacy nearby?",
+      "translation": "附近有药店吗？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-a02-004",
+      "text": "What's the best way to reach downtown?",
+      "translation": "去市中心的最佳路线是什么？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-a02-005",
+      "text": "Which subway line goes to the airport?",
+      "translation": "哪条地铁线去机场？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.773,
+      "duration": 2.773
+    },
+    {
+      "id": "ai-a02-006",
+      "text": "Which bus should I take to get to the mall?",
+      "translation": "我应该乘哪路公交车去商场？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-a02-007",
+      "text": "What line do I need for the stadium?",
+      "translation": "去体育场我需要乘哪条线路？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-a02-008",
+      "text": "Where do I get off for the science museum?",
+      "translation": "去科学博物馆我在哪站下车？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.859,
+      "duration": 2.859
+    },
+    {
+      "id": "ai-a02-009",
+      "text": "How far is it to the nearest grocery store?",
+      "translation": "最近的杂货店有多远？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a02-010",
+      "text": "Where is the nearest ATM?",
+      "translation": "最近的自动取款机在哪里？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.731,
+      "duration": 2.731
+    },
+    {
+      "id": "ai-a02-011",
+      "text": "Is the post office within walking distance?",
+      "translation": "邮局在步行距离内吗？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.115,
+      "duration": 3.115
+    },
+    {
+      "id": "ai-a02-012",
+      "text": "Can you point out any landmarks along the way?",
+      "translation": "你能指出沿途的地标吗？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.901,
+      "duration": 2.901
+    },
+    {
+      "id": "ai-a02-013",
+      "text": "So I turn left at the corner, right?",
+      "translation": "所以我在拐角处左转，对吗？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-a02-014",
+      "text": "Is this the right stop for the art museum?",
+      "translation": "这是去美术馆的正确站点吗？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-a02-015",
+      "text": "Let me repeat: I take the blue line and get off at Central Station?",
+      "translation": "让我重复一下：我乘坐蓝线并在中央车站下车？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.395,
+      "duration": 4.395
+    },
+    {
+      "id": "ai-a02-016",
+      "text": "I exit at the north gate, is that correct?",
+      "translation": "我从北门出去，对吗？",
+      "audio": "audio/a02-asking-for-directions-and-transit-information-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "courseId": "polite-boundaries-b1",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-boundaries-001",
+      "text": "I can't take that on right now.",
+      "translation": "我现在接不了这件事。",
+      "audio": "audio/polite-boundaries-b1-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.005,
+      "duration": 2.005
+    },
+    {
+      "id": "ai-boundaries-002",
+      "text": "I'd love to join, but I can't today.",
+      "translation": "我很想参加，但今天不行。",
+      "audio": "audio/polite-boundaries-b1-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.475,
+      "duration": 2.475
+    },
+    {
+      "id": "ai-boundaries-003",
+      "text": "My schedule is full this week.",
+      "translation": "我这周的安排已经满了。",
+      "audio": "audio/polite-boundaries-b1-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.432,
+      "duration": 2.432
+    },
+    {
+      "id": "ai-boundaries-004",
+      "text": "Could we move this to next week?",
+      "translation": "我们能把这件事移到下周吗？",
+      "audio": "audio/polite-boundaries-b1-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.328,
+      "duration": 3.328
+    },
+    {
+      "id": "ai-boundaries-005",
+      "text": "I can review the draft, but I can't rewrite it.",
+      "translation": "我可以看一下这份草稿，但不能重写它。",
+      "audio": "audio/polite-boundaries-b1-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-boundaries-006",
+      "text": "I'd love to help, but this week is packed.",
+      "translation": "我很想帮忙，但这周已经排满了。",
+      "audio": "audio/polite-boundaries-b1-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-boundaries-007",
+      "text": "I don't have the bandwidth to take on another task.",
+      "translation": "我现在没有精力再接一项任务。",
+      "audio": "audio/polite-boundaries-b1-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-boundaries-008",
+      "text": "My first priority is the work I already promised to finish.",
+      "translation": "我最优先要完成的是已经答应做的工作。",
+      "audio": "audio/polite-boundaries-b1-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-boundaries-009",
+      "text": "I can take a quick look, but not a full review.",
+      "translation": "我可以快速看一眼，但不能做完整审阅。",
+      "audio": "audio/polite-boundaries-b1-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.669,
+      "duration": 3.669
+    },
+    {
+      "id": "ai-boundaries-010",
+      "text": "Could we move the meeting to Friday afternoon?",
+      "translation": "我们能把会议改到周五下午吗？",
+      "audio": "audio/polite-boundaries-b1-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.011,
+      "duration": 4.011
+    },
+    {
+      "id": "ai-boundaries-011",
+      "text": "I don't have the bandwidth to finish the whole project today.",
+      "translation": "我今天没有精力完成整个项目。",
+      "audio": "audio/polite-boundaries-b1-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.053,
+      "duration": 4.053
+    },
+    {
+      "id": "ai-boundaries-012",
+      "text": "I can prepare the notes, but I can't run the meeting.",
+      "translation": "我可以准备笔记，但不能主持会议。",
+      "audio": "audio/polite-boundaries-b1-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    },
+    {
+      "id": "ai-boundaries-013",
+      "text": "Once I finish this report, we can talk about the next step.",
+      "translation": "等我完成这份报告，我们就能谈下一步。",
+      "audio": "audio/polite-boundaries-b1-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.797,
+      "duration": 3.797
+    },
+    {
+      "id": "ai-boundaries-014",
+      "text": "I'd love to support you, but I can only help remotely.",
+      "translation": "我很想支持你，但我只能远程帮忙。",
+      "audio": "audio/polite-boundaries-b1-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-boundaries-015",
+      "text": "I don't have the bandwidth to provide ongoing support right now.",
+      "translation": "我现在没有精力持续提供支持。",
+      "audio": "audio/polite-boundaries-b1-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.883,
+      "duration": 3.883
+    },
+    {
+      "id": "ai-boundaries-016",
+      "text": "Could we break this into smaller parts and share the work?",
+      "translation": "我们能把这件事拆成更小的部分，再分担工作吗？",
+      "audio": "audio/polite-boundaries-b1-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.224,
+      "duration": 4.224
+    }
+  ]
+}

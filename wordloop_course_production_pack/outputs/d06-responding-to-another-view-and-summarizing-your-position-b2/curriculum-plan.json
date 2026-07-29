@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "D06",
+      "titleZh": "回应不同观点并总结立场",
+      "titleEn": "Responding to Another View and Summarizing Your Position",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B2",
+      "difficultyRange": {
+        "entry": "B2-",
+        "core": "B2",
+        "stretch": "B2+"
+      },
+      "learnerOutcome": "能够准确概括另一种观点，说明同意与不同意之处，并给出综合后的最终立场。",
+      "communicationGoals": [
+        "用公平、准确的方式复述对方主要观点",
+        "指出自己认同的部分和共同基础",
+        "回应关键分歧并解释原因",
+        "综合双方信息，给出更完整的最终判断"
+      ],
+      "abilityTags": [
+        "D6",
+        "D5",
+        "D"
+      ],
+      "selectionReason": "课程池 releaseOrder 36 的冻结课程。",
+      "distinctiveValue": "是课程池中最高阶的互动观点能力，将理解、回应和总结整合在一起。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不训练攻击性辩论技巧",
+        "不要求大量事实证据和研究引用",
+        "不使用假想稻草人观点"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "B2": 1
+    },
+    "coverageDomains": [
+      "用公平、准确的方式复述对方主要观点",
+      "指出自己认同的部分和共同基础",
+      "回应关键分歧并解释原因",
+      "综合双方信息，给出更完整的最终判断"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不训练攻击性辩论技巧",
+      "不要求大量事实证据和研究引用",
+      "不使用假想稻草人观点"
+    ]
+  }
+}

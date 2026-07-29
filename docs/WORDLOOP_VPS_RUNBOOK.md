@@ -129,6 +129,38 @@ handle @wordloop {
 - `/wordloop/api/*` 先去掉 `/wordloop` 前缀，再转到本机 API
 - 其余 `/wordloop/*` 请求转到前端服务
 
+### 3.4 iOS staging 课程目录
+
+iOS 课程包先发布到 `/opt/boringmax/wordloop/content-staging/`，公网地址为
+`https://boringmax.com/wordloop-content-staging/catalog.json`。Caddy 必须在
+`@wordloop` 规则之前加入：
+
+```text
+@wordloopContentStaging path /wordloop-content-staging/*
+handle @wordloopContentStaging {
+    uri strip_prefix /wordloop-content-staging
+    root * /opt/boringmax/wordloop/content-staging
+    file_server
+}
+```
+
+上传 exporter 生成的 `content/dist/` 到该目录后，至少确认 catalog、一个 manifest
+和一个 M4A 都返回 200，且音频响应支持 `Range`。production catalog 不得在 staging
+真机验证前更新。
+
+默认 staging 发布命令为 `npm run content:publish:staging`。它先导出并上传仅新增的
+版本目录，最后原子替换 catalog；如需 production，必须显式传入另一组
+`WORDLOOP_CONTENT_REMOTE_ROOT` 与 `WORDLOOP_CONTENT_PUBLIC_BASE`，不能复用 staging 默认值。
+
+production 使用相同的静态规则，目录为 `/opt/boringmax/wordloop/content/`，地址为
+`https://boringmax.com/wordloop-content/catalog.json`。发布必须显式执行：
+
+```sh
+WORDLOOP_CONTENT_REMOTE_ROOT=/opt/boringmax/wordloop/content \
+WORDLOOP_CONTENT_PUBLIC_BASE=https://boringmax.com/wordloop-content \
+npm run content:publish:staging
+```
+
 ## 4. 数据存储现状
 
 当前学习相关数据文件：

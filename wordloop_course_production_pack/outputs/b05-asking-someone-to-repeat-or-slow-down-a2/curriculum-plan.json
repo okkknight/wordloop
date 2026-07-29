@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "B05",
+      "titleZh": "请对方重复或说慢一点",
+      "titleEn": "Asking Someone to Repeat or Slow Down",
+      "courseType": "communication_skill",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够自然说明自己没听清，请对方重复、放慢或只重说关键部分。",
+      "communicationGoals": [
+        "简短说明自己没有听清",
+        "礼貌请求完整重复一次",
+        "请求对方放慢速度或分段表达",
+        "指出具体没听清的词、数字或部分并继续交流"
+      ],
+      "abilityTags": [
+        "B3",
+        "B5",
+        "B"
+      ],
+      "selectionReason": "课程池 releaseOrder 8 的冻结课程。",
+      "distinctiveValue": "解决声音层面的理解障碍，让学习者敢于及时中断并请求重说。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不深入询问词义和概念解释",
+        "不处理复杂信息核对",
+        "不使用过度道歉或自我贬低的表达"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "简短说明自己没有听清",
+      "礼貌请求完整重复一次",
+      "请求对方放慢速度或分段表达",
+      "指出具体没听清的词、数字或部分并继续交流"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不深入询问词义和概念解释",
+      "不处理复杂信息核对",
+      "不使用过度道歉或自我贬低的表达"
+    ]
+  }
+}

@@ -1,0 +1,575 @@
+{
+  "courseId": "c01-talking-work-study-current-life-a2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "topic_expression",
+    "targetLevel": "A2",
+    "learnerOutcome": "能够简洁介绍自己的工作或学习状态、日常内容以及最近的基本感受。",
+    "communicationGoals": [
+      "说明目前工作、学习或主要身份。",
+      "描述常见任务和一天中的基本安排。",
+      "介绍工作或学习环境和合作对象。",
+      "表达简单的喜欢、困难或近况。"
+    ],
+    "coreChunks": [
+      "I work ...",
+      "I’m studying ...",
+      "Most days, I ...",
+      "Lately, I’ve been ..."
+    ],
+    "supportingVocabulary": [
+      "right now",
+      "usually",
+      "team",
+      "class",
+      "after work",
+      "lately",
+      "so far",
+      "hardest part"
+    ],
+    "contentBoundaries": [
+      "不展开完整职业履历。",
+      "不讨论长期职业目标。",
+      "不进入工作制度和社会议题评价。",
+      "不要求解释私人或敏感细节。"
+    ],
+    "realWorldContexts": [
+      "认识新同事或同学时。",
+      "参加课程、工作坊或社区活动时。",
+      "和朋友、邻居或活动参与者谈论近况时。"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "A2-",
+    "coreLevel": "A2",
+    "stretchLevel": "A2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "前三句只建立当前身份，不要求给出原因或细节。",
+      "中段每次增加一项日常任务、环境、时间或感受信息。",
+      "挑战句只增加持续时间、小目标或完整的近况收尾。",
+      "第 16 句保持可独立朗读，不写成长篇总结。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "简单身份",
+      "purpose": "说明当前工作或学习身份。",
+      "sentenceCount": 3
+    },
+    {
+      "name": "日常安排",
+      "purpose": "描述常见任务、时间和环境。",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充近况",
+      "purpose": "表达近期重点、喜好、困难和变化。",
+      "sentenceCount": 6
+    },
+    {
+      "name": "表达感受",
+      "purpose": "用基本感受和小目标完成当前近况。",
+      "sentenceCount": 3
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I work",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "说明当前工作状态。"
+      ]
+    },
+    {
+      "chunk": "I’m studying",
+      "plannedCount": 1,
+      "slots": [
+        3
+      ],
+      "distinctUses": [
+        "说明当前学习状态。"
+      ]
+    },
+    {
+      "chunk": "Most days, I",
+      "plannedCount": 1,
+      "slots": [
+        5
+      ],
+      "distinctUses": [
+        "说明常见日常任务。"
+      ]
+    },
+    {
+      "chunk": "Lately, I’ve been",
+      "plannedCount": 2,
+      "slots": [
+        8,
+        12
+      ],
+      "distinctUses": [
+        "说明近期重点。",
+        "说明最近变化。"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "简单身份",
+      "role": "说明目前的主要身份",
+      "meaningTarget": "我现在是学生、上班族或正在学习的人",
+      "difficultyBand": "entry",
+      "difficultyFocus": "当前身份",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I’m a student",
+        "right now"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "简单身份",
+      "role": "说明基础工作状态",
+      "meaningTarget": "说出自己在哪里或以什么方式工作",
+      "difficultyBand": "entry",
+      "difficultyFocus": "工作状态",
+      "requiredChunks": [
+        "I work"
+      ],
+      "optionalChunks": [
+        "at",
+        "from home"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "简单身份",
+      "role": "说明当前学习状态",
+      "meaningTarget": "说出自己正在学习什么",
+      "difficultyBand": "entry",
+      "difficultyFocus": "学习状态",
+      "requiredChunks": [
+        "I’m studying"
+      ],
+      "optionalChunks": [
+        "English",
+        "part-time"
+      ],
+      "wordCountMin": 5,
+      "wordCountMax": 9,
+      "maxClauses": 1,
+      "maxInformationUnits": 1,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "日常安排",
+      "role": "描述一天开始的时间",
+      "meaningTarget": "说明通常何时开始工作或上课",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "频率和时间",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually",
+        "start"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 10,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "日常安排",
+      "role": "说明一项常见工作内容",
+      "meaningTarget": "描述自己大多数日子会做什么",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "日常任务",
+      "requiredChunks": [
+        "Most days, I"
+      ],
+      "optionalChunks": [
+        "answer emails",
+        "work with"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 11,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "日常安排",
+      "role": "说明工作或学习环境",
+      "meaningTarget": "介绍自己常见的地点或团队",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "环境与人",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "my team",
+        "my class"
+      ],
+      "wordCountMin": 6,
+      "wordCountMax": 11,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "日常安排",
+      "role": "说明工作之外的学习安排",
+      "meaningTarget": "介绍下班后或空闲时间的一项学习内容",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "时间连接",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "after work",
+        "in the evening"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 12,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充近况",
+      "role": "说明当前一段时间的重点",
+      "meaningTarget": "说出最近主要在忙什么",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "最近持续状态",
+      "requiredChunks": [
+        "Lately, I’ve been"
+      ],
+      "optionalChunks": [
+        "working on",
+        "spending more time"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "补充近况",
+      "role": "表达简单的工作或学习喜好",
+      "meaningTarget": "说明自己喜欢其中的哪一点",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "偏好加对象",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I like",
+        "because"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "补充近况",
+      "role": "说明一个普通困难",
+      "meaningTarget": "表达某件事不容易但仍在适应",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "轻度困难",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "The hardest part",
+        "can be"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 14,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "补充近况",
+      "role": "说明合作对象或互动方式",
+      "meaningTarget": "介绍自己通常和谁一起工作或学习",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "合作关系",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I usually work with",
+        "I study with"
+      ],
+      "wordCountMin": 8,
+      "wordCountMax": 13,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "补充近况",
+      "role": "说明近期的一个变化",
+      "meaningTarget": "表达最近开始的新安排或新习惯",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "变化",
+      "requiredChunks": [
+        "Lately, I’ve been"
+      ],
+      "optionalChunks": [
+        "getting used to",
+        "starting"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 14,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "补充近况",
+      "role": "连接过去和现在",
+      "meaningTarget": "说明自己已经做这件事多久",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "持续时间",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I’ve been",
+        "for a few months"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "表达感受",
+      "role": "表达积极但不过度的感受",
+      "meaningTarget": "说明自己对当前状态总体感觉如何",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "基本感受",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I’m happy with",
+        "so far"
+      ],
+      "wordCountMin": 7,
+      "wordCountMax": 12,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "表达感受",
+      "role": "说明当前想改善的一点",
+      "meaningTarget": "表达正在尝试调整的一个小目标",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "小目标",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I’m trying to",
+        "a little more"
+      ],
+      "wordCountMin": 9,
+      "wordCountMax": 14,
+      "maxClauses": 1,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "表达感受",
+      "role": "用完整近况自然收尾",
+      "meaningTarget": "概括当前忙碌但总体不错的状态",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "整合状态",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Right now",
+        "but"
+      ],
+      "wordCountMin": 10,
+      "wordCountMax": 15,
+      "maxClauses": 2,
+      "maxInformationUnits": 2,
+      "maxNewChunks": 1,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "与新认识的人谈论自己当前的工作、学习或近况时",
+      "avoid": [
+        "完整履历",
+        "长期职业目标",
+        "社会议题评价"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "严格服务于 C01 的当前个人情况表达，不把课程变成履历或职业规划。",
+      "16 个槽位从身份到日常再到近况和感受，形成 A2 可控递进。",
+      "核心表达分别覆盖工作、学习、日常与近期状态。"
+    ],
+    "risks": [
+      "工作内容不能压过学习、自由职业和其他常见身份。",
+      "困难表达需要轻度、具体，不引入职场制度评价。",
+      "第 16 句应保持 A2+ 的自然收尾。"
+    ],
+    "humanReviewFocus": [
+      "确认工作、学习和日常生活场景的比例。",
+      "确认核心表达对目标学习者足够高频。",
+      "确认最后三句的挑战度仍适合 A2+。"
+    ]
+  },
+  "approved": false
+}

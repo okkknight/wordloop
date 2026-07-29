@@ -1,0 +1,5 @@
+#include "Shared.xcconfig"
+
+WORDLOOP_CONFIGURATION_NAME = Debug
+WORDLOOP_API_BASE_URL = https:/$()/boringmax.com/wordloop/api
+WORDLOOP_CATALOG_URL = https:/$()/boringmax.com/wordloop-content-staging/catalog.json

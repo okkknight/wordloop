@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WordLoop Course Blueprint",
+  "type": "object",
+  "required": [
+    "courseId", "courseBrief", "difficultyPlan", "contentStructure",
+    "coreChunkCoverage", "sentenceSlots", "blueprintReview"
+  ],
+  "properties": {
+    "courseId": {"type": "string"},
+    "planningConflict": {
+      "type": ["object", "null"],
+      "properties": {
+        "detected": {"type": "boolean"},
+        "originalDecision": {"type": "string"},
+        "recommendedDecision": {"type": "string"},
+        "reason": {"type": "string"},
+        "blocksProduction": {"type": "boolean"}
+      }
+    },
+    "courseBrief": {
+      "type": "object",
+      "required": [
+        "courseType", "targetLevel", "learnerOutcome", "communicationGoals",
+        "coreChunks", "supportingVocabulary", "contentBoundaries", "realWorldContexts"
+      ],
+      "properties": {
+        "courseType": {"enum": ["scenario_interaction", "communication_skill", "topic_expression"]},
+        "targetLevel": {"enum": ["A2", "B1", "B2"]},
+        "learnerOutcome": {"type": "string"},
+        "communicationGoals": {"type": "array", "items": {"type": "string"}},
+        "coreChunks": {"type": "array", "minItems": 3, "maxItems": 5, "items": {"type": "string"}},
+        "supportingVocabulary": {"type": "array", "items": {"type": "string"}},
+        "contentBoundaries": {"type": "array", "items": {"type": "string"}},
+        "realWorldContexts": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "difficultyPlan": {
+      "type": "object",
+      "required": ["entryLevel", "coreLevel", "stretchLevel", "distribution", "curve", "principles"],
+      "properties": {
+        "entryLevel": {"type": "string"},
+        "coreLevel": {"type": "string"},
+        "stretchLevel": {"type": "string"},
+        "distribution": {
+          "type": "object",
+          "required": ["entry", "targetBase", "targetCore", "stretch"],
+          "properties": {
+            "entry": {"type": "integer", "minimum": 0},
+            "targetBase": {"type": "integer", "minimum": 0},
+            "targetCore": {"type": "integer", "minimum": 0},
+            "stretch": {"type": "integer", "minimum": 0}
+          }
+        },
+        "curve": {
+          "type": "array", "minItems": 16, "maxItems": 16,
+          "items": {"enum": ["entry", "targetBase", "targetCore", "stretch"]}
+        },
+        "principles": {"type": "array", "items": {"type": "string"}},
+        "adjustmentReason": {"type": ["string", "null"]}
+      }
+    },
+    "contentStructure": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "purpose", "sentenceCount"],
+        "properties": {
+          "name": {"type": "string"},
+          "purpose": {"type": "string"},
+          "sentenceCount": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "coreChunkCoverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["chunk", "plannedCount", "slots", "distinctUses"],
+        "properties": {
+          "chunk": {"type": "string"},
+          "plannedCount": {"type": "integer", "minimum": 1},
+          "slots": {"type": "array", "items": {"type": "integer"}},
+          "distinctUses": {"type": "array", "items": {"type": "string"}},
+          "chunkMatchers": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "sentenceSlots": {
+      "type": "array", "minItems": 16, "maxItems": 16,
+      "items": {
+        "type": "object",
+        "required": [
+          "slot", "section", "role", "meaningTarget", "difficultyBand",
+          "difficultyFocus", "requiredChunks", "optionalChunks",
+          "wordCountMin", "wordCountMax", "maxClauses",
+          "maxInformationUnits", "maxNewChunks", "relationshipToPrevious",
+          "realWorldUse", "avoid"
+        ],
+        "properties": {
+          "slot": {"type": "integer", "minimum": 1, "maximum": 16},
+          "section": {"type": "string"},
+          "role": {"type": "string"},
+          "meaningTarget": {"type": "string"},
+          "difficultyBand": {"enum": ["entry", "targetBase", "targetCore", "stretch"]},
+          "difficultyFocus": {"type": "string"},
+          "requiredChunks": {"type": "array", "items": {"type": "string"}},
+          "optionalChunks": {"type": "array", "items": {"type": "string"}},
+          "wordCountMin": {"type": "integer", "minimum": 1},
+          "wordCountMax": {"type": "integer", "minimum": 1},
+          "maxClauses": {"type": "integer", "minimum": 1},
+          "maxInformationUnits": {"type": "integer", "minimum": 1},
+          "maxNewChunks": {"type": "integer", "minimum": 0},
+          "relationshipToPrevious": {"type": "string"},
+          "realWorldUse": {"type": "string"},
+          "avoid": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "blueprintReview": {
+      "type": "object",
+      "required": ["valid", "strengths", "risks", "humanReviewFocus"],
+      "properties": {
+        "valid": {"type": "boolean"},
+        "strengths": {"type": "array", "items": {"type": "string"}},
+        "risks": {"type": "array", "items": {"type": "string"}},
+        "humanReviewFocus": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "approved": {"type": "boolean", "default": false}
+  },
+  "additionalProperties": false
+}

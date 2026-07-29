@@ -1,0 +1,261 @@
+{
+  "courseId": "a02-asking-for-directions-and-transit-information-a2",
+  "finalSentences": [
+    {
+      "order": 1,
+      "slot": 1,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "text": "Where is the nearest coffee shop?",
+      "translation": "最近的咖啡店在哪里？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Where is"
+      ],
+      "sourceCandidateId": "s01-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 2,
+      "slot": 2,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "text": "How do I get to the train station from here?",
+      "translation": "我从这里怎么去火车站？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "How do I get to"
+      ],
+      "sourceCandidateId": "s02-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 3,
+      "slot": 3,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "text": "Is there a pharmacy nearby?",
+      "translation": "附近有药店吗？",
+      "difficultyBand": "entry",
+      "usedChunks": [
+        "Is there"
+      ],
+      "sourceCandidateId": "s03-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 4,
+      "slot": 4,
+      "section": "建立任务",
+      "role": "询问某个地点在哪里以及如何到达",
+      "text": "What's the best way to reach downtown?",
+      "translation": "去市中心的最佳路线是什么？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "What's the"
+      ],
+      "sourceCandidateId": "s04-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 5,
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "text": "Which subway line goes to the airport?",
+      "translation": "哪条地铁线去机场？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Which subway"
+      ],
+      "sourceCandidateId": "s05-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 6,
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "text": "Which bus should I take to get to the mall?",
+      "translation": "我应该乘哪路公交车去商场？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "Which bus should I take"
+      ],
+      "sourceCandidateId": "s06-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 7,
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "text": "What line do I need for the stadium?",
+      "translation": "去体育场我需要乘哪条线路？",
+      "difficultyBand": "targetBase",
+      "usedChunks": [
+        "What line"
+      ],
+      "sourceCandidateId": "s07-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 8,
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "询问应该乘坐哪条线路、在哪一站下车",
+      "text": "Where do I get off for the science museum?",
+      "translation": "去科学博物馆我在哪站下车？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Where do"
+      ],
+      "sourceCandidateId": "s08-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 9,
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "text": "How far is it to the nearest grocery store?",
+      "translation": "最近的杂货店有多远？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "How far"
+      ],
+      "sourceCandidateId": "s09-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 10,
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "text": "Where is the nearest ATM?",
+      "translation": "最近的自动取款机在哪里？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Where is the nearest"
+      ],
+      "sourceCandidateId": "s10-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 11,
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "text": "Is the post office within walking distance?",
+      "translation": "邮局在步行距离内吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Is the"
+      ],
+      "sourceCandidateId": "s11-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 12,
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "询问距离、步行时间和明显地标",
+      "text": "Can you point out any landmarks along the way?",
+      "translation": "你能指出沿途的地标吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Can you"
+      ],
+      "sourceCandidateId": "s12-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 13,
+      "slot": 13,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "text": "So I turn left at the corner, right?",
+      "translation": "所以我在拐角处左转，对吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "So I"
+      ],
+      "sourceCandidateId": "s13-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 14,
+      "slot": 14,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "text": "Is this the right stop for the art museum?",
+      "translation": "这是去美术馆的正确站点吗？",
+      "difficultyBand": "targetCore",
+      "usedChunks": [
+        "Is this the right stop"
+      ],
+      "sourceCandidateId": "s14-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 15,
+      "slot": 15,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "text": "Let me repeat: I take the blue line and get off at Central Station?",
+      "translation": "让我重复一下：我乘坐蓝线并在中央车站下车？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "Let me"
+      ],
+      "sourceCandidateId": "s15-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    },
+    {
+      "order": 16,
+      "slot": 16,
+      "section": "完成交流",
+      "role": "复述路线并确认方向、出口或站点",
+      "text": "I exit at the north gate, is that correct?",
+      "translation": "我从北门出去，对吗？",
+      "difficultyBand": "stretch",
+      "usedChunks": [
+        "I exit"
+      ],
+      "sourceCandidateId": "s16-a",
+      "edited": false,
+      "selectionReason": "在两项候选中选择更直接、自然且便于迁移的一句。"
+    }
+  ],
+  "regenerateSlots": [],
+  "courseReview": {
+    "recommendation": "approve",
+    "learnerOutcomeFit": "16 句覆盖冻结课程目标。",
+    "naturalness": "已由独立语言审查确认。",
+    "realWorldUsefulness": "每句可独立用于真实交流。",
+    "coreChunkCoverage": "核心表达按蓝图覆盖。",
+    "difficultyDistribution": "保持 3/4/6/3 配额。",
+    "difficultyCurve": "由基础表达逐步加入细节和整合。",
+    "repetitionQuality": "避免仅替换名词的伪变化。",
+    "fillerRisk": "低。"
+  },
+  "humanReviewFocus": [
+    "抽查挑战句的自然口语感。"
+  ],
+  "needsHumanReview": true
+}

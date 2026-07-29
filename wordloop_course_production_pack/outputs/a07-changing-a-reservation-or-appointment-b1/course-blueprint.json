@@ -1,0 +1,590 @@
+{
+  "courseId": "a07-changing-a-reservation-or-appointment-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "scenario_interaction",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够找到已有预约，提出时间或内容变更，说明限制，并确认新的安排。",
+    "communicationGoals": [
+      "说明现有预订或预约信息",
+      "提出改时间、改人数或改服务内容的请求",
+      "说明原因、时间限制和可接受的替代方案",
+      "确认新的日期、时间、费用或变更结果"
+    ],
+    "coreChunks": [
+      "I need to change",
+      "Can we reschedule for",
+      "Is there a fee",
+      "Could you confirm the"
+    ],
+    "supportingVocabulary": [
+      "reservation",
+      "appointment",
+      "availability",
+      "reschedule",
+      "alternative",
+      "confirmation",
+      "fee",
+      "adjustment",
+      "time slot",
+      "service"
+    ],
+    "contentBoundaries": [
+      "不处理首次预约的完整流程",
+      "不把变更发展成投诉或赔偿谈判",
+      "不涉及复杂合同取消条款"
+    ],
+    "realWorldContexts": [
+      "Calling a restaurant to change a dinner reservation",
+      "Contacting a dentist's office to reschedule an appointment",
+      "Emailing a hotel to adjust the dates of a booking"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "说明现有预订或预约信息",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "提出改时间、改人数或改服务内容的请求",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "说明原因、时间限制和可接受的替代方案",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "确认新的日期、时间、费用或变更结果",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I need to change",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "说明现有预订或预约信息"
+      ]
+    },
+    {
+      "chunk": "Can we reschedule for",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "提出改时间、改人数或改服务内容的请求"
+      ]
+    },
+    {
+      "chunk": "Is there a fee",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "说明原因、时间限制和可接受的替代方案"
+      ]
+    },
+    {
+      "chunk": "Could you confirm the",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "确认新的日期、时间、费用或变更结果"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "说明现有预订或预约信息",
+      "meaningTarget": "说明现有预订或预约信息",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "说明现有预订或预约信息",
+      "meaningTarget": "说明现有预订或预约信息",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "说明现有预订或预约信息",
+      "meaningTarget": "说明现有预订或预约信息",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "说明现有预订或预约信息",
+      "meaningTarget": "说明现有预订或预约信息",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "提出改时间、改人数或改服务内容的请求",
+      "meaningTarget": "提出改时间、改人数或改服务内容的请求",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "提出改时间、改人数或改服务内容的请求",
+      "meaningTarget": "提出改时间、改人数或改服务内容的请求",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "提出改时间、改人数或改服务内容的请求",
+      "meaningTarget": "提出改时间、改人数或改服务内容的请求",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "提出改时间、改人数或改服务内容的请求",
+      "meaningTarget": "提出改时间、改人数或改服务内容的请求",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "说明原因、时间限制和可接受的替代方案",
+      "meaningTarget": "说明原因、时间限制和可接受的替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "说明原因、时间限制和可接受的替代方案",
+      "meaningTarget": "说明原因、时间限制和可接受的替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "说明原因、时间限制和可接受的替代方案",
+      "meaningTarget": "说明原因、时间限制和可接受的替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "说明原因、时间限制和可接受的替代方案",
+      "meaningTarget": "说明原因、时间限制和可接受的替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "确认新的日期、时间、费用或变更结果",
+      "meaningTarget": "确认新的日期、时间、费用或变更结果",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "确认新的日期、时间、费用或变更结果",
+      "meaningTarget": "确认新的日期、时间、费用或变更结果",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "确认新的日期、时间、费用或变更结果",
+      "meaningTarget": "确认新的日期、时间、费用或变更结果",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "确认新的日期、时间、费用或变更结果",
+      "meaningTarget": "确认新的日期、时间、费用或变更结果",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I need to change",
+        "Can we reschedule for",
+        "Is there a fee",
+        "Could you confirm the"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不处理首次预约的完整流程",
+        "不把变更发展成投诉或赔偿谈判",
+        "不涉及复杂合同取消条款"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不处理首次预约的完整流程",
+      "不把变更发展成投诉或赔偿谈判",
+      "不涉及复杂合同取消条款"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

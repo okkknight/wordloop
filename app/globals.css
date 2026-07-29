@@ -4,6 +4,17 @@
 html, body { margin: 0; min-height: 100%; overflow: hidden; }
 button { font: inherit; }
 
+body:has(.legal-page) { overflow: auto; background: #f3f0e8; }
+.legal-page { min-height: 100svh; padding: clamp(24px, 6vw, 80px); color: #1e3a34; background: #f3f0e8; }
+.legal-card { width: min(760px, 100%); margin: 0 auto; }
+.legal-kicker { margin: 0 0 18px; color: #d4562b; font: 700 12px/1 var(--font-geist-mono); letter-spacing: .14em; }
+.legal-card h1 { margin: 0 0 8px; font-size: clamp(38px, 7vw, 68px); letter-spacing: -.05em; }
+.legal-card h2 { margin: 38px 0 10px; font-size: 20px; }
+.legal-card p { max-width: 68ch; font-size: 16px; line-height: 1.72; }
+.legal-updated { margin-top: 0; color: color-mix(in srgb, #1e3a34, transparent 35%); }
+.legal-card a { color: #b74a26; text-underline-offset: 3px; }
+.legal-links { margin-top: 36px; }
+
 .poster {
   --bg: #f3f0e8;
   --ink: #1e3a34;
@@ -162,23 +173,6 @@ button { font: inherit; }
   padding: 0;
   animation: start-form-in 560ms 80ms cubic-bezier(.2,.8,.2,1) both;
 }
-.start-form input {
-  width: min(220px, 62vw);
-  border: 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--accent), transparent 22%);
-  border-radius: 0;
-  padding: 9px 0 11px;
-  color: inherit;
-  background: transparent;
-  caret-color: var(--accent);
-  font: 600 14px/1.2 var(--font-geist-mono);
-  letter-spacing: .12em;
-  text-align: center;
-  outline: 0;
-  transition: width 240ms ease, border-color 180ms ease;
-}
-.start-form input::placeholder { color: var(--accent); opacity: .48; font-size: 10px; letter-spacing: .16em; }
-.start-form input:focus { width: min(238px, 66vw); border-bottom-color: var(--accent); }
 .start-form button {
   gap: 14px;
   padding: 16px 24px;
@@ -195,7 +189,6 @@ button { font: inherit; }
 .start-form button:active { transform: translateY(0) scale(.98); }
 .start-form button:disabled { cursor: progress; opacity: .72; transform: none; }
 .start-form button .start-icon { font-size: 12px; }
-.start-form .username-error { position: absolute; top: calc(100% + 7px); left: 0; color: var(--accent); opacity: 1; font-size: 9px; }
 @keyframes start-form-in { from { opacity: 0; transform: translateY(10px); } }
 .start-icon { color: var(--accent); font-size: 12px; }
 h1 {
@@ -632,7 +625,7 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
 .completion-dialog { border-color: color-mix(in srgb, var(--accent), transparent 44%); }
 .completion-dialog h2 { color: var(--accent); }
 .progress-panel {
-  width: min(344px, 86vw);
+  width: min(304px, 78vw);
   height: 100%;
   padding: clamp(20px, 3vw, 30px);
   display: flex;
@@ -644,7 +637,7 @@ footer { font: 600 11px/1 var(--font-geist-mono); letter-spacing: .08em; text-tr
   touch-action: pan-y;
 }
 .course-panel {
-  width: min(344px, 86vw);
+  width: min(304px, 78vw);
   height: 100%;
   margin-right: auto;
   padding: clamp(20px, 3vw, 30px);

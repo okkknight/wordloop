@@ -1,0 +1,586 @@
+{
+  "courseId": "a11-scheduling-rescheduling-and-canceling-plans-b1",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "scenario_interaction",
+    "targetLevel": "B1",
+    "learnerOutcome": "能够提出时间、询问对方是否方便、协商替代时间，并礼貌改期或取消。",
+    "communicationGoals": [
+      "提出见面、通话或活动的时间建议",
+      "询问对方的可用时间和偏好",
+      "在时间冲突时提出并比较替代方案",
+      "确认安排，或礼貌说明改期和取消"
+    ],
+    "coreChunks": [
+      "Can we meet on",
+      "Does this time work",
+      "Let's reschedule for next",
+      "I need to cancel"
+    ],
+    "supportingVocabulary": [
+      "availability",
+      "conflict",
+      "alternative",
+      "postpone",
+      "confirm",
+      "mutual"
+    ],
+    "contentBoundaries": [
+      "不重复更改商业预约的流程性表达",
+      "不深入闲聊或活动内容本身",
+      "不涉及复杂会议主持和项目管理"
+    ],
+    "realWorldContexts": [
+      "Scheduling a lunch meeting with a colleague",
+      "Rescheduling a doctor's appointment",
+      "Canceling a dinner reservation"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B1-",
+    "coreLevel": "B1",
+    "stretchLevel": "B1+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "提出见面、通话或活动的时间建议",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "询问对方的可用时间和偏好",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "在时间冲突时提出并比较替代方案",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "确认安排，或礼貌说明改期和取消",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "Can we meet on",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "提出见面、通话或活动的时间建议"
+      ]
+    },
+    {
+      "chunk": "Does this time work",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "询问对方的可用时间和偏好"
+      ]
+    },
+    {
+      "chunk": "Let's reschedule for next",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "在时间冲突时提出并比较替代方案"
+      ]
+    },
+    {
+      "chunk": "I need to cancel",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "确认安排，或礼貌说明改期和取消"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "meaningTarget": "提出见面、通话或活动的时间建议",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "meaningTarget": "提出见面、通话或活动的时间建议",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "meaningTarget": "提出见面、通话或活动的时间建议",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "提出见面、通话或活动的时间建议",
+      "meaningTarget": "提出见面、通话或活动的时间建议",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "meaningTarget": "询问对方的可用时间和偏好",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "meaningTarget": "询问对方的可用时间和偏好",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "meaningTarget": "询问对方的可用时间和偏好",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "询问对方的可用时间和偏好",
+      "meaningTarget": "询问对方的可用时间和偏好",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "meaningTarget": "在时间冲突时提出并比较替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "meaningTarget": "在时间冲突时提出并比较替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "meaningTarget": "在时间冲突时提出并比较替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "在时间冲突时提出并比较替代方案",
+      "meaningTarget": "在时间冲突时提出并比较替代方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "meaningTarget": "确认安排，或礼貌说明改期和取消",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "meaningTarget": "确认安排，或礼貌说明改期和取消",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "meaningTarget": "确认安排，或礼貌说明改期和取消",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "确认安排，或礼貌说明改期和取消",
+      "meaningTarget": "确认安排，或礼貌说明改期和取消",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "Can we meet on",
+        "Does this time work",
+        "Let's reschedule for next",
+        "I need to cancel"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不重复更改商业预约的流程性表达",
+        "不深入闲聊或活动内容本身",
+        "不涉及复杂会议主持和项目管理"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不重复更改商业预约的流程性表达",
+      "不深入闲聊或活动内容本身",
+      "不涉及复杂会议主持和项目管理"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

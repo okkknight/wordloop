@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "A06",
+      "titleZh": "描述身体不适并询问基本建议",
+      "titleEn": "Describing Symptoms and Asking Basic Health Questions",
+      "courseType": "scenario_interaction",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够描述症状的位置、持续时间和变化，回答常见问题，并询问基本处理建议。",
+      "communicationGoals": [
+        "描述主要症状和身体部位",
+        "说明症状何时开始、持续多久以及严重程度",
+        "说明症状变化、已尝试的方法和相关影响",
+        "回答关于药物、过敏等基本问题并询问下一步"
+      ],
+      "abilityTags": [
+        "A3",
+        "A1",
+        "A"
+      ],
+      "selectionReason": "课程池 releaseOrder 18 的冻结课程。",
+      "distinctiveValue": "训练向医护或药店人员提供清晰、足够且不过度专业的信息。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不要求AI给出诊断或治疗结论",
+        "不覆盖急救和危及生命的情境",
+        "不展开复杂病史和医学术语"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "scenario_interaction": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "描述主要症状和身体部位",
+      "说明症状何时开始、持续多久以及严重程度",
+      "说明症状变化、已尝试的方法和相关影响",
+      "回答关于药物、过敏等基本问题并询问下一步"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不要求AI给出诊断或治疗结论",
+      "不覆盖急救和危及生命的情境",
+      "不展开复杂病史和医学术语"
+    ]
+  }
+}

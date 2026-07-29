@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "D03",
+      "titleZh": "比较两种选择并说明偏好",
+      "titleEn": "Comparing Two Choices and Explaining a Preference",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够比较两个常见选择的相同与不同，根据条件说明自己更倾向哪一种。",
+      "communicationGoals": [
+        "清楚提出需要比较的两个选项",
+        "比较关键差异和少量共同点",
+        "说明不同人或不同情况下的适用性",
+        "表达个人选择以及做出选择的标准"
+      ],
+      "abilityTags": [
+        "D3",
+        "C4",
+        "D"
+      ],
+      "selectionReason": "课程池 releaseOrder 28 的冻结课程。",
+      "distinctiveValue": "训练结构清晰的比较和选择，是从个人偏好过渡到观点表达的桥梁。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不展开全面优缺点分析",
+        "不处理复杂例外和反方观点",
+        "不依赖某一个固定比较主题"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "清楚提出需要比较的两个选项",
+      "比较关键差异和少量共同点",
+      "说明不同人或不同情况下的适用性",
+      "表达个人选择以及做出选择的标准"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不展开全面优缺点分析",
+      "不处理复杂例外和反方观点",
+      "不依赖某一个固定比较主题"
+    ]
+  }
+}

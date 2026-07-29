@@ -1,0 +1,586 @@
+{
+  "courseId": "a10-reporting-a-service-problem-and-negotiating-a-solution-b2",
+  "planningConflict": null,
+  "courseBrief": {
+    "courseType": "scenario_interaction",
+    "targetLevel": "B2",
+    "learnerOutcome": "能够客观说明服务问题及其影响，评估对方方案，并礼貌协商更合适的解决方式。",
+    "communicationGoals": [
+      "准确描述发生了什么以及与原约定的差异",
+      "说明问题造成的实际影响和自己的合理期待",
+      "回应道歉、解释或初步解决方案",
+      "提出替代方案、设定合理条件并确认最终处理"
+    ],
+    "coreChunks": [
+      "I noticed an issue",
+      "This has impacted us",
+      "I appreciate your suggestion",
+      "Could we consider an"
+    ],
+    "supportingVocabulary": [
+      "service disruption",
+      "expectations",
+      "resolution",
+      "compromise",
+      "impact",
+      "negotiate"
+    ],
+    "contentBoundaries": [
+      "不进入法律威胁、索赔或极端冲突",
+      "不做简单商品退换的重复版本",
+      "不要求使用攻击性或过度正式的投诉语言"
+    ],
+    "realWorldContexts": [
+      "Discussing a billing error with a utility company",
+      "Addressing a service delay with a delivery company",
+      "Resolving a quality issue with a contracted service"
+    ]
+  },
+  "difficultyPlan": {
+    "entryLevel": "B2-",
+    "coreLevel": "B2",
+    "stretchLevel": "B2+",
+    "distribution": {
+      "entry": 3,
+      "targetBase": 4,
+      "targetCore": 6,
+      "stretch": 3
+    },
+    "curve": [
+      "entry",
+      "entry",
+      "entry",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetBase",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "targetCore",
+      "stretch",
+      "targetCore",
+      "stretch",
+      "stretch"
+    ],
+    "principles": [
+      "由简单意图逐步加入细节和回应。",
+      "每句可独立用于真实交流。"
+    ],
+    "adjustmentReason": null
+  },
+  "contentStructure": [
+    {
+      "name": "建立任务",
+      "purpose": "准确描述发生了什么以及与原约定的差异",
+      "sentenceCount": 4
+    },
+    {
+      "name": "补充关键信息",
+      "purpose": "说明问题造成的实际影响和自己的合理期待",
+      "sentenceCount": 4
+    },
+    {
+      "name": "处理回应与变化",
+      "purpose": "回应道歉、解释或初步解决方案",
+      "sentenceCount": 4
+    },
+    {
+      "name": "完成交流",
+      "purpose": "提出替代方案、设定合理条件并确认最终处理",
+      "sentenceCount": 4
+    }
+  ],
+  "coreChunkCoverage": [
+    {
+      "chunk": "I noticed an issue",
+      "plannedCount": 1,
+      "slots": [
+        2
+      ],
+      "distinctUses": [
+        "准确描述发生了什么以及与原约定的差异"
+      ]
+    },
+    {
+      "chunk": "This has impacted us",
+      "plannedCount": 1,
+      "slots": [
+        6
+      ],
+      "distinctUses": [
+        "说明问题造成的实际影响和自己的合理期待"
+      ]
+    },
+    {
+      "chunk": "I appreciate your suggestion",
+      "plannedCount": 1,
+      "slots": [
+        10
+      ],
+      "distinctUses": [
+        "回应道歉、解释或初步解决方案"
+      ]
+    },
+    {
+      "chunk": "Could we consider an",
+      "plannedCount": 1,
+      "slots": [
+        14
+      ],
+      "distinctUses": [
+        "提出替代方案、设定合理条件并确认最终处理"
+      ]
+    }
+  ],
+  "sentenceSlots": [
+    {
+      "slot": 1,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "meaningTarget": "准确描述发生了什么以及与原约定的差异",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "起点",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 2,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "meaningTarget": "准确描述发生了什么以及与原约定的差异",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 3,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "meaningTarget": "准确描述发生了什么以及与原约定的差异",
+      "difficultyBand": "entry",
+      "difficultyFocus": "entry",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 4,
+      "section": "建立任务",
+      "role": "准确描述发生了什么以及与原约定的差异",
+      "meaningTarget": "准确描述发生了什么以及与原约定的差异",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 5,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "meaningTarget": "说明问题造成的实际影响和自己的合理期待",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 6,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "meaningTarget": "说明问题造成的实际影响和自己的合理期待",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 7,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "meaningTarget": "说明问题造成的实际影响和自己的合理期待",
+      "difficultyBand": "targetBase",
+      "difficultyFocus": "targetBase",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 22,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 8,
+      "section": "补充关键信息",
+      "role": "说明问题造成的实际影响和自己的合理期待",
+      "meaningTarget": "说明问题造成的实际影响和自己的合理期待",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 9,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "meaningTarget": "回应道歉、解释或初步解决方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 10,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "meaningTarget": "回应道歉、解释或初步解决方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 11,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "meaningTarget": "回应道歉、解释或初步解决方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 12,
+      "section": "处理回应与变化",
+      "role": "回应道歉、解释或初步解决方案",
+      "meaningTarget": "回应道歉、解释或初步解决方案",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 13,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "meaningTarget": "提出替代方案、设定合理条件并确认最终处理",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 14,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "meaningTarget": "提出替代方案、设定合理条件并确认最终处理",
+      "difficultyBand": "targetCore",
+      "difficultyFocus": "targetCore",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 24,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 15,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "meaningTarget": "提出替代方案、设定合理条件并确认最终处理",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    },
+    {
+      "slot": 16,
+      "section": "完成交流",
+      "role": "提出替代方案、设定合理条件并确认最终处理",
+      "meaningTarget": "提出替代方案、设定合理条件并确认最终处理",
+      "difficultyBand": "stretch",
+      "difficultyFocus": "stretch",
+      "requiredChunks": [],
+      "optionalChunks": [
+        "I noticed an issue",
+        "This has impacted us",
+        "I appreciate your suggestion",
+        "Could we consider an"
+      ],
+      "wordCountMin": 2,
+      "wordCountMax": 26,
+      "maxClauses": 3,
+      "maxInformationUnits": 3,
+      "maxNewChunks": 2,
+      "relationshipToPrevious": "逐步补充",
+      "realWorldUse": "成人真实生活、工作或社交交流",
+      "avoid": [
+        "不进入法律威胁、索赔或极端冲突",
+        "不做简单商品退换的重复版本",
+        "不要求使用攻击性或过度正式的投诉语言"
+      ]
+    }
+  ],
+  "blueprintReview": {
+    "valid": true,
+    "strengths": [
+      "冻结范围和能力目标已保留。"
+    ],
+    "risks": [
+      "不进入法律威胁、索赔或极端冲突",
+      "不做简单商品退换的重复版本",
+      "不要求使用攻击性或过度正式的投诉语言"
+    ],
+    "humanReviewFocus": [
+      "确认表达自然且不过度重复。"
+    ]
+  },
+  "approved": false
+}

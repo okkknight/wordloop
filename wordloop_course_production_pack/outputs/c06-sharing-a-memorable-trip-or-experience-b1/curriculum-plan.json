@@ -1,0 +1,62 @@
+{
+  "curriculumRationale": "课程池字段已冻结；本产物只将指定课程转写为可执行的单课计划。",
+  "courses": [
+    {
+      "courseId": "C06",
+      "titleZh": "分享一次难忘的旅行或经历",
+      "titleEn": "Sharing a Memorable Trip or Experience",
+      "courseType": "topic_expression",
+      "typeReason": "课程类型直接遵循冻结课程池定义。",
+      "targetLevel": "B1",
+      "difficultyRange": {
+        "entry": "B1-",
+        "core": "B1",
+        "stretch": "B1+"
+      },
+      "learnerOutcome": "能够介绍一次经历的背景、关键事件和难忘细节，并表达它为什么重要。",
+      "communicationGoals": [
+        "交代目的地、时间或经历背景",
+        "描述期待与实际发生的关键事件",
+        "选择一个具体人物、场景或细节展开",
+        "说明感受、收获以及为什么记得它"
+      ],
+      "abilityTags": [
+        "C3",
+        "C4",
+        "C"
+      ],
+      "selectionReason": "课程池 releaseOrder 24 的冻结课程。",
+      "distinctiveValue": "在日常叙事基础上增加细节选择和个人意义，使表达更有内容。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "不训练预订、问路和行程安排",
+        "不要求宏大人生感悟",
+        "不堆叠景点和旅游词汇"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "topic_expression": 1
+    },
+    "levelDistribution": {
+      "B1": 1
+    },
+    "coverageDomains": [
+      "交代目的地、时间或经历背景",
+      "描述期待与实际发生的关键事件",
+      "选择一个具体人物、场景或细节展开",
+      "说明感受、收获以及为什么记得它"
+    ],
+    "duplicatesResolved": [
+      "严格保持该课程与相邻课程的冻结范围。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "不训练预订、问路和行程安排",
+      "不要求宏大人生感悟",
+      "不堆叠景点和旅游词汇"
+    ]
+  }
+}

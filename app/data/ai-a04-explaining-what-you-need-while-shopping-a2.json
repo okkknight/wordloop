@@ -1,0 +1,169 @@
+{
+  "courseId": "a04-explaining-what-you-need-while-shopping-a2",
+  "provider": "OpenAI",
+  "sourceUrl": "https://developers.openai.com/api/docs/guides/text-to-speech",
+  "attribution": "Original WordLoop course text · AI-generated voice by OpenAI gpt-4o-mini-tts (marin)",
+  "licenseNote": "Course text is original WordLoop content. Audio is AI-generated; disclose this to learners.",
+  "entries": [
+    {
+      "id": "ai-a04-001",
+      "text": "I need a new jacket for winter.",
+      "translation": "我需要一件新的冬季夹克。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-001.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-a04-002",
+      "text": "I'm looking for something that can be worn to a formal event.",
+      "translation": "我在找可以穿去正式场合的东西。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-002.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.096,
+      "duration": 4.096
+    },
+    {
+      "id": "ai-a04-003",
+      "text": "I want a pair of shoes for running.",
+      "translation": "我想要一双跑步鞋。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-003.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-a04-004",
+      "text": "I'm interested in buying a new phone for work.",
+      "translation": "我有兴趣买一部新的工作手机。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-004.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.157,
+      "duration": 3.157
+    },
+    {
+      "id": "ai-a04-005",
+      "text": "I prefer a medium size, please.",
+      "translation": "我更喜欢中号的，谢谢。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-005.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.413,
+      "duration": 3.413
+    },
+    {
+      "id": "ai-a04-006",
+      "text": "Do you have this in a larger size?",
+      "translation": "你们有这个的大号吗？",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-006.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.072,
+      "duration": 3.072
+    },
+    {
+      "id": "ai-a04-007",
+      "text": "I like the modern style.",
+      "translation": "我喜欢现代风格。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-007.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.347,
+      "duration": 2.347
+    },
+    {
+      "id": "ai-a04-008",
+      "text": "I'm looking for something lightweight and portable.",
+      "translation": "我在找轻便可携带的东西。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-008.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.712,
+      "duration": 3.712
+    },
+    {
+      "id": "ai-a04-009",
+      "text": "I'm hoping to stay under $100.",
+      "translation": "我希望不超过100美元。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-009.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 4.096,
+      "duration": 4.096
+    },
+    {
+      "id": "ai-a04-010",
+      "text": "Can I try this on to see if it fits?",
+      "translation": "我可以试穿一下看看合不合适吗？",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-010.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.627,
+      "duration": 3.627
+    },
+    {
+      "id": "ai-a04-011",
+      "text": "The most important thing is durability.",
+      "translation": "最重要的是耐用性。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-011.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.603,
+      "duration": 2.603
+    },
+    {
+      "id": "ai-a04-012",
+      "text": "I'm looking for something that's good value for money.",
+      "translation": "我在找性价比高的东西。",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-012.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.456,
+      "duration": 3.456
+    },
+    {
+      "id": "ai-a04-013",
+      "text": "Could I see some other styles you have?",
+      "translation": "我可以看看你们有的其他款式吗？",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-013.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.816,
+      "duration": 2.816
+    },
+    {
+      "id": "ai-a04-014",
+      "text": "What's the difference between these two models?",
+      "translation": "这两种型号有什么区别？",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-014.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.371,
+      "duration": 3.371
+    },
+    {
+      "id": "ai-a04-015",
+      "text": "Can I compare this with another option?",
+      "translation": "我可以把这个和另一个选项比较一下吗？",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-015.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 3.2,
+      "duration": 3.2
+    },
+    {
+      "id": "ai-a04-016",
+      "text": "Is it possible to try a different color?",
+      "translation": "可以试试不同的颜色吗？",
+      "audio": "audio/a04-explaining-what-you-need-while-shopping-a2-016.m4a",
+      "learnable": true,
+      "start": 0,
+      "end": 2.645,
+      "duration": 2.645
+    }
+  ]
+}

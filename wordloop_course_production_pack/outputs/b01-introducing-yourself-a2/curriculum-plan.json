@@ -1,0 +1,60 @@
+{
+  "curriculumRationale": "课程池已冻结首发顺序；本产物只将 releaseOrder 1 的 B01 转写为可执行的单课提案，不改变选题、类型、等级或能力地图。",
+  "courses": [
+    {
+      "courseId": "B01",
+      "titleZh": "在新环境中介绍自己",
+      "titleEn": "Introducing Yourself in a New Situation",
+      "courseType": "communication_skill",
+      "typeReason": "课程训练的是可迁移的开启交流动作：介绍自己、说明与场合的关系，并给对方留下回应空间，而非完成某个单一场景任务。",
+      "targetLevel": "A2",
+      "difficultyRange": {
+        "entry": "A2-",
+        "core": "A2",
+        "stretch": "A2+"
+      },
+      "learnerOutcome": "能够在工作、活动或社交环境中进行简短、自然且有回应空间的自我介绍。",
+      "communicationGoals": [
+        "说出姓名和当前身份或基本背景。",
+        "说明与当前场合有关的一项工作、学习或生活信息。",
+        "用一个简单、不过度私人的问题邀请对方回应。"
+      ],
+      "abilityTags": [
+        "B1 开启交流",
+        "C1 描述个人情况",
+        "自我介绍",
+        "低压力社交"
+      ],
+      "selectionReason": "这是课程池 releaseOrder 1 的冻结课程，为后续闲聊、追问和澄清课程建立最基础的主动开口能力。",
+      "distinctiveValue": "自我介绍被设计为交流入口，而不是需要背诵的个人履历。",
+      "prerequisites": [],
+      "humanReviewRisks": [
+        "避免把句子写成正式演讲或完整简历。",
+        "避免使用过度私人的身份、收入、婚恋或移民信息。",
+        "最后的提问应自然、低压力且能邀请回应。"
+      ],
+      "approved": false
+    }
+  ],
+  "portfolioReview": {
+    "typeDistribution": {
+      "communication_skill": 1
+    },
+    "levelDistribution": {
+      "A2": 1
+    },
+    "coverageDomains": [
+      "新环境开启交流",
+      "基本个人背景",
+      "工作与学习身份"
+    ],
+    "duplicatesResolved": [
+      "保持在自我介绍和开启交流范围内，不提前覆盖 B02 的闲聊主题或 B03 的连续追问。"
+    ],
+    "remainingGaps": [],
+    "humanReviewFocus": [
+      "确认课程在首发顺序中应保持为 A2 入门课。",
+      "确认工作、学习和活动场景的比例适合目标用户。"
+    ]
+  }
+}

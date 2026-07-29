@@ -1,0 +1,12 @@
+[
+  {"id":"word-exact-noise","target":"apple","transcript":"[noise] APPLE!","sentence":false,"expected":{"passed":true,"score":100,"matched":"apple"}},
+  {"id":"word-levenshtein","target":"apple","transcript":"appl","sentence":false,"expected":{"passed":true,"score":80,"matched":"appl"}},
+  {"id":"word-no-match","target":"zebra","transcript":"x","sentence":false,"expected":{"passed":false,"score":0,"matched":""}},
+  {"id":"adjacent-window","target":"how are you","transcript":"please how are you today","sentence":false,"expected":{"passed":true,"score":100,"matched":"howareyou"}},
+  {"id":"sentence-below-coverage","target":"one two three four five","transcript":"one two","sentence":true,"expected":{"passed":false,"score":32,"matched":"onetwo"}},
+  {"id":"sentence-exact-coverage","target":"one two three four five","transcript":"one two three","sentence":true,"expected":{"passed":true,"score":58,"matched":"onetwothree"}},
+  {"id":"contraction-and-em","target":"we’re ready for them","transcript":"we ready for em","sentence":true,"expected":{"passed":true,"score":75,"matched":"wereadyforem"}},
+  {"id":"duplicate-coverage-semantics","target":"go go now","transcript":"go now","sentence":true,"expected":{"passed":true,"score":71,"matched":"gonow"}},
+  {"id":"noise-labels","target":"quiet","transcript":"[music] quiet [laughter]","sentence":false,"expected":{"passed":true,"score":100,"matched":"quiet"}},
+  {"id":"window-capped-at-twelve","target":"one two three four five six seven eight nine ten eleven twelve thirteen","transcript":"one two three four five six seven eight nine ten eleven twelve","sentence":false,"expected":{"passed":true,"score":86,"matched":"onetwothreefourfivesixseveneightnineteneleventwelve"}}
+]

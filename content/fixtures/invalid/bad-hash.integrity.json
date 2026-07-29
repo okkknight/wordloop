@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "courseId": "fixture-course",
+  "contentVersion": 1,
+  "files": [
+    {
+      "path": "course.json",
+      "bytes": 100,
+      "sha256": "ABC123"
+    },
+    {
+      "path": "audio/entry-1.m4a",
+      "bytes": 200,
+      "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  ]
+}
