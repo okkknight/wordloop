@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "主要的好处是节省成本。"
+      }
     },
     {
       "id": "ai-d04-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.115,
-      "duration": 3.115
+      "duration": 3.115,
+      "translations": {
+        "zh-Hans": "一个优点是它非常方便。"
+      }
     },
     {
       "id": "ai-d04-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "它提供了很大的灵活性。"
+      }
     },
     {
       "id": "ai-d04-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "最好的部分是使用方便。"
+      }
     },
     {
       "id": "ai-d04-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.2,
-      "duration": 3.2
+      "duration": 3.2,
+      "translations": {
+        "zh-Hans": "初始成本可能相当高。"
+      }
     },
     {
       "id": "ai-d04-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "一个缺点可能是有限的可用性。"
+      }
     },
     {
       "id": "ai-d04-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.347,
-      "duration": 2.347
+      "duration": 2.347,
+      "translations": {
+        "zh-Hans": "这可能导致压力增加。"
+      }
     },
     {
       "id": "ai-d04-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "它可能不适合每个人的需求。"
+      }
     },
     {
       "id": "ai-d04-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.2,
-      "duration": 3.2
+      "duration": 3.2,
+      "translations": {
+        "zh-Hans": "对于大家庭来说，这可能太小了。"
+      }
     },
     {
       "id": "ai-d04-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "在这种情况下，最好选择质量而不是数量。"
+      }
     },
     {
       "id": "ai-d04-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "对于初学者来说，这是一个不错的选择。"
+      }
     },
     {
       "id": "ai-d04-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "对于预算有限的人来说，这是理想的选择。"
+      }
     },
     {
       "id": "ai-d04-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.755,
-      "duration": 3.755
+      "duration": 3.755,
+      "translations": {
+        "zh-Hans": "如果能带来更好的结果，我可以接受额外的努力。"
+      }
     },
     {
       "id": "ai-d04-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "我愿意接受一些延误以获得更高的质量。"
+      }
     },
     {
       "id": "ai-d04-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "最终，我认为好处大于缺点。"
+      }
     },
     {
       "id": "ai-d04-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.248,
-      "duration": 5.248
+      "duration": 5.248,
+      "translations": {
+        "zh-Hans": "总的来说，尽管有挑战，我对这个决定感到满意。"
+      }
     }
   ]
 }

@@ -87,6 +87,12 @@ public struct BundledCourseSource: CourseSource, Sendable {
             if let translation = item.translation {
                 try CourseContentValidation.requireNonEmpty(translation, document: courseDocument, field: "entry.translation")
             }
+            if let translations = item.translations {
+                for (locale, translation) in translations {
+                    try CourseContentValidation.requireNonEmpty(locale, document: courseDocument, field: "entry.translations.locale")
+                    try CourseContentValidation.requireNonEmpty(translation, document: courseDocument, field: "entry.translations.\(locale)")
+                }
+            }
             if let phonetic = item.phonetic {
                 try CourseContentValidation.requireNonEmpty(phonetic, document: courseDocument, field: "entry.phonetic")
             }
@@ -113,6 +119,7 @@ public struct BundledCourseSource: CourseSource, Sendable {
                 id: try entryID(item.id),
                 text: item.text,
                 translation: item.translation,
+                translations: item.translations ?? [:],
                 phonetic: item.phonetic,
                 highlights: highlights,
                 audioURL: audioURL,

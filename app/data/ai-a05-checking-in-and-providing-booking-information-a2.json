@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我预订了今晚的房间。"
+      }
     },
     {
       "id": "ai-a05-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "我以史密斯的名字预订了。"
+      }
     },
     {
       "id": "ai-a05-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "我的预订是两晚。"
+      }
     },
     {
       "id": "ai-a05-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.475,
-      "duration": 2.475
+      "duration": 2.475,
+      "translations": {
+        "zh-Hans": "预订是以我的名字，艾米丽。"
+      }
     },
     {
       "id": "ai-a05-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "我今天入住，住两晚。"
+      }
     },
     {
       "id": "ai-a05-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "我的入住日期是10月5日。"
+      }
     },
     {
       "id": "ai-a05-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "我准备好了身份证以便办理入住。"
+      }
     },
     {
       "id": "ai-a05-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "我需要出示我的驾照，对吗？"
+      }
     },
     {
       "id": "ai-a05-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.645,
-      "duration": 2.645
+      "duration": 2.645,
+      "translations": {
+        "zh-Hans": "我们两个人住在房间里。"
+      }
     },
     {
       "id": "ai-a05-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "我会住四晚。"
+      }
     },
     {
       "id": "ai-a05-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "我们更喜欢有特大床的房间。"
+      }
     },
     {
       "id": "ai-a05-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "我会用信用卡支付。"
+      }
     },
     {
       "id": "ai-a05-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "我的房间包含早餐吗？"
+      }
     },
     {
       "id": "ai-a05-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "你能确认我的房间有海景吗？"
+      }
     },
     {
       "id": "ai-a05-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.133,
-      "duration": 2.133
+      "duration": 2.133,
+      "translations": {
+        "zh-Hans": "明天几点退房？"
+      }
     },
     {
       "id": "ai-a05-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.261,
-      "duration": 2.261
+      "duration": 2.261,
+      "translations": {
+        "zh-Hans": "我可以再要一张房卡吗？"
+      }
     }
   ]
 }

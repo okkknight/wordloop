@@ -15,6 +15,7 @@
     "baseline:ios:write": "node scripts/capture_ios_migration_baseline.mjs --write",
     "content:export": "node scripts/export_course_packages.mjs --write",
     "content:export:app-store": "node scripts/export_course_packages.mjs --write --release app-store-1.0",
+    "content:check-mother-tongue": "node scripts/check_mother_tongue_translations.mjs --strict",
     "content:publish:staging": "sh scripts/publish_ios_catalog.sh",
     "content:check": "node scripts/export_course_packages.mjs --check",
     "content:check:app-store": "node scripts/export_course_packages.mjs --check --release app-store-1.0",

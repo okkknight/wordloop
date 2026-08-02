@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.347,
-      "duration": 2.347
+      "duration": 2.347,
+      "translations": {
+        "zh-Hans": "航班几点起飞？"
+      }
     },
     {
       "id": "ai-a08-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "你能确认一下音乐会的日期吗？"
+      }
     },
     {
       "id": "ai-a08-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "火车几点到达？"
+      }
     },
     {
       "id": "ai-a08-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.712,
-      "duration": 3.712
+      "duration": 3.712,
+      "translations": {
+        "zh-Hans": "会议是下午三点还是四点？"
+      }
     },
     {
       "id": "ai-a08-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.645,
-      "duration": 2.645
+      "duration": 2.645,
+      "translations": {
+        "zh-Hans": "你能核对一下我的护照号码吗？"
+      }
     },
     {
       "id": "ai-a08-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.517,
-      "duration": 2.517
+      "duration": 2.517,
+      "translations": {
+        "zh-Hans": "票上的名字拼写正确吗？"
+      }
     },
     {
       "id": "ai-a08-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.072,
-      "duration": 3.072
+      "duration": 3.072,
+      "translations": {
+        "zh-Hans": "你能再核对一下我的身份证号码吗？"
+      }
     },
     {
       "id": "ai-a08-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "你能确认一下我的预订参考号吗？"
+      }
     },
     {
       "id": "ai-a08-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "我们在12A和12B座位吗？"
+      }
     },
     {
       "id": "ai-a08-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.645,
-      "duration": 2.645
+      "duration": 2.645,
+      "translations": {
+        "zh-Hans": "航班的办理登机手续时间是几点？"
+      }
     },
     {
       "id": "ai-a08-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "房间包含早餐吗？"
+      }
     },
     {
       "id": "ai-a08-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "有到机场的班车服务吗？"
+      }
     },
     {
       "id": "ai-a08-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.072,
-      "duration": 3.072
+      "duration": 3.072,
+      "translations": {
+        "zh-Hans": "我们再检查一下行程安排。"
+      }
     },
     {
       "id": "ai-a08-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "这包括两天的早餐吗？"
+      }
     },
     {
       "id": "ai-a08-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "请为我总结一下预订细节。"
+      }
     },
     {
       "id": "ai-a08-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "我们出发前确保所有信息无误。"
+      }
     }
   ]
 }

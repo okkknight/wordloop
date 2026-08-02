@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.115,
-      "duration": 3.115
+      "duration": 3.115,
+      "translations": {
+        "zh-Hans": "我现在明白我的行为引起了混乱。"
+      }
     },
     {
       "id": "ai-b10-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.309,
-      "duration": 4.309
+      "duration": 4.309,
+      "translations": {
+        "zh-Hans": "我为误会道歉；这不是我的本意。"
+      }
     },
     {
       "id": "ai-b10-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "我承认我的邮件不够清楚。"
+      }
     },
     {
       "id": "ai-b10-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "我承认我的解释不够充分。"
+      }
     },
     {
       "id": "ai-b10-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.755,
-      "duration": 3.755
+      "duration": 3.755,
+      "translations": {
+        "zh-Hans": "对由此造成的不便，我深感抱歉。"
+      }
     },
     {
       "id": "ai-b10-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.456,
-      "duration": 3.456
+      "duration": 3.456,
+      "translations": {
+        "zh-Hans": "让我澄清一下发生的事情，以免产生误解。"
+      }
     },
     {
       "id": "ai-b10-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "对我的疏忽，我感到抱歉。"
+      }
     },
     {
       "id": "ai-b10-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "请接受我对混乱的道歉。"
+      }
     },
     {
       "id": "ai-b10-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "我的本意是帮助，而不是让事情复杂化。"
+      }
     },
     {
       "id": "ai-b10-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.267,
-      "duration": 4.267
+      "duration": 4.267,
+      "translations": {
+        "zh-Hans": "这是我计划解决问题的方法：我会重新发送正确的信息。"
+      }
     },
     {
       "id": "ai-b10-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.053,
-      "duration": 4.053
+      "duration": 4.053,
+      "translations": {
+        "zh-Hans": "我试图提高效率，但我看到事与愿违。"
+      }
     },
     {
       "id": "ai-b10-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "我以为我说得很清楚，但我意识到我没有。"
+      }
     },
     {
       "id": "ai-b10-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "让我们确保接下来我们达成一致。"
+      }
     },
     {
       "id": "ai-b10-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "我理解这对你的影响，我会努力纠正。"
+      }
     },
     {
       "id": "ai-b10-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.584,
-      "duration": 3.584
+      "duration": 3.584,
+      "translations": {
+        "zh-Hans": "为了澄清问题，我会提供详细的解释。"
+      }
     },
     {
       "id": "ai-b10-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "让我们安排一次会议来讨论如何继续。"
+      }
     }
   ]
 }

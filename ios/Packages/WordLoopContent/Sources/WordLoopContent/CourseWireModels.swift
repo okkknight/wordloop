@@ -48,6 +48,7 @@ struct EntryWire: Decodable {
     let id: String
     let text: String
     let translation: String?
+    let translations: [String: String]?
     let phonetic: String?
     let highlights: [String]?
     let audio: String

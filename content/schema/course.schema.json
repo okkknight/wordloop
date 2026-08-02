@@ -92,6 +92,16 @@
         "translation": {
           "$ref": "#/$defs/nullableText"
         },
+        "translations": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/$defs/nonEmptyText"
+          },
+          "propertyNames": {
+            "pattern": "^[a-z]{2,3}(?:-[A-Za-z]{2,4})?$"
+          }
+        },
         "phonetic": {
           "$ref": "#/$defs/nullableText"
         },

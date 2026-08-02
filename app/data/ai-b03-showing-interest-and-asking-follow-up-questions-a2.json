@@ -13,7 +13,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.664,
-      "duration": 1.664
+      "duration": 1.664,
+      "translations": {
+        "zh-Hans": "哇，真的吗？",
+        "ja": "え、本当ですか？"
+      }
     },
     {
       "id": "ai-b03-002",
@@ -23,7 +27,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.517,
-      "duration": 2.517
+      "duration": 2.517,
+      "translations": {
+        "zh-Hans": "那很有趣，告诉我更多吧。",
+        "ja": "それは面白いですね。もっと聞かせてください。"
+      }
     },
     {
       "id": "ai-b03-003",
@@ -33,7 +41,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.835,
-      "duration": 1.835
+      "duration": 1.835,
+      "translations": {
+        "zh-Hans": "不会吧！",
+        "ja": "まさか！"
+      }
     },
     {
       "id": "ai-b03-004",
@@ -43,7 +55,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.664,
-      "duration": 1.664
+      "duration": 1.664,
+      "translations": {
+        "zh-Hans": "我不知道这个！",
+        "ja": "知りませんでした！"
+      }
     },
     {
       "id": "ai-b03-005",
@@ -53,7 +69,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.517,
-      "duration": 2.517
+      "duration": 2.517,
+      "translations": {
+        "zh-Hans": "之后你去了哪里？",
+        "ja": "その後はどこへ行ったんですか？"
+      }
     },
     {
       "id": "ai-b03-006",
@@ -63,7 +83,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.627,
-      "duration": 3.627
+      "duration": 3.627,
+      "translations": {
+        "zh-Hans": "这让你对整个情况有什么感觉？",
+        "ja": "その出来事について、どんな気持ちになりましたか？"
+      }
     },
     {
       "id": "ai-b03-007",
@@ -73,7 +97,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.048,
-      "duration": 2.048
+      "duration": 2.048,
+      "translations": {
+        "zh-Hans": "你什么时候第一次注意到的？",
+        "ja": "最初にそれに気づいたのはいつですか？"
+      }
     },
     {
       "id": "ai-b03-008",
@@ -83,7 +111,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.92,
-      "duration": 1.92
+      "duration": 1.92,
+      "translations": {
+        "zh-Hans": "你是怎么到那里的？",
+        "ja": "そこへはどうやって行ったんですか？"
+      }
     },
     {
       "id": "ai-b03-009",
@@ -93,7 +125,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.944,
-      "duration": 2.944
+      "duration": 2.944,
+      "translations": {
+        "zh-Hans": "你能多讲讲吗？",
+        "ja": "もう少し詳しく教えてもらえますか？"
+      }
     },
     {
       "id": "ai-b03-010",
@@ -103,7 +139,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.92,
-      "duration": 1.92
+      "duration": 1.92,
+      "translations": {
+        "zh-Hans": "接下来发生了什么？",
+        "ja": "次に何が起きたんですか？"
+      }
     },
     {
       "id": "ai-b03-011",
@@ -113,7 +153,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "那让你感觉如何？",
+        "ja": "それでどんな気持ちになりましたか？"
+      }
     },
     {
       "id": "ai-b03-012",
@@ -123,7 +167,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "你觉得为什么会这样？",
+        "ja": "なぜそうなったと思いますか？"
+      }
     },
     {
       "id": "ai-b03-013",
@@ -133,7 +181,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.475,
-      "duration": 2.475
+      "duration": 2.475,
+      "translations": {
+        "zh-Hans": "我曾经试过一次，挺有趣的。",
+        "ja": "私も一度やったことがありますが、楽しかったです。"
+      }
     },
     {
       "id": "ai-b03-014",
@@ -143,7 +195,11 @@
       "learnable": true,
       "start": 0,
       "end": 4.224,
-      "duration": 4.224
+      "duration": 4.224,
+      "translations": {
+        "zh-Hans": "你能解释一下你为什么选择那个选项吗？我也曾经有过类似的选择。",
+        "ja": "なぜその選択をしたのか説明してもらえますか？ 私も似たような選択をしたことがあります。"
+      }
     },
     {
       "id": "ai-b03-015",
@@ -153,7 +209,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "我去年有过类似的经历。",
+        "ja": "去年、似たような経験をしました。"
+      }
     },
     {
       "id": "ai-b03-016",
@@ -163,7 +223,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "我记得我曾经也有过同样的感觉。",
+        "ja": "私も一度、同じように感じたことを覚えています。"
+      }
     }
   ]
 }

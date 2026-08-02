@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我曾去过大峡谷旅行。"
+      }
     },
     {
       "id": "ai-c06-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.755,
-      "duration": 3.755
+      "duration": 3.755,
+      "translations": {
+        "zh-Hans": "一次难忘的旅行是去黄石国家公园。"
+      }
     },
     {
       "id": "ai-c06-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "2019年，我和朋友们去了旧金山。"
+      }
     },
     {
       "id": "ai-c06-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "我们决定在秋天探索落基山脉。"
+      }
     },
     {
       "id": "ai-c06-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.523,
-      "duration": 4.523
+      "duration": 4.523,
+      "translations": {
+        "zh-Hans": "我们期待晴天，但每天都下雨。"
+      }
     },
     {
       "id": "ai-c06-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "我记得是因为我们在城市里迷路了。"
+      }
     },
     {
       "id": "ai-c06-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "音乐会本应在8点开始，但被推迟了。"
+      }
     },
     {
       "id": "ai-c06-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "我们错过了航班，不得不多住了一晚。"
+      }
     },
     {
       "id": "ai-c06-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "带我们参观的导游非常博学。"
+      }
     },
     {
       "id": "ai-c06-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "旅行的亮点是看到北极光。"
+      }
     },
     {
       "id": "ai-c06-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.627,
-      "duration": 3.627
+      "duration": 3.627,
+      "translations": {
+        "zh-Hans": "街头艺人小提琴拉得很美。"
+      }
     },
     {
       "id": "ai-c06-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.267,
-      "duration": 4.267
+      "duration": 4.267,
+      "translations": {
+        "zh-Hans": "当地市场充满了鲜艳的色彩和声音。"
+      }
     },
     {
       "id": "ai-c06-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.864,
-      "duration": 4.864
+      "duration": 4.864,
+      "translations": {
+        "zh-Hans": "在森林中漫步时，我感到一种宁静。"
+      }
     },
     {
       "id": "ai-c06-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "特别之处在于当地人的善良。"
+      }
     },
     {
       "id": "ai-c06-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "我学到了很多关于该地区的文化和历史。"
+      }
     },
     {
       "id": "ai-c06-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.968,
-      "duration": 3.968
+      "duration": 3.968,
+      "translations": {
+        "zh-Hans": "这次旅行让我想起了大自然的美丽。"
+      }
     }
   ]
 }

@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我住在城市一个安静的区域。"
+      }
     },
     {
       "id": "ai-c02-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "我和室友住在一间小公寓里。"
+      }
     },
     {
       "id": "ai-c02-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "这里很安静，尤其是在晚上。"
+      }
     },
     {
       "id": "ai-c02-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "我家附近有一个小公园。"
+      }
     },
     {
       "id": "ai-c02-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.072,
-      "duration": 3.072
+      "duration": 3.072,
+      "translations": {
+        "zh-Hans": "杂货店在步行距离内。"
+      }
     },
     {
       "id": "ai-c02-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "我可以在街角买到日用品。"
+      }
     },
     {
       "id": "ai-c02-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.944,
-      "duration": 2.944
+      "duration": 2.944,
+      "translations": {
+        "zh-Hans": "我周末喜欢去公园。"
+      }
     },
     {
       "id": "ai-c02-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我通常坐公交车出行。"
+      }
     },
     {
       "id": "ai-c02-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "出行很方便，因为车站很近。"
+      }
     },
     {
       "id": "ai-c02-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "这个区域清晨会非常忙。"
+      }
     },
     {
       "id": "ai-c02-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "唯一的问题是停车可能很难。"
+      }
     },
     {
       "id": "ai-c02-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我希望我楼附近有更多树。"
+      }
     },
     {
       "id": "ai-c02-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "自从搬来后，我已经习惯坐公交了。"
+      }
     },
     {
       "id": "ai-c02-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "我喜欢这个区域，因为它让我觉得安全。"
+      }
     },
     {
       "id": "ai-c02-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "如果我能改变一件事，我会增加更多公园。"
+      }
     },
     {
       "id": "ai-c02-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "总体来说，住在这里很方便，但可能有点吵。"
+      }
     }
   ]
 }

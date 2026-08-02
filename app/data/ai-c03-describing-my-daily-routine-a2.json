@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "我早起并煮咖啡。"
+      }
     },
     {
       "id": "ai-c03-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.2,
-      "duration": 3.2
+      "duration": 3.2,
+      "translations": {
+        "zh-Hans": "我通常在早上七点起床并刷牙。"
+      }
     },
     {
       "id": "ai-c03-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "醒来后，我查看手机上的信息。"
+      }
     },
     {
       "id": "ai-c03-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "出门前，我一定会喂猫。"
+      }
     },
     {
       "id": "ai-c03-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.224,
-      "duration": 4.224
+      "duration": 4.224,
+      "translations": {
+        "zh-Hans": "我通常通过查看电子邮件和设定优先事项来开始我的工作日。"
+      }
     },
     {
       "id": "ai-c03-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "早餐我经常吃麦片，然后去办公室。"
+      }
     },
     {
       "id": "ai-c03-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.651,
-      "duration": 4.651
+      "duration": 4.651,
+      "translations": {
+        "zh-Hans": "工作期间，我专注于完成任务和参加会议。"
+      }
     },
     {
       "id": "ai-c03-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.779,
-      "duration": 4.779
+      "duration": 4.779,
+      "translations": {
+        "zh-Hans": "我典型的工作日包括接听客户电话和管理项目。"
+      }
     },
     {
       "id": "ai-c03-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "下班后，我通常会去散步放松一下，然后再吃晚饭。"
+      }
     },
     {
       "id": "ai-c03-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.461,
-      "duration": 5.461
+      "duration": 5.461,
+      "translations": {
+        "zh-Hans": "我大约早上九点开始工作，下午五点结束，然后回家吃晚饭。"
+      }
     },
     {
       "id": "ai-c03-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.395,
-      "duration": 4.395
+      "duration": 4.395,
+      "translations": {
+        "zh-Hans": "晚上，我喜欢在晚饭后读书或看电影。"
+      }
     },
     {
       "id": "ai-c03-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.755,
-      "duration": 3.755
+      "duration": 3.755,
+      "translations": {
+        "zh-Hans": "如果有时间，我有时晚上会去健身房。"
+      }
     },
     {
       "id": "ai-c03-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.12,
-      "duration": 5.12
+      "duration": 5.12,
+      "translations": {
+        "zh-Hans": "我通常早上去慢跑，但有时我只是散步。"
+      }
     },
     {
       "id": "ai-c03-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.205,
-      "duration": 5.205
+      "duration": 5.205,
+      "translations": {
+        "zh-Hans": "晚上，我喜欢读书，但有时我会看电视。"
+      }
     },
     {
       "id": "ai-c03-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 6.059,
-      "duration": 6.059
+      "duration": 6.059,
+      "translations": {
+        "zh-Hans": "工作日我通常在晚上十点前睡觉，但周末我会熬夜。"
+      }
     },
     {
       "id": "ai-c03-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.949,
-      "duration": 4.949
+      "duration": 4.949,
+      "translations": {
+        "zh-Hans": "我倾向于每天早上喝咖啡，除了星期天我更喜欢喝茶。"
+      }
     }
   ]
 }

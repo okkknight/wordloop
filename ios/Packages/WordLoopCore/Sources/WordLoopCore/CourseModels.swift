@@ -119,6 +119,10 @@ public struct CourseEntry: Identifiable, Codable, Equatable, Hashable, Sendable 
     public let id: EntryID
     public let text: String
     public let translation: String?
+    /// Mother-tongue translations keyed by BCP 47 language identifier.
+    /// `translation` remains the legacy Simplified Chinese fallback so older
+    /// downloaded course packages continue to work.
+    public let translations: [String: String]
     public let phonetic: String?
     public let highlights: [String]
     public let audioURL: URL
@@ -128,6 +132,7 @@ public struct CourseEntry: Identifiable, Codable, Equatable, Hashable, Sendable 
         id: EntryID,
         text: String,
         translation: String?,
+        translations: [String: String] = [:],
         phonetic: String?,
         highlights: [String],
         audioURL: URL,
@@ -136,9 +141,29 @@ public struct CourseEntry: Identifiable, Codable, Equatable, Hashable, Sendable 
         self.id = id
         self.text = text
         self.translation = translation
+        self.translations = translations
         self.phonetic = phonetic
         self.highlights = highlights
         self.audioURL = audioURL
         self.durationMilliseconds = durationMilliseconds
+    }
+
+    public func translation(for localeIdentifier: String = Locale.preferredLanguages.first ?? Locale.current.identifier) -> String? {
+        let normalized = localeIdentifier.replacingOccurrences(of: "_", with: "-")
+        let language = normalized.split(separator: "-").first.map(String.init)
+        let traditionalChinese = normalized.hasPrefix("zh-Hant") || normalized.hasPrefix("zh-TW") || normalized.hasPrefix("zh-HK") || normalized.hasPrefix("zh-MO")
+        let candidates = [
+            normalized,
+            traditionalChinese ? "zh-Hant" : nil,
+            language,
+            "zh-Hans",
+        ].compactMap { $0 }
+        for candidate in candidates {
+            if let value = translations[candidate]?.trimmingCharacters(in: .whitespacesAndNewlines), !value.isEmpty {
+                return value
+            }
+        }
+        guard let translation else { return nil }
+        return translation.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? nil : translation
     }
 }

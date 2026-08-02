@@ -44,7 +44,7 @@ enum CourseContentValidation {
         try requireArrayObjects(object["entries"], document: "\(document).entries") { item, path in
             try requireKeys(
                 item,
-                allowed: ["id", "text", "translation", "phonetic", "highlights", "audio", "durationMilliseconds"],
+                allowed: ["id", "text", "translation", "translations", "phonetic", "highlights", "audio", "durationMilliseconds"],
                 document: path
             )
         }

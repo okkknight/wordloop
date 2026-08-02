@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.779,
-      "duration": 4.779
+      "duration": 4.779,
+      "translations": {
+        "zh-Hans": "我相信有效的沟通是成功的关键。"
+      }
     },
     {
       "id": "ai-d02-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.205,
-      "duration": 5.205
+      "duration": 5.205,
+      "translations": {
+        "zh-Hans": "例如，我曾参与过一个项目，在那里沟通至关重要。"
+      }
     },
     {
       "id": "ai-d02-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.565,
-      "duration": 4.565
+      "duration": 4.565,
+      "translations": {
+        "zh-Hans": "我认为从错误中学习对个人成长至关重要。"
+      }
     },
     {
       "id": "ai-d02-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "对我来说，坚持不懈会带来成功。"
+      }
     },
     {
       "id": "ai-d02-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "以一家因创新而繁荣的公司为例。"
+      }
     },
     {
       "id": "ai-d02-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.565,
-      "duration": 4.565
+      "duration": 4.565,
+      "translations": {
+        "zh-Hans": "这让我想起了一次我必须快速适应变化的经历。"
+      }
     },
     {
       "id": "ai-d02-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.627,
-      "duration": 3.627
+      "duration": 3.627,
+      "translations": {
+        "zh-Hans": "想想科技如何改变了沟通方式。"
+      }
     },
     {
       "id": "ai-d02-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "一个很好的例子是远程工作如何改变了就业市场。"
+      }
     },
     {
       "id": "ai-d02-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.181,
-      "duration": 4.181
+      "duration": 4.181,
+      "translations": {
+        "zh-Hans": "当我面临挑战时，我学会了韧性的重要性。"
+      }
     },
     {
       "id": "ai-d02-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.163,
-      "duration": 5.163
+      "duration": 5.163,
+      "translations": {
+        "zh-Hans": "为了说明我的观点，我曾在一个社区项目中做志愿者。"
+      }
     },
     {
       "id": "ai-d02-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.968,
-      "duration": 3.968
+      "duration": 3.968,
+      "translations": {
+        "zh-Hans": "我在学习新技能时意识到了耐心的价值。"
+      }
     },
     {
       "id": "ai-d02-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "体验不同文化让我变得更加开放。"
+      }
     },
     {
       "id": "ai-d02-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.864,
-      "duration": 4.864
+      "duration": 4.864,
+      "translations": {
+        "zh-Hans": "这个例子清楚地表明了为什么适应能力在当今世界至关重要。"
+      }
     },
     {
       "id": "ai-d02-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.523,
-      "duration": 4.523
+      "duration": 4.523,
+      "translations": {
+        "zh-Hans": "根据我的经验，我可以说努力工作从长远来看是有回报的。"
+      }
     },
     {
       "id": "ai-d02-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.205,
-      "duration": 5.205
+      "duration": 5.205,
+      "translations": {
+        "zh-Hans": "最终，这表明坚持不懈是克服障碍的关键。"
+      }
     },
     {
       "id": "ai-d02-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.267,
-      "duration": 4.267
+      "duration": 4.267,
+      "translations": {
+        "zh-Hans": "因此，很明显，良好的规划会带来更好的结果。"
+      }
     }
   ]
 }

@@ -94,6 +94,7 @@ export type CourseEntry = {
   id: string;
   text: string;
   translation: string;
+  translations?: Readonly<Record<string, string>>;
   phonetic?: string;
   audio: string;
   episode?: string;

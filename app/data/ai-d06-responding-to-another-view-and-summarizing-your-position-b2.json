@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.181,
-      "duration": 4.181
+      "duration": 4.181,
+      "translations": {
+        "zh-Hans": "你是说我们应该更多地关注可再生能源。"
+      }
     },
     {
       "id": "ai-d06-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.523,
-      "duration": 4.523
+      "duration": 4.523,
+      "translations": {
+        "zh-Hans": "我理解你关于需要更多公共交通的观点。"
+      }
     },
     {
       "id": "ai-d06-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.096,
-      "duration": 4.096
+      "duration": 4.096,
+      "translations": {
+        "zh-Hans": "你建议我们对污染实施更严格的法规。"
+      }
     },
     {
       "id": "ai-d06-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.968,
-      "duration": 3.968
+      "duration": 3.968,
+      "translations": {
+        "zh-Hans": "你提到科技可以改善教育成果。"
+      }
     },
     {
       "id": "ai-d06-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "我同意减少浪费对环境至关重要。"
+      }
     },
     {
       "id": "ai-d06-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "我同意你关于心理健康意识重要性的观点。"
+      }
     },
     {
       "id": "ai-d06-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.224,
-      "duration": 4.224
+      "duration": 4.224,
+      "translations": {
+        "zh-Hans": "我们都认为教育应该对所有人开放。"
+      }
     },
     {
       "id": "ai-d06-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.968,
-      "duration": 3.968
+      "duration": 3.968,
+      "translations": {
+        "zh-Hans": "我们都同意创新推动进步。"
+      }
     },
     {
       "id": "ai-d06-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.968,
-      "duration": 3.968
+      "duration": 3.968,
+      "translations": {
+        "zh-Hans": "然而，我在资金分配上看到一个挑战。"
+      }
     },
     {
       "id": "ai-d06-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "我们不同的地方在于我们应该如何实施这些改变。"
+      }
     },
     {
       "id": "ai-d06-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "我担心的是可能涉及的成本。"
+      }
     },
     {
       "id": "ai-d06-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.2,
-      "duration": 3.2
+      "duration": 3.2,
+      "translations": {
+        "zh-Hans": "我看到好处，但我担心风险。"
+      }
     },
     {
       "id": "ai-d06-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "总的来说，我们需要一种平衡的方法来考虑双方的观点。"
+      }
     },
     {
       "id": "ai-d06-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.077,
-      "duration": 5.077
+      "duration": 5.077,
+      "translations": {
+        "zh-Hans": "总之，我认为我们应该优先考虑可持续的做法。"
+      }
     },
     {
       "id": "ai-d06-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.181,
-      "duration": 4.181
+      "duration": 4.181,
+      "translations": {
+        "zh-Hans": "考虑到所有因素，分阶段的方法似乎明智。"
+      }
     },
     {
       "id": "ai-d06-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.523,
-      "duration": 4.523
+      "duration": 4.523,
+      "translations": {
+        "zh-Hans": "在权衡各种选择后，灵活的计划是可取的。"
+      }
     }
   ]
 }

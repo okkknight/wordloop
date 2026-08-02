@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.005,
-      "duration": 2.005
+      "duration": 2.005,
+      "translations": {
+        "zh-Hans": "我不能和你一起去。"
+      }
     },
     {
       "id": "ai-b09-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "我很感激你的邀请，但我不得不拒绝。"
+      }
     },
     {
       "id": "ai-b09-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "我必须拒绝。"
+      }
     },
     {
       "id": "ai-b09-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.048,
-      "duration": 2.048
+      "duration": 2.048,
+      "translations": {
+        "zh-Hans": "恐怕我不能去。"
+      }
     },
     {
       "id": "ai-b09-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.645,
-      "duration": 2.645
+      "duration": 2.645,
+      "translations": {
+        "zh-Hans": "那天我有其他安排。"
+      }
     },
     {
       "id": "ai-b09-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "不幸的是，我因为有约在先不能参加。"
+      }
     },
     {
       "id": "ai-b09-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "我有一个不能错过的家庭责任。"
+      }
     },
     {
       "id": "ai-b09-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.475,
-      "duration": 2.475
+      "duration": 2.475,
+      "translations": {
+        "zh-Hans": "我被工作的截止日期压得喘不过气来。"
+      }
     },
     {
       "id": "ai-b09-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "我真的很感激你的理解。"
+      }
     },
     {
       "id": "ai-b09-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.475,
-      "duration": 2.475
+      "duration": 2.475,
+      "translations": {
+        "zh-Hans": "等我不那么忙的时候再约怎么样？"
+      }
     },
     {
       "id": "ai-b09-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "我很重视我们的关系，希望我们能尽快见面。"
+      }
     },
     {
       "id": "ai-b09-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "我很遗憾错过，但我们尽快计划点什么吧。"
+      }
     },
     {
       "id": "ai-b09-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "也许我们可以打个简短的电话？"
+      }
     },
     {
       "id": "ai-b09-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "谢谢你的理解，也许我们可以重新安排。"
+      }
     },
     {
       "id": "ai-b09-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.645,
-      "duration": 2.645
+      "duration": 2.645,
+      "translations": {
+        "zh-Hans": "我们可以换一天试试吗？"
+      }
     },
     {
       "id": "ai-b09-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "我们改为下个月吧。"
+      }
     }
   ]
 }

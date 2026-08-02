@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "我们这个周末聚一下怎么样？"
+      }
     },
     {
       "id": "ai-a11-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "我们可以在星期五下午见面吗？"
+      }
     },
     {
       "id": "ai-a11-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "我们计划下周二吃晚饭吧。"
+      }
     },
     {
       "id": "ai-a11-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "我们安排下周开会好吗？"
+      }
     },
     {
       "id": "ai-a11-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.517,
-      "duration": 2.517
+      "duration": 2.517,
+      "translations": {
+        "zh-Hans": "你这周什么时候有空？"
+      }
     },
     {
       "id": "ai-a11-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "这个时间对你合适吗，还是我们找另一个时间？"
+      }
     },
     {
       "id": "ai-a11-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "你对会议时间有什么偏好吗？"
+      }
     },
     {
       "id": "ai-a11-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "你能告诉我你的空闲时间吗？"
+      }
     },
     {
       "id": "ai-a11-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "如果星期一不行，那星期三怎么样？"
+      }
     },
     {
       "id": "ai-a11-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "我们改到下周四下午2点吧。"
+      }
     },
     {
       "id": "ai-a11-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "改到下午会有帮助吗？"
+      }
     },
     {
       "id": "ai-a11-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.115,
-      "duration": 3.115
+      "duration": 3.115,
+      "translations": {
+        "zh-Hans": "这周晚些时候有没有更好的时间？"
+      }
     },
     {
       "id": "ai-a11-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "我们明天的会议一切都安排好了。"
+      }
     },
     {
       "id": "ai-a11-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "我需要取消我们明天的午餐。"
+      }
     },
     {
       "id": "ai-a11-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "感谢你理解这次的变动。"
+      }
     },
     {
       "id": "ai-a11-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "如果还有什么我能做的，请告诉我。"
+      }
     }
   ]
 }

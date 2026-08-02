@@ -273,6 +273,7 @@ export async function loadCourseSources(root, { courseIds, defaultCourseId: requ
         id: entry.id,
         text: entry.text,
         translation: entry.translation,
+        translations: entry.translations,
         highlights: source.highlights[entry.id] ?? [],
         durationMilliseconds: Math.round(Number(entry.duration) * 1000),
         audioSource: join(root, "public", source.audioPrefix.replace(/^\//, ""), entry.audio.replace(/^\/+/, "")),

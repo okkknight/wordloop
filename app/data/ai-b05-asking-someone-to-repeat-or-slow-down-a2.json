@@ -13,7 +13,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.176,
-      "duration": 2.176
+      "duration": 2.176,
+      "translations": {
+        "zh-Hans": "我没听清。",
+        "ja": "聞き取れませんでした。"
+      }
     },
     {
       "id": "ai-b05-002",
@@ -23,7 +27,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "你能再说一遍吗？我没听清。",
+        "ja": "もう一度言っていただけますか？ 聞こえませんでした。"
+      }
     },
     {
       "id": "ai-b05-003",
@@ -33,7 +41,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.347,
-      "duration": 2.347
+      "duration": 2.347,
+      "translations": {
+        "zh-Hans": "抱歉，我没听清。",
+        "ja": "すみません、よく分かりませんでした。"
+      }
     },
     {
       "id": "ai-b05-004",
@@ -43,7 +55,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.048,
-      "duration": 2.048
+      "duration": 2.048,
+      "translations": {
+        "zh-Hans": "我没听懂你说的话。",
+        "ja": "おっしゃったことが理解できませんでした。"
+      }
     },
     {
       "id": "ai-b05-005",
@@ -53,7 +69,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.005,
-      "duration": 2.005
+      "duration": 2.005,
+      "translations": {
+        "zh-Hans": "你能再说一遍吗？",
+        "ja": "もう一度言っていただけますか？"
+      }
     },
     {
       "id": "ai-b05-006",
@@ -63,7 +83,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.645,
-      "duration": 2.645
+      "duration": 2.645,
+      "translations": {
+        "zh-Hans": "你能慢一点吗？",
+        "ja": "少しゆっくり話していただけますか？"
+      }
     },
     {
       "id": "ai-b05-007",
@@ -73,7 +97,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "你能为我重复一下吗？",
+        "ja": "もう一度繰り返していただけますか？"
+      }
     },
     {
       "id": "ai-b05-008",
@@ -83,7 +111,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.749,
-      "duration": 1.749
+      "duration": 1.749,
+      "translations": {
+        "zh-Hans": "你介意再说一遍吗？",
+        "ja": "もう一度言っていただいてもよろしいですか？"
+      }
     },
     {
       "id": "ai-b05-009",
@@ -93,7 +125,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.835,
-      "duration": 1.835
+      "duration": 1.835,
+      "translations": {
+        "zh-Hans": "你能稍微放慢一点吗？",
+        "ja": "もう少しゆっくり話してもらえますか？"
+      }
     },
     {
       "id": "ai-b05-010",
@@ -103,7 +139,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "我没听清那部分，你能放慢一点吗？",
+        "ja": "その部分を聞き取れませんでした。ゆっくり話していただけますか？"
+      }
     },
     {
       "id": "ai-b05-011",
@@ -113,7 +153,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.92,
-      "duration": 1.92
+      "duration": 1.92,
+      "translations": {
+        "zh-Hans": "你能说得再慢一点吗？",
+        "ja": "もっとゆっくり言っていただけますか？"
+      }
     },
     {
       "id": "ai-b05-012",
@@ -123,7 +167,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "你介意放慢一点吗？",
+        "ja": "少しゆっくり話していただいてもよろしいですか？"
+      }
     },
     {
       "id": "ai-b05-013",
@@ -133,7 +181,11 @@
       "learnable": true,
       "start": 0,
       "end": 1.877,
-      "duration": 1.877
+      "duration": 1.877,
+      "translations": {
+        "zh-Hans": "你能重复一下那个数字吗？",
+        "ja": "その数字をもう一度言っていただけますか？"
+      }
     },
     {
       "id": "ai-b05-014",
@@ -143,7 +195,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.944,
-      "duration": 2.944
+      "duration": 2.944,
+      "translations": {
+        "zh-Hans": "你刚才说的最后一个词是什么？",
+        "ja": "最後に言った単語は何でしたか？"
+      }
     },
     {
       "id": "ai-b05-015",
@@ -153,7 +209,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.219,
-      "duration": 2.219
+      "duration": 2.219,
+      "translations": {
+        "zh-Hans": "我没听清你提到的名字。",
+        "ja": "お名前を聞き逃してしまいました。"
+      }
     },
     {
       "id": "ai-b05-016",
@@ -163,7 +223,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "你能再告诉我一次地址吗？",
+        "ja": "住所をもう一度教えていただけますか？"
+      }
     }
   ]
 }

@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.517,
-      "duration": 2.517
+      "duration": 2.517,
+      "translations": {
+        "zh-Hans": "我在某种程度上同意你的观点。"
+      }
     },
     {
       "id": "ai-d05-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.627,
-      "duration": 3.627
+      "duration": 3.627,
+      "translations": {
+        "zh-Hans": "我明白你的观点，但还有其他因素需要考虑。"
+      }
     },
     {
       "id": "ai-d05-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.584,
-      "duration": 3.584
+      "duration": 3.584,
+      "translations": {
+        "zh-Hans": "你提出了一个很好的论点，尽管这不是全部。"
+      }
     },
     {
       "id": "ai-d05-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.48,
-      "duration": 4.48
+      "duration": 4.48,
+      "translations": {
+        "zh-Hans": "这是一个公平的评估，但并非没有例外。"
+      }
     },
     {
       "id": "ai-d05-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.2,
-      "duration": 3.2
+      "duration": 3.2,
+      "translations": {
+        "zh-Hans": "如果每个人都同意，这个想法就有效。"
+      }
     },
     {
       "id": "ai-d05-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "在某种程度上这是正确的，假设条件保持稳定。"
+      }
     },
     {
       "id": "ai-d05-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "假设每个人都尽到自己的责任，这可能会奏效。"
+      }
     },
     {
       "id": "ai-d05-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "如果我们解决风险，这个提议是合理的。"
+      }
     },
     {
       "id": "ai-d05-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.309,
-      "duration": 4.309
+      "duration": 4.309,
+      "translations": {
+        "zh-Hans": "然而，在安全法规方面有一个例外。"
+      }
     },
     {
       "id": "ai-d05-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.48,
-      "duration": 4.48
+      "duration": 4.48,
+      "translations": {
+        "zh-Hans": "如果我们考虑到这种情况，结果会有很大不同。"
+      }
     },
     {
       "id": "ai-d05-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.224,
-      "duration": 4.224
+      "duration": 4.224,
+      "translations": {
+        "zh-Hans": "这个规则通常是正确的，除了少数情况。"
+      }
     },
     {
       "id": "ai-d05-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "在大多数情况下是的，但在截止日期紧迫时不是。"
+      }
     },
     {
       "id": "ai-d05-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.096,
-      "duration": 4.096
+      "duration": 4.096,
+      "translations": {
+        "zh-Hans": "总的来说，我认为这是个好主意，但我对时间表持谨慎态度。"
+      }
     },
     {
       "id": "ai-d05-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.035,
-      "duration": 5.035
+      "duration": 5.035,
+      "translations": {
+        "zh-Hans": "除非预算超支，否则项目应该继续。"
+      }
     },
     {
       "id": "ai-d05-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.565,
-      "duration": 4.565
+      "duration": 4.565,
+      "translations": {
+        "zh-Hans": "我基本同意，但我对成本仍有一些保留意见。"
+      }
     },
     {
       "id": "ai-d05-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.035,
-      "duration": 5.035
+      "duration": 5.035,
+      "translations": {
+        "zh-Hans": "虽然我支持这个倡议，但我对其长期影响有疑虑。"
+      }
     }
   ]
 }

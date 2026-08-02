@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.133,
-      "duration": 2.133
+      "duration": 2.133,
+      "translations": {
+        "zh-Hans": "最近的咖啡店在哪里？"
+      }
     },
     {
       "id": "ai-a02-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.712,
-      "duration": 3.712
+      "duration": 3.712,
+      "translations": {
+        "zh-Hans": "我从这里怎么去火车站？"
+      }
     },
     {
       "id": "ai-a02-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.347,
-      "duration": 2.347
+      "duration": 2.347,
+      "translations": {
+        "zh-Hans": "附近有药店吗？"
+      }
     },
     {
       "id": "ai-a02-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.347,
-      "duration": 2.347
+      "duration": 2.347,
+      "translations": {
+        "zh-Hans": "去市中心的最佳路线是什么？"
+      }
     },
     {
       "id": "ai-a02-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "哪条地铁线去机场？"
+      }
     },
     {
       "id": "ai-a02-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.475,
-      "duration": 2.475
+      "duration": 2.475,
+      "translations": {
+        "zh-Hans": "我应该乘哪路公交车去商场？"
+      }
     },
     {
       "id": "ai-a02-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.347,
-      "duration": 2.347
+      "duration": 2.347,
+      "translations": {
+        "zh-Hans": "去体育场我需要乘哪条线路？"
+      }
     },
     {
       "id": "ai-a02-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "去科学博物馆我在哪站下车？"
+      }
     },
     {
       "id": "ai-a02-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "最近的杂货店有多远？"
+      }
     },
     {
       "id": "ai-a02-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.731,
-      "duration": 2.731
+      "duration": 2.731,
+      "translations": {
+        "zh-Hans": "最近的自动取款机在哪里？"
+      }
     },
     {
       "id": "ai-a02-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.115,
-      "duration": 3.115
+      "duration": 3.115,
+      "translations": {
+        "zh-Hans": "邮局在步行距离内吗？"
+      }
     },
     {
       "id": "ai-a02-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "你能指出沿途的地标吗？"
+      }
     },
     {
       "id": "ai-a02-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "所以我在拐角处左转，对吗？"
+      }
     },
     {
       "id": "ai-a02-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "这是去美术馆的正确站点吗？"
+      }
     },
     {
       "id": "ai-a02-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.395,
-      "duration": 4.395
+      "duration": 4.395,
+      "translations": {
+        "zh-Hans": "让我重复一下：我乘坐蓝线并在中央车站下车？"
+      }
     },
     {
       "id": "ai-a02-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "我从北门出去，对吗？"
+      }
     }
   ]
 }

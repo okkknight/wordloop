@@ -13,7 +13,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.072,
-      "duration": 3.072
+      "duration": 3.072,
+      "translations": {
+        "zh-Hans": "今天的天空真清澈。",
+        "ja": "今日は空がとても澄んでいますね。"
+      }
     },
     {
       "id": "ai-b02-002",
@@ -23,7 +27,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "今天天气真好，不是吗？",
+        "ja": "今日は気持ちのいい天気ですね。"
+      }
     },
     {
       "id": "ai-b02-003",
@@ -33,7 +41,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "真不敢相信十月的天气这么暖和。",
+        "ja": "10月なのにこんなに暖かいなんて信じられません。"
+      }
     },
     {
       "id": "ai-b02-004",
@@ -43,7 +55,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.755,
-      "duration": 3.755
+      "duration": 3.755,
+      "translations": {
+        "zh-Hans": "有一阵宜人的微风吹过。",
+        "ja": "心地よい風が吹いていますね。"
+      }
     },
     {
       "id": "ai-b02-005",
@@ -53,7 +69,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.219,
-      "duration": 2.219
+      "duration": 2.219,
+      "translations": {
+        "zh-Hans": "这里的音乐真不错。",
+        "ja": "ここの音楽、とてもいいですね。"
+      }
     },
     {
       "id": "ai-b02-006",
@@ -63,7 +83,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我注意到你在读一本悬疑小说。",
+        "ja": "ミステリー小説を読んでいらっしゃるのに気づきました。"
+      }
     },
     {
       "id": "ai-b02-007",
@@ -73,7 +97,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.219,
-      "duration": 2.219
+      "duration": 2.219,
+      "translations": {
+        "zh-Hans": "今天的咖啡闻起来很香。",
+        "ja": "今日のコーヒーはいい香りですね。"
+      }
     },
     {
       "id": "ai-b02-008",
@@ -83,7 +111,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.517,
-      "duration": 2.517
+      "duration": 2.517,
+      "translations": {
+        "zh-Hans": "外面真是个阳光明媚的日子。",
+        "ja": "外はとてもよく晴れていますね。"
+      }
     },
     {
       "id": "ai-b02-009",
@@ -93,7 +125,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "我听说博物馆有一个新的展览。",
+        "ja": "美術館で新しい展示が始まったそうですよ。"
+      }
     },
     {
       "id": "ai-b02-010",
@@ -103,7 +139,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "你试过这里的咖啡吗？真的很好喝。",
+        "ja": "ここのコーヒーは飲みましたか？ とてもおいしいですよ。"
+      }
     },
     {
       "id": "ai-b02-011",
@@ -113,7 +153,11 @@
       "learnable": true,
       "start": 0,
       "end": 4.651,
-      "duration": 4.651
+      "duration": 4.651,
+      "translations": {
+        "zh-Hans": "这个季节公园里的花很美。",
+        "ja": "この時期の公園は花がたくさん咲いていてきれいですね。"
+      }
     },
     {
       "id": "ai-b02-012",
@@ -123,7 +167,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "主街上的新餐馆评价很好。",
+        "ja": "メインストリートの新しいレストランは評判がいいですよ。"
+      }
     },
     {
       "id": "ai-b02-013",
@@ -133,7 +181,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "你周末有什么计划吗？",
+        "ja": "週末は何か予定がありますか？"
+      }
     },
     {
       "id": "ai-b02-014",
@@ -143,7 +195,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.712,
-      "duration": 3.712
+      "duration": 3.712,
+      "translations": {
+        "zh-Hans": "这个地方氛围很好。你经常来这里吗？",
+        "ja": "ここは雰囲気がいいですね。よく来るんですか？"
+      }
     },
     {
       "id": "ai-b02-015",
@@ -153,7 +209,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "你最近看过什么好电影吗？",
+        "ja": "最近、何かいい映画を見ましたか？"
+      }
     },
     {
       "id": "ai-b02-016",
@@ -163,7 +223,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "你通常怎么放松？",
+        "ja": "普段、リラックスするために何をしていますか？"
+      }
     }
   ]
 }

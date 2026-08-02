@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.005,
-      "duration": 2.005
+      "duration": 2.005,
+      "translations": {
+        "zh-Hans": "那真是太棒的消息了！"
+      }
     },
     {
       "id": "ai-b07-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.456,
-      "duration": 3.456
+      "duration": 3.456,
+      "translations": {
+        "zh-Hans": "听到这个消息真好。恭喜！"
+      }
     },
     {
       "id": "ai-b07-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 1.963,
-      "duration": 1.963
+      "duration": 1.963,
+      "translations": {
+        "zh-Hans": "我为你感到兴奋！"
+      }
     },
     {
       "id": "ai-b07-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 1.451,
-      "duration": 1.451
+      "duration": 1.451,
+      "translations": {
+        "zh-Hans": "多么令人兴奋啊！"
+      }
     },
     {
       "id": "ai-b07-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.475,
-      "duration": 2.475
+      "duration": 2.475,
+      "translations": {
+        "zh-Hans": "那真是难以应对。"
+      }
     },
     {
       "id": "ai-b07-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.309,
-      "duration": 4.309
+      "duration": 4.309,
+      "translations": {
+        "zh-Hans": "听到这个消息我很遗憾。我能帮上什么忙吗？"
+      }
     },
     {
       "id": "ai-b07-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.347,
-      "duration": 2.347
+      "duration": 2.347,
+      "translations": {
+        "zh-Hans": "那真是不幸。"
+      }
     },
     {
       "id": "ai-b07-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.133,
-      "duration": 2.133
+      "duration": 2.133,
+      "translations": {
+        "zh-Hans": "听起来真是个挑战。"
+      }
     },
     {
       "id": "ai-b07-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.219,
-      "duration": 2.219
+      "duration": 2.219,
+      "translations": {
+        "zh-Hans": "那真是出乎意料！"
+      }
     },
     {
       "id": "ai-b07-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "哇，那真让人惊讶！这是怎么发生的？"
+      }
     },
     {
       "id": "ai-b07-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.005,
-      "duration": 2.005
+      "duration": 2.005,
+      "translations": {
+        "zh-Hans": "那真是了不起！"
+      }
     },
     {
       "id": "ai-b07-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 1.664,
-      "duration": 1.664
+      "duration": 1.664,
+      "translations": {
+        "zh-Hans": "那真是太有趣了！"
+      }
     },
     {
       "id": "ai-b07-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.565,
-      "duration": 4.565
+      "duration": 4.565,
+      "translations": {
+        "zh-Hans": "我理解你的感受。你接下来打算怎么做？"
+      }
     },
     {
       "id": "ai-b07-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "告诉我更多关于这件事的细节。我真的很感兴趣。"
+      }
     },
     {
       "id": "ai-b07-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "我能理解这种感受。你觉得什么会有帮助？"
+      }
     },
     {
       "id": "ai-b07-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "我理解你的出发点。你现在对此有什么想法？"
+      }
     }
   ]
 }

@@ -85,6 +85,7 @@ async function packageForCourse(source) {
         text: entry.text,
         translation: entry.translation,
       };
+      if (entry.translations && Object.keys(entry.translations).length) output.translations = entry.translations;
       if (entry.phonetic) output.phonetic = entry.phonetic;
       if (entry.highlights?.length) output.highlights = entry.highlights;
       output.audio = audios[index].packagePath;

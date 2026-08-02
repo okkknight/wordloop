@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.176,
-      "duration": 2.176
+      "duration": 2.176,
+      "translations": {
+        "zh-Hans": "你能把盐递给我吗？"
+      }
     },
     {
       "id": "ai-b08-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.304,
-      "duration": 2.304
+      "duration": 2.304,
+      "translations": {
+        "zh-Hans": "你能帮我搬一下这个箱子吗？"
+      }
     },
     {
       "id": "ai-b08-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.304,
-      "duration": 2.304
+      "duration": 2.304,
+      "translations": {
+        "zh-Hans": "你介意帮我扶一下门吗？"
+      }
     },
     {
       "id": "ai-b08-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "我可以借你的书一天吗？"
+      }
     },
     {
       "id": "ai-b08-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.133,
-      "duration": 2.133
+      "duration": 2.133,
+      "translations": {
+        "zh-Hans": "我可以坐在这里吗？"
+      }
     },
     {
       "id": "ai-b08-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "你介意我和你一起吃午饭吗？"
+      }
     },
     {
       "id": "ai-b08-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我可以晚点给你打电话吗？"
+      }
     },
     {
       "id": "ai-b08-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "我可以带一个朋友去派对吗？"
+      }
     },
     {
       "id": "ai-b08-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "你能帮我一下这个项目吗？"
+      }
     },
     {
       "id": "ai-b08-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.115,
-      "duration": 3.115
+      "duration": 3.115,
+      "translations": {
+        "zh-Hans": "我可以请你帮我看一下包吗？"
+      }
     },
     {
       "id": "ai-b08-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "你能教我怎么用这个应用吗？"
+      }
     },
     {
       "id": "ai-b08-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "你能告诉我最近的咖啡店在哪里吗？"
+      }
     },
     {
       "id": "ai-b08-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "当然，我可以帮忙。"
+      }
     },
     {
       "id": "ai-b08-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "我可以晚点给你回电话吗？"
+      }
     },
     {
       "id": "ai-b08-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "是的，这完全没问题。"
+      }
     },
     {
       "id": "ai-b08-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.219,
-      "duration": 2.219
+      "duration": 2.219,
+      "translations": {
+        "zh-Hans": "谢谢你的理解！"
+      }
     }
   ]
 }

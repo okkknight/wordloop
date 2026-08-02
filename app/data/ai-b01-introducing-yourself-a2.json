@@ -13,7 +13,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "嗨，我是 Alex。很高兴认识你。",
+        "ja": "こんにちは、アレックスです。お会いできてうれしいです。"
+      }
     },
     {
       "id": "ai-b01-002",
@@ -23,7 +27,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.176,
-      "duration": 2.176
+      "duration": 2.176,
+      "translations": {
+        "zh-Hans": "我今天来参加这个工作坊。",
+        "ja": "今日はこのワークショップに参加しています。"
+      }
     },
     {
       "id": "ai-b01-003",
@@ -33,7 +41,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我在市中心的设计团队工作。",
+        "ja": "ダウンタウンのデザインチームで働いています。"
+      }
     },
     {
       "id": "ai-b01-004",
@@ -43,7 +55,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "我最近下班后学英语。",
+        "ja": "最近は仕事の後に英語を勉強しています。"
+      }
     },
     {
       "id": "ai-b01-005",
@@ -53,7 +69,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "这是我第一次参加这个活动。",
+        "ja": "このイベントに参加するのは初めてです。"
+      }
     },
     {
       "id": "ai-b01-006",
@@ -63,7 +83,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "我几个月前搬到这里。",
+        "ja": "数か月前にここへ引っ越してきました。"
+      }
     },
     {
       "id": "ai-b01-007",
@@ -73,7 +97,11 @@
       "learnable": true,
       "start": 0,
       "end": 4.053,
-      "duration": 4.053
+      "duration": 4.053,
+      "translations": {
+        "zh-Hans": "我喜欢在这样的活动中认识新朋友。",
+        "ja": "こういうイベントで新しい人と知り合うのが好きです。"
+      }
     },
     {
       "id": "ai-b01-008",
@@ -83,7 +111,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.584,
-      "duration": 3.584
+      "duration": 3.584,
+      "translations": {
+        "zh-Hans": "我来这里是想认识同行。",
+        "ja": "同じ分野の人と知り合う機会がほしくて来ました。"
+      }
     },
     {
       "id": "ai-b01-009",
@@ -93,7 +125,11 @@
       "learnable": true,
       "start": 0,
       "end": 4.395,
-      "duration": 4.395
+      "duration": 4.395,
+      "translations": {
+        "zh-Hans": "我做市场营销，主要负责社交媒体项目。",
+        "ja": "マーケティングの仕事をしていて、主にSNSプロジェクトを担当しています。"
+      }
     },
     {
       "id": "ai-b01-010",
@@ -103,7 +139,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "我在附近上课，所以课后过来了。",
+        "ja": "近くで授業を受けているので、授業の後に来ました。"
+      }
     },
     {
       "id": "ai-b01-011",
@@ -113,7 +153,11 @@
       "learnable": true,
       "start": 0,
       "end": 4.693,
-      "duration": 4.693
+      "duration": 4.693,
+      "translations": {
+        "zh-Hans": "这是我第一次参加这个小组，但大家看起来都很友好。",
+        "ja": "このグループは初めてですが、みなさん親しみやすそうですね。"
+      }
     },
     {
       "id": "ai-b01-012",
@@ -123,7 +167,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "我和办公室的一位同事一起来的。",
+        "ja": "職場の同僚と一緒に来ました。"
+      }
     },
     {
       "id": "ai-b01-013",
@@ -133,7 +181,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "自从搬来后，我一直在找这样的社群。",
+        "ja": "ここに引っ越してから、ずっとこういうグループを探していました。"
+      }
     },
     {
       "id": "ai-b01-014",
@@ -143,7 +195,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "我喜欢了解其他人做什么。",
+        "ja": "ほかの人がどんな仕事をしているのか聞くのが好きです。"
+      }
     },
     {
       "id": "ai-b01-015",
@@ -153,7 +209,11 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "如果你不介意我问，是什么让你来这里的？",
+        "ja": "差し支えなければ、こちらには何がきっかけで来られたんですか？"
+      }
     },
     {
       "id": "ai-b01-016",
@@ -163,7 +223,11 @@
       "learnable": true,
       "start": 0,
       "end": 3.456,
-      "duration": 3.456
+      "duration": 3.456,
+      "translations": {
+        "zh-Hans": "我很愿意之后多听你介绍你的工作。",
+        "ja": "今度ぜひ、お仕事のことをもっと聞かせてください。"
+      }
     }
   ]
 }

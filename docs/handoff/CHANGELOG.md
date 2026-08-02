@@ -2,6 +2,13 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-08-02 · 母语本地化基础接入，课程译文仍在制作中
+
+- 首发 App Store 内容固定为 36 门 AI 原创课程、576 句；本地化校验严格使用 `APP_STORE_RELEASE_COURSE_IDS`，排除注册表中非首发的 `ai-polite-boundaries`。
+- 课程 entry 新增 `translations` BCP-47 映射，exporter、schema、iOS wire decode 和 `CourseEntry.translation(for:)` 已接入。旧 `translation` 保留为简中兼容回退；`ios/App/Info.plist` 声明 15 个系统语言。
+- 新增 `npm run content:check-mother-tongue`，严格检查 15 种语言在所有 576 句中的完整性。当前仅简中 576/576、日语 64/576，其余目标语言未完成；未部署、未创建新 App Store 构建。
+- 翻译任务明确不得使用 `OPENAI_API_KEY` 或第三方翻译 API。完整性检查不能替代母语质量抽检；完成全部翻译和界面文案后才允许导出、部署或发布。
+
 ## 2026-07-30 · VPS deployment sync boundary documented
 
 - `WORDLOOP_VPS_RUNBOOK.md` 现明确只同步 Web/API 运行时源码、manifest 和课程音频；`ios/`、生产材料、原始影视素材、验收文件、测试、缓存和本地环境文件不得上传到 VPS。

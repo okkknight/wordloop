@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.352,
-      "duration": 4.352
+      "duration": 4.352,
+      "translations": {
+        "zh-Hans": "我喜欢以安静的早餐开始我的一天。"
+      }
     },
     {
       "id": "ai-c07-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "我更喜欢可以在家工作的生活方式。"
+      }
     },
     {
       "id": "ai-c07-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "我喜欢在晚上读书。"
+      }
     },
     {
       "id": "ai-c07-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "待在户外亲近自然对我很重要。"
+      }
     },
     {
       "id": "ai-c07-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "对我来说，理想的一天会从晨跑开始。"
+      }
     },
     {
       "id": "ai-c07-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "我理想的一天包括和家人在一起。"
+      }
     },
     {
       "id": "ai-c07-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.181,
-      "duration": 4.181
+      "duration": 4.181,
+      "translations": {
+        "zh-Hans": "我希望有一天能充满创意活动。"
+      }
     },
     {
       "id": "ai-c07-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "在我理想的生活中，我每天都有时间做爱好。"
+      }
     },
     {
       "id": "ai-c07-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.413,
-      "duration": 3.413
+      "duration": 3.413,
+      "translations": {
+        "zh-Hans": "我喜欢安静的早晨，因为它们能帮助我集中注意力。"
+      }
     },
     {
       "id": "ai-c07-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.944,
-      "duration": 2.944
+      "duration": 2.944,
+      "translations": {
+        "zh-Hans": "当我被大自然包围时，我感到最快乐。"
+      }
     },
     {
       "id": "ai-c07-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.053,
-      "duration": 4.053
+      "duration": 4.053,
+      "translations": {
+        "zh-Hans": "我喜欢有条理的一天，因为它让我保持井井有条。"
+      }
     },
     {
       "id": "ai-c07-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 5.035,
-      "duration": 5.035
+      "duration": 5.035,
+      "translations": {
+        "zh-Hans": "我喜欢在安静的空间工作，因为它能提高我的工作效率。"
+      }
     },
     {
       "id": "ai-c07-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.693,
-      "duration": 4.693
+      "duration": 4.693,
+      "translations": {
+        "zh-Hans": "我不能总是旅行，但我喜欢探索我的城市。"
+      }
     },
     {
       "id": "ai-c07-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.565,
-      "duration": 4.565
+      "duration": 4.565,
+      "translations": {
+        "zh-Hans": "我可以通过兼职工作来妥协，以获得更多的空闲时间。"
+      }
     },
     {
       "id": "ai-c07-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.309,
-      "duration": 4.309
+      "duration": 4.309,
+      "translations": {
+        "zh-Hans": "我不能住在海边，但我经常去海滩。"
+      }
     },
     {
       "id": "ai-c07-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "我不能拥有大房子，但我让我的小空间变得舒适。"
+      }
     }
   ]
 }

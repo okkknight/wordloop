@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 1.92,
-      "duration": 1.92
+      "duration": 1.92,
+      "translations": {
+        "zh-Hans": "我同意你的看法。"
+      }
     },
     {
       "id": "ai-d01-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.219,
-      "duration": 2.219
+      "duration": 2.219,
+      "translations": {
+        "zh-Hans": "在我看来，这是个好主意。"
+      }
     },
     {
       "id": "ai-d01-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 1.664,
-      "duration": 1.664
+      "duration": 1.664,
+      "translations": {
+        "zh-Hans": "这就是我的看法。"
+      }
     },
     {
       "id": "ai-d01-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.304,
-      "duration": 2.304
+      "duration": 2.304,
+      "translations": {
+        "zh-Hans": "我认为这很重要。"
+      }
     },
     {
       "id": "ai-d01-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.072,
-      "duration": 3.072
+      "duration": 3.072,
+      "translations": {
+        "zh-Hans": "这是因为它节省时间。"
+      }
     },
     {
       "id": "ai-d01-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.816,
-      "duration": 2.816
+      "duration": 2.816,
+      "translations": {
+        "zh-Hans": "主要原因是它很方便。"
+      }
     },
     {
       "id": "ai-d01-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "另一个原因是它可靠。"
+      }
     },
     {
       "id": "ai-d01-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.005,
-      "duration": 2.005
+      "duration": 2.005,
+      "translations": {
+        "zh-Hans": "这主要是因为它的受欢迎程度。"
+      }
     },
     {
       "id": "ai-d01-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.773,
-      "duration": 2.773
+      "duration": 2.773,
+      "translations": {
+        "zh-Hans": "以我朋友为例。"
+      }
     },
     {
       "id": "ai-d01-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "例如，去年我们成功了。"
+      }
     },
     {
       "id": "ai-d01-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "就像我们去年夏天旅行时一样。"
+      }
     },
     {
       "id": "ai-d01-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.56,
-      "duration": 2.56
+      "duration": 2.56,
+      "translations": {
+        "zh-Hans": "还记得上个月的活动吗？"
+      }
     },
     {
       "id": "ai-d01-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.115,
-      "duration": 3.115
+      "duration": 3.115,
+      "translations": {
+        "zh-Hans": "这基本上就是我的立场。"
+      }
     },
     {
       "id": "ai-d01-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.115,
-      "duration": 3.115
+      "duration": 3.115,
+      "translations": {
+        "zh-Hans": "总之，值得一试。"
+      }
     },
     {
       "id": "ai-d01-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "简而言之，我支持这个计划。"
+      }
     },
     {
       "id": "ai-d01-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "总的来说，我认为这是有益的。"
+      }
     }
   ]
 }

@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "我有一个晚上七点的晚餐预订。"
+      }
     },
     {
       "id": "ai-a07-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.456,
-      "duration": 3.456
+      "duration": 3.456,
+      "translations": {
+        "zh-Hans": "我需要更改我的晚餐预订。"
+      }
     },
     {
       "id": "ai-a07-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "预订是在史密斯的名字下。"
+      }
     },
     {
       "id": "ai-a07-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.712,
-      "duration": 3.712
+      "duration": 3.712,
+      "translations": {
+        "zh-Hans": "我在你们餐厅预订了一张四人桌。"
+      }
     },
     {
       "id": "ai-a07-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.944,
-      "duration": 2.944
+      "duration": 2.944,
+      "translations": {
+        "zh-Hans": "我们可以把预订改到晚上八点吗？"
+      }
     },
     {
       "id": "ai-a07-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.432,
-      "duration": 2.432
+      "duration": 2.432,
+      "translations": {
+        "zh-Hans": "我们可以改到下周吗？"
+      }
     },
     {
       "id": "ai-a07-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "我想换一个不同的服务。"
+      }
     },
     {
       "id": "ai-a07-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "我们可以把日期改到15号吗？"
+      }
     },
     {
       "id": "ai-a07-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.499,
-      "duration": 3.499
+      "duration": 3.499,
+      "translations": {
+        "zh-Hans": "我和原来的时间有冲突。"
+      }
     },
     {
       "id": "ai-a07-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "更改预订需要收费吗？"
+      }
     },
     {
       "id": "ai-a07-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "我需要调整，因为有个工作会议。"
+      }
     },
     {
       "id": "ai-a07-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "我只能在下午五点以后到。"
+      }
     },
     {
       "id": "ai-a07-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "新的预订确认在晚上八点。"
+      }
     },
     {
       "id": "ai-a07-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.645,
-      "duration": 2.645
+      "duration": 2.645,
+      "translations": {
+        "zh-Hans": "你能和我确认一下新时间吗？"
+      }
     },
     {
       "id": "ai-a07-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.523,
-      "duration": 4.523
+      "duration": 4.523,
+      "translations": {
+        "zh-Hans": "更新的细节都已安排好，谢谢。"
+      }
     },
     {
       "id": "ai-a07-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "谢谢你帮我做出更改。"
+      }
     }
   ]
 }

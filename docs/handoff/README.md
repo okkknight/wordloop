@@ -1,29 +1,11 @@
 # WordLoop 接手索引
 
-这套 handoff 文档刻意保持精简，避免项目状态散落在多个互相冲突的说明中。
+本 handoff pack 有意保持紧凑：一份当前事实源、一份追加式变更记录。
 
-## 阅读顺序
+阅读顺序：
 
-1. 根目录 [`PROJECT_CONTEXT.md`](../../PROJECT_CONTEXT.md)：项目事实、架构、当前状态、风险和工作规则。
-2. [`CHANGELOG.md`](CHANGELOG.md)：只追加会影响未来接手的重要变化。
-3. 根据任务阅读专项文档：
-   - 原生 iOS 迁移：[`../IOS_MIGRATION_SPEC.md`](../IOS_MIGRATION_SPEC.md)
-   - iOS 实施 Plan：[`../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md`](../plans/2026-07-15-wordloop-ios-migration-implementation-plan.md)
-   - 当前评分调整任务（15 分，待复核）：[`../tasks/2026-07-18-p6-1-repeat-scoring-golden.md`](../tasks/2026-07-18-p6-1-repeat-scoring-golden.md)
-   - P4.4 本地完成与重练（PASS）：[`../tasks/2026-07-16-p4-4-local-completion-retrain.md`](../tasks/2026-07-16-p4-4-local-completion-retrain.md)
-   - P4.3 StudyStore/LISTEN（PASS）：[`../tasks/2026-07-16-p4-3-study-store-listen.md`](../tasks/2026-07-16-p4-3-study-store-listen.md)
-   - P4.2 AudioPlayer（已 PASS）：[`../tasks/2026-07-16-p4-2-audio-player.md`](../tasks/2026-07-16-p4-2-audio-player.md)
-   - P4.1 Bundle Content（已 PASS）：[`../tasks/2026-07-16-p4-1-bundled-content-repository.md`](../tasks/2026-07-16-p4-1-bundled-content-repository.md)
-   - 已复核 P2 任务卡：[`../tasks/2026-07-15-p2-native-project-skeleton.md`](../tasks/2026-07-15-p2-native-project-skeleton.md)
-   - 已复核 P1 课程合同：[`../tasks/2026-07-15-p1-course-contract-exporter.md`](../tasks/2026-07-15-p1-course-contract-exporter.md)
-   - 已复核 P0 基线：[`../tasks/2026-07-15-p0-1-baseline-freeze.md`](../tasks/2026-07-15-p0-1-baseline-freeze.md)
-   - 课程制作：[`../COURSE_PRODUCTION_GUIDE.md`](../COURSE_PRODUCTION_GUIDE.md)
-   - VOA 课程：[`../VOA_COURSE_PRODUCTION_GUIDE.md`](../VOA_COURSE_PRODUCTION_GUIDE.md)
-   - VPS 发布运维：[`../WORDLOOP_VPS_RUNBOOK.md`](../WORDLOOP_VPS_RUNBOOK.md)
+1. [`PROJECT_CONTEXT.md`](../../PROJECT_CONTEXT.md)：产品边界、当前任务、代码入口、验证与风险。
+2. [`CHANGELOG.md`](CHANGELOG.md)：仅记录会影响后续接手的耐久变化。
+3. 按任务再读专项规范：[`IOS_MIGRATION_SPEC.md`](../IOS_MIGRATION_SPEC.md)、[`WORDLOOP_VPS_RUNBOOK.md`](../WORDLOOP_VPS_RUNBOOK.md)、[`COURSE_PRODUCTION_GUIDE.md`](../COURSE_PRODUCTION_GUIDE.md)。
 
-## 维护规则
-
-- `PROJECT_CONTEXT.md` 是唯一的项目上下文事实源；项目边界、架构或当前风险变化时直接更新它。
-- `CHANGELOG.md` 只追加有长期接手价值的变化，不记录每次小修小改，也不复制 Git log。
-- 专项步骤留在专项指南，不在 handoff 文档中重复维护。
-- 生产环境信息在每次部署前重新实机验证；文档中的日期表示最后确认时间，不代表永久有效。
+维护规则：`PROJECT_CONTEXT.md` 是唯一当前状态事实源；CHANGELOG 只能追加；VPS 和 App Store 状态每次操作前必须重新实机验证。

@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.048,
-      "duration": 2.048
+      "duration": 2.048,
+      "translations": {
+        "zh-Hans": "我现在是一名学生。"
+      }
     },
     {
       "id": "ai-c01-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "我在市中心的一家小公司工作。"
+      }
     },
     {
       "id": "ai-c01-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "我晚上学习英语。"
+      }
     },
     {
       "id": "ai-c01-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "我通常早上九点左右开始工作。"
+      }
     },
     {
       "id": "ai-c01-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.627,
-      "duration": 3.627
+      "duration": 3.627,
+      "translations": {
+        "zh-Hans": "大多数时候，我回复邮件并和团队一起工作。"
+      }
     },
     {
       "id": "ai-c01-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "我的团队很小，所以我们紧密合作。"
+      }
     },
     {
       "id": "ai-c01-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.157,
-      "duration": 3.157
+      "duration": 3.157,
+      "translations": {
+        "zh-Hans": "下班后，我学习大约一个小时。"
+      }
     },
     {
       "id": "ai-c01-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "最近，我一直在做一个新项目。"
+      }
     },
     {
       "id": "ai-c01-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "我喜欢我的工作，因为每天都能学到新东西。"
+      }
     },
     {
       "id": "ai-c01-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "最难的是下班后找到足够的时间。"
+      }
     },
     {
       "id": "ai-c01-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.2,
-      "duration": 3.2
+      "duration": 3.2,
+      "translations": {
+        "zh-Hans": "我通常和团队中的两个人一起工作。"
+      }
     },
     {
       "id": "ai-c01-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "最近，我一直在适应新的时间安排。"
+      }
     },
     {
       "id": "ai-c01-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "我做这份工作已经几个月了。"
+      }
     },
     {
       "id": "ai-c01-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "到目前为止，我对事情的进展感到满意。"
+      }
     },
     {
       "id": "ai-c01-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.523,
-      "duration": 4.523
+      "duration": 4.523,
+      "translations": {
+        "zh-Hans": "我正努力每天多说一点英语。"
+      }
     },
     {
       "id": "ai-c01-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "现在我很忙，但我对此感觉不错。"
+      }
     }
   ]
 }

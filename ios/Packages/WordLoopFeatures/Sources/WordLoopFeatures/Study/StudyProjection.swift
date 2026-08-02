@@ -58,7 +58,7 @@ enum StudyProjection {
             kind: itemKind(kind),
             english: entry.text,
             phonetic: displayedPhonetic(entry.phonetic),
-            translation: normalized(entry.translation) ?? "",
+            translation: normalized(entry.translation()) ?? "",
             highlightRanges: highlightRanges(tokens: entry.highlights, in: entry.text)
         )
     }
@@ -165,7 +165,7 @@ enum StudyProjection {
     }
 
     private static func progressSecondaryText(entry: CourseEntry, kind: CourseKind) -> String {
-        let translation = normalized(entry.translation)
+        let translation = normalized(entry.translation())
         guard kind == .word else { return translation ?? "" }
         return [displayedPhonetic(entry.phonetic), translation]
             .compactMap { $0 }

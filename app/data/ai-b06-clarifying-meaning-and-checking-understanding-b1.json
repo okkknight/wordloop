@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.261,
-      "duration": 2.261
+      "duration": 2.261,
+      "translations": {
+        "zh-Hans": "那到底是什么意思？"
+      }
     },
     {
       "id": "ai-b06-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.517,
-      "duration": 2.517
+      "duration": 2.517,
+      "translations": {
+        "zh-Hans": "你说的“紧急”是什么意思？"
+      }
     },
     {
       "id": "ai-b06-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "你能告诉我“简化”是什么意思吗？"
+      }
     },
     {
       "id": "ai-b06-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.603,
-      "duration": 2.603
+      "duration": 2.603,
+      "translations": {
+        "zh-Hans": "这里的“联系”是什么意思？"
+      }
     },
     {
       "id": "ai-b06-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.584,
-      "duration": 3.584
+      "duration": 3.584,
+      "translations": {
+        "zh-Hans": "你的意思是我们现在开始还是等一下？"
+      }
     },
     {
       "id": "ai-b06-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "你能澄清一下吗，我们需要今天还是明天提交？"
+      }
     },
     {
       "id": "ai-b06-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "这是给所有人还是仅仅给经理的？"
+      }
     },
     {
       "id": "ai-b06-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.712,
-      "duration": 3.712
+      "duration": 3.712,
+      "translations": {
+        "zh-Hans": "你的意思是会议在下午两点还是三点？"
+      }
     },
     {
       "id": "ai-b06-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.901,
-      "duration": 2.901
+      "duration": 2.901,
+      "translations": {
+        "zh-Hans": "所以，你认为我们应该先专注于市场营销？"
+      }
     },
     {
       "id": "ai-b06-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "所以，你是说我们需要增加预算？"
+      }
     },
     {
       "id": "ai-b06-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "你的意思是我们应该直接联系供应商？"
+      }
     },
     {
       "id": "ai-b06-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "所以，我们需要在周一之前完成，对吗？"
+      }
     },
     {
       "id": "ai-b06-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "我们明天是上午十点还是十一点见面？"
+      }
     },
     {
       "id": "ai-b06-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.371,
-      "duration": 3.371
+      "duration": 3.371,
+      "translations": {
+        "zh-Hans": "只是确认一下，你的意思是截止日期延长了？"
+      }
     },
     {
       "id": "ai-b06-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "我们负责整个项目还是只负责一部分？"
+      }
     },
     {
       "id": "ai-b06-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "我们需要准备一个演示还是只需要一个报告？"
+      }
     }
   ]
 }

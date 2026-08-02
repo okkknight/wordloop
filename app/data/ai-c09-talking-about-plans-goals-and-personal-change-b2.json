@@ -13,7 +13,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.053,
-      "duration": 4.053
+      "duration": 4.053,
+      "translations": {
+        "zh-Hans": "我现在专注于改善我的健康。"
+      }
     },
     {
       "id": "ai-c09-002",
@@ -23,7 +26,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.011,
-      "duration": 4.011
+      "duration": 4.011,
+      "translations": {
+        "zh-Hans": "我计划下个月开始一个新爱好。"
+      }
     },
     {
       "id": "ai-c09-003",
@@ -33,7 +39,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.243,
-      "duration": 3.243
+      "duration": 3.243,
+      "translations": {
+        "zh-Hans": "这周我会专心完成我的书。"
+      }
     },
     {
       "id": "ai-c09-004",
@@ -43,7 +52,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.669,
-      "duration": 3.669
+      "duration": 3.669,
+      "translations": {
+        "zh-Hans": "我正在安排时间去当地的收容所做志愿者。"
+      }
     },
     {
       "id": "ai-c09-005",
@@ -53,7 +65,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.053,
-      "duration": 4.053
+      "duration": 4.053,
+      "translations": {
+        "zh-Hans": "我想在50岁之前游遍每个大陆。"
+      }
     },
     {
       "id": "ai-c09-006",
@@ -63,7 +78,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.029,
-      "duration": 3.029
+      "duration": 3.029,
+      "translations": {
+        "zh-Hans": "我的主要目标是变得更加自给自足。"
+      }
     },
     {
       "id": "ai-c09-007",
@@ -73,7 +91,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.328,
-      "duration": 3.328
+      "duration": 3.328,
+      "translations": {
+        "zh-Hans": "我希望对我的社区产生积极影响。"
+      }
     },
     {
       "id": "ai-c09-008",
@@ -83,7 +104,10 @@
       "learnable": true,
       "start": 0,
       "end": 2.859,
-      "duration": 2.859
+      "duration": 2.859,
+      "translations": {
+        "zh-Hans": "实现财务独立对我来说很重要。"
+      }
     },
     {
       "id": "ai-c09-009",
@@ -93,7 +117,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.755,
-      "duration": 3.755
+      "duration": 3.755,
+      "translations": {
+        "zh-Hans": "平衡工作和个人生活是有挑战性的。"
+      }
     },
     {
       "id": "ai-c09-010",
@@ -103,7 +130,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.48,
-      "duration": 4.48
+      "duration": 4.48,
+      "translations": {
+        "zh-Hans": "我意识到我需要优先考虑我的心理健康。"
+      }
     },
     {
       "id": "ai-c09-011",
@@ -113,7 +143,10 @@
       "learnable": true,
       "start": 0,
       "end": 4.224,
-      "duration": 4.224
+      "duration": 4.224,
+      "translations": {
+        "zh-Hans": "有时，意外事件会打乱我的计划。"
+      }
     },
     {
       "id": "ai-c09-012",
@@ -123,7 +156,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.797,
-      "duration": 3.797
+      "duration": 3.797,
+      "translations": {
+        "zh-Hans": "对未来的不确定性使计划变得困难。"
+      }
     },
     {
       "id": "ai-c09-013",
@@ -133,7 +169,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.925,
-      "duration": 3.925
+      "duration": 3.925,
+      "translations": {
+        "zh-Hans": "我过去比较随性，但现在我会提前计划。"
+      }
     },
     {
       "id": "ai-c09-014",
@@ -143,7 +182,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.883,
-      "duration": 3.883
+      "duration": 3.883,
+      "translations": {
+        "zh-Hans": "过去，我更注重短期目标。"
+      }
     },
     {
       "id": "ai-c09-015",
@@ -153,7 +195,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.584,
-      "duration": 3.584
+      "duration": 3.584,
+      "translations": {
+        "zh-Hans": "我调整了我的计划以适应我目前的生活方式。"
+      }
     },
     {
       "id": "ai-c09-016",
@@ -163,7 +208,10 @@
       "learnable": true,
       "start": 0,
       "end": 3.2,
-      "duration": 3.2
+      "duration": 3.2,
+      "translations": {
+        "zh-Hans": "我学会了对自己的期望保持灵活性。"
+      }
     }
   ]
 }
