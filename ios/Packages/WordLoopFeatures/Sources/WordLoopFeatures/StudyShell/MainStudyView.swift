@@ -688,9 +688,10 @@ public struct MainStudyView: View {
     }
 
     private var primaryTitle: String {
+        let copy = StudyActionCopy.current
         switch store.state.mode {
-        case .listen: store.state.isAutoplayEnabled ? "AUTOPLAY ON" : "AUTOPLAY"
-        case .repeat: store.state.isRepeatPaused ? "RESUME" : "PAUSE"
+        case .listen: return store.state.isAutoplayEnabled ? copy.autoplayOn : copy.autoplay
+        case .repeat: return store.state.isRepeatPaused ? copy.resume : copy.pause
         }
     }
 

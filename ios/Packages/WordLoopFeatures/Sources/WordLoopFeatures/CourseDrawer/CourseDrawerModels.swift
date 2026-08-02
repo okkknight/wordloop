@@ -19,7 +19,7 @@ public enum CourseDrawerAvailability: String, Equatable, Sendable {
     var actionTitle: String? {
         switch self {
         case .download, .update, .tryAgain, .offline, .freeUpSpace:
-            rawValue
+            CourseDrawerAvailabilityCopy.current.title(for: self)
         default:
             nil
         }

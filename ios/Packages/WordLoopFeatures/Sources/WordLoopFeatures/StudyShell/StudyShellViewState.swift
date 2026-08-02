@@ -23,16 +23,17 @@ public enum StudyRepeatPresentationState: String, CaseIterable, Equatable, Senda
     case error
 
     public var title: String {
+        let copy = StudyStatusCopy.current
         switch self {
-        case .idle: "STANDBY"
-        case .connecting: "CONNECTING"
-        case .ready: "READY"
-        case .playing: "LISTENING"
-        case .speak, .speaking: "SPEAKING"
-        case .scoring: "CHECKING"
-        case .passed: "GREAT"
-        case .paused: "PAUSED"
-        case .retry, .error: "TRY AGAIN"
+        case .idle: return copy.idle
+        case .connecting: return copy.connecting
+        case .ready: return copy.ready
+        case .playing: return copy.playing
+        case .speak, .speaking: return copy.speaking
+        case .scoring: return copy.scoring
+        case .passed: return copy.passed
+        case .paused: return copy.paused
+        case .retry, .error: return copy.retry
         }
     }
 
