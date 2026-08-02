@@ -59,14 +59,14 @@ ssh root@89.208.242.44
 - `User=shipnow`
 - `Group=shipnow`
 - `WorkingDirectory=/opt/boringmax/wordloop`
-- `ExecStart=/usr/bin/npm run dev -- --ip 127.0.0.1 --port 3010`
+- `ExecStart=/usr/bin/npm run start -- --hostname ::1 --port 3010`
 - `NODE_ENV=production`
 - `NEXT_PUBLIC_BASE_PATH=/wordloop`
 
 说明：
 
-- 当前线上前端不是纯静态托管，而是直接跑 `vinext dev`
-- 因此改前端后，通常需要同步源码并重启 `wordloop.service`
+- 前端由 `vinext start` 提供 Node 生产服务，读取 `npm run build:vps` 生成的 `dist/`
+- VPS 的 `/wordloop/api/*` 仍由独立的 `wordloop-api.service` 处理；前端生产构建不依赖 Cloudflare/Miniflare
 
 ### 3.2 `wordloop-api.service`
 
@@ -91,19 +91,6 @@ ssh root@89.208.242.44
 - `wordloop-api.service` 当前是独立的 Node 服务
 - `OPENAI_API_KEY` 放在 `/etc/wordloop/wordloop.env`
 - 文档中只记录路径，不记录密钥正文
-
-### 3.4 前端运行时目录自愈
-
-`vinext dev` / Miniflare 会向 `/opt/boringmax/wordloop/tmp` 写入运行时文件。服务通过 `/etc/systemd/system/wordloop.service.d/runtime-directory.conf` 在每次启动前以系统权限创建该目录，并递归设为 `shipnow:shipnow`。
-
-该 drop-in 的仓库来源是 `ops/systemd/wordloop.service.d/runtime-directory.conf`。修改后部署并执行：
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl restart wordloop.service
-```
-
-不要删除这两个 `ExecStartPre`；它们用来防止 rsync、手工操作或异常中断留下 root 所有的 `tmp/`，从而导致前端 502。
 
 ### 3.3 Caddy
 
@@ -281,14 +268,13 @@ ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && ls -la'
 
 ### 7.1 当前实际发布模型
 
-当前 `wordloop` 线上不是像 `kaisensei` 那样“前端 build 后只同步静态产物”。
-
-它现在更接近：
+当前 `wordloop` 的生产模型：
 
 1. VPS 上保留完整源码目录 `/opt/boringmax/wordloop`
-2. 前端服务直接跑 `npm run dev`
-3. API 服务单独跑 `node server/index.mjs`
-4. 数据库存放在项目目录下的 `data/wordloop.sqlite`
+2. 本地运行 `npm run build:vps`，只同步 `dist/` 与生产运行时源码/配置
+3. 前端服务跑 `npm run start`
+4. API 服务单独跑 `node server/index.mjs`
+5. 数据库存放在项目目录下的 `data/wordloop.sqlite`
 
 因此一旦改动以下内容，通常需要同步源码到 VPS：
 
@@ -303,7 +289,7 @@ ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && ls -la'
 
 ### 7.2 同步边界：只上传运行时需要的内容
 
-VPS 磁盘有限。发布命令必须只同步当前 `vinext dev` 和 Node API 的运行时依赖，不要把本地生产、测试、iOS 或验收材料当作线上依赖上传。
+VPS 磁盘有限。发布命令必须只同步 production `dist/`、Node API 与运行时依赖，不要把本地生产、测试、iOS 或验收材料当作线上依赖上传。
 
 下列目录**不得同步到 VPS**（即使本地存在）：
 
@@ -311,10 +297,10 @@ VPS 磁盘有限。发布命令必须只同步当前 `vinext dev` 和 Node API �
 - `docs/`、`tests/`、`wordloop_course_production_pack/`、`course_topic/`：说明、测试与课程生产过程材料；线上只读取已注册的 manifest 和音频。
 - `modernfamily/`：原始整集 MP3 与字幕；线上只需要已切分的 `public/courses/modern-family/` 音频。
 - `.visual-qa/`、`.playwright-cli/`、`work/`、`outputs/`、`coverage/`：视觉验收、浏览器会话、临时工作区和测试输出。
-- `.git/`、本地依赖/构建缓存（`node_modules/`、`.wrangler/`、`.vinext/`、`dist/`、`.cache/`、`.turbo/`、`.next/`）。其中 VPS 的 `node_modules/` 仅由远端 `npm install` 生成。
+- `.git/`、本地依赖/构建缓存（`node_modules/`、`.wrangler/`、`.vinext/`、`.cache/`、`.turbo/`、`.next/`）。其中 VPS 的 `node_modules/` 仅由远端 `npm ci --omit=dev` 生成；`dist/` 是必须同步的生产产物。
 - 密钥与本地环境文件（`.env*`、`.dev.vars`、`.openai/`）。VPS 使用服务器已有的环境文件，绝不从本地覆盖。
 
-以下目录必须在 VPS **保留但不得由 rsync 覆盖或删除**：`data/`（SQLite 学习进度）、`tmp/`、`.wrangler/`、`.vinext/` 和服务器环境文件。它们是运行时状态，不是待上传源文件。
+以下目录必须在 VPS **保留但不得由 rsync 覆盖或删除**：`data/`（SQLite 学习进度）和服务器环境文件。`.wrangler/`、`.vinext/`、`tmp/` 是旧 dev/Miniflare 缓存，不应在生产服务中存在。
 
 ### 7.3 建议发布步骤
 
@@ -322,7 +308,7 @@ VPS 磁盘有限。发布命令必须只同步当前 `vinext dev` 和 Node API �
 
 ```bash
 cd /Users/linpeiwen/knightspace/wordloop
-npm run build
+npm run build:vps
 rsync -a --delete \
   --exclude '/.git' \
   --exclude '/.env*' \
@@ -333,7 +319,6 @@ rsync -a --delete \
   --exclude '/node_modules' \
   --exclude '/.wrangler' \
   --exclude '/.vinext' \
-  --exclude '/dist' \
   --exclude '/.cache' \
   --exclude '/.turbo' \
   --exclude '/.next' \
@@ -349,18 +334,19 @@ rsync -a --delete \
   --exclude '/work' \
   --exclude '/outputs' \
   ./ root@89.208.242.44:/opt/boringmax/wordloop/
-ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && npm install'
+rsync -a --delete dist/ root@89.208.242.44:/opt/boringmax/wordloop/dist/
+ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && npm ci --omit=dev'
 ssh root@89.208.242.44 'systemctl restart wordloop.service wordloop-api.service caddy'
 ```
 
 说明：
 
-- `npm run build` 用于先在本地做一次完整校验
-- `rsync` 同步的是源码，不是单独静态目录
+- `npm run build:vps` 用于生成不含 Cloudflare/Miniflare 虚拟模块的 Node 生产产物
+- `rsync` 同步运行时源码和单独的 `dist/` 生产目录
 - 发布前先按 7.2 核对新增目录；没有运行时读取路径的目录一律加入根目录排除规则，而不是“为了完整”上传。
 - 排除规则必须以 `/` 开头，使其只匹配仓库根目录；特别是不能写 `--exclude data`，否则会误排除 `app/data` 内的课程 manifest。
-- 需要保留 VPS 的 `data/` 学习进度库、`.dev.vars`、`tmp/` 和 `.wrangler/` 运行时目录；前端服务用户为 `shipnow`，若重建运行时目录需将其所有权设为 `shipnow:shipnow`。
-- 如果依赖未变，可按需跳过线上 `npm install`
+- 需要保留 VPS 的 `data/` 学习进度库与服务器环境文件；生产前端不读取 `.dev.vars`、`tmp/` 或 `.wrangler/`。
+- 如果依赖未变，可按需跳过线上 `npm ci --omit=dev`。
 
 ## 8. 发布后验收
 
