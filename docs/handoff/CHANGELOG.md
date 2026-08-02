@@ -2,6 +2,12 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-08-02 · Node + SQLite 收口为唯一运行真值
+
+- 默认 `npm run dev` 同时启动 Node API 与 vinext 前端，并将 `/api/*` 代理到本机 SQLite；本地和 VPS 使用同一服务边界。
+- 默认 `npm run build` 已固定为 VPS Node 构建；Cloudflare / D1 仅保留在 `dev:cloudflare`、`build:cloudflare` 和 Node/Worker 契约对比测试中。
+- 不要把 `app/api/`、`db/` 或 `drizzle/` 当作生产读写路径；真实学习进度由 `server/index.mjs` 和 `data/wordloop*.sqlite` 管理。
+
 ## 2026-08-02 · 母语本地化基础接入，课程译文仍在制作中
 
 - 首发 App Store 内容固定为 36 门 AI 原创课程、576 句；本地化校验严格使用 `APP_STORE_RELEASE_COURSE_IDS`，排除注册表中非首发的 `ai-polite-boundaries`。

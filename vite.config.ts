@@ -35,28 +35,35 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
-  const isVpsProductionBuild = process.env.WORDLOOP_RUNTIME_TARGET === "vps-node";
+  const isCloudflareCompatibility = process.env.WORDLOOP_RUNTIME_TARGET === "cloudflare";
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= "false";
   process.env.WRANGLER_LOG_PATH ??= ".wrangler/logs";
   process.env.MINIFLARE_REGISTRY_PATH ??= ".wrangler/registry";
 
-  // The VPS keeps its API in `server/index.mjs`. Its production web build must
-  // not import Miniflare or emit `cloudflare:` specifiers, which Node cannot
-  // load at runtime. Keep the plugin for Cloudflare development/deployment.
-  const cloudflarePlugin = isVpsProductionBuild
-    ? []
-    : [(await import("@cloudflare/vite-plugin")).cloudflare({
+  // Node + SQLite is the default for local development and VPS. Cloudflare is
+  // retained only as an explicit compatibility target for contract tests.
+  const cloudflarePlugin = isCloudflareCompatibility
+    ? [(await import("@cloudflare/vite-plugin")).cloudflare({
         viteEnvironment: { name: "rsc", childEnvironments: ["ssr"] },
         config: localBindingConfig,
-      })];
+      })]
+    : [];
 
   return {
-    server: isCodexSeatbeltSandbox
-      ? { watch: { useFsEvents: false, usePolling: true } }
-      : undefined,
-    resolve: isVpsProductionBuild
+    server: {
+      ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
+      ...(!isCloudflareCompatibility ? {
+        proxy: {
+          "/api": {
+            target: `http://127.0.0.1:${process.env.WORDLOOP_LOCAL_API_PORT ?? "3011"}`,
+            changeOrigin: true,
+          },
+        },
+      } : {}),
+    },
+    resolve: !isCloudflareCompatibility
       ? { alias: { "cloudflare:workers": resolve(import.meta.dirname, "runtime/node-cloudflare-workers.ts") } }
       : undefined,
     plugins: [

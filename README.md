@@ -15,10 +15,10 @@ WordLoop 是一个以原声音频为核心的英语听力与跟读学习应用�
 ## 技术栈
 
 - React 19、Next.js 16 App Router
-- vinext、Vite 8、Cloudflare Workers
+- vinext、Vite 8、Node.js
 - TypeScript、原生 CSS
-- Drizzle ORM、Cloudflare D1
-- VPS 生产环境使用 Node.js 内置 SQLite
+- Node.js 内置 SQLite（本地与 VPS 的唯一学习进度真值）
+- Cloudflare Workers / D1（仅保留为兼容性对比实现）
 - WebRTC + OpenAI Realtime transcription
 
 要求 Node.js `>=22.13.0`。
@@ -29,6 +29,13 @@ WordLoop 是一个以原声音频为核心的英语听力与跟读学习应用�
 npm install
 npm run dev
 ```
+
+该命令会同时启动本地 Node API（默认 `127.0.0.1:3011`）和前端；前端
+`/api/*` 请求会代理到同一份 SQLite 数据。默认数据库为
+`data/wordloop.local.sqlite`，可通过 `WORDLOOP_DB_PATH` 覆盖。
+
+Cloudflare 不再是开发或部署入口。如需运行旧的兼容实现，显式使用
+`npm run dev:cloudflare` 或 `npm run build:cloudflare`。
 
 需要测试跟读功能时，在本地 `.dev.vars` 中配置：
 
@@ -46,7 +53,10 @@ npm test
 git diff --check
 ```
 
-`npm test` 会先执行生产构建，再检查课程 manifest、逐句音频、时间轴元数据和主要产品流程。当前仓库构建和 28 项测试通过；lint 仍有 React Compiler 的手动 memoization 错误，详见 [`PROJECT_CONTEXT.md`](PROJECT_CONTEXT.md#当前风险与开放项)。
+`npm test` 是 Node 与 Cloudflare 兼容实现的对比测试，因此会显式构建
+Cloudflare 兼容产物；日常生产构建使用 `npm run build`。测试还会检查课程
+manifest、逐句音频、时间轴元数据和主要产品流程。lint 仍有 React Compiler
+的手动 memoization 错误，详见 [`PROJECT_CONTEXT.md`](PROJECT_CONTEXT.md#当前风险与开放项)。
 
 ## 目录导航
 
@@ -55,9 +65,9 @@ git diff --check
 | `app/page.tsx` | 主界面、音频控制、学习状态机、离线进度同步 |
 | `app/courses.ts` | 课程类型、课程集合与内容注册 |
 | `app/data/` | 句子课程 manifest 与高价值表达标记 |
-| `app/api/` | Sites/Cloudflare 部署使用的 API 路由 |
-| `server/index.mjs` | 当前 VPS 使用的独立 Node API |
-| `db/`、`drizzle/` | D1 schema 与迁移 |
+| `app/api/` | Cloudflare/D1 兼容实现，仅用于对比测试 |
+| `server/index.mjs` | 本地与 VPS 的唯一 Node + SQLite API |
+| `db/`、`drizzle/` | Cloudflare/D1 兼容 schema 与迁移 |
 | `public/` | 单词和课程的最终音频资源 |
 | `scripts/` | 字幕、转写、对齐、切片与课程验证脚本 |
 | `tests/` | 构建产物和内容完整性测试 |
@@ -73,7 +83,7 @@ git diff --check
 
 ## 部署
 
-仓库支持 Sites/Cloudflare 形态，但当前真实生产环境部署在 VPS：
+仓库保留 Cloudflare 兼容形态用于测试；本地与真实生产环境统一使用 Node + SQLite：
 
 - 公网路径：`https://boringmax.com/wordloop/`
 - Caddy 反向代理
