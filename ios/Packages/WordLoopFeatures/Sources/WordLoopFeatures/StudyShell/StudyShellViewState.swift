@@ -39,17 +39,17 @@ public enum StudyRepeatPresentationState: String, CaseIterable, Equatable, Senda
     public var instruction: String {
         let copy = StudyInstructionCopy.current
         switch self {
-        case .idle: copy.idle
-        case .connecting: StudyRepeatCopy.current.preparingMicrophone
-        case .ready: copy.ready
-        case .playing: copy.playing
-        case .speak: copy.speak
-        case .speaking: copy.speaking
-        case .scoring: copy.scoring
-        case .passed: copy.passed
-        case .paused: copy.paused
-        case .retry: copy.retry
-        case .error: StudyRepeatCopy.current.microphoneDenied
+        case .idle: return copy.idle
+        case .connecting: return StudyRepeatCopy.current.preparingMicrophone
+        case .ready: return copy.ready
+        case .playing: return copy.playing
+        case .speak: return copy.speak
+        case .speaking: return copy.speaking
+        case .scoring: return copy.scoring
+        case .passed: return copy.passed
+        case .paused: return copy.paused
+        case .retry: return copy.retry
+        case .error: return StudyRepeatCopy.current.microphoneDenied
         }
     }
 

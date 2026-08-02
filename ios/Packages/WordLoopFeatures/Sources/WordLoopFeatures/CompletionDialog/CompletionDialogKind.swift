@@ -7,32 +7,32 @@ public enum CompletionDialogKind: String, CaseIterable, Equatable, Sendable {
     public var title: String {
         let copy = CompletionDialogCopy.current
         switch self {
-        case .restartCompletedCourse: copy.restartTitle
-        case .courseCompleted: copy.completedTitle
+        case .restartCompletedCourse: return copy.restartTitle
+        case .courseCompleted: return copy.completedTitle
         }
     }
 
     public var message: String {
         let copy = CompletionDialogCopy.current
         switch self {
-        case .restartCompletedCourse: copy.restartMessage
-        case .courseCompleted: copy.completedMessage
+        case .restartCompletedCourse: return copy.restartMessage
+        case .courseCompleted: return copy.completedMessage
         }
     }
 
     public var cancelTitle: String {
         let copy = CompletionDialogCopy.current
         switch self {
-        case .restartCompletedCourse: copy.cancel
-        case .courseCompleted: copy.chooseCourse
+        case .restartCompletedCourse: return copy.cancel
+        case .courseCompleted: return copy.chooseCourse
         }
     }
 
     public var confirmTitle: String {
         let copy = CompletionDialogCopy.current
         switch self {
-        case .restartCompletedCourse: copy.restart
-        case .courseCompleted: copy.practiceAgain
+        case .restartCompletedCourse: return copy.restart
+        case .courseCompleted: return copy.practiceAgain
         }
     }
 

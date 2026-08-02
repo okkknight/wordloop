@@ -13,6 +13,12 @@ enum StudyProjection {
     ) -> CourseDrawerViewState {
         let availableCourses = catalog.courses.filter { $0.availability == .available }
         let collections: [CourseDrawerCollection] = catalog.collections.compactMap { collection -> CourseDrawerCollection? in
+            let collectionCopy = CourseDrawerCopy.localized(
+                collectionID: collection.id.rawValue,
+                fallbackLabel: collection.label,
+                fallbackTitle: collection.title,
+                fallbackSubtitle: collection.subtitle
+            )
             let courses = availableCourses
                 .filter { $0.collectionID == collection.id }
                 .map { descriptor in
@@ -32,9 +38,9 @@ enum StudyProjection {
             guard !courses.isEmpty else { return nil }
             return CourseDrawerCollection(
                 id: collection.id.rawValue,
-                label: collection.label,
-                title: collection.title,
-                subtitle: collection.subtitle,
+                label: collectionCopy.label,
+                title: collectionCopy.title,
+                subtitle: collectionCopy.subtitle,
                 courses: courses
             )
         }

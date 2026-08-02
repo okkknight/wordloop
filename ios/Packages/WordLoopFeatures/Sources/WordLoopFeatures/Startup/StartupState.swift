@@ -10,15 +10,15 @@ public enum StartupState: String, CaseIterable, Equatable, Sendable {
         let copy = StartupCopy.current
         switch self {
         case .idle:
-            copy.start
+            return copy.start
         case .preparing, .restoring:
-            copy.preparing
+            return copy.preparing
         case .syncing:
-            copy.syncing
+            return copy.syncing
         case .ready:
-            copy.ready
+            return copy.ready
         case .error:
-            copy.retry
+            return copy.retry
         }
     }
 
@@ -26,15 +26,15 @@ public enum StartupState: String, CaseIterable, Equatable, Sendable {
         let copy = StartupCopy.current
         switch self {
         case .idle:
-            nil
+            return nil
         case .preparing, .restoring:
-            copy.restoring
+            return copy.restoring
         case .syncing:
-            copy.syncingProgress
+            return copy.syncingProgress
         case .ready:
-            nil
+            return nil
         case .error:
-            copy.offline
+            return copy.offline
         }
     }
 
