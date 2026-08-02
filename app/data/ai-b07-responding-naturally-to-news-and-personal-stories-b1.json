@@ -15,7 +15,21 @@
       "end": 2.005,
       "duration": 2.005,
       "translations": {
-        "zh-Hans": "那真是太棒的消息了！"
+        "zh-Hans": "那真是太棒的消息了！",
+        "ja": "それは本当にすばらしい知らせですね！",
+        "id": "Kabar yang luar biasa!",
+        "de": "Das sind fantastische Neuigkeiten!",
+        "fr": "C'est une excellente nouvelle !",
+      "tr": "Bu harika bir haber!",
+      "th": "นั่นเป็นข่าวที่ยอดเยี่ยมมาก!",
+      "zh-Hant": "那真是太棒的消息了！",
+      "ko": "정말 멋진 소식이네요!",
+      "es": "¡Es una noticia fantástica!",
+      "pt-BR": "Que notícia fantástica!",
+      "it": "È una notizia fantastica!",
+      "ru": "Это потрясающая новость!",
+      "ar": "يا لها من أخبار رائعة!",
+      "vi": "Đó đúng là tin tuyệt vời!"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "听到这个消息真好。恭喜！"
+        "zh-Hans": "听到这个消息真好。恭喜！",
+        "ja": "それはすばらしいですね。おめでとうございます！",
+        "id": "Senang sekali mendengarnya. Selamat!",
+        "de": "Das ist wunderbar zu hören. Herzlichen Glückwunsch!",
+        "fr": "C'est merveilleux à entendre. Félicitations !",
+      "tr": "Bunu duymak harika. Tebrikler!",
+      "th": "ได้ยินแบบนี้แล้วดีใจด้วยนะ ยินดีด้วย!",
+      "zh-Hant": "聽到這個消息真好。恭喜！",
+      "ko": "정말 기쁜 소식이네요. 축하해요!",
+      "es": "¡Qué maravilla saberlo! ¡Felicidades!",
+      "pt-BR": "Que bom saber disso. Parabéns!",
+      "it": "È meraviglioso saperlo. Congratulazioni!",
+      "ru": "Как приятно это слышать. Поздравляю!",
+      "ar": "يسعدني سماع ذلك. مبروك!",
+      "vi": "Nghe vậy thật tuyệt. Chúc mừng bạn!"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 1.963,
       "duration": 1.963,
       "translations": {
-        "zh-Hans": "我为你感到兴奋！"
+        "zh-Hans": "我为你感到兴奋！",
+        "ja": "自分のことのようにうれしいです！",
+        "id": "Aku ikut bahagia untukmu!",
+        "de": "Ich freue mich riesig für dich!",
+        "fr": "Je suis vraiment ravi(e) pour toi !",
+      "tr": "Senin adına çok sevindim!",
+      "th": "ฉันดีใจกับคุณมากเลย!",
+      "zh-Hant": "我真替你感到高興！",
+      "ko": "정말 기뻐요!",
+      "es": "¡Me alegro muchísimo por ti!",
+      "pt-BR": "Fico muito feliz por você!",
+      "it": "Sono felicissimo per te!",
+      "ru": "Я так рад за тебя!",
+      "ar": "أنا سعيد جدًا من أجلك!",
+      "vi": "Mình mừng cho bạn quá!"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 1.451,
       "duration": 1.451,
       "translations": {
-        "zh-Hans": "多么令人兴奋啊！"
+        "zh-Hans": "多么令人兴奋啊！",
+        "ja": "それは楽しみですね！",
+        "id": "Wah, seru sekali!",
+        "de": "Wie aufregend!",
+        "fr": "Quelle excitation !",
+      "tr": "Ne kadar heyecan verici!",
+      "th": "น่าตื่นเต้นจังเลย!",
+      "zh-Hant": "真令人興奮！",
+      "ko": "정말 신나네요!",
+      "es": "¡Qué emocionante!",
+      "pt-BR": "Que emocionante!",
+      "it": "Che emozione!",
+      "ru": "Как здорово!",
+      "ar": "يا له من أمر مثير!",
+      "vi": "Thật hào hứng quá!"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "那真是难以应对。"
+        "zh-Hans": "那真是难以应对。",
+        "ja": "それは大変ですね。",
+        "id": "Itu pasti sulit untuk dihadapi.",
+        "de": "Das ist bestimmt schwer zu verkraften.",
+        "fr": "Ça doit être difficile à vivre.",
+      "tr": "Bununla başa çıkmak gerçekten zor olmalı.",
+      "th": "เรื่องนี้คงรับมือได้ยากมากเลยนะ",
+      "zh-Hant": "那一定很難應付。",
+      "ko": "그 일을 감당하기 정말 힘들겠어요.",
+      "es": "Debe ser muy difícil lidiar con eso.",
+      "pt-BR": "Deve ser muito difícil lidar com isso.",
+      "it": "Dev'essere davvero difficile da affrontare.",
+      "ru": "С этим, должно быть, очень трудно справиться.",
+      "ar": "لا بد أن التعامل مع ذلك صعب جدًا.",
+      "vi": "Chuyện đó chắc hẳn rất khó đối mặt."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 4.309,
       "duration": 4.309,
       "translations": {
-        "zh-Hans": "听到这个消息我很遗憾。我能帮上什么忙吗？"
+        "zh-Hans": "听到这个消息我很遗憾。我能帮上什么忙吗？",
+        "ja": "それは残念ですね。何か私にできることはありますか？",
+        "id": "Aku turut prihatin mendengarnya. Ada yang bisa kubantu?",
+        "de": "Das tut mir leid zu hören. Kann ich irgendetwas tun?",
+        "fr": "Je suis désolé(e) de l'apprendre. Est-ce que je peux faire quelque chose ?",
+      "tr": "Bunu duyduğuma üzüldüm. Yapabileceğim bir şey var mı?",
+      "th": "เสียใจที่ได้ยินแบบนั้นนะ มีอะไรให้ฉันช่วยได้บ้างไหม?",
+      "zh-Hant": "很遺憾聽到這件事。我能幫上什麼忙嗎？",
+      "ko": "그런 이야기를 들으니 마음이 아프네요. 제가 도울 일이 있을까요?",
+      "es": "Siento mucho oír eso. ¿Hay algo que pueda hacer?",
+      "pt-BR": "Sinto muito por isso. Há algo que eu possa fazer?",
+      "it": "Mi dispiace saperlo. C'è qualcosa che posso fare?",
+      "ru": "Мне жаль это слышать. Я могу чем-нибудь помочь?",
+      "ar": "آسف لسماع ذلك. هل يمكنني أن أفعل شيئًا؟",
+      "vi": "Mình rất tiếc khi nghe vậy. Mình có thể giúp gì không?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "那真是不幸。"
+        "zh-Hans": "那真是不幸。",
+        "ja": "それは本当に残念です。",
+        "id": "Sayang sekali mendengarnya.",
+        "de": "Das ist wirklich bedauerlich.",
+        "fr": "C'est vraiment regrettable.",
+      "tr": "Bu gerçekten talihsizlik.",
+      "th": "น่าเสียดายจริง ๆ",
+      "zh-Hant": "那真是不幸。",
+      "ko": "정말 안타깝네요.",
+      "es": "Qué pena tan grande.",
+      "pt-BR": "Que situação tão lamentável.",
+      "it": "È davvero un peccato.",
+      "ru": "Какое несчастье.",
+      "ar": "هذا مؤسف حقًا.",
+      "vi": "Thật đáng tiếc."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.133,
       "duration": 2.133,
       "translations": {
-        "zh-Hans": "听起来真是个挑战。"
+        "zh-Hans": "听起来真是个挑战。",
+        "ja": "それはかなり大変そうですね。",
+        "id": "Kedengarannya benar-benar menantang.",
+        "de": "Das klingt wirklich herausfordernd.",
+        "fr": "Ça a l'air vraiment difficile.",
+      "tr": "Kulağa gerçekten zor geliyor.",
+      "th": "ฟังดูเป็นเรื่องที่ท้าทายมากจริง ๆ",
+      "zh-Hant": "聽起來真的很有挑戰性。",
+      "ko": "정말 쉽지 않은 일이겠어요.",
+      "es": "Suena realmente difícil.",
+      "pt-BR": "Parece mesmo um grande desafio.",
+      "it": "Sembra davvero una bella sfida.",
+      "ru": "Звучит как настоящее испытание.",
+      "ar": "يبدو ذلك صعبًا جدًا حقًا.",
+      "vi": "Nghe thật sự rất thử thách."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.219,
       "duration": 2.219,
       "translations": {
-        "zh-Hans": "那真是出乎意料！"
+        "zh-Hans": "那真是出乎意料！",
+        "ja": "それはまったく予想外ですね！",
+        "id": "Itu sungguh tak terduga!",
+        "de": "Das kommt wirklich unerwartet!",
+        "fr": "C'est vraiment inattendu !",
+      "tr": "Bu hiç beklenmedik!",
+      "th": "ไม่คาดคิดเลย!",
+      "zh-Hant": "真是出乎意料！",
+      "ko": "정말 뜻밖이네요!",
+      "es": "¡Es bastante inesperado!",
+      "pt-BR": "Isso foi bastante inesperado!",
+      "it": "È davvero inaspettato!",
+      "ru": "Вот это неожиданность!",
+      "ar": "هذا غير متوقع تمامًا!",
+      "vi": "Thật là bất ngờ!"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "哇，那真让人惊讶！这是怎么发生的？"
+        "zh-Hans": "哇，那真让人惊讶！这是怎么发生的？",
+        "ja": "わあ、それは驚きですね！どうしてそうなったんですか？",
+        "id": "Wah, mengejutkan sekali! Bagaimana itu bisa terjadi?",
+        "de": "Wow, das ist überraschend! Wie ist das passiert?",
+        "fr": "Waouh, c'est surprenant ! Comment est-ce arrivé ?",
+      "tr": "Vay canına, bu şaşırtıcı! Nasıl oldu?",
+      "th": "ว้าว น่าแปลกใจจริง ๆ! เกิดขึ้นได้อย่างไร?",
+      "zh-Hant": "哇，真令人驚訝！這是怎麼發生的？",
+      "ko": "와, 정말 놀랍네요! 어떻게 그런 일이 생겼어요?",
+      "es": "¡Vaya, qué sorpresa! ¿Cómo pasó eso?",
+      "pt-BR": "Uau, que surpresa! Como isso aconteceu?",
+      "it": "Wow, che sorpresa! Com'è successo?",
+      "ru": "Ого, вот это сюрприз! Как такое произошло?",
+      "ar": "واو، هذا مفاجئ حقًا! كيف حدث ذلك؟",
+      "vi": "Ồ, bất ngờ thật đấy! Chuyện đó xảy ra thế nào vậy?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 2.005,
       "duration": 2.005,
       "translations": {
-        "zh-Hans": "那真是了不起！"
+        "zh-Hans": "那真是了不起！",
+        "ja": "それは本当にすごいですね！",
+        "id": "Wah, itu sungguh luar biasa!",
+        "de": "Das ist wirklich etwas Besonderes!",
+        "fr": "C'est vraiment quelque chose !",
+      "tr": "Bu gerçekten inanılmaz!",
+      "th": "เรื่องนี้ไม่ธรรมดาจริง ๆ!",
+      "zh-Hant": "那真是了不起！",
+      "ko": "정말 대단한 일이네요!",
+      "es": "¡Eso sí que es extraordinario!",
+      "pt-BR": "Isso é realmente incrível!",
+      "it": "È davvero qualcosa di straordinario!",
+      "ru": "Вот это действительно нечто!",
+      "ar": "هذا أمر رائع حقًا!",
+      "vi": "Đúng là một điều đáng nể!"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 1.664,
       "duration": 1.664,
       "translations": {
-        "zh-Hans": "那真是太有趣了！"
+        "zh-Hans": "那真是太有趣了！",
+        "ja": "それはとても興味深いですね！",
+        "id": "Itu sehr interessant!",
+        "de": "Das ist faszinierend!",
+        "fr": "C'est fascinant !",
+      "tr": "Bu büyüleyici!",
+      "th": "น่าทึ่งมาก!",
+      "zh-Hant": "那真是太有意思了！",
+      "ko": "정말 흥미롭네요!",
+      "es": "¡Qué fascinante!",
+      "pt-BR": "Que fascinante!",
+      "it": "È affascinante!",
+      "ru": "Как увлекательно!",
+      "ar": "هذا مذهل!",
+      "vi": "Thật hấp dẫn!"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "我理解你的感受。你接下来打算怎么做？"
+        "zh-Hans": "我理解你的感受。你接下来打算怎么做？",
+        "ja": "お気持ちはわかります。次はどうしようと思っていますか？",
+        "id": "Aku mengerti perasaanmu. Apa yang ingin kamu lakukan selanjutnya?",
+        "de": "Ich verstehe, wie du dich fühlst. Was möchtest du als Nächstes tun?",
+        "fr": "Je comprends ce que tu ressens. Qu'est-ce que tu envisages de faire ensuite ?",
+      "tr": "Nasıl hissettiğini anlıyorum. Bundan sonra ne yapmayı düşünüyorsun?",
+      "th": "ฉันเข้าใจว่าคุณรู้สึกอย่างไร แล้วต่อไปคิดว่าจะทำอย่างไร?",
+      "zh-Hant": "我理解你的感受。你接下來打算怎麼做？",
+      "ko": "어떤 기분인지 이해해요. 다음에는 어떻게 하려고 해요?",
+      "es": "Entiendo cómo te sientes. ¿Qué piensas hacer ahora?",
+      "pt-BR": "Entendo como você se sente. O que está pensando em fazer agora?",
+      "it": "Capisco come ti senti. Cosa pensi di fare adesso?",
+      "ru": "Я понимаю, что ты чувствуешь. Что ты собираешься делать дальше?",
+      "ar": "أفهم شعورك. ماذا تفكر في أن تفعل بعد ذلك؟",
+      "vi": "Mình hiểu bạn cảm thấy thế nào. Tiếp theo bạn định làm gì?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "告诉我更多关于这件事的细节。我真的很感兴趣。"
+        "zh-Hans": "告诉我更多关于这件事的细节。我真的很感兴趣。",
+        "ja": "そのことについてもっと聞かせてください。とても興味があります。",
+        "id": "Ceritakan lebih banyak tentang itu. Aku sangat tertarik.",
+        "de": "Erzähl mir mehr darüber. Das interessiert mich wirklich sehr.",
+        "fr": "Parle-m'en davantage. Ça m'intéresse vraiment.",
+      "tr": "Bana biraz daha anlat. Gerçekten ilgimi çekti.",
+      "th": "เล่าเรื่องนั้นให้ฉันฟังอีกหน่อยสิ ฉันสนใจมากจริง ๆ",
+      "zh-Hant": "再多跟我說說吧。我真的很感興趣。",
+      "ko": "그 얘기를 좀 더 들려줘요. 정말 관심이 많아요.",
+      "es": "Cuéntame más sobre eso. Me interesa mucho.",
+      "pt-BR": "Me conte mais sobre isso. Estou muito interessado.",
+      "it": "Raccontami di più. Mi interessa davvero.",
+      "ru": "Расскажи мне об этом подробнее. Мне действительно интересно.",
+      "ar": "أخبرني المزيد عن ذلك. أنا مهتم جدًا.",
+      "vi": "Kể mình nghe thêm về chuyện đó đi. Mình thật sự rất quan tâm."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "我能理解这种感受。你觉得什么会有帮助？"
+        "zh-Hans": "我能理解这种感受。你觉得什么会有帮助？",
+        "ja": "その気持ちはわかります。何が助けになると思いますか？",
+        "id": "Aku bisa memahami perasaan itu. Menurutmu, apa yang akan membantu?",
+        "de": "Ich kann das nachvollziehen. Was könnte deiner Meinung nach helfen?",
+        "fr": "Je comprends ce que tu ressens. Qu'est-ce qui pourrait t'aider, à ton avis ?",
+      "tr": "Seni anlayabiliyorum. Sence ne yardımcı olur?",
+      "th": "ฉันเข้าใจความรู้สึกของคุณนะ คุณคิดว่าอะไรจะช่วยได้บ้าง?",
+      "zh-Hant": "我能體會你的感受。你覺得什麼會有幫助？",
+      "ko": "그런 마음이 어떤 건지 이해해요. 뭐가 도움이 될 것 같아요?",
+      "es": "Puedo entenderte. ¿Qué crees que podría ayudarte?",
+      "pt-BR": "Eu me identifico com isso. O que você acha que ajudaria?",
+      "it": "Capisco quello che provi. Cosa pensi che potrebbe aiutarti?",
+      "ru": "Я понимаю, что ты чувствуешь. Как думаешь, что могло бы помочь?",
+      "ar": "أتفهم شعورك. ما الذي تعتقد أنه سيساعد؟",
+      "vi": "Mình hiểu cảm giác đó. Bạn nghĩ điều gì sẽ giúp ích?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我理解你的出发点。你现在对此有什么想法？"
+        "zh-Hans": "我理解你的出发点。你现在对此有什么想法？",
+        "ja": "あなたの気持ちはわかります。今はどう思っていますか？",
+        "id": "Aku memahami sudut pandangmu. Apa pendapatmu sekarang?",
+        "de": "Ich verstehe, woher du kommst. Was denkst du jetzt darüber?",
+        "fr": "Je comprends ton point de vue. Maintenant, qu'en penses-tu ?",
+      "tr": "Nereden geldiğini anlıyorum. Şimdi bu konuda ne düşünüyorsun?",
+      "th": "ฉันเข้าใจมุมมองของคุณนะ ตอนนี้คุณคิดอย่างไรกับเรื่องนี้?",
+      "zh-Hant": "我了解你的想法。你現在對這件事有什麼看法？",
+      "ko": "왜 그렇게 생각하는지 이해해요. 지금은 어떻게 생각해요?",
+      "es": "Entiendo tu punto de vista. ¿Qué opinas ahora al respecto?",
+      "pt-BR": "Entendo de onde você está vindo. O que você pensa disso agora?",
+      "it": "Capisco il tuo punto di vista. Cosa ne pensi adesso?",
+      "ru": "Я понимаю твою точку зрения. Что ты теперь об этом думаешь?",
+      "ar": "أتفهم وجهة نظرك. ما رأيك في الأمر الآن؟",
+      "vi": "Mình hiểu quan điểm của bạn. Bây giờ bạn nghĩ sao về chuyện đó?"
       }
     }
   ]

@@ -15,7 +15,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我需要换这个商品。"
+        "zh-Hans": "我需要换这个商品。",
+        "zh-Hant": "我需要更換這件商品。",
+        "es": "Necesito cambiar este artículo.",
+        "de": "Ich muss diesen Artikel umtauschen.",
+      "ru": "Мне нужно обменять этот товар.",
+      "th": "ฉันต้องการเปลี่ยนสินค้าชิ้นนี้",
+      "ko": "이 상품을 교환하고 싶습니다.",
+      "ja": "この商品を交換したいです。",
+      "pt-BR": "Preciso trocar este item.",
+      "fr": "Je voudrais échanger cet article.",
+      "it": "Devo cambiare questo articolo.",
+      "ar": "أحتاج إلى استبدال هذا المنتج.",
+      "id": "Saya perlu menukar barang ini.",
+      "vi": "Tôi cần đổi món hàng này.",
+      "tr": "Bu ürünü değiştirmek istiyorum."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "我想退掉这件衬衫。"
+        "zh-Hans": "我想退掉这件衬衫。",
+        "zh-Hant": "我想退回這件襯衫。",
+        "es": "Quisiera devolver esta camisa.",
+        "de": "Ich möchte dieses Hemd zurückgeben.",
+      "ru": "Я хотел(а) бы вернуть эту рубашку.",
+      "th": "ฉันต้องการคืนเสื้อตัวนี้",
+      "ko": "이 셔츠를 반품하고 싶습니다.",
+      "ja": "このシャツを返品したいです。",
+      "pt-BR": "Gostaria de devolver esta camisa.",
+      "fr": "Je voudrais retourner cette chemise.",
+      "it": "Vorrei restituire questa camicia.",
+      "ar": "أود إرجاع هذا القميص.",
+      "id": "Saya ingin mengembalikan kemeja ini.",
+      "vi": "Tôi muốn trả lại chiếc áo này.",
+      "tr": "Bu gömleği iade etmek istiyorum."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我想换个不同尺码的。"
+        "zh-Hans": "我想换个不同尺码的。",
+        "zh-Hant": "我想換成其他尺寸。",
+        "es": "Quiero cambiarlo por otra talla.",
+        "de": "Ich möchte es gegen eine andere Größe umtauschen.",
+      "ru": "Я хочу обменять это на другой размер.",
+      "th": "ฉันอยากเปลี่ยนเป็นขนาดอื่น",
+      "ko": "다른 사이즈로 교환하고 싶습니다.",
+      "ja": "別のサイズに交換したいです。",
+      "pt-BR": "Quero trocar por um tamanho diferente.",
+      "fr": "Je voudrais l'échanger contre une autre taille.",
+      "it": "Vorrei cambiarlo con una taglia diversa.",
+      "ar": "أريد استبداله بمقاس مختلف.",
+      "id": "Saya ingin menukarnya dengan ukuran yang berbeda.",
+      "vi": "Tôi muốn đổi sang kích cỡ khác.",
+      "tr": "Bunu farklı bir bedenle değiştirmek istiyorum."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "我来退这个产品。"
+        "zh-Hans": "我来退这个产品。",
+        "zh-Hant": "我是來退這項商品的。",
+        "es": "Vengo a devolver este producto.",
+        "de": "Ich bin hier, um dieses Produkt zurückzugeben.",
+      "ru": "Я пришёл(пришла), чтобы вернуть этот товар.",
+      "th": "ฉันมาที่นี่เพื่อคืนสินค้านี้",
+      "ko": "이 상품을 반품하러 왔습니다.",
+      "ja": "この商品を返品しに来ました。",
+      "pt-BR": "Vim devolver este produto.",
+      "fr": "Je viens retourner ce produit.",
+      "it": "Sono qui per restituire questo prodotto.",
+      "ar": "أتيت لإرجاع هذا المنتج.",
+      "id": "Saya datang untuk mengembalikan produk ini.",
+      "vi": "Tôi đến để trả lại sản phẩm này.",
+      "tr": "Bu ürünü iade etmek için geldim."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "这个尺码对我来说太小了。"
+        "zh-Hans": "这个尺码对我来说太小了。",
+        "zh-Hant": "這個尺寸對我來說太小了。",
+        "es": "Esta talla me queda demasiado pequeña.",
+        "de": "Die Größe ist mir zu klein.",
+      "ru": "Этот размер мне слишком мал.",
+      "th": "ขนาดเล็กเกินไปสำหรับฉัน",
+      "ko": "저에게는 사이즈가 너무 작습니다.",
+      "ja": "このサイズは私には小さすぎます。",
+      "pt-BR": "Esse tamanho ficou pequeno demais para mim.",
+      "fr": "Cette taille est trop petite pour moi.",
+      "it": "Questa taglia è troppo piccola per me.",
+      "ar": "هذا المقاس صغير جدًا بالنسبة لي.",
+      "id": "Ukuran ini terlalu kecil untuk saya.",
+      "vi": "Cỡ này quá nhỏ so với tôi.",
+      "tr": "Bu beden bana çok küçük geliyor."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "产品有缺陷，无法开机。"
+        "zh-Hans": "产品有缺陷，无法开机。",
+        "zh-Hant": "商品有瑕疵，無法開機。",
+        "es": "El producto está defectuoso y no se enciende.",
+        "de": "Das Produkt ist defekt und lässt sich nicht einschalten.",
+      "ru": "Товар неисправен и не включается.",
+      "th": "สินค้าชำรุดและเปิดไม่ติด",
+      "ko": "상품에 결함이 있어 전원이 켜지지 않습니다.",
+      "ja": "商品に不具合があり、電源が入りません。",
+      "pt-BR": "O produto está com defeito e não liga.",
+      "fr": "Le produit est défectueux et ne s'allume pas.",
+      "it": "Il prodotto è difettoso e non si accende.",
+      "ar": "المنتج معيب ولا يعمل.",
+      "id": "Produk ini rusak dan tidak bisa menyala.",
+      "vi": "Sản phẩm bị lỗi và không bật lên được.",
+      "tr": "Ürün kusurlu ve açılmıyor."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 1.92,
       "duration": 1.92,
       "translations": {
-        "zh-Hans": "颜色不是我订的那种。"
+        "zh-Hans": "颜色不是我订的那种。",
+        "zh-Hant": "顏色不是我訂購的那一款。",
+        "es": "El color no es el que pedí.",
+        "de": "Die Farbe entspricht nicht der, die ich bestellt habe.",
+      "ru": "Цвет не тот, который я заказывал(а).",
+      "th": "สีไม่ตรงกับที่ฉันสั่ง",
+      "ko": "색상이 제가 주문한 것과 다릅니다.",
+      "ja": "色が注文したものと違います。",
+      "pt-BR": "A cor não é a que eu pedi.",
+      "fr": "La couleur n'est pas celle que j'ai commandée.",
+      "it": "Il colore non è quello che avevo ordinato.",
+      "ar": "اللون ليس اللون الذي طلبته.",
+      "id": "Warnanya tidak sesuai dengan yang saya pesan.",
+      "vi": "Màu này không phải màu tôi đã đặt.",
+      "tr": "Rengi sipariş ettiğim renk değil."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "面料感觉和描述的不一样。"
+        "zh-Hans": "面料感觉和描述的不一样。",
+        "zh-Hant": "布料摸起來和描述的不一樣。",
+        "es": "La tela se siente diferente de lo que se describía.",
+        "de": "Der Stoff fühlt sich anders an als beschrieben.",
+      "ru": "На ощупь ткань не такая, как было описано.",
+      "th": "เนื้อผ้าให้ความรู้สึกต่างจากที่อธิบายไว้",
+      "ko": "원단의 느낌이 설명과 다릅니다.",
+      "ja": "生地の手触りが説明と違います。",
+      "pt-BR": "O tecido tem uma textura diferente da descrita.",
+      "fr": "Le tissu est différent de ce qui était décrit au toucher.",
+      "it": "Il tessuto al tatto è diverso da come era descritto.",
+      "ar": "ملمس القماش مختلف عما وُصف.",
+      "id": "Tekstur kainnya berbeda dari yang dijelaskan.",
+      "vi": "Chất vải sờ vào khác với mô tả.",
+      "tr": "Kumaşın dokusu anlatılandan farklı."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "这是我上周的收据。"
+        "zh-Hans": "这是我上周的收据。",
+        "zh-Hant": "這是我上週的收據。",
+        "es": "Aquí tiene el recibo de la semana pasada.",
+        "de": "Hier ist meine Quittung von letzter Woche.",
+      "ru": "Вот мой чек за прошлую неделю.",
+      "th": "นี่คือใบเสร็จของฉันจากสัปดาห์ที่แล้ว",
+      "ko": "지난주 영수증입니다.",
+      "ja": "先週のレシートです。",
+      "pt-BR": "Aqui está o recibo da semana passada.",
+      "fr": "Voici mon reçu de la semaine dernière.",
+      "it": "Ecco lo scontrino della settimana scorsa.",
+      "ar": "هذه فاتورتي من الأسبوع الماضي.",
+      "id": "Ini struk saya dari minggu lalu.",
+      "vi": "Đây là hóa đơn của tôi từ tuần trước.",
+      "tr": "Geçen haftaya ait fişim burada."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.261,
       "duration": 2.261,
       "translations": {
-        "zh-Hans": "我是在星期一买的。"
+        "zh-Hans": "我是在星期一买的。",
+        "zh-Hant": "我是星期一買的。",
+        "es": "Lo compré el lunes.",
+        "de": "Ich habe es am Montag gekauft.",
+      "ru": "Я купил(а) это в понедельник.",
+      "th": "ฉันซื้อมันเมื่อวันจันทร์",
+      "ko": "월요일에 구입했습니다.",
+      "ja": "月曜日に買いました。",
+      "pt-BR": "Comprei na segunda-feira.",
+      "fr": "Je l'ai acheté lundi.",
+      "it": "L'ho comprato lunedì.",
+      "ar": "اشتريته يوم الاثنين.",
+      "id": "Saya membelinya pada hari Senin.",
+      "vi": "Tôi mua nó vào thứ Hai.",
+      "tr": "Onu pazartesi günü aldım."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "我是用信用卡支付的。"
+        "zh-Hans": "我是用信用卡支付的。",
+        "zh-Hant": "我是用信用卡付款的。",
+        "es": "Pagué con tarjeta de crédito.",
+        "de": "Ich habe mit meiner Kreditkarte bezahlt.",
+      "ru": "Я заплатил(а) кредитной картой.",
+      "th": "ฉันจ่ายด้วยบัตรเครดิต",
+      "ko": "신용카드로 결제했습니다.",
+      "ja": "クレジットカードで支払いました。",
+      "pt-BR": "Paguei com meu cartão de crédito.",
+      "fr": "J'ai payé avec ma carte bancaire.",
+      "it": "Ho pagato con la mia carta di credito.",
+      "ar": "دفعت ببطاقتي الائتمانية.",
+      "id": "Saya membayarnya dengan kartu kredit.",
+      "vi": "Tôi đã thanh toán bằng thẻ tín dụng.",
+      "tr": "Kredi kartımla ödedim."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.944,
       "duration": 2.944,
       "translations": {
-        "zh-Hans": "我是在网上买的。"
+        "zh-Hans": "我是在网上买的。",
+        "zh-Hant": "我是在線上購買的。",
+        "es": "Lo compré por internet.",
+        "de": "Ich habe es online gekauft.",
+      "ru": "Я купил(а) это онлайн.",
+      "th": "ฉันซื้อสินค้าทางออนไลน์",
+      "ko": "온라인으로 구매했습니다.",
+      "ja": "オンラインで購入しました。",
+      "pt-BR": "Comprei pela internet.",
+      "fr": "Je l'ai acheté en ligne.",
+      "it": "L'ho acquistato online.",
+      "ar": "اشتريته عبر الإنترنت.",
+      "id": "Saya membelinya secara daring.",
+      "vi": "Tôi đã mua sản phẩm này trên mạng.",
+      "tr": "Onu internetten satın aldım."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "有商店余额的选项吗？"
+        "zh-Hans": "有商店余额的选项吗？",
+        "zh-Hant": "可以選擇退成店內購物金嗎？",
+        "es": "¿Puedo recibir un vale para usar en la tienda?",
+        "de": "Gibt es die Möglichkeit, eine Gutschrift zu erhalten?",
+      "ru": "Есть ли вариант получить кредит магазина?",
+      "th": "มีตัวเลือกเป็นเครดิตร้านค้าไหม",
+      "ko": "매장 적립금으로 받을 수 있나요?",
+      "ja": "店舗クレジットにしてもらうことはできますか？",
+      "pt-BR": "Posso receber um crédito para usar na loja?",
+      "fr": "Est-il possible d'obtenir un avoir à utiliser en magasin ?",
+      "it": "Posso ricevere un credito da usare in negozio?",
+      "ar": "هل يمكنني الحصول على رصيد من المتجر؟",
+      "id": "Apakah saya bisa mendapatkan kredit toko?",
+      "vi": "Tôi có thể nhận tín dụng cửa hàng không?",
+      "tr": "Mağazada kullanabileceğim bir alışveriş kredisi alabilir miyim?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "我能为这次购买退款吗？"
+        "zh-Hans": "我能为这次购买退款吗？",
+        "zh-Hant": "這筆購買可以退款嗎？",
+        "es": "¿Puedo obtener un reembolso por esta compra?",
+        "de": "Kann ich für diesen Kauf eine Rückerstattung bekommen?",
+      "ru": "Могу ли я получить возврат за эту покупку?",
+      "th": "ฉันขอเงินคืนสำหรับการซื้อนี้ได้ไหม",
+      "ko": "이 구매 건을 환불받을 수 있을까요?",
+      "ja": "この購入品の返金を受けられますか？",
+      "pt-BR": "Posso receber um reembolso por esta compra?",
+      "fr": "Puis-je être remboursé pour cet achat ?",
+      "it": "Posso ottenere un rimborso per questo acquisto?",
+      "ar": "هل يمكنني استرداد قيمة هذه المشتريات؟",
+      "id": "Apakah saya bisa mendapatkan pengembalian dana untuk pembelian ini?",
+      "vi": "Tôi có thể được hoàn tiền cho đơn hàng này không?",
+      "tr": "Bu satın alma için para iadesi alabilir miyim?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "我可以换成别的东西吗？"
+        "zh-Hans": "我可以换成别的东西吗？",
+        "zh-Hant": "我可以換成其他商品嗎？",
+        "es": "¿Podría cambiarlo por otra cosa?",
+        "de": "Könnte ich es gegen etwas anderes umtauschen?",
+      "ru": "Могу ли я обменять это на что-нибудь другое?",
+      "th": "ฉันเปลี่ยนเป็นอย่างอื่นได้ไหม",
+      "ko": "다른 상품으로 교환할 수 있을까요?",
+      "ja": "別の商品に交換できますか？",
+      "pt-BR": "Posso trocar por outra coisa?",
+      "fr": "Pourrais-je l'échanger contre autre chose ?",
+      "it": "Potrei cambiarlo con qualcos'altro?",
+      "ar": "هل يمكنني استبداله بشيء آخر؟",
+      "id": "Bisakah saya menukarnya dengan barang lain?",
+      "vi": "Tôi có thể đổi sang món khác không?",
+      "tr": "Bunu başka bir şeyle değiştirebilir miyim?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 1.877,
       "duration": 1.877,
       "translations": {
-        "zh-Hans": "你们的退货政策是什么？"
+        "zh-Hans": "你们的退货政策是什么？",
+        "zh-Hant": "你們的退貨政策是什麼？",
+        "es": "¿Cuál es su política de devoluciones?",
+        "de": "Wie lautet Ihre Rückgaberegelung?",
+      "ru": "Какова ваша политика возврата?",
+      "th": "นโยบายการคืนสินค้าของคุณเป็นอย่างไร",
+      "ko": "반품 정책이 어떻게 되나요?",
+      "ja": "返品ポリシーを教えていただけますか？",
+      "pt-BR": "Qual é a política de devolução de vocês?",
+      "fr": "Quelle est votre politique de retour ?",
+      "it": "Qual è la vostra politica sui resi?",
+      "ar": "ما سياسة الإرجاع لديكم؟",
+      "id": "Bagaimana kebijakan pengembalian barang Anda?",
+      "vi": "Chính sách đổi trả của cửa hàng là gì?",
+      "tr": "İade politikanız nedir?"
       }
     }
   ]

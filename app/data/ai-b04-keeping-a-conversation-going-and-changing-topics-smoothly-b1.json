@@ -15,7 +15,21 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "你最喜欢它的什么？"
+        "zh-Hans": "你最喜欢它的什么？",
+        "zh-Hant": "你最喜歡它的哪一點？",
+        "tr": "En çok hangi yönünü beğendin?",
+        "ja": "それのどんなところが一番気に入りましたか？",
+        "fr": "Qu'est-ce que tu as préféré ?",
+        "it": "Cosa ti è piaciuto di più?",
+        "ar": "ما أكثر شيء أعجبك فيه؟",
+        "vi": "Bạn thích điều gì nhất ở chuyến đi đó?",
+        "ru": "Что вам больше всего понравилось в этой поездке?",
+        "ko": "그것에서 가장 좋았던 점은 뭐예요?",
+        "es": "¿Qué fue lo que más te gustó?",
+        "pt-BR": "O que você mais gostou?",
+        "de": "Was hat dir daran am besten gefallen?",
+        "id": "Apa yang paling kamu sukai dari itu?",
+        "th": "คุณชอบอะไรมากที่สุดเกี่ยวกับเรื่องนั้น"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "多告诉我一些关于你旅行的事。"
+        "zh-Hans": "多告诉我一些关于你旅行的事。",
+        "zh-Hant": "多跟我說說你的旅行吧。",
+        "tr": "Bana seyahatin hakkında biraz daha anlat.",
+        "ja": "旅行の話をもっと聞かせてください。",
+        "fr": "Parle-moi davantage de ton voyage.",
+        "it": "Raccontami qualcosa in più del tuo viaggio.",
+        "ar": "أخبرني المزيد عن رحلتك.",
+        "vi": "Kể thêm cho mình nghe về chuyến đi của bạn đi.",
+        "ru": "Расскажите подробнее о своей поездке.",
+        "ko": "여행에 대해 좀 더 이야기해 주세요.",
+        "es": "Cuéntame más sobre tu viaje.",
+        "pt-BR": "Me conte mais sobre a sua viagem.",
+        "de": "Erzähl mir mehr von deiner Reise.",
+        "id": "Ceritakan lebih banyak tentang perjalananmu.",
+        "th": "เล่าเรื่องทริปของคุณให้ฟังอีกหน่อยสิ"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "你是怎么开始这个爱好的？"
+        "zh-Hans": "你是怎么开始这个爱好的？",
+        "zh-Hant": "你是怎麼開始這項興趣的？",
+        "tr": "Bu hobiye nasıl başladın?",
+        "ja": "どうしてその趣味を始めたんですか？",
+        "fr": "Comment as-tu commencé à t'intéresser à ce loisir ?",
+        "it": "Come hai iniziato ad appassionarti a questo hobby?",
+        "ar": "كيف بدأت تهتم بهذه الهواية؟",
+        "vi": "Bạn bắt đầu yêu thích sở thích đó như thế nào?",
+        "ru": "Как вы увлеклись этим хобби?",
+        "ko": "그 취미는 어떻게 시작하게 됐어요?",
+        "es": "¿Cómo empezaste con esa afición?",
+        "pt-BR": "Como você começou a praticar esse hobby?",
+        "de": "Wie bist du zu diesem Hobby gekommen?",
+        "id": "Bagaimana kamu mulai menekuni hobi itu?",
+        "th": "คุณเริ่มสนใจงานอดิเรกนั้นได้อย่างไร"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 1.963,
       "duration": 1.963,
       "translations": {
-        "zh-Hans": "你今天最精彩的部分是什么？"
+        "zh-Hans": "你今天最精彩的部分是什么？",
+        "zh-Hant": "你今天最精彩的時刻是什麼？",
+        "tr": "Bugünün en güzel anı neydi?",
+        "ja": "今日一番印象に残ったことは何ですか？",
+        "fr": "Quel a été le meilleur moment de ta journée ?",
+        "it": "Qual è stato il momento più bello della tua giornata?",
+        "ar": "ما أجمل ما حدث في يومك؟",
+        "vi": "Điều tuyệt vời nhất trong ngày của bạn là gì?",
+        "ru": "Что было самым ярким событием вашего дня?",
+        "ko": "오늘 하루 중 가장 좋았던 순간은 언제였어요?",
+        "es": "¿Cuál fue el momento más destacado de tu día?",
+        "pt-BR": "Qual foi o ponto alto do seu dia?",
+        "de": "Was war das Highlight deines Tages?",
+        "id": "Apa momen terbaik dalam harimu?",
+        "th": "ช่วงไหนเป็นช่วงที่ดีที่สุดของวันนี้"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.219,
       "duration": 2.219,
       "translations": {
-        "zh-Hans": "我曾经尝试过类似的事情。"
+        "zh-Hans": "我曾经尝试过类似的事情。",
+        "zh-Hant": "我以前也試過類似的事情。",
+        "tr": "Ben de bir keresinde buna benzer bir şey denemiştim.",
+        "ja": "私も以前、似たようなことを試したことがあります。",
+        "fr": "J'ai déjà essayé quelque chose de similaire.",
+        "it": "Una volta ho provato qualcosa di simile.",
+        "ar": "جربت شيئًا مشابهًا ذات مرة.",
+        "vi": "Mình từng thử một việc tương tự.",
+        "ru": "Я однажды пробовал нечто похожее.",
+        "ko": "저도 전에 비슷한 걸 해 본 적이 있어요.",
+        "es": "Una vez probé algo parecido.",
+        "pt-BR": "Uma vez, tentei algo parecido.",
+        "de": "Ich habe einmal etwas Ähnliches ausprobiert.",
+        "id": "Aku pernah mencoba sesuatu yang mirip.",
+        "th": "ฉันเคยลองทำอะไรคล้าย ๆ กันครั้งหนึ่ง"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "这让我想起了我上次的假期。"
+        "zh-Hans": "这让我想起了我上次的假期。",
+        "zh-Hant": "這讓我想起了上一次的假期。",
+        "tr": "Bu bana son tatilimi hatırlattı.",
+        "ja": "それを聞いて、前の休暇を思い出しました。",
+        "fr": "Ça me rappelle mes dernières vacances.",
+        "it": "Questo mi ricorda la mia ultima vacanza.",
+        "ar": "هذا يذكرني بآخر إجازة قضيتها.",
+        "vi": "Điều đó làm mình nhớ đến kỳ nghỉ gần đây nhất.",
+        "ru": "Это напоминает мне о моей последней поездке.",
+        "ko": "그 얘기를 들으니 지난 휴가가 생각나네요.",
+        "es": "Eso me recuerda a mis últimas vacaciones.",
+        "pt-BR": "Isso me lembra das minhas últimas férias.",
+        "de": "Das erinnert mich an meinen letzten Urlaub.",
+        "id": "Itu mengingatkanku pada liburan terakhirku.",
+        "th": "นั่นทำให้ฉันนึกถึงวันหยุดครั้งล่าสุดของฉัน"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "我去年有过类似的经历。"
+        "zh-Hans": "我去年有过类似的经历。",
+        "zh-Hant": "我去年也有過類似的經歷。",
+        "tr": "Geçen yıl ben de benzer bir deneyim yaşadım.",
+        "ja": "私も去年、似たような経験をしました。",
+        "fr": "J'ai vécu quelque chose de similaire l'année dernière.",
+        "it": "L'anno scorso ho vissuto un'esperienza simile.",
+        "ar": "مررت بتجربة مشابهة العام الماضي.",
+        "vi": "Năm ngoái mình cũng từng có trải nghiệm tương tự.",
+        "ru": "В прошлом году у меня тоже был похожий опыт.",
+        "ko": "저도 작년에 비슷한 경험을 했어요.",
+        "es": "El año pasado tuve una experiencia parecida.",
+        "pt-BR": "Eu também tive uma experiência parecida no ano passado.",
+        "de": "Letztes Jahr habe ich etwas Ähnliches erlebt.",
+        "id": "Aku juga mengalami hal serupa tahun lalu.",
+        "th": "ฉันก็เคยมีประสบการณ์คล้าย ๆ กันเมื่อปีที่แล้ว"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "我也喜欢在空闲时间做那个。"
+        "zh-Hans": "我也喜欢在空闲时间做那个。",
+        "zh-Hant": "我平常有空時也喜歡做那件事。",
+        "tr": "Boş zamanlarımda ben de bunu yapmayı seviyorum.",
+        "ja": "私も暇なときにそれをするのが好きです。",
+        "fr": "Moi aussi, j'aime faire ça pendant mon temps libre.",
+        "it": "Anch'io mi diverto a farlo nel tempo libero.",
+        "ar": "وأنا أيضًا أستمتع بفعل ذلك في وقت فراغي.",
+        "vi": "Mình cũng thích làm việc đó vào thời gian rảnh.",
+        "ru": "Я тоже люблю заниматься этим в свободное время.",
+        "ko": "저도 여가 시간에 그걸 하는 걸 좋아해요.",
+        "es": "A mí también me gusta hacer eso en mi tiempo libre.",
+        "pt-BR": "Eu também gosto de fazer isso no meu tempo livre.",
+        "de": "Ich mache das in meiner Freizeit auch gern.",
+        "id": "Aku juga suka melakukan itu di waktu luang.",
+        "th": "ฉันก็ชอบทำแบบนั้นในเวลาว่างเหมือนกัน"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "你还喜欢做什么？"
+        "zh-Hans": "你还喜欢做什么？",
+        "zh-Hant": "你還喜歡做些什麼？",
+        "tr": "Başka neler yapmaktan hoşlanırsın?",
+        "ja": "ほかにはどんなことをするのが好きですか？",
+        "fr": "Qu'est-ce que tu aimes faire d'autre ?",
+        "it": "Cos'altro ti piace fare?",
+        "ar": "ما الأشياء الأخرى التي تحب أن تفعلها؟",
+        "vi": "Bạn còn thích làm gì khác nữa?",
+        "ru": "Чем ещё вы любите заниматься?",
+        "ko": "또 어떤 일을 하는 걸 좋아해요?",
+        "es": "¿Qué más te gusta hacer?",
+        "pt-BR": "O que mais você gosta de fazer?",
+        "de": "Was machst du sonst noch gern?",
+        "id": "Apa lagi yang suka kamu lakukan?",
+        "th": "คุณชอบทำอะไรอีกบ้าง"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "说到这个，你看过最新的电影吗？"
+        "zh-Hans": "说到这个，你看过最新的电影吗？",
+        "zh-Hant": "說到這個，你看過最近上映的電影嗎？",
+        "tr": "Hazır konusu açılmışken, vizyona giren son filmi izledin mi?",
+        "ja": "そういえば、最近公開された映画は見ましたか？",
+        "fr": "À propos, tu as vu le dernier film sorti ?",
+        "it": "A proposito, hai visto l'ultimo film uscito?",
+        "ar": "وبالحديث عن ذلك، هل شاهدت أحدث فيلم؟",
+        "vi": "Nhắc đến chuyện đó, bạn đã xem bộ phim mới nhất chưa?",
+        "ru": "Кстати, вы уже посмотрели последний фильм?",
+        "ko": "그 얘기가 나와서 그런데, 최근에 나온 영화 봤어요?",
+        "es": "Hablando de eso, ¿has visto la película más reciente?",
+        "pt-BR": "Falando nisso, você já viu o filme mais recente?",
+        "de": "Apropos, hast du den neuesten Film schon gesehen?",
+        "id": "Ngomong-ngomong, kamu sudah menonton film terbaru itu?",
+        "th": "พูดถึงเรื่องนั้นแล้ว คุณได้ดูหนังเรื่องล่าสุดหรือยัง"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "你有没有想过尝试一些新东西？"
+        "zh-Hans": "你有没有想过尝试一些新东西？",
+        "zh-Hant": "你有沒有想過嘗試一些新事物？",
+        "tr": "Hiç yeni bir şey denemeyi düşündün mü?",
+        "ja": "何か新しいことを試してみようと思ったことはありますか？",
+        "fr": "Tu as déjà pensé à essayer quelque chose de nouveau ?",
+        "it": "Hai mai pensato di provare qualcosa di nuovo?",
+        "ar": "هل فكرت يومًا في تجربة شيء جديد؟",
+        "vi": "Bạn đã bao giờ nghĩ đến việc thử một điều mới chưa?",
+        "ru": "Вы когда-нибудь думали попробовать что-нибудь новое?",
+        "ko": "새로운 걸 해 볼 생각을 해 본 적 있어요?",
+        "es": "¿Alguna vez has pensado en probar algo nuevo?",
+        "pt-BR": "Você já pensou em experimentar algo novo?",
+        "de": "Hast du schon einmal darüber nachgedacht, etwas Neues auszuprobieren?",
+        "id": "Pernahkah kamu terpikir untuk mencoba sesuatu yang baru?",
+        "th": "คุณเคยคิดอยากลองทำอะไรใหม่ ๆ บ้างไหม"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "你最喜欢的放松方式是什么？"
+        "zh-Hans": "你最喜欢的放松方式是什么？",
+        "zh-Hant": "你最喜歡用什麼方式放鬆？",
+        "tr": "Rahatlamanın en sevdiğin yolu nedir?",
+        "ja": "どんなふうにリラックスするのが一番好きですか？",
+        "fr": "Quelle est ta façon préférée de te détendre ?",
+        "it": "Qual è il tuo modo preferito per rilassarti?",
+        "ar": "ما طريقتك المفضلة للاسترخاء؟",
+        "vi": "Cách thư giãn yêu thích của bạn là gì?",
+        "ru": "Как вы предпочитаете расслабляться?",
+        "ko": "가장 좋아하는 휴식 방법은 뭐예요?",
+        "es": "¿Cuál es tu forma favorita de relajarte?",
+        "pt-BR": "Qual é a sua maneira preferida de relaxar?",
+        "de": "Wie entspannst du dich am liebsten?",
+        "id": "Apa cara favoritmu untuk bersantai?",
+        "th": "วิธีผ่อนคลายที่คุณชอบที่สุดคืออะไร"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "这让我想起了我还想问你的另一件事。"
+        "zh-Hans": "这让我想起了我还想问你的另一件事。",
+        "zh-Hant": "這讓我想起另一件想問你的事。",
+        "tr": "Bu bana sana sormak istediğim başka bir şeyi hatırlattı.",
+        "ja": "それで、もう一つ聞きたかったことを思い出しました。",
+        "fr": "Ça me fait penser à autre chose que je voulais te demander.",
+        "it": "Questo mi fa venire in mente un'altra cosa che volevo chiederti.",
+        "ar": "هذا يذكرني بشيء آخر كنت أريد أن أسألك عنه.",
+        "vi": "Điều đó làm mình nhớ đến một chuyện khác mình cũng muốn hỏi bạn.",
+        "ru": "Это напоминает мне ещё кое о чём, о чём я хотел вас спросить.",
+        "ko": "그 얘기를 들으니 물어보고 싶었던 게 하나 더 생각났어요.",
+        "es": "Eso me recuerda otra cosa que quería preguntarte.",
+        "pt-BR": "Isso me lembra outra coisa que eu queria perguntar a você.",
+        "de": "Das erinnert mich an etwas anderes, das ich dich fragen wollte.",
+        "id": "Itu mengingatkanku pada hal lain yang ingin kutanyakan kepadamu.",
+        "th": "นั่นทำให้ฉันนึกถึงอีกเรื่องที่อยากถามคุณ"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "你刚开始时感觉如何？"
+        "zh-Hans": "你刚开始时感觉如何？",
+        "zh-Hant": "你剛開始的時候感覺如何？",
+        "tr": "İlk başladığında nasıl hissettin?",
+        "ja": "始めたばかりの頃はどんな気持ちでしたか？",
+        "fr": "Comment tu t'es senti quand tu as commencé ?",
+        "it": "Come ti sei sentito quando hai iniziato?",
+        "ar": "كيف شعرت عندما بدأت لأول مرة؟",
+        "vi": "Bạn cảm thấy thế nào khi mới bắt đầu?",
+        "ru": "Что вы чувствовали, когда только начинали?",
+        "ko": "처음 시작했을 때 기분이 어땠어요?",
+        "es": "¿Cómo te sentiste cuando empezaste?",
+        "pt-BR": "Como você se sentiu quando começou?",
+        "de": "Wie hast du dich gefühlt, als du angefangen hast?",
+        "id": "Bagaimana perasaanmu saat pertama kali mulai?",
+        "th": "ตอนที่คุณเริ่มต้นใหม่ ๆ คุณรู้สึกอย่างไร"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "顺便问一下，你去过那家新咖啡馆吗？"
+        "zh-Hans": "顺便问一下，你去过那家新咖啡馆吗？",
+        "zh-Hant": "對了，你去過那家新開的咖啡館嗎？",
+        "tr": "Bu arada, yeni açılan o kafeye gittin mi?",
+        "ja": "ところで、あの新しいカフェには行ってみましたか？",
+        "fr": "Au fait, tu as essayé le nouveau café ?",
+        "it": "A proposito, hai provato il nuovo bar?",
+        "ar": "بالمناسبة، هل جربت المقهى الجديد؟",
+        "vi": "À này, bạn đã thử quán cà phê mới chưa?",
+        "ru": "Кстати, вы уже пробовали кофе в новом кафе?",
+        "ko": "그런데, 그 새 카페에 가 봤어요?",
+        "es": "Por cierto, ¿has probado el café nuevo?",
+        "pt-BR": "A propósito, você já foi ao novo café?",
+        "de": "Übrigens, warst du schon in dem neuen Café?",
+        "id": "Ngomong-ngomong, kamu sudah mencoba kafe baru itu?",
+        "th": "ว่าแต่ คุณเคยลองไปร้านกาแฟใหม่ร้านนั้นหรือยัง"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 4.395,
       "duration": 4.395,
       "translations": {
-        "zh-Hans": "这很有趣，说到兴趣，你玩什么运动吗？"
+        "zh-Hans": "这很有趣，说到兴趣，你玩什么运动吗？",
+        "zh-Hant": "真有意思。說到興趣，你有從事什麼運動嗎？",
+        "tr": "Bu ilginçmiş. Hobilerden söz açılmışken, herhangi bir spor yapıyor musun?",
+        "ja": "面白いですね。興味のあることといえば、何かスポーツをしていますか？",
+        "fr": "C'est intéressant. Et puisque tu parles de tes centres d'intérêt, tu pratiques un sport ?",
+        "it": "È interessante. A proposito dei tuoi interessi, pratichi qualche sport?",
+        "ar": "هذا مثير للاهتمام، وبالحديث عن اهتماماتك، هل تمارس أي رياضة؟",
+        "vi": "Thú vị thật đấy. Nhắc đến sở thích, bạn có chơi môn thể thao nào không?",
+        "ru": "Интересно. Кстати об увлечениях: вы занимаетесь каким-нибудь спортом?",
+        "ko": "재미있네요. 관심사 이야기가 나와서 말인데, 운동을 해요?",
+        "es": "Qué interesante. Hablando de intereses, ¿practicas algún deporte?",
+        "pt-BR": "Que interessante! Falando de interesses, você pratica algum esporte?",
+        "de": "Interessant. Apropos Interessen: Treibst du Sport?",
+        "id": "Menarik. Ngomong-ngomong soal minat, apakah kamu berolahraga?",
+        "th": "น่าสนใจนะ พูดถึงความสนใจแล้ว คุณเล่นกีฬาบ้างไหม"
       }
     }
   ]

@@ -15,7 +15,21 @@
       "end": 4.181,
       "duration": 4.181,
       "translations": {
-        "zh-Hans": "你是说我们应该更多地关注可再生能源。"
+        "zh-Hans": "你是说我们应该更多地关注可再生能源。",
+        "ar": "أنت تقول إن علينا التركيز أكثر على الطاقة المتجددة.",
+        "ja": "あなたは、再生可能エネルギーにもっと注目すべきだと言っているのですね。",
+        "pt-BR": "Você está dizendo que deveríamos focar mais na energia renovável.",
+        "vi": "Bạn đang nói rằng chúng ta nên tập trung hơn vào năng lượng tái tạo.",
+        "zh-Hant": "你是說我們應該更加重視再生能源。",
+        "ko": "재생 에너지에 더 집중해야 한다는 말씀이시군요.",
+        "es": "Dices que deberíamos centrarnos más en las energías renovables.",
+        "fr": "Vous dites que nous devrions davantage nous concentrer sur les énergies renouvelables.",
+        "de": "Sie sagen also, dass wir uns stärker auf erneuerbare Energien konzentrieren sollten.",
+        "it": "Stai dicendo che dovremmo concentrarci di più sulle energie rinnovabili.",
+        "ru": "Вы говорите, что нам следует уделять больше внимания возобновляемым источникам энергии.",
+        "id": "Maksud Anda, kita harus lebih berfokus pada energi terbarukan.",
+        "th": "คุณกำลังบอกว่าเราควรให้ความสำคัญกับพลังงานหมุนเวียนมากขึ้น",
+        "tr": "Yani yenilenebilir enerjiye daha fazla odaklanmamız gerektiğini söylüyorsunuz."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 4.523,
       "duration": 4.523,
       "translations": {
-        "zh-Hans": "我理解你关于需要更多公共交通的观点。"
+        "zh-Hans": "我理解你关于需要更多公共交通的观点。",
+        "ar": "أفهم وجهة نظرك بشأن الحاجة إلى مزيد من وسائل النقل العام.",
+        "ja": "公共交通機関をもっと増やす必要があるというあなたの意見は分かります。",
+        "pt-BR": "Entendo seu ponto sobre a necessidade de mais transporte público.",
+        "vi": "Tôi hiểu quan điểm của bạn về việc cần có thêm phương tiện giao thông công cộng.",
+        "zh-Hant": "我理解你認為需要增加大眾運輸的看法。",
+        "ko": "대중교통이 더 필요하다는 말씀은 이해합니다.",
+        "es": "Entiendo tu punto sobre la necesidad de contar con más transporte público.",
+        "fr": "Je comprends votre point de vue sur la nécessité de développer les transports en commun.",
+        "de": "Ich verstehe Ihren Standpunkt, dass wir mehr öffentlichen Nahverkehr brauchen.",
+        "it": "Capisco il tuo punto sulla necessità di avere più trasporti pubblici.",
+        "ru": "Я понимаю вашу мысль о необходимости расширить общественный транспорт.",
+        "id": "Saya memahami pendapat Anda bahwa kita membutuhkan lebih banyak transportasi umum.",
+        "th": "ผมเข้าใจประเด็นของคุณเรื่องความจำเป็นที่จะต้องมีระบบขนส่งสาธารณะมากขึ้น",
+        "tr": "Daha fazla toplu taşımaya ihtiyaç duyduğumuz konusundaki görüşünüzü anlıyorum."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 4.096,
       "duration": 4.096,
       "translations": {
-        "zh-Hans": "你建议我们对污染实施更严格的法规。"
+        "zh-Hans": "你建议我们对污染实施更严格的法规。",
+        "ar": "أنت تقترح أن نطبّق لوائح أكثر صرامة بشأن التلوث.",
+        "ja": "あなたは、汚染に対してより厳しい規制を設けることを提案しているのですね。",
+        "pt-BR": "Você sugere que adotemos regras mais rigorosas contra a poluição.",
+        "vi": "Bạn đề xuất chúng ta áp dụng các quy định nghiêm ngặt hơn về ô nhiễm.",
+        "zh-Hant": "你的建議是，我們應該對污染實施更嚴格的規範。",
+        "ko": "오염에 대해 더 엄격한 규제를 시행하자는 제안이시군요.",
+        "es": "Sugieres que apliquemos normas más estrictas contra la contaminación.",
+        "fr": "Vous proposez que nous mettions en place une réglementation plus stricte contre la pollution.",
+        "de": "Sie schlagen vor, strengere Vorschriften gegen die Umweltverschmutzung einzuführen.",
+        "it": "Suggerisci di introdurre norme più severe contro l'inquinamento.",
+        "ru": "Вы предлагаете ввести более строгие правила в отношении загрязнения окружающей среды.",
+        "id": "Anda menyarankan agar kita menerapkan peraturan yang lebih ketat terkait polusi.",
+        "th": "คุณเสนอว่าเราควรใช้มาตรการควบคุมมลพิษที่เข้มงวดขึ้น",
+        "tr": "Kirliliğe karşı daha sıkı düzenlemeler uygulamamızı öneriyorsunuz."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.968,
       "duration": 3.968,
       "translations": {
-        "zh-Hans": "你提到科技可以改善教育成果。"
+        "zh-Hans": "你提到科技可以改善教育成果。",
+        "ar": "ذكرتَ أن التكنولوجيا يمكن أن تحسّن نتائج التعليم.",
+        "ja": "テクノロジーによって教育の成果を高められると、あなたは言っていましたね。",
+        "pt-BR": "Você mencionou que a tecnologia pode melhorar os resultados educacionais.",
+        "vi": "Bạn có nhắc rằng công nghệ có thể cải thiện kết quả giáo dục.",
+        "zh-Hant": "你提到科技可以改善教育成效。",
+        "ko": "기술이 교육 성과를 향상시킬 수 있다고 말씀하셨죠.",
+        "es": "Mencionaste que la tecnología puede mejorar los resultados educativos.",
+        "fr": "Vous avez mentionné que la technologie peut améliorer les résultats scolaires.",
+        "de": "Sie haben erwähnt, dass Technologie die Bildungsergebnisse verbessern kann.",
+        "it": "Hai detto che la tecnologia può migliorare i risultati dell'istruzione.",
+        "ru": "Вы упомянули, что технологии могут улучшить результаты обучения.",
+        "id": "Anda menyebutkan bahwa teknologi dapat meningkatkan hasil pendidikan.",
+        "th": "คุณพูดถึงว่าเทคโนโลยีสามารถช่วยยกระดับผลลัพธ์ทางการศึกษาได้",
+        "tr": "Teknolojinin eğitim sonuçlarını iyileştirebileceğini belirttiniz."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "我同意减少浪费对环境至关重要。"
+        "zh-Hans": "我同意减少浪费对环境至关重要。",
+        "ar": "أوافق على أن الحد من النفايات أمر بالغ الأهمية للبيئة.",
+        "ja": "廃棄物を減らすことが環境にとって重要だという点に同意します。",
+        "pt-BR": "Concordo que reduzir o desperdício é crucial para o meio ambiente.",
+        "vi": "Tôi đồng ý rằng giảm lãng phí là điều thiết yếu đối với môi trường.",
+        "zh-Hant": "我同意減少浪費對環境至關重要。",
+        "ko": "쓰레기와 낭비를 줄이는 것이 환경에 매우 중요하다는 데 동의합니다.",
+        "es": "Estoy de acuerdo en que reducir los residuos es fundamental para el medio ambiente.",
+        "fr": "Je suis d'accord : réduire les déchets est essentiel pour l'environnement.",
+        "de": "Ich stimme zu, dass die Verringerung von Abfall für die Umwelt entscheidend ist.",
+        "it": "Sono d'accordo: ridurre gli sprechi è fondamentale per l'ambiente.",
+        "ru": "Я согласен, что сокращение отходов крайне важно для окружающей среды.",
+        "id": "Saya setuju bahwa mengurangi limbah sangat penting bagi lingkungan.",
+        "th": "ผมเห็นด้วยว่าการลดขยะและการสูญเปล่าเป็นเรื่องสำคัญอย่างยิ่งต่อสิ่งแวดล้อม",
+        "tr": "Atıkları azaltmanın çevre için çok önemli olduğuna katılıyorum."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "我同意你关于心理健康意识重要性的观点。"
+        "zh-Hans": "我同意你关于心理健康意识重要性的观点。",
+        "ar": "أوافقك على أهمية التوعية بالصحة النفسية.",
+        "ja": "心の健康への理解を深めることが重要だという点に同意します。",
+        "pt-BR": "Concordo com você sobre a importância da conscientização em saúde mental.",
+        "vi": "Tôi đồng ý với bạn về tầm quan trọng của nhận thức về sức khỏe tinh thần.",
+        "zh-Hant": "我同意你所說的心理健康意識的重要性。",
+        "ko": "정신 건강에 대한 인식의 중요성에 대해서는 저도 동의합니다.",
+        "es": "Coincido contigo en la importancia de crear conciencia sobre la salud mental.",
+        "fr": "Je suis d'accord avec vous sur l'importance de sensibiliser à la santé mentale.",
+        "de": "Ich stimme Ihnen zu, was die Bedeutung eines stärkeren Bewusstseins für psychische Gesundheit betrifft.",
+        "it": "Sono d'accordo con te sull'importanza di sensibilizzare l'opinione pubblica sulla salute mentale.",
+        "ru": "Я согласен с вами в том, что важно повышать осведомлённость о психическом здоровье.",
+        "id": "Saya setuju dengan Anda tentang pentingnya kesadaran akan kesehatan mental.",
+        "th": "ผมเห็นด้วยกับคุณว่าการตระหนักถึงสุขภาพจิตเป็นเรื่องสำคัญ",
+        "tr": "Ruh sağlığı konusunda farkındalığın önemine sizinle birlikte katılıyorum."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 4.224,
       "duration": 4.224,
       "translations": {
-        "zh-Hans": "我们都认为教育应该对所有人开放。"
+        "zh-Hans": "我们都认为教育应该对所有人开放。",
+        "ar": "نتفق كلانا على أن التعليم ينبغي أن يكون متاحًا للجميع.",
+        "ja": "教育は誰もが受けられるべきだという点で、私たちは一致しています。",
+        "pt-BR": "Nós dois concordamos que a educação deve ser acessível a todos.",
+        "vi": "Cả hai chúng ta đều cho rằng giáo dục nên dành cho tất cả mọi người.",
+        "zh-Hant": "我們都認為教育應該人人都能享有。",
+        "ko": "우리 둘 다 교육은 모든 사람이 받을 수 있어야 한다고 생각합니다.",
+        "es": "Ambos creemos que la educación debería estar al alcance de todos.",
+        "fr": "Nous sommes tous les deux d'accord pour dire que l'éducation doit être accessible à tous.",
+        "de": "Wir sind uns beide einig, dass Bildung für alle zugänglich sein sollte.",
+        "it": "Entrambi pensiamo che l'istruzione debba essere accessibile a tutti.",
+        "ru": "Мы оба считаем, что образование должно быть доступно каждому.",
+        "id": "Kita berdua berpendapat bahwa pendidikan harus dapat diakses oleh semua orang.",
+        "th": "เราทั้งคู่คิดว่าการศึกษาควรเข้าถึงได้สำหรับทุกคน",
+        "tr": "İkimiz de eğitimin herkes için erişilebilir olması gerektiğini düşünüyoruz."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.968,
       "duration": 3.968,
       "translations": {
-        "zh-Hans": "我们都同意创新推动进步。"
+        "zh-Hans": "我们都同意创新推动进步。",
+        "ar": "يمكننا أن نتفق جميعًا على أن الابتكار يدفع عجلة التقدم.",
+        "ja": "イノベーションが進歩を促すという点では、私たちは一致できます。",
+        "pt-BR": "Podemos concordar que a inovação impulsiona o progresso.",
+        "vi": "Cả hai chúng ta đều có thể đồng ý rằng đổi mới thúc đẩy tiến bộ.",
+        "zh-Hant": "我們都同意創新能推動進步。",
+        "ko": "혁신이 발전을 이끈다는 점에는 우리 모두 동의할 수 있습니다.",
+        "es": "Ambos podemos estar de acuerdo en que la innovación impulsa el progreso.",
+        "fr": "Nous pouvons tous les deux convenir que l'innovation favorise le progrès.",
+        "de": "Wir können uns beide darauf einigen, dass Innovation den Fortschritt vorantreibt.",
+        "it": "Possiamo entrambi concordare sul fatto che l'innovazione favorisca il progresso.",
+        "ru": "Мы оба можем согласиться, что инновации способствуют прогрессу.",
+        "id": "Kita berdua dapat sepakat bahwa inovasi mendorong kemajuan.",
+        "th": "เราทั้งคู่เห็นพ้องกันได้ว่านวัตกรรมขับเคลื่อนความก้าวหน้า",
+        "tr": "İnovasyonun ilerlemeyi desteklediği konusunda ikimiz de hemfikir olabiliriz."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.968,
       "duration": 3.968,
       "translations": {
-        "zh-Hans": "然而，我在资金分配上看到一个挑战。"
+        "zh-Hans": "然而，我在资金分配上看到一个挑战。",
+        "ar": "لكنني أرى تحديًا في تخصيص التمويل.",
+        "ja": "ただ、資金配分には課題があると思います。",
+        "pt-BR": "No entanto, vejo um desafio na distribuição do financiamento.",
+        "vi": "Tuy nhiên, tôi thấy có một thách thức trong việc phân bổ nguồn kinh phí.",
+        "zh-Hant": "不過，我認為資金分配方面存在一項挑戰。",
+        "ko": "하지만 자금 배분에는 어려움이 있다고 봅니다.",
+        "es": "Sin embargo, veo un desafío en la asignación de los fondos.",
+        "fr": "Cependant, je vois une difficulté dans la répartition des financements.",
+        "de": "Allerdings sehe ich eine Herausforderung bei der Verteilung der finanziellen Mittel.",
+        "it": "Tuttavia, vedo una difficoltà nella distribuzione dei finanziamenti.",
+        "ru": "Однако я вижу проблему в распределении финансирования.",
+        "id": "Namun, saya melihat adanya tantangan dalam pengalokasian dana.",
+        "th": "อย่างไรก็ตาม ผมมองว่าการจัดสรรงบประมาณเป็นความท้าทายอย่างหนึ่ง",
+        "tr": "Ancak fonların nasıl dağıtılacağı konusunda bir zorluk görüyorum."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "我们不同的地方在于我们应该如何实施这些改变。"
+        "zh-Hans": "我们不同的地方在于我们应该如何实施这些改变。",
+        "ar": "يكمن اختلافنا في كيفية تنفيذ هذه التغييرات.",
+        "ja": "私たちの意見が分かれるのは、こうした変更をどう実施するかという点です。",
+        "pt-BR": "Nossa diferença está em como devemos implementar essas mudanças.",
+        "vi": "Điểm khác biệt giữa chúng ta là cách triển khai những thay đổi này.",
+        "zh-Hant": "我們的分歧在於應該如何實施這些改變。",
+        "ko": "우리의 의견이 다른 부분은 이러한 변화를 어떻게 시행할지입니다.",
+        "es": "En lo que diferimos es en cómo deberíamos aplicar estos cambios.",
+        "fr": "Notre désaccord porte sur la manière dont nous devrions mettre ces changements en œuvre.",
+        "de": "Wir unterscheiden uns darin, wie diese Änderungen umgesetzt werden sollten.",
+        "it": "La nostra divergenza riguarda il modo in cui dovremmo attuare questi cambiamenti.",
+        "ru": "Мы расходимся во мнениях относительно того, как следует осуществить эти изменения.",
+        "id": "Perbedaan pendapat kita terletak pada cara menerapkan perubahan ini.",
+        "th": "สิ่งที่เราเห็นต่างกันคือเราควรดำเนินการเปลี่ยนแปลงเหล่านี้อย่างไร",
+        "tr": "Farklı düşündüğümüz nokta, bu değişiklikleri nasıl uygulamamız gerektiği."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "我担心的是可能涉及的成本。"
+        "zh-Hans": "我担心的是可能涉及的成本。",
+        "ar": "مصدر قلقي هو التكاليف المحتملة.",
+        "ja": "私が懸念しているのは、発生する可能性のある費用です。",
+        "pt-BR": "Minha preocupação são os custos potenciais envolvidos.",
+        "vi": "Mối lo ngại của tôi là những chi phí tiềm ẩn liên quan.",
+        "zh-Hant": "我擔心的是可能產生的成本。",
+        "ko": "제가 우려하는 점은 발생할 수 있는 비용입니다.",
+        "es": "Mi preocupación son los posibles costes que esto implica.",
+        "fr": "Ce qui me préoccupe, ce sont les coûts potentiels.",
+        "de": "Meine Sorge gilt den möglicherweise entstehenden Kosten.",
+        "it": "La mia preoccupazione riguarda i possibili costi.",
+        "ru": "Меня беспокоят возможные расходы.",
+        "id": "Kekhawatiran saya adalah biaya yang mungkin timbul.",
+        "th": "สิ่งที่ผมกังวลคือต้นทุนที่อาจเกิดขึ้น",
+        "tr": "Benim endişem, ortaya çıkabilecek maliyetlerle ilgili."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "我看到好处，但我担心风险。"
+        "zh-Hans": "我看到好处，但我担心风险。",
+        "ar": "أرى الفوائد، لكنني قلق بشأن المخاطر.",
+        "ja": "メリットは分かりますが、リスクが心配です。",
+        "pt-BR": "Vejo os benefícios, mas estou preocupado com os riscos.",
+        "vi": "Tôi thấy những lợi ích, nhưng lo ngại về các rủi ro.",
+        "zh-Hant": "我看得到其中的好處，但也擔心風險。",
+        "ko": "장점은 보이지만 위험이 걱정됩니다.",
+        "es": "Veo los beneficios, pero me preocupan los riesgos.",
+        "fr": "Je vois les avantages, mais les risques m'inquiètent.",
+        "de": "Ich sehe die Vorteile, mache mir aber Sorgen über die Risiken.",
+        "it": "Vedo i vantaggi, ma sono preoccupato per i rischi.",
+        "ru": "Я вижу преимущества, но меня беспокоят риски.",
+        "id": "Saya melihat manfaatnya, tetapi saya khawatir akan risikonya.",
+        "th": "ผมเห็นประโยชน์ แต่ก็กังวลเกี่ยวกับความเสี่ยง",
+        "tr": "Faydalarını görüyorum ama riskler konusunda endişeliyim."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "总的来说，我们需要一种平衡的方法来考虑双方的观点。"
+        "zh-Hans": "总的来说，我们需要一种平衡的方法来考虑双方的观点。",
+        "ar": "بوجه عام، نحتاج إلى نهج متوازن يأخذ كلا الرأيين في الاعتبار.",
+        "ja": "全体として、双方の意見を考慮したバランスの取れたアプローチが必要です。",
+        "pt-BR": "De modo geral, precisamos de uma abordagem equilibrada que considere os dois pontos de vista.",
+        "vi": "Nhìn chung, chúng ta cần một cách tiếp cận cân bằng, xét đến cả hai quan điểm.",
+        "zh-Hant": "總的來說，我們需要兼顧雙方觀點的平衡做法。",
+        "ko": "전반적으로 양쪽의 관점을 모두 고려하는 균형 잡힌 접근이 필요합니다.",
+        "es": "En general, necesitamos un enfoque equilibrado que tenga en cuenta ambos puntos de vista.",
+        "fr": "Dans l'ensemble, nous avons besoin d'une approche équilibrée qui tienne compte des deux points de vue.",
+        "de": "Insgesamt brauchen wir einen ausgewogenen Ansatz, der beide Sichtweisen berücksichtigt.",
+        "it": "Nel complesso, abbiamo bisogno di un approccio equilibrato che tenga conto di entrambi i punti di vista.",
+        "ru": "В целом нам нужен сбалансированный подход, учитывающий обе точки зрения.",
+        "id": "Secara keseluruhan, kita membutuhkan pendekatan yang seimbang dan mempertimbangkan kedua sudut pandang.",
+        "th": "โดยรวมแล้ว เราต้องใช้แนวทางที่สมดุลและคำนึงถึงมุมมองของทั้งสองฝ่าย",
+        "tr": "Genel olarak her iki görüşü de dikkate alan dengeli bir yaklaşıma ihtiyacımız var."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 5.077,
       "duration": 5.077,
       "translations": {
-        "zh-Hans": "总之，我认为我们应该优先考虑可持续的做法。"
+        "zh-Hans": "总之，我认为我们应该优先考虑可持续的做法。",
+        "ar": "في الختام، أعتقد أنه ينبغي أن نعطي الأولوية للممارسات المستدامة.",
+        "ja": "結論として、持続可能な取り組みを優先すべきだと思います。",
+        "pt-BR": "Para concluir, acredito que devemos priorizar práticas sustentáveis.",
+        "vi": "Tóm lại, tôi tin rằng chúng ta nên ưu tiên các hoạt động bền vững.",
+        "zh-Hant": "總之，我認為我們應該優先採取永續的做法。",
+        "ko": "결론적으로, 지속 가능한 방식을 우선해야 한다고 생각합니다.",
+        "es": "En conclusión, creo que deberíamos dar prioridad a las prácticas sostenibles.",
+        "fr": "En conclusion, je pense que nous devrions donner la priorité aux pratiques durables.",
+        "de": "Abschließend bin ich der Meinung, dass wir nachhaltigen Praktiken Vorrang geben sollten.",
+        "it": "In conclusione, credo che dovremmo dare priorità alle pratiche sostenibili.",
+        "ru": "В заключение хочу сказать, что нам следует отдавать приоритет устойчивым практикам.",
+        "id": "Kesimpulannya, saya yakin kita harus memprioritaskan praktik yang berkelanjutan.",
+        "th": "โดยสรุป ผมคิดว่าเราควรให้ความสำคัญกับแนวทางปฏิบัติที่ยั่งยืนเป็นอันดับแรก",
+        "tr": "Sonuç olarak, sürdürülebilir uygulamalara öncelik vermemiz gerektiğine inanıyorum."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.181,
       "duration": 4.181,
       "translations": {
-        "zh-Hans": "考虑到所有因素，分阶段的方法似乎明智。"
+        "zh-Hans": "考虑到所有因素，分阶段的方法似乎明智。",
+        "ar": "بعد أخذ كل العوامل في الاعتبار، يبدو النهج المرحلي حكيمًا.",
+        "ja": "すべてを考慮すると、段階的な進め方が賢明だと思います。",
+        "pt-BR": "Levando tudo em conta, uma abordagem por etapas parece sensata.",
+        "vi": "Xét mọi khía cạnh, một cách tiếp cận từng bước có vẻ sáng suốt.",
+        "zh-Hant": "綜合考量所有因素，分階段推行似乎比較明智。",
+        "ko": "모든 점을 고려하면 단계적으로 접근하는 것이 현명해 보입니다.",
+        "es": "Teniendo todo en cuenta, parece sensato adoptar un enfoque por fases.",
+        "fr": "Tout bien considéré, une approche progressive semble judicieuse.",
+        "de": "Wenn man alles berücksichtigt, erscheint ein schrittweises Vorgehen sinnvoll.",
+        "it": "Tenendo conto di tutto, un approccio graduale sembra sensato.",
+        "ru": "Если учесть всё, поэтапный подход кажется разумным.",
+        "id": "Dengan mempertimbangkan semuanya, pendekatan bertahap tampaknya bijaksana.",
+        "th": "เมื่อพิจารณาทุกอย่างแล้ว การดำเนินการเป็นระยะดูจะเป็นแนวทางที่รอบคอบ",
+        "tr": "Her şeyi göz önünde bulundurunca aşamalı bir yaklaşım akıllıca görünüyor."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 4.523,
       "duration": 4.523,
       "translations": {
-        "zh-Hans": "在权衡各种选择后，灵活的计划是可取的。"
+        "zh-Hans": "在权衡各种选择后，灵活的计划是可取的。",
+        "ar": "بعد الموازنة بين الخيارات، من المستحسن اعتماد خطة مرنة.",
+        "ja": "選択肢を比較した結果、柔軟な計画が望ましいでしょう。",
+        "pt-BR": "Depois de avaliar as opções, é recomendável adotar um plano flexível.",
+        "vi": "Sau khi cân nhắc các lựa chọn, một kế hoạch linh hoạt sẽ là lựa chọn phù hợp.",
+        "zh-Hant": "權衡各種選項後，採用彈性方案較為理想。",
+        "ko": "선택지를 모두 따져 보면 유연한 계획이 바람직합니다.",
+        "es": "Después de sopesar las opciones, es recomendable adoptar un plan flexible.",
+        "fr": "Après avoir pesé les différentes options, il serait préférable d'adopter un plan flexible.",
+        "de": "Nach Abwägung der Möglichkeiten empfiehlt sich ein flexibler Plan.",
+        "it": "Dopo aver valutato le opzioni, è consigliabile adottare un piano flessibile.",
+        "ru": "Взвесив все варианты, разумно было бы выбрать гибкий план.",
+        "id": "Setelah mempertimbangkan berbagai pilihan, sebaiknya kita menggunakan rencana yang fleksibel.",
+        "th": "หลังจากชั่งน้ำหนักทางเลือกต่าง ๆ แล้ว การใช้แผนที่ยืดหยุ่นก็น่าจะเหมาะสม",
+        "tr": "Seçenekleri değerlendirdikten sonra esnek bir plan benimsemek yerinde olur."
       }
     }
   ]

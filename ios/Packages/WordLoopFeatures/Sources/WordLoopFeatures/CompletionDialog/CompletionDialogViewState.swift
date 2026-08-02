@@ -1,6 +1,6 @@
 public struct CompletionDialogViewState: Equatable, Sendable {
     public static let fixtureCourseID = "modern-family-s01e01"
-    public static let fixedErrorMessage = "暂时无法重置进度，请稍后重试。"
+    public static var fixedErrorMessage: String { CompletionDialogCopy.current.resetError }
 
     public var kind: CompletionDialogKind
     public var courseID: String

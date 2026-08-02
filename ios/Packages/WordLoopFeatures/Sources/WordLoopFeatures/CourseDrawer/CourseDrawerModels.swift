@@ -57,11 +57,11 @@ public struct CourseDrawerCourse: Identifiable, Equatable, Sendable {
     }
 
     public var completionAccessibilityValue: String? {
-        completionCount > 0 ? "已完成 \(completionCount) 次" : nil
+        completionCount > 0 ? "\(CourseDrawerStatusCopy.currentLocale.completed) \(completionCount)" : nil
     }
 
     public var selectionAccessibilityValue: String {
-        isSelected ? "当前课程" : "未选择"
+        isSelected ? CourseDrawerStatusCopy.currentLocale.current : CourseDrawerStatusCopy.currentLocale.notSelected
     }
 
     func matches(_ query: String) -> Bool {

@@ -5,6 +5,7 @@ public struct LiveStudyView: View {
     private let beforeStart: @Sendable () async -> Void
     private let deleteAllData: @MainActor () async throws -> Void
     @Environment(\.scenePhase) private var scenePhase
+    private var copy: WordLoopCopy { .current }
 
     public init(
         store: StudyStore,
@@ -41,15 +42,15 @@ public struct LiveStudyView: View {
             Color.clear
                 .frame(width: 1, height: 1)
                 .accessibilityElement(children: .ignore)
-                .accessibilityLabel("真实学习页")
+                .accessibilityLabel(copy.liveStudyPage)
                 .accessibilityIdentifier("live-study.page")
 
             if store.state.phase == .loading {
                 ProgressView()
-                    .accessibilityLabel("正在加载课程")
+                    .accessibilityLabel(copy.loadingCourse)
                     .accessibilityIdentifier("live-study.loading")
             } else if store.state.phase == .failed {
-                Button("重试") { Task { await store.retry() } }
+                Button(copy.retry) { Task { await store.retry() } }
                     .accessibilityIdentifier("live-study.retry")
             }
         }

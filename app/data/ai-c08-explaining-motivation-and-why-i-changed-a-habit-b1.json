@@ -15,7 +15,21 @@
       "end": 2.219,
       "duration": 2.219,
       "translations": {
-        "zh-Hans": "我经常不吃早餐。"
+        "vi": "Tôi thường bỏ bữa sáng.",
+        "id": "Saya sering melewatkan sarapan.",
+        "zh-Hans": "我经常不吃早餐。",
+        "es": "A menudo me saltaba el desayuno.",
+        "fr": "Je sautais souvent le petit-déjeuner.",
+        "de": "Ich ließ das Frühstück oft aus.",
+        "ar": "كنت أتخطّى وجبة الإفطار كثيرًا.",
+        "it": "Saltavo spesso la colazione.",
+        "ja": "朝食を抜くことがよくありました。",
+        "pt-BR": "Eu costumava pular o café da manhã.",
+        "zh-Hant": "我常常不吃早餐。",
+        "ko": "아침을 자주 거르곤 했어요.",
+        "ru": "Я часто пропускал завтрак.",
+        "th": "ฉันมักจะไม่กินอาหารเช้า",
+        "tr": "Kahvaltıyı sık sık atlardım."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.712,
       "duration": 3.712,
       "translations": {
-        "zh-Hans": "我过去常常看到半夜。"
+        "vi": "Trước đây tôi thường xem TV đến tận nửa đêm.",
+        "id": "Dulu saya sering menonton TV sampai tengah malam.",
+        "zh-Hans": "我过去常常看到半夜。",
+        "es": "Antes solía ver la televisión hasta medianoche.",
+        "fr": "Avant, je regardais la télévision jusqu'à minuit.",
+        "de": "Früher sah ich bis Mitternacht fern.",
+        "ar": "كنت أشاهد التلفاز حتى منتصف الليل.",
+        "it": "Una volta guardavo la TV fino a mezzanotte.",
+        "ja": "以前は真夜中までテレビを見ていました。",
+        "pt-BR": "Eu costumava assistir à televisão até meia-noite.",
+        "zh-Hant": "我以前常常看電視看到半夜。",
+        "ko": "예전에는 자정까지 TV를 보곤 했어요.",
+        "ru": "Раньше я часто смотрел телевизор до полуночи.",
+        "th": "เมื่อก่อนฉันมักดูทีวีจนถึงเที่ยงคืน",
+        "tr": "Eskiden gece yarısına kadar televizyon izlerdim."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 1.707,
       "duration": 1.707,
       "translations": {
-        "zh-Hans": "我很少锻炼。"
+        "vi": "Tôi hiếm khi tập thể dục.",
+        "id": "Saya jarang berolahraga.",
+        "zh-Hans": "我很少锻炼。",
+        "es": "Rara vez hacía ejercicio.",
+        "fr": "Je faisais rarement de l'exercice.",
+        "de": "Ich trieb nur selten Sport.",
+        "ar": "قلّما كنت أمارس الرياضة.",
+        "it": "Facevo raramente attività fisica.",
+        "ja": "ほとんど運動をしていませんでした。",
+        "pt-BR": "Eu quase nunca fazia exercícios.",
+        "zh-Hant": "我很少運動。",
+        "ko": "운동을 거의 하지 않았어요.",
+        "ru": "Я почти не занимался спортом.",
+        "th": "ฉันไม่ค่อยได้ออกกำลังกาย",
+        "tr": "Nadiren egzersiz yapardım."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我在工作中总是感到压力很大。"
+        "vi": "Công việc khiến tôi thường xuyên căng thẳng.",
+        "id": "Saya terus-menerus merasa stres di tempat kerja.",
+        "zh-Hans": "我在工作中总是感到压力很大。",
+        "es": "En el trabajo estaba constantemente estresado.",
+        "fr": "J'étais constamment stressé au travail.",
+        "de": "Bei der Arbeit war ich ständig gestresst.",
+        "ar": "كنت أشعر بالتوتر باستمرار في العمل.",
+        "it": "Ero costantemente stressato al lavoro.",
+        "ja": "仕事でいつもストレスを感じていました。",
+        "pt-BR": "Eu vivia estressado no trabalho.",
+        "zh-Hant": "我在工作時總是壓力很大。",
+        "ko": "직장에서 늘 스트레스를 받았어요.",
+        "ru": "На работе я постоянно испытывал стресс.",
+        "th": "ฉันเครียดกับงานอยู่ตลอดเวลา",
+        "tr": "İş yerinde sürekli stresliydim."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "一次健康问题让我重新思考我的习惯。"
+        "vi": "Một lần lo ngại về sức khỏe khiến tôi suy nghĩ lại về những thói quen của mình.",
+        "id": "Masalah kesehatan membuat saya memikirkan kembali kebiasaan saya.",
+        "zh-Hans": "一次健康问题让我重新思考我的习惯。",
+        "es": "Un susto relacionado con mi salud me hizo replantearme mis hábitos.",
+        "fr": "Un problème de santé m'a fait remettre mes habitudes en question.",
+        "de": "Ein gesundheitlicher Schreck brachte mich dazu, meine Gewohnheiten zu überdenken.",
+        "ar": "دفعني تعرضي لمشكلة صحية إلى إعادة التفكير في عاداتي.",
+        "it": "Un problema di salute mi ha spinto a ripensare alle mie abitudini.",
+        "ja": "健康への不安をきっかけに、生活習慣を見直しました。",
+        "pt-BR": "Um susto com a minha saúde me fez repensar meus hábitos.",
+        "zh-Hant": "一次健康警訊讓我重新思考自己的生活習慣。",
+        "ko": "건강에 이상 신호가 와서 생활 습관을 다시 생각하게 됐어요.",
+        "ru": "Проблемы со здоровьем заставили меня пересмотреть свои привычки.",
+        "th": "ปัญหาสุขภาพครั้งหนึ่งทำให้ฉันทบทวนนิสัยของตัวเอง",
+        "tr": "Yaşadığım bir sağlık sorunu alışkanlıklarımı yeniden düşünmeme neden oldu."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "我改变的原因是为了改善健康。"
+        "vi": "Lý do tôi thay đổi là để cải thiện sức khỏe.",
+        "id": "Alasan saya berubah adalah untuk meningkatkan kesehatan.",
+        "zh-Hans": "我改变的原因是为了改善健康。",
+        "es": "Cambié para mejorar mi salud.",
+        "fr": "J'ai changé pour améliorer ma santé.",
+        "de": "Ich änderte etwas, um meine Gesundheit zu verbessern.",
+        "ar": "كان سبب تغييري لعاداتي هو تحسين صحتي.",
+        "it": "Ho cambiato le mie abitudini per migliorare la salute.",
+        "ja": "健康を改善するために、習慣を変えました。",
+        "pt-BR": "Mudei meus hábitos para melhorar minha saúde.",
+        "zh-Hant": "我改變的原因是想改善健康。",
+        "ko": "제가 바꾼 이유는 건강을 개선하고 싶었기 때문이에요.",
+        "ru": "Я изменился, чтобы улучшить своё здоровье.",
+        "th": "เหตุผลที่ฉันเปลี่ยนก็เพื่อสุขภาพที่ดีขึ้น",
+        "tr": "Değişmemin nedeni sağlığımı iyileştirmekti."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "我想在白天感到更有活力。"
+        "vi": "Tôi muốn cảm thấy tràn đầy năng lượng hơn trong ngày.",
+        "id": "Saya ingin merasa lebih berenergi sepanjang hari.",
+        "zh-Hans": "我想在白天感到更有活力。",
+        "es": "Quería tener más energía durante el día.",
+        "fr": "Je voulais avoir plus d'énergie pendant la journée.",
+        "de": "Ich wollte mich tagsüber energiegeladener fühlen.",
+        "ar": "كنت أريد أن أشعر بمزيد من النشاط خلال النهار.",
+        "it": "Volevo sentirmi più energico durante la giornata.",
+        "ja": "日中、もっと元気に過ごしたいと思いました。",
+        "pt-BR": "Eu queria me sentir mais disposto durante o dia.",
+        "zh-Hant": "我想讓自己白天更有活力。",
+        "ko": "낮 동안 더 활력을 느끼고 싶었어요.",
+        "ru": "Мне хотелось чувствовать больше энергии в течение дня.",
+        "th": "ฉันอยากรู้สึกกระปรี้กระเปร่ามากขึ้นในระหว่างวัน",
+        "tr": "Gün içinde kendimi daha enerjik hissetmek istiyordum."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 4.48,
       "duration": 4.48,
       "translations": {
-        "zh-Hans": "我总是感到疲惫，所以我知道我必须改变。"
+        "vi": "Tôi lúc nào cũng mệt mỏi, nên biết mình phải thay đổi.",
+        "id": "Saya merasa lelah sepanjang waktu, jadi saya tahu harus berubah.",
+        "zh-Hans": "我总是感到疲惫，所以我知道我必须改变。",
+        "es": "Me sentía cansado todo el tiempo, así que supe que tenía que cambiar.",
+        "fr": "J'étais tout le temps fatigué, alors j'ai compris qu'il fallait que je change.",
+        "de": "Ich war ständig müde, deshalb wusste ich, dass ich etwas ändern musste.",
+        "ar": "كنت أشعر بالتعب طوال الوقت، لذلك أدركت أن عليّ التغيير.",
+        "it": "Ero sempre stanco, quindi sapevo di dover cambiare.",
+        "ja": "いつも疲れていたので、変わらなければならないと気づきました。",
+        "pt-BR": "Eu me sentia cansado o tempo todo, então percebi que precisava mudar.",
+        "zh-Hant": "我一直都覺得很累，所以知道自己必須改變。",
+        "ko": "늘 피곤해서 이제는 바꿔야 한다는 걸 알았어요.",
+        "ru": "Я постоянно чувствовал усталость и понял, что должен что-то изменить.",
+        "th": "ฉันรู้สึกเหนื่อยตลอดเวลา จึงรู้ว่าต้องเปลี่ยนแปลง",
+        "tr": "Sürekli yorgun hissediyordum, bu yüzden değişmem gerektiğini biliyordum."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我开始早点上床睡觉。"
+        "vi": "Tôi bắt đầu đi ngủ sớm hơn.",
+        "id": "Saya mulai tidur lebih awal.",
+        "zh-Hans": "我开始早点上床睡觉。",
+        "es": "Empecé a acostarme más temprano.",
+        "fr": "J'ai commencé à me coucher plus tôt.",
+        "de": "Ich begann, früher schlafen zu gehen.",
+        "ar": "بدأت أخلد إلى النوم في وقت أبكر.",
+        "it": "Ho iniziato ad andare a letto prima.",
+        "ja": "早めに寝るようになりました。",
+        "pt-BR": "Comecei a ir para a cama mais cedo.",
+        "zh-Hant": "我開始早點上床睡覺。",
+        "ko": "더 일찍 잠자리에 들기 시작했어요.",
+        "ru": "Я начал ложиться спать раньше.",
+        "th": "ฉันเริ่มเข้านอนเร็วขึ้น",
+        "tr": "Daha erken yatmaya başladım."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.261,
       "duration": 2.261,
       "translations": {
-        "zh-Hans": "我决定加入一个健身房。"
+        "vi": "Tôi quyết định đăng ký tập gym.",
+        "id": "Saya memutuskan untuk bergabung dengan pusat kebugaran.",
+        "zh-Hans": "我决定加入一个健身房。",
+        "es": "Decidí apuntarme a un gimnasio.",
+        "fr": "J'ai décidé de m'inscrire dans une salle de sport.",
+        "de": "Ich beschloss, einem Fitnessstudio beizutreten.",
+        "ar": "قررت الاشتراك في نادٍ رياضي.",
+        "it": "Ho deciso di iscrivermi in palestra.",
+        "ja": "ジムに通うことにしました。",
+        "pt-BR": "Decidi entrar em uma academia.",
+        "zh-Hant": "我決定去健身房。",
+        "ko": "헬스장에 다니기로 했어요.",
+        "ru": "Я решил записаться в спортзал.",
+        "th": "ฉันตัดสินใจสมัครสมาชิกฟิตเนส",
+        "tr": "Bir spor salonuna yazılmaya karar verdim."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "我为我的任务设定了一个固定的时间表。"
+        "vi": "Tôi lập lịch đều đặn cho các công việc của mình.",
+        "id": "Saya membuat jadwal rutin untuk tugas-tugas saya.",
+        "zh-Hans": "我为我的任务设定了一个固定的时间表。",
+        "es": "Establecí un horario regular para mis tareas.",
+        "fr": "J'ai établi un emploi du temps régulier pour mes tâches.",
+        "de": "Ich legte einen festen Zeitplan für meine Aufgaben fest.",
+        "ar": "وضعت جدولًا منتظمًا لمهامي.",
+        "it": "Ho stabilito un programma regolare per le mie attività.",
+        "ja": "やるべきことのために、決まったスケジュールを設定しました。",
+        "pt-BR": "Estabeleci uma rotina regular para minhas tarefas.",
+        "zh-Hant": "我為工作安排了固定的時間表。",
+        "ko": "할 일에 규칙적인 일정을 정했어요.",
+        "ru": "Я составил регулярное расписание для своих дел.",
+        "th": "ฉันจัดตารางเวลาทำงานต่าง ๆ ให้เป็นกิจวัตร",
+        "tr": "Yapacaklarım için düzenli bir program oluşturdum."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "我开始用计划本来安排我的一周。"
+        "vi": "Tôi bắt đầu dùng sổ kế hoạch để sắp xếp tuần của mình.",
+        "id": "Saya mulai menggunakan agenda untuk mengatur minggu saya.",
+        "zh-Hans": "我开始用计划本来安排我的一周。",
+        "es": "Empecé a usar una agenda para organizar mi semana.",
+        "fr": "J'ai commencé à utiliser un agenda pour organiser ma semaine.",
+        "de": "Ich begann, einen Planer zu benutzen, um meine Woche zu organisieren.",
+        "ar": "بدأت أستخدم مفكرة لتنظيم أسبوعي.",
+        "it": "Ho iniziato a usare un'agenda per organizzare la settimana.",
+        "ja": "一週間の予定を整理するために、手帳を使い始めました。",
+        "pt-BR": "Comecei a usar uma agenda para organizar minha semana.",
+        "zh-Hant": "我開始用行事曆安排一週的生活。",
+        "ko": "일주일을 정리하려고 플래너를 쓰기 시작했어요.",
+        "ru": "Я начал пользоваться ежедневником, чтобы планировать неделю.",
+        "th": "ฉันเริ่มใช้แพลนเนอร์เพื่อจัดระเบียบสัปดาห์ของตัวเอง",
+        "tr": "Haftamı düzenlemek için ajanda kullanmaya başladım."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "我现在感觉更专注，但仍然很难保持一致。"
+        "vi": "Bây giờ tôi tập trung hơn, nhưng vẫn khó duy trì đều đặn.",
+        "id": "Sekarang saya lebih bisa berkonsentrasi, tetapi tetap sulit untuk konsisten.",
+        "zh-Hans": "我现在感觉更专注，但仍然很难保持一致。",
+        "es": "Ahora me concentro mejor, pero todavía me cuesta mantener la constancia.",
+        "fr": "Je suis plus concentré maintenant, mais j'ai encore du mal à rester régulier.",
+        "de": "Jetzt kann ich mich besser konzentrieren, aber es fällt mir immer noch schwer, konsequent zu bleiben.",
+        "ar": "أشعر الآن بتركيز أكبر، لكن من الصعب دائمًا أن أحافظ على الانتظام.",
+        "it": "Ora riesco a concentrarmi meglio, ma faccio ancora fatica a essere costante.",
+        "ja": "今は以前より集中できていますが、習慣を続けるのはまだ大変です。",
+        "pt-BR": "Agora consigo me concentrar melhor, mas ainda é difícil manter a constância.",
+        "zh-Hant": "我現在更能專心了，但要持之以恆仍然不容易。",
+        "ko": "지금은 집중력이 더 좋아졌지만, 꾸준히 유지하기는 여전히 어려워요.",
+        "ru": "Сейчас мне легче сосредоточиться, но всё ещё трудно придерживаться нового режима.",
+        "th": "ตอนนี้ฉันมีสมาธิมากขึ้น แต่การทำให้สม่ำเสมอยังยากอยู่",
+        "tr": "Artık daha iyi odaklanabiliyorum ama istikrarı korumak hâlâ zor."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.944,
       "duration": 2.944,
       "translations": {
-        "zh-Hans": "我面临的一个挑战是保持动力。"
+        "vi": "Một thử thách tôi từng gặp là duy trì động lực.",
+        "id": "Salah satu tantangan yang saya hadapi adalah menjaga motivasi.",
+        "zh-Hans": "我面临的一个挑战是保持动力。",
+        "es": "Uno de los retos a los que me enfrenté fue mantener la motivación.",
+        "fr": "L'un des défis auxquels j'ai été confronté a été de rester motivé.",
+        "de": "Eine Herausforderung für mich war, motiviert zu bleiben.",
+        "ar": "كان الحفاظ على الدافعية أحد التحديات التي واجهتها.",
+        "it": "Una difficoltà che ho incontrato è stata mantenere la motivazione.",
+        "ja": "直面した課題の一つは、やる気を保つことでした。",
+        "pt-BR": "Um dos desafios que enfrentei foi continuar motivado.",
+        "zh-Hant": "我面臨的一個挑戰是維持動力。",
+        "ko": "제가 겪은 어려움 중 하나는 계속 동기를 유지하는 것이었어요.",
+        "ru": "Одной из трудностей было сохранять мотивацию.",
+        "th": "หนึ่งในความท้าทายที่ฉันเจอคือการรักษาแรงจูงใจ",
+        "tr": "Karşılaştığım zorluklardan biri motivasyonumu korumaktı."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.395,
       "duration": 4.395,
       "translations": {
-        "zh-Hans": "我计划继续调整我的时间表以找到最合适的方式。"
+        "vi": "Tôi dự định tiếp tục điều chỉnh lịch trình để tìm ra cách phù hợp nhất.",
+        "id": "Saya berencana terus menyesuaikan jadwal untuk menemukan cara yang paling cocok.",
+        "zh-Hans": "我计划继续调整我的时间表以找到最合适的方式。",
+        "es": "Pienso seguir ajustando mi horario hasta encontrar lo que mejor me funcione.",
+        "fr": "Je compte continuer à ajuster mon emploi du temps pour trouver ce qui me convient le mieux.",
+        "de": "Ich möchte meinen Zeitplan weiter anpassen, bis ich herausfinde, was am besten funktioniert.",
+        "ar": "أعتزم مواصلة تعديل جدولي لأجد ما يناسبني على أفضل وجه.",
+        "it": "Ho intenzione di continuare ad adattare il mio programma per trovare ciò che funziona meglio.",
+        "ja": "何が一番合うのかを見つけるために、これからも予定を調整していくつもりです。",
+        "pt-BR": "Pretendo continuar ajustando minha rotina até descobrir o que funciona melhor.",
+        "zh-Hant": "我打算繼續調整作息，找出最適合自己的方式。",
+        "ko": "가장 잘 맞는 방법을 찾기 위해 일정을 계속 조정할 계획이에요.",
+        "ru": "Я планирую и дальше менять расписание, чтобы найти лучший для себя вариант.",
+        "th": "ฉันวางแผนจะปรับตารางต่อไปเพื่อหาวิธีที่เหมาะกับตัวเองที่สุด",
+        "tr": "Bana en uygun yöntemi bulmak için programımı ayarlamaya devam etmeyi planlıyorum."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "我想逐步专注于养成更健康的习惯。"
+        "vi": "Tôi muốn tập trung xây dựng những thói quen lành mạnh từng bước một.",
+        "id": "Saya ingin fokus membangun kebiasaan yang lebih sehat secara bertahap.",
+        "zh-Hans": "我想逐步专注于养成更健康的习惯。",
+        "es": "Quiero centrarme en desarrollar hábitos más saludables poco a poco.",
+        "fr": "Je veux me concentrer sur la construction progressive d'habitudes plus saines",
+        "de": "Ich möchte mich darauf konzentrieren, nach und nach gesündere Gewohnheiten aufzubauen.",
+        "ar": "أريد التركيز على بناء عادات أكثر صحة تدريجيًا.",
+        "it": "Voglio concentrarmi sulla costruzione graduale di abitudini più sane.",
+        "ja": "より健康的な習慣を少しずつ身につけることに集中したいです。",
+        "pt-BR": "Quero me concentrar em construir hábitos mais saudáveis aos poucos.",
+        "zh-Hant": "我想專注於逐步養成更健康的習慣。",
+        "ko": "더 건강한 습관을 조금씩 만들어 가는 데 집중하고 싶어요.",
+        "ru": "Я хочу постепенно формировать более здоровые привычки.",
+        "th": "ฉันอยากมุ่งสร้างนิสัยที่ดีต่อสุขภาพขึ้นทีละน้อย",
+        "tr": "Daha sağlıklı alışkanlıklar edinmeye yavaş yavaş odaklanmak istiyorum."
       }
     }
   ]

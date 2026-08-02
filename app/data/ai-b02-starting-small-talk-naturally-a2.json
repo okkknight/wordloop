@@ -16,7 +16,20 @@
       "duration": 3.072,
       "translations": {
         "zh-Hans": "今天的天空真清澈。",
-        "ja": "今日は空がとても澄んでいますね。"
+        "ja": "今日は空がとても澄んでいますね。",
+        "zh-Hant": "今天的天空真晴朗。",
+        "tr": "Bugün gökyüzü ne kadar da berrak.",
+        "vi": "Hôm nay trời quang thật đấy.",
+        "ar": "السماء صافية جدًا اليوم.",
+        "ru": "Сегодня такое ясное небо.",
+        "ko": "오늘 하늘이 정말 맑네요.",
+        "es": "El cielo está muy despejado hoy.",
+        "pt-BR": "O céu está tão limpo hoje.",
+        "fr": "Le ciel est vraiment dégagé aujourd'hui.",
+        "de": "Der Himmel ist heute so klar.",
+        "it": "Oggi il cielo è davvero limpido.",
+        "id": "Langitnya cerah sekali hari ini.",
+        "th": "วันนี้ท้องฟ้าแจ่มใสมากเลย"
       }
     },
     {
@@ -30,7 +43,20 @@
       "duration": 2.432,
       "translations": {
         "zh-Hans": "今天天气真好，不是吗？",
-        "ja": "今日は気持ちのいい天気ですね。"
+        "ja": "今日は気持ちのいい天気ですね。",
+        "zh-Hant": "今天天氣真好，對吧？",
+        "tr": "Bugün hava ne güzel, değil mi?",
+        "vi": "Hôm nay thời tiết đẹp quá nhỉ?",
+        "ar": "الطقس جميل اليوم، أليس كذلك؟",
+        "ru": "Погода сегодня прекрасная, правда?",
+        "ko": "오늘 날씨 정말 좋죠?",
+        "es": "Qué buen tiempo hace hoy, ¿verdad?",
+        "pt-BR": "O tempo está ótimo hoje, não está?",
+        "fr": "Il fait vraiment beau aujourd'hui, vous ne trouvez pas ?",
+        "de": "Schönes Wetter heute, oder?",
+        "it": "Che bella giornata oggi, vero?",
+        "id": "Cuaca hari ini bagus sekali, ya?",
+        "th": "วันนี้อากาศดีจังเลย จริงไหม"
       }
     },
     {
@@ -44,7 +70,20 @@
       "duration": 3.413,
       "translations": {
         "zh-Hans": "真不敢相信十月的天气这么暖和。",
-        "ja": "10月なのにこんなに暖かいなんて信じられません。"
+        "ja": "10月なのにこんなに暖かいなんて信じられません。",
+        "zh-Hant": "真不敢相信十月的天氣這麼暖和。",
+        "tr": "Ekim ayında havanın bu kadar sıcak olduğuna inanamıyorum.",
+        "vi": "Không thể tin là tháng Mười mà trời vẫn ấm thế này.",
+        "ar": "لا أصدق أن الجو دافئ إلى هذا الحد في شهر أكتوبر.",
+        "ru": "Не могу поверить, как тепло для октября.",
+        "ko": "10월인데 이렇게 따뜻하다니 믿기지 않아요.",
+        "es": "No puedo creer que haga tanto calor para ser octubre.",
+        "pt-BR": "Não acredito que esteja tão quente para outubro.",
+        "fr": "Je n'arrive pas à croire qu'il fasse si chaud pour un mois d'octobre.",
+        "de": "Ich kann kaum glauben, dass es im Oktober so warm ist.",
+        "it": "Non riesco a credere che faccia così caldo per essere ottobre.",
+        "id": "Aku tidak percaya cuacanya sepanas ini untuk bulan Oktober.",
+        "th": "ไม่น่าเชื่อเลยว่าเดือนตุลาคมจะอุ่นขนาดนี้"
       }
     },
     {
@@ -58,7 +97,20 @@
       "duration": 3.755,
       "translations": {
         "zh-Hans": "有一阵宜人的微风吹过。",
-        "ja": "心地よい風が吹いていますね。"
+        "ja": "心地よい風が吹いていますね。",
+        "zh-Hant": "有一陣宜人的微風吹過。",
+        "tr": "Tatlı bir esinti geliyor.",
+        "vi": "Có làn gió nhẹ dễ chịu đang thổi vào đây.",
+        "ar": "هناك نسيم لطيف يهب من هنا.",
+        "ru": "Отсюда веет приятный ветерок.",
+        "ko": "기분 좋은 바람이 불어오네요.",
+        "es": "Está entrando una brisa muy agradable.",
+        "pt-BR": "Está entrando uma brisa gostosa.",
+        "fr": "Une petite brise agréable entre par ici.",
+        "de": "Hier kommt eine angenehme Brise herein.",
+        "it": "Qui entra una brezza piacevole.",
+        "id": "Angin sepoi-sepoi yang nyaman masuk ke sini.",
+        "th": "มีลมเย็นสบายพัดเข้ามาเลย"
       }
     },
     {
@@ -72,7 +124,20 @@
       "duration": 2.219,
       "translations": {
         "zh-Hans": "这里的音乐真不错。",
-        "ja": "ここの音楽、とてもいいですね。"
+        "ja": "ここの音楽、とてもいいですね。",
+        "zh-Hant": "這裡的音樂真不錯。",
+        "tr": "Buradaki müzik gerçekten çok güzel.",
+        "vi": "Nhạc ở đây hay thật đấy.",
+        "ar": "الموسيقى هنا جميلة جدًا.",
+        "ru": "Здесь очень приятная музыка.",
+        "ko": "여기 음악 정말 좋네요.",
+        "es": "La música de aquí es muy buena.",
+        "pt-BR": "A música daqui é muito boa.",
+        "fr": "La musique ici est vraiment sympa.",
+        "de": "Die Musik hier ist wirklich schön.",
+        "it": "La musica qui è davvero bella.",
+        "id": "Musik di sini bagus sekali.",
+        "th": "เพลงที่นี่เพราะมากเลย"
       }
     },
     {
@@ -86,7 +151,20 @@
       "duration": 2.901,
       "translations": {
         "zh-Hans": "我注意到你在读一本悬疑小说。",
-        "ja": "ミステリー小説を読んでいらっしゃるのに気づきました。"
+        "ja": "ミステリー小説を読んでいらっしゃるのに気づきました。",
+        "zh-Hant": "我注意到你正在讀一本推理小說。",
+        "tr": "Bir polisiye roman okuduğunu fark ettim.",
+        "vi": "Mình để ý thấy bạn đang đọc một cuốn tiểu thuyết trinh thám.",
+        "ar": "لاحظت أنك تقرأ رواية غموض.",
+        "ru": "Я заметил, что вы читаете детектив.",
+        "ko": "추리 소설을 읽고 계신 것 같아요.",
+        "es": "Me he fijado en que estás leyendo una novela de misterio.",
+        "pt-BR": "Notei que você está lendo um romance policial.",
+        "fr": "J'ai remarqué que vous lisiez un roman policier.",
+        "de": "Mir ist aufgefallen, dass du einen Krimi liest.",
+        "it": "Ho notato che stai leggendo un giallo.",
+        "id": "Aku melihat kamu sedang membaca novel misteri.",
+        "th": "เห็นคุณกำลังอ่านนิยายสืบสวนอยู่"
       }
     },
     {
@@ -100,7 +178,20 @@
       "duration": 2.219,
       "translations": {
         "zh-Hans": "今天的咖啡闻起来很香。",
-        "ja": "今日のコーヒーはいい香りですね。"
+        "ja": "今日のコーヒーはいい香りですね。",
+        "zh-Hant": "今天的咖啡聞起來很香。",
+        "tr": "Bugün kahvenin kokusu harika.",
+        "vi": "Hôm nay cà phê thơm quá.",
+        "ar": "رائحة القهوة رائعة اليوم.",
+        "ru": "Сегодня кофе замечательно пахнет.",
+        "ko": "오늘 커피 향이 정말 좋네요.",
+        "es": "El café huele muy bien hoy.",
+        "pt-BR": "O café está com um cheiro ótimo hoje.",
+        "fr": "Le café sent vraiment bon aujourd'hui.",
+        "de": "Der Kaffee riecht heute herrlich.",
+        "it": "Oggi il caffè ha un profumo buonissimo.",
+        "id": "Kopi hari ini harum sekali.",
+        "th": "วันนี้กาแฟหอมมากเลย"
       }
     },
     {
@@ -114,7 +205,20 @@
       "duration": 2.517,
       "translations": {
         "zh-Hans": "外面真是个阳光明媚的日子。",
-        "ja": "外はとてもよく晴れていますね。"
+        "ja": "外はとてもよく晴れていますね。",
+        "zh-Hant": "外面真是個陽光明媚的日子。",
+        "tr": "Dışarıda hava güneşli ve harika.",
+        "vi": "Bên ngoài trời nắng đẹp quá.",
+        "ar": "إنه يوم مشمس جدًا في الخارج.",
+        "ru": "На улице такой солнечный день.",
+        "ko": "밖은 정말 햇살이 좋은 날이네요.",
+        "es": "Hace un día muy soleado afuera.",
+        "pt-BR": "Lá fora está um dia muito ensolarado.",
+        "fr": "Il fait tellement soleil dehors.",
+        "de": "Draußen ist es so sonnig.",
+        "it": "Fuori c'è una giornata davvero soleggiata.",
+        "id": "Di luar hari ini sangat cerah.",
+        "th": "ข้างนอกแดดดีมากเลย"
       }
     },
     {
@@ -128,7 +232,20 @@
       "duration": 3.328,
       "translations": {
         "zh-Hans": "我听说博物馆有一个新的展览。",
-        "ja": "美術館で新しい展示が始まったそうですよ。"
+        "ja": "美術館で新しい展示が始まったそうですよ。",
+        "zh-Hant": "我聽說博物館有一個新的展覽。",
+        "tr": "Müzede yeni bir sergi olduğunu duydum.",
+        "vi": "Mình nghe nói bảo tàng đang có một cuộc triển lãm mới.",
+        "ar": "سمعت أن هناك معرضًا جديدًا في المتحف.",
+        "ru": "Я слышал, что в музее открылась новая выставка.",
+        "ko": "박물관에 새 전시가 있다고 들었어요.",
+        "es": "He oído que hay una exposición nueva en el museo.",
+        "pt-BR": "Ouvi dizer que há uma exposição nova no museu.",
+        "fr": "J'ai entendu dire qu'il y avait une nouvelle exposition au musée.",
+        "de": "Ich habe gehört, dass es im Museum eine neue Ausstellung gibt.",
+        "it": "Ho sentito che al museo c'è una nuova mostra.",
+        "id": "Aku dengar ada pameran baru di museum.",
+        "th": "ได้ยินว่าที่พิพิธภัณฑ์มีนิทรรศการใหม่"
       }
     },
     {
@@ -142,7 +259,20 @@
       "duration": 3.499,
       "translations": {
         "zh-Hans": "你试过这里的咖啡吗？真的很好喝。",
-        "ja": "ここのコーヒーは飲みましたか？ とてもおいしいですよ。"
+        "ja": "ここのコーヒーは飲みましたか？ とてもおいしいですよ。",
+        "zh-Hant": "你喝過這裡的咖啡嗎？真的很好喝。",
+        "tr": "Buradaki kahveyi denedin mi? Gerçekten çok güzel.",
+        "vi": "Bạn đã thử cà phê ở đây chưa? Ngon lắm đấy.",
+        "ar": "هل جربت القهوة هنا؟ إنها لذيذة جدًا.",
+        "ru": "Вы пробовали кофе здесь? Он действительно очень вкусный.",
+        "ko": "여기 커피 마셔 봤어요? 정말 맛있어요.",
+        "es": "¿Has probado el café de aquí? Está muy bueno.",
+        "pt-BR": "Você já experimentou o café daqui? É muito bom.",
+        "fr": "Vous avez goûté le café d'ici ? Il est vraiment bon.",
+        "de": "Hast du den Kaffee hier probiert? Er ist wirklich lecker.",
+        "it": "Hai provato il caffè qui? È davvero buono.",
+        "id": "Kamu sudah mencoba kopi di sini? Enak sekali.",
+        "th": "ลองกาแฟที่นี่หรือยัง อร่อยมากเลย"
       }
     },
     {
@@ -156,7 +286,20 @@
       "duration": 4.651,
       "translations": {
         "zh-Hans": "这个季节公园里的花很美。",
-        "ja": "この時期の公園は花がたくさん咲いていてきれいですね。"
+        "ja": "この時期の公園は花がたくさん咲いていてきれいですね。",
+        "zh-Hant": "這個季節公園裡的花很美。",
+        "tr": "Yılın bu döneminde parktaki çiçekler çok güzel.",
+        "vi": "Mùa này công viên đẹp lắm, hoa nở khắp nơi.",
+        "ar": "الحديقة جميلة في هذا الوقت من السنة، مع كل هذه الزهور.",
+        "ru": "В это время года парк прекрасен — повсюду цветы.",
+        "ko": "이 계절에는 꽃이 가득해서 공원이 정말 아름다워요.",
+        "es": "El parque está precioso en esta época del año, con tantas flores.",
+        "pt-BR": "O parque fica lindo nesta época do ano, cheio de flores.",
+        "fr": "Le parc est magnifique en cette saison, avec toutes ces fleurs.",
+        "de": "Der Park ist um diese Jahreszeit mit all den Blumen wunderschön.",
+        "it": "In questo periodo dell'anno il parco è bellissimo, con tutti questi fiori.",
+        "id": "Taman ini indah sekali saat musim ini, dengan banyak bunga.",
+        "th": "ช่วงนี้สวนสวยมากเลย มีดอกไม้เต็มไปหมด"
       }
     },
     {
@@ -170,7 +313,20 @@
       "duration": 3.797,
       "translations": {
         "zh-Hans": "主街上的新餐馆评价很好。",
-        "ja": "メインストリートの新しいレストランは評判がいいですよ。"
+        "ja": "メインストリートの新しいレストランは評判がいいですよ。",
+        "zh-Hant": "主街上的新餐廳評價很好。",
+        "tr": "Ana Cadde'deki yeni restoran hakkında harika yorumlar var.",
+        "vi": "Nhà hàng mới trên phố Main được đánh giá rất cao.",
+        "ar": "يحظى المطعم الجديد في الشارع الرئيسي بتقييمات رائعة.",
+        "ru": "У нового ресторана на Мейн-стрит отличные отзывы.",
+        "ko": "메인 스트리트의 새 식당은 평이 아주 좋아요.",
+        "es": "El nuevo restaurante de Main Street tiene muy buenas reseñas.",
+        "pt-BR": "O restaurante novo da Main Street tem ótimas avaliações.",
+        "fr": "Le nouveau restaurant de Main Street a d'excellentes critiques.",
+        "de": "Das neue Restaurant in der Main Street hat tolle Bewertungen.",
+        "it": "Il nuovo ristorante di Main Street ha ottime recensioni.",
+        "id": "Restoran baru di Main Street mendapat ulasan yang bagus.",
+        "th": "ร้านอาหารใหม่บนถนนเมนมีรีวิวดีมาก"
       }
     },
     {
@@ -184,7 +340,20 @@
       "duration": 2.56,
       "translations": {
         "zh-Hans": "你周末有什么计划吗？",
-        "ja": "週末は何か予定がありますか？"
+        "ja": "週末は何か予定がありますか？",
+        "zh-Hant": "你週末有什麼計畫嗎？",
+        "tr": "Hafta sonu için bir planın var mı?",
+        "vi": "Cuối tuần này bạn có dự định gì không?",
+        "ar": "هل لديك أي خطط لعطلة نهاية الأسبوع؟",
+        "ru": "У вас есть планы на выходные?",
+        "ko": "주말에 특별한 계획 있어요?",
+        "es": "¿Tienes planes para el fin de semana?",
+        "pt-BR": "Você tem planos para o fim de semana?",
+        "fr": "Vous avez prévu quelque chose pour le week-end ?",
+        "de": "Hast du Pläne für das Wochenende?",
+        "it": "Hai programmi per il fine settimana?",
+        "id": "Kamu punya rencana akhir pekan?",
+        "th": "สุดสัปดาห์นี้มีแผนอะไรไหม"
       }
     },
     {
@@ -198,7 +367,20 @@
       "duration": 3.712,
       "translations": {
         "zh-Hans": "这个地方氛围很好。你经常来这里吗？",
-        "ja": "ここは雰囲気がいいですね。よく来るんですか？"
+        "ja": "ここは雰囲気がいいですね。よく来るんですか？",
+        "zh-Hant": "這個地方氣氛很好。你常來這裡嗎？",
+        "tr": "Buranın havası çok güzel. Buraya sık gelir misin?",
+        "vi": "Nơi này có không khí dễ chịu thật. Bạn có thường đến đây không?",
+        "ar": "أجواء هذا المكان لطيفة. هل تأتي إلى هنا كثيرًا؟",
+        "ru": "Здесь приятная атмосфера. Вы часто сюда приходите?",
+        "ko": "여기 분위기 정말 좋네요. 자주 오세요?",
+        "es": "Este lugar tiene un ambiente muy agradable. ¿Vienes aquí a menudo?",
+        "pt-BR": "Este lugar tem um clima muito agradável. Você vem aqui com frequência?",
+        "fr": "Cet endroit a une bonne ambiance. Vous venez souvent ici ?",
+        "de": "Hier ist eine schöne Atmosphäre. Kommst du oft hierher?",
+        "it": "Questo posto ha una bella atmosfera. Vieni spesso qui?",
+        "id": "Tempat ini suasananya enak. Kamu sering datang ke sini?",
+        "th": "ที่นี่บรรยากาศดีนะ มาที่นี่บ่อยไหม"
       }
     },
     {
@@ -212,7 +394,20 @@
       "duration": 2.603,
       "translations": {
         "zh-Hans": "你最近看过什么好电影吗？",
-        "ja": "最近、何かいい映画を見ましたか？"
+        "ja": "最近、何かいい映画を見ましたか？",
+        "zh-Hant": "你最近看過什麼好電影嗎？",
+        "tr": "Son zamanlarda güzel bir film izledin mi?",
+        "vi": "Dạo gần đây bạn có xem bộ phim nào hay không?",
+        "ar": "هل شاهدت أفلامًا جيدة مؤخرًا؟",
+        "ru": "Вы в последнее время смотрели хорошие фильмы?",
+        "ko": "최근에 재미있는 영화 본 적 있어요?",
+        "es": "¿Has visto alguna película buena últimamente?",
+        "pt-BR": "Você viu algum filme bom ultimamente?",
+        "fr": "Vous avez vu de bons films récemment ?",
+        "de": "Hast du in letzter Zeit gute Filme gesehen?",
+        "it": "Hai visto dei bei film ultimamente?",
+        "id": "Akhir-akhir ini kamu menonton film yang bagus?",
+        "th": "ช่วงนี้ได้ดูหนังดีๆ บ้างไหม"
       }
     },
     {
@@ -226,7 +421,20 @@
       "duration": 3.157,
       "translations": {
         "zh-Hans": "你通常怎么放松？",
-        "ja": "普段、リラックスするために何をしていますか？"
+        "ja": "普段、リラックスするために何をしていますか？",
+        "zh-Hant": "你通常怎麼放鬆？",
+        "tr": "Genellikle nasıl rahatlıyorsun?",
+        "vi": "Bạn thường làm gì để thư giãn?",
+        "ar": "ماذا تفعل عادةً للاسترخاء؟",
+        "ru": "Что вы обычно делаете, чтобы расслабиться?",
+        "ko": "보통 어떻게 쉬어요?",
+        "es": "¿Qué sueles hacer para relajarte?",
+        "pt-BR": "O que você costuma fazer para relaxar?",
+        "fr": "Qu'est-ce que vous faites d'habitude pour vous détendre ?",
+        "de": "Was machst du normalerweise, um dich zu entspannen?",
+        "it": "Cosa fai di solito per rilassarti?",
+        "id": "Biasanya kamu melakukan apa untuk bersantai?",
+        "th": "ปกติทำอะไรเพื่อผ่อนคลาย"
       }
     }
   ]

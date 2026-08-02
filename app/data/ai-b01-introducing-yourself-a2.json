@@ -16,7 +16,20 @@
       "duration": 3.029,
       "translations": {
         "zh-Hans": "嗨，我是 Alex。很高兴认识你。",
-        "ja": "こんにちは、アレックスです。お会いできてうれしいです。"
+        "ja": "こんにちは、アレックスです。お会いできてうれしいです。",
+        "zh-Hant": "嗨，我是 Alex。很高興認識你。",
+        "tr": "Merhaba, ben Alex. Tanıştığımıza memnun oldum.",
+        "vi": "Chào bạn, mình là Alex. Rất vui được gặp bạn.",
+        "ar": "مرحبًا، أنا أليكس. سعيد بلقائك.",
+        "ru": "Привет, я Алекс. Рад познакомиться.",
+        "ko": "안녕하세요, 저는 Alex예요. 만나서 반가워요.",
+        "es": "Hola, soy Alex. Encantado de conocerte.",
+        "pt-BR": "Oi, eu sou Alex. Prazer em conhecer você.",
+        "fr": "Salut, je m’appelle Alex. Ravi de te rencontrer.",
+        "de": "Hallo, ich bin Alex. Schön, dich kennenzulernen.",
+        "it": "Ciao, sono Alex. Piacere di conoscerti.",
+        "id": "Hai, saya Alex. Senang bertemu denganmu.",
+        "th": "สวัสดี ฉันชื่ออเล็กซ์ ยินดีที่ได้รู้จัก"
       }
     },
     {
@@ -30,7 +43,20 @@
       "duration": 2.176,
       "translations": {
         "zh-Hans": "我今天来参加这个工作坊。",
-        "ja": "今日はこのワークショップに参加しています。"
+        "ja": "今日はこのワークショップに参加しています。",
+        "zh-Hant": "我今天來參加這個工作坊。",
+        "tr": "Bugün atölye çalışması için buradayım.",
+        "vi": "Hôm nay mình đến tham dự buổi hội thảo.",
+        "ar": "أنا هنا اليوم من أجل ورشة العمل.",
+        "ru": "Сегодня я пришёл на семинар.",
+        "ko": "오늘 워크숍에 참석하려고 왔어요.",
+        "es": "Hoy vengo al taller.",
+        "pt-BR": "Hoje vim participar do workshop.",
+        "fr": "Je suis ici pour l’atelier d’aujourd’hui.",
+        "de": "Ich bin heute wegen des Workshops hier.",
+        "it": "Sono qui oggi per il workshop.",
+        "id": "Hari ini saya datang untuk mengikuti lokakarya.",
+        "th": "วันนี้ฉันมาร่วมเวิร์กช็อปค่ะ"
       }
     },
     {
@@ -44,7 +70,20 @@
       "duration": 2.901,
       "translations": {
         "zh-Hans": "我在市中心的设计团队工作。",
-        "ja": "ダウンタウンのデザインチームで働いています。"
+        "ja": "ダウンタウンのデザインチームで働いています。",
+        "zh-Hant": "我在市中心的設計團隊工作。",
+        "tr": "Şehir merkezindeki tasarım ekibiyle çalışıyorum.",
+        "vi": "Mình làm việc với đội ngũ thiết kế ở khu trung tâm.",
+        "ar": "أعمل مع فريق التصميم في وسط المدينة.",
+        "ru": "Я работаю в команде дизайнеров в центре города.",
+        "ko": "시내 디자인 팀에서 일해요.",
+        "es": "Trabajo con el equipo de diseño en el centro.",
+        "pt-BR": "Trabalho com a equipe de design no centro da cidade.",
+        "fr": "Je travaille avec l’équipe de design du centre-ville.",
+        "de": "Ich arbeite mit dem Designteam in der Innenstadt.",
+        "it": "Lavoro con il team di design in centro.",
+        "id": "Saya bekerja dengan tim desain di pusat kota.",
+        "th": "ฉันทำงานกับทีมออกแบบในใจกลางเมืองค่ะ"
       }
     },
     {
@@ -58,7 +97,20 @@
       "duration": 3.243,
       "translations": {
         "zh-Hans": "我最近下班后学英语。",
-        "ja": "最近は仕事の後に英語を勉強しています。"
+        "ja": "最近は仕事の後に英語を勉強しています。",
+        "zh-Hant": "我最近下班後學英文。",
+        "tr": "Bu aralar işten sonra İngilizce öğreniyorum.",
+        "vi": "Dạo này mình đang học tiếng Anh sau giờ làm.",
+        "ar": "أدرس اللغة الإنجليزية بعد العمل هذه الأيام.",
+        "ru": "В последнее время я изучаю английский после работы.",
+        "ko": "요즘은 퇴근 후에 영어를 공부하고 있어요.",
+        "es": "Estos días estudio inglés después del trabajo.",
+        "pt-BR": "Ultimamente, estudo inglês depois do trabalho.",
+        "fr": "Ces temps-ci, j’étudie l’anglais après le travail.",
+        "de": "In letzter Zeit lerne ich nach der Arbeit Englisch.",
+        "it": "In questo periodo studio inglese dopo il lavoro.",
+        "id": "Akhir-akhir ini saya belajar bahasa Inggris setelah bekerja.",
+        "th": "ช่วงนี้ฉันเรียนภาษาอังกฤษหลังเลิกงานค่ะ"
       }
     },
     {
@@ -72,7 +124,20 @@
       "duration": 2.773,
       "translations": {
         "zh-Hans": "这是我第一次参加这个活动。",
-        "ja": "このイベントに参加するのは初めてです。"
+        "ja": "このイベントに参加するのは初めてです。",
+        "zh-Hant": "這是我第一次參加這個活動。",
+        "tr": "Bu etkinliğe ilk kez katılıyorum.",
+        "vi": "Đây là lần đầu tiên mình tham dự sự kiện này.",
+        "ar": "هذه أول مرة لي في هذا الحدث.",
+        "ru": "Я впервые на этом мероприятии.",
+        "ko": "이 행사에 온 건 처음이에요.",
+        "es": "Es la primera vez que vengo a este evento.",
+        "pt-BR": "É a minha primeira vez neste evento.",
+        "fr": "C’est la première fois que je viens à cet événement.",
+        "de": "Ich bin zum ersten Mal bei dieser Veranstaltung.",
+        "it": "È la prima volta che vengo a questo evento.",
+        "id": "Ini pertama kalinya saya datang ke acara ini.",
+        "th": "นี่เป็นครั้งแรกที่ฉันมางานนี้ค่ะ"
       }
     },
     {
@@ -86,7 +151,20 @@
       "duration": 2.816,
       "translations": {
         "zh-Hans": "我几个月前搬到这里。",
-        "ja": "数か月前にここへ引っ越してきました。"
+        "ja": "数か月前にここへ引っ越してきました。",
+        "zh-Hant": "我幾個月前搬到這裡。",
+        "tr": "Birkaç ay önce buraya taşındım.",
+        "vi": "Mình chuyển đến đây cách đây vài tháng.",
+        "ar": "انتقلت إلى هنا قبل بضعة أشهر.",
+        "ru": "Я переехал сюда несколько месяцев назад.",
+        "ko": "몇 달 전에 여기로 이사 왔어요.",
+        "es": "Me mudé aquí hace unos meses.",
+        "pt-BR": "Mudei para cá há alguns meses.",
+        "fr": "J’ai emménagé ici il y a quelques mois.",
+        "de": "Ich bin vor ein paar Monaten hierhergezogen.",
+        "it": "Mi sono trasferito qui qualche mese fa.",
+        "id": "Saya pindah ke sini beberapa bulan lalu.",
+        "th": "ฉันย้ายมาที่นี่เมื่อไม่กี่เดือนก่อนค่ะ"
       }
     },
     {
@@ -100,7 +178,20 @@
       "duration": 4.053,
       "translations": {
         "zh-Hans": "我喜欢在这样的活动中认识新朋友。",
-        "ja": "こういうイベントで新しい人と知り合うのが好きです。"
+        "ja": "こういうイベントで新しい人と知り合うのが好きです。",
+        "zh-Hant": "我喜歡在這樣的活動中認識新朋友。",
+        "tr": "Böyle etkinliklerde yeni insanlarla tanışmayı seviyorum.",
+        "vi": "Mình thích làm quen với những người mới ở những sự kiện như thế này.",
+        "ar": "أستمتع بلقاء أشخاص جدد في فعاليات كهذه.",
+        "ru": "Мне нравится знакомиться с новыми людьми на таких мероприятиях.",
+        "ko": "이런 행사에서 새로운 사람들을 만나는 걸 좋아해요.",
+        "es": "Me gusta conocer gente nueva en eventos como este.",
+        "pt-BR": "Gosto de conhecer pessoas novas em eventos como este.",
+        "fr": "J’aime rencontrer de nouvelles personnes lors d’événements comme celui-ci.",
+        "de": "Ich lerne bei solchen Veranstaltungen gerne neue Leute kennen.",
+        "it": "Mi piace conoscere persone nuove a eventi come questo.",
+        "id": "Saya suka bertemu orang-orang baru di acara seperti ini.",
+        "th": "ฉันชอบพบปะผู้คนใหม่ ๆ ในงานแบบนี้ค่ะ"
       }
     },
     {
@@ -114,7 +205,20 @@
       "duration": 3.584,
       "translations": {
         "zh-Hans": "我来这里是想认识同行。",
-        "ja": "同じ分野の人と知り合う機会がほしくて来ました。"
+        "ja": "同じ分野の人と知り合う機会がほしくて来ました。",
+        "zh-Hant": "我來這裡是想認識同行。",
+        "tr": "Alanımdaki insanlarla tanışma fırsatı bulmak için buradayım.",
+        "vi": "Mình đến đây để có cơ hội gặp gỡ những người trong cùng lĩnh vực.",
+        "ar": "أنا هنا لأحظى بفرصة لقاء أشخاص في مجالي.",
+        "ru": "Я пришёл сюда, чтобы познакомиться с людьми из своей профессиональной сферы.",
+        "ko": "제 분야의 사람들을 만날 기회를 얻으려고 왔어요.",
+        "es": "Estoy aquí para tener la oportunidad de conocer a gente de mi campo.",
+        "pt-BR": "Vim aqui para ter a chance de conhecer pessoas da minha área.",
+        "fr": "Je suis ici pour avoir l’occasion de rencontrer des personnes de mon domaine.",
+        "de": "Ich bin hier, um Leute aus meinem Fachgebiet kennenzulernen.",
+        "it": "Sono qui per avere l’opportunità di conoscere persone del mio settore.",
+        "id": "Saya datang ke sini untuk bertemu orang-orang di bidang saya.",
+        "th": "ฉันมาที่นี่เพื่อมีโอกาสพบปะผู้คนในสายงานของฉันค่ะ"
       }
     },
     {
@@ -128,7 +232,20 @@
       "duration": 4.395,
       "translations": {
         "zh-Hans": "我做市场营销，主要负责社交媒体项目。",
-        "ja": "マーケティングの仕事をしていて、主にSNSプロジェクトを担当しています。"
+        "ja": "マーケティングの仕事をしていて、主にSNSプロジェクトを担当しています。",
+        "zh-Hant": "我做行銷，主要負責社群媒體專案。",
+        "tr": "Pazarlama alanında çalışıyorum; çoğunlukla sosyal medya projeleriyle ilgileniyorum.",
+        "vi": "Mình làm trong ngành tiếp thị, chủ yếu phụ trách các dự án mạng xã hội.",
+        "ar": "أعمل في مجال التسويق، وخاصة في مشروعات وسائل التواصل الاجتماعي.",
+        "ru": "Я работаю в сфере маркетинга, в основном занимаюсь проектами в социальных сетях.",
+        "ko": "마케팅 일을 하고 있고, 주로 소셜 미디어 프로젝트를 맡고 있어요.",
+        "es": "Trabajo en marketing, sobre todo en proyectos de redes sociales.",
+        "pt-BR": "Trabalho com marketing, principalmente em projetos de redes sociais.",
+        "fr": "Je travaille dans le marketing, surtout sur des projets de réseaux sociaux.",
+        "de": "Ich arbeite im Marketing, hauptsächlich an Social-Media-Projekten.",
+        "it": "Lavoro nel marketing, soprattutto a progetti per i social media.",
+        "id": "Saya bekerja di bidang pemasaran, terutama mengerjakan proyek media sosial.",
+        "th": "ฉันทำงานด้านการตลาด โดยรับผิดชอบโครงการโซเชียลมีเดียเป็นหลักค่ะ"
       }
     },
     {
@@ -142,7 +259,20 @@
       "duration": 3.371,
       "translations": {
         "zh-Hans": "我在附近上课，所以课后过来了。",
-        "ja": "近くで授業を受けているので、授業の後に来ました。"
+        "ja": "近くで授業を受けているので、授業の後に来ました。",
+        "zh-Hant": "我在附近上課，所以課後過來了。",
+        "tr": "Yakınlarda bir kursa gidiyorum, bu yüzden dersten sonra buraya geldim.",
+        "vi": "Mình học ở gần đây nên tan học là đến thẳng đây.",
+        "ar": "أحضر درسًا قريبًا، لذلك جئت إلى هنا بعد انتهاء الدرس.",
+        "ru": "Я хожу на занятия неподалёку, поэтому пришёл сюда после урока.",
+        "ko": "근처에서 수업을 듣고 있어서 수업이 끝난 후에 왔어요.",
+        "es": "Tomo una clase cerca, así que vine después de clase.",
+        "pt-BR": "Faço uma aula aqui perto, então vim depois da aula.",
+        "fr": "Je suis un cours tout près, alors je suis venu après le cours.",
+        "de": "Ich besuche einen Kurs in der Nähe, deshalb bin ich nach dem Kurs hierhergekommen.",
+        "it": "Frequento un corso qui vicino, quindi sono venuto dopo la lezione.",
+        "id": "Saya mengikuti kelas di dekat sini, jadi saya datang setelah kelas.",
+        "th": "ฉันเรียนอยู่ใกล้ ๆ นี้ เลยแวะมาหลังเลิกเรียนค่ะ"
       }
     },
     {
@@ -156,7 +286,20 @@
       "duration": 4.693,
       "translations": {
         "zh-Hans": "这是我第一次参加这个小组，但大家看起来都很友好。",
-        "ja": "このグループは初めてですが、みなさん親しみやすそうですね。"
+        "ja": "このグループは初めてですが、みなさん親しみやすそうですね。",
+        "zh-Hant": "這是我第一次參加這個小組，但大家看起來都很友善。",
+        "tr": "Bu grupla ilk kez birlikteyim ama herkes çok cana yakın görünüyor.",
+        "vi": "Đây là lần đầu mình tham gia nhóm này, nhưng mọi người có vẻ rất thân thiện.",
+        "ar": "هذه أول مرة لي مع هذه المجموعة، لكن يبدو أن الجميع ودودون.",
+        "ru": "Я впервые с этой группой, но все кажутся дружелюбными.",
+        "ko": "이 모임은 처음이지만, 모두 친절해 보여요.",
+        "es": "Es la primera vez que estoy con este grupo, pero todos parecen amables.",
+        "pt-BR": "É a minha primeira vez com este grupo, mas todos parecem simpáticos.",
+        "fr": "C’est la première fois que je suis avec ce groupe, mais tout le monde a l’air sympathique.",
+        "de": "Ich bin zum ersten Mal bei dieser Gruppe, aber alle wirken freundlich.",
+        "it": "È la prima volta che sono con questo gruppo, ma sembrano tutti gentili.",
+        "id": "Ini pertama kalinya saya bersama kelompok ini, tetapi semua orang terlihat ramah.",
+        "th": "นี่เป็นครั้งแรกที่ฉันมากับกลุ่มนี้ แต่ทุกคนดูเป็นมิตรมากค่ะ"
       }
     },
     {
@@ -170,7 +313,20 @@
       "duration": 2.859,
       "translations": {
         "zh-Hans": "我和办公室的一位同事一起来的。",
-        "ja": "職場の同僚と一緒に来ました。"
+        "ja": "職場の同僚と一緒に来ました。",
+        "zh-Hant": "我和辦公室的一位同事一起來的。",
+        "tr": "Ofisimden bir iş arkadaşımla birlikte geldim.",
+        "vi": "Mình đi cùng một đồng nghiệp ở văn phòng.",
+        "ar": "أتيت مع زميل من مكتبي.",
+        "ru": "Я пришёл с коллегой из своего офиса.",
+        "ko": "사무실 동료 한 명과 함께 왔어요.",
+        "es": "He venido con un compañero de mi oficina.",
+        "pt-BR": "Vim com um colega do meu escritório.",
+        "fr": "Je suis venu avec un collègue de mon bureau.",
+        "de": "Ich bin mit einem Kollegen aus meinem Büro gekommen.",
+        "it": "Sono venuto con un collega del mio ufficio.",
+        "id": "Saya datang bersama seorang rekan kerja dari kantor saya.",
+        "th": "ฉันมากับเพื่อนร่วมงานจากออฟฟิศคนหนึ่งค่ะ"
       }
     },
     {
@@ -184,7 +340,20 @@
       "duration": 3.243,
       "translations": {
         "zh-Hans": "自从搬来后，我一直在找这样的社群。",
-        "ja": "ここに引っ越してから、ずっとこういうグループを探していました。"
+        "ja": "ここに引っ越してから、ずっとこういうグループを探していました。",
+        "zh-Hant": "自從搬來後，我一直在找這樣的社群。",
+        "tr": "Buraya taşındığımdan beri böyle bir grup arıyordum.",
+        "vi": "Từ khi chuyển đến đây, mình đã tìm một nhóm như thế này mãi.",
+        "ar": "أبحث منذ انتقالي إلى هنا عن مجموعة كهذه.",
+        "ru": "С тех пор как я сюда переехал, я искал такую группу.",
+        "ko": "여기로 이사 온 후로 이런 모임을 계속 찾고 있었어요.",
+        "es": "Desde que me mudé aquí, he estado buscando un grupo como este.",
+        "pt-BR": "Desde que me mudei para cá, venho procurando um grupo como este.",
+        "fr": "Depuis que j’ai emménagé ici, je cherche un groupe comme celui-ci.",
+        "de": "Seit ich hierhergezogen bin, suche ich eine Gruppe wie diese.",
+        "it": "Da quando mi sono trasferito qui, cerco un gruppo come questo.",
+        "id": "Sejak pindah ke sini, saya sudah mencari kelompok seperti ini.",
+        "th": "ตั้งแต่ย้ายมาที่นี่ ฉันก็มองหากลุ่มแบบนี้มาตลอดค่ะ"
       }
     },
     {
@@ -198,7 +367,20 @@
       "duration": 3.157,
       "translations": {
         "zh-Hans": "我喜欢了解其他人做什么。",
-        "ja": "ほかの人がどんな仕事をしているのか聞くのが好きです。"
+        "ja": "ほかの人がどんな仕事をしているのか聞くのが好きです。",
+        "zh-Hant": "我喜歡了解其他人做什麼。",
+        "tr": "Başkalarının ne yaptığını öğrenmekten hoşlanıyorum.",
+        "vi": "Mình thích tìm hiểu công việc của những người khác.",
+        "ar": "أستمتع بالتعرف إلى ما يفعله الآخرون.",
+        "ru": "Мне интересно узнавать, чем занимаются другие люди.",
+        "ko": "다른 사람들이 무슨 일을 하는지 알아가는 걸 좋아해요.",
+        "es": "Me gusta saber a qué se dedican otras personas.",
+        "pt-BR": "Gosto de saber com o que outras pessoas trabalham.",
+        "fr": "J’aime découvrir ce que font les autres.",
+        "de": "Ich erfahre gerne, was andere Leute machen.",
+        "it": "Mi piace scoprire di cosa si occupano gli altri.",
+        "id": "Saya suka mengetahui pekerjaan orang lain.",
+        "th": "ฉันชอบเรียนรู้ว่าคนอื่นทำงานอะไรกันค่ะ"
       }
     },
     {
@@ -212,7 +394,20 @@
       "duration": 2.901,
       "translations": {
         "zh-Hans": "如果你不介意我问，是什么让你来这里的？",
-        "ja": "差し支えなければ、こちらには何がきっかけで来られたんですか？"
+        "ja": "差し支えなければ、こちらには何がきっかけで来られたんですか？",
+        "zh-Hant": "如果你不介意我問，是什麼讓你來這裡的？",
+        "tr": "Sormamda sakınca yoksa, seni buraya getiren nedir?",
+        "vi": "Nếu bạn không phiền cho mình hỏi, điều gì đưa bạn đến đây vậy?",
+        "ar": "ما الذي جاء بك إلى هنا، إن لم تمانع سؤالي؟",
+        "ru": "Если не возражаете, расскажите, что привело вас сюда?",
+        "ko": "괜찮으시면 여기에 오게 된 이유를 여쭤봐도 될까요?",
+        "es": "Si no te importa que te pregunte, ¿qué te ha traído aquí?",
+        "pt-BR": "Se não se importa que eu pergunte, o que trouxe você aqui?",
+        "fr": "Si cela ne vous dérange pas, qu’est-ce qui vous a amené ici ?",
+        "de": "Wenn ich fragen darf: Was hat dich hierhergebracht?",
+        "it": "Se non ti dispiace se te lo chiedo, cosa ti ha portato qui?",
+        "id": "Kalau boleh saya bertanya, apa yang membuat Anda datang ke sini?",
+        "th": "ถ้าไม่รังเกียจที่ฉันถาม อะไรทำให้คุณมาที่นี่คะ"
       }
     },
     {
@@ -226,7 +421,20 @@
       "duration": 3.456,
       "translations": {
         "zh-Hans": "我很愿意之后多听你介绍你的工作。",
-        "ja": "今度ぜひ、お仕事のことをもっと聞かせてください。"
+        "ja": "今度ぜひ、お仕事のことをもっと聞かせてください。",
+        "zh-Hant": "我很願意之後多聽你介紹你的工作。",
+        "tr": "Bir ara işin hakkında daha fazla şey anlatmanı çok isterim.",
+        "vi": "Mình rất muốn có dịp nghe bạn kể thêm về công việc.",
+        "ar": "يسعدني أن أسمع المزيد عن عملك في وقت ما.",
+        "ru": "Буду рад как-нибудь узнать больше о вашей работе.",
+        "ko": "나중에 당신의 일에 대해 더 듣고 싶어요.",
+        "es": "Me encantaría saber más sobre tu trabajo algún día.",
+        "pt-BR": "Eu adoraria ouvir mais sobre o seu trabalho algum dia.",
+        "fr": "J’aimerais beaucoup en savoir plus sur ton travail un de ces jours.",
+        "de": "Ich würde gerne irgendwann mehr über deine Arbeit erfahren.",
+        "it": "Mi piacerebbe molto saperne di più sul tuo lavoro prima o poi.",
+        "id": "Saya ingin sekali mendengar lebih banyak tentang pekerjaan Anda suatu saat nanti.",
+        "th": "ฉันอยากฟังเรื่องงานของคุณให้มากกว่านี้สักวันนะคะ"
       }
     }
   ]

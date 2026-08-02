@@ -37,17 +37,19 @@ public enum StudyRepeatPresentationState: String, CaseIterable, Equatable, Senda
     }
 
     public var instruction: String {
+        let copy = StudyInstructionCopy.current
         switch self {
-        case .idle: "跟读模式已准备好"
-        case .connecting: "正在准备麦克风"
-        case .ready: "听完示范后开始跟读"
-        case .playing: "先听一遍标准发音"
-        case .speak: "请清晰地跟读"
-        case .speaking: "正在听你发音"
-        case .scoring: "正在分析这次发音"
-        case .passed: "这次发音通过了"
-        case .paused: "准备好后继续练习"
-        case .retry, .error: "请再读一次"
+        case .idle: copy.idle
+        case .connecting: StudyRepeatCopy.current.preparingMicrophone
+        case .ready: copy.ready
+        case .playing: copy.playing
+        case .speak: copy.speak
+        case .speaking: copy.speaking
+        case .scoring: copy.scoring
+        case .passed: copy.passed
+        case .paused: copy.paused
+        case .retry: copy.retry
+        case .error: StudyRepeatCopy.current.microphoneDenied
         }
     }
 

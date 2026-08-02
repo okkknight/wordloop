@@ -15,7 +15,21 @@
       "end": 4.053,
       "duration": 4.053,
       "translations": {
-        "zh-Hans": "我现在专注于改善我的健康。"
+        "vi": "Hiện tại tôi đang tập trung cải thiện sức khỏe.",
+        "id": "Saat ini saya fokus meningkatkan kesehatan saya.",
+        "zh-Hans": "我现在专注于改善我的健康。",
+        "zh-Hant": "我目前正專注於改善自己的健康。",
+        "ko": "저는 지금 건강을 개선하는 데 집중하고 있어요.",
+        "ru": "Сейчас я сосредоточен(а) на улучшении своего здоровья.",
+        "th": "ตอนนี้ฉันกำลังมุ่งเน้นไปที่การดูแลสุขภาพให้ดีขึ้น",
+        "tr": "Şu anda sağlığımı iyileştirmeye odaklanıyorum.",
+        "es": "Ahora mismo me estoy concentrando en mejorar mi salud.",
+        "fr": "En ce moment, je me concentre sur l'amélioration de ma santé.",
+        "de": "Im Moment konzentriere ich mich darauf, meine Gesundheit zu verbessern.",
+        "ar": "أركّز حاليًا على تحسين صحتي.",
+        "ja": "今は健康の改善に力を入れています。",
+        "it": "In questo momento mi sto concentrando sul miglioramento della mia salute.",
+        "pt-BR": "No momento, estou me concentrando em melhorar minha saúde."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "我计划下个月开始一个新爱好。"
+        "vi": "Tôi dự định bắt đầu một sở thích mới vào tháng tới.",
+        "id": "Saya berencana mulai menekuni hobi baru bulan depan.",
+        "zh-Hans": "我计划下个月开始一个新爱好。",
+        "zh-Hant": "我打算下個月開始培養一項新嗜好。",
+        "ko": "저는 다음 달에 새로운 취미를 시작할 계획이에요.",
+        "ru": "В следующем месяце я планирую заняться новым хобби.",
+        "th": "เดือนหน้าฉันวางแผนจะเริ่มงานอดิเรกใหม่",
+        "tr": "Gelecek ay yeni bir hobiye başlamayı planlıyorum.",
+        "es": "Estoy planeando empezar una nueva afición el mes que viene.",
+        "fr": "Je prévois de commencer une nouvelle activité le mois prochain.",
+        "de": "Ich plane, nächsten Monat mit einem neuen Hobby anzufangen.",
+        "ar": "أخطط لبدء هواية جديدة الشهر المقبل.",
+        "ja": "来月、新しい趣味を始める予定です。",
+        "it": "Ho intenzione di iniziare un nuovo hobby il mese prossimo.",
+        "pt-BR": "Estou planejando começar um hobby novo no mês que vem."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "这周我会专心完成我的书。"
+        "vi": "Tuần này, tôi dành thời gian để hoàn thành cuốn sách của mình.",
+        "id": "Minggu ini saya meluangkan waktu untuk menyelesaikan buku saya.",
+        "zh-Hans": "这周我会专心完成我的书。",
+        "zh-Hant": "這週我會撥出時間完成我的書。",
+        "ko": "이번 주에는 제 책을 끝내는 데 시간을 할애할 거예요.",
+        "ru": "На этой неделе я посвящу время тому, чтобы закончить свою книгу.",
+        "th": "สัปดาห์นี้ฉันจะสละเวลาเพื่อเขียนหนังสือของฉันให้เสร็จ",
+        "tr": "Bu hafta kitabımı bitirmek için zaman ayırıyorum.",
+        "es": "Esta semana estoy reservando tiempo para terminar mi libro.",
+        "fr": "Cette semaine, je consacre du temps à terminer mon livre.",
+        "de": "Diese Woche nehme ich mir Zeit, um mein Buch fertigzustellen.",
+        "ar": "أخصّص هذا الأسبوع وقتًا لإنهاء كتابي.",
+        "ja": "今週は、本を完成させるための時間を取っています。",
+        "it": "Questa settimana dedicherò del tempo a finire il mio libro.",
+        "pt-BR": "Nesta semana, estou reservando um tempo para terminar meu livro."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "我正在安排时间去当地的收容所做志愿者。"
+        "vi": "Tôi dành thời gian để làm tình nguyện tại trung tâm cứu trợ địa phương.",
+        "id": "Saya menyisihkan waktu untuk menjadi relawan di tempat penampungan setempat.",
+        "zh-Hans": "我正在安排时间去当地的收容所做志愿者。",
+        "zh-Hant": "我正在安排時間到當地的收容所做志工。",
+        "ko": "저는 지역 보호소에서 봉사할 시간을 따로 마련하고 있어요.",
+        "ru": "Я выделяю время, чтобы помогать волонтёром в местном приюте.",
+        "th": "ฉันกำลังแบ่งเวลาไปเป็นอาสาสมัครที่ศูนย์พักพิงในท้องถิ่น",
+        "tr": "Yerel barınakta gönüllü olarak çalışmak için zaman ayırıyorum.",
+        "es": "Estoy apartando tiempo para hacer voluntariado en el refugio local.",
+        "fr": "Je réserve du temps pour faire du bénévolat au refuge local.",
+        "de": "Ich reserviere Zeit, um mich in der örtlichen Notunterkunft ehrenamtlich zu engagieren.",
+        "ar": "أخصّص وقتًا للتطوع في الملجأ المحلي.",
+        "ja": "地域の保護施設でボランティアをする時間を確保しています。",
+        "it": "Mi ritaglierò del tempo per fare volontariato al rifugio locale.",
+        "pt-BR": "Estou separando um tempo para fazer trabalho voluntário no abrigo local."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 4.053,
       "duration": 4.053,
       "translations": {
-        "zh-Hans": "我想在50岁之前游遍每个大陆。"
+        "vi": "Tôi muốn đi đến mọi châu lục trước khi tròn 50 tuổi.",
+        "id": "Saya ingin mengunjungi setiap benua sebelum berusia 50 tahun.",
+        "zh-Hans": "我想在50岁之前游遍每个大陆。",
+        "zh-Hant": "我想在五十歲之前走遍每一個大陸。",
+        "ko": "저는 쉰 살이 되기 전에 모든 대륙을 여행하고 싶어요.",
+        "ru": "Я хочу побывать на каждом континенте до пятидесяти лет.",
+        "th": "ฉันอยากเดินทางไปทุกทวีปก่อนอายุห้าสิบปี",
+        "tr": "Elli yaşıma basmadan önce her kıtayı gezmek istiyorum.",
+        "es": "Quiero viajar a todos los continentes antes de cumplir cincuenta años.",
+        "fr": "Je veux voyager sur tous les continents avant d'avoir cinquante ans.",
+        "de": "Ich möchte jeden Kontinent bereisen, bevor ich 50 werde.",
+        "ar": "أريد السفر إلى كل قارات العالم قبل أن أبلغ الخمسين.",
+        "ja": "50歳になるまでに、すべての大陸を旅したいです。",
+        "it": "Voglio viaggiare in ogni continente prima di compiere cinquant'anni.",
+        "pt-BR": "Quero viajar para todos os continentes antes de completar 50 anos."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "我的主要目标是变得更加自给自足。"
+        "vi": "Mục tiêu chính của tôi là trở nên tự lập hơn.",
+        "id": "Tujuan utama saya adalah menjadi lebih mandiri.",
+        "zh-Hans": "我的主要目标是变得更加自给自足。",
+        "zh-Hant": "我的主要目標是讓自己更加獨立自主。",
+        "ko": "제 가장 큰 목표는 더 자립적인 사람이 되는 거예요.",
+        "ru": "Моя главная цель — стать более самостоятельным человеком.",
+        "th": "เป้าหมายหลักของฉันคือการพึ่งพาตัวเองให้มากขึ้น",
+        "tr": "Asıl hedefim daha bağımsız biri olmak.",
+        "es": "Mi principal objetivo es ser más autosuficiente.",
+        "fr": "Mon objectif principal est de devenir plus autonome.",
+        "de": "Mein wichtigstes Ziel ist es, unabhängiger zu werden.",
+        "ar": "هدفي الرئيسي هو أن أصبح أكثر اعتمادًا على نفسي.",
+        "ja": "私の主な目標は、もっと自立することです。",
+        "it": "Il mio obiettivo principale è diventare più autosufficiente.",
+        "pt-BR": "Meu principal objetivo é me tornar mais independente."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "我希望对我的社区产生积极影响。"
+        "vi": "Tôi hy vọng có thể tạo ra ảnh hưởng tích cực cho cộng đồng của mình.",
+        "id": "Saya berharap dapat memberikan dampak positif bagi komunitas saya.",
+        "zh-Hans": "我希望对我的社区产生积极影响。",
+        "zh-Hant": "我希望為自己的社區帶來正面的影響。",
+        "ko": "저는 제가 사는 지역사회에 긍정적인 영향을 주고 싶어요.",
+        "ru": "Я надеюсь оказать положительное влияние на своё сообщество.",
+        "th": "ฉันหวังว่าจะสร้างผลกระทบเชิงบวกให้กับชุมชนของฉัน",
+        "tr": "Topluluğum üzerinde olumlu bir etki yaratmayı umuyorum.",
+        "es": "Espero tener un impacto positivo en mi comunidad.",
+        "fr": "J'espère avoir un impact positif sur ma communauté.",
+        "de": "Ich hoffe, einen positiven Beitrag zu meiner Gemeinschaft zu leisten.",
+        "ar": "آمل أن أُحدث أثرًا إيجابيًا في مجتمعي.",
+        "ja": "地域社会に良い影響を与えたいと思っています。",
+        "it": "Spero di avere un impatto positivo sulla mia comunità.",
+        "pt-BR": "Espero causar um impacto positivo na minha comunidade."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "实现财务独立对我来说很重要。"
+        "vi": "Độc lập tài chính rất quan trọng đối với tôi.",
+        "id": "Mencapai kemandirian finansial penting bagi saya.",
+        "zh-Hans": "实现财务独立对我来说很重要。",
+        "zh-Hant": "對我來說，實現財務獨立很重要。",
+        "ko": "경제적으로 독립하는 것은 저에게 중요해요.",
+        "ru": "Для меня важно обрести финансовую независимость.",
+        "th": "การมีอิสรภาพทางการเงินเป็นสิ่งสำคัญสำหรับฉัน",
+        "tr": "Maddi bağımsızlığa ulaşmak benim için önemli.",
+        "es": "Para mí es importante alcanzar la independencia económica.",
+        "fr": "Atteindre l'indépendance financière est important pour moi.",
+        "de": "Finanzielle Unabhängigkeit zu erreichen, ist mir wichtig.",
+        "ar": "تحقيق الاستقلال المالي أمر مهم بالنسبة إليّ.",
+        "ja": "経済的に自立することは、私にとって大切です。",
+        "it": "Per me è importante raggiungere l'indipendenza finanziaria.",
+        "pt-BR": "Alcançar a independência financeira é importante para mim."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "平衡工作和个人生活是有挑战性的。"
+        "vi": "Cân bằng công việc và cuộc sống cá nhân là một thử thách.",
+        "id": "Menyeimbangkan pekerjaan dan kehidupan pribadi itu menantang.",
+        "zh-Hans": "平衡工作和个人生活是有挑战性的。",
+        "zh-Hant": "要兼顧工作和個人生活並不容易。",
+        "ko": "일과 개인 생활의 균형을 맞추는 건 쉽지 않아요.",
+        "ru": "Сочетать работу и личную жизнь непросто.",
+        "th": "การสร้างสมดุลระหว่างงานกับชีวิตส่วนตัวเป็นเรื่องท้าทาย",
+        "tr": "İş ve özel hayatı dengelemek zorlayıcı olabiliyor.",
+        "es": "Equilibrar el trabajo y la vida personal es todo un reto.",
+        "fr": "Il est difficile de trouver un équilibre entre le travail et la vie personnelle.",
+        "de": "Beruf und Privatleben unter einen Hut zu bringen, ist schwierig.",
+        "ar": "من الصعب تحقيق التوازن بين العمل والحياة الشخصية.",
+        "ja": "仕事と私生活のバランスを取るのは大変です。",
+        "it": "Conciliare il lavoro e la vita privata è una sfida.",
+        "pt-BR": "Equilibrar o trabalho e a vida pessoal é um desafio."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 4.48,
       "duration": 4.48,
       "translations": {
-        "zh-Hans": "我意识到我需要优先考虑我的心理健康。"
+        "vi": "Tôi nhận ra mình cần ưu tiên sức khỏe tinh thần.",
+        "id": "Saya menyadari bahwa saya perlu memprioritaskan kesehatan mental.",
+        "zh-Hans": "我意识到我需要优先考虑我的心理健康。",
+        "zh-Hant": "我意識到自己需要把心理健康放在優先位置。",
+        "ko": "정신 건강을 우선시해야 한다는 걸 깨달았어요.",
+        "ru": "Я понял(а), что мне нужно уделять первоочередное внимание своему психическому здоровью.",
+        "th": "ฉันตระหนักว่าต้องให้ความสำคัญกับสุขภาพจิตของตัวเองเป็นอันดับแรก",
+        "tr": "Ruh sağlığıma öncelik vermem gerektiğini fark ettim.",
+        "es": "Me he dado cuenta de que necesito dar prioridad a mi salud mental.",
+        "fr": "J'ai compris que je devais donner la priorité à ma santé mentale.",
+        "de": "Mir ist klar geworden, dass ich meine psychische Gesundheit an erste Stelle setzen muss.",
+        "ar": "أدركت أن عليّ إعطاء الأولوية لصحتي النفسية.",
+        "ja": "自分の心の健康を優先する必要があると気づきました。",
+        "it": "Mi sono reso conto che devo dare la priorità alla mia salute mentale.",
+        "pt-BR": "Percebi que preciso priorizar minha saúde mental."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 4.224,
       "duration": 4.224,
       "translations": {
-        "zh-Hans": "有时，意外事件会打乱我的计划。"
+        "vi": "Đôi khi, những sự kiện bất ngờ làm gián đoạn kế hoạch của tôi.",
+        "id": "Terkadang, kejadian tak terduga mengacaukan rencana saya.",
+        "zh-Hans": "有时，意外事件会打乱我的计划。",
+        "zh-Hant": "有時候，突如其來的事情會打亂我的計畫。",
+        "ko": "가끔 예상치 못한 일이 제 계획을 망쳐 놓기도 해요.",
+        "ru": "Иногда непредвиденные события нарушают мои планы.",
+        "th": "บางครั้งเหตุการณ์ที่ไม่คาดคิดก็ทำให้แผนของฉันต้องสะดุด",
+        "tr": "Bazen beklenmedik olaylar planlarımı altüst ediyor.",
+        "es": "A veces, los imprevistos trastocan mis planes.",
+        "fr": "Parfois, des événements imprévus bouleversent mes projets.",
+        "de": "Manchmal bringen unerwartete Ereignisse meine Pläne durcheinander.",
+        "ar": "تعرقل الأحداث غير المتوقعة خططي أحيانًا.",
+        "ja": "予想外の出来事で、計画が狂うことがあります。",
+        "it": "A volte, eventi imprevisti mandano all'aria i miei piani.",
+        "pt-BR": "Às vezes, acontecimentos inesperados atrapalham meus planos."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "对未来的不确定性使计划变得困难。"
+        "vi": "Sự không chắc chắn về tương lai khiến việc lập kế hoạch trở nên khó khăn.",
+        "id": "Ketidakpastian tentang masa depan membuat perencanaan menjadi sulit.",
+        "zh-Hans": "对未来的不确定性使计划变得困难。",
+        "zh-Hant": "對未來的不確定，讓規劃變得很困難。",
+        "ko": "미래가 불확실해서 계획을 세우기가 어려워요.",
+        "ru": "Неопределённость будущего затрудняет планирование.",
+        "th": "ความไม่แน่นอนเกี่ยวกับอนาคตทำให้การวางแผนเป็นเรื่องยาก",
+        "tr": "Geleceğe dair belirsizlik plan yapmayı zorlaştırıyor.",
+        "es": "La incertidumbre sobre el futuro dificulta la planificación.",
+        "fr": "L'incertitude face à l'avenir rend la planification difficile.",
+        "de": "Die Ungewissheit über die Zukunft macht das Planen schwierig.",
+        "ar": "يجعل عدم اليقين بشأن المستقبل التخطيط أمرًا صعبًا.",
+        "ja": "将来が不確かなため、計画を立てるのは難しいです。",
+        "it": "L'incertezza sul futuro rende difficile fare progetti.",
+        "pt-BR": "A incerteza sobre o futuro dificulta o planejamento."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "我过去比较随性，但现在我会提前计划。"
+        "vi": "Trước đây tôi sống tùy hứng hơn, nhưng giờ tôi lên kế hoạch trước.",
+        "id": "Dulu saya lebih spontan, tetapi sekarang saya membuat rencana terlebih dahulu.",
+        "zh-Hans": "我过去比较随性，但现在我会提前计划。",
+        "zh-Hant": "我以前比較隨性，但現在會提前做計畫。",
+        "ko": "예전에는 더 즉흥적이었지만, 지금은 미리 계획을 세워요.",
+        "ru": "Раньше я был(а) более спонтанным человеком, а теперь планирую заранее.",
+        "th": "เมื่อก่อนฉันใช้ชีวิตตามใจมากกว่านี้ แต่ตอนนี้ฉันวางแผนล่วงหน้า",
+        "tr": "Eskiden daha spontane davranırdım ama artık önceden plan yapıyorum.",
+        "es": "Antes era más espontáneo, pero ahora hago planes con antelación.",
+        "fr": "Avant, j'étais plus spontané, mais maintenant je planifie à l'avance.",
+        "de": "Früher war ich spontaner, aber jetzt plane ich im Voraus.",
+        "ar": "كنت أكثر عفوية في السابق، أما الآن فأخطط مسبقًا.",
+        "ja": "以前はもっと行き当たりばったりでしたが、今は前もって計画を立てています。",
+        "it": "Un tempo ero più spontaneo, ma ora pianifico in anticipo.",
+        "pt-BR": "Eu costumava ser mais espontâneo, mas agora faço planos com antecedência."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "过去，我更注重短期目标。"
+        "vi": "Trước kia, tôi tập trung nhiều hơn vào những mục tiêu ngắn hạn.",
+        "id": "Dulu saya lebih berfokus pada tujuan jangka pendek.",
+        "zh-Hans": "过去，我更注重短期目标。",
+        "zh-Hant": "過去，我比較專注於短期目標。",
+        "ko": "예전에는 단기 목표에 더 집중했어요.",
+        "ru": "Раньше я больше сосредотачивался(ась) на краткосрочных целях.",
+        "th": "ในอดีตฉันให้ความสำคัญกับเป้าหมายระยะสั้นมากกว่า",
+        "tr": "Geçmişte kısa vadeli hedeflere daha çok odaklanırdım.",
+        "es": "En el pasado me centraba más en los objetivos a corto plazo.",
+        "fr": "Auparavant, je me concentrais davantage sur des objectifs à court terme.",
+        "de": "In der Vergangenheit konzentrierte ich mich stärker auf kurzfristige Ziele.",
+        "ar": "في الماضي، كنت أركّز أكثر على الأهداف القصيرة المدى.",
+        "ja": "以前は短期的な目標により重点を置いていました。",
+        "it": "In passato mi concentravo di più sugli obiettivi a breve termine.",
+        "pt-BR": "No passado, eu me concentrava mais em metas de curto prazo."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "我调整了我的计划以适应我目前的生活方式。"
+        "vi": "Tôi đã điều chỉnh kế hoạch để phù hợp với lối sống hiện tại.",
+        "id": "Saya menyesuaikan rencana agar sesuai dengan gaya hidup saya saat ini.",
+        "zh-Hans": "我调整了我的计划以适应我目前的生活方式。",
+        "zh-Hant": "我已經調整計畫，讓它符合目前的生活方式。",
+        "ko": "현재 생활 방식에 맞도록 계획을 조정했어요.",
+        "ru": "Я скорректировал(а) свои планы в соответствии с нынешним образом жизни.",
+        "th": "ฉันปรับแผนให้เข้ากับรูปแบบการใช้ชีวิตในปัจจุบันของตัวเองแล้ว",
+        "tr": "Planlarımı mevcut yaşam tarzıma uyacak şekilde değiştirdim.",
+        "es": "He adaptado mis planes a mi estilo de vida actual.",
+        "fr": "J'ai adapté mes projets à mon mode de vie actuel.",
+        "de": "Ich habe meine Pläne an meinen aktuellen Lebensstil angepasst.",
+        "ar": "عدّلت خططي لتناسب أسلوب حياتي الحالي.",
+        "ja": "今のライフスタイルに合うように、計画を調整しました。",
+        "it": "Ho adattato i miei piani al mio stile di vita attuale.",
+        "pt-BR": "Adaptei meus planos ao meu estilo de vida atual."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "我学会了对自己的期望保持灵活性。"
+        "vi": "Tôi đã học cách linh hoạt với những kỳ vọng của mình.",
+        "id": "Saya belajar untuk bersikap fleksibel terhadap ekspektasi saya.",
+        "zh-Hans": "我学会了对自己的期望保持灵活性。",
+        "zh-Hant": "我學會了對自己的期待保持彈性。",
+        "ko": "기대하는 바에 유연하게 대처하는 법을 배웠어요.",
+        "ru": "Я научился(ась) гибче относиться к своим ожиданиям.",
+        "th": "ฉันเรียนรู้ที่จะยืดหยุ่นกับความคาดหวังของตัวเอง",
+        "tr": "Beklentilerim konusunda esnek olmayı öğrendim.",
+        "es": "He aprendido a ser flexible con mis expectativas.",
+        "fr": "J'ai appris à faire preuve de souplesse dans mes attentes",
+        "de": "Ich habe gelernt, bei meinen Erwartungen flexibel zu bleiben.",
+        "ar": "تعلّمت أن أكون مرنًا في توقعاتي.",
+        "ja": "期待することに柔軟でいることを学びました。",
+        "it": "Ho imparato a essere flessibile nelle mie aspettative.",
+        "pt-BR": "Aprendi a ser flexível em relação às minhas expectativas."
       }
     }
   ]

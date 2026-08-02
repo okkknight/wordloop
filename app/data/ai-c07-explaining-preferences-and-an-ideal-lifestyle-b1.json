@@ -15,7 +15,21 @@
       "end": 4.352,
       "duration": 4.352,
       "translations": {
-        "zh-Hans": "我喜欢以安静的早餐开始我的一天。"
+        "ar": "أحب أن أبدأ يومي بوجبة إفطار هادئة.",
+        "vi": "Tôi thích bắt đầu ngày mới bằng một bữa sáng yên tĩnh.",
+        "id": "Saya suka memulai hari dengan sarapan yang tenang.",
+        "zh-Hans": "我喜欢以安静的早餐开始我的一天。",
+        "es": "Me gusta empezar el día con un desayuno tranquilo.",
+        "fr": "J'aime commencer ma journée par un petit-déjeuner au calme.",
+        "de": "Ich beginne meinen Tag gern mit einem ruhigen Frühstück.",
+        "it": "Mi piace iniziare la giornata con una colazione tranquilla.",
+        "ja": "静かな朝食で一日を始めるのが好きです。",
+        "pt-BR": "Gosto de começar o dia com um café da manhã tranquilo.",
+        "zh-Hant": "我喜歡以安靜的早餐開始一天。",
+        "ko": "저는 조용하게 아침 식사를 하며 하루를 시작하는 것을 좋아해요.",
+        "ru": "Мне нравится начинать свой день с тихого завтрака.",
+        "th": "ฉันชอบเริ่มต้นวันด้วยการรับประทานอาหารเช้าอย่างเงียบสงบ",
+        "tr": "Güne sakin bir kahvaltıyla başlamayı severim."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "我更喜欢可以在家工作的生活方式。"
+        "ar": "أفضل أسلوب حياة يتيح لي العمل من المنزل.",
+        "vi": "Tôi thích một lối sống cho phép mình làm việc tại nhà hơn.",
+        "id": "Saya lebih suka gaya hidup yang memungkinkan saya bekerja dari rumah.",
+        "zh-Hans": "我更喜欢可以在家工作的生活方式。",
+        "es": "Prefiero un estilo de vida que me permita trabajar desde casa.",
+        "fr": "Je préfère un mode de vie qui me permet de travailler depuis chez moi.",
+        "de": "Ich bevorzuge einen Lebensstil, bei dem ich von zu Hause aus arbeiten kann.",
+        "it": "Preferisco uno stile di vita che mi permetta di lavorare da casa.",
+        "ja": "在宅で仕事ができるライフスタイルを好みます。",
+        "pt-BR": "Prefiro um estilo de vida em que eu possa trabalhar de casa.",
+        "zh-Hant": "我更喜歡能在家工作的生活方式。",
+        "ko": "저는 집에서 일할 수 있는 생활 방식을 더 좋아해요.",
+        "ru": "Я предпочитаю такой образ жизни, при котором могу работать из дома.",
+        "th": "ฉันชอบวิถีชีวิตที่ทำให้สามารถทำงานจากที่บ้านได้มากกว่า",
+        "tr": "Evden çalışabildiğim bir yaşam tarzını tercih ederim."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "我喜欢在晚上读书。"
+        "ar": "أحب قضاء أمسياتي في القراءة.",
+        "vi": "Tôi rất thích dành những buổi tối để đọc sách.",
+        "id": "Saya senang menghabiskan malam dengan membaca.",
+        "zh-Hans": "我喜欢在晚上读书。",
+        "es": "Me encanta pasar las tardes leyendo.",
+        "fr": "J'adore passer mes soirées à lire.",
+        "de": "Ich verbringe meine Abende sehr gern mit Lesen.",
+        "it": "Adoro passare le serate a leggere.",
+        "ja": "夜は読書をして過ごすのが大好きです。",
+        "pt-BR": "Adoro passar as noites lendo.",
+        "zh-Hant": "我很喜歡用閱讀度過夜晚。",
+        "ko": "저는 저녁 시간을 독서로 보내는 것을 정말 좋아해요.",
+        "ru": "Я обожаю проводить вечера за чтением.",
+        "th": "ฉันชอบใช้เวลาช่วงเย็นไปกับการอ่านหนังสือมาก",
+        "tr": "Akşamlarımı kitap okuyarak geçirmeye bayılırım."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "待在户外亲近自然对我很重要。"
+        "ar": "من المهم بالنسبة لي أن أكون في الهواء الطلق وسط الطبيعة.",
+        "vi": "Đối với tôi, được ở ngoài trời giữa thiên nhiên rất quan trọng.",
+        "id": "Berada di luar dan menikmati alam sangat penting bagi saya.",
+        "zh-Hans": "待在户外亲近自然对我很重要。",
+        "es": "Para mí es importante estar al aire libre y en contacto con la naturaleza.",
+        "fr": "Être dehors, au contact de la nature, est important pour moi.",
+        "de": "Zeit in der Natur zu verbringen, ist mir wichtig.",
+        "it": "Per me è importante stare all'aperto, a contatto con la natura.",
+        "ja": "自然の中で屋外にいることは、私にとって大切です。",
+        "pt-BR": "Para mim, é importante estar ao ar livre, em meio à natureza.",
+        "zh-Hant": "對我來說，待在戶外親近大自然很重要。",
+        "ko": "자연 속에서 야외 시간을 보내는 것은 저에게 중요해요.",
+        "ru": "Для меня важно бывать на свежем воздухе, на природе.",
+        "th": "การได้อยู่กลางแจ้งท่ามกลางธรรมชาติเป็นสิ่งสำคัญสำหรับฉัน",
+        "tr": "Açık havada, doğayla iç içe olmak benim için önemli."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "对我来说，理想的一天会从晨跑开始。"
+        "ar": "سيبدأ اليوم المثالي بالنسبة لي بممارسة الجري صباحًا.",
+        "vi": "Một ngày lý tưởng với tôi sẽ bắt đầu bằng việc chạy bộ vào buổi sáng.",
+        "id": "Hari ideal bagi saya akan dimulai dengan jogging pagi.",
+        "zh-Hans": "对我来说，理想的一天会从晨跑开始。",
+        "es": "Para mí, un día ideal empezaría con un trote matutino.",
+        "fr": "Pour moi, une journée idéale commencerait par un jogging matinal.",
+        "de": "Mein idealer Tag würde mit einem morgendlichen Jogginglauf beginnen.",
+        "it": "Per me una giornata ideale inizierebbe con una corsa mattutina.",
+        "ja": "私にとって理想の一日は、朝のジョギングから始まります。",
+        "pt-BR": "Para mim, um dia ideal começaria com uma corrida pela manhã.",
+        "zh-Hant": "對我來說，理想的一天會從晨跑開始。",
+        "ko": "저에게 이상적인 하루는 아침 조깅으로 시작될 것 같아요.",
+        "ru": "Для меня идеальный день начался бы с утренней пробежки.",
+        "th": "สำหรับฉัน วันในอุดมคติจะเริ่มต้นด้วยการวิ่งจ็อกกิงตอนเช้า",
+        "tr": "Benim için ideal bir gün sabah koşusuyla başlardı."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "我理想的一天包括和家人在一起。"
+        "ar": "يتضمن يومي المثالي قضاء وقت مع عائلتي.",
+        "vi": "Một ngày lý tưởng của tôi có cả thời gian bên gia đình.",
+        "id": "Hari ideal saya mencakup waktu bersama keluarga.",
+        "zh-Hans": "我理想的一天包括和家人在一起。",
+        "es": "Mi día ideal incluye pasar tiempo con mi familia.",
+        "fr": "Ma journée idéale comprendrait du temps passé en famille.",
+        "de": "Zu meinem idealen Tag gehört Zeit mit meiner Familie.",
+        "it": "La mia giornata ideale comprende del tempo da trascorrere in famiglia.",
+        "ja": "私の理想の一日には、家族と過ごす時間があります。",
+        "pt-BR": "Meu dia ideal inclui passar um tempo com a família.",
+        "zh-Hant": "我理想的一天包括和家人相處。",
+        "ko": "제가 꿈꾸는 하루에는 가족과 함께 보내는 시간이 있어요.",
+        "ru": "В мой идеальный день входит время, проведённое с семьёй.",
+        "th": "วันในอุดมคติของฉันมีเวลาที่ได้ใช้ร่วมกับครอบครัว",
+        "tr": "İdeal günümde ailemle geçireceğim zaman da olurdu."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 4.181,
       "duration": 4.181,
       "translations": {
-        "zh-Hans": "我希望有一天能充满创意活动。"
+        "ar": "أتمنى أن أحظى بيوم حافل بالأنشطة الإبداعية.",
+        "vi": "Tôi rất muốn có một ngày tràn ngập những hoạt động sáng tạo.",
+        "id": "Saya ingin sekali menjalani hari yang penuh dengan kegiatan kreatif.",
+        "zh-Hans": "我希望有一天能充满创意活动。",
+        "es": "Me encantaría dedicar un día entero a actividades creativas.",
+        "fr": "J'aimerais beaucoup consacrer une journée entière à des activités créatives.",
+        "de": "Ich hätte gern einen ganzen Tag voller kreativer Aktivitäten.",
+        "it": "Mi piacerebbe trascorrere un'intera giornata dedicandomi ad attività creative.",
+        "ja": "創造的な活動でいっぱいの一日を過ごせたら、うれしいです。",
+        "pt-BR": "Eu adoraria ter um dia cheio de atividades criativas.",
+        "zh-Hant": "我很想擁有充滿創意活動的一天。",
+        "ko": "창의적인 활동으로 가득한 하루를 보내고 싶어요.",
+        "ru": "Я бы с удовольствием провёл целый день, занимаясь творчеством.",
+        "th": "ฉันอยากมีวันที่เต็มไปด้วยกิจกรรมสร้างสรรค์มาก",
+        "tr": "Yaratıcı etkinliklerle dolu bir gün geçirmeyi çok isterim."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "在我理想的生活中，我每天都有时间做爱好。"
+        "ar": "في حياتي المثالية، سيتوفر لي وقت لممارسة هواياتي كل يوم.",
+        "vi": "Trong cuộc sống lý tưởng, ngày nào tôi cũng có thời gian cho sở thích của mình.",
+        "id": "Dalam kehidupan ideal saya, saya punya waktu untuk hobi setiap hari.",
+        "zh-Hans": "在我理想的生活中，我每天都有时间做爱好。",
+        "es": "En mi vida ideal, tendría tiempo para mis aficiones todos los días.",
+        "fr": "Dans ma vie idéale, j'aurais du temps pour mes loisirs tous les jours.",
+        "de": "In meinem idealen Leben hätte ich jeden Tag Zeit für meine Hobbys.",
+        "it": "Nella mia vita ideale avrei ogni giorno del tempo per i miei hobby.",
+        "ja": "理想の生活では、毎日趣味の時間を持ちたいです。",
+        "pt-BR": "Na minha vida ideal, eu teria tempo para meus hobbies todos os dias.",
+        "zh-Hant": "在理想的生活中，我每天都有時間培養自己的興趣。",
+        "ko": "제가 꿈꾸는 삶에서는 매일 취미를 즐길 시간이 있을 거예요.",
+        "ru": "В моей идеальной жизни у меня каждый день было бы время для хобби.",
+        "th": "ในชีวิตในอุดมคติของฉัน ฉันจะมีเวลาทำงานอดิเรกทุกวัน",
+        "tr": "İdeal hayatımda her gün hobilerime ayıracak vaktim olurdu."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我喜欢安静的早晨，因为它们能帮助我集中注意力。"
+        "ar": "أحب الصباحات الهادئة لأنها تساعدني على التركيز.",
+        "vi": "Tôi thích những buổi sáng yên tĩnh vì chúng giúp tôi tập trung.",
+        "id": "Saya suka pagi yang tenang karena itu membantu saya berkonsentrasi.",
+        "zh-Hans": "我喜欢安静的早晨，因为它们能帮助我集中注意力。",
+        "es": "Me gustan las mañanas tranquilas porque me ayudan a concentrarme.",
+        "fr": "J'aime les matinées calmes parce qu'elles m'aident à me concentrer.",
+        "de": "Ich mag ruhige Morgen, weil sie mir helfen, mich zu konzentrieren.",
+        "it": "Mi piacciono le mattine tranquille perché mi aiutano a concentrarmi.",
+        "ja": "静かな朝が好きです。集中しやすくなるからです。",
+        "pt-BR": "Gosto de manhãs tranquilas porque elas me ajudam a me concentrar.",
+        "zh-Hant": "我喜歡寧靜的早晨，因為那能幫助我專心。",
+        "ko": "조용한 아침을 좋아해요. 집중하는 데 도움이 되거든요.",
+        "ru": "Мне нравятся тихие утра, потому что они помогают мне сосредоточиться.",
+        "th": "ฉันชอบช่วงเช้าที่เงียบสงบ เพราะช่วยให้มีสมาธิ",
+        "tr": "Sakin sabahları severim; odaklanmama yardımcı olurlar."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.944,
       "duration": 2.944,
       "translations": {
-        "zh-Hans": "当我被大自然包围时，我感到最快乐。"
+        "ar": "أشعر بأقصى سعادة عندما تحيط بي الطبيعة.",
+        "vi": "Tôi cảm thấy hạnh phúc nhất khi được bao quanh bởi thiên nhiên.",
+        "id": "Saya merasa paling bahagia ketika dikelilingi alam.",
+        "zh-Hans": "当我被大自然包围时，我感到最快乐。",
+        "es": "Me siento más feliz cuando estoy rodeado de naturaleza.",
+        "fr": "Je suis le plus heureux quand je suis entouré de nature.",
+        "de": "Am glücklichsten bin ich, wenn ich von Natur umgeben bin.",
+        "it": "Sono più felice quando sono circondato dalla natura.",
+        "ja": "自然に囲まれているときが、いちばん幸せです。",
+        "pt-BR": "Eu me sinto mais feliz quando estou cercado pela natureza.",
+        "zh-Hant": "被大自然包圍時，我感到最幸福。",
+        "ko": "자연에 둘러싸여 있을 때 가장 행복해요.",
+        "ru": "Я чувствую себя счастливее всего, когда меня окружает природа.",
+        "th": "ฉันรู้สึกมีความสุขที่สุดเมื่อได้อยู่ท่ามกลางธรรมชาติ",
+        "tr": "Kendimi doğayla çevrili olduğumda en mutlu hissederim."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 4.053,
       "duration": 4.053,
       "translations": {
-        "zh-Hans": "我喜欢有条理的一天，因为它让我保持井井有条。"
+        "ar": "أستمتع بيوم منظم لأنه يساعدني على ترتيب أموري.",
+        "vi": "Tôi thích một ngày có lịch trình rõ ràng vì điều đó giúp tôi ngăn nắp hơn.",
+        "id": "Saya menikmati hari yang teratur karena itu membuat saya tetap tertata.",
+        "zh-Hans": "我喜欢有条理的一天，因为它让我保持井井有条。",
+        "es": "Disfruto de tener un día estructurado porque me ayuda a organizarme.",
+        "fr": "J'aime avoir une journée bien structurée parce que cela m'aide à rester organisé.",
+        "de": "Ich mag einen strukturierten Tagesablauf, weil er mich organisiert hält.",
+        "it": "Mi piace avere una giornata ben strutturata perché mi aiuta a essere organizzato.",
+        "ja": "予定の整った一日が好きです。きちんと整理して過ごせるからです。",
+        "pt-BR": "Gosto de um dia bem estruturado porque isso me mantém organizado.",
+        "zh-Hant": "我喜歡有條理的一天，因為這能讓我保持井然有序。",
+        "ko": "일과가 체계적인 날을 좋아해요. 정돈된 상태를 유지할 수 있거든요.",
+        "ru": "Мне нравится распланированный день, потому что он помогает мне поддерживать порядок.",
+        "th": "ฉันชอบวันที่มีแบบแผน เพราะช่วยให้จัดการทุกอย่างได้เป็นระเบียบ",
+        "tr": "Düzenli bir günü severim; bu, düzenimi korumamı sağlar."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 5.035,
       "duration": 5.035,
       "translations": {
-        "zh-Hans": "我喜欢在安静的空间工作，因为它能提高我的工作效率。"
+        "ar": "أحب العمل في مكان هادئ لأنه يعزز إنتاجيتي.",
+        "vi": "Tôi thích làm việc ở nơi yên tĩnh vì điều đó nâng cao năng suất của tôi.",
+        "id": "Saya suka bekerja di tempat yang tenang karena itu meningkatkan produktivitas saya.",
+        "zh-Hans": "我喜欢在安静的空间工作，因为它能提高我的工作效率。",
+        "es": "Me gusta trabajar en un lugar tranquilo porque aumenta mi productividad.",
+        "fr": "J'aime travailler dans un endroit calme parce que cela stimule ma productivité.",
+        "de": "Ich arbeite gern an einem ruhigen Ort, weil das meine Produktivität steigert.",
+        "it": "Mi piace lavorare in un ambiente tranquillo perché aumenta la mia produttività.",
+        "ja": "静かな場所で働くのが好きです。生産性が上がるからです。",
+        "pt-BR": "Gosto de trabalhar em um lugar tranquilo porque isso aumenta minha produtividade.",
+        "zh-Hant": "我喜歡在安靜的空間工作，因為這能提高我的工作效率。",
+        "ko": "조용한 공간에서 일하는 것을 좋아해요. 생산성이 높아지거든요.",
+        "ru": "Мне нравится работать в тихом месте, потому что это повышает мою продуктивность.",
+        "th": "ฉันชอบทำงานในที่เงียบสงบ เพราะช่วยเพิ่มประสิทธิภาพในการทำงาน",
+        "tr": "Sessiz bir alanda çalışmayı severim; bu, verimliliğimi artırır."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 4.693,
       "duration": 4.693,
       "translations": {
-        "zh-Hans": "我不能总是旅行，但我喜欢探索我的城市。"
+        "ar": "لا أستطيع السفر دائمًا، لكنني أستمتع باستكشاف مدينتي.",
+        "vi": "Tôi không phải lúc nào cũng có thể đi du lịch, nhưng tôi thích khám phá thành phố của mình.",
+        "id": "Saya tidak selalu bisa bepergian, tetapi saya senang menjelajahi kota saya.",
+        "zh-Hans": "我不能总是旅行，但我喜欢探索我的城市。",
+        "es": "No siempre puedo viajar, pero me gusta explorar mi ciudad.",
+        "fr": "Je ne peux pas toujours voyager, mais j'aime découvrir ma ville.",
+        "de": "Ich kann nicht immer verreisen, aber ich erkunde gern meine Stadt.",
+        "it": "Non posso sempre viaggiare, ma mi piace esplorare la mia città.",
+        "ja": "いつでも旅行できるわけではありませんが、街を探検するのは楽しいです。",
+        "pt-BR": "Nem sempre posso viajar, mas gosto de explorar a minha cidade.",
+        "zh-Hant": "我不一定總能旅行，但我喜歡探索自己的城市。",
+        "ko": "항상 여행을 할 수는 없지만, 제가 사는 도시를 둘러보는 건 좋아해요.",
+        "ru": "Я не всегда могу путешествовать, но мне нравится исследовать свой город.",
+        "th": "ฉันอาจเดินทางไม่ได้เสมอไป แต่ชอบออกสำรวจเมืองของตัวเอง",
+        "tr": "Her zaman seyahat edemem ama şehrimi keşfetmekten hoşlanırım."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "我可以通过兼职工作来妥协，以获得更多的空闲时间。"
+        "ar": "يمكنني التنازل والعمل بدوام جزئي لأحظى بوقت فراغ أكبر.",
+        "vi": "Tôi có thể thỏa hiệp bằng cách làm bán thời gian để có thêm thời gian rảnh.",
+        "id": "Saya bisa berkompromi dengan bekerja paruh waktu agar punya lebih banyak waktu luang.",
+        "zh-Hans": "我可以通过兼职工作来妥协，以获得更多的空闲时间。",
+        "es": "Puedo llegar a un acuerdo trabajando a tiempo parcial para tener más tiempo libre.",
+        "fr": "Je peux faire un compromis en travaillant à temps partiel pour avoir plus de temps libre.",
+        "de": "Ich kann einen Kompromiss eingehen und in Teilzeit arbeiten, um mehr Freizeit zu haben.",
+        "it": "Posso scendere a compromessi lavorando a tempo parziale per avere più tempo libero.",
+        "ja": "もっと自由な時間を持つために、パートタイムで働くという妥協はできます。",
+        "pt-BR": "Posso aceitar trabalhar em meio período para ter mais tempo livre.",
+        "zh-Hant": "我可以透過兼職工作來妥協，以換取更多空閒時間。",
+        "ko": "더 많은 자유 시간을 갖기 위해 시간제로 일하는 것과 타협할 수 있어요.",
+        "ru": "Я могу пойти на компромисс и работать неполный день, чтобы иметь больше свободного времени.",
+        "th": "ฉันยอมทำงานพาร์ตไทม์เพื่อแลกกับเวลาว่างที่มากขึ้นได้",
+        "tr": "Daha fazla boş vaktim olması için yarı zamanlı çalışmayı kabul edebilirim."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.309,
       "duration": 4.309,
       "translations": {
-        "zh-Hans": "我不能住在海边，但我经常去海滩。"
+        "ar": "لا أستطيع العيش قرب المحيط، لكنني أزور الشاطئ كثيرًا.",
+        "vi": "Tôi không thể sống bên đại dương, nhưng tôi thường đến bãi biển.",
+        "id": "Saya tidak bisa tinggal di tepi laut, tetapi saya sering mengunjungi pantai.",
+        "zh-Hans": "我不能住在海边，但我经常去海滩。",
+        "es": "No puedo vivir junto al mar, pero visito la playa con frecuencia.",
+        "fr": "Je ne peux pas vivre au bord de l'océan, mais je vais souvent à la plage.",
+        "de": "Ich kann nicht am Meer leben, aber ich besuche oft den Strand.",
+        "it": "Non posso vivere in riva al mare, ma vado spesso in spiaggia.",
+        "ja": "海辺に住むことはできませんが、よく海へ遊びに行きます。",
+        "pt-BR": "Não posso morar à beira-mar, mas costumo visitar a praia.",
+        "zh-Hant": "我無法住在海邊，但我常常去海灘。",
+        "ko": "바닷가에서 살 수는 없지만, 해변에는 자주 가요.",
+        "ru": "Я не могу жить у океана, но часто хожу на пляж.",
+        "th": "ฉันอยู่ริมมหาสมุทรไม่ได้ แต่ไปเที่ยวชายหาดบ่อย ๆ",
+        "tr": "Okyanus kenarında yaşayamam ama plaja sık sık giderim."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "我不能拥有大房子，但我让我的小空间变得舒适。"
+        "ar": "لا أستطيع امتلاك منزل كبير، لكنني أجعل مساحتي الصغيرة مريحة.",
+        "vi": "Tôi không thể có một ngôi nhà lớn, nhưng tôi biến không gian nhỏ của mình thành nơi ấm cúng.",
+        "id": "Saya tidak bisa memiliki rumah besar, tetapi saya membuat ruang kecil saya terasa nyaman.",
+        "zh-Hans": "我不能拥有大房子，但我让我的小空间变得舒适。",
+        "es": "No puedo tener una casa grande, pero hago acogedor mi pequeño espacio.",
+        "fr": "Je ne peux pas avoir une grande maison, mais je rends mon petit espace chaleureux",
+        "de": "Ich kann kein großes Haus haben, aber ich mache es mir in meiner kleinen Wohnung gemütlich.",
+        "it": "Non posso avere una casa grande, ma rendo accogliente il mio piccolo spazio.",
+        "ja": "大きな家には住めませんが、小さな空間を居心地よくしています。",
+        "pt-BR": "Não posso ter uma casa grande, mas deixo meu espaço pequeno aconchegante.",
+        "zh-Hant": "我無法擁有大房子，但我會把小空間布置得很舒適。",
+        "ko": "큰 집을 가질 수는 없지만, 작은 공간을 아늑하게 꾸며요.",
+        "ru": "Я не могу иметь большой дом, но делаю своё маленькое пространство уютным.",
+        "th": "ฉันมีบ้านหลังใหญ่ไม่ได้ แต่ทำให้พื้นที่เล็ก ๆ ของตัวเองน่าอยู่ได้",
+        "tr": "Büyük bir evim olamaz ama küçük alanımı rahat ve sıcak bir yere dönüştürürüm."
       }
     }
   ]

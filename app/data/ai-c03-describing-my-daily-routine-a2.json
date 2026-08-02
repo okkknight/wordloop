@@ -15,7 +15,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "我早起并煮咖啡。"
+        "zh-Hans": "我早起并煮咖啡。",
+        "zh-Hant": "我早起泡咖啡。",
+        "ja": "私は早起きしてコーヒーを入れます。",
+        "de": "Ich stehe früh auf und mache mir einen Kaffee.",
+        "ru": "Я рано встаю и готовлю себе кофе.",
+        "ar": "أستيقظ مبكرًا وأعدّ بعض القهوة.",
+        "es": "Me levanto temprano y preparo café.",
+        "pt-BR": "Levanto cedo e preparo um café.",
+        "vi": "Tôi dậy sớm và pha một ít cà phê.",
+        "th": "ฉันตื่นเช้าและชงกาแฟดื่ม",
+        "fr": "Je me lève tôt et je prépare du café.",
+        "ko": "저는 일찍 일어나서 커피를 조금 내려요.",
+        "tr": "Erken kalkıp kahve yaparım.",
+        "it": "Mi alzo presto e preparo il caffè.",
+        "id": "Saya bangun pagi dan membuat kopi."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "我通常在早上七点起床并刷牙。"
+        "zh-Hans": "我通常在早上七点起床并刷牙。",
+        "zh-Hant": "我通常早上七點起床並刷牙。",
+        "ja": "私はたいてい朝7時に起きて、歯を磨きます。",
+        "de": "Normalerweise wache ich um 7 Uhr morgens auf und putze mir die Zähne.",
+        "ru": "Обычно я просыпаюсь в семь утра и чищу зубы.",
+        "ar": "عادةً أستيقظ في السابعة صباحًا وأفرّش أسناني.",
+        "es": "Normalmente me despierto a las siete de la mañana y me cepillo los dientes.",
+        "pt-BR": "Normalmente acordo às sete da manhã e escovo os dentes.",
+        "vi": "Tôi thường thức dậy lúc bảy giờ sáng và đánh răng.",
+        "th": "ปกติฉันตื่นตอนเจ็ดโมงเช้าและแปรงฟัน",
+        "fr": "Je me réveille généralement à sept heures du matin et je me brosse les dents.",
+        "ko": "저는 보통 아침 7시에 일어나서 양치해요.",
+        "tr": "Genellikle sabah saat yedide uyanır ve dişlerimi fırçalarım.",
+        "it": "Di solito mi sveglio alle sette e mi lavo i denti.",
+        "id": "Biasanya saya bangun pukul tujuh pagi dan menggosok gigi."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "醒来后，我查看手机上的信息。"
+        "zh-Hans": "醒来后，我查看手机上的信息。",
+        "zh-Hant": "醒來後，我會查看手機上的訊息。",
+        "ja": "起きたら、メッセージが来ていないかスマホを確認します。",
+        "de": "Nach dem Aufwachen schaue ich auf meinem Handy nach Nachrichten.",
+        "ru": "Проснувшись, я проверяю сообщения на телефоне.",
+        "ar": "بعد أن أستيقظ، أتحقق من الرسائل على هاتفي.",
+        "es": "Después de despertarme, reviso los mensajes del teléfono.",
+        "pt-BR": "Depois de acordar, verifico as mensagens no celular.",
+        "vi": "Sau khi thức dậy, tôi kiểm tra điện thoại xem có tin nhắn không.",
+        "th": "หลังตื่นนอน ฉันเช็กโทรศัพท์ดูข้อความ",
+        "fr": "Après mon réveil, je regarde mon téléphone pour voir si j'ai des messages.",
+        "ko": "일어난 후에는 메시지가 왔는지 휴대폰을 확인해요.",
+        "tr": "Uyandıktan sonra mesajlar için telefonumu kontrol ederim.",
+        "it": "Dopo essermi svegliato, controllo il telefono per vedere se ci sono messaggi.",
+        "id": "Setelah bangun, saya memeriksa ponsel untuk melihat pesan."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "出门前，我一定会喂猫。"
+        "zh-Hans": "出门前，我一定会喂猫。",
+        "zh-Hant": "出門前，我一定會餵貓。",
+        "ja": "出かける前に、必ず猫に餌をあげます。",
+        "de": "Bevor ich gehe, füttere ich auf jeden Fall die Katze.",
+        "ru": "Перед выходом я обязательно кормлю кошку.",
+        "ar": "قبل أن أخرج، أتأكد من إطعام القطة.",
+        "es": "Antes de salir, me aseguro de darle de comer al gato.",
+        "pt-BR": "Antes de sair, não deixo de alimentar o gato.",
+        "vi": "Trước khi ra ngoài, tôi luôn nhớ cho mèo ăn.",
+        "th": "ก่อนออกจากบ้าน ฉันจะไม่ลืมให้อาหารแมว",
+        "fr": "Avant de partir, je pense toujours à donner à manger au chat.",
+        "ko": "외출하기 전에 항상 고양이에게 밥 주는 걸 잊지 않아요.",
+        "tr": "Evden çıkmadan önce kediyi beslediğimden emin olurum.",
+        "it": "Prima di uscire, mi assicuro di dare da mangiare al gatto.",
+        "id": "Sebelum pergi, saya memastikan kucing sudah diberi makan."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 4.224,
       "duration": 4.224,
       "translations": {
-        "zh-Hans": "我通常通过查看电子邮件和设定优先事项来开始我的工作日。"
+        "zh-Hans": "我通常通过查看电子邮件和设定优先事项来开始我的工作日。",
+        "zh-Hant": "我通常會查看電子郵件、排定優先順序，藉此開始工作。",
+        "ja": "普段はメールを確認して優先順位を決めることから仕事を始めます。",
+        "de": "Normalerweise beginne ich meinen Arbeitstag damit, E-Mails zu prüfen und Prioritäten festzulegen.",
+        "ru": "Обычно я начинаю рабочий день с проверки электронной почты и определения приоритетов.",
+        "ar": "عادةً ما أبدأ يوم عملي بتفقّد رسائل البريد الإلكتروني وتحديد الأولويات.",
+        "es": "Normalmente empiezo mi jornada revisando los correos y estableciendo prioridades.",
+        "pt-BR": "Normalmente começo meu dia de trabalho verificando os e-mails e definindo prioridades.",
+        "vi": "Tôi thường bắt đầu ngày làm việc bằng cách kiểm tra email và sắp xếp việc ưu tiên.",
+        "th": "ปกติฉันเริ่มวันทำงานด้วยการเช็กอีเมลและจัดลำดับความสำคัญ",
+        "fr": "Je commence généralement ma journée de travail en consultant mes e-mails et en définissant mes priorités.",
+        "ko": "저는 보통 이메일을 확인하고 우선순위를 정하면서 업무를 시작해요.",
+        "tr": "Genellikle iş gününe e-postaları kontrol edip öncelikleri belirleyerek başlarım.",
+        "it": "Di solito inizio la giornata lavorativa controllando le e-mail e stabilendo le priorità.",
+        "id": "Biasanya saya memulai hari kerja dengan memeriksa email dan menentukan prioritas."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "早餐我经常吃麦片，然后去办公室。"
+        "zh-Hans": "早餐我经常吃麦片，然后去办公室。",
+        "zh-Hant": "早餐我常吃麥片，然後前往辦公室。",
+        "ja": "朝食にはよくシリアルを食べて、それからオフィスに向かいます。",
+        "de": "Zum Frühstück esse ich oft Müsli und fahre dann ins Büro.",
+        "ru": "На завтрак я часто ем хлопья, а потом отправляюсь в офис.",
+        "ar": "غالبًا ما أتناول الحبوب في الفطور، ثم أتوجه إلى المكتب.",
+        "es": "Para desayunar, suelo tomar cereales y después me voy a la oficina.",
+        "pt-BR": "No café da manhã, geralmente como cereal e depois vou para o escritório.",
+        "vi": "Bữa sáng của tôi thường là ngũ cốc, rồi tôi đi đến văn phòng.",
+        "th": "อาหารเช้าของฉันมักเป็นซีเรียล แล้วก็ไปออฟฟิศ",
+        "fr": "Au petit-déjeuner, je mange souvent des céréales, puis je vais au bureau.",
+        "ko": "아침으로는 보통 시리얼을 먹고 사무실로 가요.",
+        "tr": "Kahvaltıda sık sık mısır gevreği yer, sonra ofise giderim.",
+        "it": "A colazione mangio spesso cereali, poi vado in ufficio.",
+        "id": "Untuk sarapan, saya sering makan sereal lalu pergi ke kantor."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 4.651,
       "duration": 4.651,
       "translations": {
-        "zh-Hans": "工作期间，我专注于完成任务和参加会议。"
+        "zh-Hans": "工作期间，我专注于完成任务和参加会议。",
+        "zh-Hant": "工作期間，我專心完成工作並參加會議。",
+        "ja": "仕事中は、タスクを終わらせたり会議に出席したりすることに集中します。",
+        "de": "Während der Arbeit konzentriere ich mich darauf, meine Aufgaben zu erledigen und an Besprechungen teilzunehmen.",
+        "ru": "Во время работы я сосредоточен на выполнении задач и участии во встречах.",
+        "ar": "أركّز أثناء العمل على إنجاز مهامي وحضور الاجتماعات.",
+        "es": "Durante el trabajo, me concentro en terminar mis tareas y asistir a reuniones.",
+        "pt-BR": "Durante o trabalho, concentro-me em terminar minhas tarefas e participar de reuniões.",
+        "vi": "Trong giờ làm, tôi tập trung hoàn thành công việc và tham dự các cuộc họp.",
+        "th": "ระหว่างทำงาน ฉันตั้งใจทำงานให้เสร็จและเข้าร่วมประชุม",
+        "fr": "Au travail, je me concentre sur mes tâches et je participe aux réunions.",
+        "ko": "업무 중에는 할 일을 마치고 회의에 참석하는 데 집중해요.",
+        "tr": "Çalışırken görevlerimi tamamlamaya ve toplantılara katılmaya odaklanırım.",
+        "it": "Al lavoro mi concentro sul completare i miei compiti e partecipare alle riunioni.",
+        "id": "Saat bekerja, saya fokus menyelesaikan tugas dan menghadiri rapat."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 4.779,
       "duration": 4.779,
       "translations": {
-        "zh-Hans": "我典型的工作日包括接听客户电话和管理项目。"
+        "zh-Hans": "我典型的工作日包括接听客户电话和管理项目。",
+        "zh-Hant": "我平常的工作日包括接聽客戶電話和管理專案。",
+        "ja": "私の普段の仕事は、顧客からの電話に対応したりプロジェクトを管理したりすることです。",
+        "de": "Zu meinem typischen Arbeitstag gehört es, Kundenanrufe zu beantworten und Projekte zu verwalten.",
+        "ru": "В мой обычный рабочий день входит ответ на звонки клиентов и управление проектами.",
+        "ar": "يتضمن يوم عملي المعتاد الرد على مكالمات العملاء وإدارة المشاريع.",
+        "es": "En un día de trabajo normal atiendo llamadas de clientes y gestiono proyectos.",
+        "pt-BR": "Em um dia de trabalho típico, atendo ligações de clientes e gerencio projetos.",
+        "vi": "Một ngày làm việc điển hình của tôi gồm trả lời cuộc gọi của khách hàng và quản lý dự án.",
+        "th": "วันทำงานปกติของฉันคือรับสายลูกค้าและจัดการโครงการ",
+        "fr": "Une journée de travail habituelle consiste pour moi à répondre aux appels des clients et à gérer des projets.",
+        "ko": "저의 평소 업무는 고객 전화에 응답하고 프로젝트를 관리하는 일이에요.",
+        "tr": "Tipik bir iş günümde müşteri aramalarını yanıtlar ve projeleri yönetirim.",
+        "it": "In una tipica giornata lavorativa rispondo alle chiamate dei clienti e gestisco i progetti.",
+        "id": "Dalam hari kerja biasa, saya menjawab panggilan klien dan mengelola proyek."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "下班后，我通常会去散步放松一下，然后再吃晚饭。"
+        "zh-Hans": "下班后，我通常会去散步放松一下，然后再吃晚饭。",
+        "zh-Hant": "下班後，我通常會散步放鬆一下，再吃晚餐。",
+        "ja": "仕事の後は、夕食の前にリラックスするため、たいてい散歩に出ます。",
+        "de": "Nach der Arbeit gehe ich normalerweise vor dem Abendessen spazieren, um mich zu entspannen.",
+        "ru": "После работы я обычно гуляю, чтобы расслабиться перед ужином.",
+        "ar": "بعد العمل، أذهب عادةً في نزهة لأسترخي قبل العشاء.",
+        "es": "Después del trabajo, normalmente salgo a caminar para relajarme antes de cenar.",
+        "pt-BR": "Depois do trabalho, normalmente saio para caminhar e relaxar antes do jantar.",
+        "vi": "Sau giờ làm, tôi thường đi bộ thư giãn trước bữa tối.",
+        "th": "หลังเลิกงาน ฉันมักเดินเล่นเพื่อผ่อนคลายก่อนอาหารเย็น",
+        "fr": "Après le travail, je vais généralement me promener pour me détendre avant le dîner.",
+        "ko": "퇴근 후에는 보통 저녁 식사 전에 산책하며 휴식을 취해요.",
+        "tr": "İşten sonra akşam yemeğinden önce rahatlamak için genellikle yürüyüşe çıkarım.",
+        "it": "Dopo il lavoro di solito faccio una passeggiata per rilassarmi prima di cena.",
+        "id": "Sepulang kerja, biasanya saya berjalan-jalan untuk bersantai sebelum makan malam."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 5.461,
       "duration": 5.461,
       "translations": {
-        "zh-Hans": "我大约早上九点开始工作，下午五点结束，然后回家吃晚饭。"
+        "zh-Hans": "我大约早上九点开始工作，下午五点结束，然后回家吃晚饭。",
+        "zh-Hant": "我大約早上九點開始工作，下午五點下班，然後回家吃晚餐。",
+        "ja": "私は9時ごろに仕事を始め、5時までに終えて、それから夕食を食べに帰宅します。",
+        "de": "Ich beginne gegen 9 Uhr mit der Arbeit und bin um 17 Uhr fertig; danach fahre ich zum Abendessen nach Hause.",
+        "ru": "Я начинаю работать около девяти утра и заканчиваю к пяти, а потом еду домой ужинать.",
+        "ar": "أبدأ العمل نحو التاسعة صباحًا وأنتهي بحلول الخامسة، ثم أعود إلى المنزل لتناول العشاء.",
+        "es": "Empiezo a trabajar sobre las nueve de la mañana y termino a las cinco; luego vuelvo a casa a cenar.",
+        "pt-BR": "Começo a trabalhar por volta das nove da manhã e termino às cinco; depois vou para casa jantar.",
+        "vi": "Tôi bắt đầu làm việc khoảng chín giờ sáng và kết thúc lúc năm giờ chiều, rồi về nhà ăn tối.",
+        "th": "ฉันเริ่มงานประมาณเก้าโมงเช้าและเลิกห้าโมงเย็น จากนั้นก็กลับบ้านไปกินอาหารเย็น",
+        "fr": "Je commence à travailler vers neuf heures et je finis à dix-sept heures, puis je rentre dîner.",
+        "ko": "아침 9시쯤 일을 시작해 오후 5시에 끝낸 다음 집에 가서 저녁을 먹어요.",
+        "tr": "Saat dokuz civarında işe başlar, beşte bitirir ve sonra akşam yemeği için eve giderim.",
+        "it": "Inizio a lavorare verso le nove e finisco alle cinque, poi torno a casa per cena.",
+        "id": "Saya mulai bekerja sekitar pukul sembilan pagi dan selesai pukul lima sore, lalu pulang untuk makan malam."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 4.395,
       "duration": 4.395,
       "translations": {
-        "zh-Hans": "晚上，我喜欢在晚饭后读书或看电影。"
+        "zh-Hans": "晚上，我喜欢在晚饭后读书或看电影。",
+        "zh-Hant": "晚上，我喜歡在晚餐後讀書或看電影。",
+        "ja": "夜は、夕食の後に本を読んだり映画を見たりするのが好きです。",
+        "de": "Abends lese ich nach dem Abendessen gern ein Buch oder schaue einen Film.",
+        "ru": "Вечером я люблю читать книгу или смотреть фильм после ужина.",
+        "ar": "في المساء، أحب قراءة كتاب أو مشاهدة فيلم بعد العشاء.",
+        "es": "Por la noche, me gusta leer un libro o ver una película después de cenar.",
+        "pt-BR": "À noite, gosto de ler um livro ou assistir a um filme depois do jantar.",
+        "vi": "Buổi tối, sau bữa tối tôi thích đọc sách hoặc xem phim.",
+        "th": "ตอนเย็น หลังอาหารเย็นฉันชอบอ่านหนังสือหรือดูหนัง",
+        "fr": "Le soir, j'aime lire un livre ou regarder un film après le dîner.",
+        "ko": "저녁에는 식사 후에 책을 읽거나 영화를 보는 걸 좋아해요.",
+        "tr": "Akşamları yemekten sonra kitap okumayı veya film izlemeyi severim.",
+        "it": "La sera, dopo cena, mi piace leggere un libro o guardare un film.",
+        "id": "Pada malam hari, saya suka membaca buku atau menonton film setelah makan malam."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "如果有时间，我有时晚上会去健身房。"
+        "zh-Hans": "如果有时间，我有时晚上会去健身房。",
+        "zh-Hant": "如果有時間，我有時晚上會去健身房。",
+        "ja": "時間があれば、夜にジムへ行くこともあります。",
+        "de": "Wenn ich Zeit habe, gehe ich abends manchmal ins Fitnessstudio.",
+        "ru": "Если у меня есть время, я иногда хожу вечером в спортзал.",
+        "ar": "أذهب أحيانًا إلى صالة الرياضة في المساء إذا كان لديّ وقت.",
+        "es": "A veces voy al gimnasio por la noche si tengo tiempo.",
+        "pt-BR": "Às vezes vou à academia à noite, se tenho tempo.",
+        "vi": "Nếu có thời gian, đôi khi tôi đi tập gym vào buổi tối.",
+        "th": "บางครั้งฉันไปยิมตอนเย็นถ้ามีเวลา",
+        "fr": "Le soir, je vais parfois à la salle de sport si j'ai le temps.",
+        "ko": "시간이 있으면 가끔 저녁에 헬스장에 가요.",
+        "tr": "Vaktim olursa bazen akşamları spor salonuna giderim.",
+        "it": "A volte vado in palestra la sera, se ho tempo.",
+        "id": "Kadang-kadang saya pergi ke pusat kebugaran pada malam hari jika punya waktu."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 5.12,
       "duration": 5.12,
       "translations": {
-        "zh-Hans": "我通常早上去慢跑，但有时我只是散步。"
+        "zh-Hans": "我通常早上去慢跑，但有时我只是散步。",
+        "zh-Hant": "我通常早上去慢跑，但有時只散步。",
+        "ja": "私はたいてい朝にジョギングをしますが、時にはただ歩くだけです。",
+        "de": "Normalerweise gehe ich morgens joggen, aber manchmal gehe ich stattdessen einfach spazieren.",
+        "ru": "Обычно я бегаю по утрам, но иногда просто хожу пешком.",
+        "ar": "عادةً ما أذهب للركض في الصباح، لكنني أحيانًا أكتفي بالمشي.",
+        "es": "Normalmente salgo a trotar por la mañana, pero a veces simplemente camino.",
+        "pt-BR": "Normalmente corro de manhã, mas às vezes apenas caminho.",
+        "vi": "Tôi thường chạy bộ vào buổi sáng, nhưng đôi khi chỉ đi bộ thôi.",
+        "th": "ปกติฉันวิ่งเหยาะ ๆ ตอนเช้า แต่บางครั้งก็แค่เดิน",
+        "fr": "Je vais généralement courir le matin, mais parfois je me contente de marcher.",
+        "ko": "저는 보통 아침에 조깅하지만, 가끔은 그냥 걸어요.",
+        "tr": "Genellikle sabahları koşuya çıkarım ama bazen sadece yürürüm.",
+        "it": "Di solito vado a correre la mattina, ma a volte faccio solo una passeggiata.",
+        "id": "Biasanya saya joging pada pagi hari, tetapi kadang-kadang saya hanya berjalan kaki."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 5.205,
       "duration": 5.205,
       "translations": {
-        "zh-Hans": "晚上，我喜欢读书，但有时我会看电视。"
+        "zh-Hans": "晚上，我喜欢读书，但有时我会看电视。",
+        "zh-Hant": "晚上，我喜歡讀書，但有時會改看電視。",
+        "ja": "夜は本を読むのが好きですが、時には代わりにテレビを見ます。",
+        "de": "Abends lese ich gern, aber manchmal schaue ich stattdessen fern.",
+        "ru": "Вечером я люблю читать, но иногда вместо этого смотрю телевизор.",
+        "ar": "في المساء، أحب القراءة، لكنني أحيانًا أشاهد التلفاز بدلًا من ذلك.",
+        "es": "Por la noche me gusta leer, aunque a veces veo la televisión.",
+        "pt-BR": "À noite, gosto de ler um livro, mas às vezes assisto à televisão.",
+        "vi": "Buổi tối tôi thích đọc sách, nhưng đôi khi lại xem TV.",
+        "th": "ตอนเย็นฉันชอบอ่านหนังสือ แต่บางครั้งก็ดูทีวีแทน",
+        "fr": "Le soir, j'aime lire, mais parfois je regarde plutôt la télévision.",
+        "ko": "저녁에는 책 읽는 걸 좋아하지만, 가끔은 TV를 봐요.",
+        "tr": "Akşamları kitap okumayı severim ama bazen onun yerine televizyon izlerim.",
+        "it": "La sera mi piace leggere un libro, ma a volte guardo invece la televisione.",
+        "id": "Pada malam hari, saya suka membaca buku, tetapi kadang-kadang saya menonton TV saja."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 6.059,
       "duration": 6.059,
       "translations": {
-        "zh-Hans": "工作日我通常在晚上十点前睡觉，但周末我会熬夜。"
+        "zh-Hans": "工作日我通常在晚上十点前睡觉，但周末我会熬夜。",
+        "zh-Hant": "平日我通常在晚上十點前上床睡覺，但週末會晚點睡。",
+        "ja": "平日は10時までに寝ることが多いですが、週末はもっと遅くまで起きています。",
+        "de": "Unter der Woche gehe ich oft bis 22 Uhr ins Bett, aber am Wochenende bleibe ich länger auf.",
+        "ru": "В будни я обычно ложусь спать к десяти вечера, а по выходным ложусь позже.",
+        "ar": "خلال أيام الأسبوع، أذهب غالبًا إلى الفراش بحلول العاشرة مساءً، لكنني أسهر أكثر في عطلة نهاية الأسبوع.",
+        "es": "Entre semana suelo acostarme antes de las diez, pero los fines de semana me acuesto más tarde.",
+        "pt-BR": "Durante a semana, geralmente vou dormir até as dez da noite, mas nos fins de semana fico acordado até mais tarde.",
+        "vi": "Trong tuần, tôi thường đi ngủ trước hoặc vào khoảng mười giờ, nhưng cuối tuần thì thức khuya hơn.",
+        "th": "ในวันธรรมดา ฉันมักเข้านอนประมาณสี่ทุ่ม แต่วันหยุดสุดสัปดาห์จะนอนดึกกว่า",
+        "fr": "En semaine, je me couche généralement vers dix heures ou avant, mais je reste éveillé plus tard le week-end.",
+        "ko": "평일에는 보통 밤 10시쯤 잠자리에 들지만, 주말에는 더 늦게까지 깨어 있어요.",
+        "tr": "Hafta içinde genellikle saat onda yatağa girerim ama hafta sonları daha geç yatarım.",
+        "it": "Durante la settimana di solito vado a letto alle dieci, ma nel fine settimana resto alzato più a lungo.",
+        "id": "Pada hari kerja, saya sering tidur sebelum pukul sepuluh malam, tetapi pada akhir pekan saya tidur lebih larut."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 4.949,
       "duration": 4.949,
       "translations": {
-        "zh-Hans": "我倾向于每天早上喝咖啡，除了星期天我更喜欢喝茶。"
+        "zh-Hans": "我倾向于每天早上喝咖啡，除了星期天我更喜欢喝茶。",
+        "zh-Hant": "我通常每天早上喝咖啡，但星期日比較喜歡喝茶。",
+        "ja": "私は毎朝コーヒーを飲むことが多いですが、日曜日はお茶のほうが好きです。",
+        "de": "Ich trinke normalerweise jeden Morgen Kaffee, außer sonntags, wenn ich lieber Tee trinke.",
+        "ru": "Обычно я пью кофе каждое утро, кроме воскресенья, когда предпочитаю чай.",
+        "ar": "أميل إلى شرب القهوة كل صباح، ما عدا يوم الأحد حين أفضل الشاي.",
+        "es": "Suelo tomar café todas las mañanas, excepto los domingos, cuando prefiero el té.",
+        "pt-BR": "Costumo tomar café todas as manhãs, exceto aos domingos, quando prefiro chá.",
+        "vi": "Tôi thường uống cà phê mỗi sáng, trừ Chủ nhật khi thích uống trà hơn.",
+        "th": "ฉันมักดื่มกาแฟทุกเช้า ยกเว้นวันอาทิตย์ที่ชอบดื่มชามากกว่า",
+        "fr": "Je bois généralement du café chaque matin, sauf le dimanche où je préfère le thé.",
+        "ko": "저는 매일 아침 보통 커피를 마시지만, 일요일에는 차를 더 좋아해요.",
+        "tr": "Her sabah kahve içmeyi tercih ederim; pazar günleri ise çay içerim.",
+        "it": "Di solito bevo caffè ogni mattina, tranne la domenica, quando preferisco il tè.",
+        "id": "Saya biasanya minum kopi setiap pagi, kecuali hari Minggu ketika saya lebih suka teh."
       }
     }
   ]

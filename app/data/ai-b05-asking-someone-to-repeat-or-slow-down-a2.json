@@ -16,7 +16,20 @@
       "duration": 2.176,
       "translations": {
         "zh-Hans": "我没听清。",
-        "ja": "聞き取れませんでした。"
+        "ja": "聞き取れませんでした。",
+        "zh-Hant": "我沒聽清楚。",
+        "tr": "Bunu duyamadım.",
+        "vi": "Mình nghe không rõ.",
+        "ar": "لم أسمع ذلك جيدًا.",
+        "ru": "Я не расслышал.",
+        "ko": "잘 못 들었어요.",
+        "es": "No he oído bien.",
+        "pt-BR": "Não consegui entender.",
+        "fr": "Je n'ai pas bien entendu.",
+        "de": "Ich habe das nicht verstanden.",
+        "it": "Non ho sentito bene.",
+        "id": "Saya tidak mendengarnya dengan jelas.",
+        "th": "ฉันฟังไม่ทันค่ะ"
       }
     },
     {
@@ -30,7 +43,20 @@
       "duration": 2.859,
       "translations": {
         "zh-Hans": "你能再说一遍吗？我没听清。",
-        "ja": "もう一度言っていただけますか？ 聞こえませんでした。"
+        "ja": "もう一度言っていただけますか？ 聞こえませんでした。",
+        "zh-Hant": "你能再說一遍嗎？我沒聽清楚。",
+        "tr": "Tekrar söyler misin? Seni duyamadım.",
+        "vi": "Bạn có thể nói lại được không? Lúc nãy mình không nghe thấy.",
+        "ar": "هل يمكنك قول ذلك مرة أخرى؟ لم أسمعك.",
+        "ru": "Не могли бы вы повторить? Я не расслышал.",
+        "ko": "다시 말씀해 주시겠어요? 잘 못 들었어요.",
+        "es": "¿Podrías repetirlo? No te he oído.",
+        "pt-BR": "Você poderia repetir? Não consegui ouvir.",
+        "fr": "Pourriez-vous répéter ? Je ne vous ai pas bien entendu.",
+        "de": "Könnten Sie das bitte wiederholen? Ich habe Sie nicht gehört.",
+        "it": "Potresti ripeterlo? Non ti ho sentito.",
+        "id": "Bisa diulangi? Saya tidak mendengar dengan jelas.",
+        "th": "ช่วยพูดอีกครั้งได้ไหมคะ ฉันฟังไม่ทันค่ะ"
       }
     },
     {
@@ -44,7 +70,20 @@
       "duration": 2.347,
       "translations": {
         "zh-Hans": "抱歉，我没听清。",
-        "ja": "すみません、よく分かりませんでした。"
+        "ja": "すみません、よく分かりませんでした。",
+        "zh-Hant": "抱歉，我沒聽清楚。",
+        "tr": "Pardon, anlayamadım.",
+        "vi": "Xin lỗi, mình chưa hiểu.",
+        "ar": "عذرًا، لم أفهم ذلك.",
+        "ru": "Извините, я не понял.",
+        "ko": "죄송하지만 잘 못 들었어요.",
+        "es": "Perdón, no lo he entendido.",
+        "pt-BR": "Desculpe, não entendi.",
+        "fr": "Désolé, je n'ai pas compris.",
+        "de": "Entschuldigung, das habe ich nicht verstanden.",
+        "it": "Scusa, non ho capito.",
+        "id": "Maaf, saya tidak mengerti.",
+        "th": "ขอโทษค่ะ ฉันไม่เข้าใจ"
       }
     },
     {
@@ -58,7 +97,20 @@
       "duration": 2.048,
       "translations": {
         "zh-Hans": "我没听懂你说的话。",
-        "ja": "おっしゃったことが理解できませんでした。"
+        "ja": "おっしゃったことが理解できませんでした。",
+        "zh-Hant": "我不明白你說的話。",
+        "tr": "Ne söylediğini anlamadım.",
+        "vi": "Mình không hiểu bạn vừa nói gì.",
+        "ar": "لم أفهم ما قلته.",
+        "ru": "Я не понял, что вы сказали.",
+        "ko": "무슨 말씀을 하셨는지 이해하지 못했어요.",
+        "es": "No entendí lo que dijiste.",
+        "pt-BR": "Não entendi o que você disse.",
+        "fr": "Je n'ai pas compris ce que vous avez dit.",
+        "de": "Ich habe nicht verstanden, was Sie gesagt haben.",
+        "it": "Non ho capito quello che hai detto.",
+        "id": "Saya tidak mengerti apa yang Anda katakan.",
+        "th": "ฉันไม่เข้าใจว่าคุณพูดอะไรค่ะ"
       }
     },
     {
@@ -72,7 +124,20 @@
       "duration": 2.005,
       "translations": {
         "zh-Hans": "你能再说一遍吗？",
-        "ja": "もう一度言っていただけますか？"
+        "ja": "もう一度言っていただけますか？",
+        "zh-Hant": "你能再說一遍嗎？",
+        "tr": "Tekrar söyler misin?",
+        "vi": "Bạn có thể nói lại được không?",
+        "ar": "هل يمكنك قول ذلك مرة أخرى؟",
+        "ru": "Не могли бы вы повторить?",
+        "ko": "다시 말씀해 주시겠어요?",
+        "es": "¿Podrías repetirlo?",
+        "pt-BR": "Você poderia repetir?",
+        "fr": "Pourriez-vous répéter, s'il vous plaît ?",
+        "de": "Könnten Sie das bitte wiederholen?",
+        "it": "Potresti ripeterlo?",
+        "id": "Bisa diulangi?",
+        "th": "ช่วยพูดอีกครั้งได้ไหมคะ"
       }
     },
     {
@@ -86,7 +151,20 @@
       "duration": 2.645,
       "translations": {
         "zh-Hans": "你能慢一点吗？",
-        "ja": "少しゆっくり話していただけますか？"
+        "ja": "少しゆっくり話していただけますか？",
+        "zh-Hant": "你可以說慢一點嗎？",
+        "tr": "Biraz daha yavaş konuşabilir misin?",
+        "vi": "Bạn có thể nói chậm lại một chút được không?",
+        "ar": "هل يمكنك التحدث ببطء، من فضلك؟",
+        "ru": "Не могли бы вы говорить помедленнее?",
+        "ko": "천천히 말씀해 주시겠어요?",
+        "es": "¿Podrías hablar más despacio, por favor?",
+        "pt-BR": "Você poderia falar mais devagar, por favor?",
+        "fr": "Pourriez-vous parler plus lentement, s'il vous plaît ?",
+        "de": "Könnten Sie bitte langsamer sprechen?",
+        "it": "Potresti parlare più lentamente, per favore?",
+        "id": "Bisa bicara lebih pelan, tolong?",
+        "th": "ช่วยพูดช้าลงหน่อยได้ไหมคะ"
       }
     },
     {
@@ -100,7 +178,20 @@
       "duration": 2.731,
       "translations": {
         "zh-Hans": "你能为我重复一下吗？",
-        "ja": "もう一度繰り返していただけますか？"
+        "ja": "もう一度繰り返していただけますか？",
+        "zh-Hant": "你可以為我重複一次嗎？",
+        "tr": "Bunu benim için tekrar eder misin?",
+        "vi": "Bạn có thể nhắc lại giúp mình được không?",
+        "ar": "هل يمكنك تكرار ذلك من أجلي؟",
+        "ru": "Не могли бы вы повторить это для меня?",
+        "ko": "저를 위해 다시 말씀해 주시겠어요?",
+        "es": "¿Podrías repetirlo para mí?",
+        "pt-BR": "Você poderia repetir para mim?",
+        "fr": "Pourriez-vous me le répéter ?",
+        "de": "Könnten Sie das bitte für mich wiederholen?",
+        "it": "Potresti ripeterlo per me?",
+        "id": "Bisa mengulanginya untuk saya?",
+        "th": "ช่วยพูดซ้ำให้ฉันฟังได้ไหมคะ"
       }
     },
     {
@@ -114,7 +205,20 @@
       "duration": 1.749,
       "translations": {
         "zh-Hans": "你介意再说一遍吗？",
-        "ja": "もう一度言っていただいてもよろしいですか？"
+        "ja": "もう一度言っていただいてもよろしいですか？",
+        "zh-Hant": "你介意再說一遍嗎？",
+        "tr": "Tekrar söylemen sakıncası var mı?",
+        "vi": "Bạn có phiền nói lại một lần nữa không?",
+        "ar": "هل تمانع في قول ذلك مرة أخرى؟",
+        "ru": "Не могли бы вы сказать это ещё раз?",
+        "ko": "다시 말씀해 주시면 안 될까요?",
+        "es": "¿Te importaría decirlo otra vez?",
+        "pt-BR": "Você se importaria de dizer isso novamente?",
+        "fr": "Cela vous dérangerait-il de le redire ?",
+        "de": "Würden Sie das bitte noch einmal sagen?",
+        "it": "Ti dispiacerebbe dirlo di nuovo?",
+        "id": "Bisa mengatakannya sekali lagi?",
+        "th": "รบกวนพูดอีกครั้งได้ไหมคะ"
       }
     },
     {
@@ -128,7 +232,20 @@
       "duration": 1.835,
       "translations": {
         "zh-Hans": "你能稍微放慢一点吗？",
-        "ja": "もう少しゆっくり話してもらえますか？"
+        "ja": "もう少しゆっくり話してもらえますか？",
+        "zh-Hant": "你可以稍微放慢一點嗎？",
+        "tr": "Biraz yavaşlayabilir misin?",
+        "vi": "Bạn có thể nói chậm hơn một chút không?",
+        "ar": "هل يمكنك التحدث ببطء قليلًا؟",
+        "ru": "Не могли бы вы говорить немного помедленнее?",
+        "ko": "조금만 천천히 말씀해 주시겠어요?",
+        "es": "¿Podrías hablar un poco más despacio?",
+        "pt-BR": "Você poderia falar um pouco mais devagar?",
+        "fr": "Pourriez-vous parler un peu plus lentement ?",
+        "de": "Könnten Sie etwas langsamer sprechen?",
+        "it": "Potresti parlare un po' più lentamente?",
+        "id": "Bisa bicara sedikit lebih pelan?",
+        "th": "ช่วยพูดช้าลงอีกนิดได้ไหมคะ"
       }
     },
     {
@@ -142,7 +259,20 @@
       "duration": 3.243,
       "translations": {
         "zh-Hans": "我没听清那部分，你能放慢一点吗？",
-        "ja": "その部分を聞き取れませんでした。ゆっくり話していただけますか？"
+        "ja": "その部分を聞き取れませんでした。ゆっくり話していただけますか？",
+        "zh-Hant": "那一部分我沒聽清楚，你可以放慢一點嗎？",
+        "tr": "O kısmı duyamadım, biraz yavaşlayabilir misin?",
+        "vi": "Mình không nghe rõ đoạn đó, bạn có thể nói chậm lại không?",
+        "ar": "لم أسمع ذلك الجزء، هل يمكنك التحدث ببطء؟",
+        "ru": "Я не расслышал эту часть, не могли бы вы говорить помедленнее?",
+        "ko": "그 부분을 잘 못 들었어요. 천천히 말씀해 주시겠어요?",
+        "es": "No he oído bien esa parte, ¿podrías hablar más despacio?",
+        "pt-BR": "Não consegui ouvir essa parte; você poderia falar mais devagar?",
+        "fr": "Je n'ai pas bien entendu cette partie. Pourriez-vous parler plus lentement ?",
+        "de": "Diesen Teil habe ich nicht verstanden. Könnten Sie langsamer sprechen?",
+        "it": "Non ho sentito bene quella parte; potresti parlare più lentamente?",
+        "id": "Saya tidak mendengar bagian itu dengan jelas. Bisa bicara lebih pelan?",
+        "th": "ฉันฟังช่วงนั้นไม่ทันค่ะ ช่วยพูดช้าลงหน่อยได้ไหมคะ"
       }
     },
     {
@@ -156,7 +286,20 @@
       "duration": 1.92,
       "translations": {
         "zh-Hans": "你能说得再慢一点吗？",
-        "ja": "もっとゆっくり言っていただけますか？"
+        "ja": "もっとゆっくり言っていただけますか？",
+        "zh-Hant": "你可以說得再慢一點嗎？",
+        "tr": "Biraz daha yavaş söyleyebilir misin?",
+        "vi": "Bạn có thể nói chậm hơn nữa được không?",
+        "ar": "هل يمكنك قول ذلك ببطء أكثر؟",
+        "ru": "Не могли бы вы сказать это медленнее?",
+        "ko": "좀 더 천천히 말씀해 주시겠어요?",
+        "es": "¿Podrías decirlo más despacio?",
+        "pt-BR": "Você poderia dizer isso mais devagar?",
+        "fr": "Pourriez-vous le dire plus lentement ?",
+        "de": "Könnten Sie das bitte langsamer sagen?",
+        "it": "Potresti dirlo più lentamente?",
+        "id": "Bisa mengatakannya lebih pelan?",
+        "th": "ช่วยพูดช้ากว่านี้ได้ไหมคะ"
       }
     },
     {
@@ -170,7 +313,20 @@
       "duration": 2.432,
       "translations": {
         "zh-Hans": "你介意放慢一点吗？",
-        "ja": "少しゆっくり話していただいてもよろしいですか？"
+        "ja": "少しゆっくり話していただいてもよろしいですか？",
+        "zh-Hant": "你介意放慢一點嗎？",
+        "tr": "Biraz yavaşlaman mümkün mü?",
+        "vi": "Bạn có phiền nói chậm lại một chút không?",
+        "ar": "هل تمانع في التحدث ببطء؟",
+        "ru": "Не могли бы вы говорить помедленнее?",
+        "ko": "조금 천천히 말씀해 주실래요?",
+        "es": "¿Te importaría hablar más despacio?",
+        "pt-BR": "Você se importaria de falar mais devagar?",
+        "fr": "Cela vous dérangerait-il de parler plus lentement ?",
+        "de": "Würden Sie bitte langsamer sprechen?",
+        "it": "Ti dispiacerebbe parlare più lentamente?",
+        "id": "Bisa bicara lebih pelan?",
+        "th": "รบกวนพูดช้าลงหน่อยได้ไหมคะ"
       }
     },
     {
@@ -184,7 +340,20 @@
       "duration": 1.877,
       "translations": {
         "zh-Hans": "你能重复一下那个数字吗？",
-        "ja": "その数字をもう一度言っていただけますか？"
+        "ja": "その数字をもう一度言っていただけますか？",
+        "zh-Hant": "你可以重複一下那個數字嗎？",
+        "tr": "O sayıyı tekrar eder misin?",
+        "vi": "Bạn có thể nhắc lại con số đó không?",
+        "ar": "هل يمكنك تكرار الرقم؟",
+        "ru": "Не могли бы вы повторить число?",
+        "ko": "그 숫자를 다시 말씀해 주시겠어요?",
+        "es": "¿Podrías repetir el número?",
+        "pt-BR": "Você poderia repetir o número?",
+        "fr": "Pourriez-vous répéter le numéro ?",
+        "de": "Könnten Sie die Zahl bitte wiederholen?",
+        "it": "Potresti ripetere il numero?",
+        "id": "Bisa mengulangi angkanya?",
+        "th": "ช่วยพูดตัวเลขนั้นอีกครั้งได้ไหมคะ"
       }
     },
     {
@@ -198,7 +367,20 @@
       "duration": 2.944,
       "translations": {
         "zh-Hans": "你刚才说的最后一个词是什么？",
-        "ja": "最後に言った単語は何でしたか？"
+        "ja": "最後に言った単語は何でしたか？",
+        "zh-Hant": "你剛才說的最後一個詞是什麼？",
+        "tr": "Az önce söylediğin son kelime neydi?",
+        "vi": "Từ cuối cùng bạn vừa nói là gì vậy?",
+        "ar": "ما الكلمة الأخيرة التي قلتها؟",
+        "ru": "Какое последнее слово вы сказали?",
+        "ko": "방금 마지막으로 말씀하신 단어가 뭐였죠?",
+        "es": "¿Cuál fue la última palabra que dijiste?",
+        "pt-BR": "Qual foi a última palavra que você disse?",
+        "fr": "Quel est le dernier mot que vous avez dit ?",
+        "de": "Was war das letzte Wort, das Sie gesagt haben?",
+        "it": "Qual è stata l'ultima parola che hai detto?",
+        "id": "Apa kata terakhir yang Anda ucapkan?",
+        "th": "คำสุดท้ายที่คุณพูดคือคำว่าอะไรคะ"
       }
     },
     {
@@ -212,7 +394,20 @@
       "duration": 2.219,
       "translations": {
         "zh-Hans": "我没听清你提到的名字。",
-        "ja": "お名前を聞き逃してしまいました。"
+        "ja": "お名前を聞き逃してしまいました。",
+        "zh-Hant": "我沒聽清楚你提到的名字。",
+        "tr": "Söylediğin adı duyamadım.",
+        "vi": "Mình không nghe rõ cái tên bạn vừa nhắc đến.",
+        "ar": "فاتني الاسم الذي ذكرته.",
+        "ru": "Я не расслышал названное вами имя.",
+        "ko": "말씀하신 이름을 잘 못 들었어요.",
+        "es": "No he oído bien el nombre que mencionaste.",
+        "pt-BR": "Não consegui ouvir o nome que você mencionou.",
+        "fr": "Je n'ai pas bien entendu le nom que vous avez mentionné.",
+        "de": "Den Namen, den Sie erwähnt haben, habe ich nicht verstanden.",
+        "it": "Non ho sentito bene il nome che hai menzionato.",
+        "id": "Saya tidak mendengar dengan jelas nama yang Anda sebutkan.",
+        "th": "ฉันฟังชื่อที่คุณพูดถึงไม่ทันค่ะ"
       }
     },
     {
@@ -226,7 +421,20 @@
       "duration": 2.56,
       "translations": {
         "zh-Hans": "你能再告诉我一次地址吗？",
-        "ja": "住所をもう一度教えていただけますか？"
+        "ja": "住所をもう一度教えていただけますか？",
+        "zh-Hant": "你可以再告訴我一次地址嗎？",
+        "tr": "Adresi bana tekrar söyleyebilir misin?",
+        "vi": "Bạn có thể cho mình biết lại địa chỉ được không?",
+        "ar": "هل يمكنك أن تخبرني بالعنوان مرة أخرى؟",
+        "ru": "Не могли бы вы ещё раз назвать адрес?",
+        "ko": "주소를 다시 말씀해 주시겠어요?",
+        "es": "¿Podrías decirme la dirección otra vez?",
+        "pt-BR": "Você poderia me dizer o endereço novamente?",
+        "fr": "Pourriez-vous me redonner l'adresse ?",
+        "de": "Könnten Sie mir die Adresse noch einmal sagen?",
+        "it": "Potresti dirmi di nuovo l'indirizzo?",
+        "id": "Bisa memberi tahu saya alamatnya lagi?",
+        "th": "ช่วยบอกที่อยู่อีกครั้งได้ไหมคะ"
       }
     }
   ]

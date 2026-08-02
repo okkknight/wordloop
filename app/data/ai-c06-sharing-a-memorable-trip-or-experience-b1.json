@@ -15,7 +15,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我曾去过大峡谷旅行。"
+        "zh-Hans": "我曾去过大峡谷旅行。",
+        "es": "Una vez viajé al Gran Cañón.",
+        "pt-BR": "Uma vez, viajei para o Grand Canyon.",
+        "it": "Una volta ho visitato il Grand Canyon.",
+        "vi": "Tôi từng đi du lịch đến Grand Canyon.",
+        "th": "ฉันเคยเดินทางไปแกรนด์แคนยอน",
+        "fr": "J'ai un jour voyagé jusqu'au Grand Canyon.",
+        "ko": "전에 그랜드 캐니언으로 여행을 간 적이 있어요.",
+      "tr": "Bir keresinde Büyük Kanyon’a seyahat ettim.",
+      "zh-Hant": "我曾去大峽谷旅行。",
+      "ja": "以前、グランドキャニオンへ旅行に行ったことがあります。",
+      "de": "Ich bin einmal zum Grand Canyon gereist.",
+      "ru": "Однажды я ездил в Гранд-Каньон.",
+      "ar": "سافرتُ ذات مرة إلى غراند كانيون.",
+      "id": "Saya pernah bepergian ke Grand Canyon."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "一次难忘的旅行是去黄石国家公园。"
+        "zh-Hans": "一次难忘的旅行是去黄石国家公园。",
+        "es": "Uno de mis viajes más memorables fue al parque nacional de Yellowstone.",
+        "pt-BR": "Uma viagem inesquecível foi ao Parque Nacional de Yellowstone.",
+        "it": "Un viaggio indimenticabile è stato quello al parco nazionale di Yellowstone.",
+        "vi": "Một chuyến đi đáng nhớ của tôi là đến Vườn quốc gia Yellowstone.",
+        "th": "ทริปที่น่าประทับใจทริปหนึ่งคือการไปอุทยานแห่งชาติเยลโลว์สโตน",
+        "fr": "Un de mes voyages les plus mémorables a été au parc national de Yellowstone.",
+        "ko": "기억에 남는 여행 중 하나는 옐로스톤 국립공원에 갔던 거예요.",
+      "tr": "Unutamadığım gezilerden biri Yellowstone Ulusal Parkı’na yaptığım geziydi.",
+      "zh-Hant": "其中一次難忘的旅行是去黃石國家公園。",
+      "ja": "忘れられない旅行の一つは、イエローストーン国立公園に行ったことです。",
+      "de": "Eine unvergessliche Reise führte mich in den Yellowstone-Nationalpark.",
+      "ru": "Одной из самых запоминающихся была поездка в Йеллоустонский национальный парк.",
+      "ar": "كانت إحدى رحلاتي التي لا تُنسى إلى متنزه يلوستون الوطني.",
+      "id": "Salah satu perjalanan yang paling berkesan adalah ke Taman Nasional Yellowstone."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "2019年，我和朋友们去了旧金山。"
+        "zh-Hans": "2019年，我和朋友们去了旧金山。",
+        "es": "En 2019 fui a San Francisco con mis amigos.",
+        "pt-BR": "Em 2019, fui a São Francisco com meus amigos.",
+        "it": "Nel 2019 sono andato a San Francisco con i miei amici.",
+        "vi": "Năm 2019, tôi đi San Francisco cùng bạn bè.",
+        "th": "ในปี 2019 ฉันไปซานฟรานซิสโกกับเพื่อน ๆ",
+        "fr": "En 2019, je suis allé à San Francisco avec mes amis.",
+        "ko": "2019년에 친구들과 샌프란시스코에 갔어요.",
+      "tr": "2019’da arkadaşlarımla San Francisco’ya gittim.",
+      "zh-Hant": "2019 年，我和朋友一起去了舊金山。",
+      "ja": "2019年、友達とサンフランシスコへ行きました。",
+      "de": "2019 bin ich mit meinen Freunden nach San Francisco gefahren.",
+      "ru": "В 2019 году я ездил в Сан-Франциско с друзьями.",
+      "ar": "في عام 2019، ذهبتُ إلى سان فرانسيسكو مع أصدقائي.",
+      "id": "Pada tahun 2019, saya pergi ke San Francisco bersama teman-teman."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "我们决定在秋天探索落基山脉。"
+        "zh-Hans": "我们决定在秋天探索落基山脉。",
+        "es": "Decidimos explorar las Montañas Rocosas en otoño.",
+        "pt-BR": "Decidimos explorar as Montanhas Rochosas no outono.",
+        "it": "Abbiamo deciso di esplorare le Montagne Rocciose in autunno.",
+        "vi": "Chúng tôi quyết định khám phá dãy Rocky vào mùa thu.",
+        "th": "เราตัดสินใจไปสำรวจเทือกเขาร็อกกีในฤดูใบไม้ร่วง",
+        "fr": "Nous avons décidé d'explorer les montagnes Rocheuses à l'automne.",
+        "ko": "우리는 가을에 로키산맥을 탐험하기로 했어요.",
+      "tr": "Sonbaharda Rocky Dağları’nı keşfetmeye karar verdik.",
+      "zh-Hant": "我們決定在秋天探索落磯山脈。",
+      "ja": "秋にロッキー山脈を探検することにしました。",
+      "de": "Wir beschlossen, im Herbst die Rocky Mountains zu erkunden.",
+      "ru": "Осенью мы решили исследовать Скалистые горы.",
+      "ar": "قررنا استكشاف جبال روكي في الخريف.",
+      "id": "Kami memutuskan untuk menjelajahi Pegunungan Rocky pada musim gugur."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 4.523,
       "duration": 4.523,
       "translations": {
-        "zh-Hans": "我们期待晴天，但每天都下雨。"
+        "zh-Hans": "我们期待晴天，但每天都下雨。",
+        "es": "Esperábamos que hiciera sol, pero llovió todos los días.",
+        "pt-BR": "Esperávamos tempo ensolarado, mas choveu todos os dias.",
+        "it": "Ci aspettavamo il sole, ma ha piovuto ogni giorno.",
+        "vi": "Chúng tôi mong thời tiết sẽ nắng đẹp, nhưng ngày nào cũng mưa.",
+        "th": "เราคาดว่าอากาศจะมีแดด แต่กลับฝนตกทุกวัน",
+        "fr": "Nous nous attendions à du beau temps, mais il a plu tous les jours.",
+        "ko": "날씨가 맑을 거라고 기대했지만, 매일 비가 왔어요.",
+      "tr": "Güneşli bir hava bekliyorduk ama her gün yağmur yağdı.",
+      "zh-Hant": "我們原本以為會是晴天，卻每天都在下雨。",
+      "ja": "晴れると思っていたのに、毎日雨が降りました。",
+      "de": "Wir hatten sonniges Wetter erwartet, aber es regnete jeden Tag.",
+      "ru": "Мы ожидали солнечной погоды, но дождь шёл каждый день.",
+      "ar": "كنا نتوقع طقسًا مشمسًا، لكن المطر هطل كل يوم.",
+      "id": "Kami mengira cuacanya akan cerah, tetapi hujan turun setiap hari."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "我记得是因为我们在城市里迷路了。"
+        "zh-Hans": "我记得是因为我们在城市里迷路了。",
+        "es": "Lo recuerdo porque nos perdimos en la ciudad.",
+        "pt-BR": "Lembro disso porque nos perdemos na cidade.",
+        "it": "Me lo ricordo perché ci siamo persi in città.",
+        "vi": "Tôi nhớ chuyến đi đó vì chúng tôi bị lạc trong thành phố.",
+        "th": "ฉันจำทริปนั้นได้เพราะเราหลงทางในเมือง",
+        "fr": "Je m'en souviens parce que nous nous sommes perdus en ville.",
+        "ko": "그 여행이 기억에 남는 건 우리가 도시에서 길을 잃었기 때문이에요.",
+      "tr": "Şehirde kaybolduğumuz için bu geziyi hatırlıyorum.",
+      "zh-Hant": "我之所以記得，是因為我們在城裡迷路了。",
+      "ja": "街で道に迷ったので、そのことを覚えています。",
+      "de": "Ich erinnere mich daran, weil wir uns in der Stadt verlaufen haben.",
+      "ru": "Я помню эту поездку, потому что мы заблудились в городе.",
+      "ar": "أتذكرها لأننا تهنا في المدينة.",
+      "id": "Saya mengingatnya karena kami tersesat di kota."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "音乐会本应在8点开始，但被推迟了。"
+        "zh-Hans": "音乐会本应在8点开始，但被推迟了。",
+        "es": "El concierto debía empezar a las ocho, pero se retrasó.",
+        "pt-BR": "O show deveria começar às oito, mas atrasou.",
+        "it": "Il concerto doveva iniziare alle otto, ma è stato rimandato.",
+        "vi": "Buổi hòa nhạc dự kiến bắt đầu lúc tám giờ, nhưng đã bị trì hoãn.",
+        "th": "คอนเสิร์ตมีกำหนดเริ่มตอนสองทุ่ม แต่ถูกเลื่อนออกไป",
+        "fr": "Le concert devait commencer à huit heures, mais il a été retardé.",
+        "ko": "콘서트는 8시에 시작할 예정이었지만 연기됐어요.",
+      "tr": "Konserin saat sekizde başlaması gerekiyordu ama ertelendi.",
+      "zh-Hant": "音樂會原定八點開始，但延遲了。",
+      "ja": "コンサートは8時に始まるはずでしたが、開始が遅れました。",
+      "de": "Das Konzert sollte um acht beginnen, aber der Beginn verzögerte sich.",
+      "ru": "Концерт должен был начаться в восемь, но его задержали.",
+      "ar": "كان من المفترض أن يبدأ الحفل في الساعة الثامنة، لكنه تأخر.",
+      "id": "Konser itu seharusnya dimulai pukul delapan, tetapi mengalami keterlambatan."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我们错过了航班，不得不多住了一晚。"
+        "zh-Hans": "我们错过了航班，不得不多住了一晚。",
+        "es": "Perdimos el vuelo y tuvimos que quedarnos una noche más.",
+        "pt-BR": "Perdemos nosso voo e tivemos que ficar mais uma noite.",
+        "it": "Abbiamo perso il volo e abbiamo dovuto fermarci una notte in più.",
+        "vi": "Chúng tôi lỡ chuyến bay và phải ở lại thêm một đêm.",
+        "th": "เราตกเครื่องบินและต้องพักต่ออีกหนึ่งคืน",
+        "fr": "Nous avons raté notre vol et avons dû rester une nuit de plus.",
+        "ko": "우리는 비행기를 놓쳐서 하룻밤 더 머물러야 했어요.",
+      "tr": "Uçağımızı kaçırdık ve bir gece daha kalmak zorunda kaldık.",
+      "zh-Hant": "我們錯過了班機，只好多留一晚。",
+      "ja": "飛行機に乗り遅れたので、もう一晩滞在しなければなりませんでした。",
+      "de": "Wir verpassten unseren Flug und mussten eine zusätzliche Nacht bleiben.",
+      "ru": "Мы опоздали на самолёт и были вынуждены остаться ещё на одну ночь.",
+      "ar": "فاتتنا رحلتنا الجوية واضطررنا إلى البقاء ليلة إضافية.",
+      "id": "Kami ketinggalan pesawat dan harus menginap satu malam lagi."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "带我们参观的导游非常博学。"
+        "zh-Hans": "带我们参观的导游非常博学。",
+        "es": "El guía que nos acompañó era muy entendido.",
+        "pt-BR": "O guia que nos mostrou o local conhecia muito bem a região.",
+        "it": "La guida che ci ha accompagnato era davvero preparata.",
+        "vi": "Người hướng dẫn đưa chúng tôi đi tham quan rất am hiểu.",
+        "th": "ไกด์ที่พาเราเที่ยวมีความรู้มาก",
+        "fr": "Le guide qui nous a fait visiter les lieux était vraiment très compétent.",
+        "ko": "우리를 안내해 준 가이드는 정말 박식했어요.",
+      "tr": "Bize çevreyi gösteren rehber gerçekten çok bilgiliydi.",
+      "zh-Hant": "帶我們四處參觀的導遊真的很博學。",
+      "ja": "案内してくれたガイドは本当に知識が豊富でした。",
+      "de": "Der Reiseführer, der uns herumführte, war wirklich sehr sachkundig.",
+      "ru": "Наш гид, который показывал нам город, был действительно очень эрудированным.",
+      "ar": "كان المرشد الذي اصطحبنا في الجولة واسع المعرفة حقًا.",
+      "id": "Pemandu yang mengajak kami berkeliling benar-benar sangat berpengetahuan."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "旅行的亮点是看到北极光。"
+        "zh-Hans": "旅行的亮点是看到北极光。",
+        "es": "Lo mejor del viaje fue ver la aurora boreal.",
+        "pt-BR": "O ponto alto da viagem foi ver a aurora boreal.",
+        "it": "Il momento più bello del viaggio è stato vedere l'aurora boreale.",
+        "vi": "Điểm nổi bật của chuyến đi là được ngắm cực quang.",
+        "th": "ไฮไลต์ของทริปคือการได้เห็นแสงเหนือ",
+        "fr": "Le moment fort du voyage a été d'admirer les aurores boréales.",
+        "ko": "여행의 하이라이트는 오로라를 본 것이었어요.",
+      "tr": "Gezinin en güzel yanı Kuzey Işıkları’nı görmekti.",
+      "zh-Hant": "這趟旅行最精彩的部分就是看到了北極光。",
+      "ja": "旅行の一番の見どころは、オーロラを見たことでした。",
+      "de": "Der Höhepunkt der Reise war, die Nordlichter zu sehen.",
+      "ru": "Самым ярким впечатлением от поездки стало северное сияние.",
+      "ar": "كان أبرز ما في الرحلة مشاهدة الشفق القطبي.",
+      "id": "Puncak perjalanan itu adalah melihat aurora borealis."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.627,
       "duration": 3.627,
       "translations": {
-        "zh-Hans": "街头艺人小提琴拉得很美。"
+        "zh-Hans": "街头艺人小提琴拉得很美。",
+        "es": "El músico callejero tocaba el violín maravillosamente.",
+        "pt-BR": "O artista de rua tocou violino lindamente.",
+        "it": "L'artista di strada suonava il violino magnificamente.",
+        "vi": "Nghệ sĩ đường phố chơi đàn vĩ cầm rất hay.",
+        "th": "นักแสดงข้างถนนเล่นไวโอลินได้ไพเราะมาก",
+        "fr": "L'artiste de rue jouait magnifiquement du violon.",
+        "ko": "거리의 연주자가 바이올린을 정말 아름답게 연주했어요.",
+      "tr": "Sokak sanatçısı kemanı çok güzel çalıyordu.",
+      "zh-Hant": "街頭藝人的小提琴演奏得非常優美。",
+      "ja": "その大道芸人はバイオリンをとても美しく演奏していました。",
+      "de": "Der Straßenmusiker spielte wunderschön Geige.",
+      "ru": "Уличный музыкант прекрасно играл на скрипке.",
+      "ar": "عزف فنان الشارع على الكمان ببراعة وجمال.",
+      "id": "Pengamen jalanan itu memainkan biola dengan sangat indah."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 4.267,
       "duration": 4.267,
       "translations": {
-        "zh-Hans": "当地市场充满了鲜艳的色彩和声音。"
+        "zh-Hans": "当地市场充满了鲜艳的色彩和声音。",
+        "es": "El mercado local estaba lleno de colores vivos y sonidos.",
+        "pt-BR": "O mercado local estava cheio de cores vibrantes e sons.",
+        "it": "Il mercato locale era pieno di colori vivaci e suoni.",
+        "vi": "Khu chợ địa phương tràn ngập màu sắc và âm thanh rực rỡ.",
+        "th": "ตลาดท้องถิ่นเต็มไปด้วยสีสันและเสียงอันมีชีวิตชีวา",
+        "fr": "Le marché local regorgeait de couleurs et de sons éclatants.",
+        "ko": "현지 시장은 생생한 색과 소리로 가득했어요.",
+      "tr": "Yerel pazar canlı renkler ve seslerle doluydu.",
+      "zh-Hant": "當地市場充滿了鮮豔的色彩和各種聲音。",
+      "ja": "地元の市場は鮮やかな色彩と音であふれていました。",
+      "de": "Der örtliche Markt war voller leuchtender Farben und Geräusche.",
+      "ru": "Местный рынок был наполнен яркими красками и звуками.",
+      "ar": "كان السوق المحلي يعج بالألوان الزاهية والأصوات المتنوعة.",
+      "id": "Pasar setempat dipenuhi warna-warna cerah dan suara yang semarak."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 4.864,
       "duration": 4.864,
       "translations": {
-        "zh-Hans": "在森林中漫步时，我感到一种宁静。"
+        "zh-Hans": "在森林中漫步时，我感到一种宁静。",
+        "es": "Sentí una gran paz mientras caminaba por el bosque.",
+        "pt-BR": "Senti uma sensação de paz ao caminhar pela floresta.",
+        "it": "Passeggiando nella foresta ho provato un senso di pace.",
+        "vi": "Tôi cảm thấy bình yên khi đi bộ xuyên qua khu rừng.",
+        "th": "ฉันรู้สึกสงบขณะเดินผ่านป่า",
+        "fr": "J'ai ressenti une grande paix en traversant la forêt à pied.",
+        "ko": "숲을 걸으면서 평온함을 느꼈어요.",
+      "tr": "Ormanda yürürken huzur hissettim.",
+      "zh-Hant": "走過森林時，我感受到一種平靜。",
+      "ja": "森の中を歩いていると、心が穏やかになりました。",
+      "de": "Beim Spaziergang durch den Wald empfand ich ein tiefes Gefühl von Frieden.",
+      "ru": "Гуляя по лесу, я почувствовал умиротворение.",
+      "ar": "شعرتُ بالسكينة وأنا أمشي عبر الغابة.",
+      "id": "Saya merasakan kedamaian saat berjalan melewati hutan."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "特别之处在于当地人的善良。"
+        "zh-Hans": "特别之处在于当地人的善良。",
+        "es": "Lo que lo hizo especial fue la amabilidad de la gente local.",
+        "pt-BR": "O que tornou tudo especial foi a gentileza dos moradores locais.",
+        "it": "Ciò che l'ha resa speciale è stata la gentilezza della gente del posto.",
+        "vi": "Điều làm chuyến đi đặc biệt là lòng tốt của người dân địa phương.",
+        "th": "สิ่งที่ทำให้ทริปนี้พิเศษคือความมีน้ำใจของคนท้องถิ่น",
+        "fr": "Ce qui a rendu le voyage spécial, c'est la gentillesse des habitants.",
+        "ko": "현지인들의 친절함이 그 여행을 특별하게 만들었어요.",
+      "tr": "Bu geziyi özel kılan, yerel halkın nezaketiydi.",
+      "zh-Hant": "讓這趟旅行特別的是當地人的善良。",
+      "ja": "この旅を特別なものにしたのは、地元の人々の親切さでした。",
+      "de": "Was die Reise besonders machte, war die Freundlichkeit der Einheimischen.",
+      "ru": "Особенной эту поездку сделала доброта местных жителей.",
+      "ar": "ما جعل الرحلة مميزة هو لطف السكان المحليين.",
+      "id": "Yang membuatnya istimewa adalah keramahan penduduk setempat."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "我学到了很多关于该地区的文化和历史。"
+        "zh-Hans": "我学到了很多关于该地区的文化和历史。",
+        "es": "Aprendí mucho sobre la cultura y la historia de la zona.",
+        "pt-BR": "Aprendi muito sobre a cultura e a história da região.",
+        "it": "Ho imparato molto sulla cultura e sulla storia della zona.",
+        "vi": "Tôi học được nhiều điều về văn hóa và lịch sử của vùng này.",
+        "th": "ฉันได้เรียนรู้มากมายเกี่ยวกับวัฒนธรรมและประวัติศาสตร์ของพื้นที่นั้น",
+        "fr": "J'ai beaucoup appris sur la culture et l'histoire de la région.",
+        "ko": "그 지역의 문화와 역사에 대해 많은 것을 배웠어요.",
+      "tr": "Bölgenin kültürü ve tarihi hakkında çok şey öğrendim.",
+      "zh-Hant": "我對這個地區的文化和歷史有了許多了解。",
+      "ja": "その地域の文化や歴史について多くを学びました。",
+      "de": "Ich habe viel über die Kultur und Geschichte der Gegend gelernt.",
+      "ru": "Я многое узнал о культуре и истории этого края.",
+      "ar": "تعلمتُ الكثير عن ثقافة المنطقة وتاريخها.",
+      "id": "Saya belajar banyak tentang budaya dan sejarah daerah itu."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.968,
       "duration": 3.968,
       "translations": {
-        "zh-Hans": "这次旅行让我想起了大自然的美丽。"
+        "zh-Hans": "这次旅行让我想起了大自然的美丽。",
+        "es": "Fue un viaje que me recordó la belleza de la naturaleza.",
+        "pt-BR": "Foi uma viagem que me lembrou a beleza da natureza.",
+        "it": "È stato un viaggio che mi ha ricordato la bellezza della natura.",
+        "vi": "Đó là chuyến đi khiến tôi nhớ lại vẻ đẹp của thiên nhiên.",
+        "th": "ทริปนี้ทำให้ฉันนึกถึงความงดงามของธรรมชาติ",
+        "fr": "C'est un voyage qui m'a rappelé la beauté de la nature.",
+        "ko": "자연의 아름다움을 다시 깨닫게 해 준 여행이었어요.",
+      "tr": "Doğanın güzelliğini bana yeniden hatırlatan bir geziydi.",
+      "zh-Hant": "這趟旅行讓我再次想起大自然的美麗。",
+      "ja": "自然の美しさを思い出させてくれる旅でした。",
+      "de": "Es war eine Reise, die mich an die Schönheit der Natur erinnerte.",
+      "ru": "Эта поездка напомнила мне о красоте природы.",
+      "ar": "كانت رحلة ذكّرتني بجمال الطبيعة.",
+      "id": "Perjalanan itu mengingatkan saya akan keindahan alam."
       }
     }
   ]

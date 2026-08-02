@@ -16,7 +16,20 @@
       "duration": 1.664,
       "translations": {
         "zh-Hans": "哇，真的吗？",
-        "ja": "え、本当ですか？"
+        "ja": "え、本当ですか？",
+        "zh-Hant": "哇，真的嗎？",
+        "tr": "Vay, gerçekten mi?",
+        "vi": "Ồ, thật vậy sao?",
+        "ar": "رائع، حقًا؟",
+        "ru": "Вот это да, правда?",
+        "ko": "와, 정말요?",
+        "es": "¡Guau, de verdad!",
+        "pt-BR": "Uau, é mesmo?",
+        "fr": "Waouh, vraiment ?",
+        "de": "Wow, wirklich?",
+        "it": "Wow, davvero?",
+        "id": "Wah, benarkah?",
+        "th": "ว้าว จริงเหรอ?"
       }
     },
     {
@@ -30,7 +43,20 @@
       "duration": 2.517,
       "translations": {
         "zh-Hans": "那很有趣，告诉我更多吧。",
-        "ja": "それは面白いですね。もっと聞かせてください。"
+        "ja": "それは面白いですね。もっと聞かせてください。",
+        "zh-Hant": "那很有趣，再多告訴我一些吧。",
+        "tr": "Bu ilginçmiş, bana biraz daha anlat.",
+        "vi": "Thú vị thật đấy, kể thêm cho mình nghe đi.",
+        "ar": "هذا مثير للاهتمام، أخبرني المزيد عنه.",
+        "ru": "Интересно, расскажите об этом подробнее.",
+        "ko": "그거 흥미롭네요. 좀 더 이야기해 주세요.",
+        "es": "Qué interesante, cuéntame más.",
+        "pt-BR": "Que interessante, me conte mais sobre isso.",
+        "fr": "C'est intéressant, raconte-moi la suite.",
+        "de": "Das ist interessant. Erzähl mir mehr darüber.",
+        "it": "È interessante, raccontami di più.",
+        "id": "Menarik sekali, ceritakan lebih banyak tentang itu.",
+        "th": "น่าสนใจจัง เล่าให้ฟังอีกหน่อยสิ"
       }
     },
     {
@@ -44,7 +70,20 @@
       "duration": 1.835,
       "translations": {
         "zh-Hans": "不会吧！",
-        "ja": "まさか！"
+        "ja": "まさか！",
+        "zh-Hant": "不會吧！",
+        "tr": "Yok artık!",
+        "vi": "Không thể nào!",
+        "ar": "لا يمكنني تصديق ذلك!",
+        "ru": "Не может быть!",
+        "ko": "말도 안 돼요!",
+        "es": "¡No puede ser!",
+        "pt-BR": "Não acredito!",
+        "fr": "C'est pas possible !",
+        "de": "Das gibt's doch nicht!",
+        "it": "Non è possibile!",
+        "id": "Masa sih!",
+        "th": "ไม่น่าเชื่อเลย!"
       }
     },
     {
@@ -58,7 +97,20 @@
       "duration": 1.664,
       "translations": {
         "zh-Hans": "我不知道这个！",
-        "ja": "知りませんでした！"
+        "ja": "知りませんでした！",
+        "zh-Hant": "我不知道這件事！",
+        "tr": "Bunu bilmiyordum!",
+        "vi": "Mình không biết chuyện đó đấy!",
+        "ar": "لم أكن أعرف ذلك!",
+        "ru": "Я этого не знал!",
+        "ko": "그건 몰랐어요!",
+        "es": "¡No sabía eso!",
+        "pt-BR": "Eu não sabia disso!",
+        "fr": "Je ne savais pas ça !",
+        "de": "Das wusste ich nicht!",
+        "it": "Non lo sapevo!",
+        "id": "Aku tidak tahu itu!",
+        "th": "ฉันไม่รู้เรื่องนี้มาก่อนเลย!"
       }
     },
     {
@@ -72,7 +124,20 @@
       "duration": 2.517,
       "translations": {
         "zh-Hans": "之后你去了哪里？",
-        "ja": "その後はどこへ行ったんですか？"
+        "ja": "その後はどこへ行ったんですか？",
+        "zh-Hant": "之後你去了哪裡？",
+        "tr": "Ondan sonra nereye gittin?",
+        "vi": "Sau đó bạn đã đi đâu?",
+        "ar": "إلى أين ذهبت بعد ذلك؟",
+        "ru": "Куда вы пошли потом?",
+        "ko": "그다음에는 어디에 갔어요?",
+        "es": "¿Adónde fuiste después?",
+        "pt-BR": "Para onde você foi depois?",
+        "fr": "Où es-tu allé(e) après ça ?",
+        "de": "Wohin bist du danach gegangen?",
+        "it": "Dove sei andato/a dopo?",
+        "id": "Setelah itu, kamu pergi ke mana?",
+        "th": "หลังจากนั้นคุณไปที่ไหนมา?"
       }
     },
     {
@@ -86,7 +151,20 @@
       "duration": 3.627,
       "translations": {
         "zh-Hans": "这让你对整个情况有什么感觉？",
-        "ja": "その出来事について、どんな気持ちになりましたか？"
+        "ja": "その出来事について、どんな気持ちになりましたか？",
+        "zh-Hant": "這讓你對整個情況有什麼感受？",
+        "tr": "Bu durumun tamamı hakkında ne hissettin?",
+        "vi": "Chuyện đó khiến bạn cảm thấy thế nào về toàn bộ tình huống?",
+        "ar": "كيف جعلك ذلك تشعر تجاه الموقف برمته؟",
+        "ru": "Что вы почувствовали после этого во всей этой ситуации?",
+        "ko": "그 일로 전체 상황에 대해 어떤 기분이 들었어요?",
+        "es": "¿Cómo te hizo sentir eso sobre toda la situación?",
+        "pt-BR": "Como isso fez você se sentir em relação a toda a situação?",
+        "fr": "Qu'est-ce que cette situation t'a fait ressentir ?",
+        "de": "Wie hast du dich dadurch in dieser ganzen Situation gefühlt?",
+        "it": "Come ti ha fatto sentire tutto questo?",
+        "id": "Bagaimana perasaanmu tentang seluruh situasi itu?",
+        "th": "เรื่องนั้นทำให้คุณรู้สึกอย่างไรกับสถานการณ์ทั้งหมด?"
       }
     },
     {
@@ -100,7 +178,20 @@
       "duration": 2.048,
       "translations": {
         "zh-Hans": "你什么时候第一次注意到的？",
-        "ja": "最初にそれに気づいたのはいつですか？"
+        "ja": "最初にそれに気づいたのはいつですか？",
+        "zh-Hant": "你什麼時候第一次注意到的？",
+        "tr": "Bunu ilk ne zaman fark ettin?",
+        "vi": "Lần đầu bạn nhận ra điều đó là khi nào?",
+        "ar": "متى لاحظت ذلك لأول مرة؟",
+        "ru": "Когда вы впервые это заметили?",
+        "ko": "처음 그걸 알아차린 건 언제예요?",
+        "es": "¿Cuándo te diste cuenta de eso por primera vez?",
+        "pt-BR": "Quando você percebeu isso pela primeira vez?",
+        "fr": "Quand l'as-tu remarqué pour la première fois ?",
+        "de": "Wann ist dir das zum ersten Mal aufgefallen?",
+        "it": "Quando te ne sei accorto/a per la prima volta?",
+        "id": "Kapan kamu pertama kali menyadarinya?",
+        "th": "คุณสังเกตเห็นเรื่องนี้ครั้งแรกเมื่อไหร่?"
       }
     },
     {
@@ -114,7 +205,20 @@
       "duration": 1.92,
       "translations": {
         "zh-Hans": "你是怎么到那里的？",
-        "ja": "そこへはどうやって行ったんですか？"
+        "ja": "そこへはどうやって行ったんですか？",
+        "zh-Hant": "你是怎麼到那裡的？",
+        "tr": "Oraya nasıl gittin?",
+        "vi": "Bạn đến đó bằng cách nào?",
+        "ar": "كيف وصلت إلى هناك؟",
+        "ru": "Как вы туда добрались?",
+        "ko": "거기에는 어떻게 갔어요?",
+        "es": "¿Cómo llegaste allí?",
+        "pt-BR": "Como você chegou lá?",
+        "fr": "Comment es-tu arrivé(e) là-bas ?",
+        "de": "Wie bist du dorthin gekommen?",
+        "it": "Come ci sei arrivato/a?",
+        "id": "Bagaimana kamu sampai di sana?",
+        "th": "คุณไปที่นั่นได้อย่างไร?"
       }
     },
     {
@@ -128,7 +232,20 @@
       "duration": 2.944,
       "translations": {
         "zh-Hans": "你能多讲讲吗？",
-        "ja": "もう少し詳しく教えてもらえますか？"
+        "ja": "もう少し詳しく教えてもらえますか？",
+        "zh-Hant": "你能再多說一些嗎？",
+        "tr": "Bana biraz daha anlatabilir misin?",
+        "vi": "Bạn có thể kể thêm cho mình nghe về chuyện đó không?",
+        "ar": "هل يمكنك أن تخبرني المزيد عن ذلك؟",
+        "ru": "Можете рассказать об этом подробнее?",
+        "ko": "그것에 대해 좀 더 이야기해 줄 수 있어요?",
+        "es": "¿Puedes contarme más sobre eso?",
+        "pt-BR": "Você pode me contar mais sobre isso?",
+        "fr": "Tu peux m'en dire plus ?",
+        "de": "Kannst du mir mehr darüber erzählen?",
+        "it": "Puoi raccontarmi qualcosa in più?",
+        "id": "Bisa ceritakan lebih banyak tentang itu?",
+        "th": "เล่าเรื่องนั้นให้ฉันฟังเพิ่มได้ไหม?"
       }
     },
     {
@@ -142,7 +259,20 @@
       "duration": 1.92,
       "translations": {
         "zh-Hans": "接下来发生了什么？",
-        "ja": "次に何が起きたんですか？"
+        "ja": "次に何が起きたんですか？",
+        "zh-Hant": "接下來發生了什麼？",
+        "tr": "Sonra ne oldu?",
+        "vi": "Sau đó chuyện gì đã xảy ra?",
+        "ar": "ماذا حدث بعد ذلك؟",
+        "ru": "Что произошло дальше?",
+        "ko": "그다음에는 무슨 일이 일어났어요?",
+        "es": "¿Qué pasó después?",
+        "pt-BR": "O que aconteceu depois?",
+        "fr": "Qu'est-ce qui s'est passé ensuite ?",
+        "de": "Was ist danach passiert?",
+        "it": "Che cosa è successo dopo?",
+        "id": "Apa yang terjadi setelah itu?",
+        "th": "แล้วเกิดอะไรขึ้นต่อ?"
       }
     },
     {
@@ -156,7 +286,20 @@
       "duration": 2.432,
       "translations": {
         "zh-Hans": "那让你感觉如何？",
-        "ja": "それでどんな気持ちになりましたか？"
+        "ja": "それでどんな気持ちになりましたか？",
+        "zh-Hant": "那讓你感覺如何？",
+        "tr": "Bu sana nasıl hissettirdi?",
+        "vi": "Điều đó khiến bạn cảm thấy thế nào?",
+        "ar": "كيف جعلك ذلك تشعر؟",
+        "ru": "Что вы почувствовали?",
+        "ko": "그 일로 어떤 기분이 들었어요?",
+        "es": "¿Cómo te hizo sentir eso?",
+        "pt-BR": "Como isso fez você se sentir?",
+        "fr": "Qu'est-ce que tu as ressenti ?",
+        "de": "Wie hast du dich dabei gefühlt?",
+        "it": "Come ti ha fatto sentire?",
+        "id": "Bagaimana perasaanmu setelah itu?",
+        "th": "เรื่องนั้นทำให้คุณรู้สึกอย่างไร?"
       }
     },
     {
@@ -170,7 +313,20 @@
       "duration": 2.432,
       "translations": {
         "zh-Hans": "你觉得为什么会这样？",
-        "ja": "なぜそうなったと思いますか？"
+        "ja": "なぜそうなったと思いますか？",
+        "zh-Hant": "你覺得為什麼會這樣？",
+        "tr": "Sence bu neden oldu?",
+        "vi": "Bạn nghĩ tại sao chuyện đó lại xảy ra?",
+        "ar": "لماذا تعتقد أن ذلك حدث؟",
+        "ru": "Как вы думаете, почему это произошло?",
+        "ko": "왜 그런 일이 일어났다고 생각해요?",
+        "es": "¿Por qué crees que pasó eso?",
+        "pt-BR": "Por que você acha que isso aconteceu?",
+        "fr": "Pourquoi penses-tu que c'est arrivé ?",
+        "de": "Warum glaubst du, ist das passiert?",
+        "it": "Perché pensi che sia successo?",
+        "id": "Menurutmu, kenapa itu bisa terjadi?",
+        "th": "คุณคิดว่าทำไมเรื่องนั้นถึงเกิดขึ้น?"
       }
     },
     {
@@ -184,7 +340,20 @@
       "duration": 2.475,
       "translations": {
         "zh-Hans": "我曾经试过一次，挺有趣的。",
-        "ja": "私も一度やったことがありますが、楽しかったです。"
+        "ja": "私も一度やったことがありますが、楽しかったです。",
+        "zh-Hant": "我曾經試過一次，滿有趣的。",
+        "tr": "Bunu bir kez denedim, çok eğlenceliydi.",
+        "vi": "Mình từng thử một lần, vui lắm.",
+        "ar": "جربت ذلك مرة، وكان ممتعًا.",
+        "ru": "Я однажды пробовал нечто подобное, и это было весело.",
+        "ko": "나도 한 번 해 봤는데 재미있었어요.",
+        "es": "Lo probé una vez y fue divertido.",
+        "pt-BR": "Eu tentei uma vez e foi divertido.",
+        "fr": "J'ai essayé une fois, et c'était amusant.",
+        "de": "Ich habe das einmal ausprobiert, und es hat Spaß gemacht.",
+        "it": "L'ho provato una volta ed è stato divertente.",
+        "id": "Aku pernah mencobanya sekali, dan itu menyenangkan.",
+        "th": "ฉันเคยลองครั้งหนึ่ง สนุกดีนะ"
       }
     },
     {
@@ -198,7 +367,20 @@
       "duration": 4.224,
       "translations": {
         "zh-Hans": "你能解释一下你为什么选择那个选项吗？我也曾经有过类似的选择。",
-        "ja": "なぜその選択をしたのか説明してもらえますか？ 私も似たような選択をしたことがあります。"
+        "ja": "なぜその選択をしたのか説明してもらえますか？ 私も似たような選択をしたことがあります。",
+        "zh-Hant": "你能解釋一下你為什麼選擇那個選項嗎？我也曾經面臨過類似的選擇。",
+        "tr": "Neden o seçeneği tercih ettiğini açıklayabilir misin? Ben de bir kez benzer bir seçimle karşılaşmıştım.",
+        "vi": "Bạn có thể giải thích vì sao bạn chọn phương án đó không? Mình cũng từng phải đưa ra lựa chọn tương tự.",
+        "ar": "هل يمكنك شرح سبب اختيارك لذلك الخيار؟ لقد واجهت خيارًا مشابهًا من قبل.",
+        "ru": "Можете объяснить, почему выбрали этот вариант? Однажды я тоже стоял перед похожим выбором.",
+        "ko": "왜 그 선택을 했는지 설명해 줄 수 있어요? 나도 예전에 비슷한 선택을 한 적이 있어요.",
+        "es": "¿Puedes explicar por qué elegiste esa opción? Yo también tuve que tomar una decisión parecida.",
+        "pt-BR": "Você pode explicar por que escolheu essa opção? Eu também já tive uma escolha parecida.",
+        "fr": "Peux-tu expliquer pourquoi tu as choisi cette option ? J'ai déjà eu un choix similaire.",
+        "de": "Kannst du erklären, warum du diese Option gewählt hast? Ich musste einmal etwas Ähnliches entscheiden.",
+        "it": "Puoi spiegare perché hai scelto questa opzione? Anch'io una volta ho dovuto fare una scelta simile.",
+        "id": "Bisa jelaskan kenapa kamu memilih pilihan itu? Aku juga pernah menghadapi pilihan yang mirip.",
+        "th": "ช่วยอธิบายได้ไหมว่าทำไมคุณถึงเลือกตัวเลือกนั้น? ฉันก็เคยต้องเลือกแบบคล้ายกันครั้งหนึ่ง"
       }
     },
     {
@@ -212,7 +394,20 @@
       "duration": 3.328,
       "translations": {
         "zh-Hans": "我去年有过类似的经历。",
-        "ja": "去年、似たような経験をしました。"
+        "ja": "去年、似たような経験をしました。",
+        "zh-Hant": "我去年有過類似的經歷。",
+        "tr": "Geçen yıl benzer bir deneyim yaşadım.",
+        "vi": "Năm ngoái mình cũng từng có trải nghiệm tương tự.",
+        "ar": "مررت بتجربة مشابهة العام الماضي.",
+        "ru": "В прошлом году у меня был похожий опыт.",
+        "ko": "나도 작년에 비슷한 경험을 했어요.",
+        "es": "El año pasado tuve una experiencia parecida.",
+        "pt-BR": "Eu tive uma experiência parecida no ano passado.",
+        "fr": "J'ai vécu une expérience similaire l'année dernière.",
+        "de": "Ich hatte letztes Jahr eine ähnliche Erfahrung.",
+        "it": "L'anno scorso ho avuto un'esperienza simile.",
+        "id": "Aku pernah mengalami hal serupa tahun lalu.",
+        "th": "ปีที่แล้วฉันก็เคยมีประสบการณ์คล้ายกัน"
       }
     },
     {
@@ -226,7 +421,20 @@
       "duration": 3.669,
       "translations": {
         "zh-Hans": "我记得我曾经也有过同样的感觉。",
-        "ja": "私も一度、同じように感じたことを覚えています。"
+        "ja": "私も一度、同じように感じたことを覚えています。",
+        "zh-Hant": "我記得我以前也有過同樣的感覺。",
+        "tr": "Daha önce ben de aynı şekilde hissettiğimi hatırlıyorum.",
+        "vi": "Mình nhớ trước đây cũng từng cảm thấy như vậy.",
+        "ar": "أتذكر أنني شعرت بالطريقة نفسها ذات مرة.",
+        "ru": "Однажды я чувствовал себя так же.",
+        "ko": "나도 한 번은 똑같이 느꼈던 기억이 나요.",
+        "es": "Recuerdo que una vez me sentí igual.",
+        "pt-BR": "Lembro que uma vez me senti do mesmo jeito.",
+        "fr": "Je me souviens avoir ressenti la même chose un jour.",
+        "de": "Ich erinnere mich, dass ich mich einmal genauso gefühlt habe.",
+        "it": "Ricordo che una volta mi sono sentito/a allo stesso modo.",
+        "id": "Aku ingat pernah merasa seperti itu juga.",
+        "th": "ฉันจำได้ว่าเคยรู้สึกแบบเดียวกันครั้งหนึ่ง"
       }
     }
   ]

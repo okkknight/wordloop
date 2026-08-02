@@ -15,7 +15,21 @@
       "end": 4.779,
       "duration": 4.779,
       "translations": {
-        "zh-Hans": "我相信有效的沟通是成功的关键。"
+        "ar": "أؤمن بأن التواصل الفعّال هو مفتاح النجاح.",
+        "it": "Credo che una comunicazione efficace sia la chiave del successo.",
+        "vi": "Tôi tin rằng giao tiếp hiệu quả là chìa khóa dẫn đến thành công.",
+        "id": "Saya percaya komunikasi yang efektif adalah kunci keberhasilan.",
+        "zh-Hans": "我相信有效的沟通是成功的关键。",
+        "zh-Hant": "我相信有效的溝通是成功的關鍵。",
+        "ja": "効果的なコミュニケーションが成功の鍵だと信じています。",
+        "ko": "효과적인 의사소통이 성공의 열쇠라고 믿습니다.",
+        "ru": "Я считаю, что эффективное общение — ключ к успеху.",
+        "th": "ฉันเชื่อว่าการสื่อสารที่มีประสิทธิภาพเป็นกุญแจสู่ความสำเร็จ",
+        "tr": "Etkili iletişimin başarının anahtarı olduğuna inanıyorum.",
+        "es": "Creo que una comunicación eficaz es fundamental para tener éxito.",
+        "fr": "Je pense qu'une communication efficace est la clé de la réussite.",
+        "de": "Ich glaube, dass eine wirksame Kommunikation der Schlüssel zum Erfolg ist.",
+        "pt-BR": "Acredito que uma comunicação eficaz é essencial para o sucesso."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 5.205,
       "duration": 5.205,
       "translations": {
-        "zh-Hans": "例如，我曾参与过一个项目，在那里沟通至关重要。"
+        "ar": "على سبيل المثال، عملت ذات مرة في مشروع كان التواصل فيه حاسمًا.",
+        "it": "Per esempio, una volta ho lavorato a un progetto in cui la comunicazione era fondamentale.",
+        "vi": "Ví dụ, tôi từng làm một dự án mà giao tiếp đóng vai trò then chốt.",
+        "id": "Misalnya, saya pernah mengerjakan proyek yang komunikasinya sangat penting.",
+        "zh-Hans": "例如，我曾参与过一个项目，在那里沟通至关重要。",
+        "zh-Hant": "例如，我曾參與過一個溝通至關重要的專案。",
+        "ja": "例えば、以前、コミュニケーションが極めて重要なプロジェクトに携わったことがあります。",
+        "ko": "예를 들어, 저는 의사소통이 매우 중요했던 프로젝트에 참여한 적이 있습니다.",
+        "ru": "Например, однажды я работал над проектом, где общение имело решающее значение.",
+        "th": "ตัวอย่างเช่น ครั้งหนึ่งฉันเคยทำงานในโครงการที่การสื่อสารมีความสำคัญอย่างยิ่ง",
+        "tr": "Örneğin, bir keresinde iletişimin kritik önem taşıdığı bir projede çalıştım.",
+        "es": "Por ejemplo, una vez trabajé en un proyecto en el que la comunicación era crucial.",
+        "fr": "Par exemple, j'ai déjà travaillé sur un projet où la communication était essentielle.",
+        "de": "Zum Beispiel habe ich einmal an einem Projekt gearbeitet, bei dem Kommunikation entscheidend war.",
+        "pt-BR": "Por exemplo, certa vez trabalhei em um projeto em que a comunicação era fundamental."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "我认为从错误中学习对个人成长至关重要。"
+        "ar": "أعتقد أن التعلم من الأخطاء أمر ضروري للنمو الشخصي.",
+        "it": "Penso che imparare dagli errori sia fondamentale per la crescita personale.",
+        "vi": "Tôi nghĩ học hỏi từ sai lầm là điều thiết yếu cho sự phát triển cá nhân.",
+        "id": "Saya rasa belajar dari kesalahan sangat penting untuk perkembangan diri.",
+        "zh-Hans": "我认为从错误中学习对个人成长至关重要。",
+        "zh-Hant": "我認為從錯誤中學習對個人成長至關重要。",
+        "ja": "失敗から学ぶことは、個人の成長に不可欠だと思います。",
+        "ko": "실수에서 배우는 것은 개인의 성장에 매우 중요하다고 생각합니다.",
+        "ru": "Я думаю, что учиться на ошибках крайне важно для личностного роста.",
+        "th": "ฉันคิดว่าการเรียนรู้จากความผิดพลาดเป็นสิ่งสำคัญอย่างยิ่งต่อการเติบโตส่วนบุคคล",
+        "tr": "Hatalardan ders çıkarmanın kişisel gelişim için hayati önem taşıdığını düşünüyorum.",
+        "es": "Creo que aprender de los errores es vital para el crecimiento personal.",
+        "fr": "Je pense qu'apprendre de ses erreurs est essentiel pour progresser personnellement.",
+        "de": "Ich denke, dass man aus Fehlern zu lernen für die persönliche Entwicklung unerlässlich ist.",
+        "pt-BR": "Acho que aprender com os erros é essencial para o crescimento pessoal."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "对我来说，坚持不懈会带来成功。"
+        "ar": "من الواضح لي أن المثابرة تؤدي إلى النجاح.",
+        "it": "Per me è chiaro che la perseveranza porta al successo.",
+        "vi": "Tôi thấy rõ rằng sự kiên trì dẫn đến thành công.",
+        "id": "Bagi saya, jelas bahwa kegigihan membawa keberhasilan.",
+        "zh-Hans": "对我来说，坚持不懈会带来成功。",
+        "zh-Hant": "對我來說，堅持不懈會帶來成功。",
+        "ja": "私には、粘り強さが成功につながることは明らかです。",
+        "ko": "저에게는 끈기가 성공으로 이어진다는 것이 분명합니다.",
+        "ru": "Для меня очевидно, что настойчивость ведёт к успеху.",
+        "th": "สำหรับฉันแล้ว เห็นได้ชัดว่าความพากเพียรนำไปสู่ความสำเร็จ",
+        "tr": "Bana göre azim, başarıya götürür.",
+        "es": "Para mí está claro que la perseverancia conduce al éxito.",
+        "fr": "Pour moi, il est évident que la persévérance mène à la réussite.",
+        "de": "Für mich ist klar, dass Ausdauer zum Erfolg führt.",
+        "pt-BR": "Para mim, está claro que a persistência leva ao sucesso."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "以一家因创新而繁荣的公司为例。"
+        "ar": "خذ مثالًا على شركة ازدهرت بفضل الابتكار.",
+        "it": "Prendiamo l'esempio di un'azienda che ha prosperato grazie all'innovazione.",
+        "vi": "Hãy lấy một công ty phát triển mạnh nhờ đổi mới làm ví dụ.",
+        "id": "Ambil contoh perusahaan yang berkembang pesat berkat inovasi.",
+        "zh-Hans": "以一家因创新而繁荣的公司为例。",
+        "zh-Hant": "以一家因創新而蓬勃發展的公司為例。",
+        "ja": "イノベーションによって繁栄した企業を例に挙げてみましょう。",
+        "ko": "혁신 덕분에 크게 성장한 한 회사를 예로 들어 보겠습니다.",
+        "ru": "Возьмём, к примеру, компанию, процветавшую благодаря инновациям.",
+        "th": "ลองยกตัวอย่างบริษัทที่รุ่งเรืองขึ้นมาได้ด้วยนวัตกรรม",
+        "tr": "İnovasyon sayesinde gelişen bir şirketi örnek olarak ele alalım.",
+        "es": "Tomemos el ejemplo de una empresa que prosperó gracias a la innovación.",
+        "fr": "Prenez l'exemple d'une entreprise qui a prospéré grâce à l'innovation.",
+        "de": "Nehmen wir das Beispiel eines Unternehmens, das dank Innovation floriert hat.",
+        "pt-BR": "Veja o exemplo de uma empresa que prosperou graças à inovação."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "这让我想起了一次我必须快速适应变化的经历。"
+        "ar": "يذكرني هذا بوقت اضطررت فيه إلى التكيف سريعًا مع التغيير.",
+        "it": "Questo mi ricorda una volta in cui ho dovuto adattarmi rapidamente a un cambiamento.",
+        "vi": "Điều này khiến tôi nhớ đến lần phải nhanh chóng thích nghi với sự thay đổi.",
+        "id": "Hal ini mengingatkan saya pada suatu masa ketika saya harus cepat beradaptasi dengan perubahan.",
+        "zh-Hans": "这让我想起了一次我必须快速适应变化的经历。",
+        "zh-Hant": "這讓我想起了一次我必須快速適應變化的經歷。",
+        "ja": "これは、変化にすばやく適応しなければならなかった時のことを思い出させます。",
+        "ko": "이 말을 들으니 변화에 빠르게 적응해야 했던 때가 떠오릅니다.",
+        "ru": "Это напоминает мне о времени, когда мне пришлось быстро приспосабливаться к переменам.",
+        "th": "เรื่องนี้ทำให้ฉันนึกถึงช่วงเวลาที่ต้องปรับตัวให้เข้ากับการเปลี่ยนแปลงอย่างรวดเร็ว",
+        "tr": "Bu bana değişime hızla uyum sağlamak zorunda kaldığım bir zamanı hatırlatıyor.",
+        "es": "Esto me recuerda una ocasión en la que tuve que adaptarme rápidamente a un cambio.",
+        "fr": "Cela me rappelle une fois où j'ai dû m'adapter rapidement au changement.",
+        "de": "Das erinnert mich an eine Zeit, in der ich mich schnell an Veränderungen anpassen musste.",
+        "pt-BR": "Isso me lembra uma época em que precisei me adaptar rapidamente às mudanças."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.627,
       "duration": 3.627,
       "translations": {
-        "zh-Hans": "想想科技如何改变了沟通方式。"
+        "ar": "فكر في كيفية تغيير التكنولوجيا لوسائل التواصل.",
+        "it": "Pensa a come la tecnologia ha trasformato la comunicazione.",
+        "vi": "Hãy nghĩ xem công nghệ đã biến đổi giao tiếp như thế nào.",
+        "id": "Coba pikirkan bagaimana teknologi telah mengubah komunikasi.",
+        "zh-Hans": "想想科技如何改变了沟通方式。",
+        "zh-Hant": "想想科技如何改變了溝通方式。",
+        "ja": "テクノロジーがコミュニケーションをどのように変えたか、考えてみてください。",
+        "ko": "기술이 의사소통을 어떻게 변화시켰는지 생각해 보세요.",
+        "ru": "Подумайте о том, как технологии преобразили общение.",
+        "th": "ลองคิดดูว่าเทคโนโลยีได้เปลี่ยนแปลงการสื่อสารอย่างไร",
+        "tr": "Teknolojinin iletişimi nasıl dönüştürdüğünü düşünün.",
+        "es": "Piensa en cómo la tecnología ha transformado la comunicación.",
+        "fr": "Réfléchissez à la manière dont la technologie a transformé la communication.",
+        "de": "Denke einmal darüber nach, wie Technologie die Kommunikation verändert hat.",
+        "pt-BR": "Pense em como a tecnologia transformou a comunicação."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "一个很好的例子是远程工作如何改变了就业市场。"
+        "ar": "ومن الأمثلة الجيدة على ذلك كيف غيّر العمل عن بُعد سوق الوظائف.",
+        "it": "Un buon esempio è il modo in cui il lavoro da remoto ha cambiato il mercato del lavoro.",
+        "vi": "Một ví dụ điển hình là cách làm việc từ xa đã thay đổi thị trường lao động.",
+        "id": "Contoh yang bagus adalah bagaimana kerja jarak jauh telah mengubah pasar kerja.",
+        "zh-Hans": "一个很好的例子是远程工作如何改变了就业市场。",
+        "zh-Hant": "一個很好的例子是遠距工作如何改變了就業市場。",
+        "ja": "リモートワークが雇用市場をどのように変えたかは、よい例です。",
+        "ko": "재택근무가 고용 시장을 어떻게 변화시켰는지가 좋은 예입니다.",
+        "ru": "Хороший пример — то, как удалённая работа изменила рынок труда.",
+        "th": "ตัวอย่างที่ดีคือการที่การทำงานทางไกลได้เปลี่ยนแปลงตลาดแรงงาน",
+        "tr": "Uzaktan çalışmanın iş piyasasını nasıl değiştirdiği buna iyi bir örnektir.",
+        "es": "Un buen ejemplo es cómo el trabajo remoto ha cambiado el mercado laboral.",
+        "fr": "Un bon exemple est la façon dont le télétravail a transformé le marché de l'emploi.",
+        "de": "Ein gutes Beispiel ist, wie die Arbeit im Homeoffice den Arbeitsmarkt verändert hat.",
+        "pt-BR": "Um bom exemplo é como o trabalho remoto mudou o mercado de trabalho."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 4.181,
       "duration": 4.181,
       "translations": {
-        "zh-Hans": "当我面临挑战时，我学会了韧性的重要性。"
+        "ar": "عندما واجهت تحديًا، تعلمت أهمية الصمود.",
+        "it": "Quando ho affrontato una difficoltà, ho capito l'importanza della resilienza.",
+        "vi": "Khi đối mặt với một thử thách, tôi đã học được tầm quan trọng của sự bền bỉ.",
+        "id": "Ketika menghadapi tantangan, saya belajar pentingnya ketangguhan.",
+        "zh-Hans": "当我面临挑战时，我学会了韧性的重要性。",
+        "zh-Hant": "當我面臨挑戰時，我學會了韌性的重要性。",
+        "ja": "困難に直面したとき、立ち直る力の大切さを学びました。",
+        "ko": "어려움에 직면했을 때 회복탄력성의 중요성을 배웠습니다.",
+        "ru": "Столкнувшись с трудностями, я понял, как важна стойкость.",
+        "th": "เมื่อฉันเผชิญกับความท้าทาย ฉันได้เรียนรู้ถึงความสำคัญของความยืดหยุ่นทางใจ",
+        "tr": "Bir zorlukla karşılaştığımda dayanıklılığın önemini öğrendim.",
+        "es": "Cuando me enfrenté a un reto, aprendí la importancia de la resiliencia.",
+        "fr": "Quand j'ai rencontré une difficulté, j'ai compris l'importance de la résilience.",
+        "de": "Als ich vor einer Herausforderung stand, erkannte ich, wie wichtig Widerstandsfähigkeit ist.",
+        "pt-BR": "Quando enfrentei um desafio, aprendi a importância da resiliência."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 5.163,
       "duration": 5.163,
       "translations": {
-        "zh-Hans": "为了说明我的观点，我曾在一个社区项目中做志愿者。"
+        "ar": "ولتوضيح وجهة نظري، تطوعت ذات مرة في مشروع مجتمعي.",
+        "it": "Per illustrare il mio punto di vista, una volta ho fatto volontariato in un progetto comunitario.",
+        "vi": "Để minh họa cho quan điểm của mình, tôi từng làm tình nguyện trong một dự án cộng đồng.",
+        "id": "Untuk menjelaskan maksud saya, saya pernah menjadi relawan dalam proyek komunitas.",
+        "zh-Hans": "为了说明我的观点，我曾在一个社区项目中做志愿者。",
+        "zh-Hant": "為了說明我的觀點，我曾在一個社區專案中擔任志工。",
+        "ja": "私の考えを説明するために、以前、地域のプロジェクトでボランティアをしたことがあります。",
+        "ko": "제 주장을 설명하기 위해, 저는 한때 지역 사회 프로젝트에서 자원봉사를 했습니다.",
+        "ru": "Чтобы проиллюстрировать свою мысль, я однажды стал волонтёром в общественном проекте.",
+        "th": "เพื่ออธิบายมุมมองของฉัน ฉันเคยเป็นอาสาสมัครในโครงการชุมชนครั้งหนึ่ง",
+        "tr": "Düşüncemi açıklamak için bir keresinde bir toplum projesinde gönüllü oldum.",
+        "es": "Para ilustrar mi punto, una vez hice voluntariado en un proyecto comunitario.",
+        "fr": "Pour illustrer mon propos, j'ai déjà fait du bénévolat dans un projet communautaire.",
+        "de": "Um meinen Standpunkt zu verdeutlichen: Ich habe einmal bei einem Gemeinschaftsprojekt mitgeholfen.",
+        "pt-BR": "Para ilustrar meu ponto de vista, certa vez fui voluntário em um projeto comunitário."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.968,
       "duration": 3.968,
       "translations": {
-        "zh-Hans": "我在学习新技能时意识到了耐心的价值。"
+        "ar": "أدركت قيمة الصبر عندما كنت أتعلم مهارة جديدة.",
+        "it": "Imparando una nuova abilità, ho capito il valore della pazienza.",
+        "vi": "Tôi nhận ra giá trị của sự kiên nhẫn khi học một kỹ năng mới.",
+        "id": "Saya menyadari pentingnya kesabaran saat mempelajari keterampilan baru.",
+        "zh-Hans": "我在学习新技能时意识到了耐心的价值。",
+        "zh-Hant": "我在學習新技能時意識到了耐心的價值。",
+        "ja": "新しいスキルを学ぶ中で、忍耐の価値に気づきました。",
+        "ko": "새로운 기술을 배우면서 인내의 가치를 깨달았습니다.",
+        "ru": "Осваивая новый навык, я осознал ценность терпения.",
+        "th": "ฉันตระหนักถึงคุณค่าของความอดทนขณะเรียนรู้ทักษะใหม่",
+        "tr": "Yeni bir beceri öğrenirken sabrın değerini fark ettim.",
+        "es": "Me di cuenta del valor de la paciencia al aprender una nueva habilidad.",
+        "fr": "J'ai compris la valeur de la patience en apprenant une nouvelle compétence.",
+        "de": "Beim Erlernen einer neuen Fähigkeit wurde mir bewusst, wie wertvoll Geduld ist.",
+        "pt-BR": "Percebi o valor da paciência ao aprender uma nova habilidade."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "体验不同文化让我变得更加开放。"
+        "ar": "علّمتني تجربة ثقافات مختلفة أن أكون أكثر انفتاحًا.",
+        "it": "Conoscere culture diverse mi ha insegnato ad avere una mente più aperta.",
+        "vi": "Trải nghiệm những nền văn hóa khác nhau dạy tôi cởi mở hơn.",
+        "id": "Mengenal berbagai budaya mengajarkan saya untuk berpikiran lebih terbuka.",
+        "zh-Hans": "体验不同文化让我变得更加开放。",
+        "zh-Hant": "體驗不同文化讓我變得更加開放。",
+        "ja": "さまざまな文化を体験したことで、より柔軟な考え方ができるようになりました。",
+        "ko": "다양한 문화를 경험하면서 더 열린 마음을 갖게 되었습니다.",
+        "ru": "Знакомство с разными культурами научило меня быть более открытым.",
+        "th": "การได้สัมผัสวัฒนธรรมที่หลากหลายสอนให้ฉันเปิดใจมากขึ้น",
+        "tr": "Farklı kültürleri deneyimlemek bana daha açık fikirli olmayı öğretti.",
+        "es": "Conocer distintas culturas me enseñó a tener una mentalidad más abierta.",
+        "fr": "La découverte de cultures différentes m'a appris à être plus ouvert d'esprit.",
+        "de": "Die Erfahrung mit anderen Kulturen hat mich gelehrt, aufgeschlossener zu sein.",
+        "pt-BR": "Vivenciar culturas diferentes me ensinou a ter uma mente mais aberta."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 4.864,
       "duration": 4.864,
       "translations": {
-        "zh-Hans": "这个例子清楚地表明了为什么适应能力在当今世界至关重要。"
+        "ar": "يوضح هذا المثال بجلاء سبب أهمية القدرة على التكيف في عالم اليوم.",
+        "it": "Questo esempio mostra chiaramente perché l'adattabilità è fondamentale nel mondo di oggi.",
+        "vi": "Ví dụ này cho thấy rõ vì sao khả năng thích nghi lại quan trọng trong thế giới ngày nay.",
+        "id": "Contoh ini dengan jelas menunjukkan mengapa kemampuan beradaptasi sangat penting di dunia saat ini.",
+        "zh-Hans": "这个例子清楚地表明了为什么适应能力在当今世界至关重要。",
+        "zh-Hant": "這個例子清楚地表明了為什麼適應能力在當今世界至關重要。",
+        "ja": "この例は、なぜ適応力が現代社会で重要なのかを明確に示しています。",
+        "ko": "이 예는 오늘날 세상에서 적응력이 왜 중요한지를 분명히 보여 줍니다.",
+        "ru": "Этот пример ясно показывает, почему адаптивность так важна в современном мире.",
+        "th": "ตัวอย่างนี้แสดงให้เห็นอย่างชัดเจนว่าเหตุใดความสามารถในการปรับตัวจึงสำคัญในโลกปัจจุบัน",
+        "tr": "Bu örnek, uyum yeteneğinin günümüz dünyasında neden kritik olduğunu açıkça gösteriyor.",
+        "es": "Este ejemplo muestra claramente por qué la capacidad de adaptación es crucial en el mundo actual.",
+        "fr": "Cet exemple montre clairement pourquoi l'adaptabilité est essentielle dans le monde d'aujourd'hui.",
+        "de": "Dieses Beispiel zeigt deutlich, warum Anpassungsfähigkeit in der heutigen Welt entscheidend ist.",
+        "pt-BR": "Este exemplo mostra claramente por que a adaptabilidade é fundamental no mundo de hoje."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 4.523,
       "duration": 4.523,
       "translations": {
-        "zh-Hans": "根据我的经验，我可以说努力工作从长远来看是有回报的。"
+        "ar": "ومن واقع تجربتي، أستطيع القول إن العمل الجاد يؤتي ثماره على المدى البعيد.",
+        "it": "In base alla mia esperienza, posso dire che il duro lavoro viene ripagato nel lungo periodo.",
+        "vi": "Từ kinh nghiệm của mình, tôi có thể nói rằng làm việc chăm chỉ sẽ mang lại kết quả về lâu dài.",
+        "id": "Dari pengalaman saya, saya bisa mengatakan bahwa kerja keras membuahkan hasil dalam jangka panjang.",
+        "zh-Hans": "根据我的经验，我可以说努力工作从长远来看是有回报的。",
+        "zh-Hant": "根據我的經驗，我可以說努力工作從長遠來看是有回報的。",
+        "ja": "私の経験から言えば、努力は長い目で見れば報われます。",
+        "ko": "제 경험에 비추어 볼 때, 열심히 일하면 장기적으로 보답을 받는다고 말할 수 있습니다.",
+        "ru": "По своему опыту могу сказать, что усердный труд в долгосрочной перспективе окупается.",
+        "th": "จากประสบการณ์ของฉัน ฉันพูดได้ว่าความขยันจะให้ผลตอบแทนในระยะยาว",
+        "tr": "Deneyimlerime dayanarak, sıkı çalışmanın uzun vadede karşılığını verdiğini söyleyebilirim.",
+        "es": "Por mi experiencia, puedo decir que el trabajo duro da sus frutos a largo plazo.",
+        "fr": "D'après mon expérience, je peux dire que le travail acharné finit par payer.",
+        "de": "Meiner Erfahrung nach zahlt sich harte Arbeit langfristig aus.",
+        "pt-BR": "Pela minha experiência, posso dizer que o trabalho duro compensa a longo prazo."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 5.205,
       "duration": 5.205,
       "translations": {
-        "zh-Hans": "最终，这表明坚持不懈是克服障碍的关键。"
+        "ar": "وفي نهاية المطاف، يوضح هذا أن المثابرة مفتاح التغلب على العقبات.",
+        "it": "In definitiva, questo dimostra che la perseveranza è la chiave per superare gli ostacoli.",
+        "vi": "Sau cùng, điều này cho thấy sự kiên trì là chìa khóa để vượt qua trở ngại.",
+        "id": "Pada akhirnya, ini menunjukkan bahwa ketekunan adalah kunci untuk mengatasi rintangan.",
+        "zh-Hans": "最终，这表明坚持不懈是克服障碍的关键。",
+        "zh-Hant": "最終，這表明堅持不懈是克服障礙的關鍵。",
+        "ja": "結局のところ、これは障害を乗り越える鍵が粘り強さであることを示しています。",
+        "ko": "결국 이는 끈기가 장애물을 극복하는 열쇠임을 보여 줍니다.",
+        "ru": "В конечном счёте это показывает, что настойчивость — ключ к преодолению препятствий.",
+        "th": "ท้ายที่สุด สิ่งนี้แสดงให้เห็นว่าความพากเพียรคือกุญแจสำคัญในการเอาชนะอุปสรรค",
+        "tr": "Sonuç olarak bu, azmin engelleri aşmanın anahtarı olduğunu gösteriyor.",
+        "es": "En última instancia, esto demuestra que la perseverancia es clave para superar los obstáculos.",
+        "fr": "En fin de compte, cela montre que la persévérance est essentielle pour surmonter les obstacles.",
+        "de": "Letztendlich zeigt dies, dass Ausdauer der Schlüssel zur Überwindung von Hindernissen ist.",
+        "pt-BR": "Em última análise, isso mostra que a perseverança é fundamental para superar obstáculos."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 4.267,
       "duration": 4.267,
       "translations": {
-        "zh-Hans": "因此，很明显，良好的规划会带来更好的结果。"
+        "ar": "لذلك، من الواضح أن التخطيط الجيد يؤدي إلى نتائج أفضل.",
+        "it": "Pertanto, è evidente che una buona pianificazione porta a risultati migliori.",
+        "vi": "Vì vậy, rõ ràng là lập kế hoạch tốt sẽ mang lại kết quả tốt hơn.",
+        "id": "Karena itu, jelas bahwa perencanaan yang baik menghasilkan hasil yang lebih baik.",
+        "zh-Hans": "因此，很明显，良好的规划会带来更好的结果。",
+        "zh-Hant": "因此，很明顯，良好的規劃會帶來更好的結果。",
+        "ja": "したがって、綿密な計画がよりよい結果につながることは明らかです。",
+        "ko": "따라서 계획을 잘 세우면 더 나은 결과를 얻는다는 것이 분명합니다.",
+        "ru": "Поэтому очевидно, что хорошее планирование приводит к лучшим результатам.",
+        "th": "ดังนั้นจึงเห็นได้ชัดว่าการวางแผนที่ดีนำไปสู่ผลลัพธ์ที่ดีกว่า",
+        "tr": "Bu nedenle, iyi planlamanın daha iyi sonuçlara götürdüğü açıktır.",
+        "es": "Por lo tanto, es evidente que una buena planificación conduce a mejores resultados.",
+        "fr": "Il est donc évident qu'une bonne planification mène à de meilleurs résultats.",
+        "de": "Daher liegt auf der Hand, dass gute Planung zu besseren Ergebnissen führt.",
+        "pt-BR": "Portanto, é evidente que um bom planejamento leva a resultados melhores."
       }
     }
   ]

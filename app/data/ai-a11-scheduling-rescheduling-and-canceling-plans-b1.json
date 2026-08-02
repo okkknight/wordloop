@@ -15,7 +15,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "我们这个周末聚一下怎么样？"
+        "zh-Hans": "我们这个周末聚一下怎么样？",
+        "zh-Hant": "這個週末我們一起聚聚如何？",
+        "ja": "今週末、会いませんか？",
+        "es": "¿Qué te parece si nos vemos este fin de semana?",
+        "de": "Wie wäre es, wenn wir uns dieses Wochenende treffen?",
+        "ru": "Как насчёт встретиться в эти выходные?",
+      "th": "สุดสัปดาห์นี้เราเจอกันไหม",
+      "ko": "이번 주말에 만나는 건 어때요?",
+      "pt-BR": "Que tal a gente se encontrar neste fim de semana?",
+      "fr": "Et si on se retrouvait ce week-end ?",
+      "it": "Che ne dici se ci vediamo questo fine settimana?",
+      "ar": "ما رأيك أن نلتقي في عطلة نهاية الأسبوع هذه؟",
+      "id": "Bagaimana kalau kita bertemu akhir pekan ini?",
+      "vi": "Cuối tuần này chúng ta gặp nhau nhé?",
+      "tr": "Bu hafta sonu buluşmaya ne dersin?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "我们可以在星期五下午见面吗？"
+        "zh-Hans": "我们可以在星期五下午见面吗？",
+        "zh-Hant": "我們星期五下午可以見面嗎？",
+        "ja": "金曜日の午後に会えますか？",
+        "es": "¿Podemos vernos el viernes por la tarde?",
+        "de": "Können wir uns am Freitagnachmittag treffen?",
+        "ru": "Мы можем встретиться в пятницу днём?",
+      "th": "เราเจอกันบ่ายวันศุกร์ได้ไหม",
+      "ko": "금요일 오후에 만날 수 있을까요?",
+      "pt-BR": "Podemos nos encontrar na sexta à tarde?",
+      "fr": "Est-ce qu'on peut se voir vendredi après-midi ?",
+      "it": "Possiamo vederci venerdì pomeriggio?",
+      "ar": "هل يمكننا أن نلتقي بعد ظهر يوم الجمعة؟",
+      "id": "Bisakah kita bertemu pada Jumat sore?",
+      "vi": "Chiều thứ Sáu chúng ta gặp nhau được không?",
+      "tr": "Cuma öğleden sonra buluşabilir miyiz?"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我们计划下周二吃晚饭吧。"
+        "zh-Hans": "我们计划下周二吃晚饭吧。",
+        "zh-Hant": "我們安排下週二一起吃晚餐吧。",
+        "ja": "来週の火曜日に夕食を食べる予定にしましょう。",
+        "es": "Planeemos cenar el próximo martes.",
+        "de": "Lassen Sie uns für nächsten Dienstag ein Abendessen planen.",
+        "ru": "Давайте запланируем ужин на следующий вторник.",
+      "th": "เรานัดกินข้าวเย็นวันอังคารหน้าไหม",
+      "ko": "다음 주 화요일에 저녁 식사를 함께할까요?",
+      "pt-BR": "Vamos marcar um jantar para a próxima terça-feira.",
+      "fr": "Prévoyons un dîner mardi prochain.",
+      "it": "Organizziamo una cena per martedì prossimo.",
+      "ar": "لنخطط لتناول العشاء يوم الثلاثاء المقبل.",
+      "id": "Mari kita rencanakan makan malam Selasa depan.",
+      "vi": "Chúng ta lên kế hoạch ăn tối vào thứ Ba tuần sau nhé.",
+      "tr": "Gelecek salı akşam yemeği için plan yapalım."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "我们安排下周开会好吗？"
+        "zh-Hans": "我们安排下周开会好吗？",
+        "zh-Hant": "我們安排下週開會好嗎？",
+        "ja": "来週、会議を設定しませんか？",
+        "es": "¿Programamos una reunión para la próxima semana?",
+        "de": "Sollen wir für nächste Woche ein Meeting vereinbaren?",
+        "ru": "Давайте назначим встречу на следующую неделю?",
+      "th": "เรานัดประชุมสัปดาห์หน้ากันดีไหม",
+      "ko": "다음 주에 회의 일정을 잡을까요?",
+      "pt-BR": "Vamos marcar uma reunião para a próxima semana?",
+      "fr": "On pourrait programmer une réunion la semaine prochaine ?",
+      "it": "Fissiamo una riunione per la prossima settimana?",
+      "ar": "هل نحدد موعدًا لاجتماع الأسبوع المقبل؟",
+      "id": "Bagaimana kalau kita menjadwalkan rapat untuk minggu depan?",
+      "vi": "Chúng ta sắp xếp một cuộc họp vào tuần sau nhé?",
+      "tr": "Gelecek hafta için bir toplantı planlayalım mı?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.517,
       "duration": 2.517,
       "translations": {
-        "zh-Hans": "你这周什么时候有空？"
+        "zh-Hans": "你这周什么时候有空？",
+        "zh-Hant": "你這週什麼時候有空？",
+        "ja": "今週はいつ空いていますか？",
+        "es": "¿Cuándo tienes disponibilidad esta semana?",
+        "de": "Wann haben Sie diese Woche Zeit?",
+        "ru": "Когда вы свободны на этой неделе?",
+      "th": "สัปดาห์นี้คุณว่างวันไหนบ้าง",
+      "ko": "이번 주에는 언제 시간이 되세요?",
+      "pt-BR": "Quando você está disponível esta semana?",
+      "fr": "Quand es-tu disponible cette semaine ?",
+      "it": "Quando sei disponibile questa settimana?",
+      "ar": "متى تكون متاحًا هذا الأسبوع؟",
+      "id": "Kapan kamu punya waktu luang minggu ini?",
+      "vi": "Tuần này bạn rảnh vào lúc nào?",
+      "tr": "Bu hafta ne zaman müsaitsin?"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "这个时间对你合适吗，还是我们找另一个时间？"
+        "zh-Hans": "这个时间对你合适吗，还是我们找另一个时间？",
+        "zh-Hant": "這個時間你方便嗎？還是我們另找時間？",
+        "ja": "この時間で大丈夫ですか。それとも別の時間を探しましょうか？",
+        "es": "¿Te viene bien esta hora o buscamos otra?",
+        "de": "Passt dieser Zeitpunkt für Sie, oder sollen wir einen anderen suchen?",
+        "ru": "Вам удобно это время или нам найти другое?",
+      "th": "เวลานี้สะดวกสำหรับคุณไหม หรือควรหาเวลาอื่น",
+      "ko": "이 시간이 괜찮으신가요, 아니면 다른 시간을 찾아볼까요?",
+      "pt-BR": "Esse horário funciona para você ou devemos procurar outro?",
+      "fr": "Cette heure te convient ou on en cherche une autre ?",
+      "it": "Per te va bene questo orario o ne cerchiamo un altro?",
+      "ar": "هل يناسبك هذا الموعد، أم نبحث عن موعد آخر؟",
+      "id": "Apakah waktu ini cocok untukmu, atau kita cari waktu lain?",
+      "vi": "Thời gian này có phù hợp với bạn không, hay chúng ta tìm thời gian khác?",
+      "tr": "Bu saat sana uyuyor mu, yoksa başka bir saat mi bulalım?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "你对会议时间有什么偏好吗？"
+        "zh-Hans": "你对会议时间有什么偏好吗？",
+        "zh-Hant": "你對會議時間有偏好的時段嗎？",
+        "ja": "会議の時間について希望はありますか？",
+        "es": "¿Tienes alguna preferencia respecto a la hora de la reunión?",
+        "de": "Haben Sie eine bevorzugte Zeit für das Meeting?",
+        "ru": "У вас есть предпочтения по времени встречи?",
+      "th": "คุณมีเวลาที่อยากนัดประชุมเป็นพิเศษไหม",
+      "ko": "회의 시간으로 선호하는 때가 있나요?",
+      "pt-BR": "Você tem alguma preferência quanto ao horário da reunião?",
+      "fr": "As-tu une préférence pour l'heure de la réunion ?",
+      "it": "Hai preferenze per l'orario della riunione?",
+      "ar": "هل لديك تفضيلات بشأن وقت الاجتماع؟",
+      "id": "Apakah kamu punya preferensi untuk waktu rapat?",
+      "vi": "Bạn có thích họp vào thời gian nào hơn không?",
+      "tr": "Toplantı saati için bir tercihin var mı?"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "你能告诉我你的空闲时间吗？"
+        "zh-Hans": "你能告诉我你的空闲时间吗？",
+        "zh-Hant": "你可以告訴我你方便的時間嗎？",
+        "ja": "空いている時間を教えていただけますか？",
+        "es": "¿Podrías decirme cuándo estás disponible?",
+        "de": "Könnten Sie mir bitte mitteilen, wann Sie verfügbar sind?",
+        "ru": "Не могли бы вы сообщить, когда вы свободны?",
+      "th": "ช่วยบอกเวลาที่คุณว่างให้ฉันทราบได้ไหม",
+      "ko": "가능한 시간을 알려 주시겠어요?",
+      "pt-BR": "Você poderia me informar quando está disponível?",
+      "fr": "Pourrais-tu me dire quand tu es disponible ?",
+      "it": "Potresti farmi sapere quando sei disponibile?",
+      "ar": "هل يمكنك إخباري بموعد تفرغك؟",
+      "id": "Bisakah kamu memberi tahu kapan kamu tersedia?",
+      "vi": "Bạn có thể cho tôi biết khi nào bạn rảnh không?",
+      "tr": "Müsait olduğun zamanları bana bildirebilir misin?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "如果星期一不行，那星期三怎么样？"
+        "zh-Hans": "如果星期一不行，那星期三怎么样？",
+        "zh-Hant": "如果星期一不行，星期三如何？",
+        "ja": "月曜日が難しければ、水曜日はどうですか？",
+        "es": "Si el lunes no te viene bien, ¿qué tal el miércoles?",
+        "de": "Wenn Montag nicht passt, wie wäre es mit Mittwoch?",
+        "ru": "Если понедельник не подходит, как насчёт среды?",
+      "th": "ถ้าวันจันทร์ไม่สะดวก วันพุธเป็นอย่างไร",
+      "ko": "월요일이 안 되면 수요일은 어때요?",
+      "pt-BR": "Se segunda-feira não der, que tal quarta-feira?",
+      "fr": "Si lundi ne convient pas, que dirais-tu de mercredi ?",
+      "it": "Se lunedì non va bene, che ne dici di mercoledì?",
+      "ar": "إذا لم يناسبك يوم الاثنين، فما رأيك في يوم الأربعاء؟",
+      "id": "Kalau Senin tidak cocok, bagaimana kalau Rabu?",
+      "vi": "Nếu thứ Hai không được thì thứ Tư thì sao?",
+      "tr": "Pazartesi olmazsa çarşamba nasıl?"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "我们改到下周四下午2点吧。"
+        "zh-Hans": "我们改到下周四下午2点吧。",
+        "zh-Hant": "我們改到下週四下午兩點吧。",
+        "ja": "来週木曜日の午後2時に変更しましょう。",
+        "es": "Cambiemos la cita al próximo jueves a las dos de la tarde.",
+        "de": "Lassen Sie uns den Termin auf nächsten Donnerstag um 14 Uhr verschieben.",
+        "ru": "Давайте перенесём на следующий четверг, на два часа дня.",
+      "th": "เราเลื่อนไปเป็นวันพฤหัสบดีหน้าเวลาบ่ายสองโมงดีไหม",
+      "ko": "다음 주 목요일 오후 2시로 변경할까요?",
+      "pt-BR": "Vamos remarcar para a próxima quinta-feira, às 14h.",
+      "fr": "Décalons à jeudi prochain à 14 heures.",
+      "it": "Spostiamo l'appuntamento a giovedì prossimo alle 14.",
+      "ar": "لنؤجل الموعد إلى يوم الخميس المقبل الساعة الثانية ظهرًا.",
+      "id": "Mari kita jadwalkan ulang ke Kamis depan pukul dua siang.",
+      "vi": "Chúng ta dời sang 2 giờ chiều thứ Năm tuần sau nhé.",
+      "tr": "Gelecek perşembe saat 14.00'e erteleyelim."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "改到下午会有帮助吗？"
+        "zh-Hans": "改到下午会有帮助吗？",
+        "zh-Hant": "改到下午對你比較方便嗎？",
+        "ja": "午後に変更すると都合がよくなりますか？",
+        "es": "¿Te vendría mejor cambiarlo a la tarde?",
+        "de": "Würde es Ihnen helfen, den Termin auf den Nachmittag zu verlegen?",
+        "ru": "Вам будет удобнее, если перенести встречу на вторую половину дня?",
+      "th": "ถ้าเลื่อนไปช่วงบ่ายจะช่วยได้ไหม",
+      "ko": "오후로 옮기면 괜찮을까요?",
+      "pt-BR": "Ajudaria se mudássemos para a tarde?",
+      "fr": "Est-ce que ça t'arrangerait de le déplacer à l'après-midi ?",
+      "it": "Ti sarebbe più comodo spostarlo al pomeriggio?",
+      "ar": "هل سيساعدك نقل الموعد إلى فترة بعد الظهر؟",
+      "id": "Apakah akan lebih mudah jika kita memindahkannya ke sore hari?",
+      "vi": "Dời sang buổi chiều có tiện hơn cho bạn không?",
+      "tr": "Öğleden sonraya almak işine yarar mı?"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "这周晚些时候有没有更好的时间？"
+        "zh-Hans": "这周晚些时候有没有更好的时间？",
+        "zh-Hant": "這週晚一點的時候有更適合你的時間嗎？",
+        "ja": "今週後半で、もっと都合のよい時間はありますか？",
+        "es": "¿Te viene mejor algún otro momento más adelante esta semana?",
+        "de": "Gibt es später in dieser Woche einen Zeitpunkt, der Ihnen besser passt?",
+        "ru": "Есть ли у вас более удобное время позже на этой неделе?",
+      "th": "ช่วงปลายสัปดาห์นี้มีเวลาอื่นที่สะดวกกว่านี้ไหม",
+      "ko": "이번 주 후반에 더 편한 시간이 있나요?",
+      "pt-BR": "Você tem um horário melhor mais para o fim desta semana?",
+      "fr": "Y a-t-il un moment qui te conviendrait mieux plus tard cette semaine ?",
+      "it": "C'è un momento più comodo per te verso la fine della settimana?",
+      "ar": "هل يناسبك وقت أفضل في وقت لاحق من هذا الأسبوع؟",
+      "id": "Apakah ada waktu yang lebih cocok untukmu nanti minggu ini?",
+      "vi": "Cuối tuần này bạn có thời gian nào phù hợp hơn không?",
+      "tr": "Bu haftanın ilerleyen günlerinde sana daha uygun bir zaman var mı?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "我们明天的会议一切都安排好了。"
+        "zh-Hans": "我们明天的会议一切都安排好了。",
+        "zh-Hant": "明天的會議都安排好了。",
+        "ja": "明日の会議の準備はすべて整っています。",
+        "es": "Ya está todo preparado para nuestra reunión de mañana.",
+        "de": "Für unser Meeting morgen ist alles vorbereitet.",
+        "ru": "Всё готово к нашей встрече завтра.",
+      "th": "ทุกอย่างพร้อมสำหรับการประชุมของเราพรุ่งนี้แล้ว",
+      "ko": "내일 회의를 위한 준비가 모두 끝났습니다.",
+      "pt-BR": "Está tudo pronto para a nossa reunião de amanhã.",
+      "fr": "Tout est prêt pour notre réunion de demain.",
+      "it": "È tutto pronto per la nostra riunione di domani.",
+      "ar": "كل شيء جاهز لاجتماعنا غدًا.",
+      "id": "Semuanya sudah siap untuk rapat kita besok.",
+      "vi": "Mọi thứ đã sẵn sàng cho cuộc họp ngày mai của chúng ta.",
+      "tr": "Yarınki toplantımız için her şey hazır."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "我需要取消我们明天的午餐。"
+        "zh-Hans": "我需要取消我们明天的午餐。",
+        "zh-Hant": "我需要取消明天和你的午餐約會。",
+        "ja": "明日のランチをキャンセルしなければなりません。",
+        "es": "Necesito cancelar nuestra comida de mañana.",
+        "de": "Ich muss unser Mittagessen morgen absagen.",
+        "ru": "Мне нужно отменить наш завтрашний обед.",
+      "th": "ฉันต้องยกเลิกมื้อกลางวันของเราพรุ่งนี้",
+      "ko": "내일 점심 약속을 취소해야 합니다.",
+      "pt-BR": "Preciso cancelar nosso almoço de amanhã.",
+      "fr": "Je dois annuler notre déjeuner de demain.",
+      "it": "Devo annullare il nostro pranzo di domani.",
+      "ar": "أحتاج إلى إلغاء غدائنا غدًا.",
+      "id": "Aku harus membatalkan makan siang kita besok.",
+      "vi": "Tôi cần hủy bữa trưa của chúng ta vào ngày mai.",
+      "tr": "Yarınki öğle yemeğimizi iptal etmem gerekiyor."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "感谢你理解这次的变动。"
+        "zh-Hans": "感谢你理解这次的变动。",
+        "zh-Hant": "謝謝你體諒這次的變動。",
+        "ja": "今回の変更をご理解いただき、ありがとうございます。",
+        "es": "Gracias por comprender el cambio.",
+        "de": "Danke für Ihr Verständnis für die Änderung.",
+        "ru": "Спасибо за понимание этих изменений.",
+      "th": "ขอบคุณที่เข้าใจเรื่องการเปลี่ยนแปลง",
+      "ko": "변경 사항을 이해해 주셔서 감사합니다.",
+      "pt-BR": "Obrigado por entender essa mudança.",
+      "fr": "Merci de comprendre ce changement.",
+      "it": "Grazie per aver compreso questo cambiamento.",
+      "ar": "شكرًا لتفهمك هذا التغيير.",
+      "id": "Terima kasih sudah memahami perubahan ini.",
+      "vi": "Cảm ơn bạn đã thông cảm cho sự thay đổi này.",
+      "tr": "Bu değişikliği anlayışla karşıladığın için teşekkürler."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "如果还有什么我能做的，请告诉我。"
+        "zh-Hans": "如果还有什么我能做的，请告诉我。",
+        "zh-Hant": "如果還有其他我能做的事，請告訴我。",
+        "ja": "ほかに私にできることがあれば教えてください。",
+        "es": "Dime si hay algo más que pueda hacer.",
+        "de": "Lassen Sie mich wissen, ob ich sonst noch etwas tun kann.",
+        "ru": "Дайте мне знать, если я могу сделать что-то ещё.",
+      "th": "ถ้ามีอะไรให้ฉันช่วยเพิ่มเติมก็บอกได้เลย",
+      "ko": "제가 더 도울 일이 있으면 알려 주세요.",
+      "pt-BR": "Avise-me se houver mais alguma coisa que eu possa fazer.",
+      "fr": "Dis-moi si je peux faire quoi que ce soit d'autre.",
+      "it": "Fammi sapere se posso fare qualcos'altro.",
+      "ar": "أخبرني إذا كان هناك أي شيء آخر يمكنني فعله.",
+      "id": "Beri tahu aku kalau ada hal lain yang bisa kulakukan.",
+      "vi": "Hãy cho tôi biết nếu tôi còn có thể làm gì khác.",
+      "tr": "Yapabileceğim başka bir şey varsa bana haber ver."
       }
     }
   ]

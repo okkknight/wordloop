@@ -32,8 +32,9 @@ public struct ProgressDrawerEntry: Identifiable, Equatable, Sendable {
     public var isMastered: Bool { studyCount == 3 }
 
     public var accessibilityLabel: String {
-        let mastered = isMastered ? "，已掌握" : ""
-        return "\(primaryText)，\(secondaryText)，已学习 \(studyCount) 次，共 3 次\(mastered)"
+        let copy = ProgressDrawerEntryCopy.current
+        let mastered = isMastered ? ", \(copy.mastered)" : ""
+        return "\(primaryText), \(secondaryText), \(copy.studied) \(studyCount) \(copy.total) 3\(mastered)"
     }
 
     public func matches(_ normalizedQuery: String) -> Bool {

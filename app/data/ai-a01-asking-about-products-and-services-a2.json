@@ -15,7 +15,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "送货有额外费用吗？"
+        "zh-Hans": "送货有额外费用吗？",
+        "fr": "Y a-t-il des frais supplémentaires pour la livraison ?",
+        "ja": "配送には追加料金がかかりますか？",
+        "zh-Hant": "配送需要額外付費嗎？",
+        "ko": "배송비가 추가로 있나요?",
+        "pt-BR": "Há uma taxa extra pela entrega?",
+        "id": "Apakah ada biaya tambahan untuk pengiriman?",
+        "tr": "Teslimat için ek ücret var mı?",
+        "ru": "Есть ли дополнительная плата за доставку?",
+        "es": "¿Hay algún cargo adicional por la entrega?",
+        "de": "Fällt für die Lieferung eine zusätzliche Gebühr an?",
+        "it": "C'è un costo aggiuntivo per la consegna?",
+        "ar": "هل توجد رسوم إضافية للتوصيل؟",
+        "th": "มีค่าจัดส่งเพิ่มเติมไหมครับ/คะ",
+        "vi": "Phí giao hàng có tính thêm không?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "这个每个月多少钱？"
+        "zh-Hans": "这个每个月多少钱？",
+        "fr": "Combien cela coûte-t-il par mois ?",
+        "ja": "これは月額いくらですか？",
+        "zh-Hant": "這個每個月多少錢？",
+        "ko": "이거 한 달에 얼마인가요?",
+        "pt-BR": "Quanto custa por mês?",
+        "id": "Berapa biaya ini per bulan?",
+        "tr": "Bu ayda ne kadar tutuyor?",
+        "ru": "Сколько это стоит в месяц?",
+        "es": "¿Cuánto cuesta al mes?",
+        "de": "Wie viel kostet das pro Monat?",
+        "it": "Quanto costa al mese?",
+        "ar": "كم تبلغ تكلفة هذا شهريًا؟",
+        "th": "อันนี้เดือนละเท่าไหร่ครับ/คะ",
+        "vi": "Cái này một tháng bao nhiêu tiền?"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "有我需要知道的隐藏费用吗？"
+        "zh-Hans": "有我需要知道的隐藏费用吗？",
+        "fr": "Y a-t-il des frais cachés que je devrais connaître ?",
+        "ja": "知っておくべき隠れた料金はありますか？",
+        "zh-Hant": "有沒有什麼我需要知道的隱藏費用？",
+        "ko": "제가 알아야 할 숨은 비용이 있나요?",
+        "pt-BR": "Há alguma taxa oculta que eu deveria conhecer?",
+        "id": "Apakah ada biaya tersembunyi yang perlu saya ketahui?",
+        "tr": "Bilmem gereken gizli ücretler var mı?",
+        "ru": "Есть ли какие-нибудь скрытые платежи, о которых мне стоит знать?",
+        "es": "¿Hay algún cargo oculto que deba conocer?",
+        "de": "Gibt es versteckte Gebühren, die ich kennen sollte?",
+        "it": "Ci sono costi nascosti che dovrei conoscere?",
+        "ar": "هل توجد رسوم خفية ينبغي أن أعرفها؟",
+        "th": "มีค่าใช้จ่ายแอบแฝงที่ผม/ดิฉันควรรู้ไหมครับ/คะ",
+        "vi": "Có khoản phí ẩn nào tôi cần biết không?"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "加上所有费用后的总价是多少？"
+        "zh-Hans": "加上所有费用后的总价是多少？",
+        "fr": "Quel est le prix total, tous frais compris ?",
+        "ja": "すべての料金を含めた合計金額はいくらですか？",
+        "zh-Hant": "包含所有費用的總價是多少？",
+        "ko": "모든 비용을 포함한 총액이 얼마인가요?",
+        "pt-BR": "Qual é o preço total com todas as taxas?",
+        "id": "Berapa harga totalnya setelah semua biaya ditambahkan?",
+        "tr": "Tüm ücretler dahil toplam fiyat nedir?",
+        "ru": "Какова общая цена со всеми сборами?",
+        "es": "¿Cuál es el precio total con todos los cargos incluidos?",
+        "de": "Wie hoch ist der Gesamtpreis einschließlich aller Gebühren?",
+        "it": "Qual è il prezzo totale, incluse tutte le spese?",
+        "ar": "ما السعر الإجمالي شاملًا جميع الرسوم؟",
+        "th": "ราคารวมทั้งหมดพร้อมค่าธรรมเนียมเท่าไหร่ครับ/คะ",
+        "vi": "Tổng giá bao gồm mọi khoản phí là bao nhiêu?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "你们有这个商品的库存吗？"
+        "zh-Hans": "你们有这个商品的库存吗？",
+        "fr": "Avez-vous cet article en stock ?",
+        "ja": "この商品は在庫がありますか？",
+        "zh-Hant": "這項商品目前有庫存嗎？",
+        "ko": "이 상품은 재고가 있나요?",
+        "pt-BR": "Vocês têm este item em estoque?",
+        "id": "Apakah barang ini masih tersedia?",
+        "tr": "Bu ürün stokta var mı?",
+        "ru": "Этот товар есть в наличии?",
+        "es": "¿Tienen este artículo en stock?",
+        "de": "Haben Sie diesen Artikel auf Lager?",
+        "it": "Avete questo articolo disponibile?",
+        "ar": "هل هذا المنتج متوفر لديكم؟",
+        "th": "มีสินค้านี้ในสต็อกไหมครับ/คะ",
+        "vi": "Mặt hàng này còn hàng không?"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "这个现在有货吗，还是我需要等？"
+        "zh-Hans": "这个现在有货吗，还是我需要等？",
+        "fr": "Est-il disponible maintenant ou dois-je attendre ?",
+        "ja": "今すぐ購入できますか、それとも待つ必要がありますか？",
+        "zh-Hant": "這個現在有貨嗎？還是我得等一等？",
+        "ko": "지금 구매할 수 있나요, 아니면 기다려야 하나요?",
+        "pt-BR": "Está disponível agora ou preciso esperar?",
+        "id": "Apakah ini tersedia sekarang, atau saya harus menunggu?",
+        "tr": "Bu ürün şu anda mevcut mu, yoksa beklemem mi gerekiyor?",
+        "ru": "Это доступно сейчас или мне нужно подождать?",
+        "es": "¿Está disponible ahora o tengo que esperar?",
+        "de": "Ist das jetzt verfügbar, oder muss ich warten?",
+        "it": "È disponibile subito o devo aspettare?",
+        "ar": "هل هذا متاح الآن أم أحتاج إلى الانتظار؟",
+        "th": "ตอนนี้มีของไหม หรือต้องรอครับ/คะ",
+        "vi": "Bây giờ có hàng không, hay tôi phải chờ?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.176,
       "duration": 2.176,
       "translations": {
-        "zh-Hans": "我今天可以得到这个服务吗？"
+        "zh-Hans": "我今天可以得到这个服务吗？",
+        "fr": "Puis-je bénéficier de ce service aujourd’hui ?",
+        "ja": "このサービスを今日利用できますか？",
+        "zh-Hant": "我今天可以使用這項服務嗎？",
+        "ko": "오늘 이 서비스를 받을 수 있나요?",
+        "pt-BR": "Posso contratar este serviço hoje?",
+        "id": "Apakah saya bisa mendapatkan layanan ini hari ini?",
+        "tr": "Bu hizmeti bugün alabilir miyim?",
+        "ru": "Можно ли получить эту услугу сегодня?",
+        "es": "¿Puedo contratar este servicio hoy?",
+        "de": "Kann ich diesen Service heute in Anspruch nehmen?",
+        "it": "Posso usufruire di questo servizio oggi?",
+        "ar": "هل يمكنني الحصول على هذه الخدمة اليوم؟",
+        "th": "วันนี้ขอใช้บริการนี้ได้ไหมครับ/คะ",
+        "vi": "Hôm nay tôi có thể sử dụng dịch vụ này không?"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "这个什么时候会有货？"
+        "zh-Hans": "这个什么时候会有货？",
+        "fr": "Quand cet article sera-t-il de nouveau en stock ?",
+        "ja": "次に入荷するのはいつですか？",
+        "zh-Hant": "這個什麼時候會補貨？",
+        "ko": "이 상품은 언제 다시 입고되나요?",
+        "pt-BR": "Quando este produto estará disponível novamente?",
+        "id": "Kapan barang ini tersedia kembali?",
+        "tr": "Bu ürün ne zaman yeniden stokta olur?",
+        "ru": "Когда этот товар снова появится в продаже?",
+        "es": "¿Cuándo volverá a estar disponible?",
+        "de": "Wann ist dieser Artikel wieder auf Lager?",
+        "it": "Quando tornerà disponibile questo prodotto?",
+        "ar": "متى سيتوفر هذا المنتج مجددًا؟",
+        "th": "สินค้านี้จะมีของอีกเมื่อไหร่ครับ/คะ",
+        "vi": "Khi nào mặt hàng này có hàng lại?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "这个有不同的尺寸吗？"
+        "zh-Hans": "这个有不同的尺寸吗？",
+        "fr": "Cet article existe-t-il en différentes tailles ?",
+        "ja": "これはサイズ違いもありますか？",
+        "zh-Hant": "這個有不同的尺寸嗎？",
+        "ko": "이거 다른 사이즈도 있나요?",
+        "pt-BR": "Este produto está disponível em tamanhos diferentes?",
+        "id": "Apakah produk ini tersedia dalam ukuran berbeda?",
+        "tr": "Bunun farklı bedenleri var mı?",
+        "ru": "Есть ли этот товар в других размерах?",
+        "es": "¿Viene en diferentes tallas?",
+        "de": "Gibt es diesen Artikel in verschiedenen Größen?",
+        "it": "È disponibile in taglie diverse?",
+        "ar": "هل يتوفر هذا بمقاسات مختلفة؟",
+        "th": "มีสินค้านี้หลายขนาดไหมครับ/คะ",
+        "vi": "Sản phẩm này có những kích cỡ khác không?"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "颜色有哪些选择？"
+        "zh-Hans": "颜色有哪些选择？",
+        "fr": "Quelles sont les couleurs disponibles ?",
+        "ja": "色は何種類ありますか？",
+        "zh-Hant": "有哪些顏色可以選？",
+        "ko": "색상은 어떤 것들이 있나요?",
+        "pt-BR": "Quais são as opções de cores?",
+        "id": "Apa saja pilihan warnanya?",
+        "tr": "Hangi renk seçenekleri var?",
+        "ru": "Какие есть варианты цветов?",
+        "es": "¿Qué opciones de color hay?",
+        "de": "Welche Farben sind verfügbar?",
+        "it": "Quali colori sono disponibili?",
+        "ar": "ما خيارات الألوان المتاحة؟",
+        "th": "มีสีอะไรให้เลือกบ้างครับ/คะ",
+        "vi": "Có những lựa chọn màu nào?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "你能告诉我这个的尺寸吗？"
+        "zh-Hans": "你能告诉我这个的尺寸吗？",
+        "fr": "Pouvez-vous me donner les dimensions de cet article ?",
+        "ja": "これの寸法を教えていただけますか？",
+        "zh-Hant": "可以告訴我這個的尺寸嗎？",
+        "ko": "이 제품의 크기를 알려 주실 수 있나요?",
+        "pt-BR": "Você pode me dizer as dimensões deste produto?",
+        "id": "Bisa beri tahu saya berapa dimensinya?",
+        "tr": "Bunun ölçülerini söyleyebilir misiniz?",
+        "ru": "Не могли бы вы сказать, каковы размеры этого товара?",
+        "es": "¿Puede decirme cuáles son las dimensiones?",
+        "de": "Können Sie mir die Maße nennen?",
+        "it": "Può dirmi quali sono le dimensioni?",
+        "ar": "هل يمكنك إخباري بأبعاد هذا؟",
+        "th": "ช่วยบอกขนาดของชิ้นนี้ได้ไหมครับ/คะ",
+        "vi": "Bạn có thể cho tôi biết kích thước của sản phẩm này không?"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "这两种型号之间有区别吗？"
+        "zh-Hans": "这两种型号之间有区别吗？",
+        "fr": "Y a-t-il une différence entre ces deux modèles ?",
+        "ja": "この2つのモデルにはどんな違いがありますか？",
+        "zh-Hant": "這兩個型號有什麼不同嗎？",
+        "ko": "이 두 모델은 어떤 차이가 있나요?",
+        "pt-BR": "Há alguma diferença entre estes dois modelos?",
+        "id": "Apakah ada perbedaan antara kedua model ini?",
+        "tr": "Bu iki model arasında fark var mı?",
+        "ru": "Есть ли разница между этими двумя моделями?",
+        "es": "¿Hay alguna diferencia entre estos dos modelos?",
+        "de": "Gibt es einen Unterschied zwischen diesen beiden Modellen?",
+        "it": "C'è differenza tra questi due modelli?",
+        "ar": "هل يوجد فرق بين هذين الطرازين؟",
+        "th": "สองรุ่นนี้แตกต่างกันอย่างไรครับ/คะ",
+        "vi": "Hai mẫu này có gì khác nhau không?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 4.821,
       "duration": 4.821,
       "translations": {
-        "zh-Hans": "所以，确认一下，总费用是50美元，对吗？"
+        "zh-Hans": "所以，确认一下，总费用是50美元，对吗？",
+        "fr": "Donc, pour être sûr, le coût total est bien de 50 dollars, c’est ça ?",
+        "ja": "確認ですが、合計金額は50ドルで間違いありませんか？",
+        "zh-Hant": "所以確認一下，總費用是 50 美元，對嗎？",
+        "ko": "그러니까 확인차 여쭤보는 건데, 총비용이 50달러가 맞나요?",
+        "pt-BR": "Então, só para confirmar, o custo total é de 50 dólares, certo?",
+        "id": "Jadi, supaya jelas, total biayanya 50 dolar, benar?",
+        "tr": "Yani, netleştirmek için soruyorum: toplam ücret 50 dolar, değil mi?",
+        "ru": "Итак, чтобы уточнить: общая сумма — 50 долларов, верно?",
+        "es": "Entonces, para confirmar, el costo total es de 50 dólares, ¿verdad?",
+        "de": "Nur zur Sicherheit: Die Gesamtkosten betragen 50 Dollar, richtig?",
+        "it": "Quindi, giusto per confermare, il costo totale è di 50 dollari, vero?",
+        "ar": "للتأكد فقط، التكلفة الإجمالية 50 دولارًا، صحيح؟",
+        "th": "ขอยืนยันอีกครั้งนะครับ/คะ ราคารวมทั้งหมดคือ 50 ดอลลาร์ใช่ไหม",
+        "vi": "Để tôi xác nhận lại, tổng chi phí là 50 đô la, đúng không?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "你能确认一下关于送货时间的细节吗？"
+        "zh-Hans": "你能确认一下关于送货时间的细节吗？",
+        "fr": "Pouvez-vous confirmer le délai de livraison ?",
+        "ja": "配送時間について、その点を確認していただけますか？",
+        "zh-Hant": "可以確認一下配送時間的細節嗎？",
+        "ko": "배송 시간에 관한 내용을 확인해 주실 수 있나요?",
+        "pt-BR": "Você pode confirmar esse detalhe sobre o prazo de entrega?",
+        "id": "Bisa konfirmasikan detail waktu pengirimannya?",
+        "tr": "Teslimat süresiyle ilgili bu ayrıntıyı doğrulayabilir misiniz?",
+        "ru": "Не могли бы вы подтвердить эту информацию о сроках доставки?",
+        "es": "¿Puede confirmar ese detalle sobre el plazo de entrega?",
+        "de": "Können Sie diese Angabe zur Lieferzeit bestätigen?",
+        "it": "Può confermare questo dettaglio sui tempi di consegna?",
+        "ar": "هل يمكنك تأكيد هذه المعلومة بشأن مدة التوصيل؟",
+        "th": "ช่วยยืนยันรายละเอียดเรื่องเวลาจัดส่งได้ไหมครับ/คะ",
+        "vi": "Bạn có thể xác nhận chi tiết về thời gian giao hàng đó không?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.352,
       "duration": 4.352,
       "translations": {
-        "zh-Hans": "确认一下，这款有蓝色和红色，对吗？"
+        "zh-Hans": "确认一下，这款有蓝色和红色，对吗？",
+        "fr": "Pour confirmer, ce modèle existe bien en bleu et en rouge, c’est ça ?",
+        "ja": "確認ですが、このモデルは青と赤があるのですね？",
+        "zh-Hant": "確認一下，這款有藍色和紅色，對嗎？",
+        "ko": "확인차 여쭤보는데, 이 모델은 파란색과 빨간색이 맞나요?",
+        "pt-BR": "Só para confirmar: este modelo vem nas cores azul e vermelha, certo?",
+        "id": "Sekadar memastikan, model ini tersedia dalam warna biru dan merah, kan?",
+        "tr": "Tekrar teyit edeyim: bu model mavi ve kırmızı renklerde mevcut, doğru mu?",
+        "ru": "Позвольте уточнить: эта модель доступна в синем и красном цветах, верно?",
+        "es": "Solo para confirmar: este modelo está disponible en azul y rojo, ¿correcto?",
+        "de": "Nur zur Bestätigung: Dieses Modell gibt es in Blau und Rot, richtig?",
+        "it": "Giusto per confermare: questo modello è disponibile in blu e rosso, corretto?",
+        "ar": "للتأكيد فقط، يتوفر هذا الطراز باللونين الأزرق والأحمر، صحيح؟",
+        "th": "ขอยืนยันนะครับ/คะ รุ่นนี้มีสีฟ้ากับสีแดงใช่ไหม",
+        "vi": "Tôi xác nhận lại nhé: mẫu này có màu xanh dương và đỏ, đúng không?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 4.352,
       "duration": 4.352,
       "translations": {
-        "zh-Hans": "让我再确认一下：价格包括安装，对吗？"
+        "zh-Hans": "让我再确认一下：价格包括安装，对吗？",
+        "fr": "Je vérifie juste : l’installation est bien comprise dans le prix, n’est-ce pas ?",
+        "ja": "念のため確認させてください。料金には設置費用も含まれていますよね？",
+        "zh-Hant": "讓我再確認一下：價格包含安裝，對嗎？",
+        "ko": "다시 한번 확인할게요. 가격에 설치비가 포함된 게 맞나요?",
+        "pt-BR": "Deixe-me conferir mais uma vez: o preço inclui a instalação, certo?",
+        "id": "Saya periksa sekali lagi: harganya sudah termasuk pemasangan, kan?",
+        "tr": "Bir daha kontrol edeyim: fiyata kurulum dahil, değil mi?",
+        "ru": "Давайте ещё раз проверю: установка входит в стоимость, верно?",
+        "es": "Déjeme comprobarlo una vez más: el precio incluye la instalación, ¿verdad?",
+        "de": "Ich möchte noch einmal nachfragen: Ist die Installation im Preis enthalten?",
+        "it": "Vorrei ricontrollare: il prezzo include l'installazione, vero?",
+        "ar": "دعني أتأكد مرة أخرى: السعر يشمل التركيب، صحيح؟",
+        "th": "ขอตรวจสอบอีกครั้งนะครับ/คะ ราคานี้รวมค่าติดตั้งแล้วใช่ไหม",
+        "vi": "Để tôi kiểm tra lại: giá đã bao gồm lắp đặt rồi đúng không?"
       }
     }
   ]

@@ -15,7 +15,21 @@
       "end": 2.261,
       "duration": 2.261,
       "translations": {
-        "zh-Hans": "那到底是什么意思？"
+        "zh-Hans": "那到底是什么意思？",
+        "ja": "それは具体的にどういう意味ですか？",
+        "tr": "Bu tam olarak ne anlama geliyor?",
+        "ar": "ماذا يعني ذلك بالضبط؟",
+        "fr": "Qu'est-ce que cela signifie exactement ?",
+        "ru": "Что именно это означает?",
+        "zh-Hant": "那到底是什麼意思？",
+        "ko": "그게 정확히 무슨 뜻이에요?",
+        "es": "¿Qué significa exactamente eso?",
+        "pt-BR": "O que exatamente isso significa?",
+        "de": "Was genau bedeutet das?",
+        "it": "Che cosa significa esattamente?",
+        "id": "Apa sebenarnya maksudnya?",
+        "th": "นั่นหมายความว่าอย่างไรกันแน่",
+        "vi": "Chính xác thì điều đó có nghĩa là gì?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.517,
       "duration": 2.517,
       "translations": {
-        "zh-Hans": "你说的“紧急”是什么意思？"
+        "zh-Hans": "你说的“紧急”是什么意思？",
+        "ja": "「urgent」はどういう意味ですか？",
+        "tr": "'urgent' derken neyi kastediyorsun?",
+        "ar": "ماذا تقصد بكلمة «عاجل»؟",
+        "fr": "Que veux-tu dire par « urgent » ?",
+        "ru": "Что вы имеете в виду под словом «срочно»?",
+        "zh-Hant": "你說的「緊急」是什麼意思？",
+        "ko": "'긴급하다'는 말이 무슨 뜻이에요?",
+        "es": "¿Qué quieres decir con «urgente»?",
+        "pt-BR": "O que você quer dizer com “urgente”?",
+        "de": "Was meinst du mit „dringend“?",
+        "it": "Cosa intendi per «urgente»?",
+        "id": "Apa maksudmu dengan 'mendesak'?",
+        "th": "ที่คุณบอกว่า “ด่วน” หมายความว่าอย่างไร",
+        "vi": "Bạn nói “khẩn cấp” nghĩa là gì?"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "你能告诉我“简化”是什么意思吗？"
+        "zh-Hans": "你能告诉我“简化”是什么意思吗？",
+        "ja": "「streamline」がどういう意味か教えていただけますか？",
+        "tr": "'streamline' kelimesinin ne anlama geldiğini söyleyebilir misin?",
+        "ar": "هل يمكنك أن تخبرني ما معنى «تبسيط الإجراءات»؟",
+        "fr": "Pourrais-tu me dire ce que signifie « streamline » ?",
+        "ru": "Не могли бы вы объяснить, что означает слово «оптимизировать»?",
+        "zh-Hant": "你可以告訴我「streamline」是什麼意思嗎？",
+        "ko": "'streamline'이 무슨 뜻인지 알려 주실 수 있나요?",
+        "es": "¿Podrías decirme qué significa «streamline»?",
+        "pt-BR": "Você poderia me dizer o que significa “streamline”?",
+        "de": "Könntest du mir sagen, was „streamline“ bedeutet?",
+        "it": "Potresti dirmi che cosa significa «streamline»?",
+        "id": "Bisakah kamu menjelaskan arti 'streamline'?",
+        "th": "ช่วยบอกหน่อยได้ไหมว่า “streamline” หมายถึงอะไร",
+        "vi": "Bạn có thể cho tôi biết “streamline” có nghĩa là gì không?"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "这里的“联系”是什么意思？"
+        "zh-Hans": "这里的“联系”是什么意思？",
+        "ja": "ここでいう「touch base」はどういう意味ですか？",
+        "tr": "Burada 'touch base' ne anlama geliyor?",
+        "ar": "ماذا يعني تعبير «التواصل السريع» هنا؟",
+        "fr": "Que signifie « touch base » ici ?",
+        "ru": "Что здесь означает выражение «связаться и обсудить»?",
+        "zh-Hant": "這裡的「touch base」是什麼意思？",
+        "ko": "여기서 'touch base'는 무슨 뜻이에요?",
+        "es": "¿Qué significa «touch base» aquí?",
+        "pt-BR": "O que “touch base” quer dizer aqui?",
+        "de": "Was bedeutet „touch base“ hier?",
+        "it": "Che cosa significa «touch base» qui?",
+        "id": "Apa arti 'touch base' di sini?",
+        "th": "ในที่นี้ “touch base” หมายถึงอะไร",
+        "vi": "Ở đây, “touch base” có nghĩa là gì?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "你的意思是我们现在开始还是等一下？"
+        "zh-Hans": "你的意思是我们现在开始还是等一下？",
+        "ja": "今すぐ始めるということですか、それとも待つということですか？",
+        "tr": "Şimdi başlamamız gerektiğini mi söylüyorsun, yoksa bekleyelim mi?",
+        "ar": "هل تقصد أنه ينبغي لنا أن نبدأ الآن أم ننتظر؟",
+        "fr": "Tu veux dire qu'on devrait commencer maintenant ou attendre ?",
+        "ru": "Вы имеете в виду, что нам начать сейчас или подождать?",
+        "zh-Hant": "你的意思是我們現在開始，還是等一下？",
+        "ko": "지금 시작해야 한다는 뜻이에요, 아니면 기다릴까요?",
+        "es": "¿Quieres decir que deberíamos empezar ahora o esperar?",
+        "pt-BR": "Você quer dizer que devemos começar agora ou esperar?",
+        "de": "Meinst du, wir sollten jetzt anfangen oder warten?",
+        "it": "Vuoi dire che dovremmo iniziare adesso o aspettare?",
+        "id": "Maksudmu kita harus mulai sekarang atau menunggu?",
+        "th": "หมายความว่าเราควรเริ่มตอนนี้หรือรอก่อน",
+        "vi": "Ý bạn là chúng ta nên bắt đầu ngay hay chờ?"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "你能澄清一下吗，我们需要今天还是明天提交？"
+        "zh-Hans": "你能澄清一下吗，我们需要今天还是明天提交？",
+        "ja": "確認させてください。提出するのは今日ですか、それとも明日ですか？",
+        "tr": "Bunu netleştirebilir misin? Bugün mü, yarın mı teslim etmemiz gerekiyor?",
+        "ar": "هل يمكنك توضيح ذلك؟ هل نحتاج إلى التسليم اليوم أم غدًا؟",
+        "fr": "Pourrais-tu préciser : devons-nous rendre cela aujourd'hui ou demain ?",
+        "ru": "Не могли бы вы уточнить: нам нужно отправить это сегодня или завтра?",
+        "zh-Hant": "你可以說清楚一點嗎？我們需要今天還是明天提交？",
+        "ko": "그 점을 명확히 해 주실 수 있나요? 오늘 제출해야 하나요, 아니면 내일인가요?",
+        "es": "¿Podrías aclararlo? ¿Tenemos que entregarlo hoy o mañana?",
+        "pt-BR": "Você poderia esclarecer? Precisamos entregar isso hoje ou amanhã?",
+        "de": "Könntest du das bitte klarstellen? Müssen wir das heute oder morgen einreichen?",
+        "it": "Potresti chiarire? Dobbiamo consegnarlo oggi o domani?",
+        "id": "Bisa diperjelas? Kita harus menyerahkannya hari ini atau besok?",
+        "th": "ช่วยอธิบายให้ชัดเจนหน่อยได้ไหม เราต้องส่งวันนี้หรือพรุ่งนี้",
+        "vi": "Bạn có thể nói rõ hơn không? Chúng ta cần nộp hôm nay hay ngày mai?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "这是给所有人还是仅仅给经理的？"
+        "zh-Hans": "这是给所有人还是仅仅给经理的？",
+        "ja": "これは全員向けですか、それともマネージャーだけですか？",
+        "tr": "Bu herkes için mi, yoksa sadece yöneticiler için mi?",
+        "ar": "هل هذا للجميع أم للمديرين فقط؟",
+        "fr": "Est-ce pour tout le monde ou seulement pour les responsables ?",
+        "ru": "Это касается всех или только руководителей?",
+        "zh-Hant": "這是給所有人的，還是只給經理？",
+        "ko": "이건 모두를 위한 건가요, 아니면 관리자들만을 위한 건가요?",
+        "es": "¿Esto es para todos o solo para los gerentes?",
+        "pt-BR": "Isso é para todo mundo ou só para os gerentes?",
+        "de": "Ist das für alle oder nur für die Führungskräfte?",
+        "it": "È per tutti o solo per i responsabili?",
+        "id": "Ini untuk semua orang atau hanya para manajer?",
+        "th": "นี่สำหรับทุกคนหรือเฉพาะผู้จัดการเท่านั้น",
+        "vi": "Việc này dành cho tất cả mọi người hay chỉ các quản lý?"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.712,
       "duration": 3.712,
       "translations": {
-        "zh-Hans": "你的意思是会议在下午两点还是三点？"
+        "zh-Hans": "你的意思是会议在下午两点还是三点？",
+        "ja": "会議は午後2時ですか、それとも3時ですか？",
+        "tr": "Toplantı saat 14.00'te mi, 15.00'te mi?",
+        "ar": "هل تقصد أن الاجتماع في الساعة الثانية أم الثالثة مساءً؟",
+        "fr": "Tu veux dire que la réunion est à 14 heures ou à 15 heures ?",
+        "ru": "Вы имеете в виду, что встреча в два или в три часа дня?",
+        "zh-Hant": "你的意思是會議在下午兩點還是三點？",
+        "ko": "회의가 오후 2시라는 건가요, 3시라는 건가요?",
+        "es": "¿Quieres decir que la reunión es a las 2 o a las 3 de la tarde?",
+        "pt-BR": "Você quer dizer que a reunião é às 14h ou às 15h?",
+        "de": "Meinst du, das Meeting ist um 14 oder um 15 Uhr?",
+        "it": "Vuoi dire che la riunione è alle due o alle tre?",
+        "id": "Maksudmu rapatnya jam 2 atau jam 3 sore?",
+        "th": "หมายความว่าประชุมตอนบ่ายสองหรือบ่ายสาม",
+        "vi": "Ý bạn là cuộc họp lúc 2 giờ hay 3 giờ chiều?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "所以，你认为我们应该先专注于市场营销？"
+        "zh-Hans": "所以，你认为我们应该先专注于市场营销？",
+        "ja": "つまり、まずマーケティングに集中したほうがいいと思うのですか？",
+        "tr": "Yani önce pazarlamaya odaklanmamız gerektiğini mi düşünüyorsun?",
+        "ar": "إذًا، تعتقد أنه ينبغي لنا التركيز على التسويق أولًا؟",
+        "fr": "Donc, tu penses qu'on devrait commencer par se concentrer sur le marketing ?",
+        "ru": "То есть вы считаете, что нам сначала следует сосредоточиться на маркетинге?",
+        "zh-Hant": "所以，你認為我們應該先專注於行銷？",
+        "ko": "그러니까 우리가 먼저 마케팅에 집중해야 한다고 생각하는 거죠?",
+        "es": "Entonces, ¿crees que deberíamos centrarnos primero en el marketing?",
+        "pt-BR": "Então, você acha que devemos focar primeiro no marketing?",
+        "de": "Du meinst also, wir sollten uns zuerst auf das Marketing konzentrieren?",
+        "it": "Quindi pensi che dovremmo concentrarci prima sul marketing?",
+        "id": "Jadi, menurutmu kita harus fokus pada pemasaran terlebih dahulu?",
+        "th": "สรุปว่าคุณคิดว่าเราควรเน้นการตลาดก่อนใช่ไหม",
+        "vi": "Vậy là bạn nghĩ chúng ta nên tập trung vào tiếp thị trước?"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "所以，你是说我们需要增加预算？"
+        "zh-Hans": "所以，你是说我们需要增加预算？",
+        "ja": "つまり、予算を増やす必要があるということですか？",
+        "tr": "Yani bütçeyi artırmamız gerektiğini mi söylüyorsun?",
+        "ar": "إذًا، تقول إننا بحاجة إلى زيادة الميزانية؟",
+        "fr": "Donc, tu dis qu'il faut augmenter le budget ?",
+        "ru": "То есть вы говорите, что нам нужно увеличить бюджет?",
+        "zh-Hant": "所以，你是說我們需要增加預算？",
+        "ko": "그러니까 예산을 늘려야 한다는 말씀이죠?",
+        "es": "Entonces, ¿estás diciendo que tenemos que aumentar el presupuesto?",
+        "pt-BR": "Então, você está dizendo que precisamos aumentar o orçamento?",
+        "de": "Du sagst also, dass wir das Budget erhöhen müssen?",
+        "it": "Quindi stai dicendo che dobbiamo aumentare il budget?",
+        "id": "Jadi, kamu bilang kita perlu menambah anggaran?",
+        "th": "สรุปว่าคุณกำลังบอกว่าเราต้องเพิ่มงบประมาณใช่ไหม",
+        "vi": "Vậy là bạn nói chúng ta cần tăng ngân sách?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "你的意思是我们应该直接联系供应商？"
+        "zh-Hans": "你的意思是我们应该直接联系供应商？",
+        "ja": "サプライヤーに直接連絡したほうがいいということですか？",
+        "tr": "Yani tedarikçiyle doğrudan iletişime geçmemiz gerektiğini mi söylüyorsun?",
+        "ar": "تقصد أنه ينبغي لنا الاتصال بالمورّد مباشرةً؟",
+        "fr": "Tu veux dire qu'on devrait contacter directement le fournisseur ?",
+        "ru": "Вы имеете в виду, что нам следует связаться с поставщиком напрямую?",
+        "zh-Hant": "你的意思是我們應該直接聯絡供應商？",
+        "ko": "공급업체에 직접 연락해야 한다는 뜻인가요?",
+        "es": "¿Quieres decir que deberíamos contactar directamente con el proveedor?",
+        "pt-BR": "Você quer dizer que devemos entrar em contato diretamente com o fornecedor?",
+        "de": "Meinst du, wir sollten den Lieferanten direkt kontaktieren?",
+        "it": "Vuoi dire che dovremmo contattare direttamente il fornitore?",
+        "id": "Maksudmu kita harus menghubungi pemasok secara langsung?",
+        "th": "หมายความว่าเราควรติดต่อซัพพลายเออร์โดยตรงใช่ไหม",
+        "vi": "Ý bạn là chúng ta nên liên hệ trực tiếp với nhà cung cấp?"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "所以，我们需要在周一之前完成，对吗？"
+        "zh-Hans": "所以，我们需要在周一之前完成，对吗？",
+        "ja": "つまり、月曜日までに終わらせる必要がありますよね？",
+        "tr": "Yani bunu pazartesiye kadar bitirmemiz gerekiyor, değil mi?",
+        "ar": "إذًا، نحتاج إلى إنهاء هذا بحلول يوم الاثنين، صحيح؟",
+        "fr": "Donc, nous devons terminer cela d'ici lundi, c'est bien ça ?",
+        "ru": "То есть нам нужно закончить это к понедельнику, верно?",
+        "zh-Hant": "所以，我們需要在星期一前完成，對嗎？",
+        "ko": "그러니까 월요일까지 이 일을 끝내야 하는 거죠?",
+        "es": "Entonces, tenemos que terminarlo para el lunes, ¿verdad?",
+        "pt-BR": "Então, precisamos terminar isso até segunda-feira, certo?",
+        "de": "Wir müssen das also bis Montag fertigstellen, richtig?",
+        "it": "Quindi dobbiamo finire entro lunedì, giusto?",
+        "id": "Jadi, kita harus menyelesaikannya paling lambat hari Senin, kan?",
+        "th": "ดังนั้นเราต้องทำให้เสร็จภายในวันจันทร์ใช่ไหม",
+        "vi": "Vậy là chúng ta phải hoàn thành việc này trước thứ Hai, đúng không?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "我们明天是上午十点还是十一点见面？"
+        "zh-Hans": "我们明天是上午十点还是十一点见面？",
+        "ja": "明日は午前10時に会いますか、それとも11時ですか？",
+        "tr": "Yarın saat 10.00'da mı, 11.00'de mi buluşuyoruz?",
+        "ar": "هل سنجتمع غدًا في الساعة العاشرة أم الحادية عشرة صباحًا؟",
+        "fr": "Nous nous retrouvons demain à 10 heures ou à 11 heures ?",
+        "ru": "Мы встречаемся завтра в десять или в одиннадцать утра?",
+        "zh-Hant": "我們明天是上午十點還是十一點見面？",
+        "ko": "내일 오전 10시에 만나요, 아니면 11시에 만나요?",
+        "es": "¿Nos reunimos mañana a las 10 o a las 11 de la mañana?",
+        "pt-BR": "A gente se encontra amanhã às 10h ou às 11h?",
+        "de": "Treffen wir uns morgen um 10 oder um 11 Uhr?",
+        "it": "Ci vediamo domani alle 10 o alle 11?",
+        "id": "Besok kita bertemu jam 10 atau jam 11 pagi?",
+        "th": "พรุ่งนี้เรานัดพบกันตอนสิบโมงหรือสิบเอ็ดโมงเช้า",
+        "vi": "Ngày mai chúng ta gặp nhau lúc 10 giờ hay 11 giờ sáng?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "只是确认一下，你的意思是截止日期延长了？"
+        "zh-Hans": "只是确认一下，你的意思是截止日期延长了？",
+        "ja": "確認ですが、締め切りが延長されたということですか？",
+        "tr": "Sadece emin olmak için soruyorum: Son teslim tarihi uzatıldı mı?",
+        "ar": "للتأكيد فقط، هل تقصد أن الموعد النهائي قد مُدّد؟",
+        "fr": "Juste pour confirmer, tu veux dire que la date limite a été repoussée ?",
+        "ru": "Просто чтобы уточнить: вы имеете в виду, что срок продлён?",
+        "zh-Hant": "確認一下，你的意思是截止日期延長了？",
+        "ko": "확인차 여쭤보는데, 마감일이 연장됐다는 뜻인가요?",
+        "es": "Solo para confirmar, ¿quieres decir que se ha ampliado la fecha límite?",
+        "pt-BR": "Só para confirmar: você quer dizer que o prazo foi estendido?",
+        "de": "Nur zur Bestätigung: Meinst du, dass die Frist verlängert wurde?",
+        "it": "Solo per confermare: intendi dire che la scadenza è stata prorogata?",
+        "id": "Sekadar memastikan, maksudmu tenggat waktunya diperpanjang?",
+        "th": "ขอยืนยันอีกครั้งนะ หมายความว่าขยายกำหนดส่งออกไปใช่ไหม",
+        "vi": "Cho tôi xác nhận lại: ý bạn là thời hạn đã được gia hạn phải không?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "我们负责整个项目还是只负责一部分？"
+        "zh-Hans": "我们负责整个项目还是只负责一部分？",
+        "ja": "プロジェクト全体を担当するのですか、それとも一部だけですか？",
+        "tr": "Projenin tamamından mı, yoksa sadece bir bölümünden mi sorumluyuz?",
+        "ar": "هل نحن مسؤولون عن المشروع بأكمله أم عن جزء منه فقط؟",
+        "fr": "Sommes-nous responsables de l'ensemble du projet ou seulement d'une partie ?",
+        "ru": "Мы отвечаем за весь проект или только за его часть?",
+        "zh-Hant": "我們負責整個專案，還是只負責其中一部分？",
+        "ko": "우리가 프로젝트 전체를 맡는 건가요, 아니면 일부만 맡는 건가요?",
+        "es": "¿Somos responsables de todo el proyecto o solo de una parte?",
+        "pt-BR": "Somos responsáveis pelo projeto inteiro ou apenas por uma parte?",
+        "de": "Sind wir für das gesamte Projekt verantwortlich oder nur für einen Teil?",
+        "it": "Siamo responsabili dell'intero progetto o solo di una parte?",
+        "id": "Apakah kita bertanggung jawab atas seluruh proyek atau hanya sebagian?",
+        "th": "เรารับผิดชอบทั้งโครงการหรือแค่บางส่วน",
+        "vi": "Chúng ta chịu trách nhiệm cho toàn bộ dự án hay chỉ một phần?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "我们需要准备一个演示还是只需要一个报告？"
+        "zh-Hans": "我们需要准备一个演示还是只需要一个报告？",
+        "ja": "プレゼン資料を用意する必要がありますか、それとも報告書だけでいいですか？",
+        "tr": "Bir sunum mu hazırlamamız gerekiyor, yoksa sadece bir rapor yeterli mi?",
+        "ar": "هل نحتاج إلى إعداد عرض تقديمي أم تقرير فقط؟",
+        "fr": "Devons-nous préparer une présentation ou seulement un rapport ?",
+        "ru": "Нам нужно подготовить презентацию или достаточно отчёта?",
+        "zh-Hant": "我們需要準備簡報，還是只要報告就可以？",
+        "ko": "발표 자료를 준비해야 하나요, 아니면 보고서만 준비하면 되나요?",
+        "es": "¿Tenemos que preparar una presentación o solo un informe?",
+        "pt-BR": "Precisamos preparar uma apresentação ou apenas um relatório?",
+        "de": "Müssen wir eine Präsentation vorbereiten oder reicht ein Bericht?",
+        "it": "Dobbiamo preparare una presentazione o basta una relazione?",
+        "id": "Apakah kita perlu menyiapkan presentasi atau cukup laporan saja?",
+        "th": "เราต้องเตรียมงานนำเสนอหรือแค่รายงานก็พอ",
+        "vi": "Chúng ta cần chuẩn bị một bài thuyết trình hay chỉ một báo cáo?"
       }
     }
   ]

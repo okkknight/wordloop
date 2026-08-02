@@ -15,7 +15,21 @@
       "end": 2.005,
       "duration": 2.005,
       "translations": {
-        "zh-Hans": "我不能和你一起去。"
+        "zh-Hans": "我不能和你一起去。",
+        "ja": "一緒に行くことができません。",
+        "id": "Aku tidak bisa ikut denganmu.",
+        "de": "Ich kann leider nicht mitkommen.",
+        "fr": "Je ne peux malheureusement pas me joindre à vous.",
+        "zh-Hant": "我沒辦法和你一起去。",
+        "ko": "함께 갈 수가 없어요.",
+        "es": "No puedo acompañarte.",
+        "pt-BR": "Não posso ir com você.",
+        "it": "Non riesco a venire con te.",
+        "ru": "Я не смогу пойти с тобой.",
+        "ar": "لا أستطيع الذهاب معك.",
+        "vi": "Tôi không thể đi cùng bạn.",
+      "tr": "Size katılamayacağım.",
+      "th": "ฉันไปร่วมกับคุณไม่ได้"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "我很感激你的邀请，但我不得不拒绝。"
+        "zh-Hans": "我很感激你的邀请，但我不得不拒绝。",
+        "ja": "お誘いはありがたいのですが、お断りしなければなりません。",
+        "id": "Terima kasih atas tawarannya, tetapi aku harus menolaknya.",
+        "de": "Ich weiß das Angebot zu schätzen, muss aber leider ablehnen.",
+        "fr": "J'apprécie la proposition, mais je dois malheureusement décliner.",
+        "zh-Hant": "我很感謝你的邀請，但我得婉拒。",
+        "ko": "제안해 줘서 고맙지만, 사양해야 할 것 같아요.",
+        "es": "Agradezco la oferta, pero tengo que rechazarla.",
+        "pt-BR": "Agradeço o convite, mas preciso recusar.",
+        "it": "Apprezzo l'offerta, ma devo rifiutare.",
+        "ru": "Я ценю ваше предложение, но мне придётся отказаться.",
+        "ar": "أقدّر عرضك، لكن عليّ أن أعتذر عنه.",
+        "vi": "Tôi rất cảm kích lời mời, nhưng đành phải từ chối.",
+      "tr": "Teklifin için teşekkür ederim ama reddetmek zorundayım.",
+      "th": "ขอบคุณสำหรับข้อเสนอ แต่ฉันคงต้องขอปฏิเสธ"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我必须拒绝。"
+        "zh-Hans": "我必须拒绝。",
+        "ja": "お断りせざるを得ません。",
+        "id": "Aku harus menolaknya.",
+        "de": "Ich muss dazu leider Nein sagen.",
+        "fr": "Je dois malheureusement dire non.",
+        "zh-Hant": "這件事我只能說不。",
+        "ko": "그건 안 된다고 말씀드려야 할 것 같아요.",
+        "es": "Tengo que decir que no a eso.",
+        "pt-BR": "Tenho que dizer não a isso.",
+        "it": "Devo dire di no.",
+        "ru": "Мне придётся на это ответить отказом.",
+        "ar": "لا بدّ أن أرفض ذلك.",
+        "vi": "Tôi phải từ chối việc đó.",
+      "tr": "Buna hayır demek zorundayım.",
+      "th": "ฉันคงต้องปฏิเสธเรื่องนี้"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 2.048,
       "duration": 2.048,
       "translations": {
-        "zh-Hans": "恐怕我不能去。"
+        "zh-Hans": "恐怕我不能去。",
+        "ja": "残念ですが、行けそうにありません。",
+        "id": "Maaf, sepertinya aku tidak bisa pergi.",
+        "de": "Leider kann ich nicht mitkommen.",
+        "fr": "J'ai bien peur de ne pas pouvoir venir.",
+        "zh-Hant": "恐怕我沒辦法去。",
+        "ko": "미안하지만, 못 갈 것 같아요.",
+        "es": "Me temo que no puedo ir.",
+        "pt-BR": "Receio que não possa ir.",
+        "it": "Temo di non poter venire.",
+        "ru": "Боюсь, я не смогу прийти.",
+        "ar": "أخشى أنني لا أستطيع الذهاب.",
+        "vi": "E rằng tôi không thể đi được.",
+      "tr": "Ne yazık ki gidemem.",
+      "th": "เกรงว่าฉันคงไปไม่ได้"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "那天我有其他安排。"
+        "zh-Hans": "那天我有其他安排。",
+        "ja": "その日は別の予定が入っています。",
+        "id": "Aku punya urusan lain hari itu.",
+        "de": "Ich habe an diesem Tag andere Verpflichtungen.",
+        "fr": "J'ai d'autres obligations ce jour-là.",
+        "zh-Hant": "那天我還有其他安排。",
+        "ko": "그날은 다른 일정이 있어요.",
+        "es": "Ese día tengo otros compromisos.",
+        "pt-BR": "Tenho outros compromissos nesse dia.",
+        "it": "Quel giorno ho altri impegni.",
+        "ru": "В тот день у меня другие обязательства.",
+        "ar": "لديّ التزامات أخرى في ذلك اليوم.",
+        "vi": "Hôm đó tôi có việc khác phải lo.",
+      "tr": "O gün başka yükümlülüklerim var.",
+      "th": "วันนั้นฉันมีภารกิจอื่น"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "不幸的是，我因为有约在先不能参加。"
+        "zh-Hans": "不幸的是，我因为有约在先不能参加。",
+        "ja": "申し訳ありませんが、先約があって参加できません。",
+        "id": "Sayangnya, aku tidak bisa datang karena sudah punya janji sebelumnya.",
+        "de": "Leider kann ich wegen einer früheren Verpflichtung nicht kommen.",
+        "fr": "Malheureusement, je ne peux pas venir car j'ai déjà un engagement.",
+        "zh-Hant": "很抱歉，我已有其他約定，沒辦法參加。",
+        "ko": "죄송하지만 선약이 있어서 참석할 수 없어요.",
+        "es": "Por desgracia, no puedo ir porque ya tenía un compromiso.",
+        "pt-BR": "Infelizmente, não posso ir porque já tinha um compromisso.",
+        "it": "Purtroppo non posso venire perché avevo già preso un impegno.",
+        "ru": "К сожалению, я не смогу прийти, потому что у меня уже есть договорённость.",
+        "ar": "للأسف، لا أستطيع الحضور لأن لديّ التزامًا سابقًا.",
+        "vi": "Tiếc là tôi không thể đến vì đã có hẹn từ trước.",
+      "tr": "Ne yazık ki daha önce verdiğim bir söz olduğu için gelemem.",
+      "th": "น่าเสียดายที่ฉันไปไม่ได้ เพราะมีนัดหมายไว้ก่อนแล้ว"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "我有一个不能错过的家庭责任。"
+        "zh-Hans": "我有一个不能错过的家庭责任。",
+        "ja": "どうしても外せない家族の用事があります。",
+        "id": "Aku punya urusan keluarga yang tidak bisa kutinggalkan.",
+        "de": "Ich habe eine familiäre Verpflichtung, die ich nicht absagen kann.",
+        "fr": "J'ai une obligation familiale à laquelle je ne peux pas me soustraire.",
+        "zh-Hant": "我有一件不能錯過的家庭要事。",
+        "ko": "빠질 수 없는 가족 일이 있어요.",
+        "es": "Tengo un asunto familiar al que no puedo faltar.",
+        "pt-BR": "Tenho um compromisso familiar que não posso perder.",
+        "it": "Ho un impegno familiare a cui non posso mancare.",
+        "ru": "У меня семейные обстоятельства, которые я не могу оставить без внимания.",
+        "ar": "لديّ التزام عائلي لا يمكنني تفويته.",
+        "vi": "Tôi có việc gia đình không thể vắng mặt.",
+      "tr": "Kaçırmamam gereken bir aile yükümlülüğüm var.",
+      "th": "ฉันมีภาระครอบครัวที่พลาดไม่ได้"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "我被工作的截止日期压得喘不过气来。"
+        "zh-Hans": "我被工作的截止日期压得喘不过气来。",
+        "ja": "仕事の締め切りに追われています。",
+        "id": "Aku sedang kewalahan dengan tenggat pekerjaan.",
+        "de": "Ich bin wegen der vielen beruflichen Fristen völlig überlastet.",
+        "fr": "Je suis débordé(e) par les délais professionnels.",
+        "zh-Hant": "我被工作上的截止期限忙得不可開交。",
+        "ko": "회사 마감 일정 때문에 너무 바빠요.",
+        "es": "Estoy hasta arriba de plazos en el trabajo.",
+        "pt-BR": "Estou atolado de prazos no trabalho.",
+        "it": "Sono sommerso dalle scadenze di lavoro.",
+        "ru": "Я завален(а) рабочими дедлайнами.",
+        "ar": "أنا غارق في مواعيد تسليم العمل.",
+        "vi": "Tôi đang ngập đầu vì các hạn chót ở chỗ làm.",
+      "tr": "İşteki teslim tarihleri yüzünden çok yoğunum.",
+      "th": "ฉันยุ่งมากเพราะมีงานที่ต้องส่งหลายอย่าง"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "我真的很感激你的理解。"
+        "zh-Hans": "我真的很感激你的理解。",
+        "ja": "ご理解いただき、本当にありがとうございます。",
+        "id": "Aku sangat menghargai pengertianmu.",
+        "de": "Ich weiß dein Verständnis wirklich zu schätzen.",
+        "fr": "Je t'apprécie vraiment de ta compréhension.",
+        "zh-Hant": "我真的很感謝你的理解。",
+        "ko": "이해해 주셔서 정말 감사해요.",
+        "es": "Aprecio mucho tu comprensión.",
+        "pt-BR": "Agradeço muito a sua compreensão.",
+        "it": "Apprezzo davvero la tua comprensione.",
+        "ru": "Я очень ценю ваше понимание.",
+        "ar": "أقدّر تفهّمك حقًا.",
+        "vi": "Tôi thật sự cảm kích vì bạn đã thông cảm.",
+      "tr": "Anlayışın için gerçekten teşekkür ederim.",
+      "th": "ฉันซาบซึ้งที่คุณเข้าใจจริง ๆ"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "等我不那么忙的时候再约怎么样？"
+        "zh-Hans": "等我不那么忙的时候再约怎么样？",
+        "ja": "もう少し忙しさが落ち着いてから、別の日にしませんか？",
+        "id": "Bagaimana kalau kita bertemu lain waktu saat aku tidak terlalu sibuk?",
+        "de": "Wie wäre es mit einem anderen Termin, wenn ich weniger beschäftigt bin?",
+        "fr": "Que dirais-tu d'un autre moment, quand je serai moins occupé(e) ?",
+        "zh-Hant": "等我沒那麼忙的時候再約，好嗎？",
+        "ko": "제가 덜 바쁠 때 다른 날 만나는 건 어때요?",
+        "es": "¿Qué te parece si quedamos otro día, cuando esté menos ocupado?",
+        "pt-BR": "Que tal outra hora, quando eu estiver menos ocupado?",
+        "it": "Che ne dici di un'altra volta, quando sarò meno impegnato?",
+        "ru": "Как насчёт другого раза, когда я буду не так занят?",
+        "ar": "ما رأيك أن نلتقي في وقت آخر عندما أكون أقل انشغالًا؟",
+        "vi": "Khi nào tôi bớt bận hơn rồi mình gặp nhau nhé?",
+      "tr": "Daha az meşgul olduğum başka bir zamana ne dersin?",
+      "th": "ไว้หาเวลาที่ฉันว่างกว่านี้ดีไหม?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "我很重视我们的关系，希望我们能尽快见面。"
+        "zh-Hans": "我很重视我们的关系，希望我们能尽快见面。",
+        "ja": "あなたとの関係を大切にしているので、近いうちに会えたらと思っています。",
+        "id": "Aku menghargai hubungan kita dan berharap kita bisa segera bertemu.",
+        "de": "Unsere Beziehung ist mir wichtig, und ich hoffe, dass wir uns bald treffen können.",
+        "fr": "Notre relation compte pour moi et j'espère qu'on pourra se voir bientôt.",
+        "zh-Hant": "我很重視我們的關係，希望我們很快能見面。",
+        "ko": "우리 관계를 소중히 여기고 있어요. 곧 만날 수 있으면 좋겠어요.",
+        "es": "Valoro nuestra relación y espero que podamos vernos pronto.",
+        "pt-BR": "Valorizo a nossa relação e espero que possamos nos encontrar em breve.",
+        "it": "Tengo molto al nostro rapporto e spero che potremo vederci presto.",
+        "ru": "Я дорожу нашими отношениями и надеюсь, что мы скоро увидимся.",
+        "ar": "أقدّر علاقتنا وأتمنى أن نلتقي قريبًا.",
+        "vi": "Tôi trân trọng mối quan hệ của chúng ta và hy vọng sớm được gặp bạn.",
+      "tr": "İlişkimize değer veriyorum ve yakında görüşebilmeyi umuyorum.",
+      "th": "ฉันให้ความสำคัญกับความสัมพันธ์ของเรา และหวังว่าเราจะได้พบกันเร็ว ๆ นี้"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "我很遗憾错过，但我们尽快计划点什么吧。"
+        "zh-Hans": "我很遗憾错过，但我们尽快计划点什么吧。",
+        "ja": "行けなくて残念ですが、近いうちに何か計画しましょう。",
+        "id": "Sayang sekali aku tidak bisa ikut, tetapi mari kita segera merencanakan sesuatu.",
+        "de": "Es tut mir leid, dass ich nicht dabei sein kann, aber lass uns bald etwas planen.",
+        "fr": "Je regrette de ne pas pouvoir venir, mais organisons quelque chose bientôt.",
+        "zh-Hant": "我很遺憾沒辦法參加，但我們很快再安排點活動吧。",
+        "ko": "함께하지 못해 아쉽지만, 곧 뭔가 계획해 봐요.",
+        "es": "Me da pena perdérmelo, pero organicemos algo pronto.",
+        "pt-BR": "Fico triste por perder isso, mas vamos planejar algo em breve.",
+        "it": "Mi dispiace perdermelo, ma organizziamo qualcosa presto.",
+        "ru": "Жаль, что я пропущу это, но давай скоро что-нибудь запланируем.",
+        "ar": "يؤسفني أن أفوّت ذلك، لكن لِنخطّط لشيء قريبًا.",
+        "vi": "Tiếc là tôi không thể tham gia, nhưng mình sớm lên kế hoạch cho việc gì đó nhé.",
+      "tr": "Katılamadığım için üzgünüm ama yakında bir şeyler planlayalım.",
+      "th": "เสียดายที่ฉันไปร่วมไม่ได้ แต่ไว้เรามาวางแผนทำอะไรด้วยกันเร็ว ๆ นี้นะ"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "也许我们可以打个简短的电话？"
+        "zh-Hans": "也许我们可以打个简短的电话？",
+        "ja": "代わりに、少しだけ電話で話しませんか？",
+        "id": "Mungkin kita bisa menelepon sebentar sebagai gantinya?",
+        "de": "Vielleicht könnten wir stattdessen kurz telefonieren?",
+        "fr": "On pourrait peut-être s'appeler rapidement à la place ?",
+        "zh-Hant": "不然我們改成簡短通個電話，好嗎？",
+        "ko": "대신 잠깐 통화하는 건 어때요?",
+        "es": "¿Quizá podríamos hacer una llamada breve en su lugar?",
+        "pt-BR": "Talvez pudéssemos fazer uma ligação rápida em vez disso?",
+        "it": "Potremmo magari fare una breve telefonata invece?",
+        "ru": "Может, вместо этого коротко созвонимся?",
+        "ar": "ربما يمكننا إجراء مكالمة قصيرة بدلًا من ذلك؟",
+        "vi": "Hay là mình gọi điện nói chuyện nhanh một chút thay cho việc đó nhé?",
+      "tr": "Onun yerine kısa bir telefon görüşmesi yapsak olur mu?",
+      "th": "เปลี่ยนเป็นคุยโทรศัพท์สั้น ๆ แทนดีไหม?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "谢谢你的理解，也许我们可以重新安排。"
+        "zh-Hans": "谢谢你的理解，也许我们可以重新安排。",
+        "ja": "ご理解ありがとうございます。別の日に予定を組み直せるかもしれません。",
+        "id": "Terima kasih atas pengertiannya. Mungkin kita bisa menjadwalkannya ulang.",
+        "de": "Danke für dein Verständnis. Vielleicht können wir einen neuen Termin vereinbaren.",
+        "fr": "Merci de ta compréhension ; peut-être pourrions-nous fixer une autre date.",
+        "zh-Hant": "謝謝你的理解，也許我們可以改約其他時間。",
+        "ko": "이해해 줘서 고마워요. 일정을 다시 잡으면 어떨까요?",
+        "es": "Gracias por entenderlo; quizá podamos cambiar la fecha.",
+        "pt-BR": "Obrigado por entender; talvez possamos remarcar.",
+        "it": "Grazie per la comprensione; magari possiamo rimandare a un'altra data.",
+        "ru": "Спасибо за понимание, возможно, мы сможем перенести встречу.",
+        "ar": "شكرًا لتفهّمك، ربما يمكننا إعادة جدولة الموعد.",
+        "vi": "Cảm ơn bạn đã thông cảm, có lẽ mình có thể hẹn lại.",
+      "tr": "Anlayışın için teşekkür ederim; belki başka bir tarih belirleyebiliriz.",
+      "th": "ขอบคุณที่เข้าใจนะ เราอาจเลื่อนไปนัดวันอื่นได้"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "我们可以换一天试试吗？"
+        "zh-Hans": "我们可以换一天试试吗？",
+        "ja": "別の日にしてみませんか？",
+        "id": "Bagaimana kalau kita coba di hari lain?",
+        "de": "Könnten wir es an einem anderen Tag versuchen?",
+        "fr": "Pourrions-nous essayer un autre jour ?",
+        "zh-Hant": "我們改天試試看，可以嗎？",
+        "ko": "다른 날로 바꿔도 될까요?",
+        "es": "¿Podríamos probar otro día?",
+        "pt-BR": "Podemos tentar outro dia?",
+        "it": "Potremmo provare un altro giorno?",
+        "ru": "Можем попробовать в другой день?",
+        "ar": "هل يمكننا أن نجرّب يومًا آخر؟",
+        "vi": "Mình thử vào ngày khác được không?",
+      "tr": "Başka bir gün deneyebilir miyiz?",
+      "th": "ลองเป็นวันอื่นได้ไหม?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "我们改为下个月吧。"
+        "zh-Hans": "我们改为下个月吧。",
+        "ja": "代わりに来月を目指しましょう。",
+        "id": "Sebaiknya kita jadwalkan untuk bulan depan.",
+        "de": "Setzen wir stattdessen den nächsten Monat an.",
+        "fr": "Visons plutôt le mois prochain.",
+        "zh-Hant": "我們改約下個月吧。",
+        "ko": "그 대신 다음 달을 목표로 해 봐요.",
+        "es": "Mejor dejémoslo para el mes que viene.",
+        "pt-BR": "Vamos deixar para o mês que vem.",
+        "it": "Puntiamo piuttosto al mese prossimo.",
+        "ru": "Давай лучше запланируем это на следующий месяц.",
+        "ar": "لِنخطّط لذلك الشهر المقبل بدلًا من ذلك.",
+        "vi": "Thay vào đó, mình hẹn vào tháng sau nhé.",
+      "tr": "Bunun yerine gelecek ayı hedefleyelim.",
+      "th": "เลื่อนไปเป็นเดือนหน้าแทนดีไหม?"
       }
     }
   ]

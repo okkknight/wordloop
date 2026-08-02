@@ -15,7 +15,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "送货晚了两天。"
+        "zh-Hans": "送货晚了两天。",
+        "zh-Hant": "配送晚了兩天才送到。",
+        "es": "La entrega llegó con dos días de retraso.",
+        "de": "Die Lieferung kam zwei Tage zu spät an.",
+      "ru": "Доставка задержалась на два дня.",
+      "th": "การจัดส่งมาถึงช้าไปสองวัน",
+      "ko": "배송이 이틀 늦게 도착했습니다.",
+      "ja": "配送が2日遅れて到着しました。",
+      "pt-BR": "A entrega chegou com dois dias de atraso.",
+      "fr": "La livraison est arrivée avec deux jours de retard.",
+      "it": "La consegna è arrivata con due giorni di ritardo.",
+      "ar": "وصلت الشحنة متأخرة يومين.",
+      "id": "Pesanan tiba terlambat dua hari.",
+      "vi": "Đơn hàng đã đến trễ hai ngày.",
+      "tr": "Teslimat iki gün geç ulaştı."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "我注意到账单有问题。"
+        "zh-Hans": "我注意到账单有问题。",
+        "zh-Hant": "我注意到帳單上有問題。",
+        "es": "He detectado un problema en el extracto de facturación.",
+        "de": "Mir ist ein Problem auf der Rechnung aufgefallen.",
+      "ru": "Я заметил(а) проблему в счёте.",
+      "th": "ฉันสังเกตเห็นปัญหาในใบแจ้งยอดค่าใช้บริการ",
+      "ko": "청구서에서 문제를 발견했습니다.",
+      "ja": "請求明細に問題があることに気づきました。",
+      "pt-BR": "Notei um problema na fatura.",
+      "fr": "J'ai constaté un problème sur le relevé de facturation.",
+      "it": "Ho notato un problema nell'estratto conto.",
+      "ar": "لاحظت وجود مشكلة في كشف الفاتورة.",
+      "id": "Saya melihat ada masalah pada tagihan.",
+      "vi": "Tôi nhận thấy có vấn đề trong bảng kê thanh toán.",
+      "tr": "Fatura dökümünde bir sorun olduğunu fark ettim."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "软件更新导致了意外错误。"
+        "zh-Hans": "软件更新导致了意外错误。",
+        "zh-Hant": "軟體更新造成了預期外的錯誤。",
+        "es": "La actualización del software provocó errores inesperados.",
+        "de": "Das Software-Update hat unerwartete Fehler verursacht.",
+      "ru": "Обновление программы вызвало неожиданную ошибку.",
+      "th": "การอัปเดตซอฟต์แวร์ทำให้เกิดข้อผิดพลาดที่ไม่คาดคิด",
+      "ko": "소프트웨어 업데이트로 예상치 못한 오류가 발생했습니다.",
+      "ja": "ソフトウェアの更新によって予期しないエラーが発生しました。",
+      "pt-BR": "A atualização do software causou erros inesperados.",
+      "fr": "La mise à jour du logiciel a provoqué des erreurs inattendues.",
+      "it": "L'aggiornamento del software ha causato errori imprevisti.",
+      "ar": "تسبّب تحديث البرنامج في أخطاء غير متوقعة.",
+      "id": "Pembaruan perangkat lunak menyebabkan kesalahan yang tidak terduga.",
+      "vi": "Bản cập nhật phần mềm đã gây ra các lỗi ngoài dự kiến.",
+      "tr": "Yazılım güncellemesi beklenmeyen hatalara neden oldu."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "服务与合同中描述的不符。"
+        "zh-Hans": "服务与合同中描述的不符。",
+        "zh-Hant": "服務內容與合約中的描述不符。",
+        "es": "El servicio no era como se describía en el contrato.",
+        "de": "Die Leistung entsprach nicht der Beschreibung im Vertrag.",
+      "ru": "Услуга не соответствует описанию в договоре.",
+      "th": "บริการไม่เป็นไปตามที่ระบุไว้ในสัญญา",
+      "ko": "서비스가 계약서에 명시된 내용과 다릅니다.",
+      "ja": "サービスが契約書の記載どおりではありませんでした。",
+      "pt-BR": "O serviço não foi prestado conforme descrito no contrato.",
+      "fr": "Le service ne correspondait pas à la description du contrat.",
+      "it": "Il servizio non era conforme a quanto descritto nel contratto.",
+      "ar": "لم تكن الخدمة كما وُصفت في العقد.",
+      "id": "Layanan tersebut tidak sesuai dengan yang dijelaskan dalam kontrak.",
+      "vi": "Dịch vụ không đúng như mô tả trong hợp đồng.",
+      "tr": "Hizmet, sözleşmede açıklanan şekilde sunulmadı."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "这严重影响了我们的项目时间表。"
+        "zh-Hans": "这严重影响了我们的项目时间表。",
+        "zh-Hant": "這嚴重影響了我們的專案時程。",
+        "es": "Esto está afectando considerablemente al calendario de nuestro proyecto.",
+        "de": "Das wirkt sich erheblich auf den Zeitplan unseres Projekts aus.",
+      "ru": "Это серьёзно повлияло на график нашего проекта.",
+      "th": "เรื่องนี้ส่งผลกระทบต่อกำหนดการโครงการของเราอย่างมาก",
+      "ko": "이 문제로 프로젝트 일정에 큰 영향을 받고 있습니다.",
+      "ja": "この問題により、プロジェクトのスケジュールに大きな影響が出ています。",
+      "pt-BR": "Isso está afetando significativamente o cronograma do nosso projeto.",
+      "fr": "Cela perturbe considérablement le calendrier de notre projet.",
+      "it": "Questo sta influendo significativamente sulla tempistica del nostro progetto.",
+      "ar": "يؤثر هذا الأمر بشكل كبير في الجدول الزمني لمشروعنا.",
+      "id": "Hal ini sangat memengaruhi jadwal proyek kami.",
+      "vi": "Việc này đang ảnh hưởng nghiêm trọng đến tiến độ dự án của chúng tôi.",
+      "tr": "Bu durum proje takvimimizi önemli ölçüde etkiliyor."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "这影响了我们，推迟了我们的发布。"
+        "zh-Hans": "这影响了我们，推迟了我们的发布。",
+        "zh-Hant": "這件事影響了我們，導致上線時間延後。",
+        "es": "Esto nos ha perjudicado al retrasar nuestro lanzamiento.",
+        "de": "Das hat uns beeinträchtigt, weil sich unser Start verzögert hat.",
+      "ru": "Это повлияло на нас и отложило наш запуск.",
+      "th": "เรื่องนี้ทำให้การเปิดตัวของเราล่าช้า",
+      "ko": "이 문제로 출시가 지연되었습니다.",
+      "ja": "この問題により、リリースが遅れてしまいました。",
+      "pt-BR": "Isso nos prejudicou ao atrasar o lançamento.",
+      "fr": "Cela nous a pénalisés en retardant notre lancement.",
+      "it": "Questo ci ha penalizzati, ritardando il nostro lancio.",
+      "ar": "لقد أثر ذلك فينا من خلال تأخير إطلاقنا.",
+      "id": "Hal ini berdampak pada kami karena menunda peluncuran.",
+      "vi": "Việc này đã ảnh hưởng đến chúng tôi khi khiến thời điểm ra mắt bị trì hoãn.",
+      "tr": "Bu durum lansmanımızı geciktirerek bizi olumsuz etkiledi."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "我们的团队难以跟上工作量。"
+        "zh-Hans": "我们的团队难以跟上工作量。",
+        "zh-Hant": "我們的團隊很難應付目前的工作量。",
+        "es": "A nuestro equipo le está costando hacer frente a la carga de trabajo.",
+        "de": "Unser Team hat Schwierigkeiten, das Arbeitsaufkommen zu bewältigen.",
+      "ru": "Нашей команде трудно справляться с объёмом работы.",
+      "th": "ทีมของเรากำลังประสบปัญหาในการรับมือกับปริมาณงาน",
+      "ko": "우리 팀은 업무량을 감당하는 데 어려움을 겪고 있습니다.",
+      "ja": "私たちのチームは仕事量に追いつくのに苦労しています。",
+      "pt-BR": "Nossa equipe está tendo dificuldade para dar conta da carga de trabalho.",
+      "fr": "Notre équipe a du mal à suivre la charge de travail.",
+      "it": "Il nostro team fatica a stare al passo con il carico di lavoro.",
+      "ar": "يواجه فريقنا صعوبة في مواكبة حجم العمل.",
+      "id": "Tim kami kesulitan mengejar beban kerja yang ada.",
+      "vi": "Đội ngũ của chúng tôi đang chật vật để theo kịp khối lượng công việc.",
+      "tr": "Ekibimiz iş yüküne yetişmekte zorlanıyor."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "由于这个问题，我们与客户的声誉岌岌可危。"
+        "zh-Hans": "由于这个问题，我们与客户的声誉岌岌可危。",
+        "zh-Hant": "這個問題讓我們在客戶心中的聲譽岌岌可危。",
+        "es": "Nuestra reputación ante los clientes está en riesgo por este motivo.",
+        "de": "Unsere Reputation bei den Kunden ist dadurch gefährdet.",
+      "ru": "Из-за этой проблемы наша репутация у клиента под угрозой.",
+      "th": "เรื่องนี้ทำให้ชื่อเสียงของเรากับลูกค้าตกอยู่ในความเสี่ยง",
+      "ko": "이 문제로 고객 사이에서 우리의 평판이 위태로워졌습니다.",
+      "ja": "この問題により、お客様からの信頼が損なわれるおそれがあります。",
+      "pt-BR": "Nossa reputação com os clientes está em risco por causa disso.",
+      "fr": "Notre réputation auprès de nos clients est menacée à cause de cela.",
+      "it": "La nostra reputazione presso i clienti è a rischio per questo motivo.",
+      "ar": "سمعتنا لدى العملاء معرضة للخطر بسبب هذا الأمر.",
+      "id": "Reputasi kami di mata klien terancam karena hal ini.",
+      "vi": "Điều này khiến uy tín của chúng tôi với khách hàng gặp rủi ro.",
+      "tr": "Bu nedenle müşteriler nezdindeki itibarımız risk altında."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "感谢你的道歉，但我们需要一个具体的计划。"
+        "zh-Hans": "感谢你的道歉，但我们需要一个具体的计划。",
+        "zh-Hant": "謝謝你的道歉，但我們需要一個具體的處理計畫。",
+        "es": "Gracias por disculparte, pero necesitamos un plan concreto.",
+        "de": "Vielen Dank für Ihre Entschuldigung, aber wir brauchen einen konkreten Plan.",
+      "ru": "Спасибо за извинения, но нам нужен конкретный план.",
+      "th": "ขอบคุณสำหรับคำขอโทษ แต่เราต้องการแผนที่ชัดเจน",
+      "ko": "사과해 주셔서 감사하지만, 구체적인 계획이 필요합니다.",
+      "ja": "お詫びいただきありがとうございます。ただ、具体的な計画が必要です。",
+      "pt-BR": "Agradeço o pedido de desculpas, mas precisamos de um plano concreto.",
+      "fr": "Merci pour vos excuses, mais nous avons besoin d'un plan concret.",
+      "it": "La ringrazio per le scuse, ma abbiamo bisogno di un piano concreto.",
+      "ar": "نشكركم على اعتذاركم، لكننا نحتاج إلى خطة واضحة.",
+      "id": "Terima kasih atas permintaan maafnya, tetapi kami memerlukan rencana yang konkret.",
+      "vi": "Cảm ơn lời xin lỗi của bạn, nhưng chúng tôi cần một kế hoạch cụ thể.",
+      "tr": "Özürünüz için teşekkür ederim, ancak somut bir plana ihtiyacımız var."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "感谢你的建议，但它并没有完全满足我们的需求。"
+        "zh-Hans": "感谢你的建议，但它并没有完全满足我们的需求。",
+        "zh-Hant": "謝謝你的建議，但還是沒有完全符合我們的需求。",
+        "es": "Agradezco tu sugerencia, pero no responde del todo a nuestras necesidades.",
+        "de": "Ich schätze Ihren Vorschlag, aber er geht nicht vollständig auf unsere Bedürfnisse ein.",
+      "ru": "Спасибо за предложение, но оно не полностью отвечает нашим потребностям.",
+      "th": "ขอบคุณสำหรับข้อเสนอแนะ แต่ยังไม่ตอบโจทย์ความต้องการของเรา",
+      "ko": "제안해 주셔서 감사하지만, 그것만으로는 저희의 요구를 충분히 해결하지 못합니다.",
+      "ja": "ご提案には感謝しますが、それだけでは私たちの要望に十分応えていません。",
+      "pt-BR": "Agradeço sua sugestão, mas ela não atende totalmente às nossas necessidades.",
+      "fr": "Je vous remercie pour votre suggestion, mais elle ne répond pas entièrement à nos besoins.",
+      "it": "Apprezzo la sua proposta, ma non risponde pienamente alle nostre esigenze.",
+      "ar": "أقدّر اقتراحكم، لكنه لا يلبي احتياجاتنا بالكامل.",
+      "id": "Saya menghargai saran Anda, tetapi saran itu belum sepenuhnya memenuhi kebutuhan kami.",
+      "vi": "Tôi trân trọng đề xuất của bạn, nhưng đề xuất đó chưa đáp ứng đầy đủ nhu cầu của chúng tôi.",
+      "tr": "Önerinizi takdir ediyorum, ancak ihtiyaçlarımızı tam olarak karşılamıyor."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "我明白你的意思，但我们仍然需要进一步的帮助。"
+        "zh-Hans": "我明白你的意思，但我们仍然需要进一步的帮助。",
+        "zh-Hant": "我了解你的意思，但我們仍然需要進一步的協助。",
+        "es": "Entiendo tu punto, pero seguimos necesitando más ayuda.",
+        "de": "Ich verstehe Ihren Standpunkt, aber wir brauchen weiterhin Unterstützung.",
+      "ru": "Я понимаю, что вы имеете в виду, но нам всё ещё нужна дополнительная помощь.",
+      "th": "เข้าใจประเด็นของคุณ แต่เรายังต้องการความช่วยเหลือเพิ่มเติม",
+      "ko": "말씀하신 요지는 이해하지만, 여전히 추가 지원이 필요합니다.",
+      "ja": "おっしゃることは理解しましたが、引き続きさらなるご支援が必要です。",
+      "pt-BR": "Entendo seu ponto, mas ainda precisamos de mais assistência.",
+      "fr": "Je comprends votre point de vue, mais nous avons toujours besoin d'une aide supplémentaire.",
+      "it": "Capisco il suo punto di vista, ma abbiamo ancora bisogno di ulteriore assistenza.",
+      "ar": "أتفهم وجهة نظركم، لكننا ما زلنا بحاجة إلى مزيد من المساعدة.",
+      "id": "Saya memahami maksud Anda, tetapi kami masih memerlukan bantuan lebih lanjut.",
+      "vi": "Tôi hiểu ý bạn, nhưng chúng tôi vẫn cần được hỗ trợ thêm.",
+      "tr": "Söylediğiniz noktayı anlıyorum, ancak hâlâ daha fazla yardıma ihtiyacımız var."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 4.096,
       "duration": 4.096,
       "translations": {
-        "zh-Hans": "我知道你在努力帮忙，但我们仍然面临问题。"
+        "zh-Hans": "我知道你在努力帮忙，但我们仍然面临问题。",
+        "zh-Hant": "我知道你正努力協助，但我們仍然遇到問題。",
+        "es": "Entiendo que intentas ayudar, pero seguimos teniendo problemas.",
+        "de": "Ich verstehe, dass Sie helfen wollen, aber wir haben immer noch Probleme.",
+      "ru": "Я знаю, что вы стараетесь помочь, но проблема всё ещё остаётся.",
+      "th": "ฉันเข้าใจว่าคุณพยายามช่วย แต่เรายังคงมีปัญหาอยู่",
+      "ko": "도와주시려는 것은 이해하지만, 저희는 여전히 문제를 겪고 있습니다.",
+      "ja": "お力添えいただこうとしていることは理解していますが、まだ問題が残っています。",
+      "pt-BR": "Entendo que você está tentando ajudar, mas ainda estamos enfrentando problemas.",
+      "fr": "Je comprends que vous essayez de nous aider, mais nous rencontrons toujours des problèmes.",
+      "it": "Capisco che sta cercando di aiutarci, ma continuiamo ad avere problemi.",
+      "ar": "أتفهم أنكم تحاولون المساعدة، لكننا ما زلنا نواجه مشكلات.",
+      "id": "Saya memahami bahwa Anda sedang berusaha membantu, tetapi kami masih menghadapi masalah.",
+      "vi": "Tôi hiểu bạn đang cố gắng giúp đỡ, nhưng chúng tôi vẫn đang gặp vấn đề.",
+      "tr": "Yardım etmeye çalıştığınızı anlıyorum, ancak hâlâ sorunlarla karşı karşıyayız."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "也许可以考虑部分退款。"
+        "zh-Hans": "也许可以考虑部分退款。",
+        "zh-Hant": "或許可以考慮部分退款。",
+        "es": "Quizá podríamos considerar un reembolso parcial.",
+        "de": "Vielleicht könnten wir eine teilweise Rückerstattung in Betracht ziehen.",
+      "ru": "Возможно, стоит рассмотреть частичный возврат средств.",
+      "th": "อาจพิจารณาคืนเงินบางส่วนได้ไหม",
+      "ko": "부분 환불을 고려해 주실 수 있을까요?",
+      "ja": "一部返金をご検討いただくことは可能でしょうか。",
+      "pt-BR": "Talvez pudéssemos considerar um reembolso parcial.",
+      "fr": "Pourrions-nous peut-être envisager un remboursement partiel ?",
+      "it": "Potremmo valutare un rimborso parziale?",
+      "ar": "ربما يمكننا النظر في استرداد جزئي للمبلغ.",
+      "id": "Mungkin pengembalian dana sebagian dapat dipertimbangkan.",
+      "vi": "Có lẽ chúng ta có thể cân nhắc hoàn lại một phần tiền.",
+      "tr": "Kısmi bir geri ödemeyi değerlendirebilir miyiz?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "我们能否考虑一个更符合我们时间表的替代方案？"
+        "zh-Hans": "我们能否考虑一个更符合我们时间表的替代方案？",
+        "zh-Hant": "我們能否考慮更符合專案時程的替代方案？",
+        "es": "¿Podríamos considerar una alternativa que se ajuste mejor a nuestros plazos?",
+        "de": "Könnten wir eine Alternative in Betracht ziehen, die besser zu unserem Zeitplan passt?",
+      "ru": "Можем ли мы рассмотреть альтернативу, которая лучше соответствует нашему графику?",
+      "th": "เราพิจารณาทางเลือกที่เหมาะกับกำหนดการของเรามากกว่านี้ได้ไหม",
+      "ko": "저희 일정에 더 잘 맞는 대안을 검토해 볼 수 있을까요?",
+      "ja": "私たちのスケジュールにより合った代替案を検討できないでしょうか。",
+      "pt-BR": "Poderíamos considerar uma alternativa que se adeque melhor ao nosso cronograma?",
+      "fr": "Pourrions-nous envisager une solution de remplacement mieux adaptée à notre calendrier ?",
+      "it": "Potremmo valutare un'alternativa più adatta alle nostre tempistiche?",
+      "ar": "هل يمكننا النظر في بديل يتناسب بشكل أفضل مع جدولنا الزمني؟",
+      "id": "Bisakah kita mempertimbangkan alternatif yang lebih sesuai dengan jadwal kami?",
+      "vi": "Chúng ta có thể cân nhắc một phương án thay thế phù hợp hơn với tiến độ của chúng tôi không?",
+      "tr": "Takvimimize daha uygun bir alternatifi değerlendirebilir miyiz?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "服务积分可能是一个公平的解决方案。"
+        "zh-Hans": "服务积分可能是一个公平的解决方案。",
+        "zh-Hant": "提供服務購物金或許是公平的解決方案。",
+        "es": "Un crédito para futuros servicios podría ser una solución justa.",
+        "de": "Eine Gutschrift für weitere Dienstleistungen könnte eine faire Lösung sein.",
+      "ru": "Кредит на услуги может быть справедливым решением.",
+      "th": "เครดิตค่าบริการอาจเป็นทางออกที่ยุติธรรม",
+      "ko": "서비스 크레딧이 공정한 해결책일 수 있습니다.",
+      "ja": "サービスクレジットが公平な解決策になるかもしれません。",
+      "pt-BR": "Um crédito para serviços futuros pode ser uma solução justa.",
+      "fr": "Un avoir sur de futurs services pourrait être une solution équitable.",
+      "it": "Un credito per un servizio futuro potrebbe essere una soluzione equa.",
+      "ar": "قد يكون رصيد للخدمات حلاً عادلاً.",
+      "id": "Kredit layanan mungkin merupakan solusi yang adil.",
+      "vi": "Một khoản tín dụng dịch vụ có thể là giải pháp công bằng.",
+      "tr": "Hizmet kredisi adil bir çözüm olabilir."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "让我们就解决这个问题的时间表达成一致。"
+        "zh-Hans": "让我们就解决这个问题的时间表达成一致。",
+        "zh-Hant": "我們就解決這個問題的時程達成共識吧。",
+        "es": "Acordemos un calendario para resolver este problema.",
+        "de": "Lassen Sie uns einen Zeitplan für die Behebung dieses Problems vereinbaren.",
+      "ru": "Давайте договоримся о сроках решения этой проблемы.",
+      "th": "เรามาตกลงกำหนดเวลาแก้ไขปัญหานี้กันเถอะ",
+      "ko": "이 문제를 해결할 일정을 합의합시다.",
+      "ja": "この問題を解決するためのスケジュールについて合意しましょう。",
+      "pt-BR": "Vamos definir um prazo para resolver esse problema.",
+      "fr": "Mettons-nous d'accord sur un calendrier pour résoudre ce problème.",
+      "it": "Concordiamo una tempistica per risolvere questo problema.",
+      "ar": "لنتفق على جدول زمني لحل هذه المشكلة.",
+      "id": "Mari kita sepakati jadwal untuk menyelesaikan masalah ini.",
+      "vi": "Hãy thống nhất một mốc thời gian để giải quyết vấn đề này.",
+      "tr": "Bu sorunu çözmek için bir takvim üzerinde anlaşalım."
       }
     }
   ]

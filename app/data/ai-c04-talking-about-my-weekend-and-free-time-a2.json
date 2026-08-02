@@ -15,7 +15,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "我喜欢去山里徒步旅行。"
+        "zh-Hans": "我喜欢去山里徒步旅行。",
+        "zh-Hant": "我喜歡去山裡健行。",
+        "ja": "山へハイキングに行くのが好きです。",
+        "de": "Ich gehe gern in den Bergen wandern.",
+        "ru": "Я люблю ходить в горы.",
+        "ar": "أحب الذهاب للتنزه سيرًا على الأقدام في الجبال.",
+        "id": "Saya suka mendaki di pegunungan.",
+        "es": "Me gusta hacer senderismo por la montaña.",
+        "pt-BR": "Gosto de fazer trilhas nas montanhas.",
+        "it": "Mi piace fare escursioni in montagna.",
+        "vi": "Tôi thích đi leo núi.",
+        "th": "ฉันชอบไปเดินป่าบนภูเขา",
+        "fr": "J'aime faire de la randonnée en montagne.",
+        "ko": "저는 산에 하이킹하러 가는 걸 좋아해요.",
+        "tr": "Dağlarda yürüyüşe çıkmayı seviyorum."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "周末，我通常会去看望家人。"
+        "zh-Hans": "周末，我通常会去看望家人。",
+        "zh-Hant": "週末，我通常會去探望家人。",
+        "ja": "週末は、たいてい家族に会いに行きます。",
+        "de": "Am Wochenende besuche ich normalerweise meine Familie.",
+        "ru": "По выходным я обычно навещаю семью.",
+        "ar": "في عطلة نهاية الأسبوع، أزور عائلتي عادةً.",
+        "id": "Pada akhir pekan, biasanya saya mengunjungi keluarga.",
+        "es": "Los fines de semana normalmente visito a mi familia.",
+        "pt-BR": "Nos fins de semana, normalmente visito minha família.",
+        "it": "Nel fine settimana di solito vado a trovare la mia famiglia.",
+        "vi": "Cuối tuần, tôi thường đến thăm gia đình.",
+        "th": "วันหยุดสุดสัปดาห์ ฉันมักไปเยี่ยมครอบครัว",
+        "fr": "Le week-end, je rends généralement visite à ma famille.",
+        "ko": "주말에는 보통 가족을 만나러 가요.",
+        "tr": "Hafta sonları genellikle ailemi ziyaret ederim."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 4.181,
       "duration": 4.181,
       "translations": {
-        "zh-Hans": "我经常在周六和朋友喝咖啡。"
+        "zh-Hans": "我经常在周六和朋友喝咖啡。",
+        "zh-Hant": "我經常在星期六和朋友喝咖啡。",
+        "ja": "土曜日はよく友達とコーヒーを飲みに行きます。",
+        "de": "Samstags treffe ich mich oft mit Freunden auf einen Kaffee.",
+        "ru": "По субботам я часто встречаюсь с друзьями выпить кофе.",
+        "ar": "كثيرًا ما ألتقي بأصدقائي لشرب القهوة يوم السبت.",
+        "id": "Saya sering bertemu teman untuk minum kopi pada hari Sabtu.",
+        "es": "A menudo quedo con mis amigos para tomar un café los sábados.",
+        "pt-BR": "Muitas vezes encontro meus amigos para tomar café aos sábados.",
+        "it": "Il sabato incontro spesso gli amici per prendere un caffè.",
+        "vi": "Tôi thường hẹn bạn bè uống cà phê vào thứ Bảy.",
+        "th": "ฉันมักนัดเพื่อนดื่มกาแฟในวันเสาร์",
+        "fr": "Je retrouve souvent mes amis pour prendre un café le samedi.",
+        "ko": "토요일에는 자주 친구들과 만나 커피를 마셔요.",
+        "tr": "Cumartesileri sık sık arkadaşlarımla kahve içmek için buluşurum."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我把周日用来尝试新食谱。"
+        "zh-Hans": "我把周日用来尝试新食谱。",
+        "zh-Hant": "我會利用星期日嘗試新的食譜。",
+        "ja": "日曜日は新しいレシピに挑戦して過ごします。",
+        "de": "Sonntags verbringe ich meine Zeit damit, neue Rezepte auszuprobieren.",
+        "ru": "По воскресеньям я готовлю по новым рецептам.",
+        "ar": "أقضي أيام الأحد في إعداد وصفات جديدة.",
+        "id": "Saya menghabiskan hari Minggu dengan memasak resep-resep baru.",
+        "es": "Paso los domingos preparando recetas nuevas.",
+        "pt-BR": "Passo os domingos preparando receitas novas.",
+        "it": "La domenica mi dedico a provare nuove ricette.",
+        "vi": "Tôi dành Chủ nhật để nấu những công thức mới.",
+        "th": "ฉันใช้วันอาทิตย์ทำอาหารตามสูตรใหม่ ๆ",
+        "fr": "Je passe mes dimanches à cuisiner de nouvelles recettes.",
+        "ko": "일요일에는 새로운 요리법으로 요리하며 시간을 보내요.",
+        "tr": "Pazar günlerimi yeni tarifler pişirerek geçiririm."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 4.48,
       "duration": 4.48,
       "translations": {
-        "zh-Hans": "有时我只是待在家里，拿本好书放松一下。"
+        "zh-Hans": "有时我只是待在家里，拿本好书放松一下。",
+        "zh-Hant": "有時我只想待在家裡，讀本好書放鬆一下。",
+        "ja": "ときどき、家で良い本を読みながらゆっくり過ごすだけで満足です。",
+        "de": "Manchmal bleibe ich einfach zu Hause und entspanne mich mit einem guten Buch.",
+        "ru": "Иногда я просто остаюсь дома и отдыхаю с хорошей книгой.",
+        "ar": "أحيانًا أبقى في المنزل وأسترخي مع كتاب جيد.",
+        "id": "Kadang-kadang saya hanya tinggal di rumah dan bersantai dengan membaca buku yang bagus.",
+        "es": "A veces simplemente me quedo en casa y me relajo con un buen libro.",
+        "pt-BR": "Às vezes simplesmente fico em casa e relaxo com um bom livro.",
+        "it": "A volte resto semplicemente a casa e mi rilasso con un buon libro.",
+        "vi": "Đôi khi tôi chỉ ở nhà và thư giãn với một quyển sách hay.",
+        "th": "บางครั้งฉันก็อยู่บ้านพักผ่อนกับหนังสือดี ๆ สักเล่ม",
+        "fr": "Parfois, je reste simplement chez moi et je me détends avec un bon livre.",
+        "ko": "가끔은 그냥 집에서 좋은 책을 읽으며 쉬어요.",
+        "tr": "Bazen evde kalıp güzel bir kitapla dinlenirim."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "我更喜欢在家看电影。"
+        "zh-Hans": "我更喜欢在家看电影。",
+        "zh-Hant": "我比較喜歡待在家裡看電影。",
+        "ja": "家で映画を見て過ごすほうが好きです。",
+        "de": "Ich verbringe meine Zeit lieber zu Hause und schaue Filme.",
+        "ru": "Я предпочитаю проводить время дома за просмотром фильмов.",
+        "ar": "أفضل قضاء وقتي في المنزل وأنا أشاهد الأفلام.",
+        "id": "Saya lebih suka menghabiskan waktu di rumah sambil menonton film.",
+        "es": "Prefiero pasar el tiempo en casa viendo películas.",
+        "pt-BR": "Prefiro passar meu tempo em casa assistindo a filmes.",
+        "it": "Preferisco passare il tempo a casa a guardare film.",
+        "vi": "Tôi thích dành thời gian ở nhà xem phim hơn.",
+        "th": "ฉันชอบใช้เวลาอยู่บ้านดูหนังมากกว่า",
+        "fr": "Je préfère passer mon temps chez moi à regarder des films.",
+        "ko": "저는 집에서 영화를 보며 시간을 보내는 편이 더 좋아요.",
+        "tr": "Vaktimi evde film izleyerek geçirmeyi tercih ederim."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 4.181,
       "duration": 4.181,
       "translations": {
-        "zh-Hans": "去公园散步是度过一天的好方法。"
+        "zh-Hans": "去公园散步是度过一天的好方法。",
+        "zh-Hant": "去公園散步是度過一天的好方法。",
+        "ja": "公園を散歩するのは、一日を過ごす良い方法です。",
+        "de": "Ein Spaziergang im Park ist eine schöne Möglichkeit, den Tag zu verbringen.",
+        "ru": "Прогулка в парке — хороший способ провести день.",
+        "ar": "الذهاب في نزهة سيرًا على الأقدام في الحديقة طريقة لطيفة لقضاء اليوم.",
+        "id": "Berjalan-jalan di taman adalah cara yang menyenangkan untuk menghabiskan hari.",
+        "es": "Dar un paseo por el parque es una buena manera de pasar el día.",
+        "pt-BR": "Dar uma volta no parque é uma ótima maneira de passar o dia.",
+        "it": "Fare una passeggiata al parco è un bel modo di trascorrere la giornata.",
+        "vi": "Đi dạo trong công viên là một cách thú vị để tận hưởng cả ngày.",
+        "th": "การเดินเล่นในสวนสาธารณะเป็นวิธีที่ดีในการใช้เวลาทั้งวัน",
+        "fr": "Se promener dans le parc est une agréable façon de passer la journée.",
+        "ko": "공원을 산책하는 것은 하루를 보내는 좋은 방법이에요.",
+        "tr": "Parkta yürüyüşe çıkmak günü geçirmenin güzel bir yoludur."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 4.523,
       "duration": 4.523,
       "translations": {
-        "zh-Hans": "周末，我喜欢去博物馆或在家放松。"
+        "zh-Hans": "周末，我喜欢去博物馆或在家放松。",
+        "zh-Hant": "週末，我喜歡去博物館，或只是待在家裡放鬆。",
+        "ja": "週末は、博物館に行くか、家でのんびり過ごすのが好きです。",
+        "de": "Am Wochenende besuche ich gern ein Museum oder mache es mir einfach zu Hause gemütlich.",
+        "ru": "По выходным я люблю сходить в музей или просто расслабиться дома.",
+        "ar": "في عطلة نهاية الأسبوع، أحب زيارة متحف أو الاسترخاء في المنزل فحسب.",
+        "id": "Pada akhir pekan, saya suka mengunjungi museum atau bersantai di rumah.",
+        "es": "Los fines de semana me gusta visitar un museo o simplemente relajarme en casa.",
+        "pt-BR": "Nos fins de semana, gosto de visitar um museu ou simplesmente ficar de boa em casa.",
+        "it": "Nel fine settimana mi piace visitare un museo oppure rilassarmi a casa.",
+        "vi": "Cuối tuần, tôi thích đi bảo tàng hoặc chỉ thư giãn ở nhà.",
+        "th": "วันหยุดสุดสัปดาห์ ฉันชอบไปพิพิธภัณฑ์หรือไม่ก็พักผ่อนอยู่บ้าน",
+        "fr": "Le week-end, j'aime aller au musée ou simplement me détendre chez moi.",
+        "ko": "주말에는 박물관에 가거나 그냥 집에서 쉬는 걸 좋아해요.",
+        "tr": "Hafta sonları ya bir müzeyi ziyaret etmeyi ya da evde dinlenmeyi severim."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 5.973,
       "duration": 5.973,
       "translations": {
-        "zh-Hans": "我喜欢周末和家人共度时光，也许会来个烧烤。"
+        "zh-Hans": "我喜欢周末和家人共度时光，也许会来个烧烤。",
+        "zh-Hant": "我喜歡週末和家人共度時光，也許一起烤個肉。",
+        "ja": "週末は家族と過ごすのが好きで、バーベキューをすることもあります。",
+        "de": "Am Wochenende verbringe ich gern Zeit mit meiner Familie, vielleicht bei einem Grillabend.",
+        "ru": "Я люблю проводить выходные с семьёй, например устроить барбекю.",
+        "ar": "أحب قضاء عطلة نهاية الأسبوع مع عائلتي، وربما إقامة حفل شواء.",
+        "id": "Saya suka menghabiskan akhir pekan bersama keluarga, mungkin sambil mengadakan barbeku.",
+        "es": "Me gusta pasar los fines de semana con mi familia, quizá haciendo una barbacoa.",
+        "pt-BR": "Gosto de passar o tempo com minha família nos fins de semana, talvez fazendo um churrasco.",
+        "it": "Mi piace passare il fine settimana con la mia famiglia, magari facendo una grigliata.",
+        "vi": "Tôi thích dành thời gian bên gia đình vào cuối tuần, có thể cùng nhau tổ chức tiệc nướng.",
+        "th": "ฉันชอบใช้เวลากับครอบครัวในวันหยุดสุดสัปดาห์ บางทีก็ทำบาร์บีคิวด้วยกัน",
+        "fr": "J'aime passer du temps en famille le week-end, peut-être autour d'un barbecue.",
+        "ko": "주말에는 가족과 시간을 보내고, 함께 바비큐를 해 먹기도 해요.",
+        "tr": "Hafta sonları ailemle vakit geçirmeyi, belki mangal yapmayı seviyorum."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 4.267,
       "duration": 4.267,
       "translations": {
-        "zh-Hans": "我理想的周末是和朋友一起去徒步旅行，享受大自然。"
+        "zh-Hans": "我理想的周末是和朋友一起去徒步旅行，享受大自然。",
+        "zh-Hant": "我理想的週末是和朋友一起去健行，享受大自然。",
+        "ja": "私の理想の週末は、友達とハイキングをして自然を楽しむことです。",
+        "de": "Mein ideales Wochenende verbringe ich mit Freunden beim Wandern in der Natur.",
+        "ru": "Мои идеальные выходные — это поход с друзьями и наслаждение природой.",
+        "ar": "تشمل عطلة نهاية الأسبوع المثالية بالنسبة لي التنزه مع الأصدقاء والاستمتاع بالطبيعة.",
+        "id": "Akhir pekan ideal bagi saya adalah mendaki bersama teman dan menikmati alam.",
+        "es": "Mi fin de semana ideal consiste en hacer senderismo con amigos y disfrutar de la naturaleza.",
+        "pt-BR": "Meu fim de semana ideal inclui fazer trilha com amigos e aproveitar a natureza.",
+        "it": "Il mio fine settimana ideale prevede un'escursione con gli amici e il piacere della natura.",
+        "vi": "Cuối tuần lý tưởng của tôi là đi leo núi với bạn bè và hòa mình vào thiên nhiên.",
+        "th": "วันหยุดสุดสัปดาห์ในฝันของฉันคือการเดินป่ากับเพื่อน ๆ และชื่นชมธรรมชาติ",
+        "fr": "Pour moi, le week-end idéal consiste à faire de la randonnée avec des amis et à profiter de la nature.",
+        "ko": "제가 꿈꾸는 주말은 친구들과 하이킹을 하며 자연을 즐기는 거예요.",
+        "tr": "Benim için ideal bir hafta sonu, arkadaşlarımla yürüyüş yapıp doğanın tadını çıkarmaktır."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 4.352,
       "duration": 4.352,
       "translations": {
-        "zh-Hans": "有时候，我只想待在家里看一整天电视。"
+        "zh-Hans": "有时候，我只想待在家里看一整天电视。",
+        "zh-Hant": "有時候，我只想待在家裡看一整天電視。",
+        "ja": "ときどき、ただ家で一日中テレビを見ていたいと思います。",
+        "de": "Manchmal möchte ich einfach zu Hause bleiben und den ganzen Tag fernsehen.",
+        "ru": "Иногда мне просто хочется остаться дома и весь день смотреть телевизор.",
+        "ar": "أحيانًا أريد فقط أن أبقى في المنزل وأشاهد التلفاز طوال اليوم.",
+        "id": "Terkadang, saya hanya ingin tinggal di rumah dan menonton TV sepanjang hari.",
+        "es": "A veces solo quiero quedarme en casa viendo la televisión todo el día.",
+        "pt-BR": "Às vezes, só quero ficar em casa assistindo à televisão o dia inteiro.",
+        "it": "A volte voglio solo restare a casa a guardare la TV tutto il giorno.",
+        "vi": "Đôi khi tôi chỉ muốn ở nhà xem TV cả ngày.",
+        "th": "บางครั้งฉันก็แค่อยากอยู่บ้านดูทีวีทั้งวัน",
+        "fr": "Parfois, j'ai simplement envie de rester chez moi à regarder la télévision toute la journée.",
+        "ko": "가끔은 그냥 집에서 하루 종일 TV를 보고 싶어요.",
+        "tr": "Bazen bütün gün evde kalıp televizyon izlemek istiyorum."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 5.547,
       "duration": 5.547,
       "translations": {
-        "zh-Hans": "周日和家人共度时光对我来说非常重要。"
+        "zh-Hans": "周日和家人共度时光对我来说非常重要。",
+        "zh-Hant": "星期日和家人共度時光對我來說非常重要。",
+        "ja": "日曜日に家族と過ごす時間は、私にとってとても大切です。",
+        "de": "Sonntags Zeit mit meiner Familie zu verbringen, ist mir sehr wichtig.",
+        "ru": "Для меня очень важно проводить воскресенье с семьёй.",
+        "ar": "قضاء يوم الأحد مع عائلتي مهم جدًا بالنسبة لي.",
+        "id": "Menghabiskan waktu bersama keluarga pada hari Minggu sangat penting bagi saya.",
+        "es": "Para mí es muy importante pasar los domingos con mi familia.",
+        "pt-BR": "Passar o tempo com minha família aos domingos é muito importante para mim.",
+        "it": "Per me è molto importante passare la domenica con la mia famiglia.",
+        "vi": "Dành thời gian bên gia đình vào Chủ nhật rất quan trọng với tôi.",
+        "th": "การใช้เวลากับครอบครัวในวันอาทิตย์สำคัญกับฉันมาก",
+        "fr": "Passer du temps avec ma famille le dimanche est très important pour moi.",
+        "ko": "일요일에 가족과 함께 시간을 보내는 것은 저에게 아주 중요해요.",
+        "tr": "Pazar günleri ailemle vakit geçirmek benim için çok önemli."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 5.717,
       "duration": 5.717,
       "translations": {
-        "zh-Hans": "我理想的周末是花时间在大自然中，也许是徒步旅行或野餐。"
+        "zh-Hans": "我理想的周末是花时间在大自然中，也许是徒步旅行或野餐。",
+        "zh-Hant": "我理想的週末是在大自然中度過，也許去健行或野餐。",
+        "ja": "私の理想の週末は、ハイキングやピクニックをしながら自然の中で過ごすことです。",
+        "de": "Mein ideales Wochenende verbringe ich in der Natur, vielleicht beim Wandern oder bei einem Picknick.",
+        "ru": "Мои идеальные выходные — это время на природе, например поход или пикник.",
+        "ar": "عطلة نهاية الأسبوع المثالية بالنسبة لي هي قضاء الوقت في الطبيعة، ربما في نزهة أو رحلة مشي.",
+        "id": "Akhir pekan ideal saya adalah menghabiskan waktu di alam, mungkin dengan mendaki atau berpiknik.",
+        "es": "Mi fin de semana ideal es pasar tiempo en la naturaleza, quizá haciendo senderismo o un pícnic.",
+        "pt-BR": "Meu fim de semana ideal inclui passar um tempo na natureza, talvez fazendo uma trilha ou um piquenique.",
+        "it": "Il mio fine settimana ideale si svolge a contatto con la natura, magari facendo un'escursione o un picnic.",
+        "vi": "Cuối tuần lý tưởng của tôi là được hòa mình vào thiên nhiên, chẳng hạn như đi leo núi hoặc dã ngoại.",
+        "th": "วันหยุดสุดสัปดาห์ในฝันของฉันคือการอยู่ท่ามกลางธรรมชาติ อาจจะเดินป่าหรือไปปิกนิก",
+        "fr": "Mon week-end idéal, c'est passer du temps dans la nature, par exemple en faisant une randonnée ou un pique-nique.",
+        "ko": "제가 생각하는 이상적인 주말은 자연 속에서 하이킹이나 피크닉을 즐기는 거예요.",
+        "tr": "Benim için ideal bir hafta sonu doğada vakit geçirmek, belki yürüyüş yapmak veya piknik yapmaktır."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 4.352,
       "duration": 4.352,
       "translations": {
-        "zh-Hans": "当我独处时，我喜欢看电影或追我最喜欢的电视剧。"
+        "zh-Hans": "当我独处时，我喜欢看电影或追我最喜欢的电视剧。",
+        "zh-Hant": "當我獨處時，我喜歡看電影或追我最喜歡的電視劇。",
+        "ja": "一人のときは、映画を見たり、お気に入りのテレビ番組をまとめて見たりするのが好きです。",
+        "de": "Wenn ich allein bin, schaue ich gern Filme oder hole meine Lieblingsserien nach.",
+        "ru": "Когда я один, я люблю смотреть фильмы или наверстывать любимые сериалы.",
+        "ar": "عندما أكون بمفردي، أحب مشاهدة الأفلام أو متابعة حلقات برامجي التلفزيونية المفضلة.",
+        "id": "Saat sendirian, saya suka menonton film atau mengikuti serial TV favorit saya.",
+        "es": "Cuando estoy solo, me gusta ver películas o ponerme al día con mis series favoritas.",
+        "pt-BR": "Quando estou sozinho, gosto de assistir a filmes ou colocar minhas séries favoritas em dia.",
+        "it": "Quando sono da solo, mi piace guardare film o recuperare le mie serie TV preferite.",
+        "vi": "Khi ở một mình, tôi thích xem phim hoặc xem bù những chương trình truyền hình yêu thích.",
+        "th": "เวลาอยู่คนเดียว ฉันชอบดูหนังหรือดูรายการทีวีโปรดที่ยังไม่ได้ดูให้ครบ",
+        "fr": "Quand je suis seul, j'aime regarder des films ou rattraper mes séries préférées.",
+        "ko": "혼자 있을 때는 영화를 보거나 좋아하는 TV 프로그램을 몰아봐요.",
+        "tr": "Yalnızken film izlemeyi veya sevdiğim dizileri takip etmeyi severim."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 5.717,
       "duration": 5.717,
       "translations": {
-        "zh-Hans": "对我来说，完美的周末是能和家人朋友共度美好时光。"
+        "zh-Hans": "对我来说，完美的周末是能和家人朋友共度美好时光。",
+        "zh-Hant": "對我來說，完美的週末是能和家人朋友共度美好時光。",
+        "ja": "私にとって完璧な週末は、家族や友達と充実した時間を過ごせる週末です。",
+        "de": "Ein perfektes Wochenende ist für mich eines, an dem ich viel Zeit mit Familie und Freunden verbringen kann.",
+        "ru": "Для меня идеальные выходные — это возможность хорошо провести время с семьёй и друзьями.",
+        "ar": "عطلة نهاية الأسبوع المثالية بالنسبة لي هي التي أستطيع فيها قضاء وقت ممتع مع العائلة والأصدقاء.",
+        "id": "Akhir pekan yang sempurna bagi saya adalah ketika bisa menikmati waktu berkualitas bersama keluarga dan teman.",
+        "es": "Para mí, un fin de semana perfecto es aquel en que puedo disfrutar de tiempo de calidad con la familia y los amigos.",
+        "pt-BR": "Para mim, um fim de semana perfeito é aquele em que posso passar um tempo de qualidade com a família e os amigos.",
+        "it": "Per me, un fine settimana perfetto è quello in cui posso trascorrere del tempo di qualità con la famiglia e gli amici.",
+        "vi": "Một cuối tuần hoàn hảo với tôi là cuối tuần được dành thời gian ý nghĩa bên gia đình và bạn bè.",
+        "th": "วันหยุดสุดสัปดาห์ที่สมบูรณ์แบบสำหรับฉันคือการได้ใช้เวลาอย่างมีคุณค่ากับครอบครัวและเพื่อน ๆ",
+        "fr": "Un week-end parfait pour moi, c'est un week-end où je peux passer du temps de qualité avec ma famille et mes amis.",
+        "ko": "저에게 완벽한 주말은 가족과 친구들과 소중한 시간을 보내는 주말이에요.",
+        "tr": "Benim için mükemmel bir hafta sonu, ailem ve arkadaşlarımla kaliteli zaman geçirebildiğim bir hafta sonudur."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 6.144,
       "duration": 6.144,
       "translations": {
-        "zh-Hans": "我觉得周末最愉快的是能在社交和放松之间找到平衡。"
+        "zh-Hans": "我觉得周末最愉快的是能在社交和放松之间找到平衡。",
+        "zh-Hant": "我覺得週末最愉快的是能在社交和放鬆之間取得平衡。",
+        "ja": "人付き合いの時間とリラックスする時間のバランスが取れる週末が、いちばん楽しいです。",
+        "de": "Am meisten genieße ich Wochenenden, an denen ich gesellige Zeit und Entspannung miteinander verbinden kann.",
+        "ru": "Больше всего мне нравятся выходные, когда я могу совместить общение и отдых.",
+        "ar": "أستمتع بعطلات نهاية الأسبوع أكثر عندما أستطيع الموازنة بين الوقت الاجتماعي والاسترخاء.",
+        "id": "Menurut saya, akhir pekan paling menyenangkan ketika saya bisa menyeimbangkan waktu bersosialisasi dan bersantai.",
+        "es": "Los fines de semana me resultan más agradables cuando puedo equilibrar el tiempo social con el descanso.",
+        "pt-BR": "Acho os fins de semana mais agradáveis quando consigo equilibrar algum tempo social com descanso.",
+        "it": "Trovo i fine settimana più piacevoli quando riesco a conciliare un po' di vita sociale e di relax.",
+        "vi": "Tôi thấy cuối tuần vui nhất khi có thể cân bằng thời gian giao lưu với những lúc thư giãn.",
+        "th": "ฉันรู้สึกว่าวันหยุดสุดสัปดาห์สนุกที่สุดเมื่อได้แบ่งเวลาให้ทั้งการเข้าสังคมและการพักผ่อน",
+        "fr": "Je trouve les week-ends les plus agréables lorsque je peux équilibrer les moments en société et la détente.",
+        "ko": "사람들과 어울리는 시간과 휴식의 균형을 맞출 수 있을 때 주말이 가장 즐거워요.",
+        "tr": "Sosyal vakit geçirmekle dinlenmeyi dengeleyebildiğim hafta sonlarını en keyifli buluyorum."
       }
     }
   ]

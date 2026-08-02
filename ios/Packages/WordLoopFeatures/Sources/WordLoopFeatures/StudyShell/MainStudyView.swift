@@ -46,6 +46,8 @@ public struct MainStudyView: View {
     // interaction state explicitly instead of dropping the Web feedback.
     @State private var focusedStudyAction: StudyActionKind?
     private let actions: StudyViewActions
+    private var copy: WordLoopCopy { .current }
+    private var actionCopy: StudyActionCopy { .current }
 
     public init(store: StudyShellStore) {
         self.store = store
@@ -124,7 +126,7 @@ public struct MainStudyView: View {
             Color.clear
                 .frame(width: 1, height: 1)
                 .accessibilityElement(children: .ignore)
-                .accessibilityLabel("主学习页")
+                .accessibilityLabel(actionCopy.page)
                 .accessibilityIdentifier("study.page")
                 .accessibilityHidden(isModalPresented)
                 .id(isModalPresented ? "study-page-modal" : "study-page-active")
@@ -219,7 +221,7 @@ public struct MainStudyView: View {
     }
 
     private var courseButton: some View {
-        Button("COURSE") {
+        Button(copy.course) {
             if progressDrawerStore.state.isPresented { progressDrawerStore.dismiss(reason: .header) }
             courseDrawerStore.present()
         }
@@ -230,12 +232,12 @@ public struct MainStudyView: View {
             .overlay(alignment: .bottom) { Rectangle().fill(store.state.palette.ink.color).frame(height: 1) }
             .opacity(0.75)
             .buttonStyle(.plain)
-            .accessibilityLabel("选择课程")
+            .accessibilityLabel(copy.selectCourse)
             .accessibilityIdentifier("study.course")
     }
 
     private var progressButton: some View {
-        Button("PROGRESS") {
+        Button(copy.progress) {
             if courseDrawerStore.state.isPresented { courseDrawerStore.dismiss(reason: .header) }
             progressDrawerStore.present()
         }
@@ -246,7 +248,7 @@ public struct MainStudyView: View {
             .overlay(alignment: .bottom) { Rectangle().fill(store.state.palette.ink.color).frame(height: 1) }
             .opacity(0.75)
             .buttonStyle(.plain)
-            .accessibilityLabel("查看学习进度")
+            .accessibilityLabel(copy.viewProgress)
             .accessibilityIdentifier("study.progress")
     }
 
@@ -261,7 +263,7 @@ public struct MainStudyView: View {
                     }
                 }
             ),
-            accessibilityLabel: "学习模式",
+            accessibilityLabel: actionCopy.mode,
             accessibilityIdentifierPrefix: "study.mode"
         )
     }
@@ -274,7 +276,7 @@ public struct MainStudyView: View {
                 .font(WordLoopTypography.label(size: 10, weight: .bold))
                 .tracking(1.4)
                 .foregroundStyle(store.state.palette.accent.color)
-                .accessibilityLabel("\(store.state.courseLabel)，第 \(store.state.currentIndex) 条，共 \(store.state.totalCount) 条")
+                .accessibilityLabel(StudyAccessibilityCopy.current.progress(course: store.state.courseLabel, current: store.state.currentIndex, total: store.state.totalCount))
                 .accessibilityIdentifier("study.course-context")
             // The web stage is vertically centered after the header row. The
             // native safe-area header is taller, so retain the same visible
@@ -306,7 +308,7 @@ public struct MainStudyView: View {
                 .offset(y: 46)
                 .contentShape(Rectangle())
                 .onTapGesture(perform: actions.next)
-                .accessibilityLabel(store.state.visibility == .hidden ? "学习内容已隐藏" : englishAccessibilityLabel)
+                .accessibilityLabel(store.state.visibility == .hidden ? actionCopy.hiddenContent : englishAccessibilityLabel)
                 .accessibilityIdentifier(store.state.visibility == .hidden ? "study.hidden-copy" : "study.english")
 
                 // Web recreates `h1` for each item and runs its 520ms
@@ -532,7 +534,7 @@ public struct MainStudyView: View {
 
         if let transcript = store.state.repeatTranscript {
             HStack(spacing: 8) {
-                Text("YOU SAID")
+                Text(actionCopy.youSaid)
                     .font(WordLoopTypography.label(size: 9, weight: .bold))
                     .tracking(1.26)
                     .foregroundStyle(store.state.palette.ink.color.opacity(0.5))
@@ -546,7 +548,7 @@ public struct MainStudyView: View {
             .background(store.state.palette.ink.color.opacity(0.06), in: Capsule())
             .padding(.top, 14)
             .accessibilityElement(children: .combine)
-            .accessibilityLabel("You said，\(transcript)")
+            .accessibilityLabel("\(actionCopy.youSaid)，\(transcript)")
             .accessibilityIdentifier("study.repeat-transcript")
         }
     }
@@ -580,7 +582,7 @@ public struct MainStudyView: View {
         Waveform(
             state: state,
             palette: store.state.palette,
-            accessibilityLabel: "跟读状态波形",
+            accessibilityLabel: StudyAccessibilityCopy.current.waveform,
             tint: tint
         )
         .scaleEffect(0.82)
@@ -611,12 +613,12 @@ public struct MainStudyView: View {
                     .foregroundStyle(store.state.palette.ink.color.opacity(0.56))
             }
             .buttonStyle(.plain)
-            .accessibilityLabel("熟练度 \(store.state.masteryCount) / 3")
+            .accessibilityLabel("\(actionCopy.mastery) \(store.state.masteryCount) / 3")
             .accessibilityIdentifier("study.mastery")
 
             Button(action: actions.markTooEasy) {
                 HStack(spacing: 7) {
-                    Text("太简单")
+                    Text(actionCopy.tooEasy)
                     Text("✓")
                         .font(WordLoopTypography.body(size: 14, weight: .bold))
                         .foregroundStyle(store.state.palette.accent.color)
@@ -664,7 +666,7 @@ public struct MainStudyView: View {
 
             Button(action: actions.next) {
                 HStack(spacing: 10) {
-                    Text("NEXT")
+                    Text(actionCopy.next)
                     Text("→")
                         .font(WordLoopTypography.body(size: 15, weight: .regular))
                         .foregroundStyle(store.state.palette.accent.color)
@@ -713,7 +715,7 @@ public struct MainStudyView: View {
                 .filter(\.isHighlighted)
                 .map(\.text)
                 .joined(separator: "，")
-            return highlights.isEmpty ? store.state.item.english : "重点表达：\(highlights)"
+            return highlights.isEmpty ? store.state.item.english : "\(actionCopy.focusPrefix)\(highlights)"
         }
         return store.state.item.english
     }
@@ -748,7 +750,7 @@ public struct MainStudyView: View {
                 isFocusVisible: focusedStudyAction == .play
             ))
             .contentShape(Rectangle())
-            .accessibilityLabel("播放当前学习内容")
+            .accessibilityLabel(actionCopy.playCurrent)
             .accessibilityIdentifier("study.play")
 
             Button {

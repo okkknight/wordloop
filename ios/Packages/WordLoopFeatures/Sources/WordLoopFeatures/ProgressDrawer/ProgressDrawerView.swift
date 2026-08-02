@@ -2,6 +2,8 @@ import SwiftUI
 import WordLoopDesignSystem
 
 public struct ProgressDrawerView: View {
+    private var copy: ProgressDrawerCopy { .current }
+    private var statsCopy: ProgressDrawerStatsCopy { .current }
     private static let drawerMaximumWidth: CGFloat = 304
     private static let drawerWidthFraction: CGFloat = 0.78
     @Bindable private var store: ProgressDrawerStore
@@ -30,7 +32,7 @@ public struct ProgressDrawerView: View {
                 Color.clear
                     .frame(width: 1, height: 1)
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("学习进度")
+                    .accessibilityLabel(copy.page)
                     .accessibilityIdentifier("progress-drawer.page")
 
                 drawerBackdrop
@@ -44,15 +46,15 @@ public struct ProgressDrawerView: View {
                 }
                 .buttonStyle(.plain)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .accessibilityLabel("关闭学习进度")
+                .accessibilityLabel(copy.close)
                 .accessibilityIdentifier("progress-drawer.backdrop")
 
                 SideDrawer(
                     edge: .trailing,
                     palette: palette,
-                    kicker: "YOUR PROGRESS",
+                    kicker: copy.kicker,
                     title: store.state.summary.totalStudiesLabel,
-                    closeAccessibilityLabel: "关闭学习进度",
+                    closeAccessibilityLabel: copy.close,
                     closeAccessibilityIdentifier: "progress-drawer.close",
                     isModal: false,
                     isPanelVisible: isPanelVisible,
@@ -79,21 +81,21 @@ public struct ProgressDrawerView: View {
             isPanelVisible = true
         }
         .onDisappear { isPanelVisible = false }
-        .alert("删除全部学习数据？", isPresented: $showsDeleteConfirmation) {
-            Button("取消", role: .cancel) {}
-            Button("删除", role: .destructive) {
+        .alert(copy.deleteQuestion, isPresented: $showsDeleteConfirmation) {
+            Button(copy.cancel, role: .cancel) {}
+            Button(copy.delete, role: .destructive) {
                 Task { await deleteAllData() }
             }
         } message: {
-            Text("这会从本机和 WordLoop 服务器删除当前游客的学习进度，并在此设备上创建新的游客身份。此操作无法撤销。")
+            Text(copy.deleteQuestion)
         }
-        .alert("暂时无法删除数据", isPresented: Binding(
+        .alert(copy.deleteError, isPresented: Binding(
             get: { dataDeletionError != nil },
             set: { if !$0 { dataDeletionError = nil } }
         )) {
-            Button("知道了", role: .cancel) {}
+            Button(copy.acknowledge, role: .cancel) {}
         } message: {
-            Text(dataDeletionError ?? "请稍后重试。")
+            Text(dataDeletionError ?? copy.retryNetwork)
         }
     }
 
@@ -131,7 +133,7 @@ public struct ProgressDrawerView: View {
                         entryRow(entry)
                     }
                     if store.filteredEntries.isEmpty {
-                        Text("没有匹配的学习记录")
+                        Text(copy.empty)
                             .font(WordLoopTypography.body(size: 13, weight: .semibold))
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, WordLoopSpacing.safe)
@@ -145,7 +147,7 @@ public struct ProgressDrawerView: View {
             .accessibilityIdentifier("progress-drawer.list")
 
             if onDeleteAllData != nil {
-                Button("DELETE MY LEARNING DATA") {
+                Button(copy.delete) {
                     showsDeleteConfirmation = true
                 }
                 .font(WordLoopTypography.label(size: 9, weight: .semibold))
@@ -153,7 +155,7 @@ public struct ProgressDrawerView: View {
                 .foregroundStyle(palette.ink.color.opacity(0.58))
                 .buttonStyle(.plain)
                 .padding(.top, 2)
-                .accessibilityLabel("删除全部学习数据")
+                .accessibilityLabel(copy.delete)
                 .accessibilityIdentifier("progress-drawer.delete-data")
             }
         }
@@ -166,7 +168,7 @@ public struct ProgressDrawerView: View {
             try await onDeleteAllData()
             dismiss { store.dismiss(reason: .header) }
         } catch {
-            dataDeletionError = "请检查网络后重试。"
+            dataDeletionError = copy.retryNetwork
         }
     }
 
@@ -180,8 +182,8 @@ public struct ProgressDrawerView: View {
             ProgressTrack(
                 progress: store.state.summary.progressFraction,
                 palette: palette,
-                accessibilityLabel: "课程学习进度",
-                accessibilityValue: "已学习 \(store.state.summary.totalStudies) 次，共 \(store.state.summary.maximumStudies) 次"
+                accessibilityLabel: statsCopy.progress,
+                accessibilityValue: "\(statsCopy.studied) \(store.state.summary.totalStudies), \(store.state.summary.maximumStudies)"
             )
             .accessibilityIdentifier("progress-drawer.track")
 
@@ -197,8 +199,8 @@ public struct ProgressDrawerView: View {
 
     @ViewBuilder
     private var statistics: some View {
-        statistic("已掌握", value: store.state.summary.masteredCount, identifier: "progress-drawer.stats.mastered")
-        statistic("学习中", value: store.state.summary.learningCount, identifier: "progress-drawer.stats.learning")
+        statistic(statsCopy.mastered, value: store.state.summary.masteredCount, identifier: "progress-drawer.stats.mastered")
+        statistic(statsCopy.learning, value: store.state.summary.learningCount, identifier: "progress-drawer.stats.learning")
     }
 
     private func statistic(_ label: String, value: Int, identifier: String) -> some View {
@@ -214,7 +216,7 @@ public struct ProgressDrawerView: View {
             .padding(.vertical, 9)
             .overlay(RoundedRectangle(cornerRadius: 10).stroke(palette.ink.color.opacity(0.14), lineWidth: 1))
             .background(palette.background.color.opacity(0.88), in: RoundedRectangle(cornerRadius: 10))
-            .accessibilityLabel("\(label) \(value) 条")
+            .accessibilityLabel("\(label) \(value)")
             .accessibilityIdentifier(identifier)
     }
 
@@ -232,7 +234,7 @@ public struct ProgressDrawerView: View {
             .focused($searchIsFocused)
             .autocorrectionDisabled(true)
             .progressDrawerSearchTraits()
-            .accessibilityLabel("搜索学习记录")
+            .accessibilityLabel(copy.search)
             .accessibilityIdentifier("progress-drawer.search")
 
         }

@@ -7,7 +7,7 @@ public enum StartupUsernameValidationResult: Equatable, Sendable {
 
 public enum StartupUsernameValidator {
     public static let maximumLength = 32
-    public static let invalidUsernameMessage = "用户名只能使用英文字母"
+    public static var invalidUsernameMessage: String { StartupUsernameCopy.current.invalid }
 
     public static func constrainedInput(_ input: String) -> String {
         String(input.prefix(maximumLength))

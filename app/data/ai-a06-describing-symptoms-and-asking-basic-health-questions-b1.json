@@ -15,7 +15,21 @@
       "end": 2.304,
       "duration": 2.304,
       "translations": {
-        "zh-Hans": "我的喉咙感觉疼。"
+        "zh-Hans": "我的喉咙感觉疼。",
+        "ja": "喉が痛いです。",
+        "zh-Hant": "我的喉嚨覺得很痛。",
+        "ko": "목이 아파요.",
+        "pt-BR": "Minha garganta está doendo.",
+        "id": "Tenggorokan saya terasa sakit.",
+        "tr": "Boğazım ağrıyor.",
+        "ru": "У меня болит горло.",
+        "es": "Me duele la garganta.",
+        "fr": "J’ai mal à la gorge.",
+        "de": "Mein Hals tut weh.",
+        "it": "Mi fa male la gola.",
+        "ar": "أشعر بألم في حلقي.",
+        "th": "ฉันเจ็บคอ",
+        "vi": "Tôi bị đau họng."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "我这里的下背部有疼痛。"
+        "zh-Hans": "我这里的下背部有疼痛。",
+        "ja": "腰の下のあたりが痛みます。",
+        "zh-Hant": "我的下背部這裡會痛。",
+        "ko": "허리 아래쪽이 여기 아파요.",
+        "pt-BR": "Estou sentindo dor aqui na parte inferior das costas.",
+        "id": "Pinggang bagian bawah saya terasa sakit di sini.",
+        "tr": "Belimin alt kısmında burada bir ağrı var.",
+        "ru": "Здесь, в нижней части спины, у меня болит.",
+        "es": "Me duele aquí, en la parte baja de la espalda.",
+        "fr": "J’ai mal ici, dans le bas du dos.",
+        "de": "Hier im unteren Rücken habe ich Schmerzen.",
+        "it": "Ho dolore qui, nella parte bassa della schiena.",
+        "ar": "أشعر بألم هنا في أسفل ظهري.",
+        "th": "ฉันปวดตรงหลังส่วนล่างตรงนี้",
+        "vi": "Tôi bị đau ở đây, phần lưng dưới."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.219,
       "duration": 2.219,
       "translations": {
-        "zh-Hans": "我的头在剧烈地疼。"
+        "zh-Hans": "我的头在剧烈地疼。",
+        "ja": "頭が割れるように痛いです。",
+        "zh-Hant": "我的頭痛得很厲害。",
+        "ko": "머리가 지끈지끈 아파요.",
+        "pt-BR": "Minha cabeça está latejando.",
+        "id": "Kepala saya berdenyut-denyut hebat.",
+        "tr": "Başım zonkluyor.",
+        "ru": "У меня раскалывается голова.",
+        "es": "Me late muchísimo la cabeza.",
+        "fr": "J’ai la tête qui tambourine.",
+        "de": "Mein Kopf dröhnt.",
+        "it": "Mi sta scoppiando la testa.",
+        "ar": "رأسي ينبض بشدة.",
+        "th": "ฉันปวดหัวตุบๆ",
+        "vi": "Đầu tôi đau nhức dữ dội."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 1.963,
       "duration": 1.963,
       "translations": {
-        "zh-Hans": "我的膝盖肿了。"
+        "zh-Hans": "我的膝盖肿了。",
+        "ja": "膝が腫れています。",
+        "zh-Hant": "我的膝蓋腫起來了。",
+        "ko": "무릎이 부었어요.",
+        "pt-BR": "Meu joelho está inchado.",
+        "id": "Lutut saya bengkak.",
+        "tr": "Dizim şişmiş.",
+        "ru": "У меня опухло колено.",
+        "es": "Tengo la rodilla hinchada.",
+        "fr": "J’ai le genou enflé.",
+        "de": "Mein Knie ist geschwollen.",
+        "it": "Ho il ginocchio gonfio.",
+        "ar": "ركبتي متورمة.",
+        "th": "เข่าของฉันบวม",
+        "vi": "Đầu gối của tôi bị sưng."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "头痛是昨晚开始的。"
+        "zh-Hans": "头痛是昨晚开始的。",
+        "ja": "頭痛は昨夜始まりました。",
+        "zh-Hant": "頭痛是昨晚開始的。",
+        "ko": "어젯밤부터 두통이 시작됐어요.",
+        "pt-BR": "A dor de cabeça começou ontem à noite.",
+        "id": "Sakit kepala ini mulai tadi malam.",
+        "tr": "Baş ağrısı dün gece başladı.",
+        "ru": "Головная боль началась прошлой ночью.",
+        "es": "El dolor de cabeza empezó anoche.",
+        "fr": "Le mal de tête a commencé hier soir.",
+        "de": "Die Kopfschmerzen haben letzte Nacht angefangen.",
+        "it": "Il mal di testa è iniziato ieri sera.",
+        "ar": "بدأ الصداع الليلة الماضية.",
+        "th": "อาการปวดหัวเริ่มเมื่อคืน",
+        "vi": "Cơn đau đầu bắt đầu từ tối qua."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "两天前吃完东西后开始的。"
+        "zh-Hans": "两天前吃完东西后开始的。",
+        "ja": "食事をした後、2日前に始まりました。",
+        "zh-Hant": "兩天前吃完東西後開始的。",
+        "ko": "이틀 전에 음식을 먹고 나서 시작됐어요.",
+        "pt-BR": "Começou há dois dias, depois que eu comi.",
+        "id": "Ini mulai terasa dua hari lalu setelah saya makan.",
+        "tr": "Yemek yedikten sonra iki gün önce başladı.",
+        "ru": "Это началось два дня назад после еды.",
+        "es": "Empezó hace dos días, después de comer.",
+        "fr": "Ça a commencé il y a deux jours, après que j’ai mangé.",
+        "de": "Es hat vor zwei Tagen nach dem Essen angefangen.",
+        "it": "È iniziato due giorni fa, dopo che ho mangiato.",
+        "ar": "بدأ ذلك قبل يومين بعد أن تناولت الطعام.",
+        "th": "มันเริ่มเมื่อสองวันก่อนหลังจากที่ฉันกินอาหาร",
+        "vi": "Nó bắt đầu cách đây hai ngày sau khi tôi ăn."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "发烧已经持续三天了。"
+        "zh-Hans": "发烧已经持续三天了。",
+        "ja": "熱が出てから3日になります。",
+        "zh-Hant": "發燒已經持續三天了。",
+        "ko": "열이 난 지 사흘 됐어요.",
+        "pt-BR": "Estou com febre há três dias.",
+        "id": "Demam ini sudah berlangsung selama tiga hari.",
+        "tr": "Ateşim üç gündür devam ediyor.",
+        "ru": "Температура держится уже три дня.",
+        "es": "Llevo tres días con fiebre.",
+        "fr": "J’ai de la fièvre depuis trois jours.",
+        "de": "Ich habe seit drei Tagen Fieber.",
+        "it": "Ho la febbre da tre giorni.",
+        "ar": "أعاني من الحمى منذ ثلاثة أيام.",
+        "th": "ฉันมีไข้มาเป็นเวลาสามวันแล้ว",
+        "vi": "Tôi bị sốt đã ba ngày rồi."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "疼痛是轻微的但持续不断。"
+        "zh-Hans": "疼痛是轻微的但持续不断。",
+        "ja": "痛みは軽いですが、ずっと続いています。",
+        "zh-Hant": "疼痛很輕微，但一直沒有停。",
+        "ko": "통증은 약하지만 계속 아파요.",
+        "pt-BR": "A dor é leve, mas constante.",
+        "id": "Rasanya sakitnya ringan, tetapi terus-menerus.",
+        "tr": "Ağrı hafif ama sürekli.",
+        "ru": "Боль слабая, но постоянная.",
+        "es": "El dolor es leve, pero constante.",
+        "fr": "La douleur est légère, mais constante.",
+        "de": "Die Schmerzen sind leicht, aber ständig da.",
+        "it": "Il dolore è lieve, ma costante.",
+        "ar": "الألم خفيف لكنه مستمر.",
+        "th": "อาการปวดไม่มากแต่ปวดตลอดเวลา",
+        "vi": "Cơn đau nhẹ nhưng liên tục."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "肿胀已经消退了一些。"
+        "zh-Hans": "肿胀已经消退了一些。",
+        "ja": "腫れは少し引きました。",
+        "zh-Hant": "腫脹已經消退一些了。",
+        "ko": "부기가 조금 가라앉았어요.",
+        "pt-BR": "O inchaço diminuiu um pouco.",
+        "id": "Bengkaknya sudah sedikit berkurang.",
+        "tr": "Şişlik biraz indi.",
+        "ru": "Отёк немного спал.",
+        "es": "La hinchazón ha bajado un poco.",
+        "fr": "Le gonflement a un peu diminué.",
+        "de": "Die Schwellung ist etwas zurückgegangen.",
+        "it": "Il gonfiore si è un po’ ridotto.",
+        "ar": "خفّ التورم قليلًا.",
+        "th": "อาการบวมลดลงเล็กน้อยแล้ว",
+        "vi": "Chỗ sưng đã giảm một chút."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "尽管吃了药，疼痛还是在加重。"
+        "zh-Hans": "尽管吃了药，疼痛还是在加重。",
+        "ja": "薬を飲んでいるのに、痛みが悪化しています。",
+        "zh-Hant": "雖然吃了藥，疼痛還是越來越嚴重。",
+        "ko": "약을 먹었는데도 통증이 점점 심해지고 있어요.",
+        "pt-BR": "A dor está piorando apesar do medicamento.",
+        "id": "Rasa sakitnya semakin parah meskipun sudah minum obat.",
+        "tr": "İlaç almama rağmen ağrı kötüleşiyor.",
+        "ru": "Несмотря на лекарства, боль усиливается.",
+        "es": "El dolor está empeorando a pesar del medicamento.",
+        "fr": "La douleur s’aggrave malgré les médicaments.",
+        "de": "Trotz der Medikamente werden die Schmerzen schlimmer.",
+        "it": "Il dolore sta peggiorando nonostante il farmaco.",
+        "ar": "يزداد الألم سوءًا رغم تناول الدواء.",
+        "th": "อาการปวดแย่ลงแม้จะกินยาแล้ว",
+        "vi": "Cơn đau đang nặng hơn dù đã dùng thuốc."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "我试过用冷敷。"
+        "zh-Hans": "我试过用冷敷。",
+        "ja": "冷湿布を使ってみました。",
+        "zh-Hant": "我試過冰敷。",
+        "ko": "냉찜질을 해 봤어요.",
+        "pt-BR": "Já tentei usar uma compressa fria.",
+        "id": "Saya sudah mencoba menggunakan kompres dingin.",
+        "tr": "Soğuk kompres kullanmayı denedim.",
+        "ru": "Я пробовал(а) прикладывать холодный компресс.",
+        "es": "He probado a usar una compresa fría.",
+        "fr": "J’ai essayé d’appliquer une compresse froide.",
+        "de": "Ich habe versucht, eine kalte Kompresse aufzulegen.",
+        "it": "Ho provato a usare un impacco freddo.",
+        "ar": "لقد جرّبت استخدام كمادة باردة.",
+        "th": "ฉันลองประคบเย็นแล้ว",
+        "vi": "Tôi đã thử chườm lạnh."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "休息似乎有一点帮助。"
+        "zh-Hans": "休息似乎有一点帮助。",
+        "ja": "休むと少し楽になるようです。",
+        "zh-Hant": "休息好像有一點幫助。",
+        "ko": "쉬면 조금 나아지는 것 같아요.",
+        "pt-BR": "Parece que descansar ajuda um pouco.",
+        "id": "Sepertinya beristirahat sedikit membantu.",
+        "tr": "Dinlenmek biraz iyi geliyor gibi.",
+        "ru": "Кажется, отдых немного помогает.",
+        "es": "Parece que descansar ayuda un poco.",
+        "fr": "Le repos semble aider un peu.",
+        "de": "Ausruhen scheint ein wenig zu helfen.",
+        "it": "Sembra che riposare aiuti un po’.",
+        "ar": "يبدو أن الراحة تساعد قليلًا.",
+        "th": "การพักผ่อนดูเหมือนจะช่วยได้เล็กน้อย",
+        "vi": "Có vẻ nghỉ ngơi giúp ích phần nào."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "我对任何药物都不过敏。"
+        "zh-Hans": "我对任何药物都不过敏。",
+        "ja": "どの薬にもアレルギーはありません。",
+        "zh-Hant": "我對任何藥物都不過敏。",
+        "ko": "약물 알레르기는 없어요.",
+        "pt-BR": "Não tenho alergia a nenhum medicamento.",
+        "id": "Saya tidak alergi terhadap obat apa pun.",
+        "tr": "Herhangi bir ilaca alerjim yok.",
+        "ru": "У меня нет аллергии на лекарства.",
+        "es": "No soy alérgico a ningún medicamento.",
+        "fr": "Je ne suis allergique à aucun médicament.",
+        "de": "Ich bin gegen kein Medikament allergisch.",
+        "it": "Non sono allergico a nessun farmaco.",
+        "ar": "لست مصابًا بالحساسية تجاه أي دواء.",
+        "th": "ฉันไม่แพ้ยาชนิดใดเลย",
+        "vi": "Tôi không bị dị ứng với bất kỳ loại thuốc nào."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.133,
       "duration": 2.133,
       "translations": {
-        "zh-Hans": "接下来我该怎么做才能感觉好些？"
+        "zh-Hans": "接下来我该怎么做才能感觉好些？",
+        "ja": "よくなるために、次に何をすればいいですか？",
+        "zh-Hant": "接下來我該怎麼做才會好一點？",
+        "ko": "나아지려면 다음에 어떻게 해야 할까요?",
+        "pt-BR": "O que devo fazer agora para me sentir melhor?",
+        "id": "Apa yang harus saya lakukan selanjutnya agar merasa lebih baik?",
+        "tr": "Daha iyi hissetmek için bundan sonra ne yapmalıyım?",
+        "ru": "Что мне делать дальше, чтобы почувствовать себя лучше?",
+        "es": "¿Qué debería hacer ahora para sentirme mejor?",
+        "fr": "Que devrais-je faire maintenant pour me sentir mieux ?",
+        "de": "Was sollte ich als Nächstes tun, damit es mir besser geht?",
+        "it": "Cosa dovrei fare adesso per sentirmi meglio?",
+        "ar": "ماذا ينبغي أن أفعل بعد ذلك حتى أشعر بتحسن؟",
+        "th": "ฉันควรทำอย่างไรต่อไปจึงจะรู้สึกดีขึ้น",
+        "vi": "Tôi nên làm gì tiếp theo để cảm thấy khỏe hơn?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我可以吃布洛芬吗？"
+        "zh-Hans": "我可以吃布洛芬吗？",
+        "ja": "これにイブプロフェンを飲んでもいいですか？",
+        "zh-Hant": "我可以吃布洛芬嗎？",
+        "ko": "이부프로펜을 먹어도 될까요?",
+        "pt-BR": "Posso tomar ibuprofeno para isso?",
+        "id": "Bolehkah saya minum ibuprofen untuk mengatasi ini?",
+        "tr": "Bunun için ibuprofen alabilir miyim?",
+        "ru": "Можно ли мне принять ибупрофен от этого?",
+        "es": "¿Puedo tomar ibuprofeno para esto?",
+        "fr": "Puis-je prendre de l’ibuprofène pour ça ?",
+        "de": "Kann ich dafür Ibuprofen nehmen?",
+        "it": "Posso prendere l’ibuprofene per questo?",
+        "ar": "هل يمكنني تناول الإيبوبروفين لهذا؟",
+        "th": "ฉันกินไอบูโพรเฟนสำหรับอาการนี้ได้ไหม",
+        "vi": "Tôi có thể dùng ibuprofen cho tình trạng này không?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "如果没有好转，我应该去看医生吗？"
+        "zh-Hans": "如果没有好转，我应该去看医生吗？",
+        "ja": "よくならない場合は、医師に診てもらうべきですか？",
+        "zh-Hant": "如果沒有改善，我應該去看醫生嗎？",
+        "ko": "호전되지 않으면 병원에 가야 할까요?",
+        "pt-BR": "Devo procurar um médico se não melhorar?",
+        "id": "Haruskah saya pergi ke dokter jika tidak membaik?",
+        "tr": "Düzelmezse doktora görünmeli miyim?",
+        "ru": "Стоит ли мне обратиться к врачу, если не станет лучше?",
+        "es": "¿Debería ir al médico si no mejora?",
+        "fr": "Devrais-je consulter un médecin si ça ne s’améliore pas ?",
+        "de": "Sollte ich zum Arzt gehen, wenn es nicht besser wird?",
+        "it": "Dovrei consultare un medico se non migliora?",
+        "ar": "هل ينبغي أن أراجع الطبيب إذا لم تتحسن حالتي؟",
+        "th": "ฉันควรไปพบแพทย์ไหมถ้าอาการไม่ดีขึ้น",
+        "vi": "Tôi có nên đi khám nếu tình trạng không cải thiện không?"
       }
     }
   ]

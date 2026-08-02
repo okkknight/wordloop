@@ -15,7 +15,21 @@
       "end": 2.048,
       "duration": 2.048,
       "translations": {
-        "zh-Hans": "我现在是一名学生。"
+        "zh-Hans": "我现在是一名学生。",
+        "zh-Hant": "我現在是一名學生。",
+        "de": "Ich bin gerade Student.",
+        "ru": "Сейчас я студент.",
+        "ar": "أنا طالب الآن.",
+        "ja": "今は学生です。",
+        "es": "Ahora mismo soy estudiante.",
+        "pt-BR": "Sou estudante no momento.",
+        "vi": "Hiện giờ tôi là sinh viên.",
+        "th": "ตอนนี้ฉันเป็นนักเรียน",
+        "fr": "Je suis étudiant en ce moment.",
+        "ko": "저는 지금 학생이에요.",
+        "tr": "Şu anda öğrenciyim.",
+        "it": "Al momento sono uno studente.",
+        "id": "Saat ini saya seorang mahasiswa."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "我在市中心的一家小公司工作。"
+        "zh-Hans": "我在市中心的一家小公司工作。",
+        "zh-Hant": "我在市中心的一家小公司工作。",
+        "de": "Ich arbeite in einer kleinen Firma in der Innenstadt.",
+        "ru": "Я работаю в небольшой компании в центре города.",
+        "ar": "أعمل في شركة صغيرة وسط المدينة.",
+        "ja": "街の中心にある小さな会社で働いています。",
+        "es": "Trabajo en una empresa pequeña del centro.",
+        "pt-BR": "Trabalho em uma empresa pequena no centro da cidade.",
+        "vi": "Tôi làm việc tại một công ty nhỏ ở trung tâm thành phố.",
+        "th": "ฉันทำงานอยู่ที่บริษัทเล็ก ๆ แห่งหนึ่งในใจกลางเมือง",
+        "fr": "Je travaille dans une petite entreprise du centre-ville.",
+        "ko": "저는 도심의 작은 회사에서 일해요.",
+        "tr": "Şehir merkezindeki küçük bir şirkette çalışıyorum.",
+        "it": "Lavoro in una piccola azienda in centro.",
+        "id": "Saya bekerja di sebuah perusahaan kecil di pusat kota."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我晚上学习英语。"
+        "zh-Hans": "我晚上学习英语。",
+        "zh-Hant": "我晚上學習英語。",
+        "de": "Abends lerne ich Englisch.",
+        "ru": "По вечерам я учу английский.",
+        "ar": "أدرس الإنجليزية في المساء.",
+        "ja": "夜に英語を勉強しています。",
+        "es": "Estudio inglés por las noches.",
+        "pt-BR": "Estudo inglês à noite.",
+        "vi": "Buổi tối tôi học tiếng Anh.",
+        "th": "ตอนเย็นฉันเรียนภาษาอังกฤษ",
+        "fr": "J'étudie l'anglais le soir.",
+        "ko": "저는 저녁마다 영어를 공부해요.",
+        "tr": "Akşamları İngilizce çalışıyorum.",
+        "it": "Studio inglese la sera.",
+        "id": "Saya belajar bahasa Inggris pada malam hari."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "我通常早上九点左右开始工作。"
+        "zh-Hans": "我通常早上九点左右开始工作。",
+        "zh-Hant": "我通常早上九點左右開始工作。",
+        "de": "Normalerweise fange ich morgens gegen neun Uhr an zu arbeiten.",
+        "ru": "Обычно я начинаю работать около девяти утра.",
+        "ar": "أبدأ العمل عادةً حوالي التاسعة صباحًا.",
+        "ja": "普段は朝9時ごろに仕事を始めます。",
+        "es": "Normalmente empiezo a trabajar sobre las nueve de la mañana.",
+        "pt-BR": "Normalmente começo a trabalhar por volta das nove da manhã.",
+        "vi": "Tôi thường bắt đầu làm việc khoảng chín giờ sáng.",
+        "th": "ปกติฉันเริ่มงานประมาณเก้าโมงเช้า",
+        "fr": "Je commence généralement à travailler vers neuf heures du matin.",
+        "ko": "저는 보통 아침 9시쯤 일을 시작해요.",
+        "tr": "Genellikle sabah saat dokuz civarında işe başlarım.",
+        "it": "Di solito comincio a lavorare verso le nove del mattino.",
+        "id": "Biasanya saya mulai bekerja sekitar pukul sembilan pagi."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.627,
       "duration": 3.627,
       "translations": {
-        "zh-Hans": "大多数时候，我回复邮件并和团队一起工作。"
+        "zh-Hans": "大多数时候，我回复邮件并和团队一起工作。",
+        "zh-Hant": "大多數時候，我回覆電子郵件並和團隊一起工作。",
+        "de": "Meistens beantworte ich E-Mails und arbeite mit meinem Team zusammen.",
+        "ru": "В большинстве случаев я отвечаю на письма и работаю со своей командой.",
+        "ar": "في معظم الأيام، أجيب عن رسائل البريد الإلكتروني وأعمل مع فريقي.",
+        "ja": "たいていはメールに返信したり、チームで仕事をしたりしています。",
+        "es": "La mayoría de los días respondo correos y trabajo con mi equipo.",
+        "pt-BR": "Na maioria dos dias, respondo e-mails e trabalho com a minha equipe.",
+        "vi": "Hầu hết các ngày, tôi trả lời email và làm việc với nhóm của mình.",
+        "th": "ส่วนใหญ่ฉันตอบอีเมลและทำงานร่วมกับทีม",
+        "fr": "La plupart du temps, je réponds aux e-mails et je travaille avec mon équipe.",
+        "ko": "대부분의 날에는 이메일에 답하고 팀원들과 함께 일해요.",
+        "tr": "Çoğu gün e-postaları yanıtlar ve ekibimle çalışırım.",
+        "it": "La maggior parte dei giorni rispondo alle e-mail e lavoro con il mio team.",
+        "id": "Hampir setiap hari saya membalas email dan bekerja bersama tim saya."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "我的团队很小，所以我们紧密合作。"
+        "zh-Hans": "我的团队很小，所以我们紧密合作。",
+        "zh-Hant": "我的團隊很小，所以我們密切合作。",
+        "de": "Mein Team ist klein, deshalb arbeiten wir eng zusammen.",
+        "ru": "Моя команда небольшая, поэтому мы тесно работаем вместе.",
+        "ar": "فريقي صغير، لذلك نعمل معًا بشكل وثيق.",
+        "ja": "チームが小さいので、密に協力しています。",
+        "es": "Mi equipo es pequeño, así que trabajamos muy unidos.",
+        "pt-BR": "Minha equipe é pequena, então trabalhamos em estreita colaboração.",
+        "vi": "Nhóm của tôi khá nhỏ nên chúng tôi phối hợp rất chặt chẽ.",
+        "th": "ทีมของฉันมีขนาดเล็ก เราจึงทำงานร่วมกันอย่างใกล้ชิด",
+        "fr": "Mon équipe est petite, alors nous travaillons en étroite collaboration.",
+        "ko": "저희 팀은 규모가 작아서 서로 긴밀하게 협력해요.",
+        "tr": "Ekibim küçük, bu yüzden birlikte yakın çalışıyoruz.",
+        "it": "Il mio team è piccolo, quindi lavoriamo a stretto contatto.",
+        "id": "Tim saya kecil, jadi kami bekerja sama dengan sangat erat."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "下班后，我学习大约一个小时。"
+        "zh-Hans": "下班后，我学习大约一个小时。",
+        "zh-Hant": "下班後，我學習大約一個小時。",
+        "de": "Nach der Arbeit lerne ich ungefähr eine Stunde.",
+        "ru": "После работы я занимаюсь около часа.",
+        "ar": "بعد العمل، أدرس لمدة ساعة تقريبًا.",
+        "ja": "仕事の後、1時間ほど勉強します。",
+        "es": "Después del trabajo estudio aproximadamente una hora.",
+        "pt-BR": "Depois do trabalho, estudo por cerca de uma hora.",
+        "vi": "Sau giờ làm, tôi học khoảng một tiếng.",
+        "th": "หลังเลิกงาน ฉันเรียนประมาณหนึ่งชั่วโมง",
+        "fr": "Après le travail, j'étudie pendant environ une heure.",
+        "ko": "퇴근 후에는 한 시간 정도 공부해요.",
+        "tr": "İşten sonra yaklaşık bir saat ders çalışırım.",
+        "it": "Dopo il lavoro studio per circa un'ora.",
+        "id": "Sepulang kerja, saya belajar selama sekitar satu jam."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "最近，我一直在做一个新项目。"
+        "zh-Hans": "最近，我一直在做一个新项目。",
+        "zh-Hant": "最近，我一直在做一個新專案。",
+        "de": "In letzter Zeit arbeite ich an einem neuen Projekt.",
+        "ru": "В последнее время я работаю над новым проектом.",
+        "ar": "أعمل مؤخرًا على مشروع جديد.",
+        "ja": "最近は新しいプロジェクトに取り組んでいます。",
+        "es": "Últimamente estoy trabajando en un proyecto nuevo.",
+        "pt-BR": "Ultimamente, tenho trabalhado em um projeto novo.",
+        "vi": "Gần đây, tôi đang làm một dự án mới.",
+        "th": "ช่วงนี้ฉันกำลังทำโครงการใหม่",
+        "fr": "Dernièrement, je travaille sur un nouveau projet.",
+        "ko": "요즘은 새로운 프로젝트를 진행하고 있어요.",
+        "tr": "Son zamanlarda yeni bir proje üzerinde çalışıyorum.",
+        "it": "Ultimamente sto lavorando a un nuovo progetto.",
+        "id": "Belakangan ini saya sedang mengerjakan proyek baru."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "我喜欢我的工作，因为每天都能学到新东西。"
+        "zh-Hans": "我喜欢我的工作，因为每天都能学到新东西。",
+        "zh-Hant": "我喜歡我的工作，因為每天都能學到新東西。",
+        "de": "Ich mag meine Arbeit, weil ich jeden Tag etwas Neues lerne.",
+        "ru": "Мне нравится моя работа, потому что каждый день я узнаю что-то новое.",
+        "ar": "أحب عملي لأنني أتعلم شيئًا جديدًا كل يوم.",
+        "ja": "毎日新しいことを学べるので、自分の仕事が好きです。",
+        "es": "Me gusta mi trabajo porque aprendo algo nuevo cada día.",
+        "pt-BR": "Gosto do meu trabalho porque aprendo algo novo todos os dias.",
+        "vi": "Tôi thích công việc này vì mỗi ngày tôi đều học được điều gì đó mới.",
+        "th": "ฉันชอบงานนี้เพราะได้เรียนรู้สิ่งใหม่ทุกวัน",
+        "fr": "J'aime mon travail parce que j'apprends quelque chose de nouveau chaque jour.",
+        "ko": "매일 새로운 것을 배울 수 있어서 제 일이 좋아요.",
+        "tr": "İşimi seviyorum çünkü her gün yeni bir şey öğreniyorum.",
+        "it": "Mi piace il mio lavoro perché ogni giorno imparo qualcosa di nuovo.",
+        "id": "Saya menyukai pekerjaan saya karena setiap hari saya mempelajari hal baru."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "最难的是下班后找到足够的时间。"
+        "zh-Hans": "最难的是下班后找到足够的时间。",
+        "zh-Hant": "最難的是下班後找到足夠的時間。",
+        "de": "Am schwierigsten ist es, nach der Arbeit genug Zeit zu finden.",
+        "ru": "Самое трудное — найти достаточно времени после работы.",
+        "ar": "أصعب ما في الأمر هو إيجاد وقت كافٍ بعد العمل.",
+        "ja": "一番大変なのは、仕事の後に十分な時間を作ることです。",
+        "es": "Lo más difícil es encontrar suficiente tiempo después del trabajo.",
+        "pt-BR": "A parte mais difícil é encontrar tempo suficiente depois do trabalho.",
+        "vi": "Phần khó nhất là tìm đủ thời gian sau giờ làm.",
+        "th": "ส่วนที่ยากที่สุดคือการหาเวลาให้พอหลังเลิกงาน",
+        "fr": "Le plus difficile, c'est de trouver assez de temps après le travail.",
+        "ko": "가장 어려운 점은 퇴근 후에 시간을 충분히 내는 거예요.",
+        "tr": "En zor kısım, işten sonra yeterli zaman bulmak.",
+        "it": "La parte più difficile è trovare abbastanza tempo dopo il lavoro.",
+        "id": "Bagian tersulitnya adalah menemukan cukup waktu setelah bekerja."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "我通常和团队中的两个人一起工作。"
+        "zh-Hans": "我通常和团队中的两个人一起工作。",
+        "zh-Hant": "我通常和團隊中的兩個人一起工作。",
+        "de": "Normalerweise arbeite ich mit zwei Leuten aus meinem Team zusammen.",
+        "ru": "Обычно я работаю с двумя людьми из своей команды.",
+        "ar": "أعمل عادةً مع شخصين من فريقي.",
+        "ja": "普段はチームの2人と一緒に仕事をしています。",
+        "es": "Normalmente trabajo con dos personas de mi equipo.",
+        "pt-BR": "Normalmente trabalho com duas pessoas da minha equipe.",
+        "vi": "Tôi thường làm việc cùng hai người trong nhóm.",
+        "th": "ปกติฉันทำงานร่วมกับคนสองคนในทีม",
+        "fr": "Je travaille généralement avec deux personnes de mon équipe.",
+        "ko": "저는 보통 팀원 두 명과 함께 일해요.",
+        "tr": "Genellikle ekibimdeki iki kişiyle birlikte çalışırım.",
+        "it": "Di solito lavoro con altre due persone del mio team.",
+        "id": "Biasanya saya bekerja bersama dua orang lain dalam tim saya."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "最近，我一直在适应新的时间安排。"
+        "zh-Hans": "最近，我一直在适应新的时间安排。",
+        "zh-Hant": "最近，我一直在適應新的時間安排。",
+        "de": "In letzter Zeit gewöhne ich mich an einen neuen Zeitplan.",
+        "ru": "В последнее время я привыкаю к новому расписанию.",
+        "ar": "أعتاد مؤخرًا على جدول زمني جديد.",
+        "ja": "最近は新しいスケジュールに慣れてきたところです。",
+        "es": "Últimamente me estoy acostumbrando a un horario nuevo.",
+        "pt-BR": "Ultimamente, tenho me acostumado com um novo horário.",
+        "vi": "Gần đây, tôi đang dần quen với một lịch trình mới.",
+        "th": "ช่วงนี้ฉันกำลังปรับตัวให้เข้ากับตารางเวลาใหม่",
+        "fr": "Dernièrement, je me suis habitué peu à peu à un nouvel emploi du temps.",
+        "ko": "요즘은 새로운 일정에 익숙해지고 있어요.",
+        "tr": "Son zamanlarda yeni bir programa alışmaya çalışıyorum.",
+        "it": "Ultimamente mi sto abituando a un nuovo orario.",
+        "id": "Belakangan ini saya sedang membiasakan diri dengan jadwal baru."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "我做这份工作已经几个月了。"
+        "zh-Hans": "我做这份工作已经几个月了。",
+        "zh-Hant": "我做這份工作已經幾個月了。",
+        "de": "Ich mache diese Arbeit jetzt seit ein paar Monaten.",
+        "ru": "Я работаю на этой должности уже несколько месяцев.",
+        "ar": "أعمل في هذه الوظيفة منذ بضعة أشهر.",
+        "ja": "この仕事を始めて数か月になります。",
+        "es": "Llevo unos meses haciendo este trabajo.",
+        "pt-BR": "Já faz alguns meses que trabalho nessa função.",
+        "vi": "Tôi đã làm công việc này được vài tháng rồi.",
+        "th": "ฉันทำงานนี้มาได้สองสามเดือนแล้ว",
+        "fr": "Cela fait quelques mois que je fais ce travail.",
+        "ko": "이 일을 시작한 지 이제 몇 달 됐어요.",
+        "tr": "Birkaç aydır bu işi yapıyorum.",
+        "it": "Faccio questo lavoro da qualche mese.",
+        "id": "Saya sudah menjalani pekerjaan ini selama beberapa bulan."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "到目前为止，我对事情的进展感到满意。"
+        "zh-Hans": "到目前为止，我对事情的进展感到满意。",
+        "zh-Hant": "到目前為止，我對事情的進展感到滿意。",
+        "de": "Ich bin bisher mit dem Verlauf der Dinge zufrieden.",
+        "ru": "Пока я доволен тем, как идут дела.",
+        "ar": "أنا راضٍ حتى الآن عن سير الأمور.",
+        "ja": "今のところ、順調に進んでいて満足しています。",
+        "es": "Estoy contento con cómo van las cosas hasta ahora.",
+        "pt-BR": "Estou satisfeito com o andamento das coisas até agora.",
+        "vi": "Cho đến giờ, tôi khá hài lòng với mọi việc.",
+        "th": "จนถึงตอนนี้ ฉันพอใจกับทุกอย่างที่เป็นไป",
+        "fr": "Jusqu'à présent, je suis assez satisfait de la façon dont les choses se passent.",
+        "ko": "지금까지는 일이 순조롭게 진행되어서 만족스러워요.",
+        "tr": "Şimdiye kadar her şeyin gidişatından memnunum.",
+        "it": "Finora sono soddisfatto di come stanno andando le cose.",
+        "id": "Sejauh ini saya puas dengan perkembangan semuanya."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.523,
       "duration": 4.523,
       "translations": {
-        "zh-Hans": "我正努力每天多说一点英语。"
+        "zh-Hans": "我正努力每天多说一点英语。",
+        "zh-Hant": "我正努力每天多說一點英語。",
+        "de": "Ich versuche, jeden Tag ein bisschen mehr Englisch zu sprechen.",
+        "ru": "Я стараюсь каждый день говорить по-английски немного больше.",
+        "ar": "أحاول أن أتحدث بالإنجليزية أكثر قليلًا كل يوم.",
+        "ja": "毎日、少しでも多く英語を話すようにしています。",
+        "es": "Intento hablar un poco más de inglés cada día.",
+        "pt-BR": "Estou tentando falar um pouco mais de inglês todos os dias.",
+        "vi": "Tôi đang cố gắng nói tiếng Anh nhiều hơn một chút mỗi ngày.",
+        "th": "ฉันพยายามพูดภาษาอังกฤษให้มากขึ้นอีกนิดทุกวัน",
+        "fr": "J'essaie de parler un peu plus anglais chaque jour.",
+        "ko": "매일 영어를 조금이라도 더 말하려고 노력하고 있어요.",
+        "tr": "Her gün biraz daha fazla İngilizce konuşmaya çalışıyorum.",
+        "it": "Cerco di parlare un po' più inglese ogni giorno.",
+        "id": "Saya berusaha berbicara bahasa Inggris sedikit lebih banyak setiap hari."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "现在我很忙，但我对此感觉不错。"
+        "zh-Hans": "现在我很忙，但我对此感觉不错。",
+        "zh-Hant": "現在我很忙，但我對此感覺不錯。",
+        "de": "Im Moment bin ich beschäftigt, aber ich fühle mich gut dabei.",
+        "ru": "Сейчас я занят, но меня это устраивает.",
+        "ar": "أنا مشغول الآن، لكنني أشعر بالارتياح تجاه ذلك.",
+        "ja": "今は忙しいですが、充実しています。",
+        "es": "Ahora estoy ocupado, pero me siento bien con todo esto.",
+        "pt-BR": "No momento, estou ocupado, mas estou me sentindo bem com isso.",
+        "vi": "Hiện tại tôi khá bận, nhưng tôi thấy mọi việc vẫn ổn.",
+        "th": "ตอนนี้ฉันยุ่งอยู่ แต่ก็รู้สึกดีกับมัน",
+        "fr": "En ce moment, je suis occupé, mais je me sens bien malgré tout.",
+        "ko": "지금은 바쁘지만, 그래도 기분은 좋아요.",
+        "tr": "Şu anda meşgulüm ama bundan memnunum.",
+        "it": "In questo momento sono impegnato, ma mi fa piacere.",
+        "id": "Saat ini saya sibuk, tetapi saya menikmatinya."
       }
     }
   ]

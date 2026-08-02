@@ -2,6 +2,7 @@ import SwiftUI
 import WordLoopDesignSystem
 
 public struct CourseDrawerView: View {
+    private var copy: WordLoopCopy { .current }
     private static let drawerMaximumWidth: CGFloat = 304
     private static let drawerWidthFraction: CGFloat = 0.78
     @Bindable private var store: CourseDrawerStore
@@ -37,7 +38,7 @@ public struct CourseDrawerView: View {
                 Color.clear
                     .frame(width: 1, height: 1)
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("课程选择器")
+                    .accessibilityLabel(copy.selectCourse)
                     .accessibilityIdentifier("course-drawer.page")
 
                 drawerBackdrop
@@ -51,7 +52,7 @@ public struct CourseDrawerView: View {
                 }
                 .buttonStyle(.plain)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .accessibilityLabel("关闭课程选择器")
+                .accessibilityLabel(copy.closeCourseSelector)
                 .accessibilityIdentifier("course-drawer.backdrop")
 
                 coursePanel(width: drawerWidth(in: geometry.size.width))
@@ -119,11 +120,11 @@ public struct CourseDrawerView: View {
     private var panelHeader: some View {
         HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 8) {
-                Text("COURSE PACKAGES")
+                Text(copy.coursePackages)
                     .font(WordLoopTypography.label(size: 10, weight: .bold))
                     .tracking(1.2)
                     .foregroundStyle(palette.accent.color)
-                Text("选择课程")
+                Text(copy.selectCourse)
                     .font(WordLoopTypography.title(size: 26, weight: .bold))
                     .tracking(-1.04)
             }
@@ -133,7 +134,7 @@ public struct CourseDrawerView: View {
                 .frame(width: 30, height: 30)
                 .contentShape(Rectangle())
                 .buttonStyle(.plain)
-                .accessibilityLabel("关闭课程选择器")
+                .accessibilityLabel(copy.closeCourseSelector)
                 .accessibilityIdentifier("course-drawer.close")
         }
         .padding(.bottom, 22)
@@ -148,7 +149,7 @@ public struct CourseDrawerView: View {
                         collectionSection(collection)
                     }
                     if store.filteredCollections.isEmpty {
-                        Text("没有匹配的课程")
+                        Text(copy.noMatchingCourse)
                             .font(WordLoopTypography.body(size: 13, weight: .semibold))
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, WordLoopSpacing.safe)
@@ -171,14 +172,14 @@ public struct CourseDrawerView: View {
                     get: { store.state.query },
                     set: { query in store.updateQuery(query) }
                 ),
-                prompt: Text("搜索课程")
+                prompt: Text(copy.searchCourse)
                     .foregroundStyle(palette.ink.color.opacity(0.6))
             )
             .font(WordLoopTypography.body(size: 12, weight: .semibold))
             .focused($searchIsFocused)
             .autocorrectionDisabled(true)
             .courseDrawerSearchTraits()
-            .accessibilityLabel("搜索课程")
+            .accessibilityLabel(copy.searchCourse)
             .accessibilityIdentifier("course-drawer.search")
 
         }
@@ -234,7 +235,7 @@ public struct CourseDrawerView: View {
             }
             .buttonStyle(.plain)
             .accessibilityLabel("\(collection.title)，\(collection.subtitle)")
-            .accessibilityValue(store.state.isExpanded(collection.id) ? "已展开" : "已收起")
+            .accessibilityValue(store.state.isExpanded(collection.id) ? CourseDrawerStatusCopy.currentLocale.expanded : CourseDrawerStatusCopy.currentLocale.collapsed)
             .accessibilityIdentifier("course-drawer.collection.\(collection.id)")
 
             if store.state.isExpanded(collection.id) {
@@ -314,7 +315,7 @@ public struct CourseDrawerView: View {
         .buttonStyle(.plain)
         .contentShape(RoundedRectangle(cornerRadius: 13))
         .accessibilityLabel(courseAccessibilityLabel(course))
-        .accessibilityValue(course.isSelected ? "当前课程" : "未选择")
+        .accessibilityValue(course.isSelected ? CourseDrawerStatusCopy.currentLocale.current : CourseDrawerStatusCopy.currentLocale.notSelected)
     }
 
     private func courseAccessibilityLabel(_ course: CourseDrawerCourse) -> String {

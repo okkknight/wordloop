@@ -15,7 +15,21 @@
       "end": 2.176,
       "duration": 2.176,
       "translations": {
-        "zh-Hans": "我可以要两杯咖啡吗？"
+        "zh-Hans": "我可以要两杯咖啡吗？",
+        "ja": "コーヒーを2ついただけますか？",
+        "zh-Hant": "可以給我兩杯咖啡嗎？",
+        "ko": "커피 두 잔 주실 수 있나요?",
+        "pt-BR": "Posso pedir dois cafés?",
+        "id": "Boleh minta dua kopi?",
+        "tr": "İki kahve alabilir miyim?",
+        "ru": "Можно мне два кофе?",
+        "es": "¿Me puede dar dos cafés?",
+        "fr": "Puis-je avoir deux cafés ?",
+        "de": "Kann ich zwei Kaffee bekommen?",
+        "it": "Posso avere due caffè?",
+        "ar": "هل يمكنني الحصول على قهوتين؟",
+        "th": "ขอกาแฟสองแก้วได้ไหมครับ/คะ",
+        "vi": "Cho tôi hai ly cà phê được không?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.261,
       "duration": 2.261,
       "translations": {
-        "zh-Hans": "我想点一个沙拉。"
+        "zh-Hans": "我想点一个沙拉。",
+        "ja": "サラダを注文したいです。",
+        "zh-Hant": "我想點一份沙拉。",
+        "ko": "샐러드 하나 주문하고 싶어요.",
+        "pt-BR": "Eu gostaria de pedir uma salada.",
+        "id": "Saya mau memesan salad.",
+        "tr": "Bir salata sipariş etmek istiyorum.",
+        "ru": "Я хотел(а) бы заказать салат.",
+        "es": "Me gustaría pedir una ensalada.",
+        "fr": "J'aimerais commander une salade.",
+        "de": "Ich möchte einen Salat bestellen.",
+        "it": "Vorrei ordinare un'insalata.",
+        "ar": "أود أن أطلب سلطة.",
+        "th": "ฉันขอสั่งสลัดหนึ่งที่ค่ะ",
+        "vi": "Tôi muốn gọi một phần salad."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 1.579,
       "duration": 1.579,
       "translations": {
-        "zh-Hans": "我可以要一个汉堡吗？"
+        "zh-Hans": "我可以要一个汉堡吗？",
+        "ja": "ハンバーガーをいただけますか？",
+        "zh-Hant": "可以給我一個漢堡嗎？",
+        "ko": "햄버거 하나 주실 수 있나요?",
+        "pt-BR": "Posso pedir um hambúrguer?",
+        "id": "Boleh pesan burger?",
+        "tr": "Bir hamburger alabilir miyim?",
+        "ru": "Можно мне гамбургер?",
+        "es": "¿Me puede dar una hamburguesa?",
+        "fr": "Puis-je avoir un hamburger ?",
+        "de": "Kann ich einen Burger bekommen?",
+        "it": "Posso avere un hamburger?",
+        "ar": "هل يمكنني الحصول على برغر؟",
+        "th": "ขอเบอร์เกอร์หนึ่งชิ้นได้ไหมครับ/คะ",
+        "vi": "Cho tôi một chiếc burger được không?"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 1.963,
       "duration": 1.963,
       "translations": {
-        "zh-Hans": "我可以要一杯茶吗？"
+        "zh-Hans": "我可以要一杯茶吗？",
+        "ja": "紅茶を1杯いただけますか？",
+        "zh-Hant": "可以給我一杯茶嗎？",
+        "ko": "차 한 잔 주실 수 있나요?",
+        "pt-BR": "Eu poderia pedir uma xícara de chá?",
+        "id": "Boleh minta secangkir teh?",
+        "tr": "Bir fincan çay alabilir miyim?",
+        "ru": "Можно мне чашку чая?",
+        "es": "¿Podría darme una taza de té?",
+        "fr": "Pourrais-je avoir une tasse de thé ?",
+        "de": "Könnte ich eine Tasse Tee bekommen?",
+        "it": "Potrei avere una tazza di tè?",
+        "ar": "هل يمكنني الحصول على كوب من الشاي؟",
+        "th": "ขอชาสักถ้วยได้ไหมครับ/คะ",
+        "vi": "Cho tôi một tách trà được không?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.048,
       "duration": 2.048,
       "translations": {
-        "zh-Hans": "我要一大杯汽水。"
+        "zh-Hans": "我要一大杯汽水。",
+        "ja": "大きいサイズのソーダにします。",
+        "zh-Hant": "我想要一大杯汽水。",
+        "ko": "큰 사이즈 탄산음료로 주세요.",
+        "pt-BR": "Vou querer um refrigerante grande.",
+        "id": "Saya pesan soda ukuran besar.",
+        "tr": "Büyük boy bir gazlı içecek alayım.",
+        "ru": "Мне, пожалуйста, газировку большого размера.",
+        "es": "Tomaré un refresco grande.",
+        "fr": "Je prendrai un grand soda.",
+        "de": "Ich nehme eine große Limonade.",
+        "it": "Prendo una bibita grande.",
+        "ar": "سآخذ مشروبًا غازيًا كبيرًا.",
+        "th": "ขอน้ำอัดลมแก้วใหญ่ครับ/ค่ะ",
+        "vi": "Tôi lấy một ly nước ngọt cỡ lớn."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.304,
       "duration": 2.304,
       "translations": {
-        "zh-Hans": "我可以加点奶酪吗？"
+        "zh-Hans": "我可以加点奶酪吗？",
+        "ja": "チーズを多めにしてもらえますか？",
+        "zh-Hant": "可以加起司嗎？",
+        "ko": "치즈를 더 넣어 주실 수 있나요?",
+        "pt-BR": "Pode ser com queijo extra?",
+        "id": "Bisa ditambahkan keju ekstra?",
+        "tr": "Ekstra peynirli olabilir mi?",
+        "ru": "Можно добавить сыр?",
+        "es": "¿Puedo pedirlo con queso extra?",
+        "fr": "Puis-je l'avoir avec du fromage en plus ?",
+        "de": "Kann ich es mit extra Käse bekommen?",
+        "it": "Posso averlo con del formaggio extra?",
+        "ar": "هل يمكن إضافة جبن إضافي؟",
+        "th": "ขอเพิ่มชีสได้ไหมครับ/คะ",
+        "vi": "Tôi có thể thêm phô mai không?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 1.877,
       "duration": 1.877,
       "translations": {
-        "zh-Hans": "我想要热的汤。"
+        "zh-Hans": "我想要热的汤。",
+        "ja": "スープは熱めでお願いします。",
+        "zh-Hant": "我想要熱湯。",
+        "ko": "수프는 뜨겁게 해 주세요.",
+        "pt-BR": "Gostaria da sopa bem quente.",
+        "id": "Saya ingin supnya panas.",
+        "tr": "Çorbayı sıcak istiyorum.",
+        "ru": "Я хотел(а) бы горячий суп.",
+        "es": "Quisiera la sopa caliente.",
+        "fr": "Je voudrais la soupe bien chaude.",
+        "de": "Ich hätte die Suppe gern heiß.",
+        "it": "Vorrei la zuppa calda.",
+        "ar": "أودّ أن تكون الشوربة ساخنة.",
+        "th": "ขอซุปร้อน ๆ ครับ/ค่ะ",
+        "vi": "Tôi muốn súp nóng."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "我要套餐加饮料。"
+        "zh-Hans": "我要套餐加饮料。",
+        "ja": "飲み物付きのセットにします。",
+        "zh-Hant": "我要飲料套餐。",
+        "ko": "음료가 포함된 세트로 주세요.",
+        "pt-BR": "Vou querer o combo com uma bebida.",
+        "id": "Saya pesan paket lengkap dengan minuman.",
+        "tr": "İçecekli menüyü alayım.",
+        "ru": "Я возьму комбо с напитком.",
+        "es": "Tomaré el combo con una bebida.",
+        "fr": "Je prendrai le menu avec une boisson.",
+        "de": "Ich nehme das Menü mit einem Getränk.",
+        "it": "Prendo il menu con una bevanda.",
+        "ar": "سآخذ الوجبة مع مشروب.",
+        "th": "ขอชุดคอมโบพร้อมเครื่องดื่มครับ/ค่ะ",
+        "vi": "Tôi lấy phần combo kèm một đồ uống."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "请不要在我的饮料里加冰。"
+        "zh-Hans": "请不要在我的饮料里加冰。",
+        "ja": "飲み物には氷を入れないでください。",
+        "zh-Hant": "我的飲料請不要加冰。",
+        "ko": "음료에는 얼음 빼 주세요.",
+        "pt-BR": "Sem gelo na minha bebida, por favor.",
+        "id": "Tolong jangan pakai es untuk minuman saya.",
+        "tr": "İçeceğimde buz olmasın, lütfen.",
+        "ru": "Пожалуйста, без льда в напитке.",
+        "es": "Sin hielo en mi bebida, por favor.",
+        "fr": "Pas de glaçons dans ma boisson, s'il vous plaît.",
+        "de": "Bitte kein Eis in mein Getränk.",
+        "it": "Niente ghiaccio nella mia bevanda, per favore.",
+        "ar": "من فضلك، من دون ثلج في مشروبي.",
+        "th": "ไม่ต้องใส่น้ำแข็งในเครื่องดื่มนะครับ/คะ",
+        "vi": "Không cho đá vào đồ uống của tôi nhé."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "请做大杯，加多点奶油。"
+        "zh-Hans": "请做大杯，加多点奶油。",
+        "ja": "大きいサイズで、クリームも多めにお願いします。",
+        "zh-Hant": "請做大杯，再多加一點鮮奶油。",
+        "ko": "큰 사이즈로 하고 크림도 더 넣어 주세요.",
+        "pt-BR": "Faça um tamanho grande, por favor, com creme extra.",
+        "id": "Tolong buat yang ukuran besar, dengan krim ekstra.",
+        "tr": "Büyük boy olsun lütfen, bir de ekstra krema ekleyin.",
+        "ru": "Большой размер, пожалуйста, и добавьте ещё сливок.",
+        "es": "Hágalo grande, por favor, y con crema extra.",
+        "fr": "Faites-le grand, s'il vous plaît, avec un supplément de crème.",
+        "de": "Bitte in groß, mit extra Sahne.",
+        "it": "Lo vorrei grande, per favore, con panna extra.",
+        "ar": "اجعله كبيرًا من فضلك، مع كريمة إضافية.",
+        "th": "ขอเป็นแก้วใหญ่ เพิ่มวิปครีมด้วยครับ/ค่ะ",
+        "vi": "Cho tôi cỡ lớn, thêm kem nhé."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 2.176,
       "duration": 2.176,
       "translations": {
-        "zh-Hans": "我的三明治不要加蛋黄酱。"
+        "zh-Hans": "我的三明治不要加蛋黄酱。",
+        "ja": "サンドイッチにマヨネーズを入れないでください。",
+        "zh-Hant": "我的三明治不要加美乃滋。",
+        "ko": "샌드위치에는 마요네즈를 빼 주세요.",
+        "pt-BR": "Sem maionese no meu sanduíche, por favor.",
+        "id": "Tolong jangan pakai mayones di roti lapis saya.",
+        "tr": "Sandviçimde mayonez olmasın, lütfen.",
+        "ru": "Пожалуйста, без майонеза в моём сэндвиче.",
+        "es": "Sin mayonesa en mi sándwich, por favor.",
+        "fr": "Sans mayonnaise dans mon sandwich, s'il vous plaît.",
+        "de": "Bitte keine Mayonnaise auf mein Sandwich.",
+        "it": "Niente maionese nel mio panino, per favore.",
+        "ar": "من فضلك، من دون مايونيز في شطيرتي.",
+        "th": "ไม่ใส่มายองเนสในแซนด์วิชนะครับ/คะ",
+        "vi": "Không cho sốt mayonnaise vào bánh mì của tôi nhé."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "你能把汤做得淡一点吗？"
+        "zh-Hans": "你能把汤做得淡一点吗？",
+        "ja": "スープの塩味をもう少し薄くできますか？",
+        "zh-Hant": "湯可以煮得淡一點嗎？",
+        "ko": "수프를 덜 짜게 해 주실 수 있나요?",
+        "pt-BR": "Pode deixar a sopa menos salgada?",
+        "id": "Bisa dibuat agar supnya tidak terlalu asin?",
+        "tr": "Çorbayı daha az tuzlu yapabilir misiniz?",
+        "ru": "Не могли бы вы сделать суп менее солёным?",
+        "es": "¿Puede hacer la sopa menos salada?",
+        "fr": "Pouvez-vous faire la soupe moins salée ?",
+        "de": "Könnten Sie die Suppe weniger salzig machen?",
+        "it": "Può fare la zuppa meno salata?",
+        "ar": "هل يمكنك جعل الشوربة أقل ملوحة؟",
+        "th": "ช่วยทำซุปให้เค็มน้อยลงได้ไหมครับ/คะ",
+        "vi": "Bạn có thể nấu súp nhạt hơn một chút được không?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "一切看起来不错，谢谢。"
+        "zh-Hans": "一切看起来不错，谢谢。",
+        "ja": "全部おいしそうです。ありがとうございます。",
+        "zh-Hant": "看起來都很不錯，謝謝。",
+        "ko": "다 좋아 보이네요. 감사합니다.",
+        "pt-BR": "Está tudo ótimo, obrigado.",
+        "id": "Semuanya terlihat enak, terima kasih.",
+        "tr": "Her şey çok güzel görünüyor, teşekkürler.",
+        "ru": "Всё выглядит очень аппетитно, спасибо.",
+        "es": "Todo tiene buena pinta, gracias.",
+        "fr": "Tout a l'air très bon, merci.",
+        "de": "Alles sieht gut aus, danke.",
+        "it": "Sembra tutto buonissimo, grazie.",
+        "ar": "كل شيء يبدو جيدًا، شكرًا لك.",
+        "th": "ทุกอย่างดูน่าทานมาก ขอบคุณครับ/ค่ะ",
+        "vi": "Mọi thứ trông rất ngon, cảm ơn bạn."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "你能重复一下我的订单以确认吗？"
+        "zh-Hans": "你能重复一下我的订单以确认吗？",
+        "ja": "間違いがないように、注文を復唱していただけますか？",
+        "zh-Hant": "可以再念一次我的餐點，確認一下嗎？",
+        "ko": "확인할 수 있게 제 주문을 다시 말씀해 주시겠어요?",
+        "pt-BR": "Você poderia repetir meu pedido para confirmar?",
+        "id": "Bisa ulangi pesanan saya untuk memastikan?",
+        "tr": "Emin olmak için siparişimi tekrar eder misiniz?",
+        "ru": "Не могли бы вы повторить мой заказ, чтобы убедиться, что всё верно?",
+        "es": "¿Podría repetir mi pedido para comprobar que está bien?",
+        "fr": "Pourriez-vous répéter ma commande pour vérifier ?",
+        "de": "Könnten Sie meine Bestellung wiederholen, um sicherzugehen?",
+        "it": "Potrebbe ripetere il mio ordine per essere sicuri?",
+        "ar": "هل يمكنك تكرار طلبي للتأكد من صحته؟",
+        "th": "ช่วยทวนรายการที่สั่งให้หน่อยได้ไหมครับ/คะ",
+        "vi": "Bạn có thể nhắc lại đơn gọi món của tôi để chắc chắn được không?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.005,
       "duration": 2.005,
       "translations": {
-        "zh-Hans": "谢谢，太完美了。"
+        "zh-Hans": "谢谢，太完美了。",
+        "ja": "ありがとうございます。完璧です。",
+        "zh-Hant": "謝謝，這樣就完美了。",
+        "ko": "감사합니다. 딱 좋아요.",
+        "pt-BR": "Obrigado, está perfeito.",
+        "id": "Terima kasih, itu sudah sempurna.",
+        "tr": "Teşekkürler, böyle mükemmel.",
+        "ru": "Спасибо, всё идеально.",
+        "es": "Gracias, está perfecto.",
+        "fr": "Merci, c'est parfait.",
+        "de": "Danke, das ist perfekt.",
+        "it": "Grazie, è perfetto.",
+        "ar": "شكرًا، هذا ممتاز.",
+        "th": "ขอบคุณครับ/ค่ะ แบบนี้พอดีเลย",
+        "vi": "Cảm ơn, hoàn hảo rồi."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.517,
       "duration": 2.517,
       "translations": {
-        "zh-Hans": "谢谢你的帮助，祝你有美好的一天！"
+        "zh-Hans": "谢谢你的帮助，祝你有美好的一天！",
+        "ja": "助かりました。よい一日をお過ごしください！",
+        "zh-Hant": "謝謝你的幫忙，祝你有美好的一天！",
+        "ko": "도와주셔서 감사합니다. 좋은 하루 보내세요!",
+        "pt-BR": "Obrigado pela ajuda. Tenha um bom dia!",
+        "id": "Terima kasih atas bantuan Anda, semoga harimu menyenangkan!",
+        "tr": "Yardımınız için teşekkürler, iyi günler!",
+        "ru": "Спасибо за помощь, хорошего дня!",
+        "es": "Gracias por su ayuda, ¡que tenga un buen día!",
+        "fr": "Merci pour votre aide, bonne journée !",
+        "de": "Danke für Ihre Hilfe, einen schönen Tag noch!",
+        "it": "Grazie per il vostro aiuto, buona giornata!",
+        "ar": "شكرًا لمساعدتك، أتمنى لك يومًا سعيدًا!",
+        "th": "ขอบคุณที่ช่วยเหลือนะครับ/คะ ขอให้เป็นวันที่ดีครับ/ค่ะ",
+        "vi": "Cảm ơn bạn đã giúp đỡ, chúc bạn một ngày tốt lành!"
       }
     }
   ]

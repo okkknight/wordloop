@@ -15,7 +15,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "上周，我在杂货店。"
+        "zh-Hans": "上周，我在杂货店。",
+        "zh-Hant": "上週，我在雜貨店。",
+        "ja": "先週、食料品店にいました。",
+        "de": "Letzte Woche war ich im Lebensmittelgeschäft.",
+        "ru": "На прошлой неделе я был в продуктовом магазине.",
+        "ar": "كنتُ في متجر البقالة الأسبوع الماضي.",
+        "id": "Minggu lalu, saya berada di toko bahan makanan.",
+        "es": "La semana pasada estaba en el supermercado.",
+        "pt-BR": "Na semana passada, eu estava no supermercado.",
+        "it": "La settimana scorsa ero al supermercato.",
+        "vi": "Tuần trước, tôi đã ở cửa hàng tạp hóa.",
+        "th": "สัปดาห์ที่แล้ว ฉันอยู่ที่ร้านขายของชำ",
+        "fr": "La semaine dernière, j'étais à l'épicerie.",
+        "ko": "지난주에 식료품점에 갔어요.",
+        "tr": "Geçen hafta marketteydim."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "昨天，我去图书馆还书。"
+        "zh-Hans": "昨天，我去图书馆还书。",
+        "zh-Hant": "昨天，我去圖書館還書。",
+        "ja": "昨日、本を返しに図書館へ行きました。",
+        "de": "Gestern bin ich in die Bibliothek gegangen, um einige Bücher zurückzugeben.",
+        "ru": "Вчера я ходил в библиотеку, чтобы вернуть несколько книг.",
+        "ar": "ذهبتُ أمس إلى المكتبة لإعادة بعض الكتب.",
+        "id": "Kemarin, saya pergi ke perpustakaan untuk mengembalikan beberapa buku.",
+        "es": "Ayer fui a la biblioteca a devolver unos libros.",
+        "pt-BR": "Ontem fui à biblioteca devolver alguns livros.",
+        "it": "Ieri sono andato in biblioteca a restituire alcuni libri.",
+        "vi": "Hôm qua, tôi đến thư viện để trả vài quyển sách.",
+        "th": "เมื่อวานฉันไปห้องสมุดเพื่อคืนหนังสือบางเล่ม",
+        "fr": "Hier, je suis allé à la bibliothèque rendre quelques livres.",
+        "ko": "어제는 책 몇 권을 반납하러 도서관에 갔어요.",
+        "tr": "Dün birkaç kitabı iade etmek için kütüphaneye gittim."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "周一，我在家工作。"
+        "zh-Hans": "周一，我在家工作。",
+        "zh-Hant": "週一，我在家工作。",
+        "ja": "月曜日は家で仕事をしていました。",
+        "de": "Am Montag habe ich von zu Hause aus gearbeitet.",
+        "ru": "В понедельник я работал из дома.",
+        "ar": "كنتُ أعمل من المنزل يوم الاثنين.",
+        "id": "Pada hari Senin, saya bekerja dari rumah.",
+        "es": "El lunes trabajé desde casa.",
+        "pt-BR": "Na segunda-feira, trabalhei de casa.",
+        "it": "Lunedì lavoravo da casa.",
+        "vi": "Thứ Hai, tôi làm việc ở nhà.",
+        "th": "วันจันทร์ ฉันทำงานจากที่บ้าน",
+        "fr": "Lundi, je travaillais de chez moi.",
+        "ko": "월요일에는 집에서 일하고 있었어요.",
+        "tr": "Pazartesi günü evden çalışıyordum."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "几天前，我在朋友家。"
+        "zh-Hans": "几天前，我在朋友家。",
+        "zh-Hant": "幾天前，我在朋友家。",
+        "ja": "数日前、友達の家にいました。",
+        "de": "Vor ein paar Tagen war ich bei einem Freund zu Hause.",
+        "ru": "Несколько дней назад я был у друга дома.",
+        "ar": "كنتُ في منزل صديق قبل بضعة أيام.",
+        "id": "Beberapa hari yang lalu, saya berada di rumah teman.",
+        "es": "Hace unos días estaba en casa de un amigo.",
+        "pt-BR": "Há alguns dias, eu estava na casa de um amigo.",
+        "it": "Qualche giorno fa ero a casa di un amico.",
+        "vi": "Vài ngày trước, tôi ở nhà một người bạn.",
+        "th": "ไม่กี่วันก่อน ฉันอยู่ที่บ้านเพื่อน",
+        "fr": "Il y a quelques jours, j'étais chez un ami.",
+        "ko": "며칠 전에는 친구 집에 있었어요.",
+        "tr": "Birkaç gün önce arkadaşımın evindeydim."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我买了一些新鲜的蔬菜和水果。"
+        "zh-Hans": "我买了一些新鲜的蔬菜和水果。",
+        "zh-Hant": "我買了一些新鮮的蔬菜和水果。",
+        "ja": "新鮮な野菜と果物をいくつか買いました。",
+        "de": "Ich habe frisches Gemüse und Obst eingekauft.",
+        "ru": "Я купил немного свежих овощей и фруктов.",
+        "ar": "اشتريتُ بعض الخضروات والفواكه الطازجة.",
+        "id": "Saya membeli beberapa sayuran dan buah-buahan segar.",
+        "es": "Compré algunas frutas y verduras frescas.",
+        "pt-BR": "Peguei algumas frutas e verduras frescas.",
+        "it": "Ho comprato della frutta e della verdura fresca.",
+        "vi": "Tôi mua một ít rau củ và trái cây tươi.",
+        "th": "ฉันซื้อผักสดและผลไม้สดมาบ้าง",
+        "fr": "J'ai pris des légumes et des fruits frais.",
+        "ko": "신선한 채소와 과일을 조금 샀어요.",
+        "tr": "Taze sebze ve meyveler aldım."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 4.224,
       "duration": 4.224,
       "translations": {
-        "zh-Hans": "事情开始于我发现手机不见了。"
+        "zh-Hans": "事情开始于我发现手机不见了。",
+        "zh-Hant": "事情開始於我發現手機不見了。",
+        "ja": "携帯電話がなくなっていることに気づいたのが、すべての始まりでした。",
+        "de": "Alles begann, als ich bemerkte, dass mein Handy verschwunden war.",
+        "ru": "Всё началось, когда я заметил, что мой телефон пропал.",
+        "ar": "بدأ كل شيء عندما لاحظتُ أن هاتفي مفقود.",
+        "id": "Semuanya bermula ketika saya menyadari ponsel saya hilang.",
+        "es": "Todo empezó cuando me di cuenta de que no encontraba el teléfono.",
+        "pt-BR": "Tudo começou quando percebi que meu celular tinha sumido.",
+        "it": "È iniziato tutto quando mi sono accorto che non trovavo più il telefono.",
+        "vi": "Mọi chuyện bắt đầu khi tôi nhận ra mình bị mất điện thoại.",
+        "th": "ทุกอย่างเริ่มต้นเมื่อฉันสังเกตว่าโทรศัพท์หาย",
+        "fr": "Tout a commencé lorsque je me suis rendu compte que mon téléphone avait disparu.",
+        "ko": "휴대폰이 없어진 것을 알아차리면서 모든 일이 시작됐어요.",
+        "tr": "Her şey telefonumun kayıp olduğunu fark etmemle başladı."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.944,
       "duration": 2.944,
       "translations": {
-        "zh-Hans": "我决定给朋友打电话聊聊近况。"
+        "zh-Hans": "我决定给朋友打电话聊聊近况。",
+        "zh-Hant": "我決定打電話給朋友聊聊近況。",
+        "ja": "友達に電話して近況を話そうと思いました。",
+        "de": "Ich beschloss, meinen Freund anzurufen, um mich mit ihm auszutauschen.",
+        "ru": "Я решил позвонить другу, чтобы пообщаться и узнать, как у него дела.",
+        "ar": "قررتُ الاتصال بصديقي لنتبادل أخبارنا.",
+        "id": "Saya memutuskan untuk menelepon teman dan mengobrol tentang kabar terbaru.",
+        "es": "Decidí llamar a un amigo para ponernos al día.",
+        "pt-BR": "Decidi ligar para meu amigo para colocar a conversa em dia.",
+        "it": "Ho deciso di chiamare un amico per aggiornarci un po'.",
+        "vi": "Tôi quyết định gọi cho bạn để hỏi thăm.",
+        "th": "ฉันตัดสินใจโทรหาเพื่อนเพื่อพูดคุยถามสารทุกข์สุกดิบ",
+        "fr": "J'ai décidé d'appeler mon ami pour prendre de ses nouvelles.",
+        "ko": "친구에게 안부를 물으려고 전화하기로 했어요.",
+        "tr": "Arkadaşımı arayıp sohbet etmeye karar verdim."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "然后，我意识到我把钱包忘在家里了。"
+        "zh-Hans": "然后，我意识到我把钱包忘在家里了。",
+        "zh-Hant": "然後，我意識到我把錢包忘在家裡了。",
+        "ja": "すると、財布を家に置いてきたことに気づきました。",
+        "de": "Dann stellte ich fest, dass ich meine Geldbörse zu Hause liegen gelassen hatte.",
+        "ru": "Тогда я понял, что оставил кошелёк дома.",
+        "ar": "ثم أدركتُ أنني تركتُ محفظتي في المنزل.",
+        "id": "Kemudian, saya menyadari bahwa dompet saya tertinggal di rumah.",
+        "es": "Entonces me di cuenta de que me había dejado la cartera en casa.",
+        "pt-BR": "Então percebi que tinha deixado minha carteira em casa.",
+        "it": "Poi mi sono reso conto di aver lasciato il portafoglio a casa.",
+        "vi": "Sau đó, tôi nhận ra mình đã để ví ở nhà.",
+        "th": "จากนั้นฉันก็รู้ว่าลืมกระเป๋าสตางค์ไว้ที่บ้าน",
+        "fr": "Ensuite, j'ai réalisé que j'avais laissé mon portefeuille à la maison.",
+        "ko": "그러고 나서 지갑을 집에 두고 왔다는 걸 깨달았어요.",
+        "tr": "Sonra cüzdanımı evde bıraktığımı fark ettim."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "突然，开始下起大雨。"
+        "zh-Hans": "突然，开始下起大雨。",
+        "zh-Hant": "突然，開始下起大雨。",
+        "ja": "突然、激しい雨が降り始めました。",
+        "de": "Plötzlich fing es stark an zu regnen.",
+        "ru": "Вдруг начался сильный дождь.",
+        "ar": "وفجأة بدأ المطر يهطل بغزارة.",
+        "id": "Tiba-tiba, hujan turun dengan deras.",
+        "es": "De repente, empezó a llover a cántaros.",
+        "pt-BR": "De repente, começou a chover muito forte.",
+        "it": "All'improvviso ha iniziato a piovere a dirotto.",
+        "vi": "Đột nhiên, trời bắt đầu mưa rất to.",
+        "th": "จู่ ๆ ฝนก็ตกหนักขึ้นมา",
+        "fr": "Soudain, il s'est mis à pleuvoir très fort.",
+        "ko": "갑자기 비가 세차게 내리기 시작했어요.",
+        "tr": "Birden şiddetli yağmur yağmaya başladı."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.712,
       "duration": 3.712,
       "translations": {
-        "zh-Hans": "令人惊讶的是，我在那里遇到了一个老朋友。"
+        "zh-Hans": "令人惊讶的是，我在那里遇到了一个老朋友。",
+        "zh-Hant": "令人驚訝的是，我在那裡遇到了一位老朋友。",
+        "ja": "驚いたことに、そこで昔の友達に会いました。",
+        "de": "Das Überraschende war, dass ich dort einen alten Freund getroffen habe.",
+        "ru": "Самым удивительным было то, что там я встретил старого друга.",
+        "ar": "وكان المفاجئ أنني التقيتُ هناك بصديق قديم.",
+        "id": "Yang mengejutkan, saya bertemu seorang teman lama di sana.",
+        "es": "Lo sorprendente fue que allí me encontré con un viejo amigo.",
+        "pt-BR": "O surpreendente foi encontrar um velho amigo lá.",
+        "it": "La parte sorprendente è stata trovare lì un vecchio amico.",
+        "vi": "Điều bất ngờ là tôi gặp lại một người bạn cũ ở đó.",
+        "th": "เรื่องที่น่าแปลกใจก็คือ ฉันได้พบเพื่อนเก่าที่นั่น",
+        "fr": "Le plus surprenant, c'est que j'y ai retrouvé un vieil ami.",
+        "ko": "놀랍게도 그곳에서 옛 친구를 다시 만났어요.",
+        "tr": "Şaşırtıcı olan, orada eski bir arkadaşıma rastlamam oldu."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我不小心把咖啡洒在了衬衫上。"
+        "zh-Hans": "我不小心把咖啡洒在了衬衫上。",
+        "zh-Hant": "我不小心把咖啡灑在了襯衫上。",
+        "ja": "うっかりシャツにコーヒーをこぼしてしまいました。",
+        "de": "Ich habe versehentlich Kaffee auf mein Hemd verschüttet.",
+        "ru": "Я случайно пролил кофе на рубашку.",
+        "ar": "سكبتُ القهوة على قميصي عن طريق الخطأ.",
+        "id": "Saya tidak sengaja menumpahkan kopi ke baju saya.",
+        "es": "Derramé café sin querer sobre la camisa.",
+        "pt-BR": "Derrubei café sem querer na minha camisa.",
+        "it": "Ho rovesciato per sbaglio il caffè sulla camicia.",
+        "vi": "Tôi vô tình làm đổ cà phê lên áo.",
+        "th": "ฉันเผลอทำกาแฟหกใส่เสื้อ",
+        "fr": "J'ai renversé du café sur ma chemise par accident.",
+        "ko": "실수로 셔츠에 커피를 쏟았어요.",
+        "tr": "Yanlışlıkla gömleğime kahve döktüm."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我忘了带伞，结果淋湿了。"
+        "zh-Hans": "我忘了带伞，结果淋湿了。",
+        "zh-Hant": "我忘了帶傘，結果淋濕了。",
+        "ja": "傘を忘れて、びしょ濡れになりました。",
+        "de": "Ich habe meinen Regenschirm vergessen und bin völlig durchnässt worden.",
+        "ru": "Я забыл зонт и промок насквозь.",
+        "ar": "نسيتُ مظلتي، فابتللتُ تمامًا.",
+        "id": "Saya lupa membawa payung dan akhirnya basah kuyup.",
+        "es": "Me olvidé del paraguas y acabé empapado.",
+        "pt-BR": "Esqueci meu guarda-chuva e fiquei encharcado.",
+        "it": "Ho dimenticato l'ombrello e mi sono bagnato fradicio.",
+        "vi": "Tôi quên mang ô nên bị ướt sũng.",
+        "th": "ฉันลืมร่มเลยเปียกโชก",
+        "fr": "J'ai oublié mon parapluie et je me suis retrouvé trempé.",
+        "ko": "우산을 가져오는 걸 깜빡해서 흠뻑 젖었어요.",
+        "tr": "Şemsiyemi unuttum ve sırılsıklam oldum."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.627,
       "duration": 3.627,
       "translations": {
-        "zh-Hans": "最终，我自己解决了这个问题。"
+        "zh-Hans": "最终，我自己解决了这个问题。",
+        "zh-Hant": "最終，我自己解決了這個問題。",
+        "ja": "最終的には、自分でその問題を解決することができました。",
+        "de": "Schließlich konnte ich das Problem selbst lösen.",
+        "ru": "В конце концов мне удалось решить проблему самостоятельно.",
+        "ar": "وفي النهاية، تمكنتُ من حل المشكلة بنفسي.",
+        "id": "Akhirnya, saya berhasil menyelesaikan masalah itu sendiri.",
+        "es": "Al final, conseguí solucionar el problema por mi cuenta.",
+        "pt-BR": "No fim, consegui resolver o problema sozinho.",
+        "it": "Alla fine sono riuscito a risolvere il problema da solo.",
+        "vi": "Cuối cùng, tôi đã tự mình giải quyết được vấn đề.",
+        "th": "ในที่สุดฉันก็แก้ปัญหาได้ด้วยตัวเอง",
+        "fr": "Finalement, j'ai réussi à résoudre le problème tout seul.",
+        "ko": "결국 제 힘으로 문제를 해결했어요.",
+        "tr": "Sonunda sorunu kendi başıma çözmeyi başardım."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "最后，我感到很欣慰，一切都解决了。"
+        "zh-Hans": "最后，我感到很欣慰，一切都解决了。",
+        "zh-Hant": "最後，我感到很欣慰，一切都解決了。",
+        "ja": "最後には、すべてうまくいってほっとしました。",
+        "de": "Am Ende war ich erleichtert, dass alles gut ausgegangen ist.",
+        "ru": "В конце я почувствовал облегчение, потому что всё закончилось хорошо.",
+        "ar": "في النهاية شعرتُ بالارتياح لأن كل شيء سار على ما يرام.",
+        "id": "Pada akhirnya, saya merasa lega karena semuanya beres.",
+        "es": "Al final, me sentí aliviado de que todo saliera bien.",
+        "pt-BR": "No final, fiquei aliviado porque tudo deu certo.",
+        "it": "Alla fine mi sono sentito sollevato perché tutto si è risolto per il meglio.",
+        "vi": "Sau cùng, tôi thấy nhẹ nhõm vì mọi việc đã ổn thỏa.",
+        "th": "ท้ายที่สุด ฉันรู้สึกโล่งใจที่ทุกอย่างผ่านไปด้วยดี",
+        "fr": "À la fin, j'ai été soulagé que tout se soit bien arrangé.",
+        "ko": "결국 모든 일이 잘 풀려서 안도했어요.",
+        "tr": "Her şey yoluna girdiği için sonunda rahatladım."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.627,
       "duration": 3.627,
       "translations": {
-        "zh-Hans": "我学会了要时刻检查自己的物品。"
+        "zh-Hans": "我学会了要时刻检查自己的物品。",
+        "zh-Hant": "我學會了要時刻檢查自己的物品。",
+        "ja": "持ち物をいつももう一度確認することを学びました。",
+        "de": "Ich habe gelernt, meine Sachen immer noch einmal zu überprüfen.",
+        "ru": "Я научился всегда перепроверять свои вещи.",
+        "ar": "تعلّمتُ أن أتحقق دائمًا من أغراضي مرة أخرى.",
+        "id": "Saya belajar untuk selalu memeriksa barang-barang saya.",
+        "es": "Aprendí a revisar siempre mis pertenencias.",
+        "pt-BR": "Aprendi a sempre conferir duas vezes meus pertences.",
+        "it": "Ho imparato a controllare sempre con attenzione le mie cose.",
+        "vi": "Tôi học được rằng lúc nào cũng phải kiểm tra kỹ đồ đạc của mình.",
+        "th": "ฉันได้เรียนรู้ว่าต้องตรวจดูสัมภาระของตัวเองให้ดีอยู่เสมอ",
+        "fr": "J'ai appris à toujours vérifier attentivement mes affaires.",
+        "ko": "항상 소지품을 꼼꼼히 확인해야 한다는 것을 배웠어요.",
+        "tr": "Eşyalarımı her zaman iki kez kontrol etmeyi öğrendim."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 4.352,
       "duration": 4.352,
       "translations": {
-        "zh-Hans": "这让我学会了更好地准备应对意外。"
+        "zh-Hans": "这让我学会了更好地准备应对意外。",
+        "zh-Hant": "這讓我學會了更好地準備應對意外。",
+        "ja": "この経験から、予想外のことにもっと備えるようになりました。",
+        "de": "Dadurch habe ich gelernt, besser auf Überraschungen vorbereitet zu sein.",
+        "ru": "Этот опыт научил меня лучше готовиться к неожиданностям.",
+        "ar": "علّمتني هذه التجربة أن أكون أكثر استعدادًا للمفاجآت.",
+        "id": "Pengalaman itu mengajarkan saya untuk lebih siap menghadapi kejutan.",
+        "es": "Me enseñó a estar mejor preparado para los imprevistos.",
+        "pt-BR": "Isso me ensinou a estar mais preparado para imprevistos.",
+        "it": "Mi ha insegnato a essere più preparato alle sorprese.",
+        "vi": "Chuyện đó dạy tôi phải chuẩn bị tốt hơn trước những điều bất ngờ.",
+        "th": "ประสบการณ์นั้นสอนให้ฉันเตรียมพร้อมรับเรื่องไม่คาดคิดมากขึ้น",
+        "fr": "Cela m'a appris à mieux me préparer aux imprévus.",
+        "ko": "그 일을 통해 예상치 못한 일에 더 잘 대비해야 한다는 것을 배웠어요.",
+        "tr": "Bu olay bana sürprizlere karşı daha hazırlıklı olmayı öğretti."
       }
     }
   ]

@@ -15,7 +15,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "你更喜欢茶还是咖啡？"
+        "ar": "أيهما تفضل أكثر، الشاي أم القهوة؟",
+        "it": "Preferisci il tè o il caffè?",
+        "vi": "Bạn thích trà hay cà phê hơn?",
+        "id": "Anda lebih suka teh atau kopi?",
+        "zh-Hans": "你更喜欢茶还是咖啡？",
+        "pt-BR": "Você prefere chá ou café?",
+        "es": "¿Te gusta más el té o el café?",
+        "fr": "Qu'est-ce que vous préférez, le thé ou le café ?",
+        "de": "Was magst du lieber, Tee oder Kaffee?",
+        "zh-Hant": "你比較喜歡茶還是咖啡？",
+        "ja": "紅茶とコーヒーでは、どちらのほうが好きですか？",
+        "ko": "차와 커피 중 어느 쪽을 더 좋아하세요?",
+        "ru": "Что вы любите больше: чай или кофе?",
+        "th": "คุณชอบชาหรือกาแฟมากกว่ากัน",
+        "tr": "Çayı mı yoksa kahveyi mi daha çok seversiniz?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我更喜欢这个，因为它更放松。"
+        "ar": "أفضل هذا لأنه أكثر باعثًا على الاسترخاء.",
+        "it": "Preferisco questo perché è più rilassante.",
+        "vi": "Tôi thích lựa chọn này hơn vì nó thư giãn hơn.",
+        "id": "Saya lebih memilih ini karena lebih menenangkan.",
+        "zh-Hans": "我更喜欢这个，因为它更放松。",
+        "pt-BR": "Prefiro este porque é mais relaxante.",
+        "es": "Prefiero esto porque es más relajante.",
+        "fr": "Je préfère ceci parce que c'est plus relaxant.",
+        "de": "Ich bevorzuge diese Option, weil sie entspannender ist.",
+        "zh-Hant": "我比較喜歡這個，因為它讓人更放鬆。",
+        "ja": "こちらのほうがリラックスできるので、私は好きです。",
+        "ko": "이쪽이 더 편안하게 해 줘서 저는 이걸 더 좋아해요.",
+        "ru": "Я предпочитаю этот вариант, потому что он больше расслабляет.",
+        "th": "ฉันชอบตัวเลือกนี้มากกว่า เพราะช่วยให้ผ่อนคลายกว่า",
+        "tr": "Bunu tercih ederim çünkü daha rahatlatıcı."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 5.12,
       "duration": 5.12,
       "translations": {
-        "zh-Hans": "你觉得电影还是书更让人兴奋？"
+        "ar": "أيهما تجده أكثر إثارة، الأفلام أم الكتب؟",
+        "it": "Cosa trovi più avvincente, i film o i libri?",
+        "vi": "Bạn thấy phim hay sách thú vị hơn?",
+        "id": "Menurut Anda, mana yang lebih seru, film atau buku?",
+        "zh-Hans": "你觉得电影还是书更让人兴奋？",
+        "pt-BR": "O que você acha mais empolgante: filmes ou livros?",
+        "es": "¿Qué te parece más emocionante: las películas o los libros?",
+        "fr": "Qu'est-ce que vous trouvez le plus passionnant, les films ou les livres ?",
+        "de": "Was findest du aufregender: Filme oder Bücher?",
+        "zh-Hant": "你覺得電影還是書更令人興奮？",
+        "ja": "映画と本では、どちらのほうがわくわくしますか？",
+        "ko": "영화와 책 중 어느 쪽이 더 흥미진진하다고 생각하세요?",
+        "ru": "Что кажется вам более захватывающим: фильмы или книги?",
+        "th": "คุณคิดว่าหนังสือหรือภาพยนตร์น่าตื่นเต้นกว่ากัน",
+        "tr": "Sizce hangisi daha heyecan verici: filmler mi, kitaplar mı?"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "开车旅行好还是坐火车好？"
+        "ar": "أيهما أفضل، السفر بالسيارة أم بالقطار؟",
+        "it": "È meglio viaggiare in auto o in treno?",
+        "vi": "Đi bằng ô tô hay tàu hỏa thì tốt hơn?",
+        "id": "Lebih baik bepergian dengan mobil atau kereta?",
+        "zh-Hans": "开车旅行好还是坐火车好？",
+        "pt-BR": "É melhor viajar de carro ou de trem?",
+        "es": "¿Es mejor viajar en coche o en tren?",
+        "fr": "Vaut-il mieux voyager en voiture ou en train ?",
+        "de": "Ist es besser, mit dem Auto oder mit dem Zug zu reisen?",
+        "zh-Hant": "搭車旅行比較好，還是搭火車比較好？",
+        "ja": "車と電車では、どちらで旅行するほうがいいですか？",
+        "ko": "자동차와 기차 중 어느 쪽으로 여행하는 게 더 좋을까요?",
+        "ru": "Как лучше путешествовать: на машине или на поезде?",
+        "th": "เดินทางด้วยรถยนต์หรือรถไฟดีกว่ากัน",
+        "tr": "Arabayla mı yoksa trenle mi seyahat etmek daha iyi?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "茶让人平静，而咖啡给你能量。"
+        "ar": "الشاي مهدئ، بينما تمنحك القهوة الطاقة.",
+        "it": "Il tè calma, mentre il caffè ti dà energia.",
+        "vi": "Trà giúp thư giãn, còn cà phê mang lại năng lượng cho bạn.",
+        "id": "Teh menenangkan, sedangkan kopi memberi Anda energi.",
+        "zh-Hans": "茶让人平静，而咖啡给你能量。",
+        "pt-BR": "O chá acalma, enquanto o café dá energia.",
+        "es": "El té es relajante, mientras que el café te da energía.",
+        "fr": "Le thé apaise, tandis que le café vous donne de l'énergie.",
+        "de": "Tee wirkt beruhigend, während Kaffee dir Energie gibt.",
+        "zh-Hant": "茶能讓人平靜，而咖啡則能帶給你能量。",
+        "ja": "お茶は心を落ち着かせますが、コーヒーは元気を与えてくれます。",
+        "ko": "차는 마음을 안정시켜 주고, 커피는 활력을 줘요.",
+        "ru": "Чай успокаивает, а кофе придаёт энергию.",
+        "th": "ชาช่วยให้สงบ ส่วนกาแฟช่วยเติมพลังให้คุณ",
+        "tr": "Çay sakinleştirir, kahve ise size enerji verir."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "另一方面，书籍让你有更多想象空间。"
+        "ar": "ومن ناحية أخرى، تتيح لك الكتب مساحة أكبر للخيال.",
+        "it": "D'altra parte, i libri ti permettono di usare di più l'immaginazione.",
+        "vi": "Mặt khác, sách cho phép bạn tha hồ tưởng tượng.",
+        "id": "Di sisi lain, buku membuat Anda lebih bebas berimajinasi.",
+        "zh-Hans": "另一方面，书籍让你有更多想象空间。",
+        "pt-BR": "Por outro lado, os livros permitem imaginar mais.",
+        "es": "Por otro lado, los libros te permiten imaginar más.",
+        "fr": "En revanche, les livres vous permettent de davantage laisser libre cours à votre imagination.",
+        "de": "Andererseits lassen Bücher mehr Raum für die eigene Fantasie.",
+        "zh-Hant": "另一方面，書籍讓你有更多想像的空間。",
+        "ja": "一方で、本のほうが想像力をより自由に働かせられます。",
+        "ko": "반면에 책은 더 많은 것을 상상하게 해 줘요.",
+        "ru": "С другой стороны, книги позволяют больше фантазировать.",
+        "th": "ในทางกลับกัน หนังสือเปิดโอกาสให้คุณจินตนาการได้มากกว่า",
+        "tr": "Öte yandan, kitaplar daha çok hayal kurmanıza olanak tanır."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "电影是视觉的，但书更详细。"
+        "ar": "الأفلام بصرية، لكن الكتب أكثر تفصيلًا.",
+        "it": "I film sono visivi, ma i libri sono più dettagliati.",
+        "vi": "Phim có hình ảnh trực quan, còn sách thì chi tiết hơn.",
+        "id": "Film bersifat visual, tetapi buku lebih mendetail.",
+        "zh-Hans": "电影是视觉的，但书更详细。",
+        "pt-BR": "Os filmes são visuais, mas os livros são mais detalhados.",
+        "es": "Las películas son visuales, pero los libros tienen más detalles.",
+        "fr": "Les films sont visuels, mais les livres sont plus détaillés.",
+        "de": "Filme sind visuell, aber Bücher sind detaillierter.",
+        "zh-Hant": "電影以視覺呈現為主，但書籍的細節更多。",
+        "ja": "映画は視覚的ですが、本のほうがより詳しく描かれています。",
+        "ko": "영화는 시각적이지만 책이 더 자세해요.",
+        "ru": "Фильмы воздействуют визуально, но в книгах больше деталей.",
+        "th": "ภาพยนตร์เน้นภาพ แต่หนังสือมีรายละเอียดมากกว่า",
+        "tr": "Filmler görseldir, ancak kitaplarda daha fazla ayrıntı vardır."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 4.309,
       "duration": 4.309,
       "translations": {
-        "zh-Hans": "开车旅行灵活，但火车更快。"
+        "ar": "يوفر السفر بالسيارة مرونة، لكن القطارات أسرع.",
+        "it": "Viaggiare in auto offre flessibilità, ma i treni sono più veloci.",
+        "vi": "Đi ô tô linh hoạt hơn, nhưng tàu hỏa nhanh hơn.",
+        "id": "Bepergian dengan mobil lebih fleksibel, tetapi kereta lebih cepat.",
+        "zh-Hans": "开车旅行灵活，但火车更快。",
+        "pt-BR": "Viajar de carro oferece flexibilidade, mas os trens são mais rápidos.",
+        "es": "Viajar en coche ofrece flexibilidad, pero los trenes son más rápidos.",
+        "fr": "La voiture offre plus de liberté, mais le train est plus rapide.",
+        "de": "Mit dem Auto zu reisen bietet Flexibilität, aber Züge sind schneller.",
+        "zh-Hant": "開車旅行比較靈活，但火車更快。",
+        "ja": "車での移動は融通が利きますが、電車のほうが速いです。",
+        "ko": "자동차 여행은 유연하지만 기차가 더 빨라요.",
+        "ru": "Путешествие на машине даёт больше свободы, но поезда быстрее.",
+        "th": "การเดินทางด้วยรถยนต์มีความยืดหยุ่นกว่า แต่รถไฟเร็วกว่า",
+        "tr": "Arabayla seyahat etmek esneklik sağlar, ancak trenler daha hızlıdır."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "对于家庭来说，狗可能更好。"
+        "ar": "بالنسبة إلى العائلات، قد تكون الكلاب خيارًا أفضل.",
+        "it": "Per le famiglie, i cani potrebbero essere una scelta migliore.",
+        "vi": "Với các gia đình, nuôi chó có thể phù hợp hơn.",
+        "id": "Bagi keluarga, anjing mungkin lebih cocok.",
+        "zh-Hans": "对于家庭来说，狗可能更好。",
+        "pt-BR": "Para famílias, os cães podem ser uma opção melhor.",
+        "es": "Para las familias, los perros podrían ser una mejor opción.",
+        "fr": "Pour les familles, les chiens peuvent être un meilleur choix.",
+        "de": "Für Familien könnten Hunde besser geeignet sein.",
+        "zh-Hant": "對家庭來說，狗可能是更好的選擇。",
+        "ja": "家族で暮らすなら、犬のほうがいいかもしれません。",
+        "ko": "가족에게는 개가 더 잘 맞을 수도 있어요.",
+        "ru": "Для семей собаки могут оказаться лучшим выбором.",
+        "th": "สำหรับครอบครัว สุนัขอาจเป็นตัวเลือกที่ดีกว่า",
+        "tr": "Aileler için köpekler daha iyi bir seçenek olabilir."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "两种选择都有各自的魅力。"
+        "ar": "لكل من الخيارين سحره الخاص.",
+        "it": "Entrambe le opzioni hanno il loro fascino.",
+        "vi": "Cả hai lựa chọn đều có sức hấp dẫn riêng.",
+        "id": "Kedua pilihan memiliki daya tarik masing-masing.",
+        "zh-Hans": "两种选择都有各自的魅力。",
+        "pt-BR": "As duas opções têm seu próprio charme.",
+        "es": "Cada opción tiene su propio encanto.",
+        "fr": "Les deux options ont leur charme.",
+        "de": "Beide Möglichkeiten haben ihren eigenen Reiz.",
+        "zh-Hant": "兩種選擇都有各自的魅力。",
+        "ja": "どちらの選択肢にも、それぞれの魅力があります。",
+        "ko": "두 선택지 모두 나름의 매력이 있어요.",
+        "ru": "У обоих вариантов есть своё очарование.",
+        "th": "ทั้งสองตัวเลือกต่างก็มีเสน่ห์ในแบบของตัวเอง",
+        "tr": "Her iki seçeneğin de kendine özgü bir çekiciliği var."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "对于学生来说，书籍可能更有用。"
+        "ar": "بالنسبة إلى الطلاب، قد تكون الكتب أكثر فائدة.",
+        "it": "Per gli studenti, i libri potrebbero essere più utili.",
+        "vi": "Với học sinh, sách có thể hữu ích hơn.",
+        "id": "Bagi pelajar, buku mungkin lebih bermanfaat.",
+        "zh-Hans": "对于学生来说，书籍可能更有用。",
+        "pt-BR": "Para estudantes, os livros podem ser mais úteis.",
+        "es": "Para los estudiantes, los libros podrían ser más útiles.",
+        "fr": "Pour les étudiants, les livres peuvent être plus utiles.",
+        "de": "Für Studierende könnten Bücher nützlicher sein.",
+        "zh-Hant": "對學生來說，書籍可能更有用。",
+        "ja": "学生にとっては、本のほうが役に立つかもしれません。",
+        "ko": "학생들에게는 책이 더 유용할 수도 있어요.",
+        "ru": "Для студентов книги могут оказаться полезнее.",
+        "th": "สำหรับนักเรียน หนังสืออาจมีประโยชน์มากกว่า",
+        "tr": "Öğrenciler için kitaplar daha yararlı olabilir."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.944,
       "duration": 2.944,
       "translations": {
-        "zh-Hans": "对于城市居民来说，火车可能更实用。"
+        "ar": "بالنسبة إلى سكان المدن، قد تكون القطارات أكثر عملية.",
+        "it": "Per chi vive in città, i treni potrebbero essere più pratici.",
+        "vi": "Với người sống ở thành phố, tàu hỏa có thể thiết thực hơn.",
+        "id": "Bagi warga kota, kereta mungkin lebih praktis.",
+        "zh-Hans": "对于城市居民来说，火车可能更实用。",
+        "pt-BR": "Para quem mora na cidade, os trens podem ser mais práticos.",
+        "es": "Para quienes viven en la ciudad, los trenes podrían ser más prácticos.",
+        "fr": "Pour les citadins, le train peut être plus pratique.",
+        "de": "Für Stadtbewohner könnte der Zug praktischer sein.",
+        "zh-Hant": "對住在城市的人來說，火車可能更實用。",
+        "ja": "都市に住む人にとっては、電車のほうが実用的かもしれません。",
+        "ko": "도시 거주자에게는 기차가 더 실용적일 수도 있어요.",
+        "ru": "Для жителей города поезд может быть практичнее.",
+        "th": "สำหรับคนเมือง รถไฟอาจสะดวกกว่า",
+        "tr": "Şehirde yaşayanlar için tren daha pratik olabilir."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "我会选择茶，因为它让我放松。"
+        "ar": "سأختار الشاي لأنه يساعدني على الاسترخاء.",
+        "it": "Sceglierei il tè perché mi aiuta a rilassarmi.",
+        "vi": "Tôi sẽ chọn trà vì nó giúp tôi thư giãn.",
+        "id": "Saya akan memilih teh karena membantu saya rileks.",
+        "zh-Hans": "我会选择茶，因为它让我放松。",
+        "pt-BR": "Eu escolheria chá porque ele me ajuda a relaxar.",
+        "es": "Elegiría el té porque me ayuda a relajarme.",
+        "fr": "Je choisirais le thé parce qu'il m'aide à me détendre.",
+        "de": "Ich würde Tee wählen, weil er mir hilft, mich zu entspannen.",
+        "zh-Hant": "我會選茶，因為它能幫助我放鬆。",
+        "ja": "リラックスできるので、私はお茶を選びます。",
+        "ko": "차가 긴장을 푸는 데 도움이 되기 때문에 차를 선택할 거예요.",
+        "ru": "Я бы выбрал чай, потому что он помогает мне расслабиться.",
+        "th": "ฉันจะเลือกชา เพราะชาช่วยให้ฉันผ่อนคลาย",
+        "tr": "Çayı seçerdim çünkü rahatlamama yardımcı oluyor."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "在这种情况下，我会选择火车。"
+        "ar": "في هذا الموقف، سأختار القطار.",
+        "it": "In questa situazione, sceglierei il treno.",
+        "vi": "Trong tình huống này, tôi sẽ chọn tàu hỏa.",
+        "id": "Dalam situasi ini, saya akan memilih kereta.",
+        "zh-Hans": "在这种情况下，我会选择火车。",
+        "pt-BR": "Nessa situação, eu escolheria o trem.",
+        "es": "En esta situación, elegiría el tren.",
+        "fr": "Dans cette situation, je choisirais le train.",
+        "de": "In dieser Situation würde ich den Zug nehmen.",
+        "zh-Hant": "在這種情況下，我會選擇火車。",
+        "ja": "この状況なら、私は電車を選びます。",
+        "ko": "이 상황이라면 저는 기차를 선택할 거예요.",
+        "ru": "В этой ситуации я бы выбрал поезд.",
+        "th": "ในสถานการณ์นี้ ฉันจะเลือกเดินทางด้วยรถไฟ",
+        "tr": "Bu durumda treni tercih ederdim."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我的选择是咖啡，因为它让我保持清醒。"
+        "ar": "اختياري هو القهوة لأنها تساعدني على البقاء مستيقظًا.",
+        "it": "Scelgo il caffè perché mi aiuta a restare sveglio.",
+        "vi": "Tôi chọn cà phê vì nó giúp tôi tỉnh táo.",
+        "id": "Pilihan saya adalah kopi karena membuat saya tetap terjaga.",
+        "zh-Hans": "我的选择是咖啡，因为它让我保持清醒。",
+        "pt-BR": "Minha escolha é o café porque ele me mantém acordado.",
+        "es": "Elijo el café porque me mantiene despierto.",
+        "fr": "Mon choix se porte sur le café parce qu'il m'aide à rester éveillé.",
+        "de": "Ich entscheide mich für Kaffee, weil er mich wach hält.",
+        "zh-Hant": "我選咖啡，因為它能讓我保持清醒。",
+        "ja": "眠気を覚ましてくれるので、私はコーヒーを選びます。",
+        "ko": "커피가 잠을 깨워 주기 때문에 커피를 선택해요.",
+        "ru": "Я выбираю кофе, потому что он помогает мне не заснуть.",
+        "th": "ฉันเลือกกาแฟ เพราะมันช่วยให้ฉันตื่นตัว",
+        "tr": "Tercihim kahve çünkü beni uyanık tutuyor."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "我倾向于寒假，因为它有舒适的感觉。"
+        "ar": "أميل إلى قضاء العطلات في الشتاء لما تمنحه من شعور بالدفء والراحة.",
+        "it": "Preferisco le vacanze invernali per la sensazione di calore e intimità che offrono.",
+        "vi": "Tôi nghiêng về những kỳ nghỉ mùa đông vì cảm giác ấm cúng.",
+        "id": "Saya cenderung memilih liburan musim dingin karena suasananya yang nyaman.",
+        "zh-Hans": "我倾向于寒假，因为它有舒适的感觉。",
+        "pt-BR": "Prefiro as férias de inverno pela sensação aconchegante.",
+        "es": "Me inclino por las vacaciones de invierno por esa sensación acogedora.",
+        "fr": "Je penche pour des vacances d'hiver pour leur ambiance chaleureuse",
+        "de": "Ich tendiere zu einem Winterurlaub, weil ich die gemütliche Atmosphäre mag.",
+        "zh-Hant": "我傾向選擇冬季假期，因為那種氛圍溫馨又舒適。",
+        "ja": "居心地のよい雰囲気が好きなので、冬の休暇に傾きます。",
+        "ko": "아늑한 느낌이 좋아서 겨울 휴가 쪽으로 마음이 기울어요.",
+        "ru": "Я склоняюсь к зимнему отдыху из-за его уютной атмосферы.",
+        "th": "ฉันเอนเอียงไปทางวันหยุดฤดูหนาว เพราะบรรยากาศอบอุ่นสบาย",
+        "tr": "Sıcak ve rahat havası nedeniyle kış tatilini tercih etmeye yakınım."
       }
     }
   ]

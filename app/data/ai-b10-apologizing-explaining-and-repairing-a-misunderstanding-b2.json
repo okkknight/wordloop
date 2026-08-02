@@ -15,7 +15,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "我现在明白我的行为引起了混乱。"
+        "zh-Hans": "我现在明白我的行为引起了混乱。",
+        "ja": "自分の行動で混乱を招いたことが、今はわかりました。",
+        "id": "Sekarang aku sadar bahwa tindakanku menimbulkan kebingungan.",
+        "de": "Jetzt sehe ich, dass mein Verhalten für Verwirrung gesorgt hat.",
+        "fr": "Je comprends maintenant que mes actes ont semé la confusion.",
+      "tr": "Şimdi davranışlarımın kafa karışıklığına yol açtığını anlıyorum.",
+      "th": "ตอนนี้ฉันเข้าใจแล้วว่าการกระทำของฉันทำให้เกิดความสับสน",
+      "zh-Hant": "我現在明白，我的行為造成了困惑。",
+      "ko": "이제야 제 행동이 혼란을 일으켰다는 걸 알겠습니다.",
+      "es": "Ahora veo que mis acciones causaron confusión.",
+      "pt-BR": "Agora percebo que minhas ações causaram confusão.",
+      "it": "Ora mi rendo conto che le mie azioni hanno creato confusione.",
+      "ru": "Теперь я понимаю, что мои действия вызвали путаницу.",
+      "ar": "أدرك الآن أن تصرفاتي تسببت في حدوث ارتباك.",
+      "vi": "Giờ tôi mới nhận ra rằng hành động của mình đã gây ra sự nhầm lẫn."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 4.309,
       "duration": 4.309,
       "translations": {
-        "zh-Hans": "我为误会道歉；这不是我的本意。"
+        "zh-Hans": "我为误会道歉；这不是我的本意。",
+        "ja": "誤解を招いてしまい、申し訳ありません。そんなつもりではありませんでした。",
+        "id": "Aku minta maaf atas kesalahpahaman ini; itu bukan maksudku.",
+        "de": "Ich entschuldige mich für das Missverständnis; das war nicht meine Absicht.",
+        "fr": "Je vous prie de m'excuser pour ce malentendu ; ce n'était pas mon intention.",
+      "tr": "Yanlış anlaşılma için özür dilerim; niyetim bu değildi.",
+      "th": "ขอโทษสำหรับความเข้าใจผิด ฉันไม่ได้ตั้งใจให้เป็นแบบนั้น",
+      "zh-Hant": "很抱歉造成了誤會；那不是我的本意。",
+      "ko": "오해를 드려 죄송합니다. 그런 의도는 아니었습니다.",
+      "es": "Lamento el malentendido; no era mi intención.",
+      "pt-BR": "Peço desculpas pelo mal-entendido; não foi essa a minha intenção.",
+      "it": "Mi scuso per il malinteso; non era mia intenzione.",
+      "ru": "Прошу прощения за недоразумение — я не это имел(а) в виду.",
+      "ar": "أعتذر عن سوء الفهم؛ لم تكن تلك نيتي.",
+      "vi": "Tôi xin lỗi vì sự hiểu lầm này; đó không phải là chủ ý của tôi."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "我承认我的邮件不够清楚。"
+        "zh-Hans": "我承认我的邮件不够清楚。",
+        "ja": "私のメールがわかりにくかったことは認めます。",
+        "id": "Aku mengakui bahwa emailku kurang jelas.",
+        "de": "Ich räume ein, dass meine E-Mail unklar war.",
+        "fr": "Je reconnais que mon e-mail manquait de clarté.",
+      "tr": "E-postamın yeterince açık olmadığını kabul ediyorum.",
+      "th": "ฉันยอมรับว่าอีเมลของฉันเขียนไม่ชัดเจนพอ",
+      "zh-Hant": "我承認我的電子郵件寫得不夠清楚。",
+      "ko": "제 이메일이 명확하지 않았다는 점을 인정합니다.",
+      "es": "Reconozco que mi correo electrónico no fue claro.",
+      "pt-BR": "Reconheço que meu e-mail não foi claro.",
+      "it": "Riconosco che la mia e-mail non era chiara.",
+      "ru": "Признаю, что моё письмо было недостаточно ясным.",
+      "ar": "أقرّ بأن رسالتي الإلكترونية لم تكن واضحة.",
+      "vi": "Tôi thừa nhận rằng email của mình chưa đủ rõ ràng."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "我承认我的解释不够充分。"
+        "zh-Hans": "我承认我的解释不够充分。",
+        "ja": "説明が不十分だったことは認めます。",
+        "id": "Aku mengakui bahwa penjelasanku kurang memadai.",
+        "de": "Ich gebe zu, dass meine Erklärung unzureichend war.",
+        "fr": "Je reconnais que mes explications n'étaient pas suffisantes.",
+      "tr": "Açıklamamın yetersiz kaldığını kabul ediyorum.",
+      "th": "ฉันยอมรับว่าคำอธิบายของฉันยังไม่เพียงพอ",
+      "zh-Hant": "我承認我的說明不夠充分。",
+      "ko": "제 설명이 충분하지 않았다는 점을 인정합니다.",
+      "es": "Admito que mi explicación fue insuficiente.",
+      "pt-BR": "Admito que minha explicação deixou a desejar.",
+      "it": "Ammetto che la mia spiegazione era insufficiente.",
+      "ru": "Признаю, что моё объяснение было недостаточным.",
+      "ar": "أعترف بأن شرحي لم يكن كافيًا.",
+      "vi": "Tôi thừa nhận rằng phần giải thích của mình còn thiếu sót."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "对由此造成的不便，我深感抱歉。"
+        "zh-Hans": "对由此造成的不便，我深感抱歉。",
+        "ja": "ご不便をおかけして、本当に申し訳ありません。",
+        "id": "Aku sungguh minta maaf atas ketidaknyamanan yang ditimbulkan.",
+        "de": "Es tut mir wirklich leid, dass dadurch Unannehmlichkeiten entstanden sind.",
+        "fr": "Je suis sincèrement désolé(e) pour les désagréments occasionnés.",
+      "tr": "Bunun yol açtığı her türlü sıkıntı için gerçekten üzgünüm.",
+      "th": "ฉันเสียใจจริง ๆ สำหรับความไม่สะดวกที่เกิดขึ้น",
+      "zh-Hant": "對因此造成的任何不便，我真的很抱歉。",
+      "ko": "이로 인해 불편을 끼쳐 드려 진심으로 죄송합니다.",
+      "es": "Lamento sinceramente cualquier inconveniente que esto haya causado.",
+      "pt-BR": "Sinto muito por qualquer inconveniente que isso tenha causado.",
+      "it": "Mi dispiace davvero per qualsiasi inconveniente abbia causato.",
+      "ru": "Мне искренне жаль, что это доставило вам неудобства.",
+      "ar": "أنا آسف حقًا على أي إزعاج سبّبه ذلك.",
+      "vi": "Tôi thực sự xin lỗi vì bất kỳ sự bất tiện nào mà việc này đã gây ra."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "让我澄清一下发生的事情，以免产生误解。"
+        "zh-Hans": "让我澄清一下发生的事情，以免产生误解。",
+        "ja": "誤解のないように、何が起きたのか説明させてください。",
+        "id": "Biar tidak ada kebingungan, izinkan aku menjelaskan apa yang terjadi.",
+        "de": "Lass mich erklären, was passiert ist, damit es keine Missverständnisse gibt.",
+        "fr": "Laissez-moi expliquer ce qui s'est passé pour éviter toute confusion.",
+      "tr": "Herhangi bir karışıklık olmaması için ne olduğunu açıklayayım.",
+      "th": "ขอฉันอธิบายว่าเกิดอะไรขึ้น เพื่อจะได้ไม่เกิดความสับสน",
+      "zh-Hant": "讓我說明一下發生了什麼事，以免造成混淆。",
+      "ko": "혼란이 없도록 무슨 일이 있었는지 설명해 드리겠습니다.",
+      "es": "Déjame aclarar lo que pasó para evitar confusiones.",
+      "pt-BR": "Deixe-me esclarecer o que aconteceu para não haver confusão.",
+      "it": "Lasciami chiarire cosa è successo, così non ci saranno confusioni.",
+      "ru": "Позвольте мне объяснить, что произошло, чтобы не было путаницы.",
+      "ar": "دعني أوضح ما حدث حتى لا يكون هناك أي التباس.",
+      "vi": "Để tôi làm rõ chuyện gì đã xảy ra để tránh mọi hiểu lầm."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "对我的疏忽，我感到抱歉。"
+        "zh-Hans": "对我的疏忽，我感到抱歉。",
+        "ja": "私の見落としについて、お詫びします。",
+        "id": "Aku minta maaf atas kelalaianku.",
+        "de": "Es tut mir leid, dass ich das übersehen habe.",
+        "fr": "Je suis désolé(e) pour cet oubli de ma part.",
+      "tr": "Bu konudaki ihmalkârlığım için özür dilerim.",
+      "th": "ขอโทษสำหรับความผิดพลาดที่ฉันมองข้ามไป",
+      "zh-Hant": "對於我的疏忽，我很抱歉。",
+      "ko": "제가 미처 살피지 못한 점에 대해 죄송합니다.",
+      "es": "Lamento el descuido de mi parte.",
+      "pt-BR": "Peço desculpas pelo descuido da minha parte.",
+      "it": "Mi dispiace per la svista da parte mia.",
+      "ru": "Прошу прощения за мою оплошность.",
+      "ar": "أعتذر عن هذا التقصير من جانبي.",
+      "vi": "Tôi xin lỗi vì sơ suất của mình."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "请接受我对混乱的道歉。"
+        "zh-Hans": "请接受我对混乱的道歉。",
+        "ja": "この行き違いについて、どうかお詫びを受け入れてください。",
+        "id": "Mohon terima permintaan maafku atas kekeliruan ini.",
+        "de": "Bitte nimm meine Entschuldigung für dieses Durcheinander an.",
+        "fr": "Veuillez accepter mes excuses pour cette confusion.",
+      "tr": "Lütfen bu karışıklık için özrümü kabul edin.",
+      "th": "โปรดรับคำขอโทษของฉันสำหรับความสับสนครั้งนี้",
+      "zh-Hant": "請接受我對這次混亂的歉意。",
+      "ko": "이번 혼선에 대한 제 사과를 받아 주세요.",
+      "es": "Por favor, acepta mis disculpas por la confusión.",
+      "pt-BR": "Por favor, aceite minhas desculpas por essa confusão.",
+      "it": "La prego di accettare le mie scuse per questa confusione.",
+      "ru": "Пожалуйста, примите мои извинения за эту путаницу.",
+      "ar": "أرجو أن تقبل اعتذاري عن هذا الالتباس.",
+      "vi": "Xin hãy nhận lời xin lỗi của tôi vì sự nhầm lẫn này."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我的本意是帮助，而不是让事情复杂化。"
+        "zh-Hans": "我的本意是帮助，而不是让事情复杂化。",
+        "ja": "ややこしくするつもりではなく、助けようとしていました。",
+        "id": "Niatku adalah membantu, bukan memperumit keadaan.",
+        "de": "Ich wollte helfen und die Sache nicht komplizierter machen.",
+        "fr": "Mon intention était d'aider, pas de compliquer les choses.",
+      "tr": "Niyetim işleri zorlaştırmak değil, yardımcı olmaktı.",
+      "th": "ฉันตั้งใจจะช่วย ไม่ได้ตั้งใจทำให้เรื่องยุ่งยากขึ้น",
+      "zh-Hant": "我的本意是幫忙，不是把事情弄得更複雜。",
+      "ko": "저는 일을 복잡하게 만들려던 게 아니라 도우려고 했습니다.",
+      "es": "Mi intención era ayudar, no complicar las cosas.",
+      "pt-BR": "Eu queria ajudar, não complicar as coisas.",
+      "it": "Volevo aiutare, non complicare le cose.",
+      "ru": "Я хотел(а) помочь, а не усложнить ситуацию.",
+      "ar": "كانت نيتي المساعدة، لا تعقيد الأمور.",
+      "vi": "Tôi định giúp đỡ chứ không muốn làm mọi việc thêm rắc rối."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 4.267,
       "duration": 4.267,
       "translations": {
-        "zh-Hans": "这是我计划解决问题的方法：我会重新发送正确的信息。"
+        "zh-Hans": "这是我计划解决问题的方法：我会重新发送正确的信息。",
+        "ja": "こう解決するつもりです。正しい情報をもう一度お送りします。",
+        "id": "Begini rencanaku untuk memperbaikinya: aku akan mengirim ulang informasi yang benar.",
+        "de": "So möchte ich das in Ordnung bringen: Ich sende die richtigen Informationen noch einmal.",
+        "fr": "Voici comment je compte régler le problème : je renverrai les informations correctes.",
+      "tr": "Bunu nasıl düzelteceğimi açıklayayım: doğru bilgileri yeniden göndereceğim.",
+      "th": "นี่คือแผนแก้ไขของฉัน: ฉันจะส่งข้อมูลที่ถูกต้องให้อีกครั้ง",
+      "zh-Hant": "這是我的補救計畫：我會重新寄送正確的資訊。",
+      "ko": "이렇게 바로잡겠습니다. 정확한 정보를 다시 보내 드리겠습니다.",
+      "es": "Así pienso solucionarlo: volveré a enviar la información correcta.",
+      "pt-BR": "Este é o meu plano para corrigir isso: vou reenviar as informações corretas.",
+      "it": "Ecco come intendo rimediare: invierò di nuovo le informazioni corrette.",
+      "ru": "Вот как я собираюсь это исправить: я повторно отправлю правильную информацию.",
+      "ar": "هذه هي خطتي لإصلاح الأمر: سأعيد إرسال المعلومات الصحيحة.",
+      "vi": "Đây là cách tôi dự định khắc phục: tôi sẽ gửi lại thông tin chính xác."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 4.053,
       "duration": 4.053,
       "translations": {
-        "zh-Hans": "我试图提高效率，但我看到事与愿违。"
+        "zh-Hans": "我试图提高效率，但我看到事与愿违。",
+        "ja": "効率を上げようとしたのですが、逆効果になってしまいました。",
+        "id": "Aku berusaha bekerja lebih efisien, tetapi ternyata malah menjadi bumerang.",
+        "de": "Ich wollte effizient arbeiten, aber jetzt sehe ich, dass es nach hinten losgegangen ist.",
+        "fr": "Je cherchais à être efficace, mais je vois que cela a eu l'effet inverse.",
+      "tr": "Verimli olmaya çalışıyordum ama ters teptiğini görüyorum.",
+      "th": "ฉันพยายามทำให้มีประสิทธิภาพ แต่เห็นแล้วว่ากลับให้ผลตรงกันข้าม",
+      "zh-Hant": "我本來想提高效率，但現在看來反而弄巧成拙了。",
+      "ko": "효율적으로 하려고 했는데, 오히려 역효과가 났다는 걸 알겠습니다.",
+      "es": "Intentaba ser eficiente, pero veo que resultó contraproducente.",
+      "pt-BR": "Eu estava tentando ser eficiente, mas vejo que acabou saindo pela culatra.",
+      "it": "Cercavo di essere efficiente, ma ora vedo che è stato controproducente.",
+      "ru": "Я старался(лась) быть эффективным(ой), но вижу, что это обернулось против меня.",
+      "ar": "كنت أحاول أن أكون أكثر كفاءة، لكنني أرى أن ذلك أتى بنتيجة عكسية.",
+      "vi": "Tôi cố gắng làm cho hiệu quả hơn, nhưng giờ nhận ra việc đó lại phản tác dụng."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "我以为我说得很清楚，但我意识到我没有。"
+        "zh-Hans": "我以为我说得很清楚，但我意识到我没有。",
+        "ja": "明確に伝えたつもりでしたが、そうではなかったと気づきました。",
+        "id": "Kupikir penjelasanku sudah jelas, tetapi kusadari ternyata tidak.",
+        "de": "Ich dachte, ich hätte mich klar ausgedrückt, aber mir ist klar geworden, dass das nicht so war.",
+        "fr": "Je pensais avoir été clair(e), mais je me rends compte que ce n'était pas le cas.",
+      "tr": "Açık konuştuğumu sanıyordum ama öyle olmadığını fark ettim.",
+      "th": "ฉันคิดว่าพูดได้ชัดเจนแล้ว แต่เพิ่งรู้ว่าจริง ๆ ยังไม่ชัดเจน",
+      "zh-Hant": "我以為自己說得很清楚，但我發現其實並不是。",
+      "ko": "분명하게 말하고 있다고 생각했지만, 그렇지 않았다는 걸 깨달았습니다.",
+      "es": "Pensaba que había sido claro, pero me doy cuenta de que no fue así.",
+      "pt-BR": "Achei que tinha sido claro, mas percebo que não fui.",
+      "it": "Pensavo di essere stato chiaro, ma mi rendo conto che non è così.",
+      "ru": "Я думал(а), что выразился(лась) ясно, но понимаю, что это не так.",
+      "ar": "ظننت أنني كنت واضحًا، لكنني أدرك الآن أنني لم أكن كذلك.",
+      "vi": "Tôi cứ nghĩ mình đã nói rõ, nhưng giờ mới nhận ra là chưa."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "让我们确保接下来我们达成一致。"
+        "zh-Hans": "让我们确保接下来我们达成一致。",
+        "ja": "これからは認識をそろえて進められるようにしましょう。",
+        "id": "Mari pastikan kita memiliki pemahaman yang sama ke depannya.",
+        "de": "Lass uns sicherstellen, dass wir künftig auf derselben Seite stehen.",
+        "fr": "Veillons à être sur la même longueur d'onde pour la suite.",
+      "tr": "Bundan sonra aynı noktada olduğumuzdan emin olalım.",
+      "th": "ต่อจากนี้เรามาทำความเข้าใจให้ตรงกันเถอะ",
+      "zh-Hant": "接下來，讓我們確認彼此的理解一致。",
+      "ko": "앞으로는 서로 같은 내용을 이해하고 있는지 확인합시다.",
+      "es": "Asegurémonos de estar de acuerdo de aquí en adelante.",
+      "pt-BR": "Vamos garantir que estamos alinhados daqui para frente.",
+      "it": "Assicuriamoci di essere sulla stessa lunghezza d'onda d'ora in poi.",
+      "ru": "Давайте впредь убедимся, что мы одинаково понимаем ситуацию.",
+      "ar": "لنتأكد من أننا متفقون على الأمر من الآن فصاعدًا.",
+      "vi": "Từ giờ trở đi, hãy đảm bảo rằng chúng ta hiểu nhau."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "我理解这对你的影响，我会努力纠正。"
+        "zh-Hans": "我理解这对你的影响，我会努力纠正。",
+        "ja": "あなたにどんな影響があったか理解しています。きちんと対応します。",
+        "id": "Aku memahami dampaknya terhadapmu dan berkomitmen untuk memperbaikinya.",
+        "de": "Ich verstehe, wie dich das betroffen hat, und werde alles wiedergutmachen.",
+        "fr": "Je comprends les conséquences pour vous et je m'engage à arranger les choses.",
+      "tr": "Bunun seni nasıl etkilediğini anlıyorum ve telafi etmek için elimden geleni yapacağım.",
+      "th": "ฉันเข้าใจว่าสิ่งนี้ส่งผลต่อคุณอย่างไร และฉันจะทำทุกอย่างเพื่อแก้ไขให้ถูกต้อง",
+      "zh-Hant": "我了解這對你造成的影響，也會努力把事情處理好。",
+      "ko": "이 일이 당신에게 어떤 영향을 미쳤는지 이해하며, 바로잡기 위해 최선을 다하겠습니다.",
+      "es": "Entiendo cómo te afectó esto y me comprometo a solucionarlo.",
+      "pt-BR": "Entendo como isso afetou você e vou me empenhar para corrigir a situação.",
+      "it": "Capisco quanto questo ti abbia toccato e mi impegno a rimediare.",
+      "ru": "Я понимаю, как это на вас повлияло, и намерен(а) всё исправить.",
+      "ar": "أفهم كيف أثّر ذلك عليك، وأنا ملتزم بإصلاح الأمر.",
+      "vi": "Tôi hiểu việc này đã ảnh hưởng đến bạn như thế nào và cam kết sẽ khắc phục."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "为了澄清问题，我会提供详细的解释。"
+        "zh-Hans": "为了澄清问题，我会提供详细的解释。",
+        "ja": "誤解を解くために、詳しく説明します。",
+        "id": "Untuk meluruskan semuanya, aku akan memberikan penjelasan terperinci.",
+        "de": "Um alles zu klären, werde ich eine ausführliche Erklärung geben.",
+        "fr": "Pour dissiper tout malentendu, je vais fournir des explications détaillées.",
+      "tr": "Her şeyi açıklığa kavuşturmak için ayrıntılı bir açıklama sunacağım.",
+      "th": "เพื่อชี้แจงเรื่องทั้งหมด ฉันจะอธิบายรายละเอียดให้ชัดเจน",
+      "zh-Hant": "為了釐清事情，我會提供詳細說明。",
+      "ko": "혼란을 풀기 위해 자세히 설명하겠습니다.",
+      "es": "Para aclarar las cosas, daré una explicación detallada.",
+      "pt-BR": "Para esclarecer tudo, vou dar uma explicação detalhada.",
+      "it": "Per chiarire la situazione, fornirò una spiegazione dettagliata.",
+      "ru": "Чтобы прояснить ситуацию, я дам подробное объяснение.",
+      "ar": "لتوضيح الأمور، سأقدّم شرحًا مفصلًا.",
+      "vi": "Để làm rõ mọi chuyện, tôi sẽ giải thích chi tiết."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "让我们安排一次会议来讨论如何继续。"
+        "zh-Hans": "让我们安排一次会议来讨论如何继续。",
+        "ja": "今後の進め方について話し合うために、会議を設定しましょう。",
+        "id": "Mari kita atur pertemuan untuk membahas langkah selanjutnya.",
+        "de": "Vereinbaren wir ein Treffen, um zu besprechen, wie es weitergeht.",
+        "fr": "Organisons une réunion pour discuter de la suite.",
+      "tr": "İlerlemek için nasıl devam edeceğimizi konuşacağımız bir toplantı ayarlayalım.",
+      "th": "เรานัดประชุมเพื่อคุยกันว่าจะเดินหน้าต่ออย่างไรกันเถอะ",
+      "zh-Hant": "我們安排一場會議，討論接下來該如何進行吧。",
+      "ko": "앞으로 어떻게 나아갈지 논의할 회의를 잡읍시다.",
+      "es": "Organicemos una reunión para hablar de cómo seguir adelante.",
+      "pt-BR": "Vamos marcar uma reunião para discutir como seguir em frente.",
+      "it": "Fissiamo una riunione per discutere di come procedere.",
+      "ru": "Давайте организуем встречу и обсудим, как двигаться дальше.",
+      "ar": "لنرتب اجتماعًا لمناقشة كيفية المضي قدمًا.",
+      "vi": "Hãy sắp xếp một cuộc họp để bàn về cách chúng ta tiếp tục."
       }
     }
   ]

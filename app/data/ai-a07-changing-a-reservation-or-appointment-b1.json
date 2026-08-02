@@ -15,7 +15,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "我有一个晚上七点的晚餐预订。"
+        "zh-Hans": "我有一个晚上七点的晚餐预订。",
+        "zh-Hant": "我有一個晚上七點的晚餐預訂。",
+        "es": "Tengo una reserva para cenar a las siete de la tarde.",
+        "de": "Ich habe um 19 Uhr einen Tisch zum Abendessen reserviert.",
+      "ru": "У меня забронирован столик на ужин в семь вечера.",
+      "th": "ฉันมีจองโต๊ะอาหารเย็นไว้ตอนหนึ่งทุ่ม",
+      "ko": "저녁 7시에 예약해 두었습니다.",
+      "ja": "午後7時に夕食の予約をしています。",
+      "pt-BR": "Tenho uma reserva para jantar às 19h.",
+      "fr": "J'ai une réservation pour dîner à 19 heures.",
+      "it": "Ho una prenotazione per cena alle 19.",
+      "ar": "لدي حجز للعشاء في الساعة السابعة مساءً.",
+      "id": "Saya punya reservasi makan malam pukul 19.00.",
+      "vi": "Tôi có đặt bàn ăn tối lúc 7 giờ.",
+      "tr": "Saat 19.00 için akşam yemeği rezervasyonum var."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "我需要更改我的晚餐预订。"
+        "zh-Hans": "我需要更改我的晚餐预订。",
+        "zh-Hant": "我需要更改我的晚餐預訂。",
+        "es": "Necesito cambiar mi reserva para la cena.",
+        "de": "Ich muss meine Tischreservierung zum Abendessen ändern.",
+      "ru": "Мне нужно изменить бронирование ужина.",
+      "th": "ฉันต้องการเปลี่ยนเวลาจองอาหารเย็น",
+      "ko": "저녁 식사 예약을 변경하고 싶습니다.",
+      "ja": "夕食の予約を変更したいです。",
+      "pt-BR": "Preciso alterar minha reserva para o jantar.",
+      "fr": "Je dois modifier ma réservation pour le dîner.",
+      "it": "Devo modificare la mia prenotazione per cena.",
+      "ar": "أحتاج إلى تغيير حجز العشاء.",
+      "id": "Saya perlu mengubah reservasi makan malam saya.",
+      "vi": "Tôi cần thay đổi đặt bàn ăn tối.",
+      "tr": "Akşam yemeği rezervasyonumu değiştirmem gerekiyor."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "预订是在史密斯的名字下。"
+        "zh-Hans": "预订是在史密斯的名字下。",
+        "zh-Hant": "預訂是用史密斯的名字登記的。",
+        "es": "La reserva está a nombre de Smith.",
+        "de": "Die Reservierung läuft auf den Namen Smith.",
+      "ru": "Бронирование оформлено на имя Смит.",
+      "th": "การจองอยู่ในชื่อสมิธ",
+      "ko": "스미스라는 이름으로 예약되어 있습니다.",
+      "ja": "スミスの名前で予約しています。",
+      "pt-BR": "A reserva está em nome de Smith.",
+      "fr": "La réservation est au nom de Smith.",
+      "it": "La prenotazione è a nome Smith.",
+      "ar": "الحجز باسم سميث.",
+      "id": "Reservasinya atas nama Smith.",
+      "vi": "Đặt bàn đứng tên Smith.",
+      "tr": "Rezervasyon Smith adına yapılmış."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.712,
       "duration": 3.712,
       "translations": {
-        "zh-Hans": "我在你们餐厅预订了一张四人桌。"
+        "zh-Hans": "我在你们餐厅预订了一张四人桌。",
+        "zh-Hant": "我在你們餐廳訂了一張四人桌。",
+        "es": "Reservé una mesa para cuatro personas en su restaurante.",
+        "de": "Ich habe in Ihrem Restaurant einen Tisch für vier Personen reserviert.",
+      "ru": "У вас в ресторане у меня забронирован столик на четверых.",
+      "th": "ฉันจองโต๊ะสำหรับสี่คนไว้ที่ร้านอาหารของคุณ",
+      "ko": "식당에 4인용 테이블을 예약했습니다.",
+      "ja": "そちらのレストランで4名のテーブルを予約しました。",
+      "pt-BR": "Reservei uma mesa para quatro pessoas no restaurante de vocês.",
+      "fr": "J'ai réservé une table pour quatre personnes dans votre restaurant.",
+      "it": "Ho prenotato un tavolo per quattro persone nel vostro ristorante.",
+      "ar": "حجزت طاولة لأربعة أشخاص في مطعمكم.",
+      "id": "Saya memesan meja untuk empat orang di restoran Anda.",
+      "vi": "Tôi đã đặt bàn cho bốn người tại nhà hàng của bạn.",
+      "tr": "Restoranınızda dört kişilik bir masa ayırttım."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.944,
       "duration": 2.944,
       "translations": {
-        "zh-Hans": "我们可以把预订改到晚上八点吗？"
+        "zh-Hans": "我们可以把预订改到晚上八点吗？",
+        "zh-Hant": "我們可以把預訂改到晚上八點嗎？",
+        "es": "¿Podríamos cambiar la reserva a las ocho de la tarde?",
+        "de": "Könnten wir die Reservierung auf 20 Uhr verschieben?",
+      "ru": "Не могли бы мы перенести бронирование на восемь вечера?",
+      "th": "เราเปลี่ยนเวลาจองเป็นสองทุ่มได้ไหม",
+      "ko": "예약을 저녁 8시로 변경할 수 있을까요?",
+      "ja": "予約を午後8時に変更できますか。",
+      "pt-BR": "Podemos alterar a reserva para as 20h?",
+      "fr": "Pourrions-nous déplacer la réservation à 20 heures ?",
+      "it": "Potremmo spostare la prenotazione alle 20?",
+      "ar": "هل يمكننا تغيير الحجز إلى الساعة الثامنة مساءً؟",
+      "id": "Bisakah reservasinya diubah menjadi pukul 20.00?",
+      "vi": "Chúng ta có thể đổi giờ đặt bàn sang 8 giờ tối không?",
+      "tr": "Rezervasyonu saat 20.00'ye alabilir miyiz?"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "我们可以改到下周吗？"
+        "zh-Hans": "我们可以改到下周吗？",
+        "zh-Hant": "我們可以改到下週嗎？",
+        "es": "¿Podemos cambiarla para la próxima semana?",
+        "de": "Können wir den Termin auf nächste Woche verschieben?",
+      "ru": "Можем перенести его на следующую неделю?",
+      "th": "เราเลื่อนไปเป็นสัปดาห์หน้าได้ไหม",
+      "ko": "다음 주로 일정을 변경할 수 있을까요?",
+      "ja": "来週に変更できますか。",
+      "pt-BR": "Podemos remarcar para a próxima semana?",
+      "fr": "Pouvons-nous reporter à la semaine prochaine ?",
+      "it": "Possiamo spostare l'appuntamento alla prossima settimana?",
+      "ar": "هل يمكننا إعادة جدولة الموعد للأسبوع المقبل؟",
+      "id": "Bisakah kita menjadwalkannya ulang untuk minggu depan?",
+      "vi": "Chúng ta có thể dời sang tuần sau không?",
+      "tr": "Gelecek haftaya erteleyebilir miyiz?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我想换一个不同的服务。"
+        "zh-Hans": "我想换一个不同的服务。",
+        "zh-Hant": "我想改訂其他服務。",
+        "es": "Me gustaría cambiar a otro servicio.",
+        "de": "Ich würde gern auf eine andere Dienstleistung wechseln.",
+      "ru": "Я хотел(а) бы воспользоваться другой услугой.",
+      "th": "ฉันอยากเปลี่ยนไปใช้บริการอื่น",
+      "ko": "다른 서비스로 변경하고 싶습니다.",
+      "ja": "別のサービスに変更したいです。",
+      "pt-BR": "Gostaria de trocar para um serviço diferente.",
+      "fr": "J'aimerais passer à un autre service.",
+      "it": "Vorrei passare a un servizio diverso.",
+      "ar": "أود الانتقال إلى خدمة مختلفة.",
+      "id": "Saya ingin beralih ke layanan yang berbeda.",
+      "vi": "Tôi muốn chuyển sang một dịch vụ khác.",
+      "tr": "Farklı bir hizmete geçmek istiyorum."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我们可以把日期改到15号吗？"
+        "zh-Hans": "我们可以把日期改到15号吗？",
+        "zh-Hant": "我們可以把日期改到十五號嗎？",
+        "es": "¿Podemos cambiar la fecha al día 15?",
+        "de": "Können wir das Datum auf den 15. ändern?",
+      "ru": "Можем изменить дату на 15-е число?",
+      "th": "เราเปลี่ยนวันที่เป็นวันที่ 15 ได้ไหม",
+      "ko": "날짜를 15일로 변경할 수 있을까요?",
+      "ja": "日付を15日に変更できますか。",
+      "pt-BR": "Podemos mudar a data para o dia 15?",
+      "fr": "Pouvons-nous changer la date pour le 15 ?",
+      "it": "Possiamo spostare la data al 15?",
+      "ar": "هل يمكننا تغيير التاريخ إلى يوم 15؟",
+      "id": "Bisakah tanggalnya diubah menjadi tanggal 15?",
+      "vi": "Chúng ta có thể đổi ngày sang ngày 15 không?",
+      "tr": "Tarihi 15'ine değiştirebilir miyiz?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "我和原来的时间有冲突。"
+        "zh-Hans": "我和原来的时间有冲突。",
+        "zh-Hant": "我原本的時間有衝突。",
+        "es": "Tengo un conflicto con el horario original.",
+        "de": "Ich habe zum ursprünglich vereinbarten Zeitpunkt einen Terminkonflikt.",
+      "ru": "Первоначальное время мне не подходит из-за другого дела.",
+      "th": "เวลาที่จองไว้เดิมไม่สะดวกสำหรับฉัน",
+      "ko": "원래 예약한 시간에는 사정이 있습니다.",
+      "ja": "元の時間は都合が悪くなってしまいました。",
+      "pt-BR": "Tive um conflito com o horário original.",
+      "fr": "J'ai un empêchement à l'heure initialement prévue.",
+      "it": "Ho un impegno in conflitto con l'orario originale.",
+      "ar": "لدي تعارض مع الموعد الأصلي.",
+      "id": "Saya ada keperluan lain yang bertabrakan dengan waktu semula.",
+      "vi": "Tôi có việc trùng với thời gian ban đầu.",
+      "tr": "İlk saatle çakışan başka bir işim var."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "更改预订需要收费吗？"
+        "zh-Hans": "更改预订需要收费吗？",
+        "zh-Hant": "更改預訂需要收費嗎？",
+        "es": "¿Hay algún cargo por cambiar la reserva?",
+        "de": "Fällt für die Änderung der Reservierung eine Gebühr an?",
+      "ru": "За изменение бронирования взимается плата?",
+      "th": "มีค่าธรรมเนียมสำหรับการเปลี่ยนการจองไหม",
+      "ko": "예약을 변경하는 데 수수료가 있나요?",
+      "ja": "予約の変更には料金がかかりますか。",
+      "pt-BR": "Há alguma taxa para alterar a reserva?",
+      "fr": "Y a-t-il des frais pour modifier la réservation ?",
+      "it": "C'è un costo per modificare la prenotazione?",
+      "ar": "هل توجد رسوم لتغيير الحجز؟",
+      "id": "Apakah ada biaya untuk mengubah reservasi?",
+      "vi": "Thay đổi đặt chỗ có mất phí không?",
+      "tr": "Rezervasyonu değiştirmenin bir ücreti var mı?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "我需要调整，因为有个工作会议。"
+        "zh-Hans": "我需要调整，因为有个工作会议。",
+        "zh-Hant": "我需要調整時間，因為有工作會議。",
+        "es": "Necesito hacer un cambio porque tengo una reunión de trabajo.",
+        "de": "Ich muss den Termin wegen eines Arbeitsmeetings verschieben.",
+      "ru": "Мне нужно изменить время из-за рабочей встречи.",
+      "th": "ฉันต้องปรับเวลาเพราะมีประชุมงาน",
+      "ko": "업무 회의 때문에 시간을 조정해야 합니다.",
+      "ja": "仕事の会議があるため、時間を調整したいです。",
+      "pt-BR": "Preciso ajustar o horário por causa de uma reunião de trabalho.",
+      "fr": "Je dois modifier l'horaire à cause d'une réunion de travail.",
+      "it": "Devo modificare l'orario a causa di una riunione di lavoro.",
+      "ar": "أحتاج إلى تعديل الموعد بسبب اجتماع عمل.",
+      "id": "Saya perlu menyesuaikan waktunya karena ada rapat kerja.",
+      "vi": "Tôi cần điều chỉnh vì có cuộc họp công việc.",
+      "tr": "Bir iş toplantısı nedeniyle saati değiştirmem gerekiyor."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我只能在下午五点以后到。"
+        "zh-Hans": "我只能在下午五点以后到。",
+        "zh-Hant": "我只能在下午五點之後到。",
+        "es": "Solo puedo ir después de las cinco de la tarde.",
+        "de": "Ich kann erst nach 17 Uhr kommen.",
+      "ru": "Я могу прийти только после пяти вечера.",
+      "th": "ฉันสะดวกได้หลังห้าโมงเย็นเท่านั้น",
+      "ko": "저는 오후 5시 이후에만 가능합니다.",
+      "ja": "午後5時以降でないと行けません。",
+      "pt-BR": "Só posso ir depois das 17h.",
+      "fr": "Je ne peux venir qu'après 17 heures.",
+      "it": "Posso venire solo dopo le 17.",
+      "ar": "لا أستطيع الحضور إلا بعد الساعة الخامسة مساءً.",
+      "id": "Saya hanya bisa datang setelah pukul 17.00.",
+      "vi": "Tôi chỉ có thể đến sau 5 giờ chiều.",
+      "tr": "Sadece saat 17.00'den sonra gelebilirim."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "新的预订确认在晚上八点。"
+        "zh-Hans": "新的预订确认在晚上八点。",
+        "zh-Hant": "新的預訂已確認為晚上八點。",
+        "es": "La nueva reserva queda confirmada para las ocho de la tarde.",
+        "de": "Die neue Reservierung ist für 20 Uhr bestätigt.",
+      "ru": "Новое бронирование подтверждено на восемь вечера.",
+      "th": "ยืนยันการจองใหม่เป็นเวลาสองทุ่มแล้ว",
+      "ko": "새 예약은 저녁 8시로 확정되었습니다.",
+      "ja": "新しい予約は午後8時で確定しています。",
+      "pt-BR": "A nova reserva está confirmada para as 20h.",
+      "fr": "La nouvelle réservation est confirmée pour 20 heures.",
+      "it": "La nuova prenotazione è confermata per le 20.",
+      "ar": "تم تأكيد الحجز الجديد في الساعة الثامنة مساءً.",
+      "id": "Reservasi baru sudah dikonfirmasi untuk pukul 20.00.",
+      "vi": "Đặt chỗ mới đã được xác nhận vào lúc 8 giờ tối.",
+      "tr": "Yeni rezervasyon saat 20.00 için onaylandı."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "你能和我确认一下新时间吗？"
+        "zh-Hans": "你能和我确认一下新时间吗？",
+        "zh-Hant": "你可以跟我確認新的時間嗎？",
+        "es": "¿Podría confirmarme el nuevo horario?",
+        "de": "Könnten Sie die neue Uhrzeit bitte mit mir bestätigen?",
+      "ru": "Не могли бы вы подтвердить мне новое время?",
+      "th": "ช่วยยืนยันเวลาใหม่กับฉันได้ไหม",
+      "ko": "새 시간을 저에게 확인해 주시겠어요?",
+      "ja": "新しい時間を確認していただけますか。",
+      "pt-BR": "Você poderia confirmar o novo horário comigo?",
+      "fr": "Pourriez-vous confirmer le nouvel horaire avec moi ?",
+      "it": "Potrebbe confermare con me il nuovo orario?",
+      "ar": "هل يمكنك تأكيد الوقت الجديد معي؟",
+      "id": "Bisakah Anda mengonfirmasi waktu yang baru bersama saya?",
+      "vi": "Bạn có thể xác nhận lại thời gian mới với tôi không?",
+      "tr": "Yeni saati benimle teyit eder misiniz?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.523,
       "duration": 4.523,
       "translations": {
-        "zh-Hans": "更新的细节都已安排好，谢谢。"
+        "zh-Hans": "更新的细节都已安排好，谢谢。",
+        "zh-Hant": "更新後的詳細資訊都確認好了，謝謝。",
+        "es": "Ya está todo listo con los cambios, gracias.",
+        "de": "Die aktualisierten Angaben sind alle erledigt, vielen Dank.",
+      "ru": "Все обновлённые данные верны, спасибо.",
+      "th": "รายละเอียดที่อัปเดตเรียบร้อยแล้ว ขอบคุณ",
+      "ko": "변경된 세부 사항이 모두 정리되었습니다. 감사합니다.",
+      "ja": "変更後の詳細はすべて整いました。ありがとうございます。",
+      "pt-BR": "Todos os detalhes da alteração estão definidos, obrigado.",
+      "fr": "Tout est réglé pour les nouvelles modalités, merci.",
+      "it": "I dettagli aggiornati sono tutti sistemati, grazie.",
+      "ar": "تم ترتيب جميع التفاصيل المحدثة، شكرًا لك.",
+      "id": "Semua detail yang diperbarui sudah beres, terima kasih.",
+      "vi": "Mọi thông tin cập nhật đã được sắp xếp xong, cảm ơn bạn.",
+      "tr": "Güncellenen ayrıntıların hepsi tamam, teşekkür ederim."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "谢谢你帮我做出更改。"
+        "zh-Hans": "谢谢你帮我做出更改。",
+        "zh-Hant": "謝謝你幫我處理這些變更。",
+        "es": "Gracias por ayudarme con los cambios.",
+        "de": "Vielen Dank, dass Sie mir bei den Änderungen geholfen haben.",
+      "ru": "Спасибо, что помогли мне всё изменить.",
+      "th": "ขอบคุณที่ช่วยดำเนินการเปลี่ยนแปลงให้",
+      "ko": "변경을 도와주셔서 감사합니다.",
+      "ja": "変更を手伝ってくださってありがとうございます。",
+      "pt-BR": "Obrigado por me ajudar com as alterações.",
+      "fr": "Merci de m'avoir aidé à effectuer ces changements.",
+      "it": "Grazie per avermi aiutato con le modifiche.",
+      "ar": "شكرًا لمساعدتي في إجراء التغييرات.",
+      "id": "Terima kasih sudah membantu saya melakukan perubahan.",
+      "vi": "Cảm ơn bạn đã giúp tôi thay đổi.",
+      "tr": "Değişiklikler konusunda bana yardımcı olduğunuz için teşekkür ederim."
       }
     }
   ]

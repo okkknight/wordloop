@@ -15,7 +15,21 @@
       "end": 1.92,
       "duration": 1.92,
       "translations": {
-        "zh-Hans": "我同意你的看法。"
+        "ar": "أتفق معك.",
+        "vi": "Tôi đồng ý với bạn.",
+        "id": "Saya setuju dengan Anda.",
+        "zh-Hans": "我同意你的看法。",
+        "es": "Estoy de acuerdo contigo.",
+        "fr": "Je suis d'accord avec vous.",
+        "de": "Ich stimme dir zu.",
+        "it": "Sono d'accordo con te."
+        ,"pt-BR": "Concordo com você.",
+        "zh-Hant": "我同意你的看法。",
+        "ja": "あなたの意見に賛成です。",
+        "ko": "당신의 의견에 동의해요.",
+        "ru": "Я с вами согласен.",
+        "th": "ฉันเห็นด้วยกับคุณ",
+        "tr": "Size katılıyorum."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.219,
       "duration": 2.219,
       "translations": {
-        "zh-Hans": "在我看来，这是个好主意。"
+        "ar": "في رأيي، إنها فكرة جيدة.",
+        "vi": "Theo tôi, đó là một ý hay.",
+        "id": "Menurut saya, itu ide yang bagus.",
+        "zh-Hans": "在我看来，这是个好主意。",
+        "es": "En mi opinión, es una buena idea.",
+        "fr": "À mon avis, c'est une bonne idée.",
+        "de": "Meiner Meinung nach ist das eine gute Idee.",
+        "it": "Secondo me è una buona idea."
+        ,"pt-BR": "Na minha opinião, é uma boa ideia.",
+        "zh-Hant": "在我看來，這是個好主意。",
+        "ja": "私の意見では、いい考えだと思います。",
+        "ko": "제 생각에는 좋은 생각이에요.",
+        "ru": "По-моему, это хорошая идея.",
+        "th": "ในความคิดของฉัน นี่เป็นความคิดที่ดี",
+        "tr": "Bence bu iyi bir fikir."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 1.664,
       "duration": 1.664,
       "translations": {
-        "zh-Hans": "这就是我的看法。"
+        "ar": "هكذا أرى الأمر.",
+        "vi": "Tôi nhìn nhận vấn đề như vậy.",
+        "id": "Begitulah cara saya melihatnya.",
+        "zh-Hans": "这就是我的看法。",
+        "es": "Así es como lo veo.",
+        "fr": "C'est ainsi que je vois les choses.",
+        "de": "So sehe ich das.",
+        "it": "È così che la vedo."
+        ,"pt-BR": "É assim que eu vejo a situação.",
+        "zh-Hant": "這就是我的看法。",
+        "ja": "私はそのように考えています。",
+        "ko": "저는 그렇게 생각해요.",
+        "ru": "Я вижу это именно так.",
+        "th": "ฉันมองเรื่องนี้แบบนั้น",
+        "tr": "Ben meseleyi böyle görüyorum."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 2.304,
       "duration": 2.304,
       "translations": {
-        "zh-Hans": "我认为这很重要。"
+        "ar": "أعتقد أن هذا مهم.",
+        "vi": "Tôi tin rằng điều đó rất quan trọng.",
+        "id": "Saya percaya hal itu penting.",
+        "zh-Hans": "我认为这很重要。",
+        "es": "Creo que es importante.",
+        "fr": "Je pense que c'est important.",
+        "de": "Ich halte das für wichtig.",
+        "it": "Credo che sia importante."
+        ,"pt-BR": "Acredito que isso seja importante.",
+        "zh-Hant": "我認為這很重要。",
+        "ja": "それは重要なことだと思います。",
+        "ko": "그건 중요하다고 생각해요.",
+        "ru": "Я считаю, что это важно.",
+        "th": "ฉันเชื่อว่านี่เป็นเรื่องสำคัญ",
+        "tr": "Bunun önemli olduğuna inanıyorum."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "这是因为它节省时间。"
+        "ar": "لأنه يوفر الوقت.",
+        "vi": "Lý do là nó giúp tiết kiệm thời gian.",
+        "id": "Itu karena hal tersebut menghemat waktu.",
+        "zh-Hans": "这是因为它节省时间。",
+        "es": "Es porque ahorra tiempo.",
+        "fr": "C'est parce que cela fait gagner du temps.",
+        "de": "Der Grund ist, dass es Zeit spart.",
+        "it": "È perché fa risparmiare tempo."
+        ,"pt-BR": "É porque isso economiza tempo.",
+        "zh-Hant": "這是因為它能節省時間。",
+        "ja": "時間を節約できるからです。",
+        "ko": "시간을 절약해 주기 때문이에요.",
+        "ru": "Потому что это экономит время.",
+        "th": "เพราะช่วยประหยัดเวลา",
+        "tr": "Çünkü zamandan tasarruf sağlıyor."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "主要原因是它很方便。"
+        "ar": "السبب الرئيسي هو أنه مريح.",
+        "vi": "Lý do chính là nó tiện lợi.",
+        "id": "Alasan utamanya adalah karena itu praktis.",
+        "zh-Hans": "主要原因是它很方便。",
+        "es": "La razón principal es que resulta práctico.",
+        "fr": "La raison principale, c'est que c'est pratique.",
+        "de": "Der Hauptgrund ist, dass es praktisch ist.",
+        "it": "Il motivo principale è che è pratico."
+        ,"pt-BR": "O principal motivo é que é prático.",
+        "zh-Hant": "主要原因是它很方便。",
+        "ja": "主な理由は、便利だからです。",
+        "ko": "가장 큰 이유는 편리하기 때문이에요.",
+        "ru": "Главная причина в том, что это удобно.",
+        "th": "เหตุผลหลักคือมันสะดวก",
+        "tr": "Asıl nedeni kullanışlı olması."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "另一个原因是它可靠。"
+        "ar": "ومن الأسباب الأخرى أنه موثوق.",
+        "vi": "Một lý do khác là nó đáng tin cậy.",
+        "id": "Alasan lainnya adalah karena itu dapat diandalkan.",
+        "zh-Hans": "另一个原因是它可靠。",
+        "es": "Otra razón es que es fiable.",
+        "fr": "Une autre raison, c'est que c'est fiable.",
+        "de": "Ein weiterer Grund ist, dass es zuverlässig ist.",
+        "it": "Un altro motivo è che è affidabile."
+        ,"pt-BR": "Outro motivo é que é confiável.",
+        "zh-Hant": "另一個原因是它很可靠。",
+        "ja": "もう一つの理由は、信頼できることです。",
+        "ko": "또 다른 이유는 믿을 만하기 때문이에요.",
+        "ru": "Ещё одна причина — его надёжность.",
+        "th": "อีกเหตุผลหนึ่งคือมันเชื่อถือได้",
+        "tr": "Bir başka nedeni de güvenilir olması."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.005,
       "duration": 2.005,
       "translations": {
-        "zh-Hans": "这主要是因为它的受欢迎程度。"
+        "ar": "ويرجع ذلك أساسًا إلى شعبيته.",
+        "vi": "Điều đó chủ yếu là nhờ sự phổ biến của nó.",
+        "id": "Hal itu terutama disebabkan oleh popularitasnya.",
+        "zh-Hans": "这主要是因为它的受欢迎程度。",
+        "es": "Se debe principalmente a su popularidad.",
+        "fr": "C'est principalement dû à sa popularité.",
+        "de": "Das liegt vor allem an seiner Beliebtheit.",
+        "it": "È soprattutto dovuto alla sua popolarità."
+        ,"pt-BR": "Isso se deve principalmente à sua popularidade.",
+        "zh-Hant": "這主要是因為它很受歡迎。",
+        "ja": "それは主に人気があるからです。",
+        "ko": "주로 인기가 많기 때문이에요.",
+        "ru": "В основном это связано с его популярностью.",
+        "th": "สาเหตุหลักเป็นเพราะมันได้รับความนิยม",
+        "tr": "Bunun başlıca nedeni popüler olması."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "以我朋友为例。"
+        "ar": "خذ صديقي مثالًا على ذلك.",
+        "vi": "Lấy bạn tôi làm ví dụ.",
+        "id": "Sebagai contoh, lihat teman saya.",
+        "zh-Hans": "以我朋友为例。",
+        "es": "Por ejemplo, pensemos en mi amigo.",
+        "fr": "Prenez mon ami comme exemple.",
+        "de": "Nimm meinen Freund als Beispiel.",
+        "it": "Prendi il mio amico come esempio."
+        ,"pt-BR": "Veja meu amigo, por exemplo.",
+        "zh-Hant": "以我的朋友為例。",
+        "ja": "私の友人を例に挙げてみましょう。",
+        "ko": "제 친구를 예로 들어 볼게요.",
+        "ru": "Возьмём моего друга в качестве примера.",
+        "th": "ลองยกเพื่อนของฉันเป็นตัวอย่าง",
+        "tr": "Örnek olarak arkadaşımı ele alalım."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "例如，去年我们成功了。"
+        "ar": "على سبيل المثال، نجحنا العام الماضي.",
+        "vi": "Ví dụ, năm ngoái chúng tôi đã thành công.",
+        "id": "Misalnya, tahun lalu kami berhasil.",
+        "zh-Hans": "例如，去年我们成功了。",
+        "es": "Por ejemplo, el año pasado tuvimos éxito.",
+        "fr": "Par exemple, nous avons réussi l'année dernière.",
+        "de": "Zum Beispiel hatten wir letztes Jahr Erfolg.",
+        "it": "Per esempio, l'anno scorso abbiamo avuto successo."
+        ,"pt-BR": "Por exemplo, tivemos sucesso no ano passado.",
+        "zh-Hant": "例如，我們去年就成功了。",
+        "ja": "例えば、私たちは去年成功しました。",
+        "ko": "예를 들어, 우리는 작년에 성공했어요.",
+        "ru": "Например, в прошлом году мы добились успеха.",
+        "th": "ตัวอย่างเช่น ปีที่แล้วเราประสบความสำเร็จ",
+        "tr": "Örneğin, geçen yıl başarılı olduk."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "就像我们去年夏天旅行时一样。"
+        "ar": "مثلما حدث عندما سافرنا الصيف الماضي.",
+        "vi": "Chẳng hạn như lần chúng tôi đi du lịch vào mùa hè năm ngoái.",
+        "id": "Seperti saat kami bepergian musim panas lalu.",
+        "zh-Hans": "就像我们去年夏天旅行时一样。",
+        "es": "Como cuando viajamos el verano pasado.",
+        "fr": "Comme lorsque nous avons voyagé l'été dernier.",
+        "de": "Zum Beispiel, als wir letzten Sommer verreist sind.",
+        "it": "Come quando abbiamo viaggiato l'estate scorsa."
+        ,"pt-BR": "Como quando viajamos no verão passado.",
+        "zh-Hant": "就像我們去年夏天去旅行時一樣。",
+        "ja": "去年の夏に旅行したときのように。",
+        "ko": "지난여름에 우리가 여행했을 때처럼요.",
+        "ru": "Например, когда мы путешествовали прошлым летом.",
+        "th": "เหมือนตอนที่เราเดินทางเมื่อฤดูร้อนที่แล้ว",
+        "tr": "Geçen yaz seyahat ettiğimiz zamanki gibi."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "还记得上个月的活动吗？"
+        "ar": "هل تتذكر فعالية الشهر الماضي؟",
+        "vi": "Bạn còn nhớ sự kiện tháng trước không?",
+        "id": "Ingat acara bulan lalu?",
+        "zh-Hans": "还记得上个月的活动吗？",
+        "es": "¿Recuerdas el evento del mes pasado?",
+        "fr": "Vous vous souvenez de l'événement du mois dernier ?",
+        "de": "Erinnerst du dich an die Veranstaltung im letzten Monat?",
+        "it": "Ti ricordi dell'evento del mese scorso?"
+        ,"pt-BR": "Você se lembra do evento do mês passado?",
+        "zh-Hant": "你還記得上個月的活動嗎？",
+        "ja": "先月のイベントを覚えていますか。",
+        "ko": "지난달 행사 기억나요?",
+        "ru": "Помните мероприятие в прошлом месяце?",
+        "th": "จำงานเมื่อเดือนได้ไหม",
+        "tr": "Geçen ayki etkinliği hatırlıyor musun?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "这基本上就是我的立场。"
+        "ar": "هذا باختصار موقفي.",
+        "vi": "Về cơ bản, đó là quan điểm của tôi.",
+        "id": "Pada dasarnya, itulah pendirian saya.",
+        "zh-Hans": "这基本上就是我的立场。",
+        "es": "Esa es, básicamente, mi postura.",
+        "fr": "C'est essentiellement ma position.",
+        "de": "Das ist im Grunde meine Position.",
+        "it": "Questa è sostanzialmente la mia posizione."
+        ,"pt-BR": "Essa é, basicamente, a minha posição.",
+        "zh-Hant": "這基本上就是我的立場。",
+        "ja": "それが基本的な私の立場です。",
+        "ko": "그게 기본적으로 제 입장이에요.",
+        "ru": "В целом такова моя позиция.",
+        "th": "โดยพื้นฐานแล้ว นั่นคือจุดยืนของฉัน",
+        "tr": "Benim tutumum temelde bu."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "总之，值得一试。"
+        "ar": "وخلاصة القول، يستحق الأمر التجربة.",
+        "vi": "Tóm lại, rất đáng để thử.",
+        "id": "Singkatnya, itu layak dicoba.",
+        "zh-Hans": "总之，值得一试。",
+        "es": "En resumen, vale la pena intentarlo.",
+        "fr": "En résumé, cela vaut la peine d'essayer.",
+        "de": "Zusammenfassend lässt sich sagen, dass es einen Versuch wert ist.",
+        "it": "In sintesi, vale la pena provarci."
+        ,"pt-BR": "Resumindo, vale a pena tentar.",
+        "zh-Hant": "總之，值得一試。",
+        "ja": "まとめると、試してみる価値があります。",
+        "ko": "요약하면, 시도해 볼 만해요.",
+        "ru": "Подводя итог, попробовать стоит.",
+        "th": "สรุปแล้ว ก็คุ้มค่าที่จะลอง",
+        "tr": "Özetlemek gerekirse, denemeye değer."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "简而言之，我支持这个计划。"
+        "ar": "باختصار، أنا أؤيد الخطة.",
+        "vi": "Nói ngắn gọn, tôi ủng hộ kế hoạch này.",
+        "id": "Singkatnya, saya mendukung rencana itu.",
+        "zh-Hans": "简而言之，我支持这个计划。",
+        "es": "En pocas palabras, apoyo el plan.",
+        "fr": "Bref, je soutiens le projet.",
+        "de": "Kurz gesagt, ich unterstütze den Plan.",
+        "it": "In breve, sostengo il piano."
+        ,"pt-BR": "Em poucas palavras, apoio o plano.",
+        "zh-Hant": "簡單來說，我支持這個計畫。",
+        "ja": "要するに、私はその計画を支持します。",
+        "ko": "간단히 말하면, 저는 그 계획을 지지해요.",
+        "ru": "Короче говоря, я поддерживаю этот план.",
+        "th": "พูดสั้น ๆ คือ ฉันสนับสนุนแผนนี้",
+        "tr": "Kısacası, planı destekliyorum."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "总的来说，我认为这是有益的。"
+        "ar": "بوجه عام، أعتقد أنه مفيد.",
+        "vi": "Nhìn chung, tôi nghĩ điều đó có lợi.",
+        "id": "Secara keseluruhan, saya rasa itu bermanfaat.",
+        "zh-Hans": "总的来说，我认为这是有益的。",
+        "es": "En general, creo que es beneficioso.",
+        "fr": "Dans l'ensemble, je pense que c'est bénéfique",
+        "de": "Insgesamt denke ich, dass es vorteilhaft ist.",
+        "it": "Nel complesso, penso che sia vantaggioso."
+        ,"pt-BR": "No geral, acho que isso é benéfico.",
+        "zh-Hant": "總的來說，我認為這是有益的。",
+        "ja": "全体として、これは有益だと思います。",
+        "ko": "전반적으로 저는 그게 유익하다고 생각해요.",
+        "ru": "В целом я считаю, что это полезно.",
+        "th": "โดยรวมแล้ว ฉันคิดว่านี่เป็นประโยชน์",
+        "tr": "Genel olarak bunun faydalı olduğunu düşünüyorum."
       }
     }
   ]

@@ -15,7 +15,21 @@
       "end": 2.517,
       "duration": 2.517,
       "translations": {
-        "zh-Hans": "我在某种程度上同意你的观点。"
+        "zh-Hans": "我在某种程度上同意你的观点。",
+        "fr": "Je suis d'accord avec vous jusqu'à un certain point.",
+        "ar": "أوافقك الرأي إلى حدّ ما.",
+        "ja": "ある程度までは、あなたに同意します。",
+        "pt-BR": "Concordo com você até certo ponto.",
+        "vi": "Tôi đồng ý với bạn ở một mức độ nhất định.",
+        "zh-Hant": "我在某種程度上同意你的觀點。",
+        "ko": "어느 정도는 당신의 의견에 동의합니다.",
+        "es": "Estoy de acuerdo contigo hasta cierto punto.",
+        "de": "Ich stimme Ihnen bis zu einem gewissen Punkt zu.",
+        "it": "Sono d'accordo con lei fino a un certo punto.",
+        "ru": "Я согласен с вами лишь до определённой степени.",
+        "id": "Saya setuju dengan Anda sampai batas tertentu.",
+        "th": "ผมเห็นด้วยกับคุณในระดับหนึ่ง",
+        "tr": "Bir noktaya kadar size katılıyorum."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.627,
       "duration": 3.627,
       "translations": {
-        "zh-Hans": "我明白你的观点，但还有其他因素需要考虑。"
+        "zh-Hans": "我明白你的观点，但还有其他因素需要考虑。",
+        "fr": "Je comprends votre point de vue, mais il faut tenir compte d'autres facteurs.",
+        "ar": "أفهم وجهة نظرك، لكن هناك عوامل أخرى ينبغي أخذها في الاعتبار.",
+        "ja": "あなたの言いたいことは分かりますが、ほかにも考慮すべき要素があります。",
+        "pt-BR": "Entendo seu ponto, mas há outros fatores a considerar.",
+        "vi": "Tôi hiểu quan điểm của bạn, nhưng còn những yếu tố khác cần cân nhắc.",
+        "zh-Hant": "我明白你的觀點，但還有其他因素需要考量。",
+        "ko": "당신의 요지는 이해하지만, 고려해야 할 다른 요소들도 있습니다.",
+        "es": "Entiendo tu punto, pero hay otros factores que debemos considerar.",
+        "de": "Ich verstehe Ihren Standpunkt, aber es gibt noch andere Faktoren zu berücksichtigen.",
+        "it": "Capisco il suo punto di vista, ma ci sono altri fattori da considerare.",
+        "ru": "Я понимаю вашу точку зрения, но нужно учитывать и другие факторы.",
+        "id": "Saya memahami maksud Anda, tetapi ada faktor lain yang perlu dipertimbangkan.",
+        "th": "ผมเข้าใจประเด็นของคุณ แต่ยังมีปัจจัยอื่นที่ต้องพิจารณา",
+        "tr": "Ne demek istediğinizi anlıyorum, ancak dikkate alınması gereken başka faktörler de var."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.584,
       "duration": 3.584,
       "translations": {
-        "zh-Hans": "你提出了一个很好的论点，尽管这不是全部。"
+        "zh-Hans": "你提出了一个很好的论点，尽管这不是全部。",
+        "fr": "Votre argument est solide, même s'il ne raconte pas toute l'histoire.",
+        "ar": "طرحك مقنع، لكنه لا يروي القصة كاملة.",
+        "ja": "あなたの主張には説得力がありますが、それがすべてではありません。",
+        "pt-BR": "Seu argumento é bom, embora não conte toda a história.",
+        "vi": "Bạn đưa ra một lập luận thuyết phục, dù đó chưa phải là toàn bộ câu chuyện.",
+        "zh-Hant": "你的論點很有說服力，儘管這並不是全部情況。",
+        "ko": "좋은 근거를 제시하셨지만, 그것이 전부를 말해 주는 것은 아닙니다.",
+        "es": "Presentas un buen argumento, aunque no cuenta toda la historia.",
+        "de": "Sie bringen ein gutes Argument vor, auch wenn es nicht die ganze Geschichte erzählt.",
+        "it": "La sua tesi è valida, anche se non racconta tutta la storia.",
+        "ru": "Вы приводите весомые доводы, хотя это ещё не вся картина.",
+        "id": "Argumen Anda kuat, meskipun belum mencakup keseluruhan cerita.",
+        "th": "คุณยกเหตุผลที่ดีมาแย้ง แม้จะยังไม่ใช่เรื่องราวทั้งหมด",
+        "tr": "İyi bir gerekçe sunuyorsunuz, ancak bu hikâyenin tamamı değil."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 4.48,
       "duration": 4.48,
       "translations": {
-        "zh-Hans": "这是一个公平的评估，但并非没有例外。"
+        "zh-Hans": "这是一个公平的评估，但并非没有例外。",
+        "fr": "C'est une évaluation juste, mais elle n'est pas sans exceptions.",
+        "ar": "هذا تقييم منصف، لكنه ليس خاليًا من الاستثناءات.",
+        "ja": "妥当な評価ですが、例外がないわけではありません。",
+        "pt-BR": "É uma avaliação justa, mas há exceções.",
+        "vi": "Đó là một nhận định hợp lý, nhưng vẫn có ngoại lệ.",
+        "zh-Hant": "這是個合理的評估，但並非沒有例外。",
+        "ko": "타당한 평가이지만 예외가 없는 것은 아닙니다.",
+        "es": "Es una valoración razonable, pero no está exenta de excepciones.",
+        "de": "Das ist eine faire Einschätzung, aber es gibt durchaus Ausnahmen.",
+        "it": "È una valutazione corretta, ma non è priva di eccezioni.",
+        "ru": "Это справедливая оценка, но бывают и исключения.",
+        "id": "Itu penilaian yang wajar, tetapi tetap ada pengecualian.",
+        "th": "นั่นเป็นการประเมินที่สมเหตุสมผล แต่ก็ยังมีข้อยกเว้น",
+        "tr": "Bu makul bir değerlendirme, ancak istisnaları da var."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "如果每个人都同意，这个想法就有效。"
+        "zh-Hans": "如果每个人都同意，这个想法就有效。",
+        "fr": "Cette idée peut fonctionner si tout le monde est d'accord.",
+        "ar": "تنجح هذه الفكرة إذا أيدها الجميع.",
+        "ja": "全員が賛成してくれれば、この案はうまくいきます。",
+        "pt-BR": "Essa ideia funciona se todos estiverem de acordo.",
+        "vi": "Ý tưởng này sẽ hiệu quả nếu mọi người đều nhất trí.",
+        "zh-Hant": "如果每個人都支持，這個想法就行得通。",
+        "ko": "모두가 동의한다면 이 아이디어는 효과가 있을 겁니다.",
+        "es": "Esta idea funcionará si todos están de acuerdo.",
+        "de": "Diese Idee funktioniert, wenn alle mitziehen.",
+        "it": "Questa idea può funzionare se tutti sono d'accordo.",
+        "ru": "Эта идея сработает, если все её поддержат.",
+        "id": "Gagasan ini akan berhasil jika semua orang mendukungnya.",
+        "th": "แนวคิดนี้จะใช้ได้ผลหากทุกคนเห็นด้วย",
+        "tr": "Herkes destek verirse bu fikir işe yarar."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "在某种程度上这是正确的，假设条件保持稳定。"
+        "zh-Hans": "在某种程度上这是正确的，假设条件保持稳定。",
+        "fr": "C'est vrai dans une certaine mesure, à condition que les conditions restent stables.",
+        "ar": "هذا صحيح إلى حدّ ما، على افتراض بقاء الظروف مستقرة.",
+        "ja": "条件が安定しているなら、それはある程度正しいです。",
+        "pt-BR": "Isso é verdade até certo ponto, desde que as condições permaneçam estáveis.",
+        "vi": "Điều đó đúng ở một mức độ nhất định, với điều kiện các điều kiện vẫn ổn định.",
+        "zh-Hant": "在條件維持穩定的前提下，這在某種程度上是正確的。",
+        "ko": "조건이 안정적으로 유지된다는 전제하에, 어느 정도는 맞는 말입니다.",
+        "es": "Eso es cierto hasta cierto punto, suponiendo que las condiciones se mantengan estables.",
+        "de": "Das stimmt bis zu einem gewissen Grad, sofern die Bedingungen stabil bleiben.",
+        "it": "È vero fino a un certo punto, supponendo che le condizioni rimangano stabili.",
+        "ru": "Это верно лишь отчасти, если предположить, что условия останутся стабильными.",
+        "id": "Hal itu benar sampai batas tertentu, dengan asumsi kondisinya tetap stabil.",
+        "th": "เรื่องนี้ถูกต้องในระดับหนึ่ง หากสมมติว่าเงื่อนไขยังคงมั่นคง",
+        "tr": "Koşulların istikrarlı kaldığını varsayarsak, bu bir ölçüde doğrudur."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "假设每个人都尽到自己的责任，这可能会奏效。"
+        "zh-Hans": "假设每个人都尽到自己的责任，这可能会奏效。",
+        "fr": "Cela pourrait fonctionner, à condition que chacun fasse sa part.",
+        "ar": "قد ينجح الأمر، على افتراض أن يؤدي كل شخص دوره.",
+        "ja": "全員が自分の役割を果たすなら、うまくいくかもしれません。",
+        "pt-BR": "Pode dar certo, desde que cada um faça a sua parte.",
+        "vi": "Điều đó có thể hiệu quả, miễn là mọi người đều làm tròn phần việc của mình.",
+        "zh-Hant": "只要每個人都盡到自己的責任，就可能奏效。",
+        "ko": "모두가 각자의 몫을 다한다면 효과가 있을 수 있습니다.",
+        "es": "Podría funcionar, suponiendo que todos cumplan con su parte.",
+        "de": "Das könnte funktionieren, vorausgesetzt, jeder leistet seinen Beitrag.",
+        "it": "Potrebbe funzionare, supponendo che ognuno faccia la sua parte.",
+        "ru": "Это может сработать, если каждый выполнит свою часть работы.",
+        "id": "Itu bisa berhasil, dengan asumsi semua orang menjalankan bagiannya.",
+        "th": "เรื่องนี้อาจได้ผล หากทุกคนทำหน้าที่ของตนเอง",
+        "tr": "Herkes üzerine düşeni yaparsa işe yarayabilir."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "如果我们解决风险，这个提议是合理的。"
+        "zh-Hans": "如果我们解决风险，这个提议是合理的。",
+        "fr": "La proposition est solide, à condition que nous gérions les risques.",
+        "ar": "الاقتراح سليم، بشرط أن نعالج المخاطر.",
+        "ja": "リスクに対処できれば、その提案は妥当です。",
+        "pt-BR": "A proposta é sólida, desde que enfrentemos os riscos.",
+        "vi": "Đề xuất này khá vững chắc, miễn là chúng ta giải quyết được các rủi ro.",
+        "zh-Hant": "只要我們處理好風險，這項提案就很穩妥。",
+        "ko": "위험 요소를 해결한다면 그 제안은 타당합니다.",
+        "es": "La propuesta es sólida, siempre que abordemos los riesgos.",
+        "de": "Der Vorschlag ist solide, vorausgesetzt, wir gehen die Risiken an.",
+        "it": "La proposta è valida, a patto che affrontiamo i rischi.",
+        "ru": "Предложение вполне обоснованно, при условии что мы устраним риски.",
+        "id": "Usulan itu kuat, asalkan kita menangani risikonya.",
+        "th": "ข้อเสนอนี้มีเหตุผลดี ตราบใดที่เราแก้ไขความเสี่ยงได้",
+        "tr": "Riskleri ele aldığımız sürece teklif sağlam görünüyor."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 4.309,
       "duration": 4.309,
       "translations": {
-        "zh-Hans": "然而，在安全法规方面有一个例外。"
+        "zh-Hans": "然而，在安全法规方面有一个例外。",
+        "fr": "Cependant, il y a une exception en ce qui concerne les règles de sécurité.",
+        "ar": "لكن هناك استثناء عندما يتعلق الأمر بلوائح السلامة.",
+        "ja": "ただし、安全規制に関しては例外があります。",
+        "pt-BR": "No entanto, há uma exceção quando se trata das normas de segurança.",
+        "vi": "Tuy nhiên, có một ngoại lệ liên quan đến các quy định an toàn.",
+        "zh-Hant": "不過，在安全規範方面有一個例外。",
+        "ko": "다만 안전 규정에 관해서는 예외가 있습니다.",
+        "es": "Sin embargo, hay una excepción en lo que respecta a las normas de seguridad.",
+        "de": "Allerdings gibt es bei den Sicherheitsvorschriften eine Ausnahme.",
+        "it": "Tuttavia, c'è un'eccezione per quanto riguarda le norme di sicurezza.",
+        "ru": "Однако в отношении правил безопасности есть одно исключение.",
+        "id": "Namun, ada pengecualian terkait peraturan keselamatan.",
+        "th": "อย่างไรก็ตาม มีข้อยกเว้นในเรื่องกฎระเบียบด้านความปลอดภัย",
+        "tr": "Ancak güvenlik düzenlemeleri söz konusu olduğunda bir istisna var."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 4.48,
       "duration": 4.48,
       "translations": {
-        "zh-Hans": "如果我们考虑到这种情况，结果会有很大不同。"
+        "zh-Hans": "如果我们考虑到这种情况，结果会有很大不同。",
+        "fr": "Si nous tenons compte de la situation, le résultat change considérablement.",
+        "ar": "إذا أخذنا الوضع في الاعتبار، فإن النتيجة تتغير بشكل كبير.",
+        "ja": "この状況を考慮すると、結果は大きく変わります。",
+        "pt-BR": "Se considerarmos a situação, o resultado muda significativamente.",
+        "vi": "Nếu xem xét tình huống này, kết quả sẽ thay đổi đáng kể.",
+        "zh-Hant": "如果把這種情況納入考量，結果會大不相同。",
+        "ko": "이 상황을 고려하면 결과가 크게 달라집니다.",
+        "es": "Si tenemos en cuenta la situación, el resultado cambia considerablemente.",
+        "de": "Wenn wir die Situation berücksichtigen, ändert sich das Ergebnis erheblich.",
+        "it": "Se consideriamo la situazione, il risultato cambia notevolmente.",
+        "ru": "Если учесть эту ситуацию, результат существенно изменится.",
+        "id": "Jika kita mempertimbangkan situasinya, hasilnya akan berubah secara signifikan.",
+        "th": "หากพิจารณาสถานการณ์นี้ ผลลัพธ์ก็จะเปลี่ยนไปอย่างมาก",
+        "tr": "Durumu göz önünde bulundurursak sonuç önemli ölçüde değişir."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 4.224,
       "duration": 4.224,
       "translations": {
-        "zh-Hans": "这个规则通常是正确的，除了少数情况。"
+        "zh-Hans": "这个规则通常是正确的，除了少数情况。",
+        "fr": "Cette règle est généralement valable, sauf dans de rares cas.",
+        "ar": "تكون هذه القاعدة صحيحة عمومًا، باستثناء الحالات النادرة.",
+        "ja": "そのルールは基本的に正しいですが、まれな例外もあります。",
+        "pt-BR": "Essa regra geralmente é válida, exceto em casos raros.",
+        "vi": "Quy tắc đó thường đúng, ngoại trừ một số trường hợp hiếm gặp.",
+        "zh-Hant": "這項規則通常是正確的，但少數罕見情況除外。",
+        "ko": "그 규칙은 대체로 맞지만, 드문 경우에는 예외가 있습니다.",
+        "es": "Por lo general, esa regla es válida, salvo en casos excepcionales.",
+        "de": "Diese Regel trifft im Allgemeinen zu, außer in seltenen Fällen.",
+        "it": "Quella regola è generalmente valida, salvo in rari casi.",
+        "ru": "Это правило обычно верно, за исключением редких случаев.",
+        "id": "Aturan itu umumnya benar, kecuali dalam beberapa kasus yang jarang terjadi.",
+        "th": "กฎข้อนั้นมักจะเป็นจริง ยกเว้นในบางกรณีที่พบได้ยาก",
+        "tr": "Bu kural genellikle geçerlidir, ancak nadir durumlarda istisnalar vardır."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "在大多数情况下是的，但在截止日期紧迫时不是。"
+        "zh-Hans": "在大多数情况下是的，但在截止日期紧迫时不是。",
+        "fr": "Dans la plupart des cas, oui, mais pas lorsque les délais sont serrés.",
+        "ar": "نعم في معظم الحالات، لكن ليس عندما تكون المواعيد النهائية ضيقة.",
+        "ja": "ほとんどの場合はそうですが、締め切りが厳しいときは別です。",
+        "pt-BR": "Na maioria dos casos, sim, mas não quando os prazos são apertados.",
+        "vi": "Trong hầu hết trường hợp thì đúng, nhưng không phải khi thời hạn quá gấp.",
+        "zh-Hant": "大多數情況下是的，但期限很緊時就不適用。",
+        "ko": "대부분의 경우에는 그렇지만, 마감이 촉박할 때는 아닙니다.",
+        "es": "En la mayoría de los casos, sí, pero no cuando los plazos son muy ajustados.",
+        "de": "In den meisten Fällen ja, aber nicht, wenn die Fristen knapp sind.",
+        "it": "Nella maggior parte dei casi sì, ma non quando le scadenze sono ravvicinate.",
+        "ru": "В большинстве случаев — да, но не при сжатых сроках.",
+        "id": "Dalam kebanyakan kasus, ya, tetapi tidak jika tenggat waktunya sangat sempit.",
+        "th": "ใช่ในกรณีส่วนใหญ่ แต่ไม่ใช่เมื่อกำหนดเวลาคับขันเกินไป",
+        "tr": "Çoğu durumda evet, ancak süreler çok kısıtlı olduğunda değil."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 4.096,
       "duration": 4.096,
       "translations": {
-        "zh-Hans": "总的来说，我认为这是个好主意，但我对时间表持谨慎态度。"
+        "zh-Hans": "总的来说，我认为这是个好主意，但我对时间表持谨慎态度。",
+        "fr": "Dans l'ensemble, je pense que c'est une bonne idée, mais je reste prudent quant au calendrier.",
+        "ar": "بوجه عام، أعتقد أنها فكرة جيدة، لكنني حذر بشأن الجدول الزمني.",
+        "ja": "全体としてはよい案だと思いますが、スケジュールについては慎重です。",
+        "pt-BR": "De modo geral, acho uma boa ideia, mas tenho cautela com o cronograma.",
+        "vi": "Nhìn chung, tôi cho rằng đó là một ý hay, nhưng vẫn thận trọng về tiến độ.",
+        "zh-Hant": "總的來說，我認為這是個好主意，但對時程仍持謹慎態度。",
+        "ko": "전반적으로 좋은 생각이라고 보지만, 일정에 대해서는 신중합니다.",
+        "es": "En general, creo que es una buena idea, pero me preocupa el calendario.",
+        "de": "Insgesamt halte ich das für eine gute Idee, bin beim Zeitplan aber vorsichtig.",
+        "it": "Nel complesso penso che sia una buona idea, ma sono prudente riguardo ai tempi.",
+        "ru": "В целом я считаю это хорошей идеей, но с осторожностью отношусь к срокам.",
+        "id": "Secara keseluruhan, menurut saya ini ide yang bagus, tetapi saya berhati-hati soal jadwalnya.",
+        "th": "โดยรวมแล้ว ผมคิดว่าเป็นความคิดที่ดี แต่ยังระมัดระวังเรื่องกำหนดการ",
+        "tr": "Genel olarak bunun iyi bir fikir olduğunu düşünüyorum, ancak takvim konusunda temkinliyim."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 5.035,
       "duration": 5.035,
       "translations": {
-        "zh-Hans": "除非预算超支，否则项目应该继续。"
+        "zh-Hans": "除非预算超支，否则项目应该继续。",
+        "fr": "Sauf si le budget est dépassé, le projet devrait se poursuivre.",
+        "ar": "باستثناء الحالات التي تتجاوز فيها الميزانية الحد المقرر، ينبغي أن يستمر المشروع.",
+        "ja": "予算を超過する場合を除けば、プロジェクトは進めるべきです。",
+        "pt-BR": "Exceto se o orçamento estourar, o projeto deve continuar.",
+        "vi": "Trừ trường hợp ngân sách bị vượt quá, dự án nên tiếp tục.",
+        "zh-Hant": "除非預算超支，否則專案應該繼續進行。",
+        "ko": "예산을 초과하는 경우가 아니라면 프로젝트는 계속 진행되어야 합니다.",
+        "es": "Salvo que se supere el presupuesto, el proyecto debería continuar.",
+        "de": "Sofern das Budget nicht überschritten wird, sollte das Projekt fortgesetzt werden.",
+        "it": "Salvo che il budget venga superato, il progetto dovrebbe proseguire.",
+        "ru": "Проект следует продолжить, кроме случаев превышения бюджета.",
+        "id": "Kecuali anggarannya terlampaui, proyek ini sebaiknya dilanjutkan.",
+        "th": "โครงการควรดำเนินต่อไป เว้นแต่งบประมาณจะเกินกำหนด",
+        "tr": "Bütçe aşılmadığı sürece proje devam etmeli."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.565,
       "duration": 4.565,
       "translations": {
-        "zh-Hans": "我基本同意，但我对成本仍有一些保留意见。"
+        "zh-Hans": "我基本同意，但我对成本仍有一些保留意见。",
+        "fr": "Je suis globalement d'accord, mais j'ai encore quelques réserves concernant le coût.",
+        "ar": "أوافق في الغالب، لكن لا تزال لديّ بعض التحفظات بشأن التكلفة.",
+        "ja": "ほぼ同意しますが、費用についてはまだ懸念があります。",
+        "pt-BR": "Concordo em grande parte, mas ainda tenho algumas ressalvas quanto ao custo.",
+        "vi": "Tôi hầu như đồng ý, nhưng vẫn còn băn khoăn về chi phí.",
+        "zh-Hant": "我大致同意，但對成本仍有一些保留。",
+        "ko": "대체로 동의하지만, 비용에 대해서는 여전히 우려가 있습니다.",
+        "es": "Estoy mayormente de acuerdo, pero aún tengo algunas reservas sobre el coste.",
+        "de": "Ich stimme größtenteils zu, habe aber noch Bedenken wegen der Kosten.",
+        "it": "Sono per lo più d'accordo, ma ho ancora qualche riserva sui costi.",
+        "ru": "В основном я согласен, но у меня всё ещё есть сомнения насчёт стоимости.",
+        "id": "Saya sebagian besar setuju, tetapi masih memiliki beberapa keberatan tentang biayanya.",
+        "th": "ผมเห็นด้วยเป็นส่วนใหญ่ แต่ยังมีข้อกังวลเรื่องค่าใช้จ่ายอยู่บ้าง",
+        "tr": "Büyük ölçüde katılıyorum, ancak maliyet konusunda hâlâ bazı çekincelerim var."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 5.035,
       "duration": 5.035,
       "translations": {
-        "zh-Hans": "虽然我支持这个倡议，但我对其长期影响有疑虑。"
+        "zh-Hans": "虽然我支持这个倡议，但我对其长期影响有疑虑。",
+        "fr": "Même si je soutiens cette initiative, j'ai des doutes quant à son impact à long terme.",
+        "ar": "مع أنني أؤيد المبادرة، فإن لديّ شكوكًا بشأن تأثيرها على المدى الطويل.",
+        "ja": "この取り組みは支持しますが、長期的な影響には疑問があります。",
+        "pt-BR": "Embora eu apoie a iniciativa, tenho dúvidas sobre seu impacto a longo prazo.",
+        "vi": "Mặc dù ủng hộ sáng kiến này, tôi vẫn nghi ngờ về tác động lâu dài của nó.",
+        "zh-Hant": "雖然我支持這項倡議，但我對它的長期影響仍有疑慮。",
+        "ko": "이 계획을 지지하지만, 장기적인 영향에 대해서는 의문이 있습니다.",
+        "es": "Aunque apoyo la iniciativa, tengo dudas sobre su impacto a largo plazo.",
+        "de": "Ich unterstütze die Initiative, habe aber Zweifel an ihren langfristigen Auswirkungen.",
+        "it": "Sostengo l'iniziativa, ma ho dei dubbi sul suo impatto a lungo termine.",
+        "ru": "Я поддерживаю эту инициативу, но сомневаюсь в её долгосрочном воздействии.",
+        "id": "Meskipun saya mendukung inisiatif ini, saya meragukan dampak jangka panjangnya.",
+        "th": "แม้ผมจะสนับสนุนโครงการริเริ่มนี้ แต่ก็ยังสงสัยเกี่ยวกับผลกระทบในระยะยาว",
+        "tr": "Girişimi desteklesem de uzun vadeli etkisi konusunda şüphelerim var."
       }
     }
   ]

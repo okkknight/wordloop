@@ -7,32 +7,34 @@ public enum StartupState: String, CaseIterable, Equatable, Sendable {
     case error
 
     public var buttonTitle: String {
+        let copy = StartupCopy.current
         switch self {
         case .idle:
-            "START"
+            copy.start
         case .preparing, .restoring:
-            "PREPARING…"
+            copy.preparing
         case .syncing:
-            "SYNCING…"
+            copy.syncing
         case .ready:
-            "READY"
+            copy.ready
         case .error:
-            "RETRY"
+            copy.retry
         }
     }
 
     public var helperText: String? {
+        let copy = StartupCopy.current
         switch self {
         case .idle:
             nil
         case .preparing, .restoring:
-            "正在恢复上次课程"
+            copy.restoring
         case .syncing:
-            "正在同步学习进度"
+            copy.syncingProgress
         case .ready:
             nil
         case .error:
-            "无法同步，仍可使用本地课程"
+            copy.offline
         }
     }
 

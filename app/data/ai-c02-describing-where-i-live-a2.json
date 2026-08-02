@@ -15,7 +15,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我住在城市一个安静的区域。"
+        "zh-Hans": "我住在城市一个安静的区域。",
+        "zh-Hant": "我住在城市裡一個安靜的區域。",
+        "ja": "街の静かな地域に住んでいます。",
+        "de": "Ich wohne in einem ruhigen Teil der Stadt.",
+        "ru": "Я живу в тихом районе города.",
+        "ar": "أعيش في منطقة هادئة من المدينة.",
+        "es": "Vivo en una zona tranquila de la ciudad.",
+        "pt-BR": "Moro em uma parte tranquila da cidade.",
+        "vi": "Tôi sống ở một khu yên tĩnh trong thành phố.",
+        "th": "ฉันอาศัยอยู่ในย่านที่เงียบสงบของเมือง",
+        "fr": "J'habite dans un quartier calme de la ville.",
+        "ko": "저는 도시의 조용한 동네에 살아요.",
+        "tr": "Şehrin sakin bir bölgesinde yaşıyorum.",
+        "it": "Abito in una zona tranquilla della città.",
+        "id": "Saya tinggal di bagian kota yang tenang."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "我和室友住在一间小公寓里。"
+        "zh-Hans": "我和室友住在一间小公寓里。",
+        "zh-Hant": "我和室友一起住在一間小公寓裡。",
+        "ja": "ルームメイトと小さなアパートに住んでいます。",
+        "de": "Ich wohne mit meinem Mitbewohner in einer kleinen Wohnung.",
+        "ru": "Я живу в маленькой квартире с соседом по комнате.",
+        "ar": "أعيش في شقة صغيرة مع زميلي في السكن.",
+        "es": "Vivo en un apartamento pequeño con mi compañero de piso.",
+        "pt-BR": "Moro em um apartamento pequeno com meu colega de apartamento.",
+        "vi": "Tôi sống trong một căn hộ nhỏ cùng bạn cùng nhà.",
+        "th": "ฉันอาศัยอยู่ในอพาร์ตเมนต์เล็ก ๆ กับเพื่อนร่วมห้อง",
+        "fr": "J'habite dans un petit appartement avec mon colocataire.",
+        "ko": "저는 룸메이트와 작은 아파트에 살아요.",
+        "tr": "Ev arkadaşımla küçük bir dairede yaşıyorum.",
+        "it": "Vivo in un piccolo appartamento con il mio coinquilino.",
+        "id": "Saya tinggal di apartemen kecil bersama teman sekamar."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "这里很安静，尤其是在晚上。"
+        "zh-Hans": "这里很安静，尤其是在晚上。",
+        "zh-Hant": "這裡相當安靜，尤其是晚上。",
+        "ja": "ここは特に夜がとても静かです。",
+        "de": "Es ist ziemlich ruhig, besonders nachts.",
+        "ru": "Здесь довольно тихо, особенно ночью.",
+        "ar": "إنه هادئ إلى حدٍّ كبير، ولا سيما في الليل.",
+        "es": "Es bastante tranquilo, sobre todo por la noche.",
+        "pt-BR": "É bem tranquilo, especialmente à noite.",
+        "vi": "Nơi này khá yên tĩnh, đặc biệt là vào ban đêm.",
+        "th": "ที่นี่ค่อนข้างเงียบ โดยเฉพาะตอนกลางคืน",
+        "fr": "C'est assez calme, surtout la nuit.",
+        "ko": "특히 밤에는 꽤 조용해요.",
+        "tr": "Özellikle geceleri oldukça sakin.",
+        "it": "È piuttosto tranquillo, soprattutto di notte.",
+        "id": "Tempat ini cukup tenang, terutama pada malam hari."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "我家附近有一个小公园。"
+        "zh-Hans": "我家附近有一个小公园。",
+        "zh-Hant": "我家附近有一座小公園。",
+        "ja": "家の近くに小さな公園があります。",
+        "de": "In der Nähe meiner Wohnung gibt es einen kleinen Park.",
+        "ru": "Рядом с моим домом есть небольшой парк.",
+        "ar": "يوجد منتزه صغير بالقرب من منزلي.",
+        "es": "Hay un parque pequeño cerca de mi casa.",
+        "pt-BR": "Há um pequeno parque perto de casa.",
+        "vi": "Gần nhà tôi có một công viên nhỏ.",
+        "th": "มีสวนสาธารณะเล็ก ๆ อยู่ใกล้บ้านฉัน",
+        "fr": "Il y a un petit parc près de chez moi.",
+        "ko": "집 근처에 작은 공원이 있어요.",
+        "tr": "Evimin yakınında küçük bir park var.",
+        "it": "C'è un piccolo parco vicino a casa mia.",
+        "id": "Ada taman kecil di dekat rumah saya."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "杂货店在步行距离内。"
+        "zh-Hans": "杂货店在步行距离内。",
+        "zh-Hant": "雜貨店走路就能到。",
+        "ja": "食料品店まで歩いて行けます。",
+        "de": "Der Lebensmittelladen ist zu Fuß erreichbar.",
+        "ru": "До продуктового магазина можно дойти пешком.",
+        "ar": "يقع متجر البقالة على مسافة يمكن قطعها سيرًا على الأقدام.",
+        "es": "El supermercado está a poca distancia a pie.",
+        "pt-BR": "O supermercado fica a uma distância que dá para ir a pé.",
+        "vi": "Cửa hàng tạp hóa nằm trong khoảng cách có thể đi bộ.",
+        "th": "ร้านขายของชำอยู่ในระยะที่เดินไปได้",
+        "fr": "L'épicerie est accessible à pied.",
+        "ko": "식료품점은 걸어서 갈 수 있는 거리에 있어요.",
+        "tr": "Markete yürüyerek gidebilirim.",
+        "it": "Il supermercato è raggiungibile a piedi.",
+        "id": "Supermarketnya bisa dicapai dengan berjalan kaki."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "我可以在街角买到日用品。"
+        "zh-Hans": "我可以在街角买到日用品。",
+        "zh-Hant": "我在轉角就能買到日常用品。",
+        "ja": "角を曲がったところで日用品を買えます。",
+        "de": "Gleich um die Ecke kann ich Dinge des täglichen Bedarfs kaufen.",
+        "ru": "За углом я могу купить товары повседневного спроса.",
+        "ar": "يمكنني شراء مستلزمات الحياة اليومية عند ناصية الشارع.",
+        "es": "Puedo comprar cosas de uso diario a la vuelta de la esquina.",
+        "pt-BR": "Posso comprar coisas do dia a dia logo ali na esquina.",
+        "vi": "Tôi có thể mua những thứ dùng hằng ngày ngay ở gần đây.",
+        "th": "ฉันซื้อของใช้ประจำวันได้ใกล้ ๆ ตรงหัวมุม",
+        "fr": "Je peux acheter les produits du quotidien juste au coin de la rue.",
+        "ko": "근처에서 생활에 필요한 물건을 살 수 있어요.",
+        "tr": "Günlük ihtiyaçlarımı köşedeki yerden alabilirim.",
+        "it": "Posso comprare le cose di tutti i giorni qui dietro l'angolo.",
+        "id": "Saya bisa membeli kebutuhan sehari-hari di dekat sini."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.944,
       "duration": 2.944,
       "translations": {
-        "zh-Hans": "我周末喜欢去公园。"
+        "zh-Hans": "我周末喜欢去公园。",
+        "zh-Hant": "我喜歡週末去公園。",
+        "ja": "週末は公園に行くのが好きです。",
+        "de": "Am Wochenende gehe ich gerne in den Park.",
+        "ru": "Мне нравится ходить в парк по выходным.",
+        "ar": "أحب الذهاب إلى المنتزه في عطلات نهاية الأسبوع.",
+        "es": "Me gusta ir al parque los fines de semana.",
+        "pt-BR": "Gosto de ir ao parque nos fins de semana.",
+        "vi": "Tôi thích đến công viên vào cuối tuần.",
+        "th": "ฉันชอบไปสวนสาธารณะในวันหยุดสุดสัปดาห์",
+        "fr": "J'aime aller au parc le week-end.",
+        "ko": "저는 주말에 공원에 가는 걸 좋아해요.",
+        "tr": "Hafta sonları parka gitmeyi seviyorum.",
+        "it": "Mi piace andare al parco nei fine settimana.",
+        "id": "Saya suka pergi ke taman pada akhir pekan."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我通常坐公交车出行。"
+        "zh-Hans": "我通常坐公交车出行。",
+        "zh-Hant": "我通常搭公車到處走。",
+        "ja": "普段はバスで移動します。",
+        "de": "Normalerweise fahre ich mit dem Bus.",
+        "ru": "Обычно я передвигаюсь на автобусе.",
+        "ar": "عادةً ما أتنقل بالحافلة.",
+        "es": "Normalmente me desplazo en autobús.",
+        "pt-BR": "Normalmente uso o ônibus para me locomover.",
+        "vi": "Tôi thường đi xe buýt để di chuyển.",
+        "th": "ปกติฉันนั่งรถบัสเพื่อเดินทางไปไหนมาไหน",
+        "fr": "Je prends généralement le bus pour me déplacer.",
+        "ko": "저는 보통 버스를 타고 다녀요.",
+        "tr": "Genellikle ulaşım için otobüse binerim.",
+        "it": "Di solito prendo l'autobus per spostarmi.",
+        "id": "Biasanya saya naik bus untuk bepergian."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "出行很方便，因为车站很近。"
+        "zh-Hans": "出行很方便，因为车站很近。",
+        "zh-Hant": "因為車站很近，所以出門很方便。",
+        "ja": "駅が近いので、移動するのに便利です。",
+        "de": "Man kommt leicht überall hin, weil die Haltestelle in der Nähe ist.",
+        "ru": "Передвигаться легко, потому что станция находится рядом.",
+        "ar": "من السهل التنقل لأن المحطة قريبة.",
+        "es": "Es fácil desplazarse porque la estación está cerca.",
+        "pt-BR": "É fácil se deslocar porque a estação fica perto.",
+        "vi": "Việc đi lại khá dễ dàng vì nhà ga ở gần.",
+        "th": "การเดินทางสะดวกเพราะสถานีอยู่ใกล้",
+        "fr": "Il est facile de se déplacer parce que la station est proche.",
+        "ko": "역이 가까워서 이동하기 편해요.",
+        "tr": "İstasyon yakın olduğu için ulaşım kolay.",
+        "it": "Spostarsi è facile perché la stazione è vicina.",
+        "id": "Bepergian mudah karena stasiunnya dekat."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "这个区域清晨会非常忙。"
+        "zh-Hans": "这个区域清晨会非常忙。",
+        "zh-Hant": "這一帶清晨會非常熱鬧。",
+        "ja": "この辺りは早朝になるととても混みます。",
+        "de": "In der Gegend ist es am frühen Morgen sehr geschäftig.",
+        "ru": "Рано утром в этом районе становится очень оживлённо.",
+        "ar": "تصبح المنطقة مزدحمة جدًا في الصباح الباكر.",
+        "es": "La zona se llena mucho a primera hora de la mañana.",
+        "pt-BR": "A região fica muito movimentada de manhã cedo.",
+        "vi": "Khu vực này rất đông vào sáng sớm.",
+        "th": "ย่านนี้คึกคักมากในช่วงเช้าตรู่",
+        "fr": "Le quartier est très animé tôt le matin.",
+        "ko": "이 지역은 이른 아침에 아주 붐벼요.",
+        "tr": "Bölge sabahın erken saatlerinde çok kalabalık olur.",
+        "it": "La zona è molto affollata di prima mattina.",
+        "id": "Daerah ini sangat ramai pada pagi-pagi sekali."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "唯一的问题是停车可能很难。"
+        "zh-Hans": "唯一的问题是停车可能很难。",
+        "zh-Hant": "唯一的問題是停車可能不太容易。",
+        "ja": "唯一の問題は、駐車しにくいことです。",
+        "de": "Das einzige Problem ist, dass es schwierig sein kann, einen Parkplatz zu finden.",
+        "ru": "Единственная проблема в том, что припарковаться бывает трудно.",
+        "ar": "المشكلة الوحيدة هي أن العثور على موقف للسيارة قد يكون صعبًا.",
+        "es": "El único problema es que puede ser difícil aparcar.",
+        "pt-BR": "O único problema é que pode ser difícil estacionar.",
+        "vi": "Vấn đề duy nhất là việc đỗ xe có thể khá khó khăn.",
+        "th": "ปัญหาเดียวคือหาที่จอดรถค่อนข้างยาก",
+        "fr": "Le seul problème, c'est qu'il peut être difficile de se garer.",
+        "ko": "유일한 문제는 주차하기가 꽤 어려울 수 있다는 거예요.",
+        "tr": "Tek sorun, park yeri bulmanın zor olabilmesi.",
+        "it": "L'unico problema è che può essere difficile trovare parcheggio.",
+        "id": "Satu-satunya masalah adalah sulit menemukan tempat parkir."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我希望我楼附近有更多树。"
+        "zh-Hans": "我希望我楼附近有更多树。",
+        "zh-Hant": "我希望我住的大樓附近能多種一些樹。",
+        "ja": "建物の近くにもっと木があればいいのにと思います。",
+        "de": "Ich wünschte, in der Nähe meines Gebäudes gäbe es mehr Bäume.",
+        "ru": "Жаль, что возле моего дома нет больше деревьев.",
+        "ar": "أتمنى لو كانت هناك أشجار أكثر بالقرب من المبنى الذي أعيش فيه.",
+        "es": "Ojalá hubiera más árboles cerca de mi edificio.",
+        "pt-BR": "Gostaria que houvesse mais árvores perto do meu prédio.",
+        "vi": "Tôi ước gì gần tòa nhà của mình có thêm nhiều cây hơn.",
+        "th": "ฉันอยากให้มีต้นไม้ใกล้อาคารของฉันมากกว่านี้",
+        "fr": "J'aimerais qu'il y ait davantage d'arbres près de mon immeuble.",
+        "ko": "제가 사는 건물 근처에 나무가 더 많았으면 좋겠어요.",
+        "tr": "Binamın yakınında daha fazla ağaç olmasını isterdim.",
+        "it": "Vorrei che ci fossero più alberi vicino al mio palazzo.",
+        "id": "Saya berharap ada lebih banyak pohon di dekat gedung saya."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "自从搬来后，我已经习惯坐公交了。"
+        "zh-Hans": "自从搬来后，我已经习惯坐公交了。",
+        "zh-Hant": "自從搬到這裡後，我已經習慣搭公車了。",
+        "ja": "ここに引っ越してきてから、バスにも慣れました。",
+        "de": "Seit ich hierhergezogen bin, habe ich mich an die Busse gewöhnt.",
+        "ru": "С тех пор как я сюда переехал, я привык к автобусам.",
+        "ar": "منذ أن انتقلت إلى هنا، اعتدت على الحافلات.",
+        "es": "Desde que me mudé aquí, me he acostumbrado a los autobuses.",
+        "pt-BR": "Desde que me mudei para cá, me acostumei com os ônibus.",
+        "vi": "Từ khi chuyển đến đây, tôi đã quen với việc đi xe buýt.",
+        "th": "ตั้งแต่ย้ายมาอยู่ที่นี่ ฉันก็เริ่มคุ้นเคยกับการนั่งรถบัส",
+        "fr": "Depuis que j'ai emménagé ici, je me suis habitué aux bus.",
+        "ko": "이곳으로 이사 온 뒤 버스를 타는 데 익숙해졌어요.",
+        "tr": "Buraya taşındığımdan beri otobüslere alıştım.",
+        "it": "Da quando mi sono trasferito qui, mi sono abituato agli autobus.",
+        "id": "Sejak pindah ke sini, saya sudah terbiasa naik bus."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.328,
       "duration": 3.328,
       "translations": {
-        "zh-Hans": "我喜欢这个区域，因为它让我觉得安全。"
+        "zh-Hans": "我喜欢这个区域，因为它让我觉得安全。",
+        "zh-Hant": "我喜歡這一帶，因為感覺很安全。",
+        "ja": "安全に感じられるので、この地域が好きです。",
+        "de": "Ich mag diese Gegend, weil sie sich sicher anfühlt.",
+        "ru": "Мне нравится этот район, потому что здесь безопасно.",
+        "ar": "أحب هذه المنطقة لأنها تمنحني شعورًا بالأمان.",
+        "es": "Me gusta esta zona porque me parece segura.",
+        "pt-BR": "Gosto desta região porque ela parece segura.",
+        "vi": "Tôi thích khu này vì cảm thấy an toàn.",
+        "th": "ฉันชอบย่านนี้เพราะรู้สึกปลอดภัย",
+        "fr": "J'aime ce quartier parce que je m'y sens en sécurité.",
+        "ko": "안전하다고 느껴져서 이 동네가 좋아요.",
+        "tr": "Burası kendimi güvende hissettirdiği için bu bölgeyi seviyorum.",
+        "it": "Mi piace questa zona perché mi fa sentire al sicuro.",
+        "id": "Saya suka daerah ini karena terasa aman."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.499,
       "duration": 3.499,
       "translations": {
-        "zh-Hans": "如果我能改变一件事，我会增加更多公园。"
+        "zh-Hans": "如果我能改变一件事，我会增加更多公园。",
+        "zh-Hant": "如果可以改變一件事，我會增加更多公園。",
+        "ja": "一つ変えられるなら、公園をもっと増やしたいです。",
+        "de": "Wenn ich eine Sache ändern könnte, würde ich mehr Parks anlegen.",
+        "ru": "Если бы я мог что-то изменить, я бы добавил больше парков.",
+        "ar": "لو استطعت تغيير شيء واحد، لأضفت المزيد من المنتزهات.",
+        "es": "Si pudiera cambiar una cosa, añadiría más parques.",
+        "pt-BR": "Se pudesse mudar uma coisa, acrescentaria mais parques.",
+        "vi": "Nếu có thể thay đổi một điều, tôi sẽ xây thêm công viên.",
+        "th": "ถ้าเปลี่ยนได้หนึ่งอย่าง ฉันจะเพิ่มสวนสาธารณะอีก",
+        "fr": "Si je pouvais changer une chose, j'ajouterais davantage de parcs.",
+        "ko": "한 가지를 바꿀 수 있다면 공원을 더 만들고 싶어요.",
+        "tr": "Bir şeyi değiştirebilseydim, daha fazla park eklerdim.",
+        "it": "Se potessi cambiare una cosa, aggiungerei altri parchi.",
+        "id": "Kalau bisa mengubah satu hal, saya akan menambah lebih banyak taman."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.925,
       "duration": 3.925,
       "translations": {
-        "zh-Hans": "总体来说，住在这里很方便，但可能有点吵。"
+        "zh-Hans": "总体来说，住在这里很方便，但可能有点吵。",
+        "zh-Hant": "總的來說，住在這裡很方便，但有時可能會很吵。",
+        "ja": "全体的には便利ですが、少し騒がしいこともあります。",
+        "de": "Insgesamt ist es praktisch, hier zu wohnen, aber manchmal kann es laut sein.",
+        "ru": "В целом здесь удобно жить, но иногда бывает шумно.",
+        "ar": "عمومًا، العيش هنا مريح، لكنه قد يكون صاخبًا أحيانًا.",
+        "es": "En general, es cómodo vivir aquí, aunque a veces puede ser ruidoso.",
+        "pt-BR": "No geral, é conveniente morar aqui, mas pode ser barulhento.",
+        "vi": "Nhìn chung, sống ở đây khá thuận tiện, nhưng đôi khi cũng ồn ào.",
+        "th": "โดยรวมแล้ว ที่นี่อยู่สะดวก แต่บางครั้งก็มีเสียงดัง",
+        "fr": "Dans l'ensemble, il est pratique d'habiter ici, mais c'est parfois bruyant.",
+        "ko": "전반적으로 이곳에서 살기 편리하지만, 가끔 시끄러울 때도 있어요.",
+        "tr": "Genel olarak burada yaşamak rahat ama bazen gürültülü olabiliyor.",
+        "it": "Nel complesso è comodo vivere qui, ma a volte può essere rumoroso.",
+        "id": "Secara keseluruhan, tinggal di sini nyaman, tetapi kadang-kadang berisik."
       }
     }
   ]

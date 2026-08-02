@@ -15,7 +15,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "主要的好处是节省成本。"
+        "zh-Hans": "主要的好处是节省成本。",
+        "ar": "الفائدة الرئيسية هي توفير التكاليف.",
+        "pt-BR": "O principal benefício é a economia de custos.",
+        "vi": "Lợi ích chính là tiết kiệm chi phí.",
+        "ja": "主なメリットはコストを削減できることです。",
+        "fr": "Le principal avantage, c'est l'économie réalisée.",
+        "zh-Hant": "主要的好處是節省成本。",
+        "ko": "가장 큰 장점은 비용을 절감할 수 있다는 것입니다.",
+        "es": "El principal beneficio es el ahorro de costes.",
+        "de": "Der größte Vorteil sind die Kosteneinsparungen.",
+        "it": "Il vantaggio principale è il risparmio sui costi.",
+        "ru": "Главное преимущество — экономия средств.",
+        "id": "Manfaat utamanya adalah penghematan biaya.",
+        "th": "ข้อดีหลักคือช่วยประหยัดค่าใช้จ่าย",
+        "tr": "En büyük avantajı maliyet tasarrufu sağlamasıdır."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "一个优点是它非常方便。"
+        "zh-Hans": "一个优点是它非常方便。",
+        "ar": "من مزاياه أنه مريح جدًا.",
+        "ja": "利点の一つは、とても便利なことです。",
+        "pt-BR": "Uma vantagem é que é muito prático.",
+        "vi": "Một ưu điểm là nó rất tiện lợi.",
+        "fr": "L'un de ses avantages, c'est qu'il est très pratique.",
+        "zh-Hant": "其中一個優點是非常方便。",
+        "ko": "한 가지 장점은 매우 편리하다는 것입니다.",
+        "es": "Una ventaja es que resulta muy práctico.",
+        "de": "Ein Vorteil ist, dass es sehr praktisch ist.",
+        "it": "Un vantaggio è che è molto pratico.",
+        "ru": "Одно из преимуществ — это большое удобство.",
+        "id": "Salah satu kelebihannya adalah sangat praktis.",
+        "th": "ข้อดีอย่างหนึ่งคือใช้งานสะดวกมาก",
+        "tr": "Avantajlarından biri, çok kullanışlı olmasıdır."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "它提供了很大的灵活性。"
+        "zh-Hans": "它提供了很大的灵活性。",
+        "ar": "إنه يوفر قدرًا كبيرًا من المرونة.",
+        "ja": "大きな柔軟性があります。",
+        "pt-BR": "Ele oferece bastante flexibilidade.",
+        "vi": "Nó mang lại sự linh hoạt cao.",
+        "fr": "Il offre une grande flexibilité.",
+        "zh-Hant": "它提供了很大的彈性。",
+        "ko": "뛰어난 유연성을 제공합니다.",
+        "es": "Ofrece una gran flexibilidad.",
+        "de": "Es bietet eine große Flexibilität.",
+        "it": "Offre una grande flessibilità.",
+        "ru": "Это обеспечивает большую гибкость.",
+        "id": "Ini menawarkan fleksibilitas yang tinggi.",
+        "th": "มีความยืดหยุ่นสูง",
+        "tr": "Büyük bir esneklik sunar."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "最好的部分是使用方便。"
+        "zh-Hans": "最好的部分是使用方便。",
+        "ar": "أفضل ما فيه هو سهولة استخدامه.",
+        "ja": "いちばん良い点は、使いやすさです。",
+        "pt-BR": "O melhor é que ele é fácil de usar.",
+        "vi": "Điểm tuyệt vời nhất là nó dễ sử dụng.",
+        "fr": "Le meilleur, c'est sa facilité d'utilisation.",
+        "zh-Hant": "最棒的地方是使用方便。",
+        "ko": "가장 좋은 점은 사용하기 쉽다는 것입니다.",
+        "es": "Lo mejor es que es fácil de usar.",
+        "de": "Das Beste daran ist die einfache Bedienung.",
+        "it": "Il bello è che è facile da usare.",
+        "ru": "Самое лучшее — это простота использования.",
+        "id": "Hal terbaiknya adalah kemudahan penggunaannya.",
+        "th": "ข้อดีที่สุดคือใช้งานง่าย",
+        "tr": "En iyi yanı, kullanımının kolay olmasıdır."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "初始成本可能相当高。"
+        "zh-Hans": "初始成本可能相当高。",
+        "ar": "قد تكون التكلفة الأولية مرتفعة إلى حد كبير.",
+        "ja": "初期費用はかなり高くなる可能性があります。",
+        "pt-BR": "O custo inicial pode ser bastante alto.",
+        "vi": "Chi phí ban đầu có thể khá cao.",
+        "fr": "Le coût initial peut être assez élevé.",
+        "zh-Hant": "初始成本可能相當高。",
+        "ko": "초기 비용이 꽤 높을 수 있습니다.",
+        "es": "El coste inicial puede ser bastante elevado.",
+        "de": "Die Anschaffungskosten können ziemlich hoch sein.",
+        "it": "Il costo iniziale può essere piuttosto elevato.",
+        "ru": "Первоначальные затраты могут быть довольно высокими.",
+        "id": "Biaya awalnya bisa cukup tinggi.",
+        "th": "ค่าใช้จ่ายเริ่มต้นอาจค่อนข้างสูง",
+        "tr": "Başlangıç maliyeti oldukça yüksek olabilir."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "一个缺点可能是有限的可用性。"
+        "zh-Hans": "一个缺点可能是有限的可用性。",
+        "ar": "قد يكون من سلبياته محدودية توافره.",
+        "ja": "欠点としては、入手しにくいことが挙げられます。",
+        "pt-BR": "Uma desvantagem pode ser a disponibilidade limitada.",
+        "vi": "Một nhược điểm có thể là nguồn cung hạn chế.",
+        "fr": "Un inconvénient pourrait être sa disponibilité limitée.",
+        "zh-Hant": "一個缺點可能是供應有限。",
+        "ko": "한 가지 단점은 이용 가능성이 제한적일 수 있다는 것입니다.",
+        "es": "Una desventaja podría ser su disponibilidad limitada.",
+        "de": "Ein Nachteil könnte die begrenzte Verfügbarkeit sein.",
+        "it": "Uno svantaggio potrebbe essere la disponibilità limitata.",
+        "ru": "Одним из недостатков может быть ограниченная доступность.",
+        "id": "Salah satu kekurangannya mungkin adalah ketersediaannya yang terbatas.",
+        "th": "ข้อเสียอย่างหนึ่งอาจเป็นเพราะมีให้ใช้อย่างจำกัด",
+        "tr": "Bir dezavantajı, sınırlı bulunabilirliği olabilir."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "这可能导致压力增加。"
+        "zh-Hans": "这可能导致压力增加。",
+        "ar": "قد يؤدي ذلك إلى زيادة التوتر.",
+        "ja": "それによってストレスが増す可能性があります。",
+        "pt-BR": "Isso pode aumentar o estresse.",
+        "vi": "Điều đó có thể làm gia tăng căng thẳng.",
+        "fr": "Cela pourrait entraîner davantage de stress.",
+        "zh-Hant": "這可能會導致壓力增加。",
+        "ko": "이로 인해 스트레스가 커질 수 있습니다.",
+        "es": "Podría provocar un aumento del estrés.",
+        "de": "Das könnte zu mehr Stress führen.",
+        "it": "Potrebbe portare a un aumento dello stress.",
+        "ru": "Это может привести к усилению стресса.",
+        "id": "Hal ini dapat menyebabkan stres yang meningkat.",
+        "th": "สิ่งนี้อาจทำให้เกิดความเครียดเพิ่มขึ้น",
+        "tr": "Bu, stresin artmasına yol açabilir."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "它可能不适合每个人的需求。"
+        "zh-Hans": "它可能不适合每个人的需求。",
+        "ar": "قد لا يلبي احتياجات الجميع.",
+        "ja": "誰にとってもニーズに合うとは限りません。",
+        "pt-BR": "Talvez não atenda às necessidades de todos.",
+        "vi": "Nó có thể không đáp ứng nhu cầu của tất cả mọi người.",
+        "fr": "Cela pourrait ne pas convenir aux besoins de tout le monde.",
+        "zh-Hant": "它可能不符合每個人的需求。",
+        "ko": "모든 사람의 필요에 맞지는 않을 수 있습니다.",
+        "es": "Puede que no se adapte a las necesidades de todo el mundo.",
+        "de": "Es könnte nicht für die Bedürfnisse aller geeignet sein.",
+        "it": "Potrebbe non soddisfare le esigenze di tutti.",
+        "ru": "Это может не соответствовать потребностям каждого.",
+        "id": "Ini mungkin tidak sesuai dengan kebutuhan semua orang.",
+        "th": "สิ่งนี้อาจไม่เหมาะกับความต้องการของทุกคน",
+        "tr": "Herkesin ihtiyaçlarına uygun olmayabilir."
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "对于大家庭来说，这可能太小了。"
+        "zh-Hans": "对于大家庭来说，这可能太小了。",
+        "ar": "قد يكون صغيرًا جدًا للعائلات الكبيرة.",
+        "ja": "大家族には小さすぎるかもしれません。",
+        "pt-BR": "Para famílias grandes, pode ser pequeno demais.",
+        "vi": "Với các gia đình đông người, nó có thể quá nhỏ.",
+        "fr": "Pour les grandes familles, il pourrait être trop petit.",
+        "zh-Hant": "對大家庭來說，這可能太小了。",
+        "ko": "대가족에게는 너무 작을 수 있습니다.",
+        "es": "Para las familias numerosas, puede resultar demasiado pequeño.",
+        "de": "Für große Familien könnte es zu klein sein.",
+        "it": "Per le famiglie numerose potrebbe essere troppo piccolo.",
+        "ru": "Для большой семьи это может оказаться слишком маленьким.",
+        "id": "Untuk keluarga besar, ukurannya mungkin terlalu kecil.",
+        "th": "สำหรับครอบครัวใหญ่ สิ่งนี้อาจเล็กเกินไป",
+        "tr": "Büyük aileler için fazla küçük olabilir."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 4.011,
       "duration": 4.011,
       "translations": {
-        "zh-Hans": "在这种情况下，最好选择质量而不是数量。"
+        "zh-Hans": "在这种情况下，最好选择质量而不是数量。",
+        "ar": "في هذه الحالة، من الأفضل اختيار الجودة بدلًا من الكمية.",
+        "ja": "この場合は、量より質を選ぶほうがよいでしょう。",
+        "pt-BR": "Nessa situação, é melhor escolher qualidade em vez de quantidade.",
+        "vi": "Trong tình huống này, chọn chất lượng thay vì số lượng sẽ tốt hơn.",
+        "fr": "Dans cette situation, mieux vaut privilégier la qualité à la quantité.",
+        "zh-Hant": "在這種情況下，最好重質不重量。",
+        "ko": "이런 상황에서는 양보다 질을 선택하는 것이 더 좋습니다.",
+        "es": "En esta situación, es mejor elegir la calidad antes que la cantidad.",
+        "de": "In dieser Situation sollte man Qualität der Quantität vorziehen.",
+        "it": "In questa situazione, è meglio scegliere la qualità invece della quantità.",
+        "ru": "В этой ситуации лучше выбрать качество, а не количество.",
+        "id": "Dalam situasi ini, sebaiknya pilih kualitas daripada kuantitas.",
+        "th": "ในสถานการณ์นี้ ควรเลือกคุณภาพมากกว่าปริมาณ",
+        "tr": "Bu durumda nicelikten çok niteliği tercih etmek daha iyidir."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "对于初学者来说，这是一个不错的选择。"
+        "zh-Hans": "对于初学者来说，这是一个不错的选择。",
+        "ar": "هذا خيار جيد للمبتدئين.",
+        "ja": "初心者にはよい選択肢です。",
+        "pt-BR": "Para iniciantes, esta é uma boa opção.",
+        "vi": "Đây là một lựa chọn tốt cho người mới bắt đầu.",
+        "fr": "Pour les débutants, c'est une bonne option.",
+        "zh-Hant": "對初學者來說，這是不錯的選擇。",
+        "ko": "초보자에게는 좋은 선택입니다.",
+        "es": "Para principiantes, es una buena opción.",
+        "de": "Für Anfänger ist das eine gute Option.",
+        "it": "Per i principianti, è una buona opzione.",
+        "ru": "Для начинающих это хороший вариант.",
+        "id": "Bagi pemula, ini adalah pilihan yang baik.",
+        "th": "สำหรับผู้เริ่มต้น นี่เป็นตัวเลือกที่ดี",
+        "tr": "Yeni başlayanlar için bu iyi bir seçenektir."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "对于预算有限的人来说，这是理想的选择。"
+        "zh-Hans": "对于预算有限的人来说，这是理想的选择。",
+        "ar": "هذا مثالي لمن لديهم ميزانية محدودة.",
+        "ja": "予算に限りがある人には最適です。",
+        "pt-BR": "Para quem está com o orçamento apertado, é ideal.",
+        "vi": "Điều này rất phù hợp với những người có ngân sách hạn hẹp.",
+        "fr": "Pour les personnes qui ont un budget serré, c'est idéal.",
+        "zh-Hant": "對預算有限的人來說，這是理想的選擇。",
+        "ko": "예산이 빠듯한 사람들에게는 이상적입니다.",
+        "es": "Es ideal para quienes tienen un presupuesto ajustado.",
+        "de": "Für Menschen mit knappem Budget ist das ideal.",
+        "it": "È l'ideale per chi ha un budget limitato.",
+        "ru": "Для тех, у кого ограниченный бюджет, это идеальный вариант.",
+        "id": "Ini ideal bagi mereka yang memiliki anggaran terbatas.",
+        "th": "เหมาะอย่างยิ่งสำหรับผู้ที่มีงบประมาณจำกัด",
+        "tr": "Bütçesi kısıtlı olanlar için bu idealdir."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.755,
       "duration": 3.755,
       "translations": {
-        "zh-Hans": "如果能带来更好的结果，我可以接受额外的努力。"
+        "zh-Hans": "如果能带来更好的结果，我可以接受额外的努力。",
+        "ar": "لا أمانع بذل جهد إضافي إذا كان ذلك سيؤدي إلى نتائج أفضل.",
+        "ja": "より良い結果につながるなら、余分な努力もいといません。",
+        "pt-BR": "Não me importo com o esforço extra se isso trouxer resultados melhores.",
+        "vi": "Tôi không ngại nỗ lực thêm nếu điều đó mang lại kết quả tốt hơn.",
+        "fr": "Je veux bien faire un effort supplémentaire si cela permet d'obtenir de meilleurs résultats.",
+        "zh-Hant": "如果能帶來更好的結果，我可以接受多付出一些努力。",
+        "ko": "더 나은 결과를 얻을 수 있다면 추가적인 노력도 감수하겠습니다.",
+        "es": "No me importa hacer un esfuerzo adicional si eso se traduce en mejores resultados.",
+        "de": "Für bessere Ergebnisse nehme ich den zusätzlichen Aufwand gerne in Kauf.",
+        "it": "Non mi dispiace fare uno sforzo in più se questo porta a risultati migliori.",
+        "ru": "Я готов приложить дополнительные усилия, если это принесёт лучшие результаты.",
+        "id": "Saya tidak keberatan berusaha lebih keras jika itu menghasilkan hasil yang lebih baik.",
+        "th": "ฉันยอมทุ่มเทเพิ่ม หากนั่นจะทำให้ได้ผลลัพธ์ที่ดียิ่งขึ้น",
+        "tr": "Daha iyi sonuçlar sağlayacaksa ekstra çaba harcamayı kabul ederim."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "我愿意接受一些延误以获得更高的质量。"
+        "zh-Hans": "我愿意接受一些延误以获得更高的质量。",
+        "ar": "أنا مستعد لقبول بعض التأخير مقابل جودة أعلى.",
+        "ja": "より高い品質のためなら、多少の遅れは受け入れます。",
+        "pt-BR": "Estou disposto a aceitar alguns atrasos em troca de uma qualidade maior.",
+        "vi": "Tôi sẵn sàng chấp nhận một chút chậm trễ để có chất lượng cao hơn.",
+        "fr": "Je suis prêt à accepter quelques retards en échange d'une meilleure qualité.",
+        "zh-Hant": "為了更高的品質，我願意接受一些延誤。",
+        "ko": "더 높은 품질을 위해서라면 어느 정도 지연을 감수할 수 있습니다.",
+        "es": "Estoy dispuesto a aceptar algunos retrasos a cambio de una mayor calidad.",
+        "de": "Für eine höhere Qualität bin ich bereit, einige Verzögerungen hinzunehmen.",
+        "it": "Sono disposto ad accettare qualche ritardo in cambio di una qualità superiore.",
+        "ru": "Я готов смириться с некоторыми задержками ради более высокого качества.",
+        "id": "Saya bersedia menerima sedikit keterlambatan demi kualitas yang lebih tinggi.",
+        "th": "ฉันยอมรับความล่าช้าบางส่วนเพื่อแลกกับคุณภาพที่สูงขึ้น",
+        "tr": "Daha yüksek kalite için bazı gecikmeleri kabul etmeye hazırım."
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.797,
       "duration": 3.797,
       "translations": {
-        "zh-Hans": "最终，我认为好处大于缺点。"
+        "zh-Hans": "最终，我认为好处大于缺点。",
+        "ar": "في نهاية المطاف، أعتقد أن الفوائد تفوق السلبيات.",
+        "ja": "最終的には、メリットがデメリットを上回ると思います。",
+        "pt-BR": "No fim das contas, acho que os benefícios superam as desvantagens.",
+        "vi": "Sau cùng, tôi cho rằng lợi ích vượt trội hơn những bất lợi.",
+        "fr": "Au bout du compte, je pense que les avantages l'emportent sur les inconvénients.",
+        "zh-Hant": "總的來說，我認為好處大於缺點。",
+        "ko": "결국에는 장점이 단점보다 크다고 생각합니다.",
+        "es": "En última instancia, creo que los beneficios superan los inconvenientes.",
+        "de": "Letztendlich denke ich, dass die Vorteile die Nachteile überwiegen.",
+        "it": "In definitiva, penso che i vantaggi superino gli svantaggi.",
+        "ru": "В конечном счёте, я думаю, что преимущества перевешивают недостатки.",
+        "id": "Pada akhirnya, saya rasa manfaatnya lebih besar daripada kekurangannya.",
+        "th": "ท้ายที่สุดแล้ว ฉันคิดว่าข้อดีมีมากกว่าข้อเสีย",
+        "tr": "Sonuç olarak, avantajların dezavantajlardan daha ağır bastığını düşünüyorum."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 5.248,
       "duration": 5.248,
       "translations": {
-        "zh-Hans": "总的来说，尽管有挑战，我对这个决定感到满意。"
+        "zh-Hans": "总的来说，尽管有挑战，我对这个决定感到满意。",
+        "ar": "بوجه عام، أنا راضٍ عن القرار رغم التحديات.",
+        "ja": "全体としては、課題はあるものの、この決定に満足しています。",
+        "pt-BR": "De modo geral, estou satisfeito com a decisão, apesar dos desafios.",
+        "vi": "Nhìn chung, dù có những thách thức, tôi hài lòng với quyết định này.",
+        "fr": "Dans l'ensemble, je suis satisfait de la décision malgré les difficultés.",
+        "zh-Hant": "總的來說，儘管面臨挑戰，我對這個決定感到滿意。",
+        "ko": "전반적으로 어려움이 있었지만 이 결정에 만족합니다.",
+        "es": "En general, estoy satisfecho con la decisión a pesar de las dificultades.",
+        "de": "Insgesamt bin ich trotz der Herausforderungen mit der Entscheidung zufrieden.",
+        "it": "Nel complesso, sono soddisfatto della decisione nonostante le difficoltà.",
+        "ru": "В целом я доволен этим решением, несмотря на трудности.",
+        "id": "Secara keseluruhan, saya puas dengan keputusan ini meskipun ada tantangan.",
+        "th": "โดยรวมแล้ว ฉันพอใจกับการตัดสินใจนี้แม้จะมีความท้าทาย",
+        "tr": "Genel olarak, zorluklara rağmen bu karardan memnunum."
       }
     }
   ]

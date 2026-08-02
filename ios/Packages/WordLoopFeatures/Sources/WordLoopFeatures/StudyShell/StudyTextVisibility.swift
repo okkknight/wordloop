@@ -14,18 +14,20 @@ public enum StudyTextVisibility: String, CaseIterable, Equatable, Sendable {
     }
 
     public var accessibilityValue: String {
+        let copy = StudyVisibilityCopy.current
         switch self {
-        case .full: "全文可见"
-        case .focus: "仅重点表达可见"
-        case .hidden: "学习内容已隐藏"
+        case .full: copy.fullValue
+        case .focus: copy.focusValue
+        case .hidden: copy.hiddenValue
         }
     }
 
     public func nextAccessibilityAction(for kind: StudyShellItem.Kind) -> String {
+        let copy = StudyVisibilityCopy.current
         switch next(for: kind) {
-        case .full: "显示全文"
-        case .focus: "只显示重点表达"
-        case .hidden: "隐藏学习内容"
+        case .full: copy.showFull
+        case .focus: copy.showFocus
+        case .hidden: copy.hide
         }
     }
 }

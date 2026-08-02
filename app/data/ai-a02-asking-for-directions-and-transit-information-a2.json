@@ -15,7 +15,21 @@
       "end": 2.133,
       "duration": 2.133,
       "translations": {
-        "zh-Hans": "最近的咖啡店在哪里？"
+        "zh-Hans": "最近的咖啡店在哪里？",
+        "fr": "Où se trouve le café le plus proche ?",
+        "ja": "一番近いコーヒーショップはどこですか？",
+        "zh-Hant": "最近的咖啡店在哪裡？",
+        "ko": "가장 가까운 카페가 어디에 있나요?",
+        "pt-BR": "Onde fica a cafeteria mais próxima?",
+        "id": "Di mana kedai kopi terdekat?",
+        "tr": "En yakın kahve dükkânı nerede?",
+        "ru": "Где находится ближайшая кофейня?",
+        "es": "¿Dónde está la cafetería más cercana?",
+        "de": "Wo ist das nächste Café?",
+        "it": "Dov’è il bar più vicino?",
+        "ar": "أين يقع أقرب مقهى؟",
+        "th": "ร้านกาแฟที่ใกล้ที่สุดอยู่ที่ไหน",
+        "vi": "Quán cà phê gần nhất ở đâu?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 3.712,
       "duration": 3.712,
       "translations": {
-        "zh-Hans": "我从这里怎么去火车站？"
+        "zh-Hans": "我从这里怎么去火车站？",
+        "fr": "Comment puis-je aller à la gare d’ici ?",
+        "ja": "ここから駅へはどう行けばいいですか？",
+        "zh-Hant": "從這裡要怎麼去火車站？",
+        "ko": "여기서 기차역까지 어떻게 가나요?",
+        "pt-BR": "Como faço para chegar à estação de trem daqui?",
+        "id": "Bagaimana cara menuju stasiun kereta dari sini?",
+        "tr": "Buradan tren istasyonuna nasıl gidebilirim?",
+        "ru": "Как отсюда добраться до железнодорожного вокзала?",
+        "es": "¿Cómo llego desde aquí a la estación de tren?",
+        "de": "Wie komme ich von hier zum Bahnhof?",
+        "it": "Come arrivo da qui alla stazione ferroviaria?",
+        "ar": "كيف أصل إلى محطة القطار من هنا؟",
+        "th": "จากที่นี่ไปสถานีรถไฟได้อย่างไร",
+        "vi": "Từ đây tôi đi đến ga tàu như thế nào?"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "附近有药店吗？"
+        "zh-Hans": "附近有药店吗？",
+        "fr": "Y a-t-il une pharmacie dans les environs ?",
+        "ja": "この近くに薬局はありますか？",
+        "zh-Hant": "附近有藥局嗎？",
+        "ko": "근처에 약국이 있나요?",
+        "pt-BR": "Há uma farmácia por perto?",
+        "id": "Apakah ada apotek di dekat sini?",
+        "tr": "Yakınlarda eczane var mı?",
+        "ru": "Здесь поблизости есть аптека?",
+        "es": "¿Hay una farmacia cerca?",
+        "de": "Gibt es hier in der Nähe eine Apotheke?",
+        "it": "C’è una farmacia qui vicino?",
+        "ar": "هل توجد صيدلية قريبة؟",
+        "th": "แถวนี้มีร้านขายยาไหม",
+        "vi": "Gần đây có hiệu thuốc nào không?"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "去市中心的最佳路线是什么？"
+        "zh-Hans": "去市中心的最佳路线是什么？",
+        "fr": "Quel est le meilleur moyen d’aller au centre-ville ?",
+        "ja": "中心街へ行くには、どの行き方が一番いいですか？",
+        "zh-Hant": "到市中心最好的路線是什麼？",
+        "ko": "도심에 가는 가장 좋은 방법이 뭐예요?",
+        "pt-BR": "Qual é a melhor maneira de chegar ao centro?",
+        "id": "Apa cara terbaik untuk menuju pusat kota?",
+        "tr": "Şehir merkezine ulaşmanın en iyi yolu nedir?",
+        "ru": "Как лучше всего добраться до центра города?",
+        "es": "¿Cuál es la mejor manera de llegar al centro?",
+        "de": "Wie kommt man am besten ins Stadtzentrum?",
+        "it": "Qual è il modo migliore per raggiungere il centro?",
+        "ar": "ما أفضل طريقة للوصول إلى وسط المدينة؟",
+        "th": "ไปใจกลางเมืองด้วยวิธีไหนดีที่สุด",
+        "vi": "Cách tốt nhất để đến trung tâm thành phố là gì?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "哪条地铁线去机场？"
+        "zh-Hans": "哪条地铁线去机场？",
+        "fr": "Quelle ligne de métro va à l’aéroport ?",
+        "ja": "空港へ行くのは何線ですか？",
+        "zh-Hant": "搭哪條捷運線可以到機場？",
+        "ko": "공항에 가려면 어느 지하철 노선을 타야 하나요?",
+        "pt-BR": "Qual linha do metrô vai para o aeroporto?",
+        "id": "Jalur kereta bawah tanah mana yang menuju bandara?",
+        "tr": "Havalimanına hangi metro hattı gidiyor?",
+        "ru": "Какая линия метро идёт до аэропорта?",
+        "es": "¿Qué línea de metro va al aeropuerto?",
+        "de": "Welche U-Bahn-Linie fährt zum Flughafen?",
+        "it": "Quale linea della metropolitana va all’aeroporto?",
+        "ar": "أي خط مترو يذهب إلى المطار؟",
+        "th": "รถไฟใต้ดินสายไหนไปสนามบิน",
+        "vi": "Tuyến tàu điện ngầm nào đi đến sân bay?"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "我应该乘哪路公交车去商场？"
+        "zh-Hans": "我应该乘哪路公交车去商场？",
+        "fr": "Quel bus dois-je prendre pour aller au centre commercial ?",
+        "ja": "ショッピングモールへ行くには、どのバスに乗ればいいですか？",
+        "zh-Hant": "我應該搭哪一班公車去購物中心？",
+        "ko": "쇼핑몰에 가려면 몇 번 버스를 타야 하나요?",
+        "pt-BR": "Qual ônibus devo pegar para chegar ao shopping?",
+        "id": "Bus mana yang harus saya naiki untuk pergi ke mal?",
+        "tr": "Alışveriş merkezine gitmek için hangi otobüse binmeliyim?",
+        "ru": "На какой автобус мне сесть, чтобы доехать до торгового центра?",
+        "es": "¿Qué autobús debo tomar para llegar al centro comercial?",
+        "de": "Welchen Bus muss ich nehmen, um zum Einkaufszentrum zu kommen?",
+        "it": "Quale autobus devo prendere per arrivare al centro commerciale?",
+        "ar": "أي حافلة يجب أن أركب للوصول إلى مركز التسوق؟",
+        "th": "ฉันควรขึ้นรถบัสสายไหนไปห้างสรรพสินค้า",
+        "vi": "Tôi nên đi xe buýt nào để đến trung tâm thương mại?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "去体育场我需要乘哪条线路？"
+        "zh-Hans": "去体育场我需要乘哪条线路？",
+        "fr": "Quelle ligne dois-je prendre pour aller au stade ?",
+        "ja": "スタジアムへ行くには何線に乗ればいいですか？",
+        "zh-Hant": "去體育場要搭哪條線？",
+        "ko": "경기장에 가려면 어느 노선을 이용해야 하나요?",
+        "pt-BR": "Qual linha devo pegar para chegar ao estádio?",
+        "id": "Jalur apa yang harus saya gunakan untuk menuju stadion?",
+        "tr": "Stadyuma gitmek için hangi hattı kullanmam gerekiyor?",
+        "ru": "Какая линия нужна, чтобы добраться до стадиона?",
+        "es": "¿Qué línea necesito para llegar al estadio?",
+        "de": "Welche Linie brauche ich zum Stadion?",
+        "it": "Quale linea devo prendere per arrivare allo stadio?",
+        "ar": "ما الخط الذي أحتاجه للوصول إلى الملعب؟",
+        "th": "ฉันต้องใช้สายไหนไปสนามกีฬา",
+        "vi": "Tôi cần đi tuyến nào để đến sân vận động?"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "去科学博物馆我在哪站下车？"
+        "zh-Hans": "去科学博物馆我在哪站下车？",
+        "fr": "À quel arrêt dois-je descendre pour aller au musée des sciences ?",
+        "ja": "科学博物館へ行くにはどこで降りればいいですか？",
+        "zh-Hant": "去科學博物館要在哪一站下車？",
+        "ko": "과학 박물관에 가려면 어디에서 내려야 하나요?",
+        "pt-BR": "Onde devo descer para ir ao museu de ciências?",
+        "id": "Saya harus turun di mana untuk ke museum sains?",
+        "tr": "Bilim müzesine gitmek için nerede inmeliyim?",
+        "ru": "Где мне выйти, чтобы попасть в музей науки?",
+        "es": "¿Dónde me bajo para ir al museo de ciencias?",
+        "de": "Wo muss ich für das Wissenschaftsmuseum aussteigen?",
+        "it": "Dove devo scendere per andare al museo della scienza?",
+        "ar": "أين أنزل للذهاب إلى متحف العلوم؟",
+        "th": "ฉันต้องลงที่ไหนเพื่อไปพิพิธภัณฑ์วิทยาศาสตร์",
+        "vi": "Tôi phải xuống ở đâu để đến bảo tàng khoa học?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "最近的杂货店有多远？"
+        "zh-Hans": "最近的杂货店有多远？",
+        "fr": "À quelle distance se trouve l’épicerie la plus proche ?",
+        "ja": "一番近い食料品店までどのくらいありますか？",
+        "zh-Hant": "最近的雜貨店有多遠？",
+        "ko": "가장 가까운 식료품점까지 얼마나 먼가요?",
+        "pt-BR": "Qual é a distância até o supermercado mais próximo?",
+        "id": "Seberapa jauh toko bahan makanan terdekat?",
+        "tr": "En yakın market ne kadar uzakta?",
+        "ru": "Как далеко находится ближайший продуктовый магазин?",
+        "es": "¿A qué distancia está el supermercado más cercano?",
+        "de": "Wie weit ist der nächste Lebensmittelladen entfernt?",
+        "it": "Quanto dista il negozio di alimentari più vicino?",
+        "ar": "كم يبعد أقرب متجر للمواد الغذائية؟",
+        "th": "ร้านขายของชำที่ใกล้ที่สุดอยู่ไกลแค่ไหน",
+        "vi": "Cửa hàng tạp hóa gần nhất cách đây bao xa?"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "最近的自动取款机在哪里？"
+        "zh-Hans": "最近的自动取款机在哪里？",
+        "fr": "Où se trouve le distributeur automatique le plus proche ?",
+        "ja": "一番近いATMはどこですか？",
+        "zh-Hant": "最近的提款機在哪裡？",
+        "ko": "가장 가까운 현금자동입출금기가 어디에 있나요?",
+        "pt-BR": "Onde fica o caixa eletrônico mais próximo?",
+        "id": "Di mana ATM terdekat?",
+        "tr": "En yakın ATM nerede?",
+        "ru": "Где находится ближайший банкомат?",
+        "es": "¿Dónde está el cajero automático más cercano?",
+        "de": "Wo ist der nächste Geldautomat?",
+        "it": "Dov’è lo sportello bancomat più vicino?",
+        "ar": "أين أقرب جهاز صراف آلي؟",
+        "th": "ตู้เอทีเอ็มที่ใกล้ที่สุดอยู่ที่ไหน",
+        "vi": "Cây ATM gần nhất ở đâu?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "邮局在步行距离内吗？"
+        "zh-Hans": "邮局在步行距离内吗？",
+        "fr": "Le bureau de poste est-il accessible à pied ?",
+        "ja": "郵便局は歩いて行ける距離ですか？",
+        "zh-Hant": "郵局走路可以到嗎？",
+        "ko": "우체국까지 걸어서 갈 수 있나요?",
+        "pt-BR": "Dá para ir a pé até os correios?",
+        "id": "Apakah kantor posnya bisa ditempuh dengan berjalan kaki?",
+        "tr": "Postane yürüyerek gidebileceğim kadar yakın mı?",
+        "ru": "До почты можно дойти пешком?",
+        "es": "¿Se puede llegar a la oficina de correos caminando?",
+        "de": "Ist das Postamt zu Fuß erreichbar?",
+        "it": "Si può raggiungere l’ufficio postale a piedi?",
+        "ar": "هل يقع مكتب البريد على مسافة يمكن قطعها سيرًا؟",
+        "th": "ที่ทำการไปรษณีย์อยู่ในระยะที่เดินไปได้ไหม",
+        "vi": "Có thể đi bộ đến bưu điện không?"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "你能指出沿途的地标吗？"
+        "zh-Hans": "你能指出沿途的地标吗？",
+        "fr": "Pouvez-vous m’indiquer quelques points de repère en chemin ?",
+        "ja": "途中にある目印を教えていただけますか？",
+        "zh-Hant": "可以指出沿途有哪些地標嗎？",
+        "ko": "가는 길에 어떤 랜드마크가 있는지 알려 주실 수 있나요?",
+        "pt-BR": "Você pode indicar algum ponto de referência no caminho?",
+        "id": "Bisa tunjukkan beberapa tempat terkenal di sepanjang jalan?",
+        "tr": "Yol boyunca görebileceğim herhangi bir simge yapıyı gösterebilir misiniz?",
+        "ru": "Не могли бы вы указать какие-нибудь достопримечательности по пути?",
+        "es": "¿Puede señalarme algún punto de referencia por el camino?",
+        "de": "Können Sie mir unterwegs irgendwelche Orientierungspunkte nennen?",
+        "it": "Può indicarmi qualche punto di riferimento lungo il percorso?",
+        "ar": "هل يمكنك أن تشير إلى بعض المعالم على الطريق؟",
+        "th": "ช่วยบอกจุดสังเกตระหว่างทางให้หน่อยได้ไหม",
+        "vi": "Bạn có thể chỉ cho tôi vài địa điểm dễ nhận biết trên đường không?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "所以我在拐角处左转，对吗？"
+        "zh-Hans": "所以我在拐角处左转，对吗？",
+        "fr": "Donc, je tourne à gauche au coin, c’est bien ça ?",
+        "ja": "つまり、角を左に曲がればいいのですね？",
+        "zh-Hant": "所以我在轉角處左轉，對嗎？",
+        "ko": "그럼 모퉁이에서 왼쪽으로 도는 거죠?",
+        "pt-BR": "Então viro à esquerda na esquina, certo?",
+        "id": "Jadi, saya belok kiri di pojok jalan, ya?",
+        "tr": "Yani köşeden sola dönüyorum, değil mi?",
+        "ru": "Значит, на углу мне нужно повернуть налево, верно?",
+        "es": "Entonces giro a la izquierda en la esquina, ¿verdad?",
+        "de": "Also biege ich an der Ecke links ab, richtig?",
+        "it": "Quindi giro a sinistra all’angolo, giusto?",
+        "ar": "إذًا أنعطف يسارًا عند الزاوية، صحيح؟",
+        "th": "งั้นฉันเลี้ยวซ้ายที่หัวมุมใช่ไหม",
+        "vi": "Vậy là tôi rẽ trái ở góc đường, đúng không?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "这是去美术馆的正确站点吗？"
+        "zh-Hans": "这是去美术馆的正确站点吗？",
+        "fr": "Est-ce le bon arrêt pour le musée d’art ?",
+        "ja": "美術館へ行くには、ここで降りれば合っていますか？",
+        "zh-Hant": "這是去美術館的正確站牌嗎？",
+        "ko": "여기가 미술관에 가는 정류장이 맞나요?",
+        "pt-BR": "Esta é a parada certa para o museu de arte?",
+        "id": "Apakah ini halte yang benar untuk museum seni?",
+        "tr": "Sanat müzesi için doğru durak burası mı?",
+        "ru": "Это нужная остановка для художественного музея?",
+        "es": "¿Esta es la parada correcta para el museo de arte?",
+        "de": "Ist das die richtige Haltestelle für das Kunstmuseum?",
+        "it": "È questa la fermata giusta per il museo d’arte?",
+        "ar": "هل هذه هي المحطة الصحيحة لمتحف الفن؟",
+        "th": "นี่คือป้ายที่ถูกต้องสำหรับไปพิพิธภัณฑ์ศิลปะไหม",
+        "vi": "Đây có phải là trạm đúng để đến bảo tàng mỹ thuật không?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 4.395,
       "duration": 4.395,
       "translations": {
-        "zh-Hans": "让我重复一下：我乘坐蓝线并在中央车站下车？"
+        "zh-Hans": "让我重复一下：我乘坐蓝线并在中央车站下车？",
+        "fr": "Je répète : je prends la ligne bleue et je descends à la gare centrale ?",
+        "ja": "復唱します。青い線に乗って中央駅で降りるのですね？",
+        "zh-Hant": "讓我再確認一次：搭藍線，在中央車站下車，對嗎？",
+        "ko": "다시 말씀드리면, 파란색 노선을 타고 센트럴역에서 내리면 되나요?",
+        "pt-BR": "Deixe-me repetir: pego a linha azul e desço na Estação Central?",
+        "id": "Saya ulangi: saya naik jalur biru dan turun di Stasiun Sentral?",
+        "tr": "Tekrar edeyim: mavi hatta binip Merkez İstasyonu'nda mı ineceğim?",
+        "ru": "Повторю: мне нужно сесть на синюю линию и выйти на Центральном вокзале?",
+        "es": "Repito: ¿tomo la línea azul y me bajo en la estación central?",
+        "de": "Ich wiederhole: Ich nehme die blaue Linie und steige am Hauptbahnhof aus?",
+        "it": "Ripeto: prendo la linea blu e scendo alla stazione centrale?",
+        "ar": "دعني أكرر: أركب الخط الأزرق وأنزل في المحطة المركزية؟",
+        "th": "ขอทวนอีกครั้งนะ ฉันขึ้นสายสีน้ำเงินแล้วลงที่สถานีกลางใช่ไหม",
+        "vi": "Để tôi nhắc lại: tôi đi tuyến màu xanh và xuống ở Ga Trung tâm phải không?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我从北门出去，对吗？"
+        "zh-Hans": "我从北门出去，对吗？",
+        "fr": "Je sors par la porte nord, c’est bien ça ?",
+        "ja": "北口から出れば合っていますか？",
+        "zh-Hant": "我是從北門出去，對嗎？",
+        "ko": "북쪽 출구로 나가면 되는 게 맞나요?",
+        "pt-BR": "Saio pelo portão norte, está correto?",
+        "id": "Saya keluar melalui gerbang utara, benar begitu?",
+        "tr": "Kuzey kapısından çıkıyorum, doğru mu?",
+        "ru": "Мне нужно выйти через северные ворота, верно?",
+        "es": "Salgo por la puerta norte, ¿correcto?",
+        "de": "Ich gehe am Nordausgang hinaus, stimmt das?",
+        "it": "Devo uscire dall’uscita nord, giusto?",
+        "ar": "أخرج من البوابة الشمالية، أليس كذلك؟",
+        "th": "ฉันออกทางประตูทิศเหนือใช่ไหม",
+        "vi": "Tôi ra ở cổng phía bắc, đúng không?"
       }
     }
   ]

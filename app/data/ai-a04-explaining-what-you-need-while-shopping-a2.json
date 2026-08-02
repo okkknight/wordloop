@@ -15,7 +15,15 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我需要一件新的冬季夹克。"
+        "zh-Hans": "我需要一件新的冬季夹克。",
+        "ja": "冬用の新しいジャケットが必要です。",
+        "zh-Hant": "我需要一件新的冬季外套。",
+        "ko": "겨울에 입을 새 재킷이 필요해요.",
+        "pt-BR": "Preciso de uma jaqueta nova para o inverno.",
+        "id": "Saya membutuhkan jaket baru untuk musim dingin.",
+        "tr": "Kış için yeni bir cekete ihtiyacım var.",
+        "ru": "Мне нужна новая куртка на зиму.",
+        "es": "Necesito una chaqueta nueva para el invierno.", "fr": "J’ai besoin d’une nouvelle veste pour l’hiver.", "de": "Ich brauche eine neue Jacke für den Winter.", "it": "Mi serve una giacca nuova per l’inverno.", "ar": "أحتاج إلى سترة جديدة لفصل الشتاء.", "th": "ฉันต้องการเสื้อแจ็กเก็ตตัวใหม่สำหรับฤดูหนาว", "vi": "Mình cần một chiếc áo khoác mới cho mùa đông."
       }
     },
     {
@@ -28,7 +36,15 @@
       "end": 4.096,
       "duration": 4.096,
       "translations": {
-        "zh-Hans": "我在找可以穿去正式场合的东西。"
+        "zh-Hans": "我在找可以穿去正式场合的东西。",
+        "ja": "フォーマルな場に着ていけるものを探しています。",
+        "zh-Hant": "我在找適合正式場合穿的衣服。",
+        "ko": "격식 있는 자리에 입고 갈 만한 것을 찾고 있어요.",
+        "pt-BR": "Estou procurando algo que possa ser usado em um evento formal.",
+        "id": "Saya mencari sesuatu yang bisa dikenakan ke acara resmi.",
+        "tr": "Resmî bir etkinlikte giyilebilecek bir şey arıyorum.",
+        "ru": "Я ищу что-нибудь, что можно надеть на официальное мероприятие.",
+        "es": "Busco algo que pueda llevar a un evento formal.", "fr": "Je cherche quelque chose que je pourrais porter à une réception officielle.", "de": "Ich suche etwas, das man zu einer formellen Veranstaltung tragen kann.", "it": "Cerco qualcosa da indossare a un evento formale.", "ar": "أبحث عن شيء يمكنني ارتداؤه في مناسبة رسمية.", "th": "ฉันกำลังหาเสื้อผ้าที่ใส่ไปงานทางการได้", "vi": "Mình đang tìm một bộ đồ có thể mặc đến sự kiện trang trọng."
       }
     },
     {
@@ -41,7 +57,15 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "我想要一双跑步鞋。"
+        "zh-Hans": "我想要一双跑步鞋。",
+        "ja": "ランニング用の靴がほしいです。",
+        "zh-Hant": "我想買一雙跑鞋。",
+        "ko": "달리기에 신을 운동화 한 켤레를 사고 싶어요.",
+        "pt-BR": "Quero um par de tênis para correr.",
+        "id": "Saya ingin sepasang sepatu untuk berlari.",
+        "tr": "Koşu için bir çift ayakkabı istiyorum.",
+        "ru": "Я хочу пару обуви для бега.",
+        "es": "Quiero un par de zapatillas para correr.", "fr": "Je voudrais une paire de chaussures pour courir.", "de": "Ich möchte ein Paar Laufschuhe.", "it": "Vorrei un paio di scarpe da corsa.", "ar": "أريد زوجًا من أحذية الجري.", "th": "ฉันอยากได้รองเท้าสำหรับวิ่งสักคู่", "vi": "Mình muốn một đôi giày để chạy bộ."
       }
     },
     {
@@ -54,7 +78,15 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我有兴趣买一部新的工作手机。"
+        "zh-Hans": "我有兴趣买一部新的工作手机。",
+        "ja": "仕事用に新しい携帯電話を買いたいと思っています。",
+        "zh-Hant": "我想買一支新的工作手機。",
+        "ko": "업무용으로 쓸 새 휴대전화를 사고 싶어요.",
+        "pt-BR": "Tenho interesse em comprar um celular novo para o trabalho.",
+        "id": "Saya tertarik membeli ponsel baru untuk bekerja.",
+        "tr": "İş için yeni bir telefon almakla ilgileniyorum.",
+        "ru": "Я хочу купить новый телефон для работы.",
+        "es": "Me interesa comprar un teléfono nuevo para el trabajo.", "fr": "J’aimerais acheter un nouveau téléphone pour le travail.", "de": "Ich interessiere mich für ein neues Handy für die Arbeit.", "it": "Mi interessa comprare un telefono nuovo per il lavoro.", "ar": "أرغب في شراء هاتف جديد للعمل.", "th": "ฉันสนใจซื้อโทรศัพท์เครื่องใหม่ไว้ใช้ทำงาน", "vi": "Mình muốn mua một chiếc điện thoại mới để dùng cho công việc."
       }
     },
     {
@@ -67,7 +99,15 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我更喜欢中号的，谢谢。"
+        "zh-Hans": "我更喜欢中号的，谢谢。",
+        "ja": "Mサイズでお願いします。",
+        "zh-Hant": "我比較喜歡中號，謝謝。",
+        "ko": "중간 사이즈로 주세요.",
+        "pt-BR": "Prefiro o tamanho médio, por favor.",
+        "id": "Saya lebih suka ukuran sedang, ya.",
+        "tr": "Orta beden tercih ederim, lütfen.",
+        "ru": "Мне, пожалуйста, размер M.",
+        "es": "Prefiero la talla mediana, por favor.", "fr": "Je préfère une taille moyenne, s’il vous plaît.", "de": "Ich hätte gern Größe M, bitte.", "it": "Preferisco una taglia media, per favore.", "ar": "أفضل مقاسًا متوسطًا، من فضلك.", "th": "ขอไซซ์กลางนะคะ", "vi": "Mình thích cỡ vừa, nhé."
       }
     },
     {
@@ -80,7 +120,15 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "你们有这个的大号吗？"
+        "zh-Hans": "你们有这个的大号吗？",
+        "ja": "これのもっと大きいサイズはありますか？",
+        "zh-Hant": "這個有大號的嗎？",
+        "ko": "이거 더 큰 사이즈도 있나요?",
+        "pt-BR": "Vocês têm este produto em um tamanho maior?",
+        "id": "Apakah ada ukuran yang lebih besar untuk yang ini?",
+        "tr": "Bunun daha büyük bedeni var mı?",
+        "ru": "Есть ли это в большем размере?",
+        "es": "¿Tienen esto en una talla más grande?", "fr": "Vous l’avez dans une taille plus grande ?", "de": "Gibt es das auch in einer größeren Größe?", "it": "Avete questo in una taglia più grande?", "ar": "هل يتوفر هذا بمقاس أكبر؟", "th": "มีไซซ์ที่ใหญ่กว่านี้ไหมคะ", "vi": "Mẫu này có cỡ lớn hơn không?"
       }
     },
     {
@@ -93,7 +141,15 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "我喜欢现代风格。"
+        "zh-Hans": "我喜欢现代风格。",
+        "ja": "現代的なデザインが好きです。",
+        "zh-Hant": "我喜歡現代風格。",
+        "ko": "현대적인 스타일이 마음에 들어요.",
+        "pt-BR": "Gosto do estilo moderno.",
+        "id": "Saya suka model yang modern.",
+        "tr": "Modern tarzı seviyorum.",
+        "ru": "Мне нравится современный стиль.",
+        "es": "Me gusta el estilo moderno.", "fr": "J’aime le style moderne.", "de": "Mir gefällt der moderne Stil.", "it": "Mi piace lo stile moderno.", "ar": "أعجبني الطراز العصري.", "th": "ฉันชอบสไตล์โมเดิร์น", "vi": "Mình thích kiểu dáng hiện đại."
       }
     },
     {
@@ -106,7 +162,15 @@
       "end": 3.712,
       "duration": 3.712,
       "translations": {
-        "zh-Hans": "我在找轻便可携带的东西。"
+        "zh-Hans": "我在找轻便可携带的东西。",
+        "ja": "軽くて持ち運びやすいものを探しています。",
+        "zh-Hant": "我在找輕巧又方便攜帶的東西。",
+        "ko": "가볍고 휴대하기 편한 것을 찾고 있어요.",
+        "pt-BR": "Estou procurando algo leve e fácil de transportar.",
+        "id": "Saya mencari sesuatu yang ringan dan mudah dibawa.",
+        "tr": "Hafif ve taşınabilir bir şey arıyorum.",
+        "ru": "Я ищу что-нибудь лёгкое и удобное для переноски.",
+        "es": "Busco algo ligero y fácil de transportar.", "fr": "Je cherche quelque chose de léger et facile à transporter.", "de": "Ich suche etwas Leichtes, das man gut mitnehmen kann.", "it": "Cerco qualcosa di leggero e facile da trasportare.", "ar": "أبحث عن شيء خفيف وسهل الحمل.", "th": "ฉันกำลังหาของที่น้ำหนักเบาและพกพาสะดวก", "vi": "Mình đang tìm thứ gì đó nhẹ và dễ mang theo."
       }
     },
     {
@@ -119,7 +183,15 @@
       "end": 4.096,
       "duration": 4.096,
       "translations": {
-        "zh-Hans": "我希望不超过100美元。"
+        "zh-Hans": "我希望不超过100美元。",
+        "ja": "100ドル以内に抑えたいと思っています。",
+        "zh-Hant": "我希望價格不要超過 100 美元。",
+        "ko": "100달러 아래로 사고 싶어요.",
+        "pt-BR": "Espero gastar menos de 100 dólares.",
+        "id": "Saya berharap harganya tidak lebih dari 100 dolar.",
+        "tr": "100 doların altında kalmayı umuyorum.",
+        "ru": "Я надеюсь уложиться в 100 долларов.",
+        "es": "Espero no gastar más de 100 dólares.", "fr": "J’espère rester en dessous de 100 dollars.", "de": "Ich hoffe, unter 100 Dollar zu bleiben.", "it": "Spero di restare sotto i 100 dollari.", "ar": "آمل ألا يتجاوز السعر 100 دولار.", "th": "ฉันหวังว่าจะไม่เกิน 100 ดอลลาร์", "vi": "Mình hy vọng giá không quá 100 đô la."
       }
     },
     {
@@ -132,7 +204,15 @@
       "end": 3.627,
       "duration": 3.627,
       "translations": {
-        "zh-Hans": "我可以试穿一下看看合不合适吗？"
+        "zh-Hans": "我可以试穿一下看看合不合适吗？",
+        "ja": "サイズが合うか試着してもいいですか？",
+        "zh-Hant": "我可以試穿看看合不合身嗎？",
+        "ko": "잘 맞는지 입어 봐도 될까요?",
+        "pt-BR": "Posso experimentar para ver se serve?",
+        "id": "Bolehkah saya mencobanya untuk melihat apakah ukurannya pas?",
+        "tr": "Üzerime olup olmadığını görmek için bunu deneyebilir miyim?",
+        "ru": "Можно я примерю это, чтобы проверить, подходит ли мне размер?",
+        "es": "¿Puedo probármelo para ver si me queda bien?", "fr": "Est-ce que je peux l’essayer pour voir s’il me va ?", "de": "Kann ich das anprobieren, um zu sehen, ob es passt?", "it": "Posso provarlo per vedere se mi sta bene?", "ar": "هل يمكنني قياسه لأرى إن كان مناسبًا لي؟", "th": "ขอลองใส่เพื่อดูว่าพอดีไหมได้ไหมคะ", "vi": "Mình có thể thử xem có vừa không?"
       }
     },
     {
@@ -145,7 +225,15 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "最重要的是耐用性。"
+        "zh-Hans": "最重要的是耐用性。",
+        "ja": "一番大切なのは耐久性です。",
+        "zh-Hant": "最重要的是耐用。",
+        "ko": "가장 중요한 건 내구성이에요.",
+        "pt-BR": "O mais importante é a durabilidade.",
+        "id": "Yang paling penting bagi saya adalah daya tahannya.",
+        "tr": "En önemli şey dayanıklılık.",
+        "ru": "Самое главное — долговечность.",
+        "es": "Lo más importante es que sea duradero.", "fr": "Le plus important, c’est la solidité.", "de": "Das Wichtigste ist die Haltbarkeit.", "it": "La cosa più importante è la durata.", "ar": "أهم شيء هو المتانة.", "th": "สิ่งที่สำคัญที่สุดคือความทนทาน", "vi": "Điều quan trọng nhất là độ bền."
       }
     },
     {
@@ -158,7 +246,15 @@
       "end": 3.456,
       "duration": 3.456,
       "translations": {
-        "zh-Hans": "我在找性价比高的东西。"
+        "zh-Hans": "我在找性价比高的东西。",
+        "ja": "価格に見合った価値のあるものを探しています。",
+        "zh-Hant": "我在找物有所值的東西。",
+        "ko": "가격 대비 성능이 좋은 것을 찾고 있어요.",
+        "pt-BR": "Estou procurando algo que tenha um bom custo-benefício.",
+        "id": "Saya mencari sesuatu yang sepadan dengan harganya.",
+        "tr": "Fiyatına göre iyi bir şey arıyorum.",
+        "ru": "Я ищу что-нибудь с хорошим соотношением цены и качества.",
+        "es": "Busco algo que ofrezca una buena relación calidad-precio.", "fr": "Je cherche quelque chose qui offre un bon rapport qualité-prix.", "de": "Ich suche etwas mit einem guten Preis-Leistungs-Verhältnis.", "it": "Cerco qualcosa con un buon rapporto qualità-prezzo.", "ar": "أبحث عن شيء يقدم قيمة جيدة مقابل المال.", "th": "ฉันกำลังหาของที่คุ้มค่าเงิน", "vi": "Mình đang tìm một món đáng tiền."
       }
     },
     {
@@ -171,7 +267,15 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "我可以看看你们有的其他款式吗？"
+        "zh-Hans": "我可以看看你们有的其他款式吗？",
+        "ja": "ほかのデザインもいくつか見せていただけますか？",
+        "zh-Hant": "可以讓我看看其他款式嗎？",
+        "ko": "다른 스타일도 몇 가지 볼 수 있을까요?",
+        "pt-BR": "Eu poderia ver alguns outros estilos que vocês têm?",
+        "id": "Boleh saya lihat model lain yang tersedia?",
+        "tr": "Sahip olduğunuz diğer tarzları görebilir miyim?",
+        "ru": "Можно посмотреть другие модели, которые у вас есть?",
+        "es": "¿Podría ver otros estilos que tengan?", "fr": "Est-ce que je pourrais voir d’autres modèles ?", "de": "Könnte ich mir noch andere Modelle ansehen?", "it": "Potrei vedere altri modelli che avete?", "ar": "هل يمكنني رؤية بعض الطرز الأخرى المتوفرة لديكم؟", "th": "ขอดูสไตล์อื่น ๆ ที่ร้านมีได้ไหมคะ", "vi": "Mình xem thêm vài kiểu khác cửa hàng có được không?"
       }
     },
     {
@@ -184,7 +288,15 @@
       "end": 3.371,
       "duration": 3.371,
       "translations": {
-        "zh-Hans": "这两种型号有什么区别？"
+        "zh-Hans": "这两种型号有什么区别？",
+        "ja": "この2つのモデルの違いは何ですか？",
+        "zh-Hant": "這兩個型號有什麼差別？",
+        "ko": "이 두 모델은 어떤 차이가 있나요?",
+        "pt-BR": "Qual é a diferença entre estes dois modelos?",
+        "id": "Apa perbedaan antara kedua model ini?",
+        "tr": "Bu iki model arasındaki fark nedir?",
+        "ru": "В чём разница между этими двумя моделями?",
+        "es": "¿Qué diferencia hay entre estos dos modelos?", "fr": "Quelle est la différence entre ces deux modèles ?", "de": "Was ist der Unterschied zwischen diesen beiden Modellen?", "it": "Qual è la differenza tra questi due modelli?", "ar": "ما الفرق بين هذين الطرازين؟", "th": "สองรุ่นนี้แตกต่างกันอย่างไรคะ", "vi": "Hai mẫu này khác nhau như thế nào?"
       }
     },
     {
@@ -197,7 +309,15 @@
       "end": 3.2,
       "duration": 3.2,
       "translations": {
-        "zh-Hans": "我可以把这个和另一个选项比较一下吗？"
+        "zh-Hans": "我可以把这个和另一个选项比较一下吗？",
+        "ja": "これを別の選択肢と比べてもいいですか？",
+        "zh-Hant": "我可以拿這個和另一個選項比較看看嗎？",
+        "ko": "이 제품을 다른 제품과 비교해 봐도 될까요?",
+        "pt-BR": "Posso comparar este com outra opção?",
+        "id": "Bolehkah saya membandingkan ini dengan pilihan lain?",
+        "tr": "Bunu başka bir seçenekle karşılaştırabilir miyim?",
+        "ru": "Можно сравнить это с другим вариантом?",
+        "es": "¿Puedo comparar esto con otra opción?", "fr": "Est-ce que je peux comparer cet article avec une autre option ?", "de": "Kann ich das mit einer anderen Option vergleichen?", "it": "Posso confrontarlo con un’altra opzione?", "ar": "هل يمكنني مقارنة هذا بخيار آخر؟", "th": "ฉันขอเปรียบเทียบอันนี้กับตัวเลือกอื่นได้ไหมคะ", "vi": "Mình có thể so sánh món này với lựa chọn khác không?"
       }
     },
     {
@@ -210,7 +330,15 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "可以试试不同的颜色吗？"
+        "zh-Hans": "可以试试不同的颜色吗？",
+        "ja": "別の色を試すことはできますか？",
+        "zh-Hant": "可以試試其他顏色嗎？",
+        "ko": "다른 색상도 입어 볼 수 있을까요?",
+        "pt-BR": "É possível experimentar uma cor diferente?",
+        "id": "Apakah saya boleh mencoba warna yang berbeda?",
+        "tr": "Farklı bir rengi denemem mümkün mü?",
+        "ru": "Можно попробовать другой цвет?",
+        "es": "¿Es posible probar otro color?", "fr": "Serait-il possible d’essayer une autre couleur ?", "de": "Kann ich eine andere Farbe ausprobieren?", "it": "È possibile provare un altro colore?", "ar": "هل يمكنني تجربة لون مختلف؟", "th": "ขอลองสีอื่นได้ไหมคะ", "vi": "Mình thử màu khác được không?"
       }
     }
   ]

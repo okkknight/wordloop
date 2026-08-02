@@ -15,7 +15,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我预订了今晚的房间。"
+        "zh-Hans": "我预订了今晚的房间。",
+        "ja": "今夜の部屋を予約しました。",
+        "zh-Hant": "我預訂了今晚的房間。",
+        "ko": "오늘 밤 묵을 방을 예약했어요.",
+        "pt-BR": "Reservei um quarto para esta noite.",
+        "id": "Saya sudah memesan kamar untuk malam ini.",
+        "tr": "Bu gece için bir oda ayırttım.",
+        "ru": "Я забронировал(а) номер на сегодня.",
+        "es": "He reservado una habitación para esta noche.",
+        "fr": "J'ai réservé une chambre pour ce soir.",
+        "de": "Ich habe für heute Nacht ein Zimmer gebucht.",
+        "it": "Ho prenotato una camera per stasera.",
+        "ar": "لقد حجزت غرفة لهذه الليلة.",
+        "th": "ฉันจองห้องพักไว้สำหรับคืนนี้ค่ะ",
+        "vi": "Tôi đã đặt một phòng cho tối nay."
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "我以史密斯的名字预订了。"
+        "zh-Hans": "我以史密斯的名字预订了。",
+        "ja": "スミスの名前で予約しています。",
+        "zh-Hant": "我是用 Smith 的名字訂的。",
+        "ko": "스미스라는 이름으로 예약했어요.",
+        "pt-BR": "Tenho uma reserva em nome de Smith.",
+        "id": "Saya punya reservasi atas nama Smith.",
+        "tr": "Smith adına bir rezervasyonum var.",
+        "ru": "У меня бронирование на имя Смит.",
+        "es": "Tengo una reserva a nombre de Smith.",
+        "fr": "J'ai une réservation au nom de Smith.",
+        "de": "Ich habe eine Reservierung auf den Namen Smith.",
+        "it": "Ho una prenotazione a nome Smith.",
+        "ar": "لدي حجز باسم سميث.",
+        "th": "ฉันมีห้องที่จองไว้ในชื่อสมิธค่ะ",
+        "vi": "Tôi có đặt phòng dưới tên Smith."
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "我的预订是两晚。"
+        "zh-Hans": "我的预订是两晚。",
+        "ja": "2泊の予約です。",
+        "zh-Hant": "我預訂住兩晚。",
+        "ko": "이틀 숙박으로 예약했어요.",
+        "pt-BR": "Minha reserva é para duas noites.",
+        "id": "Reservasi saya untuk dua malam.",
+        "tr": "Rezervasyonum iki gecelik.",
+        "ru": "Я забронировал(а) номер на две ночи.",
+        "es": "Mi reserva es para dos noches.",
+        "fr": "Ma réservation est pour deux nuits.",
+        "de": "Meine Reservierung gilt für zwei Nächte.",
+        "it": "La mia prenotazione è per due notti.",
+        "ar": "حجزي لليلتين.",
+        "th": "ฉันจองไว้สองคืนค่ะ",
+        "vi": "Tôi đặt phòng cho hai đêm."
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 2.475,
       "duration": 2.475,
       "translations": {
-        "zh-Hans": "预订是以我的名字，艾米丽。"
+        "zh-Hans": "预订是以我的名字，艾米丽。",
+        "ja": "予約は私の名前、エミリーで入っています。",
+        "zh-Hant": "預訂是用我的名字，Emily。",
+        "ko": "에밀리라는 제 이름으로 예약되어 있어요.",
+        "pt-BR": "A reserva está no meu nome, Emily.",
+        "id": "Reservasinya atas nama saya, Emily.",
+        "tr": "Rezervasyon Emily adına.",
+        "ru": "Бронирование оформлено на имя Эмили.",
+        "es": "La reserva está a mi nombre, Emily.",
+        "fr": "La réservation est à mon nom, Emily.",
+        "de": "Die Reservierung läuft auf meinen Namen, Emily.",
+        "it": "La prenotazione è a mio nome, Emily.",
+        "ar": "الحجز باسمي، إيميلي.",
+        "th": "การจองอยู่ในชื่อของฉัน เอมิลีค่ะ",
+        "vi": "Đặt phòng mang tên tôi, Emily."
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.859,
       "duration": 2.859,
       "translations": {
-        "zh-Hans": "我今天入住，住两晚。"
+        "zh-Hans": "我今天入住，住两晚。",
+        "ja": "今日はチェックインで、2泊します。",
+        "zh-Hant": "我今天辦理入住，住兩晚。",
+        "ko": "오늘 체크인하고 이틀 묵을 예정이에요.",
+        "pt-BR": "Vou fazer o check-in hoje e ficar duas noites.",
+        "id": "Hari ini saya check-in untuk menginap dua malam.",
+        "tr": "Bugün iki gecelik konaklama için giriş yapıyorum.",
+        "ru": "Сегодня я заселяюсь на две ночи.",
+        "es": "Hoy hago el check-in y me quedo dos noches.",
+        "fr": "J'arrive aujourd'hui pour deux nuits.",
+        "de": "Ich checke heute ein und bleibe zwei Nächte.",
+        "it": "Faccio il check-in oggi e resterò per due notti.",
+        "ar": "سأسجل الوصول اليوم لمدة ليلتين.",
+        "th": "วันนี้ฉันจะเช็กอินและพักสองคืนค่ะ",
+        "vi": "Hôm nay tôi làm thủ tục nhận phòng và ở hai đêm."
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "我的入住日期是10月5日。"
+        "zh-Hans": "我的入住日期是10月5日。",
+        "ja": "チェックイン日は10月5日です。",
+        "zh-Hant": "我的入住日期是 10 月 5 日。",
+        "ko": "체크인 날짜는 10월 5일이에요.",
+        "pt-BR": "A data do meu check-in é 5 de outubro.",
+        "id": "Tanggal check-in saya 5 Oktober.",
+        "tr": "Giriş tarihim 5 Ekim.",
+        "ru": "Дата моего заселения — 5 октября.",
+        "es": "La fecha de mi check-in es el 5 de octubre.",
+        "fr": "Ma date d'arrivée est le 5 octobre.",
+        "de": "Mein Check-in-Datum ist der 5. Oktober.",
+        "it": "La data del mio check-in è il 5 ottobre.",
+        "ar": "تاريخ تسجيل وصولي هو 5 أكتوبر.",
+        "th": "วันที่เช็กอินของฉันคือวันที่ 5 ตุลาคมค่ะ",
+        "vi": "Ngày nhận phòng của tôi là ngày 5 tháng 10."
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我准备好了身份证以便办理入住。"
+        "zh-Hans": "我准备好了身份证以便办理入住。",
+        "ja": "チェックインに必要な身分証明書は用意してあります。",
+        "zh-Hant": "我已準備好身分證件辦理入住。",
+        "ko": "체크인할 때 보여 드릴 신분증을 준비했어요.",
+        "pt-BR": "Estou com meu documento pronto para o check-in.",
+        "id": "Saya sudah menyiapkan kartu identitas untuk check-in.",
+        "tr": "Giriş işlemi için kimliğim hazır.",
+        "ru": "Моё удостоверение личности готово для регистрации.",
+        "es": "Tengo mi documento de identidad listo para hacer el check-in.",
+        "fr": "J'ai ma pièce d'identité prête pour l'arrivée.",
+        "de": "Ich habe meinen Ausweis für den Check-in bereit.",
+        "it": "Ho pronto il documento per il check-in.",
+        "ar": "بطاقة هويتي جاهزة لتسجيل الوصول.",
+        "th": "ฉันเตรียมบัตรประจำตัวไว้สำหรับเช็กอินแล้วค่ะ",
+        "vi": "Tôi đã chuẩn bị sẵn giấy tờ tùy thân để nhận phòng."
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.157,
       "duration": 3.157,
       "translations": {
-        "zh-Hans": "我需要出示我的驾照，对吗？"
+        "zh-Hans": "我需要出示我的驾照，对吗？",
+        "ja": "運転免許証を提示すればいいのですよね？",
+        "zh-Hant": "我需要出示駕照，對嗎？",
+        "ko": "운전면허증을 보여 드려야 하죠?",
+        "pt-BR": "Vou precisar mostrar minha carteira de motorista, certo?",
+        "id": "Saya perlu menunjukkan SIM saya, kan?",
+        "tr": "Ehliyetimi göstermem gerekiyor, değil mi?",
+        "ru": "Мне нужно предъявить водительские права, верно?",
+        "es": "Tendré que mostrar mi permiso de conducir, ¿verdad?",
+        "fr": "Je dois présenter mon permis de conduire, c'est bien ça ?",
+        "de": "Ich muss meinen Führerschein vorzeigen, richtig?",
+        "it": "Devo mostrare la patente, giusto?",
+        "ar": "سأحتاج إلى إبراز رخصة القيادة، أليس كذلك؟",
+        "th": "ฉันต้องแสดงใบขับขี่ใช่ไหมคะ",
+        "vi": "Tôi cần xuất trình bằng lái xe, đúng không?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "我们两个人住在房间里。"
+        "zh-Hans": "我们两个人住在房间里。",
+        "ja": "この部屋には2人で泊まります。",
+        "zh-Hant": "房間裡會住我們兩個人。",
+        "ko": "저희 두 명이 이 방에 묵을 거예요.",
+        "pt-BR": "Somos duas pessoas hospedadas no quarto.",
+        "id": "Ada dua orang yang akan menginap di kamar ini.",
+        "tr": "Odada iki kişi kalacağız.",
+        "ru": "В номере будем жить вдвоём.",
+        "es": "Somos dos personas las que nos alojaremos en la habitación.",
+        "fr": "Nous serons deux à séjourner dans la chambre.",
+        "de": "Wir werden zu zweit in dem Zimmer übernachten.",
+        "it": "Saremo in due a soggiornare nella camera.",
+        "ar": "سنقيم شخصين في الغرفة.",
+        "th": "เราจะเข้าพักในห้องนี้สองคนค่ะ",
+        "vi": "Có hai người chúng tôi sẽ ở trong phòng."
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "我会住四晚。"
+        "zh-Hans": "我会住四晚。",
+        "ja": "4泊する予定です。",
+        "zh-Hant": "我會住四晚。",
+        "ko": "나흘 동안 묵을 거예요.",
+        "pt-BR": "Vou ficar quatro noites.",
+        "id": "Saya akan menginap selama empat malam.",
+        "tr": "Dört gece kalacağım.",
+        "ru": "Я останусь на четыре ночи.",
+        "es": "Me quedaré cuatro noches.",
+        "fr": "Je resterai quatre nuits.",
+        "de": "Ich werde vier Nächte bleiben.",
+        "it": "Resterò per quattro notti.",
+        "ar": "سأقيم لمدة أربع ليالٍ.",
+        "th": "ฉันจะพักเป็นเวลาสี่คืนค่ะ",
+        "vi": "Tôi sẽ ở lại bốn đêm."
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "我们更喜欢有特大床的房间。"
+        "zh-Hans": "我们更喜欢有特大床的房间。",
+        "ja": "キングサイズのベッドがある部屋を希望します。",
+        "zh-Hant": "我們比較想要有特大床的房間。",
+        "ko": "저희는 킹사이즈 침대가 있는 방을 선호해요.",
+        "pt-BR": "Preferimos um quarto com cama king-size.",
+        "id": "Kami lebih suka kamar dengan tempat tidur king.",
+        "tr": "King yataklı bir oda tercih ediyoruz.",
+        "ru": "Мы предпочитаем номер с кроватью размера king-size.",
+        "es": "Preferimos una habitación con una cama extragrande.",
+        "fr": "Nous préférons une chambre avec un lit king-size.",
+        "de": "Wir bevorzugen ein Zimmer mit einem Kingsize-Bett.",
+        "it": "Preferiamo una camera con un letto king-size.",
+        "ar": "نفضل غرفة بسرير كبير بحجم كينغ.",
+        "th": "เราต้องการห้องที่มีเตียงคิงไซซ์มากกว่าค่ะ",
+        "vi": "Chúng tôi thích phòng có giường cỡ lớn."
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "我会用信用卡支付。"
+        "zh-Hans": "我会用信用卡支付。",
+        "ja": "クレジットカードで支払います。",
+        "zh-Hant": "我會用信用卡付款。",
+        "ko": "신용카드로 결제할게요.",
+        "pt-BR": "Vou pagar com cartão de crédito.",
+        "id": "Saya akan membayar dengan kartu kredit.",
+        "tr": "Kredi kartımla ödeyeceğim.",
+        "ru": "Я заплачу кредитной картой.",
+        "es": "Pagaré con mi tarjeta de crédito.",
+        "fr": "Je paierai avec ma carte bancaire.",
+        "de": "Ich bezahle mit meiner Kreditkarte.",
+        "it": "Pagherò con la mia carta di credito.",
+        "ar": "سأدفع ببطاقتي الائتمانية.",
+        "th": "ฉันจะชำระเงินด้วยบัตรเครดิตค่ะ",
+        "vi": "Tôi sẽ thanh toán bằng thẻ tín dụng."
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "我的房间包含早餐吗？"
+        "zh-Hans": "我的房间包含早餐吗？",
+        "ja": "部屋の料金に朝食は含まれていますか？",
+        "zh-Hant": "我的房間有包含早餐嗎？",
+        "ko": "객실 요금에 아침 식사가 포함되어 있나요?",
+        "pt-BR": "O café da manhã está incluído na diária?",
+        "id": "Apakah sarapan sudah termasuk dalam harga kamar saya?",
+        "tr": "Odamın ücretine kahvaltı dahil mi?",
+        "ru": "Завтрак входит в стоимость номера?",
+        "es": "¿El desayuno está incluido en el precio de la habitación?",
+        "fr": "Le petit-déjeuner est-il inclus dans le prix de la chambre ?",
+        "de": "Ist das Frühstück im Zimmerpreis enthalten?",
+        "it": "La colazione è inclusa nel prezzo della camera?",
+        "ar": "هل الإفطار مشمول في سعر غرفتي؟",
+        "th": "อาหารเช้ารวมอยู่ในค่าห้องของฉันไหมคะ",
+        "vi": "Bữa sáng có bao gồm trong giá phòng của tôi không?"
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "你能确认我的房间有海景吗？"
+        "zh-Hans": "你能确认我的房间有海景吗？",
+        "ja": "部屋から海が見えることを確認していただけますか？",
+        "zh-Hant": "可以確認我的房間看得到海景嗎？",
+        "ko": "제 방에서 바다가 보이는지 확인해 주실 수 있나요?",
+        "pt-BR": "Você pode confirmar se meu quarto tem vista para o mar?",
+        "id": "Bisa konfirmasikan bahwa kamar saya menghadap laut?",
+        "tr": "Odamın deniz manzaralı olduğunu doğrulayabilir misiniz?",
+        "ru": "Не могли бы вы подтвердить, что из моего номера открывается вид на море?",
+        "es": "¿Puede confirmar que mi habitación tiene vistas al mar?",
+        "fr": "Pouvez-vous confirmer que ma chambre donne sur la mer ?",
+        "de": "Können Sie bestätigen, dass mein Zimmer Meerblick hat?",
+        "it": "Può confermare che la mia camera ha vista sul mare?",
+        "ar": "هل يمكنك تأكيد أن غرفتي تطل على البحر؟",
+        "th": "ช่วยยืนยันได้ไหมคะว่าห้องของฉันมีวิวทะเล",
+        "vi": "Bạn có thể xác nhận phòng của tôi có hướng nhìn ra biển không?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 2.133,
       "duration": 2.133,
       "translations": {
-        "zh-Hans": "明天几点退房？"
+        "zh-Hans": "明天几点退房？",
+        "ja": "明日のチェックアウトは何時ですか？",
+        "zh-Hant": "明天幾點退房？",
+        "ko": "내일 체크아웃은 몇 시인가요?",
+        "pt-BR": "A que horas é o check-out amanhã?",
+        "id": "Besok check-out jam berapa?",
+        "tr": "Yarın çıkış saati kaç?",
+        "ru": "Во сколько завтра нужно выселиться?",
+        "es": "¿A qué hora es el check-out mañana?",
+        "fr": "À quelle heure est le départ demain ?",
+        "de": "Um wie viel Uhr ist morgen der Check-out?",
+        "it": "A che ora è il check-out domani?",
+        "ar": "في أي وقت تسجيل المغادرة غدًا؟",
+        "th": "พรุ่งนี้ต้องเช็กเอาต์กี่โมงคะ",
+        "vi": "Ngày mai trả phòng lúc mấy giờ?"
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.261,
       "duration": 2.261,
       "translations": {
-        "zh-Hans": "我可以再要一张房卡吗？"
+        "zh-Hans": "我可以再要一张房卡吗？",
+        "ja": "追加のカードキーを1枚いただけますか？",
+        "zh-Hant": "可以再給我一張房卡嗎？",
+        "ko": "키 카드 한 장 더 받을 수 있을까요?",
+        "pt-BR": "Eu poderia receber um cartão-chave extra, por favor?",
+        "id": "Boleh minta satu kartu kunci tambahan?",
+        "tr": "Bir ekstra oda kartı alabilir miyim, lütfen?",
+        "ru": "Можно мне, пожалуйста, ещё одну ключ-карту от номера?",
+        "es": "¿Podría darme otra tarjeta de acceso, por favor?",
+        "fr": "Pourrais-je avoir une carte-clé supplémentaire, s'il vous plaît ?",
+        "de": "Könnte ich bitte eine zusätzliche Schlüsselkarte bekommen?",
+        "it": "Potrei avere una tessera magnetica aggiuntiva, per favore?",
+        "ar": "هل يمكنني الحصول على بطاقة مفتاح إضافية من فضلك؟",
+        "th": "ขอคีย์การ์ดเพิ่มอีกหนึ่งใบได้ไหมคะ",
+        "vi": "Cho tôi xin thêm một thẻ khóa phòng được không?"
       }
     }
   ]

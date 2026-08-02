@@ -15,7 +15,21 @@
       "end": 2.347,
       "duration": 2.347,
       "translations": {
-        "zh-Hans": "航班几点起飞？"
+        "zh-Hans": "航班几点起飞？",
+        "pt-BR": "A que horas o voo parte?",
+        "zh-Hant": "航班幾點起飛？",
+        "es": "¿A qué hora sale el vuelo?",
+        "de": "Um wie viel Uhr geht der Flug?",
+      "ru": "Во сколько отправляется самолёт?",
+      "th": "เที่ยวบินออกกี่โมง",
+      "ko": "비행기는 몇 시에 출발하나요?",
+      "ja": "飛行機は何時に出発しますか？",
+      "fr": "À quelle heure part l'avion ?",
+      "it": "A che ora parte il volo?",
+      "ar": "في أي وقت تغادر الطائرة؟",
+      "id": "Pukul berapa pesawatnya berangkat?",
+      "vi": "Chuyến bay khởi hành lúc mấy giờ?",
+      "tr": "Uçak saat kaçta kalkıyor?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.731,
       "duration": 2.731,
       "translations": {
-        "zh-Hans": "你能确认一下音乐会的日期吗？"
+        "zh-Hans": "你能确认一下音乐会的日期吗？",
+        "pt-BR": "Você pode confirmar a data do show?",
+        "zh-Hant": "你可以確認音樂會的日期嗎？",
+        "es": "¿Puedes confirmar la fecha del concierto?",
+        "de": "Können Sie das Datum des Konzerts bestätigen?",
+      "ru": "Можете подтвердить дату концерта?",
+      "th": "ช่วยยืนยันวันที่จัดคอนเสิร์ตได้ไหม",
+      "ko": "콘서트 날짜를 확인해 주실 수 있나요?",
+      "ja": "コンサートの日付を確認していただけますか？",
+      "fr": "Pouvez-vous confirmer la date du concert ?",
+      "it": "Può confermare la data del concerto?",
+      "ar": "هل يمكنك تأكيد موعد الحفل؟",
+      "id": "Bisakah Anda mengonfirmasi tanggal konsernya?",
+      "vi": "Bạn có thể xác nhận ngày diễn ra buổi hòa nhạc không?",
+      "tr": "Konserin tarihini teyit edebilir misiniz?"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.773,
       "duration": 2.773,
       "translations": {
-        "zh-Hans": "火车几点到达？"
+        "zh-Hans": "火车几点到达？",
+        "pt-BR": "A que horas o trem chega?",
+        "zh-Hant": "火車幾點抵達？",
+        "es": "¿A qué hora llega el tren?",
+        "de": "Um wie viel Uhr kommt der Zug an?",
+      "ru": "Во сколько прибывает поезд?",
+      "th": "รถไฟมาถึงกี่โมง",
+      "ko": "기차는 몇 시에 도착하나요?",
+      "ja": "電車は何時に到着しますか？",
+      "fr": "À quelle heure arrive le train ?",
+      "it": "A che ora arriva il treno?",
+      "ar": "في أي وقت يصل القطار؟",
+      "id": "Pukul berapa keretanya tiba?",
+      "vi": "Tàu đến lúc mấy giờ?",
+      "tr": "Tren saat kaçta varıyor?"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.712,
       "duration": 3.712,
       "translations": {
-        "zh-Hans": "会议是下午三点还是四点？"
+        "zh-Hans": "会议是下午三点还是四点？",
+        "pt-BR": "A reunião é às três ou às quatro da tarde?",
+        "zh-Hant": "會議是下午三點還是四點？",
+        "es": "¿La reunión es a las tres o a las cuatro de la tarde?",
+        "de": "Ist das Meeting um 15 oder um 16 Uhr?",
+      "ru": "Встреча в три или в четыре часа дня?",
+      "th": "ประชุมตอนบ่ายสามหรือสี่โมง",
+      "ko": "회의가 오후 3시인가요, 4시인가요?",
+      "ja": "会議は午後3時ですか、それとも4時ですか？",
+      "fr": "La réunion est-elle à 15 h ou à 16 h ?",
+      "it": "La riunione è alle 15 o alle 16?",
+      "ar": "هل الاجتماع الساعة الثالثة أم الرابعة مساءً؟",
+      "id": "Rapatnya pukul 3 atau 4 sore?",
+      "vi": "Cuộc họp diễn ra lúc 3 giờ hay 4 giờ chiều?",
+      "tr": "Toplantı saat 3'te mi, 4'te mi?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "你能核对一下我的护照号码吗？"
+        "zh-Hans": "你能核对一下我的护照号码吗？",
+        "pt-BR": "Você pode conferir o número do meu passaporte?",
+        "zh-Hant": "你可以幫我核對護照號碼嗎？",
+        "es": "¿Puedes verificar mi número de pasaporte?",
+        "de": "Können Sie meine Passnummer überprüfen?",
+      "ru": "Можете проверить номер моего паспорта?",
+      "th": "ช่วยตรวจสอบหมายเลขหนังสือเดินทางของฉันได้ไหม",
+      "ko": "제 여권 번호를 확인해 주실 수 있나요?",
+      "ja": "私のパスポート番号を確認していただけますか？",
+      "fr": "Pouvez-vous vérifier mon numéro de passeport ?",
+      "it": "Può verificare il numero del mio passaporto?",
+      "ar": "هل يمكنك التحقق من رقم جواز سفري؟",
+      "id": "Bisakah Anda memeriksa nomor paspor saya?",
+      "vi": "Bạn có thể kiểm tra số hộ chiếu của tôi không?",
+      "tr": "Pasaport numaramı kontrol edebilir misiniz?"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.517,
       "duration": 2.517,
       "translations": {
-        "zh-Hans": "票上的名字拼写正确吗？"
+        "zh-Hans": "票上的名字拼写正确吗？",
+        "pt-BR": "O nome está escrito corretamente na passagem?",
+        "zh-Hant": "票上的姓名拼寫正確嗎？",
+        "es": "¿Está bien escrito el nombre en el billete?",
+        "de": "Ist der Name auf dem Ticket richtig geschrieben?",
+      "ru": "Имя в билете указано правильно?",
+      "th": "สะกดชื่อบนตั๋วถูกต้องไหม",
+      "ko": "티켓에 적힌 이름의 철자가 맞나요?",
+      "ja": "チケットの名前の綴りは正しいですか？",
+      "fr": "Le nom est-il correctement orthographié sur le billet ?",
+      "it": "Il nome sul biglietto è scritto correttamente?",
+      "ar": "هل كُتب الاسم على التذكرة بشكل صحيح؟",
+      "id": "Apakah nama di tiket sudah dieja dengan benar?",
+      "vi": "Tên trên vé có được viết đúng không?",
+      "tr": "Biletteki isim doğru yazılmış mı?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "你能再核对一下我的身份证号码吗？"
+        "zh-Hans": "你能再核对一下我的身份证号码吗？",
+        "pt-BR": "Você poderia conferir novamente o número do meu documento?",
+        "zh-Hant": "你可以再幫我核對一下身分證字號嗎？",
+        "es": "¿Podrías volver a comprobar mi número de identificación?",
+        "de": "Könnten Sie meine Ausweisnummer noch einmal überprüfen?",
+      "ru": "Не могли бы вы ещё раз проверить номер моего удостоверения личности?",
+      "th": "ช่วยตรวจสอบหมายเลขบัตรประจำตัวของฉันอีกครั้งได้ไหม",
+      "ko": "제 신분증 번호를 다시 확인해 주실 수 있나요?",
+      "ja": "私の身分証番号をもう一度確認していただけますか？",
+      "fr": "Pourriez-vous vérifier à nouveau mon numéro de pièce d'identité ?",
+      "it": "Potrebbe ricontrollare il numero del mio documento d'identità?",
+      "ar": "هل يمكنك إعادة التحقق من رقم هويتي؟",
+      "id": "Bisakah Anda memeriksa kembali nomor identitas saya?",
+      "vi": "Bạn có thể kiểm tra lại số giấy tờ tùy thân của tôi không?",
+      "tr": "Kimlik numaramı tekrar kontrol edebilir misiniz?"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 2.816,
       "duration": 2.816,
       "translations": {
-        "zh-Hans": "你能确认一下我的预订参考号吗？"
+        "zh-Hans": "你能确认一下我的预订参考号吗？",
+        "pt-BR": "Você pode confirmar o código de referência da minha reserva?",
+        "zh-Hant": "你可以確認我的訂位代號嗎？",
+        "es": "¿Puedes confirmar el localizador de mi reserva?",
+        "de": "Können Sie meine Buchungsnummer bestätigen?",
+      "ru": "Можете подтвердить номер моего бронирования?",
+      "th": "ช่วยยืนยันรหัสการจองของฉันได้ไหม",
+      "ko": "제 예약 번호를 확인해 주실 수 있나요?",
+      "ja": "予約番号を確認していただけますか？",
+      "fr": "Pouvez-vous confirmer la référence de ma réservation ?",
+      "it": "Può confermare il codice della mia prenotazione?",
+      "ar": "هل يمكنك تأكيد رقم حجزي المرجعي؟",
+      "id": "Bisakah Anda mengonfirmasi kode referensi pemesanan saya?",
+      "vi": "Bạn có thể xác nhận mã đặt chỗ của tôi không?",
+      "tr": "Rezervasyon referans numaramı teyit edebilir misiniz?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "我们在12A和12B座位吗？"
+        "zh-Hans": "我们在12A和12B座位吗？",
+        "pt-BR": "Estamos nos assentos 12A e 12B?",
+        "zh-Hant": "我們的座位是 12A 和 12B 嗎？",
+        "es": "¿Tenemos los asientos 12A y 12B?",
+        "de": "Sitzen wir auf den Plätzen 12A und 12B?",
+      "ru": "У нас места 12A и 12B?",
+      "th": "เรานั่งที่นั่ง 12A และ 12B ใช่ไหม",
+      "ko": "저희 좌석은 12A와 12B가 맞나요?",
+      "ja": "座席は12Aと12Bで合っていますか？",
+      "fr": "Sommes-nous bien aux sièges 12A et 12B ?",
+      "it": "Abbiamo i posti 12A e 12B?",
+      "ar": "هل مقعدانا هما 12A و12B؟",
+      "id": "Apakah kursi kami 12A dan 12B?",
+      "vi": "Chỗ ngồi của chúng ta là 12A và 12B đúng không?",
+      "tr": "12A ve 12B numaralı koltuklar bizim mi?"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 2.645,
       "duration": 2.645,
       "translations": {
-        "zh-Hans": "航班的办理登机手续时间是几点？"
+        "zh-Hans": "航班的办理登机手续时间是几点？",
+        "pt-BR": "A que horas é o check-in do voo?",
+        "zh-Hant": "這班航班幾點開始辦理登機？",
+        "es": "¿A qué hora es la facturación del vuelo?",
+        "de": "Um wie viel Uhr ist der Check-in für den Flug?",
+      "ru": "Во сколько регистрация на рейс?",
+      "th": "เช็กอินเที่ยวบินกี่โมง",
+      "ko": "비행기 체크인은 몇 시인가요?",
+      "ja": "フライトのチェックインは何時ですか？",
+      "fr": "À quelle heure est l'enregistrement du vol ?",
+      "it": "A che ora si effettua il check-in del volo?",
+      "ar": "في أي وقت يبدأ تسجيل الوصول للرحلة؟",
+      "id": "Pukul berapa waktu check-in untuk penerbangan ini?",
+      "vi": "Chuyến bay làm thủ tục lúc mấy giờ?",
+      "tr": "Uçuş için check-in saat kaçta?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "房间包含早餐吗？"
+        "zh-Hans": "房间包含早餐吗？",
+        "pt-BR": "O café da manhã está incluído na diária?",
+        "zh-Hant": "房間包含早餐嗎？",
+        "es": "¿El desayuno está incluido con la habitación?",
+        "de": "Ist das Frühstück im Zimmerpreis inbegriffen?",
+      "ru": "Завтрак входит в стоимость номера?",
+      "th": "ห้องพักรวมอาหารเช้าด้วยไหม",
+      "ko": "객실 요금에 아침 식사가 포함되어 있나요?",
+      "ja": "朝食は部屋料金に含まれていますか？",
+      "fr": "Le petit-déjeuner est-il compris dans le prix de la chambre ?",
+      "it": "La colazione è inclusa nel prezzo della camera?",
+      "ar": "هل يشمل سعر الغرفة وجبة الإفطار؟",
+      "id": "Apakah sarapan sudah termasuk dalam harga kamar?",
+      "vi": "Phòng có bao gồm bữa sáng không?",
+      "tr": "Kahvaltı oda ücretine dahil mi?"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "有到机场的班车服务吗？"
+        "zh-Hans": "有到机场的班车服务吗？",
+        "pt-BR": "Há serviço de transporte até o aeroporto?",
+        "zh-Hant": "有接駁車到機場嗎？",
+        "es": "¿Hay un servicio de transporte al aeropuerto?",
+        "de": "Gibt es einen Shuttle-Service zum Flughafen?",
+      "ru": "Есть ли трансфер до аэропорта?",
+      "th": "มีบริการรถรับส่งไปสนามบินไหม",
+      "ko": "공항 셔틀 서비스가 있나요?",
+      "ja": "空港までのシャトルサービスはありますか？",
+      "fr": "Y a-t-il un service de navette pour l'aéroport ?",
+      "it": "C'è un servizio navetta per l'aeroporto?",
+      "ar": "هل تتوفر خدمة نقل إلى المطار؟",
+      "id": "Apakah tersedia layanan antar-jemput ke bandara?",
+      "vi": "Có dịch vụ xe đưa đón đến sân bay không?",
+      "tr": "Havaalanına servis hizmeti var mı?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 3.072,
       "duration": 3.072,
       "translations": {
-        "zh-Hans": "我们再检查一下行程安排。"
+        "zh-Hans": "我们再检查一下行程安排。",
+        "pt-BR": "Vamos revisar o itinerário mais uma vez.",
+        "zh-Hant": "我們再確認一次行程吧。",
+        "es": "Repasemos el itinerario una vez más.",
+        "de": "Lassen Sie uns den Reiseplan noch einmal durchgehen.",
+      "ru": "Давайте ещё раз проверим маршрут.",
+      "th": "มาทบทวนกำหนดการเดินทางอีกครั้งกันเถอะ",
+      "ko": "여행 일정을 한 번 더 검토해 봅시다.",
+      "ja": "もう一度、旅程を確認しましょう。",
+      "fr": "Revoyons l'itinéraire une dernière fois.",
+      "it": "Rivediamo l'itinerario un'altra volta.",
+      "ar": "لنراجع خط سير الرحلة مرة أخرى.",
+      "id": "Mari kita tinjau kembali rencana perjalanan ini.",
+      "vi": "Chúng ta cùng xem lại lịch trình một lần nữa nhé.",
+      "tr": "Seyahat programını bir kez daha gözden geçirelim."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "这包括两天的早餐吗？"
+        "zh-Hans": "这包括两天的早餐吗？",
+        "pt-BR": "Isso inclui o café da manhã dos dois dias?",
+        "zh-Hant": "這包含兩天的早餐嗎？",
+        "es": "¿Esto incluye el desayuno de los dos días?",
+        "de": "Ist das Frühstück für beide Tage inbegriffen?",
+      "ru": "Сюда входит завтрак на оба дня?",
+      "th": "นี่รวมอาหารเช้าสำหรับทั้งสองวันไหม",
+      "ko": "이 요금에 이틀 모두 아침 식사가 포함되어 있나요?",
+      "ja": "これは2日分の朝食も含まれていますか？",
+      "fr": "Cela comprend-il le petit-déjeuner pour les deux jours ?",
+      "it": "Questo include la colazione per entrambi i giorni?",
+      "ar": "هل يشمل هذا وجبة الإفطار لكلا اليومين؟",
+      "id": "Apakah ini sudah termasuk sarapan untuk kedua hari?",
+      "vi": "Khoản này có bao gồm bữa sáng cho cả hai ngày không?",
+      "tr": "Buna iki günün kahvaltısı da dahil mi?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.883,
       "duration": 3.883,
       "translations": {
-        "zh-Hans": "请为我总结一下预订细节。"
+        "zh-Hans": "请为我总结一下预订细节。",
+        "pt-BR": "Pode resumir os detalhes da reserva para mim?",
+        "zh-Hant": "請幫我整理一下訂位的詳細資訊。",
+        "es": "Por favor, resúmeme los detalles de la reserva.",
+        "de": "Bitte fassen Sie die Reservierungsdetails für mich zusammen.",
+      "ru": "Пожалуйста, кратко изложите для меня детали бронирования.",
+      "th": "กรุณาสรุปรายละเอียดการจองให้ฉันหน่อย",
+      "ko": "예약 세부 사항을 요약해서 알려 주세요.",
+      "ja": "予約の詳細を要約していただけますか？",
+      "fr": "Pourriez-vous me résumer les détails de la réservation ?",
+      "it": "Può riassumermi i dettagli della prenotazione?",
+      "ar": "يرجى تلخيص تفاصيل الحجز لي.",
+      "id": "Tolong rangkumkan detail reservasinya untuk saya.",
+      "vi": "Vui lòng tóm tắt các chi tiết đặt chỗ cho tôi.",
+      "tr": "Lütfen rezervasyon ayrıntılarını benim için özetleyin."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "我们出发前确保所有信息无误。"
+        "zh-Hans": "我们出发前确保所有信息无误。",
+        "pt-BR": "Vamos garantir que está tudo certo antes de partir.",
+        "zh-Hant": "我們出發前確認所有資訊都正確無誤。",
+        "es": "Asegurémonos de que todo esté correcto antes de irnos.",
+        "de": "Vergewissern wir uns, dass vor unserer Abreise alles stimmt.",
+      "ru": "Давайте убедимся, что перед поездкой всё верно.",
+      "th": "มาตรวจให้แน่ใจก่อนเดินทางว่าเราจัดการทุกอย่างถูกต้องแล้ว",
+      "ko": "출발하기 전에 모든 것이 제대로 되어 있는지 확인합시다.",
+      "ja": "出発する前に、すべて合っているか確認しましょう。",
+      "fr": "Assurons-nous que tout est correct avant de partir.",
+      "it": "Assicuriamoci che sia tutto corretto prima di partire.",
+      "ar": "لنتأكد من أن كل شيء صحيح قبل أن نغادر.",
+      "id": "Mari pastikan semuanya sudah benar sebelum kita berangkat.",
+      "vi": "Hãy đảm bảo mọi thứ đều chính xác trước khi chúng ta đi.",
+      "tr": "Gitmeden önce her şeyin doğru olduğundan emin olalım."
       }
     }
   ]

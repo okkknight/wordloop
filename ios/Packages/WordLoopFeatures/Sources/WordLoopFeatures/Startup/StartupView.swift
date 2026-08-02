@@ -109,13 +109,14 @@ public struct StartupView: View {
     }
 
     private var buttonAccessibilityValue: String {
-        if store.state.isBusy { return "处理中" }
-        guard let submission = store.lastSubmission else { return "可提交" }
+        let copy = StartupAccessibilityCopy.current
+        if store.state.isBusy { return copy.processing }
+        guard let submission = store.lastSubmission else { return copy.available }
         switch submission {
         case .anonymous:
-            return "已提交匿名用户"
+            return copy.anonymous
         case .named(let username):
-            return "已提交用户 \(username)"
+            return "\(copy.named) \(username)"
         }
     }
 

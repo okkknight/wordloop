@@ -15,7 +15,21 @@
       "end": 2.176,
       "duration": 2.176,
       "translations": {
-        "zh-Hans": "你能把盐递给我吗？"
+        "zh-Hans": "你能把盐递给我吗？",
+        "ja": "塩を取ってもらえますか？",
+        "id": "Tolong ambilkan garamnya.",
+        "de": "Kannst du mir bitte das Salz reichen?",
+        "fr": "Peux-tu me passer le sel ?",
+      "tr": "Tuzu uzatabilir misin?",
+      "th": "ช่วยส่งเกลือให้ฉันหน่อยได้ไหม?",
+      "zh-Hant": "你可以把鹽遞給我嗎？",
+      "ko": "소금 좀 건네줄래요?",
+      "es": "¿Puedes pasarme la sal?",
+      "pt-BR": "Você pode me passar o sal?",
+      "it": "Puoi passarmi il sale?",
+      "ru": "Не могли бы вы передать мне соль?",
+      "ar": "هل يمكنك أن تناولني الملح؟",
+      "vi": "Bạn có thể đưa tôi lọ muối được không?"
       }
     },
     {
@@ -28,7 +42,21 @@
       "end": 2.304,
       "duration": 2.304,
       "translations": {
-        "zh-Hans": "你能帮我搬一下这个箱子吗？"
+        "zh-Hans": "你能帮我搬一下这个箱子吗？",
+        "ja": "この箱を運ぶのを手伝ってもらえますか？",
+        "id": "Bisakah kamu membantuku membawa kotak ini?",
+        "de": "Könntest du mir mit diesem Karton helfen?",
+        "fr": "Pourrais-tu m'aider avec cette boîte ?",
+      "tr": "Bu kutuyla ilgili bana yardım edebilir misin?",
+      "th": "ช่วยฉันถือกล่องนี้หน่อยได้ไหม?",
+      "zh-Hant": "你可以幫我搬一下這個箱子嗎？",
+      "ko": "이 상자 옮기는 것 좀 도와줄래요?",
+      "es": "¿Podrías ayudarme con esta caja?",
+      "pt-BR": "Você poderia me ajudar com esta caixa?",
+      "it": "Potresti aiutarmi con questa scatola?",
+      "ru": "Не могли бы вы помочь мне с этой коробкой?",
+      "ar": "هل يمكنك مساعدتي في حمل هذا الصندوق؟",
+      "vi": "Bạn có thể giúp tôi mang chiếc hộp này được không?"
       }
     },
     {
@@ -41,7 +69,21 @@
       "end": 2.304,
       "duration": 2.304,
       "translations": {
-        "zh-Hans": "你介意帮我扶一下门吗？"
+        "zh-Hans": "你介意帮我扶一下门吗？",
+        "ja": "ドアを押さえていてもらえますか？",
+        "id": "Bisakah kamu menahan pintunya?",
+        "de": "Würdest du bitte die Tür aufhalten?",
+        "fr": "Tu pourrais tenir la porte, s'il te plaît ?",
+      "tr": "Kapıyı tutar mısın?",
+      "th": "ช่วยจับประตูไว้ให้หน่อยได้ไหม?",
+      "zh-Hant": "你介意幫我扶一下門嗎？",
+      "ko": "문 좀 잡아줄래요?",
+      "es": "¿Te importaría sujetar la puerta?",
+      "pt-BR": "Você se importaria de segurar a porta?",
+      "it": "Ti dispiacerebbe tenere aperta la porta?",
+      "ru": "Не могли бы вы придержать дверь?",
+      "ar": "هل تمانع في إمساك الباب؟",
+      "vi": "Bạn có phiền giữ cửa giúp tôi không?"
       }
     },
     {
@@ -54,7 +96,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我可以借你的书一天吗？"
+        "zh-Hans": "我可以借你的书一天吗？",
+        "ja": "あなたの本を一日借りてもいいですか？",
+        "id": "Bolehkah aku meminjam bukumu selama sehari?",
+        "de": "Kann ich mir dein Buch für einen Tag ausleihen?",
+        "fr": "Est-ce que je peux t'emprunter ton livre pour une journée ?",
+      "tr": "Kitabını bir günlüğüne ödünç alabilir miyim?",
+      "th": "ฉันขอยืมหนังสือของคุณหนึ่งวันได้ไหม?",
+      "zh-Hant": "我可以借你的書一天嗎？",
+      "ko": "하루 동안 책을 빌려도 될까요?",
+      "es": "¿Puedo pedirte prestado tu libro por un día?",
+      "pt-BR": "Posso pegar seu livro emprestado por um dia?",
+      "it": "Posso prendere in prestito il tuo libro per un giorno?",
+      "ru": "Можно я возьму вашу книгу на один день?",
+      "ar": "هل يمكنني استعارة كتابك ليوم واحد؟",
+      "vi": "Tôi có thể mượn sách của bạn một ngày được không?"
       }
     },
     {
@@ -67,7 +123,21 @@
       "end": 2.133,
       "duration": 2.133,
       "translations": {
-        "zh-Hans": "我可以坐在这里吗？"
+        "zh-Hans": "我可以坐在这里吗？",
+        "ja": "ここに座ってもいいですか？",
+        "id": "Bolehkah aku duduk di sini?",
+        "de": "Ist es in Ordnung, wenn ich hier sitze?",
+        "fr": "Ça ne te dérange pas si je m'assieds ici ?",
+      "tr": "Buraya oturmamın sakıncası var mı?",
+      "th": "ฉันนั่งตรงนี้ได้ไหม?",
+      "zh-Hant": "我可以坐在這裡嗎？",
+      "ko": "여기 앉아도 될까요?",
+      "es": "¿Está bien si me siento aquí?",
+      "pt-BR": "Tudo bem se eu me sentar aqui?",
+      "it": "Va bene se mi siedo qui?",
+      "ru": "Ничего, если я сяду здесь?",
+      "ar": "هل لا بأس أن أجلس هنا؟",
+      "vi": "Tôi ngồi đây có được không?"
       }
     },
     {
@@ -80,7 +150,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "你介意我和你一起吃午饭吗？"
+        "zh-Hans": "你介意我和你一起吃午饭吗？",
+        "ja": "一緒に昼食を食べてもいいですか？",
+        "id": "Bolehkah aku makan siang bersamamu?",
+        "de": "Hättest du etwas dagegen, wenn ich mit dir zu Mittag esse?",
+        "fr": "Ça te dérangerait si je déjeunais avec toi ?",
+      "tr": "Öğle yemeğinde sana katılmamın sakıncası var mı?",
+      "th": "ถ้าฉันไปร่วมมื้อกลางวันกับคุณจะเป็นอะไรไหม?",
+      "zh-Hant": "你介意我和你一起吃午餐嗎？",
+      "ko": "점심을 같이 먹어도 괜찮을까요?",
+      "es": "¿Te importaría que almorzara contigo?",
+      "pt-BR": "Você se importaria se eu almoçasse com você?",
+      "it": "Ti dispiacerebbe se pranzassi con te?",
+      "ru": "Вы не против, если я пообедаю с вами?",
+      "ar": "هل تمانع إذا انضممت إليك لتناول الغداء؟",
+      "vi": "Tôi ăn trưa cùng bạn có phiền không?"
       }
     },
     {
@@ -93,7 +177,21 @@
       "end": 2.901,
       "duration": 2.901,
       "translations": {
-        "zh-Hans": "我可以晚点给你打电话吗？"
+        "zh-Hans": "我可以晚点给你打电话吗？",
+        "ja": "あとで電話してもいいですか？",
+        "id": "Bolehkah aku meneleponmu nanti?",
+        "de": "Ist es in Ordnung, wenn ich dich später anrufe?",
+        "fr": "Ça va si je t'appelle plus tard ?",
+      "tr": "Seni daha sonra arasam olur mu?",
+      "th": "ถ้าฉันโทรหาคุณทีหลังได้ไหม?",
+      "zh-Hant": "我晚點打電話給你可以嗎？",
+      "ko": "나중에 전화해도 괜찮을까요?",
+      "es": "¿Está bien si te llamo más tarde?",
+      "pt-BR": "Tudo bem se eu ligar para você mais tarde?",
+      "it": "Va bene se ti chiamo più tardi?",
+      "ru": "Можно я позвоню вам позже?",
+      "ar": "هل لا بأس أن أتصل بك لاحقًا؟",
+      "vi": "Lát nữa tôi gọi cho bạn có được không?"
       }
     },
     {
@@ -106,7 +204,21 @@
       "end": 3.029,
       "duration": 3.029,
       "translations": {
-        "zh-Hans": "我可以带一个朋友去派对吗？"
+        "zh-Hans": "我可以带一个朋友去派对吗？",
+        "ja": "友達を一人パーティーに連れてきてもいいですか？",
+        "id": "Bolehkah aku membawa seorang teman ke pesta?",
+        "de": "Ist es in Ordnung, wenn ich einen Freund zur Party mitbringe?",
+        "fr": "Ça va si j'amène un ami à la fête ?",
+      "tr": "Partiye bir arkadaşımı getirsem olur mu?",
+      "th": "ฉันพาเพื่อนไปงานเลี้ยงด้วยได้ไหม?",
+      "zh-Hant": "我可以帶一位朋友去派對嗎？",
+      "ko": "친구 한 명을 파티에 데려가도 될까요?",
+      "es": "¿Está bien si llevo a un amigo a la fiesta?",
+      "pt-BR": "Tudo bem se eu levar um amigo para a festa?",
+      "it": "Va bene se porto un amico alla festa?",
+      "ru": "Можно я возьму с собой на вечеринку друга?",
+      "ar": "هل لا بأس أن أحضر صديقًا إلى الحفلة؟",
+      "vi": "Tôi dẫn một người bạn đến bữa tiệc có được không?"
       }
     },
     {
@@ -119,7 +231,21 @@
       "end": 2.603,
       "duration": 2.603,
       "translations": {
-        "zh-Hans": "你能帮我一下这个项目吗？"
+        "zh-Hans": "你能帮我一下这个项目吗？",
+        "ja": "このプロジェクトを手伝ってもらえますか？",
+        "id": "Bisakah kamu membantuku mengerjakan proyek ini?",
+        "de": "Könntest du mir bei diesem Projekt helfen?",
+        "fr": "Pourrais-tu me donner un coup de main pour ce projet ?",
+      "tr": "Bu projede bana yardım edebilir misin?",
+      "th": "ช่วยฉันทำโครงการนี้หน่อยได้ไหม?",
+      "zh-Hant": "你可以幫我做一下這個專案嗎？",
+      "ko": "이 프로젝트 좀 도와줄래요?",
+      "es": "¿Podrías echarme una mano con este proyecto?",
+      "pt-BR": "Você poderia me dar uma mão com este projeto?",
+      "it": "Potresti darmi una mano con questo progetto?",
+      "ru": "Не могли бы вы помочь мне с этим проектом?",
+      "ar": "هل يمكنك مساعدتي في هذا المشروع؟",
+      "vi": "Bạn có thể giúp tôi một tay với dự án này được không?"
       }
     },
     {
@@ -132,7 +258,21 @@
       "end": 3.115,
       "duration": 3.115,
       "translations": {
-        "zh-Hans": "我可以请你帮我看一下包吗？"
+        "zh-Hans": "我可以请你帮我看一下包吗？",
+        "ja": "少しの間、バッグを見ていてもらえますか？",
+        "id": "Bisakah aku memintamu menjaga tasku sebentar?",
+        "de": "Kann ich dich bitten, eine Minute auf meine Tasche aufzupassen?",
+        "fr": "Je peux te demander de garder mon sac une minute ?",
+      "tr": "Çantama bir dakika göz kulak olabilir misin?",
+      "th": "ช่วยดูแลกระเป๋าให้ฉันสักครู่ได้ไหม?",
+      "zh-Hant": "我可以請你幫我看一下包包嗎？",
+      "ko": "잠깐 제 가방을 봐줄 수 있나요?",
+      "es": "¿Puedo pedirte que vigiles mi bolso un minuto?",
+      "pt-BR": "Posso pedir para você cuidar da minha bolsa por um minuto?",
+      "it": "Posso chiederti di tenere d'occhio la mia borsa per un minuto?",
+      "ru": "Не могли бы вы присмотреть за моей сумкой минутку?",
+      "ar": "هل يمكنني أن أطلب منك مراقبة حقيبتي لدقيقة؟",
+      "vi": "Bạn có thể trông túi giúp tôi một phút được không?"
       }
     },
     {
@@ -145,7 +285,21 @@
       "end": 2.432,
       "duration": 2.432,
       "translations": {
-        "zh-Hans": "你能教我怎么用这个应用吗？"
+        "zh-Hans": "你能教我怎么用这个应用吗？",
+        "ja": "このアプリの使い方を教えてもらえますか？",
+        "id": "Bisakah kamu menunjukkan cara menggunakan aplikasi ini?",
+        "de": "Könntest du mir zeigen, wie man diese App benutzt?",
+        "fr": "Pourrais-tu me montrer comment utiliser cette application ?",
+      "tr": "Bu uygulamayı nasıl kullanacağımı bana gösterebilir misin?",
+      "th": "ช่วยสอนฉันใช้แอปนี้หน่อยได้ไหม?",
+      "zh-Hant": "你可以教我怎麼使用這個應用程式嗎？",
+      "ko": "이 앱을 어떻게 사용하는지 보여줄래요?",
+      "es": "¿Podrías enseñarme a usar esta aplicación?",
+      "pt-BR": "Você poderia me mostrar como usar este aplicativo?",
+      "it": "Potresti mostrarmi come usare questa app?",
+      "ru": "Не могли бы вы показать мне, как пользоваться этим приложением?",
+      "ar": "هل يمكنك أن تريني كيفية استخدام هذا التطبيق؟",
+      "vi": "Bạn có thể chỉ tôi cách sử dụng ứng dụng này được không?"
       }
     },
     {
@@ -158,7 +312,21 @@
       "end": 3.243,
       "duration": 3.243,
       "translations": {
-        "zh-Hans": "你能告诉我最近的咖啡店在哪里吗？"
+        "zh-Hans": "你能告诉我最近的咖啡店在哪里吗？",
+        "ja": "一番近いカフェがどこにあるか教えてもらえますか？",
+        "id": "Bisakah kamu memberi tahu lokasi kedai kopi terdekat?",
+        "de": "Könntest du mir sagen, wo das nächste Café ist?",
+        "fr": "Pourrais-tu me dire où se trouve le café le plus proche ?",
+      "tr": "En yakın kafenin nerede olduğunu söyleyebilir misin?",
+      "th": "ช่วยบอกได้ไหมว่าร้านกาแฟที่ใกล้ที่สุดอยู่ที่ไหน?",
+      "zh-Hant": "你可以告訴我最近的咖啡店在哪裡嗎？",
+      "ko": "가장 가까운 카페가 어디인지 알려줄래요?",
+      "es": "¿Podrías decirme dónde está la cafetería más cercana?",
+      "pt-BR": "Você poderia me dizer onde fica a cafeteria mais próxima?",
+      "it": "Potresti dirmi dov'è il bar più vicino?",
+      "ru": "Не могли бы вы сказать, где находится ближайшая кофейня?",
+      "ar": "هل يمكنك أن تخبرني أين يقع أقرب مقهى؟",
+      "vi": "Bạn có thể cho tôi biết quán cà phê gần nhất ở đâu không?"
       }
     },
     {
@@ -171,7 +339,21 @@
       "end": 2.56,
       "duration": 2.56,
       "translations": {
-        "zh-Hans": "当然，我可以帮忙。"
+        "zh-Hans": "当然，我可以帮忙。",
+        "ja": "もちろん、お手伝いできます。",
+        "id": "Tentu, aku bisa membantu.",
+        "de": "Klar, ich kann dir dabei helfen.",
+        "fr": "Bien sûr, je peux t'aider.",
+      "tr": "Tabii, bu konuda yardımcı olabilirim.",
+      "th": "ได้เลย ฉันช่วยเรื่องนี้ได้",
+      "zh-Hant": "當然，我可以幫忙。",
+      "ko": "물론이죠. 제가 도와드릴게요.",
+      "es": "Claro, puedo ayudarte con eso.",
+      "pt-BR": "Claro, posso ajudar com isso.",
+      "it": "Certo, posso aiutarti.",
+      "ru": "Конечно, я могу с этим помочь.",
+      "ar": "بالتأكيد، يمكنني مساعدتك في ذلك.",
+      "vi": "Được chứ, tôi có thể giúp việc đó."
       }
     },
     {
@@ -184,7 +366,21 @@
       "end": 3.413,
       "duration": 3.413,
       "translations": {
-        "zh-Hans": "我可以晚点给你回电话吗？"
+        "zh-Hans": "我可以晚点给你回电话吗？",
+        "ja": "あとで折り返し電話してもいいですか？",
+        "id": "Bolehkah aku meneleponmu kembali nanti?",
+        "de": "Ist es in Ordnung, wenn ich dich später zurückrufe?",
+        "fr": "Ça va si je te rappelle plus tard ?",
+      "tr": "Seni daha sonra geri arasam olur mu?",
+      "th": "ฉันโทรกลับหาคุณทีหลังได้ไหม?",
+      "zh-Hant": "我晚點回電給你可以嗎？",
+      "ko": "나중에 다시 전화해도 괜찮을까요?",
+      "es": "¿Está bien si te devuelvo la llamada más tarde?",
+      "pt-BR": "Tudo bem se eu retornar sua ligação mais tarde?",
+      "it": "Va bene se ti richiamo più tardi?",
+      "ru": "Можно я перезвоню вам позже?",
+      "ar": "هل لا بأس أن أتصل بك مجددًا لاحقًا؟",
+      "vi": "Lát nữa tôi gọi lại cho bạn có được không?"
       }
     },
     {
@@ -197,7 +393,21 @@
       "end": 3.669,
       "duration": 3.669,
       "translations": {
-        "zh-Hans": "是的，这完全没问题。"
+        "zh-Hans": "是的，这完全没问题。",
+        "ja": "はい、まったく問題ありません。",
+        "id": "Ya, tidak masalah sama sekali.",
+        "de": "Ja, das ist überhaupt kein Problem.",
+        "fr": "Oui, aucun problème.",
+      "tr": "Evet, hiç sorun değil.",
+      "th": "ได้เลย ไม่มีปัญหาเลย",
+      "zh-Hant": "好的，完全沒問題。",
+      "ko": "네, 전혀 문제없어요.",
+      "es": "Sí, no hay ningún problema.",
+      "pt-BR": "Sim, não tem problema nenhum.",
+      "it": "Sì, non c'è assolutamente problema.",
+      "ru": "Да, совсем не проблема.",
+      "ar": "نعم، لا توجد مشكلة على الإطلاق.",
+      "vi": "Được, hoàn toàn không có vấn đề gì."
       }
     },
     {
@@ -210,7 +420,21 @@
       "end": 2.219,
       "duration": 2.219,
       "translations": {
-        "zh-Hans": "谢谢你的理解！"
+        "zh-Hans": "谢谢你的理解！",
+        "ja": "ご理解ありがとうございます！",
+        "id": "Terima kasih sudah memahami!",
+        "de": "Danke für dein Verständnis!",
+        "fr": "Merci de votre compréhension !",
+      "tr": "Anlayışın için teşekkürler!",
+      "th": "ขอบคุณที่เข้าใจกันนะ!",
+      "zh-Hant": "謝謝你的理解！",
+      "ko": "이해해 줘서 고마워요!",
+      "es": "¡Gracias por comprenderlo!",
+      "pt-BR": "Obrigado por entender!",
+      "it": "Grazie per la comprensione!",
+      "ru": "Спасибо за понимание!",
+      "ar": "شكرًا لتفهمك!",
+      "vi": "Cảm ơn bạn đã thông cảm!"
       }
     }
   ]

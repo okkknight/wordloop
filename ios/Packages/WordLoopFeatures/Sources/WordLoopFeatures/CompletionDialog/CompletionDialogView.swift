@@ -2,6 +2,7 @@ import SwiftUI
 import WordLoopDesignSystem
 
 public struct CompletionDialogView: View {
+    private var copy: CompletionDialogCopy { .current }
     @Bindable private var store: CompletionDialogStore
     private let palette: PosterPalette
     private let onChooseCourse: () -> Void
@@ -45,12 +46,12 @@ public struct CompletionDialogView: View {
     private var dialog: some View {
         ConfirmDialog(
             model: .init(
-                kicker: store.state.kind.kicker,
-                title: store.state.kind.title,
-                message: store.state.kind.message,
-                cancelTitle: store.state.kind.cancelTitle,
-                confirmTitle: store.state.kind.confirmTitle,
-                errorMessage: store.state.errorMessage
+                kicker: copy.kicker,
+                title: store.state.kind == .restartCompletedCourse ? copy.restartTitle : copy.completedTitle,
+                message: store.state.kind == .restartCompletedCourse ? copy.restartMessage : copy.completedMessage,
+                cancelTitle: store.state.kind == .restartCompletedCourse ? copy.cancel : copy.chooseCourse,
+                confirmTitle: store.state.kind == .restartCompletedCourse ? copy.restart : copy.practiceAgain,
+                errorMessage: store.state.errorMessage == nil ? nil : copy.resetError
             ),
             palette: palette,
             accessibilityIdentifierPrefix: "completion-dialog",

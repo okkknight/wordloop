@@ -38,7 +38,7 @@ public struct ProgressDrawerViewState: Equatable, Sendable {
     }
 
     public var searchPlaceholder: String {
-        entries.first?.kind == .word ? "搜索单词或中文释义" : "搜索句子或中文翻译"
+        ProgressDrawerCopy.current.search
     }
 
     public var filteredEntries: [ProgressDrawerEntry] {
