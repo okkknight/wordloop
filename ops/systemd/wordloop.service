@@ -1,0 +1,19 @@
+[Unit]
+Description=WordLoop English learning app
+After=network.target
+
+[Service]
+Type=simple
+User=shipnow
+Group=shipnow
+WorkingDirectory=/opt/boringmax/wordloop
+Environment=NODE_ENV=production
+Environment=NEXT_PUBLIC_BASE_PATH=/wordloop
+Environment=PORT=3010
+Environment=__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS=boringmax.com
+ExecStart=/usr/bin/npm run start -- --hostname ::1 --port 3010
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
