@@ -2,17 +2,23 @@
 
 此文件只追加影响后续接手的耐久事实。最新记录放在最上方，不改写旧记录。
 
+## 2026-08-03 · 多语言 App Store 更新准备
+
+- 首发 `1.0 (build 4)` 已发布；`ios/Config/Shared.xcconfig` 已准备更新为 `1.1 (build 5)`，Bundle ID 仍为 `com.knightspace.wordloop`。
+- 36 门、576 句首发课程的 15 个目标 locale 均已通过严格完整性检查；iOS 主学习页、课程抽屉、进度/启动/完成状态和 accessibility 文案已接入本地化。
+- 下一步是 Release archive、TestFlight 真机验收和 App Store Connect 人工上传；本地不执行上传、提交审核或保存 Apple 凭据。
+
 ## 2026-08-02 · Node + SQLite 收口为唯一运行真值
 
 - 默认 `npm run dev` 同时启动 Node API 与 vinext 前端，并将 `/api/*` 代理到本机 SQLite；本地和 VPS 使用同一服务边界。
 - 默认 `npm run build` 已固定为 VPS Node 构建；Cloudflare / D1 仅保留在 `dev:cloudflare`、`build:cloudflare` 和 Node/Worker 契约对比测试中。
 - 不要把 `app/api/`、`db/` 或 `drizzle/` 当作生产读写路径；真实学习进度由 `server/index.mjs` 和 `data/wordloop*.sqlite` 管理。
 
-## 2026-08-02 · 母语本地化基础接入，课程译文仍在制作中
+## 2026-08-02 · 母语本地化基础接入，课程译文已完成
 
 - 首发 App Store 内容固定为 36 门 AI 原创课程、576 句；本地化校验严格使用 `APP_STORE_RELEASE_COURSE_IDS`，排除注册表中非首发的 `ai-polite-boundaries`。
 - 课程 entry 新增 `translations` BCP-47 映射，exporter、schema、iOS wire decode 和 `CourseEntry.translation(for:)` 已接入。旧 `translation` 保留为简中兼容回退；`ios/App/Info.plist` 声明 15 个系统语言。
-- 新增 `npm run content:check-mother-tongue`，严格检查 15 种语言在所有 576 句中的完整性。当前仅简中 576/576、日语 64/576，其余目标语言未完成；未部署、未创建新 App Store 构建。
+- 新增 `npm run content:check-mother-tongue`，严格检查 15 种语言在所有 576 句中的完整性；当前 15 个 locale 均为 576/576，缺失 0。未在本记录中执行上传或提交审核。
 - 翻译任务明确不得使用 `OPENAI_API_KEY` 或第三方翻译 API。完整性检查不能替代母语质量抽检；完成全部翻译和界面文案后才允许导出、部署或发布。
 
 ## 2026-07-30 · VPS deployment sync boundary documented

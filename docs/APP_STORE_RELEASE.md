@@ -1,4 +1,6 @@
-# WordLoop App Store 首发准备
+# WordLoop App Store 更新准备
+
+当前首发 `1.0 (build 4)` 已发布。本次准备目标为多语言更新 `1.1 (build 5)`；上传、TestFlight 分发和提交审核由账户持有人在 App Store Connect 完成。
 
 ## 已确认的首发决策
 
@@ -32,14 +34,14 @@ App Privacy 问卷和商店审核说明必须与最终网络行为一致：
 
 ## 工程发布闸门
 
-- [ ] 将 `ai-practice` 扩充到 36 节，并以“日常英语会话 / Everyday English”作为首发课程集合名称。
-- [ ] 建立仅含 36 节 `ai-practice` 的 iOS 首发内容包；资源层不得打入 IELTS、Modern Family 或 VOA 的音频、课程文件和元数据。
+- [x] `ai-practice` 已固定为 36 节，并以“日常英语会话 / Everyday English”作为课程集合名称。
+- [x] 已建立仅含 36 节 `ai-practice` 的 iOS 内容包；资源层不打入 IELTS、Modern Family 或 VOA 的音频、课程文件和元数据。
 - [ ] 首发远程 catalog 与内置 catalog 使用同一课程白名单，默认课程为日常英语会话的第一节。
 - [ ] 更新课程抽屉/进度页等测试基线，不再引用 IELTS、Modern Family 或 VOA。
 - [ ] 真实 iPhone 验证 LISTEN、REPEAT、拒绝麦克风、网络失败、游客进度恢复与删除请求路径。
 - [ ] 真实 iPhone 验证“删除全部学习数据”：服务器删除成功、离线失败不清理本地数据、完成后使用新的游客身份重新进入第一节。
 - [ ] 复核 `PrivacyInfo.xcprivacy`、`NSMicrophoneUsageDescription`、第三方 SDK 隐私清单和 App Privacy 问卷（保守选择 User ID、Product Interaction、Audio Data，均为 App Functionality、linked、not tracking）。
-- [ ] 检查 App Icon、启动体验、版本号/构建号、签名、出口合规问卷。
+- [ ] 检查 App Icon、启动体验、`1.1 (build 5)`、签名、出口合规问卷。
 - [ ] 完成 TestFlight 内测，依据崩溃/反馈修正后再提交审核。
 
 ## App Store Connect 待操作项

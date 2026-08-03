@@ -8,19 +8,19 @@ WordLoop 是一款以句子跟读、听力和学习进度为核心的英语学�
 
 ## 当前状态
 
-- Git 基线：`main`，最新已提交变更为 `f9ae7165`（iOS migration 合并）。本地工作树有一批**未提交**的本地化改动。
-- 当前任务：14 个目标母语的课程译文与界面文案。
-- 执行状态：**已执行待验收**，尚未完成，禁止提交、部署或提交新的 App Store 构建。
+- Git 基线：`main`，当前 HEAD 包含 iOS 本地化、多语言课程和模拟器验收提交；发布前需确认工作树干净并推送到远端。
+- App Store 状态：首发 `1.0 (build 4)` 已发布；当前准备多语言更新 `1.1 (build 5)`。本项目不在此处执行上传或提交审核。
+- 执行状态：多语言课程与 iOS 界面本地化已完成，已通过严格完整性检查和代表性模拟器验收；待 Release archive、TestFlight 真机验收及 App Store Connect 人工操作。
 - 首发边界：`scripts/lib/course-export/app-store-release.mjs` 固定 36 门、576 个句子；`ai-polite-boundaries` 是注册但不在首发清单内的旧课，不能混入翻译或导出验收。
-- 当前覆盖（由 `node scripts/check_mother_tongue_translations.mjs` 实测）：`zh-Hans` 576/576，`ja` 64/576，`zh-Hant`、`ko`、`es`、`pt-BR`、`fr`、`de`、`it`、`ru`、`ar`、`id`、`th`、`vi`、`tr` 都是 0/576。尚缺 8,000 个字段。
-- 本轮没有调用翻译 API。此前生成器和 API 写入结果已撤回；不要恢复或重建该脚本，也不要读取/调用 `.env.local` 的 `OPENAI_API_KEY` 做翻译。
+- 当前覆盖（由 `node scripts/check_mother_tongue_translations.mjs` 实测）：15 个目标 locale 均为 576/576，缺失 0。
+- 本轮没有调用翻译 API；发布准备不得读取或调用 `.env.local` 的 `OPENAI_API_KEY` 做翻译。
 
 ## 本轮本地化实现
 
 - `app/data/ai-*.json` 的每个 entry 新增可选 `translations` 映射，旧 `translation` 保留为兼容旧课程包的简中回退。
 - `CourseEntry.translation(for:)` 根据系统首选 BCP-47 locale 选取母语文本；繁中对 `zh-Hant`、`zh-TW`、`zh-HK`、`zh-MO` 有回退；若未翻译则暂回退旧简中字段。
 - `CourseWireModels`、`BundledCourseSource`、schema 与 exporter 已透传并校验该字段；课程包导出后 iOS 和 Web 使用同一份内容来源。
-- `ios/App/Info.plist` 已声明 15 个 App 本地化语言。**这只是声明，不代表所有界面已翻译。**
+- `ios/App/Info.plist` 已声明 15 个 App 本地化语言；课程译文和当前 iOS UI 文案均已接入对应 locale copy。
 - `scripts/check_mother_tongue_translations.mjs` 只检查固定首发清单。`npm run content:check-mother-tongue` 为严格门禁，所有 15 种本地化字段缺任一条都会失败。
 
 ## 架构与关键文件
@@ -43,10 +43,10 @@ WordLoop 是一款以句子跟读、听力和学习进度为核心的英语学�
 
 ## 接续顺序
 
-1. 先实现集中化的 iOS UI 文案表，覆盖主学习页、课程抽屉、进度抽屉、完成对话框、加载/错误/权限状态和 accessibility labels；每个 15 语言值必须是母语文案而非英语占位。
-2. 逐课补齐 14 个目标母语。每次写入只修改 `APP_STORE_RELEASE_COURSE_IDS` 指向的 manifest；按 course ID 绑定，避免宽泛文本替换。
-3. 逐语言运行严格门禁；完成后运行 `npm run content:check-mother-tongue`、`npm run content:check:app-store`、所有相关 Swift package 测试与 App 编译，再在至少一个非中文系统语言的模拟器验收。
-4. 只有上述完成后才导出、提交、推送、部署 VPS 或创建新的 App Store build。
+1. 复跑 `npm run content:check-mother-tongue`、`npm run content:check:app-store`，确认 36 门 / 576 句 / 15 locale 无回退。
+2. 用 Release 配置编译并 Archive，检查版本 `1.1`、build `5`、Bundle ID、签名、API/catalog 生产地址、Privacy Manifest 和包内容。
+3. TestFlight 真机验收至少覆盖 LISTEN、REPEAT 麦克风授权/拒绝、进度同步/删除、离线启动和代表性非中文语言；截图和审核备注不得出现未发布课程。
+4. 由账户持有人在 App Store Connect 上传 build 5、填写更新说明、完成隐私/出口合规问卷并提交审核；本地不保存 Apple 凭据或 API key。
 
 ## 工作规则与风险
 
