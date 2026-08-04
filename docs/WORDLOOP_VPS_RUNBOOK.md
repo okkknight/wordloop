@@ -98,6 +98,14 @@ ssh root@89.208.242.44
 当前与 `wordloop` 相关的核心规则是：
 
 ```text
+@wordloopClientAssets path /wordloop/assets/* /wordloop/audio/* /wordloop/courses/* /wordloop/window.svg
+handle @wordloopClientAssets {
+    uri strip_prefix /wordloop
+    root * /opt/boringmax/wordloop/dist/client
+    header Cache-Control "public, max-age=31536000, immutable"
+    file_server
+}
+
 @wordloopApi path /wordloop/api*
 handle @wordloopApi {
     uri strip_prefix /wordloop
@@ -114,6 +122,7 @@ handle @wordloop {
 
 含义：
 
+- `vinext start` 负责 RSC/HTML；`dist/client` 中的静态 JS、CSS、音频与课程文件必须由 Caddy 直接提供。该规则必须放在全站通用 `/assets/*` 规则之前。
 - `/wordloop/api/*` 先去掉 `/wordloop` 前缀，再转到本机 API
 - 其余 `/wordloop/*` 请求转到前端服务
 

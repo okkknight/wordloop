@@ -24,6 +24,9 @@ const STARTUP_MAX_WAIT_MS = 650;
 const PANEL_CLOSE_MS = 240;
 const USER_ID_KEY = "word-loop-user-id";
 const PENDING_PROGRESS_KEY = "word-loop-pending-progress";
+// Included in the rendered shell so each operational release gets a distinct
+// content-hashed client entrypoint, even when only infrastructure changed.
+const WEB_BUILD_REVISION = "2026-08-04-static-assets";
 const APP_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 function appPath(path: string) {
@@ -1742,6 +1745,7 @@ export default function Home() {
   return (
     <main
       className="poster"
+      data-build-revision={WEB_BUILD_REVISION}
       style={{ "--bg": background, "--ink": ink, "--accent": accent } as React.CSSProperties}
       onClick={handlePosterClick}
       aria-live="polite"
