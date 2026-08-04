@@ -52,6 +52,10 @@ export default defineConfig(async () => {
     : [];
 
   return {
+    // Keep the first Node/VPS static release separate from stale `/assets/*`
+    // responses that were cached while Caddy was not serving the client bundle.
+    // Future files underneath this directory still use content hashes.
+    build: { assetsDir: "assets-v2" },
     server: {
       ...(isCodexSeatbeltSandbox ? { watch: { useFsEvents: false, usePolling: true } } : {}),
       ...(!isCloudflareCompatibility ? {
