@@ -33,7 +33,7 @@
 ## 2. VPS 信息
 
 - 主机名：`fine-bits-1.localdomain`
-- 公网 IP：`89.208.242.44`
+- 公网 IP：`43.172.79.177`
 - SSH 端口：`22`
 - SSH 用户：`root`
 - 系统：`AlmaLinux 9 x86_64`
@@ -41,7 +41,7 @@
 可直接登录：
 
 ```bash
-ssh root@89.208.242.44
+ssh ubuntu@43.172.79.177
 ```
 
 这些 VPS 基础信息与 `kaisensei` 的运维文档保持一致。
@@ -212,26 +212,26 @@ npm run content:publish:staging
 ### 6.1 查看服务状态
 
 ```bash
-ssh root@89.208.242.44 'systemctl --no-pager --full status wordloop.service wordloop-api.service caddy.service'
+ssh ubuntu@43.172.79.177 'systemctl --no-pager --full status wordloop.service wordloop-api.service caddy.service'
 ```
 
 ### 6.2 查看服务定义
 
 ```bash
-ssh root@89.208.242.44 'systemctl cat wordloop.service'
-ssh root@89.208.242.44 'systemctl cat wordloop-api.service'
+ssh ubuntu@43.172.79.177 'systemctl cat wordloop.service'
+ssh ubuntu@43.172.79.177 'systemctl cat wordloop-api.service'
 ```
 
 ### 6.3 查看 Caddy 当前配置
 
 ```bash
-ssh root@89.208.242.44 'nl -ba /etc/caddy/Caddyfile | sed -n "45,75p"'
+ssh ubuntu@43.172.79.177 'nl -ba /etc/caddy/Caddyfile | sed -n "45,75p"'
 ```
 
 ### 6.4 查看本机 API 健康状态
 
 ```bash
-ssh root@89.208.242.44 'curl -fsS http://127.0.0.1:3011/healthz'
+ssh ubuntu@43.172.79.177 'curl -fsS http://127.0.0.1:3011/healthz'
 ```
 
 预期输出：
@@ -265,13 +265,13 @@ curl -fsS 'https://boringmax.com/wordloop/api/progress?userId=name:demo'
 ### 6.6 查看数据库文件
 
 ```bash
-ssh root@89.208.242.44 'ls -lh /opt/boringmax/wordloop/data/wordloop.sqlite'
+ssh ubuntu@43.172.79.177 'ls -lh /opt/boringmax/wordloop/data/wordloop.sqlite'
 ```
 
 ### 6.7 查看线上源码目录
 
 ```bash
-ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && ls -la'
+ssh ubuntu@43.172.79.177 'cd /opt/boringmax/wordloop && ls -la'
 ```
 
 ## 7. 发布方式
@@ -343,10 +343,10 @@ rsync -a --delete \
   --exclude '/coverage' \
   --exclude '/work' \
   --exclude '/outputs' \
-  ./ root@89.208.242.44:/opt/boringmax/wordloop/
-rsync -a --delete dist/ root@89.208.242.44:/opt/boringmax/wordloop/dist/
-ssh root@89.208.242.44 'cd /opt/boringmax/wordloop && npm ci --omit=dev'
-ssh root@89.208.242.44 'systemctl restart wordloop.service wordloop-api.service caddy'
+  ./ ubuntu@43.172.79.177:/opt/boringmax/wordloop/
+rsync -a --delete dist/ ubuntu@43.172.79.177:/opt/boringmax/wordloop/dist/
+ssh ubuntu@43.172.79.177 'cd /opt/boringmax/wordloop && npm ci --omit=dev'
+ssh ubuntu@43.172.79.177 'systemctl restart wordloop.service wordloop-api.service caddy'
 ```
 
 说明：
@@ -383,7 +383,7 @@ ssh root@89.208.242.44 'systemctl restart wordloop.service wordloop-api.service 
 更稳妥的做法是只让服务用户可读写，例如：
 
 ```bash
-ssh root@89.208.242.44 'chmod 600 /opt/boringmax/wordloop/data/wordloop.sqlite'
+ssh ubuntu@43.172.79.177 'chmod 600 /opt/boringmax/wordloop/data/wordloop.sqlite'
 ```
 
 ### 9.2 前端线上跑 `npm run dev`
@@ -406,7 +406,7 @@ ssh root@89.208.242.44 'chmod 600 /opt/boringmax/wordloop/data/wordloop.sqlite'
 
 本项目 VPS 基础信息与 `kaisensei` 复用同一台机器：
 
-- 主机：`89.208.242.44`
+- 主机：`43.172.79.177`
 - 公网入口：`Caddy`
 - 服务用户：`shipnow`
 - 应用根目录约定：`/opt/boringmax/<app>`
