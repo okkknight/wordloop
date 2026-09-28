@@ -2,6 +2,10 @@
 
 WordLoop 是一个以原声音频为核心的英语听力与跟读学习应用。它把 IELTS 高频词、影视对白和 VOA Learning English 内容整理成可重复练习的单词或句子单元，并分别记录听力与跟读进度。
 
+## 许可
+
+应用代码采用 [MIT 许可证](LICENSE)。仓库内 `modernfamily/season-01-subtitles/` 的字幕、`app/data/` 的课程文本、`public/audio/` 与 `public/courses/` 的课程音频和配套内容，按 [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) 公开，无需署名即可再利用。仓库中自带的字体仍遵循其 [SIL Open Font License 1.1](ios/Packages/WordLoopDesignSystem/Sources/WordLoopDesignSystem/Resources/Fonts/LICENSE.txt)；其他第三方依赖遵循各自的许可证。用户学习记录和本地环境变量不属于公开课程素材，已被 Git 忽略。
+
 ## 当前内容
 
 - IELTS 高频词：570 个单词及配套音频
